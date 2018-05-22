@@ -21,4 +21,16 @@ pages:
         - Molecular Networking in Cytoscape: cytoscape.md
         - Dereplicator: dereplicator.md
         - Network Annotation Propagation (NAP): nap.md
+    - Experiment Data Analysis:
+        - MzMine Local - GNPS Networking: mzminelocal.md
+        - MS2LDA Deconvolution: ms2lda.md
+    - Community Features:
+        - Browsing Reference Spectral Libraries: browselibraries.md
+        - Reference Spectral Library Curation: spectrumcuration.md
+        - Downloading Reference Spectral Libraries: downloadlibraries.md
+        - Dataset Sharing: datasets.md
+        - Continuous Identification: continuousid.md
+        - Molecule Explorer: moleculeexplorer.md
+        - User Page: user.md
+    - Contact: contact.md
 theme: readthedocs
