@@ -1,15 +1,22 @@
 site_name: GNPS Documentation
 pages:
     - GNPS Introduction: index.md
+    - Is GNPS Right For Me?: isgnpsright.md
     - Frequently Asked Questions: faq.md
     - Quick Start Guide: quickstart.md
+    - Mass Spectrometry Background:
+        - Targeted vs Untargeted: targeteduntargeted.md
+        - Tandem Mass Spectrometry (MS/MS): tandemms.md
+        - Methods of Identification: identification.md
+        - Method of Quantification: quantification.md
+        - Theory of Molecular Networking: netorkingtheory.md
     - Data Preparation:
         - Mass Spectrometry File Conversion: fileconversion.md
         - ProteoSAFe File Upload: fileupload.md
     - Recommended Data Analysis:
         - Molecular Networking: networking.md
         - Spectral Library Search: librarysearch.md
-        - Single Spectrum Repositroy Search: singlespectrum.md
+        - Single Spectrum Repository Search: singlespectrum.md
     - Advanced Data Analysis:
         - Molecular Networking in Cytoscape: cytoscape.md
         - Dereplicator: dereplicator.md
