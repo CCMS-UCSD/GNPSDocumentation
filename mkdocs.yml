@@ -1,1 +1,17 @@
 site_name: GNPS Documentation
+pages:
+    - GNPS Introduction: index.md
+    - Frequently Asked Questions: faq.md
+    - Quick Start Guide: quickstart.md
+    - Data Preparation:
+        - Mass Spectrometry File Conversion: fileconversion.md
+        - ProteoSAFe File Upload: fileupload.md
+    - Recommended Data Analysis:
+        - Molecular Networking: networking.md
+        - Spectral Library Search: librarysearch.md
+        - Single Spectrum Repositroy Search: singlespectrum.md
+    - Advanced Data Analysis:
+        - Molecular Networking in Cytoscape: cytoscape.md
+        - Dereplicator: dereplicator.md
+        - Network Annotation Propagation (NAP): nap.md
+theme: readthedocs
