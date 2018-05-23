@@ -1,5 +1,3 @@
-# GNPS Frequently Asked Questions
-
 ## Analyzing Data
 
 Q: Can I select more than one file at a time for each group in molecular networking?
@@ -30,3 +28,7 @@ Q: How do I get access to the public spectral libraries?
 A: On the select input files popup, click on the shared files tab, and enter speclibs as an import share.
 
 ![Screenshot](img/shared_libs.png)
+
+## Browser Support
+
+We officially test on the latest Chrome browser. Other browsers, e.g. Firefox, Internet Explorer, Opera, Edge, are not officially supported but likely will not have any issues with GNPS.

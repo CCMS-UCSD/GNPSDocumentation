@@ -1,0 +1,43 @@
+## Converting Data
+
+Convert vendor formats to open formats using MSConvert locally. [Documentation](https://bix-lab.ucsd.edu/display/Public/Data+Conversion+to+GNPS+Compatible+Formats+-+.mzXML+and+.mzML).
+
+## Create a GNPS Account
+
+Account registration is a simple process, and completely private – GMPS will never use your contact information for any reason other than to email you the outcome of your dataset submissions and other workflows. To register an account, navigate to the GNPS web site – http://gnps.ucsd.edu/. Here you will find a registration link in the upper right corner of the page, just below the login box.
+
+![GNPS login box](img/MassIVE_login_box.png)
+
+Click on the registration link to bring up the account registration form.
+
+![GNPS registration form](img/MassIVE_registration_form.png)
+
+## Upload data
+
+Open a ftp client such as FileZilla with the following input parameters; Host: ccms-ftp01.ucsd.edu followed by entering your user name and password for GNPS followed by enter.
+
+![Filezilla Upload](img/filezilla_address.png)
+
+Choose the location of your files within the local site drop down menu. Highlight the files or folders to upload and select upload by right clicking. You will then see the files being queued and transferred to GNPS.
+
+![Filezilla Upload](img/filezilla_upload.png)
+
+Once all the files are uploaded using this method they will be available for you to use for your molecular networking workflows within GNPS.
+
+## Selecting Data Input Files
+
+Navigate to the molecular networking [analysis page](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS%22,%22library_on_server%22:%22d.speclibs;%22%7D). Provide a detailed title for your molecular network. This title will be helpful when you retrieve your data after the workflow is completed.
+
+![set title](img/networking_title.gif)
+
+Within the Basic Options header; to input your spectrum files, select the input files tab next to the Spectrum files (required) field. A pop-up window with three tabs will appear; Select Input Files, Upload Files, Share Files. Proceed by selecting the files you want to analyze by clicking on the mass spectrometry file or an entire folder. Next click on the Spectrum Files G1 button to mark these files for analysis. You may select more files for analysis and put them in the separate groups (G1, G2, G3, G4, G5, G6) to reflect your experimental design. If you are performing an analysis with more than six groups, a metadata file may be used (see documentation).
+
+![select files](img/file_selection.gif)
+
+Once you are done selecting files to analyze, close the pop-up and hit submit.
+
+## Browsing Identifications
+
+To quickly glance at all the molecules in your data matching to the GNPS community knowledge of reference MS/MS spectra, click on "View All Library Hits".
+
+![view libraries](img/select_library_matches.png)
