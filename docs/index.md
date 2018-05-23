@@ -12,4 +12,4 @@ As there are many aspects to GNPS, it can be a bit overwhelming, so the primary 
 * Automatic reanalysis of public datasets with automated reports of new identifications
 * Explore identifications of public datasets across entire repository
 
-For more detailed information, read on in the documentation, checkout the [manuscript](https://www.nature.com/articles/nbt.3597), and view some tutorial [videos](https://www.youtube.com/channel/UCufTdDIUPjfoN604Igv_29g/videos).
+For more detailed information, read on in the documentation, checkout the [GNPS publication](https://www.nature.com/articles/nbt.3597), and view some tutorial [videos](https://www.youtube.com/channel/UCufTdDIUPjfoN604Igv_29g/videos).
