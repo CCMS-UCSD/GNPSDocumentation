@@ -9,7 +9,7 @@ pages:
         - Tandem Mass Spectrometry (MS/MS): tandemms.md
         - Methods of Identification: identification.md
         - Method of Quantification: quantification.md
-        - Theory of Molecular Networking: netorkingtheory.md
+        - Theory of Molecular Networking: networkingtheory.md
     - Data Preparation:
         - Mass Spectrometry File Conversion: fileconversion.md
         - ProteoSAFe File Upload: fileupload.md
