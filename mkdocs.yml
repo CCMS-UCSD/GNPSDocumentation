@@ -5,6 +5,8 @@ pages:
     - Frequently Asked Questions: faq.md
     - Quick Start Guide: quickstart.md
     - GNPS Analysis Tools Overview: gnpsanalysisoverview.md
+    - Change Log: changelog.md
+    - Contact: contact.md
     - Mass Spectrometry Background:
         - Targeted vs Untargeted: targeteduntargeted.md
         - Tandem Mass Spectrometry (MS/MS): tandemms.md
@@ -33,5 +35,5 @@ pages:
         - Continuous Identification: continuousid.md
         - Molecule Explorer: moleculeexplorer.md
         - User Page: user.md
-    - Contact: contact.md
+
 theme: readthedocs
