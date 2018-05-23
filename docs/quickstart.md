@@ -1,3 +1,7 @@
+## Overview
+
+This is a quickstart guide that will enable you to prepare your data, upload to GNPS, and create your first molecular network on GNPS. While there are a wide variety of other tools at GNPS, molecular networking analysis is a great place to get your feet wet. 
+
 ## Converting Data
 
 Convert vendor formats to open formats using MSConvert locally. [Documentation](https://bix-lab.ucsd.edu/display/Public/Data+Conversion+to+GNPS+Compatible+Formats+-+.mzXML+and+.mzML).
@@ -12,7 +16,7 @@ Click on the registration link to bring up the account registration form.
 
 ![GNPS registration form](img/MassIVE_registration_form.png)
 
-## Upload data
+## Upload data (Quick)
 
 Open a ftp client such as FileZilla with the following input parameters; Host: ccms-ftp01.ucsd.edu followed by entering your user name and password for GNPS followed by enter.
 
@@ -23,6 +27,8 @@ Choose the location of your files within the local site drop down menu. Highligh
 ![Filezilla Upload](img/filezilla_upload.png)
 
 Once all the files are uploaded using this method they will be available for you to use for your molecular networking workflows within GNPS.
+
+For a more detailed description of all the ways to upload data, please refer to our [Upload Documentation](fileupload.md)
 
 ## Selecting Data Input Files
 
@@ -41,3 +47,7 @@ Once you are done selecting files to analyze, close the pop-up and hit submit.
 To quickly glance at all the molecules in your data matching to the GNPS community knowledge of reference MS/MS spectra, click on "View All Library Hits".
 
 ![view libraries](img/select_library_matches.png)
+
+## Viewing Network (Quick)
+
+To visualize the molecular network,refer to the molecular networking online documentation.

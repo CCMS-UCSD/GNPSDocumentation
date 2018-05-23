@@ -4,6 +4,7 @@ pages:
     - Is GNPS Right For Me?: isgnpsright.md
     - Frequently Asked Questions: faq.md
     - Quick Start Guide: quickstart.md
+    - GNPS Analysis Tools Overview: gnpsanalysisoverview.md
     - Mass Spectrometry Background:
         - Targeted vs Untargeted: targeteduntargeted.md
         - Tandem Mass Spectrometry (MS/MS): tandemms.md
