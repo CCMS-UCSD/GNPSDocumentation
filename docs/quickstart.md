@@ -1,14 +1,14 @@
 ## Overview
 
-This is a quickstart guide that will enable you to prepare your data, upload to GNPS, and create your first molecular network on GNPS. While there are a wide variety of other tools at GNPS, molecular networking analysis is a great place to get your feet wet. 
+This is a quickstart guide that will enable you to prepare your data, upload to GNPS, and create your first molecular network on GNPS. While there are a wide variety of other tools at GNPS, molecular networking analysis is a great place to get your feet wet.
 
 ## Converting Data
 
-Convert vendor formats to open formats using MSConvert locally. [Documentation](https://bix-lab.ucsd.edu/display/Public/Data+Conversion+to+GNPS+Compatible+Formats+-+.mzXML+and+.mzML).
+Convert vendor formats to open formats using MSConvert locally. [Documentation](fileconversion.md).
 
 ## Create a GNPS Account
 
-Account registration is a simple process, and completely private – GMPS will never use your contact information for any reason other than to email you the outcome of your dataset submissions and other workflows. To register an account, navigate to the GNPS web site – http://gnps.ucsd.edu/. Here you will find a registration link in the upper right corner of the page, just below the login box.
+Account registration is a simple process, and completely private – GNPS will never use your contact information for any reason other than to email you the outcome of your dataset submissions and other workflows. To register an account, navigate to the GNPS web site – http://gnps.ucsd.edu/. Here you will find a registration link in the upper right corner of the page, just below the login box.
 
 ![GNPS login box](img/MassIVE_login_box.png)
 
