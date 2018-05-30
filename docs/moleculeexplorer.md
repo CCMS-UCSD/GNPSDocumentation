@@ -16,4 +16,4 @@ For each molecule, click on "Datasets" to view the specific datasets in which a 
 
 In the final level of granularity, the molecule can be traced down to the set of files per dataset. By clicking "Dataset Files" a set of files which contain the molecule is listed along with the metadata associated with each of the individual files.
 
-TODO: show example, for example avobenzone is found in skin datasets and files and not blanks. 
+TODO: show example, for example Avobenzone is found in skin datasets and files and not blanks. 

@@ -16,4 +16,6 @@ For datasets that at least include an entire LC/MS run of MS/MS spectra, all wor
 
 ## File Formats
 
-Mass spectrometry files must be converted from proprietary vendor formats to open file formats. GNPS currently support mzXML, mzML, and mgf formats for analysis. To convert, please see our [conversion guide](fileconversion.md).
+Mass spectrometry files must be converted from proprietary vendor formats to open file formats. GNPS currently support .mzXML, .mzML, and .mgf formats for analysis. To convert, please see our [conversion guide](fileconversion.md).
+
+Our tools do NOT support .mzData, .xml, .raw, .RAW, .wiff, .scan, .d, and .cdf formats.
