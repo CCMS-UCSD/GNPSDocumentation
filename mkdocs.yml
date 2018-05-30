@@ -35,5 +35,6 @@ pages:
         - Continuous Identification: continuousid.md
         - Molecule Explorer: moleculeexplorer.md
         - User Page: user.md
+    - Troubleshooting: troubleshooting.md
 
 theme: readthedocs
