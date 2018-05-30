@@ -14,11 +14,11 @@ A: No, when creating a MassIVE dataset, it is not public by default. On the inpu
 
 Q: How does the MassIVE data differ from the GNPS spectral libraries?
 
-A: MassIVE datasets consist of RAW data. GNPS spectral libraries consist of spectra that have been individually assigned an identification.
+A: MassIVE datasets consist of raw data. GNPS spectral libraries consist of spectra that have been individually assigned an identification.
 
 Q: Can I create my own private spectral libraries?
 
-A: Yes, but it is not recommended. Please contact administrators for further details.
+A: Yes, but it is not recommended. Please [contact](contact.md) administrators for further details.
 
 
 ## Spectral Libraries

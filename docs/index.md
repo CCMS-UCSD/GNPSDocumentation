@@ -13,3 +13,7 @@ As there are many aspects to GNPS, it can be a bit overwhelming, so the primary 
 * Explore identifications of public datasets across entire repository
 
 For more detailed information, read on in the documentation, checkout the [GNPS publication](https://www.nature.com/articles/nbt.3597), and view some tutorial [videos](https://www.youtube.com/channel/UCufTdDIUPjfoN604Igv_29g/videos).
+
+## Migration to New Documentation
+
+Pardon our dust as we are migrating to this new documentation. During the transition, throughout the documentation we will be linking to our legacy documentation that is still relevant. Thank you for your patience.

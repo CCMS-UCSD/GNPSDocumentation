@@ -30,11 +30,29 @@ Once all the files are uploaded using this method they will be available for you
 
 For a more detailed description of all the ways to upload data, please refer to our [Upload Documentation](fileupload.md)
 
-## Selecting Data Input Files
+## Molecular Networking Input
 
-Navigate to the molecular networking [analysis page](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS%22,%22library_on_server%22:%22d.speclibs;%22%7D). Provide a detailed title for your molecular network. This title will be helpful when you retrieve your data after the workflow is completed.
+Navigate to the molecular networking [analysis page](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS%22,%22library_on_server%22:%22d.speclibs;%22%7D).
+
+### Molecular Networking Parameter Presets
+
+There are three presets that set the parameters to approximately appropriate values depending on the size of your dataset.
+
+TODO: Show images
+
+Please select the appropriate one given the follow criteria:
+
+1. Small Dataset - up to 5 LC/MS files
+2. Medium Dataset - 5 to 400 LC/MS files
+3. Large Dataset - 400+ LC/MS files
+
+### Naming your analysis
+
+Provide a detailed title for your molecular network. This title will be helpful when you retrieve your data after the workflow is completed.
 
 ![set title](img/networking_title.gif)
+
+### Selecting Data Input Files
 
 Within the Basic Options header; to input your spectrum files, select the input files tab next to the Spectrum files (required) field. A pop-up window with three tabs will appear; Select Input Files, Upload Files, Share Files. Proceed by selecting the files you want to analyze by clicking on the mass spectrometry file or an entire folder. Next click on the Spectrum Files G1 button to mark these files for analysis. You may select more files for analysis and put them in the separate groups (G1, G2, G3, G4, G5, G6) to reflect your experimental design. If you are performing an analysis with more than six groups, a metadata file may be used (see documentation).
 
@@ -42,12 +60,18 @@ Within the Basic Options header; to input your spectrum files, select the input 
 
 Once you are done selecting files to analyze, close the pop-up and hit submit.
 
-## Browsing Identifications
+## View Analysis Results
+
+### Browsing Identifications
 
 To quickly glance at all the molecules in your data matching to the GNPS community knowledge of reference MS/MS spectra, click on "View All Library Hits".
 
 ![view libraries](img/select_library_matches.png)
 
-## Viewing Network (Quick)
+### Viewing Network (Quick)
 
-To visualize the molecular network,refer to the molecular networking online documentation.
+TODO: write this
+
+### Advanced Online Visualization
+
+For a more detailed guide on how to explore the molecular networks online, please refer to our [documentation](networking.md)

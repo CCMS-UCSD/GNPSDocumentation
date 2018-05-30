@@ -16,11 +16,13 @@ MS/MS data is searched against reference GNPS spectral libraries in a high throu
 
 ### [Single Spectrum Search](singlespectrum.md)
 
-Query a single MS/MS spectrum across all public GNPS datasets. The mass spectrometry equivalent of NCBI Blast helps to put the query spectrum in context of where else it occurs. 
+Query a single MS/MS spectrum across all public GNPS datasets. The mass spectrometry equivalent of NCBI BLAST helps to put the query spectrum in context of where else it occurs as well as search a single MS/MS spectrum against all public spectral libraries.
 
 ## Advanced Analysis Tools
 
 ### [Dereplicator](dereplicator.md)
+
+The Insilico Peptidic Natural Products Dereplicator is a bioinformatic tool that allows the annotation of known peptidic natural products in MS/MS data using in silico fragmentation tree.
 
 ### [Network Annotation Propogation](nap.md)
 
