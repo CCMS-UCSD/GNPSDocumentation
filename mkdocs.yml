@@ -3,6 +3,7 @@ pages:
     - GNPS Introduction: index.md
     - Is GNPS Right For Me?: isgnpsright.md
     - Frequently Asked Questions: faq.md
+    - Superquick Start Guide: superquickstart.md
     - Quick Start Guide: quickstart.md
     - GNPS Analysis Tools Overview: gnpsanalysisoverview.md
     - Change Log: changelog.md
