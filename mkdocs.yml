@@ -8,7 +8,7 @@ pages:
     - GNPS Analysis Tools Overview: gnpsanalysisoverview.md
     - Change Log: changelog.md
     - Contact: contact.md
-    - Mass Spectrometry Background:
+    - Mass Spec Background:
         - Targeted vs Untargeted: targeteduntargeted.md
         - Tandem Mass Spectrometry (MS/MS): tandemms.md
         - Methods of Identification: identification.md
@@ -38,4 +38,16 @@ pages:
         - User Page: user.md
     - Troubleshooting: troubleshooting.md
 
-theme: readthedocs
+theme:
+    name: material
+    #palette:
+    #    primary: 'light blue'
+    #    accent: 'orange'
+    #font:
+    #    text: 'Roboto'
+    #    code: 'Roboto Mono'
+
+    #logo: 'img/GNPS_logo.jpg'
+#theme: readthedocs
+#theme:
+#  name: 'rtd-dropdown'

@@ -8,7 +8,7 @@ Convert vendor formats to open formats using MSConvert locally. [Documentation](
 
 ## Create a GNPS Account
 
-Account registration is a simple process, and completely private – GNPS will never use your contact information for any reason other than to email you the outcome of your dataset submissions and other workflows. To register an account, navigate to the GNPS web site – http://gnps.ucsd.edu/. Here you will find a registration link in the upper right corner of the page, just below the login box.
+Account registration is a simple process, and completely private – GNPS will never use your contact information for any reason other than to email you the outcome of your dataset submissions and other workflows. To register an account, navigate to the [GNPS web site](https://gnps.ucsd.edu/). Here you will find a registration link in the upper right corner of the page, just below the login box.
 
 ![GNPS login box](img/MassIVE_login_box.png)
 
@@ -18,7 +18,7 @@ Click on the registration link to bring up the account registration form.
 
 ## Upload data (Quick)
 
-Open a ftp client such as FileZilla with the following input parameters; Host: ccms-ftp01.ucsd.edu followed by entering your user name and password for GNPS followed by enter.
+Open a ftp client such as [FileZilla](https://filezilla-project.org/) client with the following input parameters; Host: ccms-ftp01.ucsd.edu followed by entering your user name and password for GNPS followed by enter.
 
 ![Filezilla Upload](img/filezilla_address.png)
 
@@ -38,7 +38,7 @@ Navigate to the molecular networking [analysis page](https://gnps.ucsd.edu/Prote
 
 There are three presets that set the parameters to approximately appropriate values depending on the size of your dataset.
 
-TODO: Show images
+![presets](img/quickstart/networking_presets.png)
 
 Please select the appropriate one given the follow criteria:
 
@@ -54,7 +54,7 @@ Provide a detailed title for your molecular network. This title will be helpful 
 
 ### Selecting Data Input Files
 
-Within the Basic Options header; to input your spectrum files, select the input files tab next to the Spectrum files (required) field. A pop-up window with three tabs will appear; Select Input Files, Upload Files, Share Files. Proceed by selecting the files you want to analyze by clicking on the mass spectrometry file or an entire folder. Next click on the Spectrum Files G1 button to mark these files for analysis. You may select more files for analysis and put them in the separate groups (G1, G2, G3, G4, G5, G6) to reflect your experimental design. If you are performing an analysis with more than six groups, a metadata file may be used (see documentation).
+Within the Basic Options header; to input your spectrum files, select the input files tab next to the Spectrum files (required) field. A pop-up window with three tabs will appear; Select Input Files, Upload Files, Share Files. Proceed by selecting the files you want to analyze by clicking on the mass spectrometry file or an entire folder. Next click on the Spectrum Files G1 button to mark these files for analysis. You may select more files for analysis and put them in the separate groups (G1, G2, G3, G4, G5, G6) to reflect your experimental design. If you are performing an analysis with more than six groups, a metadata file may be used (see [Networking Documentation](networking.md)).
 
 ![select files](img/file_selection.gif)
 
@@ -70,7 +70,14 @@ To quickly glance at all the molecules in your data matching to the GNPS communi
 
 ### Viewing Network (Quick)
 
-TODO: write this
+To visualize the molecular networks in the browser, click the "View Spectral Families (In Browser Network Visualization)".
+
+![view networks](img/quickstart/view_networks.png)
+
+This brings you to a list of all the individual networks (connected components) that are in your data. Click on the "Visualize Network" link to explore each network individually. Your selection can be guided by the identifications within each network if there is a specific molecule of interest.
+
+![all networks](img/quickstart/all_networks.png)
+
 
 ### Advanced Online Visualization
 
