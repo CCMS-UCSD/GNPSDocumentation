@@ -6,13 +6,13 @@ The visualization of molecular networks in GNPS represents each spectrum as a no
 
 For more information about Molecular Networking check out the [GNPS publication](https://www.nature.com/articles/nbt.3597) from 2016.
 
-### Workflow Selection
+### Molecular Networking Workflow Selection
 
-From the main [GNPS page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), click the "Data Analysis" link.
+From the main [GNPS page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), click the ["Data Analysis"](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D) link.
 
 ![analysis](img/networking/data_analysis.png)
 
-This will bring you to the workflow input to start networking. 
+This will bring you to the workflow input to start networking.
 
 
 See [Legacy Documentation](https://bix-lab.ucsd.edu/display/Public/Molecular+Networking+Documentation)
@@ -53,7 +53,6 @@ The following headers are required:
 ![ili](img/networking/ili-table.png)
 
 
-
 ## Legacy Group and Attribute Mapping Format
 
 This format has been replaced by the above Metadata format. While it is still supported it is not recommended. Please see the details [here](https://bix-lab.ucsd.edu/display/Public/Metadata+table+in+GNPS).
@@ -67,6 +66,11 @@ This format has been replaced by the above Metadata format. While it is still su
 TODO: Add this
 
 ### Parameter Presets
+
+1. Small datasets
+2. Medium Datasets
+3. Large Datasets
+4. Big Data(sets) - Lets talk!
 
 ## Online Exploration of Molecular Networks
 
