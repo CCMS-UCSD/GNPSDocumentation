@@ -1,8 +1,3 @@
-## Analyzing Data
-
-Q: Can I select more than one file at a time for each group in molecular networking?
-
-A: Yes. Within each group you can select multiple files, even folders of spectra. Simply highlight the multiple files/folders you want to select and then add to the appropriate group.
 
 ## Data Privacy
 
@@ -20,7 +15,6 @@ Q: Can I create my own private spectral libraries?
 
 A: Yes, but it is not recommended. Please [contact](contact.md) administrators for further details.
 
-
 ## Spectral Libraries
 
 Q: How do I get access to the public spectral libraries?
@@ -28,6 +22,12 @@ Q: How do I get access to the public spectral libraries?
 A: On the select input files popup, click on the shared files tab, and enter speclibs as an import share.
 
 ![Screenshot](img/shared_libs.png)
+
+## Analyzing Data
+
+Q: Can I select more than one file at a time for each group in molecular networking?
+
+A: Yes. Within each group you can select multiple files, even folders of spectra. Simply highlight the multiple files/folders you want to select and then add to the appropriate group.
 
 ## Browser Support
 
