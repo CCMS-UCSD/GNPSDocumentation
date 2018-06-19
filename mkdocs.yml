@@ -19,6 +19,7 @@ pages:
         - GNPS File Upload: fileupload.md
     - Recommended Data Analysis:
         - Molecular Networking: networking.md
+        - Molecular Networking Views: networkingviews.md
         - Spectral Library Search: librarysearch.md
         - Single Spectrum Repository Search: singlespectrum.md
     - Advanced Data Analysis:
