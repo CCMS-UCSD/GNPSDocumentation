@@ -12,7 +12,7 @@ The follow data is can be put into molecular networking.
 
 1. Mass Spectrometry data files (required)
 2. Metadata/Group Mapping (optional)
-3. \`ili 3D mapping files
+3. \`ili 3D mapping files (optional)
 
 ### Mass Spectrometry data files
 
