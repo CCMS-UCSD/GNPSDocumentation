@@ -354,11 +354,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" checked>
     
     <label class="md-nav__link" for="nav-10">
-      Data Preparation
+      Data Preparation/Upload
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-10">
-        Data Preparation
+        Data Preparation/Upload
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -399,23 +399,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-conversion" title="Data Conversion" class="md-nav__link">
-    Data Conversion
+  <a href="#data-conversion-easy" title="Data Conversion (Easy)" class="md-nav__link">
+    Data Conversion (Easy)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-online-conversion" title="Advanced Online Conversion" class="md-nav__link">
-    Advanced Online Conversion
+  <a href="#data-conversion-traditional" title="Data Conversion (Traditional)" class="md-nav__link">
+    Data Conversion (Traditional)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conversion-with-msconvert" title="Conversion with MSConvert" class="md-nav__link">
+    Conversion with MSConvert
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#advanced-conversion-of-bruker-data" title="Advanced Conversion of Bruker Data" class="md-nav__link">
-    Advanced Conversion of Bruker Data
+        
+          <li class="md-nav__item">
+  <a href="#advanced-online-conversion-with-proteowizard-msconvert" title="Advanced Online Conversion with Proteowizard (MSConvert)" class="md-nav__link">
+    Advanced Online Conversion with Proteowizard (MSConvert)
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -436,8 +449,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../fileupload/" title="ProteoSAFe File Upload" class="md-nav__link">
-      ProteoSAFe File Upload
+    <a href="../fileupload/" title="GNPS File Upload" class="md-nav__link">
+      GNPS File Upload
     </a>
   </li>
 
@@ -761,23 +774,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-conversion" title="Data Conversion" class="md-nav__link">
-    Data Conversion
+  <a href="#data-conversion-easy" title="Data Conversion (Easy)" class="md-nav__link">
+    Data Conversion (Easy)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-online-conversion" title="Advanced Online Conversion" class="md-nav__link">
-    Advanced Online Conversion
+  <a href="#data-conversion-traditional" title="Data Conversion (Traditional)" class="md-nav__link">
+    Data Conversion (Traditional)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conversion-with-msconvert" title="Conversion with MSConvert" class="md-nav__link">
+    Conversion with MSConvert
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#advanced-conversion-of-bruker-data" title="Advanced Conversion of Bruker Data" class="md-nav__link">
-    Advanced Conversion of Bruker Data
+        
+          <li class="md-nav__item">
+  <a href="#advanced-online-conversion-with-proteowizard-msconvert" title="Advanced Online Conversion with Proteowizard (MSConvert)" class="md-nav__link">
+    Advanced Online Conversion with Proteowizard (MSConvert)
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -802,12 +828,83 @@
                 
                 <h2 id="supported-formats-at-gnps">Supported Formats at GNPS</h2>
 <p>At GNPS we support mzXML, mzML, and mgf formats for analysis. Our tools do NOT support mzData, xml, raw, RAW, wiff, scan, d, and cdf formats. If your files are in not supported, please use the following guide to convert them to an open format that is supported by GNPS.</p>
-<h2 id="data-conversion">Data Conversion</h2>
-<p>Please refer to our <a href="https://bix-lab.ucsd.edu/display/Public/Data+Conversion+to+GNPS+Compatible+Formats+-+.mzXML+and+.mzML">legacy documentation</a>.</p>
-<h2 id="advanced-online-conversion">Advanced Online Conversion</h2>
-<p>It is possible to convert spectrum files online at the sister site - MassIVE. This site is able to handle thermo RAW and Sciex Wiff files. Please check it out <a href="???">here</a>. </p>
-<h2 id="advanced-conversion-of-bruker-data">Advanced Conversion of Bruker Data</h2>
-<p>Bruker vendor data must be handled in their software to achieve the best results. Please refer <a href="https://bix-lab.ucsd.edu/display/Public/Data+Conversion+to+GNPS+Compatible+Formats+-+.mzXML+and+.mzML#DataConversiontoGNPSCompatibleFormats-.mzXMLand.mzML-ConversionofBrukerData">here</a>.</p>
+<h2 id="data-conversion-easy">Data Conversion (Easy)</h2>
+<p>This is a complete package for Windows users to convert their vendor formats to GNPS compatible format (mzXML). It is as easy as putting files into a folder and batch converting it all without any installation (well nearly so).</p>
+<ol>
+<li>Simply download the zip file <a href="https://www.dropbox.com/s/41m88bh3fcr5uz9/GNPS_Vendor_Conversion.zip?dl=1">here</a></li>
+<li>Unzip contents onto a folder on your computer (e.g. Desktop)</li>
+<li>Install windows libraries in "pwizLibraries-and-Installation" - Run appropriate program for 32-bit (32-Bit_Double-Click_To_Install.bat) or 64-bit system (64-Bit_Double-Click_To_Install.bat). To find out which type of OS you have please check <a href="https://support.microsoft.com/en-us/help/15056/windows-7-32-64-bit-faq">here</a></li>
+<li>Put vendor formats in "Input_Files" not embedded in other folders</li>
+<li>Double click on Double-Click_To-Convert.bit - Download zip includes demo files for major vendor formats as a test.</li>
+<li>Wait patiently</li>
+<li>Check all files converted in Output_Folder</li>
+<li>If there are errors, please check log.txt or read on how to convert files in a more traditional manner.</li>
+</ol>
+<h2 id="data-conversion-traditional">Data Conversion (Traditional)</h2>
+<p>For files to be operated on in the GNPS workflows, they must be in the correct format.  Only the following formats are acceptable: .mzXML, .mzML, and .mgf.</p>
+<p>The .mzXML or .mzML format is strongly preferred and will be discussed in this tutorial for data conversion.</p>
+<table>
+<thead>
+<tr>
+<th>Vendor</th>
+<th>Instrument Software</th>
+<th>File Format</th>
+<th>Recommended Converter</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AB Sciex</td>
+<td>Analyst</td>
+<td>.wiff</td>
+<td>MSConvert</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Agilent</td>
+<td>MassHunter</td>
+<td>.d</td>
+<td>MSConvert</td>
+<td>verified (with issues with scan number export)</td>
+</tr>
+<tr>
+<td>Bruker</td>
+<td>DataAnalysis/Compass</td>
+<td>.d</td>
+<td>CompassXport</td>
+<td>This conversion is through the DataAnalysis software and is detailed <a href="https://bix-lab.ucsd.edu/display/Public/Data+Conversion+to+GNPS+Compatible+Formats+-+.mzXML+and+.mzML#DataConversiontoGNPSCompatibleFormats-.mzXMLand.mzML-ConversionofBrukerData">here</a></td>
+</tr>
+<tr>
+<td>ThermoFisher</td>
+<td>Xcalibur</td>
+<td>.raw/.RAW</td>
+<td>MSConvert</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Bruker</td>
+<td>MassLynx</td>
+<td>.raw</td>
+<td>MSConvert</td>
+<td>not verified</td>
+</tr>
+</tbody>
+</table>
+<p>For problems with MSConvert, please contact the ProteoWizard <a href="http://proteowizard.sourceforge.net/contact.shtml">developers</a>.</p>
+<p>If you are a vendor and think there are better methods to convert your files to work with GNPS, let us know by <a href="../contact/">contacting us</a>.</p>
+<h3 id="conversion-with-msconvert">Conversion with MSConvert</h3>
+<p>Download and install ProteoWizard from <a href="http://proteowizard.sourceforge.net/downloads.shtml">here</a>.</p>
+<p>Important: make sure to choose the version Windows (includes vendor reader support). You must also have .NET <a href="http://www.microsoft.com/en-us/download/details.aspx?id=22">Framework 3.5 SP1</a> and <a href="http://www.microsoft.com/en-us/download/details.aspx?id=17851">4.0</a> installed.</p>
+<p>After installation, from the Start Menu, click the ProteoWizard folder and open MSConvert.</p>
+<p>Click Browse and select file(s) for conversion. Then Click Add to add them to the MSConvert workflow.</p>
+<p>Choose an Output Directory</p>
+<p>Under Options, choose mzXML for output format, 32-bit for binary encoding precision and uncheck Use zlib compression. Note that mzML files are also supported.</p>
+<p>Under filters, choose Peak Picking with Vendor checked, in order to centroid the data. Indicate MS-Levels 1-2. Click Add to add the filter.</p>
+<p>Click Start.  Check your folder for the new .mzXML files. Verify that these files open properly in Insilicos or TOPP View (OpenMS) http://www.openms.de/</p>
+<p>TODO: Add images</p>
+<h3 id="advanced-online-conversion-with-proteowizard-msconvert">Advanced Online Conversion with Proteowizard (MSConvert)</h3>
+<p>It is possible to convert spectrum files online at the sister site - MassIVE. This site is able to handle thermo RAW and Sciex Wiff files. Please check it out <a href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/">here</a>.</p>
                 
                   
                 
@@ -843,13 +940,13 @@
           </a>
         
         
-          <a href="../fileupload/" title="ProteoSAFe File Upload" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../fileupload/" title="GNPS File Upload" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                ProteoSAFe File Upload
+                GNPS File Upload
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
