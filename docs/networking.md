@@ -1,4 +1,4 @@
-## Molecular Networking
+## Molecular Networking Overview
 
 Molecular networks are visual displays of the chemical space present in tandem mass spectrometry (MS/MS) experiments. This visualization approach can detect sets of spectra from related molecules (molecular networks), even when the spectra themselves are not matched to any known compounds.
 
@@ -6,24 +6,25 @@ The visualization of molecular networks in GNPS represents each spectrum as a no
 
 For more information about Molecular Networking check out the [GNPS publication](https://www.nature.com/articles/nbt.3597) from 2016.
 
-### Molecular Networking Workflow Selection
+## Data Input Preparation
 
-From the main [GNPS page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), click the ["Data Analysis"](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D) link.
+The follow data is can be put into molecular networking.
 
-![analysis](img/networking/data_analysis.png)
+1. Mass Spectrometry data files (required)
+2. Metadata/Group Mapping (optional)
+3. \`ili 3D mapping files
 
-This will bring you to the workflow input to start networking.
+### Mass Spectrometry data files
 
+Molecular networking supports mzXML, mzML, and mgf file formats. To convert your file to the appropriate formats, check out our [documentation](fileconversion.md).
 
-See [Legacy Documentation](https://bix-lab.ucsd.edu/display/Public/Molecular+Networking+Documentation)
-
-## Metadata
+### Metadata
 
 The metadata file describes the samples properties and allows more flexibility for data analysis and visualization. It is an alternative way to assign groups when selecting data input files within the workflow of GNPS.
 
 The current version of molecular networking allows to use the metadata table as an input. Although it is possible to use the legacy group mapping and attribute mapping file, we strongly advise to prepare metadata table instead.
 
-### Format
+#### Format
 
 The metadata table is a text file (Tab separated) that users must create these file themselves using a text editor (e.g. Microsoft Excel, Notepad++ for Windows, gedit for Linux, TextWrangler for Mac OS). Using Metadata table can greatly ease the visualization and analysis of data within Cytoscape. We strongly encourage you to prepare those in advance and to share it publicly with your MassIVE data.
 
@@ -39,7 +40,7 @@ Please ensure that the file is saved as a tab separated text file. Excel (xlsx),
 
 Pardon our dust as we are migrating this documentation, if we missed anything, please check out our [Legacy Documentation](https://bix-lab.ucsd.edu/display/Public/Metadata+table+in+GNPS).
 
-### Additions for \`ili
+### \`ili 3D Mapping Files
 
 The metadata can also be used to specify spatial coordinates for direct visualization of the data in ['ili toolbox](https://ili.embl.de/). Note that an .STL binary file must selected as an input in the workflow.
 
@@ -52,27 +53,122 @@ The following headers are required:
 
 ![ili](img/networking/ili-table.png)
 
+Additionally, a 3D STL file will need to be provided to visualize all the molecule intensities onto. It creates really cool plots like this:
 
-## Legacy Group and Attribute Mapping Format
+![ili_example](img/networking/ili_example.png)
+
+### Legacy Group and Attribute Mapping Format
 
 This format has been replaced by the above Metadata format. While it is still supported it is not recommended. Please see the details [here](https://bix-lab.ucsd.edu/display/Public/Metadata+table+in+GNPS).
 
-## Parameter Walkthrough
+## Running Molecular Networking
 
-* Parent Mass Tolerance
-* Fragment Tolerance
-* etc.
+### Molecular Networking Workflow Selection
 
-TODO: Add this
+From the main [GNPS page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), click the ["Data Analysis"](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D) link.
+
+![analysis](img/networking/data_analysis.png)
+
+This will bring you to the workflow input to start networking.
+
+![networking_input_form](img/networking/networking_input_form.png)
+
+Provide a detailed title for your molecular network. This title will be helpful when you retrieve your data after the workflow is completed.
+
+![set title](img/networking_title.gif)
+
+### Selecting Files to Analyze
+
+Select files for analysis by first clicking "Select Input Files".
+
+![set title](img/networking/file_selection.png)
+
+This bring a popup window. We can select our own files to analyze.
+
+![set title](img/networking/file_selection.gif)
+
+Alternatively, we can import an existing public dataset if we know the dataset accession ([Browse Datasets](datasets.md)). From the Select Input Files popup, you will be a shares files tab. There you will find a box called Import Data Share. In this box you may enter an accession of a MassIVE dataset. Upon clicking import the dataset will appear in your workspace to select input files to analyze from.
+
+![set title](img/networking/dataset_import.gif)
+
+![set title](img/networking/dataset_selection.gif)
+
+### Organizing Selected Files into Groups
+
+By default, files can be categorized into separate groups (G1, G2, etc.). For example, case and control or two different microbes can be separate groups. Using the basic options, only six groups can be created. Individual files or entire folders can be selected.
+
+Click Finish Selection which will close the pop-up window.
+
+
+
+<!--See [Legacy Documentation](https://bix-lab.ucsd.edu/display/Public/Molecular+Networking+Documentation)-->
+
+### Parameter Walkthrough
+
+#### Basic Options
+
+| Parameter - Default        | Description          | Default |
+| ------------- |-------------| -----|
+| Precursor ion mass tolerance (PIMT) | Parameter used for MS-Cluster and spectral library search. Specify the precursor ions mass tolerance, in Daltons. This value influences the aforementioned clustering of nearly-identical MS/MS spectra via MS-Cluster. Note that the value of this parameters should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generated the MS/MS data. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 2.0 Da for low-resolution instruments (ion traps, QqQ).| 2.0 |
+| Fragment Ion Mass Tolerance (FIMT)	      | Parameters used for MS-Cluster, molecular networking, and MS/MS spectral library searches. For every group of MS/MS spectra being considered for clustering (consensus spectrum creation), this value specifies how much fragment ions can be shifted from their expected m/z values. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ). | 0.5 |
+
+#### Advanced Network Options
+
+![set title](img/networking/advanced_networking_options.png)
+
+| Parameter        | Description          | Default | Notes |
+| ------------- |-------------| -----| -----|
+| Min Pairs Cos | Minimum cosine score that must occur between a pair of consensus MS/MS spectra in order for an edge to be formed in the molecular network.  | 0.7 | Lower value will increase the size of the clusters by inducing the clustering of less related MS/MS spectra, higher value will limit do the opposite. |
+| Minimum Matched Fragment Ion (Min Matched Peaks) | Parameters used for molecular networking. Is the minimum number of common fragment ions that are shared by two separate consensus MS/MS spectra in order to be connected by an edge in the molecular network | 6 | A low value will permit linkages between spectra of molecules with few similar fragment ions, but it will result in many more less-related spectra being connected to the network. An higher value will do the opposite. Default value is 6, but note that this parameters should be adjusted depending on the experimental conditions for mass spectra acquisition (such as mode of ionisation, fragmentation conditions, and the mobile phase,  ...), and the collision-induced fragmentation behavior of the molecules of interest within the samples. High molecular weight (MW) compounds, and compounds with more hetero-atoms will generally tend to produce more fragment ions. However, this rule cannot be systematized. For example, some lipids with high MW generate only few fragment ions. |
+| Node TopK	| Maximum number of neighbor nodes for one single node  | 10 | The edge between two nodes are kept only if both nodes are within each other's ‘TopK’ most similar nodes.  For example, if this value is set at 20, then a single node may be connected to up to 20 other nodes.  Keeping this value low makes very large networks (many nodes) much easier to visualize. |
+|Minimum Cluster Size  | Minimum number of MS/MS spectra in a consensus MS/MS spectra to be considered for molecular networking | 2 | Requires MS-Cluster to be on. This parameter should be tuned based on the dataset size. See presets below |
+| Run MSCluster | Cluster MS/MS spectra before networking | Yes | MSCluster will analyze every MS/MS spectra resulting from ions that fall within the defined precursor ion mass tolerance, and will merge the nearly-identical MS/MS spectra (above the cosine score) into a single consensus MS/MS spectrum. Each consensus MS/MS spectrum usually consist of multiple MS/MS spectra from across multiple LC-MS runs (or data files) |
+| Maximum Connected Component Size | Maximum size of nodes allowed in a single connected network  | 100 | Maximum size of nodes allowed in a single connected network. Nodes within a single connected molecular network will be separated by increasing cosine threshold for that specific connected molecular network. Default value is 100. Use 0 to allow an unlimited number of nodes in a single network. Note that with large datasets, or when a great number of related molecules are in the dataset, this value should be higher (or turn to 0) to retain as much information as possible. Downstream, these larger networks can be visualized using Cytoscape layout algorithms that can increase the intra-network clustering, allowing to visualize spectral groups in the network despite the number of nodes in the network. |
+| Metadata File | Text input to describe experimental setup | | Replaces both Group mapping and Attribute Mapping |
+| Group Mapping | Input text file organizing input files into groups | | Input text file organizing input files into groups. used as a more flexible alternative to assigning groups during data input selection.  |
+| Attribute Mapping | Attribute mapping eases visualization of different groups within cytoscape  | | Input text file organizing groups into attributes |
+
+#### Advanced Library Search Options
+
+![set title](img/networking/advanced_library_search_options.png)
+
+| Parameter        | Description          | Default |
+| ------------- |-------------| -----|
+|Library Search Min Matched Peaks | Minimum number of common fragment ions that MS/MS spectra should contain in order to be considered for spectral library annotation. Default value is 6, but note that this parameters should be tuned depending of the molecule of interest, and the experimental conditions (such as the ionisation mode, and the fragmentation conditions, ...). For example, collision-induced fragmentation of some lipids produce only few fragment ions. A lower value will allow clustering of MS/MS spectra containing less  fragment ions, however it will also induce clustering of  MS/MS spectra from different molecular-type to be connected in one network. An higher value will do the opposite|6|
+|Score Threshold |Minimum cosine score that MS/MS spectra should get in spectral matching with MS/MS spectral libraries in order to be considered an annotation.|0.7|
+|Search Analogs|Will search data for analogs to library spectra|Don't Search|
+|Maximum Analog Search Mass Difference|Maximum mass shift between library and putative analog found| 100 (Da)|
+
+#### Advanced Filtering Options
+
+![set title](img/networking/advanced_filtering_options.png)
+
+| Parameter        | Description          | Default | Notes|
+| ------------- |-------------| -----| -----|
+| Filter stdDev Intensity | Deprecated | 0 | Not recommended to change |
+| Minimum Fragment Ion Intensity | All fragment ions in the MS/MS spectrum below this raw intensity will be deleted.  By default, no filter. | 0 | Reduce to 0 if your data's raw intensities are very low. |
+| Filter Precursor Ion Window | All peaks in a +/- 17 Da around precursor ion mass are deleted. By default, yes filter. This removes the residual precursor ion, which is frequently observed in MS/MS spectra acquired on qTOFs. | Filter | |
+| Filter library | Apply peak filters to library | Filter | |
+|Filter peaks in 50Da Window | Filter out peaks that are not top 6 most intense peaks in a +/- 50Da window | Filter | Turn off if your data is very small molecules as it might filter out a lot peaks in the lower mass ranges that might be signal. |
 
 ### Parameter Presets
 
-1. Small datasets
-2. Medium Datasets
-3. Large Datasets
+We have several parameter presets that seem to work well depending on the dataset size.
+
+1. Small datasets - up to 5 LC/MS files
+2. Medium Datasets - 5 to 400 LC/MS files
+3. Large Datasets - 400+ LC/MS files
 4. Big Data(sets) - Lets talk!
 
+## Status Page
+
+Upon submission of the workflow, you will be brought to the status page. This will show you the progress of your molecular networking job.
+
 ## Online Exploration of Molecular Networks
+
+After completing a Molecular Networking workflow utilizing GNPS, analysis can be done within the web interface. The GNPS web interface provides a quick and easy way to perform initial analysis of your data particularly if you want to view the MS2 spectra of the nodes/clusters/networks generated by the Molecular Networking workflow.
+
+### Default Networking Results Views
 
 These are the primary views to explore the molecular networks:
 

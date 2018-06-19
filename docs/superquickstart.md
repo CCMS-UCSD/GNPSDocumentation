@@ -1,6 +1,6 @@
-## Overview
+# Overview
 
-This is a superquick start guide that will enable you to analyze a few dozen samples without having to create an account or install any software besides your web browser and conversion software.
+This is a superquick start guide that will enable you to analyze a few dozen samples with molecular networking without having to create an account or install any software besides your web browser and conversion software.
 
 The limitations to this method is that the files uploaded will not reside in your own account (though no one else can see them) and will eventually disappear from GNPS.
 
@@ -16,12 +16,12 @@ Please navigate to the [super quickstart page](http://mingwangbeta.ucsd.edu:5050
 
 ## Analyze Files
 
-Once files have been uploaded into the appropriate cohort, click the "Analyze Uploaded Files with GNPS Molecular Networking" button.
+Once files have been uploaded into the appropriate cohort, enter your email and click the "Analyze Uploaded Files with GNPS Molecular Networking" button.
 
 ![button](img/superquickstart_button.png)
 
-This will bring you to a GNPS workflow status page. Save this page url as this is your only way to retrieve this job.
+This will bring you to a GNPS workflow status page. If you entered an email, you will receive an email once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this is the only way for you to find analysis again. 
 
 ## Results
 
-To understand the results, please refer to the analysis section of the standard quickstart guide - [link](quickstart.md#view-analysis-results). 
+To understand the results, please refer to the analysis section of the standard [quickstart guide](quickstart.md#view-analysis-results).

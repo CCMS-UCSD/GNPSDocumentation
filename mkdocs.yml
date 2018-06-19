@@ -14,9 +14,9 @@ pages:
         - Methods of Identification: identification.md
         - Method of Quantification: quantification.md
         - Theory of Molecular Networking: networkingtheory.md
-    - Data Preparation:
+    - Data Preparation/Upload:
         - Mass Spectrometry File Conversion: fileconversion.md
-        - ProteoSAFe File Upload: fileupload.md
+        - GNPS File Upload: fileupload.md
     - Recommended Data Analysis:
         - Molecular Networking: networking.md
         - Spectral Library Search: librarysearch.md
