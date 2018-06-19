@@ -174,15 +174,15 @@ After completing a Molecular Networking workflow utilizing GNPS, analysis can be
 
 | View        | Description          |
 | ------------- |-------------|
-| View All Library Hits | All spectral library matches between consensus MS/MS spectra and the selected libraries |
+| [View All Library Hits](networkingviews.md#view-all-library-hits) | All spectral library matches between consensus MS/MS spectra and the selected libraries |
 | View Unique Library Compounds | All unique library spectrum matches |
-| View All Clusters With IDs | All consensus MS/MS spectra created by MSCluster that were considered for library search and molecular networking. This does not include consensus MS/MS spectra that fell below the minimum cluster size threshold |
+| [View All Clusters With IDs](networkingviews.md#view-all-clusters-with-ids) | All consensus MS/MS spectra created by MSCluster that were considered for library search and molecular networking. This does not include consensus MS/MS spectra that fell below the minimum cluster size threshold |
 
 **Network Visualizations**
 
 | View        | Description          |
 | ------------- |-------------|
-| View Spectral Families (In Browser Network Visualizer) | List of all Spectral Families (i.e. connected components in the network) as well as view the network visualized in the browser |
+| [View Spectral Families (In Browser Network Visualizer)](networkingviews.md#view-spectral-families) | List of all Spectral Families (i.e. connected components in the network) as well as view the network visualized in the browser |
 | Network Summarizing Graphs | Brief statistics about the network such as number of spectra, number of nodes, number of spectral families, identification rates, etc. (legacy output) |
 
 **Methods and Citation for Manuscripts**
@@ -212,7 +212,7 @@ After completing a Molecular Networking workflow utilizing GNPS, analysis can be
 
 | View        | Description          |
 | ------------- |-------------|
-| View Emperor PCoA Plot in GNPS | In browser visualization of all analyzed samples with PCoA |
+| [View Emperor PCoA Plot in GNPS](networkingviews.md#view-principle-coordinate-analysis-pcoa-plots) | In browser visualization of all analyzed samples with PCoA |
 | View ili in GNPS | Visualization of 3D ili mapping in GNPS |
 
 **Advanced Views - Experimental Views**
