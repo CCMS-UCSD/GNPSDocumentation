@@ -124,6 +124,12 @@
     </url>
         
     <url>
+     <loc>/networkingviews/</loc>
+     <lastmod>2018-06-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/librarysearch/</loc>
      <lastmod>2018-06-19</lastmod>
      <changefreq>daily</changefreq>

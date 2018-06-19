@@ -427,6 +427,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../networkingviews/" title="Molecular Networking Views" class="md-nav__link">
+      Molecular Networking Views
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -480,8 +492,49 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#parameters-walkthrough" title="Parameters Walkthrough" class="md-nav__link">
+    Parameters Walkthrough
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-options" title="Search Options" class="md-nav__link">
+    Search Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-search-options" title="Advanced Search Options" class="md-nav__link">
+    Advanced Search Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-filtering-options" title="Advanced Filtering Options" class="md-nav__link">
+    Advanced Filtering Options
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploration-of-results" title="Exploration of Results" class="md-nav__link">
+    Exploration of Results
+  </a>
   
 </li>
       
@@ -788,8 +841,49 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#parameters-walkthrough" title="Parameters Walkthrough" class="md-nav__link">
+    Parameters Walkthrough
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-options" title="Search Options" class="md-nav__link">
+    Search Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-search-options" title="Advanced Search Options" class="md-nav__link">
+    Advanced Search Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-filtering-options" title="Advanced Filtering Options" class="md-nav__link">
+    Advanced Filtering Options
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploration-of-results" title="Exploration of Results" class="md-nav__link">
+    Exploration of Results
+  </a>
   
 </li>
       
@@ -820,9 +914,142 @@
 <p><img alt="analysis" src="../img/networking/data_analysis.png" /></p>
 <p>This will bring you to the workflow input to start library searching your data.</p>
 <h3 id="selecting-input-files">Selecting Input Files</h3>
-<p>Click any of the "Select Input Files" buttons.</p>
+<p>Please refer to the file selection <a href="../networking/#selecting-files-to-analyze">documentation</a> from networking.</p>
 <h3 id="selecting-spectral-libraries-to-search">Selecting Spectral Libraries to Search</h3>
 <p>By default all the public spectral libraries are selected under the folder "speclibs". This includes many different spectral libraries. You can read about and browse these libraries on <a href="https://gnps.ucsd.edu/ProteoSAFe/libraries.jsp">GNPS</a>.</p>
+<p>NOTE: Do not change the selection of libraries unless you are an advanced user. Proteomics Spectral libraries will not work with GNPS and cause problems.</p>
+<h3 id="parameters-walkthrough">Parameters Walkthrough</h3>
+<h4 id="search-options">Search Options</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parent Mass Tolerance</td>
+<td>Parent mass peak tolerance</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td>Ion Tolerance</td>
+<td>MS2 peak tolerance</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>Score Threshold</td>
+<td>Cosine score threshold to make a match</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>Min Matched Peaks</td>
+<td>Minimum matched peaks to make a match</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<h4 id="advanced-search-options">Advanced Search Options</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Library Class</td>
+<td>Minimum Library Class to Consider in Search</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Top Hits Per Spectrum</td>
+<td>Number of results to return per query spectrum</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Search Analogs</td>
+<td>Will search data for analogs to library spectra</td>
+<td>Don't Search</td>
+</tr>
+<tr>
+<td>Maximum Analog Search Mass Difference</td>
+<td>Maximum mass shift between library and putative analog found</td>
+<td>100 (Da)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="advanced-filtering-options">Advanced Filtering Options</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Filter stdDev Intensity</td>
+<td>Deprecated</td>
+<td>0</td>
+<td>Not recommended to change</td>
+</tr>
+<tr>
+<td>Minimum Fragment Ion Intensity</td>
+<td>All fragment ions in the MS/MS spectrum below this raw intensity will be deleted.  By default, no filter.</td>
+<td>0</td>
+<td>Reduce to 0 if your data's raw intensities are very low.</td>
+</tr>
+<tr>
+<td>Filter Precursor Ion Window</td>
+<td>All peaks in a +/- 17 Da around precursor ion mass are deleted. By default, yes filter. This removes the residual precursor ion, which is frequently observed in MS/MS spectra acquired on qTOFs.</td>
+<td>Filter</td>
+<td></td>
+</tr>
+<tr>
+<td>Filter library</td>
+<td>Apply peak filters to library</td>
+<td>Filter</td>
+<td></td>
+</tr>
+<tr>
+<td>Filter peaks in 50Da Window</td>
+<td>Filter out peaks that are not top 6 most intense peaks in a +/- 50Da window</td>
+<td>Filter</td>
+<td>Turn off if your data is very small molecules as it might filter out a lot peaks in the lower mass ranges that might be signal.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exploration-of-results">Exploration of Results</h2>
+<p>To access your data, either click the link in the email or click the DONE link under Status on the jobs menu page.</p>
+<table>
+<thead>
+<tr>
+<th>View</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>View All Spectra Hits</td>
+<td>View all library matches</td>
+</tr>
+<tr>
+<td>View Top Hits</td>
+<td>View only top hit per query spectrum</td>
+</tr>
+<tr>
+<td>View All Compounds</td>
+<td>Unique set of compounds in matches</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
@@ -843,7 +1070,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../networking/" title="Molecular Networking" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../networkingviews/" title="Molecular Networking Views" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -852,7 +1079,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Molecular Networking
+                Molecular Networking Views
               </span>
             </div>
           </a>
