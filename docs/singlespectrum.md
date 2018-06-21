@@ -1,6 +1,6 @@
 ## Overview
 
-Query a single MS/MS spectrum across all public GNPS datasets. The mass spectrometry equivalent of NCBI BLAST helps to put the query spectrum in context of where else it occurs as well as search a single MS/MS spectrum against all public spectral libraries.
+Query a single MS/MS spectrum across all public GNPS datasets. The mass spectrometry equivalent of NCBI BLAST helps to put the query spectrum in context of where else it occurs (including metadata) as well as search a single MS/MS spectrum against all public spectral libraries.
 
 ## Workflow Selection
 
@@ -22,7 +22,9 @@ In analyzing your molecular networks, you can click the "Search Spec" button on 
 
 The query parameters are similar library search, however, users are required to enter the precursor m/z and peaks.
 
-The peaks input requires a peak per line with mass followed my intensity, separated by a space or a tab.
+The peaks input requires a peak per line with mass followed my intensity, separated by a space or a tab. See an [demonstration](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?task=fc961b77a34942408a832fd94da7dbd3) input spectrum.
+
+![img](img/singlespectrum/singlespectrum_input.png)
 
 ### Search Options
 
@@ -64,7 +66,7 @@ The quality of the match can be inspected by clicking the "plotting" icon at the
 
 ![img](img/singlespectrum/datasetfilematches.png)
 
-This view provides the full file path for all the files withing each dataset along with the associated metadata for each file.
+This view provides the full file path for all the files from each dataset along with the associated metadata for each file.
 
 ## Citation
 
