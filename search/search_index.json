@@ -572,12 +572,12 @@
         }, 
         {
             "location": "/singlespectrum/", 
-            "text": "Overview\n\n\nQuery a single MS/MS spectrum across all public GNPS datasets. The mass spectrometry equivalent of NCBI BLAST helps to put the query spectrum in context of where else it occurs as well as search a single MS/MS spectrum against all public spectral libraries.\n\n\nWorkflow Selection\n\n\nTo search a single spectrum to see where it occurs in all public GNPS datasets, there are two ways to populate the search.\n\n\nManual Workflow Entering\n\n\nFrom the main \nGNPS page\n, click the \n\"Leverage GNPS Libraries and Datasets\"\n link.\n\n\n\n\nFrom Molecular Networking\n\n\nIn analyzing your molecular networks, you can click the \"Search Spec\" button on the \nView ALl Clusters With IDs\n link to pre-populate parent mass and peaks.\n\n\n\n\nParameters\n\n\nThe query parameters are similar library search, however, users are required to enter the precursor m/z and peaks.\n\n\nThe peaks input requires a peak per line with mass followed my intensity, separated by a space or a tab.\n\n\nSearch Options\n\n\n\n\n\n\n\n\nParameter\n\n\nDescription\n\n\nDefault\n\n\n\n\n\n\n\n\n\n\nParent Mass Tolerance\n\n\nParent mass peak tolerance\n\n\n2.0\n\n\n\n\n\n\nIon Tolerance\n\n\nMS2 peak tolerance\n\n\n0.5\n\n\n\n\n\n\nScore Threshold\n\n\nCosine score threshold to make a match\n\n\n0.5\n\n\n\n\n\n\nMin Matched Peaks\n\n\nMinimum matched peaks to make a match\n\n\n6\n\n\n\n\n\n\n\n\nAdvanced Search Options\n\n\n\n\n\n\n\n\nParameter\n\n\nDescription\n\n\nDefault\n\n\n\n\n\n\n\n\n\n\nLibrary Class\n\n\nMinimum Library Class to Consider in Search\n\n\nBronze\n\n\n\n\n\n\nTop Hits Per Spectrum\n\n\nNumber of results to return per query spectrum\n\n\n1\n\n\n\n\n\n\nSearch Analogs\n\n\nWill search data for analogs to library spectra\n\n\nDon't Search\n\n\n\n\n\n\nMaximum Analog Search Mass Difference\n\n\nMaximum mass shift between library and putative analog found\n\n\n100 (Da)\n\n\n\n\n\n\n\n\nAdvanced Filtering Options\n\n\n\n\n\n\n\n\nParameter\n\n\nDescription\n\n\nDefault\n\n\nNotes\n\n\n\n\n\n\n\n\n\n\nFilter stdDev Intensity\n\n\nDeprecated\n\n\n0\n\n\nNot recommended to change\n\n\n\n\n\n\nMinimum Fragment Ion Intensity\n\n\nAll fragment ions in the MS/MS spectrum below this raw intensity will be deleted.  By default, no filter.\n\n\n0\n\n\nReduce to 0 if your data's raw intensities are very low.\n\n\n\n\n\n\nFilter Precursor Ion Window\n\n\nAll peaks in a +/- 17 Da around precursor ion mass are deleted. By default, yes filter. This removes the residual precursor ion, which is frequently observed in MS/MS spectra acquired on qTOFs.\n\n\nFilter\n\n\n\n\n\n\n\n\nFilter library\n\n\nApply peak filters to library\n\n\nFilter\n\n\n\n\n\n\n\n\nFilter peaks in 50Da Window\n\n\nFilter out peaks that are not top 6 most intense peaks in a +/- 50Da window\n\n\nFilter\n\n\nTurn off if your data is very small molecules as it might filter out a lot peaks in the lower mass ranges that might be signal.\n\n\n\n\n\n\n\n\nResults\n\n\nQuery results are separated into two categories, spectral library search and GNPS dataset queries. Spectral library search results are presented in a similar fashion as the batch library search workflow, please refer to that \ndocumentation\n.\n\n\nThe top scoring match to public GNPS datasets are listed in the \"Dataset Matches\".\n\n\n\n\nThe quality of the match can be inspected by clicking the \"plotting\" icon at the left of each row. Further, we can drill down to the exact files within each dataset that spectrum matched to by clicking \"View File Matches in Dataset\".\n\n\n\n\nThis view provides the full file path for all the files withing each dataset along with the associated metadata for each file.\n\n\nCitation\n\n\nIn preparation. For the time being, please cite the GNPS publication.", 
+            "text": "Overview\n\n\nQuery a single MS/MS spectrum across all public GNPS datasets. The mass spectrometry equivalent of NCBI BLAST helps to put the query spectrum in context of where else it occurs (including metadata) as well as search a single MS/MS spectrum against all public spectral libraries.\n\n\nWorkflow Selection\n\n\nTo search a single spectrum to see where it occurs in all public GNPS datasets, there are two ways to populate the search.\n\n\nManual Workflow Entering\n\n\nFrom the main \nGNPS page\n, click the \n\"Leverage GNPS Libraries and Datasets\"\n link.\n\n\n\n\nFrom Molecular Networking\n\n\nIn analyzing your molecular networks, you can click the \"Search Spec\" button on the \nView ALl Clusters With IDs\n link to pre-populate parent mass and peaks.\n\n\n\n\nParameters\n\n\nThe query parameters are similar library search, however, users are required to enter the precursor m/z and peaks.\n\n\nThe peaks input requires a peak per line with mass followed my intensity, separated by a space or a tab. See an \ndemonstration\n input spectrum.\n\n\n\n\nSearch Options\n\n\n\n\n\n\n\n\nParameter\n\n\nDescription\n\n\nDefault\n\n\n\n\n\n\n\n\n\n\nParent Mass Tolerance\n\n\nParent mass peak tolerance\n\n\n2.0\n\n\n\n\n\n\nIon Tolerance\n\n\nMS2 peak tolerance\n\n\n0.5\n\n\n\n\n\n\nScore Threshold\n\n\nCosine score threshold to make a match\n\n\n0.5\n\n\n\n\n\n\nMin Matched Peaks\n\n\nMinimum matched peaks to make a match\n\n\n6\n\n\n\n\n\n\n\n\nAdvanced Search Options\n\n\n\n\n\n\n\n\nParameter\n\n\nDescription\n\n\nDefault\n\n\n\n\n\n\n\n\n\n\nLibrary Class\n\n\nMinimum Library Class to Consider in Search\n\n\nBronze\n\n\n\n\n\n\nTop Hits Per Spectrum\n\n\nNumber of results to return per query spectrum\n\n\n1\n\n\n\n\n\n\nSearch Analogs\n\n\nWill search data for analogs to library spectra\n\n\nDon't Search\n\n\n\n\n\n\nMaximum Analog Search Mass Difference\n\n\nMaximum mass shift between library and putative analog found\n\n\n100 (Da)\n\n\n\n\n\n\n\n\nAdvanced Filtering Options\n\n\n\n\n\n\n\n\nParameter\n\n\nDescription\n\n\nDefault\n\n\nNotes\n\n\n\n\n\n\n\n\n\n\nFilter stdDev Intensity\n\n\nDeprecated\n\n\n0\n\n\nNot recommended to change\n\n\n\n\n\n\nMinimum Fragment Ion Intensity\n\n\nAll fragment ions in the MS/MS spectrum below this raw intensity will be deleted.  By default, no filter.\n\n\n0\n\n\nReduce to 0 if your data's raw intensities are very low.\n\n\n\n\n\n\nFilter Precursor Ion Window\n\n\nAll peaks in a +/- 17 Da around precursor ion mass are deleted. By default, yes filter. This removes the residual precursor ion, which is frequently observed in MS/MS spectra acquired on qTOFs.\n\n\nFilter\n\n\n\n\n\n\n\n\nFilter library\n\n\nApply peak filters to library\n\n\nFilter\n\n\n\n\n\n\n\n\nFilter peaks in 50Da Window\n\n\nFilter out peaks that are not top 6 most intense peaks in a +/- 50Da window\n\n\nFilter\n\n\nTurn off if your data is very small molecules as it might filter out a lot peaks in the lower mass ranges that might be signal.\n\n\n\n\n\n\n\n\nResults\n\n\nQuery results are separated into two categories, spectral library search and GNPS dataset queries. Spectral library search results are presented in a similar fashion as the batch library search workflow, please refer to that \ndocumentation\n.\n\n\nThe top scoring match to public GNPS datasets are listed in the \"Dataset Matches\".\n\n\n\n\nThe quality of the match can be inspected by clicking the \"plotting\" icon at the left of each row. Further, we can drill down to the exact files within each dataset that spectrum matched to by clicking \"View File Matches in Dataset\".\n\n\n\n\nThis view provides the full file path for all the files from each dataset along with the associated metadata for each file.\n\n\nCitation\n\n\nIn preparation. For the time being, please cite the GNPS publication.", 
             "title": "Single Spectrum Repository Search"
         }, 
         {
             "location": "/singlespectrum/#overview", 
-            "text": "Query a single MS/MS spectrum across all public GNPS datasets. The mass spectrometry equivalent of NCBI BLAST helps to put the query spectrum in context of where else it occurs as well as search a single MS/MS spectrum against all public spectral libraries.", 
+            "text": "Query a single MS/MS spectrum across all public GNPS datasets. The mass spectrometry equivalent of NCBI BLAST helps to put the query spectrum in context of where else it occurs (including metadata) as well as search a single MS/MS spectrum against all public spectral libraries.", 
             "title": "Overview"
         }, 
         {
@@ -597,7 +597,7 @@
         }, 
         {
             "location": "/singlespectrum/#parameters", 
-            "text": "The query parameters are similar library search, however, users are required to enter the precursor m/z and peaks.  The peaks input requires a peak per line with mass followed my intensity, separated by a space or a tab.", 
+            "text": "The query parameters are similar library search, however, users are required to enter the precursor m/z and peaks.  The peaks input requires a peak per line with mass followed my intensity, separated by a space or a tab. See an  demonstration  input spectrum.", 
             "title": "Parameters"
         }, 
         {
@@ -617,7 +617,7 @@
         }, 
         {
             "location": "/singlespectrum/#results", 
-            "text": "Query results are separated into two categories, spectral library search and GNPS dataset queries. Spectral library search results are presented in a similar fashion as the batch library search workflow, please refer to that  documentation .  The top scoring match to public GNPS datasets are listed in the \"Dataset Matches\".   The quality of the match can be inspected by clicking the \"plotting\" icon at the left of each row. Further, we can drill down to the exact files within each dataset that spectrum matched to by clicking \"View File Matches in Dataset\".   This view provides the full file path for all the files withing each dataset along with the associated metadata for each file.", 
+            "text": "Query results are separated into two categories, spectral library search and GNPS dataset queries. Spectral library search results are presented in a similar fashion as the batch library search workflow, please refer to that  documentation .  The top scoring match to public GNPS datasets are listed in the \"Dataset Matches\".   The quality of the match can be inspected by clicking the \"plotting\" icon at the left of each row. Further, we can drill down to the exact files within each dataset that spectrum matched to by clicking \"View File Matches in Dataset\".   This view provides the full file path for all the files from each dataset along with the associated metadata for each file.", 
             "title": "Results"
         }, 
         {
@@ -627,38 +627,108 @@
         }, 
         {
             "location": "/cytoscape/", 
-            "text": "Cytoscape 3.6 Analysis in (Recommended)\n\n\nSee \ndocumentation\n.\n\n\nCytoscape 2.8 Analysis (Legacy)\n\n\nSee \ndocumentation", 
+            "text": "Network Visualization in Cytoscape\n\n\nWhile we do provide in-browser visualization for networks, these are limited to a single component at a time. Using Cytoscape, we can start visualizing the entire molecular network at once.\n\n\nCytoscape is an open source software platform for visualization and annotation of networks. Cytoscape is available for download from \nhere\n. The instructions below assume that you have installed Cytoscape 3.6.X.\n\n\nCytoscape 3.6 Analysis (Quick)\n\n\nTo quickly get started with your molecular network in Cytoscape, we have an easy export module from GNPS that previews the molecular network and provides a pre-formatted Cytoscape file. This feature is very much experimental, but from the status page, click the \"Direct Cytoscape Preview/Download\"\n\n\n\n\nThis will bring you to a new interface where you will see a preview and a download link.\n\n\n\n\nCytoscape 3.6 Analysis (Recommended)\n\n\nDownloading Cytoscape Import Files\n\n\nThe first step is to download the correct input to import into Cytoscape. From the results page of molecular networking, you will need to download the graphML file for Cytoscape.\n\n\n\n\nUnzip the content of the zip file. The content will look like this:\n\n\n\n\nImporting Network into Cytoscape\n\n\nNow open Cytoscape 3.6.1. From the Toolbar go to File / Import / Network / File (or cmd + L) and then select the .graphml file in the root of the unzipped job folder.\n\n\n\n\nThe network has been opened and will look like this.\n\n\n\n\nCreating a Cytoscape Style\n\n\nIn Cytoscape 3.6.1, create a new Cytoscape style. As shown below, click on \"Create New Style\" and provide a name.\n\n\n\n\nNode Styling\n\n\nNode Label to Spectrum Property\n\n\nWithin the Node menu, you will be able to apply a label to each of your nodes, you may select the Attribute from the drop down menu to use as a label and then select Passthrough Mapping as the Mapping Type. Typically Parent mass or Precursor mass is selected for node labels of networks generated using GNPS.\n\n\n\n\nVisualizing Group Abundances as Pie Charts\n\n\nIf you organized your data into cohorts of samples, we can visualize the relative abundance (as measured by spectral counts which is psuedo-quantitative) with pie charts across these groups.\n\n\nTODO: Make screen shots\n\n\nVisualizing Structures\n\n\nThe Cytoscape plugin ChemViz2 can visualize the chemical structure of GNPS spectral library annotation in the nodes. The ChemViz2 plugin can be be installed in the toolbar Apps /Apps manager / and type \"ChemViz2\" to find and install it.\n\n\nTo visualize chemical structures, select the nodes of interest and do right-click, Apps / Cheminformatics tools / Paint structure on selected nodes.\n\n\n\n\nAlso check out their \nwebsite\n.\n\n\nEdge Styling\n\n\nEdge Thickness based on Spectral Similarity\n\n\nTo aid in the visualization of individual node relatedness within a cluster, the cosine score is used. This value will determine the thickness of the edge between related nodes. The thicker the edge, the higher the cosine score and therefore the more related the two individual nodes are to each other.\n\n\nAgain working within the Style Tab, select the Edge menu. From the Width drop down menu, select Cosine for the Column and Continuous Mapping for the Mapping Type.\n\n\n\n\nDouble click on the Continuous Mapping area of the menu to adjust the thickness of the edge. Click OK to apply the setting changes.\n\n\n\n\nBelow is a zoomed in portion of a network demonstrating the use of Cosine score for edge width determination.\n\n\n\n\nCytoscape 2.8 Analysis (Legacy)\n\n\nSee \nlegacy documentation", 
             "title": "Molecular Networking in Cytoscape"
         }, 
         {
-            "location": "/cytoscape/#cytoscape-36-analysis-in-recommended", 
-            "text": "See  documentation .", 
-            "title": "Cytoscape 3.6 Analysis in (Recommended)"
+            "location": "/cytoscape/#network-visualization-in-cytoscape", 
+            "text": "While we do provide in-browser visualization for networks, these are limited to a single component at a time. Using Cytoscape, we can start visualizing the entire molecular network at once.  Cytoscape is an open source software platform for visualization and annotation of networks. Cytoscape is available for download from  here . The instructions below assume that you have installed Cytoscape 3.6.X.", 
+            "title": "Network Visualization in Cytoscape"
+        }, 
+        {
+            "location": "/cytoscape/#cytoscape-36-analysis-quick", 
+            "text": "To quickly get started with your molecular network in Cytoscape, we have an easy export module from GNPS that previews the molecular network and provides a pre-formatted Cytoscape file. This feature is very much experimental, but from the status page, click the \"Direct Cytoscape Preview/Download\"   This will bring you to a new interface where you will see a preview and a download link.", 
+            "title": "Cytoscape 3.6 Analysis (Quick)"
+        }, 
+        {
+            "location": "/cytoscape/#cytoscape-36-analysis-recommended", 
+            "text": "", 
+            "title": "Cytoscape 3.6 Analysis (Recommended)"
+        }, 
+        {
+            "location": "/cytoscape/#downloading-cytoscape-import-files", 
+            "text": "The first step is to download the correct input to import into Cytoscape. From the results page of molecular networking, you will need to download the graphML file for Cytoscape.   Unzip the content of the zip file. The content will look like this:", 
+            "title": "Downloading Cytoscape Import Files"
+        }, 
+        {
+            "location": "/cytoscape/#importing-network-into-cytoscape", 
+            "text": "Now open Cytoscape 3.6.1. From the Toolbar go to File / Import / Network / File (or cmd + L) and then select the .graphml file in the root of the unzipped job folder.   The network has been opened and will look like this.", 
+            "title": "Importing Network into Cytoscape"
+        }, 
+        {
+            "location": "/cytoscape/#creating-a-cytoscape-style", 
+            "text": "In Cytoscape 3.6.1, create a new Cytoscape style. As shown below, click on \"Create New Style\" and provide a name.", 
+            "title": "Creating a Cytoscape Style"
+        }, 
+        {
+            "location": "/cytoscape/#node-styling", 
+            "text": "", 
+            "title": "Node Styling"
+        }, 
+        {
+            "location": "/cytoscape/#node-label-to-spectrum-property", 
+            "text": "Within the Node menu, you will be able to apply a label to each of your nodes, you may select the Attribute from the drop down menu to use as a label and then select Passthrough Mapping as the Mapping Type. Typically Parent mass or Precursor mass is selected for node labels of networks generated using GNPS.", 
+            "title": "Node Label to Spectrum Property"
+        }, 
+        {
+            "location": "/cytoscape/#visualizing-group-abundances-as-pie-charts", 
+            "text": "If you organized your data into cohorts of samples, we can visualize the relative abundance (as measured by spectral counts which is psuedo-quantitative) with pie charts across these groups.  TODO: Make screen shots", 
+            "title": "Visualizing Group Abundances as Pie Charts"
+        }, 
+        {
+            "location": "/cytoscape/#visualizing-structures", 
+            "text": "The Cytoscape plugin ChemViz2 can visualize the chemical structure of GNPS spectral library annotation in the nodes. The ChemViz2 plugin can be be installed in the toolbar Apps /Apps manager / and type \"ChemViz2\" to find and install it.  To visualize chemical structures, select the nodes of interest and do right-click, Apps / Cheminformatics tools / Paint structure on selected nodes.   Also check out their  website .", 
+            "title": "Visualizing Structures"
+        }, 
+        {
+            "location": "/cytoscape/#edge-styling", 
+            "text": "", 
+            "title": "Edge Styling"
+        }, 
+        {
+            "location": "/cytoscape/#edge-thickness-based-on-spectral-similarity", 
+            "text": "To aid in the visualization of individual node relatedness within a cluster, the cosine score is used. This value will determine the thickness of the edge between related nodes. The thicker the edge, the higher the cosine score and therefore the more related the two individual nodes are to each other.  Again working within the Style Tab, select the Edge menu. From the Width drop down menu, select Cosine for the Column and Continuous Mapping for the Mapping Type.   Double click on the Continuous Mapping area of the menu to adjust the thickness of the edge. Click OK to apply the setting changes.   Below is a zoomed in portion of a network demonstrating the use of Cosine score for edge width determination.", 
+            "title": "Edge Thickness based on Spectral Similarity"
         }, 
         {
             "location": "/cytoscape/#cytoscape-28-analysis-legacy", 
-            "text": "See  documentation", 
+            "text": "See  legacy documentation", 
             "title": "Cytoscape 2.8 Analysis (Legacy)"
         }, 
         {
             "location": "/dereplicator/", 
-            "text": "Dereplicator - Insility Peptidic Natural Products Tool\n\n\nThe Insilico Peptidic Natural Products Dereplicator is a bioinformatic tool that allows the annotation of known peptidic natural products in MS/MS data using in silico fragmentation tree.\n\n\nFor more informations, see the Dereplicator and VarQuest manuscripts:\n\n\nDereplicator: Hosein Mohimani, Alexey Gurevich, Alla Mikheenko, Neha Garg, Louis-Felix Nothias, Akihiro Ninomiya, Kentaro Takada, Pieter C. Dorrestein, Pavel A. Pevzner, Dereplication of Peptidic Natural Products Through Database Search of Mass Spectra, Nature Chemical Biology, 2016, 13, 30--37 (2017)\n\n\nDereplicator with VarQuest: Gurevich, A.; Mikheenko, A.; Shlemov, A.; Korobeynikov, A.; Mohimani, H.; Pevzner, P. A. Increased Diversity of Peptidic Natural Products Revealed by Modification-Tolerant Database Search of Mass Spectra. Nat Microbiol 2018, 3 (3), 319--327.\n\n\nFull Documentation\n.", 
+            "text": "Dereplicator - Insility Peptidic Natural Products Tool\n\n\nThe Insilico Peptidic Natural Products Dereplicator is a bioinformatic tool that allows the annotation of known peptidic natural products in MS/MS data using in silico fragmentation tree.\n\n\nCheck out the full \nlegacy documentation\n.\n\n\nCitation\n\n\nDereplicator: Hosein Mohimani, Alexey Gurevich, Alla Mikheenko, Neha Garg, Louis-Felix Nothias, Akihiro Ninomiya, Kentaro Takada, Pieter C. Dorrestein, Pavel A. Pevzner, Dereplication of Peptidic Natural Products Through Database Search of Mass Spectra, Nature Chemical Biology, 2016, 13, 30--37 (2017)\n\n\nDereplicator with VarQuest: Gurevich, A.; Mikheenko, A.; Shlemov, A.; Korobeynikov, A.; Mohimani, H.; Pevzner, P. A. Increased Diversity of Peptidic Natural Products Revealed by Modification-Tolerant Database Search of Mass Spectra. Nat Microbiol 2018, 3 (3), 319--327.", 
             "title": "Dereplicator"
         }, 
         {
             "location": "/dereplicator/#dereplicator-insility-peptidic-natural-products-tool", 
-            "text": "The Insilico Peptidic Natural Products Dereplicator is a bioinformatic tool that allows the annotation of known peptidic natural products in MS/MS data using in silico fragmentation tree.  For more informations, see the Dereplicator and VarQuest manuscripts:  Dereplicator: Hosein Mohimani, Alexey Gurevich, Alla Mikheenko, Neha Garg, Louis-Felix Nothias, Akihiro Ninomiya, Kentaro Takada, Pieter C. Dorrestein, Pavel A. Pevzner, Dereplication of Peptidic Natural Products Through Database Search of Mass Spectra, Nature Chemical Biology, 2016, 13, 30--37 (2017)  Dereplicator with VarQuest: Gurevich, A.; Mikheenko, A.; Shlemov, A.; Korobeynikov, A.; Mohimani, H.; Pevzner, P. A. Increased Diversity of Peptidic Natural Products Revealed by Modification-Tolerant Database Search of Mass Spectra. Nat Microbiol 2018, 3 (3), 319--327.  Full Documentation .", 
+            "text": "The Insilico Peptidic Natural Products Dereplicator is a bioinformatic tool that allows the annotation of known peptidic natural products in MS/MS data using in silico fragmentation tree.  Check out the full  legacy documentation .", 
             "title": "Dereplicator - Insility Peptidic Natural Products Tool"
         }, 
         {
+            "location": "/dereplicator/#citation", 
+            "text": "Dereplicator: Hosein Mohimani, Alexey Gurevich, Alla Mikheenko, Neha Garg, Louis-Felix Nothias, Akihiro Ninomiya, Kentaro Takada, Pieter C. Dorrestein, Pavel A. Pevzner, Dereplication of Peptidic Natural Products Through Database Search of Mass Spectra, Nature Chemical Biology, 2016, 13, 30--37 (2017)  Dereplicator with VarQuest: Gurevich, A.; Mikheenko, A.; Shlemov, A.; Korobeynikov, A.; Mohimani, H.; Pevzner, P. A. Increased Diversity of Peptidic Natural Products Revealed by Modification-Tolerant Database Search of Mass Spectra. Nat Microbiol 2018, 3 (3), 319--327.", 
+            "title": "Citation"
+        }, 
+        {
             "location": "/nap/", 
-            "text": "", 
+            "text": "Overview\n\n\nNetwork Annotation Propagation (NAP) uses spectral networks to propagate information from spectral library matching, in order to improve in silico fragmentation candidate structure ranking. This workflow is currently in beta development stages so any feedback is welcome to improve analysis and usability. It is available \nhere\n under 'NAP_CCMS' Workflow drop down menu. Check out the full \ndocumentation\n.\n\n\nCitation\n\n\nda Silva, Ricardo R., Mingxun Wang, Louis-F\u00e9lix Nothias, Justin JJ van der Hooft, Andr\u00e9s Mauricio Caraballo-Rodr\u00edguez, Evan Fox, Marcy J. Balunas, Jonathan L. Klassen, Norberto Peporine Lopes, and Pieter C. Dorrestein. \"Propagating annotations of molecular networks using in silico fragmentation.\" PLoS computational biology 14, no. 4 (2018): e1006089.", 
             "title": "Network Annotation Propagation (NAP)"
         }, 
         {
-            "location": "/mzminelocal/", 
+            "location": "/nap/#overview", 
+            "text": "Network Annotation Propagation (NAP) uses spectral networks to propagate information from spectral library matching, in order to improve in silico fragmentation candidate structure ranking. This workflow is currently in beta development stages so any feedback is welcome to improve analysis and usability. It is available  here  under 'NAP_CCMS' Workflow drop down menu. Check out the full  documentation .", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/nap/#citation", 
+            "text": "da Silva, Ricardo R., Mingxun Wang, Louis-F\u00e9lix Nothias, Justin JJ van der Hooft, Andr\u00e9s Mauricio Caraballo-Rodr\u00edguez, Evan Fox, Marcy J. Balunas, Jonathan L. Klassen, Norberto Peporine Lopes, and Pieter C. Dorrestein. \"Propagating annotations of molecular networks using in silico fragmentation.\" PLoS computational biology 14, no. 4 (2018): e1006089.", 
+            "title": "Citation"
+        }, 
+        {
+            "location": "/featurebasedmolecularnetworking/", 
             "text": "", 
-            "title": "MzMine Local - GNPS Networking"
+            "title": "Feature Based Molecular Networking"
         }, 
         {
             "location": "/ms2lda/", 
@@ -667,12 +737,12 @@
         }, 
         {
             "location": "/browselibraries/", 
-            "text": "GNPS Community Spectral Libraries\n\n\nThe GNPS public spectral libraries can be browsed and explored in the browser. The list of all public spectral libraries is listed \nhere\n.\n\n\nGNPS Community Library\n\n\nThere are several spectral libraries available at GNPS. They are either imported from the community (e.g. \nMassbank\n), provided directly to GNPS as a large collection of annotated spectra (e.g. \nPesticide Library\n), or aggregated from single MS/MS additions from the entire community (e.g. \nGNPS-Community\n).\n\n\nClicking on a library brings users to a list of all MS/MS spectra that are in that library. The most up to date annotation is listed.\n\n\nMost Recent Contributions\n\n\nAt the bottom of the list of all spectral library, the most recent contributions of annotation library spectra are listed in reverse chronological order. These generous contributions from members of the community are just the latest amongst the thousands of MS/MS spectra deposited at GNPS.\n\n\nIndividual Spectrum View\n\n\nTODO", 
+            "text": "GNPS Community Spectral Libraries\n\n\nThe GNPS public spectral libraries can be browsed, explored, and downloaded. The list of all public spectral libraries is listed \nhere\n.\n\n\nGNPS Community Library\n\n\nThere are several spectral libraries available at GNPS. They are either imported from the community (e.g. \nMassbank\n), provided directly to GNPS as a large collection of annotated spectra (e.g. \nPesticide Library\n), or aggregated from single MS/MS additions from the entire community (e.g. \nGNPS-Community\n).\n\n\nClicking on a library brings users to a list of all MS/MS spectra that are in that library. The most up to date annotation is listed.\n\n\nMost Recent Contributions\n\n\nAt the bottom of the list of all spectral library, the most recent contributions of annotation library spectra are listed in reverse chronological order. These generous contributions from members of the community are just the latest amongst the thousands of MS/MS spectra deposited at GNPS.\n\n\nLibrary Spectrum List\n\n\nUsers will be presented with a list of all spectra in the library. Each line represents a different entry in the library and displays the most recent annotation for that particular spectrum.\n\n\n\n\nUsers are able to download the update to date version of each particular library by clicking the download icon next to the library header.\n\n\nIndividual Spectrum View\n\n\nUsers will be presented with a spectrum page that includes at the top an interactive spectrum viewer as well as the most recent spectrum information.\n\n\n\n\nUpdating Spectrum Annotation\n\n\nIn the event that annotations are incomplete or incorrect, users have the option to correct/update annotations of the library spectra. On each library spectrum page there is an update button to update the annotation.\n\n\n\n\nSpectrum Annotation History\n\n\nRevision history of the spectrum. Sorted in reverse chronological order, with most recent revisions first. To comment on a specific revision of the annotations, users can click the comment button for each annotation row. To view comments on each annotation, users can click the double down arrow at the left of the row.", 
             "title": "Browsing Reference Spectral Libraries"
         }, 
         {
             "location": "/browselibraries/#gnps-community-spectral-libraries", 
-            "text": "The GNPS public spectral libraries can be browsed and explored in the browser. The list of all public spectral libraries is listed  here .", 
+            "text": "The GNPS public spectral libraries can be browsed, explored, and downloaded. The list of all public spectral libraries is listed  here .", 
             "title": "GNPS Community Spectral Libraries"
         }, 
         {
@@ -686,14 +756,64 @@
             "title": "Most Recent Contributions"
         }, 
         {
+            "location": "/browselibraries/#library-spectrum-list", 
+            "text": "Users will be presented with a list of all spectra in the library. Each line represents a different entry in the library and displays the most recent annotation for that particular spectrum.   Users are able to download the update to date version of each particular library by clicking the download icon next to the library header.", 
+            "title": "Library Spectrum List"
+        }, 
+        {
             "location": "/browselibraries/#individual-spectrum-view", 
-            "text": "TODO", 
+            "text": "Users will be presented with a spectrum page that includes at the top an interactive spectrum viewer as well as the most recent spectrum information.", 
             "title": "Individual Spectrum View"
         }, 
         {
+            "location": "/browselibraries/#updating-spectrum-annotation", 
+            "text": "In the event that annotations are incomplete or incorrect, users have the option to correct/update annotations of the library spectra. On each library spectrum page there is an update button to update the annotation.", 
+            "title": "Updating Spectrum Annotation"
+        }, 
+        {
+            "location": "/browselibraries/#spectrum-annotation-history", 
+            "text": "Revision history of the spectrum. Sorted in reverse chronological order, with most recent revisions first. To comment on a specific revision of the annotations, users can click the comment button for each annotation row. To view comments on each annotation, users can click the double down arrow at the left of the row.", 
+            "title": "Spectrum Annotation History"
+        }, 
+        {
             "location": "/spectrumcuration/", 
-            "text": "", 
+            "text": "Community Curated MS/MS Spectral Libraries\n\n\nGNPS provides a platform for users to contribute their own annotated MS/MS spectra to the spectral libraries. There are several requirements for annotation: 1) the compound must be of known structure and 2) the MS/MS must be of sufficient quality to support the annotation of the compound. By contributing these spectra, users will expand the spectral libraries and allow dereplication of these compounds within other datasets.\n\n\nLibrary Quality Level\n\n\nThe spectral libraries are categorized based upon quality of the data. The level indicates both the quality of the MS/MS spectra as well as the trust worthiness of the annotations. These reflect both quality of the MS/MS spectra as well as the trust worthiness of the annotations.\n\n\n\n\n\n\n\n\nQuality Level\n\n\nDescription\n\n\nQuality Number\n\n\n\n\n\n\n\n\n\n\nGold\n\n\nSynthetic, Complete structural characterization with NMR, crystallography or other standard methods as defined in the publication guidelines for Journal of Natural Products, Privileged users\n\n\n1\n\n\n\n\n\n\nSilver\n\n\nIsolated or lysate/crude, Published data showing presence of molecule in the sample\n\n\n2\n\n\n\n\n\n\nBronze\n\n\nAny other putative, complete or partial annotation\n\n\n3\n\n\n\n\n\n\nChallenge\n\n\nUnknown Identity, open to community to help annotate\n\n\n10\n\n\n\n\n\n\n\n\nBy default, users will have access to Bronze, but approval is required to contribute to silver and gold libraries. To obtain training and access please email \nMingxun Wang\n.\n\n\nAdding Single Spectra\n\n\nInput Formats\n\n\nmzXML, mzML, and mgf file formats are accepted.\n\n\nAdditionally, spectra to be added to the library should be centroided. Profile data is not processed correctly by our algorithms.\n\n\nAdding Spectrum\n\n\nFrom the \nGNPS Splash Page\n, users can click on\n\n\n\n\nto be brought to the Add Single Annotated Spectrum workflow. By default, users will contribute bronze quality reference spectra. Permission is required to contribute higher quality spectra to the gold and silver workflows.\n\n\nSelect an input spectrum file.\n\n\nNOTE: do not change the spectral library that is selected.\n\n\nAnnotation Fields\n\n\nSample Parameters\n\n\n\n\n\n\n\n\nField\n\n\nDescription\n\n\nDefault\n\n\nRequired\n\n\n\n\n\n\n\n\n\n\nIon Source\n\n\nSource of Ions\n\n\nLC-ESI\n\n\nYes\n\n\n\n\n\n\nInstrument\n\n\nMass Analyzer\n\n\nqTof\n\n\nYes\n\n\n\n\n\n\nIon Mode\n\n\nIonization Mode\n\n\nPositive\n\n\nYes\n\n\n\n\n\n\nCompound Source\n\n\nSample source of compound\n\n\nCommercial\n\n\nYes\n\n\n\n\n\n\nPrinciple Investigator\n\n\nPI overseeing compound acquisition and analysis\n\n\nN/A\n\n\nYes\n\n\n\n\n\n\nData Collector\n\n\nIndividual Collecting Data\n\n\nN/A\n\n\nYes\n\n\n\n\n\n\n\n\nAnnotation\n\n\n\n\n\n\n\n\nField\n\n\nDescription\n\n\nDefault\n\n\nRequired\n\n\n\n\n\n\n\n\n\n\nScan\n\n\nSpectrum Scan of Spectrum\n\n\n0\n\n\nYes\n\n\n\n\n\n\nAdduct\n\n\nAdduct of Ion fragmented in MS2\n\n\nM+H\n\n\nYes\n\n\n\n\n\n\nCompound Name\n\n\nCompound Common Name\n\n\nN/A\n\n\nYes\n\n\n\n\n\n\nPrecursor MZ\n\n\nExperimental Precursor MZ for Compound\n\n\n0 (will read from spectrum file if 0)\n\n\nYes\n\n\n\n\n\n\nCharge\n\n\nCharge of Precursor\n\n\n0 (will read from spectrum file if 0)\n\n\nYes\n\n\n\n\n\n\n\n\nAdvanced Annotation\n\n\n\n\n\n\n\n\nField\n\n\nDescription\n\n\nDefault\n\n\nRequired\n\n\n\n\n\n\n\n\n\n\nCAS Number\n\n\nChemical Abstracts Service compound identification number\n\n\nN/A\n\n\nNo\n\n\n\n\n\n\nPubmed ID\n\n\nPubmed ID where compound or data was published\n\n\nN/A\n\n\nNo\n\n\n\n\n\n\nExact Mass\n\n\nCompound Exact Mass\n\n\n0\n\n\nNo\n\n\n\n\n\n\nSmiles\n\n\nSmiles Structure\n\n\nN/A\n\n\nNo\n\n\n\n\n\n\nInchi\n\n\nInchi Structure\n\n\nN/A\n\n\nNo\n\n\n\n\n\n\nInchi Aux\n\n\nInchi Auxiliary Structure\n\n\nN/A\n\n\nNo\n\n\n\n\n\n\n\n\nValidation Spectra Selection\n\n\nTo validate the input file and scan a user has selected, there is a plotting section that will attempt to plot the spectrum selected.\n\n\n\n\nTo plot the spectrum, click \"Plot It!\". Additionally, if users would like to see the annotation with a peptide fragment highlights, users can enter a peptide in the Peptide field, but this will not be stored in the annotation.\n\n\nIf the plotting succeeded and a spectrum appears, then the selection for the spectrum is done correctly.\n\n\n\n\nIf there was an error, check the original file was converted correctly and the scan number is not 0.", 
             "title": "Reference Spectral Library Curation"
+        }, 
+        {
+            "location": "/spectrumcuration/#community-curated-msms-spectral-libraries", 
+            "text": "GNPS provides a platform for users to contribute their own annotated MS/MS spectra to the spectral libraries. There are several requirements for annotation: 1) the compound must be of known structure and 2) the MS/MS must be of sufficient quality to support the annotation of the compound. By contributing these spectra, users will expand the spectral libraries and allow dereplication of these compounds within other datasets.", 
+            "title": "Community Curated MS/MS Spectral Libraries"
+        }, 
+        {
+            "location": "/spectrumcuration/#library-quality-level", 
+            "text": "The spectral libraries are categorized based upon quality of the data. The level indicates both the quality of the MS/MS spectra as well as the trust worthiness of the annotations. These reflect both quality of the MS/MS spectra as well as the trust worthiness of the annotations.     Quality Level  Description  Quality Number      Gold  Synthetic, Complete structural characterization with NMR, crystallography or other standard methods as defined in the publication guidelines for Journal of Natural Products, Privileged users  1    Silver  Isolated or lysate/crude, Published data showing presence of molecule in the sample  2    Bronze  Any other putative, complete or partial annotation  3    Challenge  Unknown Identity, open to community to help annotate  10     By default, users will have access to Bronze, but approval is required to contribute to silver and gold libraries. To obtain training and access please email  Mingxun Wang .", 
+            "title": "Library Quality Level"
+        }, 
+        {
+            "location": "/spectrumcuration/#adding-single-spectra", 
+            "text": "", 
+            "title": "Adding Single Spectra"
+        }, 
+        {
+            "location": "/spectrumcuration/#input-formats", 
+            "text": "mzXML, mzML, and mgf file formats are accepted.  Additionally, spectra to be added to the library should be centroided. Profile data is not processed correctly by our algorithms.", 
+            "title": "Input Formats"
+        }, 
+        {
+            "location": "/spectrumcuration/#adding-spectrum", 
+            "text": "From the  GNPS Splash Page , users can click on   to be brought to the Add Single Annotated Spectrum workflow. By default, users will contribute bronze quality reference spectra. Permission is required to contribute higher quality spectra to the gold and silver workflows.  Select an input spectrum file.  NOTE: do not change the spectral library that is selected.", 
+            "title": "Adding Spectrum"
+        }, 
+        {
+            "location": "/spectrumcuration/#annotation-fields", 
+            "text": "Sample Parameters     Field  Description  Default  Required      Ion Source  Source of Ions  LC-ESI  Yes    Instrument  Mass Analyzer  qTof  Yes    Ion Mode  Ionization Mode  Positive  Yes    Compound Source  Sample source of compound  Commercial  Yes    Principle Investigator  PI overseeing compound acquisition and analysis  N/A  Yes    Data Collector  Individual Collecting Data  N/A  Yes     Annotation     Field  Description  Default  Required      Scan  Spectrum Scan of Spectrum  0  Yes    Adduct  Adduct of Ion fragmented in MS2  M+H  Yes    Compound Name  Compound Common Name  N/A  Yes    Precursor MZ  Experimental Precursor MZ for Compound  0 (will read from spectrum file if 0)  Yes    Charge  Charge of Precursor  0 (will read from spectrum file if 0)  Yes     Advanced Annotation     Field  Description  Default  Required      CAS Number  Chemical Abstracts Service compound identification number  N/A  No    Pubmed ID  Pubmed ID where compound or data was published  N/A  No    Exact Mass  Compound Exact Mass  0  No    Smiles  Smiles Structure  N/A  No    Inchi  Inchi Structure  N/A  No    Inchi Aux  Inchi Auxiliary Structure  N/A  No", 
+            "title": "Annotation Fields"
+        }, 
+        {
+            "location": "/spectrumcuration/#validation-spectra-selection", 
+            "text": "To validate the input file and scan a user has selected, there is a plotting section that will attempt to plot the spectrum selected.   To plot the spectrum, click \"Plot It!\". Additionally, if users would like to see the annotation with a peptide fragment highlights, users can enter a peptide in the Peptide field, but this will not be stored in the annotation.  If the plotting succeeded and a spectrum appears, then the selection for the spectrum is done correctly.   If there was an error, check the original file was converted correctly and the scan number is not 0.", 
+            "title": "Validation Spectra Selection"
         }, 
         {
             "location": "/downloadlibraries/", 
