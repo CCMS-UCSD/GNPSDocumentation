@@ -26,7 +26,7 @@ pages:
         - Dereplicator: dereplicator.md
         - Network Annotation Propagation (NAP): nap.md
     - Experiment Data Analysis:
-        - MzMine Local - GNPS Networking: mzminelocal.md
+        - Feature Based Molecular Networking: featurebasedmolecularnetworking.md
         - MS2LDA Deconvolution: ms2lda.md
     - Community Features:
         - Browsing Reference Spectral Libraries: browselibraries.md
