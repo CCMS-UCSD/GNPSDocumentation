@@ -29,13 +29,15 @@ pages:
     - Experiment Data Analysis:
         - Feature Based Molecular Networking: featurebasedmolecularnetworking.md
         - MS2LDA Deconvolution: ms2lda.md
-    - Community Features:
-        - Browsing Reference Spectral Libraries: browselibraries.md
-        - Reference Spectral Library Curation: spectrumcuration.md
-        - Downloading Reference Spectral Libraries: downloadlibraries.md
-        - Dataset Sharing: datasets.md
-        - Continuous Identification: continuousid.md
-        - Molecule Explorer: moleculeexplorer.md
+    - Community/Social Features:
+        - Spectral Libraries:
+            - Browsing Reference Spectral Libraries: browselibraries.md
+            - Reference Spectral Library Curation: spectrumcuration.md
+            - Downloading Reference Spectral Libraries: downloadlibraries.md
+        - Datasets:
+            - Dataset Creation/Sharing: datasets.md
+            - Continuous Identification: continuousid.md
+            - Molecule Explorer: moleculeexplorer.md
         - User Page: user.md
     - Troubleshooting: troubleshooting.md
 
