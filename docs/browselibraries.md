@@ -37,3 +37,9 @@ In the event that annotations are incomplete or incorrect, users have the option
 Revision history of the spectrum. Sorted in reverse chronological order, with most recent revisions first. To comment on a specific revision of the annotations, users can click the comment button for each annotation row. To view comments on each annotation, users can click the double down arrow at the left of the row.
 
 ![img](img/libraries/annotation_history.png)
+
+#### Dataset Occurrences
+
+Explore exactly which datasets this library spectrum was found in.
+
+TODO: img for dataset table. 

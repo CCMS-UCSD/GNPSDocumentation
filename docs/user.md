@@ -9,7 +9,12 @@ Users are able to see all their own datasets, either public or private in a view
 
 ![img](img/user/datasets.png)
 
-
-From here users can view their private datasets and make them public if they wish or simply browse their own datasets. Additionally, users can share their datasets with the world via twitter and facebook.
+From here users can view their private datasets and make them public if they wish or simply browse their own datasets. Additionally, users can share their datasets with the world via Twitter and Facebook.
 
 ## My Subscriptions
+
+This table lists all the datasets you are subscribed to.
+
+## My Library Spectra
+
+This table lists all the annotated MS/MS spectra you have contributed to the community GNPS library. 

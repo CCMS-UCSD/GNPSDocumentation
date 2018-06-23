@@ -1,14 +1,20 @@
 # MassIVE Datasets
 
-MassIVE is an online repository for publicly available datasets. MassIVE provides a location for researchers to access datasets that have been made available by others, oftentimes alongside publication. The datasets available remain alive long after publication. At GNPS, users will be able to browse datasets, download datasets, and comment on datasets. These comments can be accompanied with new data or new analysis that enriches the MassIVE dataset. Additionally, users can subscribe to specific datasets. While the underlying data may not change, the analysis and understanding of the data will continue to improve. To enhance the analysis, datasets submitted to MassIVE through GNPS will be periodically searched against the ever growing annotated spectral libraries and new putative identifications within those datasets are reported to subscribers. Beyond new identifications within a dataset, subscribers will also be made aware of other datasets that exhibit chemical similarities to the subscribed dataset. This allows for users to be connected via their research interest to similar datasets.
+MassIVE is an online repository for publicly available datasets. MassIVE provides a location for researchers to access datasets that have been made available by others, oftentimes alongside publication. The datasets available remain alive long after publication. At GNPS, users will be able to
 
+1. Browse datasets - Explore all public GNPS datasets
+2. Download datasets - Download full dataset for offline processing/reanalysis
+3. Re-Analyze datasets - Online reanalysis with GNPS tools. Compare public data to your own
+4. Comment on datasets - Make public comments on public datasets to start a community discussion
+5. Subscribe to datasets - Subscribe to updates to datasets, e.g. Updated data from submitter, new identifications/analogs by Continuous Identification
+
+To enhance the analysis, datasets submitted to MassIVE through GNPS will be periodically searched against the ever growing annotated spectral libraries and new putative identifications within those datasets. Beyond new identifications within a dataset, subscribers will also be made aware of other datasets that exhibit chemical similarities to the subscribed dataset. This allows for users to be connected via their research interest to similar datasets.
+
+## Submitting GNPS-MassIVE Datasets
 
 Here we will describe how to upload data into MassIVE specifically for GNPS.
 
 For more detailed information about general MassIVE dataset submission see [here](http://proteomics.ucsd.edu/service/massive/documentation/submit-data/).
-
-
-## Submitting GNPS-MassIVE Datasets
 
 At the [GNPS splash screen](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), users can click this icon
 
@@ -45,8 +51,30 @@ After submitting your dataset to MassIVE, you must explicity make the dataset pu
 
 ![img](img/datasets/make_public.png)
 
+## Continuous Identification
+
+A unique feature at GNPS is the continuous and automated reanalysis of public datasets. GNPS analyzes these datasets with molecular networking and library to make new identifications as the public community spectral libraries increase due to community contributions.
+
+Users may subscribe to datasets to receive email notifications of new identifications made to datasets of interest.
+
+## Browsing Datasets
+
+TODO: this section
+
+### Downloading Dataset Contents
+
+TODO: link to download datasets files. 
+
+## Reanalyze Datasets
+
+How to import datasets for reanalysis in ProtoeSAFe.
+
 ## Social Networking with Datasets
 
-The public MassIVE datasets are complete datasets that published at massive.ucsd.edu optionally alongside paper publications. The MassIVE repository provides a location for researches to access datasets that have been made available by others. However, these MassIVE repository will not merely function as a file server and a data graveyard.
+### Dataset Comments
 
-These datasets remain alive long after publication. At GNPS, users will be able to browse datasets, download datasets, and comment on datasets. These comments can be accompanied with new data or new analysis that enriches the MassIVE dataset. Additionally, users can subscribe to specific datasets, for while the underlying data might not be changing, the understanding of the data will. To continuously learn more about each dataset, each is searched against the ever growing public reference annotated spectral libraries and new identifications are reported to subscribers. Beyond new identifications within a dataset, subscribers will also be made aware of other datasets that exhibit similarities to the subscribed dataset. This allows for users to be connected via their interest in similar datasets.
+Make dataset comments
+
+### Finding Related Datasets
+
+TODO: picture of related datasets on page.

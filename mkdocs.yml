@@ -8,12 +8,12 @@ pages:
     - GNPS Analysis Tools Overview: gnpsanalysisoverview.md
     - Change Log: changelog.md
     - Contact: contact.md
-    - Mass Spec Background:
-        - Targeted vs Untargeted: targeteduntargeted.md
-        - Tandem Mass Spectrometry (MS/MS): tandemms.md
-        - Methods of Identification: identification.md
-        - Method of Quantification: quantification.md
-        - Theory of Molecular Networking: networkingtheory.md
+    # - Mass Spec Background:
+    #     - Targeted vs Untargeted: targeteduntargeted.md
+    #     - Tandem Mass Spectrometry (MS/MS): tandemms.md
+    #     - Methods of Identification: identification.md
+    #     - Method of Quantification: quantification.md
+    #     - Theory of Molecular Networking: networkingtheory.md
     - Data Preparation/Upload:
         - Mass Spectrometry File Conversion: fileconversion.md
         - GNPS File Upload: fileupload.md
@@ -42,7 +42,8 @@ pages:
     - Troubleshooting: troubleshooting.md
 
 theme:
-    name: material
+    name: readthedocs
+    #name: material
     #palette:
     #    primary: 'light blue'
     #    accent: 'orange'

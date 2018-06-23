@@ -1,3 +1,7 @@
+# Overview
+
+This section addresses some common issues with the analysis workflows at GNPS. If you run into any of these common issues, hopefully this page will give you actionable steps to address them. If this page cannot help you, please refer to the [forum](???) to help answer your questions.
+
 ## Molecular Networking
 
 ### Failed Job
@@ -17,3 +21,17 @@
 #### No attributes or groups in output
 
 Make sure the metadata file includes the appropriate columns and attributes are prefixed with ATTRIBUTE_ and that the metadata file is a tab separated text file.
+
+## Library Search (Dereplication)
+
+### No Results
+
+Check that the parameters are OK...
+
+Make sure you have the right format
+
+Make sure you have MS/MS spectra. 
+
+## Single Spectrum Search
+
+TODO: List error when we are missing the intensity values.

@@ -14,6 +14,36 @@ As there are many aspects to GNPS, it can be a bit overwhelming, so the primary 
 
 For more detailed information, read on in the documentation, checkout the [GNPS publication](https://www.nature.com/articles/nbt.3597), and view some tutorial [videos](https://www.youtube.com/channel/UCufTdDIUPjfoN604Igv_29g/videos).
 
+## What is GNPS good for?
+
+There are so many aspects to GNPS as it serves a diverse community. Here we wanted to highlight a few ways we think GNPS has been useful. We also highlight some of the creative ways the community has used GNPS's tools.
+
+### Compound Identification (Dereplication)
+
+
+
+### Novel Analog Identification
+
+We use GNPS's molecular networking to identify a novel analog of Stenothricin.
+
+### Relative Quantification Across Samples
+
+### Global Chemistry Visualization
+
+When did we visualize stuff?
+
+### Determine Biological/Chemical Context of Unknown Molecules
+
+
+
+### Dataset Deposition for Publication
+
+Today, the scientific community is clamouring for reproducibility of results that has resulted in cries for data transparency. Publications that lack public data are viewed with skepticism and rightfully so. GNPS is a place to deposit your data to in order to facilitate the review process as well as provide the community a resource to advance reproducible and rigorous science.
+
+### Reference MS/MS Spectrum Publication for Re-identification
+
+Put your MS/MS spectrum of a known compound in GNPS spectral libraries, so you never have to manually re-identify a compound in your own samples ever again.
+
 ## Migration to New Documentation
 
 Pardon our dust as we are migrating to this new documentation. During the transition, throughout the documentation we will be linking to our legacy documentation that is still relevant. Thank you for your patience.
