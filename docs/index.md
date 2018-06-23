@@ -1,3 +1,5 @@
+![logo](/img/GNPS_logo_original.png)
+
 # Welcome to GNPS
 
 Global Natural Products Social Molecular Networking (GNPS) is a web-based mass spectrometry ecosystem that aims to be an open-access knowledge base for community-wide organization and sharing of raw, processed or identified tandem mass (MS/MS) spectrometry data. GNPS aids in identification and discovery throughout the entire life cycle of data; from initial data acquisition/analysis to post publication.
