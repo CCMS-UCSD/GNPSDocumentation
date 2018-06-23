@@ -25,7 +25,7 @@
 
 **A:** On the select input files popup, click on the shared files tab, and enter speclibs as an import share.
 
-![Screenshot](img/shared_libs.png)
+![Screenshot](img/faq/shared_libs.png)
 
 ## Analyzing Data
 
