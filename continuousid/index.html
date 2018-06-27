@@ -740,6 +740,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#continuous-id-subscription-email" title="Continuous ID Subscription Email" class="md-nav__link">
+    Continuous ID Subscription Email
+  </a>
+  
+</li>
+      
       
       
       
@@ -843,6 +850,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#continuous-id-subscription-email" title="Continuous ID Subscription Email" class="md-nav__link">
+    Continuous ID Subscription Email
+  </a>
+  
+</li>
+      
       
       
       
@@ -863,17 +877,52 @@
                   <h1>Continuous Identification</h1>
                 
                 <h2 id="continuous-identification">Continuous Identification</h2>
-<p>GNPS' continuous identification aims to bring datasets to life. Traditionally, after manuscript publication, mass spectrometry datasets remain static and are never heard from again, silo'd in data cemeteries. GNPS' approach is different, we aim to both 1. increase to automatically make new discoveries within each dataset and 2. aid future analyses by putting new data in the context of all previously existing datasets.</p>
+<p>GNPS' continuous identification aims to bring datasets to life. Traditionally, after manuscript publication, mass spectrometry datasets remain static and are never heard from again, silo'd in data cemeteries. GNPS' approach is different, we aim to</p>
+<ol>
+<li>Automatically make new discoveries within each dataset</li>
+<li>Aid future analyses by putting new data in the context of all previously existing datasets</li>
+</ol>
 <p>GNPS achieves the first goal by periodically reanalyzing each and every public dataset. With ever expanding reference spectral libraries, GNPS makes new identifications within datasets in an automatic fashion, recording this growth in identifications, and reports it back to the community.</p>
-<p>GNPS achieves the second goal by enabling users to "BLAST" MS/MS spectra against the entire GNPS set of datasets (see <a href="singspectrum.md">Single Spectrum Search</a>).</p>
+<p>GNPS achieves the second goal by enabling users to "BLAST" MS/MS spectra against the entire GNPS set of datasets (see <a href="../singlespectrum/">Single Spectrum Search</a>).</p>
 <h2 id="exploring-current-continuous-identifications">Exploring Current Continuous Identifications</h2>
-<p>On each dataset page (See <a href="../datasets/">datasets</a>) the list of all continuous identifcations is listed under the "Continuous Identification" section. This list of all analyses shows the growth of identifications over time as well as how the identifications changed over time. For example, the 3D molecular skin cartography dataset (See <a href="TODO: link to gnps">MSV000078556</a>) grew from XXX identifications in the initial continuous identification to XXX as of June 1, 2018, a XXX% increase.</p>
+<p>On each dataset page (See <a href="../datasets/">datasets</a>) the list of all continuous identifcations is listed under the "Continuous Identification" section. This list of all analyses shows the growth of identifications over time as well as how the identifications changed over time. For example, the 3D molecular skin cartography dataset (See <a href="https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=6b9dcff3899e4d5f89f0daf9489a3a5e&amp;view=advanced_view">MSV000078556</a>) grew from 94 (April 9, 2014) identifications in the initial continuous identification to 860 (June 1, 2018).</p>
+<p>TODO: Image</p>
 <h2 id="dataset-subscriptions">Dataset Subscriptions</h2>
 <p>Whenever new identifications are made in a dataset, subscribers are automatically notified via email. To be subscribed to a dataset of interest, click the subscribe button on the dataset page:</p>
-<p>TODO: get image</p>
+<p><img alt="img" src="../img/datasets/subscribe.png" /></p>
 <h2 id="continuous-identification-ratings">Continuous Identification Ratings</h2>
-<p>Help us improve Continuous Identification by rating the matches returned on the "All Identifications Page".</p>
-<p>TODO: List ratings description</p>
+<p>Help us improve Continuous Identification by rating the matches returned on the "All Identifications Page". For each identification made, please rate each match according to the following rubric</p>
+<table>
+<thead>
+<tr>
+<th>Rating</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4 stars</td>
+<td>correct match as context is right (i.e., molecule is known/expected to be in the sample)</td>
+</tr>
+<tr>
+<td>3 stars</td>
+<td>compound class match – at least part of the structure makes sense to match</td>
+</tr>
+<tr>
+<td>2 stars</td>
+<td>cannot tell – might be correct from the spectrum match and context but there is not enough information to tell</td>
+</tr>
+<tr>
+<td>1 star</td>
+<td>incorrect: molecule does not make sense in this context</td>
+</tr>
+</tbody>
+</table>
+<p>Users will be able to both add their own rating, add a comment for their given rating, as well as view the average rating of the identification.</p>
+<p><img alt="img" src="../img/datasets/ratings.png" /></p>
+<h2 id="continuous-id-subscription-email">Continuous ID Subscription Email</h2>
+<p>This example continuous identification email informs subscribers that the dataset of interest has more IDs in the most recent round of continuous identifications. It will first list the title of the dataset, then the changes in identification counts, and finally direct links to explore the data. Users can go directly to the search results and view the new, different, and deleted identifications as well as go straight to the dataset page itself.</p>
+<p><img alt="img" src="../img/datasets/subscription_email.png" /></p>
                 
                   
                 
