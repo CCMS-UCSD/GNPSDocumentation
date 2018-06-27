@@ -30,14 +30,22 @@ Network Annotation Propagation (NAP) uses spectral networks to propagate informa
 
 ## Analysis Tools in Active Development
 
-### [Feature Based Molecular Networking](mzminelocal.md)
+### [Feature Based Molecular Networking](featurebasedmolecularnetworking.md)
 
-Feature Based Molecular Networking relies on feature detection to determine molecule abundances and aligns these abundances across a cohort of samples into consensus features. Corresponding MS/MS spectra are assigned to each consensus feature and analyzed with spectral library search and molecular networking. This approach enables 1. more accurate quantification of molecules, 2. resolution of isomeric compounds, 3. reduction of redundancy of MS/MS molecules.
+Feature Based Molecular Networking relies on feature detection to determine molecule abundances and aligns these abundances across a cohort of samples into consensus features. Corresponding MS/MS spectra are assigned to each consensus feature and analyzed with spectral library search and molecular networking. This approach enables
+
+1. More accurate quantification of molecules
+2. Resolution of isomeric compounds
+3. Reduction of redundancy of MS/MS molecules
 
 This work builds on the efforts of our many colleagues, please check out their work:
 
 [MZmine 2 Data-Preprocessing To Enhance Molecular Networking Reliability. Olivon et al.](https://pubs.acs.org/doi/10.1021/acs.analchem.7b01563)
 
 [MZmine 2: Modular framework for processing, visualizing, and analyzing mass spectrometry-based molecular profile data. Pluskal et. al.](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395)
+
+### [MS2LDA](ms2lda.md)
+
+TODO: Fill in description
 
 <!--- ### [MS2LDA Deconvolution](ms2lda.md) -->

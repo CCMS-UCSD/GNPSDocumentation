@@ -6,13 +6,13 @@ Global Natural Products Social Molecular Networking (GNPS) is a web-based mass s
 
 As there are many aspects to GNPS, it can be a bit overwhelming, so the primary functionality is:
 
-* Identification/Dereplication/Quantification of MS/MS data utilizing computational tools (e.g. Molecular Networking, Spectral Library Search, etc.)
-* Give MS/MS spectra biological/environmental context by searching against all public MS/MS datasets
-* Annotate/curate identified MS/MS spectra in open-access GNPS reference spectra libraries
-* Publish entire study datasets with the Mass Spectrometry Interactive Virtual Environment (MassIVE) data repository
-* Browse and Reanalyze over 700 public datasets at GNPS
-* Automatic reanalysis of public datasets with automated reports of new identifications
-* Explore identifications of public datasets across entire repository
+* [Identification/Dereplication/Quantification](gnpsanalysisoverview.md) of MS/MS data utilizing computational tools (e.g. [Molecular Networking](networking.md), [Spectral Library Search](librarysearch.md), etc.)
+* Give MS/MS spectra biological/environmental context by searching against all public MS/MS datasets ([Single Spectrum Search](singlespectrum.md))
+* [Annotate/curate identified MS/MS spectra](spectrumcuration.md) in open-access GNPS reference spectra libraries
+* Publish entire study datasets with the Mass Spectrometry Interactive Virtual Environment (MassIVE) data repository ([Dataset Submission](datasets.md))
+* [Browse](datasets.md/#browsing-datasets) and [Reanalyze](datasets/#reanalyze-datasets) over 700 public datasets at GNPS
+* Automatic reanalysis of public datasets with automated reports of new identifications ([Continuous Identification](continuousid.md))
+* Explore identifications of public datasets across entire repository ([Molecule Explorer](moleculeexplorer.md))
 
 For more detailed information, read on in the documentation, checkout the [GNPS publication](https://www.nature.com/articles/nbt.3597), and view some tutorial [videos](https://www.youtube.com/channel/UCufTdDIUPjfoN604Igv_29g/videos).
 
@@ -22,7 +22,7 @@ There are so many aspects to GNPS as it serves a diverse community. Here we want
 
 ### Compound Identification (Dereplication)
 
-
+Identify MS/MS spectra in your data to state of the art community MS/MS spectral libraries.
 
 ### Novel Analog Identification
 

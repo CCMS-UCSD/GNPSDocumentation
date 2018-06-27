@@ -47,11 +47,11 @@ Brief description of the data submitted: RAW Files used to generate Figure 4. Ba
 
 ### Making Dataset Public
 
-After submitting your dataset to MassIVE, you must explicity make the dataset public.
+After submitting your dataset to MassIVE, you must **explicity** make the dataset public, by clicking the make public button:
 
 ![img](img/datasets/make_public.png)
 
-## Continuous Identification
+## [Continuous Identification](continuousid.md)
 
 A unique feature at GNPS is the continuous and automated reanalysis of public datasets. GNPS analyzes these datasets with molecular networking and library to make new identifications as the public community spectral libraries increase due to community contributions.
 
@@ -63,7 +63,7 @@ TODO: this section
 
 ### Downloading Dataset Contents
 
-TODO: link to download datasets files. 
+TODO: link to download datasets files.
 
 ## Reanalyze Datasets
 
@@ -77,4 +77,4 @@ Make dataset comments
 
 ### Finding Related Datasets
 
-TODO: picture of related datasets on page.
+Users can find related MassIVE datasets to the current one. Currently relatedness of datasets is determine by the number of shared identified compounds between the two. Users can see a view like this:

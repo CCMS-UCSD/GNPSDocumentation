@@ -42,8 +42,9 @@ pages:
     - Troubleshooting: troubleshooting.md
 
 theme:
-    name: readthedocs
-    #name: material
+    name: material
+    #name: readthedocs
+
     #palette:
     #    primary: 'light blue'
     #    accent: 'orange'

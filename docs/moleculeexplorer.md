@@ -1,6 +1,6 @@
 ## Molecule Explorer
 
-Building upon [Continuous Identification](continuousidentification.md), Molecule Explorer provides a portal for users to find exactly where each molecules occur in all public GNPS datasets. This powerful exploration tool enables users to understand the expected context where each molecule has been seen before to inform future analyses.
+Building upon [Continuous Identification](continuousid.md), Molecule Explorer provides a portal for users to find exactly where each molecules occur in all public GNPS datasets. This powerful exploration tool enables users to understand the expected context where each molecule has been seen before to inform future analyses.
 
 Explore [here](TODO: link to molecule explorer).
 
@@ -16,4 +16,4 @@ For each molecule, click on "Datasets" to view the specific datasets in which a 
 
 In the final level of granularity, the molecule can be traced down to the set of files per dataset. By clicking "Dataset Files" a set of files which contain the molecule is listed along with the metadata associated with each of the individual files.
 
-TODO: show example, for example Avobenzone is found in skin datasets and files and not blanks. 
+TODO: show example, for example Avobenzone is found in skin datasets and files and not blanks.
