@@ -26,11 +26,9 @@ Make sure the metadata file includes the appropriate columns and attributes are 
 
 ### No Results
 
-Check that the parameters are OK...
-
-Make sure you have the right format
-
-Make sure you have MS/MS spectra. 
+1. Check that the parameters are OK...
+2. Make sure you have the right format
+3. Make sure you have MS/MS spectra in your data
 
 ## Single Spectrum Search
 
