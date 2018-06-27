@@ -100,9 +100,6 @@ By default, files can be categorized into separate groups (G1, G2, etc.). For ex
 Click Finish Selection which will close the pop-up window.
 
 
-
-<!--See [Legacy Documentation](https://bix-lab.ucsd.edu/display/Public/Molecular+Networking+Documentation)-->
-
 ### Parameter Walkthrough
 
 #### Basic Options
@@ -173,7 +170,7 @@ Molecular networks usually take
 * Several hours for large datasets
 * FOREVER for big datasets
 
-If you find your molecular network is taking longer than this, please [contact us](contact.md). 
+If you find your molecular network is taking longer than this, please [contact us](contact.md).
 
 ## Online Exploration of Molecular Networks
 
@@ -231,6 +228,14 @@ After completing a Molecular Networking workflow utilizing GNPS, analysis can be
 | View        | Description          |
 | ------------- |-------------|
 | Direct Cytoscape Preview/Download | Preview entire molecular network and download direct cys file to open in Cytoscape |
+
+### Publishing Data
+
+To increase transparency in data analysis, please include the URL of your specific GNPS analysis job.
+
+Additionally, we recommend that you deposit the data you used for analysis into the MassIVE dataset repository in order to make your raw data public. To do this please click the "Publish Data in MassIVE" button:
+
+TODO: image and implement
 
 ## Citation
 

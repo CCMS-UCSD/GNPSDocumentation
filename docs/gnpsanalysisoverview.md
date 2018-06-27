@@ -46,6 +46,4 @@ This work builds on the efforts of our many colleagues, please check out their w
 
 ### [MS2LDA](ms2lda.md)
 
-TODO: Fill in description
-
-<!--- ### [MS2LDA Deconvolution](ms2lda.md) -->
+MS2LDA is a method for the decomposition of sets of molecular fragment data derived from large metabolomics experiments. Check out the MS2LDA website [here](http://ms2lda.org/). At GNPS, we have worked with the MS2LDA team to curate a set of motifs that can help to annotate your MS/MS spectra. 
