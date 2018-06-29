@@ -1,4 +1,3 @@
-# Overview
 
 This is a superquick start guide that will enable you to analyze a few dozen samples with molecular networking without having to create an account or install any software besides your web browser and conversion software.
 
@@ -20,7 +19,7 @@ Once files have been uploaded into the appropriate cohort, enter your email and 
 
 ![button](img/superquickstart_button.png)
 
-This will bring you to a GNPS workflow status page. If you entered an email, you will receive an email once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this is the only way for you to find analysis again. 
+This will bring you to a GNPS workflow status page. If you entered an email, you will receive an email once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this is the only way for you to find analysis again.
 
 ## Results
 

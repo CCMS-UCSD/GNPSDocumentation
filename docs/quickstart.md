@@ -1,4 +1,3 @@
-## Overview
 
 This is a quickstart guide that will enable you to prepare your data, create a GNPS account, upload to GNPS, and create your a molecular network on GNPS. While there are a wide variety of other tools at GNPS, molecular networking analysis is a great place to get your feet wet.
 

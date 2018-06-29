@@ -1,4 +1,4 @@
-# MassIVE Datasets
+## MassIVE Datasets
 
 MassIVE is an online repository for publicly available datasets. MassIVE provides a location for researchers to access datasets that have been made available by others, oftentimes alongside publication. The datasets available remain alive long after publication. At GNPS, users will be able to
 
