@@ -75,7 +75,7 @@ This will bring you to the workflow input to start networking.
 
 Provide a detailed title for your molecular network. This title will be helpful when you retrieve your data after the workflow is completed.
 
-![set title](img/networking_title.gif)
+![set title](img/quickstart/networking_title.gif)
 
 ### Selecting Files to Analyze
 
