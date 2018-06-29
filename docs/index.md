@@ -16,7 +16,7 @@ As there are many aspects to GNPS, it can be a bit overwhelming, so the primary 
 
 For more detailed information, read on in the documentation, checkout the [GNPS publication](https://www.nature.com/articles/nbt.3597), and view some tutorial [videos](https://www.youtube.com/channel/UCufTdDIUPjfoN604Igv_29g/videos).
 
-## What is GNPS good for?
+<!-- ## What is GNPS good for?
 
 There are so many aspects to GNPS as it serves a diverse community. Here we wanted to highlight a few ways we think GNPS has been useful. We also highlight some of the creative ways the community has used GNPS's tools.
 
@@ -44,7 +44,7 @@ Today, the scientific community is clamouring for reproducibility of results tha
 
 ### Reference MS/MS Spectrum Publication for Re-identification
 
-Put your MS/MS spectrum of a known compound in GNPS spectral libraries, so you never have to manually re-identify a compound in your own samples ever again.
+Put your MS/MS spectrum of a known compound in GNPS spectral libraries, so you never have to manually re-identify a compound in your own samples ever again. -->
 
 ## Migration to New Documentation
 
