@@ -2,6 +2,7 @@
 The Feature Finding Molecular Networking brings together LC-MS feature detection tools (e.g. MZmine2, OpenMS, MS-DIAL, MetaboScape), molecular networking (GNPS, http://gnps.ucsd.edu), and other in silico annotation tools, such as Sirius, CSI:FingerID, or Network Annotation Propagation.
 
 The key improvements of the new Feature Finding Molecular Networking are:
+
 1. Importing information derived from the feature detection tools into the molecular networks,
 2. Discriminate isomers by retention time and remove isotopic peak,
 3. Allows the annotation MS/MS of spectra with in silico tools and mapping in the molecular networks.
