@@ -3,7 +3,7 @@ This is a quickstart guide that will enable you to prepare your data, create a G
 
 ## Converting Data
 
-Convert vendor formats to open formats using MSConvert locally. [Documentation](fileconversion.md).
+Convert vendor formats to open formats using MSConvert locally. Checkout this [documentation](fileconversion.md).
 
 ## Create a GNPS Account
 

@@ -12,12 +12,12 @@ From here users can view their private datasets and make them public if they wis
 
 ## My Subscriptions
 
-This table lists all the datasets you are subscribed to.
+Users can see all datasets they are subscribed to.
 
 TODO: img
 
 ## My Library Spectra
 
-This table lists all the annotated MS/MS spectra you have contributed to the community GNPS library.
+These are all the annotated MS/MS spectra you have contributed to the community GNPS library.
 
 TODO: img

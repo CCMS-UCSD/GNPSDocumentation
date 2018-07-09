@@ -1,4 +1,4 @@
-This highlights all the current production analysis tools at GNPS as well as some exciting up and coming beta tools.
+This highlights all the current production analysis tools at GNPS as well as some exciting up and coming tools in development.
 
 ## Recommended Analysis Tools
 
@@ -35,12 +35,6 @@ Feature Based Molecular Networking relies on feature detection to determine mole
 1. More accurate quantification of molecules
 2. Resolution of isomeric compounds
 3. Reduction of redundancy of MS/MS molecules
-
-This work builds on the efforts of our many colleagues, please check out their work:
-
-[MZmine 2 Data-Preprocessing To Enhance Molecular Networking Reliability. Olivon et al.](https://pubs.acs.org/doi/10.1021/acs.analchem.7b01563)
-
-[MZmine 2: Modular framework for processing, visualizing, and analyzing mass spectrometry-based molecular profile data. Pluskal et. al.](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395)
 
 ### [MS2LDA](ms2lda.md)
 

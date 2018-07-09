@@ -6,7 +6,7 @@ At GNPS we support mzXML, mzML, and mgf formats for analysis. Our tools do NOT s
 
 This is a complete package for Windows users to convert their vendor formats to GNPS compatible format (mzXML). It is as easy as putting files into a folder and batch converting it all without any installation (well nearly so).
 
-1. Simply download the zip file [here](https://www.dropbox.com/s/41m88bh3fcr5uz9/GNPS_Vendor_Conversion.zip?dl=1)
+1. Download the zip file [here](https://www.dropbox.com/s/41m88bh3fcr5uz9/GNPS_Vendor_Conversion.zip?dl=1)
 2. Unzip contents onto a folder on your computer (e.g. Desktop)
 3. Install windows libraries in "pwizLibraries-and-Installation" - Run appropriate program for 32-bit (32-Bit_Double-Click_To_Install.bat) or 64-bit system (64-Bit_Double-Click_To_Install.bat). To find out which type of OS you have please check [here](https://support.microsoft.com/en-us/help/15056/windows-7-32-64-bit-faq)
 4. Put vendor formats in "Input_Files" not embedded in other folders

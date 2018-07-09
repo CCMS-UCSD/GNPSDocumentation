@@ -5,7 +5,7 @@ The limitations to this method is that the files uploaded will not reside in you
 
 ## Converting Data
 
-Convert vendor formats to open formats using MSConvert locally. [Documentation](fileconversion.md).
+Convert vendor formats to open formats using MSConvert locally. Checkout this [documentation](fileconversion.md).
 
 ## Selecting Files
 

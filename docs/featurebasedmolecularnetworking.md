@@ -29,3 +29,12 @@ Please make sure your files are converted to mzXML or mzML.
 #### MZMine Batch Steps
 
 In MZmine2, a sequence of steps must be performed. The following batch method (.XML format) can be downloaded (temporary email nothias@ucsd.edu ) and imported into MZmine2.
+
+
+### Citation
+
+This work builds on the efforts of our many colleagues, please check out their work:
+
+[MZmine 2 Data-Preprocessing To Enhance Molecular Networking Reliability. Olivon et al.](https://pubs.acs.org/doi/10.1021/acs.analchem.7b01563)
+
+[MZmine 2: Modular framework for processing, visualizing, and analyzing mass spectrometry-based molecular profile data. Pluskal et. al.](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395)
