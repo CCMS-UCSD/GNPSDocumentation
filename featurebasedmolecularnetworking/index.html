@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.1">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.0">
     
     
       
@@ -40,7 +40,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.ba0fd1a6.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.4f4f49e8.css">
       
       
     
@@ -268,11 +268,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
     
     <label class="md-nav__link" for="nav-9">
-      Mass Spec Background
+      Mass Spec/Computational Background
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-9">
-        Mass Spec Background
+        Mass Spec/Computational Background
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -283,56 +283,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../massspecbackground/targeteduntargeted/" title="Targeted vs Untargeted" class="md-nav__link">
-      Targeted vs Untargeted
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../massspecbackground/tandemms/" title="Tandem Mass Spectrometry (MS/MS)" class="md-nav__link">
-      Tandem Mass Spectrometry (MS/MS)
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../massspecbackground/identification/" title="Methods of Identification" class="md-nav__link">
-      Methods of Identification
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../massspecbackground/quantification/" title="Method of Quantification" class="md-nav__link">
-      Method of Quantification
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../massspecbackground/networkingtheory/" title="Theory of Molecular Networking" class="md-nav__link">
-      Theory of Molecular Networking
+    <a href="../massspecbackground/networkingtheory/" title="Molecular Networking" class="md-nav__link">
+      Molecular Networking
     </a>
   </li>
 
@@ -584,18 +536,102 @@
     Mass spectrometry data Feature Detection with MZmine2
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#mzmine-batch-steps" title="MZMine Batch Steps" class="md-nav__link">
     MZMine Batch Steps
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#import-files" title="Import Files" class="md-nav__link">
+    Import Files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mass-detection" title="Mass Detection" class="md-nav__link">
+    Mass Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-chromatogram" title="Build Chromatogram" class="md-nav__link">
+    Build Chromatogram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deconvolve-the-chromatogram" title="Deconvolve the Chromatogram" class="md-nav__link">
+    Deconvolve the Chromatogram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deconvolute-co-eluting-ions" title="Deconvolute co-eluting ions" class="md-nav__link">
+    Deconvolute co-eluting ions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#order-the-peaklists" title="Order the peaklists" class="md-nav__link">
+    Order the peaklists
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#align-features" title="Align Features" class="md-nav__link">
+    Align Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detect-missing-peaks-optional" title="Detect Missing Peaks (Optional)" class="md-nav__link">
+    Detect Missing Peaks (Optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-feature-abundances" title="Export Feature Abundances" class="md-nav__link">
+    Export Feature Abundances
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-to-msms-peaks" title="Filter to MS/MS Peaks" class="md-nav__link">
+    Filter to MS/MS Peaks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-msms-as-mgf-for-gnps" title="Export MS/MS as MGF for GNPS" class="md-nav__link">
+    Export MS/MS as MGF for GNPS
+  </a>
+  
 </li>
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-based-molecular-networking-in-gnps" title="Feature Based Molecular Networking in GNPS" class="md-nav__link">
+    Feature Based Molecular Networking in GNPS
+  </a>
   
 </li>
         
@@ -838,18 +874,102 @@
     Mass spectrometry data Feature Detection with MZmine2
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#mzmine-batch-steps" title="MZMine Batch Steps" class="md-nav__link">
     MZMine Batch Steps
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#import-files" title="Import Files" class="md-nav__link">
+    Import Files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mass-detection" title="Mass Detection" class="md-nav__link">
+    Mass Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-chromatogram" title="Build Chromatogram" class="md-nav__link">
+    Build Chromatogram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deconvolve-the-chromatogram" title="Deconvolve the Chromatogram" class="md-nav__link">
+    Deconvolve the Chromatogram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deconvolute-co-eluting-ions" title="Deconvolute co-eluting ions" class="md-nav__link">
+    Deconvolute co-eluting ions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#order-the-peaklists" title="Order the peaklists" class="md-nav__link">
+    Order the peaklists
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#align-features" title="Align Features" class="md-nav__link">
+    Align Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detect-missing-peaks-optional" title="Detect Missing Peaks (Optional)" class="md-nav__link">
+    Detect Missing Peaks (Optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-feature-abundances" title="Export Feature Abundances" class="md-nav__link">
+    Export Feature Abundances
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-to-msms-peaks" title="Filter to MS/MS Peaks" class="md-nav__link">
+    Filter to MS/MS Peaks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-msms-as-mgf-for-gnps" title="Export MS/MS as MGF for GNPS" class="md-nav__link">
+    Export MS/MS as MGF for GNPS
+  </a>
+  
 </li>
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-based-molecular-networking-in-gnps" title="Feature Based Molecular Networking in GNPS" class="md-nav__link">
+    Feature Based Molecular Networking in GNPS
+  </a>
   
 </li>
         
@@ -904,8 +1024,56 @@
 <p>Download MZmine2 software (version MZmine v2.30 minimum) at <a href="https://github.com/mzmine/mzmine2/releases">https://github.com/mzmine/mzmine2/releases</a>.</p>
 <p>See documentation and videos here: <a href="http://mzmine.github.io/documentation.html">http://mzmine.github.io/documentation.html</a>.</p>
 <p>Please make sure your files are converted to mzXML or mzML.</p>
-<h4 id="mzmine-batch-steps">MZMine Batch Steps</h4>
-<p>In MZmine2, a sequence of steps must be performed. The following batch method (.XML format) can be downloaded (temporary email nothias@ucsd.edu ) and imported into MZmine2.</p>
+<h3 id="mzmine-batch-steps">MZMine Batch Steps</h3>
+<p>In MZmine2, a sequence of steps must be performed. The prototype batch method (.XML format) can be downloaded and imported into MZmine2.</p>
+<p><img alt="complete workflow view" src="../img/mzmine/Workflow_mzmine.png" /></p>
+<p>The steps required for data pre-processing with MZmine2 for GNPS are shown in the screen capture below (batch method) and described after.</p>
+<p><img alt="img" src="../img/mzmine/batch_overview.png" /></p>
+<p>Below is a walk through of all the steps</p>
+<h4 id="import-files">Import Files</h4>
+<p>Menu: Raw data methods / Raw data import / "Select the files"</p>
+<p><img alt="img" src="../img/mzmine/2_import-raw.png" /></p>
+<h4 id="mass-detection">Mass Detection</h4>
+<p>Perform mass detection on MS level 1: Menu: Raw data methods / Mass detection / Set filter : MS level 1</p>
+<p>[IMPORTANT] Set a intensity threshold at value corresponding to the triggering of the MS2 scan event.</p>
+<p>Perform mass detection on MS level 2. The same masslist name can be used: Menu: Raw data methods / Mass detection / Set filter : MS level 2.</p>
+<p>[IMPORTANT] Make sure to set an intensity threshold representative of noise level in the MS2 spectrum. Inappropriate intensity threshold could hamper the GNPS and Sirius export modules. For that reason, set it as low as possible(Example: QTOF: 100). If you have any doubt, set it to 0.</p>
+<p><img alt="img" src="../img/mzmine/mass_detection_ms2.png" /></p>
+<h4 id="build-chromatogram">Build Chromatogram</h4>
+<p>Menu: Raw data methods / Chromatogram builder</p>
+<h4 id="deconvolve-the-chromatogram">Deconvolve the Chromatogram</h4>
+<p>Menu: Peak list methods / Peak detection / Chromatogram deconvolution</p>
+<p>[IMPORTANT] tick both options "m/z range for MS2 scan pairing (Da)" and "RT range for MS2 scan pairing (min)". Define the values according to your experimental setup.</p>
+<p><img alt="img" src="../img/mzmine/deconvolve.png" /></p>
+<h4 id="deconvolute-co-eluting-ions">Deconvolute co-eluting ions</h4>
+<p>"Isotopic peaks grouper module" [recommended] or Camera module. Menu: Peak list methods / Isotopes / Isotopic peaks grouper.</p>
+<h4 id="order-the-peaklists">Order the peaklists</h4>
+<p>Menu: Peak list methods / Order peak lists.</p>
+<h4 id="align-features">Align Features</h4>
+<p>Menu: Peak list methods / Alignment / Join aligner</p>
+<h4 id="detect-missing-peaks-optional">Detect Missing Peaks (Optional)</h4>
+<p>Menu: Peak list methods / Gap filling / Peak finder</p>
+<h4 id="export-feature-abundances">Export Feature Abundances</h4>
+<p>Export the feature table containing all the peaks in .CSV format. Menu: Peak list methods / Export / Export to CSV file</p>
+<p>[IMPORTANT] If any other filtering of the peaklist has been performed, make sure to before, reset the peak row number. Menu: Peak list methods / Filtering / Peak list row filter / Reset the peak number ID</p>
+<p>[IMPORTANT] This feature table will not be used in further workflow. It is exported in order to do further statistical analysis.</p>
+<p><img alt="img" src="../img/mzmine/export_features.png" /></p>
+<h4 id="filter-to-msms-peaks">Filter to MS/MS Peaks</h4>
+<p>Use both filters in the peaklist row filter module: 'Keep only peaks with MS2 scan (GNPS)". Menu: Peak list methods / Filtering / Peak list row filter</p>
+<p><img alt="img" src="../img/mzmine/ms2_filtering.png" /></p>
+<h4 id="export-msms-as-mgf-for-gnps">Export MS/MS as MGF for GNPS</h4>
+<p>Export the .MGF file for GNPS. Menu: Peak list methods / Export / Export for GNPS</p>
+<p><img alt="img" src="../img/mzmine/gnps_export.png" /></p>
+<h3 id="feature-based-molecular-networking-in-gnps">Feature Based Molecular Networking in GNPS</h3>
+<p>There is a special molecular networking workflow to handle MzMine2 features outputs. Try it out <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D">here</a>.</p>
+<p>You will need three items:</p>
+<ol>
+<li>Feature Table from above</li>
+<li>MGF for MS/MS from above</li>
+<li>Metadata table - described <a href="../networking#metadata">here</a></li>
+</ol>
+<p>There are several additional normalization options specifically for feature detection. We can normalize the features per LC/MS run and aggregate by groups with either a sum or average (recommended).</p>
+<p><img alt="img" src="../img/mzmine/quant_options.png" /></p>
 <h3 id="citation">Citation</h3>
 <p>This work builds on the efforts of our many colleagues, please check out their work:</p>
 <p><a href="https://pubs.acs.org/doi/10.1021/acs.analchem.7b01563">MZmine 2 Data-Preprocessing To Enhance Molecular Networking Reliability. Olivon et al.</a></p>

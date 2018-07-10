@@ -32,15 +32,15 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.1">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.0">
     
     
       
-        <title>Theory of Molecular Networking - GNPS Documentation</title>
+        <title>Molecular Networking - GNPS Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.ba0fd1a6.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.4f4f49e8.css">
       
       
     
@@ -97,7 +97,7 @@
                 GNPS Documentation
               </span>
               <span class="md-header-nav__topic">
-                Theory of Molecular Networking
+                Molecular Networking
               </span>
             
           
@@ -270,62 +270,14 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" checked>
     
     <label class="md-nav__link" for="nav-9">
-      Mass Spec Background
+      Mass Spec/Computational Background
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-9">
-        Mass Spec Background
+        Mass Spec/Computational Background
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../targeteduntargeted/" title="Targeted vs Untargeted" class="md-nav__link">
-      Targeted vs Untargeted
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tandemms/" title="Tandem Mass Spectrometry (MS/MS)" class="md-nav__link">
-      Tandem Mass Spectrometry (MS/MS)
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../identification/" title="Methods of Identification" class="md-nav__link">
-      Methods of Identification
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../quantification/" title="Method of Quantification" class="md-nav__link">
-      Method of Quantification
-    </a>
-  </li>
-
         
           
           
@@ -340,11 +292,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Theory of Molecular Networking
+        Molecular Networking
       </label>
     
-    <a href="./" title="Theory of Molecular Networking" class="md-nav__link md-nav__link--active">
-      Theory of Molecular Networking
+    <a href="./" title="Molecular Networking" class="md-nav__link md-nav__link--active">
+      Molecular Networking
     </a>
     
       
@@ -978,7 +930,7 @@
               
                 
                 
-                  <h1>Theory of Molecular Networking</h1>
+                  <h1>Molecular Networking</h1>
                 
                 <h2 id="molecular-networking-theory">Molecular Networking Theory</h2>
 <p>While there are many publications out there giving algorithmic and intuition into molecular networking, we attempt a cliff notes version here.</p>
@@ -995,20 +947,20 @@
 <li>Appear at the exact same mass for both molecules</li>
 <li>Appear shifted by the mass of the chemical moiety</li>
 </ol>
-<p>TODO: Image</p>
+<p><img alt="img" src="../img/networking_theory/networking_example.png" /></p>
 <p>We consider both of these possibilities for each and every peak between two MS/MS spectra and explore how we do that below.</p>
 <h3 id="spectrum-alignment">Spectrum Alignment</h3>
 <p>We will use a toy example here to demonstrate intuitively how we are able to consider an alignment between two MS/MS spectra.</p>
 <p>Given two molecules that differ by a single chemical moiety that each produce fragmentation as shown</p>
-<p>TODO: Image</p>
+<p><img alt="img" src="../img/networking_theory/networking1.PNG" /></p>
 <p>We can consider that each peak from molecule A, could align at the same mass in molecule B, or at an offset of Mass(Delta). One possible alignment is all peaks in A, align at the same mass</p>
-<p>TODO: Image</p>
+<p><img alt="img" src="../img/networking_theory/SLIDE2.PNG" /></p>
 <p>Another, where the first peak aligns at the same mass, the second at an offset</p>
-<p>TODO: Image</p>
+<p><img alt="img" src="../img/networking_theory/SLIDE3.PNG" /></p>
 <p>Third, where the first peak aligns at an offset, and the second aligns at the same mass</p>
-<p>TODO: Image</p>
+<p><img alt="img" src="../img/networking_theory/SLIDE4.PNG" /></p>
 <p>Finally, where both peaks align at an offset</p>
-<p>TODO: Image</p>
+<p><img alt="img" src="../img/networking_theory/SLIDE5.PNG" /></p>
 <p>All of these potential alignments can be explored and the best scoring alignment is determined between the two MS/MS spectra and is called the alignment score.</p>
 <p>The total number of potential alignments is exponential (2 ^ N, where N is the number of peaks) and is computationally expensive. GNPS has implemented algorithms that can efficiently approximate this alignment.</p>
 <h3 id="alignment-of-entire-dataset">Alignment of Entire Dataset</h3>
@@ -1020,7 +972,7 @@
 <h4 id="neighbor-top-k">Neighbor Top K</h4>
 <p>A pathological case in Molecular Networks are promiscuous MS/MS spectra that align to many other MS/MS spectra due to a low complexity of fragmentation. To counteract this, only retain alignments between alignments between MS/MS spectra that mutually rank each other highly in the alignment score. Just like in human relationships, who wants a best friend who has a million other best friends?</p>
 <h4 id="connected-component-max-size">Connected Component Max Size</h4>
-<p>Even with the above filters, the occasional false positive connections causes hairball networks that make visualization/interpretation difficult. The connected component size filter limits the maximum size of a single molecular network to a parameterized number of nodes (100 by default). This process iteratively breaks up large hairball networks by removing the lowest scoring alignments (by cosine score) first until the resulting pieces fall below the maximum size. </p>
+<p>Even with the above filters, the occasional false positive connections causes hairball networks that make visualization/interpretation difficult. The connected component size filter limits the maximum size of a single molecular network to a parameterized number of nodes (100 by default). This process iteratively breaks up large hairball networks by removing the lowest scoring alignments (by cosine score) first until the resulting pieces fall below the maximum size.</p>
 <h3 id="limitation-of-molecular-networking">Limitation of Molecular Networking</h3>
 <h4 id="multiple-modifications">Multiple Modifications</h4>
 <p>Molecular networking is unable to align spectra from molecules that differ by two distinct structural modifications. We have observed that this limitation is ameliorated in biological datasets because chemical modifications are enzymatically catalyzed. In the event that two molecules differ by two distinct chemical modification which cannot be connected by molecular networking, an intermediate molecule which differs by only a single chemical modification to the respective molecules and links all three molecules into a molecular family.</p>
@@ -1044,7 +996,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../quantification/" title="Method of Quantification" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../contact/" title="Contact" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1053,7 +1005,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Method of Quantification
+                Contact
               </span>
             </div>
           </a>
