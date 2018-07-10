@@ -18,7 +18,9 @@ Since corresponding product ions between structurally similar molecules can eith
 1. Appear at the exact same mass for both molecules
 2. Appear shifted by the mass of the chemical moiety
 
-![img](/img/networking_theory/networking_example.png)
+![img](/img/networking_theory/network_example.png)
+[Watrous et al. PNAS](http://www.pnas.org/content/109/26/E1743)
+
 
 We consider both of these possibilities for each and every peak between two MS/MS spectra and explore how we do that below.
 
@@ -36,12 +38,12 @@ We can consider that each peak from molecule A, could align at the same mass in 
 
 Another, where the first peak aligns at the same mass, the second at an offset
 
-![img](/img/networking_theory/Slide3.PNG)
+![img](/img/networking_theory/Slide4.PNG)
 
 
 Third, where the first peak aligns at an offset, and the second aligns at the same mass
 
-![img](/img/networking_theory/Slide4.PNG)
+![img](/img/networking_theory/Slide3.PNG)
 
 Finally, where both peaks align at an offset
 
