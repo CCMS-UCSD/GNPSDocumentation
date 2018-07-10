@@ -18,7 +18,7 @@ Since corresponding product ions between structurally similar molecules can eith
 1. Appear at the exact same mass for both molecules
 2. Appear shifted by the mass of the chemical moiety
 
-![img](../img/networking_theory/networking_example.png)
+![img](img/networking_theory/networking_example.png)
 
 We consider both of these possibilities for each and every peak between two MS/MS spectra and explore how we do that below.
 
@@ -28,24 +28,24 @@ We will use a toy example here to demonstrate intuitively how we are able to con
 
 Given two molecules that differ by a single chemical moiety that each produce fragmentation as shown
 
-![img](../img/networking_theory/networking1.PNG)
+![img](img/networking_theory/networking_1.PNG)
 
 We can consider that each peak from molecule A, could align at the same mass in molecule B, or at an offset of Mass(Delta). One possible alignment is all peaks in A, align at the same mass
 
-![img](../img/networking_theory/SLIDE2.PNG)
+![img](img/networking_theory/Slide2.PNG)
 
 Another, where the first peak aligns at the same mass, the second at an offset
 
-![img](../img/networking_theory/SLIDE3.PNG)
+![img](img/networking_theory/Slide3.PNG)
 
 
 Third, where the first peak aligns at an offset, and the second aligns at the same mass
 
-![img](../img/networking_theory/SLIDE4.PNG)
+![img](img/networking_theory/Slide4.PNG)
 
 Finally, where both peaks align at an offset
 
-![img](../img/networking_theory/SLIDE5.PNG)
+![img](img/networking_theory/Slide5.PNG)
 
 All of these potential alignments can be explored and the best scoring alignment is determined between the two MS/MS spectra and is called the alignment score.
 
