@@ -28,11 +28,11 @@ Please make sure your files are converted to mzXML or mzML.
 
 ### MZMine Batch Steps
 
-In MZmine2, a sequence of steps must be performed. The prototype batch method (.XML format) can be downloaded and imported into MZmine2.
+In MZmine2, a sequence of steps must be performed. The prototype batch method for Bruker Maxis HD qTof can be [downloaded](static/qtof_batch.xml) and imported into MZmine2.
 
 ![complete workflow view](img/mzmine/Workflow_mzmine.png)
 
-The steps required for data pre-processing with MZmine2 for GNPS are shown in the screen capture below (batch method) and described after.
+The steps required for data pre-processing with MZmine2 for GNPS are shown in the screen capture below.
 
 ![img](img/mzmine/batch_overview.png)
 
