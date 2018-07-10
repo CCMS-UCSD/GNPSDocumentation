@@ -30,7 +30,7 @@ We will use a toy example here to demonstrate intuitively how we are able to con
 
 Given two molecules that differ by a single chemical moiety that each produce fragmentation as shown
 
-![img](/img/networking_theory/networking_1.PNG)
+![img](/img/networking_theory/networking_1.png)
 
 We can consider that each peak from molecule A, could align at the same mass in molecule B, or at an offset of Mass(Delta). One possible alignment is all peaks in A, align at the same mass
 
