@@ -55,7 +55,7 @@ Within the Node menu, you will be able to apply a label to each of your nodes, y
 
 If you organized your data into cohorts of samples, we can visualize the relative abundance (as measured by spectral counts which is psuedo-quantitative) with pie charts across these groups.
 
-TODO: Make screen shots
+![img](img/cytoscape/pie_chart.png)
 
 #### Visualizing Structures
 

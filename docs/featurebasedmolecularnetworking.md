@@ -26,10 +26,99 @@ See documentation and videos here: [http://mzmine.github.io/documentation.html](
 
 Please make sure your files are converted to mzXML or mzML.
 
-#### MZMine Batch Steps
+### MZMine Batch Steps
 
-In MZmine2, a sequence of steps must be performed. The following batch method (.XML format) can be downloaded (temporary email nothias@ucsd.edu ) and imported into MZmine2.
+In MZmine2, a sequence of steps must be performed. The prototype batch method (.XML format) can be downloaded and imported into MZmine2.
 
+![complete workflow view](img/mzmine/Workflow_mzmine.png)
+
+The steps required for data pre-processing with MZmine2 for GNPS are shown in the screen capture below (batch method) and described after.
+
+![img](img/mzmine/batch_overview.png)
+
+Below is a walk through of all the steps
+
+#### Import Files
+
+Menu: Raw data methods / Raw data import / "Select the files"
+
+![img](img/mzmine/2_import-raw.png)
+
+#### Mass Detection
+
+Perform mass detection on MS level 1: Menu: Raw data methods / Mass detection / Set filter : MS level 1
+
+[IMPORTANT] Set a intensity threshold at value corresponding to the triggering of the MS2 scan event.
+
+Perform mass detection on MS level 2. The same masslist name can be used: Menu: Raw data methods / Mass detection / Set filter : MS level 2.
+
+[IMPORTANT] Make sure to set an intensity threshold representative of noise level in the MS2 spectrum. Inappropriate intensity threshold could hamper the GNPS and Sirius export modules. For that reason, set it as low as possible(Example: QTOF: 100). If you have any doubt, set it to 0.
+
+![img](img/mzmine/mass_detection_ms2.png)
+
+#### Build Chromatogram
+
+Menu: Raw data methods / Chromatogram builder
+
+#### Deconvolve the Chromatogram
+
+Menu: Peak list methods / Peak detection / Chromatogram deconvolution
+
+[IMPORTANT] tick both options "m/z range for MS2 scan pairing (Da)" and "RT range for MS2 scan pairing (min)". Define the values according to your experimental setup.
+
+![img](img/mzmine/deconvolve.png)
+
+#### Deconvolute co-eluting ions
+
+"Isotopic peaks grouper module" [recommended] or Camera module. Menu: Peak list methods / Isotopes / Isotopic peaks grouper.
+
+#### Order the peaklists
+
+Menu: Peak list methods / Order peak lists.
+
+#### Align Features
+
+Menu: Peak list methods / Alignment / Join aligner
+
+#### Detect Missing Peaks (Optional)
+
+Menu: Peak list methods / Gap filling / Peak finder
+
+#### Export Feature Abundances
+
+Export the feature table containing all the peaks in .CSV format. Menu: Peak list methods / Export / Export to CSV file
+
+[IMPORTANT] If any other filtering of the peaklist has been performed, make sure to before, reset the peak row number. Menu: Peak list methods / Filtering / Peak list row filter / Reset the peak number ID
+
+[IMPORTANT] This feature table will not be used in further workflow. It is exported in order to do further statistical analysis.
+
+![img](img/mzmine/export_features.png)
+
+#### Filter to MS/MS Peaks
+
+Use both filters in the peaklist row filter module: 'Keep only peaks with MS2 scan (GNPS)". Menu: Peak list methods / Filtering / Peak list row filter
+
+![img](img/mzmine/ms2_filtering.png)
+
+#### Export MS/MS as MGF for GNPS
+
+Export the .MGF file for GNPS. Menu: Peak list methods / Export / Export for GNPS
+
+![img](img/mzmine/gnps_export.png)
+
+### Feature Based Molecular Networking in GNPS
+
+There is a special molecular networking workflow to handle MzMine2 features outputs. Try it out [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D).
+
+You will need three items:
+
+1. Feature Table from above
+2. MGF for MS/MS from above
+3. Metadata table - described [here](networking#metadata)
+
+There are several additional normalization options specifically for feature detection. We can normalize the features per LC/MS run and aggregate by groups with either a sum or average (recommended).
+
+![img](img/mzmine/quant_options.png)
 
 ### Citation
 
