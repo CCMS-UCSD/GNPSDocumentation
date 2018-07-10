@@ -47,11 +47,12 @@ Choose an Output Directory
 
 Under Options, choose mzXML for output format, 32-bit for binary encoding precision and uncheck Use zlib compression. Note that mzML files are also supported.
 
-Under filters, choose Peak Picking with Vendor checked, in order to centroid the data. Indicate MS-Levels 1-2. Click Add to add the filter.
+Under filters, choose Peak Picking with Vendor checked, in order to centroid the data. Indicate MS-Levels 1-. Click Add to add the filter.
 
-Click Start.  Check your folder for the new .mzXML files. Verify that these files open properly in Insilicos or TOPP View (OpenMS) http://www.openms.de/
+![img](img/conversion/msconvert_params.png)
 
-TODO: Add images
+Click Start.  Check your folder for the new .mzXML files. Verify that these files open properly in Insilicos or [TOPP View (OpenMS)](http://www.openms.de/).
+
 
 ### Advanced Online Conversion with Proteowizard (MSConvert)
 
