@@ -12,12 +12,12 @@ From here users can view their private datasets and make them public if they wis
 
 ## My Subscriptions
 
-Users can see all datasets they are subscribed to.
+Users can see all datasets they are subscribed to
 
-TODO: img
+![img](img/user/subscribed.png)
 
 ## My Library Spectra
 
 These are all the annotated MS/MS spectra you have contributed to the community GNPS library.
 
-TODO: img
+![img](img/user/spectra.png)

@@ -13,8 +13,6 @@ GNPS achieves the second goal by enabling users to "BLAST" MS/MS spectra against
 
 On each dataset page (See [datasets](datasets.md)) the list of all continuous identifcations is listed under the "Continuous Identification" section. This list of all analyses shows the growth of identifications over time as well as how the identifications changed over time. For example, the 3D molecular skin cartography dataset (See [MSV000078556](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=6b9dcff3899e4d5f89f0daf9489a3a5e&view=advanced_view)) grew from 94 (April 9, 2014) identifications in the initial continuous identification to 860 (June 1, 2018).
 
-TODO: Image
-
 ## Dataset Subscriptions
 
 Whenever new identifications are made in a dataset, subscribers are automatically notified via email. To be subscribed to a dataset of interest, click the subscribe button on the dataset page:

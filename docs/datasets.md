@@ -59,22 +59,35 @@ Users may subscribe to datasets to receive email notifications of new identifica
 
 ## Browsing Datasets
 
-TODO: this section
+To browse all public datasets, click the "Datasets" link at the top menu bar. This brings users to a list of all public GNPS-MassIVE datasets.
+
+![img](/img/datasets/browse_datasets.png)
 
 ### Downloading Dataset Contents
 
-TODO: link to download datasets files.
+To download the contents of a dataset, you can reach the FTP url of each dataset by click the FTP link.
+
+![img](/img/datasets/dataset_ftp.png)
 
 ## Reanalyze Datasets
 
-How to import datasets for reanalysis in ProtoeSAFe.
+Dataset data can be re-analyzed with the tools at GNPS. In order to import the dataset into your own workspace to select files, please refer to [this documentation](networking/#selecting-files-to-analyze).
 
 ## Social Networking with Datasets
 
 ### Dataset Comments
 
-Make dataset comments
+Users may make a comment on a dataset by clicking the "Comment on Dataset Link":
+
+![img](/img/datasets/comment_dataset.png)
+
+To browse all comments per dataset, a table is shown
+
+![img](/img/datasets/dataset_comments.png)
+
 
 ### Finding Related Datasets
 
 Users can find related MassIVE datasets to the current one. Currently relatedness of datasets is determine by the number of shared identified compounds between the two. Users can see a view like this:
+
+![img](/img/datasets/related_datasets.png)

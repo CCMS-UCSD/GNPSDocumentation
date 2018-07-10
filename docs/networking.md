@@ -161,7 +161,7 @@ We have several parameter presets that seem to work well depending on the datase
 
 Upon submission of the workflow, you will be brought to the status page. This will show you the progress of your molecular networking job.
 
-TODO: status page image
+![img](img/networking/status.png)
 
 Molecular networks usually take
 
@@ -229,13 +229,14 @@ After completing a Molecular Networking workflow utilizing GNPS, analysis can be
 | ------------- |-------------|
 | Direct Cytoscape Preview/Download | Preview entire molecular network and download direct cys file to open in Cytoscape |
 
-### Publishing Data
+
+<!-- ### Publishing Data
 
 To increase transparency in data analysis, please include the URL of your specific GNPS analysis job.
 
 Additionally, we recommend that you deposit the data you used for analysis into the MassIVE dataset repository in order to make your raw data public. To do this please click the "Publish Data in MassIVE" button:
 
-TODO: image and implement
+TODO: image and implement -->
 
 ## Citation
 

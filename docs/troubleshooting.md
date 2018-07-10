@@ -32,4 +32,4 @@ Make sure the metadata file includes the appropriate columns and attributes are 
 
 ## Single Spectrum Search
 
-TODO: List error when we are missing the intensity values.
+A common error is missing intensities for masses. Simply masses are insufficient, intensities are also required. 

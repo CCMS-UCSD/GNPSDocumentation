@@ -2,7 +2,7 @@
 
 Building upon [Continuous Identification](continuousid.md), Molecule Explorer provides a portal for users to find exactly where each molecules occur in all public GNPS datasets. This powerful exploration tool enables users to understand the expected context where each molecule has been seen before to inform future analyses.
 
-Explore [here](TODO: link to molecule explorer).
+Explore [here](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=698fc5a09db74c7492983b3673ff5bf6&view=molecule_explorer_v2_summary&show=true).
 
 ## All Molecules Summary
 
@@ -16,4 +16,6 @@ For each molecule, click on "Datasets" to view the specific datasets in which a 
 
 In the final level of granularity, the molecule can be traced down to the set of files per dataset. By clicking "Dataset Files" a set of files which contain the molecule is listed along with the metadata associated with each of the individual files.
 
-TODO: show example, for example Avobenzone is found in skin datasets and files and not blanks.
+[Here](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?view=molecule_explorer_v2_filedetails&task=698fc5a09db74c7492983b3673ff5bf6#%7B%22compound_name_input%22%3A%22Avobenzone%22%2C%22Original_Path_input%22%3A%22MSV000078556%22%7D) we can see that within the Skin Cartography Dataset, Avobenzone appears in only files from human swabs and not blanks:
+
+![img](img/explorer/avobenzone.png)
