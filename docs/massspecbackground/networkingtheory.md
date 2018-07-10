@@ -18,7 +18,7 @@ Since corresponding product ions between structurally similar molecules can eith
 1. Appear at the exact same mass for both molecules
 2. Appear shifted by the mass of the chemical moiety
 
-TODO: Image
+![img](img/networking_theory/networking_example.png)
 
 We consider both of these possibilities for each and every peak between two MS/MS spectra and explore how we do that below.
 
@@ -28,23 +28,24 @@ We will use a toy example here to demonstrate intuitively how we are able to con
 
 Given two molecules that differ by a single chemical moiety that each produce fragmentation as shown
 
-TODO: Image
+![img](img/networking_theory/networking1.PNG)
 
 We can consider that each peak from molecule A, could align at the same mass in molecule B, or at an offset of Mass(Delta). One possible alignment is all peaks in A, align at the same mass
 
-TODO: Image
+![img](img/networking_theory/SLIDE2.PNG)
 
 Another, where the first peak aligns at the same mass, the second at an offset
 
-TODO: Image
+![img](img/networking_theory/SLIDE3.PNG)
+
 
 Third, where the first peak aligns at an offset, and the second aligns at the same mass
 
-TODO: Image
+![img](img/networking_theory/SLIDE4.PNG)
 
 Finally, where both peaks align at an offset
 
-TODO: Image
+![img](img/networking_theory/SLIDE5.PNG)
 
 All of these potential alignments can be explored and the best scoring alignment is determined between the two MS/MS spectra and is called the alignment score.
 
@@ -68,7 +69,7 @@ A pathological case in Molecular Networks are promiscuous MS/MS spectra that ali
 
 #### Connected Component Max Size
 
-Even with the above filters, the occasional false positive connections causes hairball networks that make visualization/interpretation difficult. The connected component size filter limits the maximum size of a single molecular network to a parameterized number of nodes (100 by default). This process iteratively breaks up large hairball networks by removing the lowest scoring alignments (by cosine score) first until the resulting pieces fall below the maximum size. 
+Even with the above filters, the occasional false positive connections causes hairball networks that make visualization/interpretation difficult. The connected component size filter limits the maximum size of a single molecular network to a parameterized number of nodes (100 by default). This process iteratively breaks up large hairball networks by removing the lowest scoring alignments (by cosine score) first until the resulting pieces fall below the maximum size.
 
 ### Limitation of Molecular Networking
 
