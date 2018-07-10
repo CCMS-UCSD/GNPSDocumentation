@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to GNPS\n\n\nGlobal Natural Products Social Molecular Networking (GNPS) is a web-based mass spectrometry ecosystem that aims to be an open-access knowledge base for community-wide organization and sharing of raw, processed or identified tandem mass (MS/MS) spectrometry data. GNPS aids in identification and discovery throughout the entire life cycle of data; from initial data acquisition/analysis to post publication.\n\n\nAs there are many aspects to GNPS, it can be a bit overwhelming, so the primary functionality is:\n\n\n\n\nIdentification/Dereplication/Quantification\n of MS/MS data utilizing computational tools (e.g. \nMolecular Networking\n, \nSpectral Library Search\n, etc.)\n\n\nGive MS/MS spectra biological/environmental context by searching against all public MS/MS datasets (\nSingle Spectrum Search\n)\n\n\nAnnotate/curate identified MS/MS spectra\n in open-access GNPS reference spectra libraries\n\n\nPublish entire study datasets with the Mass Spectrometry Interactive Virtual Environment (MassIVE) data repository (\nDataset Submission\n)\n\n\nBrowse\n and \nReanalyze\n over 700 public datasets at GNPS\n\n\nAutomatic reanalysis of public datasets with automated reports of new identifications (\nContinuous Identification\n)\n\n\nExplore identifications of public datasets across entire repository (\nMolecule Explorer\n)\n\n\n\n\nFor more detailed information, read on in the documentation, checkout the \nGNPS publication\n, and view some tutorial \nvideos\n.\n\n\n\n\n\nMigration to New Documentation\n\n\nPardon our dust as we are migrating to this new documentation. During the transition, throughout the documentation we will be linking to our legacy documentation that is still relevant. Thank you for your patience.", 
+            "text": "Welcome to GNPS\n\n\nGlobal Natural Products Social Molecular Networking (GNPS) is a web-based mass spectrometry ecosystem that aims to be an open-access knowledge base for community-wide organization and sharing of raw, processed or identified tandem mass (MS/MS) spectrometry data. GNPS aids in identification and discovery throughout the entire life cycle of data; from initial data acquisition/analysis to post publication.\n\n\nAs there are many aspects to GNPS, it can be a bit overwhelming, so the primary functionality is:\n\n\n\n\nIdentification/Dereplication/Quantification\n of MS/MS data utilizing computational tools (e.g. \nMolecular Networking\n, \nSpectral Library Search\n, etc.)\n\n\nGive MS/MS spectra biological/environmental context by searching against all public MS/MS datasets (\nSingle Spectrum Search\n)\n\n\nAnnotate/curate identified MS/MS spectra\n in open-access GNPS reference spectra libraries\n\n\nPublish entire study datasets with the Mass Spectrometry Interactive Virtual Environment (MassIVE) data repository (\nDataset Submission\n)\n\n\nBrowse\n and \nReanalyze\n over 700 public datasets at GNPS\n\n\nAutomatic reanalysis of public datasets with automated reports of new identifications (\nContinuous Identification\n)\n\n\nExplore identifications of public datasets across entire repository (\nMolecule Explorer\n)\n\n\n\n\nFor more detailed information, read on in the documentation, checkout the \nGNPS publication\n, and view some tutorial \nvideos\n.\n\n\n\n\n\nMigration to New Documentation\n\n\nPardon our dust as we are migrating to this new documentation.\n\n\nDuring the transition, throughout the documentation we will be linking to our legacy documentation that is still relevant. Thank you for your patience.\n\n\nLegacy Documentation\n\n\nTo checkout our legacy documentation in its entirely, you can find it \nhere\n.", 
             "title": "GNPS Introduction"
         }, 
         {
@@ -12,8 +12,13 @@
         }, 
         {
             "location": "/#migration-to-new-documentation", 
-            "text": "Pardon our dust as we are migrating to this new documentation. During the transition, throughout the documentation we will be linking to our legacy documentation that is still relevant. Thank you for your patience.", 
+            "text": "Pardon our dust as we are migrating to this new documentation.  During the transition, throughout the documentation we will be linking to our legacy documentation that is still relevant. Thank you for your patience.", 
             "title": "Migration to New Documentation"
+        }, 
+        {
+            "location": "/#legacy-documentation", 
+            "text": "To checkout our legacy documentation in its entirely, you can find it  here .", 
+            "title": "Legacy Documentation"
         }, 
         {
             "location": "/isgnpsright/", 
