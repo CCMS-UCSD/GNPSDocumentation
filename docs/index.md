@@ -48,4 +48,10 @@ Put your MS/MS spectrum of a known compound in GNPS spectral libraries, so you n
 
 ## Migration to New Documentation
 
-Pardon our dust as we are migrating to this new documentation. During the transition, throughout the documentation we will be linking to our legacy documentation that is still relevant. Thank you for your patience.
+Pardon our dust as we are migrating to this new documentation.
+
+During the transition, throughout the documentation we will be linking to our legacy documentation that is still relevant. Thank you for your patience.
+
+## Legacy Documentation
+
+To checkout our legacy documentation in its entirely, you can find it [here](https://bix-lab.ucsd.edu/display/Public/GNPS+Documentation+Page).
