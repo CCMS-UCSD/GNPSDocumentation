@@ -38,13 +38,13 @@ The steps required for data pre-processing with MZmine2 for GNPS are shown in th
 
 Below is a walk through of all the steps
 
-#### Import Files
+#### 1. Import Files
 
 Menu: Raw data methods / Raw data import / "Select the files"
 
 ![img](img/mzmine/2_import-raw.png)
 
-#### Mass Detection
+#### 2. Mass Detection
 
 Perform mass detection on MS level 1: Menu: Raw data methods / Mass detection / Set filter : MS level 1
 
@@ -56,11 +56,11 @@ Perform mass detection on MS level 2. The same masslist name can be used: Menu: 
 
 ![img](img/mzmine/mass_detection_ms2.png)
 
-#### Build Chromatogram
+#### 3. Build Chromatogram
 
 Menu: Raw data methods / Chromatogram builder
 
-#### Deconvolve the Chromatogram
+#### 4. Deconvolve the Chromatogram
 
 Menu: Peak list methods / Peak detection / Chromatogram deconvolution
 
@@ -68,23 +68,25 @@ Menu: Peak list methods / Peak detection / Chromatogram deconvolution
 
 ![img](img/mzmine/deconvolve.png)
 
-#### Deconvolute co-eluting ions
+#### 5. Deconvolute co-eluting ions
 
 "Isotopic peaks grouper module" [recommended] or Camera module. Menu: Peak list methods / Isotopes / Isotopic peaks grouper.
 
-#### Order the peaklists
+#### 6. Order the peaklists (Optional)
 
 Menu: Peak list methods / Order peak lists.
 
-#### Align Features
+This is to ensure reproducibility of results. Final output might change a little if this is not performed.
+
+#### 7. Align Features
 
 Menu: Peak list methods / Alignment / Join aligner
 
-#### Detect Missing Peaks (Optional)
+#### 8. Detect Missing Peaks (Optional)
 
 Menu: Peak list methods / Gap filling / Peak finder
 
-#### Export Feature Abundances
+#### 9. Export Feature Abundances
 
 Export the feature table containing all the peaks in .CSV format. Menu: Peak list methods / Export / Export to CSV file
 
@@ -94,13 +96,13 @@ Export the feature table containing all the peaks in .CSV format. Menu: Peak lis
 
 ![img](img/mzmine/export_features.png)
 
-#### Filter to MS/MS Peaks
+#### 10. Filter to MS/MS Peaks
 
 Use both filters in the peaklist row filter module: 'Keep only peaks with MS2 scan (GNPS)". Menu: Peak list methods / Filtering / Peak list row filter
 
 ![img](img/mzmine/ms2_filtering.png)
 
-#### Export MS/MS as MGF for GNPS
+#### 11. Export MS/MS as MGF for GNPS
 
 Export the .MGF file for GNPS. Menu: Peak list methods / Export / Export for GNPS
 
