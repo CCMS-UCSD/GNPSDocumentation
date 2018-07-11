@@ -6,9 +6,9 @@ See [Legacy Documentation](https://bix-lab.ucsd.edu/display/Public/Dereplication
 
 ### Dereplication Workflow
 
-From the main [GNPS page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), click the ["Dereplication"](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MOLECULAR-LIBRARYSEARCH%22,%22library_on_server%22:%22d.speclibs;%22%7D) link.
+From the main [GNPS page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), click the ["Match Search"](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MOLECULAR-LIBRARYSEARCH%22,%22library_on_server%22:%22d.speclibs;%22%7D) button.
 
-![analysis](img/networking/data_analysis.png)
+![analysis](img/libraries/librarysearch_selection.png)
 
 This will bring you to the workflow input to start library searching your data.
 

@@ -27,7 +27,7 @@ Additionally, spectra to be added to the library should be centroided. Profile d
 
 From the [GNPS Splash Page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), users can click on
 
-![img](img/libraries/add_icon.png)
+![img](img/libraries/add_selection.png)
 
 to be brought to the Add Single Annotated Spectrum workflow. By default, users will contribute bronze quality reference spectra. Permission is required to contribute higher quality spectra to the gold and silver workflows.
 

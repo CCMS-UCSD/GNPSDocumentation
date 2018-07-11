@@ -8,9 +8,9 @@ To search a single spectrum to see where it occurs in all public GNPS datasets, 
 
 ### Manual Workflow Entering
 
-From the main [GNPS page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), click the ["Leverage GNPS Libraries and Datasets"](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22SEARCH_SINGLE_SPECTRUM%22,%22library_on_server%22:%22d.speclibs;%22%7D) link.
+From the main [GNPS page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), click the ["Query Spectrum"](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22SEARCH_SINGLE_SPECTRUM%22,%22library_on_server%22:%22d.speclibs;%22%7D) button.
 
-![analysis](img/singlespectrum/searchsinglelink.png)
+![analysis](img/singlespectrum/singlespectrum_selection.png)
 
 ### From Molecular Networking
 

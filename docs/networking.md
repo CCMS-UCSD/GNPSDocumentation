@@ -65,9 +65,9 @@ This format has been replaced by the above Metadata format. While it is still su
 
 ### Molecular Networking Workflow Selection
 
-From the main [GNPS page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), click the ["Data Analysis"](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D) link.
+From the main [GNPS page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), click the ["Create Molecular Network"](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D) button.
 
-![analysis](img/networking/data_analysis.png)
+![analysis](img/networking/network_selection.png)
 
 This will bring you to the workflow input to start networking.
 

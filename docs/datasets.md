@@ -16,9 +16,9 @@ Here we will describe how to upload data into MassIVE specifically for GNPS.
 
 For more detailed information about general MassIVE dataset submission see [here](http://proteomics.ucsd.edu/service/massive/documentation/submit-data/).
 
-At the [GNPS splash screen](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), users can click this icon
+At the [GNPS splash screen](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), users can click this button
 
-![img](img/datasets/massive_icon.png)
+![img](img/datasets/massive_selection.png)
 
 to create a MassIVE dataset.
 
