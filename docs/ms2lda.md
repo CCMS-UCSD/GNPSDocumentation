@@ -1,7 +1,10 @@
 
-MS2LDA is a tool to discover and annotate MS/MS fragmentation motifs that indicate a molecule's substructure.
+# MS2LDA
 
-Try it out [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MS2LDA_DECONV%22%7D).
+MS2LDA is a tool that decomposes molecular fragmentation data derived from large metabolomics experiments into annotated Mass2Motifs or discovers Mass2Motifs from experimental data. Mass2Motifs are fragmentation patterns of often co-occurring mass fragment peaks and/or neutral losses that often represent molecular substructures. Check out the [MS2LDA website](http://ms2lda.org/) here where you can find more information, browse through data sets, and sign up for an account to run the Mass2Motif discovery on your own data. At GNPS, we are working with the MS2LDA team to curate sets of Mass2Motifs that can help to annotate your MS/MS spectra.
+
+A first set based on Mass2Motifs found in GNPS and MassBank reference data is available now to decompose your data on through GNPS [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MS2LDA_DECONV%22%7D).
+
 
 ## Citation
 
