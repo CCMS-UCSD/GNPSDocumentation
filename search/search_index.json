@@ -807,8 +807,13 @@
         }, 
         {
             "location": "/ms2lda/", 
-            "text": "MS2LDA is a tool to discover and annotate MS/MS fragmentation motifs that indicate a molecule's substructure.\n\n\nTry it out \nhere\n.\n\n\nCitation\n\n\nvan Der Hooft, Justin Johan Jozias, Joe Wandy, Michael P. Barrett, Karl EV Burgess, and Simon Rogers. \"Topic modeling for untargeted substructure exploration in metabolomics.\" Proceedings of the National Academy of Sciences 113, no. 48 (2016): 13738-13743.", 
+            "text": "MS2LDA\n\n\nMS2LDA is a tool that decomposes molecular fragmentation data derived from large metabolomics experiments into annotated Mass2Motifs or discovers Mass2Motifs from experimental data. Mass2Motifs are fragmentation patterns of often co-occurring mass fragment peaks and/or neutral losses that often represent molecular substructures. Check out the \nMS2LDA website\n here where you can find more information, browse through data sets, and sign up for an account to run the Mass2Motif discovery on your own data. At GNPS, we are working with the MS2LDA team to curate sets of Mass2Motifs that can help to annotate your MS/MS spectra.\n\n\nA first set based on Mass2Motifs found in GNPS and MassBank reference data is available now to decompose your data on through GNPS \nhere\n.\n\n\nCitation\n\n\nvan Der Hooft, Justin Johan Jozias, Joe Wandy, Michael P. Barrett, Karl EV Burgess, and Simon Rogers. \"Topic modeling for untargeted substructure exploration in metabolomics.\" Proceedings of the National Academy of Sciences 113, no. 48 (2016): 13738-13743.", 
             "title": "MS2LDA Deconvolution"
+        }, 
+        {
+            "location": "/ms2lda/#ms2lda", 
+            "text": "MS2LDA is a tool that decomposes molecular fragmentation data derived from large metabolomics experiments into annotated Mass2Motifs or discovers Mass2Motifs from experimental data. Mass2Motifs are fragmentation patterns of often co-occurring mass fragment peaks and/or neutral losses that often represent molecular substructures. Check out the  MS2LDA website  here where you can find more information, browse through data sets, and sign up for an account to run the Mass2Motif discovery on your own data. At GNPS, we are working with the MS2LDA team to curate sets of Mass2Motifs that can help to annotate your MS/MS spectra.  A first set based on Mass2Motifs found in GNPS and MassBank reference data is available now to decompose your data on through GNPS  here .", 
+            "title": "MS2LDA"
         }, 
         {
             "location": "/ms2lda/#citation", 
