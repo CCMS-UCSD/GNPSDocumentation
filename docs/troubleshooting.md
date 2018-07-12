@@ -1,6 +1,6 @@
 # Overview
 
-This section addresses some common issues with the analysis workflows at GNPS. If you run into any of these common issues, hopefully this page will give you actionable steps to address them. If this page cannot help you, please refer to the [forum](???) to help answer your questions.
+This section addresses some common issues with the analysis workflows at GNPS. If you run into any of these common issues, hopefully this page will give you actionable steps to address them. If this page cannot help you, please refer to the [forum](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports) to help answer your questions.
 
 ## Molecular Networking
 
@@ -32,4 +32,4 @@ Make sure the metadata file includes the appropriate columns and attributes are 
 
 ## Single Spectrum Search
 
-A common error is missing intensities for masses. Simply masses are insufficient, intensities are also required. 
+A common error is missing intensities for masses. Simply masses are insufficient, intensities are also required.
