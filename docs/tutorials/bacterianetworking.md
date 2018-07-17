@@ -44,7 +44,7 @@ These parameters were selected to be appropriate for a small dataset and a littl
 
 If you want to see a pre-filled example, see [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?task=24b62946372c4044b49fceb662856e41).
 
-## Analyzing Results
+## Analyzing Results in Browser
 
 This is an example [completed molecular networking analysis](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=24b62946372c4044b49fceb662856e41).
 
@@ -83,6 +83,15 @@ To highlight what might be different about these molecules, we can highlight the
 We can see the Stenothricin-GNPS 2 is a molecule which we discovered using molecular networking. We can further interrogate the similarity at the fragmentation level by clicking the edge between the two nodes to visualize the MS/MS spectra and align the peaks
 
 ![img](/img/tutorials/network5.png)
+
+## Analyzing Global Network with Cytoscape
+
+Click the "Direct Cytoscape Preview/Download" to get a preformatted cytoscape file
+
+![img](/img/tutorials/cytoscape1.png)
+
+In this preview you can even see from a high level the red and blue molecules that represent the G1 (roseosporus) and G2 (DSM5940) respectively. Download the cytoscape file and view in cytoscape to dig further! Good Luck!
+
 
 ## Homework
 
