@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>/isgnpsright/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,7 +20,7 @@
     
     <url>
      <loc>/faq/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -28,7 +28,7 @@
     
     <url>
      <loc>/superquickstart/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -36,7 +36,7 @@
     
     <url>
      <loc>/quickstart/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -44,7 +44,7 @@
     
     <url>
      <loc>/gnpsanalysisoverview/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -52,7 +52,7 @@
     
     <url>
      <loc>/changelog/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -60,7 +60,7 @@
     
     <url>
      <loc>/contact/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -69,7 +69,7 @@
         
     <url>
      <loc>/massspecbackground/networkingtheory/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -79,13 +79,13 @@
         
     <url>
      <loc>/fileconversion/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/fileupload/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -95,25 +95,25 @@
         
     <url>
      <loc>/networking/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/networkingviews/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/librarysearch/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/singlespectrum/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -123,19 +123,19 @@
         
     <url>
      <loc>/cytoscape/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/dereplicator/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/nap/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -145,13 +145,13 @@
         
     <url>
      <loc>/featurebasedmolecularnetworking/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/ms2lda/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -173,7 +173,7 @@
         
     <url>
      <loc>/user/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -182,9 +182,19 @@
     
     <url>
      <loc>/troubleshooting/</loc>
-     <lastmod>2018-07-12</lastmod>
+     <lastmod>2018-07-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    
+
+    
+        
+    <url>
+     <loc>/tutorials/bacterianetworking/</loc>
+     <lastmod>2018-07-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>
