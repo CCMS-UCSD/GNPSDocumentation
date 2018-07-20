@@ -1,8 +1,10 @@
-## Dereplicator - Insility Peptidic Natural Products Tool
+## Dereplicator - Insilito Peptidic Natural Products Tool
 
 The Insilico Peptidic Natural Products Dereplicator is a bioinformatic tool that allows the annotation of known peptidic natural products in MS/MS data using in silico fragmentation tree.
 
 Check out the full [legacy documentation](https://bix-lab.ucsd.edu/display/Public/Insilico+Peptidic+Natural+Products+Dereplicator+Documentation).
+
+You can choose a tool to run from the [In Silico Page at GNPS](TODO). 
 
 ## Citation
 
