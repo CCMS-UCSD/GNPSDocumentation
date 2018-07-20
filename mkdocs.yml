@@ -40,6 +40,8 @@ pages:
             - Molecule Explorer: moleculeexplorer.md
         - User Page: user.md
     - Troubleshooting: troubleshooting.md
+    - Tutorial Guides:
+        - Analog Discovery in Microbial Extracts: tutorials/bacterianetworking.md
 
 theme:
     name: material
