@@ -15,7 +15,7 @@ View All Clusters allow a user to view the all consensus spectra in the molecula
 
 ![img](img/networkingviews/allclusters.png)
 
-While Molecular Networking matches to all public reference libraries, the majority of molecules detected in untargeted LC/MS runs are unidentified. To help annotate these unidentified spectra, click the "AddToLibrary" to be taken to the view that allows you to choose a specific MS/MS spectrum to annotate. Then Click "+Bronze" to be taken to the annotation page with the spectrum prepopulated. Check out the details about annotation - [Annotation Documentation](spectrumcuration/#adding-single-spectra). 
+While Molecular Networking matches to all public reference libraries, the majority of molecules detected in untargeted LC/MS runs are unidentified. To help annotate these unidentified spectra, click the "AddToLibrary" to be taken to the view that allows you to choose a specific MS/MS spectrum to annotate. Then Click "+Bronze" to be taken to the annotation page with the spectrum prepopulated. Check out the details about annotation - [Annotation Documentation](spectrumcuration/#adding-single-spectra).
 
 
 To view all the input MS/MS spectra that went into the consensus spectrum, click the link in the "ClusterIdx" link
@@ -28,7 +28,7 @@ This brings up all the input MS/MS spectra. To visualize each spectrum, we can c
 
 ## View Spectral Families
 
-View Spectra Families allows users to look at the molecular networks at a higher level. Users can see all the connected components. These connected components are all the nodes that are connected to each other. From here users can tell how big each component is, how many raw spectra are captured by the particular component, and also the libraries identifications of all the spectra in each component.
+View Spectra Families allows users to look at the molecular networks at a higher level. Users can see all the distinct spectral families that comprise the entire molecular network. These spectral families are all the nodes that are connected to each other. From here users can tell how big each component is, how many raw spectra are captured by the particular component, and also the libraries identifications of all the spectra in each component.
 
 ![img](img/networkingviews/spectralfamilies.png)
 
@@ -36,17 +36,38 @@ To visualize each network, click on the "Visualize Network" link
 
 ![img](img/networkingviews/visualizenetworklink.png)
 
-This brings up an in-browser visualization for a given connected component
+This brings up an in-browser visualization for a given spectral family
 
 ![img](img/networkingviews/networkviz.png)
 
-Here users can explore the connected component in the molecular network. Each circle in the left network panel represents a consensus spectrum and edge represents related fragmentation patterns. The default color of the nodes is gray, with blue nodes representing consensus MS/MS spectra that were identified by library search.
+Here users can explore the specific spectral family in the molecular network. Each circle (node) in the left network panel represents a consensus spectrum and edge represents related fragmentation patterns. The default color of the nodes is gray, with blue nodes representing consensus MS/MS spectra that were identified by library search.
+
+There is a lot to unpack in this online interface to explore the molecular networks. The following is a quick guide to all the features in this interface
+
+![img](img/networking/networkingviz_highlight.png)
+
+1. Node Labels
+2. Edge Labels
+3. Edge Highlight
+4. Node Highlights by MS2 Peak Search
+5. Align MS/MS spectra in right panels
+6. Node Size/Color Selection
+7. Node Pie Chart Coloring
+8. Rerun Network Layout
+9. Expand Network Window
+10. Toggle UI Widgets (Show/Hide)
+11. Download Spectral Family GraphML for Cytoscape
+12. Download Spectrum Peaks
+13. Annotate Spectrum with Peptide Sequence
+14. Large Spectrum Plot
+15. Show Peak m/z annotations in Spectrum Viewer
+
+
+### Network Labeling
 
 The default labeling is the cluster/node index which is rather uninformative, but there are alternative labelings possible by selecting the appropriate node label from the Node Label legend box.
 
 ![img](img/networkingviews/networklabels.png)
-
-### Network Labeling
 
 **Node Labels**
 
@@ -81,6 +102,30 @@ Edges by default include arrows pointing from low mass spectra to high mass spec
 
 ![img](img/networkingviews/edgehighlight.png)
 
+### Edge Directions
+
+The arrows between nodes in the molecular network point from higher m/z spectra to lower m/z spectra. This can facilitate tracking down identifying multiple extensions of a polymer or extension of a carbon chain.
+
+### Edge Delta Histogram
+
+Lorem Ipsum
+
+### Node Sizing
+
+Lorem Ipsum
+
+### Node Coloring
+
+Lorem Ipsum
+
+### MS2 Peak Search in Molecular Network
+
+Lorem Ipsum
+
+### MS2 Peak Mass Histogram in Molecular Network
+
+Lorem Ipsum
+
 ### Detailed Interrogation of Network Spectra
 
 While its great to visualize the network properly, to truly make sense of the network users must be able to interrogate the network metadata and examine the actual spectra. To this end, users are able to find out information about a particular node by simply hovering their mouse over node. This will bring up a hover box describing the node information. At present the display shows like this:
@@ -114,6 +159,31 @@ with red peaks representing peaks that match at the exact same masses between th
 To view how exactly a spectrum in the network has matched to a library spectrum, users can click the "Show Library Match" in the side panel on the far right. This will bring up this middle panel shown below comparing the spectrum in the network with the library spectrum in green.
 
 ![img](img/networkingviews/networkviewmatch.png)
+
+### Network Screen Shot
+
+Lorem Ipsum
+
+### Network Layout
+
+Lorem Ipsum
+
+### Network Window Size
+
+Lorem Ipsum
+
+### Pop up Window
+
+Lorem Ipsum
+
+### Sub-Network GraphML for Cytoscape
+
+Lorem Ipsum
+
+### Hide Widgets
+
+Lorem Ipsum
+
 
 
 ## View Principle Coordinate Analysis (PCoA) Plots
