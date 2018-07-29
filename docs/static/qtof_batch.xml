@@ -216,7 +216,7 @@
             <ppmtolerance>15.0</ppmtolerance>
         </parameter>
         <parameter name="Retention time tolerance" type="absolute">0.1</parameter>
-        <parameter name="RT correction">true</parameter>
+        <parameter name="RT correction">false</parameter>
         <parameter name="Remove original peak list">false</parameter>
     </batchstep>
     <batchstep method="net.sf.mzmine.modules.peaklistmethods.io.csvexport.CSVExportModule">
@@ -238,7 +238,7 @@
         <parameter name="Peak lists" type="BATCH_LAST_PEAKLISTS"/>
         <parameter name="Name suffix">filtered</parameter>
         <parameter name="Minimum peaks in a row" selected="true">2.0</parameter>
-        <parameter name="Minimum peaks in an isotope pattern" selected="true">2</parameter>
+        <parameter name="Minimum peaks in an isotope pattern" selected="true">1</parameter>
         <parameter name="m/z" selected="false"/>
         <parameter name="Retention time" selected="false"/>
         <parameter name="Peak duration range" selected="false">
