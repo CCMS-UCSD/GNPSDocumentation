@@ -8,6 +8,7 @@ pages:
     - GNPS Analysis Tools Overview: gnpsanalysisoverview.md
     - Change Log: changelog.md
     - Contact: contact.md
+    - GNPS Workshops: workshops.md
     - Mass Spec/Computational Background:
 #        - Targeted vs Untargeted: massspecbackground/targeteduntargeted.md
 #        - Tandem Mass Spectrometry (MS/MS): massspecbackground/tandemms.md
@@ -21,7 +22,7 @@ pages:
         - Molecular Networking: networking.md
         - Molecular Networking Views: networkingviews.md
         - Spectral Library Search: librarysearch.md
-        - Single Spectrum Repository Search: singlespectrum.md
+        - MetBLAST Search: metblast.md
     - Advanced Data Analysis:
         - Molecular Networking in Cytoscape: cytoscape.md
         - Dereplicator: dereplicator.md

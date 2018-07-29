@@ -25,7 +25,7 @@ Select [molecular networking analysis](https://gnps.ucsd.edu/ProteoSAFe/index.js
 ### Selecting Files
 
 1. Click "Select Input Files" - [Help](networking#selecting-files-to-analyze)
-2. Import MSV000079204 to analyze
+2. Import MSV000079204 to analyze - [Help](networking#selecting-files-to-analyze)
 3. Select S. roseosporus files into Group G1 and Streptomyces sp. DSM5940 into Group G2
 
 ![img](/img/tutorials/strep_selection.png)
@@ -53,6 +53,8 @@ This is an example [completed molecular networking analysis](https://gnps.ucsd.e
 Click the "View All Library Hits".
 
 This will list all library compounds that were matched. Here we can see many different antibiotics, e.g. Stenothricin, Arylomycin, Daptomycin, and Mureidomycin.
+
+TODO: Image
 
 ### Exploring Molecular Networks including Stenothricin
 
@@ -90,8 +92,13 @@ Click the "Direct Cytoscape Preview/Download" to get a preformatted cytoscape fi
 
 ![img](/img/tutorials/cytoscape1.png)
 
-In this preview you can even see from a high level the red and blue molecules that represent the G1 (roseosporus) and G2 (DSM5940) respectively. Download the cytoscape file and view in cytoscape to dig further! Good Luck!
+In this preview you can even see from a high level the red and blue molecules that represent the G1 (roseosporus) and G2 (DSM5940) respectively. Download the Cytoscape file and view in cytoscape to dig further!
 
+Open network in Cytoscape ([Help](???)) to look at the entire network. Each molecule (node) has the pie charts already drawn with red (G1 - Rosesporus) and blue (G2 - DSM5940).
+
+TODO: Image
+
+Good Luck!
 
 ## Homework
 

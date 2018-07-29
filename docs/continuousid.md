@@ -7,7 +7,7 @@ GNPS' continuous identification aims to bring datasets to life. Traditionally, a
 
 GNPS achieves the first goal by periodically reanalyzing each and every public dataset. With ever expanding reference spectral libraries, GNPS makes new identifications within datasets in an automatic fashion, recording this growth in identifications, and reports it back to the community.
 
-GNPS achieves the second goal by enabling users to "BLAST" MS/MS spectra against the entire GNPS set of datasets (see [Single Spectrum Search](singlespectrum.md)).
+GNPS achieves the second goal by enabling users to "BLAST" MS/MS spectra against the entire GNPS set of datasets (see [Single Spectrum Search](metblast.md)).
 
 ## Exploring Current Continuous Identifications
 

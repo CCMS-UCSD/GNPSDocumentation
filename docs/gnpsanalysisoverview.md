@@ -12,7 +12,7 @@ Molecular networks in GNPS represents each spectrum as a node, and spectrum-to-s
 
 MS/MS data is searched against reference GNPS spectral libraries in a high throughput manner, scaling up to hundreds of files at a time. The spectral library search can be configured to either match exactly to known molecules or utilize variable dereplication to identify putative analogs of known compounds.
 
-### [Single Spectrum Search](singlespectrum.md)
+### [MetBLAST](metblast.md)
 
 Query a single MS/MS spectrum across all public GNPS datasets. The mass spectrometry equivalent of NCBI BLAST helps to put the query spectrum in context of where else it occurs as well as search a single MS/MS spectrum against all public spectral libraries.
 

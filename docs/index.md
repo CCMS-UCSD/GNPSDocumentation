@@ -7,7 +7,7 @@ Global Natural Products Social Molecular Networking (GNPS) is a web-based mass s
 As there are many aspects to GNPS, it can be a bit overwhelming, so the primary functionality is:
 
 * [Identification/Dereplication/Quantification](gnpsanalysisoverview.md) of MS/MS data utilizing computational tools (e.g. [Molecular Networking](networking.md), [Spectral Library Search](librarysearch.md), etc.)
-* Give MS/MS spectra biological/environmental context by searching against all public MS/MS datasets ([Single Spectrum Search](singlespectrum.md))
+* Give MS/MS spectra biological/environmental context by searching against all public MS/MS datasets ([MetBLAST Search](metblast.md))
 * [Annotate/curate identified MS/MS spectra](spectrumcuration.md) in open-access GNPS reference spectra libraries
 * Publish entire study datasets with the Mass Spectrometry Interactive Virtual Environment (MassIVE) data repository ([Dataset Submission](datasets.md))
 * [Browse](datasets#browsing-datasets) and [Reanalyze](datasets#reanalyze-datasets) over 700 public datasets at GNPS
