@@ -22,7 +22,7 @@ pages:
         - Molecular Networking: networking.md
         - Molecular Networking Views: networkingviews.md
         - Spectral Library Search: librarysearch.md
-        - MetBLAST Search: metblast.md
+        - Molecular BLAST Search: molblast.md
     - Advanced Data Analysis:
         - Molecular Networking in Cytoscape: cytoscape.md
         - Dereplicator: dereplicator.md
