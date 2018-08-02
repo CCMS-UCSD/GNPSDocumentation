@@ -3,7 +3,7 @@ The Feature Finding Molecular Networking brings together LC-MS feature detection
 
 The key improvements of the new Feature Finding Molecular Networking are:
 
-1. Importing information derived from the feature detection tools into the molecular networks
+1. Importing quantitative information derived from the feature detection tools into the molecular networks
 2. Discriminate isomers by retention time and remove isotopic peak
 3. Allows the annotation MS/MS of spectra with in silico tools and mapping in the molecular networks
 
@@ -20,7 +20,7 @@ Currently, we are recommending using the MZmine2 workflow, as it has been thorou
 
 ### Mass spectrometry data Feature Detection with MZmine2
 
-Download MZmine2 software (version MZmine v2.30 minimum) at [https://github.com/mzmine/mzmine2/releases](https://github.com/mzmine/mzmine2/releases).
+Download MZmine2 software (version MZmine v2.33 minimum) at [https://github.com/mzmine/mzmine2/releases](https://github.com/mzmine/mzmine2/releases).
 
 See documentation and videos here: [http://mzmine.github.io/documentation.html](http://mzmine.github.io/documentation.html).
 
@@ -48,11 +48,11 @@ Menu: Raw data methods / Raw data import / "Select the files"
 
 Perform mass detection on MS level 1: Menu: Raw data methods / Mass detection / Set filter : MS level 1
 
-[IMPORTANT] Set a intensity threshold at value corresponding to the triggering of the MS2 scan event.
+[IMPORTANT] Set a appropriate intensity threshold. You cam use the preview window to asses your data. As a rule of thumb, the value should at least correspond to the minimum value set for the triggering of the MS2 scan event. (Example: MAXIS-QTOF: 1E3, Q-Exactive 1E4)
 
-Perform mass detection on MS level 2. The same masslist name can be used: Menu: Raw data methods / Mass detection / Set filter : MS level 2.
+Perform mass detection on MS level 2. The same masslist name must be used: Menu: Raw data methods / Mass detection / Set filter : MS level 2. 
 
-[IMPORTANT] Make sure to set an intensity threshold representative of noise level in the MS2 spectrum. Inappropriate intensity threshold could hamper the GNPS and Sirius export modules. For that reason, set it as low as possible(Example: QTOF: 100). If you have any doubt, set it to 0.
+[IMPORTANT] Make sure to set an intensity threshold representative of noise level in the MS2 spectrum. This is typically lower than for MS1. Inappropriate intensity threshold could hamper the GNPS and Sirius export modules. (Example: MAXIS-QTOF: 1E2; Q-Exactive 1E3). If you have any doubt, set it to 0.
 
 ![img](img/mzmine/mass_detection_ms2.png)
 
@@ -64,13 +64,15 @@ Menu: Raw data methods / Chromatogram builder
 
 Menu: Peak list methods / Peak detection / Chromatogram deconvolution
 
-[IMPORTANT] tick both options "m/z range for MS2 scan pairing (Da)" and "RT range for MS2 scan pairing (min)". Define the values according to your experimental setup.
+[IMPORTANT] tick both options "m/z range for MS2 scan pairing (Da)" and "RT range for MS2 scan pairing (min)". Define the values according to your experimental setup. This depends on your expected chromatographic peak width and the MS mass accuracy. (Example: MAXIS-QTOF, 10 min grdainet, 0.15 min, 0.02 m/z; Q-Eaxtive, 5 min gradient, 0.1 min, 0.01 m/z)
 
 ![img](img/mzmine/deconvolve.png)
 
-#### 5. Deconvolute co-eluting ions
+#### 5. Group isotopes and co-eluting ions
 
 "Isotopic peaks grouper module" [recommended] or Camera module. Menu: Peak list methods / Isotopes / Isotopic peaks grouper.
+
+[IMPORTANT]  This depends on your expected peak shapes, duty cycle time and the MS mass accuracy. (Example: MAXIS-QTOF, 10 min grdainet, 0.1 min, 0.02 m/z; Q-Eaxtive, 5 min gradient, 0.05 min, 0.01 m/z)
 
 #### 6. Order the peaklists (Optional)
 
@@ -82,25 +84,24 @@ This is to ensure reproducibility of results. Final output might change a little
 
 Menu: Peak list methods / Alignment / Join aligner
 
-#### 8. Detect Missing Peaks (Optional)
+#### 8. Detect Missing Peaks / Gap filling (Optional)
 
 Menu: Peak list methods / Gap filling / Peak finder
 
-#### 9. Export Feature Abundances
-
-Export the feature table containing all the peaks in .CSV format. Menu: Peak list methods / Export / Export to CSV file
-
-[IMPORTANT] If any other filtering of the peaklist has been performed, make sure to before, reset the peak row number. Menu: Peak list methods / Filtering / Peak list row filter / Reset the peak number ID
-
-[IMPORTANT] This feature table will not be used in further workflow. It is exported in order to do further statistical analysis.
-
-![img](img/mzmine/export_features.png)
-
-#### 10. Filter to MS/MS Peaks
+#### 9. Filter to MS/MS Peaks
 
 Use both filters in the peaklist row filter module: 'Keep only peaks with MS2 scan (GNPS)". Menu: Peak list methods / Filtering / Peak list row filter
 
 ![img](img/mzmine/ms2_filtering.png)
+
+#### 10. Export Feature Abundances (filtered)
+
+Export the feature table containing filtered peaks in .CSV format. Menu: Peak list methods / Export / Export to CSV file
+
+
+
+![img](img/mzmine/export_features.png)
+
 
 #### 11. Export MS/MS as MGF for GNPS
 
@@ -125,7 +126,5 @@ There are several additional normalization options specifically for feature dete
 ### Citation
 
 This work builds on the efforts of our many colleagues, please check out their work:
-
-[MZmine 2 Data-Preprocessing To Enhance Molecular Networking Reliability. Olivon et al.](https://pubs.acs.org/doi/10.1021/acs.analchem.7b01563)
 
 [MZmine 2: Modular framework for processing, visualizing, and analyzing mass spectrometry-based molecular profile data. Pluskal et. al.](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395)
