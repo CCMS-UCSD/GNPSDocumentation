@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.1">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.0">
     
     
       
@@ -40,7 +40,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.ba0fd1a6.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.4f4f49e8.css">
       
       
     
@@ -587,8 +587,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-deconvolute-co-eluting-ions" title="5. Deconvolute co-eluting ions" class="md-nav__link">
-    5. Deconvolute co-eluting ions
+  <a href="#5-group-isotopes-and-co-eluting-ions" title="5. Group isotopes and co-eluting ions" class="md-nav__link">
+    5. Group isotopes and co-eluting ions
   </a>
   
 </li>
@@ -608,22 +608,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#8-detect-missing-peaks-optional" title="8. Detect Missing Peaks (Optional)" class="md-nav__link">
-    8. Detect Missing Peaks (Optional)
+  <a href="#8-detect-missing-peaks-gap-filling-optional" title="8. Detect Missing Peaks / Gap filling (Optional)" class="md-nav__link">
+    8. Detect Missing Peaks / Gap filling (Optional)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#9-export-feature-abundances" title="9. Export Feature Abundances" class="md-nav__link">
-    9. Export Feature Abundances
+  <a href="#9-filter-to-msms-peaks" title="9. Filter to MS/MS Peaks" class="md-nav__link">
+    9. Filter to MS/MS Peaks
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#10-filter-to-msms-peaks" title="10. Filter to MS/MS Peaks" class="md-nav__link">
-    10. Filter to MS/MS Peaks
+  <a href="#10-export-feature-abundances-filtered" title="10. Export Feature Abundances (filtered)" class="md-nav__link">
+    10. Export Feature Abundances (filtered)
   </a>
   
 </li>
@@ -961,8 +961,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-deconvolute-co-eluting-ions" title="5. Deconvolute co-eluting ions" class="md-nav__link">
-    5. Deconvolute co-eluting ions
+  <a href="#5-group-isotopes-and-co-eluting-ions" title="5. Group isotopes and co-eluting ions" class="md-nav__link">
+    5. Group isotopes and co-eluting ions
   </a>
   
 </li>
@@ -982,22 +982,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#8-detect-missing-peaks-optional" title="8. Detect Missing Peaks (Optional)" class="md-nav__link">
-    8. Detect Missing Peaks (Optional)
+  <a href="#8-detect-missing-peaks-gap-filling-optional" title="8. Detect Missing Peaks / Gap filling (Optional)" class="md-nav__link">
+    8. Detect Missing Peaks / Gap filling (Optional)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#9-export-feature-abundances" title="9. Export Feature Abundances" class="md-nav__link">
-    9. Export Feature Abundances
+  <a href="#9-filter-to-msms-peaks" title="9. Filter to MS/MS Peaks" class="md-nav__link">
+    9. Filter to MS/MS Peaks
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#10-filter-to-msms-peaks" title="10. Filter to MS/MS Peaks" class="md-nav__link">
-    10. Filter to MS/MS Peaks
+  <a href="#10-export-feature-abundances-filtered" title="10. Export Feature Abundances (filtered)" class="md-nav__link">
+    10. Export Feature Abundances (filtered)
   </a>
   
 </li>
@@ -1055,7 +1055,7 @@
                 <p>The Feature Finding Molecular Networking brings together LC-MS feature detection tools (e.g. MZmine2, OpenMS, MS-DIAL, MetaboScape), molecular networking (GNPS, http://gnps.ucsd.edu), and other in silico annotation tools, such as Sirius, CSI:FingerID, or Network Annotation Propagation.</p>
 <p>The key improvements of the new Feature Finding Molecular Networking are:</p>
 <ol>
-<li>Importing information derived from the feature detection tools into the molecular networks</li>
+<li>Importing quantitative information derived from the feature detection tools into the molecular networks</li>
 <li>Discriminate isomers by retention time and remove isotopic peak</li>
 <li>Allows the annotation MS/MS of spectra with in silico tools and mapping in the molecular networks</li>
 </ol>
@@ -1069,11 +1069,34 @@
 </ol>
 <p>Currently, we are recommending using the MZmine2 workflow, as it has been thoroughly tested. See the documentation below.</p>
 <h3 id="mass-spectrometry-data-feature-detection-with-mzmine2">Mass spectrometry data Feature Detection with MZmine2</h3>
-<p>Download MZmine2 software (version MZmine v2.30 minimum) at <a href="https://github.com/mzmine/mzmine2/releases">https://github.com/mzmine/mzmine2/releases</a>.</p>
+<p>Download MZmine2 software (version MZmine v2.33 minimum) at <a href="https://github.com/mzmine/mzmine2/releases">https://github.com/mzmine/mzmine2/releases</a>.</p>
 <p>See documentation and videos here: <a href="http://mzmine.github.io/documentation.html">http://mzmine.github.io/documentation.html</a>.</p>
 <p>Please make sure your files are converted to mzXML or mzML.</p>
 <h3 id="mzmine-batch-steps">MZMine Batch Steps</h3>
-<p>In MZmine2, a sequence of steps must be performed. The prototype batch method for Bruker Maxis HD qTof can be <a href="../static/qtof_batch.xml">downloaded</a> and imported into MZmine2.</p>
+<p>In MZmine2, a sequence of steps must be performed. Here are several prototype for various instruments as a starting point:</p>
+<table>
+<thead>
+<tr>
+<th>Instrument</th>
+<th>LC Length</th>
+<th>Matrix Type</th>
+<th>Sample Size</th>
+<th>Download</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bruker Maxis HD qTof</td>
+<td>12 Min</td>
+<td>Stool</td>
+<td>20</td>
+<td><a href="../static/maxis_12min_stool_20.xml">Batch</a></td>
+</tr>
+</tbody>
+</table>
+<p>These batch files can be imported into MZMine2. </p>
+<!-- The prototype batch method for Bruker Maxis HD qTof can be [downloaded](static/qtof_batch.xml) and imported into MZmine2. -->
+
 <p><img alt="complete workflow view" src="../img/mzmine/Workflow_mzmine.png" /></p>
 <p>The steps required for data pre-processing with MZmine2 for GNPS are shown in the screen capture below.</p>
 <p><img alt="img" src="../img/mzmine/batch_overview.png" /></p>
@@ -1083,33 +1106,32 @@
 <p><img alt="img" src="../img/mzmine/2_import-raw.png" /></p>
 <h4 id="2-mass-detection">2. Mass Detection</h4>
 <p>Perform mass detection on MS level 1: Menu: Raw data methods / Mass detection / Set filter : MS level 1</p>
-<p>[IMPORTANT] Set a intensity threshold at value corresponding to the triggering of the MS2 scan event.</p>
-<p>Perform mass detection on MS level 2. The same masslist name can be used: Menu: Raw data methods / Mass detection / Set filter : MS level 2.</p>
-<p>[IMPORTANT] Make sure to set an intensity threshold representative of noise level in the MS2 spectrum. Inappropriate intensity threshold could hamper the GNPS and Sirius export modules. For that reason, set it as low as possible(Example: QTOF: 100). If you have any doubt, set it to 0.</p>
+<p>[IMPORTANT] Set a appropriate intensity threshold. You cam use the preview window to asses your data. As a rule of thumb, the value should at least correspond to the minimum value set for the triggering of the MS2 scan event. (Example: MAXIS-QTOF: 1E3, Q-Exactive 1E4)</p>
+<p>Perform mass detection on MS level 2. The same masslist name must be used: Menu: Raw data methods / Mass detection / Set filter : MS level 2.</p>
+<p>[IMPORTANT] Make sure to set an intensity threshold representative of noise level in the MS2 spectrum. This is typically lower than for MS1. Inappropriate intensity threshold could hamper the GNPS and Sirius export modules. (Example: MAXIS-QTOF: 1E2; Q-Exactive 1E3). If you have any doubt, set it to 0.</p>
 <p><img alt="img" src="../img/mzmine/mass_detection_ms2.png" /></p>
 <h4 id="3-build-chromatogram">3. Build Chromatogram</h4>
 <p>Menu: Raw data methods / Chromatogram builder</p>
 <h4 id="4-deconvolve-the-chromatogram">4. Deconvolve the Chromatogram</h4>
 <p>Menu: Peak list methods / Peak detection / Chromatogram deconvolution</p>
-<p>[IMPORTANT] tick both options "m/z range for MS2 scan pairing (Da)" and "RT range for MS2 scan pairing (min)". Define the values according to your experimental setup.</p>
+<p>[IMPORTANT] tick both options "m/z range for MS2 scan pairing (Da)" and "RT range for MS2 scan pairing (min)". Define the values according to your experimental setup. This depends on your expected chromatographic peak width and the MS mass accuracy. (Example: MAXIS-QTOF, 10 min grdainet, 0.15 min, 0.02 m/z; Q-Eaxtive, 5 min gradient, 0.1 min, 0.01 m/z)</p>
 <p><img alt="img" src="../img/mzmine/deconvolve.png" /></p>
-<h4 id="5-deconvolute-co-eluting-ions">5. Deconvolute co-eluting ions</h4>
+<h4 id="5-group-isotopes-and-co-eluting-ions">5. Group isotopes and co-eluting ions</h4>
 <p>"Isotopic peaks grouper module" [recommended] or Camera module. Menu: Peak list methods / Isotopes / Isotopic peaks grouper.</p>
+<p>[IMPORTANT]  This depends on your expected peak shapes, duty cycle time and the MS mass accuracy. (Example: MAXIS-QTOF, 10 min grdainet, 0.1 min, 0.02 m/z; Q-Eaxtive, 5 min gradient, 0.05 min, 0.01 m/z)</p>
 <h4 id="6-order-the-peaklists-optional">6. Order the peaklists (Optional)</h4>
 <p>Menu: Peak list methods / Order peak lists.</p>
 <p>This is to ensure reproducibility of results. Final output might change a little if this is not performed.</p>
 <h4 id="7-align-features">7. Align Features</h4>
 <p>Menu: Peak list methods / Alignment / Join aligner</p>
-<h4 id="8-detect-missing-peaks-optional">8. Detect Missing Peaks (Optional)</h4>
+<h4 id="8-detect-missing-peaks-gap-filling-optional">8. Detect Missing Peaks / Gap filling (Optional)</h4>
 <p>Menu: Peak list methods / Gap filling / Peak finder</p>
-<h4 id="9-export-feature-abundances">9. Export Feature Abundances</h4>
-<p>Export the feature table containing all the peaks in .CSV format. Menu: Peak list methods / Export / Export to CSV file</p>
-<p>[IMPORTANT] If any other filtering of the peaklist has been performed, make sure to before, reset the peak row number. Menu: Peak list methods / Filtering / Peak list row filter / Reset the peak number ID</p>
-<p>[IMPORTANT] This feature table will not be used in further workflow. It is exported in order to do further statistical analysis.</p>
-<p><img alt="img" src="../img/mzmine/export_features.png" /></p>
-<h4 id="10-filter-to-msms-peaks">10. Filter to MS/MS Peaks</h4>
+<h4 id="9-filter-to-msms-peaks">9. Filter to MS/MS Peaks</h4>
 <p>Use both filters in the peaklist row filter module: 'Keep only peaks with MS2 scan (GNPS)". Menu: Peak list methods / Filtering / Peak list row filter</p>
 <p><img alt="img" src="../img/mzmine/ms2_filtering.png" /></p>
+<h4 id="10-export-feature-abundances-filtered">10. Export Feature Abundances (filtered)</h4>
+<p>Export the feature table containing filtered peaks in .CSV format. Menu: Peak list methods / Export / Export to CSV file</p>
+<p><img alt="img" src="../img/mzmine/export_features.png" /></p>
 <h4 id="11-export-msms-as-mgf-for-gnps">11. Export MS/MS as MGF for GNPS</h4>
 <p>Export the .MGF file for GNPS. Menu: Peak list methods / Export / Export for GNPS</p>
 <p><img alt="img" src="../img/mzmine/gnps_export.png" /></p>
@@ -1125,7 +1147,6 @@
 <p><img alt="img" src="../img/mzmine/quant_options.png" /></p>
 <h3 id="citation">Citation</h3>
 <p>This work builds on the efforts of our many colleagues, please check out their work:</p>
-<p><a href="https://pubs.acs.org/doi/10.1021/acs.analchem.7b01563">MZmine 2 Data-Preprocessing To Enhance Molecular Networking Reliability. Olivon et al.</a></p>
 <p><a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395">MZmine 2: Modular framework for processing, visualizing, and analyzing mass spectrometry-based molecular profile data. Pluskal et. al.</a></p>
                 
                   
