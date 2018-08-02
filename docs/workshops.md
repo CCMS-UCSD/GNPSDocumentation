@@ -2,7 +2,9 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Your Venue Here | TBA | TBA | TBA |
+| Your Venue Here | GNPS Beginner Workshop | TBA | TBA |
+| Your Venue Here | GNPS Advanced Tools Workshop | TBA | TBA |
+| Your Venue Here | GNPS Advanced Analysis Workshop | TBA | TBA |
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
 
@@ -10,8 +12,8 @@ If you would like to host a GNPS workshop together with the GNPS team, please re
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Metabolomics 2018 | GNPS Introduction, Molecular Networking - Food Analysis, `ili 3D cartography of plants, MS2LDA | July XXX | TBA |
-| ASP 2018 | GNPS Introduction, Molecular Networking - Natural Product Discovery in bacterial extraction, `ili 3D cartography, MetBLAST - leveraging public datasets | July XXX | TBA |
+| Metabolomics 2018 | GNPS Introduction, Molecular Networking - Food Analysis, `ili 3D cartography of plants, MS2LDA | July 2018 | Coming Soon |
+| ASP 2018 | GNPS Introduction, Molecular Networking - Natural Product Discovery in bacterial extraction, `ili 3D cartography, MetBLAST - leveraging public datasets | July 2018 | [Download](ftp://massive.ucsd.edu/MSV000082622/updates/2018-08-02_mwang87_0a19cfec/other/ASP2018_GNPS_Workshop.zip) |
 
 ## Host Your Own
 
