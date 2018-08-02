@@ -30,11 +30,11 @@ Please make sure your files are converted to mzXML or mzML.
 
 In MZmine2, a sequence of steps must be performed. Here are several prototype for various instruments as a starting point:
 
-| Instrument  | LC Length | Matrix Type | Sample Size | Download |
+| Instrument  | Gradient Length | Matrix Type | Sample Size | Download |
 | ------------- |-------------| ----- | ----- | ----- |
-| Bruker Maxis HD qTof | 12 Min | Stool | 20 | [Batch](static/maxis_12min_stool_20.xml) |
+| Bruker Maxis HD qTof | 10 Min | Stool | 20 | [Batch](static/maxis_12min_stool_20.xml) |
 
-These batch files can be imported into MZMine2. 
+These batch files can be imported into MZMine2.
 
 <!-- The prototype batch method for Bruker Maxis HD qTof can be [downloaded](static/qtof_batch.xml) and imported into MZmine2. -->
 
@@ -105,8 +105,6 @@ Use both filters in the peaklist row filter module: 'Keep only peaks with MS2 sc
 #### 10. Export Feature Abundances (filtered)
 
 Export the feature table containing filtered peaks in .CSV format. Menu: Peak list methods / Export / Export to CSV file
-
-
 
 ![img](img/mzmine/export_features.png)
 
