@@ -28,7 +28,15 @@ Please make sure your files are converted to mzXML or mzML.
 
 ### MZMine Batch Steps
 
-In MZmine2, a sequence of steps must be performed. The prototype batch method for Bruker Maxis HD qTof can be [downloaded](static/qtof_batch.xml) and imported into MZmine2.
+In MZmine2, a sequence of steps must be performed. Here are several prototype for various instruments as a starting point:
+
+| Instrument  | LC Length | Matrix Type | Sample Size | Download |
+| ------------- |-------------| ----- | ----- | ----- |
+| Bruker Maxis HD qTof | 12 Min | Stool | 20 | [Batch](static/maxis_12min_stool_20.xml) |
+
+These batch files can be imported into MZMine2. 
+
+<!-- The prototype batch method for Bruker Maxis HD qTof can be [downloaded](static/qtof_batch.xml) and imported into MZmine2. -->
 
 ![complete workflow view](img/mzmine/Workflow_mzmine.png)
 
@@ -50,7 +58,7 @@ Perform mass detection on MS level 1: Menu: Raw data methods / Mass detection / 
 
 [IMPORTANT] Set a appropriate intensity threshold. You cam use the preview window to asses your data. As a rule of thumb, the value should at least correspond to the minimum value set for the triggering of the MS2 scan event. (Example: MAXIS-QTOF: 1E3, Q-Exactive 1E4)
 
-Perform mass detection on MS level 2. The same masslist name must be used: Menu: Raw data methods / Mass detection / Set filter : MS level 2. 
+Perform mass detection on MS level 2. The same masslist name must be used: Menu: Raw data methods / Mass detection / Set filter : MS level 2.
 
 [IMPORTANT] Make sure to set an intensity threshold representative of noise level in the MS2 spectrum. This is typically lower than for MS1. Inappropriate intensity threshold could hamper the GNPS and Sirius export modules. (Example: MAXIS-QTOF: 1E2; Q-Exactive 1E3). If you have any doubt, set it to 0.
 
