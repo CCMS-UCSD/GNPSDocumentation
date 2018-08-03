@@ -42,7 +42,8 @@ pages:
         - User Page: user.md
     - Troubleshooting: troubleshooting.md
     - Tutorial Guides:
-        - Analog Discovery in Microbial Extracts: tutorials/bacterianetworking.md
+        - Analog Discovery in Microbial Extracts with Molecular Networking: tutorials/bacterianetworking.md
+        - Microbiome Molecules in Fecal Samples in American Gut Project (Feature Based Molecular Networking): tutorials/americangutmzmine.md
 
 theme:
     name: material

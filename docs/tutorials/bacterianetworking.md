@@ -54,7 +54,7 @@ Click the "View All Library Hits".
 
 This will list all library compounds that were matched. Here we can see many different antibiotics, e.g. Stenothricin, Arylomycin, Daptomycin, and Mureidomycin.
 
-TODO: Image
+![img](/img/tutorials/identifications.png)
 
 ### Exploring Molecular Networks including Stenothricin
 
