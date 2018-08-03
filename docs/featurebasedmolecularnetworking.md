@@ -129,6 +129,8 @@ There are several additional normalization options specifically for feature dete
 
 ![img](img/mzmine/quant_options.png)
 
+Here is an example mzmine networking [job](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=21289201c7964f6f909435fda333683c) from a subset of the American Gut Project. 
+
 ### Citation
 
 This work builds on the efforts of our many colleagues, please check out their work:
