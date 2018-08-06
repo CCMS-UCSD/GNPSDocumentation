@@ -129,7 +129,11 @@ There are several additional normalization options specifically for feature dete
 
 ![img](img/mzmine/quant_options.png)
 
-Here is an example mzmine networking [job](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=21289201c7964f6f909435fda333683c) from a subset of the American Gut Project. 
+Here is an example mzmine networking [job](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=21289201c7964f6f909435fda333683c) from a subset of the American Gut Project.
+
+## Tutorials
+
+See our [tutorial](tutorials/americangutmzmine) on using Feature Based Molecular Networking in the American Gut Project sample. 
 
 ### Citation
 

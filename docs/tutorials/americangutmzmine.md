@@ -14,8 +14,8 @@ LC/MS/MS analysis of American Gut Stool samples for participants that consumed p
 ## Required Software Installs
 
 1. FTP Client (e.g. WinSCP, NOT FileZilla)
-2. [MZMine2](https://github.com/mzmine/mzmine2/releases)
-3. [Cytocape](http://www.cytoscape.org/download.php)
+2. [MZMine2](https://github.com/mzmine/mzmine2/releases) for feature detection
+3. [Cytocape](http://www.cytoscape.org/download.php) for network visualization
 
 ## Data Availability
 
@@ -23,4 +23,4 @@ LC/MS/MS data can be found in the [MassIVE dataset MSV000082678](https://massive
 
 ## Video Tutorial
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/XGSy3_Czz8k"> </iframe>
+<iframe width="800" height="500" src="http://www.youtube.com/embed/rD8cyQvTkzI"> </iframe>
