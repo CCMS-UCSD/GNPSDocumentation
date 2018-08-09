@@ -60,3 +60,4 @@ theme:
 #theme: readthedocs
 #theme:
 #  name: 'rtd-dropdown'
+google_analytics: ['UA-8412213-5', 'https://ccms-ucsd.github.io/GNPSDocumentation/']
