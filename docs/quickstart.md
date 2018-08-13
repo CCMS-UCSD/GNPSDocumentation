@@ -17,7 +17,7 @@ Click on the registration link to bring up the account registration form.
 
 ## Upload data (Quick)
 
-Open a ftp client such as [FileZilla](https://filezilla-project.org/) client with the following input parameters; Host: ccms-ftp01.ucsd.edu followed by entering your user name and password for GNPS followed by enter.
+Open a ftp client such as [WinSCP](https://winscp.net/eng/download.php) (Not Filezilla as it includes malware) client with the following input parameters; Host: ccms-ftp01.ucsd.edu followed by entering your user name and password for GNPS followed by enter.
 
 ![Filezilla Upload](img/quickstart/filezilla_address.png)
 
