@@ -8,8 +8,8 @@ LC/MS/MS analysis of American Gut Stool samples for participants that consumed p
 ## Learning Objectives
 
 1. Learn how to download files from GNPS Datasets
-2. Run MZMine2 feature detection and output quantification and MS/MS associated with each feature
-3. Run Feature Based Molecular Networking from MZMine2 in GNPS - Under Construction
+2. Run MZmine2 feature detection and output quantification and MS/MS associated with each feature
+3. Run Feature Based Molecular Networking from MZMine2 in GNPS (Under Construction)
 
 ## Required Software Installs
 
@@ -21,6 +21,6 @@ LC/MS/MS analysis of American Gut Stool samples for participants that consumed p
 
 LC/MS/MS data can be found in the [MassIVE dataset MSV000082678](https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=de2d18fd91804785bce8c225cc94a444).
 
-## Video Tutorial
+## Video Tutorial - Run MZmine2
 
-<iframe width="800" height="500" src="https://www.youtube.com/embed/rD8cyQvTkzI"> </iframe>
+<iframe width="800" height="500" src="https://www.youtube.com/embed/5jjMllbwD-U"> </iframe>
