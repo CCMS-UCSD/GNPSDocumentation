@@ -1257,7 +1257,7 @@
         }, 
         {
             "location": "/tutorials/americangutmzmine/", 
-            "text": "In this tutorial we highlight how to use Feature Based Molecular Networking (using MZMine2) to uncover unique metabolism of molecules found in the American Gut Project.\n\n\nExperimental Setup\n\n\nLC/MS/MS analysis of American Gut Stool samples for participants that consumed plants.\n\n\nLearning Objectives\n\n\n\n\nLearn how to download files from GNPS Datasets\n\n\nRun MZMine2 feature detection and output quantification and MS/MS associated with each feature\n\n\nRun Feature Based Molecular Networking from MZMine2 in GNPS - Under Construction\n\n\n\n\nRequired Software Installs\n\n\n\n\nFTP Client (e.g. WinSCP, NOT FileZilla)\n\n\nMZMine2\n for feature detection\n\n\nCytocape\n for network visualization\n\n\n\n\nData Availability\n\n\nLC/MS/MS data can be found in the \nMassIVE dataset MSV000082678\n.\n\n\nVideo Tutorial", 
+            "text": "In this tutorial we highlight how to use Feature Based Molecular Networking (using MZMine2) to uncover unique metabolism of molecules found in the American Gut Project.\n\n\nExperimental Setup\n\n\nLC/MS/MS analysis of American Gut Stool samples for participants that consumed plants.\n\n\nLearning Objectives\n\n\n\n\nLearn how to download files from GNPS Datasets\n\n\nRun MZmine2 feature detection and output quantification and MS/MS associated with each feature\n\n\nRun Feature Based Molecular Networking from MZMine2 in GNPS (Under Construction)\n\n\n\n\nRequired Software Installs\n\n\n\n\nFTP Client (e.g. WinSCP, NOT FileZilla)\n\n\nMZMine2\n for feature detection\n\n\nCytocape\n for network visualization\n\n\n\n\nData Availability\n\n\nLC/MS/MS data can be found in the \nMassIVE dataset MSV000082678\n.\n\n\nVideo Tutorial - Run MZmine2", 
             "title": "Microbiome Molecules in Fecal Samples in American Gut Project (Feature Based Molecular Networking)"
         }, 
         {
@@ -1267,7 +1267,7 @@
         }, 
         {
             "location": "/tutorials/americangutmzmine/#learning-objectives", 
-            "text": "Learn how to download files from GNPS Datasets  Run MZMine2 feature detection and output quantification and MS/MS associated with each feature  Run Feature Based Molecular Networking from MZMine2 in GNPS - Under Construction", 
+            "text": "Learn how to download files from GNPS Datasets  Run MZmine2 feature detection and output quantification and MS/MS associated with each feature  Run Feature Based Molecular Networking from MZMine2 in GNPS (Under Construction)", 
             "title": "Learning Objectives"
         }, 
         {
@@ -1281,9 +1281,9 @@
             "title": "Data Availability"
         }, 
         {
-            "location": "/tutorials/americangutmzmine/#video-tutorial", 
+            "location": "/tutorials/americangutmzmine/#video-tutorial-run-mzmine2", 
             "text": "", 
-            "title": "Video Tutorial"
+            "title": "Video Tutorial - Run MZmine2"
         }
     ]
 }
