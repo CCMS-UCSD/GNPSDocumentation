@@ -15,6 +15,7 @@ If you would like to host a GNPS workshop together with the GNPS team, please re
 | ------------- |-------------| -----| -----|
 | Metabolomics 2018 | GNPS Introduction, Molecular Networking - Food Analysis, `ili 3D cartography of plants, MS2LDA | July 2018 | Coming Soon |
 | ASP 2018 | GNPS Introduction, Molecular Networking - Natural Product Discovery in bacterial extraction, `ili 3D cartography, MetBLAST - leveraging public datasets | July 2018 | [Download](ftp://massive.ucsd.edu/MSV000082622/updates/2018-08-02_mwang87_0a19cfec/other/ASP2018_GNPS_Workshop.zip) |
+| EMSC Workshop 2018 | This short course is aimed at explaining how to use the METASPACE and GNPS platforms for large scale data analysis in mass spectrometry (MS) based metabolomics experiments | March 11, 2018 | [Materials](https://www.dropbox.com/s/ob8kh5su081hexf/EMSC2018-GNPS-Workshop.pdf?dl=1) |
 
 ## Host Your Own
 
