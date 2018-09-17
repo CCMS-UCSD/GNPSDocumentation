@@ -8,4 +8,10 @@ For more in-depth assistance, we invite you to attend the numerous GNPS workshop
 
 ## GNPS Office Hours
 
-We are considering hosting online office hours on a bi-weekly basis. If you think would be a good idea, please email Ming ([miw023@ucsd.edu](mainto: miw023@ucsd.edu)).
+We are considering hosting online office hours on a bi-weekly basis. Our next office hour is on September 24th at 2-3PM PST on Zoom:
+
+https://zoom.us/j/130280432
+
+with Ming ([miw023@ucsd.edu](mainto: miw023@ucsd.edu)).
+
+This is a place to ask any questions you have on GNPS, computational mass spec, and just an overall good time. 
