@@ -2,6 +2,7 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
+| Symposia of Natural Products | Natural Product Dereplication using GNPS | Feb 5, 2019 | [Check it out!](https://www.npspanama.org/en/workshop/) |
 | Your Venue Here | GNPS Beginner Workshop | TBA | TBA |
 | Your Venue Here | GNPS Advanced Tools Workshop | TBA | TBA |
 | Your Venue Here | GNPS Advanced Analysis Workshop | TBA | TBA |
