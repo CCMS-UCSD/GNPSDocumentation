@@ -94,7 +94,7 @@ Click the "Direct Cytoscape Preview/Download" to get a preformatted cytoscape fi
 
 In this preview you can even see from a high level the red and blue molecules that represent the G1 (roseosporus) and G2 (DSM5940) respectively. Download the Cytoscape file and view in cytoscape to dig further!
 
-Open network in Cytoscape ([Help](cytoscape.md)) to look at the entire network. Each molecule (node) has the pie charts already drawn with red (G1 - Rosesporus) and blue (G2 - DSM5940).
+Open network in Cytoscape ([Help](/cytoscape.md)) to look at the entire network. Each molecule (node) has the pie charts already drawn with red (G1 - Rosesporus) and blue (G2 - DSM5940).
 
 ![img](/img/tutorials/cytoscape3.png)
 
