@@ -18,6 +18,6 @@ If you want to filter a table in GNPS on a single column and the value in a give
 
 In order to download the data for a result table in GNPS that you are currently viewing, click the download button:
 
-![img](/img/download1.png)
+![img](/img/results/download1.png)
 
-![img](/img/download2.png)
+![img](/img/results/download2.png)
