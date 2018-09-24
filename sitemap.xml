@@ -125,6 +125,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>/resultviews/</loc>
+     <lastmod>2018-09-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
