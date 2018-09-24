@@ -184,8 +184,6 @@ Lorem Ipsum
 
 Lorem Ipsum
 
-
-
 ## View Principle Coordinate Analysis (PCoA) Plots
 
 To view PCoA plots, please enable that output on the input page (default is on) in the "Advanced Output Options" section and enabling "Create Cluster Buckets and BioM/PCoA Plots output". This will create the appropriate data structures for PCoA analysis. To include additional metadata to color the nodes according to the sample types, include and add additional columns for metadata describing the experiment (see [metadata documentation](networking/#metadata)).
