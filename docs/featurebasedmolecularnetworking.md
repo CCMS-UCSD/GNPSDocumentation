@@ -22,7 +22,8 @@ Currently, we are recommending using the MZmine2 workflow, as it has been thorou
 
 Download MZmine2 software (version MZmine v2.33 minimum) at [https://github.com/mzmine/mzmine2/releases](https://github.com/mzmine/mzmine2/releases).
 
-See documentation and videos here: [http://mzmine.github.io/documentation.html](http://mzmine.github.io/documentation.html).
+See documentation and videos here: [http://mzmine.github.io/documentation.html](http://mzmine.github.io/documentation.html), 
+and [the video tutorial about Feature Based Molecular Networking.](tutorials/americangutmzmine/)
 
 Please make sure your files are converted to mzXML or mzML.
 
@@ -41,6 +42,10 @@ These batch files can be imported into MZMine2.
 ![complete workflow view](img/mzmine/Workflow_mzmine.png)
 
 The steps required for data pre-processing with MZmine2 for GNPS are shown in the screen capture below.
+
+See also the following [video tutorial](https://ccms-ucsd.github.io/GNPSDocumentation/tutorials/americangutmzmine/) 
+<iframe width="800" height="500" src="https://www.youtube.com/embed/5jjMllbwD-U"> </iframe>
+
 
 ![img](img/mzmine/batch_overview.png)
 
@@ -105,7 +110,7 @@ Use both filters in the peaklist row filter module: 'Keep only peaks with MS2 sc
 #### 10. Export Feature Abundances (filtered)
 
 Export the feature table containing filtered peaks in .CSV format. Menu: Peak list methods / Export / Export to CSV file.
-See an example of MZmine feature table [here](ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/).
+See an example of MZmine feature table [here](tutorials/AG_tutorial_files/MZmine-GNPS_AG_test_featuretable.csv).
 
 The feature table must contain at least the row ID, the row m/z, and row retention time, along with the sample columns. 
 It is currently mandatory for the sample name headers string to have the following format: "filename Peak area". Depending on Note that depending on the steps used in MZmine the sample name header can be "filename baseline-corrected Peak area", but this has to changed back to "filename Peak area".
@@ -116,7 +121,8 @@ It is currently mandatory for the sample name headers string to have the followi
 #### 11. Export MS/MS as MGF for GNPS
 
 Export the .MGF file for GNPS. Menu: Peak list methods / Export / Export for GNPS.
-See an example of MZmine .MGF file [here](ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/).
+
+See an example of MZmine .MGF file [here](tutorials/AG_tutorial_files/MZmine-GNPS_AG_test_GNPS.mgf).
 
 ![img](img/mzmine/gnps_export.png)
 
@@ -124,7 +130,7 @@ See an example of MZmine .MGF file [here](ftp://massive.ucsd.edu/MSV000082678/up
 
 There is a special molecular networking workflow to handle MzMine2 features outputs. Try it out [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D).
 
-You will need three items (test files are accessible [here](ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/)):
+You will need three items (test files are accessible [here](tutorials/AG_tutorial_files)):
 
 1. Feature Table from above 
 2. MGF for MS/MS from above
