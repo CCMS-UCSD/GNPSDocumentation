@@ -104,14 +104,19 @@ Use both filters in the peaklist row filter module: 'Keep only peaks with MS2 sc
 
 #### 10. Export Feature Abundances (filtered)
 
-Export the feature table containing filtered peaks in .CSV format. Menu: Peak list methods / Export / Export to CSV file
+Export the feature table containing filtered peaks in .CSV format. Menu: Peak list methods / Export / Export to CSV file.
+See an example of MZmine feature table [here](ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/).
+
+The feature table must contain at least the row ID, the row m/z, and row retention time, along with the sample columns. 
+It is currently mandatory for the sample name headers string to have the following format: "filename Peak area". Depending on Note that depending on the steps used in MZmine the sample name header can be "filename baseline-corrected Peak area", but this has to changed back to "filename Peak area".
 
 ![img](img/mzmine/export_features.png)
 
 
 #### 11. Export MS/MS as MGF for GNPS
 
-Export the .MGF file for GNPS. Menu: Peak list methods / Export / Export for GNPS
+Export the .MGF file for GNPS. Menu: Peak list methods / Export / Export for GNPS.
+See an example of MZmine .MGF file [here](ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/).
 
 ![img](img/mzmine/gnps_export.png)
 
@@ -119,9 +124,9 @@ Export the .MGF file for GNPS. Menu: Peak list methods / Export / Export for GNP
 
 There is a special molecular networking workflow to handle MzMine2 features outputs. Try it out [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D).
 
-You will need three items:
+You will need three items (test files are accessible [here](ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/)):
 
-1. Feature Table from above
+1. Feature Table from above 
 2. MGF for MS/MS from above
 3. Metadata table - described [here](networking#metadata)
 
