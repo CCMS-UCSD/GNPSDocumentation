@@ -14,7 +14,7 @@ LC-MS/MS analysis of American Gut Stool samples for participants that consumed p
 
 ## Required Software Installs
 
-1. FTP Client (e.g. WinSCP, DO NOT FileZilla!) [See instructions here] (http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/)
+1. FTP Client (e.g. WinSCP, DO NOT FileZilla!) [See instructions here](http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/)
 2. [MZMine2](https://github.com/mzmine/mzmine2/releases) for feature detection
 3. [Cytocape](http://www.cytoscape.org/download.php) for network visualization
 
