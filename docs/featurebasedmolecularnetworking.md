@@ -122,7 +122,7 @@ It is currently mandatory for the sample name headers string to have the followi
 
 Export the .MGF file for GNPS. Menu: Peak list methods / Export / Export for GNPS.
 
-See an example of MZmine .MGF file [here](tutorial/AG_tutorial_files/MZmine-GNPS_AG_test_GNPS.mgf).
+See an example of MZmine .MGF file [here](tutorials/AG_tutorial_files/MZmine-GNPS_AG_test_GNPS.mgf).
 
 ![img](img/mzmine/gnps_export.png)
 
@@ -130,7 +130,7 @@ See an example of MZmine .MGF file [here](tutorial/AG_tutorial_files/MZmine-GNPS
 
 There is a special molecular networking workflow to handle MzMine2 features outputs. Try it out [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D).
 
-You will need three items (test files are accessible [here](tutorial/AG_tutorial_files)):
+You will need three items (test files are accessible [here](tutorials/AG_tutorial_files)):
 
 1. Feature Table from above 
 2. MGF for MS/MS from above
