@@ -22,7 +22,8 @@ Currently, we are recommending using the MZmine2 workflow, as it has been thorou
 
 Download MZmine2 software (version MZmine v2.33 minimum) at [https://github.com/mzmine/mzmine2/releases](https://github.com/mzmine/mzmine2/releases).
 
-See documentation and videos here: [http://mzmine.github.io/documentation.html](http://mzmine.github.io/documentation.html).
+See documentation and videos here: [http://mzmine.github.io/documentation.html](http://mzmine.github.io/documentation.html), 
+and [the video tutorial about Feature Based Molecular Networking.](https://ccms-ucsd.github.io/GNPSDocumentation/tutorials/americangutmzmine/)
 
 Please make sure your files are converted to mzXML or mzML.
 
@@ -41,6 +42,10 @@ These batch files can be imported into MZMine2.
 ![complete workflow view](img/mzmine/Workflow_mzmine.png)
 
 The steps required for data pre-processing with MZmine2 for GNPS are shown in the screen capture below.
+
+See also the following [video tutorial](https://ccms-ucsd.github.io/GNPSDocumentation/tutorials/americangutmzmine/) 
+<iframe width="800" height="500" src="https://www.youtube.com/embed/5jjMllbwD-U"> </iframe>
+
 
 ![img](img/mzmine/batch_overview.png)
 
