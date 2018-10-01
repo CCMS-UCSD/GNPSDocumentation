@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.1">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.0">
     
     
       
@@ -40,7 +40,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.ba0fd1a6.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.4f4f49e8.css">
       
       
     
@@ -1120,7 +1120,8 @@
 <p>Currently, we are recommending using the MZmine2 workflow, as it has been thoroughly tested. See the documentation below.</p>
 <h3 id="mass-spectrometry-data-feature-detection-with-mzmine2">Mass spectrometry data Feature Detection with MZmine2</h3>
 <p>Download MZmine2 software (version MZmine v2.33 minimum) at <a href="https://github.com/mzmine/mzmine2/releases">https://github.com/mzmine/mzmine2/releases</a>.</p>
-<p>See documentation and videos here: <a href="http://mzmine.github.io/documentation.html">http://mzmine.github.io/documentation.html</a>.</p>
+<p>See documentation and videos here: <a href="http://mzmine.github.io/documentation.html">http://mzmine.github.io/documentation.html</a>, 
+and <a href="../tutorials/americangutmzmine/">the video tutorial about Feature Based Molecular Networking.</a></p>
 <p>Please make sure your files are converted to mzXML or mzML.</p>
 <h3 id="mzmine-batch-steps">MZMine Batch Steps</h3>
 <p>In MZmine2, a sequence of steps must be performed. Here are several prototype for various instruments as a starting point:</p>
@@ -1149,6 +1150,8 @@
 
 <p><img alt="complete workflow view" src="../img/mzmine/Workflow_mzmine.png" /></p>
 <p>The steps required for data pre-processing with MZmine2 for GNPS are shown in the screen capture below.</p>
+<p>See also the following <a href="https://ccms-ucsd.github.io/GNPSDocumentation/tutorials/americangutmzmine/">video tutorial</a> 
+<iframe width="800" height="500" src="https://www.youtube.com/embed/5jjMllbwD-U"> </iframe></p>
 <p><img alt="img" src="../img/mzmine/batch_overview.png" /></p>
 <p>Below is a walk through of all the steps</p>
 <h4 id="1-import-files">1. Import Files</h4>
@@ -1180,16 +1183,20 @@
 <p>Use both filters in the peaklist row filter module: 'Keep only peaks with MS2 scan (GNPS)". Menu: Peak list methods / Filtering / Peak list row filter</p>
 <p><img alt="img" src="../img/mzmine/ms2_filtering.png" /></p>
 <h4 id="10-export-feature-abundances-filtered">10. Export Feature Abundances (filtered)</h4>
-<p>Export the feature table containing filtered peaks in .CSV format. Menu: Peak list methods / Export / Export to CSV file</p>
+<p>Export the feature table containing filtered peaks in .CSV format. Menu: Peak list methods / Export / Export to CSV file.
+See an example of MZmine feature table <a href="../tutorials/AG_tutorial_files/MZmine-GNPS_AG_test_featuretable.csv">here</a>.</p>
+<p>The feature table must contain at least the row ID, the row m/z, and row retention time, along with the sample columns. 
+It is currently mandatory for the sample name headers string to have the following format: "filename Peak area". Depending on Note that depending on the steps used in MZmine the sample name header can be "filename baseline-corrected Peak area", but this has to changed back to "filename Peak area".</p>
 <p><img alt="img" src="../img/mzmine/export_features.png" /></p>
 <h4 id="11-export-msms-as-mgf-for-gnps">11. Export MS/MS as MGF for GNPS</h4>
-<p>Export the .MGF file for GNPS. Menu: Peak list methods / Export / Export for GNPS</p>
+<p>Export the .MGF file for GNPS. Menu: Peak list methods / Export / Export for GNPS.</p>
+<p>See an example of MZmine .MGF file <a href="../tutorials/AG_tutorial_files/MZmine-GNPS_AG_test_GNPS.mgf">here</a>.</p>
 <p><img alt="img" src="../img/mzmine/gnps_export.png" /></p>
 <h3 id="feature-based-molecular-networking-in-gnps">Feature Based Molecular Networking in GNPS</h3>
 <p>There is a special molecular networking workflow to handle MzMine2 features outputs. Try it out <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D">here</a>.</p>
-<p>You will need three items:</p>
+<p>You will need three items (test files are accessible <a href="../tutorials/AG_tutorial_files">here</a>):</p>
 <ol>
-<li>Feature Table from above</li>
+<li>Feature Table from above </li>
 <li>MGF for MS/MS from above</li>
 <li>Metadata table - described <a href="../networking#metadata">here</a></li>
 </ol>
