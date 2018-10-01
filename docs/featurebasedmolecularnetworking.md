@@ -128,9 +128,9 @@ See an example of MZmine .MGF file [here](tutorials/AG_tutorial_files/MZmine-GNP
 
 ### Feature Based Molecular Networking in GNPS
 
-There is a special molecular networking workflow to handle MzMine2 features outputs. Try it out [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D).
+There is a special molecular networking workflow to handle MzMine2 features outputs. Try it out [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D). You need to be logged in first !
 
-You will need three items (test files are accessible [here](tutorials/AG_tutorial_files)):
+You will need three items (test files are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files)):
 
 1. Feature Table from above 
 2. MGF for MS/MS from above
