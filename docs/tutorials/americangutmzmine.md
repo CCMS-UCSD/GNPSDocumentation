@@ -9,7 +9,7 @@ LC-MS/MS analysis of American Gut Stool samples for participants that consumed p
 
 1. Learn how to download files from GNPS Datasets
 2. Run MZmine2 feature detection and output quantification and MS/MS associated with each feature. [See the tutorial here](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/)
-3. Run Feature Based Molecular Networking from MZMine2 in GNPS [See the workflow here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you must be logged in GNPS first).
+3. Run Feature Based Molecular Networking from MZMine2 in GNPS. [See the workflow here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D) (Note that you must be logged in GNPS first).
 
 
 ## Required Software Installs
