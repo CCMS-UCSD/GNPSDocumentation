@@ -487,13 +487,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ms2-peak-mass-histogram-in-molecular-network" title="MS2 Peak Mass Histogram in Molecular Network" class="md-nav__link">
-    MS2 Peak Mass Histogram in Molecular Network
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#detailed-interrogation-of-network-spectra" title="Detailed Interrogation of Network Spectra" class="md-nav__link">
     Detailed Interrogation of Network Spectra
   </a>
@@ -522,8 +515,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#network-layout" title="Network Layout" class="md-nav__link">
-    Network Layout
+  <a href="#network-layout-re-run" title="Network Layout Re-run" class="md-nav__link">
+    Network Layout Re-run
   </a>
   
 </li>
@@ -1034,13 +1027,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ms2-peak-mass-histogram-in-molecular-network" title="MS2 Peak Mass Histogram in Molecular Network" class="md-nav__link">
-    MS2 Peak Mass Histogram in Molecular Network
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#detailed-interrogation-of-network-spectra" title="Detailed Interrogation of Network Spectra" class="md-nav__link">
     Detailed Interrogation of Network Spectra
   </a>
@@ -1069,8 +1055,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#network-layout" title="Network Layout" class="md-nav__link">
-    Network Layout
+  <a href="#network-layout-re-run" title="Network Layout Re-run" class="md-nav__link">
+    Network Layout Re-run
   </a>
   
 </li>
@@ -1260,9 +1246,13 @@
 </ol>
 <p><img alt="img" src="../img/networkingviews/nodesizing.png" /></p>
 <h3 id="ms2-peak-search-in-molecular-network">MS2 Peak Search in Molecular Network</h3>
-<p>Lorem Ipsum</p>
-<h3 id="ms2-peak-mass-histogram-in-molecular-network">MS2 Peak Mass Histogram in Molecular Network</h3>
-<p>Lorem Ipsum</p>
+<p>To search for specific molecules in the molecular network that contain an MS2 fragment of interest, you can enter a product ion m/z you want to find.</p>
+<p>First, we need to grab all the MS/MS spectra into the browser by clicking this button:</p>
+<p><img alt="img" src="../img/networkingviews/downloadms2peaks.png" /></p>
+<p>Then, we can enter the m/z we want to search for and click the update button. This will highlight which molecules contain the specific product ion.</p>
+<p><img alt="img" src="../img/networkingviews/ms2peakhighlight.png" /></p>
+<p>We can also see a histogram of all product ions from all MS2 spectra in the current network.</p>
+<p><img alt="img" src="../img/networkingviews/ms2histogram.png" /></p>
 <h3 id="detailed-interrogation-of-network-spectra">Detailed Interrogation of Network Spectra</h3>
 <p>While its great to visualize the network properly, to truly make sense of the network users must be able to interrogate the network metadata and examine the actual spectra. To this end, users are able to find out information about a particular node by simply hovering their mouse over node. This will bring up a hover box describing the node information. At present the display shows like this:</p>
 <p><img alt="img" src="../img/networkingviews/nodedetails.png" /></p>
@@ -1281,17 +1271,23 @@
 <p>To view how exactly a spectrum in the network has matched to a library spectrum, users can click the "Show Library Match" in the side panel on the far right. This will bring up this middle panel shown below comparing the spectrum in the network with the library spectrum in green.</p>
 <p><img alt="img" src="../img/networkingviews/networkviewmatch.png" /></p>
 <h3 id="network-screen-shot">Network Screen Shot</h3>
-<p>Lorem Ipsum</p>
-<h3 id="network-layout">Network Layout</h3>
-<p>Lorem Ipsum</p>
+<p><img alt="img" src="../img/networkingviews/screenshot.png" /></p>
+<p>Download screenshot of the molecular network.</p>
+<h3 id="network-layout-re-run">Network Layout Re-run</h3>
+<p><img alt="img" src="../img/networkingviews/rerunlayout.png" /></p>
+<p>Rerun network layout to fit zoom and window.</p>
 <h3 id="network-window-size">Network Window Size</h3>
-<p>Lorem Ipsum</p>
+<p><img alt="img" src="../img/networkingviews/maximizenetwork.png" /></p>
+<p>Max network view bigger to see more of the network with more room.</p>
 <h3 id="pop-up-window">Pop up Window</h3>
-<p>Lorem Ipsum</p>
+<p><img alt="img" src="../img/networkingviews/networkpopout.png" /></p>
+<p>Pop out network visualizer into new window without top menu bars.</p>
 <h3 id="sub-network-graphml-for-cytoscape">Sub-Network GraphML for Cytoscape</h3>
-<p>Lorem Ipsum</p>
+<p><img alt="img" src="../img/networkingviews/downloadnetwork.png" /></p>
+<p>Download a GraphML of network and visualize in Cytoscape or other graph software.</p>
 <h3 id="hide-widgets">Hide Widgets</h3>
-<p>Lorem Ipsum</p>
+<p><img alt="img" src="../img/networkingviews/showhideui.png" /></p>
+<p>Show or hide user interface widgets.</p>
 <h2 id="view-principle-coordinate-analysis-pcoa-plots">View Principle Coordinate Analysis (PCoA) Plots</h2>
 <p>To view PCoA plots, please enable that output on the input page (default is on) in the "Advanced Output Options" section and enabling "Create Cluster Buckets and BioM/PCoA Plots output". This will create the appropriate data structures for PCoA analysis. To include additional metadata to color the nodes according to the sample types, include and add additional columns for metadata describing the experiment (see <a href="../networking/#metadata">metadata documentation</a>).</p>
 <p>To view the PCoA plots when the parameters are appropriately set, click the "View Emporer PCoA Plot in GNPS" under the section "Advanced Views - Third Party Visualization" on the results page of your GNPS job.</p>
