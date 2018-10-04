@@ -108,15 +108,25 @@ The arrows between nodes in the molecular network point from higher m/z spectra 
 
 ### Edge Delta Histogram
 
-Lorem Ipsum
+This histogram shows the distribution of the edge deltas.
 
-### Node Sizing
+![img](img/networkingviews/edgehistogram.png)
 
-Lorem Ipsum
+Clicking each peak in the histogram allows for highlighting the edges in the network.
 
-### Node Coloring
+### Node Sizing/Color
 
-Lorem Ipsum
+The nodes size and color can be adjusted based upon several options:
+
+1. Spectrum counts
+2. Precursor intensity
+3. Number of Files
+4. Parent Mass
+5. Nitrogen Even/Odd
+6. Precursor Charge
+
+![img](img/networkingviews/nodesizing.png)
+
 
 ### MS2 Peak Search in Molecular Network
 
