@@ -172,27 +172,39 @@ To view how exactly a spectrum in the network has matched to a library spectrum,
 
 ### Network Screen Shot
 
-Lorem Ipsum
+![img](img/networkingviews/screenshot.png)
 
-### Network Layout
+Download screenshot of the molecular network.
 
-Lorem Ipsum
+### Network Layout Re-run
+
+![img](img/networkingviews/rerunlayout.png)
+
+Rerun network layout to fit zoom and window.
 
 ### Network Window Size
 
-Lorem Ipsum
+![img](img/networkingviews/maximizenetwork.png)
+
+Max network view bigger to see more of the network with more room.
 
 ### Pop up Window
 
-Lorem Ipsum
+![img](img/networkingviews/networkpopout.png)
+
+Pop out network visualizer into new window without top menu bars.
 
 ### Sub-Network GraphML for Cytoscape
 
-Lorem Ipsum
+![img](img/networkingviews/downloadnetwork.png)
+
+Download a GraphML of network and visualize in Cytoscape or other graph software.
 
 ### Hide Widgets
 
-Lorem Ipsum
+![img](img/networkingviews/showhideui.png)
+
+Show or hide user interface widgets. 
 
 ## View Principle Coordinate Analysis (PCoA) Plots
 
