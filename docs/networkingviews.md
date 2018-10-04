@@ -130,11 +130,20 @@ The nodes size and color can be adjusted based upon several options:
 
 ### MS2 Peak Search in Molecular Network
 
-Lorem Ipsum
+To search for specific molecules in the molecular network that contain an MS2 fragment of interest, you can enter a product ion m/z you want to find.
 
-### MS2 Peak Mass Histogram in Molecular Network
+First, we need to grab all the MS/MS spectra into the browser by clicking this button:
 
-Lorem Ipsum
+![img](img/networkingviews/downloadms2peaks.png)
+
+Then, we can enter the m/z we want to search for and click the update button. This will highlight which molecules contain the specific product ion.
+
+![img](img/networkingviews/ms2peakhighlight.png)
+
+We can also see a histogram of all product ions from all MS2 spectra in the current network.
+
+![img](img/networkingviews/ms2histogram.png)
+
 
 ### Detailed Interrogation of Network Spectra
 
@@ -204,7 +213,7 @@ Download a GraphML of network and visualize in Cytoscape or other graph software
 
 ![img](img/networkingviews/showhideui.png)
 
-Show or hide user interface widgets. 
+Show or hide user interface widgets.
 
 ## View Principle Coordinate Analysis (PCoA) Plots
 
