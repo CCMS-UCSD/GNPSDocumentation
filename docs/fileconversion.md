@@ -28,6 +28,7 @@ The .mzXML or .mzML format is strongly preferred and will be discussed in this t
 | Bruker | DataAnalysis/Compass      |   .d | CompassXport | This conversion is through the DataAnalysis software and is detailed [here](https://bix-lab.ucsd.edu/display/Public/Data+Conversion+to+GNPS+Compatible+Formats+-+.mzXML+and+.mzML#DataConversiontoGNPSCompatibleFormats-.mzXMLand.mzML-ConversionofBrukerData) |
 | ThermoFisher | Xcalibur      |    .raw/.RAW | MSConvert | verified |
 | Waters | MassLynx      |    .raw | MSConvert is for full scan/DDA datasets. [Symphony](http://www.waters.com/waters/en_US/informatics,-data_pipeline/nav.htm?cid=134893896&locale=en_US) is for other modes such as MSe/SONAR/HDMSe/HD-DDA | detailed instructions coming soon! |
+| Shimadzu | | .lcd | MSConvert | |
 
 For problems with MSConvert, please contact the ProteoWizard [developers](http://proteowizard.sourceforge.net/contact.shtml).
 
