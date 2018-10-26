@@ -8,7 +8,7 @@ For more in-depth assistance, we invite you to attend the numerous GNPS workshop
 
 ## GNPS Office Hours
 
-We are hosting online office hours on a bi-weekly basis. Our next office hour is on October 22th at 2-3PM PST on Zoom:
+We are hosting online office hours on a bi-weekly basis. Our next office hour is on November 5th at 2-3PM PST on Zoom:
 
 [https://zoom.us/j/854069972](https://zoom.us/j/854069972)
 
