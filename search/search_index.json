@@ -222,13 +222,18 @@
         }, 
         {
             "location": "/changelog/", 
-            "text": "Change Log\n\n\n9/5/2018\n\n\n\n\nMirror plots include mz labels\n\n\nMASST supports dataset metadata display\n\n\n\n\n8/1/2018\n\n\n\n\nNew Documentation and Splash Page are available\n\n\nBug Fixes for Library Search to provide 10X increase in throughput for large datasets\n\n\nMASST is available to report MS/MS spectrum occurrences at a single file level with metadata reported if available\n\n\n\n\n6/27/2018\n\n\n\n\nUpdating documentation\n\n\n\n\n6/1/2018\n\n\n\n\nNew documentation website.\n\n\nBeta version of Molecular Networking provides stream lined results and cytoscape compliant output.", 
+            "text": "Change Log\n\n\n10/26/2018\n\n\n\n\nAdding UniqueFileSource attribute to GNPS Molecular Networking V2 Workflow (METABOLOMICS-SNETS-V2)\n\n\n\n\n9/5/2018\n\n\n\n\nMirror plots include mz labels\n\n\nMASST supports dataset metadata display\n\n\n\n\n8/1/2018\n\n\n\n\nNew Documentation and Splash Page are available\n\n\nBug Fixes for Library Search to provide 10X increase in throughput for large datasets\n\n\nMASST is available to report MS/MS spectrum occurrences at a single file level with metadata reported if available\n\n\n\n\n6/27/2018\n\n\n\n\nUpdating documentation\n\n\n\n\n6/1/2018\n\n\n\n\nNew documentation website.\n\n\nBeta version of Molecular Networking provides stream lined results and cytoscape compliant output.", 
             "title": "Change Log"
         }, 
         {
             "location": "/changelog/#change-log", 
             "text": "", 
             "title": "Change Log"
+        }, 
+        {
+            "location": "/changelog/#10262018", 
+            "text": "Adding UniqueFileSource attribute to GNPS Molecular Networking V2 Workflow (METABOLOMICS-SNETS-V2)", 
+            "title": "10/26/2018"
         }, 
         {
             "location": "/changelog/#952018", 
@@ -252,7 +257,7 @@
         }, 
         {
             "location": "/contact/", 
-            "text": "GNPS Workflow Contact information\n\n\nIf you have any questions about how to use GNPS please first ask the community at the GNPS forum located \nhere\n.\n\n\nIn the event that there is an issue with the GNPS website or workflows, please contact the administrators at \nccms-web@cs.ucsd.edu\n.\n\n\nFor more in-depth assistance, we invite you to attend the numerous GNPS workshops we offer at UCSD and at conferences throughout the year. Check out the upcoming \nworkshops\n.\n\n\nGNPS Office Hours\n\n\nWe are hosting online office hours on a bi-weekly basis. Our next office hour is on October 22th at 2-3PM PST on Zoom:\n\n\nhttps://zoom.us/j/854069972\n\n\nwith Ming (\nmiw023@ucsd.edu\n).\n\n\nThis is a place to ask any questions you have on GNPS, computational mass spec, and just an overall good time.", 
+            "text": "GNPS Workflow Contact information\n\n\nIf you have any questions about how to use GNPS please first ask the community at the GNPS forum located \nhere\n.\n\n\nIn the event that there is an issue with the GNPS website or workflows, please contact the administrators at \nccms-web@cs.ucsd.edu\n.\n\n\nFor more in-depth assistance, we invite you to attend the numerous GNPS workshops we offer at UCSD and at conferences throughout the year. Check out the upcoming \nworkshops\n.\n\n\nGNPS Office Hours\n\n\nWe are hosting online office hours on a bi-weekly basis. Our next office hour is on November 5th at 2-3PM PST on Zoom:\n\n\nhttps://zoom.us/j/854069972\n\n\nwith Ming (\nmiw023@ucsd.edu\n).\n\n\nThis is a place to ask any questions you have on GNPS, computational mass spec, and just an overall good time.", 
             "title": "Contact"
         }, 
         {
@@ -262,7 +267,7 @@
         }, 
         {
             "location": "/contact/#gnps-office-hours", 
-            "text": "We are hosting online office hours on a bi-weekly basis. Our next office hour is on October 22th at 2-3PM PST on Zoom:  https://zoom.us/j/854069972  with Ming ( miw023@ucsd.edu ).  This is a place to ask any questions you have on GNPS, computational mass spec, and just an overall good time.", 
+            "text": "We are hosting online office hours on a bi-weekly basis. Our next office hour is on November 5th at 2-3PM PST on Zoom:  https://zoom.us/j/854069972  with Ming ( miw023@ucsd.edu ).  This is a place to ask any questions you have on GNPS, computational mass spec, and just an overall good time.", 
             "title": "GNPS Office Hours"
         }, 
         {
