@@ -1,5 +1,9 @@
 ## Change Log
 
+### 10/26/2018
+
+* Adding UniqueFileSource attribute to GNPS Molecular Networking V2 Workflow (METABOLOMICS-SNETS-V2)
+
 ### 9/5/2018
 
 * Mirror plots include mz labels
