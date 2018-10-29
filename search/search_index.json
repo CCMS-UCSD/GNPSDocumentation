@@ -82,8 +82,13 @@
         }, 
         {
             "location": "/superquickstart/", 
-            "text": "This is a superquick start guide that will enable you to analyze a few dozen samples with molecular networking without having to create an account or install any software besides your web browser and conversion software.\n\n\nThe limitations to this method is that the files uploaded will not reside in your own account (though no one else can see them) and will eventually disappear from GNPS.\n\n\nConverting Data\n\n\nConvert vendor formats to open formats using MSConvert locally. Checkout this \ndocumentation\n.\n\n\nSelecting Files\n\n\nPlease navigate to the \nsuper quickstart page\n. Simply drag and drop your mass spectrometry files (mzML, mzXML, or mgf) into the appropriate cohorts you want to compare. Files are required to be uploaded to Cohort Group 1.\n\n\n\n\nAnalyze Files\n\n\nOnce files have been uploaded into the appropriate cohort, enter your email and click the \"Analyze Uploaded Files with GNPS Molecular Networking\" button.\n\n\n\n\nThis will bring you to a GNPS workflow status page. If you entered an email, you will receive an email once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this is the only way for you to find analysis again.\n\n\nResults\n\n\nTo understand the results, please refer to the analysis section of the standard \nquickstart guide\n.", 
+            "text": "This is a superquick start guide that will enable you to analyze your data in the following ways without having to create an account or install any software besides your web browser and conversion software.\n\n\n\n\nClassic Molecular Networking - Analyze a few dozen samples in up to 3 cohorts\n\n\nFeature Based Molecular Networking - Analyze with Molecular Networks out of your favorite feature detection software\n\n\n\n\nThe limitations to this method is that the files uploaded will not reside in your own account (though no one else can see them) and will eventually disappear from GNPS.\n\n\nClassic Molecular Networking\n\n\nPlease navigate to the \nsuper quickstart page\n to begin with Classic Molecular Networking!\n\n\nConverting Data\n\n\nConvert vendor formats to open formats using MSConvert locally. Checkout this \ndocumentation\n.\n\n\nSelecting Files\n\n\nSimply drag and drop your mass spectrometry files (mzML, mzXML, or mgf) into the appropriate cohorts you want to compare. Files are required to be uploaded to Cohort Group 1.\n\n\n\n\nAnalyze Files\n\n\nOnce files have been uploaded into the appropriate cohort, enter your email and click the \"Analyze Uploaded Files with GNPS Molecular Networking\" button.\n\n\n\n\nThis will bring you to a GNPS workflow status page. If you entered an email, you will receive an email once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this is the only way for you to find analysis again.\n\n\nResults\n\n\nTo understand the results, please refer to the analysis section of the standard \nquickstart guide\n.\n\n\nFeature Based Molecular Networking\n\n\nPlease navigate to the \nsuper quickstart page\n to begin with Feature Based Molecular Networking!\n\n\nSelecting Files\n\n\nSimply drag and drop the files out of your feature finding tool:\n\n\n\n\nFeature Quantification Table\n\n\nFeature MS/MS MGF file\n\n\nSample Metadata (Optional) - Format can be found \nhere\n\n\nAdditional Pairs Externally Generated (Optional) - Format pending\n\n\n\n\nAnalyze Files\n\n\nOnce files have been uploaded, enter your email and click the \"Analyze Uploaded Files with GNPS Molecular Networking\" button.\n\n\n\n\nThis will bring you to a GNPS workflow status page. If you entered an email, you will receive an email once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this is the only way for you to find analysis again.\n\n\nResults\n\n\nTo understand the results, please refer to the \nfeature based molecular networking page\n.", 
             "title": "Superquick Start Guide"
+        }, 
+        {
+            "location": "/superquickstart/#classic-molecular-networking", 
+            "text": "Please navigate to the  super quickstart page  to begin with Classic Molecular Networking!", 
+            "title": "Classic Molecular Networking"
         }, 
         {
             "location": "/superquickstart/#converting-data", 
@@ -92,7 +97,7 @@
         }, 
         {
             "location": "/superquickstart/#selecting-files", 
-            "text": "Please navigate to the  super quickstart page . Simply drag and drop your mass spectrometry files (mzML, mzXML, or mgf) into the appropriate cohorts you want to compare. Files are required to be uploaded to Cohort Group 1.", 
+            "text": "Simply drag and drop your mass spectrometry files (mzML, mzXML, or mgf) into the appropriate cohorts you want to compare. Files are required to be uploaded to Cohort Group 1.", 
             "title": "Selecting Files"
         }, 
         {
@@ -103,6 +108,26 @@
         {
             "location": "/superquickstart/#results", 
             "text": "To understand the results, please refer to the analysis section of the standard  quickstart guide .", 
+            "title": "Results"
+        }, 
+        {
+            "location": "/superquickstart/#feature-based-molecular-networking", 
+            "text": "Please navigate to the  super quickstart page  to begin with Feature Based Molecular Networking!", 
+            "title": "Feature Based Molecular Networking"
+        }, 
+        {
+            "location": "/superquickstart/#selecting-files_1", 
+            "text": "Simply drag and drop the files out of your feature finding tool:   Feature Quantification Table  Feature MS/MS MGF file  Sample Metadata (Optional) - Format can be found  here  Additional Pairs Externally Generated (Optional) - Format pending", 
+            "title": "Selecting Files"
+        }, 
+        {
+            "location": "/superquickstart/#analyze-files_1", 
+            "text": "Once files have been uploaded, enter your email and click the \"Analyze Uploaded Files with GNPS Molecular Networking\" button.   This will bring you to a GNPS workflow status page. If you entered an email, you will receive an email once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this is the only way for you to find analysis again.", 
+            "title": "Analyze Files"
+        }, 
+        {
+            "location": "/superquickstart/#results_1", 
+            "text": "To understand the results, please refer to the  feature based molecular networking page .", 
             "title": "Results"
         }, 
         {
@@ -222,13 +247,18 @@
         }, 
         {
             "location": "/changelog/", 
-            "text": "Change Log\n\n\n10/26/2018\n\n\n\n\nAdding UniqueFileSource attribute to GNPS Molecular Networking V2 Workflow (METABOLOMICS-SNETS-V2)\n\n\n\n\n9/5/2018\n\n\n\n\nMirror plots include mz labels\n\n\nMASST supports dataset metadata display\n\n\n\n\n8/1/2018\n\n\n\n\nNew Documentation and Splash Page are available\n\n\nBug Fixes for Library Search to provide 10X increase in throughput for large datasets\n\n\nMASST is available to report MS/MS spectrum occurrences at a single file level with metadata reported if available\n\n\n\n\n6/27/2018\n\n\n\n\nUpdating documentation\n\n\n\n\n6/1/2018\n\n\n\n\nNew documentation website.\n\n\nBeta version of Molecular Networking provides stream lined results and cytoscape compliant output.", 
+            "text": "Change Log\n\n\n10/28/2018\n\n\n\n\nFeature based molecular networking is supported in the superquick start page\n\n\nFeature based molecular networking now supports MZMine2, OpenMS, Optimus, MS-DIAL, Metaboscape, and XCMS3 feature finding tools\n\n\n\n\n10/26/2018\n\n\n\n\nAdding UniqueFileSource attribute to GNPS Molecular Networking V2 Workflow (METABOLOMICS-SNETS-V2)\n\n\n\n\n9/5/2018\n\n\n\n\nMirror plots include mz labels\n\n\nMASST supports dataset metadata display\n\n\n\n\n8/1/2018\n\n\n\n\nNew Documentation and Splash Page are available\n\n\nBug Fixes for Library Search to provide 10X increase in throughput for large datasets\n\n\nMASST is available to report MS/MS spectrum occurrences at a single file level with metadata reported if available\n\n\n\n\n6/27/2018\n\n\n\n\nUpdating documentation\n\n\n\n\n6/1/2018\n\n\n\n\nNew documentation website.\n\n\nBeta version of Molecular Networking provides stream lined results and cytoscape compliant output.", 
             "title": "Change Log"
         }, 
         {
             "location": "/changelog/#change-log", 
             "text": "", 
             "title": "Change Log"
+        }, 
+        {
+            "location": "/changelog/#10282018", 
+            "text": "Feature based molecular networking is supported in the superquick start page  Feature based molecular networking now supports MZMine2, OpenMS, Optimus, MS-DIAL, Metaboscape, and XCMS3 feature finding tools", 
+            "title": "10/28/2018"
         }, 
         {
             "location": "/changelog/#10262018", 
