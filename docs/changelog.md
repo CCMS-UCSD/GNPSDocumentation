@@ -1,5 +1,10 @@
 ## Change Log
 
+### 10/28/2018
+
+* Feature based molecular networking is supported in the superquick start page
+* Feature based molecular networking now supports MZMine2, OpenMS, Optimus, MS-DIAL, Metaboscape, and XCMS3 feature finding tools
+
 ### 10/26/2018
 
 * Adding UniqueFileSource attribute to GNPS Molecular Networking V2 Workflow (METABOLOMICS-SNETS-V2)
