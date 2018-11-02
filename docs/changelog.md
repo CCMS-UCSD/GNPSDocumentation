@@ -1,5 +1,10 @@
 ## Change Log
 
+### 11/1/2018
+
+* Added UniqueFileCount to GraphML in Classic Molecular Networking
+* Added GNPS Cluster Linkouts and GNPS Network Visualizer linkouts to GraphML in Classic Molecular Networking
+
 ### 10/28/2018
 
 * Feature based molecular networking is supported in the superquick start page

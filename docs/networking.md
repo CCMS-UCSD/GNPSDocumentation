@@ -205,7 +205,7 @@ After completing a Molecular Networking workflow utilizing GNPS, analysis can be
 | ------------- |-------------|
 | Download Clustered Spectra as MGF | Download consensus MS/MS spectra as an MGF file |
 | Download GraphML for Cytoscape | Download network files (graphML) for import into Cytoscape |
-| Download Bucket Table | Download spectral abundance for all consensus spectra across all files |
+| Download Bucket Table | Download spectral abundance for all consensus spectra across all files (calculated within each file as the sum precursor abundance) |
 | Download BioM for Qiime/Qiita | Download BioM for spectral counts for analysis in Qiime/Qiita multivariate statistics tools |
 | Download Metadata for Qiime | Download Metadata file for analysis in Qiime |
 | Download ili Data | Download the abundance information formatted for ili |
