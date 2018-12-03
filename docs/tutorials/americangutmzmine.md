@@ -1,5 +1,5 @@
 
-In this tutorial we highlight how to use Feature Based Molecular Networking (using MZMine2) to uncover unique metabolism of molecules found in the American Gut Project.
+In this tutorial we highlight how to use MZmine2 to detect features to produce files for Feature Based Molecular Networking to uncover unique metabolism of molecules found in the American Gut Project.
 
 ## Experimental Setup
 
@@ -9,7 +9,6 @@ LC-MS/MS analysis of American Gut Stool samples for participants that consumed p
 
 1. Learn how to download files from GNPS Datasets
 2. Run MZmine2 feature detection and output quantification and MS/MS associated with each feature. [See the tutorial here](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/)
-3. Run Feature Based Molecular Networking from MZMine2 in GNPS. [See the workflow here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D) (Note that you must be logged in GNPS first).
 
 
 ## Required Software Installs
@@ -25,3 +24,7 @@ LC-MS/MS data can be found in the [MassIVE dataset MSV000082678](https://massive
 ## Video Tutorial - Run MZmine2
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/5jjMllbwD-U"> </iframe>
+
+## Follow up Tutorial in GNPS
+
+Checkout the follow up [tutorial](tutorials/featurebasedgnps) on how to take the output of MZMine2 to produce a molecular network at GNPS.

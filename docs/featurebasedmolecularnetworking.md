@@ -1,6 +1,12 @@
 
 The Feature Finding Molecular Networking brings together LC-MS feature detection tools (e.g. MZmine2, OpenMS, MS-DIAL, MetaboScape), molecular networking (GNPS, http://gnps.ucsd.edu), and other in silico annotation tools, such as Sirius, CSI:FingerID, or Network Annotation Propagation.
 
+## What is Feature Based Molecular Networking
+
+Feature Based Molecular Networking is a new way to create molecular networks that utilizes feature detection tools to provide quantification information paired with molecular networking. This is in difference from [classic molecular networking](networking) that 
+
+## Why Feature Based Molecular Networking
+
 The key improvements of the new Feature Finding Molecular Networking are:
 
 1. Importing quantitative information derived from the feature detection tools into the molecular networks
@@ -22,7 +28,7 @@ Currently, we are recommending using the MZmine2 workflow, as it has been thorou
 
 Download MZmine2 software (version MZmine v2.33 minimum) at [https://github.com/mzmine/mzmine2/releases](https://github.com/mzmine/mzmine2/releases).
 
-See documentation and videos here: [http://mzmine.github.io/documentation.html](http://mzmine.github.io/documentation.html), 
+See documentation and videos here: [http://mzmine.github.io/documentation.html](http://mzmine.github.io/documentation.html),
 and [the video tutorial about Feature Based Molecular Networking.](tutorials/americangutmzmine/)
 
 Please make sure your files are converted to mzXML or mzML.
@@ -43,7 +49,7 @@ These batch files can be imported into MZMine2.
 
 The steps required for data pre-processing with MZmine2 for GNPS are shown in the screen capture below.
 
-See also the following [video tutorial](https://ccms-ucsd.github.io/GNPSDocumentation/tutorials/americangutmzmine/) 
+See also the following [video tutorial](https://ccms-ucsd.github.io/GNPSDocumentation/tutorials/americangutmzmine/)
 <iframe width="800" height="500" src="https://www.youtube.com/embed/5jjMllbwD-U"> </iframe>
 
 
@@ -112,7 +118,7 @@ Use both filters in the peaklist row filter module: 'Keep only peaks with MS2 sc
 Export the feature table containing filtered peaks in .CSV format. Menu: Peak list methods / Export / Export to CSV file.
 See an example of MZmine feature table [here](tutorials/AG_tutorial_files/MZmine-GNPS_AG_test_featuretable.csv).
 
-The feature table must contain at least the row ID, the row m/z, and row retention time, along with the sample columns. 
+The feature table must contain at least the row ID, the row m/z, and row retention time, along with the sample columns.
 It is currently mandatory for the sample name headers string to have the following format: "filename Peak area". Depending on Note that depending on the steps used in MZmine the sample name header can be "filename baseline-corrected Peak area", but this has to changed back to "filename Peak area".
 
 ![img](img/mzmine/export_features.png)
@@ -128,11 +134,11 @@ See an example of MZmine .MGF file [here](tutorials/AG_tutorial_files/MZmine-GNP
 
 ### Feature Based Molecular Networking in GNPS
 
-There is a special molecular networking workflow to handle MzMine2 features outputs. Try it out [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D). You need to be logged in first !
+There is a special molecular networking workflow to handle MzMine2 features outputs. Try it out [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D). You need to be logged in first!
 
 You will need three items (test files are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files)):
 
-1. Feature Table from above 
+1. Feature Table from above
 2. MGF for MS/MS from above
 3. Metadata table - described [here](networking#metadata)
 
@@ -144,7 +150,9 @@ Here is an example mzmine networking [job](https://gnps.ucsd.edu/ProteoSAFe/stat
 
 ## Tutorials
 
-See our [tutorial](tutorials/americangutmzmine) on using Feature Based Molecular Networking in the American Gut Project sample. 
+See our [tutorial](tutorials/americangutmzmine) on using MZmine2 to produce quantification/ms2 files for Feature Based Molecular Networking in the American Gut Project sample.
+
+See our [tutorial](tutorials/featurebasedgnps) on running Feature Based Molecular Networking within GNPS.
 
 ### Citation
 
