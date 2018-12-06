@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.1">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.0">
     
     
       
@@ -40,7 +40,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.ba0fd1a6.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.4f4f49e8.css">
       
       
     
@@ -1217,6 +1217,7 @@
 <p>The only required columns in the metadata is "filename". NOTE: capitalization matters.</p>
 <p>Metadata columns that will be considered by molecular networking must be prefixed by "ATTRIBUTE_".</p>
 <p>Please ensure that the file is saved as a tab separated text file. Excel (xlsx), rich text (rtf) are not acceptable.</p>
+<p>For Qiita users that wish to reconcile sample identifiers so that the biom and metadata output are compatible with Qiita, please provide an extra column (#SampleID). GNPS will understand this extra metadata column and rewrite sample identifers for BIOM and metadata to this sample identifier rather than using the mass spectrometry filename by default. </p>
 <p>Pardon our dust as we are migrating this documentation, if we missed anything, please check out our <a href="https://bix-lab.ucsd.edu/display/Public/Metadata+table+in+GNPS">Legacy Documentation</a>.</p>
 <h3 id="96ili-3d-mapping-files">`ili 3D Mapping Files</h3>
 <p>The metadata can also be used to specify spatial coordinates for direct visualization of the data in <a href="https://ili.embl.de/">'ili toolbox</a>. Note that an .STL binary file must selected as an input in the workflow.</p>
