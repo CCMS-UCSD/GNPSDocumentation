@@ -38,6 +38,8 @@ Metadata columns that will be considered by molecular networking must be prefixe
 
 Please ensure that the file is saved as a tab separated text file. Excel (xlsx), rich text (rtf) are not acceptable.
 
+For Qiita users that wish to reconcile sample identifiers so that the biom and metadata output are compatible with Qiita, please provide an extra column (#SampleID). GNPS will understand this extra metadata column and rewrite sample identifers for BIOM and metadata to this sample identifier rather than using the mass spectrometry filename by default. 
+
 Pardon our dust as we are migrating this documentation, if we missed anything, please check out our [Legacy Documentation](https://bix-lab.ucsd.edu/display/Public/Metadata+table+in+GNPS).
 
 ### \`ili 3D Mapping Files
