@@ -671,6 +671,26 @@
     Feature Based Molecular Networking in GNPS
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#results-tables" title="Results Tables" class="md-nav__link">
+    Results Tables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizing-abundances-in-cytoscape-as-pie-charts" title="Visualizing Abundances in Cytoscape as Pie Charts" class="md-nav__link">
+    Visualizing Abundances in Cytoscape as Pie Charts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1096,6 +1116,26 @@
     Feature Based Molecular Networking in GNPS
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#results-tables" title="Results Tables" class="md-nav__link">
+    Results Tables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizing-abundances-in-cytoscape-as-pie-charts" title="Visualizing Abundances in Cytoscape as Pie Charts" class="md-nav__link">
+    Visualizing Abundances in Cytoscape as Pie Charts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1144,7 +1184,7 @@
                 
                 <p>The Feature Finding Molecular Networking brings together LC-MS feature detection tools (e.g. MZmine2, OpenMS, MS-DIAL, MetaboScape), molecular networking (GNPS, http://gnps.ucsd.edu), and other in silico annotation tools, such as Sirius, CSI:FingerID, or Network Annotation Propagation.</p>
 <h2 id="what-is-feature-based-molecular-networking">What is Feature Based Molecular Networking</h2>
-<p>Feature Based Molecular Networking is a new way to create molecular networks that utilizes feature detection tools to provide quantification information paired with molecular networking. This is in difference from <a href="../networking">classic molecular networking</a> that </p>
+<p>Feature Based Molecular Networking is a new way to create molecular networks that utilizes feature detection tools to provide quantification information paired with molecular networking. This is in difference from <a href="../networking">classic molecular networking</a> that</p>
 <h2 id="why-feature-based-molecular-networking">Why Feature Based Molecular Networking</h2>
 <p>The key improvements of the new Feature Finding Molecular Networking are:</p>
 <ol>
@@ -1236,8 +1276,8 @@ It is currently mandatory for the sample name headers string to have the followi
 <p>See an example of MZmine .MGF file <a href="../tutorials/AG_tutorial_files/MZmine-GNPS_AG_test_GNPS.mgf">here</a>.</p>
 <p><img alt="img" src="../img/mzmine/gnps_export.png" /></p>
 <h3 id="feature-based-molecular-networking-in-gnps">Feature Based Molecular Networking in GNPS</h3>
-<p>There is a special molecular networking workflow to handle MzMine2 features outputs. Try it out <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D">here</a>. You need to be logged in first!</p>
-<p>You will need three items (test files are accessible <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files">here</a>):</p>
+<p>There is a special molecular networking workflow to handle MzMine2 features outputs. Try it out <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">here</a>. You need to be logged in first!</p>
+<p>You will need three items (test files are accessible <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/featurebasedgnps">here</a>):</p>
 <ol>
 <li>Feature Table from above</li>
 <li>MGF for MS/MS from above</li>
@@ -1245,7 +1285,103 @@ It is currently mandatory for the sample name headers string to have the followi
 </ol>
 <p>There are several additional normalization options specifically for feature detection. We can normalize the features per LC/MS run and aggregate by groups with either a sum or average (recommended).</p>
 <p><img alt="img" src="../img/mzmine/quant_options.png" /></p>
-<p>Here is an example mzmine networking <a href="https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=21289201c7964f6f909435fda333683c">job</a> from a subset of the American Gut Project.</p>
+<p>Here is an example mzmine networking <a href="https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=747b36ba08434f0cb478b920decfe4ce">job</a> from a subset of the American Gut Project.</p>
+<h4 id="results-tables">Results Tables</h4>
+<p>Once the molecular networking is finished, there are many views to explore the analysis. These views are very similar to classic molecular networking.</p>
+<p><img alt="img" src="../img/featurebased/feature_statuspage.png" /></p>
+<p><strong>Default Views to Explore Molecular Networks</strong></p>
+<table>
+<thead>
+<tr>
+<th>View</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../networkingviews/#view-all-library-hits">View All Library Hits</a></td>
+<td>All spectral library matches between consensus MS/MS spectra and the selected libraries</td>
+</tr>
+<tr>
+<td>View All Analog Library Hits</td>
+<td>All spectral library matches between consensus MS/MS spectra and the selected libraries With Analog Search</td>
+</tr>
+<tr>
+<td><a href="../networkingviews/#view-all-clusters-with-ids">View All Clusters With IDs</a></td>
+<td>All consensus MS/MS spectra created by Feature Detection Tool that were considered for library search and molecular networking.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Network Visualizations</strong></p>
+<table>
+<thead>
+<tr>
+<th>View</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../networkingviews/#view-spectral-families">View Spectral Families (In Browser Network Visualizer)</a></td>
+<td>List of all Spectral Families (i.e. connected components in the network) as well as view the network visualized in the browser</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Export/Download Network Files</strong></p>
+<table>
+<thead>
+<tr>
+<th>View</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Download Cytoscape Data</td>
+<td>Download network files (graphML) for import into Cytoscape</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Advanced Views - Experimental Views</strong></p>
+<table>
+<thead>
+<tr>
+<th>View</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Direct Cytoscape Preview/Download</td>
+<td>Preview entire molecular network and download direct cys file to open in Cytoscape</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Advanced Views - External Tools</strong></p>
+<table>
+<thead>
+<tr>
+<th>View</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>View Dereplicator Results</td>
+<td>View Dereplicator identification results</td>
+</tr>
+</tbody>
+</table>
+<h4 id="visualizing-abundances-in-cytoscape-as-pie-charts">Visualizing Abundances in Cytoscape as Pie Charts</h4>
+<p>To visualize different group average abundances in Cytoscape, we'll use pie charts between different groups we care about. Open up the Molecular Network in Cytoscape.</p>
+<p>Initially, all nodes will be blue</p>
+<p><img alt="img" src="../img/featurebased/feature_cytoscape_load.png" /></p>
+<p>Select the Style tab, and click the "Def." column under the Image/Chart 1 Row:</p>
+<p><img alt="img" src="../img/featurebased/feature_style_select.png" /></p>
+<p>This brings up a panel to select which groups you would like to display in the pie charts:</p>
+<p><img alt="img" src="../img/featurebased/feature_group_select.png" /></p>
+<p>Select the specific groups you want to compare (e.g. Case vs Control) and hit apply. Now the network will be colored with pies relevant to the groups you wanted to compare.</p>
+<p><img alt="img" src="../img/featurebased/feature_cytoscape_pie_display.png" /></p>
 <h2 id="tutorials">Tutorials</h2>
 <p>See our <a href="../tutorials/americangutmzmine">tutorial</a> on using MZmine2 to produce quantification/ms2 files for Feature Based Molecular Networking in the American Gut Project sample.</p>
 <p>See our <a href="../tutorials/featurebasedgnps">tutorial</a> on running Feature Based Molecular Networking within GNPS.</p>
