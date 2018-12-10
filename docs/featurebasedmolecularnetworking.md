@@ -3,7 +3,7 @@ The Feature Finding Molecular Networking brings together LC-MS feature detection
 
 ## What is Feature Based Molecular Networking
 
-Feature Based Molecular Networking is a new way to create molecular networks that utilizes feature detection tools to provide quantification information paired with molecular networking. This is in difference from [classic molecular networking](networking) that 
+Feature Based Molecular Networking is a new way to create molecular networks that utilizes feature detection tools to provide quantification information paired with molecular networking. This is in difference from [classic molecular networking](networking) that
 
 ## Why Feature Based Molecular Networking
 
@@ -134,9 +134,9 @@ See an example of MZmine .MGF file [here](tutorials/AG_tutorial_files/MZmine-GNP
 
 ### Feature Based Molecular Networking in GNPS
 
-There is a special molecular networking workflow to handle MzMine2 features outputs. Try it out [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D). You need to be logged in first!
+There is a special molecular networking workflow to handle MzMine2 features outputs. Try it out [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D). You need to be logged in first!
 
-You will need three items (test files are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files)):
+You will need three items (test files are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/featurebasedgnps)):
 
 1. Feature Table from above
 2. MGF for MS/MS from above
@@ -146,7 +146,67 @@ There are several additional normalization options specifically for feature dete
 
 ![img](img/mzmine/quant_options.png)
 
-Here is an example mzmine networking [job](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=21289201c7964f6f909435fda333683c) from a subset of the American Gut Project.
+Here is an example mzmine networking [job](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=747b36ba08434f0cb478b920decfe4ce) from a subset of the American Gut Project.
+
+#### Results Tables
+
+Once the molecular networking is finished, there are many views to explore the analysis. These views are very similar to classic molecular networking.
+
+![img](img/featurebased/feature_statuspage.png)
+
+**Default Views to Explore Molecular Networks**
+
+| View        | Description          |
+| ------------- |-------------|
+| [View All Library Hits](networkingviews.md#view-all-library-hits) | All spectral library matches between consensus MS/MS spectra and the selected libraries |
+| View All Analog Library Hits | All spectral library matches between consensus MS/MS spectra and the selected libraries With Analog Search |
+| [View All Clusters With IDs](networkingviews.md#view-all-clusters-with-ids) | All consensus MS/MS spectra created by Feature Detection Tool that were considered for library search and molecular networking. |
+
+**Network Visualizations**
+
+| View        | Description          |
+| ------------- |-------------|
+| [View Spectral Families (In Browser Network Visualizer)](networkingviews.md#view-spectral-families) | List of all Spectral Families (i.e. connected components in the network) as well as view the network visualized in the browser |
+
+**Export/Download Network Files**
+
+| View        | Description          |
+| ------------- |-------------|
+| Download Cytoscape Data | Download network files (graphML) for import into Cytoscape |
+
+**Advanced Views - Experimental Views**
+
+| View        | Description          |
+| ------------- |-------------|
+| Direct Cytoscape Preview/Download | Preview entire molecular network and download direct cys file to open in Cytoscape |
+
+**Advanced Views - External Tools**
+
+| View        | Description          |
+| ------------- |-------------|
+| View Dereplicator Results | View Dereplicator identification results |
+
+
+#### Visualizing Abundances in Cytoscape as Pie Charts
+
+To visualize different group average abundances in Cytoscape, we'll use pie charts between different groups we care about. Open up the Molecular Network in Cytoscape.
+
+Initially, all nodes will be blue
+
+![img](img/featurebased/feature_cytoscape_load.png)
+
+Select the Style tab, and click the "Def." column under the Image/Chart 1 Row:
+
+![img](img/featurebased/feature_style_select.png)
+
+This brings up a panel to select which groups you would like to display in the pie charts:
+
+![img](img/featurebased/feature_group_select.png)
+
+Select the specific groups you want to compare (e.g. Case vs Control) and hit apply. Now the network will be colored with pies relevant to the groups you wanted to compare.
+
+![img](img/featurebased/feature_cytoscape_pie_display.png)
+
 
 ## Tutorials
 
