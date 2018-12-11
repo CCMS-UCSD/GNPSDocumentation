@@ -42,7 +42,7 @@ From the main [GNPS page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.js
 and then selecting NAP in the corresponding description. You can also directly open clicking ["here"](https://proteomics2.ucsd.edu/ProteoSAFe/?params=%7B%22workflow%22:%22NAP_CCMS2%22%7D).
 
 
-This will bring you to the workflow input to start NAP. The image bellow shows an example of the most important parameters
+This will bring you to the workflow input to start NAP. The image below shows an example of the most important parameters
 
 ![nap_input_form](img/nap/nap_input_page.png)
 
@@ -103,16 +103,76 @@ The node border colors indicate the source of structure: green - reference spect
 
 ### 3. Fragment view 
 
-Some important aspect of structural prediction are: how many fragments were predicted, which fragments and wich substructure was assigned to the prediction. The __F__ragment view displays the direct fragments predicted for each structure in the candidate list of a given fragmentation spectrum (represented by a node in the network):
+Some important aspects of structural prediction are: how many fragments were predicted, which fragments and wich substructures were assigned to the predictions. The **F**ragment view displays the direct fragments predicted for each structure in the candidate list of a given fragmentation spectrum (represented by a node in the network):
 
 ![napviewer_graph](img/nap/napviewer_fragmentation_mouse.png)
 
+Hovering the mouse over the candidate fragment is possible to see the substructure predicted for the fragment.
+
 ### 4. Full candidate list view 
 
-As structural prediction is very challenging, the correct candidate may not be the first in the list, therefore is important to be able to browse the candidate list. The __link__ containing the full list of candidate structures found in NAP search is provided. The first column of the candidate's table contains a link out for the respective database where the structure was originated. The table also contains the ranking for MetFrag, Fusion and Conseunsus, the link for numeber of fragments predict for each candidate structure, with a link to fragment plot representation and a column with color coded structual similarity grouping, that can be easily associated with candidate's [ClassyFire](http://classyfire.wishartlab.com/) class, when available:
+As structural prediction is very challenging, the correct candidate may not be the first in the list, therefore, is important to be able to browse the candidate list. The __link__ containing the full list of candidate structures found in NAP search is provided. The first column of the candidate's table contains a link out for the respective database where the structure was originated. The table also contains the ranking for MetFrag, Fusion and Conseunsus, the link for numeber of fragments predict for each candidate structure, with a link to fragment plot representation and a column with color coded structual similarity grouping, that can be easily associated with candidate's [ClassyFire](http://classyfire.wishartlab.com/) class, when available:
 
 ![napviewer_graph](img/nap/napviewer_candidate_list_group.png)
 
+## NAP Visualization in Cytoscape
+
+In much the same way as for [Molecular Networking](networking.md) uses [Cytoscape](cytoscape.md) to visualize the whole network, we visualize structure prediction of entire connected component or networks using the output from NAP.
+
+Cytoscape (we have used version >= 3.4) is available for download from [here](http://www.cytoscape.org). 
+
+## Download NAP Cytoscape files
+
+To download NAP's Cytoscape file, go back to the results page of your task:
+
+![nap_cytoscape](img/nap/nap_results_page_summary.png)
+
+and download the compacted file containing the 'structure_graph_alt.xgmml' file.
+
+![nap_download](img/nap/nap_results_page_summary_download.png)
+
+### Installing the ChemViz plugin
+
+To visualize the structures on NAP output we need the [ChemViz](https://apps.cytoscape.org/apps/chemviz) plugin. The easiest way to install it is using the is using Cytoscape's App Manager, as shown below:
+
+![install_chemviz](img/nap/chemviz_install.gif)
+
+## Load NAP Cytoscape file and apply layout
+
+Load the 'structure_graph_alt.xgmml' file:
+
+![nap_cytoscape](img/nap/load_xgmml.gif)
+
+and apply a layout to spread the nodes:
+
+![nap_layout](img/nap/cytoscape_layout.gif)
+
+
+## Change image display properties and paint library match structure 
+
+The 'structure_graph_alt.xgmml' file contains some pre-set elements to aid structure display. Nodes possesing a structure are empty squares. Node borders are either green (spectral library match) or blue (in silico prediction). In silico predictions can be a combination of MetFrag, Fusion and Consensus. Browsing the 'Table Panel' is possible to inspect which scoring method has structures available in the columns MetFrag/Fusion/ConsensusSMILES. To use one of these columns to display the structures we have first to change the properties of ChemViz, by doing:
+
+![library_smiles](img/nap/set_spectral_library_smiles.gif)
+
+After setting the desired source column to display the structure one can just 'paint' the structure on the node:
+
+![paint_library](img/nap/paint_spectral_library_structure.gif)
+
+### Change display properties and paint on multiple nodes 
+
+As we described in the publications [below](#citation) we have a decreasing order of confidence on structural prediction spectral library match > Fusion scoring > Consensus scoring > MetFrag scoring. To change for Fusion scoring structures you can do:
+
+![fusion_smiles](img/nap/set_fusion_smiles.gif)
+
+and paint the structures:
+
+![paint_fusion](img/nap/paint_fusion_structure.gif)
+
+### Display the list of candidates
+
+As discussed in the [Online Exploration](#online-exploration-of-nap-results) section, the most correct structure may not be the first candidate. Therefore we can display the structures outputed from our [initial parameters](#parameter-walkthrough):
+
+![cand_chemviz](img/nap/display_consensus_candidates.gif)
 
 ## Citation
 
