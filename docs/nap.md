@@ -21,6 +21,37 @@ There are basically three options for database structure selection:
 A standard format is required for the in house database. One can easily collect structures in the literature and format a tab separated files with SMILES strings and a character identifier of any kind, as the example database [Right-click, and Save link as](https://raw.githubusercontent.com/DorresteinLaboratory/GNPSDocumentation/master/docs/static/JNP_Kyobin.txt):  
 ![inhousedb](img/nap/example_inhouse_database.png)
 
+Having a in house collection, before the use in NAP, the user has to first format the database, using the following [webserver](http://dorresteinappshub.ucsd.edu:5002/upload):
+
+![conversionweb](img/nap/example_inhouse_database.png)
+
+After submission for conversion the user should receive an email with the link to download a file in the following format [Right-click, and Save link as](https://raw.githubusercontent.com/DorresteinLaboratory/GNPSDocumentation/master/docs/static/JNP_Kyobin_formatted.txt):
+
+![inhousedbformat](img/nap/inhouse_databse_formatted.png)
+
+3. The combination of the two databases above. NAP allows the combination of different databases, both, through multiple database identifiers, or by the combination of identifiers and text file. While this feature allows flexibility, it is important narrow the search space for the system under study.
+
+## Running NAP 
+
+### NAP Workflow Selection
+
+From the main [GNPS page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), you can access NAP clicking the banner
+
+![napanalysis](img/nap/nap_selection.png)
+
+and then selecting NAP in the corresponding description. You can also directly open clicking ["here"](https://proteomics2.ucsd.edu/ProteoSAFe/?params=%7B%22workflow%22:%22NAP_CCMS2%22%7D).
+
+
+This will bring you to the workflow input to start NAP. The image bellow shows an example of the most important parameters
+
+![nap_input_form](img/nap/nap_input_page.png)
+
+The first parameter is the GNPS network task id, this id can be found in the results email sent by GNPS or in the url, as shown in the image below, the task id is 
+
+![taskid](img/nap/gnps_taskid_example.png)
+
+A detailed description of the parameters is provided [below](#parameter-walkthrough).
+
 ### Parameter Walkthrough
 
 
