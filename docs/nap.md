@@ -8,11 +8,18 @@ Check out the full [documentation](https://github.com/DorresteinLaboratory/NAP_P
 
 The following inputs are used for NAP:
 
-1. Molecular network task id, see [Molecular Networking](networking.md)(required)
+1. Molecular network task id, see [Molecular Networking](networking.md) (required)
 2. Identifier(s) of databases and/or user provided databases (required)
 
 
-### Mass Spectrometry data files
+### Structure database 
+
+There are basically three options for database structure selection:
+
+1. Input one or more databases, separated by ",". Available options are: GNPS, HMDB, SUPNAT, CHEBI, DRUGBANK and FooDB. Be aware that these databases are static and new changes on the source databases are not incorporated automatically.
+2. Input an in house generated database. See [Molecular Networking](networking.md) documentation to learn how to use the drag and drop upload.
+A standard format is required for the in house database. One can easily collect structures in the literature and format a tab separated files with SMILES strings and a character identifier of any kind, as the example database [Right-click, and Save link as](https://raw.githubusercontent.com/DorresteinLaboratory/GNPSDocumentation/master/docs/static/JNP_Kyobin.txt):  
+![inhousedb](img/nap/example_inhouse_database.png)
 
 ### Parameter Walkthrough
 
