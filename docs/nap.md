@@ -23,7 +23,7 @@ A standard format is required for the in house database. One can easily collect 
 
 Having a in house collection, before the use in NAP, the user has to first format the database, using the following [webserver](http://dorresteinappshub.ucsd.edu:5002/upload):
 
-![conversionweb](img/nap/example_inhouse_database.png)
+![conversionweb](img/nap/format_database_webform.png)
 
 After submission for conversion the user should receive an email with the link to download a file in the following format [Right-click, and Save link as](https://raw.githubusercontent.com/DorresteinLaboratory/GNPSDocumentation/master/docs/static/JNP_Kyobin_formatted.txt):
 
@@ -46,9 +46,11 @@ This will bring you to the workflow input to start NAP. The image bellow shows a
 
 ![nap_input_form](img/nap/nap_input_page.png)
 
-The first parameter is the GNPS network task id, this id can be found in the results email sent by GNPS or in the url, as shown in the image below, the task id is 
+The first parameter is the GNPS network task id, this id can be found in the results email sent by GNPS or in the url, as shown in the image below, the task id is '3b215c4b25594b9c85d92de547815c0a'
 
 ![taskid](img/nap/gnps_taskid_example.png)
+
+and the molecular family (connected component) containing the 'cluster index' 56 can be inspected in the [molecular network](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?view=network_displayer&componentindex=1&task=3b215c4b25594b9c85d92de547815c0a#%7B%7D). 
 
 A detailed description of the parameters is provided [below](#parameter-walkthrough).
 
@@ -74,6 +76,42 @@ A detailed description of the parameters is provided [below](#parameter-walkthro
 | Maximum number of candidate structures in the graph: | Number od candidate structures to be exported in the Cytoscape graph. | 10 |
 | Workflow type | [Standard](networking.md) or [MZmine](featurebasedmolecularnetworking.md). | |
 
+## Online Exploration of NAP results 
+
+After completing a NAP workflow, the results can be browsed n the web interface. The web interface provides a quick and easy way to perform initial analysis of your data, particularly if a specific structure or class of structure for which you want to inspect in the results.
+
+To have access to the web interface click on the 'EXPERIMENTAL - NAPviewer' at the results page: 
+
+![napviewer_linkout](img/nap/nap_results_page_web.png)
+
+The result summaries can be divided in four sections.
+
+
+### 1. Structure view 
+
+NAP attemps to re-rank the candidate structures provided by [MetFrag](http://c-ruttkies.github.io/MetFrag/) using the information provided by the molecular network. This first view shows the __S__tructures ranked by MetFrag and the ones re-ranked by NAP to allow the user to quickly inspect if the propagation improved the ranking:
+
+![napviewer_structures](img/nap/napviewer_structure_view_mouse.png)
+
+### 2. Graph view 
+
+As the re-ranking is performing obtaining information from neighbor nodes, the __G__raph view displays the direct neighbor's first candidate structures of a given re-ranked node to allow the user to inspect if the re-ranking is consistent in the network:
+
+![napviewer_graph](img/nap/napviewer_node_view_mouse.png)
+
+The node border colors indicate the source of structure: green - reference spectral library structure; magenta MetFrag's first candidate; blue Fusion's first candidate and red Consensus' first candidate.
+
+### 3. Fragment view 
+
+Some important aspect of structural prediction are: how many fragments were predicted, which fragments and wich substructure was assigned to the prediction. The __F__ragment view displays the direct fragments predicted for each structure in the candidate list of a given fragmentation spectrum (represented by a node in the network):
+
+![napviewer_graph](img/nap/napviewer_fragmentation_mouse.png)
+
+### 4. Full candidate list view 
+
+As structural prediction is very challenging, the correct candidate may not be the first in the list, therefore is important to be able to browse the candidate list. The __link__ containing the full list of candidate structures found in NAP search is provided. The first column of the candidate's table contains a link out for the respective database where the structure was originated. The table also contains the ranking for MetFrag, Fusion and Conseunsus, the link for numeber of fragments predict for each candidate structure, with a link to fragment plot representation and a column with color coded structual similarity grouping, that can be easily associated with candidate's [ClassyFire](http://classyfire.wishartlab.com/) class, when available:
+
+![napviewer_graph](img/nap/napviewer_candidate_list_group.png)
 
 
 ## Citation
