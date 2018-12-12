@@ -4,7 +4,7 @@ Network Annotation Propagation (NAP) uses spectral networks to propagate informa
 
 Check out the full [documentation](https://github.com/DorresteinLaboratory/NAP_ProteoSAFe/).
 
-## Network short hands on tutorial
+## NAP short hands on tutorial
 
 The aim of this tutorial is to work as a guided tour through this documentation page and exploring the finding of [Kang et al., (2018)](#citation).
 
