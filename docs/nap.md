@@ -8,7 +8,7 @@ Check out the full [documentation](https://github.com/DorresteinLaboratory/NAP_P
 
 The aim of this tutorial is to work as a guided tour through this documentation page and exploring the finding of [Kang et al., (2018)](#citation).
 
-1. Go to [Structure database](#structure-database) section, download the example in house database (two columns file), add the structure [SN00230021](http://bioinf-applied.charite.de/supernatural_new/index.php?site=search5&np_id=SN00230021) to the file and generate the formatted database;
+1. Go to [Structure database](#structure-database) section, download the example in house database (two columns file), add the structure [SN00230021](http://bioinf-applied.charite.de/supernatural_new/index.php?site=search5&np_id=SN00230021) to the file and generate the formatted database. Make sure you use an excel like software and save as tab separated text file;
 2. Go to [Running NAP](#running-nap) section, open NAP input interface, make sure you are logged and run a job with example parameters present in the picture (including job id: '3b215c4b25594b9c85d92de547815c0a' and cluster index: 56), with the database you just created. Go here if need instructions to [upload the database](fileupload.md);
 3. When your job is processed, you should receive a [link](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=cc85b3902c8847778f119bca69d1bf07) similar to that. Go to section [Online Exploration](#online-exploration-of-nap-results) and browse the results; 
 3. Follow the same [link](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=cc85b3902c8847778f119bca69d1bf07) above. Go to section [NAP Visualization in Cytoscape](#nap-visualization-in-cytoscape) and browse the results; 
