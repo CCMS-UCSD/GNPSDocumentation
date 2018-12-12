@@ -9,7 +9,7 @@ Check out the full [documentation](https://github.com/DorresteinLaboratory/NAP_P
 The aim of this tutorial is to work as a guided tour through this documentation page and exploring the finding of [Kang et al., (2018)](#citation).
 
 1. Go to [Structure database](#structure-database) section, download the example in house database (two columns file), add the structure [SN00230021](http://bioinf-applied.charite.de/supernatural_new/index.php?site=search5&np_id=SN00230021) to the file and generate the formatted database;
-2. Go to [Running NAP](#running-nap) section, open NAP input interface, make sure you are logged and run a job with example parameters (including job id: '3b215c4b25594b9c85d92de547815c0a' and cluster index: 56), with the database you just created. Go here if need instructions to [upload the database](fileupload.md);
+2. Go to [Running NAP](#running-nap) section, open NAP input interface, make sure you are logged and run a job with example parameters present in the picture (including job id: '3b215c4b25594b9c85d92de547815c0a' and cluster index: 56), with the database you just created. Go here if need instructions to [upload the database](fileupload.md);
 3. When your job is processed, you should receive a [link](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=cc85b3902c8847778f119bca69d1bf07) similar to that. Go to section [Online Exploration](#online-exploration-of-nap-results) and browse the results; 
 3. Follow the same [link](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=cc85b3902c8847778f119bca69d1bf07) above. Go to section [NAP Visualization in Cytoscape](#nap-visualization-in-cytoscape) and browse the results; 
 
@@ -32,7 +32,7 @@ There are basically three options for database structure selection:
 A standard format is required for the in house database. One can easily collect structures in the literature and format a tab separated files with SMILES strings and a character identifier of any kind, as the example database [Right-click, and Save link as](https://raw.githubusercontent.com/DorresteinLaboratory/GNPSDocumentation/master/docs/static/JNP_Kyobin.txt):  
 ![inhousedb](img/nap/example_inhouse_database.png)
 
-Having a in house collection, before the use in NAP, the user has to first format the database, using the following [webserver](http://dorresteinappshub.ucsd.edu:5002/upload):
+Having an in house collection, before the use in NAP, the user has to first format the database, using the following [webserver](http://dorresteinappshub.ucsd.edu:5002/upload):
 
 ![conversionweb](img/nap/format_database_webform.png)
 
@@ -53,7 +53,7 @@ From the main [GNPS page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.js
 and then selecting NAP in the corresponding description. You can also directly open clicking ["here"](https://proteomics2.ucsd.edu/ProteoSAFe/?params=%7B%22workflow%22:%22NAP_CCMS2%22%7D).
 
 
-This will bring you to the workflow input to start NAP. The image below shows an example of the most important parameters
+This will take you to the workflow input to start NAP. The image below shows an example of the most important parameters
 
 ![nap_input_form](img/nap/nap_input_page.png)
 
@@ -100,7 +100,7 @@ The result summaries can be divided in four sections.
 
 ### 1. Structure view 
 
-NAP attemps to re-rank the candidate structures provided by [MetFrag](http://c-ruttkies.github.io/MetFrag/) using the information provided by the molecular network. This first view shows the **S**tructures ranked by MetFrag and the ones re-ranked by NAP to allow the user to quickly inspect if the propagation improved the ranking:
+NAP attempts to re-rank the candidate structures provided by [MetFrag](http://c-ruttkies.github.io/MetFrag/) using the information provided by the molecular network. This first view shows the **S**tructures ranked by MetFrag and the ones re-ranked by NAP to allow the user to quickly inspect if the propagation improved the ranking:
 
 ![napviewer_structures](img/nap/napviewer_structure_view_mouse.png)
 
@@ -114,7 +114,7 @@ The node border colors indicate the source of structure: green - reference spect
 
 ### 3. Fragment view 
 
-Some important aspects of structural prediction are: how many fragments were predicted, which fragments and wich substructures were assigned to the predictions. The **F**ragment view displays the direct fragments predicted for each structure in the candidate list of a given fragmentation spectrum (represented by a node in the network):
+Some important aspects of structural prediction are: how many fragments were predicted, which fragments and which substructures were assigned to the predictions. The **F**ragment view displays the direct fragments predicted for each structure in the candidate list of a given fragmentation spectrum (represented by a node in the network):
 
 ![napviewer_graph](img/nap/napviewer_fragmentation_mouse.png)
 
@@ -122,7 +122,7 @@ Hovering the mouse over the candidate fragment is possible to see the substructu
 
 ### 4. Full candidate list view 
 
-As structural prediction is very challenging, the correct candidate may not be the first in the list, therefore, is important to be able to browse the candidate list. The __Link__ containing the full list of candidate structures found in NAP search is provided. The first column of the candidate's table contains a link out for the respective database where the structure was originated. The table also contains the ranking for MetFrag, Fusion and Conseunsus, the link for numeber of fragments predict for each candidate structure, with a link to fragment plot representation and a column with color coded structual similarity grouping, that can be easily associated with candidate's [ClassyFire](http://classyfire.wishartlab.com/) class, when available:
+As structural prediction is very challenging, the correct candidate may not be the first in the list, therefore, is important to be able to browse the candidate list. The __Link__ containing the full list of candidate structures found in NAP search is provided. The first column of the candidate's table contains a link out for the respective database where the structure was originated. The table also contains the ranking for MetFrag, Fusion and Consensus, the link for number of fragments predict for each candidate structure, with a link to fragment plot representation and a column with color coded structural similarity grouping, that can be easily associated with candidate's [ClassyFire](http://classyfire.wishartlab.com/) class, when available:
 
 ![napviewer_graph](img/nap/napviewer_candidate_list_group.png)
 
@@ -163,7 +163,7 @@ and apply a layout to spread the nodes:
 
 ## Change image display properties and paint library match structure 
 
-The 'structure_graph_alt.xgmml' file contains some pre-set elements to aid structure display. Nodes possesing a structure are empty squares. Node borders are either green (spectral library match) or blue (in silico prediction). In silico predictions can be a combination of MetFrag, Fusion and Consensus. Browsing the 'Table Panel' is possible to inspect which scoring method has structures available in the columns MetFrag/Fusion/ConsensusSMILES. To use one of these columns to display the structures we have first to change the properties of ChemViz, by doing:
+The 'structure_graph_alt.xgmml' file contains some pre-set elements to aid structure display. Nodes possessing a structure are empty squares. Node borders are either green (spectral library match) or blue (in silico prediction). In silico predictions can be a combination of MetFrag, Fusion and Consensus. Browsing the 'Table Panel' is possible to inspect which scoring method has structures available in the columns MetFrag/Fusion/ConsensusSMILES. To use one of these columns to display the structures we have first to change the properties of ChemViz, by doing:
 
 ![library_smiles](img/nap/set_spectral_library_smiles.gif)
 
@@ -183,7 +183,7 @@ and paint the structures:
 
 ### Display the list of candidates
 
-As discussed in the [Online Exploration](#online-exploration-of-nap-results) section, the most correct structure may not be the first candidate. Therefore we can display the structures outputed from our [initial parameters](#parameter-walkthrough):
+As discussed in the [Online Exploration](#online-exploration-of-nap-results) section, the most correct structure may not be the first candidate. Therefore we can display the structures outputted from our [initial parameters](#parameter-walkthrough):
 
 ![cand_chemviz](img/nap/display_consensus_candidates.gif)
 
