@@ -40,7 +40,7 @@ After submission for conversion the user should receive an email with the link t
 
 ![inhousedbformat](img/nap/inhouse_databse_formatted.png)
 
-3. The combination of the two databases above. NAP allows the combination of different databases, both, through multiple database identifiers, or by the combination of identifiers and text file. While this feature allows flexibility, it is important narrow the search space for the system under study.
+3. The combination of the two databases above. NAP allows the combination of different databases, either through multiple database identifiers, or by the combination of identifiers and text file. While this feature allows flexibility, it is important narrow the search space for the system under study.
 
 ## Running NAP 
 
@@ -89,7 +89,7 @@ A detailed description of the parameters is provided [below](#parameter-walkthro
 
 ## Online Exploration of NAP results 
 
-After completing a NAP workflow, the results can be browsed n the web interface. The web interface provides a quick and easy way to perform initial analysis of your data, particularly if a specific structure or class of structure for which you want to inspect in the results.
+After completing a NAP workflow, the results can be browsed in the web interface. The web interface provides a quick and easy way to perform initial analysis of your data, particularly if you are interested in a specific structure or class of structures and want to inspect in the results.
 
 To have access to the web interface click on the 'EXPERIMENTAL - NAPviewer' at the results page: 
 
@@ -118,17 +118,17 @@ Some important aspects of structural prediction are: how many fragments were pre
 
 ![napviewer_graph](img/nap/napviewer_fragmentation_mouse.png)
 
-Hovering the mouse over the candidate fragment is possible to see the substructure predicted for the fragment.
+By hovering the mouse over the candidate fragment it is possible to see the substructure predicted for the fragment.
 
 ### 4. Full candidate list view 
 
-As structural prediction is very challenging, the correct candidate may not be the first in the list, therefore, is important to be able to browse the candidate list. The __Link__ containing the full list of candidate structures found in NAP search is provided. The first column of the candidate's table contains a link out for the respective database where the structure was originated. The table also contains the ranking for MetFrag, Fusion and Consensus, the link for number of fragments predict for each candidate structure, with a link to fragment plot representation and a column with color coded structural similarity grouping, that can be easily associated with candidate's [ClassyFire](http://classyfire.wishartlab.com/) class, when available:
+As structural prediction is very challenging. The correct candidate may not be the first in the list, therefore it is important to be able to browse the candidate list. The __Link__ containing the full list of candidate structures found in NAP search is provided. The first column of the candidate's table contains a link out for the respective database where the structure was originated. The table also contains the ranking for MetFrag, Fusion and Consensus, the link for number of fragments predicted for each candidate structure, a link to fragment plot representation and a column with color coded structural similarity grouping that can be easily associated with candidate's [ClassyFire](http://classyfire.wishartlab.com/) class, when available:
 
 ![napviewer_graph](img/nap/napviewer_candidate_list_group.png)
 
 ## NAP Visualization in Cytoscape
 
-In much the same way as for [Molecular Networking](networking.md) uses [Cytoscape](cytoscape.md) to visualize the whole network, we visualize structure prediction of entire connected component or networks using the output from NAP.
+In a similar way as [Molecular Networking](networking.md) uses [Cytoscape](cytoscape.md) to visualize the whole network, we can visualize structure prediction of entire connected component or networks using the output from NAP.
 
 Cytoscape (we have used version >= 3.4) is available for download from [here](http://www.cytoscape.org). 
 
@@ -146,7 +146,7 @@ After the download, remember to uncompress the file for downstream use.
 
 ### Installing the ChemViz plugin
 
-To visualize the structures on NAP output we need the [ChemViz](https://apps.cytoscape.org/apps/chemviz) plugin. The easiest way to install it is using the is using Cytoscape's App Manager, as shown below:
+To visualize the structures on NAP output we need the [ChemViz](https://apps.cytoscape.org/apps/chemviz) plugin. The easiest way to install it is using Cytoscape's App Manager, as shown below:
 
 ![install_chemviz](img/nap/chemviz_install.gif)
 
