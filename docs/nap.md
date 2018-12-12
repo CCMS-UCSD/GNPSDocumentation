@@ -2,7 +2,18 @@
 
 Network Annotation Propagation (NAP) uses spectral networks to propagate information from spectral library matching, in order to improve in silico fragmentation candidate structure ranking. This workflow is currently in beta development stages so any feedback is welcome to improve analysis and usability. It is available [here](https://proteomics2.ucsd.edu/ProteoSAFe/?params={%22workflow%22:%22NAP_CCMS2%22}) under 'NAP_CCMS' Workflow drop down menu.
 
-Check out the full [documentation](https://github.com/DorresteinLaboratory/NAP_ProteoSAFe/blob/master/supplementar_tool_manual_documentation.pdf).
+Check out the full [documentation](https://github.com/DorresteinLaboratory/NAP_ProteoSAFe/).
+
+## Network short hands on tutorial
+
+The aim of this tutorial is to work as a guided tour through this documentation page and exploring the finding of [Kang et al., (2018)](#citation).
+
+1. Go to [Structure database](#structure-database) section, download the example in house database (two columns file), add the structure [SN00230021](http://bioinf-applied.charite.de/supernatural_new/index.php?site=search5&np_id=SN00230021) to the file and generate the formatted database;
+2. Go to [Running NAP](#running-nap) section, open NAP input interface, make sure you are logged and run a job with example parameters (including job id: '3b215c4b25594b9c85d92de547815c0a' and cluster index: 56), with the database you just created. Go here if need instructions to [upload the database](fileupload.md);
+3. When your job is processed, you should receive a [link](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=cc85b3902c8847778f119bca69d1bf07) similar to that. Go to section [Online Exploration](#online-exploration-of-nap-results) and browse the results; 
+3. Follow the same [link](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=cc85b3902c8847778f119bca69d1bf07) above. Go to section [NAP Visualization in Cytoscape](#nap-visualization-in-cytoscape) and browse the results; 
+
+
 
 ## Data Input Preparation
 
@@ -68,7 +79,7 @@ A detailed description of the parameters is provided [below](#parameter-walkthro
 | Acquisition mode | Mass spectrometry acquisition mode. | Positive |
 | Adduct ion type | Expected adduct type for the precursor ion mass. | [M+H] |
 | Multiple adduct types | Input one or more adducts, separated by ",". Available options are: listed on the Adduct drop down menu. | |
-| Structure databases | Input one or more databases, separated by ",". Available options are: GNPS, HMDB, SUPNAT, CHEBI, DRUGBANK and FooDB. Use none to select only user defined. | |
+| Structure databases | Input one or more databases, separated by ",". Available options are: [GNPS](https://gnps.ucsd.edu/ProteoSAFe/libraries.jsp), [HMDB](http://www.hmdb.ca/), [SUPNAT](http://bioinf-applied.charite.de/supernatural_new/index.php), [CHEBI](https://www.ebi.ac.uk/chebi/), [DRUGBANK](https://www.drugbank.ca/) and [FooDB](http://foodb.ca/). Use none to select only user defined. | |
 | Compound class to be selected | ClassyFire class in the following format: "class:name". | |
 | User provided database | In house candidate structure database to be used in the search. | |
 | Skip parent mass selection | Should be used only in combination with class selection. | 0 |
@@ -89,13 +100,13 @@ The result summaries can be divided in four sections.
 
 ### 1. Structure view 
 
-NAP attemps to re-rank the candidate structures provided by [MetFrag](http://c-ruttkies.github.io/MetFrag/) using the information provided by the molecular network. This first view shows the __S__tructures ranked by MetFrag and the ones re-ranked by NAP to allow the user to quickly inspect if the propagation improved the ranking:
+NAP attemps to re-rank the candidate structures provided by [MetFrag](http://c-ruttkies.github.io/MetFrag/) using the information provided by the molecular network. This first view shows the **S**tructures ranked by MetFrag and the ones re-ranked by NAP to allow the user to quickly inspect if the propagation improved the ranking:
 
 ![napviewer_structures](img/nap/napviewer_structure_view_mouse.png)
 
 ### 2. Graph view 
 
-As the re-ranking is performing obtaining information from neighbor nodes, the __G__raph view displays the direct neighbor's first candidate structures of a given re-ranked node to allow the user to inspect if the re-ranking is consistent in the network:
+As the re-ranking is performing obtaining information from neighbor nodes, the **G**raph view displays the direct neighbor's first candidate structures of a given re-ranked node to allow the user to inspect if the re-ranking is consistent in the network:
 
 ![napviewer_graph](img/nap/napviewer_node_view_mouse.png)
 
@@ -111,7 +122,7 @@ Hovering the mouse over the candidate fragment is possible to see the substructu
 
 ### 4. Full candidate list view 
 
-As structural prediction is very challenging, the correct candidate may not be the first in the list, therefore, is important to be able to browse the candidate list. The __link__ containing the full list of candidate structures found in NAP search is provided. The first column of the candidate's table contains a link out for the respective database where the structure was originated. The table also contains the ranking for MetFrag, Fusion and Conseunsus, the link for numeber of fragments predict for each candidate structure, with a link to fragment plot representation and a column with color coded structual similarity grouping, that can be easily associated with candidate's [ClassyFire](http://classyfire.wishartlab.com/) class, when available:
+As structural prediction is very challenging, the correct candidate may not be the first in the list, therefore, is important to be able to browse the candidate list. The __Link__ containing the full list of candidate structures found in NAP search is provided. The first column of the candidate's table contains a link out for the respective database where the structure was originated. The table also contains the ranking for MetFrag, Fusion and Conseunsus, the link for numeber of fragments predict for each candidate structure, with a link to fragment plot representation and a column with color coded structual similarity grouping, that can be easily associated with candidate's [ClassyFire](http://classyfire.wishartlab.com/) class, when available:
 
 ![napviewer_graph](img/nap/napviewer_candidate_list_group.png)
 
@@ -121,7 +132,7 @@ In much the same way as for [Molecular Networking](networking.md) uses [Cytoscap
 
 Cytoscape (we have used version >= 3.4) is available for download from [here](http://www.cytoscape.org). 
 
-## Download NAP Cytoscape files
+### Download NAP Cytoscape files
 
 To download NAP's Cytoscape file, go back to the results page of your task:
 
@@ -130,6 +141,8 @@ To download NAP's Cytoscape file, go back to the results page of your task:
 and download the compacted file containing the 'structure_graph_alt.xgmml' file.
 
 ![nap_download](img/nap/nap_results_page_summary_download.png)
+
+After the download, remember to uncompress the file for downstream use.
 
 ### Installing the ChemViz plugin
 
