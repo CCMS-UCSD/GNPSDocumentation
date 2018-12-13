@@ -148,6 +148,10 @@ There are several additional normalization options specifically for feature dete
 
 Here is an example mzmine networking [job](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=747b36ba08434f0cb478b920decfe4ce) from a subset of the American Gut Project.
 
+#### Video Tutorial
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/NTkQ0fS1aug"> </iframe>
+
 #### Results Tables
 
 Once the molecular networking is finished, there are many views to explore the analysis. These views are very similar to classic molecular networking.
