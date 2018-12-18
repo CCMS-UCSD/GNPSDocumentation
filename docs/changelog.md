@@ -1,5 +1,9 @@
 ## Change Log
 
+### 12/27/2018
+
+* GNPS quickstart support within MZMine2 updated
+
 ### 11/1/2018
 
 * Added UniqueFileCount to GraphML in Classic Molecular Networking
