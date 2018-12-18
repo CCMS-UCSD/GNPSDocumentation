@@ -35,3 +35,7 @@ Full LC-MS/MS data can be found in the [MassIVE dataset MSV000082678](https://ma
 ## Video Tutorial - Analyze Feature Based Molecular Networking in GNPS
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/NTkQ0fS1aug"> </iframe>
+
+## Video Tutorial - Quick MZMine2 Export to GNPS Feature Based Molecular Networking
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/vFcGG7T_44E"> </iframe>

@@ -150,7 +150,14 @@ Here is an example mzmine networking [job](https://gnps.ucsd.edu/ProteoSAFe/stat
 
 #### Video Tutorial
 
+**Running Feature Based Molecular Network at GNPS**
+
 <iframe width="800" height="500" src="https://www.youtube.com/embed/NTkQ0fS1aug"> </iframe>
+
+**Quick MZMine2 Export to GNPS Feature Based Molecular Networking**
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/vFcGG7T_44E"> </iframe>
+
 
 #### Results Tables
 
