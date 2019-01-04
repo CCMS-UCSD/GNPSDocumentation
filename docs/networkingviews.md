@@ -44,8 +44,6 @@ Here users can explore the specific spectral family in the molecular network. Ea
 
 There is a lot to unpack in this online interface to explore the molecular networks. The following is a quick guide to all the features in this interface
 
-![img](img/networking/networkingviz_highlight.png)
-
 1. Node Labels
 2. Edge Labels
 3. Edge Highlight
