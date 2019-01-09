@@ -19,6 +19,5 @@ Upcoming Office Hour Schedule
 
 |     Date/Time    | Subjects Covered          |
 | ------------- |------------- |
-| 11AM PST December 2 | GNPS Super Quickstart |
-| 2PM PST December 17 | TBA |
-| 10AM PST Jan 2nd | TBA |
+| 2PM PST January 14 | GNPS Q and A / GNPS Online Network Visualization |
+| 2PM PST January 28 | GNPS Q and A / GNPS Cytoscape Visualization |
