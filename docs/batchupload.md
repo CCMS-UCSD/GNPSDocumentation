@@ -35,5 +35,10 @@ Please note: Only letters, numbers and underscores are allowed in the filenames.
 | EXACTMASS     | Compound Exact Mass                            | 0     |                                                         | No  |
 | DATACOLLECTOR | Individual collecting data                     | REQUIRED |                                            | Yes |
 | ADDUCT        | Adduct of Ion Fragmented in MS2 (M+H, M+2H, etc.) | REQUIRED |                                        | Yes |
-| INTEREST      | N/A                                         | N/A  |                                          | Yes |
+| INTEREST      | N/A                                         | N/A  |                                          | No  |
+| LIBQUALITY    | Quality of Library (1 for Gold, 2 for Silver, 3 for Bronze) | 3 | 1,2,2                        | Yes |
+| GENUS         | Genus                                       | N/A  |                                          | No  |
+| SPECIES       | Species                                     | N/A  |                                          | No  |
+|
+
 
