@@ -27,5 +27,8 @@ Please note: Only letters, numbers and underscores are allowed in the filenames.
 | EXTRACTSCAN   | Spectrum Scan of Spectrum           | REQUIRED |                                               | Yes |
 | SMILES        | Smiles Structure                    | N/A      |                                               | No  |
 | INCHI         | Inchi Structure                     | N/A      |                                               | No  |
-| INCHIAUX      | Inchi Auxiliary Structure           | N/A      |                                               | No  |
-| CHARGE        | Charge
+| INCHIAUX      | Inchi Auxiliary Structure                             | N/A      |                                               | No  |
+| CHARGE        | Charge of Precursor (0 to pull from the spectrum file) | 0 |                                                     | No  |
+| IONMODE       | Ionization Mode (Positive/Negative)      | Positive | Positive, Negative                                         | Yes |
+| PUBMED        | Pubmed ID where compound or data was published | N/A   |                                                         | No  |
+
