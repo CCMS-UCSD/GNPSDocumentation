@@ -16,29 +16,31 @@ The field requirements are the same as on the single spectrum upload form, the o
 
 Please note: Only letters, numbers and underscores are allowed in the filenames. Spaces and special characters are **NOT** allowed.
 
-| Header        | Desc. |Default Value to Put When Not Known | Possible Values | Required |
-| ------------- | ----- | ---------------------------------- | --------------- | -------- |
-| FILENAME      | Input Filename (mzXML) | REQUIRED | only letters, numbers, underscores and periods are allowed | Yes |
-| SEQ           | Peptide Sequence       | *..*     |                                                            | No  |
-| COMPOUND_NAME | Compound Common Name   | REQUIRED |                                                            | YES |
-| MOLECULEMASS  | Corrected Precursor MZ for Compound | 0 |                                                      | No  |
-| INSTRUMENT    | Mass Analyzer Instrument            | REQUIRED | qTof, QQQ, Ion Trap, Hybrid FT, Orbitrap      | Yes |
-| IONSOURCE     | Source of Ions                      | REQUIRED | LC-ESI, DI-ESI                                | Yes |
-| EXTRACTSCAN   | Spectrum Scan of Spectrum           | REQUIRED |                                               | Yes |
-| SMILES        | Smiles Structure                    | N/A      |                                               | No  |
-| INCHI         | Inchi Structure                     | N/A      |                                               | No  |
-| INCHIAUX      | Inchi Auxiliary Structure                             | N/A      |                                               | No  |
+| Header        | Desc.                                    |Default Value to Put When Not Known | Possible Values             | Required |
+| ------------- | ---------------------------------------- | ---------------------------------- | --------------------------- | -------- |
+| FILENAME      | Input Filename (mzXML)                   | REQUIRED | only letters, numbers, underscores and periods are allowed | Yes |
+| SEQ           | Peptide Sequence                         | *..*     |                                                            | No  |
+| COMPOUND_NAME | Compound Common Name                     | REQUIRED |                                                            | Yes |
+| MOLECULEMASS  | Corrected Precursor MZ for Compound      | 0        |                                                            | No  |
+| INSTRUMENT    | Mass Analyzer Instrument                 | REQUIRED | qTof, QQQ, Ion Trap, Hybrid FT, Orbitrap                   | Yes |
+| IONSOURCE     | Source of Ions                           | REQUIRED | LC-ESI, DI-ESI                                             | Yes |
+| EXTRACTSCAN   | Spectrum Scan of Spectrum                | REQUIRED |                                                            | Yes |
+| SMILES        | Smiles Structure                         | N/A      |                                                            | No  |
+| INCHI         | Inchi Structure                          | N/A      |                                                            | No  |
+| INCHIAUX      | Inchi Auxiliary Structure                | N/A      |                                                            | No  |
 | CHARGE        | Charge of Precursor (0 to pull from the spectrum file) | 0 |                                                     | No  |
-| IONMODE       | Ionization Mode (Positive/Negative)            | Positive | Positive, Negative                                   | Yes |
+| IONMODE       | Ionization Mode (Positive/Negative)      | Positive | Positive, Negative                                         | Yes |
 | PUBMED        | Pubmed ID where compound or data was published | N/A   |                                                         | No  |
-| ACQUISITION   | Sample source of compound                      | Crude | Crude, Lysate, Commercial, Isolated, Other              | Yes |
-| EXACTMASS     | Compound Exact Mass                            | 0     |                                                         | No  |
-| DATACOLLECTOR | Individual collecting data                     | REQUIRED |                                            | Yes |
-| ADDUCT        | Adduct of Ion Fragmented in MS2 (M+H, M+2H, etc.) | REQUIRED |                                        | Yes |
-| INTEREST      | N/A                                         | N/A  |                                          | No  |
-| LIBQUALITY    | Quality of Library (1 for Gold, 2 for Silver, 3 for Bronze) | 3 | 1,2,2                        | Yes |
-| GENUS         | Genus                                       | N/A  |                                          | No  |
-| SPECIES       | Species                                     | N/A  |                                          | No  |
-|
+| ACQUISITION   | Sample source of compound                | Crude    | Crude, Lysate, Commercial, Isolated, Other                 | Yes |
+| EXACTMASS     | Compound Exact Mass                      | 0        |                                                            | No  |
+| DATACOLLECTOR | Individual collecting data               | REQUIRED |                                                            | Yes |
+| ADDUCT        | Adduct of Ion Fragmented in MS2 (M+H, M+2H, etc.) | REQUIRED |                                                   | Yes |
+| INTEREST      | N/A                                      | N/A      |                                                            | No  |
+| LIBQUALITY    | Quality of Library (1 for Gold, 2 for Silver, 3 for Bronze) | 3     | 1,2,2                                      | Yes |
+| GENUS         | Genus                                    | N/A      |                                                            | No  |
+| SPECIES       | Species                                  | N/A      |                                                            | No  |
+| STRAIN        | Strain                                   | N/A      |                                                            | No  |
+| CASNUMBER     | Chemical Abstracts Service compound identification number | N/A  |                                               | No  |
+| PI            | PI overseeing compound acquisition and analysis           | Required |                                           | Yes |
 
 
