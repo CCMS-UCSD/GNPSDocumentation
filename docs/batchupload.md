@@ -17,7 +17,7 @@ The field requirements are the same as on the single spectrum upload form, the o
 Please note: Only letters, numbers and underscores are allowed in the filenames. Spaces and special characters are **NOT** allowed.
 
 | Header        | Desc. |Default Value to Put When Not Known | Possible Values | Required |
-| ------------- | --- | --- | --- | --- |
+| ------------- | ----- | ---------------------------------- | --------------- | -------- |
 | FILENAME      | Input Filename (mzXML) | REQUIRED | only letters, numbers, underscores and periods are allowed | Yes |
 | SEQ           | Peptide Sequence       | *..*     |                                                            | No  |
 | COMPOUND_NAME | Compound Common Name   | REQUIRED |                                                            | YES |
@@ -29,6 +29,11 @@ Please note: Only letters, numbers and underscores are allowed in the filenames.
 | INCHI         | Inchi Structure                     | N/A      |                                               | No  |
 | INCHIAUX      | Inchi Auxiliary Structure                             | N/A      |                                               | No  |
 | CHARGE        | Charge of Precursor (0 to pull from the spectrum file) | 0 |                                                     | No  |
-| IONMODE       | Ionization Mode (Positive/Negative)      | Positive | Positive, Negative                                         | Yes |
+| IONMODE       | Ionization Mode (Positive/Negative)            | Positive | Positive, Negative                                   | Yes |
 | PUBMED        | Pubmed ID where compound or data was published | N/A   |                                                         | No  |
+| ACQUISITION   | Sample source of compound                      | Crude | Crude, Lysate, Commercial, Isolated, Other              | Yes |
+| EXACTMASS     | Compound Exact Mass                            | 0     |                                                         | No  |
+| DATACOLLECTOR | Individual collecting data                     | REQUIRED |                                            | Yes |
+| ADDUCT        | Adduct of Ion Fragmented in MS2 (M+H, M+2H, etc.) | REQUIRED |                                        | Yes |
+| INTEREST      | N/A                                         | N/A  |                                          | Yes |
 
