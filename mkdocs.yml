@@ -28,13 +28,14 @@ pages:
         - Molecular Networking in Cytoscape: cytoscape.md
         - Dereplicator: dereplicator.md
         - Network Annotation Propagation (NAP): nap.md
-    - Experiment Data Analysis:
         - Feature Based Molecular Networking: featurebasedmolecularnetworking.md
+    - Experiment Data Analysis:
         - MS2LDA Deconvolution: ms2lda.md
     - Community/Social Features:
         - Spectral Libraries:
             - Browsing Reference Spectral Libraries: browselibraries.md
             - Reference Spectral Library Curation: spectrumcuration.md
+            - Reference Spectral Library Batch Addition: batchupload.md
             - Downloading Reference Spectral Libraries: downloadlibraries.md
         - Datasets:
             - Dataset Creation/Sharing: datasets.md

@@ -18,10 +18,10 @@ Please note: Only letters, numbers and underscores are allowed in the filenames.
 
 | Header        | Desc.                                    |Default Value to Put When Not Known | Possible Values             | Required |
 | ------------- | ---------------------------------------- | ---------------------------------- | --------------------------- | -------- |
-| FILENAME      | Input Filename (mzXML)                   | REQUIRED | only letters, numbers, underscores and periods are allowed | Yes |
-| SEQ           | Peptide Sequence                         | *..*     |                                                            | No  |
+| FILENAME      | Input Filename (mzXML, mzML, or mgf)                   | REQUIRED | only letters, numbers, underscores and periods are allowed | Yes |
+| SEQ           | Peptide Sequence                         | \*..\*     |  Please enter \*..\* here only                                                          | No  |
 | COMPOUND_NAME | Compound Common Name                     | REQUIRED |                                                            | Yes |
-| MOLECULEMASS  | Corrected Precursor MZ for Compound      | 0        |                                                            | No  |
+| MOLECULEMASS  | Corrected Precursor MZ for Compound      | 0        | Entering 0 means we will attempt to read the mz value from file                                                           | No  |
 | INSTRUMENT    | Mass Analyzer Instrument                 | REQUIRED | qTof, QQQ, Ion Trap, Hybrid FT, Orbitrap                   | Yes |
 | IONSOURCE     | Source of Ions                           | REQUIRED | LC-ESI, DI-ESI                                             | Yes |
 | EXTRACTSCAN   | Spectrum Scan of Spectrum                | REQUIRED |                                                            | Yes |
@@ -43,11 +43,11 @@ Please note: Only letters, numbers and underscores are allowed in the filenames.
 | CASNUMBER     | Chemical Abstracts Service compound identification number | N/A  |                                               | No  |
 | PI            | PI overseeing compound acquisition and analysis           | Required |                                           | Yes |
 
-It must be noted that filenames must match exactly to those users are uploading. Filenames must also be unique, and can only contain numbers, letters, hyphens, underscores, and periods. All fields for each row must hve some content, blank fields are unacceptable. Fields other than filename also **cannot** contain return carriages, spaces, or tabs.
+It must be noted that filenames must match exactly to those users are uploading. Filenames must also be unique, and can only contain numbers, letters, hyphens, underscores, and periods. All fields for each row must have some content -- blank fields are unacceptable. Fields other than filename also **cannot** contain return carriages or tabs.
 
 ## Spectrum Upload
 
-Users will need to upload their files into gnps. To do this please refer to the upload documentation [here.](fileupload.md)
+Users will need to upload their files into GNPS. To do this please refer to the upload documentation [here](fileupload.md).
 
 ## Spectrum Addition to Library
 
