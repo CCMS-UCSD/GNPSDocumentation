@@ -6,7 +6,7 @@ While there is an interface to upload single spectra, users who wish to batch up
 
 To batch upload, this template must be used:
 
-[Template Spreadsheet](https://bix-lab.ucsd.edu/download/attachments/14229110/Template.xlsx?version=1&modificationDate=1393554378000)
+[Template Spreadsheet](static/Template.xlsx)
 
 Annotation are to be added one spectrum per line. Columns may not be added, or deleted or changed. Each column **must have a value.** Refer to the table below for default values to enter when not known.
 
