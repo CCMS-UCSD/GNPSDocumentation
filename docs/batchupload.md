@@ -36,11 +36,19 @@ Please note: Only letters, numbers and underscores are allowed in the filenames.
 | DATACOLLECTOR | Individual collecting data               | REQUIRED |                                                            | Yes |
 | ADDUCT        | Adduct of Ion Fragmented in MS2 (M+H, M+2H, etc.) | REQUIRED |                                                   | Yes |
 | INTEREST      | N/A                                      | N/A      |                                                            | No  |
-| LIBQUALITY    | Quality of Library (1 for Gold, 2 for Silver, 3 for Bronze) | 3     | 1,2,2                                      | Yes |
+| LIBQUALITY    | Quality of Library (1 for Gold, 2 for Silver, 3 for Bronze) | 3     | 1,2,3                                      | Yes |
 | GENUS         | Genus                                    | N/A      |                                                            | No  |
 | SPECIES       | Species                                  | N/A      |                                                            | No  |
 | STRAIN        | Strain                                   | N/A      |                                                            | No  |
 | CASNUMBER     | Chemical Abstracts Service compound identification number | N/A  |                                               | No  |
 | PI            | PI overseeing compound acquisition and analysis           | Required |                                           | Yes |
+
+It must be noted that filenames must match exactly to those users are uploading. Filenames must also be unique, and can only contain numbers, letters, hyphens, underscores, and periods. All fields for each row must hve some content, blank fields are unacceptable. Fields other than filename also **cannot** contain return carriages, spaces, or tabs.
+
+## Spectrum Upload
+
+Users will need to upload their files into gnps. To do this please refer to the upload documentation [here.](https://bix-lab.ucsd.edu/display/Public/Input+File+Uploads)
+
+## Spectrum Addition to Library
 
 
