@@ -47,7 +47,7 @@ It must be noted that filenames must match exactly to those users are uploading.
 
 ## Spectrum Upload
 
-Users will need to upload their files into gnps. To do this please refer to the upload documentation [here.](https://bix-lab.ucsd.edu/display/Public/Input+File+Uploads)
+Users will need to upload their files into gnps. To do this please refer to the upload documentation [here.](fileupload.md)
 
 ## Spectrum Addition to Library
 
