@@ -56,4 +56,5 @@ To actually add the spectra to the libraries, users will
 1. Need to upload an empty mgf file to GNPS so that it appears in the file selector directory.
 2. Export excel file as a tab separated text file and uploaded to GNPS (recommended export form Windows office 2013 or newer. Verify that line endings are UNIX and not Windows line endings).
 3. Users will then need to [click here](http://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22ADD-BATCH-ANNOTATED%22%7D) to utilize the batch workflow and select the mgf file created to hold the library, the input spectrum files, and the text version of the annotations. Addendum: Access to workflow is restricted - To request access please email Ming (ccms-web@cs.ucsd.edu)
-4.
+4. After the workflow completes, the mgf file will now be populated with the baych uploaded spectra.
+5. To contribute this library to the public GNPS library, please email Ming (ccms-web@cs.ucsd.edu), listing the location of the library and the public library it should be added to for approval.
