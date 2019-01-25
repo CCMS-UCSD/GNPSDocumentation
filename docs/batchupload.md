@@ -22,8 +22,8 @@ Please note: Only letters, numbers and underscores are allowed in the filenames.
 | SEQ           | Peptide Sequence                         | \*..\*     |  Please enter \*..\* here only                                                          | No  |
 | COMPOUND_NAME | Compound Common Name                     | REQUIRED |                                                            | Yes |
 | MOLECULEMASS  | Corrected Precursor MZ for Compound      | 0        | Entering 0 means we will attempt to read the mz value from file                                                           | No  |
-| INSTRUMENT    | Mass Analyzer Instrument                 | REQUIRED | qTof, QQQ, Ion Trap, Hybrid FT, Orbitrap                   | Yes |
-| IONSOURCE     | Source of Ions                           | REQUIRED | LC-ESI, DI-ESI                                             | Yes |
+| INSTRUMENT    | Mass Analyzer Instrument                 | REQUIRED | qTof, QQQ, Ion Trap, Hybrid FT, Orbitrap, ToF                   | Yes |
+| IONSOURCE     | Source of Ions                           | REQUIRED | LC-ESI, DI-ESI, EI, APCI, ESI                                             | Yes |
 | EXTRACTSCAN   | Spectrum Scan of Spectrum                | REQUIRED |                                                            | Yes |
 | SMILES        | Smiles Structure                         | N/A      |                                                            | No  |
 | INCHI         | Inchi Structure                          | N/A      |                                                            | No  |
