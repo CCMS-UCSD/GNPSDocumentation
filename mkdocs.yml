@@ -47,6 +47,8 @@ pages:
         - Molecular Networking - Analog Discovery in Microbial Extracts: tutorials/bacterianetworking.md
         - Feature Based Molecular Networking - MZmine2 Feature Detection - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangutmzmine.md
         - Feature Based Molecular Networking - GNPS: tutorials/featurebasedgnps.md
+    - Presentation Materials:
+        - Logos: logos.md
 theme:
     name: material
     #name: readthedocs
