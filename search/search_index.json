@@ -1554,6 +1554,16 @@
             "location": "/tutorials/featurebasedgnps/#video-tutorial-quick-mzmine2-export-to-gnps-feature-based-molecular-networking", 
             "text": "", 
             "title": "Video Tutorial - Quick MZMine2 Export to GNPS Feature Based Molecular Networking"
+        }, 
+        {
+            "location": "/logos/", 
+            "text": "Feel free to use any of the following logos for your presentations.\n\n\nGNPS Logo\n\n\nPNG with white background\n\n\n\n\nPNG with transparent background\n\n\n\n\nPNG with URL", 
+            "title": "Logos"
+        }, 
+        {
+            "location": "/logos/#gnps-logo", 
+            "text": "PNG with white background   PNG with transparent background   PNG with URL", 
+            "title": "GNPS Logo"
         }
     ]
 }
