@@ -19,5 +19,5 @@ Upcoming Office Hour Schedule
 
 |     Date/Time    | Subjects Covered          |
 | ------------- |------------- |
-| 2PM PST January 14 | GNPS Q and A / GNPS Online Network Visualization |
-| 2PM PST January 28 | GNPS Q and A / GNPS Cytoscape Visualization |
+| 2PM PST Feb 11 | GNPS Q and A / Additional Topic TBA |
+| 2PM PST Feb 25 | GNPS Q and A / Additional Topic TBA |
