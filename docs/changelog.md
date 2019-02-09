@@ -1,5 +1,13 @@
 ## Change Log
 
+### 2/5/2019
+
+* Adding credentials option for GNPS quickstart for classic molecular Networking
+* Adding link to clone deprecated molecular networking to latest version of molecular networking
+* Adding direct re-analysis link for MS2LDA from molecular networking
+* Bug fixes for MS2LDA
+* Adding batch spectra additional validator
+
 ### 12/27/2018
 
 * GNPS quickstart support within MZMine2 updated
