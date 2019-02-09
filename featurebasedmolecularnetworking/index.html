@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.1">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.3.0">
     
     
       
@@ -40,21 +40,28 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.ba0fd1a6.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.962652e9.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-8412213-5"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-8412213-5")</script>
+      
     
     
   </head>
@@ -152,11 +159,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href=".." title="GNPS Documentation" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
-    </span>
+    </a>
     GNPS Documentation
   </label>
   
@@ -1246,7 +1253,7 @@
                 
                 <p>The Feature Finding Molecular Networking brings together LC-MS feature detection tools (e.g. MZmine2, OpenMS, MS-DIAL, MetaboScape), molecular networking (GNPS, http://gnps.ucsd.edu), and other in silico annotation tools, such as Sirius, CSI:FingerID, or Network Annotation Propagation.</p>
 <h2 id="what-is-feature-based-molecular-networking">What is Feature Based Molecular Networking</h2>
-<p>Feature Based Molecular Networking is a new way to create molecular networks that utilizes feature detection tools to provide quantification information paired with molecular networking. This is in difference from <a href="../networking">classic molecular networking</a> that</p>
+<p>Feature Based Molecular Networking is a new way to create molecular networks that utilizes feature detection tools to provide quantification information paired with molecular networking. This is in difference from <a href="networking">classic molecular networking</a> that</p>
 <h2 id="why-feature-based-molecular-networking">Why Feature Based Molecular Networking</h2>
 <p>The key improvements of the new Feature Finding Molecular Networking are:</p>
 <ol>
@@ -1266,7 +1273,7 @@
 <h3 id="mass-spectrometry-data-feature-detection-with-mzmine2">Mass spectrometry data Feature Detection with MZmine2</h3>
 <p>Download MZmine2 software (version MZmine v2.33 minimum) at <a href="https://github.com/mzmine/mzmine2/releases">https://github.com/mzmine/mzmine2/releases</a>.</p>
 <p>See documentation and videos here: <a href="http://mzmine.github.io/documentation.html">http://mzmine.github.io/documentation.html</a>,
-and <a href="../tutorials/americangutmzmine/">the video tutorial about Feature Based Molecular Networking.</a></p>
+and <a href="tutorials/americangutmzmine/">the video tutorial about Feature Based Molecular Networking.</a></p>
 <p>Please make sure your files are converted to mzXML or mzML.</p>
 <h3 id="mzmine-batch-steps">MZMine Batch Steps</h3>
 <p>In MZmine2, a sequence of steps must be performed. Here are several prototype for various instruments as a starting point:</p>
@@ -1343,7 +1350,7 @@ It is currently mandatory for the sample name headers string to have the followi
 <ol>
 <li>Feature Table from above</li>
 <li>MGF for MS/MS from above</li>
-<li>Metadata table - described <a href="../networking#metadata">here</a></li>
+<li>Metadata table - described <a href="networking#metadata">here</a></li>
 </ol>
 <p>There are several additional normalization options specifically for feature detection. We can normalize the features per LC/MS run and aggregate by groups with either a sum or average (recommended).</p>
 <p><img alt="img" src="../img/mzmine/quant_options.png" /></p>
@@ -1452,8 +1459,8 @@ It is currently mandatory for the sample name headers string to have the followi
 <p>Select the specific groups you want to compare (e.g. Case vs Control) and hit apply. Now the network will be colored with pies relevant to the groups you wanted to compare.</p>
 <p><img alt="img" src="../img/featurebased/feature_cytoscape_pie_display.png" /></p>
 <h2 id="tutorials">Tutorials</h2>
-<p>See our <a href="../tutorials/americangutmzmine">tutorial</a> on using MZmine2 to produce quantification/ms2 files for Feature Based Molecular Networking in the American Gut Project sample.</p>
-<p>See our <a href="../tutorials/featurebasedgnps">tutorial</a> on running Feature Based Molecular Networking within GNPS.</p>
+<p>See our <a href="tutorials/americangutmzmine">tutorial</a> on using MZmine2 to produce quantification/ms2 files for Feature Based Molecular Networking in the American Gut Project sample.</p>
+<p>See our <a href="tutorials/featurebasedgnps">tutorial</a> on running Feature Based Molecular Networking within GNPS.</p>
 <h3 id="citation">Citation</h3>
 <p>This work builds on the efforts of our many colleagues, please check out their work:</p>
 <p><a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395">MZmine 2: Modular framework for processing, visualizing, and analyzing mass spectrometry-based molecular profile data. Pluskal et. al.</a></p>
@@ -1528,14 +1535,9 @@ It is currently mandatory for the sample name headers string to have the followi
       
     </div>
     
-      <script src="../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../assets/javascripts/application.a353778b.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-8412213-5","ccms-ucsd.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
   </body>
