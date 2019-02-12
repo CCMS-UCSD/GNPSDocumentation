@@ -29,8 +29,7 @@ pages:
         - Dereplicator: dereplicator.md
         - Network Annotation Propagation (NAP): nap.md
         - Feature Based Molecular Networking: featurebasedmolecularnetworking.md
-    - Experiment Data Analysis:
-        - MS2LDA Deconvolution: ms2lda.md
+        - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
     - Community/Social Features:
         - Spectral Libraries:
             - Browsing Reference Spectral Libraries: browselibraries.md
@@ -50,8 +49,8 @@ pages:
     - Presentation Materials:
         - Logos: logos.md
 theme:
-    name: material
-    #name: readthedocs
+    #name: material
+    name: readthedocs
 
     #palette:
     #    primary: 'light blue'
