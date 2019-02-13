@@ -1092,18 +1092,38 @@
         }, 
         {
             "location": "/ms2lda/", 
-            "text": "MS2LDA\n\n\nMS2LDA is a tool that decomposes molecular fragmentation data derived from large metabolomics experiments into annotated Mass2Motifs or discovers Mass2Motifs from experimental data. Mass2Motifs are fragmentation patterns of often co-occurring mass fragment peaks and/or neutral losses that often represent molecular substructures. Check out the \nMS2LDA website\n here where you can find more information, browse through data sets, and sign up for an account to run the Mass2Motif discovery on your own data. At GNPS, we are working with the MS2LDA team to curate sets of Mass2Motifs that can help to annotate your MS/MS spectra.\n\n\nA first set based on Mass2Motifs found in GNPS and MassBank reference data is available now to decompose your data on through GNPS \nhere\n.\n\n\nCitation\n\n\nvan Der Hooft, Justin Johan Jozias, Joe Wandy, Michael P. Barrett, Karl EV Burgess, and Simon Rogers. \"Topic modeling for untargeted substructure exploration in metabolomics.\" Proceedings of the National Academy of Sciences 113, no. 48 (2016): 13738-13743.", 
-            "title": "MS2LDA Deconvolution"
+            "text": "MS2LDA Substructure Discovery\n\n\n\n\nMS2LDA is a tool that decomposes molecular fragmentation data derived from large metabolomics experiments into annotated Mass2Motifs or discovers Mass2Motifs from experimental data. Mass2Motifs are fragmentation patterns of often co-occurring mass fragment peaks and/or neutral losses that often represent molecular substructures. Check out the \nMS2LDA website\n here where you can find more information, browse through data sets, and sign up for an account to run the Mass2Motif discovery on your own data. At GNPS, we are working with the MS2LDA team to curate sets of Mass2Motifs that can help to annotate your MS/MS spectra.\n\n\nA first set based on Mass2Motifs found in GNPS and MassBank reference data is available now to decompose your data on through GNPS \nhere\n.\n\n\nCitations\n\n\nIntroduction of MS2LDA Substructure Discovery algorithm\n\n\nvan der Hooft, Justin J. J., Joe Wandy, Michael P. Barrett, Karl E.V. Burgess, and Simon Rogers. \"Topic modeling for untargeted substructure exploration in metabolomics.\" Proceedings of the National Academy of Sciences 113, no. 48 (2016): 13738-13743.\n\n\nPublication of the MS2LDA.org web app to discover and analyse Mass2Motifs\n\n\nWandy, Joe, Yunfeng Zhu, Justin J.J. van der Hooft, Ronan Daly, Michael P. Barrett, and Simon Rogers. \"Ms2lda.org: web-based topic modelling for substructure discovery in mass spectrometry.\" Bioinformatics 34, no. 2 (2018): 317-318.\n\n\nExtended version of MS2LDA algorithm to handle multiple files at once\n\n\nvan der Hooft, Justin J. J., Joe Wandy, Francesca Young, Sandosh Padmanabhan, Konstantinos Gerasidimis, Karl E.V. Burgess, Michael P. Barrett, and Simon Rogers. \"Unsupervised Discovery and Comparison of Structural Families Across Multiple Samples in Untargeted Metabolomics.\" Analytical Chemistry 89, no. 14 (2017): 7569-7577.\n\n\nLatest developments in MS2LDA.org: introduction of \nMotifDB\n with annotated Mass2Motif sets and \nMAGMa\n integration for Mass2Motif annotation of reference compounds\n\n\nRogers, Simon, Cher Wei Ong, Joe Wandy, Madeleine Ernst, Lars Ridder, and Justin J.J. van der Hooft. \"Deciphering complex metabolite mixtures by unsupervised and supervised substructure discovery and semi-automated annotation from MS/MS spectra.\" Faraday Discussions themed collection  Challenges in analysis of complex natural mixtures (2019).", 
+            "title": "MS2LDA and MotifDB Substructure Discovery"
         }, 
         {
-            "location": "/ms2lda/#ms2lda", 
+            "location": "/ms2lda/#ms2lda-substructure-discovery", 
             "text": "MS2LDA is a tool that decomposes molecular fragmentation data derived from large metabolomics experiments into annotated Mass2Motifs or discovers Mass2Motifs from experimental data. Mass2Motifs are fragmentation patterns of often co-occurring mass fragment peaks and/or neutral losses that often represent molecular substructures. Check out the  MS2LDA website  here where you can find more information, browse through data sets, and sign up for an account to run the Mass2Motif discovery on your own data. At GNPS, we are working with the MS2LDA team to curate sets of Mass2Motifs that can help to annotate your MS/MS spectra.  A first set based on Mass2Motifs found in GNPS and MassBank reference data is available now to decompose your data on through GNPS  here .", 
-            "title": "MS2LDA"
+            "title": "MS2LDA Substructure Discovery"
         }, 
         {
-            "location": "/ms2lda/#citation", 
-            "text": "van Der Hooft, Justin Johan Jozias, Joe Wandy, Michael P. Barrett, Karl EV Burgess, and Simon Rogers. \"Topic modeling for untargeted substructure exploration in metabolomics.\" Proceedings of the National Academy of Sciences 113, no. 48 (2016): 13738-13743.", 
-            "title": "Citation"
+            "location": "/ms2lda/#citations", 
+            "text": "", 
+            "title": "Citations"
+        }, 
+        {
+            "location": "/ms2lda/#introduction-of-ms2lda-substructure-discovery-algorithm", 
+            "text": "van der Hooft, Justin J. J., Joe Wandy, Michael P. Barrett, Karl E.V. Burgess, and Simon Rogers. \"Topic modeling for untargeted substructure exploration in metabolomics.\" Proceedings of the National Academy of Sciences 113, no. 48 (2016): 13738-13743.", 
+            "title": "Introduction of MS2LDA Substructure Discovery algorithm"
+        }, 
+        {
+            "location": "/ms2lda/#publication-of-the-ms2ldaorg-web-app-to-discover-and-analyse-mass2motifs", 
+            "text": "Wandy, Joe, Yunfeng Zhu, Justin J.J. van der Hooft, Ronan Daly, Michael P. Barrett, and Simon Rogers. \"Ms2lda.org: web-based topic modelling for substructure discovery in mass spectrometry.\" Bioinformatics 34, no. 2 (2018): 317-318.", 
+            "title": "Publication of the MS2LDA.org web app to discover and analyse Mass2Motifs"
+        }, 
+        {
+            "location": "/ms2lda/#extended-version-of-ms2lda-algorithm-to-handle-multiple-files-at-once", 
+            "text": "van der Hooft, Justin J. J., Joe Wandy, Francesca Young, Sandosh Padmanabhan, Konstantinos Gerasidimis, Karl E.V. Burgess, Michael P. Barrett, and Simon Rogers. \"Unsupervised Discovery and Comparison of Structural Families Across Multiple Samples in Untargeted Metabolomics.\" Analytical Chemistry 89, no. 14 (2017): 7569-7577.", 
+            "title": "Extended version of MS2LDA algorithm to handle multiple files at once"
+        }, 
+        {
+            "location": "/ms2lda/#latest-developments-in-ms2ldaorg-introduction-of-motifdb-with-annotated-mass2motif-sets-and-magma-integration-for-mass2motif-annotation-of-reference-compounds", 
+            "text": "Rogers, Simon, Cher Wei Ong, Joe Wandy, Madeleine Ernst, Lars Ridder, and Justin J.J. van der Hooft. \"Deciphering complex metabolite mixtures by unsupervised and supervised substructure discovery and semi-automated annotation from MS/MS spectra.\" Faraday Discussions themed collection  Challenges in analysis of complex natural mixtures (2019).", 
+            "title": "Latest developments in MS2LDA.org: introduction of MotifDB with annotated Mass2Motif sets and MAGMa integration for Mass2Motif annotation of reference compounds"
         }, 
         {
             "location": "/browselibraries/", 
