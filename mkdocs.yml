@@ -49,8 +49,8 @@ pages:
     - Presentation Materials:
         - Logos: logos.md
 theme:
-    #name: material
-    name: readthedocs
+    name: material
+    #name: readthedocs
 
     #palette:
     #    primary: 'light blue'
