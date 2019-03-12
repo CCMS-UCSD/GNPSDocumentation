@@ -1,5 +1,12 @@
 ## Change Log
 
+### 3/9/2019
+
+* Adding qiime2 qza and emperor output for Feature Based Molecular Networking
+* Adding GraphML output for MS2LDA
+* GNPS Quickstart will do only the fly conversion of Thermo raw files. 
+
+
 ### 2/5/2019
 
 * Adding credentials option for GNPS quickstart for classic molecular Networking
