@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.1">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.3.0">
     
     
       
@@ -40,21 +40,28 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.ba0fd1a6.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.962652e9.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-8412213-5"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-8412213-5")</script>
+      
     
     
   </head>
@@ -152,11 +159,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href=".." title="GNPS Documentation" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
-    </span>
+    </a>
     GNPS Documentation
   </label>
   
@@ -415,8 +422,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../molblast/" title="Molecular BLAST (MASST) Search" class="md-nav__link">
-      Molecular BLAST (MASST) Search
+    <a href="../masst/" title="MASST Search (Mass Search Tool)" class="md-nav__link">
+      MASST Search (Mass Search Tool)
     </a>
   </li>
 
@@ -843,7 +850,7 @@
 <p>It is now also possible to run MS2LDA analyses through the GNPS interface <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MS2LDA_MOTIFDB%22%7D">here</a> which will lead to the below displayed job entry page.</p>
 <p><img alt="img" src="../img/ms2lda/overview.png" /></p>
 <p>In this section, it is explained what input files are needed, how the parameters can be chosen, and what kind of output you get.
-Finally, it is explained how the obtained MS2LDA model can be further explored on the <a href="../www.ms2lda.org">MS2LDA</a> website by uploading the generated dict file.</p>
+Finally, it is explained how the obtained MS2LDA model can be further explored on the <a href="www.ms2lda.org">MS2LDA</a> website by uploading the generated dict file.</p>
 <h1 id="collecting-the-right-input-files">Collecting the right input files</h1>
 <p>After providing the GNPS analysis with a title, the right input files are needed to start an MS2LDA analysis:</p>
 <ul>
@@ -867,7 +874,7 @@ Please note that you can adapt the title and you must check the relevant MS2LDA 
 <p>The Minimum MS2 Intensity is meant to filter out the basic noise from the MS/MS spectra. It is recommended to open the inputted MGF file and check the noise levels. Typically they range from 25-200 (ToF Data) to 5000 (Q-Exactive Data). Inclusion of noise will unnecessarily lengten the analysis time and create non-informative Mass2Motifs.</p>
 <p>The LDA Free Motifs correspond to the number of "free Mass2Motifs" that are added on top of the prefixed annotated Mass2Motifs from MotifDB. This number depends on your data: if you input a larger number of fragmented molecules (i.e., &gt; 4,000) that includes lots of novel chemistry not present in MotifDB it is best to put the LDA Free Motifs on 300 - 500. If the data set is relatively small with a considerable amount of known chemistry, you best put this number to 50 - 150.</p>
 <h2 id="selecting-motifdb-motif-sets">Selecting MotifDB motif sets</h2>
-<p>By default all Motif Sets will be imported from <a href="../www.ms2lda.org/motifdb">MotifDB</a>. However, it is wise to exclude annotated motif sets of sources that are very distant from the source of your input data. Note that the GNPS and MassBank are annotated Mass2Motifs discovered in reference molecules.</p>
+<p>By default all Motif Sets will be imported from <a href="www.ms2lda.org/motifdb">MotifDB</a>. However, it is wise to exclude annotated motif sets of sources that are very distant from the source of your input data. Note that the GNPS and MassBank are annotated Mass2Motifs discovered in reference molecules.</p>
 <p><img alt="img" src="../img/ms2lda/LDAparameterMotifDB.png" /></p>
 <h2 id="output-networking-file-thresholds">Output Networking file thresholds</h2>
 <p>After running MS2LDA, output files are created that include a new networking (edge) file that can be used to create an enriched Molecular Network including Mass2Motif distributions through the Molecular Families. To do so, cut-off values (thresholds) are needed for LDA scores to consider a Mass2Motif to be linked to a molecule or not and how many you want to show in the network. Default values are provided that were found to work well so far.
@@ -904,7 +911,7 @@ The second page displays the top mass fragments and neutral losses with their pr
 However, when no annotation is provided, the Mass2Motif is one of the "free Motifs" that was discovered by LDA. With the MS2LDA Dict file through the MS2LDA web app there are ways to analyse these Mass2Motifs further and also annotate them.</p>
 <p>In general, when analysing annotating or novel Mass2Motifs, it is important to keep <a href="http://ms2lda.org/disclaimer/">this</a> in mind!</p>
 <h1 id="taking-the-gnps-results-into-the-ms2lda-web-app">Taking the GNPS results into the MS2LDA web app</h1>
-<p>After downloading the MS2LSA Dict file from the finished MS2LDA experiment, this can be uploaded into the <a href="../www.ms2lda.org">MS2LDA web app</a>. There is a <a href="http://www.ms2lda.org/user_guide/">User Guide</a> available that covers the main functionalities of the MS2LDA web app.</p>
+<p>After downloading the MS2LSA Dict file from the finished MS2LDA experiment, this can be uploaded into the <a href="www.ms2lda.org">MS2LDA web app</a>. There is a <a href="http://www.ms2lda.org/user_guide/">User Guide</a> available that covers the main functionalities of the MS2LDA web app.</p>
 <p>If it is your first time at the MS2LDA web app, make sure you get a login account before continuing. Once logged in, go to the experiments section:</p>
 <p><img alt="img" src="../img/ms2lda/AppCreateExperiments.png" /></p>
 <p>By default, you arrive on the Create tab which lets you create an MS2LDA experiment from mass spectrometry data. </p>
@@ -931,7 +938,7 @@ More information can be found in <a href="http://www.pnas.org/content/113/48/137
 <h2 id="uploading-annotated-motif-sets-into-motifdb">Uploading annotated motif sets into MotifDB</h2>
 <p>This is a future feature that will become available in the course of this year. It will allow you to make your new annotations searchable and usable by the community.</p>
 <h1 id="future-directions">Future Directions</h1>
-<p>At GNPS, we are working with the MS2LDA team to promote publication of curated sets of Mass2Motifs into <a href="../www.ms2lda.org/motifdb">MotifDB</a> that can help to annotate your MS/MS spectra.</p>
+<p>At GNPS, we are working with the MS2LDA team to promote publication of curated sets of Mass2Motifs into <a href="www.ms2lda.org/motifdb">MotifDB</a> that can help to annotate your MS/MS spectra.</p>
 <h2 id="citations">Citations</h2>
 <p>Have you found MS2LDA to be useful for your data analysis? Please cite the relevant literature from below.</p>
 <h3 id="introduction-of-ms2lda-substructure-discovery-algorithm">Introduction of MS2LDA Substructure Discovery algorithm</h3>
@@ -1013,14 +1020,9 @@ More information can be found in <a href="http://www.pnas.org/content/113/48/137
       
     </div>
     
-      <script src="../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../assets/javascripts/application.a353778b.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-8412213-5","ccms-ucsd.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
   </body>
