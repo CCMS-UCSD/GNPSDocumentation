@@ -2,6 +2,14 @@
 
 While there is an interface to upload single spectra, users who wish to batch upload many spectra into the libraries might find adding one spectra at a time cumbersome. Here we provide a method to batch upload many spectra.
 
+## Materials
+
+The materials that are required are:
+
+1. Annotation Spread Sheet
+2. Empty MGF file meant to be library to populate
+3. Source mzXML/mzML/mgf mass spectra files to pull MS/MS spectra 
+
 ## Annotation Spread Sheet
 
 To batch upload, this template must be used:
@@ -14,7 +22,7 @@ Export from this Excel file as a tab separated text file (recommended export fro
 
 ### Batch File Annotation
 
-To check the validity of your batch file, check out our [batch validator](http://dorresteinappshub.ucsd.edu:5020/). 
+To check the validity of your batch file, check out our [batch validator](http://dorresteinappshub.ucsd.edu:5020/).
 
 ## Field Information
 
