@@ -382,6 +382,19 @@
     Conversion with MSConvert
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#view-of-the-msconvert-conversion-parameters" title="View of the MSConvert conversion parameters:" class="md-nav__link">
+    View of the MSConvert conversion parameters:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -568,10 +581,46 @@
           
 
 
-  <li class="md-nav__item">
-    <a href="../featurebasedmolecularnetworking/" title="Feature Based Molecular Networking" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13-4" type="checkbox" id="nav-13-4">
+    
+    <label class="md-nav__link" for="nav-13-4">
       Feature Based Molecular Networking
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-13-4">
+        Feature Based Molecular Networking
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking/" title="Overview" class="md-nav__link">
+      Overview
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking-with-mzmine2/" title="MZmine2 Tutorial" class="md-nav__link">
+      MZmine2 Tutorial
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -913,6 +962,19 @@
     Conversion with MSConvert
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#view-of-the-msconvert-conversion-parameters" title="View of the MSConvert conversion parameters:" class="md-nav__link">
+    View of the MSConvert conversion parameters:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1022,14 +1084,33 @@
 <p>If you are a vendor and think there are better methods to convert your files to work with GNPS, let us know by <a href="../contact/">contacting us</a>.</p>
 <h3 id="conversion-with-msconvert">Conversion with MSConvert</h3>
 <p>Download and install ProteoWizard from <a href="http://proteowizard.sourceforge.net/downloads.shtml">here</a>.</p>
-<p>Important: make sure to choose the version Windows (includes vendor reader support). You must also have .NET <a href="http://www.microsoft.com/en-us/download/details.aspx?id=22">Framework 3.5 SP1</a> and <a href="http://www.microsoft.com/en-us/download/details.aspx?id=17851">4.0</a> installed.</p>
+<p><strong>IMPORTANT:</strong>: Make sure to choose the version Windows (includes vendor reader support). You must also have .NET <a href="http://www.microsoft.com/en-us/download/details.aspx?id=22">Framework 3.5 SP1</a> and <a href="http://www.microsoft.com/en-us/download/details.aspx?id=17851">4.0</a> installed.</p>
 <p>After installation, from the Start Menu, click the ProteoWizard folder and open MSConvert.</p>
+<ul>
+<li>
 <p>Click Browse and select file(s) for conversion. Then Click Add to add them to the MSConvert workflow.</p>
+</li>
+<li>
 <p>Choose an Output Directory</p>
-<p>Under Options, choose mzXML for output format, 32-bit for binary encoding precision and uncheck Use zlib compression. Note that mzML files are also supported.</p>
-<p>Under filters, choose Peak Picking with Vendor checked, in order to centroid the data. Indicate MS-Levels 1-. Click Add to add the filter.</p>
+</li>
+<li>
+<p>Under Options, choose mzML (prefered) or mzXML for output format, 32-bit for binary encoding precision and uncheck Use zlib compression.</p>
+</li>
+<li>
+<p>Under filters, choose Peak Picking with Vendor checked, in order to centroid the data. Indicate MS-Levels 1-2. Click Add to add the filter. <strong>IMPORTANT:</strong> Move the PeakPicking filter to the first position (manually).</p>
+</li>
+</ul>
+<p><strong>CRITICAL !</strong> Make sure the PeakPicking filter is the first filter in the list (top position), otherwise the conversion will not be centroided !</p>
+<ul>
+<li>
+<p>Save the parameters for the next conversion. This will save you some time and prevent misconfiguration. In Presets (left bottom), click on Save Presets, and select "Save as default for the format".</p>
+</li>
+<li>
+<p>Click on Start.  Check your folder for the new .mzML/.mzXML files. Verify that these files open properly in Insilicos or <a href="http://www.openms.de/">TOPP View (OpenMS)</a>.</p>
+</li>
+</ul>
+<h5 id="view-of-the-msconvert-conversion-parameters">View of the MSConvert conversion parameters:</h5>
 <p><img alt="img" src="../img/conversion/msconvert_params.png" /></p>
-<p>Click Start.  Check your folder for the new .mzXML files. Verify that these files open properly in Insilicos or <a href="http://www.openms.de/">TOPP View (OpenMS)</a>.</p>
 <h3 id="advanced-online-conversion-with-proteowizard-msconvert">Advanced Online Conversion with Proteowizard (MSConvert)</h3>
 <p>It is possible to convert spectrum files online at the sister site - MassIVE. This site is able to handle thermo RAW and Sciex Wiff files. Please check it out <a href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/">here</a>.</p>
                 
