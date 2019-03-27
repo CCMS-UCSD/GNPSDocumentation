@@ -22,19 +22,19 @@ pages:
         - Molecular Networking: networking.md
         - Molecular Networking Views: networkingviews.md
         - Spectral Library Search: librarysearch.md
-        - Molecular BLAST (MASST) Search: molblast.md
+        - MASST Search (Mass Search Tool): masst.md
         - Result Views Navigation: resultviews.md
     - Advanced Data Analysis:
         - Molecular Networking in Cytoscape: cytoscape.md
         - Dereplicator: dereplicator.md
         - Network Annotation Propagation (NAP): nap.md
-    - Experiment Data Analysis:
         - Feature Based Molecular Networking: featurebasedmolecularnetworking.md
-        - MS2LDA Deconvolution: ms2lda.md
+        - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
     - Community/Social Features:
         - Spectral Libraries:
             - Browsing Reference Spectral Libraries: browselibraries.md
             - Reference Spectral Library Curation: spectrumcuration.md
+            - Reference Spectral Library Batch Addition: batchupload.md
             - Downloading Reference Spectral Libraries: downloadlibraries.md
         - Datasets:
             - Dataset Creation/Sharing: datasets.md
@@ -43,9 +43,11 @@ pages:
         - User Page: user.md
     - Troubleshooting: troubleshooting.md
     - Tutorial Guides:
-        - Analog Discovery in Microbial Extracts with Molecular Networking: tutorials/bacterianetworking.md
-        - Microbiome Molecules in Fecal Samples in American Gut Project (Feature Based Molecular Networking): tutorials/americangutmzmine.md
-
+        - Molecular Networking - Analog Discovery in Microbial Extracts: tutorials/bacterianetworking.md
+        - Feature Based Molecular Networking - MZmine2 Feature Detection - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangutmzmine.md
+        - Feature Based Molecular Networking - GNPS: tutorials/featurebasedgnps.md
+    - Presentation Materials:
+        - Logos: logos.md
 theme:
     name: material
     #name: readthedocs

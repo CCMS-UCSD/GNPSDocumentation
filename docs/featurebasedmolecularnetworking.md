@@ -3,6 +3,7 @@
 
 The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tool supported are: [MetaboScape4.0](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html), [MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/), [MZmine2](https://mzmine.github.io/), [OpenMS](https://www.openms.de/), and [XCMS3](https://github.com/sneumann/xcms).
 
+
 The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking) 
 
 The Feature-Based Molecular Networking workflow on [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
@@ -42,6 +43,7 @@ You will need three items (test files are accessible [here](https://github.com/C
 
 #### Overview of the Feature Based Molecular Networking Workflow 
 ![img](img/featurebasedmolecularnetworking/overview.png)
+
 
 #### Select the software used for the LC-MS/MS data processing 
 ![img](img/featurebasedmolecularnetworking/select.png)
