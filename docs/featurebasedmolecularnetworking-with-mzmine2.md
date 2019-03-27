@@ -2,7 +2,7 @@
 
 The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tool supported are: [MetaboScape4.0](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html), [MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/), [MZmine2](https://mzmine.github.io/), [OpenMS](https://www.openms.de/), and [XCMS3](https://github.com/sneumann/xcms).
 
-The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking) 
+The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking)
 
 The Feature-Based Molecular Networking workflow on [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
 
@@ -20,16 +20,16 @@ Katajamaa, M., Miettinen, J. & Oresic, M. [MZmine: toolbox for processing and vi
 
 Pluskal, T., Castillo, S., Villar-Briones, A. & Oresic, [M. MZmine 2: modular framework for processing, visualizing, and analyzing mass spectrometry-based molecular profile data.](https://doi.org/10.1186/1471-2105-11-395) BMC Bioinformatics 11, 395 (2010).
 
-The development of the features used in the pipeline is [publicly accessible here] (https://github.com/mzmine/mzmine2).
+The development of the features used in the pipeline is [publicly accessible here](https://github.com/mzmine/mzmine2).
 
 
 ### Mass Spectrometry Data Processing with MZmine2
 
-In MZmine2, a sequence of steps are performed to process the mass spectrometry data. Here we will present key steps required to process LC-MS/MS data acquired in non-targeted mode (data dependent acquisition). For conveniency we are also providing a batch file (XML format) that can be imported directly in MZmine2. 
+In MZmine2, a sequence of steps are performed to process the mass spectrometry data. Here we will present key steps required to process LC-MS/MS data acquired in non-targeted mode (data dependent acquisition). For conveniency we are also providing a batch file (XML format) that can be imported directly in MZmine2.
 
-**IMPORTANT:** MZmine2 parameters will vary depending on the instrument used, the acquisition parameters, and the sample studied. The following documentation serves a basic guideline for using MZmine2 with the Feature-Based Molecular Networking workflow. 
+**IMPORTANT:** MZmine2 parameters will vary depending on the instrument used, the acquisition parameters, and the sample studied. The following documentation serves a basic guideline for using MZmine2 with the Feature-Based Molecular Networking workflow.
 
-Please consult these ressources for more details on MZmine2 processing:
+Please consult these resources for more details on MZmine2 processing:
 
 - The official documentation [http://mzmine.github.io/documentation.html](http://mzmine.github.io/documentation.html),
 - The [MZmine tutorial](http://www.pharmacognosie-parisdescartes.fr/pdf/150420_MZmine_Tutorial_UNIGE.pdf) by Pierre-Marie Allard and Joelle Houriet from the University of Geneva.
@@ -37,7 +37,7 @@ Please consult these ressources for more details on MZmine2 processing:
 
 <iframe width="700" height="400" src="https://www.youtube.com/embed/5jjMllbwD-U"> </iframe>
 
-### Download the MZmine2 software 
+### Download the MZmine2 software
 Download the latest version of MZmine2 software (version MZmine v2.33 minimum) at [https://github.com/mzmine/mzmine2/releases](https://github.com/mzmine/mzmine2/releases).
 
 ### Convert your LC-MS/MS Data to Open Format
@@ -77,13 +77,13 @@ Go to Menu: Raw data methods / Raw data import / "Select the files"
 
 #### 2. Mass Detection
 
-This step creates mass lists from your raw data. 
+This step creates mass lists from your raw data.
 
 Perform mass detection on MS level 1: Menu: Raw data methods / Mass detection / Set filter : MS level 1
 
 **IMPORTANT** Set an appropriate intensity threshold. You can use the preview window to assess the right threshold on your data. As a rule of thumb, the value should at least correspond to the minimum value set for the triggering of the MS2 scan event. (Example: MAXIS-QTOF: 1E3, Q-Exactive 1E4)
 
-Perform mass detection on MS level 2. The same masslist name must be used. 
+Perform mass detection on MS level 2. The same mass list name must be used.
 
 Go to Menu: Raw data methods / Mass detection / Set filter : MS level 2.
 
@@ -99,9 +99,9 @@ Go to Menu: Raw data methods / Chromatogram builder
 
 Go to Menu: Peak list methods / Peak detection / Chromatogram deconvolution
 
-**IMPORTANT:** tick both options "m/z range for MS2 scan pairing (Da)" and "RT range for MS2 scan pairing (min)". The values have to be defined according to your experimental setup (expected chromatographic peak width and the MS mass accuracy). 
+**IMPORTANT:** tick both options "m/z range for MS2 scan pairing (Da)" and "RT range for MS2 scan pairing (min)". The values have to be defined according to your experimental setup (expected chromatographic peak width and the MS mass accuracy).
 
-Example for a UHPLC colum (1.7 µm C18, 50 × 2.1 mm, flow rate of 0.5 mL/min): 
+Example for a UHPLC colum (1.7 µm C18, 50 × 2.1 mm, flow rate of 0.5 mL/min):
 
 - maXis-QTOF: 12 min gradient, 0.02 Da and 0.15 min
 
@@ -111,7 +111,7 @@ Example for a UHPLC colum (1.7 µm C18, 50 × 2.1 mm, flow rate of 0.5 mL/min):
 
 #### 5. Group isotopes and co-eluting ions
 
-Use the "Isotopic peaks grouper module" [recommended] or other alternative (such as the CAMERA module). 
+Use the "Isotopic peaks grouper module" [recommended] or other alternative (such as the CAMERA module).
 
 Go to Menu: Peak list methods / Isotopes / Isotopic peaks grouper.
 
@@ -134,7 +134,7 @@ Go to Menu: Peak list methods / Alignment / Join aligner
 Gap filling enables to retrieve the intensity of a peak in all the samples, even if it was not detected in a previous processing step.
 Go to Menu: Peak list methods / Gap filling / Peak finder (multi-threaded).
 
-**IMPORTANT:** This step is optional. Use the multi-threaded peak finder for fast processing. 
+**IMPORTANT:** This step is optional. Use the multi-threaded peak finder for fast processing.
 
 #### 9. Filter the Peaklist to MS/MS Peaks (Optional)
 
@@ -163,7 +163,7 @@ Select the last "filtered aligned peaklist" and Go to Menu: "Peak list methods" 
 See an example of files outputted by the export module using the workflow:
 [here](tutorials/AG_tutorial_files/).
 
-##### The files can be uploaded to the GNPS web-platform and Feature-Based Molecular Networking job can be directly launched 
+##### The files can be uploaded to the GNPS web-platform and Feature-Based Molecular Networking job can be directly launched
 
 **IMPORTANT:** While the possibility to submit the files directly to GNPS and launch a FBMN job on the fly is really convenient for quick data analysis, the job and files will not be saved to your personal account on GNPS, and you are limited to basic presets of parameters. For that reason, we recommend to upload your files with the FTP uploader [(see documentation)] (https://ccms-ucsd.github.io/GNPSDocumentation/fileupload/) and prepare your job [directly on GNPS](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you must be logged in first).
 
@@ -191,7 +191,7 @@ More information on the Feature Based Molecular Networking workflow on GNPS [can
 
 Basically, you will need to upload the files ouputted by the MZmine2 processing (test files are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files)):
 
-1. Feature Table from above 
+1. Feature Table from above
 2. MGF for MS/MS from above
 3. Metadata table - described [here](networking#metadata)
 
@@ -203,5 +203,4 @@ Here is an example mzmine networking [job](https://gnps.ucsd.edu/ProteoSAFe/stat
 
 ## Tutorials
 
-See our [MZmine2 tutorial](tutorials/americangutmzmine) on using Feature Based Molecular Networking for the American Gut Project sample. 
-
+See our [MZmine2 tutorial](tutorials/americangutmzmine) on using Feature Based Molecular Networking for the American Gut Project sample.
