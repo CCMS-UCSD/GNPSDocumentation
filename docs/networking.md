@@ -38,6 +38,8 @@ Metadata columns that will be considered by molecular networking must be prefixe
 
 Please ensure that the file is saved as a tab separated text file. Excel (xlsx), rich text (rtf) are not acceptable.
 
+For Qiita users that wish to reconcile sample identifiers so that the biom and metadata output are compatible with Qiita, please provide an extra column (#SampleID). GNPS will understand this extra metadata column and rewrite sample identifers for BIOM and metadata to this sample identifier rather than using the mass spectrometry filename by default. 
+
 Pardon our dust as we are migrating this documentation, if we missed anything, please check out our [Legacy Documentation](https://bix-lab.ucsd.edu/display/Public/Metadata+table+in+GNPS).
 
 ### \`ili 3D Mapping Files
@@ -205,7 +207,7 @@ After completing a Molecular Networking workflow utilizing GNPS, analysis can be
 | ------------- |-------------|
 | Download Clustered Spectra as MGF | Download consensus MS/MS spectra as an MGF file |
 | Download GraphML for Cytoscape | Download network files (graphML) for import into Cytoscape |
-| Download Bucket Table | Download spectral abundance for all consensus spectra across all files |
+| Download Bucket Table | Download spectral abundance for all consensus spectra across all files (calculated within each file as the sum precursor abundance) |
 | Download BioM for Qiime/Qiita | Download BioM for spectral counts for analysis in Qiime/Qiita multivariate statistics tools |
 | Download Metadata for Qiime | Download Metadata file for analysis in Qiime |
 | Download ili Data | Download the abundance information formatted for ili |

@@ -8,10 +8,15 @@ For more in-depth assistance, we invite you to attend the numerous GNPS workshop
 
 ## GNPS Office Hours
 
-We are hosting online office hours on a bi-weekly basis. Our next office hour is on October 8th at 2-3PM PST on Zoom:
+We are hosting online office hours on a bi-weekly basis online with Ming ([miw023@ucsd.edu](mainto:miw023@ucsd.edu) via Zoom:
 
 [https://zoom.us/j/854069972](https://zoom.us/j/854069972)
 
-with Ming ([miw023@ucsd.edu](mainto: miw023@ucsd.edu)).
 
-This is a place to ask any questions you have on GNPS, computational mass spec, and just an overall good time.
+In office hours we'll cover new and old features of GNPS and most importantly we'll take your personal questions about GNPS, computational mass spectrometry, and any science you want to chat about!
+
+Upcoming Office Hour Schedule
+
+|     Date/Time    | Subjects Covered          |
+| ------------- |------------- |
+| 2PM PST March 11 | GNPS Q and A / Additional Topic TBA |
