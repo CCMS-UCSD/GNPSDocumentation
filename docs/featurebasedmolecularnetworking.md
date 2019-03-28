@@ -1,7 +1,8 @@
 
 ## Introduction
 
-The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tool supported are: [MetaboScape4.0](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html), [MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/), [MZmine2](https://mzmine.github.io/), [OpenMS](https://www.openms.de/), and [XCMS3](https://github.com/sneumann/xcms).
+The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tool supported are: [MZmine2](https://mzmine.github.io/), [OpenMS](https://www.openms.de/), [MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/), [XCMS](https://github.com/sneumann/xcms), and [MetaboScape4.0](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html),
+[XCMS](https://github.com/sneumann/xcms).
 
 
 The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking)
@@ -11,19 +12,21 @@ The Feature-Based Molecular Networking workflow on [can be accessed here](https:
 
 ## Mass Spectrometry Data Processing for the Feature Based Molecular Networking Workflow
 
-In brief, mass spectrometry processing tools have been adapted to export files that can be used with the Feature Based Molecular Networking workflow on GNPS.
+In brief, mass spectrometry processing tools have been adapted to export files that can be used with the Feature Based Molecular Networking workflow on GNPS. Their respective step-by-step documentation can be found below:
 
-[Documentation for MS-DIAL](featurebasedmolecularnetworking-with-ms-dial) (advanced graphical user interface)]
+[Documentation for MZmine2](featurebasedmolecularnetworking-with-mzmine2) (advanced graphical user interface, Linux/Mac/Windows)
 
-[Documentation for MZmine2](featurebasedmolecularnetworking-with-mzmine2) (advanced graphical user interface and many features)
+[Documentation for MS-DIAL](featurebasedmolecularnetworking-with-ms-dial) (advanced graphical user interface; Windows only)]
 
-[Documentation for OpenMS](featurebasedmolecularnetworking-with-OpenMS) (commandline only)
+[Documentation for OpenMS](featurebasedmolecularnetworking-with-OpenMS) (advanced feature detection tool, mainly used as commandline; Linux/Mac/Windows)
 
-[Documentation for XCMS3](featurebasedmolecularnetworking-with-XCMS) (R script)
+[Documentation for XCMS](featurebasedmolecularnetworking-with-XCMS) (advanced feature detection tool, mainly used via R language; Linux/Mac/Windows)
 
-[Documentation for MetaboScape](featurebasedmolecularnetworking-with-metaboscape) (For Bruker data only and commercial licence needed)
+[Documentation for MetaboScape](featurebasedmolecularnetworking-with-metaboscape) (Bruker data only, and requires a commercial licence)
 
 **IMPORTANT:** The data have to be processed as recommended by the tool developers.
+
+
 
 ### Mass spectrometry data Feature Detection with MZmine2 [RECOMMENDED]
 
@@ -57,14 +60,15 @@ There are several additional normalization options specifically for feature dete
 
 ![img](img/mzmine/quant_options.png)
 
-#### Demo FBMN job
-Here is an example mzmine networking [job](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=21289201c7964f6f909435fda333683c) from a subset of the [American Gut Project] (http://humanfoodproject.com/americangut/).
+
+#### Demo GNPS job of Feature Based Molecular Networking
+[Here is an example FBMN](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=52a390c8eb654b7fa8d61a1c7a4aaab5) job with files resulting from MZmine2 processing of a subset of the [American Gut Project] (http://humanfoodproject.com/americangut/).
 
 ## Tutorials
 
-See our [tutorial](tutorials/americangutmzmine) on using MZmine2 for Feature Based Molecular Networking analysis of cohort from the [American Gut Project] (http://humanfoodproject.com/americangut/).
+See our [tutorial on using MZmine2](tutorials/americangutmzmine) for FBMN analysis of a cohort from the [American Gut Project] (http://humanfoodproject.com/americangut/), and our [tutorial on running a FBMN analysis on GNPS](tutorials/featurebasedgnps).
 
-### Citation
+## Citation
 
 This work builds on the efforts of our many colleagues, please make sure to cite the papers for their processing tools and the GNPS paper:
 
