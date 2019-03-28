@@ -1,6 +1,7 @@
 ## Introduction
 
-The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tool supported are: [MetaboScape4.0](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html), [MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/), [MZmine2](https://mzmine.github.io/), [OpenMS](https://www.openms.de/), and [XCMS3](https://github.com/sneumann/xcms).
+The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tool supported are: [MZmine2](https://mzmine.github.io/), [OpenMS](https://www.openms.de/), [MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/), [XCMS](https://github.com/sneumann/xcms), and [MetaboScape4.0](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html),
+[XCMS](https://github.com/sneumann/xcms).
 
 The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking)
 
@@ -23,7 +24,7 @@ Pluskal, T., Castillo, S., Villar-Briones, A. & Oresic, [M. MZmine 2: modular fr
 The development of the features used in the pipeline is [publicly accessible here](https://github.com/mzmine/mzmine2).
 
 
-### Mass Spectrometry Data Processing with MZmine2
+### Mass Spectrometry Data Processing with MZmine2: step-by-step documentation
 
 In MZmine2, a sequence of steps are performed to process the mass spectrometry data. Here we will present key steps required to process LC-MS/MS data acquired in non-targeted mode (data dependent acquisition). For conveniency we are also providing a batch file (XML format) that can be imported directly in MZmine2.
 
@@ -199,8 +200,15 @@ There are several additional normalization options specifically for feature dete
 
 ![img](img/mzmine/quant_options.png)
 
-Here is an example mzmine networking [job](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=21289201c7964f6f909435fda333683c) from a subset of the American Gut Project.
+### Demo GNPS job of Feature Based Molecular Networking
+[Here is an example FBMN](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=52a390c8eb654b7fa8d61a1c7a4aaab5) job with files resulting from MZmine2 processing of a subset of the [American Gut Project] (http://humanfoodproject.com/americangut/).
 
 ## Tutorials
 
-See our [MZmine2 tutorial](tutorials/americangutmzmine) on using Feature Based Molecular Networking for the American Gut Project sample.
+See our [tutorial on using MZmine2](tutorials/americangutmzmine) for FBMN analysis of a cohort from the [American Gut Project] (http://humanfoodproject.com/americangut/), and our [tutorial on running a FBMN analysis on GNP](tutorials/featurebasedgnps).
+
+## Citation
+
+This work builds on the efforts of our many colleagues, please make sure to cite the papers for their processing tools and the GNPS paper:
+
+Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016)
