@@ -22,13 +22,13 @@ Lai, Z., Tsugawa, H., Wohlgemuth, G., Mehta, S., Mueller, M., Zheng, Y., Ogiwara
 
 ### Mass Spectrometry Data Processing with MS-DIAL
 
-In MZmine2, a sequence of steps are performed to process the mass spectrometry data. Here we will present key steps required to process LC-MS/MS data acquired in non-targeted mode (data dependent acquisition). For conveniency we are also providing a batch file (XML format) that can be imported directly in MZmine2.
+In MS-DIAL, a sequence of steps is performed to process the mass spectrometry data. Here we will present key steps required to process LC-MS/MS data acquired in non-targeted mode (data dependent acquisition). For conveniency we are also providing a batch file (XML format) that can be imported directly in MS-DIAL.
 
-**IMPORTANT:** MS-DIAL parameters will vary depending on the instrument used, the acquisition parameters, and the sample studied. The following documentation serves a basic guideline for using MZmine2 with the Feature-Based Molecular Networking workflow.
+**IMPORTANT:** MS-DIAL parameters will vary depending on the mass spectrometer, the acquisition parameters, and the sample studied. The following documentation serves a basic guideline for using MS-DIAL with the Feature-Based Molecular Networking workflow.
 
 Please consult these resources for more details on MS-DIAL processing:
 
-- The official [MS-DIALZmine tutorial](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/MSDIAL-tutorial.pdf) 
+- The official [MS-DIAL tutorial](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/MSDIAL-tutorial.pdf) 
 - The video tutorial about [MS-DIAL processing for Feature Based Molecular Networking](tutorials/americangutms-dial/).
 
 <iframe width="700" height="400" src="https://www.youtube.com/embed/5jjMllbwD-U"> </iframe>
