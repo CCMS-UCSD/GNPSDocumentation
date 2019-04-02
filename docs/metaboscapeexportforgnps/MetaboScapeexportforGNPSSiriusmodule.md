@@ -12,7 +12,6 @@ Requirements:
 - A valid licence for MetaboScape 2.0
 - The “GNPS Export bundle for MetaboScape 2.0” -> Contact           esi.support@Bruker.com to obtain the mandatory “GNPS Export       bundle for MetaboScape 2.0” and installation instructions.
 
-GNPS documentation: Online documentation for GNPS web-platform is available [here] (https://bix-lab.ucsd.edu/display/Public/GNPS+Documentation+Page) along with Youtube video tutorials [here] (https://www.youtube.com/channel/UCufTdDIUPjfoN604Igv_29g/videos).
 GNPS documentation: Online documentation for GNPS web-platform is available ![here](https://bix-lab.ucsd.edu/display/Public/GNPS+Documentation+Page) along with Youtube video tutorials ![here](https://www.youtube.com/channel/UCufTdDIUPjfoN604Igv_29g/videos).
 
 ## A. Profile Analysis
