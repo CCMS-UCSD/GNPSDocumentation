@@ -13,6 +13,7 @@ Requirements:
 - The “GNPS Export bundle for MetaboScape 2.0” -> Contact           esi.support@Bruker.com to obtain the mandatory “GNPS Export       bundle for MetaboScape 2.0” and installation instructions.
 
 GNPS documentation: Online documentation for GNPS web-platform is available [here] (https://bix-lab.ucsd.edu/display/Public/GNPS+Documentation+Page) along with Youtube video tutorials [here] (https://www.youtube.com/channel/UCufTdDIUPjfoN604Igv_29g/videos).
+GNPS documentation: Online documentation for GNPS web-platform is available ![here](https://bix-lab.ucsd.edu/display/Public/GNPS+Documentation+Page) along with Youtube video tutorials ![here](https://www.youtube.com/channel/UCufTdDIUPjfoN604Igv_29g/videos).
 
 ## A. Profile Analysis
 
@@ -30,4 +31,120 @@ GNPS documentation: Online documentation for GNPS web-platform is available [her
 6. Perform Automatic molecular formula generation using SmartFormula (See 3.11.1 in MetaboScape 2.0 tutorial documentation) on these buckets. Make sure to select “selected buckets only”.
 
 ![img](img/metaboscapeexportforgnps/Metabo_2.PNG)
+Figure X. Search molecular formula with SmartFormula.
 
+7. Right-click on the Bucket Table and select Export to GNPS format (.mgf/csv)
+
+![img](img/metaboscapeexportforgnps/Metabo_3.png)
+Figure X. Export MetaboScape results files for GNPS
+
+![img](img/metaboscapeexportforgnps/Metabo_4.PNG)
+Figure X. Export MetaboScape result files for GNPS
+
+## C. Global Natural Products Social molecular networking
+1. Go to GNPS (http://gnps.ucsd.edu)
+2. Upload the .MGF file to GNPS following the documentation https://bix-lab.ucsd.edu/display/Public/Input+File+Uploads
+3. Prepare a Data Analysis job.
+    a. IMPORTANT: Make sure to untick MS-Cluster
+    b. IMPORTANT: Make sure to use Minimum Cluster Size = 1
+    c. Click on Submit to launch the Data Analysis job
+    d. Wait for the job to finish. Click ![here](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=68a3320dd3f249db9416836329e17d1e) to view an example.
+
+![img](img/metaboscapeexportforgnps/GNPS_1.PNG)
+Figure X. Prepare the GNPS data analysis job. IMPORTANT: IMPORTANT: Make sure to untick MS-Cluster, and use Minimum Cluster Size = 1
+
+4. The MS/MS spectral annotation can be consulted by looking at “View all compounds”. Click ![here](http://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=68a3320dd3f249db9416836329e17d1e&view=group_by_compound) to view an example.
+
+![img](img/metaboscapeexportforgnps/GNPS4.PNG)
+Figure X. Results page for the GNPS data analysis job. Click on View All Compounds to view MS/MS spectral annotation with public spectral libraries available.
+
+![img](img/metaboscapeexportforgnps/GNPS_5.PNG)
+Figure X. Visualization interface for MS/MS spectral annotation with public spectral libraries available on GNPS
+
+5. When the job is done. Download the “Cytoscape files”.
+
+![img](img/metaboscapeexportforgnps/GNPS4.PNG)
+Figure X. Download the Cytoscape Data of the GNPS data analysis job
+
+## D. Visualization of molecular networks with Cytoscape 
+1. Open Cytoscape 3.4 (or more recent version).
+2. Install the Cytoscape App ChemViz2 - http://apps.cytoscape.org/apps/chemviz2
+3. Import the molecular networking files downloaded from GNPS into Cytoscape
+    a. Import the network topology. Go to File/Import/Network/File - Select the .pairsinfo file  in networkedges_selfloop folder. See documentation for more details here. 
+    b. Import the node information table. Go to File/Import/Table/File - Select the .tsv file in clusterinfosummarygroup_attributes_withIDs_withcomponentID folder.
+    c. Import the MS/MS spectral library annotation table. Go to File/Import/Table/File in result_specnets_DB folder and select the .tsv file.
+    d. Import the bucket table (MS/MS only) exported from MetaboScape. Go to File/Import/Table/File and select the .csv file.
+
+![img](img/metaboscapeexportforgnps/Cyto3.PNG)
+Figure X. Import the molecular network topology.
+
+![img](img/metaboscapeexportforgnps/Cyto6.PNG)
+Figure X. Node table import interface
+
+4. Configure the Cytoscape style.
+    a. For the Label properties. Select the column MOLECULAR_FORMULA, and Passthrough Mapping for the mapping type.
+    b. For the Size properties. Select the column SAMPLE, and Continuous Mapping for the mapping type.
+
+![img](img/metaboscapeexportforgnps/Cyto7.PNG)
+Figure X. Configure the molecular network style.
+
+5. Visualizing the bucket table as a piechart diagram 
+    a. For the Image/Chart properties. Click on the Def. box. 
+        i. Click on the Charts spreadsheet, and select the group for visualization.
+        ii.Click on the option Charts/option spreadsheet, and select the color-code for each group.
+
+![img](img/metaboscapeexportforgnps/Cyto8.PNG)
+Figure X. Piecharts configuration. Data in Image/Chart properties.
+
+![img](img/metaboscapeexportforgnps/Cyto9.PNG)
+Figure X. Piecharts configuration. Options in Image/Chart properties.
+
+6. Visualize the MS/MS spectral library annotations (make sure ChemViz2 is installed)
+    a. Select the nodes with MS/MS spectral library annotation (column LibraryID in the Cytoscape node table).
+    b. Right clicking on the nodes, and select /Apps/Cheminformatics/Show compounds table, or alternatively /Apps/Cheminformatics/Show structures for selected nodes or /Apps/Cheminformatics/Paint structures for selected nodes.
+
+![img](img/metaboscapeexportforgnps/Cyto10.PNG)
+Figure X. Molecular networks visualization with molecular formula annotation (node name).
+
+![img](img/metaboscapeexportforgnps/Cyto12.PNG)
+Figure X. View of compounds structures for spectral library MS/MS annotation in the molecular networks.
+
+![img](img/metaboscapeexportforgnps/Cyto13.PNG)
+Figure X. Molecular networks with MS/MS spectral annotation.
+
+## E. (Optional) In silico MS/MS annotation with Sirius
+1. Download and install Sirius 3.4 https://bio.informatik.uni-jena.de/software/sirius/
+2. Open Sirius GUI (requires Java)
+3. Drag and drop the .sirius.MGF file into Sirius.
+4. Select open the file as Multiple experiments
+5. Click on Compute all to prepare in silico annotation (molecular formula and structure).Configure the computation parameters.
+
+![img](img/metaboscapeexportforgnps/Sirius1.PNG)
+Figure X. Sirius graphical user interface
+
+![img](img/metaboscapeexportforgnps/Sirius2.PNG)
+Figure X. Compute in silico annotation
+
+![img](img/metaboscapeexportforgnps/Sirius3.PNG)
+Figure X. Configure the computation parameters
+
+6. Inspect results of the in silico annotation in Sirius
+
+![img](img/metaboscapeexportforgnps/Sirius4.PNG)
+Figure X. Panels of Sirius annotation
+
+![img](img/metaboscapeexportforgnps/Sirius6.PNG)
+Figure X. Results of Sirius annotations
+
+7. Export Sirius results for the GNPS-Trinity workflow wait for the computation to finish before):
+    a. Click on Export results. 
+        i.   Set Export as single file. 
+        ii.  Indicate the name of the export file.
+        iii. Export the file.
+    b. Again, click on Export results. 
+        i.   Set Export as multiple file.
+        ii.  Tick CSI:FingerID results.
+        iii. Indicate the name of export folder.
+        iv.  Export the files.
+
+8. Sirius results can be mapped on the GNPS molecular networks using the GNPS-Trinity workflow. See https://github.com/DorresteinLaboratory/GNPS-Trinity for more details.
