@@ -44,10 +44,10 @@ Figure X. Export MetaboScape result files for GNPS.
 1. Go to GNPS (http://gnps.ucsd.edu).
 2. Upload the .mgf file to GNPS following the documentation: https://bix-lab.ucsd.edu/display/Public/Input+File+Uploads.
 3. Prepare a *Data Analysis* job.
-    a. **IMPORTANT**: Make sure to untick *MS-Cluster*.
-    b. **IMPORTANT**: Make sure to use *Minimum Cluster Size = 1*.
-    c. Click on *Submit* to launch the *Data Analysis* job.
-    d. Wait for the job to finish. Click [here](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=68a3320dd3f249db9416836329e17d1e) to view an example.
+    * a. **IMPORTANT**: Make sure to untick *MS-Cluster*.
+    * b. **IMPORTANT**: Make sure to use *Minimum Cluster Size = 1*.
+    * c. Click on *Submit* to launch the *Data Analysis* job.
+    * d. Wait for the job to finish. Click [here](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=68a3320dd3f249db9416836329e17d1e) to view an example.
 
 ![img](img/metaboscapeexportforgnps/GNPS_1.PNG)
 Figure X. Prepare the GNPS *Data Analysis* job. **IMPORTANT**: Make sure to untick *MS-Cluster*, and use *Minimum Cluster Size = 1*.
@@ -69,10 +69,10 @@ Figure X. *Download Cytoscape Data* of the GNPS *Data Analysis* job.
 1. Open Cytoscape 3.4 (or more recent version).
 2. Install the Cytoscape App *ChemViz2* - http://apps.cytoscape.org/apps/chemviz2.
 3. Import the molecular networking files downloaded from GNPS into Cytoscape.
-    a. Import the network topology. Go to *File/Import/Network/File* - select the .pairsinfo file in *networkedges_selfloop* folder. See documentation for more details [here](https://bix-lab.ucsd.edu/display/Public/Cytoscape+3.4+Visualization+and+Analysis+Documentation). 
-    b. Import the node information table. Go to *File/Import/Table/File* - select the .tsv file in *clusterinfosummarygroup_attributes_withIDs_withcomponentID* folder.
-    c. Import the MS/MS spectral library annotation table. Go to *File/Import/Table/File* - select the .tsv file in *result_specnets_DB* folder.
-    d. Import the bucket table (MS/MS only) exported from MetaboScape. Go to *File/Import/Table/File* - select the .csv file.
+    * a. Import the network topology. Go to *File/Import/Network/File* - select the .pairsinfo file in *networkedges_selfloop* folder. See documentation for more details [here](https://bix-lab.ucsd.edu/display/Public/Cytoscape+3.4+Visualization+and+Analysis+Documentation). 
+    * b. Import the node information table. Go to *File/Import/Table/File* - select the .tsv file in *clusterinfosummarygroup_attributes_withIDs_withcomponentID* folder.
+    * c. Import the MS/MS spectral library annotation table. Go to *File/Import/Table/File* - select the .tsv file in *result_specnets_DB* folder.
+    * d. Import the bucket table (MS/MS only) exported from MetaboScape. Go to *File/Import/Table/File* - select the .csv file.
 
 ![img](img/metaboscapeexportforgnps/Cyto3.PNG)
 Figure X. Import the molecular network topology.
@@ -81,8 +81,8 @@ Figure X. Import the molecular network topology.
 Figure X. Node table import interface.
 
 4. Configure the Cytoscape style.
-    a. For the *Label* properties. Select the column *MOLECULAR_FORMULA* and click *Passthrough Mapping* for the mapping type.
-    b. For the *Size* properties. Select the column *SAMPLE* and click *Continuous Mapping* for the mapping type.
+    * a. For the *Label* properties. Select the column *MOLECULAR_FORMULA* and click *Passthrough Mapping* for the mapping type.
+    * b. For the *Size* properties. Select the column *SAMPLE* and click *Continuous Mapping* for the mapping type.
 
 ![img](img/metaboscapeexportforgnps/Cyto7.PNG)
 Figure X. Configure the molecular network style.
