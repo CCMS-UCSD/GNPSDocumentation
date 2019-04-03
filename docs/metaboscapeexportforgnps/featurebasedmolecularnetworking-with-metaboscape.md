@@ -42,7 +42,7 @@ Figure X. Export MetaboScape result files for GNPS.
 
 ## C. Global Natural Products Social Molecular Networking
 1. Go to GNPS (http://gnps.ucsd.edu).
-2. Upload the .mgf file to GNPS following the documentation: https://bix-lab.ucsd.edu/display/Public/Input+File+Uploads.
+2. Upload the .mgf file to GNPS following the documentation: https://ccms-ucsd.github.io/GNPSDocumentation/fileupload/.
 3. Prepare a *Data Analysis* job.
     * **IMPORTANT**: Make sure to untick *MS-Cluster*.
     * **IMPORTANT**: Make sure to use *Minimum Cluster Size = 1*.
@@ -65,7 +65,7 @@ Figure X. Visualization interface for MS/MS spectral annotation with public spec
 ![img](img/metaboscapeexportforgnps/GNPS4.PNG)
 Figure X. *Download Cytoscape Data* of the GNPS *Data Analysis* job.
 
-## D. Visualization of molecular networks with Cytoscape 
+## D. Visualization of Molecular Networks with Cytoscape 
 1. Open Cytoscape 3.4 (or more recent version).
 2. Install the Cytoscape App *ChemViz2* - http://apps.cytoscape.org/apps/chemviz2.
 3. Import the molecular networking files downloaded from GNPS into Cytoscape.
