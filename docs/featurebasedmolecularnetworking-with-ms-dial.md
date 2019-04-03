@@ -18,7 +18,7 @@ This work builds on the efforts of our many colleagues, please cite their work:
 
 Tsugawa, H., Cajka, T., Kind, T., Ma, Y., Higgins, B., Ikeda, K., Kanazawa, M., VanderGheynst, J., Fiehn, O. & Arita, M. [MS-DIAL: data-independent MS/MS deconvolution for comprehensive metabolome analysis.](http://dx.doi.org/10.1038/nmeth.3393) Nature Methods 12, 523-526 (2015).
 
-Lai, Z., Tsugawa, H., Wohlgemuth, G., Mehta, S., Mueller, M., Zheng, Y., Ogiwara, A., Meissen, J., Showalter, M., Takeuchi, K., Kind, T., Beal, P., Arita, M. & Fiehn, O. [Identifying metabolites by integrating metabolome databases with mass spectrometry cheminformatics.] (http://dx.doi.org/10.1038/nmeth.4512) Nature Methods 15, 53-56 (2018). 
+Lai, Z., Tsugawa, H., Wohlgemuth, G., Mehta, S., Mueller, M., Zheng, Y., Ogiwara, A., Meissen, J., Showalter, M., Takeuchi, K., Kind, T., Beal, P., Arita, M. & Fiehn, O. [Identifying metabolites by integrating metabolome databases with mass spectrometry cheminformatics.](http://dx.doi.org/10.1038/nmeth.4512) Nature Methods 15, 53-56 (2018). 
 
 ### Mass Spectrometry Data Processing with MS-DIAL
 
@@ -30,8 +30,6 @@ Please consult these resources for more details on MS-DIAL processing:
 
 - The official [MS-DIAL tutorial](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/MSDIAL-tutorial.pdf) 
 - The video tutorial about [MS-DIAL processing for Feature Based Molecular Networking](tutorials/americangutms-dial/).
-
-<iframe width="700" height="400" src="https://www.youtube.com/embed/5jjMllbwD-U"> </iframe>
 
 ### Convert your LC-MS/MS Data to Open Format
 MS-DIAL accepts different input formats. Note that we recommand to first convert your files to mzML format before doing MS-DIAL processing. [See the documentation here](https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/).
@@ -70,7 +68,17 @@ If you are dealing with a large dataset, you can reduce the running time by sett
 
 ![img](img/ms-dial/set-parameters-data.png)
 
-#### 4. Set Parameters - MS2Deconvolution
+#### 4. Set Parameters - Peak Detection
+
+Set the MS1 peak detection parameters. You should set a appropriate peak height threshold. 
+
+As a rule of thumb, the value should at least correspond to the minimum value set for the triggering of the MS2 scan event. 
+
+If you want to remove some specific ions (e.g. known contaminants), you can make an exclusion list here.
+
+![img](img/ms-dial/set-parameters-peak-detection.png)
+
+#### 5. Set Parameters - MS2Deconvolution
 
 You should set a appropriate MS/MS abundance cutoff. Make sure to set an intensity threshold representative of noise level in the MS2 spectrum. 
 
@@ -78,7 +86,7 @@ This is typically lower than for MS1. If you have any doubt, set it to 0.
 
 ![img](img/ms-dial/set-parameters-deconvoltion.png)
 
-#### 5. Set Parameters - Alignment
+#### 6. Set Parameters - Alignment
 
 Set appropriate Retention time / MS1 tolerance for alignment. 
 
@@ -110,12 +118,6 @@ If you want a feature table based on peak area, check the “Raw data matrix (Ar
 
 See an example of files outputted by the export module using the workflow:
 [here](tutorials/AG_tutorial_files/).
-
-##### The files can be uploaded to the GNPS web-platform and Feature-Based Molecular Networking job can be directly launched
-
-**IMPORTANT:** While the possibility to submit the files directly to GNPS and launch a FBMN job on the fly is really convenient for quick data analysis, the job and files will not be saved to your personal account on GNPS, and you are limited to basic presets of parameters. For that reason, we recommend to upload your files with the FTP uploader [(see documentation)] (https://ccms-ucsd.github.io/GNPSDocumentation/fileupload/) and prepare your job [directly on GNPS](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you must be logged in first).
-
-![img](img/mzmine/gnps_export_module_v2_submission.png)
 
 ### Feature Based Molecular Networking in GNPS
 
