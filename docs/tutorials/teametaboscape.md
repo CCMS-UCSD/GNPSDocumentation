@@ -1,4 +1,4 @@
-#EDIT THAT PAGE FOR TEA EXAMPLE
+#EDIT THAT PAGE FOR TEA EXAMPLES
 In this tutorial you will be guided into running MZmine2 for the Feature Based Molecular Network (FBMN) workflow on GNPS to reproduce. 
 
 The main [Feature Based Molecular Networking Workflow documentation can be accessed here] (../featurebasedmolecularnetworking). 
