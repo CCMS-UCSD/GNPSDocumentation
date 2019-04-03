@@ -1,10 +1,8 @@
 ## Introduction
 
-Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MetaboScape4.0](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html), [MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/), [MZmine2](https://mzmine.github.io/), [OpenMS](https://www.openms.de/), and [XCMS3](https://github.com/sneumann/xcms).
+The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tool supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2), [OpenMS](featurebasedmolecularnetworking-with-OpenMS), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial), [XCMS](https://github.com/sneumann/xcms), and [MetaboScape](featurebasedmolecularnetworking-with-metaboscape),[XCMS](featurebasedmolecularnetworking-with-XCMS).
 
-The main documentation for Feature-Based Molecular Networking can be accessed [here](featurebasedmolecularnetworking)
-
-The Feature-Based Molecular Networking workflow on GNPS can be accessed [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
+The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking)
 
 Below follows a description on how to use XCMS3 with the FBMN workflow in GNPS.
 
@@ -24,7 +22,7 @@ Smith, C.A., Want, E.J., O'Maille, G., Abagyan,R., Siuzdak, G. [XCMS: Processing
 
 ### Mass Spectrometry Data Processing with XCMS3
 
-As for all preprocessing software tools, a sequence of steps is performed to process mass spectrometry data in XCMS3. Here we will present key steps required to process untargeted LC-MS/MS data collected using data dependent acquisition. An example step-by-step guide is accessible as [Jupyter notebook](https://github.com/DorresteinLaboratory/XCMS3_FeatureBasedMN).
+As for all preprocessing software tools, a sequence of steps is performed to process mass spectrometry data in XCMS3. Here we will present key steps required to process untargeted LC-MS/MS data collected using data dependent acquisition. An example step-by-step guide is accessible as [Jupyter notebook and RCommander script](https://github.com/DorresteinLaboratory/XCMS3_FeatureBasedMN).
 
 **IMPORTANT:** XCMS3 parameters will vary depending on the mass spectrometer, the acquisition parameters, and the samples investigated. The following documentation serves as a basic guideline for using XCMS3 with the Feature-Based Molecular Networking workflow.
 
@@ -36,27 +34,17 @@ Please consult these resources for more details on XCMS3 processing:
 ### Convert your LC-MS/MS Data to an Open Format
 XCMS3 accepts different input formats. Note that we recommand to first convert your files to the mzML format before using XCMS3 for processing. [See the documentation here](https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/).
 
-#### Processing Steps
-
-#### 1. Import data
-
-
-#### 2. Peak picking
-
-
-#### 3. Retention time alignment
-
-
-#### 4. Peak grouping
-
-
-#### 5. Gap filling
-
-
-#### 6. Export data
-
-
-##### Submit the files needed for Feature-Based Molecular Networking to GNPS:
+### Processing Steps with XCMS3
+1. Import data
+2. Peak picking
+3. Retention time alignment
+4. Peak grouping
+5. Gap filling
+6. Export the data
+	-	a feature table with ion intensities (.TXT file format).
+	- 	a MS/MS spectral data file (.MGF file format).
+	
+### Perform the Feature-Based Molecular Networking on GNPS:
 
 - a feature table with ion intensities (.CSV file format)
 
@@ -64,7 +52,7 @@ XCMS3 accepts different input formats. Note that we recommand to first convert y
 
 ##### The files can be uploaded to the GNPS web-platform and a Feature-Based Molecular Networking job can be directly launched
 
-**IMPORTANT:** While the possibility to submit the files directly to GNPS and launch a FBMN job on the fly is really convenient for quick data analysis, the job and files will not be saved to your personal account on GNPS, and you are limited to basic presets of parameters. For that reason, we recommend to upload your files with the FTP uploader [(see documentation)] (https://ccms-ucsd.github.io/GNPSDocumentation/fileupload/) and prepare your job [directly on GNPS](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you must be logged in first).
+For that reason, we recommend to upload your files with the FTP uploader [(see documentation)] (https://ccms-ucsd.github.io/GNPSDocumentation/fileupload/) and prepare your job [directly on GNPS](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you must be logged in first).
 
 
 ### Feature Based Molecular Networking in GNPS

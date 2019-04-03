@@ -5,24 +5,29 @@ The Feature-Based Molecular Networking (FBMN) is a computational method that bri
 [XCMS](https://github.com/sneumann/xcms).
 
 
-The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking)
+The main documentation for Feature-Based Molecular Networking is provided below.
 
 The Feature-Based Molecular Networking workflow on [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
 
+## Citation
+
+This work builds on the efforts of our many colleagues, please make sure to cite the papers for their processing tools and the GNPS paper:
+
+Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
 ## Mass Spectrometry Data Processing for the Feature Based Molecular Networking Workflow
 
 In brief, mass spectrometry processing tools have been adapted to export files that can be used with the Feature Based Molecular Networking workflow on GNPS. Their respective step-by-step documentation can be found below:
 
-[Documentation for MZmine2](featurebasedmolecularnetworking-with-mzmine2) (advanced graphical user interface, Linux/Mac/Windows)
+[Documentation for MZmine2](../featurebasedmolecularnetworking-with-mzmine2) (advanced graphical user interface, Linux/Mac/Windows)
 
-[Documentation for MS-DIAL](featurebasedmolecularnetworking-with-ms-dial) (advanced graphical user interface; Windows only)]
+[Documentation for MS-DIAL](../featurebasedmolecularnetworking-with-ms-dial) (advanced graphical user interface; Windows only)]
 
-[Documentation for OpenMS](featurebasedmolecularnetworking-with-OpenMS) (advanced feature detection tool, mainly used as commandline; Linux/Mac/Windows)
+[Documentation for OpenMS](../featurebasedmolecularnetworking-with-OpenMS) (advanced feature detection tool, mainly used as commandline; Linux/Mac/Windows)
 
-[Documentation for XCMS](featurebasedmolecularnetworking-with-XCMS) (advanced feature detection tool, mainly used via R language; Linux/Mac/Windows)
+[Documentation for XCMS](../featurebasedmolecularnetworking-with-XCMS) (advanced feature detection tool, mainly used via R language; Linux/Mac/Windows)
 
-[Documentation for MetaboScape](featurebasedmolecularnetworking-with-metaboscape) (Bruker data only, and requires a commercial licence)
+[Documentation for MetaboScape](../featurebasedmolecularnetworking-with-metaboscape) (Bruker data only, and requires a commercial licence)
 
 **IMPORTANT:** The data have to be processed as recommended by the tool developers.
 
@@ -67,9 +72,3 @@ There are several additional normalization options specifically for feature dete
 ## Tutorials
 
 See our [tutorial on using MZmine2](tutorials/americangutmzmine) for FBMN analysis of a cohort from the [American Gut Project] (http://humanfoodproject.com/americangut/), and our [tutorial on running a FBMN analysis on GNPS](tutorials/featurebasedgnps).
-
-## Citation
-
-This work builds on the efforts of our many colleagues, please make sure to cite the papers for their processing tools and the GNPS paper:
-
-Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
