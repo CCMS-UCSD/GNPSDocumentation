@@ -18,7 +18,7 @@ Online documentation for GNPS web-platform is available [here](https://bix-lab.u
 ## A. Profile Analysis
 1. Open *Profile Analysis* and process your data following *Profile Analysis* documentation to generate the Bucket Table.
 2. Define groups and/or attributes to enhance downstream data analysis (see **3.3.4** in **MetaboScape 2.0 tutorial**). The groups and/or attributes defined in *Profile Analysis* will be visualized in the molecular networks using pie chart diagram.
-3. **IMPORTANTt**: Create one common group named 'SAMPLE' for all the samples. It will be used to enhance molecular networking visualization.
+3. **IMPORTANT**: Create one common group named 'SAMPLE' for all the samples. It will be used to enhance molecular networking visualization.
 4. Export the Bucket Table to MetaboScape (see **3.1** in **MetaboScape 2.0 tutorial documentation**).
 
 ## B. MetaboScape
