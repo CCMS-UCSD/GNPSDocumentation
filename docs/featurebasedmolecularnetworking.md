@@ -1,28 +1,34 @@
 
 ## Introduction
 
-The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The supported tools are: [MZmine2](https://mzmine.github.io/), [OpenMS](https://www.openms.de/), [MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/), [XCMS3](https://github.com/sneumann/xcms), and [MetaboScape4.0](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html).
+The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tool supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2), [OpenMS](featurebasedmolecularnetworking-with-OpenMS), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial), [XCMS](https://github.com/sneumann/xcms), and [MetaboScape](featurebasedmolecularnetworking-with-metaboscape),[XCMS](featurebasedmolecularnetworking-with-XCMS3).
 
-The main documentation for Feature-Based Molecular Networking [can be accessed here.](featurebasedmolecularnetworking)
+The main documentation for Feature-Based Molecular Networking is provided below.
 
-The Feature-Based Molecular Networking workflow on GNPS [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
+The Feature-Based Molecular Networking workflow on [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
+
+## Citations
+
+This work builds on the efforts of our many colleagues, please make sure to cite the papers for their processing tools and the GNPS paper:
+
+Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
+
+The citations from the mass spectrometry processing tools you used [[MZmine2](featurebasedmolecularnetworking-with-mzmine2), [OpenMS](featurebasedmolecularnetworking-with-OpenMS), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial), [XCMS](https://github.com/sneumann/xcms), and [MetaboScape](featurebasedmolecularnetworking-with-metaboscape), [XCMS](featurebasedmolecularnetworking-with-XCMS3)].
 
 
 ## Mass Spectrometry Data Processing for the Feature Based Molecular Networking Workflow
 
-In brief, mass spectrometry processing tools have been adapted to export files that can be used with the Feature Based Molecular Networking workflow on GNPS. Their respective step-by-step documentation can be found below:
+In brief, mass spectrometry processing softwares have been adapted to export files that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. These softwares and their main features are presented in the table below, along with a step-by-step documentation to use for FBMN on GNPS (FBMN Documnetation):
 
-[Documentation for MZmine2](featurebasedmolecularnetworking-with-mzmine2) (advanced graphical user interface, Linux/Mac/Windows)
+|  Processing tool | FBMN Documentation  | Interface  |  Platform | Code availability|Target user|
+|---|---|---|---|---|---|
+|[MZmine2](https://github.com/mzmine/mzmine2/)|[See documentation](../featurebasedmolecularnetworking-with-mzmine2)|Graphical UI|Any|[Open source](https://github.com/mzmine/mzmine2/blob/master/LICENSE.txt)|Mass spectrometrists|
+|[MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/)|[See documentation](../featurebasedmolecularnetworking-with-ms-dial) |Graphical UI|Windows|[Open source](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/)|Mass spectrometrists|
+|[OpenMS](https://github.com/OpenMS/OpenMS/)|[See documentation](../featurebasedmolecularnetworking-with-OpenMS)|Commandline|Any|[Open source](https://github.com/OpenMS/OpenMS/blob/develop/License.txt)|Bioinformaticians and developers|
+|[XCMS3](https://github.com/sneumann/xcms)|[See documentation](../featurebasedmolecularnetworking-with-XCMS3) |Commandline|Any|[Open source](https://github.com/sneumann/xcms)|Bioinformaticians and developers|
+|[MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html)|[See documentation](../featurebasedmolecularnetworking-with-metaboscape)|Graphical UI|Windows|Proprietary code|Mass spectrometrists|
 
-[Documentation for MS-DIAL](featurebasedmolecularnetworking-with-ms-dial) (advanced graphical user interface; Windows only)]
-
-[Documentation for OpenMS](featurebasedmolecularnetworking-with-OpenMS) (advanced feature detection tool, mainly used as commandline; Linux/Mac/Windows)
-
-[Documentation for XCMS](featurebasedmolecularnetworking-with-XCMS) (advanced feature detection tool, mainly used via R language; Linux/Mac/Windows)
-
-[Documentation for MetaboScape](featurebasedmolecularnetworking-with-metaboscape) (Bruker data only, and requires a commercial licence)
-
-**IMPORTANT:** The data have to be processed as recommended by the tool developers.
+**IMPORTANT:** The software use for the LC-MS/MS data processing have to be configured and utilized as recommended by the softwre documentation.
 
 
 
@@ -54,8 +60,9 @@ You will need three items (test files are accessible [here](https://github.com/C
 
 | Parameter  | Description          | Default |
 | ------------- |-------------| -----|
-| Precursor Ion Mass Tolerance (PIMT) | Parameter used for MS-Cluster and spectral library search. Specify the precursor ions mass tolerance, in Daltons. This value influences the aforementioned clustering of nearly-identical MS/MS spectra via MS-Cluster. Note that the value of this parameters should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generated the MS/MS data. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 2.0 Da for low-resolution instruments (ion traps, QqQ).| 2.0 |
-| Fragment Ion Mass Tolerance (FIMT)	      | Parameters used for MS-Cluster, molecular networking, and MS/MS spectral library searches. For every group of MS/MS spectra being considered for clustering (consensus spectrum creation), this value specifies how much fragment ions can be shifted from their expected m/z values. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ). | 0.5 |
+| Precursor Ion Mass Tolerance (PIMT) | Parameter used for spectral library search. Specify the precursor ions mass tolerance, in Daltons. Note that the value of this parameters should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generated the MS/MS data. Recommended Values value is ± 0.02 Da for high-resolution instruments such q-TOF, or 0.01 for Q-Exactive, and ± 2.0 Da for low-resolution instruments (ion traps, QqQ).| 2.0 |
+| Fragment Ion Mass Tolerance (FIMT)	      | Parameters used spectra pair-wise comparison in MS/MS molecular networking. This value specifies how much fragment ions can be shifted from their potential counter-parts found in the other MS/MS spectra Recommended Values value is ± 0.02 or 0.01 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ). | 0.5 |
+
 #### Advanced Network Options
 
 ![set title](img/featurebasedmolecularnetworking/Advanced_Network_Options.png)
@@ -78,8 +85,8 @@ You will need three items (test files are accessible [here](https://github.com/C
 | ------------- |-------------| -----|
 |Library Search Min Matched Peaks | Minimum number of common fragment ions that MS/MS spectra should contain in order to be considered for spectral library annotation. Default value is 6, but note that this parameters should be tuned depending of the molecule of interest, and the experimental conditions (such as the ionisation mode, and the fragmentation conditions, ...). For example, collision-induced fragmentation of some lipids produce only few fragment ions. A lower value will allow clustering of MS/MS spectra containing less  fragment ions, however it will also induce clustering of  MS/MS spectra from different molecular-type to be connected in one network. An higher value will do the opposite|6|
 |Score Threshold |Minimum cosine score that MS/MS spectra should get in spectral matching with MS/MS spectral libraries in order to be considered an annotation.|0.7|
-|Search Analogs|Will search data for analogs to library spectra|Don't Search|
-|Maximum Analog Search Mass Difference|Maximum mass shift between library and putative analog found| 100 (Da)|
+|Search Analogs|Will for library match in analog mode (precursor ion mass shifted up the mass difference specified, such as 100 Da) to library spectra|Don't Search|
+|Maximum Analog Search Mass Difference|Maximum precursor ion mass shift between library and putative analog found| 100 (Da)|
 |Top results to report per query|Number of matches to report for each feature| 1 |
 
 #### Advanced Filtering Options
@@ -95,7 +102,12 @@ You will need three items (test files are accessible [here](https://github.com/C
 
 ##### Advanced quantification options
 
-There are several additional normalization options specifically for feature detection. We can normalize the features per LC/MS run and aggregate by groups with either a sum or average (recommended).
+There are additional normalization options specifically for the FBMN workflow:
+
+| Parameter        | Description          | Default 
+| ------------- |-------------| -----| 
+| Normalization Per File | Total Ion Current (TIC) normalization can be applied to the ion intensities (LC-MS1 peak area) per sample (NOT RECOMMENDED AS DEFAULT) | No Norm  |
+| Aggregation Method for Peak Abundances Per Group | The ion feature intensity (LC-MS1 peak area) can be aggregated by GROUPS from the metadatable with either a *Sum* or *Average* (RECOMMENDED, because more robust to the number of samples per GROUPS). | Average  |
 
 ![img](img/mzmine/quant_options.png)
 
