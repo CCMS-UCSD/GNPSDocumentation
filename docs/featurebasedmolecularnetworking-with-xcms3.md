@@ -1,17 +1,15 @@
-## Introduction to FBMN
+## Introduction
 
-The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tool supported are: [MZmine2](../featurebasedmolecularnetworking-with-mzmine2), [OpenMS](../featurebasedmolecularnetworking-with-OpenMS), [MS-DIAL](../featurebasedmolecularnetworking-with-ms-dial), [XCMS](../featurebasedmolecularnetworking-with-XCMS3), and [MetaboScape](../featurebasedmolecularnetworking-with-metaboscape).
+The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tool supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2), [OpenMS](featurebasedmolecularnetworking-with-OpenMS), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial), [XCMS](https://github.com/sneumann/xcms), and [MetaboScape](featurebasedmolecularnetworking-with-metaboscape), [XCMS](featurebasedmolecularnetworking-with-XCMS3).
 
-The main documentation for Feature-Based Molecular Networking [can be accessed here:](../featurebasedmolecularnetworking)
-
-The Feature-Based Molecular Networking workflow on GNPS [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
+The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking)
 
 Below follows a description on how to use XCMS3 with the FBMN workflow in GNPS.
 
 ## Mass spectrometry processing with XCMS3
 
 ###Installation
-Install the latest version of XCMS3 from the [XCMS3 GitHub repository](https://github.com/sneumann/xcms) or the [Bioconductor XCMS3 package](https://www.bioconductor.org/packages/release/bioc/html/xcms.html).
+Install the latest version of XCMS3 from the [XCMS3 GitHub repository] (https://github.com/sneumann/xcms) or the [Bioconductor XCMS3 package] (https://www.bioconductor.org/packages/release/bioc/html/xcms.html).
 
 ### Citations and development
 

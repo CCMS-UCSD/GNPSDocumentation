@@ -1,6 +1,7 @@
-## Introduction to FBMN
 
-The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tool supported are: [MZmine2](../featurebasedmolecularnetworking-with-mzmine2), [OpenMS](../featurebasedmolecularnetworking-with-OpenMS), [MS-DIAL](../featurebasedmolecularnetworking-with-ms-dial), [XCMS](../featurebasedmolecularnetworking-with-XCMS3), and [MetaboScape](../featurebasedmolecularnetworking-with-metaboscape).
+## Introduction
+
+The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tool supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2), [OpenMS](featurebasedmolecularnetworking-with-OpenMS), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial), [XCMS](https://github.com/sneumann/xcms), and [MetaboScape](featurebasedmolecularnetworking-with-metaboscape),[XCMS](featurebasedmolecularnetworking-with-XCMS3).
 
 The main documentation for Feature-Based Molecular Networking is provided below.
 
@@ -12,7 +13,7 @@ This work builds on the efforts of our many colleagues, please make sure to cite
 
 Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
-The citations from the mass spectrometry processing tools you used [[MZmine2](../featurebasedmolecularnetworking-with-mzmine2), [OpenMS](../featurebasedmolecularnetworking-with-OpenMS), [MS-DIAL](../featurebasedmolecularnetworking-with-ms-dial), [XCMS](https://github.com/sneumann/xcms), and [MetaboScape](../featurebasedmolecularnetworking-with-metaboscape), [XCMS](../featurebasedmolecularnetworking-with-XCMS3)].
+The citations from the mass spectrometry processing tools you used [[MZmine2](featurebasedmolecularnetworking-with-mzmine2), [OpenMS](featurebasedmolecularnetworking-with-OpenMS), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial), [XCMS](https://github.com/sneumann/xcms), and [MetaboScape](featurebasedmolecularnetworking-with-metaboscape), [XCMS](featurebasedmolecularnetworking-with-XCMS3)].
 
 
 ## Mass Spectrometry Data Processing for the Feature Based Molecular Networking Workflow
@@ -33,7 +34,7 @@ In brief, mass spectrometry processing softwares have been adapted to export fil
 
 ### Mass spectrometry data Feature Detection with MZmine2 [RECOMMENDED]
 
-Currently, we are recommending using the MZmine2 workflow, as it has been thoroughly tested. [See the documentation here](../featurebasedmolecularnetworking-with-mzmine2) and the following [video tutorial:](tutorials/americangutmzmine/)
+Currently, we are recommending using the MZmine2 workflow, as it has been thoroughly tested. [See the documentation here](#featurebasedmolecularnetworking-with-mzmine2) and the following [video tutorial:](https://ccms-ucsd.github.io/GNPSDocumentation/tutorials/americangutmzmine/)
 
 <iframe width="700" height="400" src="https://www.youtube.com/embed/5jjMllbwD-U"> </iframe>
 
