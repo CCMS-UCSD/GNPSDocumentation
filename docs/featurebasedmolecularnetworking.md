@@ -1,13 +1,11 @@
 
 ## Introduction
 
-The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tool supported are: [MZmine2](https://mzmine.github.io/), [OpenMS](https://www.openms.de/), [MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/), [XCMS](https://github.com/sneumann/xcms), and [MetaboScape4.0](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html),
-[XCMS](https://github.com/sneumann/xcms).
+The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The supported tools are: [MZmine2](https://mzmine.github.io/), [OpenMS](https://www.openms.de/), [MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/), [XCMS3](https://github.com/sneumann/xcms), and [MetaboScape4.0](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html).
 
+The main documentation for Feature-Based Molecular Networking [can be accessed here.](featurebasedmolecularnetworking)
 
-The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking)
-
-The Feature-Based Molecular Networking workflow on [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
+The Feature-Based Molecular Networking workflow on GNPS [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
 
 
 ## Mass Spectrometry Data Processing for the Feature Based Molecular Networking Workflow
@@ -40,13 +38,12 @@ There is a dedicated Feature-Based Molecular Networking workflow on GNPS that [c
 
 You will need three items (test files are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files)):
 
-1. The Feature Table with the intensity of ion features.
-2. The MGF file with the list of MS/MS spectra for the ion features.
+1. The Feature Table with the intensity of ion features (Peak Area Quantification Table).
+2. The MGF file with the list of MS/MS spectra for the ion features (MS2 MGF File).
 3. [Optional] the Metadata table - described [here](networking#metadata)
 
 #### Overview of the Feature Based Molecular Networking Workflow
 ![img](img/featurebasedmolecularnetworking/overview.png)
-
 
 #### Select the software used for the LC-MS/MS data processing
 ![img](img/featurebasedmolecularnetworking/select.png)
