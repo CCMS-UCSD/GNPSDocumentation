@@ -116,31 +116,3 @@ Once installed, chemViz2 can be used to display chemical structures on nodes. Fi
 Finally, to draw structures in nodes, return to _Apps_ and _Cheminformatics Tools_ to go to _Paint Structures_ and select _on all nodes_ or _on selected nodes_. Visualize the results. If needed, create a dedicated style to facilitate structure visualization. 
 
 ![img](img/FBMN_Cytoscape/Slide16.PNG)
-
-
-
-
-
-
-
-
-##### Below is the schematic representation of the LC-MS/MS data processing steps with MZmine2:
-
-![complete workflow view](img/mzmine/Workflow_mzmine.png)
-
-
-##### Below is the overview of the LC-MS/MS data processing steps in the MZmine2 batch mode:
-
-![img](img/mzmine/batch_overview.png)
-
-#### Batch Import
-
-Here are some MZmine2 batch that are compatible with the Feature-Based Molecular Networking workflow. These batch files can be imported into MZMine2 (Batch mode):
-
-| Instrument  | Gradient Length | Matrix Type | Sample Size | Download |
-| ------------- |-------------| ----- | ----- | ----- |
-| Bruker Maxis HD qTof | 10 Min | Stool | 20 | [Batch](static/maxis_12min_stool_20.xml) |
-
-
-<!-- The prototype batch method for Bruker Maxis HD qTof can be [downloaded](static/qtof_batch.xml) and imported into MZmine2. -->
-
