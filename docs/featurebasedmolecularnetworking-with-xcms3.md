@@ -1,8 +1,8 @@
 ## Introduction
 
-The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tool supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2), [OpenMS](featurebasedmolecularnetworking-with-OpenMS), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial), [XCMS](https://github.com/sneumann/xcms), and [MetaboScape](featurebasedmolecularnetworking-with-metaboscape), [XCMS](featurebasedmolecularnetworking-with-XCMS3).
+The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-OpenMS.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), and [XCMS](featurebasedmolecularnetworking-with-XCMS3.md).
 
-The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking)
+The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking.md)
 
 Below follows a description on how to use XCMS3 with the FBMN workflow in GNPS.
 
@@ -34,10 +34,10 @@ Here we will present key steps and representative scripts required to process un
 Please consult these resources for more details on XCMS3 processing:
 
 - The official [XCMS3 tutorial](add link).
-- The video tutorial about [XCMS3 processing for Feature Based Molecular Networking](tutorials/americangutxcms3/).
+- The video tutorial about [XCMS3 processing for Feature Based Molecular Networking](tutorials/americangutxcms3.md).
 
 #### 1. Convert your LC-MS/MS Data to an Open Format
-XCMS3 accepts different input formats. Note that we recommand to first convert your files to the mzML format before using XCMS3 for processing. [See the documentation here](https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/).
+XCMS3 accepts different input formats. Note that we recommand to first convert your files to the mzML format before using XCMS3 for processing. [See the documentation here](fileconversion.md).
 
 #### 2. Processing Steps with XCMS3
 1. Import data
@@ -55,21 +55,19 @@ The files exported from XCMS3 can be uploaded to the GNPS web-platform and a Fea
 
 See that documentation for [the FTP upload] (https://ccms-ucsd.github.io/GNPSDocumentation/fileupload/) and prepare your FBMN job [directly on GNPS](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you must be logged in first).
 
-Note that you can upload a metadata table with your job. [See documentation](networking#metadata). 
+Note that you can upload a metadata table with your job. [See documentation](networking.md#metadata). 
 
-**IMPORTANT FOR METADATA WITH XCMS3**: the "file name" in the metadata files for FBMN with XCMS3 should not contain the file extension (ex: "sample1.mzML" must be "sample1").
-
-More information on the Feature Based Molecular Networking workflow on GNPS can be obtained at [this documentation page](featurebasedmolecularnetworking).
+More information on the Feature Based Molecular Networking workflow on GNPS can be obtained at [this documentation page](featurebasedmolecularnetworking.md).
 
 ### Representative files and job
-Test files are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files):
+Test files are accessible [here](tutorials/AG_tutorial_files/):
 
-1. Feature Table from above
-2. MGF for MS/MS from above
-3. A metadata table - described [NEW TABLE AFTER TEST](TBD)
+1. Feature Table - [Download here](tutorials/AG_tutorial_files/XCMS3-GNPS_AG_test_featuretable.txt)
+2. MGF for MS/MS from above - [Download here](tutorials/AG_tutorial_files/XCMS3-GNPS_AG_test_GNPS.mgf)
+3. A metadata table - [Download here](tutorials/AG_tutorial_files/metadata_GNPS_table_AMG_key_ones_cleaned.txt)
 
-Here is an example [FBMN job with XCMS3](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=xxxxxx) from a subset of the American Gut Project.
+Here is an example [FBMN job with XCMS3](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=f3f28a930b334dd09f310795fceae4cd) from a subset of the American Gut Project.
 
 ## Tutorials
 
-See our [XCMS3 tutorial](tutorials/americangutxcms3) on using Feature Based Molecular Networking for a subset of the American Gut Project sample.
+See our [XCMS3 tutorial](tutorials/americangutxcms3.md) on using Feature Based Molecular Networking for a subset of the American Gut Project sample.
