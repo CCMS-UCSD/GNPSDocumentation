@@ -40,28 +40,37 @@ The OpenMS-GNPS pipeline has been deployed on GNPS (experimental feature). The j
 
 A representative OpenMS-GNPS workflow has the following steps:
   1. Input mzML files
-  2. Run the FeatureFinderMetabo tool on the mzML files.
-  3. Run the IDMapper tool on the featureXML and mzML files.
-  4. Run the MapAlignerPoseClustering tool on the featureXML files.
-  5. Run the MetaboliteAdductDecharger on the featureXML files.
-  6. Run the FeatureLinkerUnlabeledKD tool or FeatureLinkerUnlabeledQT, on the featureXML files and output a consensusXML file.
-  8. Run the FileFilter on the consensusXML file to keep only consensusElements with at least MS/MS scan (peptide identification).  
-  9. Run the GNPSExport on the "filtered consensusXML file" to export an .MGF file.
-  10. Run the TextExport on the "filtered consensusXML file" to export an .TXT file.
+  
+  2. Run the *FeatureFinderMetabo* tool on the mzML files.
+  3. Run the *IDMapper* tool on the featureXML and mzML files.
+  4. Run the *MapAlignerPoseClustering* tool on the featureXML files.
+  5. Run the *MetaboliteAdductDecharger* on the featureXML files.
+  6. Run the *FeatureLinkerUnlabeledKD* tool or *FeatureLinkerUnlabeledQT*, on the featureXML files and output a consensusXML file.
+  8. Run the *FileFilter* on the consensusXML file to keep only consensusElements with at least MS/MS scan (peptide identification).  
+  9. Run the *GNPSExport* on the "filtered consensusXML file" to export an .MGF file.
+  10. Run the *TextExport* on the "filtered consensusXML file" to export an .TXT file.
   11. Upload your files to GNPS and run the Feature-Based Molecular Networking workflow. Instructions are here:
 https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/
 
 #### Requirements for OpenMS-GNPS pipeline
-- The IDMapper has to be ran on the featureXML files, in order to associate MS2 scan(s) (peptide identification) with each features. These peptide identifications are used by the GNPSExport.
-- The FileFilter has to be ran on the consensusXML file, prior to the GNPSExport, in order to remove consensusElements 
+- The *IDMapper* has to be ran on the featureXML files, in order to associate MS2 scan(s) (peptide identification) with each features. These peptide identifications are used by the GNPSExport.
+- The *FileFilter* has to be ran on the consensusXML file, prior to the GNPSExport, in order to remove consensusElements 
 without MS2 scans (peptide identification).
 
 ### The GNPSExport UTILS
+
 **Parameters for GNPSExport UTILS **:
- - Cosine Score Treshold @Abi please describe what is is doing EXACTLY 
-- Binning @Abi please describe what is is doing EXACTLY
+
+- **Cosine Score Treshold** @Abi please describe what is is doing EXACTLY 
+- **Binning width** @Abi please describe what is is doing EXACTLY
 
 Options for the GNPSExport spectral processing are:
+<<<<<<< HEAD
+
+- **Most intense**: the GNPSExport will output the MS/MS scan with the highest precursor ion intensity as a representative MS/MS scan per consensusElement in the .MGF file.
+- **Merge**: the GNPSExport will first merge all the MS/MS scans for a consensusElement, using the user-specified parameters (cosine score threshold, binning width), and output the merged MS/MS scan as as a representative MS/MS scan per consensusElement in the .MGF file.
+- **All MS/MS**: the GNPSExport will output all the MS/MS scan(s) for consensusElements in the .MGF file.
+=======
 	- Most intense: the GNPSExport will output the MS/MS scan with the highest precursor ion intensity 
 	as a representative MS/MS scan per consensusElement in the .MGF file.
 	- Merge: the GNPSExport will first merge all the MS/MS scans for a consensusElement, 
@@ -312,3 +321,4 @@ See our [tutorial on using MZmine2](tutorials/americangutmzmine) for FBMN analys
 This work builds on the efforts of our many colleagues, please make sure to cite the papers for their processing tools and the GNPS paper:
 
 Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016)
+>>>>>>> parent of 899906f... Deploy and PR
