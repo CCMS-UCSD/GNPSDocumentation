@@ -17,7 +17,7 @@ Install [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-sepa
 1. Open *Profile Analysis* and perform feature detection on your data following *Profile Analysis* documentation to generate the Bucket Table.
 2. Define groups and/or attributes to enhance downstream data analysis (see part **3.3.4** in the **MetaboScape 2.0 tutorial documentation**). The groups and/or attributes defined in *Profile Analysis* will be visualized in the molecular networks using pie chart diagram.
 3. **IMPORTANT**: Create one common group named 'SAMPLE' for all the samples. It will be used for molecular networking visualization.
-4. Export the Bucket Table to MetaboScape (see **3.1** in the **MetaboScape 2.0 tutorial** documentation).
+4. Export the Bucket Table to MetaboScape (see **3.1** in the **MetaboScape 2.0 tutorial documentation**).
 
 ## B. Use MetaboScape to Annotate MS/MS spectra
 1. Open MetaboScape.
