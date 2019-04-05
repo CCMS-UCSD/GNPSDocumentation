@@ -34,7 +34,7 @@ Install [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-sepa
 
 ![img](img/metaboscapeexportforgnps/Metabo_3.png)
 
-9. Select **Export all formats**.
+9. Select *Export all formats*.
 
 ![img](img/metaboscapeexportforgnps/Metabo_4.PNG)
 
