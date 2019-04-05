@@ -33,6 +33,7 @@ Installing [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-s
 8. Right-click on the Bucket Table and select *Export to GNPS format* (.mgf/.csv).
 
 ![img](img/metaboscapeexportforgnps/Metabo_3.png)
+
 9. Select **Export all formats**.
 
 ![img](img/metaboscapeexportforgnps/Metabo_4.PNG)
