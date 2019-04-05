@@ -1,8 +1,8 @@
 ## Introduction
 
-The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tool supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2), [OpenMS](featurebasedmolecularnetworking-with-OpenMS), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial), [XCMS](https://github.com/sneumann/xcms), and [MetaboScape](featurebasedmolecularnetworking-with-metaboscape), [XCMS](featurebasedmolecularnetworking-with-XCMS3).
+The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-OpenMS.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), and [XCMS](featurebasedmolecularnetworking-with-XCMS3.md).
 
-The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking)
+The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking.md)
 
 Below we are describing how to use MetaboScape with the FBMN workflow on GNPS.
 
@@ -39,7 +39,7 @@ Installing [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-s
 10. The .MGF file ("gnps.mgf") and the Bucket Table will be used to perform a **Feature-Based Molecular Networking** job on GNPS (see below).
 
 ## C. Performing a FBMN job on GNPS
-Go to GNPS to perform a FBMN job. [Refer to that documentation] (https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/).
+Go to GNPS to perform a FBMN job. [Refer to that documentation] (featurebasedmolecularnetworking.md).
 
 ## D. Step-by-step tutorial
-See the [step-by-step tutorial using MetaboScape 2.0 and the FBMN](https://ccms-ucsd.github.io/GNPSDocumentation/tutorials/teametaboscape) for the green tea vs black tea tutorial (part of the MetaboScape documentation).
+See the [step-by-step tutorial using MetaboScape 2.0 and the FBMN](tutorials/coffee-tutorial-metaboscape.md) for the coffee tutorial (part of the MetaboScape documentation).
