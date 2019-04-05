@@ -11,7 +11,7 @@ Below we describe how to use MetaboScape with the FBMN workflow on GNPS.
 MetaboScape can be used to process LC-MS/MS Bruker Daltonics data files (.d format). The results of MetaboScape can be used to run the FBMN workflow on [GNPS](http://gnps.ucsd.edu).
 
 **Requirements:** 
-Installing [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html) (version 2.0 minimum) and having a valid licence. 
+Install [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html) (at least version 2.0) and have a valid license. 
 
 ## A. Perform Feature Detection with Profile Analysis
 1. Open *Profile Analysis* and perform feature detection on your data following *Profile Analysis* documentation to generate the Bucket Table.
