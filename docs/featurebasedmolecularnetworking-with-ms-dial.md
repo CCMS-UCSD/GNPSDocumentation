@@ -131,7 +131,7 @@ Basically, you will need to upload the files ouputted by the MS-DIAL processing 
 
 **IMPORTANT FOR METADATA WITH MS-DIAL**: the "filename" in the metadata files for FBMN with MS-DIAL should not contain the file extension (ex: "sample1.mzML" must be "sample1").
 
-Here is an example MS-DIAL networking [job](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=xxxxxx) from a subset of the American Gut Project.
+Here is an example MS-DIAL networking [job](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=f5137114cac24781a9015ba09e416a98) from a subset of the American Gut Project.
 
 ## Tutorials
 
