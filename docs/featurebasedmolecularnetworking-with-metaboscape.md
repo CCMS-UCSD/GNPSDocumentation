@@ -38,7 +38,7 @@ Installing [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-s
 
 ![img](img/metaboscapeexportforgnps/Metabo_4.PNG)
 
-10. The .MGF file ("gnps.mgf") and the Bucket Table will be used to perform a **Feature-Based Molecular Networking** job on GNPS (see below).
+10. The .mgf file ("gnps.mgf") and the Bucket Table will be used to perform a **Feature-Based Molecular Networking** job on GNPS (see below).
 
 ## C. Performing a FBMN job on GNPS
 Go to GNPS to perform a FBMN job. [Refer to that documentation] (featurebasedmolecularnetworking.md).
