@@ -1,10 +1,8 @@
 ## Introduction
 
-The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tool supported are: [MetaboScape4.0](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html), [MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/), [MZmine2](https://mzmine.github.io/), [OpenMS](https://www.openms.de/), and [XCMS3](https://github.com/sneumann/xcms).
+The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-OpenMS.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), and [XCMS](featurebasedmolecularnetworking-with-XCMS3.md).
 
-The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking)
-
-The Feature-Based Molecular Networking workflow on [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
+The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking.md)
 
 Below we are describing how to use MS-DIAL with the FBMN workflow on GNPS.
 
@@ -29,7 +27,7 @@ In MS-DIAL, a sequence of steps is performed to process the mass spectrometry da
 Please consult these resources for more details on MS-DIAL processing:
 
 - The official [MS-DIAL tutorial](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/MSDIAL-tutorial.pdf) 
-- The video tutorial about [MS-DIAL processing for Feature Based Molecular Networking](tutorials/americangutms-dial/).
+- The video tutorial about [MS-DIAL processing for Feature Based Molecular Networking](tutorials/americangut-ms-dial.md).
 
 ### Convert your LC-MS/MS Data to Open Format
 MS-DIAL accepts different input formats. Note that we recommand to first convert your files to mzML format before doing MS-DIAL processing. [See the documentation here](https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/).
@@ -84,7 +82,7 @@ You should set a appropriate MS/MS abundance cutoff. Make sure to set an intensi
 
 This is typically lower than for MS1. If you have any doubt, set it to 0.
 
-![img](img/ms-dial/set-parameters-deconvoltion.png)
+![img](img/ms-dial/set-parameters-deconvolution.png)
 
 #### 6. Set Parameters - Alignment
 
@@ -96,7 +94,7 @@ Click the “finish” button, then MS-DIAL will perform all the feature finding
 
 ![img](img/ms-dial/set-parameters-alignment.png)
 
-##### Export or/and submit the files needed for Feature-Based Molecular Networking on GNPS:
+### Export or/and submit the files needed for Feature-Based Molecular Networking on GNPS:
 
 - a feature table with ion intensities (.CSV file format)
 
@@ -117,22 +115,24 @@ Set the directory and file name, then click “export”. As a result, you will 
 If you want a feature table based on peak area, check the “Raw data matrix (Area)”.
 
 See an example of files outputted by the export module using the workflow:
-[here](tutorials/AG_tutorial_files/).
+[here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files/)):
 
 ### Feature Based Molecular Networking in GNPS
 
 The workflow for Feature Based Molecular Networking in GNPS is different from the classic molecular networking workflow. [Access the FBMN workflow here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D) (You need to be logged in first !)
 
-More information on the Feature Based Molecular Networking workflow on GNPS [can be obtained on that documentation page](featurebasedmolecularnetworking)
+More information on the Feature Based Molecular Networking workflow on GNPS [can be obtained on that documentation page](featurebasedmolecularnetworking.md)
 
-Basically, you will need to upload the files ouputted by the MS-DIAL processing (test files are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files)):
+Basically, you will need to upload the files ouputted by the MS-DIAL processing (test files are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files/)):
 
 1. Feature Table from above
 2. MGF for MS/MS from above
-3. Metadata table - described [here](networking#metadata)
+3. Metadata table - requirements are described [here](networking.md#metadata), but note that **important** note below:
 
-Here is an example MS-DIAL networking [job](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=xxxxxx) from a subset of the American Gut Project.
+**IMPORTANT FOR METADATA WITH MS-DIAL**: the "filename" in the metadata files for FBMN with MS-DIAL should not contain the file extension (ex: "sample1.mzML" must be "sample1").
+
+Here is an example MS-DIAL networking [job](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=4102bb6f394f4710a56f5fe1c7490f1e) from a subset of the American Gut Project.
 
 ## Tutorials
 
-See our [MS-DIAL tutorial](tutorials/americangutms-dial) on using Feature Based Molecular Networking for the American Gut Project sample.
+See our [MS-DIAL tutorial](tutorials/americangut-ms-dial.md) on using Feature Based Molecular Networking for the American Gut Project sample.

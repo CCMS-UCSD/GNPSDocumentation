@@ -1,5 +1,10 @@
 ## Change Log
 
+
+### 4/5/2019
+* [New documentation for Feature-Based Molecular Networking (FBMN)](featurebasedmolecularnetworking.md).
+* New tools available with the FBMN [OpenMS](featurebasedmolecularnetworking-with-OpenMS.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [XCMS](featurebasedmolecularnetworking-with-XCMS3.md), and [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md).
+
 ### 3/9/2019
 
 * Adding qiime2 qza and emperor output for Feature Based Molecular Networking
