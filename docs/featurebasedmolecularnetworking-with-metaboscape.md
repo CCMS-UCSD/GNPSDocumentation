@@ -29,6 +29,7 @@ Installing [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-s
 7. Search molecular formula with SmartFormula**.
 
 ![img](img/metaboscapeexportforgnps/Metabo_2.PNG)
+
 8. Right-click on the Bucket Table and select *Export to GNPS format* (.mgf/.csv).
 
 ![img](img/metaboscapeexportforgnps/Metabo_3.png)
