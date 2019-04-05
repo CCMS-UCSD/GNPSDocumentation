@@ -26,7 +26,7 @@ Install [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-sepa
 4. Sort buckets based on the presence of MS/MS.
 5. Select only the buckets that have MS/MS associated with.
 6. Perform *Automatic molecular formula generation using SmartFormula* (see **3.11.1** in **MetaboScape 2.0 tutorial documentation**) on these buckets. Make sure to select *Selected Buckets only*.
-7. Search molecular formula with SmartFormula**.
+7. Search molecular formula with **SmartFormula**.
 
 ![img](img/metaboscapeexportforgnps/Metabo_2.PNG)
 
