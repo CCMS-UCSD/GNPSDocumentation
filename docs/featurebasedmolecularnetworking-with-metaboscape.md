@@ -8,7 +8,7 @@ Below we describe how to use MetaboScape with the FBMN workflow on GNPS.
 
 ## Using MetaboScape and the Feature-Based Molecular Networking
 
-MetaboScape can be used to process LC-MS/MS Bruker Daltonics data files (.d format). The results of MetaboScape can be used to run the Feature-Based Molecular Network workflow on [GNPS] (http://gnps.ucsd.edu).
+MetaboScape can be used to process LC-MS/MS Bruker Daltonics data files (.d format). The results of MetaboScape can be used to run the FBMN workflow on [GNPS](http://gnps.ucsd.edu).
 
 **Requirements:** 
 Installing [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html) (version 2.0 minimum) and having a valid licence. 
