@@ -4,7 +4,7 @@ The Feature-Based Molecular Networking (FBMN) is a computational method that bri
 
 The main documentation for FBMN [can be accessed here](featurebasedmolecularnetworking.md).
 
-We describe below how to use MetaboScape with the FBMN workflow on GNPS.
+Below we describe how to use MetaboScape with the FBMN workflow on GNPS.
 
 ## Using MetaboScape and the Feature-Based Molecular Networking
 
