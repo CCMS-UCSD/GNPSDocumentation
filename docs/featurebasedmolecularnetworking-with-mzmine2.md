@@ -160,7 +160,7 @@ Select the last "filtered aligned peaklist" and Go to Menu: "Peak list methods" 
 ![img](img/mzmine/gnps_export_module_v2.png)
 
 See an example of files outputted by the export module using the workflow:
-[here](tutorials/AG_tutorial_files/).
+[here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files).
 
 ##### The files can be uploaded to the GNPS web-platform and Feature-Based Molecular Networking job can be directly launched
 
@@ -193,7 +193,7 @@ The workflow for Feature Based Molecular Networking in GNPS is different from th
 
 The main documentation of the Feature Based Molecular Networking workflow on GNPS [can be consulted on that page](featurebasedmolecularnetworking.md)
 
-Basically, you will need to upload the files ouputted by the MZmine2 processing (test files are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files/)):
+Basically, you will need to upload the files ouputted by the MZmine2 processing (test files are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files)):
 
 1. Feature Table from above
 2. MGF for MS/MS from above

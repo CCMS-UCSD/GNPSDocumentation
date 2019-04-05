@@ -13,7 +13,7 @@ This work builds on the efforts of our many colleagues, please make sure to cite
 
 Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
-The citations from the mass spectrometry processing tools you used [[MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-OpenMS.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md),and [XCMS](featurebasedmolecularnetworking-with-XCMS3.md)].
+The citations from the mass spectrometry processing tools you used [[MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-OpenMS.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), and [XCMS](featurebasedmolecularnetworking-with-XCMS3.md)].
 
 
 ## Mass Spectrometry Data Processing for the Feature Based Molecular Networking Workflow
@@ -40,7 +40,7 @@ Currently, we are recommending using the MZmine2 workflow, as it has been thorou
 
 There is a dedicated Feature-Based Molecular Networking workflow on GNPS that [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
 
-You will need three items (test files for each software are accessible [here](tutorials/AG_tutorial_files/)):
+You will need three items (test files for each software are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files)):
 
 1. The *Feature Table* with the intensity of ion features (TXT or CSV format).
 2. The *MS/MS spectral file* with the list of MS/MS spectra for the ion features (.MGF File).
