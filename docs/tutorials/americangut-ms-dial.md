@@ -34,10 +34,10 @@ These files are not needed for the tutorial but are provided here as reference f
 
 ## Required Software Installs
 
-1. FTP Client (e.g. WinSCP, DO NOT FileZilla!). [See instructions here](../fileupload/)
+1. FTP Client (e.g. WinSCP, DO NOT FileZilla!). [See instructions here](../fileupload/).
 2. [MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/) for feature detection (available only on Windows).
-3. An account on GNPS [https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash2.jsp]
-4. [Cytocape](http://www.cytoscape.org/download.php) for network visualization
+3. An account on GNPS [https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash2.jsp].
+4. [Cytocape](http://www.cytoscape.org/download.php) for network visualization.
 
 ## Video Tutorial - Running MS-DIAL for FBMN
 <iframe width="800" height="500" src="%please add the Youtube link (do we have the video?)"> </iframe>
