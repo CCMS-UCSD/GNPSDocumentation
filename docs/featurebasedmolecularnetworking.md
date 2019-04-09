@@ -53,7 +53,7 @@ You will need three items (test files are accessible [here](https://github.com/C
 
 #### Set the parameters as needed
 #### Basic Options
-![img](img/featurebasedmolecularnetworking/Basic_Options.png)
+![img](img/featurebasedmolecularnetworking/Basic_Options_2.png)
 
 | Parameter  | Description          | Default |
 | ------------- |-------------| -----|
@@ -100,7 +100,7 @@ You will need three items (test files are accessible [here](https://github.com/C
 
 There are several additional normalization options specifically for feature detection. We can normalize the features per LC/MS run and aggregate by groups with either a sum or average (recommended).
 
-![img](img/featurebasedmolecularnetworking/Advanced_Quantification_Options.png)
+![img](img/featurebasedmolecularnetworking/Advanced_Quantification_Options_2.png)
 
 
 #### Demo GNPS job of Feature Based Molecular Networking
