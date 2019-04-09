@@ -15,7 +15,7 @@ and [Carnegie Mellon University](http://mohimanilab.cbd.cmu.edu) (PA, USA).
 If you used DEREPLICATOR tools, please cite the corresponding manuscripts:
 
 **DEREPLICATOR:**
-Mohimani et al., Dereplication of Peptidic Natural Products Through Database Search of Mass Spectra, *Nature Chemical Biology*, 13, 30–37 (2017). [https://doi.org/10.1038/nchembio.2219] (https://doi.org/10.1038/nchembio.2219).
+Mohimani et al., Dereplication of Peptidic Natural Products Through Database Search of Mass Spectra, *Nature Chemical Biology*, 13, 30–37 (2017). [https://doi.org/10.1038/nchembio.2219](https://doi.org/10.1038/nchembio.2219).
 
 **DEREPLICATOR VarQuest**: Gurevich, A. et al. Increased diversity of peptidic natural products revealed by modification-tolerant database search of mass spectra. *Nature Microbiology* 3, 319–327 (2018). [https://doi.org/10.1038/s41564-017-0094-2](https://doi.org/10.1038/s41564-017-0094-2)
 
@@ -26,31 +26,30 @@ Mohimani et al., Dereplication of Peptidic Natural Products Through Database Sea
 The GitHub repository <https://github.com/ablab/npdtools> provides latest source code and release. 
 
 
-## Accessing the DEREPLICATOR tools
+## Accessing the DEREPLICATOR tools on GNPS
 
 The **DEREPLICATOR (VarQuest)**, and **DEREPLICATOR+** are available on GNPS on the [in silico tools page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-theoretical.jsp).
 
+#### STEP 1: Go to GNPS
+Go to [http://gnps.ucsd.edu](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash2.jsp), and create/login to your account.
 
-
-## Running the Dereplicator on GNPS
-
-#### Step 1 : Go to [http://gnps.ucsd.edu](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash2.jsp), and create/login to your account.
-
-#### Step 2 : Find the "In Silico Tools" box and click on "Browse Tools".
+#### STEP 2: Access DEREPLICATOR
+Find the "In Silico Tools" box and click on "Browse Tools".
 
 ![img](img/dereplicator/Figure1.png)
 
-#### Step 3 : Choose either DEREPLICATOR (VarQuest) or DEREPLICATOR+.
+Choose either DEREPLICATOR (VarQuest) or DEREPLICATOR+.
 
 ![img](img/dereplicator/Figure2.png)
 
-#### Step 4 : Select/Import a mass spectrometry file
-The input format accepted are mzML/mzXML/MGF. 
-Note that have the option to import an existing GNPS dataset (by clicking on "Share Files") or upload your own data (by clicking on "Upload Files"). See the corresponding GNPS documentation for FTP upload.
+#### STEP 3: SELECT YOUR FILES
+**Select/Import a mass spectrometry file**:
+The input format accepted are mzML/mzXML/MGF. Note that have the option to import an existing GNPS dataset (by clicking on "Share Files") or upload your own data (by clicking on "Upload Files"). See the corresponding GNPS documentation for FTP upload.
 
 After getting done with selecting files, click on Finish Selection.
 
-#### Step 5 : Configure the parameters for the DEREPLICATOR job
+#### STEP 4: CONFIGURE
+**Configure the parameters for the DEREPLICATOR job**:
 Select a title for your job, and adjust parameters depending on your data and the mass spectrometer used.
 
 ![img](img/dereplicator/Figure3.png)
@@ -89,7 +88,9 @@ Select an email. Then click on submit.
 
 You will soon get an email with the link to the results when your job is finished. You can also check the status of your job in "Jobs" section.
 
-#### Step 6 : See the DEREPLICATOR job status
+#### STEP 5: VIEW RESULTS
+**See the DEREPLICATOR job status**:
+
 The status of the job can be vizualized in your account job list, and through the link in provided in email you will received when the job is done.
 
 The job can be *Cloned*, for further parameters modifications. Summary Statistics and Workflow Parameters can be consulted on the respective links.
@@ -100,7 +101,8 @@ Clic on the *View All PSM* (Peptide-Spectrum Match) to have detailed view of the
 
 ![img](img/dereplicator/Figure4.png)
 
-#### Step 7 : Explore the DEREPLICATOR annotations
+#### STEP 6: ANALYSE 
+**Explore the DEREPLICATOR annotations:**
 Annotations can be sorted using various column (usually the score or the p-value), or a compound name can be searched with the filter function.
 
 ![img](img/dereplicator/Figure5.png)
@@ -119,7 +121,8 @@ Click on a blue peak to highlighted the corresponding fragment on the molecular 
 
 ![img](img/dereplicator/Figure7.png)
 
-#### Step 8 : Validate a DEREPLICATOR annotation
+#### STEP 7: VALIDATE
+**Validate a DEREPLICATOR annotation**:
 More than 60% of Dereplicator annotations on GNPS Massive datasets (April 2016) were manually curated and [results can be consulted here](https://bix-lab.ucsd.edu/display/Public/Insilico+Peptidic+Natural+Products+Dereplicator+Evaluation+of+GNPS+Massive+datasets).
 
 ##### Validating a DEREPLICATOR annotation (MSI level 1):
