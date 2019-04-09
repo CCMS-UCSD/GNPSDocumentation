@@ -1,6 +1,6 @@
 ## Tutorial Using MetaboScape and GNPS
 
-In this tutorial you will be guided into running MetaboScape for the Feature Based Molecular Network (FBMN) workflow on GNPS to reproduce some findings of the [Coffee project](http://humanfoodproject.com/americangut/). *Is there any publication to this project?*
+In this tutorial you will be guided into running MetaboScape for the Feature Based Molecular Network (FBMN) workflow on GNPS to reproduce some findings of the [Coffee project](http://humanfoodproject.com/americangut/).
 
 ## Learning Objectives
 
