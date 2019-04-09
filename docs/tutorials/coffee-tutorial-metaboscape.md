@@ -1,6 +1,6 @@
 ## Tutorial Using MetaboScape and GNPS
 
-In this tutorial you will be guided into running MetaboScape for the Feature Based Molecular Network (FBMN) workflow on GNPS to reproduce some findings of the [Coffee project](http://humanfoodproject.com/americangut/).
+In this tutorial you will be guided into running MetaboScape for the Feature Based Molecular Network (FBMN) workflow on GNPS to reproduce some findings of the Coffee project.
 
 ## Learning Objectives
 
@@ -11,7 +11,7 @@ In this tutorial you will be guided into running MetaboScape for the Feature Bas
 
 We will use a subset of the LC-MS/MS analysis from the Coffee project. 
 
-*Sample description still needed*. 
+*Sample description still needed?*. 
 
 MetaboScape will be used to detect features and output a feature quantification table (.csv format) and a MS2 spectral file (.mgf format). The feature quantification table contains the intensity values for every aligned peak accross the samples, while the MS2 spectral file contains a single MS2 representing each aligned peak.
 
