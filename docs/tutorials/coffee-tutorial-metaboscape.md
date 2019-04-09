@@ -11,7 +11,7 @@ In this tutorial you will be guided into running MetaboScape for the Feature Bas
 
 We will use a subset of the LC-MS/MS analysis from the Coffee project. 
 
-*sample description*. 
+*Sample description*. 
 
 MetaboScape will be used to detect features and output a feature quantification table (.csv format) and a MS2 spectral file (.mgf format). The feature quantification table contains the intensity values for every aligned peak accross the samples, while the MS2 spectral file contains a single MS2 representing each aligned peak.
 
@@ -20,7 +20,7 @@ MetaboScape will be used to detect features and output a feature quantification 
 LC-MS/MS data and files can be found in the MassIVE dataset.
 
 ## MetaboScape representative output files
-These files are not needed for the tutorial but are provided here as reference files, or if you want to by pass the MetaboScape processing.
+These files are not needed for the tutorial but are provided here as reference files, or if you want to bypass the MetaboScape processing.
 
 |     File Type    | Download Link          |
 | ------------- |------------- |
@@ -33,17 +33,17 @@ These files are not needed for the tutorial but are provided here as reference f
 2. MetaboScape, commercially available from Bruker. 
 3. [Cytocape](http://www.cytoscape.org/download.php) for network visualization.
 
-## Runing MetaboScape
+## Running MetaboScape
 Refer to the detailed step-by-step procedure to run Metaboscape here[MetaboScapeexportforGNPSSiriusmodule.md].
 
 ## Video Tutorial - Run MetaboScape 
 
 ## Running GNPS
 
-[See the document to produce molecular network at GNPS with the output of the coffee data, go to this link](featurebasedgnps.md)
+[See the document to produce molecular network at GNPS with the output of the coffee data, go to this link](featurebasedgnps.md).
 
 ## Running Cytoscape
 
-[See the documentation to perform visualization of the molecular networking on the coffee data](MetaboScapeexportforGNPSSiriusmodule.md)
+[See the documentation to perform visualization of the molecular networking on the coffee data](MetaboScapeexportforGNPSSiriusmodule.md).
 
 
