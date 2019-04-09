@@ -29,7 +29,7 @@ These files are not needed for the tutorial but are provided here as reference f
 
 ## Required Software Installations
 
-1. FTP Client (e.g. WinSCP, DO NOT FileZilla!) [See instructions here](http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/).
+1. FTP Client (e.g. WinSCP, DO NOT USE FileZilla!) [See instructions here](http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/).
 2. MetaboScape, commercially available from Bruker. 
 3. [Cytocape](http://www.cytoscape.org/download.php) for network visualization.
 
