@@ -44,6 +44,6 @@ See the documentation to produce molecular network at GNPS with the output of th
 
 ## Running Cytoscape
 
-See the documentation to perform visualization of the molecular networking on the data of the Coffee Project [here](MetaboScapeexportforGNPSSiriusmodule.md).
+See the documentation to perform visualization of the molecular networking on the data of the Coffee Project [here](featurebasedmolecularnetworking-cytoscape.md).
 
 
