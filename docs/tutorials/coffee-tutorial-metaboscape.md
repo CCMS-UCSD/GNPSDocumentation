@@ -15,17 +15,31 @@ We will use a subset of the LC-MS/MS analysis from the Coffee project. *sample d
 
 LC-MS/MS data and files can be found in the MassIVE dataset.
 
+## MetaboScape representative output files
+These files are not needed for the tutorial but are provided here as reference files, or if you want to by pass the MetaboScape processing.
+
+|     File Type    | Download Link          |
+| ------------- |------------- |
+| Feature quantification table (CSV format) | [Download](https://github.com/lfnothias/GNPSDocumentation/blob/master/docs/tutorials/AG_tutorial_files/MetaboScape-GNPS-Coffee_Tutorial_msmsonly_featuretable.csv) |
+| MS2 spectral file (MGF format) | [Download](https://github.com/lfnothias/GNPSDocumentation/blob/master/docs/tutorials/AG_tutorial_files/MetaboScape-GNPS-Coffee_Tutorial.mgf) |
+
 ## Required Software Installations
 
 1. FTP Client (e.g. WinSCP, DO NOT FileZilla!) [See instructions here](http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/).
 2. MetaboScape, commercially available from Bruker. 
 3. [Cytocape](http://www.cytoscape.org/download.php) for network visualization.
 
+## Runing MetaboScape
+Refer to the detailed step-by-step procedure to run Metaboscape here[MetaboScapeexportforGNPSSiriusmodule.md].
 
 ## Video Tutorial - Run MetaboScape 
 
-## Follow-up Tutorial in GNPS
+## Running GNPS
 
-Checkout the follow-up [tutorial](featurebasedgnps.md) on how to take the output of MetaboScape to produce a molecular network at GNPS.
+[See the document to produce molecular network at GNPS with the output of the coffee data, go to this link](featurebasedgnps.md)
 
-Other tutorials are available from the main page of [Feature Based Molecular Networking Workflow](../featurebasedmolecularnetworking). 
+## Running Cytoscape
+
+[See the documentation to perform visualization of the molecular networking on the coffee data](MetaboScapeexportforGNPSSiriusmodule.md)
+
+
