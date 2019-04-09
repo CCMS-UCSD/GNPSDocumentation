@@ -31,7 +31,7 @@ These files are not needed for the tutorial but are provided here as reference f
 
 1. FTP Client (e.g. WinSCP, DO NOT USE FileZilla!) [See instructions here](http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/).
 2. MetaboScape, commercially available from Bruker. 
-3. [Cytocape](http://www.cytoscape.org/download.php) for network visualization.
+3. [Cytoscape](http://www.cytoscape.org/download.php) for network visualization.
 
 ## Run MetaboScape
 Refer to the detailed step-by-step procedure to run Metaboscape [here](../featurebasedmolecularnetworking-with-metaboscape.md).
