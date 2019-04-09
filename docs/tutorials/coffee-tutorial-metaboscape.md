@@ -34,7 +34,7 @@ These files are not needed for the tutorial but are provided here as reference f
 3. [Cytocape](http://www.cytoscape.org/download.php) for network visualization.
 
 ## Run MetaboScape
-Refer to the detailed step-by-step procedure to run Metaboscape [here](MetaboScapeexportforGNPSSiriusmodule.md).
+Refer to the detailed step-by-step procedure to run Metaboscape [here](featurebasedmolecularnetworking-with-metaboscape.md).
 
 ## Video Tutorial - Run MetaboScape 
 
