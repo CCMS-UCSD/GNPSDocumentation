@@ -4,7 +4,7 @@ In this tutorial you will be guided into running MetaboScape for the Feature Bas
 
 ## Learning Objectives
 
-1. Run MetaboScape feature detection on LC-MS/MS data, and output a feature quantification table and a MS2 spectral file. [See the tutorial here](../featurebasedmolecularnetworking.md)
+1. Run MetaboScape feature detection on LC-MS/MS data, and receive a feature quantification table and a MS2 spectral file as an output. [See the tutorial here](../featurebasedmolecularnetworking.md).
 2. Run GNPS and visualize output in Cytoscape.
 
 ## Experimental Setup
