@@ -19,7 +19,7 @@ MetaboScape will be used to detect features and output a feature quantification 
 
 LC-MS/MS data and files can be found in the MassIVE dataset.
 
-## MetaboScape representative output files
+## MetaboScape Representative Output Files
 These files are not needed for the tutorial but are provided here as reference files, or if you want to bypass the MetaboScape processing.
 
 |     File Type    | Download Link          |
@@ -33,16 +33,16 @@ These files are not needed for the tutorial but are provided here as reference f
 2. MetaboScape, commercially available from Bruker. 
 3. [Cytocape](http://www.cytoscape.org/download.php) for network visualization.
 
-## Running MetaboScape
+## Run MetaboScape
 Refer to the detailed step-by-step procedure to run Metaboscape [here](MetaboScapeexportforGNPSSiriusmodule.md).
 
 ## Video Tutorial - Run MetaboScape 
 
-## Running GNPS
+## Run GNPS
 
 See the documentation to produce molecular network at GNPS with the output of the Coffee Project [here](featurebasedmolecularnetworking.md).
 
-## Running Cytoscape
+## Run Cytoscape
 
 See the documentation to perform visualization of the molecular networking on the data of the Coffee Project [here](featurebasedmolecularnetworking-cytoscape.md).
 
