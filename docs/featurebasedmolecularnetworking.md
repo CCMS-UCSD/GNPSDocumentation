@@ -108,6 +108,12 @@ There are additional normalization options specifically for the FBMN workflow:
 
 ![img](img/mzmine/quant_options.png)
 
+## Dereplicator - Insilico Peptidic Natural Products Tool
+
+The Insilico Peptidic Natural Products Dereplicator is a bioinformatic tool that allows the annotation of known peptidic natural products in MS/MS data using in silico fragmentation tree. This workflow is also included into the Feature Based Molecular Network workflow, then you have the option to use it by clicking into Advanced External tools. After your job is complete you can explore your results and even *clone* the Dereplicator job and modify the parameters.  
+
+Check out the [**full documentation** for further description settings and **citations**](https://ccms-ucsd.github.io/GNPSDocumentation/dereplicator/).
+
 ### Video Tutorial - Analyze Feature Based Molecular Networking in GNPS
 
 This video presents 
