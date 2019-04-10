@@ -1,6 +1,6 @@
 ## Introduction
 
-The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-OpenMS.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), and [XCMS](featurebasedmolecularnetworking-with-XCMS3.md).
+The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), and [XCMS](featurebasedmolecularnetworking-with-xcms3.md).
 
 The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking.md)
 
@@ -36,8 +36,7 @@ high resolution LC/MS](https://doi.org/10.1186/1471-2105-9-504) BMC
 Bioinformatics, 9:504 (2008).
 
 Smith, C.A., Want, E.J., O'Maille, G., Abagyan,R., Siuzdak, G. [XCMS: Processing
-mass spectrometry data for metabolite profiling using nonlinear peak alignment,
-matching and identification.](https://pubs.acs.org/doi/10.1021/ac051437y)
+mass spectrometry data for metabolite profiling using nonlinear peak alignment, matching and identification.](https://pubs.acs.org/doi/10.1021/ac051437y)
 Analytical Chemistry, 78, 779–787 (2006).
 
 
@@ -115,5 +114,4 @@ Here is an example [FBMN job with XCMS3](https://proteomics2.ucsd.edu/ProteoSAFe
 
 ## Tutorials
 
-See our [XCMS3 tutorial](tutorials/americangutxcms3.md) on using Feature Based
-Molecular Networking for a subset of the American Gut Project sample.
+See our [XCMS3 tutorial](tutorials/americangutxcms3.md) on using Feature Based Molecular Networking for a subset of the American Gut Project sample.
