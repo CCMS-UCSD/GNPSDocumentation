@@ -89,8 +89,10 @@ For each *consensusElement* in the consensusXML file, the *GNPSExport* produces 
 `GNPSExport --help`
 
 ```
-GNPSExport -ini iniFile-GNPSExport.ini -in_cm filefilter.consensusXML
-           -in_mzml inputFile0.mzML inFiles/inputFile1.mzML -out GNPSExport_output.mgf
+GNPSExport -ini iniFile-GNPSExport.ini 
+			 -in_cm filefilter.consensusXML
+           -in_mzml inputFile0.mzML inputFile1.mzML 
+           -out GNPSExport_output.mgf
 ```
 
 ##### Options for the consensus MS/MS spectra: `output_type`
