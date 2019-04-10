@@ -118,3 +118,8 @@ See our [XCMS3 tutorial](tutorials/americangutxcms3.md) on using Feature Based M
 
 ## Page contributors
 Madeleine Ernst (UCSD), Ricardo da Silva (UCSD), Louis Felix Nothias (UCSD), Johannes Reiner (Eurac Research)
+
+## Contribute to the Documentation
+
+- For informations/feature request, please open an "Issue" on the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) GitHub repository.
+- To contribute directly to the GNPS documentation, fork the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request".

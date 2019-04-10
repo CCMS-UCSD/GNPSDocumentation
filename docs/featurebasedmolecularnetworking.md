@@ -127,23 +127,23 @@ There are additional normalization options specifically for the FBMN workflow:
 
 ![img](img/mzmine/quant_options.png)
 
-## Dereplicator - Insilico Peptidic Natural Products Tool
+### Dereplicator - Insilico Peptidic Natural Products Tool
 
 The Insilico Peptidic Natural Products Dereplicator is a bioinformatic tool that allows the annotation of known peptidic natural products in MS/MS data using in silico fragmentation tree. This workflow is also included into the Feature Based Molecular Network workflow, then you have the option to use it by clicking into Advanced External tools. After your job is complete you can explore your results and even *clone* the Dereplicator job and modify the parameters.  
 
 Check out the [**full documentation** for further description settings and **citations**](https://ccms-ucsd.github.io/GNPSDocumentation/dereplicator/).
 
-### Video Tutorial - Analyze Feature Based Molecular Networking in GNPS
-
-This video presents 
-<iframe width="800" height="500" src="https://www.youtube.com/embed/NTkQ0fS1aug"> </iframe>
-
 ### Feature-Based Molecular Networking in Cytoscape
 
 Cytoscape is an open source software platform used to visualize, analyze and annotate molecular networks from GNPS. [See the documentation here](featurebasedmolecularnetworking-cytoscape.md)
 
-#### Demo GNPS job of Feature Based Molecular Networking
+### Demo GNPS job of Feature Based Molecular Networking
 [Here is an example FBMN](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=52a390c8eb654b7fa8d61a1c7a4aaab5) job with files resulting from MZmine2 processing of a subset of the [American Gut Project] (http://humanfoodproject.com/americangut/).
+
+### Video Tutorial - Analyze Feature Based Molecular Networking in GNPS
+
+This video presents 
+<iframe width="800" height="500" src="https://www.youtube.com/embed/NTkQ0fS1aug"> </iframe>
 
 ## Tutorials
 
@@ -156,7 +156,7 @@ This work builds on the efforts of our many colleagues, please make sure to cite
 Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
 ## Page contributors
-Louis Felix Nothias (UCSD), Ming Wang (UCSD, Laura-Isobel McCall (University of Oklahoma), Mauricio Caravallo (UCSD)
+Louis Felix Nothias (UCSD), Ming Wang (UCSD, Laura-Isobel McCall (University of Oklahoma), Andrés Mauricio Caraballo Rodríguez (UCSD)
 
 ## TO DO 
 - here

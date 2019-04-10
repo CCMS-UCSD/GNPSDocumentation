@@ -140,3 +140,8 @@ See our [MS-DIAL tutorial](tutorials/americangut-ms-dial.md) on using Feature Ba
 
 ## Page contributors
 Kyo Bin Kang (affiliation), Heejung Yang (affiliation) Louis Felix Nothias (UCSD)
+
+## Contribute to the Documentation
+
+- For informations/feature request, please open an "Issue" on the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) GitHub repository.
+- To contribute directly to the GNPS documentation, fork the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request".
