@@ -44,4 +44,4 @@ Install [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-sepa
 Go to GNPS to perform a FBMN job. [Refer to that documentation](featurebasedmolecularnetworking.md).
 
 ## D. Step-by-Step Tutorial
-See the [step-by-step tutorial using MetaboScape 2.0 and the FBMN](tutorials/coffee-tutorial-metaboscape.md) for the coffee tutorial (part of the **MetaboScape documentation**).
+See the [step-by-step tutorial using MetaboScape 2.0 and the FBMN](tutorials/coffee-tutorial-metaboscape.md) for the Coffee tutorial (part of the **MetaboScape documentation**).
