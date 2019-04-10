@@ -17,17 +17,17 @@ Online documentation for GNPS web-platform is available [here](https://bix-lab.u
 
 ## A. Profile Analysis
 1. Open *Profile Analysis* and process your data following *Profile Analysis* documentation to generate the Bucket Table.
-2. Define groups and/or attributes to enhance downstream data analysis (see **3.3.4** in **MetaboScape 2.0 tutorial**). The groups and/or attributes defined in *Profile Analysis* will be visualized in the molecular networks using pie chart diagram.
+2. Define groups and/or attributes to enhance downstream data analysis. The groups and/or attributes defined in *Profile Analysis* will be visualized in the molecular networks using pie chart diagram.
 3. **IMPORTANT**: Create one common group named 'SAMPLE' for all the samples. It will be used to enhance molecular networking visualization.
-4. Export the Bucket Table to MetaboScape (see **3.1** in **MetaboScape 2.0 tutorial documentation**).
+4. Export the Bucket Table to MetaboScape.
 
 ## B. MetaboScape
 1. Open MetaboScape 2.0.
-2. Open the project in MetaboScape (see **3.7** in **MetaboScape 2.0 tutorial documentation**).
-3. Assign MS/MS spectra to the Bucket Table (see **3.7** in **MetaboScape 2.0 tutorial documentation**).
+2. Open the project in MetaboScape.
+3. Assign MS/MS spectra to the Bucket Table.
 4. Sort buckets based on the presence of MS/MS.
 5. Select only the buckets that have MS/MS associated with.
-6. Perform *Automatic molecular formula generation using SmartFormula* (see **3.11.1** in **MetaboScape 2.0 tutorial documentation**) on these buckets. Make sure to select 'selected buckets only'.
+6. Perform *Automatic molecular formula generation using SmartFormula* on these buckets. Make sure to select 'selected buckets only'.
 
 ![img](img/metaboscapeexportforgnps/Metabo_2.PNG)
 Figure X. Search molecular formula with SmartFormula.
