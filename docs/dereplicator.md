@@ -180,5 +180,5 @@ Check out the [legacy documentation for DEREPLICATOR (VarQuest)](https://bix-lab
 - Documentation for Dereplicator+
 - Provide new documentation link on Legacy documentation and GNPS in silico page.
 
-## Documentation Page Contributors
-Louis Felix Nothias, Hosein Mohimani.
+## Page contributors
+Louis Felix Nothias (UCSD), Hosein Mohimani (Carnegie Mellon Univ.)

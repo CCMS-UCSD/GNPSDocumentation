@@ -115,3 +115,6 @@ Here is an example [FBMN job with XCMS3](https://proteomics2.ucsd.edu/ProteoSAFe
 ## Tutorials
 
 See our [XCMS3 tutorial](tutorials/americangutxcms3.md) on using Feature Based Molecular Networking for a subset of the American Gut Project sample.
+
+## Page contributors
+Madeleine Ernst (UCSD), Ricardo da Silva (UCSD), Louis Felix Nothias (UCSD), Johannes Reiner (Eurac Research)

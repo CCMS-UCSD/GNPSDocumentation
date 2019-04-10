@@ -107,3 +107,6 @@ GNPSExport -ini iniFile-GNPSExport.ini
 - **All MS/MS**: `full_spectra` - For each *consensusElement*, the GNPSExport will output *All MS/MS scans*.
 
 Note that *mass accuracy* and the *retention time window* for the pairing between MS/MS scans and a LC-MS feature orconsensusElement is defined at the *IDMapper tool* step.
+
+## Page contributors
+Louis Felix Nothias (UCSD), Abinesh Sarvepalli (UCSD)

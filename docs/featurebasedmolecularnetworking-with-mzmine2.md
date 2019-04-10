@@ -143,7 +143,7 @@ Go to Menu: Peak list methods / Filtering / Peak list row filter / Select the fi
 
 **IMPORTANT:** if you use a filter, we recommend using the filter "Reset the peak number ID"
 
-**NOTE** that this step was mandatory in the previous version of FBMN with MZmine2, now it is now optional.
+**IMPORTANT** Note that this step was mandatory in the previous version of FBMN with MZmine2, now the filter "Keep only peaks with MS2 scan (GNPS)" is optional.
 
 ![img](img/mzmine/ms2_filtering.png)
 
@@ -219,3 +219,6 @@ Cytoscape is an open source software platform used to visualize, analyze and ann
 ## Tutorials
 
 See our [tutorial on using MZmine2](tutorials/americangutmzmine.md) for FBMN analysis of a cohort from the [American Gut Project] (http://humanfoodproject.com/americangut/), and our [tutorial on running a FBMN analysis on GNP](tutorials/featurebasedgnps.md).
+
+## Page contributors
+Louis Felix Nothias (UCSD), Daniel Petras (UCSD), Ming Wang (UCSD)

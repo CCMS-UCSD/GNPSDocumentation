@@ -17,7 +17,7 @@ The citations from the mass spectrometry processing tools you used [[MZmine2](fe
 
 ## Mass Spectrometry Data Processing for the Feature Based Molecular Networking Workflow
 
-In brief, mass spectrometry processing softwares have been adapted to export files that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. These softwares and their main features are presented in the table below, along with a step-by-step documentation to use for FBMN on GNPS (FBMN Documnetation):
+In brief, mass spectrometry processing softwares have been adapted to export two files (*feature quantification table* and *MS/MS spectral file*) that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. These softwares and their main features are presented in the table below, along with a step-by-step documentation to use for FBMN on GNPS (FBMN Documnetation):
 
 |  Processing tool | FBMN Documentation  | Interface  |  Platform | Code availability|Target user|
 |---|---|---|---|---|---|
@@ -34,6 +34,7 @@ In brief, mass spectrometry processing softwares have been adapted to export fil
 
 Currently, we are recommending using the MZmine2 workflow, as it has been thoroughly tested. [See the documentation here](featurebasedmolecularnetworking-with-mzmine2.md) and the following [MZmine2 video tutorial:](tutorials/americangutmzmine.md)
 
+
 ## The Feature Based Molecular Networking Workflow in GNPS
 
 There is a dedicated Feature-Based Molecular Networking workflow on GNPS that [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
@@ -44,8 +45,26 @@ You will need three items (test files for each software are accessible [here](ht
 2. The *MS/MS spectral file* with the list of MS/MS spectra for the ion features (.MGF File).
 3. [Optional] the *Metadata table* - described [here](networking.md#metadata)
 
+## SuperQuick Feature Based Molecular Networking Workflow
 
-#### Overview of the Feature Based Molecular Networking Workflow
+
+A simplified interace for Super Quick web interace for FBMN [is available here](http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking).
+
+
+
+![img](img/featurebasedmolecularnetworking/superquick_fbmn.png)
+
+###Running the SuperQuick FBMN
+1. Indicate your email and your GNPS Credentials.
+2. Select the 'Feature Generation tool'.
+3. Select the parameters preset.
+4. Drag and drop your "feature quantification table" and "MS/MS spectral file" (.MGF). See the respective documentation for FBMN each tool. 
+5. Optional. Drag and drop a [metadata table](networking.md#metadata).
+6. Click on "Analyze Uploaded Files with GNPS Molecular Networking".
+
+While this SuperQuick FBMN interface is convenient for quick analysis, we recommend using the standard FBMN workflow presented below that made possible to modify all the workflow parameters.
+
+### Overview of the "standard" Feature Based Molecular Networking Workflow
 ![img](img/featurebasedmolecularnetworking/overview.png)
 
 #### Select the software used for the LC-MS/MS data processing
@@ -136,8 +155,8 @@ This work builds on the efforts of our many colleagues, please make sure to cite
 
 Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
-## Documentation contributors
+## Page contributors
 Louis Felix Nothias (UCSD), Ming Wang (UCSD, Laura-Isobel McCall (University of Oklahoma), Mauricio Caravallo (UCSD)
 
 ## TO DO 
-- Provide link to [Super Quick Start Page] (superquickstart.md)
+- here
