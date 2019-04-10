@@ -54,9 +54,11 @@ See the documentation to perform visualization of the molecular networking on th
     * Import the bucket table (MS/MS only) exported from MetaboScape. Go to *File/Import/Table/File* - select the .csv file.
 
 ![img](../img/metaboscapeexportforgnps/Cyto3.PNG)
+
 Figure X. Import the molecular network topology.
 
 ![img](../img/metaboscapeexportforgnps/Cyto6.PNG)
+
 Figure X. Node table import interface.
 
 4. Configure the Cytoscape style.
@@ -64,6 +66,7 @@ Figure X. Node table import interface.
     * For the *Size* properties. Select the column *SAMPLE* and click *Continuous Mapping* for the mapping type.
 
 ![img](..//img/metaboscapeexportforgnps/Cyto7.PNG)
+
 Figure X. Configure the molecular network style.
 
 5. Visualizing the bucket table as a pie chart diagram. For the *Image/Chart* properties. Click on the *Def.* box. 
@@ -71,9 +74,11 @@ Figure X. Configure the molecular network style.
     * Click on the option *Charts/option* spreadsheet, and select the color-code for each group.
 
 ![img](../img/metaboscapeexportforgnps/Cyto8.PNG)
+
 Figure X. Pie charts configuration. Data in *Image/Chart* properties.
 
 ![img](../img/metaboscapeexportforgnps/Cyto9.PNG)
+
 Figure X. Pie charts configuration. Options in *Image/Chart* properties.
 
 6. Visualize the MS/MS spectral library annotations (make sure *ChemViz2* is installed).
@@ -81,12 +86,15 @@ Figure X. Pie charts configuration. Options in *Image/Chart* properties.
     * Right click on the nodes and select */Apps/Cheminformatics/Show compounds table*, or alternatively */Apps/Cheminformatics/Show structures for selected nodes* or */Apps/Cheminformatics/Paint structures for selected nodes*.
 
 ![img](../img/metaboscapeexportforgnps/Cyto10.PNG)
+
 Figure X. Molecular networks visualization with molecular formula annotation (node name).
 
 ![img](../img/metaboscapeexportforgnps/Cyto12.PNG)
+
 Figure X. View of compounds structures for spectral library MS/MS annotation in the molecular networks.
 
 ![img](../img/metaboscapeexportforgnps/Cyto13.PNG)
+
 Figure X. Molecular networks with MS/MS spectral annotation.
 
 ## Page contributors
