@@ -88,3 +88,6 @@ Figure X. View of compounds structures for spectral library MS/MS annotation in 
 
 ![img](img/metaboscapeexportforgnps/Cyto13.PNG)
 Figure X. Molecular networks with MS/MS spectral annotation.
+
+## Page contributors
+Louis Felix Nothias (UCSD), Tam Dang (Tech. Univ. Berlin), Kevin Ngoc (UCSD).
