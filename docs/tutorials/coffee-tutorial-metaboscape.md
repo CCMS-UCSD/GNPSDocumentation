@@ -55,11 +55,11 @@ See the documentation to perform visualization of the molecular networking on th
 
 ![img](../img/metaboscapeexportforgnps/Cyto3.PNG)
 
-Figure X. Import the molecular network topology.
+Figure 1. Import the molecular network topology.
 
 ![img](../img/metaboscapeexportforgnps/Cyto6.PNG)
 
-Figure X. Node table import interface.
+Figure 2. Node table import interface.
 
 4. Configure the Cytoscape style.
     * For the *Label* properties. Select the column *MOLECULAR_FORMULA* and click *Passthrough Mapping* for the mapping type.
@@ -67,7 +67,7 @@ Figure X. Node table import interface.
 
 ![img](..//img/metaboscapeexportforgnps/Cyto7.PNG)
 
-Figure X. Configure the molecular network style.
+Figure 3. Configure the molecular network style.
 
 5. Visualizing the bucket table as a pie chart diagram. For the *Image/Chart* properties. Click on the *Def.* box. 
     * Click on the *Charts* spreadsheet, and select the group for visualization.
@@ -75,11 +75,11 @@ Figure X. Configure the molecular network style.
 
 ![img](../img/metaboscapeexportforgnps/Cyto8.PNG)
 
-Figure X. Pie charts configuration. Data in *Image/Chart* properties.
+Figure 4. Pie charts configuration. Data in *Image/Chart* properties.
 
 ![img](../img/metaboscapeexportforgnps/Cyto9.PNG)
 
-Figure X. Pie charts configuration. Options in *Image/Chart* properties.
+Figure 5. Pie charts configuration. Options in *Image/Chart* properties.
 
 6. Visualize the MS/MS spectral library annotations (make sure *ChemViz2* is installed).
     * Select the nodes with MS/MS spectral library annotation (column LibraryID in the Cytoscape node table).
@@ -87,15 +87,15 @@ Figure X. Pie charts configuration. Options in *Image/Chart* properties.
 
 ![img](../img/metaboscapeexportforgnps/Cyto10.PNG)
 
-Figure X. Molecular networks visualization with molecular formula annotation (node name).
+Figure 6. Molecular networks visualization with molecular formula annotation (node name).
 
 ![img](../img/metaboscapeexportforgnps/Cyto12.PNG)
 
-Figure X. View of compounds structures for spectral library MS/MS annotation in the molecular networks.
+Figure 7. View of compounds structures for spectral library MS/MS annotation in the molecular networks.
 
 ![img](../img/metaboscapeexportforgnps/Cyto13.PNG)
 
-Figure X. Molecular networks with MS/MS spectral annotation.
+Figure 8. Molecular networks with MS/MS spectral annotation.
 
 ## Page contributors
 Louis Felix Nothias (UCSD), Tam Dang (Tech. Univ. Berlin), Kevin Ngoc (UCSD).
