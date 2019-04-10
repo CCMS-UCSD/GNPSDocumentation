@@ -21,9 +21,9 @@ BiocManager::install("xcms")
 
 See also [xcms Bioconductor package] (https://www.bioconductor.org/packages/release/bioc/html/xcms.html).
 
-Clone also the github repository
+Clone also the GitHub repository
 [https://github.com/jorainer/xcms-gnps-tools](https://github.com/jorainer/xcms-gnps-tools)
-for utility functions specific to this workflow.
+for utility functions (*XCMS-GNPS-TOOLS*) specific to this workflow.
 
 ### Citations and development
 
@@ -114,9 +114,10 @@ Here is an example [FBMN job with XCMS3](https://proteomics2.ucsd.edu/ProteoSAFe
 
 ## Tutorials
 
-See our [XCMS3 tutorial](tutorials/americangutxcms3.md) on using Feature Based Molecular Networking for a subset of the American Gut Project sample.
+See our XCMS-FBMN tutorials using python and R with a subset of the American Gut Project samples on this repository [DorresteinLaboratory/XCMS3_FeatureBasedMN/](https://github.com/DorresteinLaboratory/XCMS3_FeatureBasedMN/).
 
 ## Page contributors
+
 Madeleine Ernst (UCSD), Ricardo da Silva (UCSD), Louis Felix Nothias (UCSD), Johannes Reiner (Eurac Research)
 
 ## Contribute to the Documentation

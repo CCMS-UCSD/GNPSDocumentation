@@ -8,7 +8,7 @@ Below we describe how to use MetaboScape with the FBMN workflow on GNPS.
 
 ## Using MetaboScape and the Feature-Based Molecular Networking
 
-MetaboScape can be used to process LC-MS/MS Bruker Daltonics data files (.d file). The results of MetaboScape can be used to run the FBMN workflow on [GNPS](http://gnps.ucsd.edu).
+MetaboScape can be used to process LC-MS/MS Bruker Daltonics data files (.d file). After the processing with MetaboScape, the output files can be used to run the Feature-Based Molecular Networking workflow on GNPS [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
 
 **Requirements:** 
 Install [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html) (at least version 2.0) and have a valid license. 
@@ -44,7 +44,7 @@ Install [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-sepa
 Go to GNPS to perform a FBMN job. [Refer to that documentation](featurebasedmolecularnetworking.md).
 
 ## D. Step-by-Step Tutorial
-See the [step-by-step tutorial using MetaboScape 2.0 and the FBMN](tutorials/coffee-tutorial-metaboscape.md) for the Coffee tutorial (part of the **MetaboScape documentation**).
+See the [step-by-step tutorial using MetaboScape 2.0 and the FBMN](tutorials/coffee-tutorial-metaboscape.md) for the Coffee tutorial (part of the **MetaboScape 2.0 documentation**).
 
 ## Page contributors
 Louis Felix Nothias (UCSD), Tam Dang (Tech. Univ. Berlin), Kevin Ngoc (UCSD).

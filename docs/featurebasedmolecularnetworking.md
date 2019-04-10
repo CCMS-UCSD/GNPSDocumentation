@@ -127,18 +127,45 @@ There are additional normalization options specifically for the FBMN workflow:
 
 ![img](img/mzmine/quant_options.png)
 
-### Dereplicator - Insilico Peptidic Natural Products Tool
+### Inspecting the Results of FBMN on GNPS
+
+After the completion of the FBMN job (this will take from 10 to 10 hours depending on your number of samples and instrument), you will receive an email notification with a link to the results page (see example below).
+
+![Results](img/featurebasedmolecularnetworking/results_FBMN.png)
+#### Spectral Library Match and Network Topology Analysis
+For more information about the inspection of the molecular networking results, please refer to [the main documentation page](networkingview.md).
+
+##### Web-browser Molecular Network Visualization
+Here is an example of web-browser view of molecular networks. Click on the link to [view the interactive molecular networks](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?view=network_displayer&componentindex=56&task=51ee77f5c6d74f878e873f0b1dfe0b5f#%7B%7D).
+
+![Results](img/featurebasedmolecularnetworking/web_view_FBMN.png)
+
+#### Dereplicator - Insilico Peptidic Natural Products Tool
 
 The Insilico Peptidic Natural Products Dereplicator is a bioinformatic tool that allows the annotation of known peptidic natural products in MS/MS data using in silico fragmentation tree. This workflow is also included into the Feature Based Molecular Network workflow, then you have the option to use it by clicking into Advanced External tools. After your job is complete you can explore your results and even *clone* the Dereplicator job and modify the parameters.  
 
-Check out the [**full documentation** for further description settings and **citations**](https://ccms-ucsd.github.io/GNPSDocumentation/dereplicator/).
+Check out the [**full documentation** for further description settings and **citations**](dereplicator.md).
 
-### Feature-Based Molecular Networking in Cytoscape
+### Inspecting the Results of FBMN in Cytoscape
 
 Cytoscape is an open source software platform used to visualize, analyze and annotate molecular networks from GNPS. [See the documentation here](featurebasedmolecularnetworking-cytoscape.md)
 
 ### Demo GNPS job of Feature Based Molecular Networking
 [Here is an example FBMN](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=52a390c8eb654b7fa8d61a1c7a4aaab5) job with files resulting from MZmine2 processing of a subset of the [American Gut Project] (http://humanfoodproject.com/americangut/).
+
+### Running Network Annotation Propagation
+
+It is possible to use the results of FBMN to run Network Annotation Propagation (NAP). NAP uses spectral networks to propagate information from spectral library matching, in order to improve in silico fragmentation candidate structure ranking. See the following [documentation for NAP](nap.md)
+
+![cand_chemviz](img/nap/display_consensus_candidates.gif)
+
+### Running MS2LDA Substructure Discovery
+
+**The results of FBMN can be directly analyzed with MS2LDA**. For this, on the result page click on "Advanced View" > "Analyze with MS2LDA". See the [MS2LDA documentation](ms2lda.md) 
+
+![img](img/ms2lda/banner.png)
+
+MS2LDA is a tool that decomposes molecular fragmentation data derived from large metabolomics experiments into annotated Mass2Motifs or discovers Mass2Motifs from experimental data. Mass2Motifs are fragmentation patterns of often co-occurring mass fragment peaks and/or neutral losses that often represent molecular substructures. Check out the MS2LDA website here where you can find more information, browse through data sets, and sign up for an account to run the Mass2Motif discovery on your own data. At GNPS, we are working with the MS2LDA team to integrate both workflows which allows users to map Mass2Motif occurrences in their Molecular Families.
 
 ### Video Tutorial - Analyze Feature Based Molecular Networking in GNPS
 

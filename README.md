@@ -1,5 +1,5 @@
 
-![logo](/img/GNPS_logo_original.png)
+![logo](docs/img/GNPS_logo_original.png)
 
 # GNPS Documentation GitHub Repository
 
