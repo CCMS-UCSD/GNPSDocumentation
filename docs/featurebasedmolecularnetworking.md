@@ -70,14 +70,14 @@ While this SuperQuick FBMN interface is convenient for quick analysis, we recomm
 #### Select the software used for the LC-MS/MS data processing
 ![img](img/featurebasedmolecularnetworking/select.png)
 
-#### Molecular Networks Options
-
-![img](img/featurebasedmolecularnetworking/Basic_Options.png)
+### Molecular Networks Options
+#### Basic Options
+![img](img/featurebasedmolecularnetworking/Basic_Options_2.png)
 
 | Parameter  | Description          | Default |
 | ------------- |-------------| -----|
-| Precursor Ion Mass Tolerance (PIMT) | Parameter used for spectral library search. Specify the precursor ions mass tolerance, in Daltons. Note that the value of this parameters should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generated the MS/MS data. Recommended Values value is ± 0.02 Da for high-resolution instruments such q-TOF, or 0.01 for Q-Exactive, and ± 2.0 Da for low-resolution instruments (ion traps, QqQ).| 0.02 |
-| Fragment Ion Mass Tolerance (FIMT)	      | Parameters used spectra pair-wise comparison in MS/MS molecular networking. This value specifies how much fragment ions can be shifted from their potential counter-parts found in the other MS/MS spectra Recommended Values value is ± 0.02 or 0.01 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ). | 0.02 |
+| Precursor Ion Mass Tolerance (PIMT) | Parameter used for MS-Cluster and spectral library search. Specify the precursor ions mass tolerance, in Daltons. This value influences the aforementioned clustering of nearly-identical MS/MS spectra via MS-Cluster. Note that the value of this parameters should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generated the MS/MS data. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 2.0 Da for low-resolution instruments (ion traps, QqQ).| 0.02 |
+| Fragment Ion Mass Tolerance (FIMT)	      | Parameters used for MS-Cluster, molecular networking, and MS/MS spectral library searches. For every group of MS/MS spectra being considered for clustering (consensus spectrum creation), this value specifies how much fragment ions can be shifted from their expected m/z values. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ). | 0.02 |
 
 #### Advanced Molecular Network Options
 
@@ -86,11 +86,10 @@ While this SuperQuick FBMN interface is convenient for quick analysis, we recomm
 | Parameter        | Description          | Default | Notes |
 | ------------- |-------------| -----| -----|
 | Min Pairs Cos | Minimum cosine score that must occur between a pair of consensus MS/MS spectra in order for an edge to be formed in the molecular network  | 0.7 | Lower value will increase the size of the clusters by inducing the clustering of less related MS/MS spectra, higher value will limit do the opposite. |
-| Minimum Matched Fragment Ion (Min Matched Peaks) | Parameters used for molecular networking. Is the minimum number of common fragment ions that are shared by two separate consensus MS/MS spectra in order to be connected by an edge in the molecular network | 6 | A low value will permit linkages between spectra of molecules with few similar fragment ions, but it will result in many more less-related spectra being connected to the network. An higher value will do the opposite. Default value is 6, but note that this parameters should be adjusted depending on the experimental conditions for mass spectra acquisition (such as mode of ionisation, fragmentation conditions, and the mobile phase,  ...), and the collision-induced fragmentation behavior of the molecules of interest within the samples. High molecular weight (MW) compounds, and compounds with more hetero-atoms will generally tend to produce more fragment ions. However, this rule cannot be systematized. For example, some lipids with high MW generate only few fragment ions. |
+| Minimum Matched Fragment Ion (Min Matched Peaks) | Parameters used for molecular networking. The minimum number of common fragment ions that are shared by two separate consensus MS/MS spectra in order to be connected by an edge in the molecular network | 6 | A low value will permit linkages between spectra of molecules with few similar fragment ions, but it will result in many more less-related spectra being connected to the network. An higher value will do the opposite. Default value is 6, but note that this parameters should be adjusted depending on the experimental conditions for mass spectra acquisition (such as mode of ionisation, fragmentation conditions, and the mobile phase,  ...), and the collision-induced fragmentation behavior of the molecules of interest within the samples. High molecular weight (MW) compounds, and compounds with more hetero-atoms will generally tend to produce more fragment ions. However, this rule cannot be systematized. For example, some lipids with high MW generate only few fragment ions. |
 | Maximum shift between precursors | The maximum structure modification mass between two spectra to be considered direct neighbors in a molecular network | 500 | The maximum mass difference between two connected nodes in a molecular network. |
 | Network TopK	| Maximum number of neighbor nodes for one single node  | 10 | The edge between two nodes are kept only if both nodes are within each other's ‘TopK’ most similar nodes.  For example, if this value is set at 20, then a single node may be connected to up to 20 other nodes.  Keeping this value low makes very large networks (many nodes) much easier to visualize. |
 | Maximum Connected Component Size | Maximum size of nodes allowed in a single connected network  | 100 | Maximum size of nodes allowed in a single connected network. Nodes within a single connected molecular network will be separated by increasing cosine threshold for that specific connected molecular network. Default value is 100. Use 0 to allow an unlimited number of nodes in a single network. Note that with large datasets, or when a great number of related molecules are in the dataset, this value should be higher (or turn to 0) to retain as much information as possible. Downstream, these larger networks can be visualized using Cytoscape layout algorithms that can increase the intra-network clustering, allowing to visualize spectral groups in the network despite the number of nodes in the network. |
-
 
 
 #### Advanced Spectral Library Search Options
@@ -101,8 +100,9 @@ While this SuperQuick FBMN interface is convenient for quick analysis, we recomm
 | ------------- |-------------| -----|
 |Library Search Min Matched Peaks | Minimum number of common fragment ions that MS/MS spectra should contain in order to be considered for spectral library annotation. Default value is 6, but note that this parameters should be tuned depending of the molecule of interest, and the experimental conditions (such as the ionisation mode, and the fragmentation conditions, ...). For example, collision-induced fragmentation of some lipids produce only few fragment ions. A lower value will allow clustering of MS/MS spectra containing less  fragment ions, however it will also induce clustering of  MS/MS spectra from different molecular-type to be connected in one network. An higher value will do the opposite|6|
 |Score Threshold |Minimum cosine score that MS/MS spectra should get in spectral matching with MS/MS spectral libraries in order to be considered an annotation.|0.7|
-|Search Analogs|Will for library match in analog mode (precursor ion mass shifted up the mass difference specified, such as 100 Da) to library spectra|Don't Search|
-|Maximum Analog Search Mass Difference|Maximum precursor ion mass shift between library and putative analog found| 100 (Da)|
+|Search Analogs|Will search data for analogs to library spectra| Don't Search|
+|Maximum Analog Search Mass Difference|Maximum mass shift between library and putative analog found| 100 (Da)|
+
 |Top results to report per query|Number of matches to report for each feature| 1 |
 
 #### Advanced Filtering Options (for Spectra)
@@ -114,7 +114,7 @@ While this SuperQuick FBMN interface is convenient for quick analysis, we recomm
 | Minimum Peak Intensity | All fragment ions in the MS/MS spectrum below this raw intensity will be deleted.  By default, no filter. | 0  |
 | Filter Precursor  Window | All peaks in a +/- 17 Da around precursor ion mass are deleted. By default, yes filter. This removes the residual precursor ion, which is frequently observed in MS/MS spectra acquired on qTOFs. | Filter | |
 | Filter library | Apply peak filters to library | Filter | |
-|Filter peaks in 50Da Window | Filter out peaks that are not top 6 most intense peaks in a +/- 50Da window | Filter | 
+|Filter peaks in 50Da Window | Filter out peaks that are not in the top 6 most intense peaks in a +/- 50Da window | Filter | 
 
 #### Advanced quantification options
 
@@ -125,7 +125,7 @@ There are additional normalization options specifically for the FBMN workflow:
 | Normalization Per File | Total Ion Current (TIC) normalization can be applied to the ion intensities (LC-MS1 peak area) per sample (NOT RECOMMENDED AS DEFAULT) | No Norm  |
 | Aggregation Method for Peak Abundances Per Group | The ion feature intensity (LC-MS1 peak area) can be aggregated by GROUPS from the metadatable with either a *Sum* or *Average* (RECOMMENDED, because more robust to the number of samples per GROUPS). | Average  |
 
-![img](img/mzmine/quant_options.png)
+![img](img/featurebasedmolecularnetworking/Advanced_Quantification_Options_2.png)
 
 ### Inspecting the Results of FBMN on GNPS
 
