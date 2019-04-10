@@ -61,8 +61,8 @@ without MS2 scans (peptide identification).
 
 **Parameters for GNPSExport UTILS:**
 
-- **Cosine Score Treshold** @Abi please describe what is is doing EXACTLY 
-- **Binning width** @Abi please describe what is is doing EXACTLY
+- **Cosine Similarity Treshold** Compares the most intense annoted MS/MS spectra against all other identified MS/MS annotations and merges the MS/MS vectors.
+- **Binning width** Determines the maximum distance the merged MS/MS annotations can be from the mean.
 
 **Options for the GNPSExport spectral processing are:**
 

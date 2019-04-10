@@ -23,7 +23,7 @@ pages:
         - Result Views Navigation: resultviews.md
     - Advanced Data Analysis:
         - Molecular Networking in Cytoscape: cytoscape.md
-        - Dereplicator: dereplicator.md
+        - DEREPLICATOR: dereplicator.md
         - Network Annotation Propagation (NAP): nap.md
         - Feature Based Molecular Networking:
             - FBMN Overview: featurebasedmolecularnetworking.md

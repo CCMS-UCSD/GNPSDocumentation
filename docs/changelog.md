@@ -1,8 +1,11 @@
-## Change Log
+## Change Log of GNPS Documentation
 
+### 4/8/2019
+* Update documentation for [DEREPLICATOR tools](dereplicator.md).
+* Update the [index.md](index.md).
 
 ### 4/5/2019
-* [New documentation for Feature-Based Molecular Networking (FBMN)](featurebasedmolecularnetworking.md).
+* New documentation for [Feature-Based Molecular Networking (FBMN)](featurebasedmolecularnetworking.md).
 * New tools available with the FBMN [OpenMS](featurebasedmolecularnetworking-with-OpenMS.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [XCMS](featurebasedmolecularnetworking-with-XCMS3.md), and [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md).
 
 ### 3/9/2019

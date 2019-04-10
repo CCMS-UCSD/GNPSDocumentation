@@ -36,8 +36,6 @@ These files are not needed for the tutorial but are provided here as reference f
 ## Run MetaboScape
 Refer to the detailed step-by-step procedure to run Metaboscape [here](../featurebasedmolecularnetworking-with-metaboscape.md).
 
-## Video Tutorial - Run MetaboScape 
-
 ## Run GNPS
 
 See the documentation to produce molecular network at GNPS with the output of the Coffee Project [here](../featurebasedmolecularnetworking.md).
@@ -45,5 +43,4 @@ See the documentation to produce molecular network at GNPS with the output of th
 ## Run Cytoscape
 
 See the documentation to perform visualization of the molecular networking on the data of the Coffee Project [here](../featurebasedmolecularnetworking-cytoscape.md).
-
 

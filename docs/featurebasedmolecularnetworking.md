@@ -1,4 +1,3 @@
-
 ## Introduction
 
 The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-OpenMS.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), and [XCMS](featurebasedmolecularnetworking-with-XCMS3.md).
@@ -28,11 +27,10 @@ In brief, mass spectrometry processing softwares have been adapted to export fil
 |[XCMS3](https://github.com/sneumann/xcms)|[See documentation](featurebasedmolecularnetworking-with-XCMS3.md) |Commandline|Any|[Open source](https://github.com/sneumann/xcms)|Bioinformaticians and developers|
 |[MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html)|[See documentation](featurebasedmolecularnetworking-with-metaboscape.md)|Graphical UI|Windows|Proprietary code|Mass spectrometrists|
 
-**IMPORTANT:** The software use for the LC-MS/MS data processing have to be configured and utilized as recommended by the softwre documentation.
+**IMPORTANT:** The software use for the LC-MS/MS data processing have to be configured and utilized as recommended by the software documentation.
 
 
-
-### Mass spectrometry data Feature Detection with MZmine2 [RECOMMENDED]
+### Mass Spectrometry Data Feature Detection with MZmine2 [RECOMMENDED]
 
 Currently, we are recommending using the MZmine2 workflow, as it has been thoroughly tested. [See the documentation here](featurebasedmolecularnetworking-with-mzmine2.md) and the following [MZmine2 video tutorial:](tutorials/americangutmzmine.md)
 
@@ -53,16 +51,16 @@ You will need three items (test files for each software are accessible [here](ht
 #### Select the software used for the LC-MS/MS data processing
 ![img](img/featurebasedmolecularnetworking/select.png)
 
-#### Set the parameters as needed
-#### Basic Options
+#### Molecular Networks Options
+
 ![img](img/featurebasedmolecularnetworking/Basic_Options.png)
 
 | Parameter  | Description          | Default |
 | ------------- |-------------| -----|
-| Precursor Ion Mass Tolerance (PIMT) | Parameter used for spectral library search. Specify the precursor ions mass tolerance, in Daltons. Note that the value of this parameters should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generated the MS/MS data. Recommended Values value is ± 0.02 Da for high-resolution instruments such q-TOF, or 0.01 for Q-Exactive, and ± 2.0 Da for low-resolution instruments (ion traps, QqQ).| 2.0 |
-| Fragment Ion Mass Tolerance (FIMT)	      | Parameters used spectra pair-wise comparison in MS/MS molecular networking. This value specifies how much fragment ions can be shifted from their potential counter-parts found in the other MS/MS spectra Recommended Values value is ± 0.02 or 0.01 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ). | 0.5 |
+| Precursor Ion Mass Tolerance (PIMT) | Parameter used for spectral library search. Specify the precursor ions mass tolerance, in Daltons. Note that the value of this parameters should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generated the MS/MS data. Recommended Values value is ± 0.02 Da for high-resolution instruments such q-TOF, or 0.01 for Q-Exactive, and ± 2.0 Da for low-resolution instruments (ion traps, QqQ).| 0.02 |
+| Fragment Ion Mass Tolerance (FIMT)	      | Parameters used spectra pair-wise comparison in MS/MS molecular networking. This value specifies how much fragment ions can be shifted from their potential counter-parts found in the other MS/MS spectra Recommended Values value is ± 0.02 or 0.01 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ). | 0.02 |
 
-#### Advanced Network Options
+#### Advanced Molecular Network Options
 
 ![set title](img/featurebasedmolecularnetworking/Advanced_Network_Options.png)
 
@@ -76,7 +74,7 @@ You will need three items (test files for each software are accessible [here](ht
 
 
 
-#### Advanced Library Search Options
+#### Advanced Spectral Library Search Options
 
 ![set title](img/featurebasedmolecularnetworking/Advanced_Library_Search_Options.png)
 
@@ -88,7 +86,7 @@ You will need three items (test files for each software are accessible [here](ht
 |Maximum Analog Search Mass Difference|Maximum precursor ion mass shift between library and putative analog found| 100 (Da)|
 |Top results to report per query|Number of matches to report for each feature| 1 |
 
-#### Advanced Filtering Options
+#### Advanced Filtering Options (for Spectra)
 
 ![set title](img/featurebasedmolecularnetworking/Advanced_filtering_options.png)
 
@@ -99,7 +97,7 @@ You will need three items (test files for each software are accessible [here](ht
 | Filter library | Apply peak filters to library | Filter | |
 |Filter peaks in 50Da Window | Filter out peaks that are not top 6 most intense peaks in a +/- 50Da window | Filter | 
 
-##### Advanced quantification options
+#### Advanced quantification options
 
 There are additional normalization options specifically for the FBMN workflow:
 
@@ -109,6 +107,12 @@ There are additional normalization options specifically for the FBMN workflow:
 | Aggregation Method for Peak Abundances Per Group | The ion feature intensity (LC-MS1 peak area) can be aggregated by GROUPS from the metadatable with either a *Sum* or *Average* (RECOMMENDED, because more robust to the number of samples per GROUPS). | Average  |
 
 ![img](img/mzmine/quant_options.png)
+
+## Dereplicator - Insilico Peptidic Natural Products Tool
+
+The Insilico Peptidic Natural Products Dereplicator is a bioinformatic tool that allows the annotation of known peptidic natural products in MS/MS data using in silico fragmentation tree. This workflow is also included into the Feature Based Molecular Network workflow, then you have the option to use it by clicking into Advanced External tools. After your job is complete you can explore your results and even *clone* the Dereplicator job and modify the parameters.  
+
+Check out the [**full documentation** for further description settings and **citations**](https://ccms-ucsd.github.io/GNPSDocumentation/dereplicator/).
 
 ### Video Tutorial - Analyze Feature Based Molecular Networking in GNPS
 
@@ -131,3 +135,9 @@ See our [tutorial on using MZmine2](tutorials/americangutmzmine.md) for FBMN ana
 This work builds on the efforts of our many colleagues, please make sure to cite the papers for their processing tools and the GNPS paper:
 
 Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
+
+## Documentation contributors
+Louis Felix Nothias (UCSD), Ming Wang (UCSD, Laura-Isobel McCall (UCSD), Mauricio Caravallo (UCSD)
+
+## TO DO 
+- Provide link to [Super Quick Start Page] (superquickstart.md)
