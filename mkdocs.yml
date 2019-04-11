@@ -26,13 +26,13 @@ pages:
         - DEREPLICATOR: dereplicator.md
         - Network Annotation Propagation (NAP): nap.md
         - Feature Based Molecular Networking:
-            - FBMN Overview: featurebasedmolecularnetworking.md
-            - MZmine2 Documentation: featurebasedmolecularnetworking-with-mzmine2.md
-            - MS-DIAL Documentationn: featurebasedmolecularnetworking-with-ms-dial.md
-            - XCMS3 Documentation: featurebasedmolecularnetworking-with-xcms3.md
-            - OpenMS Documentation: featurebasedmolecularnetworking-with-openms.md
-            - MetaboScape Documentation: featurebasedmolecularnetworking-with-metaboscape.md
-            - Cytoscape Documentation: featurebasedmolecularnetworking-cytoscape.md
+            - FBMN Workflow: featurebasedmolecularnetworking.md
+            - FBMN with MZmine2 : featurebasedmolecularnetworking-with-mzmine2.md
+            - FBMN with MS-DIAL: featurebasedmolecularnetworking-with-ms-dial.md
+            - FBMN with XCMS3: featurebasedmolecularnetworking-with-xcms3.md
+            - FBMN with OpenMS: featurebasedmolecularnetworking-with-openms.md
+            - FBMN with MetaboScape: featurebasedmolecularnetworking-with-metaboscape.md
+            - FBMW with Cytoscape: featurebasedmolecularnetworking-cytoscape.md
         - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
     - Community/Social Features:
         - Spectral Libraries:
