@@ -39,7 +39,8 @@ Currently, we are recommending using the MZmine2 workflow, as it has been thorou
 
 There is a dedicated Feature-Based Molecular Networking workflow on GNPS that [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
 
-You will need three items (test files for each software are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files)):
+### Requirement for the FBMN workflow
+You will need three input files (test files for each software are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files)):
 
 1. The *Feature Table* with the intensity of ion features (TXT or CSV format).
 2. The *MS/MS spectral file* with the list of MS/MS spectra for the ion features (.MGF File).
@@ -49,7 +50,6 @@ You will need three items (test files for each software are accessible [here](ht
 
 
 A simplified interace for Super Quick web interace for FBMN [is available here](http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking).
-
 
 
 ![img](img/featurebasedmolecularnetworking/superquick_fbmn.png)
@@ -146,9 +146,16 @@ The Insilico Peptidic Natural Products Dereplicator is a bioinformatic tool that
 
 Check out the [**full documentation** for further description settings and **citations**](dereplicator.md).
 
+![emperor](img/featurebasedmolecularnetworking/dereplicator.png)
+
+If you use that tool, please cite the DEREPLICATOR papers. [See citations in the main DEREPLICATOR documentation](dereplicator.md).
+
+
 ### Inspecting the Results of FBMN in Cytoscape
 
 Cytoscape is an open source software platform used to visualize, analyze and annotate molecular networks from GNPS. [See the documentation here](featurebasedmolecularnetworking-cytoscape.md)
+
+![img](img/cytoscape/import_2.png)
 
 ### Demo GNPS job of Feature Based Molecular Networking
 [Here is an example FBMN](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=52a390c8eb654b7fa8d61a1c7a4aaab5) job with files resulting from MZmine2 processing of a subset of the [American Gut Project] (http://humanfoodproject.com/americangut/).
@@ -159,13 +166,27 @@ It is possible to use the results of FBMN to run Network Annotation Propagation 
 
 ![cand_chemviz](img/nap/display_consensus_candidates.gif)
 
+If you use that tool, please cite the NAP paper. [See citations in the main NAP documentation](nap.md).
+
 ### Running MS2LDA Substructure Discovery
 
-**The results of FBMN can be directly analyzed with MS2LDA**. For this, on the result page click on "Advanced View" > "Analyze with MS2LDA". See the [MS2LDA documentation](ms2lda.md) 
+**The results of FBMN can be directly analyzed with MS2LDA**. For this, on the result page click on "Advanced View" > "Analyze with MS2LDA". See the [MS2LDA documentation](ms2lda.md).
 
 ![img](img/ms2lda/banner.png)
 
 MS2LDA is a tool that decomposes molecular fragmentation data derived from large metabolomics experiments into annotated Mass2Motifs or discovers Mass2Motifs from experimental data. Mass2Motifs are fragmentation patterns of often co-occurring mass fragment peaks and/or neutral losses that often represent molecular substructures. Check out the MS2LDA website here where you can find more information, browse through data sets, and sign up for an account to run the Mass2Motif discovery on your own data. At GNPS, we are working with the MS2LDA team to integrate both workflows which allows users to map Mass2Motif occurrences in their Molecular Families.
+
+If you use that tool, please cite MS2LDA papers. [See citations in the main MS2LDA documentation](ms2lda.md).
+
+### Viewing the PCoA plot with EMPeror in Qiime2
+
+EMPeror, is an open source and web browser enabled tool that allows researchers to perform rapid exploratory investigations of 3D visualizations of data. To view the PCoA plot (using Bray-Curtis dissimilarity metrics) using the EMPeror Qiime2 pluggin, click on **"View qiime2 Emperor Plots"**.
+
+![emperor](img/featurebasedmolecularnetworking/emperor.png)
+
+**Citation for EMPeror**: Yoshiki Vázquez-Baeza, Meg Pirrung, Antonio Gonzalez, and Rob Knight. Gigascience, 2(1):16, 2013. [doi:10.1186/2047-217X-2-16](https://academic.oup.com/gigascience/article/2/1/2047-217X-2-16/2656132).
+
+**Citation for Qiime2**: Bolyen, E. et al. QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science. (PeerJ Preprints, 2018). [doi:10.7287/peerj.preprints.27295v2](https://peerj.com/preprints/27295/)
 
 ### Video Tutorial - Analyze Feature Based Molecular Networking in GNPS
 
@@ -175,6 +196,16 @@ This video presents
 ## Tutorials
 
 See our [tutorial on using MZmine2](tutorials/americangutmzmine.md) for FBMN analysis of a cohort from the [American Gut Project] (http://humanfoodproject.com/americangut/), and our [tutorial on running a FBMN analysis on GNPS](tutorials/featurebasedgnps.md).
+
+## Development
+
+#### Source code
+- The FBMN source code can be found on the [GNPS_Workflows GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking).
+
+#### Input files requirements
+- The *Feature Table* (.TXT or CSV file) needs to have unique *Feature IDentifier* (integer) for each LC-MS1 feature that must match the "SCANS=" header of the corresponding spectrum in the *MS/MS spectral file* (.MGF file). Note that the number of LC-MS1 features in the *Feature Table* can be larger than the number of LC-MS1 features with a spectrum in the *MS/MS spectral file*. And the *Feature IDentifier* does not have to be sequencial. As a result, the *Feature Table* can contain LC-MS1 feature that doesn't have an associated MS/MS scan in the *MS/MS spectral file*. The PCoA generated with qiime2 EMPeror uses the entire content of *Feature Table* provided.
+
+- The format of the *Feature Table* should be consistent with the representative *Feature Table*  provided on [this page](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files). Note that internally, the *Feature Table* file inputted by the user are converted to a standard MZmine2 format prior to FBMN analysis in GNPS. The python scripts used for the conversion *Feature Table* from various software [are available here](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking/tools/feature-based-molecular-networking/scripts). If you want to add support for another LC-MS processing tool, contact us.
 
 ## Citation
 
