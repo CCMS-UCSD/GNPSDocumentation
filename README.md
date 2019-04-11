@@ -28,6 +28,10 @@ To checkout our legacy documentation in its entirely, you can find it [here](htt
 
 GNPS Workflows are available on the following repository: [https://github.com/CCMS-UCSD/GNPS_Workflows](https://github.com/CCMS-UCSD/GNPS_Workflows)
 
+### Citation
+
+Wang, M. et al. Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking. Nat. Biotechnol. 34, 828–837 (2016). [https://www.nature.com/articles/nbt.3597](https://www.nature.com/articles/nbt.3597)
+
 
 
 
