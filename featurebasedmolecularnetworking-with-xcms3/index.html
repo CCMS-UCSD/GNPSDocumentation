@@ -1,0 +1,1357 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.0">
+    
+    
+      
+        <title>FBMN with XCMS3 - GNPS Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.4f4f49e8.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#introduction" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="GNPS Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                GNPS Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                FBMN with XCMS3
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    GNPS Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="GNPS Introduction" class="md-nav__link">
+      GNPS Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../isgnpsright/" title="Is my data compatible with GNPS?" class="md-nav__link">
+      Is my data compatible with GNPS?
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../faq/" title="Frequently Asked Questions" class="md-nav__link">
+      Frequently Asked Questions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../superquickstart/" title="Superquick Start Guide" class="md-nav__link">
+      Superquick Start Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../quickstart/" title="Quick Start Guide" class="md-nav__link">
+      Quick Start Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../gnpsanalysisoverview/" title="GNPS Analysis Tools Overview" class="md-nav__link">
+      GNPS Analysis Tools Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Mass Spec/Computational Background
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Mass Spec/Computational Background
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../massspecbackground/networkingtheory/" title="Molecular Networking" class="md-nav__link">
+      Molecular Networking
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Data Preparation/Upload
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Data Preparation/Upload
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fileconversion/" title="Mass Spectrometry File Conversion" class="md-nav__link">
+      Mass Spectrometry File Conversion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fileupload/" title="GNPS File Upload" class="md-nav__link">
+      GNPS File Upload
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Recommended Data Analysis
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Recommended Data Analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../networking/" title="Molecular Networking" class="md-nav__link">
+      Molecular Networking
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../networkingviews/" title="Molecular Networking Views" class="md-nav__link">
+      Molecular Networking Views
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../librarysearch/" title="Spectral Library Search" class="md-nav__link">
+      Spectral Library Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../masst/" title="MASST Search (Mass Search Tool)" class="md-nav__link">
+      MASST Search (Mass Search Tool)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../resultviews/" title="Result Views Navigation" class="md-nav__link">
+      Result Views Navigation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" checked>
+    
+    <label class="md-nav__link" for="nav-10">
+      Advanced Data Analysis
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Advanced Data Analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cytoscape/" title="Molecular Networking in Cytoscape" class="md-nav__link">
+      Molecular Networking in Cytoscape
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dereplicator/" title="DEREPLICATOR" class="md-nav__link">
+      DEREPLICATOR
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nap/" title="Network Annotation Propagation (NAP)" class="md-nav__link">
+      Network Annotation Propagation (NAP)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-4" type="checkbox" id="nav-10-4" checked>
+    
+    <label class="md-nav__link" for="nav-10-4">
+      Feature Based Molecular Networking
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-10-4">
+        Feature Based Molecular Networking
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking/" title="FBMN Workflow" class="md-nav__link">
+      FBMN Workflow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking-with-mzmine2/" title="FBMN with MZmine2" class="md-nav__link">
+      FBMN with MZmine2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking-with-ms-dial/" title="FBMN with MS-DIAL" class="md-nav__link">
+      FBMN with MS-DIAL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        FBMN with XCMS3
+      </label>
+    
+    <a href="./" title="FBMN with XCMS3" class="md-nav__link md-nav__link--active">
+      FBMN with XCMS3
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mass-spectrometry-processing-with-xcms3" title="Mass spectrometry processing with XCMS3" class="md-nav__link">
+    Mass spectrometry processing with XCMS3
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#citations-and-development" title="Citations and development" class="md-nav__link">
+    Citations and development
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mass-spectrometry-data-processing-with-xcms3" title="Mass Spectrometry Data Processing with XCMS3" class="md-nav__link">
+    Mass Spectrometry Data Processing with XCMS3
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-convert-your-lc-msms-data-to-an-open-format" title="1. Convert your LC-MS/MS Data to an Open Format" class="md-nav__link">
+    1. Convert your LC-MS/MS Data to an Open Format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-processing-steps-with-xcms3" title="2. Processing Steps with XCMS3" class="md-nav__link">
+    2. Processing Steps with XCMS3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perform-the-feature-based-molecular-networking-on-gnps" title="Perform the Feature-Based Molecular Networking on GNPS" class="md-nav__link">
+    Perform the Feature-Based Molecular Networking on GNPS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#representative-files-and-job" title="Representative files and job" class="md-nav__link">
+    Representative files and job
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tutorials" title="Tutorials" class="md-nav__link">
+    Tutorials
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#page-contributors" title="Page contributors" class="md-nav__link">
+    Page contributors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contribute-to-the-documentation" title="Contribute to the Documentation" class="md-nav__link">
+    Contribute to the Documentation
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking-with-openms/" title="FBMN with OpenMS" class="md-nav__link">
+      FBMN with OpenMS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking-with-metaboscape/" title="FBMN with MetaboScape" class="md-nav__link">
+      FBMN with MetaboScape
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking-cytoscape/" title="FBMW with Cytoscape" class="md-nav__link">
+      FBMW with Cytoscape
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ms2lda/" title="MS2LDA and MotifDB Substructure Discovery" class="md-nav__link">
+      MS2LDA and MotifDB Substructure Discovery
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Community/Social Features
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        Community/Social Features
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-1" type="checkbox" id="nav-11-1">
+    
+    <label class="md-nav__link" for="nav-11-1">
+      Spectral Libraries
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-11-1">
+        Spectral Libraries
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../browselibraries/" title="Browsing Reference Spectral Libraries" class="md-nav__link">
+      Browsing Reference Spectral Libraries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../spectrumcuration/" title="Reference Spectral Library Curation" class="md-nav__link">
+      Reference Spectral Library Curation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../batchupload/" title="Reference Spectral Library Batch Addition" class="md-nav__link">
+      Reference Spectral Library Batch Addition
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../downloadlibraries/" title="Downloading Reference Spectral Libraries" class="md-nav__link">
+      Downloading Reference Spectral Libraries
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-2" type="checkbox" id="nav-11-2">
+    
+    <label class="md-nav__link" for="nav-11-2">
+      Datasets
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-11-2">
+        Datasets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../datasets/" title="Dataset Creation/Sharing" class="md-nav__link">
+      Dataset Creation/Sharing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../continuousid/" title="Continuous Identification" class="md-nav__link">
+      Continuous Identification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../moleculeexplorer/" title="Molecule Explorer" class="md-nav__link">
+      Molecule Explorer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user/" title="User Page" class="md-nav__link">
+      User Page
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      Tutorial Guides
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
+        Tutorial Guides
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/bacterianetworking/" title="Molecular Networking - Analog Discovery in Microbial Extracts" class="md-nav__link">
+      Molecular Networking - Analog Discovery in Microbial Extracts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/americangutmzmine/" title="Feature Based Molecular Networking with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project" class="md-nav__link">
+      Feature Based Molecular Networking with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/americangut-ms-dial/" title="Feature Based Molecular Networking with MSDial - Microbiome Molecules in Fecal Samples in American Gut Project" class="md-nav__link">
+      Feature Based Molecular Networking with MSDial - Microbiome Molecules in Fecal Samples in American Gut Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/coffee-tutorial-metaboscape/" title="Feature Based Molecular Networking with Metaboscape - Coffee Analysis" class="md-nav__link">
+      Feature Based Molecular Networking with Metaboscape - Coffee Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/featurebasedgnps/" title="Feature Based Molecular Networking analysis at GNPS" class="md-nav__link">
+      Feature Based Molecular Networking analysis at GNPS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+    
+    <label class="md-nav__link" for="nav-14">
+      Presentation Materials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        Presentation Materials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../logos/" title="Logos" class="md-nav__link">
+      Logos
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../changelog/" title="Change Log" class="md-nav__link">
+      Change Log
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../contact/" title="Contact" class="md-nav__link">
+      Contact
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../workshops/" title="GNPS Workshops" class="md-nav__link">
+      GNPS Workshops
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mass-spectrometry-processing-with-xcms3" title="Mass spectrometry processing with XCMS3" class="md-nav__link">
+    Mass spectrometry processing with XCMS3
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#citations-and-development" title="Citations and development" class="md-nav__link">
+    Citations and development
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mass-spectrometry-data-processing-with-xcms3" title="Mass Spectrometry Data Processing with XCMS3" class="md-nav__link">
+    Mass Spectrometry Data Processing with XCMS3
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-convert-your-lc-msms-data-to-an-open-format" title="1. Convert your LC-MS/MS Data to an Open Format" class="md-nav__link">
+    1. Convert your LC-MS/MS Data to an Open Format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-processing-steps-with-xcms3" title="2. Processing Steps with XCMS3" class="md-nav__link">
+    2. Processing Steps with XCMS3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perform-the-feature-based-molecular-networking-on-gnps" title="Perform the Feature-Based Molecular Networking on GNPS" class="md-nav__link">
+    Perform the Feature-Based Molecular Networking on GNPS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#representative-files-and-job" title="Representative files and job" class="md-nav__link">
+    Representative files and job
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tutorials" title="Tutorials" class="md-nav__link">
+    Tutorials
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#page-contributors" title="Page contributors" class="md-nav__link">
+    Page contributors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contribute-to-the-documentation" title="Contribute to the Documentation" class="md-nav__link">
+    Contribute to the Documentation
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>FBMN with XCMS3</h1>
+                
+                <h2 id="introduction">Introduction</h2>
+<p>The <strong>Feature-Based Molecular Networking</strong> (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on <a href="http://gnps.ucsd.edu">GNPS</a>. The tools supported are: <a href="../featurebasedmolecularnetworking-with-mzmine2/">MZmine2</a>, <a href="../featurebasedmolecularnetworking-with-openms/">OpenMS</a>, <a href="../featurebasedmolecularnetworking-with-ms-dial/">MS-DIAL</a>, <a href="../featurebasedmolecularnetworking-with-metaboscape/">MetaboScape</a>, and <a href="./">XCMS</a>.</p>
+<p>The main documentation for Feature-Based Molecular Networking <a href="../featurebasedmolecularnetworking/">can be accessed here:</a></p>
+<p>Below follows a description on how to use <code>xcms</code> version &gt;= 3 (XCMS3) with the
+FBMN workflow in GNPS.</p>
+<h2 id="mass-spectrometry-processing-with-xcms3">Mass spectrometry processing with XCMS3</h2>
+<h3 id="installation">Installation</h3>
+<p>Install the latest version of XCMS3 from Bioconductor (version &gt;= 3.4) in R
+with:</p>
+<pre><code>install(&quot;BiocManager&quot;)
+BiocManager::install(&quot;xcms&quot;)
+</code></pre>
+
+<p>See also [xcms Bioconductor package] (https://www.bioconductor.org/packages/release/bioc/html/xcms.html).</p>
+<p>Clone also the GitHub repository
+<a href="https://github.com/jorainer/xcms-gnps-tools">https://github.com/jorainer/xcms-gnps-tools</a>
+for utility functions (<em>XCMS-GNPS-TOOLS</em>) specific to this workflow.</p>
+<h3 id="citations-and-development">Citations and development</h3>
+<p>This work builds on the efforts of our many colleagues, please cite their work:</p>
+<p><a href="https://github.com/sneumann/xcms">https://github.com/sneumann/xcms</a></p>
+<p>Tautenhahn R, Boettcher C, Neumann S. <a href="https://doi.org/10.1186/1471-2105-9-504">Highly sensitive feature detection for
+high resolution LC/MS</a> BMC
+Bioinformatics, 9:504 (2008).</p>
+<p>Smith, C.A., Want, E.J., O'Maille, G., Abagyan,R., Siuzdak, G. <a href="https://pubs.acs.org/doi/10.1021/ac051437y">XCMS: Processing
+mass spectrometry data for metabolite profiling using nonlinear peak alignment, matching and identification.</a>
+Analytical Chemistry, 78, 779–787 (2006).</p>
+<h3 id="mass-spectrometry-data-processing-with-xcms3">Mass Spectrometry Data Processing with XCMS3</h3>
+<p>As for all preprocessing software tools, a sequence of steps is performed to
+process mass spectrometry data in XCMS3.</p>
+<p>Here we will present key steps and representative scripts required to process
+untargeted LC-MS/MS data collected using data dependent acquisition.</p>
+<p><strong>SCRIPT AVAILABILITY:</strong> Example XCMS3 scripts are accessible as <em>Jupyter
+notebook</em> and <em>RCommander script</em> on
+<a href="https://github.com/DorresteinLaboratory/XCMS3_FeatureBasedMN">https://github.com/DorresteinLaboratory/XCMS3_FeatureBasedMN</a>.</p>
+<p><strong>IMPORTANT:</strong> XCMS3 parameters will vary depending on the mass spectrometer,
+the acquisition parameters, and the samples investigated. The following
+documentation serves as a basic guideline for using XCMS3 with the Feature-Based
+Molecular Networking workflow.</p>
+<p>Please consult these resources for more details on XCMS3 processing and
+definition of parameter settings:</p>
+<ul>
+<li>The official <a href="https://bioconductor.org/packages/release/bioc/vignettes/xcms/inst/doc/xcms.html">XCMS3
+  tutorial</a>
+  (also provided as <code>xcms</code> vignette with the <code>xcms</code> R package).</li>
+<li>XCMS3 workshop from the Metabolomics 2018 conference:
+  <a href="https://jorainer.github.io/metabolomics2018/xcms-preprocessing.html">xcms-preprocessing</a>
+  and <a href="https://github.com/jorainer/metabolomics2018">github repository</a>.</li>
+</ul>
+<h4 id="1-convert-your-lc-msms-data-to-an-open-format">1. Convert your LC-MS/MS Data to an Open Format</h4>
+<p>XCMS3 accepts different input formats. Note that we recommand to first convert
+your files to the mzML format before using XCMS3 for processing. <a href="../fileconversion/">See the
+documentation here</a>.</p>
+<h4 id="2-processing-steps-with-xcms3">2. Processing Steps with XCMS3</h4>
+<ol>
+<li>Import data (<code>readMSData</code>)</li>
+<li>Peak picking (<code>findChromPeaks</code>)</li>
+<li>Retention time alignment (<code>adjustRtime</code>).</li>
+<li>Peak grouping (<code>groupChromPeaks</code>).</li>
+<li>Gap filling (<code>fillChromPeaks</code>).</li>
+<li>Export the data for FBMN on GNPS<ul>
+<li>a feature table with ion intensities (.TXT file format).</li>
+<li>a MS/MS spectral data file (.MGF file format).</li>
+</ul>
+</li>
+</ol>
+<h3 id="perform-the-feature-based-molecular-networking-on-gnps">Perform the Feature-Based Molecular Networking on GNPS</h3>
+<p>The files exported from XCMS3 can be uploaded to the GNPS web-platform and a
+Feature-Based Molecular Networking job can be launched.</p>
+<p>See that documentation for [the FTP upload]
+(https://ccms-ucsd.github.io/GNPSDocumentation/fileupload/) and prepare your
+FBMN job <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">directly on
+GNPS</a>
+(you must be logged in first).</p>
+<p>Note that you can upload a metadata table with your job. <a href="../networking/#metadata">See
+documentation</a>.</p>
+<p>More information on the Feature Based Molecular Networking workflow on GNPS can
+be obtained at <a href="../featurebasedmolecularnetworking/">this documentation page</a>.</p>
+<h3 id="representative-files-and-job">Representative files and job</h3>
+<p>Test files are accessible <a href="../tutorials/AG_tutorial_files/">here</a>:</p>
+<ol>
+<li>Feature Table - <a href="../tutorials/AG_tutorial_files/XCMS3-GNPS_AG_test_featuretable.txt">Download here</a></li>
+<li>MGF for MS/MS from above - <a href="../tutorials/AG_tutorial_files/XCMS3-GNPS_AG_test_GNPS.mgf">Download here</a></li>
+<li>A metadata table - <a href="../tutorials/AG_tutorial_files/metadata_GNPS_table_AMG_key_ones_cleaned.txt">Download here</a></li>
+</ol>
+<p>Here is an example <a href="https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=f3f28a930b334dd09f310795fceae4cd">FBMN job with XCMS3</a> from a subset of the American Gut Project.</p>
+<h2 id="tutorials">Tutorials</h2>
+<p>See our XCMS-FBMN tutorials using python and R with a subset of the American Gut Project samples on this repository <a href="https://github.com/DorresteinLaboratory/XCMS3_FeatureBasedMN/">DorresteinLaboratory/XCMS3_FeatureBasedMN/</a>.</p>
+<h2 id="page-contributors">Page contributors</h2>
+<p>Madeleine Ernst (UCSD), Ricardo da Silva (UCSD), Louis Felix Nothias (UCSD), Johannes Reiner (Eurac Research)</p>
+<h2 id="contribute-to-the-documentation">Contribute to the Documentation</h2>
+<ul>
+<li>For informations/feature request, please open an "Issue" on the <a href="../(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> GitHub repository.</li>
+<li>To contribute directly to the GNPS documentation, fork the <a href="../(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request".</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../featurebasedmolecularnetworking-with-ms-dial/" title="FBMN with MS-DIAL" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                FBMN with MS-DIAL
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../featurebasedmolecularnetworking-with-openms/" title="FBMN with OpenMS" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                FBMN with OpenMS
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.a59e2a89.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-8412213-5","ccms-ucsd.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>
