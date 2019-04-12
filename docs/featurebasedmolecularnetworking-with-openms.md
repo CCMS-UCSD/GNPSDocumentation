@@ -50,7 +50,7 @@ The corresponding OpenMS configuration files (.INI files) are available from tha
 9. The `gnpsexport` folder contains the *MS/MS spectral file* (.MGF file)
 10. The `textexporter` folder contains the *feature quantification table* (.TXT file).
 11. Click a FBMN workflow on GNPS by clicking on "*Run a Feature-Based Molecular Networking at GNPS*" Note that you have to be logged in GNPS first, [https://gnps.ucsd.edu](https://gnps.ucsd.edu)). See documentation for [the FBMN workflow on GNPS](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/).
-12. Alternatively, upload these files via FTP for [FBMN on GNPS](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/), or use them for other annotation tools ([DEREPLICATOR](dereplicator.md), [Mass2Motif](mass2motif.md), [NAP](nap.md). 
+12. Alternatively, upload these files via FTP for [FBMN on GNPS](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/), or use them for other annotation tools ([DEREPLICATOR](dereplicator.md), [Mass2Motif](ms2lda.md), [NAP](nap.md).
 
 ![img](img/openms/results_1.png)
 
@@ -80,7 +80,7 @@ A representative OpenMS-GNPS workflow would sequencially use these OpenMS TOPP t
 
 #### The GNPSExport TOPP tool
 
-The *GNPSExport TOPP tool* can be ran on a consensusXML file and the corresponding mzML files to generate a MS/MS spectral file (MGF format) and corresponding feature quantification table (.TXT format) that contains the LC-MS peak area intensity. 
+The *GNPSExport TOPP tool* can be ran on a consensusXML file and the corresponding mzML files to generate a MS/MS spectral file (MGF format) and corresponding feature quantification table (.TXT format) that contains the LC-MS peak area intensity.
 
 For each *consensusElement* in the consensusXML file, the *GNPSExport* produces one representative *consensus MS/MS spectrum* (named *peptide annotation* in OpenMS jargon) outputed in the MS/MS spectral file (.MGF file). Several mode for the generation of the *consensus MS/MS spectrum* are available and described below. Note that these parameters are defined in the GNPSExport parameters file (.INI file, [available with that link](openms_gnpsexport/GNPSExport.ini).
 
@@ -89,9 +89,9 @@ For each *consensusElement* in the consensusXML file, the *GNPSExport* produces 
 `GNPSExport --help`
 
 ```
-GNPSExport -ini iniFile-GNPSExport.ini 
+GNPSExport -ini iniFile-GNPSExport.ini
 			 -in_cm filefilter.consensusXML
-           -in_mzml inputFile0.mzML inputFile1.mzML 
+           -in_mzml inputFile0.mzML inputFile1.mzML
            -out GNPSExport_output.mgf
 ```
 
@@ -99,7 +99,7 @@ GNPSExport -ini iniFile-GNPSExport.ini
 
 - **Merge [RECOMMENDED]**: `merged_spectra` - For each *consensusElement*, the GNPSExport will merge all the eligible MS/MS scans into one representative *consensus MS/MS spectrum*. Eligible MS/MS scans have a pairwise *cosine similarity* with the MS/MS scan of highest precursor intensity above the *Cosine Similarity Treshold*. The fragment ions of merged MS/MS scans are binned in m/z (or Da) range defined by the *Binning width* parameter.
 
-	- **Cosine Similarity Treshold**: `merged_spectra:cos_similarity` (float, default: 0.9) - Parameter that defines *Cosine Similarity Treshold* for the pairwise *cosine similarity* between the MS/MS scan with the highest precursor intensity and the other MS/MS scans. 
+	- **Cosine Similarity Treshold**: `merged_spectra:cos_similarity` (float, default: 0.9) - Parameter that defines *Cosine Similarity Treshold* for the pairwise *cosine similarity* between the MS/MS scan with the highest precursor intensity and the other MS/MS scans.
 	- **Binning width**: `merged_spectra:ms2_binned_size` (float, default: 0.02 Daltons) -  Parameter that defines the *Binning width* of fragment ions during the merging of eligible MS/MS spectra.
 
 - **Most intense**: `most_intense` - For each *consensusElement*, the GNPSExport will output the *most intense* MS/MS scan (with the highest precursor ion intensity) as *consensus MS/MS spectrum*.

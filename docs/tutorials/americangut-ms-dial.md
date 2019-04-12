@@ -6,20 +6,20 @@ In this tutorial you will be guided into running MS-DIAL for the Feature Based M
 ## Citations
 Tsugawa, H., Cajka, T., Kind, T., Ma, Y., Higgins, B., Ikeda, K., Kanazawa, M., VanderGheynst, J., Fiehn, O. & Arita, M. [MS-DIAL: data-independent MS/MS deconvolution for comprehensive metabolome analysis.](http://dx.doi.org/10.1038/nmeth.3393) Nature Methods 12, 523-526 (2015).
 
-Lai, Z., Tsugawa, H., Wohlgemuth, G., Mehta, S., Mueller, M., Zheng, Y., Ogiwara, A., Meissen, J., Showalter, M., Takeuchi, K., Kind, T., Beal, P., Arita, M. & Fiehn, O. [Identifying metabolites by integrating metabolome databases with mass spectrometry cheminformatics.](http://dx.doi.org/10.1038/nmeth.4512) Nature Methods 15, 53-56 (2018). 
+Lai, Z., Tsugawa, H., Wohlgemuth, G., Mehta, S., Mueller, M., Zheng, Y., Ogiwara, A., Meissen, J., Showalter, M., Takeuchi, K., Kind, T., Beal, P., Arita, M. & Fiehn, O. [Identifying metabolites by integrating metabolome databases with mass spectrometry cheminformatics.](http://dx.doi.org/10.1038/nmeth.4512) Nature Methods 15, 53-56 (2018).
 
 McDonald, D. et al. American Gut: an Open Platform for Citizen Science Microbiome Research. mSystems 3, (2018). [http://dx.doi.org/10.1128/mSystems.00031-18](http://dx.doi.org/10.1128/mSystems.00031-18)
 
 ## Learning Objectives
 
 1. Learn how to download files from a GNPS/MassIVE Dataset. [See instructions here](../fileupload.md).
-2. Run MS-DIAL feature detection on LC-MS/MS data. [See tutorial here](../featurebasedmolecularnetworking-ms-dial.md), and output a feature quantification table and a MS2 spectral file.
+2. Run MS-DIAL feature detection on LC-MS/MS data. [See tutorial here](../featurebasedmolecularnetworking-with-ms-dial.md), and output a feature quantification table and a MS2 spectral file.
 3. Run the Feature Based Molecular Networking (FBMN) with MS-DIAL files on GNPS. [See the tutorial here](../featurebasedmolecularnetworking.md).
-4. Visualize the results of FBMN with Cytoscape [See the tutorial here](../featurebasedmolecularnetworking.md).
+4. Visualize the results of FBMN with Cytoscape [See the tutorial here](../featurebasedmolecularnetworking-cytoscape.md).
 
 ## Experimental Setup
 
-We will use a subset of the LC-MS/MS analysis from the [American Gut Project](http://humanfoodproject.com/americangut/). The samples consist of fecal samples provided by participants and the subset selected consists of participants that have high and low consumption of plants. MS-DIAL will be used to detect features and output a feature quantification table (TXT format) and a MS2 spectral file (MGF format). 
+We will use a subset of the LC-MS/MS analysis from the [American Gut Project](http://humanfoodproject.com/americangut/). The samples consist of fecal samples provided by participants and the subset selected consists of participants that have high and low consumption of plants. MS-DIAL will be used to detect features and output a feature quantification table (TXT format) and a MS2 spectral file (MGF format).
 The feature quantification table contains the intensity values for every aligned peak accross the samples, while the MS2 spectral file contains a single MS2 representing each aligned peak.
 
 
@@ -60,4 +60,4 @@ These files are not needed for the tutorial but are provided here as reference f
 
 Checkout the follow up [tutorial](featurebasedgnps.md) on how to do FBMN with MZmine2 and GNPS.
 
-Other tutorials are available from the main [Feature Based Molecular Networking Workflow page](../featurebasedmolecularnetworking.md). 
+Other tutorials are available from the main [Feature Based Molecular Networking Workflow page](../featurebasedmolecularnetworking.md).

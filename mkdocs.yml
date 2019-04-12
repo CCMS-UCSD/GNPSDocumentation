@@ -49,7 +49,9 @@ pages:
     - Tutorial Guides:
         - Molecular Networking - Analog Discovery in Microbial Extracts: tutorials/bacterianetworking.md
         - Feature Based Molecular Networking with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangutmzmine.md
-        - Feature Based Molecular Networking - GNPS: tutorials/featurebasedgnps.md
+        - Feature Based Molecular Networking with MSDial - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangut-ms-dial.md
+        - Feature Based Molecular Networking with Metaboscape - Coffee Analysis: tutorials/coffee-tutorial-metaboscape.md
+        - Feature Based Molecular Networking analysis at GNPS: tutorials/featurebasedgnps.md
     - Presentation Materials:
         - Logos: logos.md
     - Change Log: changelog.md
