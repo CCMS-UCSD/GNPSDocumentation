@@ -1,5 +1,9 @@
 ## Change Log of GNPS Documentation
 
+### 5/3/2019
+
+* [GNPS Workflow Release 3](https://github.com/CCMS-UCSD/GNPS_Workflows/releases/tag/4)
+
 ### 4/8/2019
 * Update documentation for [DEREPLICATOR tools](dereplicator.md).
 * Update the [index.md](index.md).
