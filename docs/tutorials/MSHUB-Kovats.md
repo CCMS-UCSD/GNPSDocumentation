@@ -93,6 +93,6 @@ If the same analysis needs to be repeated, it is possible to clone the job by cl
 |GNPS job fails due to improper metadata format|The metadata file must be formatted as a tab-separated .txt file|
 
 ## Example Files for GC-KOVATS workflow
-[workflow](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=01b84979f35944f3a23505d0125278e5)
-[raw data format](https://www.dropbox.com/sh/mudehag9vidpgng/AAA7TByw65ncQSjtB43i5t4Ea?dl=0)
-[result](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=01b84979f35944f3a23505d0125278e5&view=view_kovats)
+[workflow](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=01b84979f35944f3a23505d0125278e5)  <br />
+[raw data format](https://www.dropbox.com/sh/mudehag9vidpgng/AAA7TByw65ncQSjtB43i5t4Ea?dl=0) <br />
+[result](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=01b84979f35944f3a23505d0125278e5&view=view_kovats) <br />
