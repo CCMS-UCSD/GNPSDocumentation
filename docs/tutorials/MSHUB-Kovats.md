@@ -86,6 +86,8 @@ The analysis conducted on GNPS as well as the deposited raw data could be shared
 If the same analysis needs to be repeated, it is possible to clone the job by clicking ‘clone’ on the job status page.  Cloning a job allows users to view all parameters and files that were used and rerun the job (feature detection or library search) with the same (or adjusted) parameters and files. Note that if data were imported from private user workspace and not from within MassIVE, other users will not have access to the data and consequently will not be able to rerun or reproduce the GNPS job.  
 
 ## Troubleshooting
+| Erro Description  | solution | 
+| ------------- |-------------|
 | When clicking on “View Kovats Calculation Result”, error is displayed: “There was an error retrieving the result data for block "main" of workflow type "MOLECULAR-LIBRARYSEARCH-GC"”   | The retention indices could not be reliably estimated from the annotations available within the dataset. Increasing the number of files, for example, by co-analyzing multiple datasets obtained with the same experimental protocol could resolve the issue. Alternatively, the information for the reference mix needs to be supplied.  |
 |A large number of spectra appear as a single peak.|Insufficient volume of data cause unstable deconvolution resulting in spurious low-quality spectra. Increasing the number of files, for example, by co-analyzing multiple datasets obtained with the same experimental protocol would resolve the issue. Otherwise, an external deconvolution could be carried out to ensure that the high quality spectral pattern are obtained.|
 |GNPS job fails due to improper metadata format|The metadata file must be formatted as a tab-separated .txt file|
