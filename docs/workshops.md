@@ -14,8 +14,9 @@ If you would like to host a GNPS workshop together with the GNPS team, please re
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
+| [ASP 2019](http://aspmeetings.pharmacognosy.us/) | GNPS Beginner/Advanced Workshop (3h) | July 2019 | [Download](https://docs.google.com/document/d/1i80buu38_x79qeHVHGz2d_nyRYQJ92jV3mQfTtJLsB4/edit?usp=sharing) |
 | [RFMF2019](https://12-js-rfmf-2019.sciencesconf.org/), France | GNPS Beginner Workshop (4h) | May 20 | TBA |
-| [Metabolomics2019](http://metabolomics2019.org/) | GNPS Beginner Workshop (2h) | June 22 | TBA |
+| [Metabolomics 2019](http://metabolomics2019.org/) | GNPS Beginner Workshop (2h) | June 22 | [Download](https://docs.google.com/document/d/1_qoMd73M9KTFJ3A37GDY9Yqjim0s9EoxiqUa7CUX_gY/edit?usp=sharing) |
 | Prague | GNPS Workshop (4h) | June 28| TBA |
 | NPS2019 - Symposia of Natural Products | Natural Product Dereplication using GNPS | Feb 5, 2019 | Coming Soon! |
 | CCMS School - Natural Product Training | GNPS, Molecular Networking, Library Search, Quantitative Analysis, NP Database Search, De novo cyclopeptide sequencing | Dec 12/13 2018 | [Download](https://www.dropbox.com/s/zyxhxcsgh3b65qk/CCMS%20School%20GNPS%20Workshop.pptx?dl=1) |
