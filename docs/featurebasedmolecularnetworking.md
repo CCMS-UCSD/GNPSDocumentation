@@ -1,3 +1,5 @@
+#Feature-Based Molecular Networking (FBMN)
+
 ## Introduction
 
 The **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), and [XCMS](featurebasedmolecularnetworking-with-xcms3.md).
@@ -58,7 +60,7 @@ A simplified interace for Super Quick web interace for FBMN [is available here](
 1. Indicate your email and your GNPS Credentials.
 2. Select the 'Feature Generation tool'.
 3. Select the parameters preset.
-4. Drag and drop your "feature quantification table" and "MS/MS spectral file" (.MGF). See the respective documentation for FBMN each tool. 
+4. Drag and drop your "feature quantification table" and "MS/MS spectral file" (.MGF). See the respective documentation for FBMN each tool.
 5. Optional. Drag and drop a [metadata table](networking.md#metadata).
 6. Click on "Analyze Uploaded Files with GNPS Molecular Networking".
 
@@ -109,19 +111,19 @@ While this SuperQuick FBMN interface is convenient for quick analysis, we recomm
 
 ![set title](img/featurebasedmolecularnetworking/Advanced_filtering_options.png)
 
-| Parameter        | Description          | Default 
-| ------------- |-------------| -----| 
+| Parameter        | Description          | Default
+| ------------- |-------------| -----|
 | Minimum Peak Intensity | All fragment ions in the MS/MS spectrum below this raw intensity will be deleted.  By default, no filter. | 0  |
 | Filter Precursor  Window | All peaks in a +/- 17 Da around precursor ion mass are deleted. By default, yes filter. This removes the residual precursor ion, which is frequently observed in MS/MS spectra acquired on qTOFs. | Filter | |
 | Filter library | Apply peak filters to library | Filter | |
-|Filter peaks in 50Da Window | Filter out peaks that are not in the top 6 most intense peaks in a +/- 50Da window | Filter | 
+|Filter peaks in 50Da Window | Filter out peaks that are not in the top 6 most intense peaks in a +/- 50Da window | Filter |
 
 #### Advanced quantification options
 
 There are additional normalization options specifically for the FBMN workflow:
 
-| Parameter        | Description          | Default 
-| ------------- |-------------| -----| 
+| Parameter        | Description          | Default
+| ------------- |-------------| -----|
 | Normalization Per File | Total Ion Current (TIC) normalization can be applied to the ion intensities (LC-MS1 peak area) per sample (NOT RECOMMENDED AS DEFAULT) | No Norm  |
 | Aggregation Method for Peak Abundances Per Group | The ion feature intensity (LC-MS1 peak area) can be aggregated by GROUPS from the metadatable with either a *Sum* or *Average* (RECOMMENDED, because more robust to the number of samples per GROUPS). | Average  |
 
@@ -133,7 +135,7 @@ After the completion of the FBMN job (this will take from 10 to 10 hours dependi
 
 ![Results](img/featurebasedmolecularnetworking/results_FBMN.png)
 #### Spectral Library Match and Network Topology Analysis
-For more information about the inspection of the molecular networking results, please refer to [the main documentation page](networkingview.md).
+For more information about the inspection of the molecular networking results, please refer to [the main documentation page](networkingviews.md).
 
 ##### Web-browser Molecular Network Visualization
 Here is an example of web-browser view of molecular networks. Click on the link to [view the interactive molecular networks](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?view=network_displayer&componentindex=56&task=51ee77f5c6d74f878e873f0b1dfe0b5f#%7B%7D).
@@ -190,7 +192,7 @@ EMPeror, is an open source and web browser enabled tool that allows researchers 
 
 ### Video Tutorial - Analyze Feature Based Molecular Networking in GNPS
 
-This video presents 
+This video presents
 <iframe width="800" height="500" src="https://www.youtube.com/embed/NTkQ0fS1aug"> </iframe>
 
 ## Tutorials
@@ -216,5 +218,5 @@ Wang, M. et al. [Sharing and community curation of mass spectrometry data with G
 ## Page contributors
 Louis Felix Nothias (UCSD), Ming Wang (UCSD, Laura-Isobel McCall (University of Oklahoma), Andrés Mauricio Caraballo Rodríguez (UCSD)
 
-## TO DO 
+## TO DO
 - here

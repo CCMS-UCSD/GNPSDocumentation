@@ -2,21 +2,20 @@
 
 # Welcome to GNPS Documentation
 
-Global Natural Products Social Molecular Networking (GNPS, [http://gnps.ucsd.edu/](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash2.jsp)) is a web-based mass spectrometry ecosystem that aims to be an open-access knowledge base for community-wide organization and sharing of raw, processed or identified tandem mass (MS/MS) spectrometry data. GNPS aids in identification and discovery throughout the entire life cycle of data; from initial data acquisition/analysis to post publication.
+Global Natural Products Social Molecular Networking (GNPS, [https://gnps.ucsd.edu/](https://gnps.ucsd.edu/)) is a web-based mass spectrometry ecosystem that aims to be an open-access knowledge base for community-wide organization and sharing of raw, processed or identified tandem mass (MS/MS) spectrometry data. GNPS aids in identification and discovery throughout the entire life cycle of data; from initial data acquisition/analysis to post publication.
 
 As there are many aspects to GNPS, it can be a bit overwhelming. Here is a quick description of main functionalities:
 
-### ANALYZE AND ANNOTATE
+### Analyze and Annotate
 
 * Perform [molecular networking and spectral library search](gnpsanalysisoverview.md) of MS/MS data utilizing computational tools (e.g. [Molecular Networking](networking.md), [Spectral Library Search](librarysearch.md), etc).
 * **NEW!** Perform advanced molecular networking and spectral library search with [Feature-Based Molecular Networking](featurebasedmolecularnetworking.md).
 * [Annotate/curate identified MS/MS spectra](spectrumcuration.md) in open-access GNPS reference spectra libraries.
-* Annotate peptidic natural products in MS/MS data with [the DEREPLICATOR](dereplicator.md), [MetaMiner](metaminer.md), [RiPPQuest](rippquest.md), [CycloNovo](cyclonovo.md).
+* Annotate peptidic natural products in MS/MS data with [DEREPLICATOR/VarQuest/DEREPLICATOR+](dereplicator.md) and [RiPPQuest](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-theoretical.jsp). <!--[MetaMiner](metaminer.md) , [CycloNovo](cyclonovo.md)-->
 * Propagate in silico annotations in your MS/MS data with [Network Annotation Propagation (NAP)](nap.md).
-* Annotate peptidic natural products in MS/MS data with [the DEREPLICATOR](dereplicator.md), [MetaMiner](metaminer.md), [RiPPQuest](rippquest.md), [CycloNovo](cyclonovo.md).
 * **NEW!** Search spectral Mass2Motifs in your MS/MS data [with MS2LDA](ms2lda.md).
 
-### SHARE AND EXPLORE
+### Share and Explore
 
 * Publish entire study datasets with the Mass Spectrometry Interactive Virtual Environment (MassIVE) data repository ([Dataset Submission](datasets.md)).
 * **NEW!** Give MS/MS spectra biological/environmental context by searching against all public MS/MS datasets ([MASST Search](masst.md)).
@@ -64,7 +63,7 @@ Pardon our dust as we are migrating to this new documentation. During the transi
 
 ### Contributing to the New Documentation
 
-The GitHub repository for the documentation is available here [https://github.com/CCMS-UCSD/GNPSDocumentation](https://github.com/CCMS-UCSD/GNPSDocumentation). 
+The GitHub repository for the documentation is available here [https://github.com/CCMS-UCSD/GNPSDocumentation](https://github.com/CCMS-UCSD/GNPSDocumentation).
 
 - For informations/feature request, please open an "Issue" on the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) GitHub repository.
 - To contribute to the GNPS documentation, fork the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request".

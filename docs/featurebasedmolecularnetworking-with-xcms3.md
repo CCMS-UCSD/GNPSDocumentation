@@ -66,7 +66,6 @@ definition of parameter settings:
 - XCMS3 workshop from the Metabolomics 2018 conference:
   [xcms-preprocessing](https://jorainer.github.io/metabolomics2018/xcms-preprocessing.html)
   and [github repository](https://github.com/jorainer/metabolomics2018).
-- The video tutorial about [XCMS3 processing for Feature Based Molecular Networking](tutorials/americangutxcms3.md).
 
 #### 1. Convert your LC-MS/MS Data to an Open Format
 
@@ -84,7 +83,7 @@ documentation here](fileconversion.md).
 6. Export the data for FBMN on GNPS
 	-	a feature table with ion intensities (.TXT file format).
 	- 	a MS/MS spectral data file (.MGF file format).
-	
+
 ### Perform the Feature-Based Molecular Networking on GNPS
 
 The files exported from XCMS3 can be uploaded to the GNPS web-platform and a
