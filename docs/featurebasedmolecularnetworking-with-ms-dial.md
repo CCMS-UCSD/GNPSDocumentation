@@ -16,7 +16,7 @@ This work builds on the efforts of our many colleagues, please cite their work:
 
 Tsugawa, H., Cajka, T., Kind, T., Ma, Y., Higgins, B., Ikeda, K., Kanazawa, M., VanderGheynst, J., Fiehn, O. & Arita, M. [MS-DIAL: data-independent MS/MS deconvolution for comprehensive metabolome analysis.](http://dx.doi.org/10.1038/nmeth.3393) Nature Methods 12, 523-526 (2015).
 
-Lai, Z., Tsugawa, H., Wohlgemuth, G., Mehta, S., Mueller, M., Zheng, Y., Ogiwara, A., Meissen, J., Showalter, M., Takeuchi, K., Kind, T., Beal, P., Arita, M. & Fiehn, O. [Identifying metabolites by integrating metabolome databases with mass spectrometry cheminformatics.](http://dx.doi.org/10.1038/nmeth.4512) Nature Methods 15, 53-56 (2018). 
+Lai, Z., Tsugawa, H., Wohlgemuth, G., Mehta, S., Mueller, M., Zheng, Y., Ogiwara, A., Meissen, J., Showalter, M., Takeuchi, K., Kind, T., Beal, P., Arita, M. & Fiehn, O. [Identifying metabolites by integrating metabolome databases with mass spectrometry cheminformatics.](http://dx.doi.org/10.1038/nmeth.4512) Nature Methods 15, 53-56 (2018).
 
 ### Mass Spectrometry Data Processing with MS-DIAL
 
@@ -26,7 +26,7 @@ In MS-DIAL, a sequence of steps is performed to process the mass spectrometry da
 
 Please consult these resources for more details on MS-DIAL processing:
 
-- The official [MS-DIAL tutorial](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/MSDIAL-tutorial.pdf) 
+- The official [MS-DIAL tutorial](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/MSDIAL-tutorial.pdf)
 - The video tutorial about [MS-DIAL processing for Feature Based Molecular Networking](tutorials/americangut-ms-dial.md).
 
 ### Convert your LC-MS/MS Data to Open Format
@@ -42,7 +42,7 @@ Go to Menu: File / New Project
 
 ![img](img/ms-dial/new-project.png)
 
-Select proper parameters (ionization type / method type / data type / ion mode / target omics) for your dataset. 
+Select proper parameters (ionization type / method type / data type / ion mode / target omics) for your dataset.
 
 Click “next” button.
 
@@ -60,7 +60,7 @@ Click the “next” button.
 
 #### 3. Set Parameters - Data Collection
 
-Set the MS1/MS2 tolerance and data collection parameters. 
+Set the MS1/MS2 tolerance and data collection parameters.
 
 If you are dealing with a large dataset, you can reduce the running time by setting multithreading option in the “advanced” menu.
 
@@ -68,9 +68,9 @@ If you are dealing with a large dataset, you can reduce the running time by sett
 
 #### 4. Set Parameters - Peak Detection
 
-Set the MS1 peak detection parameters. You should set a appropriate peak height threshold. 
+Set the MS1 peak detection parameters. You should set a appropriate peak height threshold.
 
-As a rule of thumb, the value should at least correspond to the minimum value set for the triggering of the MS2 scan event. 
+As a rule of thumb, the value should at least correspond to the minimum value set for the triggering of the MS2 scan event.
 
 If you want to remove some specific ions (e.g. known contaminants), you can make an exclusion list here.
 
@@ -78,7 +78,7 @@ If you want to remove some specific ions (e.g. known contaminants), you can make
 
 #### 5. Set Parameters - MS2Deconvolution
 
-You should set a appropriate MS/MS abundance cutoff. Make sure to set an intensity threshold representative of noise level in the MS2 spectrum. 
+You should set a appropriate MS/MS abundance cutoff. Make sure to set an intensity threshold representative of noise level in the MS2 spectrum.
 
 This is typically lower than for MS1. If you have any doubt, set it to 0.
 
@@ -86,9 +86,9 @@ This is typically lower than for MS1. If you have any doubt, set it to 0.
 
 #### 6. Set Parameters - Alignment
 
-Set appropriate Retention time / MS1 tolerance for alignment. 
+Set appropriate Retention time / MS1 tolerance for alignment.
 
-If you have any QC sample data, it will be a nice candidate to be the reference file. 
+If you have any QC sample data, it will be a nice candidate to be the reference file.
 
 Click the “finish” button, then MS-DIAL will perform all the feature finding process.
 
@@ -104,13 +104,13 @@ Menu: Export / Alignment result
 
 ![img](img/ms-dial/export.png)
 
-Select the “GNPS export” option, and make the spectra type to “centroid”. 
+Select the “GNPS export” option, and make the spectra type to “centroid”.
 
-Set the directory and file name, then click “export”. As a result, you will acquire a .mgf file and a feature abundance table. 
+Set the directory and file name, then click “export”. As a result, you will acquire a .mgf file and a feature abundance table.
 
 ![img](img/ms-dial/export_2.png)
 
-[Note] GNPS export module of MS-DIAL will create a feature table based on MS1 peak height. 
+[Note] GNPS export module of MS-DIAL will create a feature table based on MS1 peak height.
 
 If you want a feature table based on peak area, check the “Raw data matrix (Area)”.
 

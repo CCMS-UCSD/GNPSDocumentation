@@ -48,7 +48,7 @@ The corresponding OpenMS configuration files (.INI files) are available from tha
 9. The `gnpsexport` folder contains the *MS/MS spectral file* (.MGF file)
 10. The `textexporter` folder contains the *feature quantification table* (.TXT file).
 11. Click a FBMN workflow on GNPS by clicking on "*Run a Feature-Based Molecular Networking at GNPS*" Note that you have to be logged in GNPS first, [https://gnps.ucsd.edu](https://gnps.ucsd.edu)). See documentation for [the FBMN workflow on GNPS](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/).
-12. Alternatively, upload these files via FTP for [FBMN on GNPS](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/), or use them for other annotation tools ([DEREPLICATOR](dereplicator.md), [Mass2Motif](mass2motif.md), [NAP](nap.md).
+12. Alternatively, upload these files via FTP for [FBMN on GNPS](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/), or use them for other annotation tools ([DEREPLICATOR](dereplicator.md), [Mass2Motif](ms2lda.md), [NAP](nap.md).
 
 ![img](img/openms/results_1.png)
 
