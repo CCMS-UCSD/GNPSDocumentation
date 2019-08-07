@@ -93,7 +93,7 @@ To aid in the visualization of individual node relatedness within a cluster, the
 
 To separate one or multilple specific desired network(s), press “ctrl” or “command” (windows or MacOS, respectively) at the same time drag the mouse to select the network(s). Then, click on the symbol as shown below. Automatically, the sub-network is created. For going back to the main network, go into the _Control Panel_, select _Network_ and then choose the main network.
 
-![img](img/FBMN_Cytoscape/Slide18.png)
+![img](img/FBMN_Cytoscape/Slide18.PNG)
 
 #### The Toolbar function
 
