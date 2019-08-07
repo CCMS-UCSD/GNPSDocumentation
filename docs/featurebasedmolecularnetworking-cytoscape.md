@@ -35,7 +35,7 @@ The imported network will be displayed in the main window. In the _Control Panel
 
 You can import the table file into Cytoscape, click on Import Table from File System and then choose into the “DB_result” folder the .csv file. Then, click on OK in the opened window.
 
-![img](img/FBMN_Cytoscape/Slide17.png)
+![img](img/FBMN_Cytoscape/Slide17.PNG)
 
 ## Rotation of the Network
 
