@@ -33,7 +33,11 @@ The imported network will be displayed in the main window. In the _Control Panel
 
 ![img](img/FBMN_Cytoscape/Slide3.PNG)
 
-### Rotation of the Network
+You can import the table file into Cytoscape, click on Import Table from File System and then choose into the “DB_result” folder the .csv file. Then, click on OK in the opened window.
+
+![img](img/FBMN_Cytoscape/Slide17.png)
+
+## Rotation of the Network
 
 To rotate the entire molecular network choose the tab _Layout_ and click on _Node Layout tool_. In the opened window, unclick the box _Selected Only_ to rotate the entire network and move the blue bar to 90. You can also select specific subnetworks and rotate them by clicking the box _Selected only_.
 
@@ -63,7 +67,7 @@ In the  _Control Panel_ (left panel), go to the _Style_ tab. Within the _Node_ s
 
 ##### Size
 
-In _Style_ panel, at Size option, select "_SumPeakIntensity"_ (sum of ion intensities across samples, derived from the LC-MS peak area) or the "_number of spectra_" (occurence of the ion across samples, e.g count of 1 if not zero) as _Column_ and _Continuous Mapping_ as _Mapping Type_. The opened window allows to modify the node size in function of the node metadata column chosen. Begin by setting the value for minimum and maximum node size value with the button _Set Min and Max_, in order to achieve a satisfying network representation. Although it is not recommended, it is possible to use a non-linear continuous mapping.
+In order to match the label size to the node size, go into _Style panel_, at _Label Front Size_ option, select “_SumPeakIntensity_” or the “_number of spectra_” (as selected for node size) as _Column and Continuous Mapping_ as _Mapping Typ_e. As described above, begin by setting the value for minimum and maximum node size value with the button Set Min and Max, then choose the same continuous mapping as used for the node size.
 
 ![img](img/FBMN_Cytoscape/Slide8.PNG)
 
@@ -84,6 +88,12 @@ To aid in the visualization of individual node relatedness within a cluster, the
 ![img](img/FBMN_Cytoscape/Slide10.PNG)
 
 ### Mining information in the network
+
+### Sub-network creation
+
+To separate one or multilple specific desired network(s), press “ctrl” or “command” (windows or MacOS, respectively) at the same time drag the mouse to select the network(s). Then, click on the symbol as shown below. Automatically, the sub-network is created. For going back to the main network, go into the _Control Panel_, select _Network_ and then choose the main network.
+
+![img](img/FBMN_Cytoscape/Slide18.png)
 
 #### The Toolbar function
 
