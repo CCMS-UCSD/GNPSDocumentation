@@ -14,7 +14,7 @@ Progenesis QI can perform feature detection, alignment and annotation of non-tar
 
 ## Running Progenesis QI
 
-Please refer to the official documentation for Progenesis QI at: [http://www.nonlinear.com/progenesis/qi/v2.4/user-guide/](http://www.nonlinear.com/progenesis/qi/v2.4/user-guide/)
+Please refer to the official documentation for Progenesis QI at: [http://www.nonlinear.com/progenesis/qi/](http://www.nonlinear.com/progenesis/qi/)
 
 
 ## Running a FBMN with Progenesis QI files
