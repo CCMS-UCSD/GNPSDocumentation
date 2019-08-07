@@ -6,9 +6,6 @@ pages:
     - Superquick Start Guide: superquickstart.md
     - Quick Start Guide: quickstart.md
     - GNPS Analysis Tools Overview: gnpsanalysisoverview.md
-    - Change Log: changelog.md
-    - Contact: contact.md
-    - GNPS Workshops: workshops.md
     - Mass Spec/Computational Background:
 #        - Targeted vs Untargeted: massspecbackground/targeteduntargeted.md
 #        - Tandem Mass Spectrometry (MS/MS): massspecbackground/tandemms.md
@@ -26,11 +23,16 @@ pages:
         - Result Views Navigation: resultviews.md
     - Advanced Data Analysis:
         - Molecular Networking in Cytoscape: cytoscape.md
-        - Dereplicator: dereplicator.md
+        - DEREPLICATOR: dereplicator.md
         - Network Annotation Propagation (NAP): nap.md
         - Feature Based Molecular Networking:
-            - Overview: featurebasedmolecularnetworking.md
-            - MZmine2 Tutorial: featurebasedmolecularnetworking-with-mzmine2.md
+            - FBMN Workflow: featurebasedmolecularnetworking.md
+            - FBMN with MZmine2 : featurebasedmolecularnetworking-with-mzmine2.md
+            - FBMN with MS-DIAL: featurebasedmolecularnetworking-with-ms-dial.md
+            - FBMN with XCMS3: featurebasedmolecularnetworking-with-xcms3.md
+            - FBMN with OpenMS: featurebasedmolecularnetworking-with-openms.md
+            - FBMN with MetaboScape: featurebasedmolecularnetworking-with-metaboscape.md
+            - FBMW with Cytoscape: featurebasedmolecularnetworking-cytoscape.md
         - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
     - Community/Social Features:
         - Spectral Libraries:
@@ -46,10 +48,13 @@ pages:
     - Troubleshooting: troubleshooting.md
     - Tutorial Guides:
         - Molecular Networking - Analog Discovery in Microbial Extracts: tutorials/bacterianetworking.md
-        - Feature Based Molecular Networking - MZmine2 Feature Detection - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangutmzmine.md
+        - Feature Based Molecular Networking with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangutmzmine.md
         - Feature Based Molecular Networking - GNPS: tutorials/featurebasedgnps.md
     - Presentation Materials:
         - Logos: logos.md
+    - Change Log: changelog.md
+    - Contact: contact.md
+    - GNPS Workshops: workshops.md
 theme:
     name: material
     #name: readthedocs
