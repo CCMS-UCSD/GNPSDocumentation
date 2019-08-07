@@ -159,7 +159,7 @@ Go to Menu: Peak list methods / Filtering / Peak list row filter / Select the fi
 
 Select the last "filtered aligned peaklist" and Go to Menu: "Peak list methods" / "Export" / "Export for/Submit to GNPS"
 
-![img](img/mzmine/gnps_export_module_v2.png)
+![img](/img/mzmine/gnps_export_module_v2.png)
 
 See an example of files outputted by the export module using the workflow:
 [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files).
@@ -168,7 +168,7 @@ See an example of files outputted by the export module using the workflow:
 
 **IMPORTANT:** While the possibility to submit the files directly to GNPS and launch a FBMN job on the fly is really convenient for quick data analysis, the job and files will not be saved to your personal account on GNPS if you do not provide username/password, and you are limited to basic presets of parameters. For that reason, we recommend to upload your files with the FTP uploader [(see documentation)](fileupload.md) and prepare your job [directly on GNPS](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you must be logged in first), or alternatively to clone the submitted job.
 
-![img](img/mzmine/gnps_export_module_v2_submission.png)
+![img](/img/mzmine/gnps_export_module_v2_submission.png)
 
 In the "Export for/Submit to GNPS" module, select the option: "Submit to GNPS"
 
