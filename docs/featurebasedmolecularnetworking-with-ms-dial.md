@@ -1,6 +1,6 @@
 ## Introduction
 
-The **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), and [XCMS](featurebasedmolecularnetworking-with-xcms3.md).
+The **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md).
 
 The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking.md)
 
@@ -96,9 +96,9 @@ Click the “finish” button, then MS-DIAL will perform all the feature finding
 
 ### Export or/and submit the files needed for Feature-Based Molecular Networking on GNPS:
 
-- a feature table with ion intensities (.CSV file format)
+- a *feature quantification table* with ion intensities (.CSV file format)
 
-- a list of the MS/MS spectra (.MGF file format) (the most intense MS/MS per feature is selected).
+- a list of the MS/MS spectra (MS/MS spectral summary file in .MGF format) (the most intense MS/MS per feature is selected).
 
 Menu: Export / Alignment result
 
@@ -117,17 +117,17 @@ If you want a feature table based on peak area, check the “Raw data matrix (Ar
 See an example of files outputted by the export module using the workflow:
 [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files/)):
 
-### Feature Based Molecular Networking in GNPS
+### Running the FBMN with MS-DIAL
 
-The workflow for Feature Based Molecular Networking in GNPS is different from the classic molecular networking workflow. [Access the FBMN workflow here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D) (You need to be logged in first !)
+After the processing with MS-DIAL, the output files can be used to run the Feature-Based Molecular Networking workflow on GNPS either using the [Superquick FBMN start page] (http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking) or [the standard interface of the FBMN workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
 
 More information on the Feature Based Molecular Networking workflow on GNPS [can be obtained on that documentation page](featurebasedmolecularnetworking.md)
 
 Basically, you will need to upload the files ouputted by the MS-DIAL processing (test files are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files/)):
 
-1. Feature Table from above
-2. MGF for MS/MS from above
-3. Metadata table - requirements are described [here](networking.md#metadata), but note that **important** note below:
+1. A *feature quantification table* (see above)
+2. A *MS/MS spetral summary* file (see above)
+3. A *metadata table* - requirements are described [here](networking.md#metadata), but note that **important** note below:
 
 **IMPORTANT FOR METADATA WITH MS-DIAL**: the "filename" in the metadata files for FBMN with MS-DIAL should not contain the file extension (ex: "sample1.mzML" must be "sample1").
 

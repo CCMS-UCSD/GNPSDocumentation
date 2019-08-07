@@ -1,6 +1,6 @@
 ## Introduction to FBMN with OpenMS
 
-The **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), and [XCMS](featurebasedmolecularnetworking-with-xcms3.md).
+The **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md).
 
 The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking.md)
 
@@ -45,7 +45,7 @@ The corresponding OpenMS configuration files (.INI files) are available from tha
 6. Download the main output files with "Download OpenMS Output Files" and/or all the files with "Download Workflow Files".
 7. Unzip the archive.
 8. Examine the consensusXML file (in the *filefilter* folder) with TOPPAS.
-9. The `gnpsexport` folder contains the *MS/MS spectral file* (.MGF file)
+9. The `gnpsexport` folder contains the *MS/MS spectral summary file* (.MGF file)
 10. The `textexporter` folder contains the *feature quantification table* (.TXT file).
 11. Click a FBMN workflow on GNPS by clicking on "*Run a Feature-Based Molecular Networking at GNPS*" Note that you have to be logged in GNPS first, [https://gnps.ucsd.edu](https://gnps.ucsd.edu)). See documentation for [the FBMN workflow on GNPS](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/).
 12. Alternatively, upload these files via FTP for [FBMN on GNPS](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/), or use them for other annotation tools ([DEREPLICATOR](dereplicator.md), [Mass2Motif](ms2lda.md), [NAP](nap.md).
@@ -80,7 +80,7 @@ A representative OpenMS-GNPS workflow would sequencially use these OpenMS TOPP t
 
 The *GNPSExport TOPP tool* can be ran on a consensusXML file and the corresponding mzML files to generate a MS/MS spectral file (MGF format) and corresponding feature quantification table (.TXT format) that contains the LC-MS peak area intensity.
 
-For each *consensusElement* in the consensusXML file, the *GNPSExport* produces one representative *consensus MS/MS spectrum* (named *peptide annotation* in OpenMS jargon) outputed in the MS/MS spectral file (.MGF file). Several mode for the generation of the *consensus MS/MS spectrum* are available and described below. Note that these parameters are defined in the GNPSExport parameters file (.INI file, [available with that link](openms_gnpsexport/GNPSExport.ini)).
+For each *consensusElement* in the consensusXML file, the *GNPSExport* produces one representative *consensus MS/MS spectrum* (named *peptide annotation* in OpenMS jargon) outputed in the *MS/MS spectral summary file* (.MGF file). Several mode for the generation of the *consensus MS/MS spectrum* are available and described below. Note that these parameters are defined in the GNPSExport parameters file (.INI file, [available with that link](openms_gnpsexport/GNPSExport.ini)).
 
 ##### Usage and Options for GNPSExport TOPP tool:
 
@@ -105,6 +105,15 @@ GNPSExport -ini iniFile-GNPSExport.ini
 - **All MS/MS**: `full_spectra` - For each *consensusElement*, the GNPSExport will output *All MS/MS scans*.
 
 Note that *mass accuracy* and the *retention time window* for the pairing between MS/MS scans and a LC-MS feature orconsensusElement is defined at the *IDMapper tool* step.
+
+
+### Running the FBMN workflow with OpenMS files
+
+After the processing with OpenMS, the output files can be used to run the Feature-Based Molecular Networking workflow on GNPS either using the [Superquick FBMN start page] (http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking) or [the standard interface of the FBMN workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
+
+Make sure to select the correct table source (OpenMS).
+
+The main documentation for FBMN [can be accessed here](featurebasedmolecularnetworking.md).
 
 ## Page contributors
 Louis Felix Nothias (UCSD), Abinesh Sarvepalli (UCSD)

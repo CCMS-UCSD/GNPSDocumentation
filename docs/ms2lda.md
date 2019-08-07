@@ -10,7 +10,7 @@ It is now also possible to run MS2LDA analyses through the GNPS interface [here]
 ![img](img/ms2lda/overview.png)
 
 In this section, it is explained what input files are needed, how the parameters can be chosen, and what kind of output you get.
-Finally, it is explained how the obtained MS2LDA model can be further explored on the [MS2LDA](www.ms2lda.org) website by uploading the generated dict file.
+Finally, it is explained how the obtained MS2LDA model can be further explored on the [MS2LDA](http://www.ms2lda.org) website by uploading the generated dict file.
 
 # Collecting the right input files
 

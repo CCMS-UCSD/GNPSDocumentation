@@ -1,6 +1,6 @@
 ## Introduction
 
-The **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), and [XCMS](featurebasedmolecularnetworking-with-xcms3.md).
+The **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md).
 
 The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking.md)
 
@@ -19,7 +19,7 @@ install("BiocManager")
 BiocManager::install("xcms")
 ```
 
-See also [xcms Bioconductor package] (https://www.bioconductor.org/packages/release/bioc/html/xcms.html).
+See also the [xcms Bioconductor package] (https://www.bioconductor.org/packages/release/bioc/html/xcms.html).
 
 Clone also the GitHub repository
 [https://github.com/jorainer/xcms-gnps-tools](https://github.com/jorainer/xcms-gnps-tools)
@@ -81,33 +81,30 @@ documentation here](fileconversion.md).
 4. Peak grouping (`groupChromPeaks`).
 5. Gap filling (`fillChromPeaks`).
 6. Export the data for FBMN on GNPS
-	-	a feature table with ion intensities (.TXT file format).
-	- 	a MS/MS spectral data file (.MGF file format).
+	-	a *feature quantification table* with ion intensities (.TXT file format).
+	- 	a *MS/MS spectral summary file* (.MGF file format). Note that it is recommended to use the maxTIC option for the MGF export.
 
 ### Perform the Feature-Based Molecular Networking on GNPS
 
 The files exported from XCMS3 can be uploaded to the GNPS web-platform and a
 Feature-Based Molecular Networking job can be launched.
 
-See that documentation for [the FTP upload]
-(https://ccms-ucsd.github.io/GNPSDocumentation/fileupload/) and prepare your
-FBMN job [directly on
-GNPS](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D)
-(you must be logged in first).
 
-Note that you can upload a metadata table with your job. [See
-documentation](networking.md#metadata).
+FBMN with XCMS3 can be performed either using the [Superquick FBMN start page] (http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking) or [the standard interface of the FBMN workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
 
 More information on the Feature Based Molecular Networking workflow on GNPS can
 be obtained at [this documentation page](featurebasedmolecularnetworking.md).
+
+Note that you can upload a metadata table with your job. [See
+documentation](networking.md#metadata).
 
 ### Representative files and job
 
 Test files are accessible [here](tutorials/AG_tutorial_files/):
 
-1. Feature Table - [Download here](tutorials/AG_tutorial_files/XCMS3-GNPS_AG_test_featuretable.txt)
-2. MGF for MS/MS from above - [Download here](tutorials/AG_tutorial_files/XCMS3-GNPS_AG_test_GNPS.mgf)
-3. A metadata table - [Download here](tutorials/AG_tutorial_files/metadata_GNPS_table_AMG_key_ones_cleaned.txt)
+1. A *feature quantification table* - [Download here](tutorials/AG_tutorial_files/XCMS3-GNPS_AG_test_featuretable.txt)
+2. A *MS/MS spectral summary* file from above - [Download here](tutorials/AG_tutorial_files/XCMS3-GNPS_AG_test_GNPS.mgf)
+3. A *metadata table* - [Download here](tutorials/AG_tutorial_files/metadata_GNPS_table_AMG_key_ones_cleaned.txt)
 
 Here is an example [FBMN job with XCMS3](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=f3f28a930b334dd09f310795fceae4cd) from a subset of the American Gut Project.
 
@@ -117,7 +114,7 @@ See our XCMS-FBMN tutorials using python and R with a subset of the American Gut
 
 ## Page contributors
 
-Madeleine Ernst (UCSD), Ricardo da Silva (UCSD), Louis Felix Nothias (UCSD), Johannes Reiner (Eurac Research)
+Johannes Reiner (Eurac Research), Madeleine Ernst (UCSD), Ricardo da Silva (UCSD), Michael Wittig (Munich University), Louis Felix Nothias (UCSD). 
 
 ## Contribute to the Documentation
 

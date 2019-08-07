@@ -32,6 +32,7 @@ pages:
             - FBMN with XCMS3: featurebasedmolecularnetworking-with-xcms3.md
             - FBMN with OpenMS: featurebasedmolecularnetworking-with-openms.md
             - FBMN with MetaboScape: featurebasedmolecularnetworking-with-metaboscape.md
+            - FBMN with Progenesis QI: featurebasedmolecularnetworking-with-progenesisQI.md
             - FBMW with Cytoscape: featurebasedmolecularnetworking-cytoscape.md
         - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
     - Community/Social Features:
