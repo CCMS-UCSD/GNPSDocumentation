@@ -2,11 +2,17 @@
 
 ## Introduction
 
-The **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), and [XCMS](featurebasedmolecularnetworking-with-xcms3.md).
+The **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md).
 
 The main documentation for Feature-Based Molecular Networking is provided below.
 
-The Feature-Based Molecular Networking workflow on [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
+The Feature-Based Molecular Networking (FBMN) workflow is available on GNPS via:
+
+- [The Superquick Start page for FBMN](http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking). This page enables rapid submission of jobs with default parameters.
+
+- [The standard GNPS interface page for FBMN](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
+
+- For programmatic access to the FBMN, contact Mingxun Wang at <miw023@ucsd.edu>.
 
 ## Citations
 
@@ -19,7 +25,7 @@ The citations from the mass spectrometry processing tools you used [[MZmine2](fe
 
 ## Mass Spectrometry Data Processing for the Feature Based Molecular Networking Workflow
 
-In brief, mass spectrometry processing softwares have been adapted to export two files (*feature quantification table* and *MS/MS spectral file*) that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. These softwares and their main features are presented in the table below, along with a step-by-step documentation to use for FBMN on GNPS (FBMN Documnetation):
+In brief, mass spectrometry processing softwares have been adapted to export two files (*feature quantification table* and *MS/MS spectral summary*) files that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. These softwares and their main features are presented in the table below, along with a step-by-step documentation to use for FBMN on GNPS:
 
 |  Processing tool | FBMN Documentation  | Interface  |  Platform | Code availability|Target user|
 |---|---|---|---|---|---|

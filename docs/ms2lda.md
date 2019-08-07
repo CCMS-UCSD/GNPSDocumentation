@@ -10,7 +10,7 @@ It is now also possible to run MS2LDA analyses through the GNPS interface [here]
 ![img](img/ms2lda/overview.png)
 
 In this section, it is explained what input files are needed, how the parameters can be chosen, and what kind of output you get.
-Finally, it is explained how the obtained MS2LDA model can be further explored on the [MS2LDA](www.ms2lda.org) website by uploading the generated dict file.
+Finally, it is explained how the obtained MS2LDA model can be further explored on the [MS2LDA](http://www.ms2lda.org) website by uploading the generated dict file.
 
 # Collecting the right input files
 
@@ -52,7 +52,7 @@ The LDA Free Motifs correspond to the number of "free Mass2Motifs" that are adde
 
 ## Selecting MotifDB motif sets
 
-By default all Motif Sets will be imported from [MotifDB](www.ms2lda.org/motifdb). However, it is wise to exclude annotated motif sets of sources that are very distant from the source of your input data. Note that the GNPS and MassBank are annotated Mass2Motifs discovered in reference molecules.
+By default all Motif Sets will be imported from [MotifDB](http://www.ms2lda.org/motifdb). However, it is wise to exclude annotated motif sets of sources that are very distant from the source of your input data. Note that the GNPS and MassBank are annotated Mass2Motifs discovered in reference molecules.
 
 ![img](img/ms2lda/LDAparameterMotifDB.png)
 
@@ -120,7 +120,7 @@ In general, when analysing annotating or novel Mass2Motifs, it is important to k
 
 # Taking the GNPS results into the MS2LDA web app
 
-After downloading the MS2LSA Dict file from the finished MS2LDA experiment, this can be uploaded into the [MS2LDA web app](www.ms2lda.org). There is a [User Guide](http://www.ms2lda.org/user_guide/) available that covers the main functionalities of the MS2LDA web app.
+After downloading the MS2LSA Dict file from the finished MS2LDA experiment, this can be uploaded into the [MS2LDA web app](http://www.ms2lda.org). There is a [User Guide](http://www.ms2lda.org/user_guide/) available that covers the main functionalities of the MS2LDA web app.
 
 If it is your first time at the MS2LDA web app, make sure you get a login account before continuing. Once logged in, go to the experiments section:
 
@@ -168,7 +168,7 @@ More information can be found in [this](http://www.pnas.org/content/113/48/13738
 This is a future feature that will become available in the course of this year. It will allow you to make your new annotations searchable and usable by the community.
 
 # Future Directions
-At GNPS, we are working with the MS2LDA team to promote publication of curated sets of Mass2Motifs into [MotifDB](www.ms2lda.org/motifdb) that can help to annotate your MS/MS spectra.
+At GNPS, we are working with the MS2LDA team to promote publication of curated sets of Mass2Motifs into [MotifDB](http://www.ms2lda.org/motifdb) that can help to annotate your MS/MS spectra.
 
 ## Citations
 

@@ -1,10 +1,8 @@
 ## Introduction
 
-The **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), and [XCMS](featurebasedmolecularnetworking-with-xcms3.md).
+The **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md).
 
 The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking.md)
-
-The Feature-Based Molecular Networking workflow on [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
 
 Below we are describing how to use MZmine2 with the FBMN workflow on GNPS.
 
@@ -31,13 +29,17 @@ In MZmine2, a sequence of steps are performed to process the mass spectrometry d
 
 **IMPORTANT:** MZmine2 parameters will vary depending on the instrument used, the acquisition parameters, and the sample studied. The following documentation serves a basic guideline for using MZmine2 with the Feature-Based Molecular Networking workflow.
 
-Please consult these resources for more details on MZmine2 processing:
+Please consult the resources below for more details on MZmine2 processing:
 
 - The official documentation [http://mzmine.github.io/documentation.html](http://mzmine.github.io/documentation.html),
 - The [MZmine tutorial](http://www.pharmacognosie-parisdescartes.fr/pdf/150420_MZmine_Tutorial_UNIGE.pdf) by Pierre-Marie Allard and Joelle Houriet from the University of Geneva.
-- The video tutorial about [MZmine2 processing for Feature Based Molecular Networking](tutorials/americangutmzmine.md).
+- The video tutorial about [MZmine2 processing for Feature Based Molecular Networking](tutorials/americangutmzmine.md). **Note that this video is slighlty outdatted**, so please refer to the steps described in this documentation.
 
 <iframe width="700" height="400" src="https://www.youtube.com/embed/5jjMllbwD-U"> </iframe>
+
+- The video tutorial about [Quick MZMine2 Export to GNPS for Feature Based Molecular Networking]
+
+<iframe width="800" height="400" src="https://www.youtube.com/embed/vFcGG7T_44E"> </iframe>
 
 ### Download the MZmine2 software
 Download the latest version of MZmine2 software (version MZmine v2.33 minimum) at [https://github.com/mzmine/mzmine2/releases](https://github.com/mzmine/mzmine2/releases).
@@ -90,11 +92,11 @@ Go to Menu: Raw data methods / Mass detection / Set filter : MS level 2.
 
 ![img](img/mzmine/mass_detection_ms2.png)
 
-#### 3. Build Chromatogram
+#### 3. Build Chromatogram (LC-MS feature detection part 1)
 
 Go to Menu: Raw data methods / Chromatogram builder
 
-#### 4. Deconvolve the Chromatogram
+#### 4. Deconvolve the Chromatogram (LC-MS feature detection part 2)
 
 Go to Menu: Peak list methods / Peak detection / Chromatogram deconvolution
 
@@ -110,21 +112,21 @@ Example for a UHPLC colum (1.7 µm C18, 50 × 2.1 mm, flow rate of 0.5 mL/min):
 
 #### 5. Group isotopes and co-eluting ions
 
-Use the "Isotopic peaks grouper module" [recommended] or other alternative (such as the CAMERA module).
+Use the "Isotopic peaks grouper" [recommended] or other alternative (such as the CAMERA module).
 
 Go to Menu: Peak list methods / Isotopes / Isotopic peaks grouper.
 
-**IMPORTANT:**  This depends on your expected peak shapes, duty cycle time and the MS mass accuracy. (Example: MAXIS-QTOF, 10 min grdainet, 0.1 min, 0.02 m/z; Q-Eaxtive, 5 min gradient, 0.05 min, 0.01 m/z)
+**IMPORTANT:**  This depends on your expected peak shapes, duty cycle time and the MS mass accuracy. (Example: MAXIS-QTOF, 10 min gradient, 0.1 min, 0.02 m/z; Q-Exactive, 5 min gradient, 0.05 min, 0.01 m/z)
 
 #### 6. Order the peaklists
 
 Go to Menu: Peak list methods / Order peak lists.
 
-**IMPORTANT:** This is to ensure reproducibility of results. Indeed, the aligned peaklist will change slighlty if that step is not performed.
+**IMPORTANT:** This is to ensure the reproducibility of the processing Indeed, the aligned peaklist will change slighlty if that step is not performed. 
 
-#### 7. Align Features
+#### 7. LC-MS feature alignement (Peaklist alignement)
 
-In this step, the peak lists from each samples will be aligned in one aligned peak list.
+In this step, the peak lists from each samples will be aligned in one aligned peak list. The alignement is performed iteratively using the first peaklist selected (see MZmine documentation). For that reason, make sure the first sample is adapted (not a negative control) or to manually put an representative peaklist in first position.
 
 Go to Menu: Peak list methods / Alignment / Join aligner
 
@@ -147,26 +149,26 @@ Go to Menu: Peak list methods / Filtering / Peak list row filter / Select the fi
 
 ![img](img/mzmine/ms2_filtering.png)
 
-#### 10. Export the Feature Table and MGF file
+#### 10. Use the GNPS Export module
 
-##### Export or/and submit the files needed for Feature-Based Molecular Networking on GNPS:
+##### Use the dedicated module "Submit to/Export for GNPS" in MZmine to export the needed file:
 
-- a feature table with ion intensities (.CSV file format)
+- a *feature quantification table* with LC-MS feature intensities (.CSV file format)
 
-- a list of the MS/MS spectra (.MGF file format) (the most intense MS/MS per feature is selected).
+- a *MS/MS spectral summary file*, with a representative MS/MS spectrum per LC-MS feature. list of the MS/MS spectra (.MGF file format) (the most intense MS/MS per feature is selected).
 
 Select the last "filtered aligned peaklist" and Go to Menu: "Peak list methods" / "Export" / "Export for/Submit to GNPS"
 
-![img](img/mzmine/gnps_export_module_v2.png)
+![img](/img/mzmine/gnps_export_module_v2.png)
 
 See an example of files outputted by the export module using the workflow:
 [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files).
 
 ##### The files can be uploaded to the GNPS web-platform and Feature-Based Molecular Networking job can be directly launched
 
-**IMPORTANT:** While the possibility to submit the files directly to GNPS and launch a FBMN job on the fly is really convenient for quick data analysis, the job and files will not be saved to your personal account on GNPS, and you are limited to basic presets of parameters. For that reason, we recommend to upload your files with the FTP uploader [(see documentation)](fileupload.md) and prepare your job [directly on GNPS](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you must be logged in first).
+**IMPORTANT:** While the possibility to submit the files directly to GNPS and launch a FBMN job on the fly is really convenient for quick data analysis, the job and files will not be saved to your personal account on GNPS if you do not provide username/password, and you are limited to basic presets of parameters. For that reason, we recommend to upload your files with the FTP uploader [(see documentation)](fileupload.md) and prepare your job [directly on GNPS](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you must be logged in first), or alternatively to clone the submitted job.
 
-![img](img/mzmine/gnps_export_module_v2_submission.png)
+![img](/img/mzmine/gnps_export_module_v2_submission.png)
 
 In the "Export for/Submit to GNPS" module, select the option: "Submit to GNPS"
 
@@ -189,15 +191,13 @@ ADDITIONAL NOTES: The feature table must contain at least the row ID, the row m/
 
 ### Feature Based Molecular Networking in GNPS
 
-The workflow for Feature Based Molecular Networking in GNPS is different from the classic molecular networking workflow. [Access the FBMN workflow here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D) (You need to be logged in first !)
-
-The main documentation of the Feature Based Molecular Networking workflow on GNPS [can be consulted on that page](featurebasedmolecularnetworking.md)
+The main documentation of the Feature Based Molecular Networking workflow on GNPS [can be consulted on that page](featurebasedmolecularnetworking.md). The workflow for Feature Based Molecular Networking in GNPS is different from the "classic" molecular networking workflow. [Access the FBMN workflow here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D) (You need to be logged in first !).
 
 Basically, you will need to upload the files ouputted by the MZmine2 processing (test files are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files)):
 
-1. Feature Table from above
-2. MGF for MS/MS from above
-3. Metadata table - described [here](networking.md#metadata)
+1. A *feature quantification table* (.CSV file format).
+2. A *MS/MS spectral summary* (.MGF file format)
+3. A *metadata table* - described [here](networking.md#metadata)
 
 There are several additional normalization options specifically for feature detection. We can normalize the features per LC/MS run and aggregate by groups with either a sum or average (recommended).
 
