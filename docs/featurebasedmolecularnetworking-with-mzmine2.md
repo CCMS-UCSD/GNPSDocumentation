@@ -29,13 +29,17 @@ In MZmine2, a sequence of steps are performed to process the mass spectrometry d
 
 **IMPORTANT:** MZmine2 parameters will vary depending on the instrument used, the acquisition parameters, and the sample studied. The following documentation serves a basic guideline for using MZmine2 with the Feature-Based Molecular Networking workflow.
 
-Please consult these resources for more details on MZmine2 processing:
+Please consult the resources below for more details on MZmine2 processing:
 
 - The official documentation [http://mzmine.github.io/documentation.html](http://mzmine.github.io/documentation.html),
 - The [MZmine tutorial](http://www.pharmacognosie-parisdescartes.fr/pdf/150420_MZmine_Tutorial_UNIGE.pdf) by Pierre-Marie Allard and Joelle Houriet from the University of Geneva.
-- The video tutorial about [MZmine2 processing for Feature Based Molecular Networking](tutorials/americangutmzmine.md).
+- The video tutorial about [MZmine2 processing for Feature Based Molecular Networking](tutorials/americangutmzmine.md). **Note that this video is slighlty outdatted**, so please refer to the steps described in this documentation.
 
 <iframe width="700" height="400" src="https://www.youtube.com/embed/5jjMllbwD-U"> </iframe>
+
+- The video tutorial about [Quick MZMine2 Export to GNPS for Feature Based Molecular Networking]
+
+<iframe width="800" height="400" src="https://www.youtube.com/embed/vFcGG7T_44E"> </iframe>
 
 ### Download the MZmine2 software
 Download the latest version of MZmine2 software (version MZmine v2.33 minimum) at [https://github.com/mzmine/mzmine2/releases](https://github.com/mzmine/mzmine2/releases).
@@ -155,7 +159,7 @@ Go to Menu: Peak list methods / Filtering / Peak list row filter / Select the fi
 
 Select the last "filtered aligned peaklist" and Go to Menu: "Peak list methods" / "Export" / "Export for/Submit to GNPS"
 
-![img](img/mzmine/gnps_export_module_v2.png)
+![img](/img/mzmine/gnps_export_module_v2.png)
 
 See an example of files outputted by the export module using the workflow:
 [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files).
@@ -164,7 +168,7 @@ See an example of files outputted by the export module using the workflow:
 
 **IMPORTANT:** While the possibility to submit the files directly to GNPS and launch a FBMN job on the fly is really convenient for quick data analysis, the job and files will not be saved to your personal account on GNPS if you do not provide username/password, and you are limited to basic presets of parameters. For that reason, we recommend to upload your files with the FTP uploader [(see documentation)](fileupload.md) and prepare your job [directly on GNPS](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you must be logged in first), or alternatively to clone the submitted job.
 
-![img](img/mzmine/gnps_export_module_v2_submission.png)
+![img](/img/mzmine/gnps_export_module_v2_submission.png)
 
 In the "Export for/Submit to GNPS" module, select the option: "Submit to GNPS"
 
@@ -193,7 +197,7 @@ Basically, you will need to upload the files ouputted by the MZmine2 processing 
 
 1. A *feature quantification table* (.CSV file format).
 2. A *MS/MS spectral summary* (.MGF file format)
-3. A *Metadata table* - described [here](networking.md#metadata)
+3. A *metadata table* - described [here](networking.md#metadata)
 
 There are several additional normalization options specifically for feature detection. We can normalize the features per LC/MS run and aggregate by groups with either a sum or average (recommended).
 

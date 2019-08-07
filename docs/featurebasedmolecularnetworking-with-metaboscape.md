@@ -46,6 +46,8 @@ Go to GNPS to perform a FBMN job. [Refer to that documentation](featurebasedmole
 ## D. Step-by-Step Tutorial
 See the [step-by-step tutorial using MetaboScape 2.0 and the FBMN](tutorials/coffee-tutorial-metaboscape.md) for the Coffee tutorial (part of the **MetaboScape 2.0 documentation**).
 
+![img](img/metaboscapeexportforgnps/Cyto13.PNG)
+
 ## Page contributors
 Louis Felix Nothias (UCSD), Tam Dang (Tech. Univ. Berlin), Kevin Ngoc (UCSD).
 
