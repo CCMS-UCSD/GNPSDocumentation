@@ -1,10 +1,22 @@
-## Change Log
+## Change Log of GNPS Documentation
+
+### 5/3/2019
+
+* [GNPS Workflow Release 3](https://github.com/CCMS-UCSD/GNPS_Workflows/releases/tag/4)
+
+### 4/8/2019
+* Update documentation for [DEREPLICATOR tools](dereplicator.md).
+* Update the [index.md](index.md).
+
+### 4/5/2019
+* New documentation for [Feature-Based Molecular Networking (FBMN)](featurebasedmolecularnetworking.md).
+* New tools available with the FBMN [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md).
 
 ### 3/9/2019
 
 * Adding qiime2 qza and emperor output for Feature Based Molecular Networking
 * Adding GraphML output for MS2LDA
-* GNPS Quickstart will do only the fly conversion of Thermo raw files. 
+* GNPS Quickstart will do only the fly conversion of Thermo raw files.
 
 
 ### 2/5/2019
