@@ -35,6 +35,7 @@ pages:
             - FBMN with Progenesis QI: featurebasedmolecularnetworking-with-progenesisQI.md
             - FBMW with Cytoscape: featurebasedmolecularnetworking-cytoscape.md
         - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
+        - MolNetEnhancer: molnetenhancer.md
     - Spectral Libraries:
         - Browsing Reference Spectral Libraries: browselibraries.md
         - Reference Spectral Library Curation: spectrumcuration.md
