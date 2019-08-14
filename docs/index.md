@@ -55,6 +55,12 @@ Today, the scientific community is clamouring for reproducibility of results tha
 
 Put your MS/MS spectrum of a known compound in GNPS spectral libraries, so you never have to manually re-identify a compound in your own samples ever again. -->
 
+### GNPS and MassIVE uptime
+
+<body>
+    <iframe src="https://stats.uptimerobot.com/Am4PLUWn3" style="width: 100%; height: 10% name="myFrame"></iframe>
+    <p><a href="https://stats.uptimerobot.com/Am4PLUWn3" target="myFrame"> Visualize the status of all GNPS Workflows</a></p>
+
 ## GNPSDocumentation
 
 ### Migration to the New Documentation
