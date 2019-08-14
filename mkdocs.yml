@@ -35,16 +35,17 @@ pages:
             - FBMN with Progenesis QI: featurebasedmolecularnetworking-with-progenesisQI.md
             - FBMW with Cytoscape: featurebasedmolecularnetworking-cytoscape.md
         - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
+        - MolNetEnhancer: molnetenhancer.md
+    - Spectral Libraries:
+        - Browsing Reference Spectral Libraries: browselibraries.md
+        - Reference Spectral Library Curation: spectrumcuration.md
+        - Reference Spectral Library Batch Addition: batchupload.md
+        - Downloading Reference Spectral Libraries: downloadlibraries.md
+    - Public Datasets:
+        - Dataset Creation/Sharing: datasets.md
+        - Continuous Identification: continuousid.md
+        - Molecule Explorer: moleculeexplorer.md
     - Community/Social Features:
-        - Spectral Libraries:
-            - Browsing Reference Spectral Libraries: browselibraries.md
-            - Reference Spectral Library Curation: spectrumcuration.md
-            - Reference Spectral Library Batch Addition: batchupload.md
-            - Downloading Reference Spectral Libraries: downloadlibraries.md
-        - Datasets:
-            - Dataset Creation/Sharing: datasets.md
-            - Continuous Identification: continuousid.md
-            - Molecule Explorer: moleculeexplorer.md
         - User Page: user.md
     - Troubleshooting: troubleshooting.md
     - Tutorial Guides:
