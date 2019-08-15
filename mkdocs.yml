@@ -22,9 +22,7 @@ pages:
         - MASST Search (Mass Search Tool): masst.md
         - Result Views Navigation: resultviews.md
     - Advanced Data Analysis:
-        - Molecular Networking in Cytoscape: cytoscape.md
         - DEREPLICATOR: dereplicator.md
-        - Network Annotation Propagation (NAP): nap.md
         - Feature Based Molecular Networking:
             - FBMN Workflow: featurebasedmolecularnetworking.md
             - FBMN with MZmine2 : featurebasedmolecularnetworking-with-mzmine2.md
@@ -35,7 +33,10 @@ pages:
             - FBMN with Progenesis QI: featurebasedmolecularnetworking-with-progenesisQI.md
             - FBMW with Cytoscape: featurebasedmolecularnetworking-cytoscape.md
         - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
+        - Molecular Networking in Cytoscape: cytoscape.md
         - MolNetEnhancer: molnetenhancer.md
+        - Network Annotation Propagation (NAP): nap.md
+        - Reanalysis of Data User Interface (ReDU): ReDU.md
     - Spectral Libraries:
         - Browsing Reference Spectral Libraries: browselibraries.md
         - Reference Spectral Library Curation: spectrumcuration.md
