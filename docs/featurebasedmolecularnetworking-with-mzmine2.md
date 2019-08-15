@@ -186,6 +186,7 @@ ADDITIONAL NOTES: The feature table must contain at least the row ID, the row m/
 
 ### Video Tutorial - Quick MZMine2 Export to GNPS for FBMN.
 
+The workflow for Feature Based Molecular Networking in GNPS is different from the classic molecular networking workflow. [Access the FBMN workflow here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (You need to be logged in first !)
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/vFcGG7T_44E"> </iframe>
 
