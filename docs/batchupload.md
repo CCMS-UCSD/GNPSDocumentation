@@ -2,6 +2,14 @@
 
 While there is an interface to upload single spectra, users who wish to batch upload many spectra into the libraries might find adding one spectra at a time cumbersome. Here we provide a method to batch upload many spectra.
 
+## Materials
+
+The materials that are required are:
+
+1. Annotation Spread Sheet
+2. Empty MGF file meant to be library to populate
+3. Source mzXML/mzML/mgf mass spectra files to pull MS/MS spectra 
+
 ## Annotation Spread Sheet
 
 To batch upload, this template must be used:
@@ -14,7 +22,7 @@ Export from this Excel file as a tab separated text file (recommended export fro
 
 ### Batch File Annotation
 
-To check the validity of your batch file, check out our [batch validator](http://dorresteinappshub.ucsd.edu:5020/). 
+To check the validity of your batch file, check out our [batch validator](http://dorresteinappshub.ucsd.edu:5020/).
 
 ## Field Information
 
@@ -55,12 +63,12 @@ It must be noted that filenames must match exactly to those users are uploading.
 
 Users will need to upload their files into GNPS. To do this please refer to the upload documentation [here](fileupload.md).
 
-## Spectrum Addition to Library
+## Creation/Publication of Spectral Library
 
 To actually add the spectra to the libraries, users will
 
-1. Need to upload an empty mgf file to GNPS so that it appears in the file selector directory.
-2. Export excel file as a tab separated text file and uploaded to GNPS (recommended export from Windows office 2013 or newer. Verify that line endings are UNIX and not Windows line endings).
+1. Upload an empty mgf file to GNPS so that it appears in the file selector directory
+2. Export excel file as a tab separated text file and uploaded to GNPS (recommended export from Windows office 2013 or newer. Verify that line endings are UNIX and not Windows line endings)
 3. Users will then need to [click here](http://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22ADD-BATCH-ANNOTATED%22%7D) to utilize the batch workflow and select the mgf file created to hold the library, the input spectrum files, and the text version of the annotations. Addendum: Access to workflow is restricted - To request access please email Ming (ccms-web@cs.ucsd.edu)
-4. After the workflow completes, the mgf file will now be populated with the baych uploaded spectra.
+4. After the workflow completes, the mgf file will now be populated with the batch uploaded spectra.
 5. To contribute this library to the public GNPS library, please email Ming (ccms-web@cs.ucsd.edu), listing the location of the library and the public library it should be added to for approval.

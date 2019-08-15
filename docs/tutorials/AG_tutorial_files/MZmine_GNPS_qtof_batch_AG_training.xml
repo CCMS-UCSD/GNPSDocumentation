@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch>
+    <batchstep method="net.sf.mzmine.modules.rawdatamethods.rawdataimport.RawDataImportModule">
+        <parameter name="Raw data file names">
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\10232_P4_RE4_01_476.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\10546_P4_RG11_01_515.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\10712_P4_RH3_01_521.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\10715_P4_RA4_01_415.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\10765_P4_RE9_01_482.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\11035_P4_RB4_01_431.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\11111_P4_RB1_01_428.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\11163_P4_RB11_01_439.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\12262_P1_RE5_01_94.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\13541_P4_RG3_01_506.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\13917_P4_RA10_01_423.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\14153_P4_RH8_01_526.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\14563_P1_RE10_01_99.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\14880_P3_RA3_01_290.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\15581_P2_RD4_01_203.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\15623_P2_RC3_01_187.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\16500_P2_RD8_01_209.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\16501_P2_RD9_01_210.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\18404_P3_RF6_01_370.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\27373_P2_RD5_01_204.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\29342_P5_RF3_01_620.mzXML</file>
+            <file>C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\AMG_Plant_subset\31878_P1_RH3_01_131.mzXML</file>
+        </parameter>
+    </batchstep>
+    <batchstep method="net.sf.mzmine.modules.rawdatamethods.peakpicking.massdetection.MassDetectionModule">
+        <parameter name="Raw data files" type="ALL_FILES"/>
+        <parameter name="Scans">
+            <ms_level>1</ms_level>
+            <scan_definition/>
+        </parameter>
+        <parameter name="Mass detector" selected="Centroid">
+            <module name="Centroid">
+                <parameter name="Noise level">1000.0</parameter>
+            </module>
+            <module name="Exact mass">
+                <parameter name="Noise level"/>
+            </module>
+            <module name="Local maxima">
+                <parameter name="Noise level"/>
+            </module>
+            <module name="Recursive threshold">
+                <parameter name="Noise level"/>
+                <parameter name="Min m/z peak width"/>
+                <parameter name="Max m/z peak width"/>
+            </module>
+            <module name="Wavelet transform">
+                <parameter name="Noise level"/>
+                <parameter name="Scale level"/>
+                <parameter name="Wavelet window size (%)"/>
+            </module>
+        </parameter>
+        <parameter name="Mass list name">masses</parameter>
+        <parameter name="CDF Filename (optional)" selected="false"/>
+    </batchstep>
+    <batchstep method="net.sf.mzmine.modules.rawdatamethods.peakpicking.massdetection.MassDetectionModule">
+        <parameter name="Raw data files" type="ALL_FILES"/>
+        <parameter name="Scans">
+            <ms_level>2</ms_level>
+            <scan_definition/>
+        </parameter>
+        <parameter name="Mass detector" selected="Centroid">
+            <module name="Centroid">
+                <parameter name="Noise level">100.0</parameter>
+            </module>
+            <module name="Exact mass">
+                <parameter name="Noise level"/>
+            </module>
+            <module name="Local maxima">
+                <parameter name="Noise level"/>
+            </module>
+            <module name="Recursive threshold">
+                <parameter name="Noise level"/>
+                <parameter name="Min m/z peak width"/>
+                <parameter name="Max m/z peak width"/>
+            </module>
+            <module name="Wavelet transform">
+                <parameter name="Noise level"/>
+                <parameter name="Scale level"/>
+                <parameter name="Wavelet window size (%)"/>
+            </module>
+        </parameter>
+        <parameter name="Mass list name">masses</parameter>
+        <parameter name="CDF Filename (optional)" selected="false"/>
+    </batchstep>
+    <batchstep method="net.sf.mzmine.modules.masslistmethods.chromatogrambuilder.ChromatogramBuilderModule">
+        <parameter name="Raw data files" type="BATCH_LAST_FILES"/>
+        <parameter name="Scans">
+            <ms_level>1</ms_level>
+        </parameter>
+        <parameter name="Mass list">masses</parameter>
+        <parameter name="Min time span (min)">0.05</parameter>
+        <parameter name="Min height">3000.0</parameter>
+        <parameter name="m/z tolerance">
+            <absolutetolerance>0.0</absolutetolerance>
+            <ppmtolerance>20.0</ppmtolerance>
+        </parameter>
+        <parameter name="Suffix">chromatograms</parameter>
+    </batchstep>
+    <batchstep method="net.sf.mzmine.modules.peaklistmethods.peakpicking.deconvolution.DeconvolutionModule">
+        <parameter name="Peak lists" type="BATCH_LAST_PEAKLISTS"/>
+        <parameter name="Suffix">deconvoluted</parameter>
+        <parameter name="Algorithm" selected="Local minimum search">
+            <module name="Baseline cut-off">
+                <parameter name="Min peak height"/>
+                <parameter name="Peak duration range (min)">
+                    <min>0.0</min>
+                    <max>10.0</max>
+                </parameter>
+                <parameter name="Baseline level"/>
+            </module>
+            <module name="Noise amplitude">
+                <parameter name="Min peak height"/>
+                <parameter name="Peak duration range (min)">
+                    <min>0.0</min>
+                    <max>10.0</max>
+                </parameter>
+                <parameter name="Amplitude of noise"/>
+            </module>
+            <module name="Savitzky-Golay">
+                <parameter name="Min peak height"/>
+                <parameter name="Peak duration range (min)">
+                    <min>0.0</min>
+                    <max>10.0</max>
+                </parameter>
+                <parameter name="Derivative threshold level"/>
+            </module>
+            <module name="Local minimum search">
+                <parameter name="Chromatographic threshold">0.3</parameter>
+                <parameter name="Search minimum in RT range (min)">0.05</parameter>
+                <parameter name="Minimum relative height">0.05</parameter>
+                <parameter name="Minimum absolute height">1500.0</parameter>
+                <parameter name="Min ratio of peak top/edge">2.0</parameter>
+                <parameter name="Peak duration range (min)">
+                    <min>0.05</min>
+                    <max>2.0</max>
+                </parameter>
+            </module>
+            <module name="Wavelets (XCMS)">
+                <parameter name="S/N threshold">10.0</parameter>
+                <parameter name="Wavelet scales">
+                    <min>0.25</min>
+                    <max>5.0</max>
+                </parameter>
+                <parameter name="Peak duration range">
+                    <min>0.0</min>
+                    <max>10.0</max>
+                </parameter>
+                <parameter name="Peak integration method">Use smoothed data</parameter>
+                <parameter name="R engine">RCaller</parameter>
+            </module>
+            <module name="Wavelets (ADAP)">
+                <parameter name="S/N threshold">10.0</parameter>
+                <parameter name="S/N estimator" selected="Intensity window SN">
+                    <module name="Intensity window SN"/>
+                    <module name="Wavelet Coeff. SN">
+                        <parameter name="Peak width mult.">3.0</parameter>
+                        <parameter name="abs(wavelet coeffs.)">true</parameter>
+                    </module>
+                </parameter>
+                <parameter name="min feature height">10.0</parameter>
+                <parameter name="coefficient/area threshold">110.0</parameter>
+                <parameter name="Peak duration range">
+                    <min>0.0</min>
+                    <max>10.0</max>
+                </parameter>
+                <parameter name="RT wavelet range">
+                    <min>0.001</min>
+                    <max>0.1</max>
+                </parameter>
+            </module>
+        </parameter>
+        <parameter name="m/z range for MS2 scan pairing (Da)" selected="true">0.025</parameter>
+        <parameter name="RT range for MS2 scan pairing (min)" selected="true">0.1</parameter>
+        <parameter name="Remove original peak list">false</parameter>
+    </batchstep>
+    <batchstep method="net.sf.mzmine.modules.peaklistmethods.isotopes.deisotoper.IsotopeGrouperModule">
+        <parameter name="Peak lists" type="BATCH_LAST_PEAKLISTS"/>
+        <parameter name="Name suffix">deisotoped</parameter>
+        <parameter name="m/z tolerance">
+            <absolutetolerance>0.0</absolutetolerance>
+            <ppmtolerance>20.0</ppmtolerance>
+        </parameter>
+        <parameter name="Retention time tolerance" type="absolute">0.1</parameter>
+        <parameter name="Monotonic shape">true</parameter>
+        <parameter name="Maximum charge">3</parameter>
+        <parameter name="Representative isotope">Most intense</parameter>
+        <parameter name="Remove original peaklist">true</parameter>
+    </batchstep>
+    <batchstep method="net.sf.mzmine.modules.peaklistmethods.alignment.join.JoinAlignerModule">
+        <parameter name="Peak lists" type="BATCH_LAST_PEAKLISTS"/>
+        <parameter name="Peak list name">Aligned peak list</parameter>
+        <parameter name="m/z tolerance">
+            <absolutetolerance>0.0</absolutetolerance>
+            <ppmtolerance>20.0</ppmtolerance>
+        </parameter>
+        <parameter name="Weight for m/z">50.0</parameter>
+        <parameter name="Retention time tolerance" type="absolute">0.1</parameter>
+        <parameter name="Weight for RT">50.0</parameter>
+        <parameter name="Require same charge state">false</parameter>
+        <parameter name="Require same ID">false</parameter>
+        <parameter name="Compare isotope pattern" selected="false">
+            <parameter name="Isotope m/z tolerance">
+                <absolutetolerance>0.001</absolutetolerance>
+                <ppmtolerance>5.0</ppmtolerance>
+            </parameter>
+            <parameter name="Minimum absolute intensity"/>
+            <parameter name="Minimum score"/>
+        </parameter>
+    </batchstep>
+    <batchstep method="net.sf.mzmine.modules.peaklistmethods.gapfilling.peakfinder.PeakFinderModule">
+        <parameter name="Peak lists" type="BATCH_LAST_PEAKLISTS"/>
+        <parameter name="Name suffix">gap-filled</parameter>
+        <parameter name="Intensity tolerance">0.1</parameter>
+        <parameter name="m/z tolerance">
+            <absolutetolerance>0.0</absolutetolerance>
+            <ppmtolerance>20.0</ppmtolerance>
+        </parameter>
+        <parameter name="Retention time tolerance" type="absolute">0.1</parameter>
+        <parameter name="RT correction">false</parameter>
+        <parameter name="Remove original peak list">false</parameter>
+    </batchstep>
+    <batchstep method="net.sf.mzmine.modules.peaklistmethods.filtering.rowsfilter.RowsFilterModule">
+        <parameter name="Peak lists" type="BATCH_LAST_PEAKLISTS"/>
+        <parameter name="Name suffix">filtered</parameter>
+        <parameter name="Minimum peaks in a row" selected="true">2.0</parameter>
+        <parameter name="Minimum peaks in an isotope pattern" selected="true">2</parameter>
+        <parameter name="m/z" selected="false"/>
+        <parameter name="Retention time" selected="false"/>
+        <parameter name="Peak duration range" selected="false">
+            <min>0.0</min>
+            <max>10.0</max>
+        </parameter>
+        <parameter name="Chromatographic FWHM" selected="false">
+            <min>0.0</min>
+            <max>1.0</max>
+        </parameter>
+        <parameter name="Parameter">No parameters defined</parameter>
+        <parameter name="Only identified?">false</parameter>
+        <parameter name="Text in identity" selected="false"/>
+        <parameter name="Text in comment" selected="false"/>
+        <parameter name="Keep or remove rows">Keep rows that match all criteria</parameter>
+        <parameter name="Keep only peaks with MS2 scan (GNPS)">true</parameter>
+        <parameter name="Reset the peak number ID">false</parameter>
+        <parameter name="Remove source peak list after filtering">false</parameter>
+    </batchstep>
+    <batchstep method="net.sf.mzmine.modules.peaklistmethods.io.csvexport.CSVExportModule">
+        <parameter name="Peak lists" type="BATCH_LAST_PEAKLISTS"/>
+        <parameter name="Filename">C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\MZmine_test_AG_1</parameter>
+        <parameter name="Field separator">,</parameter>
+        <parameter name="Export common elements">
+            <item>Export row ID</item>
+            <item>Export row m/z</item>
+            <item>Export row retention time</item>
+        </parameter>
+        <parameter name="Export data file elements">
+            <item>Peak area</item>
+        </parameter>
+        <parameter name="Export quantitation results and other information">false</parameter>
+        <parameter name="Identification separator">;</parameter>
+    </batchstep>
+    <batchstep method="net.sf.mzmine.modules.peaklistmethods.io.gnpsexport.GNPSExportModule">
+        <parameter name="Peak lists" type="BATCH_LAST_PEAKLISTS"/>
+        <parameter name="Filename">MZmine_test_AG_GNPS</parameter>
+        <parameter name="Mass list">masses</parameter>
+    </batchstep>
+    <batchstep method="net.sf.mzmine.modules.projectmethods.projectsave.ProjectSaveAsModule">
+        <parameter name="Project file">C:\Users\Damina\Desktop\Daniel\MZmine-GNPS-Traing_August2018\MZmine-GNPS_AG_test.mzmine</parameter>
+    </batchstep>
+</batch>

@@ -1,232 +1,228 @@
+#Feature-Based Molecular Networking (FBMN)
 
-The Feature Finding Molecular Networking brings together LC-MS feature detection tools (e.g. MZmine2, OpenMS, MS-DIAL, MetaboScape), molecular networking (GNPS, http://gnps.ucsd.edu), and other in silico annotation tools, such as Sirius, CSI:FingerID, or Network Annotation Propagation.
+## Introduction
 
-## What is Feature Based Molecular Networking
+The **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md).
 
-Feature Based Molecular Networking is a new way to create molecular networks that utilizes feature detection tools to provide quantification information paired with molecular networking. This is in difference from [classic molecular networking](networking) that
+The main documentation for Feature-Based Molecular Networking is provided below.
 
-## Why Feature Based Molecular Networking
+The Feature-Based Molecular Networking (FBMN) workflow is available on GNPS via:
 
-The key improvements of the new Feature Finding Molecular Networking are:
+- [The Superquick Start page for FBMN](http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking). This page enables rapid submission of jobs with default parameters.
 
-1. Importing quantitative information derived from the feature detection tools into the molecular networks
-2. Discriminate isomers by retention time and remove isotopic peak
-3. Allows the annotation MS/MS of spectra with in silico tools and mapping in the molecular networks
+- [The standard GNPS interface page for FBMN](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
 
-## Feature Detection
+- For programmatic access to the FBMN, contact Mingxun Wang at <miw023@ucsd.edu>.
 
-In summary, these tools have been adapted by providing an .MGF export module for the result of LC-MS/MS feature detection.
+## Citations
 
-1. The data have to be processed as recommended by the developers.
-2. The spectral data from the aligned data can be exported as .MGF, the aligned quantification table has to be exported as well.
-3. The .MGF file can be used as input for any GNPS tools. The aligned quantification table can be imported into Cytoscape.
-3. The metadata table groups can be generated automatically with a dedicated workflow for MZmine2, or post-processed with other solutions (Jupyter notebooks, excel).
+This work builds on the efforts of our many colleagues, please make sure to cite the papers for their processing tools and the GNPS paper:
 
-Currently, we are recommending using the MZmine2 workflow, as it has been thoroughly tested. See the documentation below.
+Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
-### Mass spectrometry data Feature Detection with MZmine2
+The citations from the mass spectrometry processing tools you used [[MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), and [XCMS](featurebasedmolecularnetworking-with-xcms3.md)].
 
-Download MZmine2 software (version MZmine v2.33 minimum) at [https://github.com/mzmine/mzmine2/releases](https://github.com/mzmine/mzmine2/releases).
 
-See documentation and videos here: [http://mzmine.github.io/documentation.html](http://mzmine.github.io/documentation.html),
-and [the video tutorial about Feature Based Molecular Networking.](tutorials/americangutmzmine/)
+## Mass Spectrometry Data Processing for the Feature Based Molecular Networking Workflow
 
-Please make sure your files are converted to mzXML or mzML.
+In brief, mass spectrometry processing softwares have been adapted to export two files (*feature quantification table* and *MS/MS spectral summary*) files that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. These softwares and their main features are presented in the table below, along with a step-by-step documentation to use for FBMN on GNPS:
 
-### MZMine Batch Steps
+|  Processing tool | FBMN Documentation  | Interface  |  Platform | Code availability|Target user|
+|---|---|---|---|---|---|
+|[MZmine2](https://github.com/mzmine/mzmine2/)|[See documentation](featurebasedmolecularnetworking-with-mzmine2.md)|Graphical UI|Any|[Open source](https://github.com/mzmine/mzmine2/blob/master/LICENSE.txt)|Mass spectrometrists|
+|[MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/)|[See documentation](featurebasedmolecularnetworking-with-ms-dial.md) |Graphical UI|Windows|[Open source](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/)|Mass spectrometrists|
+|[OpenMS](https://github.com/OpenMS/OpenMS/)|[See documentation](featurebasedmolecularnetworking-with-openms.md)|Commandline|Any|[Open source](https://github.com/OpenMS/OpenMS/blob/develop/License.txt)|Bioinformaticians and developers|
+|[XCMS3](https://github.com/sneumann/xcms)|[See documentation](featurebasedmolecularnetworking-with-xcms3.md) |Commandline|Any|[Open source](https://github.com/sneumann/xcms)|Bioinformaticians and developers|
+|[MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html)|[See documentation](featurebasedmolecularnetworking-with-metaboscape.md)|Graphical UI|Windows|Proprietary code|Mass spectrometrists|
 
-In MZmine2, a sequence of steps must be performed. Here are several prototype for various instruments as a starting point:
+**IMPORTANT:** The software use for the LC-MS/MS data processing have to be configured and utilized as recommended by the software documentation.
 
-| Instrument  | Gradient Length | Matrix Type | Sample Size | Download |
-| ------------- |-------------| ----- | ----- | ----- |
-| Bruker Maxis HD qTof | 10 Min | Stool | 20 | [Batch](static/maxis_12min_stool_20.xml) |
 
-These batch files can be imported into MZMine2.
+### Mass Spectrometry Data Feature Detection with MZmine2 [RECOMMENDED]
 
-<!-- The prototype batch method for Bruker Maxis HD qTof can be [downloaded](static/qtof_batch.xml) and imported into MZmine2. -->
+Currently, we are recommending using the MZmine2 workflow, as it has been thoroughly tested. [See the documentation here](featurebasedmolecularnetworking-with-mzmine2.md) and the following [MZmine2 video tutorial:](tutorials/americangutmzmine.md)
 
-![complete workflow view](img/mzmine/Workflow_mzmine.png)
 
-The steps required for data pre-processing with MZmine2 for GNPS are shown in the screen capture below.
+## The Feature Based Molecular Networking Workflow in GNPS
 
-See also the following [video tutorial](https://ccms-ucsd.github.io/GNPSDocumentation/tutorials/americangutmzmine/)
-<iframe width="800" height="500" src="https://www.youtube.com/embed/5jjMllbwD-U"> </iframe>
+There is a dedicated Feature-Based Molecular Networking workflow on GNPS that [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
 
+### Requirement for the FBMN workflow
+You will need three input files (test files for each software are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files)):
 
-![img](img/mzmine/batch_overview.png)
+1. The *Feature Table* with the intensity of ion features (TXT or CSV format).
+2. The *MS/MS spectral file* with the list of MS/MS spectra for the ion features (.MGF File).
+3. [Optional] the *Metadata table* - described [here](networking.md#metadata)
 
-Below is a walk through of all the steps
+## SuperQuick Feature Based Molecular Networking Workflow
 
-#### 1. Import Files
 
-Menu: Raw data methods / Raw data import / "Select the files"
+A simplified interace for Super Quick web interace for FBMN [is available here](http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking).
 
-![img](img/mzmine/2_import-raw.png)
 
-#### 2. Mass Detection
+![img](img/featurebasedmolecularnetworking/superquick_fbmn.png)
 
-Perform mass detection on MS level 1: Menu: Raw data methods / Mass detection / Set filter : MS level 1
+###Running the SuperQuick FBMN
+1. Indicate your email and your GNPS Credentials.
+2. Select the 'Feature Generation tool'.
+3. Select the parameters preset.
+4. Drag and drop your "feature quantification table" and "MS/MS spectral file" (.MGF). See the respective documentation for FBMN each tool.
+5. Optional. Drag and drop a [metadata table](networking.md#metadata).
+6. Click on "Analyze Uploaded Files with GNPS Molecular Networking".
 
-[IMPORTANT] Set a appropriate intensity threshold. You cam use the preview window to asses your data. As a rule of thumb, the value should at least correspond to the minimum value set for the triggering of the MS2 scan event. (Example: MAXIS-QTOF: 1E3, Q-Exactive 1E4)
+While this SuperQuick FBMN interface is convenient for quick analysis, we recommend using the standard FBMN workflow presented below that made possible to modify all the workflow parameters.
 
-Perform mass detection on MS level 2. The same masslist name must be used: Menu: Raw data methods / Mass detection / Set filter : MS level 2.
+### Overview of the "standard" Feature Based Molecular Networking Workflow
+![img](img/featurebasedmolecularnetworking/overview.png)
 
-[IMPORTANT] Make sure to set an intensity threshold representative of noise level in the MS2 spectrum. This is typically lower than for MS1. Inappropriate intensity threshold could hamper the GNPS and Sirius export modules. (Example: MAXIS-QTOF: 1E2; Q-Exactive 1E3). If you have any doubt, set it to 0.
+#### Select the software used for the LC-MS/MS data processing
+![img](img/featurebasedmolecularnetworking/select.png)
 
-![img](img/mzmine/mass_detection_ms2.png)
+### Molecular Networks Options
+#### Basic Options
+![img](img/featurebasedmolecularnetworking/Basic_Options_2.png)
 
-#### 3. Build Chromatogram
+| Parameter  | Description          | Default |
+| ------------- |-------------| -----|
+| Precursor Ion Mass Tolerance (PIMT) | Parameter used for MS-Cluster and spectral library search. Specify the precursor ions mass tolerance, in Daltons. This value influences the aforementioned clustering of nearly-identical MS/MS spectra via MS-Cluster. Note that the value of this parameters should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generated the MS/MS data. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 2.0 Da for low-resolution instruments (ion traps, QqQ).| 0.02 |
+| Fragment Ion Mass Tolerance (FIMT)	      | Parameters used for MS-Cluster, molecular networking, and MS/MS spectral library searches. For every group of MS/MS spectra being considered for clustering (consensus spectrum creation), this value specifies how much fragment ions can be shifted from their expected m/z values. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ). | 0.02 |
 
-Menu: Raw data methods / Chromatogram builder
+#### Advanced Molecular Network Options
 
-#### 4. Deconvolve the Chromatogram
+![set title](img/featurebasedmolecularnetworking/Advanced_Network_Options.png)
 
-Menu: Peak list methods / Peak detection / Chromatogram deconvolution
+| Parameter        | Description          | Default | Notes |
+| ------------- |-------------| -----| -----|
+| Min Pairs Cos | Minimum cosine score that must occur between a pair of consensus MS/MS spectra in order for an edge to be formed in the molecular network  | 0.7 | Lower value will increase the size of the clusters by inducing the clustering of less related MS/MS spectra, higher value will limit do the opposite. |
+| Minimum Matched Fragment Ion (Min Matched Peaks) | Parameters used for molecular networking. The minimum number of common fragment ions that are shared by two separate consensus MS/MS spectra in order to be connected by an edge in the molecular network | 6 | A low value will permit linkages between spectra of molecules with few similar fragment ions, but it will result in many more less-related spectra being connected to the network. An higher value will do the opposite. Default value is 6, but note that this parameters should be adjusted depending on the experimental conditions for mass spectra acquisition (such as mode of ionisation, fragmentation conditions, and the mobile phase,  ...), and the collision-induced fragmentation behavior of the molecules of interest within the samples. High molecular weight (MW) compounds, and compounds with more hetero-atoms will generally tend to produce more fragment ions. However, this rule cannot be systematized. For example, some lipids with high MW generate only few fragment ions. |
+| Maximum shift between precursors | The maximum structure modification mass between two spectra to be considered direct neighbors in a molecular network | 500 | The maximum mass difference between two connected nodes in a molecular network. |
+| Network TopK	| Maximum number of neighbor nodes for one single node  | 10 | The edge between two nodes are kept only if both nodes are within each other's ‘TopK’ most similar nodes.  For example, if this value is set at 20, then a single node may be connected to up to 20 other nodes.  Keeping this value low makes very large networks (many nodes) much easier to visualize. |
+| Maximum Connected Component Size | Maximum size of nodes allowed in a single connected network  | 100 | Maximum size of nodes allowed in a single connected network. Nodes within a single connected molecular network will be separated by increasing cosine threshold for that specific connected molecular network. Default value is 100. Use 0 to allow an unlimited number of nodes in a single network. Note that with large datasets, or when a great number of related molecules are in the dataset, this value should be higher (or turn to 0) to retain as much information as possible. Downstream, these larger networks can be visualized using Cytoscape layout algorithms that can increase the intra-network clustering, allowing to visualize spectral groups in the network despite the number of nodes in the network. |
 
-[IMPORTANT] tick both options "m/z range for MS2 scan pairing (Da)" and "RT range for MS2 scan pairing (min)". Define the values according to your experimental setup. This depends on your expected chromatographic peak width and the MS mass accuracy. (Example: MAXIS-QTOF, 10 min grdainet, 0.15 min, 0.02 m/z; Q-Eaxtive, 5 min gradient, 0.1 min, 0.01 m/z)
 
-![img](img/mzmine/deconvolve.png)
+#### Advanced Spectral Library Search Options
 
-#### 5. Group isotopes and co-eluting ions
+![set title](img/featurebasedmolecularnetworking/Advanced_Library_Search_Options.png)
 
-"Isotopic peaks grouper module" [recommended] or Camera module. Menu: Peak list methods / Isotopes / Isotopic peaks grouper.
+| Parameter        | Description          | Default |
+| ------------- |-------------| -----|
+|Library Search Min Matched Peaks | Minimum number of common fragment ions that MS/MS spectra should contain in order to be considered for spectral library annotation. Default value is 6, but note that this parameters should be tuned depending of the molecule of interest, and the experimental conditions (such as the ionisation mode, and the fragmentation conditions, ...). For example, collision-induced fragmentation of some lipids produce only few fragment ions. A lower value will allow clustering of MS/MS spectra containing less  fragment ions, however it will also induce clustering of  MS/MS spectra from different molecular-type to be connected in one network. An higher value will do the opposite|6|
+|Score Threshold |Minimum cosine score that MS/MS spectra should get in spectral matching with MS/MS spectral libraries in order to be considered an annotation.|0.7|
+|Search Analogs|Will search data for analogs to library spectra| Don't Search|
+|Maximum Analog Search Mass Difference|Maximum mass shift between library and putative analog found| 100 (Da)|
 
-[IMPORTANT]  This depends on your expected peak shapes, duty cycle time and the MS mass accuracy. (Example: MAXIS-QTOF, 10 min grdainet, 0.1 min, 0.02 m/z; Q-Eaxtive, 5 min gradient, 0.05 min, 0.01 m/z)
+|Top results to report per query|Number of matches to report for each feature| 1 |
 
-#### 6. Order the peaklists (Optional)
+#### Advanced Filtering Options (for Spectra)
 
-Menu: Peak list methods / Order peak lists.
+![set title](img/featurebasedmolecularnetworking/Advanced_filtering_options.png)
 
-This is to ensure reproducibility of results. Final output might change a little if this is not performed.
+| Parameter        | Description          | Default
+| ------------- |-------------| -----|
+| Minimum Peak Intensity | All fragment ions in the MS/MS spectrum below this raw intensity will be deleted.  By default, no filter. | 0  |
+| Filter Precursor  Window | All peaks in a +/- 17 Da around precursor ion mass are deleted. By default, yes filter. This removes the residual precursor ion, which is frequently observed in MS/MS spectra acquired on qTOFs. | Filter | |
+| Filter library | Apply peak filters to library | Filter | |
+|Filter peaks in 50Da Window | Filter out peaks that are not in the top 6 most intense peaks in a +/- 50Da window | Filter |
 
-#### 7. Align Features
+#### Advanced quantification options
 
-Menu: Peak list methods / Alignment / Join aligner
+There are additional normalization options specifically for the FBMN workflow:
 
-#### 8. Detect Missing Peaks / Gap filling (Optional)
+| Parameter        | Description          | Default
+| ------------- |-------------| -----|
+| Normalization Per File | Total Ion Current (TIC) normalization can be applied to the ion intensities (LC-MS1 peak area) per sample (NOT RECOMMENDED AS DEFAULT) | No Norm  |
+| Aggregation Method for Peak Abundances Per Group | The ion feature intensity (LC-MS1 peak area) can be aggregated by GROUPS from the metadatable with either a *Sum* or *Average* (RECOMMENDED, because more robust to the number of samples per GROUPS). | Average  |
 
-Menu: Peak list methods / Gap filling / Peak finder
+![img](img/featurebasedmolecularnetworking/Advanced_Quantification_Options_2.png)
 
-#### 9. Filter to MS/MS Peaks
+### Inspecting the Results of FBMN on GNPS
 
-Use both filters in the peaklist row filter module: 'Keep only peaks with MS2 scan (GNPS)". Menu: Peak list methods / Filtering / Peak list row filter
+After the completion of the FBMN job (this will take from 10 to 10 hours depending on your number of samples and instrument), you will receive an email notification with a link to the results page (see example below).
 
-![img](img/mzmine/ms2_filtering.png)
+![Results](img/featurebasedmolecularnetworking/results_FBMN.png)
+#### Spectral Library Match and Network Topology Analysis
+For more information about the inspection of the molecular networking results, please refer to [the main documentation page](networkingviews.md).
 
-#### 10. Export Feature Abundances (filtered)
+##### Web-browser Molecular Network Visualization
+Here is an example of web-browser view of molecular networks. Click on the link to [view the interactive molecular networks](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?view=network_displayer&componentindex=56&task=51ee77f5c6d74f878e873f0b1dfe0b5f#%7B%7D).
 
-Export the feature table containing filtered peaks in .CSV format. Menu: Peak list methods / Export / Export to CSV file.
-See an example of MZmine feature table [here](tutorials/AG_tutorial_files/MZmine-GNPS_AG_test_featuretable.csv).
+![Results](img/featurebasedmolecularnetworking/web_view_FBMN.png)
 
-The feature table must contain at least the row ID, the row m/z, and row retention time, along with the sample columns.
-It is currently mandatory for the sample name headers string to have the following format: "filename Peak area". Depending on Note that depending on the steps used in MZmine the sample name header can be "filename baseline-corrected Peak area", but this has to changed back to "filename Peak area".
+#### Dereplicator - Insilico Peptidic Natural Products Tool
 
-![img](img/mzmine/export_features.png)
+The Insilico Peptidic Natural Products Dereplicator is a bioinformatic tool that allows the annotation of known peptidic natural products in MS/MS data using in silico fragmentation tree. This workflow is also included into the Feature Based Molecular Network workflow, then you have the option to use it by clicking into Advanced External tools. After your job is complete you can explore your results and even *clone* the Dereplicator job and modify the parameters.  
 
+Check out the [**full documentation** for further description settings and **citations**](dereplicator.md).
 
-#### 11. Export MS/MS as MGF for GNPS
+![emperor](img/featurebasedmolecularnetworking/dereplicator.png)
 
-Export the .MGF file for GNPS. Menu: Peak list methods / Export / Export for GNPS.
+If you use that tool, please cite the DEREPLICATOR papers. [See citations in the main DEREPLICATOR documentation](dereplicator.md).
 
-See an example of MZmine .MGF file [here](tutorials/AG_tutorial_files/MZmine-GNPS_AG_test_GNPS.mgf).
 
-![img](img/mzmine/gnps_export.png)
+### Inspecting the Results of FBMN in Cytoscape
 
-### Feature Based Molecular Networking in GNPS
+Cytoscape is an open source software platform used to visualize, analyze and annotate molecular networks from GNPS. [See the documentation here](featurebasedmolecularnetworking-cytoscape.md)
 
-There is a special molecular networking workflow to handle MzMine2 features outputs. Try it out [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D). You need to be logged in first!
+![img](img/cytoscape/import_2.png)
 
-You will need three items (test files are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/featurebasedgnps)):
+### Demo GNPS job of Feature Based Molecular Networking
+[Here is an example FBMN](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=52a390c8eb654b7fa8d61a1c7a4aaab5) job with files resulting from MZmine2 processing of a subset of the [American Gut Project] (http://humanfoodproject.com/americangut/).
 
-1. Feature Table from above
-2. MGF for MS/MS from above
-3. Metadata table - described [here](networking#metadata)
+### Running Network Annotation Propagation
 
-There are several additional normalization options specifically for feature detection. We can normalize the features per LC/MS run and aggregate by groups with either a sum or average (recommended).
+It is possible to use the results of FBMN to run Network Annotation Propagation (NAP). NAP uses spectral networks to propagate information from spectral library matching, in order to improve in silico fragmentation candidate structure ranking. See the following [documentation for NAP](nap.md)
 
-![img](img/mzmine/quant_options.png)
+![cand_chemviz](img/nap/display_consensus_candidates.gif)
 
-Here is an example mzmine networking [job](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=747b36ba08434f0cb478b920decfe4ce) from a subset of the American Gut Project.
+If you use that tool, please cite the NAP paper. [See citations in the main NAP documentation](nap.md).
 
-#### Video Tutorial
+### Running MS2LDA Substructure Discovery
 
-**Running Feature Based Molecular Network at GNPS**
+**The results of FBMN can be directly analyzed with MS2LDA**. For this, on the result page click on "Advanced View" > "Analyze with MS2LDA". See the [MS2LDA documentation](ms2lda.md).
 
+![img](img/ms2lda/banner.png)
+
+MS2LDA is a tool that decomposes molecular fragmentation data derived from large metabolomics experiments into annotated Mass2Motifs or discovers Mass2Motifs from experimental data. Mass2Motifs are fragmentation patterns of often co-occurring mass fragment peaks and/or neutral losses that often represent molecular substructures. Check out the MS2LDA website here where you can find more information, browse through data sets, and sign up for an account to run the Mass2Motif discovery on your own data. At GNPS, we are working with the MS2LDA team to integrate both workflows which allows users to map Mass2Motif occurrences in their Molecular Families.
+
+If you use that tool, please cite MS2LDA papers. [See citations in the main MS2LDA documentation](ms2lda.md).
+
+### Viewing the PCoA plot with EMPeror in Qiime2
+
+EMPeror, is an open source and web browser enabled tool that allows researchers to perform rapid exploratory investigations of 3D visualizations of data. To view the PCoA plot (using Bray-Curtis dissimilarity metrics) using the EMPeror Qiime2 pluggin, click on **"View qiime2 Emperor Plots"**.
+
+![emperor](img/featurebasedmolecularnetworking/emperor.png)
+
+**Citation for EMPeror**: Yoshiki Vázquez-Baeza, Meg Pirrung, Antonio Gonzalez, and Rob Knight. Gigascience, 2(1):16, 2013. [doi:10.1186/2047-217X-2-16](https://academic.oup.com/gigascience/article/2/1/2047-217X-2-16/2656132).
+
+**Citation for Qiime2**: Bolyen, E. et al. QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science. (PeerJ Preprints, 2018). [doi:10.7287/peerj.preprints.27295v2](https://peerj.com/preprints/27295/)
+
+### Video Tutorial - Analyze Feature Based Molecular Networking in GNPS
+
+This video presents
 <iframe width="800" height="500" src="https://www.youtube.com/embed/NTkQ0fS1aug"> </iframe>
-
-**Quick MZMine2 Export to GNPS Feature Based Molecular Networking**
-
-<iframe width="800" height="500" src="https://www.youtube.com/embed/vFcGG7T_44E"> </iframe>
-
-
-#### Results Tables
-
-Once the molecular networking is finished, there are many views to explore the analysis. These views are very similar to classic molecular networking.
-
-![img](img/featurebased/feature_statuspage.png)
-
-**Default Views to Explore Molecular Networks**
-
-| View        | Description          |
-| ------------- |-------------|
-| [View All Library Hits](networkingviews.md#view-all-library-hits) | All spectral library matches between consensus MS/MS spectra and the selected libraries |
-| View All Analog Library Hits | All spectral library matches between consensus MS/MS spectra and the selected libraries With Analog Search |
-| [View All Clusters With IDs](networkingviews.md#view-all-clusters-with-ids) | All consensus MS/MS spectra created by Feature Detection Tool that were considered for library search and molecular networking. |
-
-**Network Visualizations**
-
-| View        | Description          |
-| ------------- |-------------|
-| [View Spectral Families (In Browser Network Visualizer)](networkingviews.md#view-spectral-families) | List of all Spectral Families (i.e. connected components in the network) as well as view the network visualized in the browser |
-
-**Export/Download Network Files**
-
-| View        | Description          |
-| ------------- |-------------|
-| Download Cytoscape Data | Download network files (graphML) for import into Cytoscape |
-
-**Advanced Views - Experimental Views**
-
-| View        | Description          |
-| ------------- |-------------|
-| Direct Cytoscape Preview/Download | Preview entire molecular network and download direct cys file to open in Cytoscape |
-
-**Advanced Views - External Tools**
-
-| View        | Description          |
-| ------------- |-------------|
-| View Dereplicator Results | View Dereplicator identification results |
-
-
-#### Visualizing Abundances in Cytoscape as Pie Charts
-
-To visualize different group average abundances in Cytoscape, we'll use pie charts between different groups we care about. Open up the Molecular Network in Cytoscape.
-
-Initially, all nodes will be blue
-
-![img](img/featurebased/feature_cytoscape_load.png)
-
-Select the Style tab, and click the "Def." column under the Image/Chart 1 Row:
-
-![img](img/featurebased/feature_style_select.png)
-
-This brings up a panel to select which groups you would like to display in the pie charts:
-
-![img](img/featurebased/feature_group_select.png)
-
-Select the specific groups you want to compare (e.g. Case vs Control) and hit apply. Now the network will be colored with pies relevant to the groups you wanted to compare.
-
-![img](img/featurebased/feature_cytoscape_pie_display.png)
-
 
 ## Tutorials
 
-See our [tutorial](tutorials/americangutmzmine) on using MZmine2 to produce quantification/ms2 files for Feature Based Molecular Networking in the American Gut Project sample.
+See our [tutorial on using MZmine2](tutorials/americangutmzmine.md) for FBMN analysis of a cohort from the [American Gut Project](http://humanfoodproject.com/americangut/), and our [tutorial on running a FBMN analysis on GNPS](tutorials/featurebasedgnps.md).
 
-See our [tutorial](tutorials/featurebasedgnps) on running Feature Based Molecular Networking within GNPS.
+## Development
 
-### Citation
+#### Source code
+- The FBMN source code can be found on the [GNPS_Workflows GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking).
 
-This work builds on the efforts of our many colleagues, please check out their work:
+#### Input files requirements
+- The *Feature Table* (.TXT or CSV file) needs to have unique *Feature IDentifier* (integer) for each LC-MS1 feature that must match the "SCANS=" header of the corresponding spectrum in the *MS/MS spectral file* (.MGF file). Note that the number of LC-MS1 features in the *Feature Table* can be larger than the number of LC-MS1 features with a spectrum in the *MS/MS spectral file*. And the *Feature IDentifier* does not have to be sequencial. As a result, the *Feature Table* can contain LC-MS1 feature that doesn't have an associated MS/MS scan in the *MS/MS spectral file*. The PCoA generated with qiime2 EMPeror uses the entire content of *Feature Table* provided.
 
-[MZmine 2: Modular framework for processing, visualizing, and analyzing mass spectrometry-based molecular profile data. Pluskal et. al.](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395)
+- The format of the *Feature Table* should be consistent with the representative *Feature Table*  provided on [this page](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files). Note that internally, the *Feature Table* file inputted by the user are converted to a standard MZmine2 format prior to FBMN analysis in GNPS. The python scripts used for the conversion *Feature Table* from various software [are available here](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking/tools/feature-based-molecular-networking/scripts). If you want to add support for another LC-MS processing tool, contact us.
+
+## Citation
+
+This work builds on the efforts of our many colleagues, please make sure to cite the papers for their processing tools and the GNPS paper:
+
+Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
+
+## Page contributors
+Louis Felix Nothias (UCSD), Ming Wang (UCSD, Laura-Isobel McCall (University of Oklahoma), Andrés Mauricio Caraballo Rodríguez (UCSD)
+
+## TO DO
+- here
