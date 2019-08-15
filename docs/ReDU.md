@@ -10,15 +10,15 @@
 ## Functions
 
 ### Analyze Your Data
-* [Compare Your Data to Public Data via Multivariate Analysis](https://mwang87.github.io/ReDU-MS2-Documentation/AnalyzeYourData_MultivariateComparisons/) - Projection of your data onto a precalculated principal components analysis score plot of public data. <br>
-* [Co-analyze Your Data with Public Data at GNPS](https://mwang87.github.io/ReDU-MS2-Documentation/AnalyzeYourData_CoAnalysis_at_GNPS/) - Select files using sample information and assemble public data in groups as desired using the file selector. Launching an analysis loads the files from [MassIVE](https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp) at which point users can add their own data. The following co-analyses can be launched:
+[Compare Your Data to Public Data via Multivariate Analysis](https://mwang87.github.io/ReDU-MS2-Documentation/AnalyzeYourData_MultivariateComparisons/) - Projection of your data onto a precalculated principal components analysis score plot of public data. <br>
+[Co-analyze Your Data with Public Data at GNPS](https://mwang87.github.io/ReDU-MS2-Documentation/AnalyzeYourData_CoAnalysis_at_GNPS/) - Select files using sample information and assemble public data in groups as desired using the file selector. Launching an analysis loads the files from [MassIVE](https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp) at which point users can add their own data. The following co-analyses can be launched:
   * Molecular Networking at GNPS
   * Library Search at GNPS
   
 ### Analyze Public Data
-* [Explore Multivariate Analysis of Public Data](https://mwang87.github.io/ReDU-MS2-Documentation/AnalyzePublicData_MultivariateComparisons/) - Explore precalculated principal components analysis score plot of public data. <br>
-* [Explore Chemical Annotations and Associated Sample Information in all Public Data](https://mwang87.github.io/ReDU-MS2-Documentation/AnalyzePublicData_ChemicalEnrichment/) - Precalculated using public data and default GNPS parameters <br>
-* [Re-analyze Public Data at GNPS](https://mwang87.github.io/ReDU-MS2-Documentation/PublicData_Reanalysis_at_GNPS/) - Select files using sample information and assemble public data in groups as desired using the file selector. The following co-analyses can be launched:
+[Explore Multivariate Analysis of Public Data](https://mwang87.github.io/ReDU-MS2-Documentation/AnalyzePublicData_MultivariateComparisons/) - Explore precalculated principal components analysis score plot of public data. <br>
+[Explore Chemical Annotations and Associated Sample Information in all Public Data](https://mwang87.github.io/ReDU-MS2-Documentation/AnalyzePublicData_ChemicalEnrichment/) - Precalculated using public data and default GNPS parameters <br>
+[Re-analyze Public Data at GNPS](https://mwang87.github.io/ReDU-MS2-Documentation/PublicData_Reanalysis_at_GNPS/) - Select files using sample information and assemble public data in groups as desired using the file selector. The following co-analyses can be launched:
   * Molecular Networking at GNPS
   * Library Search at GNPS
   * Chemical Enrichment Analysis
@@ -34,7 +34,7 @@ All sample information can be downloaded from the ReDU homepage by clicking "Dow
 [GitHub](https://github.com/mwang87/ReDU-MS2-GNPS)
 
 ## Issues and Suggestions
-Please submit any issues or suggetions via [GitHub](https://github.com/mwang87/ReDU-MS2-GNPS). The use of the [GNPS forum](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports) is encouraged.
+Please submit any issues or suggestions via [GitHub](https://github.com/mwang87/ReDU-MS2-GNPS). The use of the [GNPS forum](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports) is encouraged.
 
 ## Page Contributions
 Alan K. Jarmusch (UCSD), Mingxun Wang (UCSD), Christine M. Aceves (UCSD)
