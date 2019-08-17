@@ -139,7 +139,7 @@ Here is an example MS-DIAL networking [job](https://proteomics2.ucsd.edu/ProteoS
 See our [MS-DIAL tutorial](tutorials/americangut-ms-dial.md) on using Feature Based Molecular Networking for the American Gut Project sample.
 
 ## Page contributors
-Kyo Bin Kang (affiliation), Heejung Yang (affiliation) Louis Felix Nothias (UCSD)
+Kyo Bin Kang (Sookmyung Women's University), Heejung Yang (Kangwon National University) Louis Felix Nothias (UCSD)
 
 ## Contribute to the Documentation
 
