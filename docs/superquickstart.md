@@ -24,7 +24,7 @@ Simply drag and drop your mass spectrometry files (mzML, mzXML, or mgf) into the
 
 Once files have been uploaded into the appropriate cohort, enter your email and click the "Analyze Uploaded Files with GNPS Molecular Networking" button.
 
-![button](img/superquickstart_button.png)
+![button](img\superquickstart.png)
 
 This will bring you to a GNPS workflow status page. If you entered an email, you will receive an email once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this is the only way for you to find analysis again.
 
