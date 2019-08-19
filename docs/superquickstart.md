@@ -49,7 +49,7 @@ Simply drag and drop the files out of your feature finding tool:
 
 Once files have been uploaded, enter your email and click the "Analyze Uploaded Files with GNPS Molecular Networking" button.
 
-![button](img/ssuperquickstart.png)
+![button](img/superquickstart.png)
 
 This will bring you to a GNPS workflow status page. If you entered an email, you will receive an email once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this is the only way for you to find analysis again.
 
