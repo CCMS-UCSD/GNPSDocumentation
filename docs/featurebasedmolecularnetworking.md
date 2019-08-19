@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md).
+**Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The supported tools are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md).
 
 The main documentation for Feature-Based Molecular Networking is provided below.
 
@@ -12,7 +12,7 @@ The Feature-Based Molecular Networking (FBMN) workflow is available on GNPS via:
 
 - [The standard GNPS interface page for FBMN](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
 
-- For programmatic access to the FBMN, contact Mingxun Wang at <miw023@ucsd.edu>.
+- For programmatic access to FBMN, contact Mingxun Wang at <miw023@ucsd.edu>.
 
 ## Citations
 
@@ -25,7 +25,7 @@ The citations from the mass spectrometry processing tools you used [[MZmine2](fe
 
 ## Mass Spectrometry Data Processing for the Feature Based Molecular Networking Workflow
 
-In brief, mass spectrometry processing softwares have been adapted to export two files (*feature quantification table* and *MS/MS spectral summary*) files that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. These softwares and their main features are presented in the table below, along with a step-by-step documentation to use for FBMN on GNPS:
+In brief, mass spectrometry processing programs have been adapted to export two files (*feature quantification table* and *MS/MS spectral summary*) files that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. These tools and their main features are presented in the table below along with a step-by-step documentation to use in FBMN on GNPS:
 
 |  Processing tool | FBMN Documentation  | Interface  |  Platform | Code availability|Target user|
 |---|---|---|---|---|---|
@@ -35,12 +35,12 @@ In brief, mass spectrometry processing softwares have been adapted to export two
 |[XCMS3](https://github.com/sneumann/xcms)|[See documentation](featurebasedmolecularnetworking-with-xcms3.md) |Commandline|Any|[Open source](https://github.com/sneumann/xcms)|Bioinformaticians and developers|
 |[MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html)|[See documentation](featurebasedmolecularnetworking-with-metaboscape.md)|Graphical UI|Windows|Proprietary code|Mass spectrometrists|
 
-**IMPORTANT:** The software use for the LC-MS/MS data processing have to be configured and utilized as recommended by the software documentation.
+**IMPORTANT:** The software used for the LC-MS/MS data processing has to be configured and utilized as recommended by its documentation.
 
 
 ### Mass Spectrometry Data Feature Detection with MZmine2 [RECOMMENDED]
 
-Currently, we are recommending using the MZmine2 workflow, as it has been thoroughly tested. [See the documentation here](featurebasedmolecularnetworking-with-mzmine2.md) and the following [MZmine2 video tutorial:](tutorials/americangutmzmine.md)
+Currently, we recommend using the MZmine2 workflow, as it has been thoroughly tested. [See the documentation here](featurebasedmolecularnetworking-with-mzmine2.md) and the following [MZmine2 video tutorial:](tutorials/americangutmzmine.md)
 
 
 ## The Feature Based Molecular Networking Workflow in GNPS
@@ -50,9 +50,9 @@ There is a dedicated Feature-Based Molecular Networking workflow on GNPS that [c
 ### Requirement for the FBMN workflow
 You will need three input files (test files for each software are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files)):
 
-1. The *Feature Table* with the intensity of ion features (TXT or CSV format).
-2. The *MS/MS spectral file* with the list of MS/MS spectra for the ion features (.MGF File).
-3. [Optional] the *Metadata table* - described [here](networking.md#metadata)
+1. *Feature Table* with intensities of ion features (TXT or CSV format).
+2. *MS/MS spectral file* with a list of MS/MS spectra for the ion features (.MGF File).
+3. [Optional] *Metadata table* - described [here](networking.md#metadata)
 
 ## SuperQuick Feature Based Molecular Networking Workflow
 
@@ -84,7 +84,7 @@ While this SuperQuick FBMN interface is convenient for quick analysis, we recomm
 
 | Parameter  | Description          | Default |
 | ------------- |-------------| -----|
-| Precursor Ion Mass Tolerance (PIMT) | Parameter used for MS-Cluster and spectral library search. Specify the precursor ions mass tolerance, in Daltons. This value influences the aforementioned clustering of nearly-identical MS/MS spectra via MS-Cluster. Note that the value of this parameters should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generated the MS/MS data. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 2.0 Da for low-resolution instruments (ion traps, QqQ).| 0.02 |
+| Precursor Ion Mass Tolerance (PIMT) | Parameter used for MS-Cluster and spectral library search expressed in Daltons. This value influences the aforementioned clustering of nearly-identical MS/MS spectra via MS-Cluster. Note that the value of this parameters should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generated the MS/MS data. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 2.0 Da for low-resolution instruments (ion traps, QqQ).| 0.02 |
 | Fragment Ion Mass Tolerance (FIMT)	      | Parameters used for MS-Cluster, molecular networking, and MS/MS spectral library searches. For every group of MS/MS spectra being considered for clustering (consensus spectrum creation), this value specifies how much fragment ions can be shifted from their expected m/z values. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ). | 0.02 |
 
 #### Advanced Molecular Network Options
@@ -93,11 +93,11 @@ While this SuperQuick FBMN interface is convenient for quick analysis, we recomm
 
 | Parameter        | Description          | Default | Notes |
 | ------------- |-------------| -----| -----|
-| Min Pairs Cos | Minimum cosine score that must occur between a pair of consensus MS/MS spectra in order for an edge to be formed in the molecular network  | 0.7 | Lower value will increase the size of the clusters by inducing the clustering of less related MS/MS spectra, higher value will limit do the opposite. |
-| Minimum Matched Fragment Ion (Min Matched Peaks) | Parameters used for molecular networking. The minimum number of common fragment ions that are shared by two separate consensus MS/MS spectra in order to be connected by an edge in the molecular network | 6 | A low value will permit linkages between spectra of molecules with few similar fragment ions, but it will result in many more less-related spectra being connected to the network. An higher value will do the opposite. Default value is 6, but note that this parameters should be adjusted depending on the experimental conditions for mass spectra acquisition (such as mode of ionisation, fragmentation conditions, and the mobile phase,  ...), and the collision-induced fragmentation behavior of the molecules of interest within the samples. High molecular weight (MW) compounds, and compounds with more hetero-atoms will generally tend to produce more fragment ions. However, this rule cannot be systematized. For example, some lipids with high MW generate only few fragment ions. |
-| Maximum shift between precursors | The maximum structure modification mass between two spectra to be considered direct neighbors in a molecular network | 500 | The maximum mass difference between two connected nodes in a molecular network. |
+| Min Pairs Cos | Minimum cosine score for a pair of consensus MS/MS spectra in order for an edge to be formed in the molecular network  | 0.7 | Lower value will increase the size of the clusters by inducing the clustering of less related MS/MS spectra, higher value will do the opposite. |
+| Minimum Matched Fragment Ion (Min Matched Peaks) | Parameters used for molecular networking. The minimum number of common fragment ions that are shared by two separate consensus MS/MS spectra in order to be connected by an edge in the molecular network | 6 | A low value will permit linkages between spectra of molecules with few similar fragment ions, but it will result in many more less-related spectra being connected to the network. An higher value will do the opposite. Default value is 6, but note that this parameters should be adjusted depending on the experimental conditions for mass spectra acquisition (such as mode of ionisation, fragmentation conditions, the mobile phase, etc.), and the collision-induced fragmentation settings of the molecules of interest within the samples. High molecular weight (MW) compounds and compounds with more hetero-atoms generally tend to produce more fragment ions. However, this rule cannot is not absolute. For example, some lipids with high MW generate only a few fragment ions. |
+| Maximum shift between precursors | The maximum m/z difference between two precursors permitting their spectra to be considered as direct neighbors in a molecular network | 500 | The maximum mass difference between two connected nodes in a molecular network. |
 | Network TopK	| Maximum number of neighbor nodes for one single node  | 10 | The edge between two nodes are kept only if both nodes are within each other's ‘TopK’ most similar nodes.  For example, if this value is set at 20, then a single node may be connected to up to 20 other nodes.  Keeping this value low makes very large networks (many nodes) much easier to visualize. |
-| Maximum Connected Component Size | Maximum size of nodes allowed in a single connected network  | 100 | Maximum size of nodes allowed in a single connected network. Nodes within a single connected molecular network will be separated by increasing cosine threshold for that specific connected molecular network. Default value is 100. Use 0 to allow an unlimited number of nodes in a single network. Note that with large datasets, or when a great number of related molecules are in the dataset, this value should be higher (or turn to 0) to retain as much information as possible. Downstream, these larger networks can be visualized using Cytoscape layout algorithms that can increase the intra-network clustering, allowing to visualize spectral groups in the network despite the number of nodes in the network. |
+| Maximum Connected Component Size | Maximum number of nodes allowed in a single connected network  | 100 | Nodes within a single connected molecular network will be separated by increasing cosine threshold for that specific connected molecular network. Default value is 100. Use 0 to allow an unlimited number of nodes in a single network. Note that with large datasets, or when a great number of related molecules are in the dataset, this value should be higher (or turn to 0) to retain as much information as possible. Downstream, these larger networks can be visualized using Cytoscape layout algorithms that can increase the intra-network clustering, allowing to visualize spectral groups in the network despite the number of nodes in the network. |
 
 
 #### Advanced Spectral Library Search Options
@@ -106,11 +106,10 @@ While this SuperQuick FBMN interface is convenient for quick analysis, we recomm
 
 | Parameter        | Description          | Default |
 | ------------- |-------------| -----|
-|Library Search Min Matched Peaks | Minimum number of common fragment ions that MS/MS spectra should contain in order to be considered for spectral library annotation. Default value is 6, but note that this parameters should be tuned depending of the molecule of interest, and the experimental conditions (such as the ionisation mode, and the fragmentation conditions, ...). For example, collision-induced fragmentation of some lipids produce only few fragment ions. A lower value will allow clustering of MS/MS spectra containing less  fragment ions, however it will also induce clustering of  MS/MS spectra from different molecular-type to be connected in one network. An higher value will do the opposite|6|
+|Library Search Min Matched Peaks | Minimum number of common fragment ions that MS/MS spectra should contain in order to be considered for spectral library annotation. Default value is 6, but note that this parameters should be tuned depending on the molecules of interest, and the experimental conditions (such as the ionisation mode and the fragmentation conditions). For example, the collision-induced fragmentation of some lipids produce only a few fragment ions. A lower value will allow clustering of MS/MS spectra containing less  fragment ions, however it will also induce clustering of MS/MS spectra from different molecular types to be connected in one network. A higher value will do the opposite|6|
 |Score Threshold |Minimum cosine score that MS/MS spectra should get in spectral matching with MS/MS spectral libraries in order to be considered an annotation.|0.7|
-|Search Analogs|Will search data for analogs to library spectra| Don't Search|
-|Maximum Analog Search Mass Difference|Maximum mass shift between library and putative analog found| 100 (Da)|
-
+|Search Analogs|Whether to search data for analogs to library spectra| Don't Search|
+|Maximum Analog Search Mass Difference|Maximum mass shift between the library and putative analogs found| 100 (Da)|
 |Top results to report per query|Number of matches to report for each feature| 1 |
 
 #### Advanced Filtering Options (for Spectra)
@@ -119,8 +118,8 @@ While this SuperQuick FBMN interface is convenient for quick analysis, we recomm
 
 | Parameter        | Description          | Default
 | ------------- |-------------| -----|
-| Minimum Peak Intensity | All fragment ions in the MS/MS spectrum below this raw intensity will be deleted.  By default, no filter. | 0  |
-| Filter Precursor  Window | All peaks in a +/- 17 Da around precursor ion mass are deleted. By default, yes filter. This removes the residual precursor ion, which is frequently observed in MS/MS spectra acquired on qTOFs. | Filter | |
+| Minimum Peak Intensity | All fragment ions in the MS/MS spectra below this raw intensity value will be deleted. By default, the filtering is disabled. | 0  |
+| Filter Precursor  Window | All peaks in a +/- 17 Da around precursor ion mass are deleted. Enabled by default. This removes the residual precursor ion, which is frequently observed in MS/MS spectra acquired on qTOFs. | Filter | |
 | Filter library | Apply peak filters to library | Filter | |
 |Filter peaks in 50Da Window | Filter out peaks that are not in the top 6 most intense peaks in a +/- 50Da window | Filter |
 
@@ -131,7 +130,7 @@ There are additional normalization options specifically for the FBMN workflow:
 | Parameter        | Description          | Default
 | ------------- |-------------| -----|
 | Normalization Per File | Total Ion Current (TIC) normalization can be applied to the ion intensities (LC-MS1 peak area) per sample (NOT RECOMMENDED AS DEFAULT) | No Norm  |
-| Aggregation Method for Peak Abundances Per Group | The ion feature intensity (LC-MS1 peak area) can be aggregated by GROUPS from the metadatable with either a *Sum* or *Average* (RECOMMENDED, because more robust to the number of samples per GROUPS). | Average  |
+| Aggregation Method for Peak Abundances Per Group | The ion feature intensity (LC-MS1 peak area) can be aggregated by GROUPS from the metadatable with either a *Sum* or *Average* (RECOMMENDED, because it is more robust to the difference in the number of samples per GROUPS). | Average  |
 
 ![img](img/featurebasedmolecularnetworking/Advanced_Quantification_Options_2.png)
 
@@ -150,7 +149,7 @@ Here is an example of web-browser view of molecular networks. Click on the link 
 
 #### Dereplicator - Insilico Peptidic Natural Products Tool
 
-The Insilico Peptidic Natural Products Dereplicator is a bioinformatic tool that allows the annotation of known peptidic natural products in MS/MS data using in silico fragmentation tree. This workflow is also included into the Feature Based Molecular Network workflow, then you have the option to use it by clicking into Advanced External tools. After your job is complete you can explore your results and even *clone* the Dereplicator job and modify the parameters.  
+The Insilico Peptidic Natural Products Dereplicator is a bioinformatic tool that allows the annotation of known peptidic natural products in MS/MS data using in silico fragmentation tree. This workflow is also included into the Feature Based Molecular Network workflow, then you have the option to use it by clicking into Advanced External tools. After your job has completed you can explore your results and even *clone* the Dereplicator job and modify the parameters.
 
 Check out the [**full documentation** for further description settings and **citations**](dereplicator.md).
 
@@ -188,7 +187,7 @@ If you use that tool, please cite MS2LDA papers. [See citations in the main MS2L
 
 ### Viewing the PCoA plot with EMPeror in Qiime2
 
-EMPeror, is an open source and web browser enabled tool that allows researchers to perform rapid exploratory investigations of 3D visualizations of data. To view the PCoA plot (using Bray-Curtis dissimilarity metrics) using the EMPeror Qiime2 pluggin, click on **"View qiime2 Emperor Plots"**.
+EMPeror, is an open source and web browser enabled tool that allows researchers to perform rapid exploratory investigations of 3D visualizations of data. To view the PCoA plot (using Bray-Curtis dissimilarity metrics) with the EMPeror Qiime2 plugin, click on **"View qiime2 Emperor Plots"**.
 
 ![emperor](img/featurebasedmolecularnetworking/emperor.png)
 
@@ -223,6 +222,3 @@ Wang, M. et al. [Sharing and community curation of mass spectrometry data with G
 
 ## Page contributors
 Louis Felix Nothias (UCSD), Ming Wang (UCSD, Laura-Isobel McCall (University of Oklahoma), Andrés Mauricio Caraballo Rodríguez (UCSD)
-
-## TO DO
-- here
