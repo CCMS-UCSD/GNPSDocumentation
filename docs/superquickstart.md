@@ -18,7 +18,7 @@ Convert vendor formats to open formats using MSConvert locally. Checkout this [d
 
 Simply drag and drop your mass spectrometry files (mzML, mzXML, or mgf) into the appropriate cohorts you want to compare. Files are required to be uploaded to Cohort Group 1.
 
-![interface](img/superquickstart.png)
+![interface](img/superquickstart_button.png)
 
 ### Analyze Files
 
