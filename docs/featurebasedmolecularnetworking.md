@@ -221,4 +221,4 @@ This work builds on the efforts of our many colleagues, please make sure to cite
 Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
 ## Page contributors
-Louis Felix Nothias (UCSD), Ming Wang (UCSD, Laura-Isobel McCall (University of Oklahoma), Andrés Mauricio Caraballo Rodríguez (UCSD)
+Louis Felix Nothias (UCSD), Ming Wang (UCSD, Laura-Isobel McCall (University of Oklahoma), Andrés Mauricio Caraballo Rodríguez (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).
