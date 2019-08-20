@@ -1,8 +1,8 @@
 
-This is a superquick start guide that will enable you to analyze your data in the following ways without having to create an account or install any software besides your web browser and conversion software.
+This is a superquick start guide that will enable you to analyze your data in the following ways without having to create an account or install any software besides your web browser and data conversion programs.
 
 1. Classic Molecular Networking - Analyze a few dozen samples in up to 3 cohorts
-2. Feature Based Molecular Networking - Analyze with Molecular Networks out of your favorite feature detection software
+2. Feature Based Molecular Networking - Analyze molecular networks out of your favorite LC-MS feature detection software
 
 The limitations to this method is that the files uploaded will not reside in your own account (though no one else can see them) and will eventually disappear from GNPS.
 
@@ -16,17 +16,17 @@ Convert vendor formats to open formats using MSConvert locally. Checkout this [d
 
 ### Selecting Files
 
-Simply drag and drop your mass spectrometry files (mzML, mzXML, or mgf) into the appropriate cohorts you want to compare. Files are required to be uploaded to Cohort Group 1.
+Simply drag and drop your mass spectrometry files (mzML, mzXML, or mgf) into the appropriate cohorts you want to compare. It is required to upload files at least to Cohort Group 1.
 
 ![interface](img/superquickstart_selection.png)
 
 ### Analyze Files
 
-Once files have been uploaded into the appropriate cohort, enter your email and click the "Analyze Uploaded Files with GNPS Molecular Networking" button.
+Once files have been uploaded into appropriate cohorts, enter your email and click "Analyze Uploaded Files with GNPS Molecular Networking".
 
 ![button](img/superquickstart.png)
 
-This will bring you to a GNPS workflow status page. If you entered an email, you will receive an email once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this is the only way for you to find analysis again.
+This will bring you to a GNPS workflow status page. If you entered your email, you will receive a notification once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this will be the only way for you to find the analysis again.
 
 ### Results
 
@@ -40,18 +40,18 @@ Please navigate to the [super quickstart page](http://dorresteinappshub.ucsd.edu
 
 Simply drag and drop the files out of your feature finding tool:
 
-1. Feature Quantification Table
+1. Feature quantification table
 2. Feature MS/MS MGF file
-3. Sample Metadata (Optional) - Format can be found [here](networking/#metadata)
-4. Additional Pairs Externally Generated (Optional) - Format pending
+3. Sample metadata (Optional) - Format can be found [here](networking/#metadata)
+4. Additional pairs generated externally (optional) - Format pending
 
 ### Analyze Files
 
-Once files have been uploaded, enter your email and click the "Analyze Uploaded Files with GNPS Molecular Networking" button.
+Once files have been uploaded, enter your email and click "Analyze Uploaded Files with GNPS Molecular Networking".
 
 ![button](img/superquickstart.png)
 
-This will bring you to a GNPS workflow status page. If you entered an email, you will receive an email once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this is the only way for you to find analysis again.
+This will bring you to a GNPS workflow status page. If you entered your email, you will receive a notification once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this will be the only way for you to find the analysis again.
 
 ### Results
 

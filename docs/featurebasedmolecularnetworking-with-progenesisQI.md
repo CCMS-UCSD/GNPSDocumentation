@@ -1,14 +1,14 @@
 ## Introduction
 
-The **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md).
+**Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The supported tools are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md).
 
 The main documentation for FBMN [can be accessed here](featurebasedmolecularnetworking.md).
 
-Below we describe how to use MetaboScape with the FBMN workflow on GNPS.
+Below we describe how to use Progenesis QI with the FBMN workflow on GNPS.
 
 ## Using Progenesis QI and the Feature-Based Molecular Networking
 
-Progenesis QI is a proprietary LC-MS feature detection and alignment software developed by Nonlinear Dynamics (Waters, [http://www.nonlinear.com/progenesis/qi/](http://www.nonlinear.com/progenesis/qi/) that is compatible with various proprietary and open mass spectrometry format. 
+Progenesis QI is a proprietary LC-MS feature detection and alignment software developed by Nonlinear Dynamics (Waters, [http://www.nonlinear.com/progenesis/qi/](http://www.nonlinear.com/progenesis/qi/). It is compatible with various proprietary and open mass spectrometry data formats. 
 
 Progenesis QI can perform feature detection, alignment and annotation of non-targeted LC-MS/MS data acquired either in data-dependent analysis (DDA) or MSE data independent analysis (DIA), and can also uses the ion mobility spectrometry (IMS) dimension. Feature-based molecular networking can be performed on any of these data types processed with Progenesis QI by exporting the *feature quantification table* (.TXT file format) and *MS/MS spectral summary* (.MGF file format) and uploading these files on GNPS for FBMN analysis.
 
@@ -28,7 +28,7 @@ Upload your Progenesis QI exported files (*feature quantification table* and *MS
 Refer to the [main FBMN documentation](featurebasedmolecularnetworking.md). for more information.
 
 ## Page contributors
-Ming Wang (UCSD) and Louis Felix Nothias (UCSD).
+Ming Wang (UCSD), Louis Felix Nothias (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).
 
 ## Contribute to the Documentation
 
