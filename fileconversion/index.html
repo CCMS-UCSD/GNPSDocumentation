@@ -1129,9 +1129,9 @@
                   <h1>Mass Spectrometry File Conversion</h1>
                 
                 <h2 id="supported-formats-at-gnps">Supported Formats at GNPS</h2>
-<p>At GNPS we support mzXML, mzML, and mgf formats for analysis. Our tools do NOT support mzData, xml, raw, RAW, wiff, scan, d, and cdf formats. If your files are in not supported, please use the following guide to convert them to an open format that is supported by GNPS.</p>
+<p>GNPS supports mzXML, mzML, and mgf formats for analysis. Our tools do NOT support mzData, xml, raw, RAW, wiff, scan, d, and cdf formats. If some of your files are in these formats, please use the following guide to convert them to open formats supported by GNPS.</p>
 <h2 id="data-conversion-easy">Data Conversion (Easy)</h2>
-<p>This is a complete package for Windows users to convert their vendor formats to GNPS compatible format (mzXML). It is as easy as putting files into a folder and batch converting it all without any installation (well nearly so).</p>
+<p>This is a complete package for Windows users to convert their vendor formats to GNPS compatible format (mzXML). It is as easy as putting files into a folder and batch converting them all without any installation (well nearly so).</p>
 <ol>
 <li>Download the zip file <a href="https://www.dropbox.com/s/41m88bh3fcr5uz9/GNPS_Vendor_Conversion.zip?dl=1">here</a></li>
 <li>Unzip contents onto a folder on your computer (e.g. Desktop)</li>
@@ -1139,12 +1139,11 @@
 <li>Put vendor formats in "Input_Files" not embedded in other folders</li>
 <li>Double click on Double-Click_To-Convert.bit - Download zip includes demo files for major vendor formats as a test.</li>
 <li>Wait patiently</li>
-<li>Check all files converted in Output_Folder</li>
+<li>Check all the converted files in Output_Folder</li>
 <li>If there are errors, please check log.txt or read on how to convert files in a more traditional manner.</li>
 </ol>
 <h2 id="data-conversion-traditional">Data Conversion (Traditional)</h2>
-<p>For files to be operated on in the GNPS workflows, they must be in the correct format.  Only the following formats are acceptable: .mzXML, .mzML, and .mgf.</p>
-<p>The .mzXML or .mzML format is strongly preferred and will be discussed in this tutorial for data conversion.</p>
+<p>The .mzXML or .mzML formats are strongly preferred and will be discussed below.</p>
 <table>
 <thead>
 <tr>
@@ -1204,11 +1203,11 @@
 <p>If you are a vendor and think there are better methods to convert your files to work with GNPS, let us know by <a href="../contact/">contacting us</a>.</p>
 <h3 id="conversion-with-msconvert">Conversion with MSConvert</h3>
 <p>Download and install ProteoWizard from <a href="http://proteowizard.sourceforge.net/downloads.shtml">here</a>.</p>
-<p><strong>IMPORTANT:</strong>: Make sure to choose the version Windows (includes vendor reader support). You must also have .NET <a href="http://www.microsoft.com/en-us/download/details.aspx?id=22">Framework 3.5 SP1</a> and <a href="http://www.microsoft.com/en-us/download/details.aspx?id=17851">4.0</a> installed.</p>
+<p><strong>IMPORTANT:</strong>: Make sure to choose a Windows-compatible version (includes vendor reader support). You must also have .NET <a href="http://www.microsoft.com/en-us/download/details.aspx?id=22">Framework 3.5 SP1</a> and <a href="http://www.microsoft.com/en-us/download/details.aspx?id=17851">4.0</a> installed.</p>
 <p>After installation, from the Start Menu, click the ProteoWizard folder and open MSConvert.</p>
 <ul>
 <li>
-<p>Click Browse and select file(s) for conversion. Then Click Add to add them to the MSConvert workflow.</p>
+<p>Click Browse and select file(s) for conversion. Then click Add to add them to the MSConvert workflow.</p>
 </li>
 <li>
 <p>Choose an Output Directory</p>
@@ -1217,7 +1216,7 @@
 <p>Under Options, choose mzML (prefered) or mzXML for output format, 32-bit for binary encoding precision and uncheck Use zlib compression.</p>
 </li>
 <li>
-<p>Under filters, choose Peak Picking with Vendor checked, in order to centroid the data. Indicate MS-Levels 1-2. Click Add to add the filter. <strong>IMPORTANT:</strong> Move the PeakPicking filter to the first position (manually).</p>
+<p>Under filters, choose Peak Picking with Vendor checked, in order to centroid the data. Indicate MS-Levels 1-2. Click Add to add the filter.</p>
 </li>
 </ul>
 <p><strong>CRITICAL !</strong> Make sure the PeakPicking filter is the first filter in the list (top position), otherwise the conversion will not be centroided !</p>

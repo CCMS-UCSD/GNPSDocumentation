@@ -533,8 +533,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#convert-your-lc-msms-data-to-open-format" title="Convert your LC-MS/MS Data to Open Format" class="md-nav__link">
-    Convert your LC-MS/MS Data to Open Format
+  <a href="#convert-your-lc-msms-data-to-an-open-format" title="Convert your LC-MS/MS Data to an Open Format" class="md-nav__link">
+    Convert your LC-MS/MS Data to an Open Format
   </a>
   
     <nav class="md-nav">
@@ -1281,8 +1281,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#convert-your-lc-msms-data-to-open-format" title="Convert your LC-MS/MS Data to Open Format" class="md-nav__link">
-    Convert your LC-MS/MS Data to Open Format
+  <a href="#convert-your-lc-msms-data-to-an-open-format" title="Convert your LC-MS/MS Data to an Open Format" class="md-nav__link">
+    Convert your LC-MS/MS Data to an Open Format
   </a>
   
     <nav class="md-nav">
@@ -1505,9 +1505,9 @@
                   <h1>FBMN with MZmine2</h1>
                 
                 <h2 id="introduction">Introduction</h2>
-<p>The <strong>Feature-Based Molecular Networking</strong> (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on <a href="http://gnps.ucsd.edu">GNPS</a>. The tools supported are: <a href="./">MZmine2</a>, <a href="../featurebasedmolecularnetworking-with-openms/">OpenMS</a>, <a href="../featurebasedmolecularnetworking-with-ms-dial/">MS-DIAL</a>, <a href="../featurebasedmolecularnetworking-with-metaboscape/">MetaboScape</a>, <a href="../featurebasedmolecularnetworking-with-xcms3/">XCMS</a>, and <a href="../featurebasedmolecularnetworking-with-progenesisQI/">Progenesis QI</a>.</p>
+<p><strong>Feature-Based Molecular Networking</strong> (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on <a href="http://gnps.ucsd.edu">GNPS</a>. The supported tools are: <a href="./">MZmine2</a>, <a href="../featurebasedmolecularnetworking-with-openms/">OpenMS</a>, <a href="../featurebasedmolecularnetworking-with-ms-dial/">MS-DIAL</a>, <a href="../featurebasedmolecularnetworking-with-metaboscape/">MetaboScape</a>, <a href="../featurebasedmolecularnetworking-with-xcms3/">XCMS</a>, and <a href="../featurebasedmolecularnetworking-with-progenesisQI/">Progenesis QI</a>.</p>
 <p>The main documentation for Feature-Based Molecular Networking <a href="../featurebasedmolecularnetworking/">can be accessed here:</a></p>
-<p>Below we are describing how to use MZmine2 with the FBMN workflow on GNPS.</p>
+<p>Below we describe how to use MZmine2 with the FBMN workflow on GNPS.</p>
 <h2 id="mass-spectrometry-processing-with-mzmine2">Mass spectrometry processing with MZmine2</h2>
 <p>Download the latest version of MZmine2 software (version MZmine v2.33 minimum) at <a href="https://github.com/mzmine/mzmine2/releases">https://github.com/mzmine/mzmine2/releases</a>.</p>
 <h3 id="citations-and-development">Citations and development</h3>
@@ -1517,8 +1517,8 @@
 <p>Wang, M. et al. <a href="https://doi.org/10.1038/nbt.3597">Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking</a>. Nat. Biotechnol. 34, 828–837 (2016)</p>
 <p>The development of the features used in the pipeline is <a href="https://github.com/mzmine/mzmine2">publicly accessible here</a>.</p>
 <h3 id="mass-spectrometry-data-processing-with-mzmine2-step-by-step-documentation">Mass Spectrometry Data Processing with MZmine2: step-by-step documentation</h3>
-<p>In MZmine2, a sequence of steps are performed to process the mass spectrometry data. Here we will present key steps required to process LC-MS/MS data acquired in non-targeted mode (data dependent acquisition). For conveniency we are also providing a batch file (XML format) that can be imported directly in MZmine2.</p>
-<p><strong>IMPORTANT:</strong> MZmine2 parameters will vary depending on the instrument used, the acquisition parameters, and the sample studied. The following documentation serves a basic guideline for using MZmine2 with the Feature-Based Molecular Networking workflow.</p>
+<p>In MZmine2, a sequence of steps are performed to process the mass spectrometry data. Here we will present key steps required to process LC-MS/MS data acquired in non-targeted mode (data dependent acquisition). For convenience we also provide a batch file (XML format) that can be imported directly in MZmine2.</p>
+<p><strong>IMPORTANT:</strong> MZmine2 parameters will vary depending on the instrument used, the acquisition parameters, and samples studied. The following documentation serves a basic guideline for using MZmine2 with the Feature-Based Molecular Networking workflow.</p>
 <p>Please consult the resources below for more details on MZmine2 processing:</p>
 <ul>
 <li>The official documentation <a href="http://mzmine.github.io/documentation.html">http://mzmine.github.io/documentation.html</a>,</li>
@@ -1534,7 +1534,7 @@
 
 <h3 id="download-the-mzmine2-software">Download the MZmine2 software</h3>
 <p>Download the latest version of MZmine2 software (version MZmine v2.33 minimum) at <a href="https://github.com/mzmine/mzmine2/releases">https://github.com/mzmine/mzmine2/releases</a>.</p>
-<h3 id="convert-your-lc-msms-data-to-open-format">Convert your LC-MS/MS Data to Open Format</h3>
+<h3 id="convert-your-lc-msms-data-to-an-open-format">Convert your LC-MS/MS Data to an Open Format</h3>
 <p>MZmine2 accepts different input formats. Note that we recommand to first convert your files to mzML format before doing MZmine2 processing. <a href="../fileconversion/">See the documentation here</a>.</p>
 <h4 id="processing-steps">Processing Steps</h4>
 <h5 id="below-is-the-schematic-representation-of-the-lc-msms-data-processing-steps-with-mzmine2">Below is the schematic representation of the LC-MS/MS data processing steps with MZmine2:</h5>
@@ -1564,23 +1564,23 @@
 </tbody>
 </table>
 <h4 id="processing-steps_1">Processing Steps</h4>
-<p>Below is a walk through of all the steps</p>
+<p>Below is a walk-through of all the steps</p>
 <h4 id="1-import-files">1. Import Files</h4>
-<p>Go to Menu: Raw data methods / Raw data import / "Select the files"</p>
+<p>Go to Menu: Raw data methods &gt; Raw data import &gt; Select the files</p>
 <p><img alt="img" src="../img/mzmine/2_import-raw.png" /></p>
 <h4 id="2-mass-detection">2. Mass Detection</h4>
 <p>This step creates mass lists from your raw data.</p>
-<p>Perform mass detection on MS level 1: Menu: Raw data methods / Mass detection / Set filter : MS level 1</p>
+<p>Perform mass detection on MS level 1: Menu: Raw data methods &gt; Mass detection &gt; Set filter : MS level 1</p>
 <p><strong>IMPORTANT</strong> Set an appropriate intensity threshold. You can use the preview window to assess the right threshold on your data. As a rule of thumb, the value should at least correspond to the minimum value set for the triggering of the MS2 scan event. (Example: MAXIS-QTOF: 1E3, Q-Exactive 1E4)</p>
 <p>Perform mass detection on MS level 2. The same mass list name must be used.</p>
-<p>Go to Menu: Raw data methods / Mass detection / Set filter : MS level 2.</p>
+<p>Go to Menu: Raw data methods &gt; Mass detection &gt; Set filter : MS level 2.</p>
 <p><strong>IMPORTANT:</strong> Make sure to set an intensity threshold representative of noise level in the MS2 spectra. This is typically lower than for MS1. (Example: maXis QTOF: 1E2; LTQ-XL Orbitrap 1E4, Q-Exactive: 0). If you have any doubt, set it to 0.</p>
 <p><img alt="img" src="../img/mzmine/mass_detection_ms2.png" /></p>
 <h4 id="3-build-chromatogram-lc-ms-feature-detection-part-1">3. Build Chromatogram (LC-MS feature detection part 1)</h4>
 <p>Go to Menu: Raw data methods / Chromatogram builder</p>
 <h4 id="4-deconvolve-the-chromatogram-lc-ms-feature-detection-part-2">4. Deconvolve the Chromatogram (LC-MS feature detection part 2)</h4>
-<p>Go to Menu: Peak list methods / Peak detection / Chromatogram deconvolution</p>
-<p><strong>IMPORTANT:</strong> tick both options "m/z range for MS2 scan pairing (Da)" and "RT range for MS2 scan pairing (min)". The values have to be defined according to your experimental setup (expected chromatographic peak width and the MS mass accuracy).</p>
+<p>Go to Menu: Peak list methods &gt; Peak detection &gt; Chromatogram deconvolution</p>
+<p><strong>IMPORTANT:</strong> tick both options "m/z range for MS2 scan pairing (Da)" and "RT range for MS2 scan pairing (min)". The values have to be defined according to your experimental setup (expected MS mass accuracy and chromatographic peak width).</p>
 <p>Example for a UHPLC colum (1.7 µm C18, 50 × 2.1 mm, flow rate of 0.5 mL/min):</p>
 <ul>
 <li>
@@ -1596,18 +1596,18 @@
 <p>Go to Menu: Peak list methods / Isotopes / Isotopic peaks grouper.</p>
 <p><strong>IMPORTANT:</strong>  This depends on your expected peak shapes, duty cycle time and the MS mass accuracy. (Example: MAXIS-QTOF, 10 min gradient, 0.1 min, 0.02 m/z; Q-Exactive, 5 min gradient, 0.05 min, 0.01 m/z)</p>
 <h4 id="6-order-the-peaklists">6. Order the peaklists</h4>
-<p>Go to Menu: Peak list methods / Order peak lists.</p>
-<p><strong>IMPORTANT:</strong> This is to ensure the reproducibility of the processing Indeed, the aligned peaklist will change slighlty if that step is not performed. </p>
+<p>Go to Menu: Peak list methods &gt; Order peak lists.</p>
+<p><strong>IMPORTANT:</strong> This is to ensure the reproducibility of the processing Indeed, the aligned peak list will change slighlty if that step is not performed. </p>
 <h4 id="7-lc-ms-feature-alignement-peaklist-alignement">7. LC-MS feature alignement (Peaklist alignement)</h4>
-<p>In this step, the peak lists from each samples will be aligned in one aligned peak list. The alignement is performed iteratively using the first peaklist selected (see MZmine documentation). For that reason, make sure the first sample is adapted (not a negative control) or to manually put an representative peaklist in first position.</p>
-<p>Go to Menu: Peak list methods / Alignment / Join aligner</p>
+<p>In this step, the peak lists from each sample will be aligned in one aligned peak list. The alignement is performed iteratively using the first peak list selected (see MZmine documentation). For that reason, make sure the first sample is adapted (not a negative control) or to manually put an representative peaklist in the first position.</p>
+<p>Go to Menu: Peak list methods &gt; Alignment &gt; Join aligner</p>
 <h4 id="8-detect-missing-peaks-gap-filling-optional">8. Detect Missing Peaks / Gap Filling (Optional)</h4>
 <p>Gap filling enables to retrieve the intensity of a peak in all the samples, even if it was not detected in a previous processing step.
 Go to Menu: Peak list methods / Gap filling / Peak finder (multi-threaded).</p>
 <p><strong>IMPORTANT:</strong> This step is optional. Use the multi-threaded peak finder for fast processing.</p>
 <h4 id="9-filter-the-peaklist-to-msms-peaks-optional">9. Filter the Peaklist to MS/MS Peaks (Optional)</h4>
 <p>Depending on the number of features in the aligned peaklist, it is possible to filter the peaklist to keep only features with minimum number of occurences ("Minimum peaks in a row") or a mininum number of isotopic peaks for the feature ("Minimum peaks in an isotope pattern"), or to "Keep only peaks with MS2 scan (GNPS)".</p>
-<p>Go to Menu: Peak list methods / Filtering / Peak list row filter / Select the filters</p>
+<p>Go to Menu: Peak list methods &gt; Filtering &gt; Peak list row filter &gt; Select the filters</p>
 <p><strong>IMPORTANT:</strong> if you use a filter, we recommend using the filter "Reset the peak number ID"</p>
 <p><strong>IMPORTANT</strong> Note that this step was mandatory in the previous version of FBMN with MZmine2, now the filter "Keep only peaks with MS2 scan (GNPS)" is optional.</p>
 <p><img alt="img" src="../img/mzmine/ms2_filtering.png" /></p>
@@ -1618,15 +1618,15 @@ Go to Menu: Peak list methods / Gap filling / Peak finder (multi-threaded).</p>
 <p>a <em>feature quantification table</em> with LC-MS feature intensities (.CSV file format)</p>
 </li>
 <li>
-<p>a <em>MS/MS spectral summary file</em>, with a representative MS/MS spectrum per LC-MS feature. list of the MS/MS spectra (.MGF file format) (the most intense MS/MS per feature is selected).</p>
+<p>a <em>MS/MS spectral summary file</em>, with a representative MS/MS spectrum per LC-MS feature. List of the MS/MS spectra (.MGF file format) (the most intense MS/MS per feature is selected).</p>
 </li>
 </ul>
-<p>Select the last "filtered aligned peaklist" and Go to Menu: "Peak list methods" / "Export" / "Export for/Submit to GNPS"</p>
+<p>Select the last "filtered aligned peaklist" and Go to Menu: Peak list methods &gt; Export &gt; Export for/Submit to GNPS</p>
 <p><img alt="img" src="../img/mzmine/gnps_export_module_V2.png" /></p>
-<p>See an example of files outputted by the export module using the workflow:
+<p>See an example of files generated by the export module using the workflow:
 <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files">here</a>.</p>
 <h5 id="the-files-can-be-uploaded-to-the-gnps-web-platform-and-feature-based-molecular-networking-job-can-be-directly-launched">The files can be uploaded to the GNPS web-platform and Feature-Based Molecular Networking job can be directly launched</h5>
-<p><strong>IMPORTANT:</strong> While the possibility to submit the files directly to GNPS and launch a FBMN job on the fly is really convenient for quick data analysis, the job and files will not be saved to your personal account on GNPS if you do not provide username/password, and you are limited to basic presets of parameters. For that reason, we recommend to upload your files with the FTP uploader <a href="../fileupload/">(see documentation)</a> and prepare your job <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">directly on GNPS</a> (you must be logged in first), or alternatively to clone the submitted job.</p>
+<p><strong>IMPORTANT:</strong> While the possibility to submit the files directly to GNPS and launch a FBMN job on the fly is really convenient for quick data analysis, the job and files will not be saved in your personal account on GNPS if you do not provide username/password, and you are limited to basic presets of parameters. For that reason, we recommend to upload your files with the FTP uploader <a href="../fileupload/">(see documentation)</a> and prepare your job <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">directly on GNPS</a> (you must be logged in first), or alternatively to clone the submitted job.</p>
 <p><img alt="img" src="../img/mzmine/gnps_export_module_V2_submission.png" /></p>
 <p>In the "Export for/Submit to GNPS" module, select the option: "Submit to GNPS"</p>
 <ul>
@@ -1646,14 +1646,14 @@ Go to Menu: Peak list methods / Gap filling / Peak finder (multi-threaded).</p>
 <p>Open website: if ticked, will open the job webpage.</p>
 </li>
 </ul>
-<p>ADDITIONAL NOTES: The feature table must contain at least the row ID, the row m/z, and row retention time, along with the sample columns. It is currently mandatory for the sample name headers string to have the following format: "filename Peak area". Depending on Note that depending on the steps used in MZmine the sample name header can be "filename baseline-corrected Peak area", but this has to changed back to "filename Peak area".</p>
+<p>ADDITIONAL NOTES: The feature table must contain at least the row ID, the row m/z, and row retention time, along with the sample columns. It is currently mandatory for the sample name headers to have the following format: "filename Peak area". Depending on the steps used in MZmine the sample name header can be "filename baseline-corrected Peak area", but this has to be changed back to "filename Peak area".</p>
 <h3 id="video-tutorial-quick-mzmine2-export-to-gnps-for-fbmn">Video Tutorial - Quick MZMine2 Export to GNPS for FBMN.</h3>
 <p>The workflow for Feature Based Molecular Networking in GNPS is different from the classic molecular networking workflow. <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">Access the FBMN workflow here</a> (You need to be logged in first !)</p>
 <iframe width="800" height="500" src="https://www.youtube.com/embed/vFcGG7T_44E"> </iframe>
 
 <h3 id="feature-based-molecular-networking-in-gnps">Feature Based Molecular Networking in GNPS</h3>
 <p>The main documentation of the Feature Based Molecular Networking workflow on GNPS <a href="../featurebasedmolecularnetworking/">can be consulted on that page</a>. The workflow for Feature Based Molecular Networking in GNPS is different from the "classic" molecular networking workflow. <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-MZMINE%22,%22library_on_server%22:%22d.speclibs;%22%7D">Access the FBMN workflow here</a> (You need to be logged in first !).</p>
-<p>Basically, you will need to upload the files ouputted by the MZmine2 processing (test files are accessible <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files">here</a>):</p>
+<p>Basically, you will need to upload the files produced by MZmine2 (test files are accessible <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files">here</a>):</p>
 <ol>
 <li>A <em>feature quantification table</em> (.CSV file format).</li>
 <li>A <em>MS/MS spectral summary</em> (.MGF file format)</li>
@@ -1671,7 +1671,7 @@ Go to Menu: Peak list methods / Gap filling / Peak finder (multi-threaded).</p>
 <h2 id="tutorials">Tutorials</h2>
 <p>See our <a href="../tutorials/americangutmzmine/">tutorial on using MZmine2</a> for FBMN analysis of a cohort from the [American Gut Project] (http://humanfoodproject.com/americangut/), and our <a href="../tutorials/featurebasedgnps/">tutorial on running a FBMN analysis on GNP</a>.</p>
 <h2 id="page-contributors">Page contributors</h2>
-<p>Louis Felix Nothias (UCSD), Daniel Petras (UCSD), Ming Wang (UCSD)</p>
+<p>Louis Felix Nothias (UCSD), Daniel Petras (UCSD), Ming Wang (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).</p>
 <h2 id="contribute-to-the-documentation">Contribute to the Documentation</h2>
 <ul>
 <li>For informations/feature request, please open an "Issue" on the <a href="../(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> GitHub repository.</li>

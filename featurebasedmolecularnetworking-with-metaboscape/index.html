@@ -1135,33 +1135,33 @@
                   <h1>FBMN with MetaboScape</h1>
                 
                 <h2 id="introduction">Introduction</h2>
-<p>The <strong>Feature-Based Molecular Networking</strong> (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on <a href="http://gnps.ucsd.edu">GNPS</a>. The tools supported are: <a href="../featurebasedmolecularnetworking-with-mzmine2/">MZmine2</a>, <a href="../featurebasedmolecularnetworking-with-openms/">OpenMS</a>, <a href="../featurebasedmolecularnetworking-with-ms-dial/">MS-DIAL</a>, <a href="./">MetaboScape</a>, <a href="../featurebasedmolecularnetworking-with-xcms3/">XCMS</a>, and <a href="../featurebasedmolecularnetworking-with-progenesisQI/">Progenesis QI</a>.</p>
+<p><strong>Feature-Based Molecular Networking</strong> (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on <a href="http://gnps.ucsd.edu">GNPS</a>. The tools supported are: <a href="../featurebasedmolecularnetworking-with-mzmine2/">MZmine2</a>, <a href="../featurebasedmolecularnetworking-with-openms/">OpenMS</a>, <a href="../featurebasedmolecularnetworking-with-ms-dial/">MS-DIAL</a>, <a href="./">MetaboScape</a>, <a href="../featurebasedmolecularnetworking-with-xcms3/">XCMS</a>, and <a href="../featurebasedmolecularnetworking-with-progenesisQI/">Progenesis QI</a>.</p>
 <p>The main documentation for FBMN <a href="../featurebasedmolecularnetworking/">can be accessed here</a>.</p>
 <p>Below we describe how to use MetaboScape with the FBMN workflow on GNPS.</p>
 <h2 id="using-metaboscape-and-the-feature-based-molecular-networking">Using MetaboScape and the Feature-Based Molecular Networking</h2>
-<p>MetaboScape can be used to process LC-MS/MS Bruker Daltonics data files (.d file). After the processing with MetaboScape, the output files can be used to run the Feature-Based Molecular Networking workflow on GNPS either using the [Superquick FBMN start page] (http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking) or <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">the standard interface of the FBMN workflow</a> (you need to be logged in GNPS first).</p>
+<p>MetaboScape can be used to process LC-MS/MS Bruker Daltonics data files (i.e. *.d files). After the processing with MetaboScape, the output files can be used to run the Feature-Based Molecular Networking workflow on GNPS either using the [Superquick FBMN start page] (http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking) or <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">the standard interface of the FBMN workflow</a> (you need to be logged in to GNPS first).</p>
 <p><strong>Requirements:</strong> 
-Install <a href="https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html">MetaboScape</a> (at least version 2.0) and have a valid license. </p>
+Install <a href="https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html">MetaboScape</a> (at least version 2.0) and get a valid license. </p>
 <h2 id="a-perform-feature-detection-with-profile-analysis">A. Perform Feature Detection with Profile Analysis</h2>
 <ol>
-<li>Open <em>Profile Analysis</em> and perform feature detection on your data following <em>Profile Analysis</em> documentation to generate the Bucket Table.</li>
+<li>Open <em>Profile Analysis</em> and perform feature detection on your data following <em>Profile Analysis</em> documentation to generate an ion feature bucket table.</li>
 <li>Define groups and/or attributes to enhance downstream data analysis (see <strong>3.3.4</strong> in the <strong>MetaboScape 2.0 tutorial documentation</strong>). The groups and/or attributes defined in <em>Profile Analysis</em> will be visualized in the molecular networks using pie chart diagram.</li>
 <li><strong>IMPORTANT</strong>: Create one common group named 'SAMPLE' for all the samples. It will be used for molecular networking visualization.</li>
-<li>Export the Bucket Table to MetaboScape (see <strong>3.1</strong> in the <strong>MetaboScape 2.0 tutorial documentation</strong>).</li>
+<li>Export the bucket table to MetaboScape (see <strong>3.1</strong> in the <strong>MetaboScape 2.0 tutorial documentation</strong>).</li>
 </ol>
 <h2 id="b-use-metaboscape-to-annotate-msms-spectra">B. Use MetaboScape to Annotate MS/MS spectra</h2>
 <ol>
 <li>Open MetaboScape.</li>
 <li>Open the project in MetaboScape (see <strong>3.7</strong> in <strong>MetaboScape 2.0 tutorial documentation</strong>).</li>
-<li>Assign MS/MS spectra to the Bucket Table (see <strong>3.7</strong> in <strong>MetaboScape 2.0 tutorial documentation</strong>).</li>
+<li>Assign MS/MS spectra to the bucket table (see <strong>3.7</strong> in <strong>MetaboScape 2.0 tutorial documentation</strong>).</li>
 <li>Sort buckets based on the presence of MS/MS.</li>
-<li>Select only the buckets that have MS/MS associated with.</li>
+<li>Select only the buckets that have MS/MS associated with them.</li>
 <li>Perform <em>Automatic molecular formula generation using SmartFormula</em> (see <strong>3.11.1</strong> in <strong>MetaboScape 2.0 tutorial documentation</strong>) on these buckets. Make sure to select <em>Selected buckets only</em>.</li>
 <li>Search molecular formula with <strong>SmartFormula</strong>.</li>
 </ol>
 <p><img alt="img" src="../img/metaboscapeexportforgnps/Metabo_2.PNG" /></p>
 <ol>
-<li>Right-click on the Bucket Table and select <em>Export to GNPS format</em> (.mgf/.csv).</li>
+<li>Right-click on the bucket table and select <em>Export to GNPS format</em> (.mgf/.csv).</li>
 </ol>
 <p><img alt="img" src="../img/metaboscapeexportforgnps/Metabo_3.png" /></p>
 <ol>
@@ -1169,7 +1169,7 @@ Install <a href="https://www.bruker.com/products/mass-spectrometry-and-separatio
 </ol>
 <p><img alt="img" src="../img/metaboscapeexportforgnps/Metabo_4.PNG" /></p>
 <ol>
-<li>The .mgf file ('gnps.mgf') and the Bucket Table will be used to perform a <strong>Feature-Based Molecular Networking</strong> job on GNPS (see below). </li>
+<li>The .mgf file ('gnps.mgf') and the bucket table will be used to perform a <strong>Feature-Based Molecular Networking</strong> job on GNPS (see below). </li>
 </ol>
 <h2 id="c-perform-fbmn-job-on-gnps">C. Perform FBMN Job on GNPS</h2>
 <p>Go to GNPS to perform a FBMN job. <a href="../featurebasedmolecularnetworking/">Refer to that documentation</a>.</p>
@@ -1177,7 +1177,7 @@ Install <a href="https://www.bruker.com/products/mass-spectrometry-and-separatio
 <p>See the <a href="../tutorials/coffee-tutorial-metaboscape/">step-by-step tutorial using MetaboScape 2.0 and the FBMN</a> for the Coffee tutorial (part of the <strong>MetaboScape 2.0 documentation</strong>).</p>
 <p><img alt="img" src="../img/metaboscapeexportforgnps/Cyto13.PNG" /></p>
 <h2 id="page-contributors">Page contributors</h2>
-<p>Louis Felix Nothias (UCSD), Tam Dang (Tech. Univ. Berlin), Kevin Ngoc (UCSD).</p>
+<p>Louis Felix Nothias (UCSD), Tam Dang (Tech. Univ. Berlin), Kevin Ngoc (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).</p>
 <h2 id="contribute-to-the-documentation">Contribute to the Documentation</h2>
 <ul>
 <li>For informations/feature request, please open an "Issue" on the <a href="../(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> GitHub repository.</li>

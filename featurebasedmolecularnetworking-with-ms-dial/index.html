@@ -1285,7 +1285,7 @@
                   <h1>FBMN with MS-DIAL</h1>
                 
                 <h2 id="introduction">Introduction</h2>
-<p>The <strong>Feature-Based Molecular Networking</strong> (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on <a href="http://gnps.ucsd.edu">GNPS</a>. The tools supported are: <a href="../featurebasedmolecularnetworking-with-mzmine2/">MZmine2</a>, <a href="../featurebasedmolecularnetworking-with-openms/">OpenMS</a>, <a href="./">MS-DIAL</a>, <a href="../featurebasedmolecularnetworking-with-metaboscape/">MetaboScape</a>, <a href="../featurebasedmolecularnetworking-with-xcms3/">XCMS</a>, and <a href="../featurebasedmolecularnetworking-with-progenesisQI/">Progenesis QI</a>.</p>
+<p><strong>Feature-Based Molecular Networking</strong> (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on <a href="http://gnps.ucsd.edu">GNPS</a>. The supported tools are: <a href="../featurebasedmolecularnetworking-with-mzmine2/">MZmine2</a>, <a href="../featurebasedmolecularnetworking-with-openms/">OpenMS</a>, <a href="./">MS-DIAL</a>, <a href="../featurebasedmolecularnetworking-with-metaboscape/">MetaboScape</a>, <a href="../featurebasedmolecularnetworking-with-xcms3/">XCMS</a>, and <a href="../featurebasedmolecularnetworking-with-progenesisQI/">Progenesis QI</a>.</p>
 <p>The main documentation for Feature-Based Molecular Networking <a href="../featurebasedmolecularnetworking/">can be accessed here:</a></p>
 <p>Below we are describing how to use MS-DIAL with the FBMN workflow on GNPS.</p>
 <h2 id="mass-spectrometry-processing-with-ms-dial">Mass spectrometry processing with MS-DIAL</h2>
@@ -1295,7 +1295,7 @@
 <p>Tsugawa, H., Cajka, T., Kind, T., Ma, Y., Higgins, B., Ikeda, K., Kanazawa, M., VanderGheynst, J., Fiehn, O. &amp; Arita, M. <a href="http://dx.doi.org/10.1038/nmeth.3393">MS-DIAL: data-independent MS/MS deconvolution for comprehensive metabolome analysis.</a> Nature Methods 12, 523-526 (2015).</p>
 <p>Lai, Z., Tsugawa, H., Wohlgemuth, G., Mehta, S., Mueller, M., Zheng, Y., Ogiwara, A., Meissen, J., Showalter, M., Takeuchi, K., Kind, T., Beal, P., Arita, M. &amp; Fiehn, O. <a href="http://dx.doi.org/10.1038/nmeth.4512">Identifying metabolites by integrating metabolome databases with mass spectrometry cheminformatics.</a> Nature Methods 15, 53-56 (2018).</p>
 <h3 id="mass-spectrometry-data-processing-with-ms-dial">Mass Spectrometry Data Processing with MS-DIAL</h3>
-<p>In MS-DIAL, a sequence of steps is performed to process the mass spectrometry data. Here we will present key steps required to process LC-MS/MS data acquired in non-targeted mode (data dependent acquisition). For conveniency we are also providing a batch file (XML format) that can be imported directly in MS-DIAL.</p>
+<p>In MS-DIAL, a sequence of steps is performed to process the mass spectrometry data. Here we will present key steps required to process LC-MS/MS data acquired in non-targeted mode (data dependent acquisition). For convenience we also provide a batch file (XML format) that can be imported directly in MS-DIAL.</p>
 <p><strong>IMPORTANT:</strong> MS-DIAL parameters will vary depending on the mass spectrometer, the acquisition parameters, and the sample studied. The following documentation serves a basic guideline for using MS-DIAL with the Feature-Based Molecular Networking workflow.</p>
 <p>Please consult these resources for more details on MS-DIAL processing:</p>
 <ul>
@@ -1303,23 +1303,23 @@
 <li>The video tutorial about <a href="../tutorials/americangut-ms-dial/">MS-DIAL processing for Feature Based Molecular Networking</a>.</li>
 </ul>
 <h3 id="convert-your-lc-msms-data-to-open-format">Convert your LC-MS/MS Data to Open Format</h3>
-<p>MS-DIAL accepts different input formats. Note that we recommand to first convert your files to mzML format before doing MS-DIAL processing. <a href="https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/">See the documentation here</a>.</p>
+<p>MS-DIAL accepts different input formats. Note that we recommend first to convert your files to mzML format before doing MS-DIAL processing. <a href="https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/">See the documentation here</a>.</p>
 <h4 id="processing-steps">Processing Steps</h4>
-<p>Below is a walk through of all the steps</p>
+<p>Below is a walk-through of all the steps</p>
 <h4 id="1-make-a-new-project">1. Make a New Project</h4>
 <p>Go to Menu: File / New Project</p>
 <p><img alt="img" src="../img/ms-dial/new-project.png" /></p>
-<p>Select proper parameters (ionization type / method type / data type / ion mode / target omics) for your dataset.</p>
-<p>Click “next” button.</p>
+<p>Select appropriate parameters (ionization type / method type / data type / ion mode / target omics) for your dataset.</p>
+<p>Click “Next”.</p>
 <h4 id="2-import-files">2. Import Files</h4>
 <p>Click “browse” and open the dropdown menu for file types, and select “mzML file(*.mzml)”. The other available options are .abf or .cdf files.</p>
 <p>[Note] Data files should be placed at the same folder with the project file.</p>
-<p>Select files and click the “open” button. You will see the list of selected files.</p>
-<p>Click the “next” button.</p>
+<p>Select files and click “Open”. You will see the list of selected files.</p>
+<p>Click “Next”.</p>
 <p><img alt="img" src="../img/ms-dial/import-raw.png" /></p>
 <h4 id="3-set-parameters-data-collection">3. Set Parameters - Data Collection</h4>
 <p>Set the MS1/MS2 tolerance and data collection parameters.</p>
-<p>If you are dealing with a large dataset, you can reduce the running time by setting multithreading option in the “advanced” menu.</p>
+<p>If you are dealing with a large dataset, you can reduce the running time by setting multithreading option in the “Advanced” menu.</p>
 <p><img alt="img" src="../img/ms-dial/set-parameters-data.png" /></p>
 <h4 id="4-set-parameters-peak-detection">4. Set Parameters - Peak Detection</h4>
 <p>Set the MS1 peak detection parameters. You should set a appropriate peak height threshold.</p>
@@ -1327,13 +1327,13 @@
 <p>If you want to remove some specific ions (e.g. known contaminants), you can make an exclusion list here.</p>
 <p><img alt="img" src="../img/ms-dial/set-parameters-peak-detection.png" /></p>
 <h4 id="5-set-parameters-ms2deconvolution">5. Set Parameters - MS2Deconvolution</h4>
-<p>You should set a appropriate MS/MS abundance cutoff. Make sure to set an intensity threshold representative of noise level in the MS2 spectrum.</p>
+<p>You should set an appropriate MS/MS abundance cutoff. Make sure to set an intensity threshold representative of the noise level in MS2 spectra.</p>
 <p>This is typically lower than for MS1. If you have any doubt, set it to 0.</p>
 <p><img alt="img" src="../img/ms-dial/set-parameters-deconvolution.png" /></p>
 <h4 id="6-set-parameters-alignment">6. Set Parameters - Alignment</h4>
 <p>Set appropriate Retention time / MS1 tolerance for alignment.</p>
-<p>If you have any QC sample data, it will be a nice candidate to be the reference file.</p>
-<p>Click the “finish” button, then MS-DIAL will perform all the feature finding process.</p>
+<p>If you have any quality control (QC) sample data, it is a nice candidate to be the reference file.</p>
+<p>Click “Finish”, then MS-DIAL will perform all the feature finding process.</p>
 <p><img alt="img" src="../img/ms-dial/set-parameters-alignment.png" /></p>
 <h3 id="export-orand-submit-the-files-needed-for-feature-based-molecular-networking-on-gnps">Export or/and submit the files needed for Feature-Based Molecular Networking on GNPS:</h3>
 <ul>
@@ -1346,8 +1346,8 @@
 </ul>
 <p>Menu: Export / Alignment result</p>
 <p><img alt="img" src="../img/ms-dial/export.png" /></p>
-<p>Select the “GNPS export” option, and make the spectra type to “centroid”.</p>
-<p>Set the directory and file name, then click “export”. As a result, you will acquire a .mgf file and a feature abundance table.</p>
+<p>Check the “GNPS export” box, and set the spectra type to “centroid”.</p>
+<p>Set the directory and file name, then click “Export”. As a result, you will acquire a .mgf file and a feature abundance table.</p>
 <p><img alt="img" src="../img/ms-dial/export_2.png" /></p>
 <p>[Note] GNPS export module of MS-DIAL will create a feature table based on MS1 peak height.</p>
 <p>If you want a feature table based on peak area, check the “Raw data matrix (Area)”.</p>
@@ -1355,19 +1355,19 @@
 <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files/">here</a>):</p>
 <h3 id="running-the-fbmn-with-ms-dial">Running the FBMN with MS-DIAL</h3>
 <p>After the processing with MS-DIAL, the output files can be used to run the Feature-Based Molecular Networking workflow on GNPS either using the [Superquick FBMN start page] (http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking) or <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">the standard interface of the FBMN workflow</a> (you need to be logged in GNPS first).</p>
-<p>More information on the Feature Based Molecular Networking workflow on GNPS <a href="../featurebasedmolecularnetworking/">can be obtained on that documentation page</a></p>
-<p>Basically, you will need to upload the files ouputted by the MS-DIAL processing (test files are accessible <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files/">here</a>):</p>
+<p>More information on the Feature Based Molecular Networking workflow on GNPS <a href="../featurebasedmolecularnetworking/">can be found on the documentation page</a></p>
+<p>Basically, you will need to upload the files produced by MS-DIAL (test files are accessible <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files/">here</a>):</p>
 <ol>
 <li>A <em>feature quantification table</em> (see above)</li>
 <li>A <em>MS/MS spetral summary</em> file (see above)</li>
-<li>A <em>metadata table</em> - requirements are described <a href="../networking/#metadata">here</a>, but note that <strong>important</strong> note below:</li>
+<li>A <em>metadata table</em> - requirements are described <a href="../networking/#metadata">here</a>, but note that:</li>
 </ol>
-<p><strong>IMPORTANT FOR METADATA WITH MS-DIAL</strong>: the "filename" in the metadata files for FBMN with MS-DIAL should not contain the file extension (ex: "sample1.mzML" must be "sample1").</p>
+<p><strong>IMPORTANT FOR METADATA WITH MS-DIAL</strong>: "filename" in the metadata files for FBMN with MS-DIAL should not contain file extensions (ex: "sample1.mzML" must be "sample1").</p>
 <p>Here is an example MS-DIAL networking <a href="https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=4102bb6f394f4710a56f5fe1c7490f1e">job</a> from a subset of the American Gut Project.</p>
 <h2 id="tutorials">Tutorials</h2>
 <p>See our <a href="../tutorials/americangut-ms-dial/">MS-DIAL tutorial</a> on using Feature Based Molecular Networking for the American Gut Project sample.</p>
 <h2 id="page-contributors">Page contributors</h2>
-<p>Kyo Bin Kang (affiliation), Heejung Yang (affiliation) Louis Felix Nothias (UCSD)</p>
+<p>Kyo Bin Kang (Sookmyung Women's University), Heejung Yang (Kangwon National University) Louis Felix Nothias (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).</p>
 <h2 id="contribute-to-the-documentation">Contribute to the Documentation</h2>
 <ul>
 <li>For informations/feature request, please open an "Issue" on the <a href="../(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> GitHub repository.</li>
