@@ -59,6 +59,8 @@ Please note: Only letters, numbers and underscores are allowed in the filenames.
 
 It must be noted that filenames must match exactly to those users are uploading. Filenames must also be unique, and can only contain numbers, letters, hyphens, underscores, and periods. All fields for each row must have some content -- blank fields are unacceptable. Fields other than filename also **cannot** contain return carriages or tabs.
 
+After the batch file has been completed please send the batch and MS data to Morgan (ccms-web@cs.ucsd.edu).
+
 ## Spectrum Upload
 
 Users will need to upload their files into GNPS. To do this please refer to the upload documentation [here](fileupload.md).
@@ -69,6 +71,6 @@ To actually add the spectra to the libraries, users will
 
 1. Upload an empty mgf file to GNPS so that it appears in the file selector directory
 2. Export excel file as a tab separated text file and uploaded to GNPS (recommended export from Windows office 2013 or newer. Verify that line endings are UNIX and not Windows line endings)
-3. Users will then need to [click here](http://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22ADD-BATCH-ANNOTATED%22%7D) to utilize the batch workflow and select the mgf file created to hold the library, the input spectrum files, and the text version of the annotations. Addendum: Access to workflow is restricted - To request access please email Ming (ccms-web@cs.ucsd.edu)
+3. Users will then need to [click here](http://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22ADD-BATCH-ANNOTATED%22%7D) to utilize the batch workflow and select the mgf file created to hold the library, the input spectrum files, and the text version of the annotations. Addendum: Access to workflow is restricted - To request access please email Morgan (ccms-web@cs.ucsd.edu)
 4. After the workflow completes, the mgf file will now be populated with the batch uploaded spectra.
-5. To contribute this library to the public GNPS library, please email Ming (ccms-web@cs.ucsd.edu), listing the location of the library and the public library it should be added to for approval.
+5. To contribute this library to the public GNPS library, please email Morgan (ccms-web@cs.ucsd.edu), listing the location of the library and the public library it should be added to for approval.
