@@ -2,7 +2,7 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-
+| [FACSS SciX](https://facss.org/short-courses), USA | Molecular Networking and GNPS for the Analysis of Metabolomics Data | Oct 16, 2019 | TBA |
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
 
