@@ -19,49 +19,7 @@ The follow data is can be put into molecular networking.
 Molecular networking supports mzXML, mzML, and mgf file formats. To convert your file to the appropriate formats, check out our [documentation](fileconversion.md).
 
 ### Metadata
-
-The metadata file describes the samples properties and allows more flexibility for data analysis and visualization. It is an alternative way to assign groups when selecting data input files within the workflow of GNPS.
-
-The current version of molecular networking allows to use the metadata table as an input. Although it is possible to use the legacy group mapping and attribute mapping file, we strongly advise to prepare metadata table instead.
-
-#### Format
-
-The metadata table is a text file (Tab separated) that users must create these file themselves using a text editor (e.g. Microsoft Excel, Notepad++ for Windows, gedit for Linux, TextWrangler for Mac OS). Using Metadata table can greatly ease the visualization and analysis of data within Cytoscape. We strongly encourage you to prepare those in advance and to share it publicly with your MassIVE data.
-
-You can download an example and edit it appropriately. Finally users will need to upload just as you would upload data input files and select it in the metadata table file upload selection. For a metadata table file template, you can use the following .txt file - [Right-click, and Save link as](https://raw.githubusercontent.com/DorresteinLaboratory/GNPS-Trinity/master/GNPS-Trinity_template_files/metadata_GNPS_AMG_demo.txt).
-
-![metadata](img/networking/Metadata_table_view.png)
-
-The only required columns in the metadata is "filename". NOTE: capitalization matters.
-
-Metadata columns that will be considered by molecular networking must be prefixed by "ATTRIBUTE_".
-
-Please ensure that the file is saved as a tab separated text file. Excel (xlsx), rich text (rtf) are not acceptable.
-
-For Qiita users that wish to reconcile sample identifiers so that the biom and metadata output are compatible with Qiita, please provide an extra column (#SampleID). GNPS will understand this extra metadata column and rewrite sample identifers for BIOM and metadata to this sample identifier rather than using the mass spectrometry filename by default. 
-
-Pardon our dust as we are migrating this documentation, if we missed anything, please check out our [Legacy Documentation](https://bix-lab.ucsd.edu/display/Public/Metadata+table+in+GNPS).
-
-### \`ili 3D Mapping Files
-
-The metadata can also be used to specify spatial coordinates for direct visualization of the data in ['ili toolbox](https://ili.embl.de/). Note that an .STL binary file must selected as an input in the workflow.
-
-The following headers are required:
-
-1. "COORDINATE_X" - X coordinate on the 2D/3D model
-2. "COORDINATE_Y" - Y coordinate on the 2D/3D model
-3. "COORDINATE_Z" - Z coordinate on the 2D/3D model
-4. "COORDINATE_radius" - radius for the spot in 'ili toolbox.
-
-![ili](img/networking/ili-table.png)
-
-Additionally, a 3D STL file will need to be provided to visualize all the molecule intensities onto. It creates really cool plots like this:
-
-![ili_example](img/networking/ili_example.png)
-
-### Legacy Group and Attribute Mapping Format
-
-This format has been replaced by the above Metadata format. While it is still supported it is not recommended. Please see the details [here](https://bix-lab.ucsd.edu/display/Public/Metadata+table+in+GNPS).
+More information provided [here](metadata.md).
 
 ## Running Molecular Networking
 
