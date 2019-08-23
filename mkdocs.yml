@@ -15,6 +15,7 @@ pages:
     - Data Preparation/Upload:
         - Mass Spectrometry File Conversion: fileconversion.md
         - GNPS File Upload: fileupload.md
+        - Metadata: metadata.md
     - Recommended Data Analysis:
         - Molecular Networking: networking.md
         - Molecular Networking Views: networkingviews.md
