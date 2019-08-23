@@ -22,9 +22,18 @@ The use of a metadata file is an alternative way to assign groups when selecting
 
 **Note:** Although it is possible to use the legacy group mapping and attribute mapping file, we strongly advise against using this method.
 
-## Requirements Specific to Qiita/Qiime
-GNPS communicates with Qiita and Qiime. PCoA visualized using EMPeror and Qiime outputs (.qza/.qzv), including a BIOM formated output, can be generated. GNPS will understand this extra metadata column and rewrite sample identifers for BIOM and metadata to this sample identifier rather than using the mass spectrometry filename by default. **Note: a Qiita ID with corresponding information must be created**
-* **Add an extra column called "#SampleID" to the metadata file using a text editor.** The identifer must contain the Qiita ID prepended to the sample identifier using a period (*e.g.* 10317.000096815).
+## Requirements Specific to Qiime2
+GNPS communicates with Qiime2. PCoA visualized using EMPeror and Qiime outputs (.qza/.qzv), including a BIOM formated output, can be generated. GNPS will understand this extra metadata column and rewrite sample identifers for BIOM and metadata to this sample identifier rather than using the mass spectrometry filename by default. 
+
+* Save the file (must be tab-delimited text file)
+* Users must upload their data file
+* Users must select the metadata file and place it in the **"Metadata File"** folder
+
+## Requirements Specific to Qiita
+GNPS communicates with Qiita. Specifically, you can use the output of GNPS to add metabolomics data into an existing Qiita dataset. This is handled through the Biom table output as a qiime2 qza artifact. The key feature is renaming the mass spectrometry file into a sample identifier so that the identifiers are concordant. **Note: a Qiita ID with corresponding information must be created**
+
+* **Add an extra column called "sample_name" to the metadata file using a text editor.** The identifer must contain the Qiita ID prepended to the sample identifier using a period (*e.g.* 10317.000096815).
+
 * Save the file (must be tab-delimited text file)
 * Users must upload their data file
 * Users must select the metadata file and place it in the **"Metadata File"** folder
