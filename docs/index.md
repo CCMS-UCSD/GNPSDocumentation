@@ -1,4 +1,4 @@
-![logo](/img/GNPS_logo_original.png)
+![logo](img/GNPS_logo_original.png)
 
 # Welcome to GNPS Documentation
 
@@ -57,7 +57,7 @@ Put your MS/MS spectrum of a known compound in GNPS spectral libraries, so you n
 
 ### GNPS and MassIVE uptime
 
-<p><a href="https://stats.uptimerobot.com/Am4PLUWn3" target="myFrame"> Visualize the status of all GNPS Workflows</a></p>
+<p><a href="https://stats.uptimerobot.com/Am4PLUWn3" target="myFrame"> Visualize the uptime status of all GNPS Services</a></p>
 
 ## GNPSDocumentation
 
