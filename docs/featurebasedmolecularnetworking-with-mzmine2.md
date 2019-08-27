@@ -45,7 +45,7 @@ Please consult the resources below for more details on MZmine2 processing:
 Download the latest version of MZmine2 software (version MZmine v2.33 minimum) at [https://github.com/mzmine/mzmine2/releases](https://github.com/mzmine/mzmine2/releases).
 
 ### Convert your LC-MS/MS Data to an Open Format
-MZmine2 accepts different input formats. Note that we recommand to first convert your files to mzML format before doing MZmine2 processing. [See the documentation here](fileconversion.md).
+MZmine2 accepts different input formats. Note that we recommand to first convert your files to mzML or mzXML format before doing MZmine2 processing. [See the documentation here](fileconversion.md).
 
 #### Processing Steps
 
