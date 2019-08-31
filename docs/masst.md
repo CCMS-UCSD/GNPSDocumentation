@@ -85,7 +85,7 @@ The window below will appear and you can then click on [Reanalyze with Molecular
 ![img](img/singlespectrum/MASST_reanalysis2.PNG)
 
 
-The files are located in the default group (G1). You can then name the job and adjust parameters as applicable for your search. You can also add additional files to your job into one of the other default groups. 
+The files are located in the default group (G1). You can then name the job and adjust parameters as applicable for your search. You can also add additional files to your job into one of the other default groups by clicking on [Select input files]. 
 
 ![img](img/singlespectrum/MASST_reanalysis3.PNG)
 
