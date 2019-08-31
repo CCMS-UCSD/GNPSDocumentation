@@ -8,7 +8,7 @@ To search a single spectrum to see where it occurs in all public GNPS datasets, 
 
 ### 1. MASST Web Interface
 
-Click [here](https://proteosafe-extensions.ucsd.edu/masst) for the standalone MASST search interface:
+Click [here](https://proteosafe-extensions.ucsd.edu/masst) for the standalone MASST search interface, to get this start page:
 
 ![img](img/singlespectrum/MASST_standalone.PNG)
 
@@ -80,9 +80,13 @@ Clicking on [Analyze Files Found With Molecular Networking] will select all of t
 
 ![img](img/singlespectrum/MASST_reanalysis1.PNG)
 
+The window below will appear and you can then click on [Reanalyze] to launch a molecular networking job with the files that were found in G1. 
+
 
 ![img](img/singlespectrum/MASST_reanalysis2.PNG)
 
+
+You can then name the job and adjust parameters as applicable for your search. By using the normal molecular networking instructions, you can also add additional files to your job into one of the other default groups. 
 
 ![img](img/singlespectrum/MASST_reanalysis3.PNG)
 
