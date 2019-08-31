@@ -80,13 +80,12 @@ Clicking on [Analyze Files Found With Molecular Networking] will select all of t
 
 ![img](img/singlespectrum/MASST_reanalysis1.PNG)
 
-The window below will appear and you can then click on [Reanalyze] to launch a molecular networking job with the files that were found in G1. 
-
+The window below will appear and you can then click on [Reanalyze with Molecular Networking] to launch a molecular networking job with the files that were found.
 
 ![img](img/singlespectrum/MASST_reanalysis2.PNG)
 
 
-You can then name the job and adjust parameters as applicable for your search. By using the normal molecular networking instructions, you can also add additional files to your job into one of the other default groups. 
+The files are located in the default group (G1). You can then name the job and adjust parameters as applicable for your search. You can also add additional files to your job into one of the other default groups. 
 
 ![img](img/singlespectrum/MASST_reanalysis3.PNG)
 
