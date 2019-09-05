@@ -1,7 +1,7 @@
 # Open-source Protocol for Community-created Public MS/MS Reference Library (MSMS-Chooser)
 
 ## Summary
-[MSMS-Chooser](https://proteomics2.ucsd.edu/ProteoSAFe/) is a GNPS workflow and open-source protocol to empower the community to collect MS/MS reference data and contribute to the public MS/MS reference library.
+[MSMS-Chooser](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MS-CHOOSER%22%7D) is a GNPS workflow and open-source protocol to empower the community to collect MS/MS reference data and contribute to the public MS/MS reference library.
 
 **This is a community effort and welcome everyone to participate!**
   * We encourage individuals to implement the protocols in their own laboratory.
@@ -83,8 +83,7 @@ Please select the following link:
   * Make data public
 
 ### MSMS-Chooser (v1.0)
-1. Navigate to [ProteoSAFe](https://proteomics2.ucsd.edu/ProteoSAFe/).
-  * Select MS-CHOOSER (v1.0) in the workflow dropdown menu
+1. Navigate to [ProteoSAFe](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MS-CHOOSER%22%7D).
   * Select all .mzXML files, negative and positive, from MassIVE
   * Select the **"MSMS-Chooser Submission"** file (.tsv) from MassIVE
 2. Launch the Job
