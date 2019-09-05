@@ -42,6 +42,7 @@ pages:
         - Reference Spectral Library Curation: spectrumcuration.md
         - Reference Spectral Library Batch Addition: batchupload.md
         - Downloading Reference Spectral Libraries: downloadlibraries.md
+        - Open-source Method for Reference Library Generation (MSMS-Chooser): msmschooser.md
     - Public Datasets:
         - Dataset Creation/Sharing: datasets.md
         - Continuous Identification: continuousid.md
