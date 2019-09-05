@@ -56,6 +56,7 @@ pages:
         - Feature Based Molecular Networking with MSDial - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangut-ms-dial.md
         - Feature Based Molecular Networking with Metaboscape - Coffee Analysis: tutorials/coffee-tutorial-metaboscape.md
         - Feature Based Molecular Networking analysis at GNPS: tutorials/featurebasedgnps.md
+            - Data Acqusition - Thermo QExactive (v1.0): msmschooserdataacquisitionQE.md
     - Presentation Materials:
         - Logos: logos.md
     - Change Log: changelog.md
