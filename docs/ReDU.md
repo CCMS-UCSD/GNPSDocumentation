@@ -29,6 +29,7 @@ All sample information can be downloaded from the ReDU homepage by clicking "Dow
 
 ## Citation
 <br>
+Read our recent submitted preprint: [Repository-scale Co- and Re-analysis of Tandem Mass Spectrometry Data](https://www.biorxiv.org/content/10.1101/750471v1).
 
 ## Development
 [GitHub](https://github.com/mwang87/ReDU-MS2-GNPS)
