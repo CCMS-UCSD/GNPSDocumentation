@@ -313,6 +313,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../metadata/" title="Metadata" class="md-nav__link">
+      Metadata
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -392,33 +404,6 @@
           <li class="md-nav__item">
   <a href="#metadata" title="Metadata" class="md-nav__link">
     Metadata
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#format" title="Format" class="md-nav__link">
-    Format
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#96ili-3d-mapping-files" title="`ili 3D Mapping Files" class="md-nav__link">
-    `ili 3D Mapping Files
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#legacy-group-and-attribute-mapping-format" title="Legacy Group and Attribute Mapping Format" class="md-nav__link">
-    Legacy Group and Attribute Mapping Format
   </a>
   
 </li>
@@ -891,6 +876,54 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-5" type="checkbox" id="nav-11-5">
+    
+    <label class="md-nav__link" for="nav-11-5">
+      Open-source Method for Reference Library Generation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-11-5">
+        Open-source Method for Reference Library Generation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../msmschooserdataacquisitionQE/" title="Data Acqusition - Thermo QExactive (v1.0)" class="md-nav__link">
+      Data Acqusition - Thermo QExactive (v1.0)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../msmschooser/" title="Computational Selection of MSMS to Include in Library (MSMS-Chooser)" class="md-nav__link">
+      Computational Selection of MSMS to Include in Library (MSMS-Chooser)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1205,33 +1238,6 @@
     Metadata
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#format" title="Format" class="md-nav__link">
-    Format
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#96ili-3d-mapping-files" title="`ili 3D Mapping Files" class="md-nav__link">
-    `ili 3D Mapping Files
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#legacy-group-and-attribute-mapping-format" title="Legacy Group and Attribute Mapping Format" class="md-nav__link">
-    Legacy Group and Attribute Mapping Format
-  </a>
-  
 </li>
         
       </ul>
@@ -1388,31 +1394,7 @@
 <h3 id="mass-spectrometry-data-files">Mass Spectrometry data files</h3>
 <p>Molecular networking supports mzXML, mzML, and mgf file formats. To convert your file to the appropriate formats, check out our <a href="../fileconversion/">documentation</a>.</p>
 <h3 id="metadata">Metadata</h3>
-<p>The metadata file describes the samples properties and allows more flexibility for data analysis and visualization. It is an alternative way to assign groups when selecting data input files within the workflow of GNPS.</p>
-<p>The current version of molecular networking allows to use the metadata table as an input. Although it is possible to use the legacy group mapping and attribute mapping file, we strongly advise to prepare metadata table instead.</p>
-<h4 id="format">Format</h4>
-<p>The metadata table is a text file (Tab separated) that users must create these file themselves using a text editor (e.g. Microsoft Excel, Notepad++ for Windows, gedit for Linux, TextWrangler for Mac OS). Using Metadata table can greatly ease the visualization and analysis of data within Cytoscape. We strongly encourage you to prepare those in advance and to share it publicly with your MassIVE data.</p>
-<p>You can download an example and edit it appropriately. Finally users will need to upload just as you would upload data input files and select it in the metadata table file upload selection. For a metadata table file template, you can use the following .txt file - <a href="https://raw.githubusercontent.com/DorresteinLaboratory/GNPS-Trinity/master/GNPS-Trinity_template_files/metadata_GNPS_AMG_demo.txt">Right-click, and Save link as</a>.</p>
-<p><img alt="metadata" src="../img/networking/Metadata_table_view.png" /></p>
-<p>The only required columns in the metadata is "filename". NOTE: capitalization matters.</p>
-<p>Metadata columns that will be considered by molecular networking must be prefixed by "ATTRIBUTE_".</p>
-<p>Please ensure that the file is saved as a tab separated text file. Excel (xlsx), rich text (rtf) are not acceptable.</p>
-<p>For Qiita users that wish to reconcile sample identifiers so that the biom and metadata output are compatible with Qiita, please provide an extra column (#SampleID). GNPS will understand this extra metadata column and rewrite sample identifers for BIOM and metadata to this sample identifier rather than using the mass spectrometry filename by default. </p>
-<p>Pardon our dust as we are migrating this documentation, if we missed anything, please check out our <a href="https://bix-lab.ucsd.edu/display/Public/Metadata+table+in+GNPS">Legacy Documentation</a>.</p>
-<h3 id="96ili-3d-mapping-files">`ili 3D Mapping Files</h3>
-<p>The metadata can also be used to specify spatial coordinates for direct visualization of the data in <a href="https://ili.embl.de/">'ili toolbox</a>. Note that an .STL binary file must selected as an input in the workflow.</p>
-<p>The following headers are required:</p>
-<ol>
-<li>"COORDINATE_X" - X coordinate on the 2D/3D model</li>
-<li>"COORDINATE_Y" - Y coordinate on the 2D/3D model</li>
-<li>"COORDINATE_Z" - Z coordinate on the 2D/3D model</li>
-<li>"COORDINATE_radius" - radius for the spot in 'ili toolbox.</li>
-</ol>
-<p><img alt="ili" src="../img/networking/ili-table.png" /></p>
-<p>Additionally, a 3D STL file will need to be provided to visualize all the molecule intensities onto. It creates really cool plots like this:</p>
-<p><img alt="ili_example" src="../img/networking/ili_example.png" /></p>
-<h3 id="legacy-group-and-attribute-mapping-format">Legacy Group and Attribute Mapping Format</h3>
-<p>This format has been replaced by the above Metadata format. While it is still supported it is not recommended. Please see the details <a href="https://bix-lab.ucsd.edu/display/Public/Metadata+table+in+GNPS">here</a>.</p>
+<p>More information provided <a href="../metadata/">here</a>.</p>
 <h2 id="running-molecular-networking">Running Molecular Networking</h2>
 <h3 id="molecular-networking-workflow-selection">Molecular Networking Workflow Selection</h3>
 <p>From the main <a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp">GNPS page</a>, click the <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D">"Create Molecular Network"</a> button.</p>
@@ -1796,7 +1778,7 @@ TODO: image and implement -->
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../fileupload/" title="GNPS File Upload" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../metadata/" title="Metadata" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1805,7 +1787,7 @@ TODO: image and implement -->
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                GNPS File Upload
+                Metadata
               </span>
             </div>
           </a>
