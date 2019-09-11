@@ -7,8 +7,7 @@ While there is an interface to upload single spectra, users who wish to batch up
 The materials that are required are:
 
 1. Annotation Spread Sheet
-2. Empty MGF file meant to be library to populate
-3. Source mzXML/mzML/mgf mass spectra files to pull MS/MS spectra 
+2. Source mzXML/mzML/mgf mass spectra files to pull MS/MS spectra 
 
 ## Annotation Spread Sheet
 
@@ -70,4 +69,5 @@ To actually add the spectra to the libraries, users will
 1. Upload an empty mgf file to GNPS so that it appears in the file selector directory
 2. Export excel file as a tab separated text file and upload to GNPS (recommended export from Windows office 2013 or newer. Verify that line endings are UNIX and not Windows line endings)
 3. Users will then need to contact Morgan (ccms-web@cs.ucsd.edu) and send her the batch and spectrum files.
-4. To contribute this library to the public GNPS library, please email Morgan (ccms-web@cs.ucsd.edu), listing the location of the library and the public library it should be added to for approval.
+4. A private spectral library will then be created by Morgan. 
+5. After the contributor may review the library to be made into a public library. 
