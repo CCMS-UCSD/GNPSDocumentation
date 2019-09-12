@@ -1,4 +1,4 @@
-![logo](docs/img/logo/MASST_logo.png)
+![logo](img/logo/MASST_logo.png)
 
 ## Overview
 
