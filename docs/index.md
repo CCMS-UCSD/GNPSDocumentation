@@ -1,4 +1,4 @@
-![logo](/img/GNPS_logo_original.png)
+![logo](img/GNPS_logo_original.png)
 
 # Welcome to GNPS Documentation
 
@@ -9,16 +9,17 @@ As there are many aspects to GNPS, it can be a bit overwhelming. Here is a quick
 ### Analyze and Annotate
 
 * Perform [molecular networking and spectral library search](gnpsanalysisoverview.md) of MS/MS data utilizing computational tools (e.g. [Molecular Networking](networking.md), [Spectral Library Search](librarysearch.md), etc).
-* **NEW!** Perform advanced molecular networking and spectral library search with [Feature-Based Molecular Networking](featurebasedmolecularnetworking.md).
 * [Annotate/curate identified MS/MS spectra](spectrumcuration.md) in open-access GNPS reference spectra libraries.
 * Annotate peptidic natural products in MS/MS data with [DEREPLICATOR/VarQuest/DEREPLICATOR+](dereplicator.md) and [RiPPQuest](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-theoretical.jsp). <!--[MetaMiner](metaminer.md) , [CycloNovo](cyclonovo.md)-->
 * Propagate in silico annotations in your MS/MS data with [Network Annotation Propagation (NAP)](nap.md).
 * **NEW!** Search spectral Mass2Motifs in your MS/MS data [with MS2LDA](ms2lda.md).
+* **NEW!** Perform advanced molecular networking and spectral library search with [Feature-Based Molecular Networking](featurebasedmolecularnetworking.md).
+* **NEW!** Give MS/MS spectra biological/environmental context by searching against all public MS/MS datasets ([MASST Search](masst.md)).
+* **NEW!** Find and co- or re-analyze public MS/MS data via systematic sample information at [ReDU](ReDU.md).
 
 ### Share and Explore
 
 * Publish entire study datasets with the Mass Spectrometry Interactive Virtual Environment (MassIVE) data repository ([Dataset Submission](datasets.md)).
-* **NEW!** Give MS/MS spectra biological/environmental context by searching against all public MS/MS datasets ([MASST Search](masst.md)).
 * [Browse](datasets#browsing-datasets) and [Reanalyze](datasets#reanalyze-datasets) over 700 public datasets at GNPS
 * Automatic reanalysis of public datasets with automated reports of new identifications ([Continuous Identification](continuousid.md)).
 * Explore identifications of public datasets across entire repository ([Molecule Explorer](moleculeexplorer.md)).
@@ -57,7 +58,7 @@ Put your MS/MS spectrum of a known compound in GNPS spectral libraries, so you n
 
 ### GNPS and MassIVE uptime
 
-<p><a href="https://stats.uptimerobot.com/Am4PLUWn3" target="myFrame"> Visualize the status of all GNPS Workflows</a></p>
+<p><a href="https://stats.uptimerobot.com/Am4PLUWn3" target="myFrame"> Visualize the uptime status of all GNPS Services</a></p>
 
 ## GNPSDocumentation
 
