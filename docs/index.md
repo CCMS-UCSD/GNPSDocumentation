@@ -73,6 +73,3 @@ The GitHub repository for the documentation is available here [https://github.co
 - For informations/feature request, please open an "Issue" on the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) GitHub repository.
 - To contribute to the GNPS documentation, fork the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request".
 
-### Legacy Documentation
-
-To checkout our legacy documentation in its entirely, you can find it [here](https://bix-lab.ucsd.edu/display/Public/GNPS+Documentation+Page).
