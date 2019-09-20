@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -40,21 +40,50 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.4f4f49e8.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-8412213-5", "ccms-ucsd.github.io")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -92,22 +121,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                GNPS Documentation
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              GNPS Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Dataset Creation/Sharing
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -130,7 +158,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -143,7 +170,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -152,11 +179,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href=".." title="GNPS Documentation" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
-    </span>
+    </a>
     GNPS Documentation
   </label>
   
@@ -800,14 +827,14 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#massive-datasets" title="MassIVE Datasets" class="md-nav__link">
+  <a href="#massive-datasets" class="md-nav__link">
     MassIVE Datasets
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#submitting-gnps-massive-datasets" title="Submitting GNPS-MassIVE Datasets" class="md-nav__link">
+  <a href="#submitting-gnps-massive-datasets" class="md-nav__link">
     Submitting GNPS-MassIVE Datasets
   </a>
   
@@ -815,21 +842,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gnps-submission-specifics" title="GNPS Submission specifics" class="md-nav__link">
+  <a href="#gnps-submission-specifics" class="md-nav__link">
     GNPS Submission specifics
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#example-recommended-description" title="Example Recommended Description" class="md-nav__link">
+  <a href="#example-recommended-description" class="md-nav__link">
     Example Recommended Description
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#making-dataset-public" title="Making Dataset Public" class="md-nav__link">
+  <a href="#making-dataset-public" class="md-nav__link">
     Making Dataset Public
   </a>
   
@@ -841,14 +868,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#continuous-identification" title="Continuous Identification" class="md-nav__link">
+  <a href="#continuous-identification" class="md-nav__link">
     Continuous Identification
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#browsing-datasets" title="Browsing Datasets" class="md-nav__link">
+  <a href="#browsing-datasets" class="md-nav__link">
     Browsing Datasets
   </a>
   
@@ -856,7 +883,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#downloading-dataset-contents" title="Downloading Dataset Contents" class="md-nav__link">
+  <a href="#downloading-dataset-contents" class="md-nav__link">
     Downloading Dataset Contents
   </a>
   
@@ -868,14 +895,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reanalyze-datasets" title="Reanalyze Datasets" class="md-nav__link">
+  <a href="#reanalyze-datasets" class="md-nav__link">
     Reanalyze Datasets
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#social-networking-with-datasets" title="Social Networking with Datasets" class="md-nav__link">
+  <a href="#social-networking-with-datasets" class="md-nav__link">
     Social Networking with Datasets
   </a>
   
@@ -883,14 +910,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#dataset-comments" title="Dataset Comments" class="md-nav__link">
+  <a href="#dataset-comments" class="md-nav__link">
     Dataset Comments
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#finding-related-datasets" title="Finding Related Datasets" class="md-nav__link">
+  <a href="#finding-related-datasets" class="md-nav__link">
     Finding Related Datasets
   </a>
   
@@ -1164,14 +1191,14 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#massive-datasets" title="MassIVE Datasets" class="md-nav__link">
+  <a href="#massive-datasets" class="md-nav__link">
     MassIVE Datasets
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#submitting-gnps-massive-datasets" title="Submitting GNPS-MassIVE Datasets" class="md-nav__link">
+  <a href="#submitting-gnps-massive-datasets" class="md-nav__link">
     Submitting GNPS-MassIVE Datasets
   </a>
   
@@ -1179,21 +1206,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gnps-submission-specifics" title="GNPS Submission specifics" class="md-nav__link">
+  <a href="#gnps-submission-specifics" class="md-nav__link">
     GNPS Submission specifics
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#example-recommended-description" title="Example Recommended Description" class="md-nav__link">
+  <a href="#example-recommended-description" class="md-nav__link">
     Example Recommended Description
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#making-dataset-public" title="Making Dataset Public" class="md-nav__link">
+  <a href="#making-dataset-public" class="md-nav__link">
     Making Dataset Public
   </a>
   
@@ -1205,14 +1232,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#continuous-identification" title="Continuous Identification" class="md-nav__link">
+  <a href="#continuous-identification" class="md-nav__link">
     Continuous Identification
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#browsing-datasets" title="Browsing Datasets" class="md-nav__link">
+  <a href="#browsing-datasets" class="md-nav__link">
     Browsing Datasets
   </a>
   
@@ -1220,7 +1247,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#downloading-dataset-contents" title="Downloading Dataset Contents" class="md-nav__link">
+  <a href="#downloading-dataset-contents" class="md-nav__link">
     Downloading Dataset Contents
   </a>
   
@@ -1232,14 +1259,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reanalyze-datasets" title="Reanalyze Datasets" class="md-nav__link">
+  <a href="#reanalyze-datasets" class="md-nav__link">
     Reanalyze Datasets
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#social-networking-with-datasets" title="Social Networking with Datasets" class="md-nav__link">
+  <a href="#social-networking-with-datasets" class="md-nav__link">
     Social Networking with Datasets
   </a>
   
@@ -1247,14 +1274,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#dataset-comments" title="Dataset Comments" class="md-nav__link">
+  <a href="#dataset-comments" class="md-nav__link">
     Dataset Comments
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#finding-related-datasets" title="Finding Related Datasets" class="md-nav__link">
+  <a href="#finding-related-datasets" class="md-nav__link">
     Finding Related Datasets
   </a>
   
@@ -1323,21 +1350,21 @@ Brief description of the data submitted: RAW Files used to generate Figure 4. Ba
 <p>Users may subscribe to datasets to receive email notifications of new identifications made to datasets of interest.</p>
 <h2 id="browsing-datasets">Browsing Datasets</h2>
 <p>To browse all public datasets, click the "Datasets" link at the top menu bar. This brings users to a list of all public GNPS-MassIVE datasets.</p>
-<p><img alt="img" src="../img/datasets/browse_datasets.png" /></p>
+<p><img alt="img" src="/img/datasets/browse_datasets.png" /></p>
 <h3 id="downloading-dataset-contents">Downloading Dataset Contents</h3>
 <p>To download the contents of a dataset, you can reach the FTP url of each dataset by click the FTP link.</p>
-<p><img alt="img" src="../img/datasets/dataset_ftp.png" /></p>
+<p><img alt="img" src="/img/datasets/dataset_ftp.png" /></p>
 <h2 id="reanalyze-datasets">Reanalyze Datasets</h2>
-<p>Dataset data can be re-analyzed with the tools at GNPS. In order to import the dataset into your own workspace to select files, please refer to <a href="../networking/#selecting-files-to-analyze">this documentation</a>.</p>
+<p>Dataset data can be re-analyzed with the tools at GNPS. In order to import the dataset into your own workspace to select files, please refer to <a href="networking/#selecting-files-to-analyze">this documentation</a>.</p>
 <h2 id="social-networking-with-datasets">Social Networking with Datasets</h2>
 <h3 id="dataset-comments">Dataset Comments</h3>
 <p>Users may make a comment on a dataset by clicking the "Comment on Dataset Link":</p>
-<p><img alt="img" src="../img/datasets/comment_dataset.png" /></p>
+<p><img alt="img" src="/img/datasets/comment_dataset.png" /></p>
 <p>To browse all comments per dataset, a table is shown</p>
-<p><img alt="img" src="../img/datasets/dataset_comments.png" /></p>
+<p><img alt="img" src="/img/datasets/dataset_comments.png" /></p>
 <h3 id="finding-related-datasets">Finding Related Datasets</h3>
 <p>Users can find related MassIVE datasets to the current one. Currently relatedness of datasets is determine by the number of shared identified compounds between the two. Users can see a view like this:</p>
-<p><img alt="img" src="../img/datasets/related_datasets.png" /></p>
+<p><img alt="img" src="/img/datasets/related_datasets.png" /></p>
                 
                   
                 
@@ -1401,22 +1428,15 @@ Brief description of the data submitted: RAW Files used to generate Figure 4. Ba
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-8412213-5","ccms-ucsd.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
   </body>

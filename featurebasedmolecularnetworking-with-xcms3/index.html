@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -40,21 +40,50 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.4f4f49e8.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-8412213-5", "ccms-ucsd.github.io")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -92,22 +121,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                GNPS Documentation
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              GNPS Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
                 FBMN with XCMS3
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -130,7 +158,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -143,7 +170,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -152,11 +179,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href=".." title="GNPS Documentation" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
-    </span>
+    </a>
     GNPS Documentation
   </label>
   
@@ -533,14 +560,14 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" title="Introduction" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     Introduction
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mass-spectrometry-processing-with-xcms3" title="Mass spectrometry processing with XCMS3" class="md-nav__link">
+  <a href="#mass-spectrometry-processing-with-xcms3" class="md-nav__link">
     Mass spectrometry processing with XCMS3
   </a>
   
@@ -548,21 +575,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#installation" title="Installation" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     Installation
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#citations-and-development" title="Citations and development" class="md-nav__link">
+  <a href="#citations-and-development" class="md-nav__link">
     Citations and development
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#mass-spectrometry-data-processing-with-xcms3" title="Mass Spectrometry Data Processing with XCMS3." class="md-nav__link">
+  <a href="#mass-spectrometry-data-processing-with-xcms3" class="md-nav__link">
     Mass Spectrometry Data Processing with XCMS3.
   </a>
   
@@ -570,14 +597,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-convert-your-lc-msms-data-to-an-open-format" title="1. Convert your LC-MS/MS Data to an Open Format" class="md-nav__link">
+  <a href="#1-convert-your-lc-msms-data-to-an-open-format" class="md-nav__link">
     1. Convert your LC-MS/MS Data to an Open Format
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-processing-steps-with-xcms3" title="2. Processing Steps with XCMS3" class="md-nav__link">
+  <a href="#2-processing-steps-with-xcms3" class="md-nav__link">
     2. Processing Steps with XCMS3
   </a>
   
@@ -589,14 +616,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#perform-the-feature-based-molecular-networking-on-gnps" title="Perform the Feature-Based Molecular Networking on GNPS" class="md-nav__link">
+  <a href="#perform-the-feature-based-molecular-networking-on-gnps" class="md-nav__link">
     Perform the Feature-Based Molecular Networking on GNPS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#representative-files-and-job" title="Representative files and job" class="md-nav__link">
+  <a href="#representative-files-and-job" class="md-nav__link">
     Representative files and job
   </a>
   
@@ -608,21 +635,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tutorials" title="Tutorials" class="md-nav__link">
+  <a href="#tutorials" class="md-nav__link">
     Tutorials
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#page-contributors" title="Page contributors" class="md-nav__link">
+  <a href="#page-contributors" class="md-nav__link">
     Page contributors
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#contribute-to-the-documentation" title="Contribute to the Documentation" class="md-nav__link">
+  <a href="#contribute-to-the-documentation" class="md-nav__link">
     Contribute to the Documentation
   </a>
   
@@ -1160,14 +1187,14 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" title="Introduction" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     Introduction
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mass-spectrometry-processing-with-xcms3" title="Mass spectrometry processing with XCMS3" class="md-nav__link">
+  <a href="#mass-spectrometry-processing-with-xcms3" class="md-nav__link">
     Mass spectrometry processing with XCMS3
   </a>
   
@@ -1175,21 +1202,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#installation" title="Installation" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     Installation
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#citations-and-development" title="Citations and development" class="md-nav__link">
+  <a href="#citations-and-development" class="md-nav__link">
     Citations and development
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#mass-spectrometry-data-processing-with-xcms3" title="Mass Spectrometry Data Processing with XCMS3." class="md-nav__link">
+  <a href="#mass-spectrometry-data-processing-with-xcms3" class="md-nav__link">
     Mass Spectrometry Data Processing with XCMS3.
   </a>
   
@@ -1197,14 +1224,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-convert-your-lc-msms-data-to-an-open-format" title="1. Convert your LC-MS/MS Data to an Open Format" class="md-nav__link">
+  <a href="#1-convert-your-lc-msms-data-to-an-open-format" class="md-nav__link">
     1. Convert your LC-MS/MS Data to an Open Format
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-processing-steps-with-xcms3" title="2. Processing Steps with XCMS3" class="md-nav__link">
+  <a href="#2-processing-steps-with-xcms3" class="md-nav__link">
     2. Processing Steps with XCMS3
   </a>
   
@@ -1216,14 +1243,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#perform-the-feature-based-molecular-networking-on-gnps" title="Perform the Feature-Based Molecular Networking on GNPS" class="md-nav__link">
+  <a href="#perform-the-feature-based-molecular-networking-on-gnps" class="md-nav__link">
     Perform the Feature-Based Molecular Networking on GNPS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#representative-files-and-job" title="Representative files and job" class="md-nav__link">
+  <a href="#representative-files-and-job" class="md-nav__link">
     Representative files and job
   </a>
   
@@ -1235,21 +1262,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tutorials" title="Tutorials" class="md-nav__link">
+  <a href="#tutorials" class="md-nav__link">
     Tutorials
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#page-contributors" title="Page contributors" class="md-nav__link">
+  <a href="#page-contributors" class="md-nav__link">
     Page contributors
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#contribute-to-the-documentation" title="Contribute to the Documentation" class="md-nav__link">
+  <a href="#contribute-to-the-documentation" class="md-nav__link">
     Contribute to the Documentation
   </a>
   
@@ -1346,7 +1373,7 @@ be obtained at <a href="../featurebasedmolecularnetworking/">this documentation 
 <p>Note that you can upload a metadata table with your job. <a href="../networking/#metadata">See
 documentation</a>.</p>
 <h3 id="representative-files-and-job">Representative files and job</h3>
-<p>Test files are accessible <a href="../tutorials/AG_tutorial_files/">here</a>:</p>
+<p>Test files are accessible <a href="tutorials/AG_tutorial_files/">here</a>:</p>
 <ol>
 <li>A <em>feature quantification table</em> - <a href="../tutorials/AG_tutorial_files/XCMS3-GNPS_AG_test_featuretable.txt">Download here</a></li>
 <li>A <em>MS/MS spectral summary</em> file from above - <a href="../tutorials/AG_tutorial_files/XCMS3-GNPS_AG_test_GNPS.mgf">Download here</a></li>
@@ -1359,8 +1386,8 @@ documentation</a>.</p>
 <p>Johannes Reiner (Eurac Research), Madeleine Ernst (UCSD), Ricardo da Silva (UCSD), Michael Wittig (Munich University), Louis Felix Nothias (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany). </p>
 <h2 id="contribute-to-the-documentation">Contribute to the Documentation</h2>
 <ul>
-<li>For informations/feature request, please open an "Issue" on the <a href="../(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> GitHub repository.</li>
-<li>To contribute directly to the GNPS documentation, fork the <a href="../(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request".</li>
+<li>For informations/feature request, please open an "Issue" on the <a href="(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> GitHub repository.</li>
+<li>To contribute directly to the GNPS documentation, fork the <a href="(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request".</li>
 </ul>
                 
                   
@@ -1425,22 +1452,15 @@ documentation</a>.</p>
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-8412213-5","ccms-ucsd.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
   </body>

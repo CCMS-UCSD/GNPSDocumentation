@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -40,21 +40,50 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.4f4f49e8.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-8412213-5", "ccms-ucsd.github.io")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -92,22 +121,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                GNPS Documentation
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              GNPS Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
                 MolNetEnhancer
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -130,7 +158,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -143,7 +170,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -152,11 +179,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href=".." title="GNPS Documentation" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
-    </span>
+    </a>
     GNPS Documentation
   </label>
   
@@ -1086,7 +1113,7 @@ Please note that you can adapt the title and you must add the relevant <i>in sil
 <p><img alt="img" src="../img/molnetenhancer/giphy.gif" /></p>
 <h1 id="molnetenhancer-output-files">MolNetEnhancer output files</h1>
 <p>Upon succesful completion, you will be able to see the output job page as displayed below:</p>
-<p><img alt="img" src="../img/molnetenhancer/output.png" /></p>
+<p><img alt="img" src="../img/molnetenhancer/output_ClassyTree.png" /></p>
 <p>There are different files for download available:</p>
 <h3 id="download-network">Download Network</h3>
 <p>This downloads the network with chemical class information mapped in the .graphml format. To visualize results import the .graphml output file into <a href="https://cytoscape.org/">Cytoscape</a>. To color nodes based on the chemical subclass for example select 'Fill Color' in the 'Node' tab to the left and choose 'CF_subclass' as <i>Column</i> and 'Discrete Mapping' as <i>Mapping Type</i>:
@@ -1098,6 +1125,9 @@ Please note that you can adapt the title and you must add the relevant <i>in sil
 <p>All columns related to chemical class information are labeled with 'CF_', and chemical class information at other hierarchical levels of the chemical taxonomy can be mapped analogously (e.g. CF_superclass, CF_superclass_score, CF_class, etc.). </p>
 <h3 id="direct-cytoscape-previewdownload">Direct Cytoscape Preview/Download</h3>
 <p>This downloads the network with chemical class information mapped in the .cys format. You can open this file directly with <a href="https://cytoscape.org/">Cytoscape</a>. Chemical class information at the superclass level is already mapped. You can change to different levels of the chemical taxonomy as described above.</p>
+<h3 id="view-qiime2-emperor-plots">View qiime2 Emperor plots</h3>
+<p>This loads the principal coordinates plot within the Qiime2 platform using a beta version of a UniFrac-based, chemically informed distance metric. Chemically-informed distance trees are built from the MolNetEnhancer retrieved chemical class information (MetaboDistTree-ClassyTree), which is based on the ClassyFire chemical ontology. 
+For more information on the algorithm refer to <a href="https://github.com/madeleineernst/MetaboDistTrees">this repository</a>. </p>
 <h2 id="citations">Citations</h2>
 <p>Have you found MolNetEnhancer to be useful for your data analysis? Please cite the relevant literature from below.</p>
 <h3 id="main-citation">Main citation</h3>
@@ -1113,6 +1143,11 @@ Please note that you can adapt the title and you must add the relevant <i>in sil
 <a href="https://www.nature.com/articles/nchembio.2219">Mohimani, H.; Gurevich, A.; Mikheenko, A.; Garg, N.; Nothias, L.-F.; Ninomiya, A.; Takada, K.; Dorrestein, P.C.; Pevzner, P.A. Dereplication of peptidic natural products through database search of mass spectra. Nat. Chem. Biol. 2017, 13, 30-37.</a></p>
 <p>MolNetEnhancer uses automated chemical classification through ClassyFire: 
 <a href="https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0174-y">Feunang, Y. D.; Eisner, R.; Knox, C.; Chepelev, L.; Hastings, J.; Owen, G.; Fahy, E.; Steinbeck, C.; Subramanian, S.; Bolton, E.; Greiner, R.; Wishart, D.S. ClassyFire: automated chemical classification with a comprehensive, computable taxonomy. J. Cheminform. 2016, 8, 61.</a></p>
+<p>Principal coordinates plots are visualised through the Qiime2 platform using EMPeror:
+<a href="https://www.nature.com/articles/s41587-019-0209-9">Bolyen, E.; Rideout, J. R.; Dillon, M. R.; et al. Reproducible, interactive, scalable and extensible microbiome data science using QIIME 2. Nat. Biotechnol. 2019, 37, 852-857.</a> and
+<a href="https://academic.oup.com/gigascience/article/2/1/2047-217X-2-16/2656132">Vázquez-Baeza,Y.; Pirrung, M.; Gonzalez, A.; Knight R. EMPeror: a tool for visualizing high-throughput microbial community data. Gigascience 2013, 2, 16.</a></p>
+<p>Chemically-informed distances are calculated using the UniFrac distance metric:
+<a href="https://aem.asm.org/content/71/12/8228">Lazupone, C.; Knight R. UniFrac: a New Phylogenetic Method for Comparing Microbial Communities. Applied and Environmental Microbiology 2005, 71, 8228-8235.</a></p>
                 
                   
                 
@@ -1176,22 +1211,15 @@ Please note that you can adapt the title and you must add the relevant <i>in sil
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-8412213-5","ccms-ucsd.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
   </body>

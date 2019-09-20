@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -40,21 +40,50 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.4f4f49e8.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-8412213-5", "ccms-ucsd.github.io")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -92,22 +121,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                GNPS Documentation
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              GNPS Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
                 GNPS Workshops
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -130,7 +158,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -143,7 +170,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -152,11 +179,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href=".." title="GNPS Documentation" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
-    </span>
+    </a>
     GNPS Documentation
   </label>
   
@@ -1031,21 +1058,21 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#upcoming-workshops" title="Upcoming Workshops" class="md-nav__link">
+  <a href="#upcoming-workshops" class="md-nav__link">
     Upcoming Workshops
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#host-your-own" title="Host Your Own" class="md-nav__link">
+  <a href="#host-your-own" class="md-nav__link">
     Host Your Own
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#previous-workshops" title="Previous Workshops" class="md-nav__link">
+  <a href="#previous-workshops" class="md-nav__link">
     Previous Workshops
   </a>
   
@@ -1081,21 +1108,21 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#upcoming-workshops" title="Upcoming Workshops" class="md-nav__link">
+  <a href="#upcoming-workshops" class="md-nav__link">
     Upcoming Workshops
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#host-your-own" title="Host Your Own" class="md-nav__link">
+  <a href="#host-your-own" class="md-nav__link">
     Host Your Own
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#previous-workshops" title="Previous Workshops" class="md-nav__link">
+  <a href="#previous-workshops" class="md-nav__link">
     Previous Workshops
   </a>
   
@@ -1132,16 +1159,16 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="https://facss.org/short-courses">FACSS SciX</a>, USA</td>
-<td>Molecular Networking and GNPS for the Analysis of Metabolomics Data</td>
-<td>Oct 16, 2019</td>
-<td>TBA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <p>If you would like to host a GNPS workshop together with the GNPS team, please reach out to <a href="mailto: miw023@ucsd.edu">Ming</a> to organize the logistics!</p>
 <h2 id="host-your-own">Host Your Own</h2>
-<p>If you would like to organize your own GNPS workshop to train new users, try getting started with our standard <a href="https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules">training modules</a>. If you would like more advanced materials, please reach out to <a href="mailto: miw023@ucsd.edu">Ming</a> and we'd be happy to help you. For promotional materials check out our <a href="logo.md">logo page</a>.</p>
+<p>If you would like to organize your own GNPS workshop to train new users, try getting started with our standard <a href="https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules">training modules</a>. If you would like more advanced materials, please reach out to <a href="mailto: miw023@ucsd.edu">Ming</a> and we'd be happy to help you. For promotional materials check out our <a href="../logos/">logo page</a>.</p>
 <h2 id="previous-workshops">Previous Workshops</h2>
 <table>
 <thead>
@@ -1265,22 +1292,15 @@
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-8412213-5","ccms-ucsd.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
   </body>

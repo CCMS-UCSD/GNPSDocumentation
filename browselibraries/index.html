@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -40,21 +40,50 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.4f4f49e8.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-8412213-5", "ccms-ucsd.github.io")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -92,22 +121,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                GNPS Documentation
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              GNPS Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Browsing Reference Spectral Libraries
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -130,7 +158,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -143,7 +170,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -152,11 +179,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href=".." title="GNPS Documentation" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
-    </span>
+    </a>
     GNPS Documentation
   </label>
   
@@ -680,7 +707,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gnps-community-spectral-libraries" title="GNPS Community Spectral Libraries" class="md-nav__link">
+  <a href="#gnps-community-spectral-libraries" class="md-nav__link">
     GNPS Community Spectral Libraries
   </a>
   
@@ -688,28 +715,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gnps-community-library" title="GNPS Community Library" class="md-nav__link">
+  <a href="#gnps-community-library" class="md-nav__link">
     GNPS Community Library
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#most-recent-contributions" title="Most Recent Contributions" class="md-nav__link">
+  <a href="#most-recent-contributions" class="md-nav__link">
     Most Recent Contributions
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#library-spectrum-list" title="Library Spectrum List" class="md-nav__link">
+  <a href="#library-spectrum-list" class="md-nav__link">
     Library Spectrum List
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#individual-spectrum-view" title="Individual Spectrum View" class="md-nav__link">
+  <a href="#individual-spectrum-view" class="md-nav__link">
     Individual Spectrum View
   </a>
   
@@ -717,14 +744,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#updating-spectrum-annotation" title="Updating Spectrum Annotation" class="md-nav__link">
+  <a href="#updating-spectrum-annotation" class="md-nav__link">
     Updating Spectrum Annotation
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#spectrum-annotation-history" title="Spectrum Annotation History" class="md-nav__link">
+  <a href="#spectrum-annotation-history" class="md-nav__link">
     Spectrum Annotation History
   </a>
   
@@ -1123,7 +1150,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gnps-community-spectral-libraries" title="GNPS Community Spectral Libraries" class="md-nav__link">
+  <a href="#gnps-community-spectral-libraries" class="md-nav__link">
     GNPS Community Spectral Libraries
   </a>
   
@@ -1131,28 +1158,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gnps-community-library" title="GNPS Community Library" class="md-nav__link">
+  <a href="#gnps-community-library" class="md-nav__link">
     GNPS Community Library
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#most-recent-contributions" title="Most Recent Contributions" class="md-nav__link">
+  <a href="#most-recent-contributions" class="md-nav__link">
     Most Recent Contributions
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#library-spectrum-list" title="Library Spectrum List" class="md-nav__link">
+  <a href="#library-spectrum-list" class="md-nav__link">
     Library Spectrum List
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#individual-spectrum-view" title="Individual Spectrum View" class="md-nav__link">
+  <a href="#individual-spectrum-view" class="md-nav__link">
     Individual Spectrum View
   </a>
   
@@ -1160,14 +1187,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#updating-spectrum-annotation" title="Updating Spectrum Annotation" class="md-nav__link">
+  <a href="#updating-spectrum-annotation" class="md-nav__link">
     Updating Spectrum Annotation
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#spectrum-annotation-history" title="Spectrum Annotation History" class="md-nav__link">
+  <a href="#spectrum-annotation-history" class="md-nav__link">
     Spectrum Annotation History
   </a>
   
@@ -1205,7 +1232,7 @@
                 <h2 id="gnps-community-spectral-libraries">GNPS Community Spectral Libraries</h2>
 <p>The GNPS public spectral libraries can be browsed, explored, and downloaded. The list of all public spectral libraries is listed <a href="https://gnps.ucsd.edu/ProteoSAFe/libraries.jsp">here</a>.</p>
 <h3 id="gnps-community-library">GNPS Community Library</h3>
-<p>There are several spectral libraries available at GNPS. They are either imported from the community (e.g. <a href="../LINK">Massbank</a>), provided directly to GNPS as a large collection of annotated spectra (e.g. <a href="../LINK">Pesticide Library</a>), or aggregated from single MS/MS additions from the entire community (e.g. <a href="../LINK">GNPS-Community</a>).</p>
+<p>There are several spectral libraries available at GNPS. They are either imported from the community (e.g. <a href="LINK">Massbank</a>), provided directly to GNPS as a large collection of annotated spectra (e.g. <a href="LINK">Pesticide Library</a>), or aggregated from single MS/MS additions from the entire community (e.g. <a href="LINK">GNPS-Community</a>).</p>
 <p>Clicking on a library brings users to a list of all MS/MS spectra that are in that library. The most up to date annotation is listed.</p>
 <h3 id="most-recent-contributions">Most Recent Contributions</h3>
 <p>At the bottom of the list of all spectral library, the most recent contributions of annotation library spectra are listed in reverse chronological order. These generous contributions from members of the community are just the latest amongst the thousands of MS/MS spectra deposited at GNPS.</p>
@@ -1285,22 +1312,15 @@
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-8412213-5","ccms-ucsd.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
   </body>

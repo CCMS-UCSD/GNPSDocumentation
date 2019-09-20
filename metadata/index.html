@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -40,21 +40,50 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.4f4f49e8.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-8412213-5", "ccms-ucsd.github.io")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -92,22 +121,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                GNPS Documentation
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              GNPS Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Metadata
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -130,7 +158,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -143,7 +170,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -152,11 +179,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href=".." title="GNPS Documentation" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
-    </span>
+    </a>
     GNPS Documentation
   </label>
   
@@ -348,56 +375,56 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#summary" title="Summary" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     Summary
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#format" title="Format" class="md-nav__link">
+  <a href="#format" class="md-nav__link">
     Format
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#requirements-specific-to-molecular-networking" title="Requirements Specific to Molecular Networking" class="md-nav__link">
+  <a href="#requirements-specific-to-molecular-networking" class="md-nav__link">
     Requirements Specific to Molecular Networking
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#requirements-specific-to-qiime2" title="Requirements Specific to Qiime2" class="md-nav__link">
+  <a href="#requirements-specific-to-qiime2" class="md-nav__link">
     Requirements Specific to Qiime2
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#requirements-specific-to-qiita" title="Requirements Specific to Qiita" class="md-nav__link">
+  <a href="#requirements-specific-to-qiita" class="md-nav__link">
     Requirements Specific to Qiita
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#requirements-specific-to-ili" title="Requirements Specific to 'ili" class="md-nav__link">
+  <a href="#requirements-specific-to-ili" class="md-nav__link">
     Requirements Specific to 'ili
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#notes" title="Notes" class="md-nav__link">
+  <a href="#notes" class="md-nav__link">
     Notes
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#page-contributions" title="Page Contributions" class="md-nav__link">
+  <a href="#page-contributions" class="md-nav__link">
     Page Contributions
   </a>
   
@@ -1124,56 +1151,56 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#summary" title="Summary" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     Summary
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#format" title="Format" class="md-nav__link">
+  <a href="#format" class="md-nav__link">
     Format
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#requirements-specific-to-molecular-networking" title="Requirements Specific to Molecular Networking" class="md-nav__link">
+  <a href="#requirements-specific-to-molecular-networking" class="md-nav__link">
     Requirements Specific to Molecular Networking
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#requirements-specific-to-qiime2" title="Requirements Specific to Qiime2" class="md-nav__link">
+  <a href="#requirements-specific-to-qiime2" class="md-nav__link">
     Requirements Specific to Qiime2
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#requirements-specific-to-qiita" title="Requirements Specific to Qiita" class="md-nav__link">
+  <a href="#requirements-specific-to-qiita" class="md-nav__link">
     Requirements Specific to Qiita
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#requirements-specific-to-ili" title="Requirements Specific to 'ili" class="md-nav__link">
+  <a href="#requirements-specific-to-ili" class="md-nav__link">
     Requirements Specific to 'ili
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#notes" title="Notes" class="md-nav__link">
+  <a href="#notes" class="md-nav__link">
     Notes
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#page-contributions" title="Page Contributions" class="md-nav__link">
+  <a href="#page-contributions" class="md-nav__link">
     Page Contributions
   </a>
   
@@ -1207,10 +1234,10 @@
 <p><strong>Notes:</strong> The only required columns in the metadata is <strong>"filename"</strong> and the file names should match those uploaded to MassIVE. <strong>Capitalization matters.</strong></p>
 <h2 id="requirements-specific-to-molecular-networking">Requirements Specific to Molecular Networking</h2>
 <p>The use of a metadata file is an alternative way to assign groups when selecting data input files within the workflow of GNPS. The current version of molecular networking allows to use the metadata table as an input. 
-<em> <strong>Indicate which metadata columns should be considered in analysis by opening the file in a text editor and adding "ATTRIBUTE_" to the header of the column.</strong>
-</em> Save the file (must be tab-delimited text file)
-<em> Users must upload their data file
-</em> Users must select the metadata file and place it in the <strong>"Metadata File"</strong> folder</p>
+* <strong>Indicate which metadata columns should be considered in analysis by opening the file in a text editor and adding "ATTRIBUTE_" to the header of the column.</strong>
+* Save the file (must be tab-delimited text file)
+* Users must upload their data file
+* Users must select the metadata file and place it in the <strong>"Metadata File"</strong> folder</p>
 <p><strong>Note:</strong> Although it is possible to use the legacy group mapping and attribute mapping file, we strongly advise against using this method.</p>
 <h2 id="requirements-specific-to-qiime2">Requirements Specific to Qiime2</h2>
 <p>GNPS communicates with Qiime2. PCoA visualized using EMPeror and Qiime outputs (.qza/.qzv), including a BIOM formated output, can be generated. GNPS will understand this extra metadata column and rewrite sample identifers for BIOM and metadata to this sample identifier rather than using the mass spectrometry filename by default. </p>
@@ -1235,12 +1262,12 @@
 <h2 id="requirements-specific-to-ili">Requirements Specific to 'ili</h2>
 <p>The metadata can also be used to specify spatial coordinates for direct visualization of the data in <a href="https://ili.embl.de/">'ili toolbox</a>. It creates really cool plots like this:
 <img alt="ili_example" src="../img/networking/ili_example.png" />
-<em> <strong>Extra columns are required in the metadata file</strong> A text editor should be used to add the following columns in order (required):
+* <strong>Extra columns are required in the metadata file</strong> A text editor should be used to add the following columns in order (required):
 1. "COORDINATE_X" - X coordinate on the 2D/3D model
 2. "COORDINATE_Y" - Y coordinate on the 2D/3D model
 3. "COORDINATE_Z" - Z coordinate on the 2D/3D model
 4. "COORDINATE_radius" - radius for the spot in 'ili toolbox.
-</em>*"filename" must be the first column
+**"filename" must be the first column
 <img alt="ili" src="../img/networking/ili-table.png" /></p>
 <ul>
 <li>Save the file (must be tab-delimited text file)</li>
@@ -1315,22 +1342,15 @@
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-8412213-5","ccms-ucsd.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
   </body>

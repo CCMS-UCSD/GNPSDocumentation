@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -31,8 +31,8 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="./assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.0">
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -40,21 +40,50 @@
       
     
     
-      <link rel="stylesheet" href="./assets/stylesheets/application.4f4f49e8.css">
+      <link rel="stylesheet" href="assets/stylesheets/application.30686662.css">
       
       
     
     
-      <script src="./assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="assets/javascripts/modernizr.74668098.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="./assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-8412213-5", "ccms-ucsd.github.io")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -92,22 +121,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                GNPS Documentation
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              GNPS Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
                 GNPS Introduction
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -130,7 +158,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -143,7 +170,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -152,11 +179,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href="." title="GNPS Documentation" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
-    </span>
+    </a>
     GNPS Documentation
   </label>
   
@@ -195,28 +222,28 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#analyze-and-annotate" title="Analyze and Annotate" class="md-nav__link">
+  <a href="#analyze-and-annotate" class="md-nav__link">
     Analyze and Annotate
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#share-and-explore" title="Share and Explore" class="md-nav__link">
+  <a href="#share-and-explore" class="md-nav__link">
     Share and Explore
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#gnps-and-massive-uptime" title="GNPS and MassIVE uptime" class="md-nav__link">
+  <a href="#gnps-and-massive-uptime" class="md-nav__link">
     GNPS and MassIVE uptime
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#gnpsdocumentation" title="GNPSDocumentation" class="md-nav__link">
+  <a href="#gnpsdocumentation" class="md-nav__link">
     GNPSDocumentation
   </a>
   
@@ -224,22 +251,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#migration-to-the-new-documentation" title="Migration to the New Documentation" class="md-nav__link">
+  <a href="#migration-to-the-new-documentation" class="md-nav__link">
     Migration to the New Documentation
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#contributing-to-the-new-documentation" title="Contributing to the New Documentation" class="md-nav__link">
+  <a href="#contributing-to-the-new-documentation" class="md-nav__link">
     Contributing to the New Documentation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#legacy-documentation" title="Legacy Documentation" class="md-nav__link">
-    Legacy Documentation
   </a>
   
 </li>
@@ -1121,28 +1141,28 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#analyze-and-annotate" title="Analyze and Annotate" class="md-nav__link">
+  <a href="#analyze-and-annotate" class="md-nav__link">
     Analyze and Annotate
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#share-and-explore" title="Share and Explore" class="md-nav__link">
+  <a href="#share-and-explore" class="md-nav__link">
     Share and Explore
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#gnps-and-massive-uptime" title="GNPS and MassIVE uptime" class="md-nav__link">
+  <a href="#gnps-and-massive-uptime" class="md-nav__link">
     GNPS and MassIVE uptime
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#gnpsdocumentation" title="GNPSDocumentation" class="md-nav__link">
+  <a href="#gnpsdocumentation" class="md-nav__link">
     GNPSDocumentation
   </a>
   
@@ -1150,22 +1170,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#migration-to-the-new-documentation" title="Migration to the New Documentation" class="md-nav__link">
+  <a href="#migration-to-the-new-documentation" class="md-nav__link">
     Migration to the New Documentation
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#contributing-to-the-new-documentation" title="Contributing to the New Documentation" class="md-nav__link">
+  <a href="#contributing-to-the-new-documentation" class="md-nav__link">
     Contributing to the New Documentation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#legacy-documentation" title="Legacy Documentation" class="md-nav__link">
-    Legacy Documentation
   </a>
   
 </li>
@@ -1192,7 +1205,7 @@
               
                 
                 
-                <p><img alt="logo" src="./img/GNPS_logo_original.png" /></p>
+                <p><img alt="logo" src="img/GNPS_logo_original.png" /></p>
 <h1 id="welcome-to-gnps-documentation">Welcome to GNPS Documentation</h1>
 <p>Global Natural Products Social Molecular Networking (GNPS, <a href="https://gnps.ucsd.edu/">https://gnps.ucsd.edu/</a>) is a web-based mass spectrometry ecosystem that aims to be an open-access knowledge base for community-wide organization and sharing of raw, processed or identified tandem mass (MS/MS) spectrometry data. GNPS aids in identification and discovery throughout the entire life cycle of data; from initial data acquisition/analysis to post publication.</p>
 <p>As there are many aspects to GNPS, it can be a bit overwhelming. Here is a quick description of main functionalities:</p>
@@ -1210,7 +1223,7 @@
 <h3 id="share-and-explore">Share and Explore</h3>
 <ul>
 <li>Publish entire study datasets with the Mass Spectrometry Interactive Virtual Environment (MassIVE) data repository (<a href="datasets/">Dataset Submission</a>).</li>
-<li><a href="./datasets#browsing-datasets">Browse</a> and <a href="./datasets#reanalyze-datasets">Reanalyze</a> over 700 public datasets at GNPS</li>
+<li><a href="datasets#browsing-datasets">Browse</a> and <a href="datasets#reanalyze-datasets">Reanalyze</a> over 700 public datasets at GNPS</li>
 <li>Automatic reanalysis of public datasets with automated reports of new identifications (<a href="continuousid/">Continuous Identification</a>).</li>
 <li>Explore identifications of public datasets across entire repository (<a href="moleculeexplorer/">Molecule Explorer</a>).</li>
 </ul>
@@ -1254,11 +1267,9 @@ Put your MS/MS spectrum of a known compound in GNPS spectral libraries, so you n
 <h3 id="contributing-to-the-new-documentation">Contributing to the New Documentation</h3>
 <p>The GitHub repository for the documentation is available here <a href="https://github.com/CCMS-UCSD/GNPSDocumentation">https://github.com/CCMS-UCSD/GNPSDocumentation</a>.</p>
 <ul>
-<li>For informations/feature request, please open an "Issue" on the <a href="./(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> GitHub repository.</li>
-<li>To contribute to the GNPS documentation, fork the <a href="./(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request".</li>
+<li>For informations/feature request, please open an "Issue" on the <a href="(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> GitHub repository.</li>
+<li>To contribute to the GNPS documentation, fork the <a href="(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request".</li>
 </ul>
-<h3 id="legacy-documentation">Legacy Documentation</h3>
-<p>To checkout our legacy documentation in its entirely, you can find it <a href="https://bix-lab.ucsd.edu/display/Public/GNPS+Documentation+Page">here</a>.</p>
                 
                   
                 
@@ -1308,22 +1319,15 @@ Put your MS/MS spectrum of a known compound in GNPS spectral libraries, so you n
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="./assets/javascripts/application.a59e2a89.js"></script>
+      <script src="assets/javascripts/application.c648116f.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:"."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-8412213-5","ccms-ucsd.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
       
     
   </body>

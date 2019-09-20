@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -40,21 +40,50 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.4f4f49e8.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-8412213-5", "ccms-ucsd.github.io")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -92,22 +121,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                GNPS Documentation
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              GNPS Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Molecular Networking
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -130,7 +158,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -143,7 +170,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -152,11 +179,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href=".." title="GNPS Documentation" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
-    </span>
+    </a>
     GNPS Documentation
   </label>
   
@@ -380,14 +407,14 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#molecular-networking-overview" title="Molecular Networking Overview" class="md-nav__link">
+  <a href="#molecular-networking-overview" class="md-nav__link">
     Molecular Networking Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-input-preparation" title="Data Input Preparation" class="md-nav__link">
+  <a href="#data-input-preparation" class="md-nav__link">
     Data Input Preparation
   </a>
   
@@ -395,14 +422,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mass-spectrometry-data-files" title="Mass Spectrometry data files" class="md-nav__link">
+  <a href="#mass-spectrometry-data-files" class="md-nav__link">
     Mass Spectrometry data files
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#metadata" title="Metadata" class="md-nav__link">
+  <a href="#metadata" class="md-nav__link">
     Metadata
   </a>
   
@@ -414,7 +441,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#running-molecular-networking" title="Running Molecular Networking" class="md-nav__link">
+  <a href="#running-molecular-networking" class="md-nav__link">
     Running Molecular Networking
   </a>
   
@@ -422,28 +449,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#molecular-networking-workflow-selection" title="Molecular Networking Workflow Selection" class="md-nav__link">
+  <a href="#molecular-networking-workflow-selection" class="md-nav__link">
     Molecular Networking Workflow Selection
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#selecting-files-to-analyze" title="Selecting Files to Analyze" class="md-nav__link">
+  <a href="#selecting-files-to-analyze" class="md-nav__link">
     Selecting Files to Analyze
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#organizing-selected-files-into-groups" title="Organizing Selected Files into Groups" class="md-nav__link">
+  <a href="#organizing-selected-files-into-groups" class="md-nav__link">
     Organizing Selected Files into Groups
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#parameter-walkthrough" title="Parameter Walkthrough" class="md-nav__link">
+  <a href="#parameter-walkthrough" class="md-nav__link">
     Parameter Walkthrough
   </a>
   
@@ -451,28 +478,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#basic-options" title="Basic Options" class="md-nav__link">
+  <a href="#basic-options" class="md-nav__link">
     Basic Options
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#advanced-network-options" title="Advanced Network Options" class="md-nav__link">
+  <a href="#advanced-network-options" class="md-nav__link">
     Advanced Network Options
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#advanced-library-search-options" title="Advanced Library Search Options" class="md-nav__link">
+  <a href="#advanced-library-search-options" class="md-nav__link">
     Advanced Library Search Options
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#advanced-filtering-options" title="Advanced Filtering Options" class="md-nav__link">
+  <a href="#advanced-filtering-options" class="md-nav__link">
     Advanced Filtering Options
   </a>
   
@@ -484,7 +511,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#parameter-presets" title="Parameter Presets" class="md-nav__link">
+  <a href="#parameter-presets" class="md-nav__link">
     Parameter Presets
   </a>
   
@@ -496,14 +523,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#status-page" title="Status Page" class="md-nav__link">
+  <a href="#status-page" class="md-nav__link">
     Status Page
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#online-exploration-of-molecular-networks" title="Online Exploration of Molecular Networks" class="md-nav__link">
+  <a href="#online-exploration-of-molecular-networks" class="md-nav__link">
     Online Exploration of Molecular Networks
   </a>
   
@@ -511,7 +538,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#networking-results-views-description" title="Networking Results Views Description" class="md-nav__link">
+  <a href="#networking-results-views-description" class="md-nav__link">
     Networking Results Views Description
   </a>
   
@@ -523,7 +550,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#citation" title="Citation" class="md-nav__link">
+  <a href="#citation" class="md-nav__link">
     Citation
   </a>
   
@@ -1212,14 +1239,14 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#molecular-networking-overview" title="Molecular Networking Overview" class="md-nav__link">
+  <a href="#molecular-networking-overview" class="md-nav__link">
     Molecular Networking Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-input-preparation" title="Data Input Preparation" class="md-nav__link">
+  <a href="#data-input-preparation" class="md-nav__link">
     Data Input Preparation
   </a>
   
@@ -1227,14 +1254,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mass-spectrometry-data-files" title="Mass Spectrometry data files" class="md-nav__link">
+  <a href="#mass-spectrometry-data-files" class="md-nav__link">
     Mass Spectrometry data files
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#metadata" title="Metadata" class="md-nav__link">
+  <a href="#metadata" class="md-nav__link">
     Metadata
   </a>
   
@@ -1246,7 +1273,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#running-molecular-networking" title="Running Molecular Networking" class="md-nav__link">
+  <a href="#running-molecular-networking" class="md-nav__link">
     Running Molecular Networking
   </a>
   
@@ -1254,28 +1281,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#molecular-networking-workflow-selection" title="Molecular Networking Workflow Selection" class="md-nav__link">
+  <a href="#molecular-networking-workflow-selection" class="md-nav__link">
     Molecular Networking Workflow Selection
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#selecting-files-to-analyze" title="Selecting Files to Analyze" class="md-nav__link">
+  <a href="#selecting-files-to-analyze" class="md-nav__link">
     Selecting Files to Analyze
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#organizing-selected-files-into-groups" title="Organizing Selected Files into Groups" class="md-nav__link">
+  <a href="#organizing-selected-files-into-groups" class="md-nav__link">
     Organizing Selected Files into Groups
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#parameter-walkthrough" title="Parameter Walkthrough" class="md-nav__link">
+  <a href="#parameter-walkthrough" class="md-nav__link">
     Parameter Walkthrough
   </a>
   
@@ -1283,28 +1310,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#basic-options" title="Basic Options" class="md-nav__link">
+  <a href="#basic-options" class="md-nav__link">
     Basic Options
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#advanced-network-options" title="Advanced Network Options" class="md-nav__link">
+  <a href="#advanced-network-options" class="md-nav__link">
     Advanced Network Options
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#advanced-library-search-options" title="Advanced Library Search Options" class="md-nav__link">
+  <a href="#advanced-library-search-options" class="md-nav__link">
     Advanced Library Search Options
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#advanced-filtering-options" title="Advanced Filtering Options" class="md-nav__link">
+  <a href="#advanced-filtering-options" class="md-nav__link">
     Advanced Filtering Options
   </a>
   
@@ -1316,7 +1343,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#parameter-presets" title="Parameter Presets" class="md-nav__link">
+  <a href="#parameter-presets" class="md-nav__link">
     Parameter Presets
   </a>
   
@@ -1328,14 +1355,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#status-page" title="Status Page" class="md-nav__link">
+  <a href="#status-page" class="md-nav__link">
     Status Page
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#online-exploration-of-molecular-networks" title="Online Exploration of Molecular Networks" class="md-nav__link">
+  <a href="#online-exploration-of-molecular-networks" class="md-nav__link">
     Online Exploration of Molecular Networks
   </a>
   
@@ -1343,7 +1370,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#networking-results-views-description" title="Networking Results Views Description" class="md-nav__link">
+  <a href="#networking-results-views-description" class="md-nav__link">
     Networking Results Views Description
   </a>
   
@@ -1355,7 +1382,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#citation" title="Citation" class="md-nav__link">
+  <a href="#citation" class="md-nav__link">
     Citation
   </a>
   
@@ -1821,22 +1848,15 @@ TODO: image and implement -->
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-8412213-5","ccms-ucsd.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
   </body>

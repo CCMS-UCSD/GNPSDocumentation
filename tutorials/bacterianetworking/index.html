@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -40,21 +40,50 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.4f4f49e8.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
       
       
     
     
-      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-8412213-5", "ccms-ucsd.github.io")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -92,22 +121,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                GNPS Documentation
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              GNPS Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Molecular Networking - Analog Discovery in Microbial Extracts
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -130,7 +158,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -143,7 +170,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -152,11 +179,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href="../.." title="GNPS Documentation" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
-    </span>
+    </a>
     GNPS Documentation
   </label>
   
@@ -908,21 +935,21 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#experimental-setup" title="Experimental Setup" class="md-nav__link">
+  <a href="#experimental-setup" class="md-nav__link">
     Experimental Setup
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-availability" title="Data Availability" class="md-nav__link">
+  <a href="#data-availability" class="md-nav__link">
     Data Availability
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#running-molecular-networking" title="Running Molecular Networking" class="md-nav__link">
+  <a href="#running-molecular-networking" class="md-nav__link">
     Running Molecular Networking
   </a>
   
@@ -930,21 +957,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#selecting-files" title="Selecting Files" class="md-nav__link">
+  <a href="#selecting-files" class="md-nav__link">
     Selecting Files
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#updating-parameters" title="Updating parameters" class="md-nav__link">
+  <a href="#updating-parameters" class="md-nav__link">
     Updating parameters
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pre-filled-example" title="Pre-filled example" class="md-nav__link">
+  <a href="#pre-filled-example" class="md-nav__link">
     Pre-filled example
   </a>
   
@@ -956,7 +983,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#analyzing-results-in-browser" title="Analyzing Results in Browser" class="md-nav__link">
+  <a href="#analyzing-results-in-browser" class="md-nav__link">
     Analyzing Results in Browser
   </a>
   
@@ -964,14 +991,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exploring-identified-compounds-in-data" title="Exploring Identified Compounds in Data" class="md-nav__link">
+  <a href="#exploring-identified-compounds-in-data" class="md-nav__link">
     Exploring Identified Compounds in Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#exploring-molecular-networks-including-stenothricin" title="Exploring Molecular Networks including Stenothricin" class="md-nav__link">
+  <a href="#exploring-molecular-networks-including-stenothricin" class="md-nav__link">
     Exploring Molecular Networks including Stenothricin
   </a>
   
@@ -983,14 +1010,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#analyzing-global-network-with-cytoscape" title="Analyzing Global Network with Cytoscape" class="md-nav__link">
+  <a href="#analyzing-global-network-with-cytoscape" class="md-nav__link">
     Analyzing Global Network with Cytoscape
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#homework" title="Homework" class="md-nav__link">
+  <a href="#homework" class="md-nav__link">
     Homework
   </a>
   
@@ -1151,21 +1178,21 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#experimental-setup" title="Experimental Setup" class="md-nav__link">
+  <a href="#experimental-setup" class="md-nav__link">
     Experimental Setup
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-availability" title="Data Availability" class="md-nav__link">
+  <a href="#data-availability" class="md-nav__link">
     Data Availability
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#running-molecular-networking" title="Running Molecular Networking" class="md-nav__link">
+  <a href="#running-molecular-networking" class="md-nav__link">
     Running Molecular Networking
   </a>
   
@@ -1173,21 +1200,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#selecting-files" title="Selecting Files" class="md-nav__link">
+  <a href="#selecting-files" class="md-nav__link">
     Selecting Files
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#updating-parameters" title="Updating parameters" class="md-nav__link">
+  <a href="#updating-parameters" class="md-nav__link">
     Updating parameters
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pre-filled-example" title="Pre-filled example" class="md-nav__link">
+  <a href="#pre-filled-example" class="md-nav__link">
     Pre-filled example
   </a>
   
@@ -1199,7 +1226,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#analyzing-results-in-browser" title="Analyzing Results in Browser" class="md-nav__link">
+  <a href="#analyzing-results-in-browser" class="md-nav__link">
     Analyzing Results in Browser
   </a>
   
@@ -1207,14 +1234,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exploring-identified-compounds-in-data" title="Exploring Identified Compounds in Data" class="md-nav__link">
+  <a href="#exploring-identified-compounds-in-data" class="md-nav__link">
     Exploring Identified Compounds in Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#exploring-molecular-networks-including-stenothricin" title="Exploring Molecular Networks including Stenothricin" class="md-nav__link">
+  <a href="#exploring-molecular-networks-including-stenothricin" class="md-nav__link">
     Exploring Molecular Networks including Stenothricin
   </a>
   
@@ -1226,14 +1253,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#analyzing-global-network-with-cytoscape" title="Analyzing Global Network with Cytoscape" class="md-nav__link">
+  <a href="#analyzing-global-network-with-cytoscape" class="md-nav__link">
     Analyzing Global Network with Cytoscape
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#homework" title="Homework" class="md-nav__link">
+  <a href="#homework" class="md-nav__link">
     Homework
   </a>
   
@@ -1294,11 +1321,11 @@
 <p>Select <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D">molecular networking analysis</a>.</p>
 <h3 id="selecting-files">Selecting Files</h3>
 <ol>
-<li>Click "Select Input Files" - <a href="../networking#selecting-files-to-analyze">Help</a></li>
-<li>Import MSV000079204 to analyze - <a href="../networking#selecting-files-to-analyze">Help</a></li>
+<li>Click "Select Input Files" - <a href="networking#selecting-files-to-analyze">Help</a></li>
+<li>Import MSV000079204 to analyze - <a href="networking#selecting-files-to-analyze">Help</a></li>
 <li>Select S. roseosporus files into Group G1 and Streptomyces sp. DSM5940 into Group G2</li>
 </ol>
-<p><img alt="img" src="../../img/tutorials/strep_selection.png" /></p>
+<p><img alt="img" src="/img/tutorials/strep_selection.png" /></p>
 <h3 id="updating-parameters">Updating parameters</h3>
 <p>These parameters were selected to be appropriate for a small dataset and a little on the loose side. The following are the updates that deviate from the default.</p>
 <ol>
@@ -1315,28 +1342,28 @@
 <h3 id="exploring-identified-compounds-in-data">Exploring Identified Compounds in Data</h3>
 <p>Click the "View All Library Hits".</p>
 <p>This will list all library compounds that were matched. Here we can see many different antibiotics, e.g. Stenothricin, Arylomycin, Daptomycin, and Mureidomycin.</p>
-<p><img alt="img" src="../../img/tutorials/identifications.png" /></p>
+<p><img alt="img" src="/img/tutorials/identifications.png" /></p>
 <h3 id="exploring-molecular-networks-including-stenothricin">Exploring Molecular Networks including Stenothricin</h3>
 <p>Click the "View All Clusters With IDs". This brings you to a list of all MS/MS detected in your samples. We can filter on "Stenothricin" in the LibraryID column. Click on "View Network" for any of the Stenothricin compounds:</p>
-<p><img alt="img" src="../../img/tutorials/viewnetwork.png" /></p>
+<p><img alt="img" src="/img/tutorials/viewnetwork.png" /></p>
 <p>Here we can see the molecular network of related compounds to Stenothricin</p>
-<p><img alt="img" src="../../img/tutorials/network1.png" /></p>
+<p><img alt="img" src="/img/tutorials/network1.png" /></p>
 <p>To color the nodes by which species they came from, click the draw pies</p>
-<p><img alt="img" src="../../img/tutorials/network2.png" /></p>
+<p><img alt="img" src="/img/tutorials/network2.png" /></p>
 <p>We can now see all the compounds from S. roseosporus in red and Streptomyces sp. DSM5940 in blue.</p>
 <p>Further, we can highlight the compounds where are identified (blue border of nodes) and show the actual names</p>
-<p><img alt="img" src="../../img/tutorials/network3.png" /></p>
+<p><img alt="img" src="/img/tutorials/network3.png" /></p>
 <p>This network indicates to us that there are some unique compounds being produced by Streptomyces sp. DSM5940 that are related to Stenothricin.</p>
 <p>To highlight what might be different about these molecules, we can highlight the mass differences between connected (structurally related) molecules in the network.</p>
-<p><img alt="img" src="../../img/tutorials/network4.png" /></p>
+<p><img alt="img" src="/img/tutorials/network4.png" /></p>
 <p>We can see the Stenothricin-GNPS 2 is a molecule which we discovered using molecular networking. We can further interrogate the similarity at the fragmentation level by clicking the edge between the two nodes to visualize the MS/MS spectra and align the peaks</p>
-<p><img alt="img" src="../../img/tutorials/network5.png" /></p>
+<p><img alt="img" src="/img/tutorials/network5.png" /></p>
 <h2 id="analyzing-global-network-with-cytoscape">Analyzing Global Network with Cytoscape</h2>
 <p>Click the "Direct Cytoscape Preview/Download" to get a preformatted cytoscape file</p>
-<p><img alt="img" src="../../img/tutorials/cytoscape1.png" /></p>
+<p><img alt="img" src="/img/tutorials/cytoscape1.png" /></p>
 <p>In this preview you can even see from a high level the red and blue molecules that represent the G1 (roseosporus) and G2 (DSM5940) respectively. Download the Cytoscape file and view in cytoscape to dig further!</p>
-<p>Open network in Cytoscape (<a href="../../cytoscape/">Help</a>) to look at the entire network. Each molecule (node) has the pie charts already drawn with red (G1 - Rosesporus) and blue (G2 - DSM5940).</p>
-<p><img alt="img" src="../../img/tutorials/cytoscape3.png" /></p>
+<p>Open network in Cytoscape (<a href="/cytoscape.md">Help</a>) to look at the entire network. Each molecule (node) has the pie charts already drawn with red (G1 - Rosesporus) and blue (G2 - DSM5940).</p>
+<p><img alt="img" src="/img/tutorials/cytoscape3.png" /></p>
 <p>Good Luck!</p>
 <h2 id="homework">Homework</h2>
 <p>Look for putative analogs of other antibiotics such as Arylomycin and Daptomycin.</p>
@@ -1403,22 +1430,15 @@
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../../assets/javascripts/application.c648116f.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:"../.."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-8412213-5","ccms-ucsd.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
     
   </body>

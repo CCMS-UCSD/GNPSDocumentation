@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -40,21 +40,50 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.4f4f49e8.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-8412213-5", "ccms-ucsd.github.io")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -92,22 +121,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                GNPS Documentation
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              GNPS Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
                 DEREPLICATOR
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -130,7 +158,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -143,7 +170,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -152,11 +179,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href=".." title="GNPS Documentation" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
-    </span>
+    </a>
     GNPS Documentation
   </label>
   
@@ -464,28 +491,28 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dereplicator-insilico-peptidic-natural-products-tools" title="DEREPLICATOR - Insilico Peptidic Natural Products Tools" class="md-nav__link">
+  <a href="#dereplicator-insilico-peptidic-natural-products-tools" class="md-nav__link">
     DEREPLICATOR - Insilico Peptidic Natural Products Tools
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#manuscripts-and-citations" title="Manuscripts and Citations" class="md-nav__link">
+  <a href="#manuscripts-and-citations" class="md-nav__link">
     Manuscripts and Citations
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#development" title="Development" class="md-nav__link">
+  <a href="#development" class="md-nav__link">
     Development
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#accessing-the-dereplicator-tools-on-gnps" title="Accessing the DEREPLICATOR tools on GNPS" class="md-nav__link">
+  <a href="#accessing-the-dereplicator-tools-on-gnps" class="md-nav__link">
     Accessing the DEREPLICATOR tools on GNPS
   </a>
   
@@ -493,28 +520,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-go-to-gnps" title="STEP 1: Go to GNPS" class="md-nav__link">
+  <a href="#step-1-go-to-gnps" class="md-nav__link">
     STEP 1: Go to GNPS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-access-dereplicator" title="STEP 2: Access DEREPLICATOR" class="md-nav__link">
+  <a href="#step-2-access-dereplicator" class="md-nav__link">
     STEP 2: Access DEREPLICATOR
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-3-select-your-files" title="STEP 3: SELECT YOUR FILES" class="md-nav__link">
+  <a href="#step-3-select-your-files" class="md-nav__link">
     STEP 3: SELECT YOUR FILES
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-4-configure" title="STEP 4: CONFIGURE" class="md-nav__link">
+  <a href="#step-4-configure" class="md-nav__link">
     STEP 4: CONFIGURE
   </a>
   
@@ -522,28 +549,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#basic-options" title="BASIC OPTIONS:" class="md-nav__link">
+  <a href="#basic-options" class="md-nav__link">
     BASIC OPTIONS:
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#advanced-options" title="ADVANCED OPTIONS:" class="md-nav__link">
+  <a href="#advanced-options" class="md-nav__link">
     ADVANCED OPTIONS:
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#advanced-dereplicator-options" title="ADVANCED DEREPLICATOR OPTIONS:" class="md-nav__link">
+  <a href="#advanced-dereplicator-options" class="md-nav__link">
     ADVANCED DEREPLICATOR OPTIONS:
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#advanced-varquest-options" title="ADVANCED VARQUEST OPTIONS:" class="md-nav__link">
+  <a href="#advanced-varquest-options" class="md-nav__link">
     ADVANCED VARQUEST OPTIONS:
   </a>
   
@@ -555,21 +582,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-5-view-results" title="STEP 5: VIEW RESULTS" class="md-nav__link">
+  <a href="#step-5-view-results" class="md-nav__link">
     STEP 5: VIEW RESULTS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-6-analyse" title="STEP 6: ANALYSE" class="md-nav__link">
+  <a href="#step-6-analyse" class="md-nav__link">
     STEP 6: ANALYSE
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-7-validate" title="STEP 7: VALIDATE" class="md-nav__link">
+  <a href="#step-7-validate" class="md-nav__link">
     STEP 7: VALIDATE
   </a>
   
@@ -577,14 +604,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#validating-a-dereplicator-annotation-msi-level-1" title="Validating a DEREPLICATOR annotation (MSI level 1):" class="md-nav__link">
+  <a href="#validating-a-dereplicator-annotation-msi-level-1" class="md-nav__link">
     Validating a DEREPLICATOR annotation (MSI level 1):
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#annotation-with-the-dereplicator-msi-level-2-or-3-one-must" title="Annotation with the DEREPLICATOR (MSI level 2 or 3), one must:" class="md-nav__link">
+  <a href="#annotation-with-the-dereplicator-msi-level-2-or-3-one-must" class="md-nav__link">
     Annotation with the DEREPLICATOR (MSI level 2 or 3), one must:
   </a>
   
@@ -596,7 +623,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#mapping-dereplicator-results-on-molecular-networks" title="Mapping DEREPLICATOR results on molecular networks" class="md-nav__link">
+  <a href="#mapping-dereplicator-results-on-molecular-networks" class="md-nav__link">
     Mapping DEREPLICATOR results on molecular networks
   </a>
   
@@ -608,28 +635,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#legacy-documentation" title="Legacy Documentation" class="md-nav__link">
+  <a href="#legacy-documentation" class="md-nav__link">
     Legacy Documentation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#to-do" title="TO DO" class="md-nav__link">
+  <a href="#to-do" class="md-nav__link">
     TO DO
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#page-contributors" title="Page contributors" class="md-nav__link">
+  <a href="#page-contributors" class="md-nav__link">
     Page contributors
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#contribute-to-the-documentation" title="Contribute to the Documentation" class="md-nav__link">
+  <a href="#contribute-to-the-documentation" class="md-nav__link">
     Contribute to the Documentation
   </a>
   
@@ -1234,28 +1261,28 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dereplicator-insilico-peptidic-natural-products-tools" title="DEREPLICATOR - Insilico Peptidic Natural Products Tools" class="md-nav__link">
+  <a href="#dereplicator-insilico-peptidic-natural-products-tools" class="md-nav__link">
     DEREPLICATOR - Insilico Peptidic Natural Products Tools
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#manuscripts-and-citations" title="Manuscripts and Citations" class="md-nav__link">
+  <a href="#manuscripts-and-citations" class="md-nav__link">
     Manuscripts and Citations
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#development" title="Development" class="md-nav__link">
+  <a href="#development" class="md-nav__link">
     Development
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#accessing-the-dereplicator-tools-on-gnps" title="Accessing the DEREPLICATOR tools on GNPS" class="md-nav__link">
+  <a href="#accessing-the-dereplicator-tools-on-gnps" class="md-nav__link">
     Accessing the DEREPLICATOR tools on GNPS
   </a>
   
@@ -1263,28 +1290,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-go-to-gnps" title="STEP 1: Go to GNPS" class="md-nav__link">
+  <a href="#step-1-go-to-gnps" class="md-nav__link">
     STEP 1: Go to GNPS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-access-dereplicator" title="STEP 2: Access DEREPLICATOR" class="md-nav__link">
+  <a href="#step-2-access-dereplicator" class="md-nav__link">
     STEP 2: Access DEREPLICATOR
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-3-select-your-files" title="STEP 3: SELECT YOUR FILES" class="md-nav__link">
+  <a href="#step-3-select-your-files" class="md-nav__link">
     STEP 3: SELECT YOUR FILES
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-4-configure" title="STEP 4: CONFIGURE" class="md-nav__link">
+  <a href="#step-4-configure" class="md-nav__link">
     STEP 4: CONFIGURE
   </a>
   
@@ -1292,28 +1319,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#basic-options" title="BASIC OPTIONS:" class="md-nav__link">
+  <a href="#basic-options" class="md-nav__link">
     BASIC OPTIONS:
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#advanced-options" title="ADVANCED OPTIONS:" class="md-nav__link">
+  <a href="#advanced-options" class="md-nav__link">
     ADVANCED OPTIONS:
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#advanced-dereplicator-options" title="ADVANCED DEREPLICATOR OPTIONS:" class="md-nav__link">
+  <a href="#advanced-dereplicator-options" class="md-nav__link">
     ADVANCED DEREPLICATOR OPTIONS:
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#advanced-varquest-options" title="ADVANCED VARQUEST OPTIONS:" class="md-nav__link">
+  <a href="#advanced-varquest-options" class="md-nav__link">
     ADVANCED VARQUEST OPTIONS:
   </a>
   
@@ -1325,21 +1352,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-5-view-results" title="STEP 5: VIEW RESULTS" class="md-nav__link">
+  <a href="#step-5-view-results" class="md-nav__link">
     STEP 5: VIEW RESULTS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-6-analyse" title="STEP 6: ANALYSE" class="md-nav__link">
+  <a href="#step-6-analyse" class="md-nav__link">
     STEP 6: ANALYSE
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-7-validate" title="STEP 7: VALIDATE" class="md-nav__link">
+  <a href="#step-7-validate" class="md-nav__link">
     STEP 7: VALIDATE
   </a>
   
@@ -1347,14 +1374,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#validating-a-dereplicator-annotation-msi-level-1" title="Validating a DEREPLICATOR annotation (MSI level 1):" class="md-nav__link">
+  <a href="#validating-a-dereplicator-annotation-msi-level-1" class="md-nav__link">
     Validating a DEREPLICATOR annotation (MSI level 1):
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#annotation-with-the-dereplicator-msi-level-2-or-3-one-must" title="Annotation with the DEREPLICATOR (MSI level 2 or 3), one must:" class="md-nav__link">
+  <a href="#annotation-with-the-dereplicator-msi-level-2-or-3-one-must" class="md-nav__link">
     Annotation with the DEREPLICATOR (MSI level 2 or 3), one must:
   </a>
   
@@ -1366,7 +1393,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#mapping-dereplicator-results-on-molecular-networks" title="Mapping DEREPLICATOR results on molecular networks" class="md-nav__link">
+  <a href="#mapping-dereplicator-results-on-molecular-networks" class="md-nav__link">
     Mapping DEREPLICATOR results on molecular networks
   </a>
   
@@ -1378,28 +1405,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#legacy-documentation" title="Legacy Documentation" class="md-nav__link">
+  <a href="#legacy-documentation" class="md-nav__link">
     Legacy Documentation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#to-do" title="TO DO" class="md-nav__link">
+  <a href="#to-do" class="md-nav__link">
     TO DO
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#page-contributors" title="Page contributors" class="md-nav__link">
+  <a href="#page-contributors" class="md-nav__link">
     Page contributors
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#contribute-to-the-documentation" title="Contribute to the Documentation" class="md-nav__link">
+  <a href="#contribute-to-the-documentation" class="md-nav__link">
     Contribute to the Documentation
   </a>
   
@@ -1578,8 +1605,8 @@ More than 60% of Dereplicator annotations on GNPS Massive datasets (April 2016) 
 <p>Louis Felix Nothias (UCSD), Hosein Mohimani (Carnegie Mellon Univ.)</p>
 <h2 id="contribute-to-the-documentation">Contribute to the Documentation</h2>
 <ul>
-<li>For informations/feature request, please open an "Issue" on the <a href="../(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> GitHub repository.</li>
-<li>To contribute directly to the GNPS documentation, fork the <a href="../(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request".</li>
+<li>For informations/feature request, please open an "Issue" on the <a href="(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> GitHub repository.</li>
+<li>To contribute directly to the GNPS documentation, fork the <a href="(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request".</li>
 </ul>
                 
                   
@@ -1644,22 +1671,15 @@ More than 60% of Dereplicator annotations on GNPS Massive datasets (April 2016) 
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-8412213-5","ccms-ucsd.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
   </body>
