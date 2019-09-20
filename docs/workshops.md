@@ -2,13 +2,12 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| [FACSS SciX](https://facss.org/short-courses), USA | Molecular Networking and GNPS for the Analysis of Metabolomics Data | Oct 16, 2019 | TBA |
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
 
 ## Host Your Own
 
- If you would like to organize your own GNPS workshop to train new users, try getting started with our standard [training modules](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules). If you would like more advanced materials, please reach out to [Ming](mailto: miw023@ucsd.edu) and we'd be happy to help you. For promotional materials check out our [logo page](logo.md).
+ If you would like to organize your own GNPS workshop to train new users, try getting started with our standard [training modules](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules). If you would like more advanced materials, please reach out to [Ming](mailto: miw023@ucsd.edu) and we'd be happy to help you. For promotional materials check out our [logo page](logos.md).
 
 ## Previous Workshops
 
