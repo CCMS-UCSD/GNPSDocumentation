@@ -12,7 +12,7 @@ The MolNetEnhancer worflow consists of two steps:
 
 MolNetEnhancer is freely availble as [Python](https://github.com/madeleineernst/pyMolNetEnhancer) and [R](https://github.com/madeleineernst/RMolNetEnhancer) package and open to contributions from the community on Github. Additionally, it is now also possible to run MolNetEnhancer through the GNPS interface:
 
-1. To run step 1 through the GNPS interface refer to the MS2LDA [documentation](https://ccms-ucsd.github.io/GNPSDocumentation/ms2lda/).
+1. To run step 1 through the GNPS interface refer to the MS2LDA [documentation](https://ccms-ucsd.github.io/GNPSDocumentation/ms2lda/) or through [MS2LDA.org](http://ms2lda.org).
 
 2. To run step 2 through the GNPS interface access this [link](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MOLNETENHANCER%22%7D), which will lead to the below displayed job entry page:
 
@@ -28,6 +28,7 @@ After providing the GNPSs analysis with a title, you'll need at least one job ID
 * Optional: NAP ID
 * Optional: DEREPLICATOR ID
 * Optional: VARQUEST ID
+* Optional: MS2LDA.org Job ID
 
 ## Quick start from processed Molecular Network
 
@@ -101,6 +102,3 @@ Principal coordinates plots are visualised through the Qiime2 platform using EMP
 
 Chemically-informed distances are calculated using the UniFrac distance metric:
 [Lazupone, C.; Knight R. UniFrac: a New Phylogenetic Method for Comparing Microbial Communities. Applied and Environmental Microbiology 2005, 71, 8228-8235.](https://aem.asm.org/content/71/12/8228)
-
-
-
