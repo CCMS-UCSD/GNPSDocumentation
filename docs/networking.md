@@ -27,31 +27,31 @@ More information provided [here](metadata.md).
 
 From the main [GNPS page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), click the ["Create Molecular Network"](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D) button.
 
-![analysis](../img/networking/network_selection.png)
+![analysis](img/networking/network_selection.png)
 
 This will bring you to the workflow input to start networking.
 
-![networking_input_form](../img/networking/networking_input_form.png)
+![networking_input_form](img/networking/networking_input_form.png)
 
 Provide a detailed title for your molecular network. This title will be helpful when you retrieve your data after the workflow is completed.
 
-![set title](../img/quickstart/networking_title.gif)
+![set title](img/quickstart/networking_title.gif)
 
 ### Selecting Files to Analyze
 
 Select files for analysis by first clicking "Select Input Files".
 
-![set title](../img/networking/file_selection.png)
+![set title](img/networking/file_selection.png)
 
 This bring a popup window. We can select our own files to analyze.
 
-![set title](../img/networking/file_selection.gif)
+![set title](img/networking/file_selection.gif)
 
 Alternatively, we can import an existing public dataset if we know the dataset accession ([Browse Datasets](datasets.md)). From the Select Input Files popup, you will be a shares files tab. There you will find a box called Import Data Share. In this box you may enter an accession of a MassIVE dataset. Upon clicking import the dataset will appear in your workspace to select input files to analyze from.
 
-![set title](../img/networking/dataset_import.gif)
+![set title](img/networking/dataset_import.gif)
 
-![set title](../img/networking/dataset_selection.gif)
+![set title](img/networking/dataset_selection.gif)
 
 ### Organizing Selected Files into Groups
 
@@ -71,7 +71,7 @@ Click Finish Selection which will close the pop-up window.
 
 #### Advanced Network Options
 
-![set title](../img/networking/advanced_networking_options.png)
+![set title](img/networking/advanced_networking_options.png)
 
 | Parameter        | Description          | Default | Notes |
 | ------------- |-------------| -----| -----|
@@ -87,7 +87,7 @@ Click Finish Selection which will close the pop-up window.
 
 #### Advanced Library Search Options
 
-![set title](../img/networking/advanced_library_search_options.png)
+![set title](img/networking/advanced_library_search_options.png)
 
 | Parameter        | Description          | Default |
 | ------------- |-------------| -----|
@@ -98,7 +98,7 @@ Click Finish Selection which will close the pop-up window.
 
 #### Advanced Filtering Options
 
-![set title](../img/networking/advanced_filtering_options.png)
+![set title](img/networking/advanced_filtering_options.png)
 
 | Parameter        | Description          | Default | Notes|
 | ------------- |-------------| -----| -----|
@@ -121,7 +121,7 @@ We have several parameter presets that seem to work well depending on the datase
 
 Upon submission of the workflow, you will be brought to the status page. This will show you the progress of your molecular networking job.
 
-![img](../img/networking/status.png)
+![img](img/networking/status.png)
 
 Molecular networks usually take
 
