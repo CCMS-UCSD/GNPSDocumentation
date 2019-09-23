@@ -1,4 +1,5 @@
 site_name: GNPS Documentation
+edit_uri: 'https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/'
 pages:
     - GNPS Introduction: index.md
     - Is my data compatible with GNPS?: isgnpsright.md
