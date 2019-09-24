@@ -8,7 +8,7 @@ The limitations to this method is that the files uploaded will not reside in you
 
 ## Classic Molecular Networking
 
-Please navigate to the [super quickstart page](http://dorresteinappshub.ucsd.edu:5050/) to begin with Classic Molecular Networking!
+Please navigate to the [super quickstart page](https://gnps-quickstart.ucsd.edu/) to begin with Classic Molecular Networking!
 
 ### Converting Data
 
@@ -34,7 +34,7 @@ To understand the results, please refer to the analysis section of the standard 
 
 ## Feature Based Molecular Networking
 
-Please navigate to the [super quickstart page](http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking) to begin with Feature Based Molecular Networking!
+Please navigate to the [super quickstart page](https://gnps-quickstart.ucsd.edu/featurebasednetworking) to begin with Feature Based Molecular Networking!
 
 ### Selecting Files
 
