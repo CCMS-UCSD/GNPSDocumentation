@@ -19,7 +19,7 @@ Please refer to the official documentation for Progenesis QI at: [http://www.non
 
 ## Running a FBMN with Progenesis QI files
 
-FBMN with Progenesis QI can be performed either using the [Superquick FBMN start page] (http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking) or [the standard interface of the FBMN workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
+FBMN with Progenesis QI can be performed either using the [Superquick FBMN start page](https://gnps-quickstart.ucsd.edu/featurebasednetworking) or [the standard interface of the FBMN workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
 
 Upload your Progenesis QI exported files (*feature quantification table* and *MS/MS spectral summary*) to GNPS and select the "Progenesis QI" option in the "Feature Quantification Table Source".
 
