@@ -10,10 +10,12 @@ This is a complete package for Windows users to convert their vendor formats to 
 2. Unzip contents onto a folder on your computer (e.g. Desktop)
 3. Install windows libraries in "pwizLibraries-and-Installation" - Run appropriate program for 32-bit (32-Bit_Double-Click_To_Install.bat) or 64-bit system (64-Bit_Double-Click_To_Install.bat). To find out which type of OS you have please check [here](https://support.microsoft.com/en-us/help/15056/windows-7-32-64-bit-faq)
 4. Put vendor formats in "Input_Files" not embedded in other folders
-5. Double click on Double-Click_To-Convert.bit - Download zip includes demo files for major vendor formats as a test.
+5. Double click on Double-Click_To-Convert.bat - Download zip includes demo files for major vendor formats as a test.
 6. Wait patiently
 7. Check all the converted files in Output_Folder
 8. If there are errors, please check log.txt or read on how to convert files in a more traditional manner.
+
+* For Waters .Raw files, they contain PDA(UV) and LockSpray data as additional 'channels.' To remove this, delete each channel before running "Double-Click_To-Convert.bat." (For example, if PDA data is contained as channel 6, delete all of "_FUNC006.*."   
 
 ## Data Conversion (Traditional)
 
