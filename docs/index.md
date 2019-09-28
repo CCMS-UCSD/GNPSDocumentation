@@ -71,3 +71,9 @@ The GitHub repository for the documentation is available here [https://github.co
 ### Legacy Documentation
 
 To checkout our legacy documentation in its entirely, you can find it [here](https://bix-lab.ucsd.edu/display/Public/GNPS+Documentation+Page).
+
+### GNPS and MassIVE uptime
+
+<body>
+    <iframe src="https://stats.uptimerobot.com/Am4PLUWn3" style="width: 100%; height: 10% name="myFrame"></iframe>
+    <p><a href="https://stats.uptimerobot.com/Am4PLUWn3" target="myFrame"> Visualize the status of all GNPS Workflows</a></p>
