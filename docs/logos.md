@@ -13,3 +13,9 @@ PNG with transparent background
 PNG with URL
 
 ![img](img/logo/Sticker_logo_with_URL.png)
+
+## MASST Logo
+
+![img](img/logo/MASST_logo.png)
+
+![img](img/logo/MASST_logo_with_url.png)

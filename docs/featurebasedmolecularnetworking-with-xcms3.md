@@ -1,11 +1,11 @@
 ## Introduction
 
-The **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md).
+**Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The supported tools are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md).
 
 The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking.md)
 
 Below follows a description on how to use `xcms` version >= 3 (XCMS3) with the
-FBMN workflow in GNPS.
+FBMN workflow on GNPS.
 
 ## Mass spectrometry processing with XCMS3
 
@@ -40,10 +40,7 @@ mass spectrometry data for metabolite profiling using nonlinear peak alignment, 
 Analytical Chemistry, 78, 779–787 (2006).
 
 
-### Mass Spectrometry Data Processing with XCMS3
-
-As for all preprocessing software tools, a sequence of steps is performed to
-process mass spectrometry data in XCMS3.
+### Mass Spectrometry Data Processing with XCMS3.
 
 Here we will present key steps and representative scripts required to process
 untargeted LC-MS/MS data collected using data dependent acquisition.
