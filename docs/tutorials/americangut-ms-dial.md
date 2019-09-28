@@ -46,7 +46,8 @@ These files are not needed for the tutorial but are provided here as reference f
 4. [Cytocape](http://www.cytoscape.org/download.php) for network visualization.
 
 ## Video Tutorial - Running MS-DIAL for FBMN
-<iframe width="800" height="500" src="%please add the Youtube link"> </iframe>
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/hxk40jwAkcc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Running FBMN on GNPS
 

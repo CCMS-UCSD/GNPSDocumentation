@@ -1,4 +1,5 @@
 site_name: GNPS Documentation
+edit_uri: 'https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/'
 pages:
     - GNPS Introduction: index.md
     - Is my data compatible with GNPS?: isgnpsright.md
@@ -15,6 +16,7 @@ pages:
     - Data Preparation/Upload:
         - Mass Spectrometry File Conversion: fileconversion.md
         - GNPS File Upload: fileupload.md
+        - Metadata: metadata.md
     - Recommended Data Analysis:
         - Molecular Networking: networking.md
         - Molecular Networking Views: networkingviews.md
@@ -22,9 +24,7 @@ pages:
         - MASST Search (Mass Search Tool): masst.md
         - Result Views Navigation: resultviews.md
     - Advanced Data Analysis:
-        - Molecular Networking in Cytoscape: cytoscape.md
         - DEREPLICATOR: dereplicator.md
-        - Network Annotation Propagation (NAP): nap.md
         - Feature Based Molecular Networking:
             - FBMN Workflow: featurebasedmolecularnetworking.md
             - FBMN with MZmine2 : featurebasedmolecularnetworking-with-mzmine2.md
@@ -35,12 +35,18 @@ pages:
             - FBMN with Progenesis QI: featurebasedmolecularnetworking-with-progenesisQI.md
             - FBMW with Cytoscape: featurebasedmolecularnetworking-cytoscape.md
         - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
+        - Molecular Networking in Cytoscape: cytoscape.md
         - MolNetEnhancer: molnetenhancer.md
+        - Network Annotation Propagation (NAP): nap.md
+        - Reanalysis of Data User Interface (ReDU): ReDU.md
     - Spectral Libraries:
         - Browsing Reference Spectral Libraries: browselibraries.md
         - Reference Spectral Library Curation: spectrumcuration.md
         - Reference Spectral Library Batch Addition: batchupload.md
         - Downloading Reference Spectral Libraries: downloadlibraries.md
+        - Open-source Method for Reference Library Generation:
+            - Data Acqusition - Thermo QExactive (v1.0): msmschooserdataacquisitionQE.md
+            - Computational Selection of MSMS to Include in Library (MSMS-Chooser): msmschooser.md
     - Public Datasets:
         - Dataset Creation/Sharing: datasets.md
         - Continuous Identification: continuousid.md
