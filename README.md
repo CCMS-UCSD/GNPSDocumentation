@@ -35,7 +35,3 @@ Visualize the status of all GNPS Workflows: [https://stats.uptimerobot.com/Am4PL
 ### Citation
 
 Wang, M. et al. Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking. Nat. Biotechnol. 34, 828–837 (2016). [https://www.nature.com/articles/nbt.3597](https://www.nature.com/articles/nbt.3597)
-
-
-
-

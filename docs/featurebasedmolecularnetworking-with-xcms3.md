@@ -111,7 +111,8 @@ See our XCMS-FBMN tutorials using python and R with a subset of the American Gut
 
 ## Page contributors
 
-Johannes Reiner (Eurac Research), Madeleine Ernst (UCSD), Ricardo da Silva (UCSD), Michael Wittig (Munich University), Louis Felix Nothias (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany). 
+Johannes Rainer (Eurac Research), Madeleine Ernst (UCSD), Ricardo da Silva
+(UCSD), Michael Witting (Helmholtz Zentrum Munich), Louis Felix Nothias (UCSD). 
 
 ## Contribute to the Documentation
 
