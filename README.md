@@ -28,7 +28,7 @@ To checkout our legacy documentation in its entirely, you can find it [here](htt
 
 GNPS Workflows are available on the following repository: [https://github.com/CCMS-UCSD/GNPS_Workflows](https://github.com/CCMS-UCSD/GNPS_Workflows)
 
-### GNPS and MassIVE uptime 
+### GNPS and MassIVE uptime
 
 Visualize the status of all GNPS Workflows: [https://stats.uptimerobot.com/Am4PLUWn3](https://stats.uptimerobot.com/Am4PLUWn3)
 
