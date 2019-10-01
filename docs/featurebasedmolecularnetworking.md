@@ -25,7 +25,7 @@ The citations from the mass spectrometry processing tools you used [[MZmine2](fe
 
 ## Mass Spectrometry Data Processing for the Feature Based Molecular Networking Workflow
 
-In brief, mass spectrometry processing programs have been adapted to export two files (*feature quantification table* and *MS/MS spectral summary*) files that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. These tools and their main features are presented in the table below along with a step-by-step documentation to use in FBMN on GNPS:
+In brief, mass spectrometry processing programs have been adapted to export two files (*feature quantification table* and *MS/MS spectral summary*) files that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. Alternatively, the FBMN supports the mzTab-M format that can be inputted along witht the mzML file(s). The tools supported and their main features are presented in the table below along with a step-by-step documentation to use in FBMN on GNPS:
 
 |  Processing tool | FBMN Documentation  | Interface  |  Platform | Code availability|Target user|
 |---|---|---|---|---|---|
@@ -48,12 +48,28 @@ Currently, we recommend using the MZmine2 workflow, as it has been thoroughly te
 There is a dedicated Feature-Based Molecular Networking workflow on GNPS that [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
 
 ### Requirement for the FBMN workflow
-You will need three input files (test files for each software are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files)):
+After processing your LC-MS/MS data with the prefered software, it is possible to export the results following two methods:
 
-1. *Feature Table* with intensities of ion features (TXT or CSV format).
-2. *MS/MS spectral file* with a list of MS/MS spectra for the ion features (.MGF File).
+
+Three type of input files are needed (test files for each software are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files)):
+
+**Option A (RECOMMENDED)** - Export the processing results using a feature table and an .MGF file:
+
+1. A *feature table* with the intensities of LC-MS ion features (TXT or CSV format).
+
+2. A *MS/MS spectral summary* file with a list of MS/MS spectra associated with the LC-MS ion features (.MGF File). (.MGF file format).
+
 3. [Optional] *Metadata table* - described [here](networking.md#metadata)
 
+**Option B** - Export the processing results using an mzTab-M and mzML files:
+
+1.  Export a single mzTab-M file from the processed data. See and cite this [publication](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.8b04310).
+
+2. Use the mzML file(s) associated with mzTab-M file.
+
+3. [Optional] *Metadata table* - described [here](networking.md#metadata)
+ 	
+ 	
 ## SuperQuick Feature Based Molecular Networking Workflow
 
 
@@ -66,7 +82,7 @@ A simplified interace for Super Quick web interace for FBMN [is available here](
 1. Indicate your email and your GNPS Credentials.
 2. Select the 'Feature Generation tool'.
 3. Select the parameters preset.
-4. Drag and drop your "feature quantification table" and "MS/MS spectral file" (.MGF). See the respective documentation for FBMN each tool.
+4. Option A. Drag and drop your "feature quantification table" and "MS/MS spectral file" (.MGF). See the respective documentation for FBMN each tool.
 5. Optional. Drag and drop a [metadata table](networking.md#metadata).
 6. Click on "Analyze Uploaded Files with GNPS Molecular Networking".
 
