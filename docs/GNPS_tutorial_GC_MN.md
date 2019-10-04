@@ -8,21 +8,21 @@
 
 **2)** The GNPS home page includes two sections to launch GNPS GC/MS data analysis job, one for data processing - deconvolution and one for GC/MS library search/networking (**Fig. 1**) By clicking on “Process Raw GC-MS data” icon, a job page opens (**Fig. 2**). Start by entering the title of your job (1). Then, the “Select Files” section allows importing existing or previously uploaded dataset(s) from MassIVE. Select the files that need to be processed by clicking on “Select Input Files” (2). A pop-up window appears with three tabs: “Select Input Files”, “Upload Files”, and “Share Files”. To upload files to GNPS using the browser (limited to 20MB), you can use our web drag and drop uploader in the “Upload Files” banner. See the documentation [here](https://ccms-ucsd.github.io/GNPSDocumentation/fileupload/) for more information. Readers following the tutorial can go to the “Share Files” tab, enter the MassIVE accession number for the dataset (e.g. [MSV000084226](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=671cd79ac3af4c4493e4025d62d161e1&view=advanced_view)) in the “Import Data Share” box (3), and click on “Import” (4). This specific dataset is now available directly in your GNPS user workspace at “Select Input Files” section (5). Select the input file, who appears highlighted in blue color, and click on “Spectrum files” (6). When the selected files are visible in the “Selected Spectrum Files” box, click on the “Finish Selection” button (7).
 
-**NOTE:** All of the data used for the job must be collected using the same GC protocol (temperature program, column, injection mode). Multiple datasets could be combined as long as the data have been collected using the same protocol. When creating a dataset on MassIVE ([massive.ucsd.edu](https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp)), include “GNPS” and “GC” in the name (As GNPS_GC_Name of the GNPS-MassIVE dataset). See the documentation about [Dataset Creation/Sharing](https://ccms-ucsd.github.io/GNPSDocumentation/datasets/) and an example of a MassIVE dataset [MSV000084226](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=671cd79ac3af4c4493e4025d62d161e1&view=advanced_view) for more information. An insufficient volume of data causes unstable deconvolution resulting in spurious low-quality spectra. It is recommended for datasets smaller than ~10 files to use alternative deconvolution solutions such as MZMine2/ADAP, MSDial or XCMS. Increasing the number of files, for example, could be done by co-analyzing multiple datasets obtained with the same experimental protocol. 
+**NOTE:** All of the data used for the job must be collected using the same GC protocol (temperature program, column, injection mode). Multiple datasets could be combined as long as the data have been collected using the same protocol. When creating a dataset on MassIVE ([massive.ucsd.edu](https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp)), include “GNPS” and “GC” in the name (As GNPS_GC_Name of the GNPS-MassIVE dataset). See the documentation about [Dataset Creation/Sharing](https://ccms-ucsd.github.io/GNPSDocumentation/datasets/) and an example of a MassIVE dataset [MSV000084226](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=671cd79ac3af4c4493e4025d62d161e1&view=advanced_view) for more information. An insufficient volume of data causes unstable deconvolution resulting in spurious low-quality spectra. It is recommended for datasets smaller than ~10 files to use alternative deconvolution solutions such as MZMine2/ADAP, MS-Dial or XCMS. Increasing the number of files, for example, could be done by co-analyzing multiple datasets obtained with the same experimental protocol. 
 
 **Fig. 1**
 
-**![img](https://lh5.googleusercontent.com/8jErkOYLw9omFdPrdtEXDO9QWB9zanAFgABPcM8eCXIpIUlDm_2AjXi9MMUBQp5fp3dsSYDQX2dnpDCWkbOqqbo19wx6ZtacAbezFRRZFo8dntbPwRy-HrlH9rCpiRMTrDlz6-mr)**
+**![img](\img\GC-MS_documentation\fig_1.png)**
 
 **Fig. 2**
 
-![img](https://lh5.googleusercontent.com/0ZvJgER7aWKt2wLnEgH9SML775c3oOveR16d6buxGYtGNE9QZZPowIaL4rPn9Ke5DnimRmfjY_uRtGrso0GNbqauJ-QyLpI-l3JKDNcyWhlPh36z95qh7Ht9fIokQoZ-hEftW22R)
+![img](\img\GC-MS_documentation\fig_2.png)
 
 **3)** The “Advanced MSHub Processing” section displays some automatic setting parameters (related to peak symmetry and baseline adjustment) determined internally by MSHub (**Fig. 3**). The user does not need to provide settings, although they can be set manually, should the user choose to do so. In the “Advanced Clustering” settings, be sure that cluster spectra are turned off (CLUSTER_SPECTRA = NO) (8). The TIME_UNIT must be set as minutes or seconds (8), depending on the chromatography time units of your data (typically the default time units are seconds in NetCDF files and minutes in .mzML files). Then, enter your email address at the bottom (9) and finish by clicking “Submit” (10).
 
 **Fig. 3**
 
-![img](https://lh3.googleusercontent.com/Y9Z8TErZIiJys9dqUbGGzNHg_3GemiSRrlWdHFFvkBLPLFrEsqDC5cMnfGzAcZhNKs8O9oc5jXZR6kNvCpbgeArsz7SimFM-4-BGe74Jg9b5IFScD8BburGtJk4F1X9nuWSDvG5i)
+![img](\img\GC-MS_documentation\fig_3.png)
 
 **4)** When the job has been completed, you will receive a notification email and the status “DONE” appears on your GNPS job. All submitted jobs appear under “jobs” link from the GNPS main menu (**Fig. 4**). By selecting the job of interest and clicking on the “Done” button, the “Job Status” window opens with different options (**Fig. 5**) to (i) explore deconvolution results with the “View All Deconvolved Spectra” option, (ii) download quantification results and feature table by clicking on “Download Spectra as MGF” and “Download Quant Table”, or (iii) continue the process with “Process Library Search” tool (11).
 
@@ -30,15 +30,15 @@
 
 **Fig. 4**
 
-![img](https://lh4.googleusercontent.com/m7g0mu8yQur1cPXDVL7FuNUNYrDeww0_fabPv05qOwAWTvb5nt0yCHLLqZCIQ6Qu70cSikUYQWmg3lCmyHPf4nKm6-xy5lslZ8sFChpmAJNLYSGpeJp2g3bSB2No-l8bTEA_eRih)
+![img](\img\GC-MS_documentation\fig_4.png)
 
 **Fig. 5**
 
-![img](https://lh5.googleusercontent.com/KsNaDolxE-vC0qmB1xufEZbpsGDk7L5ll2E2NZltWQBT_atwOznvxpsr-Dcu7O3AP9XNQDMaZJApbk2JfiW9NKcp9ISEiRt8sJlq24jw2n-yaOMFa18_KRa40XvBp3Q8m4e3XdN2)
+![img](\img\GC-MS_documentation\fig_5.png)
 
 **Fig. 6**
 
-![img](https://lh4.googleusercontent.com/fKpaKm0x1WA6mJJRHei_Cu2rd2D5XtYy4kX1U-oa5eldB4WTk9hgKKXMhjia-B6yiHbbTR1mMfPeIxn6oCcSl5pmc_x5NCQ5AGkQnl-vBUEtHK-23G9IEc-yProzVCrhFXOSYWZO)
+![img](\img\GC-MS_documentation\fig_6.png)
 
 
 
@@ -50,15 +50,15 @@
 
 **Fig. 7**
 
-![img](https://lh4.googleusercontent.com/LXczCQK8k8rbgGxS8UsWBar3KZaCnJVAXkmG3ajEnEE8sIuR-FLpiyzhP0KKs_Yd1gjk_6Lw8MG6AKTHiGpOLP3lFphKpyEjfPzQlPM_Xq-hBAifkG6I6sDAaGDM6frF9NEM4A73)
+![img](\img\GC-MS_documentation\fig_7.png)
 
 **Fig. 8**
 
-**![img](https://lh5.googleusercontent.com/STJcEQO3v4xp1cxa-ZzgngDKnJcgjHkQK-B5VXhUKABpJrQucidxCgNSkc1OOgcYciVWeCK2MNEtzJhlrgxcTvt0Sa5WocrHGbOIB4ssLO5IGh-5jlmEYNl27wtMHPLAa9C_g0oB)**
+**![img](\img\GC-MS_documentation\fig_8.png)**
 
 **Fig. 9**
 
-![img](https://lh3.googleusercontent.com/YYToUpkeAgRN-_PSYOlEVhh5Wweb4HEv_sjeS96-RafmFoNmGadw4cj87jFlwoGtc_zALU2o9Z1-ziYcOxisGUsVqltoyoWjh29F5Cfa9aaLjUKr6iMf5txtHF_nbw7h8KnbcOho)
+![img](\img\GC-MS_documentation\fig_9.png)
 
 **Table 1.** Parameters for Library Search 
 
@@ -107,7 +107,7 @@
 
 **Fig. 10**
 
-![img](https://lh3.googleusercontent.com/AgDt8DaLalAurmE-pEM2BclFWWPB_yINaV5QUoIQUq3zqGIpemfsM0mCGApv86m27ktiwxmNPGEe-8ViZcHIi_3i1jb4t3eHZccyXgA9nuMJ-bLVS89EMaiuZu6l0jfcFkZ3S2d_)
+![img](\img\GC-MS_documentation\fig_10.png)
 
 **7)** To visualize molecular networks generated, the user has to download the input network files from “Download GraphML” link, save the folder, and unzip it (**Fig. 10**). The network can be visualized in an external software such as Cytoscape1, an open source software platform used to visualize, analyze, and annotate molecular networks from GNPS. Cytoscape is available for download from[ here](http://www.cytoscape.org/). This software allowed to encode any property of the network (i.e. node shape or color, edge thickness) with a metadata category (i.e. cohort, cosine score, compound family). An online tutorial, created with Cytoscape 3.7, used for molecular networking generated with LC-MS/MS data, can be accessed [here](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking-cytoscape/). Many of these steps could be reproduced in the same way for molecular networking from GC-MS data. 
 
@@ -133,7 +133,7 @@ Here we show an example of molecular networks in **Figure 11A**, visualizing in 
 
 **Fig. 11**
 
-**![img](https://lh6.googleusercontent.com/vXcbszt2kkyBTZVW5EbDDX9bYzYb2sfz0EDPh9YIgyDmNypTWDUe7NJuJePeEutULRQ5L3NoS_QglOSNQvTo619Yb9i_O_YP3JJ5ABfSN_GUAMrQ2fV3kFbmNi8bTe3POei0fgE_)**
+**![img](\img\GC-MS_documentation\fig_11.png)**
 
 
 
@@ -147,15 +147,15 @@ To create chemical maps, drag and drop the example [volatilome table](https://gi
 
 **Fig.12**
 
-![img](https://lh4.googleusercontent.com/EgcbMcRMZF8CeK35oqaT1lyK3h6C3P9DgXqUeb08zT6CddDGNDCjvxjsIoIlzzvxJTRxq53o8B5aNPW_ADd-zJRoAJJB93kFZIq_6PkLE_U32M6ACCTmR2ThtcGDug6UUSmdqP-I)
+![img](\img\GC-MS_documentation\fig_12.png)
 
 **Fig. 13**
 
-**![img](https://lh3.googleusercontent.com/QxYXXGtEmrpIdyfwrnJaWSU70BSMlmRLK9qDIcwVFVX9g0z7T4vfodXTLnxq-SQLHi2JS42CaZLuTNzsYu2hRadv_FCBhjHObxBquM-52XkWnc1vbmKgWS2T4aQc2WSiWKhVSj6I)**
+**![img](\img\GC-MS_documentation\fig_13.png)**
 
 **Fig. 14**
 
-![img](https://lh6.googleusercontent.com/w4Cl0Q-OoNn5PxOewbEJ_wxszxjCDe2P_d8RUZ4ZHUKBo4T9lTncdGd6JnL2nZRWDo7R9cmvVlHABOPfHkYliiFisx6rVYTpRH3NVwn4d2wiqY82Z5IBG_rMGHHq16Yo1rAz4YTL)
+![img](\img\GC-MS_documentation\fig_14.png)
 
 1. Protsyuk, I., et al. (2018). 3D molecular cartography using LC–MS facilitated by Optimus and'ili software. *Nature protocols*, *13*(1), 134.https://doi.org/10.1038/nprot.2017.122
 
