@@ -12,17 +12,17 @@
 
 **Fig. 1**
 
-**![img](\img\GC-MS_documentation\fig_1.png)**
+**![img](img/GC-MS_documentation/fig_1.png)**
 
 **Fig. 2**
 
-![img](\img\GC-MS_documentation\fig_2.png)
+![img](img/GC-MS_documentation/fig_2.png)
 
 **3)** The “Advanced MSHub Processing” section displays some automatic setting parameters (related to peak symmetry and baseline adjustment) determined internally by MSHub (**Fig. 3**). The user does not need to provide settings, although they can be set manually, should the user choose to do so. In the “Advanced Clustering” settings, be sure that cluster spectra are turned off (CLUSTER_SPECTRA = NO) (8). The TIME_UNIT must be set as minutes or seconds (8), depending on the chromatography time units of your data (typically the default time units are seconds in NetCDF files and minutes in .mzML files). Then, enter your email address at the bottom (9) and finish by clicking “Submit” (10).
 
 **Fig. 3**
 
-![img](\img\GC-MS_documentation\fig_3.png)
+![img](img/GC-MS_documentation/fig_3.png)
 
 **4)** When the job has been completed, you will receive a notification email and the status “DONE” appears on your GNPS job. All submitted jobs appear under “jobs” link from the GNPS main menu (**Fig. 4**). By selecting the job of interest and clicking on the “Done” button, the “Job Status” window opens with different options (**Fig. 5**) to (i) explore deconvolution results with the “View All Deconvolved Spectra” option, (ii) download quantification results and feature table by clicking on “Download Spectra as MGF” and “Download Quant Table”, or (iii) continue the process with “Process Library Search” tool (11).
 
@@ -30,15 +30,15 @@
 
 **Fig. 4**
 
-![img](\img\GC-MS_documentation\fig_4.png)
+![img](img/GC-MS_documentation/fig_4.png)
 
 **Fig. 5**
 
-![img](\img\GC-MS_documentation\fig_5.png)
+![img](img/GC-MS_documentation/fig_5.png)
 
 **Fig. 6**
 
-![img](\img\GC-MS_documentation\fig_6.png)
+![img](img/GC-MS_documentation/fig_6.png)
 
 
 
@@ -50,15 +50,15 @@
 
 **Fig. 7**
 
-![img](\img\GC-MS_documentation\fig_7.png)
+![img](img/GC-MS_documentation/fig_7.png)
 
 **Fig. 8**
 
-**![img](\img\GC-MS_documentation\fig_8.png)**
+**![img](img/GC-MS_documentation/fig_8.png)**
 
 **Fig. 9**
 
-![img](\img\GC-MS_documentation\fig_9.png)
+![img](img/GC-MS_documentation/Fig_9.png)
 
 **Table 1.** Parameters for Library Search 
 
@@ -107,7 +107,7 @@
 
 **Fig. 10**
 
-![img](\img\GC-MS_documentation\fig_10.png)
+![img](img/GC-MS_documentation/fig_10.png)
 
 **7)** To visualize molecular networks generated, the user has to download the input network files from “Download GraphML” link, save the folder, and unzip it (**Fig. 10**). The network can be visualized in an external software such as Cytoscape1, an open source software platform used to visualize, analyze, and annotate molecular networks from GNPS. Cytoscape is available for download from[ here](http://www.cytoscape.org/). This software allowed to encode any property of the network (i.e. node shape or color, edge thickness) with a metadata category (i.e. cohort, cosine score, compound family). An online tutorial, created with Cytoscape 3.7, used for molecular networking generated with LC-MS/MS data, can be accessed [here](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking-cytoscape/). Many of these steps could be reproduced in the same way for molecular networking from GC-MS data. 
 
@@ -133,7 +133,7 @@ Here we show an example of molecular networks in **Figure 11A**, visualizing in 
 
 **Fig. 11**
 
-**![img](\img\GC-MS_documentation\fig_11.png)**
+**![img](img/GC-MS_documentation/fig_11.png)**
 
 
 
@@ -147,15 +147,15 @@ To create chemical maps, drag and drop the example [volatilome table](https://gi
 
 **Fig.12**
 
-![img](\img\GC-MS_documentation\fig_12.png)
+![img](img/GC-MS_documentation/fig_12.png)
 
 **Fig. 13**
 
-**![img](\img\GC-MS_documentation\fig_13.png)**
+**![img](img/GC-MS_documentation/Fig_13.png)**
 
 **Fig. 14**
 
-![img](\img\GC-MS_documentation\fig_14.png)
+![img](img/GC-MS_documentation/fig_14.png)
 
 1. Protsyuk, I., et al. (2018). 3D molecular cartography using LC–MS facilitated by Optimus and'ili software. *Nature protocols*, *13*(1), 134.https://doi.org/10.1038/nprot.2017.122
 
