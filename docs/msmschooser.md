@@ -77,7 +77,7 @@ Please select the following link:
 
 4. Create a GNPS/MassIVE Dataset
   * Upload the files to your GNPS account using an FTP client (preferred clients are WinSCP, CoreFTP, and CoffeeCup Free FTP)
-  * Name the MassIVE data set using the following format: “GNPS - Chemical Standard to GNPS Library - [insert barcodes]”
+  * Name the MassIVE data set using the following format: “GNPS - MSMS-Chooser - [insert barcodes]”
   * Upload all .raw files into the RAW folder and all .mzXML files into the PEAKS folder
   * Upload the **MSMS-CHOOSER Submission** file (.tsv) from the NAS folder, download as .tsv, place in SUPPLEMENTAL folder
   * Make data public
