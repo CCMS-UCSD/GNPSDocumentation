@@ -80,7 +80,7 @@ A simplified interace for Super Quick web interace for FBMN [is available here](
 
 ![img](img/featurebasedmolecularnetworking/superquick_fbmn.png)
 
-###Running the SuperQuick FBMN
+### Running the SuperQuick FBMN
 1. Indicate your email and your GNPS Credentials.
 2. Select the 'Feature Generation tool'.
 3. Select the parameters preset.
@@ -153,7 +153,7 @@ There are additional normalization options specifically for the FBMN workflow:
 
 ![img](img/featurebasedmolecularnetworking/Advanced_Quantification_Options_2.png)
 
-#### [Advanced Extras](#advanced-extras)
+#### Advanced Extras
 
 "Supplementary Pairs" is an option to add extra edges to the resulting feature-based molecular network. It was initially implemented for the Ion Identity Networking (IIN) workflow. However, this approach is designed to stimulate the development and testing of new workflows as the input is an edge file in a generic csv format. An edge is described by the two feature IDs  (fitting to row IDs in the quantification table), an EdgeType (any String name), a numeric score, and an annotation (any String). 
 
