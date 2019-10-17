@@ -25,6 +25,9 @@ Clone also the GitHub repository
 [https://github.com/jorainer/xcms-gnps-tools](https://github.com/jorainer/xcms-gnps-tools)
 for utility functions (*XCMS-GNPS-TOOLS*) specific to this workflow.
 
+See example of XCMS3 scripts for FBMN as *Jupyter
+notebook* and *RCommander script* on [https://github.com/DorresteinLaboratory/XCMS3_FeatureBasedMN](https://github.com/DorresteinLaboratory/XCMS3_FeatureBasedMN).
+
 ### Citations and development
 
 This work builds on the efforts of our many colleagues, please cite their work:
@@ -77,9 +80,17 @@ documentation here](fileconversion.md).
 3. Retention time alignment (`adjustRtime`).
 4. Peak grouping (`groupChromPeaks`).
 5. Gap filling (`fillChromPeaks`).
-6. Export the data for FBMN on GNPS
-	-	a *feature quantification table* with ion intensities (.TXT file format).
-	- 	a *MS/MS spectral summary file* (.MGF file format). Note that it is recommended to use the maxTIC option for the MGF export.
+6. Export the data for FBMN on GNPS:
+
+ 6.A: **Option A** - Export a *feature quantification table* and a *MS/MS spectral summary file*:
+	-	Select a *feature quantification table* with ion intensities (.TXT file format).
+	-  	Select a *MS/MS spectral summary file* (.MGF file format). Note that it is recommended to use the maxTIC option for the MGF export.
+	
+	
+ 6.B: **Option B** - Export an mzTab-M file 
+ 
+ 	- Export and select the mzTab-M file in the interface. See and cite this [publication](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.8b04310).
+ 
 
 ### Perform the Feature-Based Molecular Networking on GNPS
 
@@ -99,11 +110,19 @@ documentation](networking.md#metadata).
 
 Test files are accessible [here](tutorials/AG_tutorial_files/):
 
-1. A *feature quantification table* - [Download here](tutorials/AG_tutorial_files/XCMS3-GNPS_AG_test_featuretable.txt)
-2. A *MS/MS spectral summary* file from above - [Download here](tutorials/AG_tutorial_files/XCMS3-GNPS_AG_test_GNPS.mgf)
-3. A *metadata table* - [Download here](tutorials/AG_tutorial_files/metadata_GNPS_table_AMG_key_ones_cleaned.txt)
+**Option A** - With a *feature quantification table* and a *MS/MS spectral summary file*:
+	
+1. The *feature quantification table* - [Download here](tutorials/AG_tutorial_files/XCMS3-GNPS_AG_test_featuretable.txt)
+2. The *MS/MS spectral summary* file from above - [Download here](tutorials/AG_tutorial_files/XCMS3-GNPS_AG_test_GNPS.mgf)
+3. The *metadata table* - [Download here](tutorials/AG_tutorial_files/metadata_GNPS_table_AMG_key_ones_cleaned.txt)
 
 Here is an example [FBMN job with XCMS3](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=f3f28a930b334dd09f310795fceae4cd) from a subset of the American Gut Project.
+
+**Option B** - With a mzTab-M file:
+1. The *mzTab-M* file - [Download here](tutorials/AG_tutorial_files/TBProvided)
+2. The corresponding *mzML* file(s) - [Download here](tutorials/AG_tutorial_files/TBProvided)
+
+Here is an example [FBMN job with XCMS3 using a mzTab-M file and mzML files](TBProv) from a subset of the American Gut Project.
 
 ## Tutorials
 
@@ -111,7 +130,8 @@ See our XCMS-FBMN tutorials using python and R with a subset of the American Gut
 
 ## Page contributors
 
-Johannes Reiner (Eurac Research), Madeleine Ernst (UCSD), Ricardo da Silva (UCSD), Michael Wittig (Munich University), Louis Felix Nothias (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany). 
+Johannes Rainer (Eurac Research), Madeleine Ernst (UCSD), Ricardo da Silva
+(UCSD), Michael Witting (Helmholtz Zentrum Munich), Louis Felix Nothias (UCSD) and Ming Wang (UCDS). 
 
 ## Contribute to the Documentation
 

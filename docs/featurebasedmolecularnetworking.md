@@ -25,7 +25,7 @@ The citations from the mass spectrometry processing tools you used [[MZmine2](fe
 
 ## Mass Spectrometry Data Processing for the Feature Based Molecular Networking Workflow
 
-In brief, mass spectrometry processing programs have been adapted to export two files (*feature quantification table* and *MS/MS spectral summary*) files that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. These tools and their main features are presented in the table below along with a step-by-step documentation to use in FBMN on GNPS:
+In brief, mass spectrometry processing programs have been adapted to export two files (*feature quantification table* and *MS/MS spectral summary*) files that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. Alternatively, the FBMN supports the mzTab-M format that can be inputted along witht the mzML file(s). The tools supported and their main features are presented in the table below along with a step-by-step documentation to use in FBMN on GNPS:
 
 |  Processing tool | FBMN Documentation  | Interface  |  Platform | Code availability|Target user|
 |---|---|---|---|---|---|
@@ -48,12 +48,30 @@ Currently, we recommend using the MZmine2 workflow, as it has been thoroughly te
 There is a dedicated Feature-Based Molecular Networking workflow on GNPS that [can be accessed here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
 
 ### Requirement for the FBMN workflow
-You will need three input files (test files for each software are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files)):
+After processing your LC-MS/MS data with the prefered software, it is possible to export the results following two methods:
 
-1. *Feature Table* with intensities of ion features (TXT or CSV format).
-2. *MS/MS spectral file* with a list of MS/MS spectra for the ion features (.MGF File).
+
+Three type of input files are needed (test files for each software are accessible [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files)):
+
+**Option A (RECOMMENDED)** - Export the processing results using a feature table and an .MGF file:
+
+1. A *feature table* with the intensities of LC-MS ion features (TXT or CSV format).
+
+2. A *MS/MS spectral summary* file with a list of MS/MS spectra associated with the LC-MS ion features (.MGF File). (.MGF file format).
+
 3. [Optional] *Metadata table* - described [here](networking.md#metadata)
 
+4. [Optional] *"Supplementary Pairs"* of additional edges - described [here](#advanced-extras)
+
+**Option B** - Export the processing results using an mzTab-M and mzML files:
+
+1.  Export a single mzTab-M file from the processed data. See and cite this [publication](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.8b04310).
+
+2. Use the mzML file(s) associated with mzTab-M file.
+
+3. [Optional] *Metadata table* - described [here](networking.md#metadata)
+ 	
+ 	
 ## SuperQuick Feature Based Molecular Networking Workflow
 
 
@@ -62,13 +80,14 @@ A simplified interace for Super Quick web interace for FBMN [is available here](
 
 ![img](img/featurebasedmolecularnetworking/superquick_fbmn.png)
 
-###Running the SuperQuick FBMN
+### Running the SuperQuick FBMN
 1. Indicate your email and your GNPS Credentials.
 2. Select the 'Feature Generation tool'.
 3. Select the parameters preset.
-4. Drag and drop your "feature quantification table" and "MS/MS spectral file" (.MGF). See the respective documentation for FBMN each tool.
+4. Option A. Drag and drop your "feature quantification table" and "MS/MS spectral file" (.MGF). See the respective documentation for FBMN each tool.
 5. Optional. Drag and drop a [metadata table](networking.md#metadata).
-6. Click on "Analyze Uploaded Files with GNPS Molecular Networking".
+6. Optional. Drag and drop a "Supplementary Pairs" csv file ([see format](#advanced-extras)) with additional edges
+7. Click on "Analyze Uploaded Files with GNPS Molecular Networking".
 
 While this SuperQuick FBMN interface is convenient for quick analysis, we recommend using the standard FBMN workflow presented below that made possible to modify all the workflow parameters.
 
@@ -133,6 +152,14 @@ There are additional normalization options specifically for the FBMN workflow:
 | Aggregation Method for Peak Abundances Per Group | The ion feature intensity (LC-MS1 peak area) can be aggregated by GROUPS from the metadatable with either a *Sum* or *Average* (RECOMMENDED, because it is more robust to the difference in the number of samples per GROUPS). | Average  |
 
 ![img](img/featurebasedmolecularnetworking/Advanced_Quantification_Options_2.png)
+
+#### Advanced Extras
+
+"Supplementary Pairs" is an option to add extra edges to the resulting feature-based molecular network. It was initially implemented for the Ion Identity Networking (IIN) workflow. However, this approach is designed to stimulate the development and testing of new workflows as the input is an edge file in a generic csv format. An edge is described by the two feature IDs  (fitting to row IDs in the quantification table), an EdgeType (any String name), a numeric score, and an annotation (any String). 
+
+**Example of the Supplementary Pairs used in the Ion Identity Networking (IIN) workflow**
+![img](img/featurebasedmolecularnetworking/fbmn_iin_edges.PNG)
+![img](img/featurebasedmolecularnetworking/fbmn_advanced_extras.PNG)
 
 ### Inspecting the Results of FBMN on GNPS
 
@@ -221,4 +248,4 @@ This work builds on the efforts of our many colleagues, please make sure to cite
 Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
 ## Page contributors
-Louis Felix Nothias (UCSD), Ming Wang (UCSD, Laura-Isobel McCall (University of Oklahoma), Andrés Mauricio Caraballo Rodríguez (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).
+Louis Felix Nothias (UCSD), Ming Wang (UCSD), Laura-Isobel McCall (University of Oklahoma), Andrés Mauricio Caraballo Rodríguez (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany), Robin Schmid (WWU, Münster, Germany).
