@@ -61,13 +61,13 @@ Users may subscribe to datasets to receive email notifications of new identifica
 
 To browse all public datasets, click the "Datasets" link at the top menu bar. This brings users to a list of all public GNPS-MassIVE datasets.
 
-![img](/img/datasets/browse_datasets.png)
+![img](img/datasets/browse_datasets.png)
 
 ### Downloading Dataset Contents
 
 To download the contents of a dataset, you can reach the FTP url of each dataset by click the FTP link.
 
-![img](/img/datasets/dataset_ftp.png)
+![img](img/datasets/dataset_ftp.png)
 
 ## Reanalyze Datasets
 
@@ -79,15 +79,15 @@ Dataset data can be re-analyzed with the tools at GNPS. In order to import the d
 
 Users may make a comment on a dataset by clicking the "Comment on Dataset Link":
 
-![img](/img/datasets/comment_dataset.png)
+![img](img/datasets/comment_dataset.png)
 
 To browse all comments per dataset, a table is shown
 
-![img](/img/datasets/dataset_comments.png)
+![img](img/datasets/dataset_comments.png)
 
 
 ### Finding Related Datasets
 
 Users can find related MassIVE datasets to the current one. Currently relatedness of datasets is determine by the number of shared identified compounds between the two. Users can see a view like this:
 
-![img](/img/datasets/related_datasets.png)
+![img](img/datasets/related_datasets.png)
