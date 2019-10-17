@@ -1,0 +1,1425 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>GC-MS EI Data Analysis - GNPS Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-8412213-5", "ccms-ucsd.github.io")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#gc-ms-ei-data-analysis" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="GNPS Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              GNPS Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                GC-MS EI Data Analysis
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="/" title="Go to repository" class="md-source" data-md-source="">
+  
+  <div class="md-source__repository">
+    
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="GNPS Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    GNPS Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="/" title="Go to repository" class="md-source" data-md-source="">
+  
+  <div class="md-source__repository">
+    
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="GNPS Introduction" class="md-nav__link">
+      GNPS Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../isgnpsright/" title="Is my data compatible with GNPS?" class="md-nav__link">
+      Is my data compatible with GNPS?
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../faq/" title="Frequently Asked Questions" class="md-nav__link">
+      Frequently Asked Questions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../superquickstart/" title="Superquick Start Guide" class="md-nav__link">
+      Superquick Start Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../quickstart/" title="Quick Start Guide" class="md-nav__link">
+      Quick Start Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../gnpsanalysisoverview/" title="GNPS Analysis Tools Overview" class="md-nav__link">
+      GNPS Analysis Tools Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Mass Spec/Computational Background
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Mass Spec/Computational Background
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../massspecbackground/networkingtheory/" title="Molecular Networking" class="md-nav__link">
+      Molecular Networking
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Data Preparation/Upload
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Data Preparation/Upload
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fileconversion/" title="Mass Spectrometry File Conversion" class="md-nav__link">
+      Mass Spectrometry File Conversion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fileupload/" title="GNPS File Upload" class="md-nav__link">
+      GNPS File Upload
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../metadata/" title="Metadata" class="md-nav__link">
+      Metadata
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Recommended Data Analysis
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Recommended Data Analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../networking/" title="Molecular Networking" class="md-nav__link">
+      Molecular Networking
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../networkingviews/" title="Molecular Networking Views" class="md-nav__link">
+      Molecular Networking Views
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../librarysearch/" title="Spectral Library Search" class="md-nav__link">
+      Spectral Library Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../masst/" title="MASST Search (Mass Search Tool)" class="md-nav__link">
+      MASST Search (Mass Search Tool)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../resultviews/" title="Result Views Navigation" class="md-nav__link">
+      Result Views Navigation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Advanced Data Analysis
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Advanced Data Analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dereplicator/" title="DEREPLICATOR" class="md-nav__link">
+      DEREPLICATOR
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-2" type="checkbox" id="nav-10-2">
+    
+    <label class="md-nav__link" for="nav-10-2">
+      Feature Based Molecular Networking
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-10-2">
+        Feature Based Molecular Networking
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking/" title="FBMN Workflow" class="md-nav__link">
+      FBMN Workflow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking-with-mzmine2/" title="FBMN with MZmine2" class="md-nav__link">
+      FBMN with MZmine2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking-with-ms-dial/" title="FBMN with MS-DIAL" class="md-nav__link">
+      FBMN with MS-DIAL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking-with-xcms3/" title="FBMN with XCMS3" class="md-nav__link">
+      FBMN with XCMS3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking-with-openms/" title="FBMN with OpenMS" class="md-nav__link">
+      FBMN with OpenMS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking-with-metaboscape/" title="FBMN with MetaboScape" class="md-nav__link">
+      FBMN with MetaboScape
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking-with-progenesisQI/" title="FBMN with Progenesis QI" class="md-nav__link">
+      FBMN with Progenesis QI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking-cytoscape/" title="FBMW with Cytoscape" class="md-nav__link">
+      FBMW with Cytoscape
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ms2lda/" title="MS2LDA and MotifDB Substructure Discovery" class="md-nav__link">
+      MS2LDA and MotifDB Substructure Discovery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cytoscape/" title="Molecular Networking in Cytoscape" class="md-nav__link">
+      Molecular Networking in Cytoscape
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../molnetenhancer/" title="MolNetEnhancer" class="md-nav__link">
+      MolNetEnhancer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nap/" title="Network Annotation Propagation (NAP)" class="md-nav__link">
+      Network Annotation Propagation (NAP)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ReDU/" title="Reanalysis of Data User Interface (ReDU)" class="md-nav__link">
+      Reanalysis of Data User Interface (ReDU)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Spectral Libraries
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        Spectral Libraries
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../browselibraries/" title="Browsing Reference Spectral Libraries" class="md-nav__link">
+      Browsing Reference Spectral Libraries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../spectrumcuration/" title="Reference Spectral Library Curation" class="md-nav__link">
+      Reference Spectral Library Curation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../batchupload/" title="Reference Spectral Library Batch Addition" class="md-nav__link">
+      Reference Spectral Library Batch Addition
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../downloadlibraries/" title="Downloading Reference Spectral Libraries" class="md-nav__link">
+      Downloading Reference Spectral Libraries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-5" type="checkbox" id="nav-11-5">
+    
+    <label class="md-nav__link" for="nav-11-5">
+      Open-source Method for Reference Library Generation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-11-5">
+        Open-source Method for Reference Library Generation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../msmschooserdataacquisitionQE/" title="Data Acqusition - Thermo QExactive (v1.0)" class="md-nav__link">
+      Data Acqusition - Thermo QExactive (v1.0)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../msmschooser/" title="Computational Selection of MSMS to Include in Library (MSMS-Chooser)" class="md-nav__link">
+      Computational Selection of MSMS to Include in Library (MSMS-Chooser)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Public Datasets
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        Public Datasets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../datasets/" title="Dataset Creation/Sharing" class="md-nav__link">
+      Dataset Creation/Sharing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../continuousid/" title="Continuous Identification" class="md-nav__link">
+      Continuous Identification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../moleculeexplorer/" title="Molecule Explorer" class="md-nav__link">
+      Molecule Explorer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      Community/Social Features
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
+        Community/Social Features
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user/" title="User Page" class="md-nav__link">
+      User Page
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      Tutorial Guides
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        Tutorial Guides
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/bacterianetworking/" title="Molecular Networking - Analog Discovery in Microbial Extracts" class="md-nav__link">
+      Molecular Networking - Analog Discovery in Microbial Extracts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/americangutmzmine/" title="Feature Based Molecular Networking with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project" class="md-nav__link">
+      Feature Based Molecular Networking with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/americangut-ms-dial/" title="Feature Based Molecular Networking with MSDial - Microbiome Molecules in Fecal Samples in American Gut Project" class="md-nav__link">
+      Feature Based Molecular Networking with MSDial - Microbiome Molecules in Fecal Samples in American Gut Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/coffee-tutorial-metaboscape/" title="Feature Based Molecular Networking with Metaboscape - Coffee Analysis" class="md-nav__link">
+      Feature Based Molecular Networking with Metaboscape - Coffee Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/featurebasedgnps/" title="Feature Based Molecular Networking analysis at GNPS" class="md-nav__link">
+      Feature Based Molecular Networking analysis at GNPS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16">
+    
+    <label class="md-nav__link" for="nav-16">
+      Presentation Materials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-16">
+        Presentation Materials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../logos/" title="Logos" class="md-nav__link">
+      Logos
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../changelog/" title="Change Log" class="md-nav__link">
+      Change Log
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../contact/" title="Contact" class="md-nav__link">
+      Contact
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../workshops/" title="GNPS Workshops" class="md-nav__link">
+      GNPS Workshops
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gcms-deconvolution-submission" class="md-nav__link">
+    GC/MS Deconvolution Submission
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcms-library-search-submission" class="md-nav__link">
+    GC/MS Library Search Submission
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#share-data-clone-job-and-add-reference-spectra" class="md-nav__link">
+    Share Data, Clone Job, and Add Reference Spectra
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/GC-MS_MN_GNPS-documentation.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="gc-ms-ei-data-analysis">GC-MS EI Data Analysis</h1>
+<h2 id="gcms-deconvolution-submission">GC/MS Deconvolution Submission</h2>
+<p><strong>1)</strong> Log in to GNPS  (<a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp">gnps.ucsd.edu</a>). If an account has to be created first, refer to GNPS documentation at the <a href="https://ccms-ucsd.github.io/GNPSDocumentation/quickstart/">quickstart</a> banner. Before starting, files from GC-MS analysis must be converted from proprietary vendor formats to .mzML, or .CDF file formats. To convert, please see our <a href="https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/">conversion guide</a>. </p>
+<p><strong>2)</strong> The GNPS home page includes two sections to launch GNPS GC/MS data analysis job, one for data processing - deconvolution and one for GC/MS library search/networking (<strong>Fig. 1</strong>) By clicking on “Process Raw GC-MS data” icon, a job page opens (<strong>Fig. 2</strong>). Start by entering the title of your job (1). Then, the “Select Files” section allows importing existing or previously uploaded dataset(s) from MassIVE. Select the files that need to be processed by clicking on “Select Input Files” (2). A pop-up window appears with three tabs: “Select Input Files”, “Upload Files”, and “Share Files”. To upload files to GNPS using the browser (limited to 20MB), you can use our web drag and drop uploader in the “Upload Files” banner. See the documentation <a href="https://ccms-ucsd.github.io/GNPSDocumentation/fileupload/">here</a> for more information. Readers following the tutorial can go to the “Share Files” tab, enter the MassIVE accession number for the dataset (e.g. <a href="https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=671cd79ac3af4c4493e4025d62d161e1&amp;view=advanced_view">MSV000084226</a>) in the “Import Data Share” box (3), and click on “Import” (4). This specific dataset is now available directly in your GNPS user workspace at “Select Input Files” section (5). Select the input file, who appears highlighted in blue color, and click on “Spectrum files” (6). When the selected files are visible in the “Selected Spectrum Files” box, click on the “Finish Selection” button (7).</p>
+<p><strong>NOTE:</strong> All of the data used for the job must be collected using the same GC protocol (temperature program, column, injection mode). Multiple datasets could be combined as long as the data have been collected using the same protocol. When creating a dataset on MassIVE (<a href="https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp">massive.ucsd.edu</a>), include “GNPS” and “GC” in the name (As GNPS_GC_Name of the GNPS-MassIVE dataset). See the documentation about <a href="https://ccms-ucsd.github.io/GNPSDocumentation/datasets/">Dataset Creation/Sharing</a> and an example of a MassIVE dataset <a href="https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=671cd79ac3af4c4493e4025d62d161e1&amp;view=advanced_view">MSV000084226</a> for more information. An insufficient volume of data causes unstable deconvolution resulting in spurious low-quality spectra. It is recommended for datasets smaller than ~10 files to use alternative deconvolution solutions such as MZMine2/ADAP, MS-Dial or XCMS. Increasing the number of files, for example, could be done by co-analyzing multiple datasets obtained with the same experimental protocol. </p>
+<p><strong>Fig. 1</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_1.png" /></p>
+<p><strong>Fig. 2</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_2.png" /></p>
+<p><strong>3)</strong> The “Advanced MSHub Processing” section displays some automatic setting parameters (related to peak symmetry and baseline adjustment) determined internally by MSHub (<strong>Fig. 3</strong>). The user does not need to provide settings, although they can be set manually, should the user choose to do so. In the “Advanced Clustering” settings, be sure that cluster spectra are turned off (CLUSTER_SPECTRA = NO) (8). The TIME_UNIT must be set as minutes or seconds (8), depending on the chromatography time units of your data (typically the default time units are seconds in NetCDF files and minutes in .mzML files). Then, enter your email address at the bottom (9) and finish by clicking “Submit” (10).</p>
+<p><strong>Fig. 3</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_3.png" /></p>
+<p><strong>4)</strong> When the job has been completed, you will receive a notification email and the status “DONE” appears on your GNPS job. All submitted jobs appear under “jobs” link from the GNPS main menu (<strong>Fig. 4</strong>). By selecting the job of interest and clicking on the “Done” button, the “Job Status” window opens with different options (<strong>Fig. 5</strong>) to (i) explore deconvolution results with the “View All Deconvolved Spectra” option, (ii) download quantification results and feature table by clicking on “Download Spectra as MGF” and “Download Quant Table”, or (iii) continue the process with “Process Library Search” tool (11).</p>
+<p><strong>NOTE:</strong> The first line of the feature/quantification table (<strong>Fig. 6</strong>) indicates the retention time (in min.) with a balance score in parenthesis (in percentage). The “Rel. Max Integral” and “Sample\Best order” values relate to the relative proportion of each peak in the data and the ranking of the feature in terms of its size, correspondingly.</p>
+<p><strong>Fig. 4</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_4.png" /></p>
+<p><strong>Fig. 5</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_5.png" /></p>
+<p><strong>Fig. 6</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_6.png" /></p>
+<h2 id="gcms-library-search-submission">GC/MS Library Search Submission</h2>
+<p><strong>5)</strong> To conduct a library search and create a molecular network, proceed to launch GNPS library search job by clicking “Search Spectral Library and Molecular Network” link from the “Job Status” window of the completed feature detection job (<strong>Fig. 5</strong>). A new job window appears (<strong>Fig. 7</strong>), with four fields of advanced search, filtering, network, and Kovats index calculation options. Click on the “Show Fields” button to show advanced options. The default parameters recommended for obtaining good results have been determined and pre-populated as described in <strong>table 1</strong>. However, users are encouraged to adjust the settings as appropriate for their analysis. The .mgf spectrum file and the quantification table are directly included in this new job. However, into the pop-up window appearing by clicking on “Select Input File” from the job window (1), library files, metadata table, and carbon marker files can be added as the same manner as described previously (<strong>Fig. 8</strong>, 4 and 5). Readers following the tutorial can use the following carbon marker table file “GC_Kovats_SKIN.csv” available in the example dataset <a href="https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=671cd79ac3af4c4493e4025d62d161e1&amp;view=advanced_view">MSV000084226</a>. After the appropriate settings are entered, as well as the email address (2), the job can be launched by clicking on the “Submit” button (3). </p>
+<p><strong>NOTE:</strong> The metadata and carbon marker files must be formatted as a tab-separated .txt file. To create your metadata table properly, see the documentation <a href="https://ccms-ucsd.github.io/GNPSDocumentation/metadata/">here</a>. The carbon marker table must have one “Compound_Name” column that includes the name and the number of carbon into parentheses, and another column named “RT_Query” with the retention time in seconds, as shown in the <strong>Figure 9</strong>. The libraries used in this example tutorial are protected by copyright. However, each users can add their own libraries on GNPS by following the instructions <a href="https://bix-lab.ucsd.edu/display/Public/Add+Batch+Spectra+Documentation">here</a>, or by uploading them in .mgf format (drag and drop on “Upload File” section) and add by clicking on “Library Files” on “Select Input Files” section (<strong>Fig. 8</strong>). The user still has the option to add his/her own .mgf spectrum file and the associated quantification table if the balance score is included.</p>
+<p><strong>Fig. 7</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_7.png" /></p>
+<p><strong>Fig. 8</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_8.png" /></p>
+<p><strong>Fig. 9</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_9.png" /></p>
+<p><strong>Table 1.</strong> Parameters for Library Search </p>
+<table>
+<thead>
+<tr>
+<th><strong><em>Search Options</em></strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fillable Field</strong></td>
+<td><strong>Definition</strong></td>
+<td><strong>Recommended User Input</strong></td>
+</tr>
+<tr>
+<td>Spectrum Files</td>
+<td>Selection of files needed to analyze.</td>
+<td>The deconvoluted files usually are directly included into the Library search/Networking job. Allowed file formats are .mzML or .CDF.</td>
+</tr>
+<tr>
+<td>FORCE_EXACT_MATCH</td>
+<td></td>
+<td>Keep default value of 1.</td>
+</tr>
+<tr>
+<td>Precursor Ion Mass Tolerance</td>
+<td>Maximum mass deviation between the observed precursor ion and the ions selected within the libraries included in the search.</td>
+<td>The choice of the precursor mass tolerance setting usually is influenced directly by the accuracy of the mass analyzer being used to measure the precursor spectra in LC-MS analysis, but modification of this parameter are not meaningful for EI data because there is no precursor ion. 20000 is the default value to encompass all ions.</td>
+</tr>
+<tr>
+<td>Min Matched Peaks</td>
+<td>Minimum number of common fragment ions that should share a spectra to be considered as a spectral library annotation.</td>
+<td>Default value is 6, but note that this parameter should be tuned depending on the molecules of interest and experimental conditions. It is recommended to perform several jobs modifying this parameter for testing possible outcomes variations in annotations. Typically high quality features contain more than 15 ions in EI data.</td>
+</tr>
+<tr>
+<td>Fragment Ion Mass Tolerance</td>
+<td>Maximum mass deviation between the observed fragments and the ions selected within the libraries included in the search.</td>
+<td>The choice of the precursor mass tolerance setting is influenced directly by the accuracy of the mass analyzer being used to measure the precursor spectra. Default value is ± 0.025 Da for high-resolution mass spectrometers (q-TOF, q-Orbitrap). For low-resolution MS/MS instruments (e.g. , ion traps, triple-quadrupole/QqQ), a PIMT ion mass tolerance of ± 2.0 Da is recommended. Note that this parameters should be tuned depending on data.</td>
+</tr>
+<tr>
+<td>Score Threshold</td>
+<td>Minimum cosine score to be considered as an annotation in spectral library search.</td>
+<td>0.85 value is set as default. This value has been determined to effectively delineate subclasses and Levels 6 and 7 and usually performs well with data obtained through experiments without derivatization, but that will depend on the quality of the mass spectra obtained. For derivatized compounds the cosine value for good matches is generally lower by ~0.1 due to an inferior quality of the EI spectra.</td>
+</tr>
+<tr>
+<td><strong><em>Advanced Search Options</em></strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Fillable Field</strong></td>
+<td><strong>Definition</strong></td>
+<td><strong>Recommended User Input</strong></td>
+</tr>
+<tr>
+<td>Library Class</td>
+<td>The level of library to include hits from.</td>
+<td>Keep default of “Bronze” to include all possible hits from libraries.</td>
+</tr>
+<tr>
+<td>Top Hits Per Spectrum</td>
+<td>How many top hits ranked by the cosine score to be included into the results.</td>
+<td>The default of 1. It is recommended to keep this number relatively high (for example, 10 to include top 10 matches) to allow for correct annotation selection if it is not a top hit.</td>
+</tr>
+<tr>
+<td>Spectral Library</td>
+<td>Selection of spectral libraries to include in the search.</td>
+<td>Select all appropriate EI libraries by selecting them and clicking “Library Files”. Click “Finish Selection” when completed. Any of the user’s own libraries could be included into the search as long as they are converted into .mgf format. If the libraries are curated and could be shared with the community, it is encouraged to upload them to GNPS as described <a href="https://bix-lab.ucsd.edu/display/Public/Add+Batch+Spectra+Documentation">here</a>.</td>
+</tr>
+<tr>
+<td>Search Analogs</td>
+<td>Used for tandem MS data.</td>
+<td>Keep default of “Don’t Search”. This option is used for LC-MS data.</td>
+</tr>
+<tr>
+<td>Maximum Analog Search Mass Difference</td>
+<td>Used for tandem MS data.</td>
+<td>Disabled when above option is set at “Don’t Search”.</td>
+</tr>
+<tr>
+<td><strong><em>Advanced Filtering Options</em></strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Fillable Field</strong></td>
+<td><strong>Definition</strong></td>
+<td><strong>Recommended User Input</strong></td>
+</tr>
+<tr>
+<td>Filter StdDev Intensity</td>
+<td>Used for tandem MS data.</td>
+<td>It is highly recommended to use a default value of 0 so that no filter is applied.</td>
+</tr>
+<tr>
+<td>Filter precursor window</td>
+<td>Used for tandem MS data.</td>
+<td>“Don’t Filter” is set as default for the EI data because there is no precursor ion.</td>
+</tr>
+<tr>
+<td>Filter peaks in 50 Da window</td>
+<td>Removes peaks that are not one of the top 6 most intense within a +/- 50 Da window.</td>
+<td>Depending on the deconvolution results, this could be turned on or off: if fragmentation patterns contain a large number of small peaks, this filtering should be turned off, as it may filter out relevant peaks that could be signal.</td>
+</tr>
+<tr>
+<td>Filter SNR Intensity</td>
+<td>All ions with a signal to noise ratio (SNR) in the EI spectrum below this value raw intensity will be deleted.</td>
+<td>Use a default value of 0 so that no filter is applied, especially if the raw intensities of your data are very low. This value can be modified by the user for excluding background ions and just include the mass spectra of certain quality.</td>
+</tr>
+<tr>
+<td>Filter library</td>
+<td>Used for tandem MS data.</td>
+<td>Don’t Filter is set as default for the EI data because there is no precursor ion.</td>
+</tr>
+<tr>
+<td>Min Peak Int</td>
+<td>All ions with a signal in the EI spectrum below this raw intensity will be deleted.</td>
+<td>Use a default value of 0 so that no filter is applied, especially if the raw intensities of your data are very low.</td>
+</tr>
+<tr>
+<td><strong><em>Advanced Network Options</em></strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Fillable Field</strong></td>
+<td><strong>Definition</strong></td>
+<td><strong>Recommended User Input</strong></td>
+</tr>
+<tr>
+<td>Meta-table (Optional)</td>
+<td>Selection of metadata to include in the search.</td>
+<td>The metadata file describes the samples properties and allows more flexibility for data analysis and visualization. It is an alternative way to assign groups when selecting data input files within the workflow of GNPS, see an example <a href="https://ccms-ucsd.github.io/GNPSDocumentation/metadata/">here</a>.</td>
+</tr>
+<tr>
+<td>Min pairs cos</td>
+<td>Minimum cosine score required for an edge to be formed between nodes. Lower value will increase the size of the clusters by inducing the clustering of less related spectra, higher value will limit do the opposite.</td>
+<td>0.7 value is set as default. This value has been determined to effectively delineate subclasses and Levels 6 and 7 and usually performs well with data obtained through experiments without derivatization, but that will depend on the quality of the mass spectra obtained. For derivatized compounds the cosine value for good matches is generally lower due to an inferior quality of the EI spectra.</td>
+</tr>
+<tr>
+<td>Network TopK</td>
+<td>Pairs of nodes are reported only if they are found to be best matches in the topK in both directions that are above the minimum cosine score.</td>
+<td>Default is set to 10. This value enables the network to be more or less complex.</td>
+</tr>
+<tr>
+<td>Quant-table (Optional)</td>
+<td>Table including feature ID, retention time (in min.) with balance score, Rel. Max Integral and Sample\Best order.</td>
+<td>The quantification table (<strong>Fig. 6</strong>)  usually is directly included into the Library search/Networking job or can be imported externally. External deconvolution tools do not provide balance score and it will not be available in the search results.</td>
+</tr>
+<tr>
+<td>Maximum shift between precursors</td>
+<td>The maximum allowed difference in precursor m/z differences.</td>
+<td>Must be set to the higher m/z expected in the analysis for EI data since no precursor information is available (default value of 500)</td>
+</tr>
+<tr>
+<td>Maximum Connected Component Size</td>
+<td>Maximum number of nodes that can be connected in a single sub-network of a molecular network. This process iteratively breaks up large ‘hairball’ networks (of false positives) by removing the lowest scoring alignments (by cosine score) first until the resulting pieces fall below the maximum size.</td>
+<td>Default setting is 100 – this value can be set to 0 to allow for an unlimited number of nodes or a higher setting can be used for larger data sets or for data sets containing many structurally-related molecules. Low value encourages breaking up the “hairball” clusters but increases the chance that some nodes become disconnected and fall out of the network.</td>
+</tr>
+<tr>
+<td><strong><em>Advanced Kovats Index Calculation Options</em></strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Perform Kovats Calculation</td>
+<td>Whether to perform calculation of Kovats retention index.</td>
+<td>If the user need to calculate Kovats RIs for the compounds during library search this parameter should be selected. (i) The Input Carbon Marker File could be provided for Kovats markers (<strong>Fig. 9</strong>), but it must be conducted with identical protocol as the rest of the experiment. (ii) The Carbon Marker File is not provided, so the Kovat’s RIs will be estimated based on dataset-wide annotations and perform a polynomial fitting to generate satisfactory regression based in the annotations with higher Cosine and its Kovats RIs (experimental feature, may not be suitable for all datasets).</td>
+</tr>
+<tr>
+<td>Input Carbon Marker File (Optional)</td>
+<td>If provided, this information will be used for RI estimation.</td>
+<td>The RI markers information should be submitted as a comma separated values (.csv) file in the following format (header followed by names or available reference compounds and their retention times in seconds).</td>
+</tr>
+<tr>
+<td>Cosine Threshold for Kovats Filter (Can be left blank, experimental feature)</td>
+<td>The minimal value of cosine score for the library match to be used for Kovats RI values assignment.</td>
+<td>Default value is set at 0.9 to limit inclusion of erroneous annotations that may introduce errors into the calculation. This value can be lower (0.85) for experiments with derivatization because the variation between experimental and theoretical Kovats RIs usually is higher.</td>
+</tr>
+<tr>
+<td>Kovats Retention Index Filtering Window (+/- %) (Can be left blank, experimental feature)</td>
+<td>The allowable error window for the calculated/assigned Kovats RI for the annotation to be retained.</td>
+<td>Default of +/-10%. This value can be higher according to the quality of the mass spectra or for experiments with derivatization because the variation between experimental and theoretical Kovats RIs usually is higher. Have in mind that all of the annotations will be shown when exploring results in the browser after completing the job.</td>
+</tr>
+<tr>
+<td>Retention time window starts/ends (mins) (Can be left blank, experimental feature)</td>
+<td>The portion of chromatogram across the dataset to be used for selecting annotations for Kovats RI assignment.</td>
+<td>Select values according to the specifics of experiment. The front end portion of chromatogram that contains dead volume elution, solvent delay, solvent peak or otherwise is unusable, as well as back end portion after all of the meaningful compounds have eluted (e.g. bakeout ramp, column bleeding) should be excluded.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>6)</strong> After the job has been completed, the job status page gives access to three different views and also links to export/download network files (<strong>Fig. 10</strong>) with the “Download GraphML” button (1). The link (i) “View All Spectra DB” opens the interface that allows visualization of spectral matches to the reference database from selected libraries. It will display all of the top matches for each feature to different libraries and relevant information including retention time. The displayed columns could be edited by clicking “Select columns” link in the upper left corner (2). The possible annotations could be sorted by their cosine value to aid in selecting the best annotation using the researcher's judgment. The “Scan” field corresponds to the feature number in the mgf file generated at the feature detection step and corresponds to the “No” field listed in the feature table. Clicking on the spectrum icon (3) at the left side of the screen will show a mirror plot comparison between the query spectrum and the reference spectrum. This allows assessing the quality of matches between the deconvolution and the reference spectra. The button at the top of the page “Back to status page” (4) allows to go back. Clicking the (ii) “View All Compounds” option accesses the list of top hits (Compound_Name) with the corresponding cosine and the balance score for all annotated spectra. The link (iii) “View Kovats Calculation Result” shows Kovats calculation results for each spectrum if selected when launching the job. </p>
+<p><strong>NOTE:</strong> The Kovats estimation feature is experimental. When clicking on “View Kovats Calculation Result”, if the following error is displayed: “There was an error retrieving the result data for block ‘main’ of workflow type ‘MOLECULAR-LIBRARYSEARCH-GC’”, this is an indication that the dataset does not contain a sufficient number of reference points for polynomial fitting to generate satisfactory regression (it does not pass internal quality check), because the information for RI reference markers is necessary to generate Kovats estimates for the submitted data. You just need to increase the number of files.</p>
+<p><strong>Fig. 10</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_10.png" /></p>
+<p><strong>7)</strong> To visualize molecular networks generated, the user has to download the input network files from “Download GraphML” link, save the folder, and unzip it (<strong>Fig. 10</strong>). The network can be visualized in an external software such as Cytoscape1, an open source software platform used to visualize, analyze, and annotate molecular networks from GNPS. Cytoscape is available for download from<a href="http://www.cytoscape.org/"> here</a>. This software allowed to encode any property of the network (i.e. node shape or color, edge thickness) with a metadata category (i.e. cohort, cosine score, compound family). An online tutorial, created with Cytoscape 3.7, used for molecular networking generated with LC-MS/MS data, can be accessed <a href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking-cytoscape/">here</a>. Many of these steps could be reproduced in the same way for molecular networking from GC-MS data. </p>
+<ol>
+<li>Shannon, P., et al. (2003). Cytoscape: a software environment for integrated models of biomolecular interaction networks. <em>Genome Res, 13</em>(11), 2498-2504. doi:10.1101/gr.1239303</li>
+</ol>
+<h2 id="share-data-clone-job-and-add-reference-spectra">Share Data, Clone Job, and Add Reference Spectra</h2>
+<p><strong>cloning a job:</strong> If the same analysis needs to be repeated, it is possible to clone the job by clicking “clone” on the job status page. Cloning a job allows users to view all parameters and files that were used and rerun the job with the same, or adjusted parameters and files. Note that if data were imported from private user workspace and not from within MassIVE, other users will not have access to the data and consequently will not be able to rerun or reproduce the GNPS job.  </p>
+<p><strong>sharing data:</strong> The analysis conducted on GNPS as well as the deposited raw data could be shared as a hyperlink to the GNPS job(s) and the MassIVE accession number, correspondingly. GNPS stores data inputs and setting used for the analyses of the data, so the analysis could be shared and reproduced. </p>
+<p><strong>adding standards:</strong> High confidence spectra from experimental data or pure standards could be added as a reference spectrum to GNPS for future reference. If the user wishes to upload &gt;50 reference spectra to GNPS, a batch upload should be used to as detailed in the online help. The compliance of the file format can be verified using an online .</p>
+<h1 id="visualization">Visualization</h1>
+<h2 id="network-visualization-in-cytoscape">Network Visualization in Cytoscape</h2>
+<p>Here we show an example of molecular networks in <strong>Figure 11A</strong>, visualizing in Cytoscape, generated from a study of volatiles related to aging of IPA beer (GNPS link: https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=1b300f711b404a3a8a9325352974adcd). In Cytoscape, the different aging times (0, 1, 2, 3, 4, 5, 6, 8, 12, and 20 days) are represented by different colors, and the metabolites present in the beer (each nodes) can be mapped on the molecular networks. The size of each node represents the total abundance of the feature and the colors in the pie chart shows the proportions of the compound at different aging duration times (gradient from green to yellow to red). As an example, a zoom in a cluster of terpenes annotated with compounds name, is shown in <strong>Figure 11B</strong>. Networking can facilitate the interpretation of data by visualizing chemical changes. In this example, the annotated compounds E-nerolidol and alpha-limonene-diepoxide, framed in pink, appear to be present only in fresh beer (0 days) and disappear as the beer ages. Other information can be mapped onto the network, for example in <strong>Figure</strong> <strong>11C</strong>, the same zoom with cosine values between nodes is shown instead of compound name annotations.</p>
+<p><strong>Fig. 11</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_11.png" /></p>
+<h2 id="molecular-mapping-in-ili">Molecular mapping in ili</h2>
+<p>Spatial distribution of different chemical features could be visualized in 2D or 3D using ili, a visualization app for 3D molecular cartography.2 ‘ili could be used either on the <a href="http://ili.embl.de/">website</a> or as a <a href="https://goo.gl/3KAA8U">Chrome extension</a>. For mapping, two files need to be uploaded (DRAG AND DROP): an image for 2D (PNG or JPG format) or model for 3D (STL format), and a .cvs file with the coordinates of the spots on the model  that correspond to the sampled locations. Examples of mapping applications are available on ‘ili <a href="https://ili.embl.de/">website</a>. Here it is demonstrated how to map the volatilome data on the same model as shown in the “Human skin metabolome” example (<strong>Fig. 12</strong>). </p>
+<p>To create the .csv table, download the quantification table from GNPS deconvolution (example GNPS job: https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=9127bd48c09b4087ab0fd9a1407b3da1) output and add four columns with the x, y, z and radius coordinates from the different sampling points as described2.  For ease of navigation, the rows with feature descriptors could be deleted (the example shown on  <strong>Figure 13</strong> shows the retention time and the balance score as feature identifiers). The detailed instructions on creating the correctly formatted table with coordinates are given <a href="https://github.com/alexandrovteam/Optimus/blob/master/Obtaining coordinates of sampling spots.md">here</a>. </p>
+<p>To create chemical maps, drag and drop the example <a href="https://github.com/aaksenov1/Human-volatilome-3D-mapping-">volatilome table</a> human 3D model. Different parameters can be set such as the spots, the mapping color, or the angles of visualization (<strong>Fig. 14</strong>). To display different features, click on the feature identifier value listed above the color scale on the bottom right corner of the screen and select feature to display. To annotate molecular features of interest, refer to the GNPS library search job for the matching features.</p>
+<p><strong>Fig.12</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_12.png" /></p>
+<p><strong>Fig. 13</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_13.png" /></p>
+<p><strong>Fig. 14</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_14.png" /></p>
+<ol>
+<li>Protsyuk, I., et al. (2018). 3D molecular cartography using LC–MS facilitated by Optimus and'ili software. <em>Nature protocols</em>, <em>13</em>(1), 134.https://doi.org/10.1038/nprot.2017.122</li>
+</ol>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

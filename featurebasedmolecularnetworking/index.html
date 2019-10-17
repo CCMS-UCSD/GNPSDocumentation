@@ -689,6 +689,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#advanced-extras" class="md-nav__link">
+    Advanced Extras
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1530,6 +1537,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#advanced-extras" class="md-nav__link">
+    Advanced Extras
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1710,7 +1724,7 @@
 <p>Wang, M. et al. <a href="https://doi.org/10.1038/nbt.3597">Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking</a>. Nat. Biotechnol. 34, 828–837 (2016).</p>
 <p>The citations from the mass spectrometry processing tools you used [<a href="../featurebasedmolecularnetworking-with-mzmine2/">MZmine2</a>, <a href="../featurebasedmolecularnetworking-with-openms/">OpenMS</a>, <a href="../featurebasedmolecularnetworking-with-ms-dial/">MS-DIAL</a>, <a href="../featurebasedmolecularnetworking-with-metaboscape/">MetaboScape</a>, and <a href="../featurebasedmolecularnetworking-with-xcms3/">XCMS</a>].</p>
 <h2 id="mass-spectrometry-data-processing-for-the-feature-based-molecular-networking-workflow">Mass Spectrometry Data Processing for the Feature Based Molecular Networking Workflow</h2>
-<p>In brief, mass spectrometry processing programs have been adapted to export two files (<em>feature quantification table</em> and <em>MS/MS spectral summary</em>) files that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. These tools and their main features are presented in the table below along with a step-by-step documentation to use in FBMN on GNPS:</p>
+<p>In brief, mass spectrometry processing programs have been adapted to export two files (<em>feature quantification table</em> and <em>MS/MS spectral summary</em>) files that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. Alternatively, the FBMN supports the mzTab-M format that can be inputted along witht the mzML file(s). The tools supported and their main features are presented in the table below along with a step-by-step documentation to use in FBMN on GNPS:</p>
 <table>
 <thead>
 <tr>
@@ -1771,11 +1785,34 @@
 <h2 id="the-feature-based-molecular-networking-workflow-in-gnps">The Feature Based Molecular Networking Workflow in GNPS</h2>
 <p>There is a dedicated Feature-Based Molecular Networking workflow on GNPS that <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">can be accessed here</a> (you need to be logged in GNPS first).</p>
 <h3 id="requirement-for-the-fbmn-workflow">Requirement for the FBMN workflow</h3>
-<p>You will need three input files (test files for each software are accessible <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files">here</a>):</p>
+<p>After processing your LC-MS/MS data with the prefered software, it is possible to export the results following two methods:</p>
+<p>Three type of input files are needed (test files for each software are accessible <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files">here</a>):</p>
+<p><strong>Option A (RECOMMENDED)</strong> - Export the processing results using a feature table and an .MGF file:</p>
 <ol>
-<li><em>Feature Table</em> with intensities of ion features (TXT or CSV format).</li>
-<li><em>MS/MS spectral file</em> with a list of MS/MS spectra for the ion features (.MGF File).</li>
-<li>[Optional] <em>Metadata table</em> - described <a href="../networking/#metadata">here</a></li>
+<li>
+<p>A <em>feature table</em> with the intensities of LC-MS ion features (TXT or CSV format).</p>
+</li>
+<li>
+<p>A <em>MS/MS spectral summary</em> file with a list of MS/MS spectra associated with the LC-MS ion features (.MGF File). (.MGF file format).</p>
+</li>
+<li>
+<p>[Optional] <em>Metadata table</em> - described <a href="../networking/#metadata">here</a></p>
+</li>
+<li>
+<p>[Optional] <em>"Supplementary Pairs"</em> of additional edges - described <a href="#advanced-extras">here</a></p>
+</li>
+</ol>
+<p><strong>Option B</strong> - Export the processing results using an mzTab-M and mzML files:</p>
+<ol>
+<li>
+<p>Export a single mzTab-M file from the processed data. See and cite this <a href="https://pubs.acs.org/doi/abs/10.1021/acs.analchem.8b04310">publication</a>.</p>
+</li>
+<li>
+<p>Use the mzML file(s) associated with mzTab-M file.</p>
+</li>
+<li>
+<p>[Optional] <em>Metadata table</em> - described <a href="../networking/#metadata">here</a></p>
+</li>
 </ol>
 <h2 id="superquick-feature-based-molecular-networking-workflow">SuperQuick Feature Based Molecular Networking Workflow</h2>
 <p>A simplified interace for Super Quick web interace for FBMN <a href="http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking">is available here</a>.</p>
@@ -1785,8 +1822,9 @@
 <li>Indicate your email and your GNPS Credentials.</li>
 <li>Select the 'Feature Generation tool'.</li>
 <li>Select the parameters preset.</li>
-<li>Drag and drop your "feature quantification table" and "MS/MS spectral file" (.MGF). See the respective documentation for FBMN each tool.</li>
+<li>Option A. Drag and drop your "feature quantification table" and "MS/MS spectral file" (.MGF). See the respective documentation for FBMN each tool.</li>
 <li>Optional. Drag and drop a <a href="../networking/#metadata">metadata table</a>.</li>
+<li>Optional. Drag and drop a "Supplementary Pairs" csv file (<a href="#advanced-extras">see format</a>) with additional edges</li>
 <li>Click on "Analyze Uploaded Files with GNPS Molecular Networking".</li>
 </ol>
 <p>While this SuperQuick FBMN interface is convenient for quick analysis, we recommend using the standard FBMN workflow presented below that made possible to modify all the workflow parameters.</p>
@@ -1957,6 +1995,11 @@
 </tbody>
 </table>
 <p><img alt="img" src="../img/featurebasedmolecularnetworking/Advanced_Quantification_Options_2.png" /></p>
+<h4 id="advanced-extras">Advanced Extras</h4>
+<p>"Supplementary Pairs" is an option to add extra edges to the resulting feature-based molecular network. It was initially implemented for the Ion Identity Networking (IIN) workflow. However, this approach is designed to stimulate the development and testing of new workflows as the input is an edge file in a generic csv format. An edge is described by the two feature IDs  (fitting to row IDs in the quantification table), an EdgeType (any String name), a numeric score, and an annotation (any String). </p>
+<p><strong>Example of the Supplementary Pairs used in the Ion Identity Networking (IIN) workflow</strong>
+<img alt="img" src="../img/featurebasedmolecularnetworking/fbmn_iin_edges.PNG" />
+<img alt="img" src="../img/featurebasedmolecularnetworking/fbmn_advanced_extras.PNG" /></p>
 <h3 id="inspecting-the-results-of-fbmn-on-gnps">Inspecting the Results of FBMN on GNPS</h3>
 <p>After the completion of the FBMN job (this will take from 10 to 10 hours depending on your number of samples and instrument), you will receive an email notification with a link to the results page (see example below).</p>
 <p><img alt="Results" src="../img/featurebasedmolecularnetworking/results_FBMN.png" /></p>
@@ -2012,7 +2055,7 @@
 <p>This work builds on the efforts of our many colleagues, please make sure to cite the papers for their processing tools and the GNPS paper:</p>
 <p>Wang, M. et al. <a href="https://doi.org/10.1038/nbt.3597">Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking</a>. Nat. Biotechnol. 34, 828–837 (2016).</p>
 <h2 id="page-contributors">Page contributors</h2>
-<p>Louis Felix Nothias (UCSD), Ming Wang (UCSD, Laura-Isobel McCall (University of Oklahoma), Andrés Mauricio Caraballo Rodríguez (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).</p>
+<p>Louis Felix Nothias (UCSD), Ming Wang (UCSD), Laura-Isobel McCall (University of Oklahoma), Andrés Mauricio Caraballo Rodríguez (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany), Robin Schmid (WWU, Münster, Germany).</p>
                 
                   
                 
