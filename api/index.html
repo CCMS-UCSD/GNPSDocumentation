@@ -36,7 +36,7 @@
     
     
       
-        <title>Api - GNPS Documentation</title>
+        <title>API - GNPS Documentation</title>
       
     
     
@@ -126,7 +126,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Api
+                API
               
             </span>
           
@@ -1071,6 +1071,151 @@
   </li>
 
     
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        API
+      </label>
+    
+    <a href="./" title="API" class="md-nav__link md-nav__link--active">
+      API
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gnps-library-spectra" class="md-nav__link">
+    GNPS Library Spectra
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-single-library-spectrum" class="md-nav__link">
+    Getting Single Library Spectrum
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnps-jobs" class="md-nav__link">
+    GNPS Jobs
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#job-results-api" class="md-nav__link">
+    Job Results API
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure-conversion" class="md-nav__link">
+    Structure Conversion
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conversion-to-smiles" class="md-nav__link">
+    Conversion to Smiles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversion-to-inchi" class="md-nav__link">
+    Conversion to InChI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversion-to-inchikey" class="md-nav__link">
+    Conversion to InChIKey
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversion-to-monoisotopic-mass" class="md-nav__link">
+    Conversion to monoisotopic mass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversion-to-formula" class="md-nav__link">
+    Conversion to formula
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-classyfire" class="md-nav__link">
+    Structure Classyfire
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-image" class="md-nav__link">
+    Structure Image
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -1085,35 +1230,105 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gnps-api-overview" class="md-nav__link">
-    GNPS API Overview
+  <a href="#gnps-library-spectra" class="md-nav__link">
+    GNPS Library Spectra
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#library-spectra-api" class="md-nav__link">
-    Library Spectra API
+  <a href="#getting-single-library-spectrum" class="md-nav__link">
+    Getting Single Library Spectrum
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnps-jobs" class="md-nav__link">
+    GNPS Jobs
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#job-results-api" class="md-nav__link">
+    Job Results API
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure-conversion" class="md-nav__link">
+    Structure Conversion
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conversion-to-smiles" class="md-nav__link">
+    Conversion to Smiles
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dataset-api" class="md-nav__link">
-    Dataset API
+  <a href="#conversion-to-inchi" class="md-nav__link">
+    Conversion to InChI
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#results-list-api" class="md-nav__link">
-    Results List API
+  <a href="#conversion-to-inchikey" class="md-nav__link">
+    Conversion to InChIKey
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversion-to-monoisotopic-mass" class="md-nav__link">
+    Conversion to monoisotopic mass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversion-to-formula" class="md-nav__link">
+    Conversion to formula
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-classyfire" class="md-nav__link">
+    Structure Classyfire
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-image" class="md-nav__link">
+    Structure Image
   </a>
   
 </li>
@@ -1142,16 +1357,38 @@
                   <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/api.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Api</h1>
-                
-                <h2 id="gnps-api-overview">GNPS API Overview</h2>
-<h3 id="library-spectra-api">Library Spectra API</h3>
-<p>Get individual spectrum annotation history</p>
-<h3 id="dataset-api">Dataset API</h3>
-<p>Get all datasets</p>
-<p>Get dataset information</p>
-<h3 id="results-list-api">Results List API</h3>
-<p>Get results as json</p>
+                <h1 id="gnps-api-overview">GNPS API Overview</h1>
+<h2 id="gnps-library-spectra">GNPS Library Spectra</h2>
+<h3 id="getting-single-library-spectrum">Getting Single Library Spectrum</h3>
+<p><code>https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=&lt;Library Accession&gt;</code></p>
+<p><a href="https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=CCMSLIB00005463737">Example</a></p>
+<h2 id="gnps-jobs">GNPS Jobs</h2>
+<h3 id="job-results-api">Job Results API</h3>
+<p>GNPS job results page in JSON format:</p>
+<p><code>https://gnps.ucsd.edu/ProteoSAFe/result_json.jsp?task=&lt;task id&gt;&amp;view=&lt;view name&gt;</code></p>
+<p><a href="https://gnps.ucsd.edu/ProteoSAFe/result_json.jsp?task=1ad7bc366aef45ce81d2dfcca0a9a5e7&amp;view=view_all_annotations_DB">Example</a></p>
+<h2 id="structure-conversion">Structure Conversion</h2>
+<h3 id="conversion-to-smiles">Conversion to Smiles</h3>
+<p><code>https://gnps-structure.ucsd.edu/smiles?inchi=&lt;inchi string&gt;</code></p>
+<p><a href="https://gnps-structure.ucsd.edu/smiles?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3">Example</a></p>
+<h3 id="conversion-to-inchi">Conversion to InChI</h3>
+<p><code>https://gnps-structure.ucsd.edu/inchi?smiles=&lt;smiles string&gt;</code></p>
+<p><a href="https://gnps-structure.ucsd.edu/inchi?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
+<h3 id="conversion-to-inchikey">Conversion to InChIKey</h3>
+<p><code>https://gnps-structure.ucsd.edu/inchikey?smiles=&lt;smiles string&gt;</code></p>
+<p><a href="https://gnps-structure.ucsd.edu/inchikey?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
+<h3 id="conversion-to-monoisotopic-mass">Conversion to monoisotopic mass</h3>
+<p><code>https://gnps-structure.ucsd.edu/structuremass?smiles=&lt;smiles string&gt;</code></p>
+<p><a href="https://gnps-structure.ucsd.edu/structuremass?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
+<h3 id="conversion-to-formula">Conversion to formula</h3>
+<p><code>https://gnps-structure.ucsd.edu/formula?smiles=&lt;smiles string&gt;</code></p>
+<p><a href="https://gnps-structure.ucsd.edu/formula?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
+<h3 id="structure-classyfire">Structure Classyfire</h3>
+<p><code>https://gnps-structure.ucsd.edu/classyfire?smiles=&lt;smiles string&gt;</code></p>
+<p><a href="https://gnps-structure.ucsd.edu/classyfire?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
+<h3 id="structure-image">Structure Image</h3>
+<p><code>https://gnps-structure.ucsd.edu/structureimg?smiles=&lt;smiles string&gt;</code></p>
+<p><a href="https://gnps-structure.ucsd.edu/structureimg?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
                 
                   
                 
@@ -1168,6 +1405,27 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../workshops/" title="GNPS Workshops" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                GNPS Workshops
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
