@@ -1,5 +1,13 @@
 # GNPS API Overview
 
+## GNPS Library Spectra
+
+### Getting Single Library Spectrum
+
+```https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=<Library Accession>```
+
+[Example](https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=CCMSLIB00005463737)
+
 ## GNPS Jobs
 
 ### Job Results API
