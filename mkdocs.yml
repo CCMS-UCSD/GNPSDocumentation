@@ -65,6 +65,7 @@ pages:
     - Change Log: changelog.md
     - Contact: contact.md
     - GNPS Workshops: workshops.md
+    - API: api.md
 theme:
     name: material
     #name: readthedocs
