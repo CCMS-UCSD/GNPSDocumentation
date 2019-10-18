@@ -1,5 +1,7 @@
 ## Change Log of GNPS Documentation
 
+All new updates will be posted on the GNPS Github Page (https://github.com/CCMS-UCSD/GNPS_Workflows/releases)!
+
 ### 5/3/2019
 
 * [GNPS Workflow Release 3](https://github.com/CCMS-UCSD/GNPS_Workflows/releases/tag/4)
