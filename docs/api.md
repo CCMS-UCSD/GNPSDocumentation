@@ -42,6 +42,12 @@ GNPS job results page in JSON format:
 
 [Example](https://gnps-structure.ucsd.edu/formula?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
+### Structure Classyfire
+
+```https://gnps-structure.ucsd.edu/classyfire?smiles=<smiles string>```
+
+[Example](https://gnps-structure.ucsd.edu/classyfire?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+
 ### Structure Image
 
 ```https://gnps-structure.ucsd.edu/structureimg?smiles=<smiles string>```
