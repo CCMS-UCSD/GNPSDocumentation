@@ -105,12 +105,12 @@ Click “Finish”, then MS-DIAL will perform all the feature detection and alig
 ![img](img/ms-dial/set-parameters-alignment.png)
 
 
-#### Processing Steps for MSE data
+#### Processing Steps for MSE data (Experimental)
 
-- See the [MS-DIAL documentation for MSE data processing](https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial#chapter-8).
+- See the [MS-DIAL documentation for MSE data processing](https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial#chapter-8), and export the files as indicated below. If you encounter any issue, please contact the GNPS team on the [forum](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports) or [GitHub](https://github.com/CCMS-UCSD/GNPS_Workflows/issues).
 
-#### Processing Steps for Ion Mobility Spectrometry data
-- See the [MS-DIAL documentation on Ion Mobility Spectrometry data processing](https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial#chapter-10-).
+#### Ion Mobility Spectrometry data (Experimental)
+- See the [MS-DIAL documentation on Ion Mobility Spectrometry data processing](https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial#chapter-10-), and export the files as indicated below. If you encounter any issue, please contact the GNPS team on the [forum](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports) or [GitHub](https://github.com/CCMS-UCSD/GNPS_Workflows/issues).
 
 
 ### Export the files for GNPS FBMN
