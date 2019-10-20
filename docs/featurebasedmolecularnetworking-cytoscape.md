@@ -23,9 +23,7 @@ Unzip the file and the resulting folder will look like this:
 
 ![img](img/FBMN_Cytoscape/Slide2.PNG)
 
-### Importing Files from GNPS to Cytoscape
-
-#### Import the molecular network
+### Import the molecular network in Cytoscape
 To import the network file into Cytoscape:
 *    in Cytoscape click on _Import Network from File System_ and then choose the _.graphml_ file. 
 *   Alternatively, you can drag and drop the .graphml file into Cytoscape.
@@ -38,20 +36,23 @@ You can import the table file into Cytoscape. Click _Import Table from File Syst
 
 ![img](img/FBMN_Cytoscape/Slide17.PNG)
 
-#### Import supplementary annotations
+### Import supplementary annotations in Cytoscape
 Cytoscape allows to map additional annotations such as those produced by other workflows on GNPS. See the documentation for [DEREPLICATOR](dereplicator.md), [NAP](nap.md), [MS2LDA](ms2lda.md)., for more details.
 
-The FBMN workflow makes possible to map the annotation obtained from any of the software used for the processing (MZmine, XCMS, MetaboScape, MS-DIAL, Progenesis QI).
-The procedure consists in:
+The FBMN workflow makes possible to map the annotations (molecular formula, cross collision section, etc) made by the processing software used for FBMN (MZmine, XCMS, MetaboScape, MS-DIAL, Progenesis QI), or other tool that processed the same .MGF/.MSP file.
+
+Regardless of the tool, the procedure follows these steps:
 
 -	Obtain the annotation table that needs to be mapped. This table must contain a column that contains the *identifier* that matches the *name* column in the network. This identifier corresponds to the *SCANS* or *FEATURE_ID* in the .MGF file. 
 - Verify that the identifier are indeed matching between the network and table.
-- Import the table in Cytoscape. Go to Menu / Import / Import Table from File System.
-- Make sure the "Key" option is selected for right column (that contains the identifier).
+- Import the table in Cytoscape. Go to *Menu* / *Import* / *Import Table from File System*.
+- In the preview window, click on the header of the *identifier* column to set the meaning to Key (a key logo shows up)
 - Import the table and map the annotation into the molecular network.
+[**IMPORTANT**] If columns already exist in the network, they will be replaced by the imported table ! Rename the header(s) of the imported table if necessary.
+- Explore the annotation in the molecular network (see below).
 
 
-## Rotation of the Network
+### Rotation of the Network
 
 To rotate the entire molecular network choose the _Layout_ tab and click _Node Layout tool_. In the opened window, uncheck the _Selected Only_ box to rotate the entire network and move the blue bar to 90. You can also select specific subnetworks and rotate them by checking _Selected only_.
 
@@ -144,6 +145,10 @@ Once installed, chemViz2 can be used to display chemical structures on nodes. Fi
 Finally, to draw structures in the nodes, return to _Apps_ > _Cheminformatics Tools_ > _Paint Structures_ and select _on all nodes_ or _on selected nodes_. Visualize the results. If needed, create a dedicated style to facilitate structure visualization. 
 
 ![img](img/FBMN_Cytoscape/Slide16.PNG)
+
+### Mapping other node information
+
+Cytoscape enables to map informations obtained from the other workflows/softwares. Visualize this annotation by creating novel styles and changing its properties.
 
 ## Video Tutorial FBMN and Cytoscape
 
