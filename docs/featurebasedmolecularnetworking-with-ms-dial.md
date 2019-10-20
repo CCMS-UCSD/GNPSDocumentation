@@ -20,7 +20,8 @@ Lai, Z., Tsugawa, H., Wohlgemuth, G., Mehta, S., Mueller, M., Zheng, Y., Ogiwara
 
 ### Mass Spectrometry Data Processing with MS-DIAL
 
-In MS-DIAL, a sequence of steps is performed to process the mass spectrometry data. Here we will present key steps required to process LC-MS/MS data acquired in non-targeted mode (data dependent acquisition). For convenience we also provide a batch file (XML format) that can be imported directly in MS-DIAL.
+In MS-DIAL, a sequence of steps is performed to process the mass spectrometry data. Here we will present key steps required to process LC-MS/MS data acquired in non-targeted mode (data dependent acquisition). MS-
+DIAL can process LC-MS/MS data performed in non-targeted mode, but also in MSE and now with Ion Mobility Spectrometry. For convenience we also provide a batch file (XML format) that can be imported directly in MS-DIAL.
 
 **IMPORTANT:** MS-DIAL parameters will vary depending on the mass spectrometer, the acquisition parameters, and the samples studied. In this page we present a basic guideline for using MS-DIAL with the FBMN on GNPS.
 
@@ -41,7 +42,7 @@ Please consult these resources for more details on MS-DIAL processing:
 ### Convert your LC-MS/MS Data to Open Format
 MS-DIAL accepts different input formats. Note that we recommend first to convert your files to mzML format before doing MS-DIAL processing. [See the documentation here](https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/).
 
-#### Processing Steps
+#### Processing Steps for non-targeted LC-MS/MS
 
 Below is a walk-through of all the steps
 
@@ -102,6 +103,15 @@ If you have any quality control (QC) sample data, it is a nice candidate to be t
 Click “Finish”, then MS-DIAL will perform all the feature detection and alignment process.
 
 ![img](img/ms-dial/set-parameters-alignment.png)
+
+
+#### Processing Steps for MSE data
+
+- See the [MS-DIAL documentation for MSE data processing](https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial#chapter-8).
+
+#### Processing Steps for Ion Mobility Spectrometry data
+- See the [MS-DIAL documentation on Ion Mobility Spectrometry data processing](https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial#chapter-10-).
+
 
 ### Export the files for GNPS FBMN
 
