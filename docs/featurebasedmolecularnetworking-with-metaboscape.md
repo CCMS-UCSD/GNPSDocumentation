@@ -6,7 +6,7 @@ The main documentation for FBMN [can be accessed here](featurebasedmolecularnetw
 
 Below we describe how to use MetaboScape with the FBMN workflow on GNPS.
 
-## Using MetaboScape and the Feature-Based Molecular Networking
+## Using MetaboScape and FBMN
 
 MetaboScape can be used to process LC-MS/MS Bruker Daltonics data files (i.e. *.d files). After the processing with MetaboScape, the output files can be used to run the Feature-Based Molecular Networking workflow on GNPS either using the [Superquick FBMN start page] (http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking) or [the standard interface of the FBMN workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in to GNPS first).
 
@@ -14,6 +14,8 @@ MetaboScape can be used to process LC-MS/MS Bruker Daltonics data files (i.e. *.
 Install [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html) (at least version 2.0) and get a valid license. 
 
 ### A. Perform Feature Detection with Profile Analysis
+
+#### Nontargeted LC-MS/MS
 1. Open *Profile Analysis* and perform feature detection on your data following *Profile Analysis* documentation to generate an ion feature bucket table.
 2. Define groups and/or attributes to enhance downstream data analysis (see **3.3.4** in the **MetaboScape 2.0 tutorial documentation**). The groups and/or attributes defined in *Profile Analysis* will be visualized in the molecular networks using pie chart diagram.
 3. **IMPORTANT**: Create one common group named 'SAMPLE' for all the samples. It will be used for molecular networking visualization.
@@ -30,7 +32,7 @@ Install [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-sepa
 
 ![img](img/metaboscapeexportforgnps/Metabo_2.PNG)
 
-8. Right-click on the bucket table and select *Export to GNPS format* (.mgf/.csv).
+8. Right-click on the bucket table and select *Export to GNPS format* (.MGF/.CSV).
 
 ![img](img/metaboscapeexportforgnps/Metabo_3.png)
 
@@ -38,7 +40,14 @@ Install [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-sepa
 
 ![img](img/metaboscapeexportforgnps/Metabo_4.PNG)
 
-10. The .mgf file ('gnps.mgf') and the bucket table will be used to perform a **Feature-Based Molecular Networking** job on GNPS (see below). 
+10. The **MS/MS spectral summary** (.MGF file) and the **feature quantification table** (.CSV file) will be used to perform a FBMN job on GNPS (see below).
+
+#### Processing IMS Data (PASEF)
+
+The FBMN supports Ion Mobility Spectrometry (IMS) Data acquired in data-dependent acquisition mode using Parallel Accumulation-Serial Fragmentation (PASEF) and processed with MetaboScape (ver. 5.0). Process the IMS data following the MetaboScape documentation and do *Export to GNPS format* as indicated above. The cross collission section values and other annotations can be subsequently mapped in Cytoscape.
+
+See a representative [FBMN job](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=0d89db67b0974939a91cb7d5bfe87072) made from PASEF data (timsTOF) processed with MetaboScape (ver. 5.0). The Bruker files are available on the following MassIVE deposition ([MSV000084402](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=36fea50f5e7b4a049d336f28c5884ff9&view=advanced_view))
+
 
 ### C. Perform FBMN Job on GNPS
 Go to GNPS and perform a FBMN job. [Refer to that documentation](featurebasedmolecularnetworking.md).
