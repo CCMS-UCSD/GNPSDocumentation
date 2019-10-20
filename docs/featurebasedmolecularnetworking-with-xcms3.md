@@ -128,12 +128,12 @@ Here is an example [FBMN job with XCMS3 using a mzTab-M file and mzML files](TBP
 
 See our XCMS-FBMN tutorials using python and R with a subset of the American Gut Project samples on this repository [DorresteinLaboratory/XCMS3_FeatureBasedMN/](https://github.com/DorresteinLaboratory/XCMS3_FeatureBasedMN/).
 
-## Page contributors
+### Page contributors
 
 Johannes Rainer (Eurac Research), Madeleine Ernst (UCSD), Ricardo da Silva
 (UCSD), Michael Witting (Helmholtz Zentrum Munich), Louis Felix Nothias (UCSD) and Ming Wang (UCDS). 
 
-## Contribute to the Documentation
+### Join the GNPS Community !
 
 - For informations/feature request, please open an "Issue" on the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) GitHub repository.
-- To contribute directly to the GNPS documentation, fork the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request".
+- To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request" with the changes.

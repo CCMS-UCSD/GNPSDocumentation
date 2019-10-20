@@ -222,11 +222,11 @@ Cytoscape is an open source software platform used to visualize, analyze and ann
 See our [tutorial on using MZmine2](tutorials/americangutmzmine.md) for FBMN analysis of a cohort from the [American Gut Project] (http://humanfoodproject.com/americangut/), and our [tutorial on running a FBMN analysis on GNP](tutorials/featurebasedgnps.md).
 
 
-## Page contributors
+### Page contributors
 Louis Felix Nothias (UCSD), Daniel Petras (UCSD), Ming Wang (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).
 
 
-## Contribute to the Documentation
+### Join the GNPS Community !
 
 - For informations/feature request, please open an "Issue" on the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) GitHub repository.
-- To contribute directly to the GNPS documentation, fork the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request".
+- To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request" with the changes.

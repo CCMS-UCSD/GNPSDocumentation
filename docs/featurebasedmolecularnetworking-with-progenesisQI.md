@@ -60,10 +60,10 @@ Progenesis QI annotations or metadata can be mapped in Cytoscape as node attribu
 Helped is wanted to describe in detail the import procedure in Cytoscape.
 
 
-## Page contributors
+### Page contributors
 Louis Felix Nothias (UCSD), Ming Wang (UCSD), Bindesh Shrestha (Waters), Giorgis Isaac (Waters and Jonathan McSayles (Waters).
 
-## Contribute to the Documentation
+### Join the GNPS Community !
 
 - For informations/feature request, please open an "Issue" on the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) GitHub repository.
-- To contribute directly to the GNPS documentation, fork the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request".
+- To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request" with the changes.

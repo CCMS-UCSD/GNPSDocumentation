@@ -230,11 +230,13 @@ See our [tutorial on using MZmine2](tutorials/americangutmzmine.md) for FBMN ana
 
 - The format of the *Feature Table* should be consistent with the representative *Feature Table*  provided on [this page](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files). Note that internally, the *Feature Table* file inputted by the user are converted to a standard MZmine2 format prior to FBMN analysis in GNPS. The python scripts used for the conversion *Feature Table* from various software [are available here](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking/tools/feature-based-molecular-networking/scripts). If you want to add support for another LC-MS processing tool, contact us.
 
-## Citation
+### Citation
 
 This work builds on the efforts of our many colleagues, please make sure to cite the papers for their processing tools and the GNPS paper:
 
 Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
-## Page contributors
-Louis Felix Nothias (UCSD), Ming Wang (UCSD, Laura-Isobel McCall (University of Oklahoma), Andrés Mauricio Caraballo Rodríguez (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).
+### Join the GNPS Community !
+
+- For informations/feature request, please open an "Issue" on the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) GitHub repository.
+- To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request" with the changes.
