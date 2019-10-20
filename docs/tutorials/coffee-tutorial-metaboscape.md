@@ -11,7 +11,7 @@ In this tutorial you will be guided into running MetaboScape for the [Feature Ba
 
 We will use a subset of the LC-MS/MS analysis from the Coffee project. 
 
-[MetaboScape](../featurebasedmolecularnetworking-with-metaboscape.md) ) will be used to perform feature detection and alignment and output a feature quantification table (.CSV file) and a MS/MS spectral file (.MGF format). The feature quantification table contains the intensity values for every aligned peak accross the samples, while the MS/MS spectral file contains a single MS/MS representing each aligned peak.
+[MetaboScape](../featurebasedmolecularnetworking-with-metaboscape.md) will be used to perform feature detection and alignment and output a feature quantification table (.CSV file) and a MS/MS spectral file (.MGF format). The feature quantification table contains the intensity values for every aligned peak accross the samples, while the MS/MS spectral file contains a single MS/MS representing each aligned peak.
 
 ## Data and Files Needed for the Tutorial
 

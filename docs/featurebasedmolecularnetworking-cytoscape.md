@@ -25,6 +25,7 @@ Unzip the file and the resulting folder will look like this:
 
 ### Importing Files from GNPS to Cytoscape
 
+#### Import the molecular network
 To import the network file into Cytoscape:
 *    in Cytoscape click on _Import Network from File System_ and then choose the _.graphml_ file. 
 *   Alternatively, you can drag and drop the .graphml file into Cytoscape.
@@ -36,6 +37,19 @@ The imported network will be displayed in the main window. In the _Control Panel
 You can import the table file into Cytoscape. Click _Import Table from File System_, navigate to the “DB_result” folder and select the .csv file. Lastly, click OK in the opened window.
 
 ![img](img/FBMN_Cytoscape/Slide17.PNG)
+
+#### Import supplementary annotations
+Cytoscape allows to map additional annotations such as those produced by other workflows on GNPS. See the documentation for [DEREPLICATOR](dereplicator.md), [NAP](nap.md), [MS2LDA](ms2lda.md)., for more details.
+
+The FBMN workflow makes possible to map the annotation obtained from any of the software used for the processing (MZmine, XCMS, MetaboScape, MS-DIAL, Progenesis QI).
+The procedure consists in:
+
+-	Obtain the annotation table that needs to be mapped. This table must contain a column that contains the *identifier* that matches the *name* column in the network. This identifier corresponds to the *SCANS* or *FEATURE_ID* in the .MGF file. 
+- Verify that the identifier are indeed matching between the network and table.
+- Import the table in Cytoscape. Go to Menu / Import / Import Table from File System.
+- Make sure the "Key" option is selected for right column (that contains the identifier).
+- Import the table and map the annotation into the molecular network.
+
 
 ## Rotation of the Network
 
