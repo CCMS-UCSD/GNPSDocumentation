@@ -42,7 +42,7 @@ Please navigate to the [super quickstart page](https://gnps-quickstart.ucsd.edu/
 Simply drag and drop the files out of your feature detection and alignement tool:
 
 1. the **feature quantification table** (.CSV file, or mzTab-M).
-2. the **MS/MS spectral summary** (MGF file or MSP file (Progenesis QI), and for mzML (for mzTab-M).
+2. the **MS/MS spectral summary** (MGF file or MSP file (Progenesis QI), or mzML (for mzTab-M).
 3. (Optional) Sample metadata file - The format can be found [here](networking/#metadata)/
 4. (Optional) Additional features edge generated externally - [See the documentation](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/#advanced-extras).
 
