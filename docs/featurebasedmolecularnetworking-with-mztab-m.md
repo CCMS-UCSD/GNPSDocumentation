@@ -6,12 +6,21 @@ The main documentation for Feature-Based Molecular Networking [can be accessed h
 
 Below follows a description on how to use mz-Tab-M format with the FBMN workflow on GNPS.
 
-# The mzTab-M format
+# Using the mzTab-M format with FBMN
 
-## Introduction
+## Introduction 
 
 The **mzTab-M** format is a standardized output designed for the report of metabolomics MS-data processing results.
+
+## Citation and development
+
+Hoffman et al. mzTab-M: A Data Standard for Sharing Quantitative Results in Mass Spectrometry Metabolomics [Anal. Chem. 2019 9153302-3310](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.8b04310)
+
+See the GitHub repository for jmzTab-M: [https://github.com/lifs-tools/jmzTab-m](https://github.com/lifs-tools/jmzTab-m)
+
  
+## FBMN with mzTab-M
+
 The FBMN workflow now supports the mzTab-M format (2.0, release 1.0.5). The **mzTab-M** file has to be inputed along with the related **mzML** files. 
 
 Basically, the **mzTab-M** is used to retrieve for each LC-MS/MS feature:
@@ -23,16 +32,9 @@ After inputing the mzTab-M and mzML file(s), GNPS will automatically extract the
 
 So far only **mzTab-M** from **XCMS** have tested, please let us know if you have difficulties running FBMN jobs from **mzTab-M** files exported with **OpenMS**, **MS-DIAL**, **MZmine**, and others.
 
+See an example job with mzTab-M and mzML files [here](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=7a8cf0b8ddc442fc978f2145c221f364).
 
-## Citation and development
-
-Hoffman et al. mzTab-M: A Data Standard for Sharing Quantitative Results in Mass Spectrometry Metabolomics [Anal. Chem. 2019 9153302-3310](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.8b04310)
-
-See the GitHub repository for jmzTab-M: [https://github.com/lifs-tools/jmzTab-m](https://github.com/lifs-tools/jmzTab-m)
-
- 
-## Perform FBMN with mzTab-M
-
+## Running FBMN with an mzTab-M 
 The mzTab-M file and the associated mzML file(s) can be uploaded to the GNPS web-platform and a FBMN job can be launched only from the [standard interface of the FBMN workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
 
 - Select the mzML file(s). See the screenshot below.
