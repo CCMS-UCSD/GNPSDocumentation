@@ -1,10 +1,11 @@
 
-This is a superquick start guide that will enable you to analyze your data in the following ways without having to create an account or install any software besides your web browser and data conversion programs.
+The Superquick start interface enables you to rapidly explore your data without having to create an account or install any software besides your web browser and data conversion programs.
 
-1. Classic Molecular Networking - Analyze a few dozen samples in up to 3 cohorts
-2. Feature Based Molecular Networking - Analyze molecular networks out of your favorite LC-MS feature detection software
+**IMPORTANT!**: The limitations to this method is that the files uploaded will not reside in your own account (though no one else can see them) and will removed on a monthly basis. Please create your own account for more persistent and reproducible analyses.
 
-The limitations to this method is that the files uploaded will not reside in your own account (though no one else can see them) and will eventually disappear from GNPS.
+
+1. Classic Molecular Networking ([see the detailed documentation](networking/)) - Analyze a few dozen samples in up to 3 cohorts
+2. Feature Based Molecular Networking ([see the detailed documentation](featurebasedmolecularnetworking/)) - Analyze molecular networks out of your favorite LC-MS feature detection/alignement software
 
 ## Classic Molecular Networking
 
@@ -16,7 +17,7 @@ Convert vendor formats to open formats using MSConvert locally. Checkout this [d
 
 ### Selecting Files
 
-Simply drag and drop your mass spectrometry files (mzML, mzXML, or mgf) into the appropriate cohorts you want to compare. It is required to upload files at least to Cohort Group 1.
+Simply drag and drop your mass spectrometry files (mzML, mzXML, or MGF) into the appropriate cohorts you want to compare. It is required to upload files at least to Cohort Group 1.
 
 ![interface](img/superquickstart_selection.png)
 
@@ -38,14 +39,14 @@ Please navigate to the [super quickstart page](https://gnps-quickstart.ucsd.edu/
 
 ### Selecting Files
 
-Simply drag and drop the files out of your feature finding tool:
+Simply drag and drop the files out of your feature detection and alignement tool:
 
-1. Feature quantification table
-2. Feature MS/MS MGF file
-3. Sample metadata (Optional) - Format can be found [here](networking/#metadata)
-4. Additional pairs generated externally (optional) - Format pending
+1. the **feature quantification table** (.CSV file, or mzTab-M).
+2. the **MS/MS spectral summary** (MGF file or MSP file (Progenesis QI), or mzML (for mzTab-M).
+3. (Optional) Sample metadata file - The format can be found [here](networking/#metadata)/
+4. (Optional) Additional features edge generated externally - [See the documentation](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/#advanced-extras).
 
-### Analyze Files
+### Analyze your Files
 
 Once files have been uploaded, enter your email and click "Analyze Uploaded Files with GNPS Molecular Networking".
 
@@ -55,4 +56,4 @@ This will bring you to a GNPS workflow status page. If you entered your email, y
 
 ### Results
 
-To understand the results, please refer to the [feature based molecular networking page](featurebasedmolecularnetworking/#feature-based-molecular-networking-in-gnps).
+To understand the results, please refer to the [feature based molecular networking page](featurebasedmolecularnetworking.md/).

@@ -1,23 +1,21 @@
 ## Tutorial Using MetaboScape and GNPS
 
-In this tutorial you will be guided into running MetaboScape for the Feature Based Molecular Network (FBMN) workflow on GNPS to reproduce some findings of the Coffee project.
+In this tutorial you will be guided into running MetaboScape for the [Feature Based Molecular Network (FBMN) workflow](../featurebasedmolecularnetworking.md) on GNPS to reproduce some findings of the [MetaboScape](../featurebasedmolecularnetworking-with-metaboscape.md) Coffee tutorial.
 
 ## Learning Objectives
 
-1. Run MetaboScape feature detection on LC-MS/MS data, and receive a feature quantification table and a MS2 spectral file as an output. [See the tutorial here](../featurebasedmolecularnetworking.md).
-2. Run GNPS and visualize output in Cytoscape.
+1. Run MetaboScape feature detection on non-targeted LC-MS/MS data, and receive a feature quantification table and a MS2 spectral file as an output.
+2. Run GNPS and visualize MetaboScape annotation in Cytoscape.
 
 ## Experimental Setup
 
 We will use a subset of the LC-MS/MS analysis from the Coffee project. 
 
-*Sample description still needed?* 
-
-MetaboScape will be used to detect features and output a feature quantification table (.csv format) and a MS2 spectral file (.mgf format). The feature quantification table contains the intensity values for every aligned peak accross the samples, while the MS2 spectral file contains a single MS2 representing each aligned peak.
+[MetaboScape](../featurebasedmolecularnetworking-with-metaboscape.md) will be used to perform feature detection and alignment and output a feature quantification table (.CSV file) and a MS/MS spectral file (.MGF format). The feature quantification table contains the intensity values for every aligned peak accross the samples, while the MS/MS spectral file contains a single MS/MS representing each aligned peak.
 
 ## Data and Files Needed for the Tutorial
 
-LC-MS/MS data and files can be found in the MassIVE dataset.
+LC-MS/MS data and files are part of the MetaboScape tutorial project.
 
 ## MetaboScape Representative Output Files
 These files are not needed for the tutorial but are provided here as reference files, or if you want to bypass the MetaboScape processing.
@@ -29,16 +27,15 @@ These files are not needed for the tutorial but are provided here as reference f
 
 ## Required Software Installations
 
-1. FTP Client (e.g. WinSCP, DO NOT USE FileZilla!) [See instructions here](http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/).
-2. MetaboScape, commercially available from Bruker. 
-3. [Cytoscape](http://www.cytoscape.org/download.php) for network visualization.
+1. MetaboScape, commercially available from Bruker. 
+2. [Cytoscape](http://www.cytoscape.org/download.php) for advanced network visualization.
 
-## Run MetaboScape
+## Process the data with MetaboScape
 Refer to the detailed step-by-step procedure to run Metaboscape [here](../featurebasedmolecularnetworking-with-metaboscape.md).
 
-## Run GNPS
+## Run FBMN on GNPS
 
-See the documentation to produce molecular network at GNPS with the output of the Coffee Project [here](../featurebasedmolecularnetworking.md).
+See the FBMN documentation [here](../featurebasedmolecularnetworking.md).
 
 ## Run Cytoscape
 

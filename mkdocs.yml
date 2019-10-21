@@ -34,11 +34,14 @@ pages:
             - FBMN with MetaboScape: featurebasedmolecularnetworking-with-metaboscape.md
             - FBMN with Progenesis QI: featurebasedmolecularnetworking-with-progenesisQI.md
             - FBMW with Cytoscape: featurebasedmolecularnetworking-cytoscape.md
+            - FBMW with mzTab-M: featurebasedmolecularnetworking-mztab-m.md
         - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
         - Molecular Networking in Cytoscape: cytoscape.md
         - MolNetEnhancer: molnetenhancer.md
         - Network Annotation Propagation (NAP): nap.md
         - Reanalysis of Data User Interface (ReDU): ReDU.md
+#        - CycloNovo
+#        - MetaRiPPQuest
     - Spectral Libraries:
         - Browsing Reference Spectral Libraries: browselibraries.md
         - Reference Spectral Library Curation: spectrumcuration.md
@@ -47,7 +50,7 @@ pages:
         - Open-source Method for Reference Library Generation:
             - Data Acqusition - Thermo QExactive (v1.0): msmschooserdataacquisitionQE.md
             - Computational Selection of MSMS to Include in Library (MSMS-Chooser): msmschooser.md
-    - Public Datasets:
+    - Create a Public Datasets:
         - Dataset Creation/Sharing: datasets.md
         - Continuous Identification: continuousid.md
         - Molecule Explorer: moleculeexplorer.md
@@ -56,15 +59,16 @@ pages:
     - Troubleshooting: troubleshooting.md
     - Tutorial Guides:
         - Molecular Networking - Analog Discovery in Microbial Extracts: tutorials/bacterianetworking.md
-        - Feature Based Molecular Networking with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangutmzmine.md
-        - Feature Based Molecular Networking with MSDial - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangut-ms-dial.md
-        - Feature Based Molecular Networking with Metaboscape - Coffee Analysis: tutorials/coffee-tutorial-metaboscape.md
-        - Feature Based Molecular Networking analysis at GNPS: tutorials/featurebasedgnps.md
+        - Feature-Based Molecular Networking (FBMN) with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangutmzmine.md
+        - FBMN with MS-DIAL - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangut-ms-dial.md
+        - FBMN with MetaboScape - Coffee Analysis: tutorials/coffee-tutorial-metaboscape.md
+        - FBMN analysis at GNPS: tutorials/featurebasedgnps.md
+    - Change Log: changelog.md
+    #- Join the GNPS community: gnps_community.md
+    - GNPS Workshops: workshops.md
     - Presentation Materials:
         - Logos: logos.md
-    - Change Log: changelog.md
     - Contact: contact.md
-    - GNPS Workshops: workshops.md
     - API: api.md
 theme:
     name: material
