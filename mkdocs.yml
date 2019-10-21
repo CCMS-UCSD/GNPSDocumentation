@@ -33,8 +33,8 @@ pages:
             - FBMN with OpenMS: featurebasedmolecularnetworking-with-openms.md
             - FBMN with MetaboScape: featurebasedmolecularnetworking-with-metaboscape.md
             - FBMN with Progenesis QI: featurebasedmolecularnetworking-with-progenesisQI.md
-            - FBMW with Cytoscape: featurebasedmolecularnetworking-cytoscape.md
-            - FBMW with mzTab-M: featurebasedmolecularnetworking-mztab-m.md
+            - FBMN with mzTab-M: featurebasedmolecularnetworking-with-mztab-m.md
+            - FBMN export to Cytoscape: featurebasedmolecularnetworking-cytoscape.md
         - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
         - Molecular Networking in Cytoscape: cytoscape.md
         - MolNetEnhancer: molnetenhancer.md

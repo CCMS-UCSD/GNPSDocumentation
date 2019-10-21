@@ -41,7 +41,6 @@ In brief, popular mass spectrometry processing programs have been adapted to exp
 |[Progenesis QI](http://www.nonlinear.com/progenesis/qi/)|[See doc.](featurebasedmolecularnetworking-with-progenesis.md)| Non-targeted LC-MS/MS, **MSE**, **Ion Mobility** |Graphical UI|Windows|Proprietary code|Mass spectrometrists|
 |[mzTab-M](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.8b04310)|[See doc.](featurebasedmolecularnetworking-with-mztab-m.md)| Non-targeted LC-MS/MS | Standardized format|Multi-systems|[Open source](https://github.com/lifs-tools/jmzTab-m)|All public|
 
-
 **IMPORTANT:** The software used for the LC-MS/MS data processing has to be configured and utilized as recommended by its documentation.
 
 ## The FBMN Workflow in GNPS
