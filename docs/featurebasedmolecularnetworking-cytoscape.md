@@ -156,7 +156,7 @@ Our [tutorial on running the FBMN analysis on GNPS including a Cytoscape demo](t
 
 <iframe width="600" height="375" src="https://www.youtube.com/embed/NTkQ0fS1aug"> </iframe>
 
-See our [tutorial on using MZmine2](tutorials/americangutmzmine.md) for the FBMN analysis of a cohort from the [American Gut Project] (http://humanfoodproject.com/americangut/).
+See our [tutorial on using MZmine2](tutorials/americangutmzmine.md) for the FBMN analysis of a cohort from the [American Gut Project](http://humanfoodproject.com/americangut/).
 
 ### Page contributors
 Melissa Esposito (UCSD), Irina Koester (SIO, UCSD), Christian Martin (INDICASAT), Louis Felix Nothias (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).
