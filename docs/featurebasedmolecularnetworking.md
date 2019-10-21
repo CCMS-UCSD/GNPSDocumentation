@@ -31,15 +31,15 @@ The citations from the mass spectrometry processing tools you used [[MZmine2](fe
 
 In brief, popular mass spectrometry processing programs have been adapted to export two files (*feature quantification table* and *MS/MS spectral summary*) files that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. Alternatively, the FBMN supports the mzTab-M format that can be inputted along witht the mzML file(s). The tools supported and their main features are presented in the table below along with a step-by-step documentation to use in FBMN on GNPS:
 
-|  Processing tool | FBMN Documentation  | Data supported | Interface  |  Platform | Code availability|Target user|
+|  Processing tool | Doc.| Data supported | Interface | Platform | Code |Target user|
 |---|---|---|---|---|---|---|
-|[MZmine](https://github.com/mzmine/mzmine2/)|[See documentation](featurebasedmolecularnetworking-with-mzmine2.md) | Non-targeted LC-MS/MS | Graphical UI|Any|[Open source](https://github.com/mzmine/mzmine2/blob/master/LICENSE.txt)|Mass spectrometrists|
-|[MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/)|[See documentation](featurebasedmolecularnetworking-with-ms-dial.md) | Non-targeted LC-MS/MS, **MSE**, **Ion Mobility** | Graphical UI|Windows|[Open source](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/)|Mass spectrometrists|
-|[OpenMS](https://github.com/OpenMS/OpenMS/)|[See documentation](featurebasedmolecularnetworking-with-openms.md)| Non-targeted LC-MS/MS |Commandline|Any|[Open source](https://github.com/OpenMS/OpenMS/blob/develop/License.txt)|Bioinformaticians and developers|
-|[XCMS](https://github.com/sneumann/xcms)|[See documentation](featurebasedmolecularnetworking-with-xcms3.md) | Non-targeted LC-MS/MS |Commandline|Any|[Open source](https://github.com/sneumann/xcms)|Bioinformaticians and developers|
-|[MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html)|[See documentation](featurebasedmolecularnetworking-with-metaboscape.md)| Non-targeted LC-MS/MS, **Ion Mobility** |Graphical UI|Windows|Proprietary code|Mass spectrometrists|
-|[Progenesis QI](http://www.nonlinear.com/progenesis/qi/)|[See documentation](featurebasedmolecularnetworking-with-progenesis.md)| Non-targeted LC-MS/MS, **MSE**, **Ion Mobility** |Graphical UI|Windows|Proprietary code|Mass spectrometrists|
-|[mzTab-M](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.8b04310)|[See documentation](featurebasedmolecularnetworking-with-mztab-m.md)| Non-targeted LC-MS/MS | Standardized format|Multi-system|[Open source](https://github.com/lifs-tools/jmzTab-m)|All public|
+|[MZmine](https://github.com/mzmine/mzmine2/)|[See doc.](featurebasedmolecularnetworking-with-mzmine2.md) | Non-targeted LC-MS/MS | Graphical UI|Any|[Open source](https://github.com/mzmine/mzmine2/blob/master/LICENSE.txt)|Mass spectrometrists|
+|[MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/)|[See doc.](featurebasedmolecularnetworking-with-ms-dial.md) | Non-targeted LC-MS/MS, **MSE**, **Ion Mobility** | Graphical UI|Windows|[Open source](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/)|Mass spectrometrists|
+|[OpenMS](https://github.com/OpenMS/OpenMS/)|[See doc.](featurebasedmolecularnetworking-with-openms.md)| Non-targeted LC-MS/MS |Commandline|Any|[Open source](https://github.com/OpenMS/OpenMS/blob/develop/License.txt)|Bioinformaticians and developers|
+|[XCMS](https://github.com/sneumann/xcms)|[See doc.](featurebasedmolecularnetworking-with-xcms3.md) | Non-targeted LC-MS/MS |Commandline|Any|[Open source](https://github.com/sneumann/xcms)|Bioinformaticians and developers|
+|[MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html)|[See doc.](featurebasedmolecularnetworking-with-metaboscape.md)| Non-targeted LC-MS/MS, **Ion Mobility** |Graphical UI|Windows|Proprietary code|Mass spectrometrists|
+|[Progenesis QI](http://www.nonlinear.com/progenesis/qi/)|[See doc.](featurebasedmolecularnetworking-with-progenesis.md)| Non-targeted LC-MS/MS, **MSE**, **Ion Mobility** |Graphical UI|Windows|Proprietary code|Mass spectrometrists|
+|[mzTab-M](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.8b04310)|[See doc.](featurebasedmolecularnetworking-with-mztab-m.md)| Non-targeted LC-MS/MS | Standardized format|Multi-systems|[Open source](https://github.com/lifs-tools/jmzTab-m)|All public|
 
 
 **IMPORTANT:** The software used for the LC-MS/MS data processing has to be configured and utilized as recommended by its documentation.
