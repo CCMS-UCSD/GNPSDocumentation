@@ -60,6 +60,8 @@ Three type of input files are needed (test files for each software are accessibl
 
 3. [Optional] *Metadata table* - described [here](networking.md#metadata)
 
+4. [Optional] *"Supplementary Pairs"* of additional edges - described [here](#advanced-extras)
+
 **Option B** - Export the processing results using an mzTab-M and mzML files:
 
 1.  Export a single mzTab-M file from the processed data. See and cite this [publication](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.8b04310).
@@ -78,12 +80,12 @@ A simplified interace for Super Quick web interace for FBMN [is available here](
 ![img](img/featurebasedmolecularnetworking/superquick_fbmn.png)
 
 ### Running the SuperQuick FBMN
-1. [Optional] Indicate your email and your GNPS Credentials.
-2. Select your '**feature detection and alignment tool'**.
+1. Indicate your email and your GNPS Credentials.
+2. Select the 'Feature Generation tool'.
 3. Select the parameters preset.
-4. Drag and drop your "**feature quantification table**" (.CSV format).
-5. Drag and drop your "**MS/MS spectral summary**" file (.MGF file). 
-6. [Optional]. Drag and drop a [metadata table](networking.md#metadata).
+4. Option A. Drag and drop your "feature quantification table" and "MS/MS spectral file" (.MGF). See the respective documentation for FBMN each tool.
+5. Optional. Drag and drop a [metadata table](networking.md#metadata).
+6. Optional. Drag and drop a "Supplementary Pairs" csv file ([see format](#advanced-extras)) with additional edges
 7. Click on "Analyze Uploaded Files with GNPS Molecular Networking".
 
 While this SuperQuick FBMN interface is convenient for quick analysis, we recommend using the standard FBMN workflow. [**IMPORTANT**] The file uploaded along with the jobs submitted with Superquick start interface are deleted on monthly basis. Use the "standard" interface of the FBMN for persistant jobs and more options.
@@ -149,6 +151,14 @@ There are additional normalization options specifically for the FBMN workflow:
 | Aggregation Method for Peak Abundances Per Group | The ion feature intensity (LC-MS1 peak area) can be aggregated by GROUPS from the metadatable with either a *Sum* or *Average* (RECOMMENDED, because it is more robust to the difference in the number of samples per GROUPS). | Average  |
 
 ![img](img/featurebasedmolecularnetworking/Advanced_Quantification_Options_2.png)
+
+#### Advanced Extras
+
+"Supplementary Pairs" is an option to add extra edges to the resulting feature-based molecular network. It was initially implemented for the Ion Identity Networking (IIN) workflow. However, this approach is designed to stimulate the development and testing of new workflows as the input is an edge file in a generic csv format. An edge is described by the two feature IDs  (fitting to row IDs in the quantification table), an EdgeType (any String name), a numeric score, and an annotation (any String). 
+
+**Example of the Supplementary Pairs used in the Ion Identity Networking (IIN) workflow**
+![img](img/featurebasedmolecularnetworking/fbmn_iin_edges.PNG)
+![img](img/featurebasedmolecularnetworking/fbmn_advanced_extras.PNG)
 
 ### Inspecting the Results of FBMN on GNPS
 
@@ -259,3 +269,6 @@ Wang, M. et al. [Sharing and community curation of mass spectrometry data with G
 
 - For feature request, or to report bugs, please open an "Issue" on the [*CCMS-UCSD/GNPS_Workflows* GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows).
 - To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request" with the changes.
+
+## Page contributors
+Louis Felix Nothias (UCSD), Ming Wang (UCSD), Laura-Isobel McCall (University of Oklahoma), Andrés Mauricio Caraballo Rodríguez (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany), Robin Schmid (WWU, Münster, Germany).

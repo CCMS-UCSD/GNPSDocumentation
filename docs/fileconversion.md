@@ -10,10 +10,19 @@ This is a complete package for Windows users to convert their vendor formats to 
 2. Unzip contents onto a folder on your computer (e.g. Desktop)
 3. Install windows libraries in "pwizLibraries-and-Installation" - Run appropriate program for 32-bit (32-Bit_Double-Click_To_Install.bat) or 64-bit system (64-Bit_Double-Click_To_Install.bat). To find out which type of OS you have please check [here](https://support.microsoft.com/en-us/help/15056/windows-7-32-64-bit-faq)
 4. Put vendor formats in "Input_Files" not embedded in other folders
-5. Double click on Double-Click_To-Convert.bit - Download zip includes demo files for major vendor formats as a test.
+5. Double click on Double-Click_To-Convert.bat - Download zip includes demo files for major vendor formats as a test.
 6. Wait patiently
 7. Check all the converted files in Output_Folder
 8. If there are errors, please check log.txt or read on how to convert files in a more traditional manner.
+
+* A tip for Waters users:
+One of the frequent questions from Waters users is about PDA(UV) and LockSpray data contained in converted files.
+[case 1](https://sourceforge.net/p/proteowizard/mailman/message/27531723/) [case 2](https://github.com/mzmine/mzmine2/issues/449) [case 3](https://groups.google.com/forum/#!category-topic/molecular_networking_bug_reports/unresolved-bugs--unknown-error-message/qjDan5zcjIY)
+
+These occur because Waters .Raw files contain UV and LockSpray data as additional 'channels' of MS detector. Some Waters third party softwares can solve this problem, but for cases you have not purchased licenses for the softwares, here we introduce you a temporary expedient. Every channel data are contained as "_FUNC00X.*" in Water.Raw files, so just delete them and run "Double-Click_To-Convert.bat."
+
+e.g. If LockSprary and UV data are channels 5/6 in your data, put every .Raw files in Input_Files folder, then run cmd, go to Input_Files, and run "del /s _FUNC005.*" and "del /s _FUNC006.*" 
+
 
 ## Data Conversion (Traditional)
 

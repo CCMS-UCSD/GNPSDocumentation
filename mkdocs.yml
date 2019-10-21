@@ -69,6 +69,7 @@ pages:
     - Presentation Materials:
         - Logos: logos.md
     - Contact: contact.md
+    - API: api.md
 theme:
     name: material
     #name: readthedocs

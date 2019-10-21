@@ -1,10 +1,16 @@
 ## Change Log of GNPS Documentation
 
+All new updates will be posted on the GNPS Github Page (https://github.com/CCMS-UCSD/GNPS_Workflows/releases)!
+
+
+
 ### 10/20/2019
 
 * Major documentation update for the [Feature-Based Molecular Networking (FBMN)](featurebasedmolecularnetworking.md).
 * FBMN supports the [mzTab-M format](featurebasedmolecularnetworking-with-mztab-m.md), and [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md). 
 * FBMN provide now supports LC-MS/MS data acquired in MSE mode (MS-DIAL and Progenesis QI) or with Ion Mobility Spectrometry (MS-DIAL, Progenesis QI, and MetaboScape).
+
+
 
 ### 5/3/2019
 
