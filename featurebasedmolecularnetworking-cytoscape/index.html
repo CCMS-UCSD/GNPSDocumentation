@@ -32,15 +32,15 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
     
     
       
-        <title>FBMW with Cytoscape - GNPS Documentation</title>
+        <title>FBMN export to Cytoscape - GNPS Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.0284f74d.css">
       
       
     
@@ -126,7 +126,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                FBMW with Cytoscape
+                FBMN export to Cytoscape
               
             </span>
           
@@ -186,7 +186,7 @@
         
       
       
-      <main class="md-main" role="main">
+      <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -613,6 +613,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking-with-mztab-m/" title="FBMN with mzTab-M" class="md-nav__link">
+      FBMN with mzTab-M
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -622,11 +634,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        FBMW with Cytoscape
+        FBMN export to Cytoscape
       </label>
     
-    <a href="./" title="FBMW with Cytoscape" class="md-nav__link md-nav__link--active">
-      FBMW with Cytoscape
+    <a href="./" title="FBMN export to Cytoscape" class="md-nav__link md-nav__link--active">
+      FBMN export to Cytoscape
     </a>
     
       
@@ -638,14 +650,14 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction-to-fbmn" class="md-nav__link">
+  <a href="#introduction-to-fbmn" title="Introduction to FBMN" class="md-nav__link">
     Introduction to FBMN
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#feature-based-molecular-networking-in-cytoscape" class="md-nav__link">
+  <a href="#feature-based-molecular-networking-in-cytoscape" title="Feature-Based Molecular Networking in Cytoscape" class="md-nav__link">
     Feature-Based Molecular Networking in Cytoscape
   </a>
   
@@ -653,48 +665,49 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#downloading-cytoscape-files-from-gnps" class="md-nav__link">
+  <a href="#downloading-cytoscape-files-from-gnps" title="Downloading Cytoscape Files from GNPS" class="md-nav__link">
     Downloading Cytoscape Files from GNPS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#importing-files-from-gnps-to-cytoscape" class="md-nav__link">
-    Importing Files from GNPS to Cytoscape
+  <a href="#import-the-molecular-network-in-cytoscape" title="Import the molecular network in Cytoscape" class="md-nav__link">
+    Import the molecular network in Cytoscape
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#import-supplementary-annotations-in-cytoscape" title="Import supplementary annotations in Cytoscape" class="md-nav__link">
+    Import supplementary annotations in Cytoscape
+  </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#rotation-of-the-network" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#rotation-of-the-network" title="Rotation of the Network" class="md-nav__link">
     Rotation of the Network
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
-  <a href="#table-panel-visualization-data" class="md-nav__link">
+  <a href="#table-panel-visualization-data" title="Table Panel Visualization Data" class="md-nav__link">
     Table Panel Visualization Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-a-new-style" class="md-nav__link">
+  <a href="#create-a-new-style" title="Create a New Style" class="md-nav__link">
     Create a New Style
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#edit-the-style" class="md-nav__link">
+  <a href="#edit-the-style" title="Edit the Style" class="md-nav__link">
     Edit the Style
   </a>
   
@@ -702,7 +715,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#node-styling" class="md-nav__link">
+  <a href="#node-styling" title="Node Styling" class="md-nav__link">
     Node Styling
   </a>
   
@@ -710,21 +723,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#label" class="md-nav__link">
+  <a href="#label" title="Label" class="md-nav__link">
     Label
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#size" class="md-nav__link">
+  <a href="#size" title="Size" class="md-nav__link">
     Size
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pie-charts" class="md-nav__link">
+  <a href="#pie-charts" title="Pie charts" class="md-nav__link">
     Pie charts
   </a>
   
@@ -736,7 +749,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#edge-styling" class="md-nav__link">
+  <a href="#edge-styling" title="Edge Styling" class="md-nav__link">
     Edge Styling
   </a>
   
@@ -744,7 +757,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#width" class="md-nav__link">
+  <a href="#width" title="Width" class="md-nav__link">
     Width
   </a>
   
@@ -761,14 +774,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#mining-information-in-the-network" class="md-nav__link">
+  <a href="#mining-information-in-the-network" title="Mining information in the network" class="md-nav__link">
     Mining information in the network
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#sub-network-creation" class="md-nav__link">
+  <a href="#sub-network-creation" title="Sub-network creation" class="md-nav__link">
     Sub-network creation
   </a>
   
@@ -776,14 +789,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-toolbar-function" class="md-nav__link">
+  <a href="#the-toolbar-function" title="The Toolbar function" class="md-nav__link">
     The Toolbar function
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-select-function" class="md-nav__link">
+  <a href="#the-select-function" title="The Select function" class="md-nav__link">
     The Select function
   </a>
   
@@ -795,15 +808,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#bypass-mode-for-style-property" class="md-nav__link">
+  <a href="#bypass-mode-for-style-property" title="Bypass mode for style property" class="md-nav__link">
     Bypass mode for style property
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#drawing-structure-in-nodes" class="md-nav__link">
+  <a href="#drawing-structure-in-nodes" title="Drawing structure in nodes" class="md-nav__link">
     Drawing structure in nodes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-other-node-information" title="Mapping other node information" class="md-nav__link">
+    Mapping other node information
   </a>
   
 </li>
@@ -814,23 +834,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#video-tutorial-fbmn-and-cytoscape" class="md-nav__link">
+  <a href="#video-tutorial-fbmn-and-cytoscape" title="Video Tutorial FBMN and Cytoscape" class="md-nav__link">
     Video Tutorial FBMN and Cytoscape
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#page-contributors" class="md-nav__link">
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#page-contributors" title="Page contributors" class="md-nav__link">
     Page contributors
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#contribute-to-the-documentation" class="md-nav__link">
-    Contribute to the Documentation
+        
+          <li class="md-nav__item">
+  <a href="#join-the-gnps-community" title="Join the GNPS Community !" class="md-nav__link">
+    Join the GNPS Community !
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1045,11 +1071,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
     
     <label class="md-nav__link" for="nav-12">
-      Public Datasets
+      Create a Public Datasets
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-12">
-        Public Datasets
+        Create a Public Datasets
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -1180,8 +1206,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/americangutmzmine/" title="Feature Based Molecular Networking with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project" class="md-nav__link">
-      Feature Based Molecular Networking with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project
+    <a href="../tutorials/americangutmzmine/" title="Feature-Based Molecular Networking (FBMN) with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project" class="md-nav__link">
+      Feature-Based Molecular Networking (FBMN) with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project
     </a>
   </li>
 
@@ -1192,8 +1218,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/americangut-ms-dial/" title="Feature Based Molecular Networking with MSDial - Microbiome Molecules in Fecal Samples in American Gut Project" class="md-nav__link">
-      Feature Based Molecular Networking with MSDial - Microbiome Molecules in Fecal Samples in American Gut Project
+    <a href="../tutorials/americangut-ms-dial/" title="FBMN with MS-DIAL - Microbiome Molecules in Fecal Samples in American Gut Project" class="md-nav__link">
+      FBMN with MS-DIAL - Microbiome Molecules in Fecal Samples in American Gut Project
     </a>
   </li>
 
@@ -1204,8 +1230,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/coffee-tutorial-metaboscape/" title="Feature Based Molecular Networking with Metaboscape - Coffee Analysis" class="md-nav__link">
-      Feature Based Molecular Networking with Metaboscape - Coffee Analysis
+    <a href="../tutorials/coffee-tutorial-metaboscape/" title="FBMN with MetaboScape - Coffee Analysis" class="md-nav__link">
+      FBMN with MetaboScape - Coffee Analysis
     </a>
   </li>
 
@@ -1216,8 +1242,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/featurebasedgnps/" title="Feature Based Molecular Networking analysis at GNPS" class="md-nav__link">
-      Feature Based Molecular Networking analysis at GNPS
+    <a href="../tutorials/featurebasedgnps/" title="FBMN analysis at GNPS" class="md-nav__link">
+      FBMN analysis at GNPS
     </a>
   </li>
 
@@ -1232,15 +1258,39 @@
       
 
 
+  <li class="md-nav__item">
+    <a href="../changelog/" title="Change Log" class="md-nav__link">
+      Change Log
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../workshops/" title="GNPS Workshops" class="md-nav__link">
+      GNPS Workshops
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-18" type="checkbox" id="nav-18">
     
-    <label class="md-nav__link" for="nav-16">
+    <label class="md-nav__link" for="nav-18">
       Presentation Materials
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-16">
+      <label class="md-nav__title" for="nav-18">
         Presentation Materials
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1269,32 +1319,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../changelog/" title="Change Log" class="md-nav__link">
-      Change Log
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
     <a href="../contact/" title="Contact" class="md-nav__link">
       Contact
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../workshops/" title="GNPS Workshops" class="md-nav__link">
-      GNPS Workshops
     </a>
   </li>
 
@@ -1330,14 +1356,14 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction-to-fbmn" class="md-nav__link">
+  <a href="#introduction-to-fbmn" title="Introduction to FBMN" class="md-nav__link">
     Introduction to FBMN
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#feature-based-molecular-networking-in-cytoscape" class="md-nav__link">
+  <a href="#feature-based-molecular-networking-in-cytoscape" title="Feature-Based Molecular Networking in Cytoscape" class="md-nav__link">
     Feature-Based Molecular Networking in Cytoscape
   </a>
   
@@ -1345,48 +1371,49 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#downloading-cytoscape-files-from-gnps" class="md-nav__link">
+  <a href="#downloading-cytoscape-files-from-gnps" title="Downloading Cytoscape Files from GNPS" class="md-nav__link">
     Downloading Cytoscape Files from GNPS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#importing-files-from-gnps-to-cytoscape" class="md-nav__link">
-    Importing Files from GNPS to Cytoscape
+  <a href="#import-the-molecular-network-in-cytoscape" title="Import the molecular network in Cytoscape" class="md-nav__link">
+    Import the molecular network in Cytoscape
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#import-supplementary-annotations-in-cytoscape" title="Import supplementary annotations in Cytoscape" class="md-nav__link">
+    Import supplementary annotations in Cytoscape
+  </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#rotation-of-the-network" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#rotation-of-the-network" title="Rotation of the Network" class="md-nav__link">
     Rotation of the Network
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
-  <a href="#table-panel-visualization-data" class="md-nav__link">
+  <a href="#table-panel-visualization-data" title="Table Panel Visualization Data" class="md-nav__link">
     Table Panel Visualization Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-a-new-style" class="md-nav__link">
+  <a href="#create-a-new-style" title="Create a New Style" class="md-nav__link">
     Create a New Style
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#edit-the-style" class="md-nav__link">
+  <a href="#edit-the-style" title="Edit the Style" class="md-nav__link">
     Edit the Style
   </a>
   
@@ -1394,7 +1421,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#node-styling" class="md-nav__link">
+  <a href="#node-styling" title="Node Styling" class="md-nav__link">
     Node Styling
   </a>
   
@@ -1402,21 +1429,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#label" class="md-nav__link">
+  <a href="#label" title="Label" class="md-nav__link">
     Label
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#size" class="md-nav__link">
+  <a href="#size" title="Size" class="md-nav__link">
     Size
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pie-charts" class="md-nav__link">
+  <a href="#pie-charts" title="Pie charts" class="md-nav__link">
     Pie charts
   </a>
   
@@ -1428,7 +1455,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#edge-styling" class="md-nav__link">
+  <a href="#edge-styling" title="Edge Styling" class="md-nav__link">
     Edge Styling
   </a>
   
@@ -1436,7 +1463,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#width" class="md-nav__link">
+  <a href="#width" title="Width" class="md-nav__link">
     Width
   </a>
   
@@ -1453,14 +1480,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#mining-information-in-the-network" class="md-nav__link">
+  <a href="#mining-information-in-the-network" title="Mining information in the network" class="md-nav__link">
     Mining information in the network
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#sub-network-creation" class="md-nav__link">
+  <a href="#sub-network-creation" title="Sub-network creation" class="md-nav__link">
     Sub-network creation
   </a>
   
@@ -1468,14 +1495,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-toolbar-function" class="md-nav__link">
+  <a href="#the-toolbar-function" title="The Toolbar function" class="md-nav__link">
     The Toolbar function
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-select-function" class="md-nav__link">
+  <a href="#the-select-function" title="The Select function" class="md-nav__link">
     The Select function
   </a>
   
@@ -1487,15 +1514,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#bypass-mode-for-style-property" class="md-nav__link">
+  <a href="#bypass-mode-for-style-property" title="Bypass mode for style property" class="md-nav__link">
     Bypass mode for style property
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#drawing-structure-in-nodes" class="md-nav__link">
+  <a href="#drawing-structure-in-nodes" title="Drawing structure in nodes" class="md-nav__link">
     Drawing structure in nodes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-other-node-information" title="Mapping other node information" class="md-nav__link">
+    Mapping other node information
   </a>
   
 </li>
@@ -1506,23 +1540,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#video-tutorial-fbmn-and-cytoscape" class="md-nav__link">
+  <a href="#video-tutorial-fbmn-and-cytoscape" title="Video Tutorial FBMN and Cytoscape" class="md-nav__link">
     Video Tutorial FBMN and Cytoscape
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#page-contributors" class="md-nav__link">
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#page-contributors" title="Page contributors" class="md-nav__link">
     Page contributors
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#contribute-to-the-documentation" class="md-nav__link">
-    Contribute to the Documentation
+        
+          <li class="md-nav__item">
+  <a href="#join-the-gnps-community" title="Join the GNPS Community !" class="md-nav__link">
+    Join the GNPS Community !
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1545,10 +1585,10 @@
                   <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/featurebasedmolecularnetworking-cytoscape.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>FBMW with Cytoscape</h1>
+                  <h1>FBMN export to Cytoscape</h1>
                 
                 <h2 id="introduction-to-fbmn">Introduction to FBMN</h2>
-<p><strong>Feature-Based Molecular Networking</strong> (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on <a href="http://gnps.ucsd.edu">GNPS</a>. The tools supported are: <a href="../featurebasedmolecularnetworking-with-mzmine2/">MZmine2</a>, <a href="../featurebasedmolecularnetworking-with-openms/">OpenMS</a>, <a href="../featurebasedmolecularnetworking-with-ms-dial/">MS-DIAL</a>, <a href="../featurebasedmolecularnetworking-with-metaboscape/">MetaboScape</a>, <a href="../featurebasedmolecularnetworking-with-xcms3/">XCMS</a>, and <a href="../featurebasedmolecularnetworking-with-progenesisQI/">Progenesis QI</a>.</p>
+<p><strong>Feature-Based Molecular Networking</strong> (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on <a href="http://gnps.ucsd.edu">GNPS</a>. The supported tools are: <a href="../featurebasedmolecularnetworking-with-mzmine2/">MZmine</a>, <a href="../featurebasedmolecularnetworking-with-openms/">OpenMS</a>, <a href="../featurebasedmolecularnetworking-with-ms-dial/">MS-DIAL</a>, <a href="../featurebasedmolecularnetworking-with-metaboscape/">MetaboScape</a>, <a href="../featurebasedmolecularnetworking-with-xcms3/">XCMS</a>, <a href="../featurebasedmolecularnetworking-with-progenesisQI/">Progenesis QI</a>, and the <a href="../featurebasedmolecularnetworking-with-mztab-m/">mzTab-M format</a>.</p>
 <p>The main documentation for Feature-Based Molecular Networking <a href="../featurebasedmolecularnetworking/">can be accessed here:</a></p>
 <p>The documentation for Feature-Based Molecular Networking using Cytoscape is provided below.</p>
 <h2 id="feature-based-molecular-networking-in-cytoscape">Feature-Based Molecular Networking in Cytoscape</h2>
@@ -1559,7 +1599,7 @@
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide1.PNG" /></p>
 <p>Unzip the file and the resulting folder will look like this:</p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide2.PNG" /></p>
-<h3 id="importing-files-from-gnps-to-cytoscape">Importing Files from GNPS to Cytoscape</h3>
+<h3 id="import-the-molecular-network-in-cytoscape">Import the molecular network in Cytoscape</h3>
 <p>To import the network file into Cytoscape:
 *    in Cytoscape click on <em>Import Network from File System</em> and then choose the <em>.graphml</em> file. 
 *   Alternatively, you can drag and drop the .graphml file into Cytoscape.</p>
@@ -1567,7 +1607,20 @@
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide3.PNG" /></p>
 <p>You can import the table file into Cytoscape. Click <em>Import Table from File System</em>, navigate to the “DB_result” folder and select the .csv file. Lastly, click OK in the opened window.</p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide17.PNG" /></p>
-<h2 id="rotation-of-the-network">Rotation of the Network</h2>
+<h3 id="import-supplementary-annotations-in-cytoscape">Import supplementary annotations in Cytoscape</h3>
+<p>Cytoscape allows to map additional annotations such as those produced by other workflows on GNPS. See the documentation for <a href="../dereplicator/">DEREPLICATOR</a>, <a href="../nap/">NAP</a>, <a href="../ms2lda/">MS2LDA</a>., for more details.</p>
+<p>The FBMN workflow makes possible to map the annotations (molecular formula, cross collision section, etc) made by the processing software used for FBMN (MZmine, XCMS, MetaboScape, MS-DIAL, Progenesis QI), or other tool that processed the same .MGF/.MSP file.</p>
+<p>Regardless of the tool, the procedure follows these steps:</p>
+<ul>
+<li>Obtain the annotation table that needs to be mapped. This table must contain a column that contains the <em>identifier</em> that matches the <em>name</em> column in the network. This identifier corresponds to the <em>SCANS</em> or <em>FEATURE_ID</em> in the .MGF file. </li>
+<li>Verify that the identifier are indeed matching between the network and table.</li>
+<li>Import the table in Cytoscape. Go to <em>Menu</em> / <em>Import</em> / <em>Import Table from File System</em>.</li>
+<li>In the preview window, click on the header of the <em>identifier</em> column to set the meaning to Key (a key logo shows up)</li>
+<li>Import the table and map the annotation into the molecular network.
+[<strong>IMPORTANT</strong>] If columns already exist in the network, they will be replaced by the imported table ! Rename the header(s) of the imported table if necessary.</li>
+<li>Explore the annotation in the molecular network (see below).</li>
+</ul>
+<h3 id="rotation-of-the-network">Rotation of the Network</h3>
 <p>To rotate the entire molecular network choose the <em>Layout</em> tab and click <em>Node Layout tool</em>. In the opened window, uncheck the <em>Selected Only</em> box to rotate the entire network and move the blue bar to 90. You can also select specific subnetworks and rotate them by checking <em>Selected only</em>.</p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide4.PNG" /></p>
 <h3 id="table-panel-visualization-data">Table Panel Visualization Data</h3>
@@ -1614,17 +1667,19 @@
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide15.PNG" /></p>
 <p>Finally, to draw structures in the nodes, return to <em>Apps</em> &gt; <em>Cheminformatics Tools</em> &gt; <em>Paint Structures</em> and select <em>on all nodes</em> or <em>on selected nodes</em>. Visualize the results. If needed, create a dedicated style to facilitate structure visualization. </p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide16.PNG" /></p>
+<h3 id="mapping-other-node-information">Mapping other node information</h3>
+<p>Cytoscape enables to map informations obtained from the other workflows/softwares. Visualize this annotation by creating novel styles and changing its properties.</p>
 <h2 id="video-tutorial-fbmn-and-cytoscape">Video Tutorial FBMN and Cytoscape</h2>
 <p>Our <a href="../tutorials/featurebasedgnps/">tutorial on running the FBMN analysis on GNPS including a Cytoscape demo</a>.</p>
 <iframe width="600" height="375" src="https://www.youtube.com/embed/NTkQ0fS1aug"> </iframe>
 
-<p>See our <a href="../tutorials/americangutmzmine/">tutorial on using MZmine2</a> for the FBMN analysis of a cohort from the [American Gut Project] (http://humanfoodproject.com/americangut/).</p>
-<h2 id="page-contributors">Page contributors</h2>
+<p>See our <a href="../tutorials/americangutmzmine/">tutorial on using MZmine2</a> for the FBMN analysis of a cohort from the <a href="http://humanfoodproject.com/americangut/">American Gut Project</a>.</p>
+<h3 id="page-contributors">Page contributors</h3>
 <p>Melissa Esposito (UCSD), Irina Koester (SIO, UCSD), Christian Martin (INDICASAT), Louis Felix Nothias (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).</p>
-<h2 id="contribute-to-the-documentation">Contribute to the Documentation</h2>
+<h3 id="join-the-gnps-community">Join the GNPS Community !</h3>
 <ul>
-<li>For informations/feature request, please open an "Issue" on the <a href="(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> GitHub repository.</li>
-<li>To contribute directly to the GNPS documentation, fork the <a href="(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request".</li>
+<li>For feature request, or to report bugs, please open an "Issue" on the <a href="https://github.com/CCMS-UCSD/GNPS_Workflows"><em>CCMS-UCSD/GNPS_Workflows</em> GitHub repository</a>.</li>
+<li>To contribute to the GNPS documentation, please use GitHub by forking the <a href="(https://github.com/CCMS-UCSD/GNPSDocumentation)"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request" with the changes.</li>
 </ul>
                 
                   
@@ -1646,7 +1701,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../featurebasedmolecularnetworking-with-progenesisQI/" title="FBMN with Progenesis QI" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../featurebasedmolecularnetworking-with-mztab-m/" title="FBMN with mzTab-M" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1655,7 +1710,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                FBMN with Progenesis QI
+                FBMN with mzTab-M
               </span>
             </div>
           </a>
@@ -1695,7 +1750,7 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.c648116f.js"></script>
+      <script src="../assets/javascripts/application.245445c6.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
