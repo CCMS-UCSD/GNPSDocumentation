@@ -2,16 +2,22 @@
 
 **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The supported tools are: [MZmine](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md), and the [mzTab-M format](featurebasedmolecularnetworking-with-mztab-m.md).
 
-The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking.md)
+The main documentation for Feature-Based Molecular Networking [can be accessed here](featurebasedmolecularnetworking.md). See [our preprint on bioaRxiv](https://www.biorxiv.org/content/10.1101/812404v1).
 
 Below follows a description on how to use `xcms` version >= 3 (XCMS3) with the
 FBMN workflow on GNPS.
 
-## Mass spectrometry processing with XCMS3
+## Mass spectrometry processing with XCMS
 
 ### Citations and development
 
-This work builds on the efforts of our many colleagues, please cite their work: [https://github.com/sneumann/xcms](https://github.com/sneumann/xcms)
+This work builds on the efforts of our many colleagues, please cite their work: 
+
+Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
+
+Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
+
+XCMS3 GitHub repository: [https://github.com/sneumann/xcms](https://github.com/sneumann/xcms)
 
 Tautenhahn R, Boettcher C, Neumann S. [Highly sensitive feature detection for
 high resolution LC/MS](https://doi.org/10.1186/1471-2105-9-504) BMC
