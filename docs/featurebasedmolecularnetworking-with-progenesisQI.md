@@ -1,16 +1,24 @@
 ## Introduction
 
-**Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The supported tools are: [MZmine](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md), and the [mzTab-M format](featurebasedmolecularnetworking-with-mztab-m.md).
+The main documentation for **Feature-Based Molecular Networking** (FBMN) [can be accessed here](featurebasedmolecularnetworking.md). See [our preprint on bioaRxiv](https://www.biorxiv.org/content/10.1101/812404v1).
 
-The main documentation for FBMN [can be accessed here](featurebasedmolecularnetworking.md).
-
-Below we describe how to use Progenesis QI with the FBMN workflow on [GNPS](http://gnps.ucsd.edu).
+Below we describe how to use **Progenesis QI** with the FBMN workflow on [GNPS](http://gnps.ucsd.edu).
 
 ## Using Progenesis QI and the Feature-Based Molecular Networking on GNPS
 
 Progenesis QI is a proprietary LC-MS feature detection and alignment software developed by [Nonlinear Dynamics](http://www.nonlinear.com/progenesis/qi/](http://www.nonlinear.com/progenesis/qi/) that is compatible with Waters file format and other proprietary and open mass spectrometry format.
 
 Progenesis QI can perform feature detection, alignment and annotation of non-targeted LC-MS/MS data acquired either **in data-dependent analysis (DDA)** or **MSE data independent analysis (DIA)**, and can also uses the **ion mobility spectrometry (IMS) dimension**. Feature-based molecular networking (FBMN) can be performed on **any of these data types processed with Progenesis QI**.
+
+
+## Citations and development
+
+This work builds on the efforts of our many colleagues, please cite their work: 
+
+Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
+
+Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
+
 
 ## Running Progenesis QI for molecular networking on GNPS
 
