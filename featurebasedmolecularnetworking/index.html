@@ -2172,7 +2172,37 @@
 </table>
 <p><img alt="img" src="../img/featurebasedmolecularnetworking/Advanced_Quantification_Options_2.png" /></p>
 <h4 id="advanced-extras">Advanced Extras</h4>
-<p>"Supplementary Pairs" is an option to add extra edges to the resulting feature-based molecular network. It was initially implemented for the Ion Identity Networking (IIN) workflow. However, this approach is designed to stimulate the development and testing of new workflows as the input is an edge file in a generic csv format. An edge is described by the two feature IDs  (fitting to row IDs in the quantification table), an EdgeType (any String name), a numeric score, and an annotation (any String). </p>
+<p>"Supplementary Pairs" is an option to add extra edges to the resulting feature-based molecular network. It was initially implemented for the Ion Identity Networking (IIN) workflow. However, this approach is designed to stimulate the development and testing of new workflows as the input is an edge file in a generic csv format. An edge is described by the following table:</p>
+<table>
+<thead>
+<tr>
+<th>Header</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID1</td>
+<td>Node ID 1 matching the row IDs</td>
+</tr>
+<tr>
+<td>ID1</td>
+<td>Node ID 2 matching the row IDs</td>
+</tr>
+<tr>
+<td>EdgeType</td>
+<td>Any string describing the type of edge</td>
+</tr>
+<tr>
+<td>Score</td>
+<td>A numerical value for the score (cannot be empty)</td>
+</tr>
+<tr>
+<td>Anntoation</td>
+<td>A string annotation</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Example of the Supplementary Pairs used in the Ion Identity Networking (IIN) workflow</strong>
 <img alt="img" src="../img/featurebasedmolecularnetworking/fbmn_iin_edges.PNG" />
 <img alt="img" src="../img/featurebasedmolecularnetworking/fbmn_advanced_extras.PNG" /></p>
