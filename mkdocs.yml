@@ -19,6 +19,10 @@ pages:
         - Metadata: metadata.md
     - Recommended Data Analysis:
         - Molecular Networking: networking.md
+        - Molecular Networking for GC-MS: gc-ms-documentation.md
+            - GC-MS on GNPS: gc-ms-documentation.md
+            - GC-MS Deconvolution: gc-ms-deconvolution.md
+            - GC-MS Library Search and Molecular Networking: gc-ms-library-molecular-network.md
         - Molecular Networking Views: networkingviews.md
         - Spectral Library Search: librarysearch.md
         - MASST Search (Mass Search Tool): masst.md
@@ -44,7 +48,7 @@ pages:
 #        - MetaRiPPQuest
     - Spectral Libraries:
         - Browsing Reference Spectral Libraries: browselibraries.md
-        - Reference Spectral Library Curation: spectrumcuration.md
+        - Add/Curate Reference Spectrum in the Library: spectrumcuration.md
         - Reference Spectral Library Batch Addition: batchupload.md
         - Downloading Reference Spectral Libraries: downloadlibraries.md
         - Open-source Method for Reference Library Generation:
@@ -64,7 +68,7 @@ pages:
         - FBMN with MetaboScape - Coffee Analysis: tutorials/coffee-tutorial-metaboscape.md
         - FBMN analysis at GNPS: tutorials/featurebasedgnps.md
     - Change Log: changelog.md
-    #- Join the GNPS community: gnps_community.md
+    - Join the GNPS community: gnps_community.md
     - GNPS Workshops: workshops.md
     - Presentation Materials:
         - Logos: logos.md

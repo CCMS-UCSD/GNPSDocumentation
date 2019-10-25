@@ -16,7 +16,7 @@ Wang, M. et al. [Sharing and community curation of mass spectrometry data with G
 
 Katajamaa, M., Miettinen, J. & Oresic, M. [MZmine: toolbox for processing and visualization of mass spectrometry based molecular profile data.](https://doi.org/10.1093/bioinformatics/btk039) Bioinformatics 22, 634–636 (2006).
 
-Pluskal, T., Castillo, S., Villar-Briones, A. & Oresic, [M. MZmine 2: modular framework for processing, visualizing, and analyzing mass spectrometry-based molecular profile data.](https://doi.org/10.1186/1471-2105-11-395) BMC Bioinformatics 11, 395 (2010).
+Pluskal, T., Castillo, S., Villar-Briones, A. & Oresic, M. [MZmine 2: modular framework for processing, visualizing, and analyzing mass spectrometry-based molecular profile data.](https://doi.org/10.1186/1471-2105-11-395) BMC Bioinformatics 11, 395 (2010).
 
 The development of the features used in the pipeline is [publicly accessible here](https://github.com/mzmine/mzmine2).
 
