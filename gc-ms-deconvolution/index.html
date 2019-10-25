@@ -36,7 +36,7 @@
     
     
       
-        <title>Troubleshooting - GNPS Documentation</title>
+        <title>GC-MS Deconvolution - GNPS Documentation</title>
       
     
     
@@ -100,7 +100,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#overview" tabindex="1" class="md-skip">
+      <a href="#gc-ms-deconvolution-for-gnps" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -126,7 +126,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Troubleshooting
+                GC-MS Deconvolution
               
             </span>
           
@@ -391,10 +391,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" checked>
     
     <label class="md-nav__link" for="nav-9">
       Recommended Data Analysis
@@ -422,10 +424,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-2" type="checkbox" id="nav-9-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-2" type="checkbox" id="nav-9-2" checked>
     
     <label class="md-nav__link" for="nav-9-2">
       Molecular Networking for GC-MS
@@ -453,11 +457,90 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../gc-ms-deconvolution/" title="GC-MS Deconvolution" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        GC-MS Deconvolution
+      </label>
+    
+    <a href="./" title="GC-MS Deconvolution" class="md-nav__link md-nav__link--active">
       GC-MS Deconvolution
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gc-ms-deconvolution-workflow-on-gnps-with-ms-hub" class="md-nav__link">
+    GC-MS Deconvolution Workflow on GNPS with MS-Hub
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-workflow" class="md-nav__link">
+    Configure the Workflow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inspect-the-results" class="md-nav__link">
+    Inspect the Results
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gc-ms-data-processing-with-adap-mzmine" class="md-nav__link">
+    GC-MS data processing with ADAP-MZmine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gc-ms-data-processing-with-ms-dial" class="md-nav__link">
+    GC-MS data processing with MS-DIAL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#page-contributors" class="md-nav__link">
+    Page contributors
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -979,109 +1062,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Troubleshooting
-      </label>
-    
-    <a href="./" title="Troubleshooting" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../troubleshooting/" title="Troubleshooting" class="md-nav__link">
       Troubleshooting
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#molecular-networking" class="md-nav__link">
-    Molecular Networking
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#failed-job" class="md-nav__link">
-    Failed Job
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#results-incorrect" class="md-nav__link">
-    Results Incorrect
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#no-attributes-or-groups-in-output" class="md-nav__link">
-    No attributes or groups in output
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#library-search-dereplication" class="md-nav__link">
-    Library Search (Dereplication)
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#no-results" class="md-nav__link">
-    No Results
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#single-spectrum-search" class="md-nav__link">
-    Single Spectrum Search
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -1286,56 +1271,23 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#molecular-networking" class="md-nav__link">
-    Molecular Networking
+  <a href="#gc-ms-deconvolution-workflow-on-gnps-with-ms-hub" class="md-nav__link">
+    GC-MS Deconvolution Workflow on GNPS with MS-Hub
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#failed-job" class="md-nav__link">
-    Failed Job
+  <a href="#configure-the-workflow" class="md-nav__link">
+    Configure the Workflow
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#results-incorrect" class="md-nav__link">
-    Results Incorrect
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#no-attributes-or-groups-in-output" class="md-nav__link">
-    No attributes or groups in output
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#library-search-dereplication" class="md-nav__link">
-    Library Search (Dereplication)
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#no-results" class="md-nav__link">
-    No Results
+  <a href="#inspect-the-results" class="md-nav__link">
+    Inspect the Results
   </a>
   
 </li>
@@ -1346,8 +1298,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#single-spectrum-search" class="md-nav__link">
-    Single Spectrum Search
+  <a href="#gc-ms-data-processing-with-adap-mzmine" class="md-nav__link">
+    GC-MS data processing with ADAP-MZmine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gc-ms-data-processing-with-ms-dial" class="md-nav__link">
+    GC-MS data processing with MS-DIAL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#page-contributors" class="md-nav__link">
+    Page contributors
   </a>
   
 </li>
@@ -1368,33 +1334,38 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/troubleshooting.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/gc-ms-deconvolution.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="overview">Overview</h1>
-<p>This section addresses some common issues with the analysis workflows at GNPS. If you run into any of these common issues, hopefully this page will give you actionable steps to address them. If this page cannot help you, please refer to the <a href="https://groups.google.com/forum/#!forum/molecular_networking_bug_reports">forum</a> to help answer your questions.</p>
-<h2 id="molecular-networking">Molecular Networking</h2>
-<h3 id="failed-job">Failed Job</h3>
-<p>"Empty MS/MS". - This means that your input data has no MS/MS spectra. This could mean one of several things</p>
-<ol>
-<li>The file format input is incorrect. Please make sure it is a <a href="../fileconversion/">supported file format</a> for GNPS.</li>
-<li>The mass spectrometry files do not contain MS/MS spectra. These files cannot be analyzed by GNPS.</li>
-<li>The filtering criteria are too aggressive. Please use an appropriate preset for your data.</li>
-</ol>
-<p>"spectral library search exceeded memory" - This means that the spectral library search step used too much memory and had to be terminated. This is likely caused by changing the set of spectral libraries used in search. It is not recommended to change the set of libraries included unless you are an advanced users. Please remove all libraries except for the default "speclibs" and rerun.</p>
-<p>"Missing filename in Metadata" - The metadata file included for networking is formatted incorrectly. Please refer to metadata formatting to correct this.</p>
-<h3 id="results-incorrect">Results Incorrect</h3>
-<h4 id="no-attributes-or-groups-in-output">No attributes or groups in output</h4>
-<p>Make sure the metadata file includes the appropriate columns and attributes are prefixed with ATTRIBUTE_ and that the metadata file is a tab separated text file.</p>
-<h2 id="library-search-dereplication">Library Search (Dereplication)</h2>
-<h3 id="no-results">No Results</h3>
-<ol>
-<li>Check that the parameters are OK...</li>
-<li>Make sure you have the right format</li>
-<li>Make sure you have MS/MS spectra in your data</li>
-</ol>
-<h2 id="single-spectrum-search">Single Spectrum Search</h2>
-<p>A common error is missing intensities for masses. Simply masses are insufficient, intensities are also required.</p>
+                <h1 id="gc-ms-deconvolution-for-gnps">GC-MS Deconvolution for GNPS</h1>
+<p>The GC-MS data have to be processed before performing the <strong>spectral library search and molecular networking workflow</strong>. <a href="../gc-ms-library-molecular-network/">See more informations here</a>. Below, we describe how to use the GC-MS deconvolution workflow on GNPS that uses MS-Hub. Alternatively, ADAP-MZmine or MS-DIAL can be used.</p>
+<h2 id="gc-ms-deconvolution-workflow-on-gnps-with-ms-hub">GC-MS Deconvolution Workflow on GNPS with MS-Hub</h2>
+<h3 id="configure-the-workflow">Configure the Workflow</h3>
+<p><strong>1)</strong> Log in to GNPS  (<a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp">gnps.ucsd.edu</a>). If an account has to be created first, refer to GNPS documentation at the <a href="https://ccms-ucsd.github.io/GNPSDocumentation/quickstart/">quickstart</a> banner. Before starting, files from GC-MS analysis must be converted from proprietary vendor formats to .mzML, or .CDF file formats. To convert, please see our <a href="https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/">conversion guide</a>. </p>
+<p><strong>2)</strong> The GNPS home page includes two sections to launch GNPS GC-MS data analysis job, one for data processing - deconvolution and one for GC-MS library search/networking (<strong>Fig. 1</strong>) By clicking on “Process Raw GC-MS data” icon, a job page opens (<strong>Fig. 2</strong>). Start by entering the title of your job (1). Then, the “Select Files” section allows importing existing or previously uploaded dataset(s) from MassIVE. Select the files that need to be processed by clicking on “Select Input Files” (2). A pop-up window appears with three tabs: “Select Input Files”, “Upload Files”, and “Share Files”. To upload files to GNPS using the browser (limited to 20MB), you can use our web drag and drop uploader in the “Upload Files” banner. See the documentation <a href="https://ccms-ucsd.github.io/GNPSDocumentation/fileupload/">here</a> for more information. Readers following the tutorial can go to the “Share Files” tab, enter the MassIVE accession number for the dataset (e.g. <a href="https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=671cd79ac3af4c4493e4025d62d161e1&amp;view=advanced_view">MSV000084226</a>) in the “Import Data Share” box (3), and click on “Import” (4). This specific dataset is now available directly in your GNPS user workspace at “Select Input Files” section (5). Select the input file, who appears highlighted in blue color, and click on “Spectrum files” (6). When the selected files are visible in the “Selected Spectrum Files” box, click on the “Finish Selection” button (7).</p>
+<p><strong>NOTE:</strong> All of the data used for the job must be collected using the same GC protocol (temperature program, column, injection mode). Multiple datasets could be combined as long as the data have been collected using the same protocol. When creating a dataset on MassIVE (<a href="https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp">massive.ucsd.edu</a>), include “GNPS” and “GC” in the name (As GNPS_GC_Name of the GNPS-MassIVE dataset). See the documentation about <a href="https://ccms-ucsd.github.io/GNPSDocumentation/datasets/">Dataset Creation/Sharing</a> and an example of a MassIVE dataset <a href="https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=671cd79ac3af4c4493e4025d62d161e1&amp;view=advanced_view">MSV000084226</a> for more information. An insufficient volume of data causes unstable deconvolution resulting in spurious low-quality spectra. It is recommended for datasets smaller than ~10 files to use alternative deconvolution solutions such as MZMine2/ADAP, MS-Dial or XCMS. Increasing the number of files, for example, could be done by co-analyzing multiple datasets obtained with the same experimental protocol. </p>
+<p><strong>Fig. 1</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_1.png" /></p>
+<p><strong>Fig. 2</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_2.png" /></p>
+<p><strong>3)</strong> The “Advanced MSHub Processing” section displays some automatic setting parameters (related to peak symmetry and baseline adjustment) determined internally by MSHub (<strong>Fig. 3</strong>). The user does not need to provide settings, although they can be set manually, should the user choose to do so. In the “Advanced Clustering” settings, be sure that cluster spectra are turned off (CLUSTER_SPECTRA = NO) (8). The TIME_UNIT must be set as minutes or seconds (8), depending on the chromatography time units of your data (typically the default time units are seconds in NetCDF files and minutes in .mzML files). Then, enter your email address at the bottom (9) and finish by clicking “Submit” (10).</p>
+<p><strong>Fig. 3</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_3.png" /></p>
+<h3 id="inspect-the-results">Inspect the Results</h3>
+<p><strong>4)</strong> When the job has been completed, you will receive a notification email and the status “DONE” appears on your GNPS job. All submitted jobs appear under “jobs” link from the GNPS main menu (<strong>Fig. 4</strong>). By selecting the job of interest and clicking on the “Done” button, the “Job Status” window opens with different options (<strong>Fig. 5</strong>) to (i) explore deconvolution results with the “View All Deconvolved Spectra” option, (ii) download quantification results and feature table by clicking on “Download Spectra as MGF” and “Download Quant Table”, or (iii) continue the process with “Process Library Search” tool (11).</p>
+<p><strong>NOTE:</strong> The first line of the feature/quantification table (<strong>Fig. 6</strong>) indicates the retention time (in min.) with a balance score in parenthesis (in percentage). The “Rel. Max Integral” and “Sample\Best order” values relate to the relative proportion of each peak in the data and the ranking of the feature in terms of its size, correspondingly.</p>
+<p><strong>Fig. 4</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_4.png" /></p>
+<p><strong>Fig. 5</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_5.png" /></p>
+<p><strong>Fig. 6</strong></p>
+<p><img alt="img" src="../img/GC-MS_documentation/Fig_6.png" /></p>
+<h2 id="gc-ms-data-processing-with-adap-mzmine">GC-MS data processing with ADAP-MZmine</h2>
+<p>[to be completed]</p>
+<h2 id="gc-ms-data-processing-with-ms-dial">GC-MS data processing with MS-DIAL</h2>
+<p>[to be completed]</p>
+<h2 id="page-contributors">Page contributors</h2>
+<p>Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzales (UCSD), Louis Felix Nothias (UCSD).</p>
                 
                   
                 
@@ -1415,7 +1386,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../user/" title="User Page" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../gc-ms-documentation/" title="GC-MS on GNPS" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1424,19 +1395,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                User Page
+                GC-MS on GNPS
               </span>
             </div>
           </a>
         
         
-          <a href="../tutorials/bacterianetworking/" title="Molecular Networking - Analog Discovery in Microbial Extracts" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../gc-ms-library-molecular-network/" title="GC-MS Library Search and Molecular Networking" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Molecular Networking - Analog Discovery in Microbial Extracts
+                GC-MS Library Search and Molecular Networking
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
