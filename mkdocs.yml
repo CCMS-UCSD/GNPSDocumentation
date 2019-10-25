@@ -68,7 +68,7 @@ pages:
         - FBMN with MetaboScape - Coffee Analysis: tutorials/coffee-tutorial-metaboscape.md
         - FBMN analysis at GNPS: tutorials/featurebasedgnps.md
     - Change Log: changelog.md
-    #- Join the GNPS community: gnps_community.md
+    - Join the GNPS community: gnps_community.md
     - GNPS Workshops: workshops.md
     - Presentation Materials:
         - Logos: logos.md

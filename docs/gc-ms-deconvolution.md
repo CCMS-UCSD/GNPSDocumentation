@@ -53,4 +53,4 @@ The GC-MS data have to be processed before performing the **spectral library sea
 [to be completed]
 
 ## Page contributors
-Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzales (UCSD).
+Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzales (UCSD), Louis Felix Nothias (UCSD).
