@@ -19,7 +19,7 @@ pages:
         - Metadata: metadata.md
     - Recommended Data Analysis:
         - Molecular Networking: networking.md
-        - Molecular Networking for GC-MS: gc-ms-documentation.md
+        - Molecular Networking for GC-MS: 
             - GC-MS on GNPS: gc-ms-documentation.md
             - GC-MS Deconvolution: gc-ms-deconvolution.md
             - GC-MS Library Search and Molecular Networking: gc-ms-library-molecular-network.md

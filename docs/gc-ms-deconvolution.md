@@ -1,7 +1,7 @@
 # GC-MS Deconvolution for GNPS
 
 
-The GC-MS data have to be processed before performing the **spectral library search and molecular networking workflow**. [See more informations here]((gc-ms-gc-ms-library-molecular-network.md)). Below, we describe how to use the GC-MS deconvolution workflow on GNPS that uses MS-Hub. Alternatively, ADAP-MZmine or MS-DIAL can be used.
+The GC-MS data have to be processed before performing the **spectral library search and molecular networking workflow**. [See more informations here](gc-ms-library-molecular-network.md). Below, we describe how to use the GC-MS deconvolution workflow on GNPS that uses MS-Hub. Alternatively, ADAP-MZmine or MS-DIAL can be used.
 
 
 ## GC-MS Deconvolution Workflow on GNPS with MS-Hub
