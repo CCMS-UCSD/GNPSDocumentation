@@ -160,7 +160,7 @@ There are additional normalization options specifically for the FBMN workflow:
 | Header        | Description |
 | ------------- |-------------|
 | ID1 | Node ID 1 matching the row IDs |
-| ID1 | Node ID 2 matching the row IDs |
+| ID2 | Node ID 2 matching the row IDs |
 | EdgeType | Any string describing the type of edge |
 | Score | A numerical value for the score (cannot be empty) |
 | Anntoation | A string annotation |
