@@ -1,4 +1,4 @@
-#Feature-Based Molecular Networking (FBMN)
+# Feature-Based Molecular Networking (FBMN)
 
 ## Introduction
 
@@ -155,7 +155,15 @@ There are additional normalization options specifically for the FBMN workflow:
 
 #### Advanced Extras
 
-"Supplementary Pairs" is an option to add extra edges to the resulting feature-based molecular network. It was initially implemented for the Ion Identity Networking (IIN) workflow. However, this approach is designed to stimulate the development and testing of new workflows as the input is an edge file in a generic csv format. An edge is described by the two feature IDs  (fitting to row IDs in the quantification table), an EdgeType (any String name), a numeric score, and an annotation (any String). 
+"Supplementary Pairs" is an option to add extra edges to the resulting feature-based molecular network. It was initially implemented for the Ion Identity Networking (IIN) workflow. However, this approach is designed to stimulate the development and testing of new workflows as the input is an edge file in a generic csv format. An edge is described by the following table:
+
+| Header        | Description |
+| ------------- |-------------|
+| ID1 | Node ID 1 matching the row IDs |
+| ID2 | Node ID 2 matching the row IDs |
+| EdgeType | Any string describing the type of edge |
+| Score | A numerical value for the score (cannot be empty) |
+| Anntoation | A string annotation |
 
 **Example of the Supplementary Pairs used in the Ion Identity Networking (IIN) workflow**
 ![img](img/featurebasedmolecularnetworking/fbmn_iin_edges.PNG)
