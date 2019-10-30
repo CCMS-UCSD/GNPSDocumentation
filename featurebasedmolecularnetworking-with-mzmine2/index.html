@@ -726,8 +726,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-order-the-peaklists" class="md-nav__link">
-    6. Order the peaklists
+  <a href="#6-order-the-peaklists-version-233" class="md-nav__link">
+    6. Order the peaklists (version 2.33)
   </a>
   
 </li>
@@ -1530,8 +1530,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-order-the-peaklists" class="md-nav__link">
-    6. Order the peaklists
+  <a href="#6-order-the-peaklists-version-233" class="md-nav__link">
+    6. Order the peaklists (version 2.33)
   </a>
   
 </li>
@@ -1735,16 +1735,26 @@
 <p><img alt="img" src="../img/mzmine/2_import-raw.png" /></p>
 <h4 id="2-mass-detection">2. Mass Detection</h4>
 <p>This step creates mass lists from your raw LC-MS/MS data (non-targeted mode).</p>
-<p>Perform mass detection on MS level 1: Menu: Raw data methods &gt; Mass detection &gt; Set filter : MS level 1</p>
+<p>Perform mass detection on MS level 1: Menu: <em>Raw data methods &gt; Feature Detection &gt; Mass detection &gt; Set filters: MS level 1.</em></p>
+<p>(version 2.33)
+Menu: Raw data methods &gt; Mass detection &gt; Set filter : MS level 1</p>
 <p><strong>IMPORTANT</strong> Set an appropriate intensity threshold. You can use the preview window to assess the right threshold on your data. As a rule of thumb, the value should at least correspond to the minimum value set for the triggering of the MS2 scan event. (Example: MAXIS-QTOF: 1E3, Q-Exactive 1E4)</p>
 <p>Perform mass detection on MS level 2. The same mass list name must be used.</p>
-<p>Go to Menu: <em>Raw data methods &gt; Mass detection &gt; Set filter : MS level 2.</em></p>
+<p>Go to Menu: <em>Raw data methods &gt; Feature Detection &gt; Mass detection &gt; Set filters: MS level 2.</em></p>
+<p>(version 2.33)
+Go to: <em>Raw data methods &gt; Mass detection &gt; Set filter : MS level 2.</em></p>
 <p><strong>IMPORTANT:</strong> Make sure to set an intensity threshold representative of noise level in the MS2 spectra. This is typically lower than for MS1. (Example: maXis QTOF: 1E2; LTQ-XL Orbitrap 1E4, Q-Exactive: 0). If you have any doubt, set it to 0.</p>
 <p><img alt="img" src="../img/mzmine/mass_detection_ms2.png" /></p>
 <h4 id="3-build-chromatogram-lc-ms-feature-detection-part-1">3. Build Chromatogram (LC-MS feature detection part 1)</h4>
-<p>Go to Menu: <em>Raw data methods / Chromatogram builder</em></p>
+<p>Starting with MZmine 2.39, the original Chromatogram builder is considered deprecated. It has been replaced with the ADAP Chromatogram Builder. The ADAP Module includes parameters for the Min group size # of scans and Group intensity threshold. Further explanation for these parameters can be found in the <a href="http://mzmine.github.io/documentation.html">ADAP Tutorial</a>. If you use the ADAP Chromatogram Builder, please cite the publication below.</p>
+<p>Myers, O.D. et al, <a href="https://pubs.acs.org/doi/abs/10.1021/acs.analchem.7b00947">One Step Forward for Reducing False Positive and False Negative Compound Identifications from Mass Spectrometry Metabolomics Data: New Algorithms for Constructing Extracted Ion Chromatograms and Detecting Chromatographic Peaks</a>. Anal. Chem. 89, 17, 8696-8703 (2017).</p>
+<p>Go to: <em>Raw data methods &gt; Feature Detection &gt; Chromatogram builder OR ADAP Chromatogram builder</em></p>
+<p>(version 2.33)
+Go to: <em>Raw data methods &gt; Chromatogram builder</em></p>
 <h4 id="4-deconvolve-the-chromatogram-lc-ms-feature-detection-part-2">4. Deconvolve the Chromatogram (LC-MS feature detection part 2)</h4>
-<p>Go to Menu: <em>Peak list methods &gt; Peak detection &gt; Chromatogram deconvolution</em></p>
+<p>Go to Menu: <em>Feature list methods &gt; Feature detection &gt; Chromatogram deconvolution</em></p>
+<p>(version 2.33)
+Go to Menu: <em>Peak list methods &gt; Peak detection &gt; Chromatogram deconvolution</em></p>
 <p><strong>IMPORTANT:</strong> tick both options "m/z range for MS2 scan pairing (Da)" and "RT range for MS2 scan pairing (min)". The values have to be defined according to your experimental setup (expected MS mass accuracy and chromatographic peak width).</p>
 <p>Example for a UHPLC colum (1.7 µm C18, 50 × 2.1 mm, flow rate of 0.5 mL/min):</p>
 <ul>
@@ -1758,25 +1768,33 @@
 <p><img alt="img" src="../img/mzmine/deconvolve.png" /></p>
 <h4 id="5-group-isotopes-and-co-eluting-ions">5. Group isotopes and co-eluting ions</h4>
 <p>Use the "Isotopic peaks grouper" [recommended] or other alternative (such as the CAMERA module).</p>
-<p>Go to Menu: <em>Peak list methods / Isotopes / Isotopic peaks grouper.</em></p>
+<p>Go to Menu: <em>Feature list methods &gt; Isotopes &gt; Isotopic peaks grouper</em></p>
+<p>(version 2.33)
+Go to Menu: <em>Peak list methods &gt; Isotopes &gt; Isotopic peaks grouper.</em></p>
 <p><strong>IMPORTANT:</strong>  This depends on your expected peak shapes, duty cycle time and the MS mass accuracy. (Example: MAXIS-QTOF, 10 min gradient, 0.1 min, 0.02 m/z; Q-Exactive, 5 min gradient, 0.05 min, 0.01 m/z)</p>
-<h4 id="6-order-the-peaklists">6. Order the peaklists</h4>
+<h4 id="6-order-the-peaklists-version-233">6. Order the peaklists (version 2.33)</h4>
 <p>Go to Menu: <em>Peak list methods &gt; Order peak lists</em>.</p>
 <p><strong>IMPORTANT:</strong> This is to ensure the reproducibility of the processing Indeed, the aligned peak list will change slighlty if that step is not performed. </p>
 <h4 id="7-lc-ms-feature-alignement-peaklist-alignement">7. LC-MS feature alignement (Peaklist alignement)</h4>
 <p>In this step, the peak lists from each sample will be aligned in one aligned peak list. The alignement is performed iteratively using the first peak list selected (see MZmine documentation). For that reason, make sure the first sample is adapted (not a negative control) or to manually put an representative peaklist in the first position.</p>
-<p>Go to Menu: <em>Peak list methods &gt; Alignment &gt; Join aligner</em></p>
+<p>Go to Menu: <em>Feature list methods &gt; Alignment &gt; Join aligner</em></p>
+<p>(version 2.33)
+Go to Menu: <em>Peak list methods &gt; Alignment &gt; Join aligner</em></p>
 <h4 id="8-optional-detect-missing-peaks-gap-filling">8. (Optional) Detect Missing Peaks / Gap Filling</h4>
 <p>Gap filling enables to retrieve the intensity of a peak in all the samples, even if it was not detected in a previous processing step.
-Go to Menu: <em>Peak list methods / Gap filling / Peak finder (multi-threaded)</em>.</p>
+Go to Menu: <em>Feature list methods &gt; Gap filling &gt; Peak finder (multi-threaded)</em>.</p>
+<p>(version 2.33)
+Go to Menu: <em>Peak list methods &gt; Gap filling &gt; Peak finder (multi-threaded)</em>.</p>
 <p><strong>IMPORTANT:</strong> This step is optional. Use the multi-threaded peak finder for fast processing.</p>
 <h4 id="9-optional-filter-the-peaklist-to-msms-peaks">9. (Optional) Filter the Peaklist to MS/MS Peaks</h4>
 <p>Depending on the number of features in the aligned peaklist, it is possible to filter the peaklist to keep only features with minimum number of occurences ("Minimum peaks in a row") or a mininum number of isotopic peaks for the feature ("Minimum peaks in an isotope pattern"), or to "Keep only peaks with MS2 scan (GNPS)".</p>
-<p>Go to Menu: <em>Peak list methods &gt; Filtering &gt; Peak list row filter &gt; Select the filters</em></p>
+<p>Go to Menu: <em>Feature list methods &gt; Filtering &gt; Feature list rows filter &gt; Select the filters</em></p>
+<p>(version 2.33)
+Go to Menu: <em>Peak list methods &gt; Filtering &gt; Peak list row filter &gt; Select the filters</em></p>
 <p><strong>IMPORTANT:</strong> if you use a filter, we recommend using the filter "Reset the peak number ID"</p>
 <p><strong>IMPORTANT</strong> Note that this step was mandatory in the prototype versions of FBMN with MZmine, now the filter "Keep only peaks with MS2 scan (GNPS)" is optional.</p>
 <h4 id="10-use-the-gnps-export-module">10. Use the GNPS Export module</h4>
-<p>Use the dedicated module "<em>Submit to/Export for GNPS</em>" in MZmine to export the needed file:</p>
+<p>Use the dedicated module "<em>Submit to/Export for GNPS</em>" in MZmine under <em>Feature list methods &gt; Export/Import</em>  to export the needed file:</p>
 <ul>
 <li>the <strong>feature quantification table</strong> (.CSV file format) with LC-MS feature intensities.</li>
 <li>the <strong>MS/MS spectral summary</strong> (.MGF file), with a representative MS/MS spectrum per LC-MS feature. The MS/MS spectrum correspond either to the most intense MS/MS found for the feature, or to the merged spectrum (new feature !)</li>
