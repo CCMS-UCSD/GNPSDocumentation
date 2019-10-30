@@ -2,7 +2,7 @@
 
 The main documentation for **Feature-Based Molecular Networking** (FBMN) [can be accessed here](featurebasedmolecularnetworking.md). See [our preprint on bioaRxiv](https://www.biorxiv.org/content/10.1101/812404v1).
 
-Below we describe how to use **MZmine** with the FBMN workflow on GNPS.
+Below we describe how to use **MZmine2 v2.51** with the FBMN workflow on GNPS. We have previously written the documentation for v2.33 and have noted differences in the software versions. 
 
 ## Mass spectrometry processing with MZmine
 
