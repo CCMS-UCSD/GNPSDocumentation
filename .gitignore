@@ -1,2 +1,5 @@
 *.DS_Store
 *.pyc
+docs/.DS_Store
+docs/.DS_Store
+site/*

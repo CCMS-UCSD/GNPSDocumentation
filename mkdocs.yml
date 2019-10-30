@@ -1,4 +1,5 @@
 site_name: GNPS Documentation
+edit_uri: 'https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/'
 pages:
     - GNPS Introduction: index.md
     - Is my data compatible with GNPS?: isgnpsright.md
@@ -6,9 +7,6 @@ pages:
     - Superquick Start Guide: superquickstart.md
     - Quick Start Guide: quickstart.md
     - GNPS Analysis Tools Overview: gnpsanalysisoverview.md
-    - Change Log: changelog.md
-    - Contact: contact.md
-    - GNPS Workshops: workshops.md
     - Mass Spec/Computational Background:
 #        - Targeted vs Untargeted: massspecbackground/targeteduntargeted.md
 #        - Tandem Mass Spectrometry (MS/MS): massspecbackground/tandemms.md
@@ -18,32 +16,64 @@ pages:
     - Data Preparation/Upload:
         - Mass Spectrometry File Conversion: fileconversion.md
         - GNPS File Upload: fileupload.md
+        - Metadata: metadata.md
     - Recommended Data Analysis:
         - Molecular Networking: networking.md
+        - GC-MS Molecular Networking:
+            - GC-MS on GNPS: gc-ms-documentation.md
+            - GC-MS Deconvolution: gc-ms-deconvolution.md
+            - GC-MS Library Search and Molecular Networking: gc-ms-library-molecular-network.md
         - Molecular Networking Views: networkingviews.md
         - Spectral Library Search: librarysearch.md
-        - Molecular BLAST Search: molblast.md
+        - MASST Search (Mass Search Tool): masst.md
+        - Result Views Navigation: resultviews.md
     - Advanced Data Analysis:
+        - DEREPLICATOR: dereplicator.md
+        - Feature Based Molecular Networking:
+            - FBMN Workflow: featurebasedmolecularnetworking.md
+            - FBMN with MZmine2 : featurebasedmolecularnetworking-with-mzmine2.md
+            - FBMN with MS-DIAL: featurebasedmolecularnetworking-with-ms-dial.md
+            - FBMN with XCMS3: featurebasedmolecularnetworking-with-xcms3.md
+            - FBMN with OpenMS: featurebasedmolecularnetworking-with-openms.md
+            - FBMN with MetaboScape: featurebasedmolecularnetworking-with-metaboscape.md
+            - FBMN with Progenesis QI: featurebasedmolecularnetworking-with-progenesisQI.md
+            - FBMN with mzTab-M: featurebasedmolecularnetworking-with-mztab-m.md
+            - FBMN export to Cytoscape: featurebasedmolecularnetworking-cytoscape.md
+        - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
         - Molecular Networking in Cytoscape: cytoscape.md
-        - Dereplicator: dereplicator.md
+        - MolNetEnhancer: molnetenhancer.md
         - Network Annotation Propagation (NAP): nap.md
-    - Experiment Data Analysis:
-        - Feature Based Molecular Networking: featurebasedmolecularnetworking.md
-        - MS2LDA Deconvolution: ms2lda.md
+        - Reanalysis of Data User Interface (ReDU): ReDU.md
+#        - CycloNovo
+#        - MetaRiPPQuest
+    - Spectral Libraries:
+        - Browsing Reference Spectral Libraries: browselibraries.md
+        - Add/Curate Reference Spectrum in the Library: spectrumcuration.md
+        - Reference Spectral Library Batch Addition: batchupload.md
+        - Downloading Reference Spectral Libraries: downloadlibraries.md
+        - Open-source Method for Reference Library Generation:
+            - Data Acqusition - Thermo QExactive (v1.0): msmschooserdataacquisitionQE.md
+            - Computational Selection of MSMS to Include in Library (MSMS-Chooser): msmschooser.md
+    - Create a Public Datasets:
+        - Dataset Creation/Sharing: datasets.md
+        - Continuous Identification: continuousid.md
+        - Molecule Explorer: moleculeexplorer.md
     - Community/Social Features:
-        - Spectral Libraries:
-            - Browsing Reference Spectral Libraries: browselibraries.md
-            - Reference Spectral Library Curation: spectrumcuration.md
-            - Downloading Reference Spectral Libraries: downloadlibraries.md
-        - Datasets:
-            - Dataset Creation/Sharing: datasets.md
-            - Continuous Identification: continuousid.md
-            - Molecule Explorer: moleculeexplorer.md
         - User Page: user.md
     - Troubleshooting: troubleshooting.md
     - Tutorial Guides:
-        - Analog Discovery in Microbial Extracts: tutorials/bacterianetworking.md
-
+        - Molecular Networking - Analog Discovery in Microbial Extracts: tutorials/bacterianetworking.md
+        - Feature-Based Molecular Networking (FBMN) with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangutmzmine.md
+        - FBMN with MS-DIAL - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangut-ms-dial.md
+        - FBMN with MetaboScape - Coffee Analysis: tutorials/coffee-tutorial-metaboscape.md
+        - FBMN analysis at GNPS: tutorials/featurebasedgnps.md
+    - Change Log: changelog.md
+    - Join the GNPS community: gnps_community.md
+    - GNPS Workshops: workshops.md
+    - Presentation Materials:
+        - Logos: logos.md
+    - Contact: contact.md
+    - API: api.md
 theme:
     name: material
     #name: readthedocs
@@ -59,3 +89,4 @@ theme:
 #theme: readthedocs
 #theme:
 #  name: 'rtd-dropdown'
+google_analytics: ['UA-8412213-5', 'ccms-ucsd.github.io']

@@ -1,25 +1,32 @@
 ## Supported Formats at GNPS
 
-At GNPS we support mzXML, mzML, and mgf formats for analysis. Our tools do NOT support mzData, xml, raw, RAW, wiff, scan, d, and cdf formats. If your files are in not supported, please use the following guide to convert them to an open format that is supported by GNPS.
+GNPS supports mzXML, mzML, and mgf formats for analysis. Our tools do NOT support mzData, xml, raw, RAW, wiff, scan, d, and cdf formats. If some of your files are in these formats, please use the following guide to convert them to open formats supported by GNPS.
 
 ## Data Conversion (Easy)
 
-This is a complete package for Windows users to convert their vendor formats to GNPS compatible format (mzXML). It is as easy as putting files into a folder and batch converting it all without any installation (well nearly so).
+This is a complete package for Windows users to convert their vendor formats to GNPS compatible format (mzXML). It is as easy as putting files into a folder and batch converting them all without any installation (well nearly so).
 
 1. Download the zip file [here](https://www.dropbox.com/s/41m88bh3fcr5uz9/GNPS_Vendor_Conversion.zip?dl=1)
 2. Unzip contents onto a folder on your computer (e.g. Desktop)
 3. Install windows libraries in "pwizLibraries-and-Installation" - Run appropriate program for 32-bit (32-Bit_Double-Click_To_Install.bat) or 64-bit system (64-Bit_Double-Click_To_Install.bat). To find out which type of OS you have please check [here](https://support.microsoft.com/en-us/help/15056/windows-7-32-64-bit-faq)
 4. Put vendor formats in "Input_Files" not embedded in other folders
-5. Double click on Double-Click_To-Convert.bit - Download zip includes demo files for major vendor formats as a test.
+5. Double click on Double-Click_To-Convert.bat - Download zip includes demo files for major vendor formats as a test.
 6. Wait patiently
-7. Check all files converted in Output_Folder
+7. Check all the converted files in Output_Folder
 8. If there are errors, please check log.txt or read on how to convert files in a more traditional manner.
+
+* A tip for Waters users:
+One of the frequent questions from Waters users is about PDA(UV) and LockSpray data contained in converted files.
+[case 1](https://sourceforge.net/p/proteowizard/mailman/message/27531723/) [case 2](https://github.com/mzmine/mzmine2/issues/449) [case 3](https://groups.google.com/forum/#!category-topic/molecular_networking_bug_reports/unresolved-bugs--unknown-error-message/qjDan5zcjIY)
+
+These occur because Waters .Raw files contain UV and LockSpray data as additional 'channels' of MS detector. Some Waters third party softwares can solve this problem, but for cases you have not purchased licenses for the softwares, here we introduce you a temporary expedient. Every channel data are contained as "_FUNC00X.*" in Water.Raw files, so just delete them and run "Double-Click_To-Convert.bat."
+
+e.g. If LockSprary and UV data are channels 5/6 in your data, put every .Raw files in Input_Files folder, then run cmd, go to Input_Files, and run "del /s _FUNC005.*" and "del /s _FUNC006.*" 
+
 
 ## Data Conversion (Traditional)
 
-For files to be operated on in the GNPS workflows, they must be in the correct format.  Only the following formats are acceptable: .mzXML, .mzML, and .mgf.
-
-The .mzXML or .mzML format is strongly preferred and will be discussed in this tutorial for data conversion.
+The .mzXML or .mzML formats are strongly preferred and will be discussed below.
 
 | Vendor        | Instrument Software           | File Format  | Recommended Converter | Notes |
 | ------------- |-------------| -----| ----- | ----- |
@@ -27,7 +34,8 @@ The .mzXML or .mzML format is strongly preferred and will be discussed in this t
 | Agilent      | MassHunter      |   .d | MSConvert | verified (with issues with scan number export) |
 | Bruker | DataAnalysis/Compass      |   .d | CompassXport | This conversion is through the DataAnalysis software and is detailed [here](https://bix-lab.ucsd.edu/display/Public/Data+Conversion+to+GNPS+Compatible+Formats+-+.mzXML+and+.mzML#DataConversiontoGNPSCompatibleFormats-.mzXMLand.mzML-ConversionofBrukerData) |
 | ThermoFisher | Xcalibur      |    .raw/.RAW | MSConvert | verified |
-| Waters | MassLynx      |    .raw | MSConvert is for full scan/DDA datasets. [Symphony](http://www.waters.com/waters/en_US/informatics,-data_pipeline/nav.htm?cid=134893896&locale=en_US) is for other modes such as MSe/SONAR/HDMSe/HD-DDA | detailed instructions coming soon! |
+| Waters | MassLynx      |    .raw | MSConvert is for full scan/DDA datasets. [Symphony](http://www.waters.com/waters/en_US/informatics,-data_pipeline/nav.htm?cid=134893896&locale=en_US) is for other modes such as MSe/SONAR/HDMSe/HD-DDA | See more informations about the procedure in [this Water Technology Brief](https://www.waters.com/webassets/cms/library/docs/720006415en.pdf) |
+| Shimadzu | | .lcd | MSConvert | |
 
 For problems with MSConvert, please contact the ProteoWizard [developers](http://proteowizard.sourceforge.net/contact.shtml).
 
@@ -37,21 +45,27 @@ If you are a vendor and think there are better methods to convert your files to 
 
 Download and install ProteoWizard from [here](http://proteowizard.sourceforge.net/downloads.shtml).
 
-Important: make sure to choose the version Windows (includes vendor reader support). You must also have .NET [Framework 3.5 SP1](http://www.microsoft.com/en-us/download/details.aspx?id=22) and [4.0](http://www.microsoft.com/en-us/download/details.aspx?id=17851) installed.
+**IMPORTANT:**: Make sure to choose a Windows-compatible version (includes vendor reader support). You must also have .NET [Framework 3.5 SP1](http://www.microsoft.com/en-us/download/details.aspx?id=22) and [4.0](http://www.microsoft.com/en-us/download/details.aspx?id=17851) installed.
 
 After installation, from the Start Menu, click the ProteoWizard folder and open MSConvert.
 
-Click Browse and select file(s) for conversion. Then Click Add to add them to the MSConvert workflow.
+- Click Browse and select file(s) for conversion. Then click Add to add them to the MSConvert workflow.
 
-Choose an Output Directory
+- Choose an Output Directory
 
-Under Options, choose mzXML for output format, 32-bit for binary encoding precision and uncheck Use zlib compression. Note that mzML files are also supported.
+- Under Options, choose mzML (prefered) or mzXML for output format, 32-bit for binary encoding precision and uncheck Use zlib compression.
 
-Under filters, choose Peak Picking with Vendor checked, in order to centroid the data. Indicate MS-Levels 1-. Click Add to add the filter.
+- Under filters, choose Peak Picking with Vendor checked, in order to centroid the data. Indicate MS-Levels 1-2. Click Add to add the filter.
+
+**CRITICAL !** Make sure the PeakPicking filter is the first filter in the list (top position), otherwise the conversion will not be centroided !
+
+- Save the parameters for the next conversion. This will save you some time and prevent misconfiguration. In Presets (left bottom), click on Save Presets, and select "Save as default for the format".
+
+- Click on Start.  Check your folder for the new .mzML/.mzXML files. Verify that these files open properly in Insilicos or [TOPP View (OpenMS)](http://www.openms.de/).
+
+##### View of the MSConvert conversion parameters:
 
 ![img](img/conversion/msconvert_params.png)
-
-Click Start.  Check your folder for the new .mzXML files. Verify that these files open properly in Insilicos or [TOPP View (OpenMS)](http://www.openms.de/).
 
 
 ### Advanced Online Conversion with Proteowizard (MSConvert)
