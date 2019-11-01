@@ -599,8 +599,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../featurebasedmolecularnetworking-with-mzmine2/" title="FBMN with MZmine2" class="md-nav__link">
-      FBMN with MZmine2
+    <a href="../featurebasedmolecularnetworking-with-mzmine2/" title="FBMN with MZmine" class="md-nav__link">
+      FBMN with MZmine
     </a>
   </li>
 
@@ -856,6 +856,13 @@
           <li class="md-nav__item">
   <a href="#annotation-fields" class="md-nav__link">
     Annotation Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guidance-on-providing-names-to-the-annotations-in-gnps" class="md-nav__link">
+    Guidance on Providing Names to the Annotations in GNPS
   </a>
   
 </li>
@@ -1305,6 +1312,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#guidance-on-providing-names-to-the-annotations-in-gnps" class="md-nav__link">
+    Guidance on Providing Names to the Annotations in GNPS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#validation-spectra-selection" class="md-nav__link">
     Validation Spectra Selection
   </a>
@@ -1520,6 +1534,53 @@
 <td>Inchi Auxiliary Structure</td>
 <td>N/A</td>
 <td>No</td>
+</tr>
+</tbody>
+</table>
+<h3 id="guidance-on-providing-names-to-the-annotations-in-gnps">Guidance on Providing Names to the Annotations in GNPS</h3>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Structure</th>
+<th>Structural Position of Analog</th>
+<th>Mass Shift of Analog</th>
+<th>Guidance</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chemical Standard</td>
+<td>Full Structure Known</td>
+<td>Known</td>
+<td>N/A</td>
+<td>please annotate with the <strong>common name</strong> and provide the SMILES and Inchi in the corresponding text fields.</td>
+<td>7-Methylxanthine</td>
+</tr>
+<tr>
+<td>Your Data</td>
+<td>Full Structure Proposed</td>
+<td>Proposed based on MS/MS</td>
+<td>N/A</td>
+<td>please annotate with the <strong>common name</strong> and provide the SMILES and Inchi in the corresponding text fields (a bronze star rating will indicate a putative status)</td>
+<td>7-Methylxanthine</td>
+</tr>
+<tr>
+<td>Your Data</td>
+<td>Incomplete Structure Proposed</td>
+<td>Cannot based on MS/MS</td>
+<td>N/A</td>
+<td>please annotate with the <strong>common name</strong> and indicate the position is unknown using "X"</td>
+<td>(X)-Methylxanthine</td>
+</tr>
+<tr>
+<td>Your Data</td>
+<td>No Structure Information</td>
+<td>No Position Information</td>
+<td>Mass shift provided via Molecular Networking</td>
+<td>please annotate with the <strong>common name</strong> of the chemical it is connected to and indicate mass shift. Mass shift indicated by nominal mass followed by putative formula difference (if the formula difference is unknown please enter "X"). No SMILES or Inchi should be provided.</td>
+<td>Caffeine +14(CH2) <br> Caffeine +52(X)</td>
 </tr>
 </tbody>
 </table>
