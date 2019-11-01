@@ -69,6 +69,15 @@ NOTE: do not change the spectral library that is selected.
 | Inchi | Inchi Structure | N/A | No |
 | Inchi Aux | Inchi Auxiliary Structure | N/A | No |
 
+### Guidance on Providing Names to the Annotations in GNPS
+
+| Source | Structure | Structural Position of Analog | Mass Shift of Analog | Guidance | Example |
+| ----- | ----- | ----- | ----- | ----- | ----- | 
+| Chemical Standard | Full Structure Known | Known | N/A |  please annotate with the **common name** and provide the SMILES and Inchi in the corresponding text fields. | 7-Methylxanthine | 
+| Your Data | Full Structure Proposed | Proposed based on MS/MS | N/A | please annotate with the **common name** and provide the SMILES and Inchi in the corresponding text fields (a bronze star rating will indicate a putative status) | 7-Methylxanthine |
+| Your Data |  Incomplete Structure Proposed | Cannot based on MS/MS | N/A | please annotate with the **common name** and indicate the position is unknown using "X" | (X)-Methylxanthine |
+| Your Data | No Structure Information | No Position Information | Mass shift provided via Molecular Networking | please annotate with the **common name** of the chemical it is connected to and indicate mass shift. Mass shift indicated by nominal mass followed by putative formula difference (if the formula difference is unknown please enter "X"). No SMILES or Inchi should be provided. | Caffeine +14(CH2) <br> Caffeine +52(X)|
+
 ### Validation Spectra Selection
 
 To validate the input file and scan a user has selected, there is a plotting section that will attempt to plot the spectrum selected.
