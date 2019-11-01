@@ -136,7 +136,7 @@ Go to Menu: *Peak list methods > Isotopes > Isotopic peaks grouper.*
 
 **IMPORTANT:**  This depends on your expected peak shapes, duty cycle time and the MS mass accuracy. (Example: MAXIS-QTOF, 10 min gradient, 0.1 min, 0.02 m/z; Q-Exactive, 5 min gradient, 0.05 min, 0.01 m/z)
 
-#### 6. Order the peaklists (version 2.33)
+#### 6. Order the peaklists
 
 Go to Menu: *Peak list methods > Order peak lists*.
 

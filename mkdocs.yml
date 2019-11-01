@@ -31,7 +31,7 @@ pages:
         - DEREPLICATOR: dereplicator.md
         - Feature Based Molecular Networking:
             - FBMN Workflow: featurebasedmolecularnetworking.md
-            - FBMN with MZmine2 : featurebasedmolecularnetworking-with-mzmine2.md
+            - FBMN with MZmine : featurebasedmolecularnetworking-with-mzmine2.md
             - FBMN with MS-DIAL: featurebasedmolecularnetworking-with-ms-dial.md
             - FBMN with XCMS3: featurebasedmolecularnetworking-with-xcms3.md
             - FBMN with OpenMS: featurebasedmolecularnetworking-with-openms.md
