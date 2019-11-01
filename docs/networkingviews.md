@@ -15,7 +15,7 @@ View All Clusters allow a user to view the all consensus spectra in the molecula
 
 ![img](img/networkingviews/allclusters.png)
 
-While Molecular Networking matches to all public reference libraries, the majority of molecules detected in untargeted LC/MS runs are unidentified. To help annotate these unidentified spectra, click the "AnnotatetoGNPS" to be taken to the view that allows you to choose a specific MS/MS spectrum to annotate. Then Click "AnnotatetoGNPS" to be taken to the annotation page with the spectrum prepopulated. Check out the details about annotation - [Annotation Documentation](spectrumcuration/#adding-single-spectra).
+While Molecular Networking matches to all public reference libraries, the majority of molecules detected in untargeted LC/MS runs are unidentified. To help annotate these unidentified spectra, click the "AnnotatetoGNPS" to be taken to the view that allows you to choose a specific MS/MS spectrum to annotate. Then Click "AnnotatetoGNPS" to be taken to the annotation page with the spectrum prepopulated. Check out the details about annotation - [Annotation Documentation](spectrumcuration.md#adding-single-spectra).
 
 
 To view all the input MS/MS spectra that went into the consensus spectrum, click the link in the "ClusterIdx" link
@@ -215,7 +215,7 @@ Show or hide user interface widgets.
 
 ## View Principle Coordinate Analysis (PCoA) Plots
 
-To view PCoA plots, please enable that output on the input page (default is on) in the "Advanced Output Options" section and enabling "Create Cluster Buckets and BioM/PCoA Plots output". This will create the appropriate data structures for PCoA analysis. To include additional metadata to color the nodes according to the sample types, include and add additional columns for metadata describing the experiment (see [metadata documentation](networking/#metadata)).
+To view PCoA plots, please enable that output on the input page (default is on) in the "Advanced Output Options" section and enabling "Create Cluster Buckets and BioM/PCoA Plots output". This will create the appropriate data structures for PCoA analysis. To include additional metadata to color the nodes according to the sample types, include and add additional columns for metadata describing the experiment (see [metadata documentation](networking.md/#metadata)).
 
 To view the PCoA plots when the parameters are appropriately set, click the "View Emporer PCoA Plot in GNPS" under the section "Advanced Views - Third Party Visualization" on the results page of your GNPS job.
 
