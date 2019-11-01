@@ -4,8 +4,8 @@ The Superquick start interface enables you to rapidly explore your data without 
 **IMPORTANT!**: The limitations to this method is that the files uploaded will not reside in your own account (though no one else can see them) and will removed on a monthly basis. Please create your own account for more persistent and reproducible analyses.
 
 
-1. Classic Molecular Networking ([see the detailed documentation](networking/)) - Analyze a few dozen samples in up to 3 cohorts
-2. Feature Based Molecular Networking ([see the detailed documentation](featurebasedmolecularnetworking/)) - Analyze molecular networks out of your favorite LC-MS feature detection/alignement software
+1. Classic Molecular Networking ([see the detailed documentation](networking.md)) - Analyze a few dozen samples in up to 3 cohorts
+2. Feature Based Molecular Networking ([see the detailed documentation](featurebasedmolecularnetworking.md)) - Analyze molecular networks out of your favorite LC-MS feature detection/alignement software
 
 ## Classic Molecular Networking
 
@@ -56,4 +56,4 @@ This will bring you to a GNPS workflow status page. If you entered your email, y
 
 ### Results
 
-To understand the results, please refer to the [feature based molecular networking page](featurebasedmolecularnetworking.md/).
+To understand the results, please refer to the [feature based molecular networking page](featurebasedmolecularnetworking.md).
