@@ -31,7 +31,7 @@ The GitHub repository <https://github.com/ablab/npdtools> provides latest source
 The **DEREPLICATOR (VarQuest)**, and **DEREPLICATOR+** are available on GNPS on the [in silico tools page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-theoretical.jsp).
 
 #### STEP 1: Go to GNPS
-Go to [http://gnps.ucsd.edu](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash2.jsp), and create/login to your account.
+Go to [http://gnps.ucsd.edu](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), and create/login to your account.
 
 #### STEP 2: Access DEREPLICATOR
 Find the "In Silico Tools" box and click on "Browse Tools".
