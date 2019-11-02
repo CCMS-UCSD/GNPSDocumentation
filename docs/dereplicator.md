@@ -23,7 +23,7 @@ Mohimani et al., Dereplication of Peptidic Natural Products Through Database Sea
 
 ## Development
 
-The GitHub repository <https://github.com/ablab/npdtools> provides latest source code and release. 
+The [GitHub repository](https://github.com/ablab/npdtools) provides latest source code and release. 
 
 
 ## Accessing the DEREPLICATOR tools on GNPS
@@ -123,7 +123,7 @@ Click on a blue peak to highlighted the corresponding fragment on the molecular 
 
 #### STEP 7: VALIDATE
 **Validate a DEREPLICATOR annotation**:
-More than 60% of Dereplicator annotations on GNPS Massive datasets (April 2016) were manually curated and [results can be consulted here](https://bix-lab.ucsd.edu/display/Public/Insilico+Peptidic+Natural+Products+Dereplicator+Evaluation+of+GNPS+Massive+datasets).
+More than 60% of Dereplicator annotations on GNPS Massive datasets (April 2016) were manually curated.
 
 ##### Validating a DEREPLICATOR annotation (MSI level 1):
 
@@ -143,7 +143,7 @@ More than 60% of Dereplicator annotations on GNPS Massive datasets (April 2016) 
 - If genome sequence(s) are available, genome mining can be performed to search potential biogenetic gene clusters.
 
 ####  Mapping DEREPLICATOR results on molecular networks
-1. Run molecular networks with the spectral data (Files format can be mzML/mzXML/MGF). [See the following documentation](https://ccms-ucsd.github.io/GNPSDocumentation/networking/). Note that the [Feature-Based Molecular Network workflow](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/) can run the **DEREPLICATOR VarQuest** automatically (with default parameters only).
+1. Run molecular networks with the spectral data (Files format can be mzML/mzXML/MGF). [See the following documentation](networking.md). Note that the [Feature-Based Molecular Network workflow](featurebasedmolecularnetworking.md) can run the **DEREPLICATOR VarQuest** automatically (with default parameters only).
 
 2. Download the molecular networks clustered data (.MGF file). Click on *Download Clustered Spectra as MGF*.
 
@@ -157,7 +157,7 @@ More than 60% of Dereplicator annotations on GNPS Massive datasets (April 2016) 
 
 ![img](img/dereplicator/Figure9.png)
 
-6. Open the molecular networks with Cytoscape. [See documentation here](https://ccms-ucsd.github.io/GNPSDocumentation/cytoscape/), and here for [Feature-Based Molecular Networking](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking-cytoscape/)
+6. Open the molecular networks with Cytoscape. [See documentation here](cytoscape.md), and here for [Feature-Based Molecular Networking](featurebasedmolecularnetworking.md)
 
 7. In Cytoscape, import the .TSV table as attribute table. In Cytoscape go to *File / Import / Table / File* and select the .TSV annotation file for the dereplicator (see above).
 
@@ -171,10 +171,7 @@ More than 60% of Dereplicator annotations on GNPS Massive datasets (April 2016) 
 
 11. Click on import. Now the attribute table is mapped into the networks.
 
-12. The structure can be viewed with the ChemViz2 plugin . See the [Network Annotation Propagation](https://lfnothias.github.io/GNPSDocumentation/nap/) documentation for more details.
-
-## Legacy Documentation
-Check out the [legacy documentation for DEREPLICATOR (VarQuest)](https://bix-lab.ucsd.edu/display/Public/Insilico+Peptidic+Natural+Products+Dereplicator+Documentation).
+12. The structure can be viewed with the ChemViz2 plugin . See the [Network Annotation Propagation](nap.md) documentation for more details.
 
 ## TO DO
 - Documentation for Dereplicator+
