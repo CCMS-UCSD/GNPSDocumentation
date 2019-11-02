@@ -443,7 +443,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../gc-ms-documentation/" title="GC-MS on GNPS" class="md-nav__link">
+    <a href="../gcanalysis/" title="GC-MS on GNPS" class="md-nav__link">
       GC-MS on GNPS
     </a>
   </li>
@@ -721,13 +721,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#legacy-documentation" class="md-nav__link">
-    Legacy Documentation
-  </a>
   
 </li>
       
@@ -1531,13 +1524,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#legacy-documentation" class="md-nav__link">
-    Legacy Documentation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#to-do" class="md-nav__link">
     TO DO
   </a>
@@ -1593,7 +1579,7 @@ Mohimani et al., Dereplication of Peptidic Natural Products Through Database Sea
 <p><strong>DEREPLICATOR VarQuest</strong>: Gurevich, A. et al. Increased diversity of peptidic natural products revealed by modification-tolerant database search of mass spectra. <em>Nature Microbiology</em> 3, 319–327 (2018). <a href="https://doi.org/10.1038/s41564-017-0094-2">https://doi.org/10.1038/s41564-017-0094-2</a></p>
 <p><strong>DEREPLICATOR+</strong>: Mohimani, H. et al. Dereplication of microbial metabolites through database search of mass spectra. <em>Nature Communication</em> 9, 4035 (2018). <a href="https://doi.org/10.1038/s41467-018-06082-8">https://doi.org/10.1038/s41467-018-06082-8</a></p>
 <h2 id="development">Development</h2>
-<p>The GitHub repository <a href="https://github.com/ablab/npdtools">https://github.com/ablab/npdtools</a> provides latest source code and release. </p>
+<p>The <a href="https://github.com/ablab/npdtools">GitHub repository</a> provides latest source code and release. </p>
 <h2 id="accessing-the-dereplicator-tools-on-gnps">Accessing the DEREPLICATOR tools on GNPS</h2>
 <p>The <strong>DEREPLICATOR (VarQuest)</strong>, and <strong>DEREPLICATOR+</strong> are available on GNPS on the <a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-theoretical.jsp">in silico tools page</a>.</p>
 <h4 id="step-1-go-to-gnps">STEP 1: Go to GNPS</h4>
@@ -1648,7 +1634,7 @@ Annotations can be sorted using various column (usually the score or the p-value
 <p><img alt="img" src="../img/dereplicator/Figure7.png" /></p>
 <h4 id="step-7-validate">STEP 7: VALIDATE</h4>
 <p><strong>Validate a DEREPLICATOR annotation</strong>:
-More than 60% of Dereplicator annotations on GNPS Massive datasets (April 2016) were manually curated and <a href="https://bix-lab.ucsd.edu/display/Public/Insilico+Peptidic+Natural+Products+Dereplicator+Evaluation+of+GNPS+Massive+datasets">results can be consulted here</a>.</p>
+More than 60% of Dereplicator annotations on GNPS Massive datasets (April 2016) were manually curated.</p>
 <h5 id="validating-a-dereplicator-annotation-msi-level-1">Validating a DEREPLICATOR annotation (MSI level 1):</h5>
 <ul>
 <li>A level 1 MSI identification can be achieved of the reference material is available for the compound, by ordering the compound and analyzing it with the same method LC-MS/MS. The MS/MS spectrum and retention time should be identical between the observed and reference MS/MS spectra (co-injection can be done to verify retention time).</li>
@@ -1677,7 +1663,7 @@ More than 60% of Dereplicator annotations on GNPS Massive datasets (April 2016) 
 <h4 id="mapping-dereplicator-results-on-molecular-networks">Mapping DEREPLICATOR results on molecular networks</h4>
 <ol>
 <li>
-<p>Run molecular networks with the spectral data (Files format can be mzML/mzXML/MGF). <a href="https://ccms-ucsd.github.io/GNPSDocumentation/networking/">See the following documentation</a>. Note that the <a href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/">Feature-Based Molecular Network workflow</a> can run the <strong>DEREPLICATOR VarQuest</strong> automatically (with default parameters only).</p>
+<p>Run molecular networks with the spectral data (Files format can be mzML/mzXML/MGF). <a href="../networking/">See the following documentation</a>. Note that the <a href="../featurebasedmolecularnetworking/">Feature-Based Molecular Network workflow</a> can run the <strong>DEREPLICATOR VarQuest</strong> automatically (with default parameters only).</p>
 </li>
 <li>
 <p>Download the molecular networks clustered data (.MGF file). Click on <em>Download Clustered Spectra as MGF</em>.</p>
@@ -1698,7 +1684,7 @@ More than 60% of Dereplicator annotations on GNPS Massive datasets (April 2016) 
 <p><img alt="img" src="../img/dereplicator/Figure9.png" /></p>
 <ol>
 <li>
-<p>Open the molecular networks with Cytoscape. <a href="https://ccms-ucsd.github.io/GNPSDocumentation/cytoscape/">See documentation here</a>, and here for <a href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking-cytoscape/">Feature-Based Molecular Networking</a></p>
+<p>Open the molecular networks with Cytoscape. <a href="../cytoscape/">See documentation here</a>, and here for <a href="../featurebasedmolecularnetworking/">Feature-Based Molecular Networking</a></p>
 </li>
 <li>
 <p>In Cytoscape, import the .TSV table as attribute table. In Cytoscape go to <em>File / Import / Table / File</em> and select the .TSV annotation file for the dereplicator (see above).</p>
@@ -1719,11 +1705,9 @@ More than 60% of Dereplicator annotations on GNPS Massive datasets (April 2016) 
 <p>Click on import. Now the attribute table is mapped into the networks.</p>
 </li>
 <li>
-<p>The structure can be viewed with the ChemViz2 plugin . See the <a href="https://lfnothias.github.io/GNPSDocumentation/nap/">Network Annotation Propagation</a> documentation for more details.</p>
+<p>The structure can be viewed with the ChemViz2 plugin . See the <a href="../nap/">Network Annotation Propagation</a> documentation for more details.</p>
 </li>
 </ol>
-<h2 id="legacy-documentation">Legacy Documentation</h2>
-<p>Check out the <a href="https://bix-lab.ucsd.edu/display/Public/Insilico+Peptidic+Natural+Products+Dereplicator+Documentation">legacy documentation for DEREPLICATOR (VarQuest)</a>.</p>
 <h2 id="to-do">TO DO</h2>
 <ul>
 <li>Documentation for Dereplicator+</li>
