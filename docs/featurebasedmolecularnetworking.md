@@ -219,7 +219,7 @@ If you use that tool, please cite MS2LDA papers. [See citations in the main MS2L
 
 ### Running MolNetEnhancer with FBMN
 
-[MolNetEnhancer is a workflow]([https://www.mdpi.com/2218-1989/9/7/144](https://www.mdpi.com/2218-1989/9/7/144)) that enables to combine the outputs from molecular networking, MS2LDA, in silico structure annotation tools (such as Network Annotation Propagation or DEREPLICATOR) and the automated chemical classification through ClassyFire to provide a more comprehensive chemical overview of metabolomics data whilst at the same time illuminating structural details for each fragmentation spectrum. For more information refer to the main MolNetEnhancer publication.
+[MolNetEnhancer](https://www.mdpi.com/2218-1989/9/7/144) is a workflow that enables to combine the outputs from molecular networking, MS2LDA, in silico structure annotation tools (such as Network Annotation Propagation or DEREPLICATOR) and the automated chemical classification through ClassyFire to provide a more comprehensive chemical overview of metabolomics data whilst at the same time illuminating structural details for each fragmentation spectrum. For more information refer to the main MolNetEnhancer publication.
 
 See the [main documentation of MolNetEnh](molnetenhancer.md) for informations about using it for FBMN. 
 

@@ -71,7 +71,7 @@ To download the contents of a dataset, you can reach the FTP url of each dataset
 
 ## Reanalyze Datasets
 
-Dataset data can be re-analyzed with the tools at GNPS. In order to import the dataset into your own workspace to select files, please refer to [this documentation](networking/#selecting-files-to-analyze).
+Dataset data can be re-analyzed with the tools at GNPS. In order to import the dataset into your own workspace to select files, please refer to [this documentation](networking.md#selecting-files-to-analyze).
 
 ## Social Networking with Datasets
 

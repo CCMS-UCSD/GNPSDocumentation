@@ -56,7 +56,7 @@ Please select the following link:
 
 | Vendor | Instrument | Version | Revision Date| Method Files|
 |:---:|:---:|:---:|:---:|:---:|
-|Thermo|[QExactive](msmschooserdataacquisitionQE.md)|v1.0|Sept 4, 2019| [Link](massive_link_here)|
+|Thermo|[QExactive](msmschooserdataacquisitionQE.md)|v1.0|Sept 4, 2019| [Link](https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=5e567bd3eb1e40ad975a25dac3f5bf11)|
 |-|-|-|-|-|
 |-|-|-|-|-|
 
@@ -83,11 +83,11 @@ Please select the following link:
   * Make data public
 
 ### MSMS-Chooser (v1.0)
-1. Navigate to [ProteoSAFe](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MS-CHOOSER%22%7D).
+1. Navigate to [ProteoSAFe](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MS-CHOOSER%22%7D).
   * Select all .mzXML files, negative and positive, from MassIVE
   * Select the **"MSMS-Chooser Submission"** file (.tsv) from MassIVE
 2. Launch the Job
-3. Download result file and test using the following [Validator](http://dorresteinappshub.ucsd.edu:5020/).
+3. Download result file and test using the following [Validator](https://gnps-quickstart.ucsd.edu/validatebatch).
 4. Send completed Job Link to Contacts (detailed below)
 
 ## Contacts

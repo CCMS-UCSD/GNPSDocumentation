@@ -37,7 +37,7 @@ LC-MS/MS data and files can be found in the [MassIVE dataset MSV000082678](https
 
 ## Video Tutorial - Run MZmine2
 
-**IMPORTANT:** MZmine2 processing for FBMN has been slightly updated since this video was produced. Please refer to this page for up-to-date informations on MZmine2 processing for the FBMN [step-by-step documentation for MZmine2 processing](../featurebasedmolecularnetworking-with-mzmine2). 
+**IMPORTANT:** MZmine2 processing for FBMN has been slightly updated since this video was produced. Please refer to this page for up-to-date informations on MZmine2 processing for the FBMN [step-by-step documentation for MZmine2 processing](../featurebasedmolecularnetworking-with-mzmine2.md). 
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/5jjMllbwD-U"> </iframe>
 

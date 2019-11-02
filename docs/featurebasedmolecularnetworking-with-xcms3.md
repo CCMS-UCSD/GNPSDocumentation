@@ -117,6 +117,8 @@ Here is an example [FBMN job with XCMS](https://proteomics2.ucsd.edu/ProteoSAFe/
 
 **Option B** - With a mzTab-M file:
 
+TODO: Finish this section
+
 1. The **mzTab-M** file - [Download here](tutorials/AG_tutorial_files/TBProvided)
 2. The corresponding **mzML** file(s) - [Download here](tutorials/AG_tutorial_files/TBProvided)
 
