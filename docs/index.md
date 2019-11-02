@@ -13,7 +13,7 @@ As there are many aspects to GNPS, it can be a bit overwhelming. Here is a quick
 * Annotate peptidic natural products in LC-MS/MS data with [**DEREPLICATOR**/VarQuest/DEREPLICATOR+](dereplicator.md) and [RiPPQuest](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-theoretical.jsp). <!--[MetaMiner](metaminer.md) , [CycloNovo](cyclonovo.md)-->
 * Propagate in silico annotations in your LC-MS/MS data with [**Network Annotation Propagation** (NAP)](nap.md).
 * **NEW!** Perform advanced molecular networking and spectral library search with [**Feature-Based Molecular Networking**](featurebasedmolecularnetworking.md). See [https://doi.org/10.1101/812404](https://doi.org/10.1101/812404).
-* **NEW!** Analyze [**GC-MS data**](gc-ms-documentation.md) with GNPS (See [GC-MS deconvolution](gc-ms-deconvolution.md), and [GC-MS library search/molecular networks](gc-ms-library-molecular-network.md)).
+* **NEW!** Analyze [**GC-MS data**](gcanalysis.md) with GNPS (See [GC-MS deconvolution](gc-ms-deconvolution.md), and [GC-MS library search/molecular networks](gc-ms-library-molecular-network.md)).
 * **NEW!** Annotate your LC-MS/MS data with [**MolNetEnhancer**](molnetenhancer.md). See [https://doi.org/10.1101/654459](https://doi.org/10.1101/654459).
 * **NEW!** Search spectral Mass2Motifs in your LC-MS/MS data [with **MS2LDA**](ms2lda.md).
 * **NEW!** Give LC-MS/MS spectra biological/environmental context by searching against all public LC-MS/MS datasets ([**MASST Search**](masst.md)). See [https://doi.org/10.1101/591016](https://doi.org/10.1101/591016).
