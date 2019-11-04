@@ -228,7 +228,7 @@ There are several additional normalization options specifically for feature dete
 
 ![img](img/mzmine/quant_options.png)
 
-[Here is an example FBMN](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=52a390c8eb654b7fa8d61a1c7a4aaab5) job with files resulting from MZmine2 processing of a subset of the [American Gut Project] (http://humanfoodproject.com/americangut/).
+[Here is an example FBMN](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=52a390c8eb654b7fa8d61a1c7a4aaab5) job with files resulting from MZmine2 processing of a subset of the [American Gut Project](http://humanfoodproject.com/americangut/).
 
 ### Video Tutorial - Analyze FBMN jobs in GNPS
 
@@ -243,7 +243,7 @@ Cytoscape is an open source software platform used to visualize, analyze and ann
 
 ## Tutorials
 
-See our [tutorial on using MZmine2](tutorials/americangutmzmine.md) for FBMN analysis of a cohort from the [American Gut Project] (http://humanfoodproject.com/americangut/), and our [tutorial on running a FBMN analysis on GNP](tutorials/featurebasedgnps.md).
+See our [tutorial on using MZmine2](tutorials/americangutmzmine.md) for FBMN analysis of a cohort from the [American Gut Project](http://humanfoodproject.com/americangut/), and our [tutorial on running a FBMN analysis on GNP](tutorials/featurebasedgnps.md).
 
 
 ### Page contributors
