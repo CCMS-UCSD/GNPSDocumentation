@@ -36,13 +36,13 @@ These files are not needed for the tutorial but are provided here as reference f
 | Feature quantification table (TXT format) | [Download](https://github.com/lfnothias/GNPSDocumentation/raw/master/docs/tutorials/AG_tutorial_files/MS-DIAL-GNPS_AG_test_featuretable.txt) |
 | MS2 spectral file (MGF format) | [Download](https://github.com/lfnothias/GNPSDocumentation/raw/master/docs/tutorials/AG_tutorial_files/MS-DIAL-GNPS_AG_test_GNPS.mgf) |
 | Study metadata (.TXT format)| [Download](ftp://massive.ucsd.edu/MSV000082678/other/) |
-| MS-DIAL project (created with version 3.64 (| [Download](%ftp link should be added) |
+| MS-DIAL project (created with version 3.64)| TODO: Download |
 
 ## Required Software Installs
 
-1. FTP Client (e.g. WinSCP, DO NOT FileZilla!). [See instructions here](../fileupload/).
+1. FTP Client (e.g. WinSCP, DO NOT FileZilla!). [See instructions here](../fileupload.md).
 2. [MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/) for feature detection (available only on Windows).
-3. [An account on GNPS](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash2.jsp).
+3. [An account on GNPS](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp).
 4. [Cytocape](http://www.cytoscape.org/download.php) for network visualization.
 
 ## Video Tutorial - Running MS-DIAL for FBMN

@@ -21,7 +21,7 @@ Export from this Excel file as a tab separated text file (recommended export fro
 
 ### Batch File Annotation
 
-To check the validity of your batch file, check out our [batch validator](http://dorresteinappshub.ucsd.edu:5020/).
+To check the validity of your batch file, check out our [batch validator](https://gnps-quickstart.ucsd.edu/validatebatch).
 
 ## Field Information
 

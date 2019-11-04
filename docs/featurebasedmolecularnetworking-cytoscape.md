@@ -1,12 +1,14 @@
 ## Introduction to FBMN
 
-**Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The tools supported are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md).
+The main documentation for **Feature-Based Molecular Networking** (FBMN) [can be accessed here](featurebasedmolecularnetworking.md). See [our preprint on bioaRxiv](https://www.biorxiv.org/content/10.1101/812404v1).
 
-The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking.md)
-
-The documentation for Feature-Based Molecular Networking using Cytoscape is provided below.
+The documentation for FBMN using **Cytoscape** is provided below.
 
 ## Feature-Based Molecular Networking in Cytoscape
+
+Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
+
+Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
 Cytoscape is an open source software platform used to visualize, analyze and annotate molecular networks from GNPS. Cytoscape is available for download from [here](http://www.cytoscape.org). The instructions were created with Cytoscape 3.7.
 
@@ -23,8 +25,7 @@ Unzip the file and the resulting folder will look like this:
 
 ![img](img/FBMN_Cytoscape/Slide2.PNG)
 
-### Importing Files from GNPS to Cytoscape
-
+### Import the molecular network in Cytoscape
 To import the network file into Cytoscape:
 *    in Cytoscape click on _Import Network from File System_ and then choose the _.graphml_ file. 
 *   Alternatively, you can drag and drop the .graphml file into Cytoscape.
@@ -37,7 +38,23 @@ You can import the table file into Cytoscape. Click _Import Table from File Syst
 
 ![img](img/FBMN_Cytoscape/Slide17.PNG)
 
-## Rotation of the Network
+### Import supplementary annotations in Cytoscape
+Cytoscape allows to map additional annotations such as those produced by other workflows on GNPS. See the documentation for [DEREPLICATOR](dereplicator.md), [NAP](nap.md), [MS2LDA](ms2lda.md)., for more details.
+
+The FBMN workflow makes possible to map the annotations (molecular formula, cross collision section, etc) made by the processing software used for FBMN (MZmine, XCMS, MetaboScape, MS-DIAL, Progenesis QI), or other tool that processed the same .MGF/.MSP file.
+
+Regardless of the tool, the procedure follows these steps:
+
+-	Obtain the annotation table that needs to be mapped. This table must contain a column that contains the *identifier* that matches the *name* column in the network. This identifier corresponds to the *SCANS* or *FEATURE_ID* in the .MGF file. 
+- Verify that the identifier are indeed matching between the network and table.
+- Import the table in Cytoscape. Go to *Menu* / *Import* / *Import Table from File System*.
+- In the preview window, click on the header of the *identifier* column to set the meaning to Key (a key logo shows up)
+- Import the table and map the annotation into the molecular network.
+[**IMPORTANT**] If columns already exist in the network, they will be replaced by the imported table ! Rename the header(s) of the imported table if necessary.
+- Explore the annotation in the molecular network (see below).
+
+
+### Rotation of the Network
 
 To rotate the entire molecular network choose the _Layout_ tab and click _Node Layout tool_. In the opened window, uncheck the _Selected Only_ box to rotate the entire network and move the blue bar to 90. You can also select specific subnetworks and rotate them by checking _Selected only_.
 
@@ -131,18 +148,22 @@ Finally, to draw structures in the nodes, return to _Apps_ > _Cheminformatics To
 
 ![img](img/FBMN_Cytoscape/Slide16.PNG)
 
+### Mapping other node information
+
+Cytoscape enables to map informations obtained from the other workflows/softwares. Visualize this annotation by creating novel styles and changing its properties.
+
 ## Video Tutorial FBMN and Cytoscape
 
 Our [tutorial on running the FBMN analysis on GNPS including a Cytoscape demo](tutorials/featurebasedgnps.md).
 
 <iframe width="600" height="375" src="https://www.youtube.com/embed/NTkQ0fS1aug"> </iframe>
 
-See our [tutorial on using MZmine2](tutorials/americangutmzmine.md) for the FBMN analysis of a cohort from the [American Gut Project] (http://humanfoodproject.com/americangut/).
+See our [tutorial on using MZmine2](tutorials/americangutmzmine.md) for the FBMN analysis of a cohort from the [American Gut Project](http://humanfoodproject.com/americangut/).
 
-## Page contributors
+### Page contributors
 Melissa Esposito (UCSD), Irina Koester (SIO, UCSD), Christian Martin (INDICASAT), Louis Felix Nothias (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).
 
-## Contribute to the Documentation
+### Join the GNPS Community !
 
-- For informations/feature request, please open an "Issue" on the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) GitHub repository.
-- To contribute directly to the GNPS documentation, fork the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request".
+- For feature request, or to report bugs, please open an "Issue" on the [*CCMS-UCSD/GNPS_Workflows* GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows).
+- To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) repository, and make a "Pull Request" with the changes.

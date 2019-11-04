@@ -56,7 +56,7 @@ Please select the following link:
 
 | Vendor | Instrument | Version | Revision Date| Method Files|
 |:---:|:---:|:---:|:---:|:---:|
-|Thermo|[QExactive](msmschooserdataacquisitionQE.md)|v1.0|Sept 4, 2019| [Link](massive_link_here)|
+|Thermo|[QExactive](msmschooserdataacquisitionQE.md)|v1.0|Sept 4, 2019| [Link](https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=5e567bd3eb1e40ad975a25dac3f5bf11)|
 |-|-|-|-|-|
 |-|-|-|-|-|
 
@@ -77,17 +77,17 @@ Please select the following link:
 
 4. Create a GNPS/MassIVE Dataset
   * Upload the files to your GNPS account using an FTP client (preferred clients are WinSCP, CoreFTP, and CoffeeCup Free FTP)
-  * Name the MassIVE data set using the following format: “GNPS - Chemical Standard to GNPS Library - [insert barcodes]”
+  * Name the MassIVE data set using the following format: “GNPS - MSMS-Chooser - [insert barcodes]”
   * Upload all .raw files into the RAW folder and all .mzXML files into the PEAKS folder
   * Upload the **MSMS-CHOOSER Submission** file (.tsv) from the NAS folder, download as .tsv, place in SUPPLEMENTAL folder
   * Make data public
 
 ### MSMS-Chooser (v1.0)
-1. Navigate to [ProteoSAFe](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MS-CHOOSER%22%7D).
+1. Navigate to [ProteoSAFe](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MS-CHOOSER%22%7D).
   * Select all .mzXML files, negative and positive, from MassIVE
   * Select the **"MSMS-Chooser Submission"** file (.tsv) from MassIVE
 2. Launch the Job
-3. Download result file and test using the following [Validator](http://dorresteinappshub.ucsd.edu:5020/).
+3. Download result file and test using the following [Validator](https://gnps-quickstart.ucsd.edu/validatebatch).
 4. Send completed Job Link to Contacts (detailed below)
 
 ## Contacts

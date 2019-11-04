@@ -3,7 +3,7 @@ To upload files to GNPS for analysis, the preferred method is to use an FTP clie
 
 ## FTP Batch File Uploads
 
-Please checkout our [Legacy Documentation](http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/) on how to upload files via FTP. This requires you to have already created a GNPS account. If you have not yet done so please follow these [instructions](quickstart/#create-a-gnps-account).
+Please checkout our [Legacy Documentation](http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/) on how to upload files via FTP. This requires you to have already created a GNPS account. If you have not yet done so please follow these [instructions](quickstart.md#create-a-gnps-account).
 
 ## Browser File Uploads
 

@@ -1,7 +1,7 @@
 # MSMS-Chooser: Data Acquisition - QExactive (v1.0)
 
 ## Summary
- **This document details an open-source protocol for the Thermo QExactive mass spectrometer coupled to the Thermo Vanquish UHPLC** used to combination with [MSMS-Chooser](https://proteomics2.ucsd.edu/ProteoSAFe/), a GNPS workflow and open-source protocol to empower the community to collect MS/MS reference data and contribute to the public MS/MS reference library.
+ **This document details an open-source protocol for the Thermo QExactive mass spectrometer coupled to the Thermo Vanquish UHPLC** used to combination with [MSMS-Chooser](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MSMS-CHOOSER%22%7D), a GNPS workflow and open-source protocol to empower the community to collect MS/MS reference data and contribute to the public MS/MS reference library.
 
 1-5 μL of sample is introduced into a flow of MeOH-Water (1:1) with ~0.1% formic acid at 0.5 mL/min via injection from the autosampler. The needle is washed for 3 s prior to injection, flow rate of 10 μL/sec. Data acquisition for each injection is 0.3 minutes with the majority of the sample arriving ~0.05 - 0.1 min after injection. Data-dependant acquisition is used to collect data on the top 5 precursors at a resolution of 35,000. MS/MS data are collected using an isolation width of m/z 1.7 and stepped normalized collision energy of 20, 30, and 40. Separate positive and negative ionization mode methods were created with differences in the ionization source parameters. Further details can be found in the method files.
 
@@ -15,7 +15,7 @@ Data acquisition takes 0.3 min followed by 0.3 - 0.4 min of needle washing and d
 2. QExactive
 3. Syringe pump and required fitting for instrument calibration (see instrument calibration SOP)
 4. MS calibration solution specific to calibration protocol
-5. MS tune and MS method files can be downloaded from [MassIVE](link here).
+5. MS tune and MS method files can be downloaded from [MassIVE](https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=5e567bd3eb1e40ad975a25dac3f5bf11).
 
 ## Step-by-Step Instructions
 ### Data Acquisition
