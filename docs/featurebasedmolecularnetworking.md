@@ -163,7 +163,7 @@ There are additional normalization options specifically for the FBMN workflow:
 | ID2 | Node ID 2 matching the row IDs |
 | EdgeType | Any string describing the type of edge |
 | Score | A numerical value for the score (cannot be empty) |
-| Anntoation | A string annotation |
+| Annotation | A string annotation |
 
 **Example of the Supplementary Pairs used in the Ion Identity Networking (IIN) workflow**
 ![img](img/featurebasedmolecularnetworking/fbmn_iin_edges.PNG)
