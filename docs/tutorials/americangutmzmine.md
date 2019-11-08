@@ -45,4 +45,4 @@ LC-MS/MS data and files can be found in the [MassIVE dataset MSV000082678](https
 
 Checkout the follow up [tutorial](featurebasedgnps.md) on how to take the output of MZMine2 to produce a molecular network at GNPS.
 
-Other tutorials are available from the main [Feature Based Molecular Networking Workflow page] (../featurebasedmolecularnetworking). 
+Other tutorials are available from the main [Feature Based Molecular Networking Workflow page](../featurebasedmolecularnetworking). 
