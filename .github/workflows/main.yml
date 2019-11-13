@@ -1,0 +1,19 @@
+name: CI
+
+on: push
+  #schedule:
+    # * is a special character in YAML so you have to quote this string
+  #  - cron:  '*/5 * * * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Broken-Links-Crawler
+      uses: ScholliYT/Broken-Links-Crawler-Action@v2.0.0
+      with:
+        website_url: 'https://ccms-ucsd.github.io/GNPSDocumentation/'
+        verbose: 'true'
