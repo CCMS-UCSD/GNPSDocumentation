@@ -11,13 +11,15 @@ There are two options to open the job page for conducting a spectral library sea
 
 The **"Search Option" section** in the job window allows importing files needed for the spectral library search and the molecular networking generation. By clicking on "select Input Files", a pop-up window appears, allowing to select every needed file.
 
-(1), (2) The .mgf file containing the deconvolved EI spectra and the feature quantification table automatically adds if the spectral library search is launched from the deconvolution job performed with MS-Hub. Otherwise, they can be added by the user. The quantification table has to include the balance score and is formatted as the MZmine output table.
+(1), (2) The .mgf file containing the deconvolved EI spectra and the .csv feature quantification table automatically (with balance score) adds if the spectral library search is launched from the deconvolution job performed with MS-Hub. Otherwise, they can be added by the user from others processing software. The quantification table is formatted as the MZmine2 output table with a "raw ID", "row m/z", "row retention time" columns, and all the peak area values for all .mzML files.
+
+![img](img/GC-MS_documentation/Fig_9A.png)
 
 (3) Select your metadata table formatted as a tab-separated .txt file. To create your metadata table properly, see the documentation [here](metadata.md). 
 
 (4) Library files have to be added. Each user should add their libraries on GNPS by following the instructions [here](batchupload.md), or by uploading them in .mgf format (drag and drop on “Upload File” section). 
 
-(5) The carbon marker table has to be added. This table must have one “Compound_Name” column that includes the name and the number of carbon into parentheses, and another column named “RT_Query” with the retention time in seconds. Readers following the tutorial can use the following carbon marker table file [GC_Covats_SKIN](img/GC-MS documentation/GC_Kovats_SKIN.csv).
+(5) The carbon marker table has to be added. This table must be formatted as .csv file, with the “Compound_Name” that includes the name and the number of carbon into parentheses and the “RT_Query” with the retention time in seconds separated by semi-colon. Readers following the tutorial can use the following carbon marker table file [Kovats_table](table/GC-MS_documentation/Kovats_table).
 
 ![img](img/GC-MS_documentation/Fig_9.png)
 
@@ -64,19 +66,19 @@ The **job window** proposed four fields of advanced search, filtering, network, 
 | Meta-table (Optional)                                        | Selection of metadata to include in the search.              | The metadata file describes the samples properties and allows more flexibility for data analysis and visualization. It is an alternative way to assign groups when selecting data input files within the workflow of GNPS, see an example [here](metadata.md). |
 | Min pairs cos                                                | Minimum cosine score required for an edge to be formed between nodes. Lower value will increase the size of the clusters by inducing the clustering of less related spectra, higher value will limit do the opposite. | 0.7 value is set as default. This value has been determined to effectively delineate subclasses and Levels 6 and 7 and usually performs well with data obtained through experiments without derivatization, but that will depend on the quality of the mass spectra obtained. For derivatized compounds the cosine value for good matches is generally lower due to an inferior quality of the EI spectra. |
 | Network TopK                                                 | Pairs of nodes are reported only if they are found to be best matches in the topK in both directions that are above the minimum cosine score. | Default is set to 10. This value enables the network to be more or less complex. |
-| Quant-table (Optional)                                       | Table including feature ID, retention time (in min.) with balance score, Rel. Max Integral and Sample\Best order. | The quantification table usually is directly included into the Library search/Networking job or can be imported externally. External deconvolution tools do not provide balance score and it will not be available in the search results. |
+| Quant-table                                                  | Table including feature ID, retention time and peak area values. | The quantification table usually is directly included into the Library search/Networking job when processing via MS-Hub or can be imported externally when processing by other software. |
 | Maximum shift between precursors                             | The maximum allowed difference in precursor m/z differences. | Must be set to the higher m/z expected in the analysis for EI data since no precursor information is available (default value of 500) |
 | Maximum Connected Component Size                             | Maximum number of nodes that can be connected in a single sub-network of a molecular network. This process iteratively breaks up large ‘hairball’ networks (of false positives) by removing the lowest scoring alignments (by cosine score) first until the resulting pieces fall below the maximum size. | Default setting is 100 – this value can be set to 0 to allow for an unlimited number of nodes or a higher setting can be used for larger data sets or for data sets containing many structurally-related molecules. Low value encourages breaking up the “hairball” clusters but increases the chance that some nodes become disconnected and fall out of the network. |
 | ***Advanced Kovats Index Calculation Options***              |                                                              |                                                              |
 | Perform Kovats Calculation                                   | Whether to perform calculation of Kovats retention index.    | If the user need to calculate Kovats RIs for the compounds during library search this parameter should be selected. (i) The Input Carbon Marker File could be provided for Kovats markers, but it must be conducted with identical protocol as the rest of the experiment. (ii) The Carbon Marker File is not provided, so the Kovat’s RIs will be estimated based on dataset-wide annotations and perform a polynomial fitting to generate satisfactory regression based in the annotations with higher Cosine and its Kovats RIs (experimental feature, may not be suitable for all datasets). |
-| Input Carbon Marker File (Optional)                          | If provided, this information will be used for RI estimation. | The RI markers information should be submitted as a comma separated values (.csv) file in the following format (header followed by names or available reference compounds and their retention times in seconds). |
+| Input Carbon Marker File (Optional)                          | If provided, this information will be used for RI estimation. | The RI markers information should be submitted as .csv file. |
 | Cosine Threshold for Kovats Filter (Can be left blank, experimental feature) | The minimal value of cosine score for the library match to be used for Kovats RI values assignment. | Default value is set at 0.9 to limit inclusion of erroneous annotations that may introduce errors into the calculation. This value can be lower (0.85) for experiments with derivatization because the variation between experimental and theoretical Kovats RIs usually is higher. |
 | Kovats Retention Index Filtering Window (+/- %) (Can be left blank, experimental feature) | The allowable error window for the calculated/assigned Kovats RI for the annotation to be retained. | Default of +/-10%. This value can be higher according to the quality of the mass spectra or for experiments with derivatization because the variation between experimental and theoretical Kovats RIs usually is higher. Have in mind that all of the annotations will be shown when exploring results in the browser after completing the job. |
 | Retention time window starts/ends (mins) (Can be left blank, experimental feature) | The portion of chromatogram across the dataset to be used for selecting annotations for Kovats RI assignment. | Select values according to the specifics of experiment. The front end portion of chromatogram that contains dead volume elution, solvent delay, solvent peak or otherwise is unusable, as well as back end portion after all of the meaningful compounds have eluted (e.g. bakeout ramp, column bleeding) should be excluded. |
 
 ## Inspect the Results
 
-After the job has been completed, the **job status page** gives access to three different views:
+After the job has been completed, the **job status page** gives access to four molecular networking results views:
 
 (i) “View All Spectra DB” opens the interface that allows visualization of spectral matches to the reference database from selected libraries. It will display all of the top matches for each feature to different libraries and relevant information including retention time. 
 
@@ -86,9 +88,13 @@ After the job has been completed, the **job status page** gives access to three 
 
 (ii) The “View All Compounds” option accesses the list of top hits (Compound_Name) with the corresponding cosine and the balance score for all annotated spectra.
 
-(iii) The link “View Kovats Calculation Result” shows Kovats calculation results for each spectrum if selected when launching the job.
+(iii) The "View All Spectra With Annotations" option gives access to all annotated spectra.
 
-The button at the top of the page “Back to status page” allows going back. To visualize molecular networks generated, the user has to download the input network files from the “Download GraphML” link, save the folder, and unzip it.
+(vi) The link “View Kovats Calculation Result” shows Kovats calculation results for each spectrum if selected when launching the job.
+
+The button at the top of the page “Back to status page” allows going back. To visualize molecular networks generated with cytoscape, the user has to download the input network files from the “Download Cytoscape data” link, save the folder, and unzip it.
+
+In the job status page, some advanced views are available to visualized qiime2 emperor plots or bi-plots, and to download the associated tables. For more information, follow this [link](https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/#view-qiime2-emperor-plots).
 
 ![img](img/GC-MS_documentation/Fig_10.png)
 
