@@ -83,7 +83,7 @@ Please select the following link:
   * Make data public
 
 ### MSMS-Chooser (v1.0)
-1. Navigate to [ProteoSAFe](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MS-CHOOSER%22%7D).
+1. Navigate to [ProteoSAFe](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MSMS-CHOOSER%22%7D).
   * Select all .mzXML files, negative and positive, from MassIVE
   * Select the **"MSMS-Chooser Submission"** file (.tsv) from MassIVE
 2. Launch the Job
