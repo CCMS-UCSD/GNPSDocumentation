@@ -1405,8 +1405,7 @@
 <p>(1), (2) The .mgf file containing the deconvolved EI spectra and the feature quantification table automatically adds if the spectral library search is launched from the deconvolution job performed with MS-Hub. Otherwise, they can be added by the user. The quantification table has to include the balance score and is formatted as the MZmine output table.</p>
 <p>(3) Select your metadata table formatted as a tab-separated .txt file. To create your metadata table properly, see the documentation <a href="../metadata/">here</a>. </p>
 <p>(4) Library files have to be added. Each user should add their libraries on GNPS by following the instructions <a href="../batchupload/">here</a>, or by uploading them in .mgf format (drag and drop on “Upload File” section). </p>
-<p>(5) The carbon marker table has to be added. This table must have one “Compound_Name” column that includes the name and the number of carbon into parentheses, and another column named “RT_Query” with the retention time in seconds. Readers following the tutorial can use the following carbon marker table file <a href="../static/gc_kovats_skin.csv">GC_Covats_SKIN</a>.</p>
-<p><img alt="img" src="../img/GC-MS_documentation/Fig_9.png" /></p>
+<p>(5) Optional carbon marker table. Format described below.</p>
 <p><img alt="img" src="../img/GC-MS_documentation/Fig_7.png" /></p>
 <p>The <strong>job window</strong> proposed four fields of advanced search, filtering, network, and Kovats index calculation options. Click on the “Show Fields” button to show advanced options. The default parameters recommended for obtaining good results have been determined and pre-populated as described in the table Parameters for Library Search. However, users are encouraged to adjust the settings as appropriate for their analysis. </p>
 <p>(7) Enter your email address.</p>
@@ -1457,11 +1456,17 @@
 <td>Minimum cosine score to be considered as an annotation in spectral library search.</td>
 <td>0.85 value is set as default. This value has been determined to effectively delineate subclasses and Levels 6 and 7 and usually performs well with data obtained through experiments without derivatization, but that will depend on the quality of the mass spectra obtained. For derivatized compounds the cosine value for good matches is generally lower by ~0.1 due to an inferior quality of the EI spectra.</td>
 </tr>
+</tbody>
+</table>
+<table>
+<thead>
 <tr>
-<td><strong><em>Advanced Search Options</em></strong></td>
-<td></td>
-<td></td>
+<th><strong><em>Advanced Search Options</em></strong></th>
+<th></th>
+<th></th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td><strong>Fillable Field</strong></td>
 <td><strong>Definition</strong></td>
@@ -1492,11 +1497,17 @@
 <td>Used for tandem MS data.</td>
 <td>Disabled when above option is set at “Don’t Search”.</td>
 </tr>
+</tbody>
+</table>
+<table>
+<thead>
 <tr>
-<td><strong><em>Advanced Filtering Options</em></strong></td>
-<td></td>
-<td></td>
+<th><strong><em>Advanced Filtering Options</em></strong></th>
+<th></th>
+<th></th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td><strong>Fillable Field</strong></td>
 <td><strong>Definition</strong></td>
@@ -1532,11 +1543,17 @@
 <td>All ions with a signal in the EI spectrum below this raw intensity will be deleted.</td>
 <td>Use a default value of 0 so that no filter is applied, especially if the raw intensities of your data are very low.</td>
 </tr>
+</tbody>
+</table>
+<table>
+<thead>
 <tr>
-<td><strong><em>Advanced Network Options</em></strong></td>
-<td></td>
-<td></td>
+<th><strong><em>Advanced Network Options</em></strong></th>
+<th></th>
+<th></th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td><strong>Fillable Field</strong></td>
 <td><strong>Definition</strong></td>
@@ -1572,10 +1589,21 @@
 <td>Maximum number of nodes that can be connected in a single sub-network of a molecular network. This process iteratively breaks up large ‘hairball’ networks (of false positives) by removing the lowest scoring alignments (by cosine score) first until the resulting pieces fall below the maximum size.</td>
 <td>Default setting is 100 – this value can be set to 0 to allow for an unlimited number of nodes or a higher setting can be used for larger data sets or for data sets containing many structurally-related molecules. Low value encourages breaking up the “hairball” clusters but increases the chance that some nodes become disconnected and fall out of the network.</td>
 </tr>
+</tbody>
+</table>
+<table>
+<thead>
 <tr>
-<td><strong><em>Advanced Kovats Index Calculation Options</em></strong></td>
-<td></td>
-<td></td>
+<th><strong><em>Advanced Kovats Index Calculation Options</em></strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fillable Field</strong></td>
+<td><strong>Definition</strong></td>
+<td><strong>Recommended User Input</strong></td>
 </tr>
 <tr>
 <td>Perform Kovats Calculation</td>
@@ -1584,8 +1612,8 @@
 </tr>
 <tr>
 <td>Input Carbon Marker File (Optional)</td>
-<td>If provided, this information will be used for RI estimation.</td>
-<td>The RI markers information should be submitted as a comma separated values (.csv) file in the following format (header followed by names or available reference compounds and their retention times in seconds).</td>
+<td>If provided, this information will be used for retention index (RI_ estimation.</td>
+<td>The RI markers information should be submitted as a comma separated values (.csv) file in the following headers: Compound_Name - name of the compound (string), Carbon_Number - number of carbons (integer), RT - retention time in seconds (float). <a href="../static/gc_kovats_skin.csv">Example File</a>.</td>
 </tr>
 <tr>
 <td>Cosine Threshold for Kovats Filter (Can be left blank, experimental feature)</td>
