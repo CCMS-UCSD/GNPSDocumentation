@@ -11,13 +11,13 @@ There are two options to open the job page for conducting a spectral library sea
 
 The **"Search Option" section** in the job window allows importing files needed for the spectral library search and the molecular networking generation. By clicking on "select Input Files", a pop-up window appears, allowing to select every needed file.
 
-(1), (2) The .mgf file containing the deconvolved EI spectra and the feature quantification table automatically adds if the spectral library search is launched from the deconvolution job performed with MS-Hub. Otherwise, they can be added by the user. The quantification table has to include the balance score and is formatted as the MZmine output table.
+(1), (2) The .mgf file containing the deconvolved EI spectra and the .csv feature quantification table automatically (with balance score) adds if the spectral library search is launched from the deconvolution job performed with MS-Hub. Otherwise, they can be added by the user from others processing software. The quantification table is formatted as the MZmine2 output table with a "raw ID", "row m/z", "row retention time" columns, and all the peak area values for all .mzML files.
 
 (3) Select your metadata table formatted as a tab-separated .txt file. To create your metadata table properly, see the documentation [here](metadata.md). 
 
-(4) Library files have to be added. Each user should add their libraries on GNPS by following the instructions [here](batchupload.md), or by uploading them in .mgf format (drag and drop on “Upload File” section). 
+(4) Public Libraries files are selected by default. However, user could add their libraries on GNPS by following the instructions [here](batchupload.md), or by uploading them in .mgf format (drag and drop on “Upload File” section). 
 
-(5) Optional carbon marker table. Format described below.
+(5) The carbon marker table should be added. This table must be formatted as a comma separated values (.csv) file in the following headers: Compound_Name - name of the compound (string), Carbon_Number - number of carbons (integer), RT - retention time in seconds (float). [Example File](static/gc_kovats_skin.csv). The file can also be created from the raw experimental chromatograms of the RI marker compounds using MZMine2 as described in this [video tutorial](https://youtu.be/XodHMJcuwnk). 
 
 ![img](img/GC-MS_documentation/Fig_7.png)
 
@@ -81,7 +81,7 @@ The **job window** proposed four fields of advanced search, filtering, network, 
 
 ## Inspect the Results
 
-After the job has been completed, the **job status page** gives access to three different views:
+After the job has been completed, the **job status page** gives access to four molecular networking results views:
 
 (i) “View All Spectra DB” opens the interface that allows visualization of spectral matches to the reference database from selected libraries. It will display all of the top matches for each feature to different libraries and relevant information including retention time. 
 
@@ -91,9 +91,13 @@ After the job has been completed, the **job status page** gives access to three 
 
 (ii) The “View All Compounds” option accesses the list of top hits (Compound_Name) with the corresponding cosine and the balance score for all annotated spectra.
 
-(iii) The link “View Kovats Calculation Result” shows Kovats calculation results for each spectrum if selected when launching the job.
+(iii) The "View All Spectra With Annotations" option gives access to all annotated spectra.
+
+(vi) The link “View Kovats Calculation Result” shows Kovats calculation results for each spectrum if selected when launching the job.
 
 The button at the top of the page “Back to status page” allows going back. To visualize molecular networks generated, the user has to download the input network files from the “Download GraphML” link, save the folder, and unzip it.
+
+In the job status page, some advanced views are available to visualized qiime2 emperor plots or bi-plots, and to download the associated tables. For more information, follow this [link](https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/#view-qiime2-emperor-plots).
 
 ![img](img/GC-MS_documentation/Fig_10.png)
 
