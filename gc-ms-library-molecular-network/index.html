@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
@@ -1402,10 +1402,10 @@
 </ul>
 <p><strong><img alt="img" src="../img/GC-MS_documentation/Fig_1B.png" /></strong></p>
 <p>The <strong>"Search Option" section</strong> in the job window allows importing files needed for the spectral library search and the molecular networking generation. By clicking on "select Input Files", a pop-up window appears, allowing to select every needed file.</p>
-<p>(1), (2) The .mgf file containing the deconvolved EI spectra and the feature quantification table automatically adds if the spectral library search is launched from the deconvolution job performed with MS-Hub. Otherwise, they can be added by the user. The quantification table has to include the balance score and is formatted as the MZmine output table.</p>
+<p>(1), (2) The .mgf file containing the deconvolved EI spectra and the .csv feature quantification table automatically (with balance score) adds if the spectral library search is launched from the deconvolution job performed with MS-Hub. Otherwise, they can be added by the user from others processing software. The quantification table is formatted as the MZmine2 output table with a "raw ID", "row m/z", "row retention time" columns, and all the peak area values for all .mzML files.</p>
 <p>(3) Select your metadata table formatted as a tab-separated .txt file. To create your metadata table properly, see the documentation <a href="../metadata/">here</a>. </p>
-<p>(4) Library files have to be added. Each user should add their libraries on GNPS by following the instructions <a href="../batchupload/">here</a>, or by uploading them in .mgf format (drag and drop on “Upload File” section). </p>
-<p>(5) Optional carbon marker table. Format described below.</p>
+<p>(4) Public Libraries files are selected by default. However, user could add their libraries on GNPS by following the instructions <a href="../batchupload/">here</a>, or by uploading them in .mgf format (drag and drop on “Upload File” section). </p>
+<p>(5) The carbon marker table should be added. This table must be formatted as a comma separated values (.csv) file in the following headers: Compound_Name - name of the compound (string), Carbon_Number - number of carbons (integer), RT - retention time in seconds (float). <a href="../static/gc_kovats_skin.csv">Example File</a>. The file can also be created from the raw experimental chromatograms of the RI marker compounds using MZMine2 as described in this <a href="https://youtu.be/XodHMJcuwnk">video tutorial</a>. </p>
 <p><img alt="img" src="../img/GC-MS_documentation/Fig_7.png" /></p>
 <p>The <strong>job window</strong> proposed four fields of advanced search, filtering, network, and Kovats index calculation options. Click on the “Show Fields” button to show advanced options. The default parameters recommended for obtaining good results have been determined and pre-populated as described in the table Parameters for Library Search. However, users are encouraged to adjust the settings as appropriate for their analysis. </p>
 <p>(7) Enter your email address.</p>
@@ -1633,7 +1633,7 @@
 </tbody>
 </table>
 <h2 id="inspect-the-results">Inspect the Results</h2>
-<p>After the job has been completed, the <strong>job status page</strong> gives access to three different views:</p>
+<p>After the job has been completed, the <strong>job status page</strong> gives access to several molecular networking results views:</p>
 <p>(i) “View All Spectra DB” opens the interface that allows visualization of spectral matches to the reference database from selected libraries. It will display all of the top matches for each feature to different libraries and relevant information including retention time. </p>
 <ul>
 <li>
@@ -1644,8 +1644,10 @@
 </li>
 </ul>
 <p>(ii) The “View All Compounds” option accesses the list of top hits (Compound_Name) with the corresponding cosine and the balance score for all annotated spectra.</p>
-<p>(iii) The link “View Kovats Calculation Result” shows Kovats calculation results for each spectrum if selected when launching the job.</p>
+<p>(iii) The "View All Spectra With Annotations" option gives access to all annotated spectra.</p>
+<p>(vi) The link “View Kovats Calculation Result” shows Kovats calculation results for each spectrum if selected when launching the job.</p>
 <p>The button at the top of the page “Back to status page” allows going back. To visualize molecular networks generated, the user has to download the input network files from the “Download GraphML” link, save the folder, and unzip it.</p>
+<p>In the job status page, some advanced views are available to visualized qiime2 emperor plots or bi-plots, and to download the associated tables. For more information, follow this <a href="https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/#view-qiime2-emperor-plots">link</a>.</p>
 <p><img alt="img" src="../img/GC-MS_documentation/Fig_10.png" /></p>
 <p><strong>NOTE:</strong> The Kovats estimation feature is experimental. When clicking on “View Kovats Calculation Result”, if the following error is displayed: “There was an error retrieving the result data for block ‘main’ of workflow type ‘MOLECULAR-LIBRARYSEARCH-GC’”, this is an indication that the dataset does not contain a sufficient number of reference points for polynomial fitting to generate satisfactory regression (it does not pass internal quality check), because the information for RI reference markers is necessary to generate Kovats estimates for the submitted data. You just need to increase the number of files.</p>
 <h3 id="cloning-a-job">Cloning a job</h3>
@@ -1741,7 +1743,7 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.c648116f.js"></script>
+      <script src="../assets/javascripts/application.ac79c3b0.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
