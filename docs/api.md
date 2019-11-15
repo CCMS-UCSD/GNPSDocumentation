@@ -61,6 +61,7 @@ If you have Smiles or InChI
 If you have InChI Key
 
 ```https://gnps-classyfire.ucsd.edu/entities/<InChI Key>.json```
+
 [Example](https://gnps-classyfire.ucsd.edu/entities/RYYVLZVUVIJVGH-UHFFFAOYSA-N.json)
 
 
