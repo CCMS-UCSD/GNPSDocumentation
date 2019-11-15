@@ -81,7 +81,7 @@ The **job window** proposed four fields of advanced search, filtering, network, 
 
 ## Inspect the Results
 
-After the job has been completed, the **job status page** gives access to four molecular networking results views:
+After the job has been completed, the **job status page** gives access to several molecular networking results views:
 
 (i) “View All Spectra DB” opens the interface that allows visualization of spectral matches to the reference database from selected libraries. It will display all of the top matches for each feature to different libraries and relevant information including retention time. 
 
