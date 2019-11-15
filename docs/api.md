@@ -52,9 +52,17 @@ GNPS job results page in JSON format:
 
 ### Structure Classyfire
 
+If you have Smiles or InChI
+
 ```https://gnps-structure.ucsd.edu/classyfire?smiles=<smiles string>```
 
 [Example](https://gnps-structure.ucsd.edu/classyfire?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+
+If you have InChI Key
+
+```https://gnps-classyfire.ucsd.edu/entities/<InChI Key>.json```
+[Example](https://gnps-classyfire.ucsd.edu/entities/RYYVLZVUVIJVGH-UHFFFAOYSA-N.json)
+
 
 ### Structure Image
 
