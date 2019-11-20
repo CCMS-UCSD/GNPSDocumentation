@@ -1,7 +1,14 @@
 # GC-MS Deconvolution for GNPS
 
+The GC-MS data have to be processed before performing the **spectral library search and molecular networking workflow**. [See more information here](gc-ms-library-molecular-network.md). Here it is described how to use the GC-MS deconvolution workflow on GNPS based on MSHub algorithm. Alternatively, any other tools such as MZmine/ADAP or MS-DIAL can be used and output of those tools analyzed using the library search workflow.
 
-The GC-MS data have to be processed before performing the **spectral library search and molecular networking workflow**. [See more information here](gc-ms-library-molecular-network.md). Below, we describe how to use the GC-MS deconvolution workflow on GNPS that uses MS-Hub. Alternatively, ADAP-MZmine or MS-DIAL can be used.
+The MSHub algorithm in this workflow auto-estimates all of the deconvolution settings (although it is possible for user to manually override the auto settings). This user-independent parameter optimization is accomplished via fast Fourier transform, multiplication and inverse Fourier transform for each ion across entire data sets followed by unsupervised neural network matrix factorization. 
+
+MSHub conducts deconvolution on all files in the dataset at once to utilize all of the information of spectral patterns present in the data. As machine learning approaches rely on sufficiently comprehensive training data for optimal performance, MSHub deconvolution gives the best results when more files are included into analysis. In the scenario that the user only has a few files, (less than 10), it is encouraged to perform spectral deconvolution using MZmine, MSDial, XCMS or other spectral deconvolution tools. The molecular networking can be performed in the same fashion, as described in the **spectral library search and molecular networking workflow** portion of the tutorial: [See more information here](gc-ms-library-molecular-network.md). 
+
+The reproducibility of spectral patterns for each spectral feature deconvolved across the entire data set can then be summarized as a parameter termed “balance score”.  Balance score is a new quality metric that only exists for dataset-wide deconvolution, and it gives insight into how well the spectral feature is explained across the data: when it is high, it means that the spectrum is consistent across different samples (no missing peaks of spurious noise peaks). The spectral patterns that are consistent across samples, even if only a few samples in the data contain them, would result in a high value of the balance score. Applying balance score threshold allows eliminating spurious features that are likely to be noise .
+
+
 
 
 ## GC-MS Deconvolution Workflow on GNPS with MS-Hub
@@ -50,7 +57,7 @@ The **“Advanced MSHub Processing” section** displays some automatic setting 
 
 ### Inspect the Results
 
-When the job has been completed, you will receive a notification email and the status “DONE” appears on your GNPS job. All submitted jobs appear under the “jobs” link from the GNPS main menu. 
+The analysis is linear with the number of files and scales as ~1 minute per file. The analysis time may vary depending on the cluster job load during peak vs. off-peak hours. When the job has been completed, you will receive a notification email and the status “DONE” appears on your GNPS job. All submitted jobs appear under the “jobs” link from the GNPS main menu. 
 
 ![img](img/GC-MS_documentation/Fig_4.png)
 
