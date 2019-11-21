@@ -13,7 +13,7 @@ More information **GC-MS online deconvolution workflow** with MS-Hub, or ADAP-MZ
 
 ## GC-MS Library Search and Molecular Networking Workflow
 
-More information on the **GC-MS spectral library search and molecular networking workflow** from MS-Hub, MS-DIAL, and ADAP-MZmine results. [See here for more informations](gc-ms-library-molecular-network.md). 
+More information on the **GC-MS spectral library search and molecular networking workflow** from MS-Hub, MS-DIAL, and ADAP-MZmine results. [See here for more information](gc-ms-library-molecular-network.md). 
 
 ## Share Data, Clone Job, and Add Reference Spectra
 
