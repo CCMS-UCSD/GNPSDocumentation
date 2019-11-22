@@ -85,8 +85,8 @@ Please select the following link:
 ### MSMS-Chooser (v1.0)
 This workflow selects spectra by precursor m/z. Several adducts are considered. 
 
-Positive mode: M+H, M+H, M-H2O+H, 2M+Na, M+Na, M-2H2O+H, 2M+H
-Negative mode: 
+Positive mode: M+H, M-H2O+H, 2M+Na, M+Na, M-2H2O+H, 2M+H
+Negative mode: M-H, 2M-H, 2M-2H+Na 
 
 1. Navigate to [ProteoSAFe](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MSMS-CHOOSER%22%7D).
   * Select all .mzXML files, negative and positive, from MassIVE
