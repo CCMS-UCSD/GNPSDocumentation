@@ -1,18 +1,18 @@
 ## Introduction to FBMN with OpenMS
 
-**Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The supported tools are: [MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md).
+The main documentation for **Feature-Based Molecular Networking** (FBMN) [can be accessed here](featurebasedmolecularnetworking.md). See [our preprint on bioaRxiv](https://www.biorxiv.org/content/10.1101/812404v1).
 
-The main documentation for Feature-Based Molecular Networking [can be accessed here:](featurebasedmolecularnetworking.md)
-
-Below we are describing how to use OpenMS with the FBMN workflow on GNPS.
+Below we are describing how to use **OpenMS** with the FBMN workflow on GNPS. 
 
 ### Citations
 
 This work builds on the efforts of our many colleagues, please cite their work:
 
-Röst, H. L. et al. OpenMS: a flexible open-source software platform for mass spectrometry data analysis. Nat. Methods 13, 741–748 (2016). [https://doi.org/10.1038/nmeth.3959](https://doi.org/10.1038/nmeth.3959)
+Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
 
-Wang, M. et al. Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking. Nat. Biotechnol. 34, 828–837 (2016). [https://doi.org/10.1038/nbt.3597](https://doi.org/10.1038/nbt.3597)
+Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
+
+Röst, H. L. et al. OpenMS: a flexible open-source software platform for mass spectrometry data analysis. Nat. Methods 13, 741–748 (2016). [https://doi.org/10.1038/nmeth.3959](https://doi.org/10.1038/nmeth.3959)
 
 ### Development
 
@@ -20,7 +20,7 @@ The OpenMS website at [https://www.openms.de/](https://www.openms.de/)
 
 The GNPSExport TOPP tool code can be found on [OpenMS GitHub repository](https://github.com/OpenMS/OpenMS) and the lastest version on [this fork repository](https://github.com/Bioinformatic-squad-DorresteinLab/OpenMS/blob/develop/src/topp/GNPSExport.cpp).
 
-The code for the Open-GNPS pipeline (ProteoSAFe workflow and python wrappers) is available on [this GitHub repository](https://github.com/Bioinformatic-squad-DorresteinLab/openms-gnps-workflow).
+The code for the Open-GNPS pipeline (ProteoSAFe workflow and python wrapper) is available on [this GitHub repository](https://github.com/Bioinformatic-squad-DorresteinLab/openms-gnps-workflow).
 
 ## Feature Detection with OpenMS for the FBMN
 
@@ -28,8 +28,8 @@ We have developed an OpenMS-GNPS pipeline that can be used for the processing of
 
 In brief, after running an *OpenMS "metabolomics" pipeline*, the *GNPSExport TOPP tool* can be used on the consensusXML file and corresponding mzML files to generate the files needed for FBMN on GNPS. These two files are:
 
-- The MS2 spectral data file (.MGF format) which is generated with the GNPSExport tool.
-- The feature quantification table (.TXT format) which is generated with the TextExport tool.
+- The **feature quantification table** (.TXT format) which is generated with the TextExport tool.
+- The **MS2 spectral summary** file (.MGF format) which is generated with the GNPSExport tool.
 
 ### Running the OpenMS-GNPS pipeline on GNPS web-platform
 The OpenMS-GNPS pipeline is an experimetal workflow deployed currently on *proteomics2.ucsd.edu* [https://proteomics2.ucsd.edu/ProteoSAFe/]). The job can be configured as follows:
@@ -39,7 +39,7 @@ The OpenMS-GNPS pipeline is an experimetal workflow deployed currently on *prote
 1. Connect to [https://proteomics2.ucsd.edu/ProteoSAFe/](https://proteomics2.ucsd.edu/ProteoSAFe/) (You will have to be logged in to *proteomics2.ucsd.edu* first).
 2. Select the workflow: `OpenMS + GNPS workflow`
 3. In Import Data Files, select the input mzML files (prefered) or mzXML files (not recommended, because the pipeline would have to perform conversion to mzML)
-4. Select the parameters from the presets `HPLC-Q-Exactive, UHPLC-Q-Exactive, HPLC-QTOF, UHPLC-Q-Exactive`.
+4. [TO BE RELEASED] Select the parameters from the presets `HPLC-Q-Exactive, UHPLC-Q-Exactive, HPLC-QTOF, UHPLC-Q-Exactive`.
 The corresponding OpenMS configuration files (.INI files) are available from that [GitHub repository] (https://github.com/Bioinformatic-squad-DorresteinLab/openms-gnps-workflow/presets/)). Alternatively, you can upload your OpenMS TOPP tool *parameter file* (.INI files). Note that *parameter files* can be updated with a text editor or with the *INIFileEditor* TOPP tool.
 5. Wait for the job to complete. You will get a notification.
 6. Download the main output files with "Download OpenMS Output Files" and/or all the files with "Download Workflow Files".
@@ -115,10 +115,10 @@ Make sure to select the correct table source (OpenMS).
 
 The main documentation for FBMN [can be accessed here](featurebasedmolecularnetworking.md).
 
-## Page contributors
+### Page contributors
 Louis Felix Nothias (UCSD), Abinesh Sarvepalli (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).
 
-## Contribute to the Documentation
+### Join the GNPS Community !
 
-- For informations/feature request, please open an "Issue" on the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) GitHub repository.
-- To contribute directly to the GNPS documentation, fork the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request".
+- For feature request, or to report bugs, please open an "Issue" on the [*CCMS-UCSD/GNPS_Workflows* GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows).
+- To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) repository, and make a "Pull Request" with the changes.

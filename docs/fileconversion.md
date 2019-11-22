@@ -2,9 +2,15 @@
 
 GNPS supports mzXML, mzML, and mgf formats for analysis. Our tools do NOT support mzData, xml, raw, RAW, wiff, scan, d, and cdf formats. If some of your files are in these formats, please use the following guide to convert them to open formats supported by GNPS.
 
+## Data Conversion (Super Easy)
+
+Drag and drop files on our server [here](https://gnps-quickstart.ucsd.edu/conversion) and hit convert. 
+
+You will receive a download of all the converted files. 
+
 ## Data Conversion (Easy)
 
-This is a complete package for Windows users to convert their vendor formats to GNPS compatible format (mzXML). It is as easy as putting files into a folder and batch converting them all without any installation (well nearly so).
+This is a complete package for Windows users to convert their vendor formats to GNPS compatible format (mzML or legacy mzXML). It is as easy as putting files into a folder and batch converting them all without any installation (well nearly so).
 
 1. Download the zip file [here](https://www.dropbox.com/s/41m88bh3fcr5uz9/GNPS_Vendor_Conversion.zip?dl=1)
 2. Unzip contents onto a folder on your computer (e.g. Desktop)
@@ -32,9 +38,9 @@ The .mzXML or .mzML formats are strongly preferred and will be discussed below.
 | ------------- |-------------| -----| ----- | ----- |
 | AB Sciex      | Analyst | .wiff | MSConvert | verified |
 | Agilent      | MassHunter      |   .d | MSConvert | verified (with issues with scan number export) |
-| Bruker | DataAnalysis/Compass      |   .d | CompassXport | This conversion is through the DataAnalysis software and is detailed [here](https://bix-lab.ucsd.edu/display/Public/Data+Conversion+to+GNPS+Compatible+Formats+-+.mzXML+and+.mzML#DataConversiontoGNPSCompatibleFormats-.mzXMLand.mzML-ConversionofBrukerData) |
+| Bruker | DataAnalysis/Compass      |   .d | CompassXport | This conversion is through the DataAnalysis software |
 | ThermoFisher | Xcalibur      |    .raw/.RAW | MSConvert | verified |
-| Waters | MassLynx      |    .raw | MSConvert is for full scan/DDA datasets. [Symphony](http://www.waters.com/waters/en_US/informatics,-data_pipeline/nav.htm?cid=134893896&locale=en_US) is for other modes such as MSe/SONAR/HDMSe/HD-DDA | detailed instructions coming soon! |
+| Waters | MassLynx      |    .raw | MSConvert is for full scan/DDA datasets. [Symphony](http://www.waters.com/waters/en_US/informatics,-data_pipeline/nav.htm?cid=134893896&locale=en_US) is for other modes such as MSe/SONAR/HDMSe/HD-DDA | See more informations about the procedure in [this Water Technology Brief](https://www.waters.com/webassets/cms/library/docs/720006415en.pdf) |
 | Shimadzu | | .lcd | MSConvert | |
 
 For problems with MSConvert, please contact the ProteoWizard [developers](http://proteowizard.sourceforge.net/contact.shtml).
