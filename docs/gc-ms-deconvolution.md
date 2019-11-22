@@ -76,10 +76,12 @@ The feature table is formatted as a MZmine table output.
 
 ## GC-MS data processing with ADAP-MZmine
 Deconvolution of GC-EI-MS data can be performed within MZmine following the ADAP workflow. Refer to the [ADAP manual](https://mzmine.github.io/documentation.html) on the MZmine website for a step-by-step introduction. A new module (introduced in MZmine 2.52) allows to export data processing results into the correct input format for the GNPS GC-MS workflow (quantification table as .csv and a spectra summary file as .mgf). The module is available in the MZmine menu: 
+
 _feature list methods/Export Import/Export to GNPS-GC-MS (with ADAP)_ 
 
 ### Kovats RI marker file in MZmine
 MZmine (version 2.52 and later) also offers the extraction of Kovats RI markers into the GNPS GC-MS file format for this particular input.
+
 See [tutorial video](https://youtu.be/XodHMJcuwnk) on Kovats RI marker file creation within MZmine.
 
 
