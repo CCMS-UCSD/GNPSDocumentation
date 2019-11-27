@@ -56,9 +56,5 @@ The metadata can also be used to specify spatial coordinates for direct visualiz
 * Users must select the metadata file and place it in the **"Metadata File"** folder
 * Users must upload the corresponding .STL file and place it in the **"STL Model for ili"** folder
 
-
-## Notes
-Pardon our dust as we are migrating this documentation, if we missed anything, please check out our [Legacy Documentation](https://bix-lab.ucsd.edu/display/Public/Metadata+table+in+GNPS).
-
 ## Page Contributions
 Alan K. Jarmusch (UCSD)

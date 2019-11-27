@@ -17,7 +17,7 @@
   
 ### Analyze Public Data
 [Explore Multivariate Analysis of Public Data](https://mwang87.github.io/ReDU-MS2-Documentation/AnalyzePublicData_MultivariateComparisons/) - Explore precalculated principal components analysis score plot of public data. <br>
-[Explore Chemical Annotations and Associated Sample Information in all Public Data](https://mwang87.github.io/ReDU-MS2-Documentation/AnalyzePublicData_ChemicalEnrichment/) - Precalculated using public data and default GNPS parameters <br>
+[Explore Chemical Annotations and Associated Sample Information in all Public Data](https://mwang87.github.io/ReDU-MS2-Documentation/AnalyzePublicData_ChemicalExplorerSampleInformationAssociation/) - Precalculated using public data and default GNPS parameters <br>
 [Re-analyze Public Data at GNPS](https://mwang87.github.io/ReDU-MS2-Documentation/PublicData_Reanalysis_at_GNPS/) - Select files using sample information and assemble public data in groups as desired using the file selector. The following co-analyses can be launched:
   * Molecular Networking at GNPS
   * Library Search at GNPS

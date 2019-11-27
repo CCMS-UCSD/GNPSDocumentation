@@ -24,8 +24,8 @@ Select [molecular networking analysis](https://gnps.ucsd.edu/ProteoSAFe/index.js
 
 ### Selecting Files
 
-1. Click "Select Input Files" - [Help](networking#selecting-files-to-analyze)
-2. Import MSV000079204 to analyze - [Help](networking#selecting-files-to-analyze)
+1. Click "Select Input Files" - [Help](../networking.md#selecting-files-to-analyze)
+2. Import MSV000079204 to analyze - [Help](../networking.md#selecting-files-to-analyze)
 3. Select S. roseosporus files into Group G1 and Streptomyces sp. DSM5940 into Group G2
 
 ![img](../img/tutorials/strep_selection.png)
@@ -94,7 +94,7 @@ Click the "Direct Cytoscape Preview/Download" to get a preformatted cytoscape fi
 
 In this preview you can even see from a high level the red and blue molecules that represent the G1 (roseosporus) and G2 (DSM5940) respectively. Download the Cytoscape file and view in cytoscape to dig further!
 
-Open network in Cytoscape ([Help](/cytoscape.md)) to look at the entire network. Each molecule (node) has the pie charts already drawn with red (G1 - Rosesporus) and blue (G2 - DSM5940).
+Open network in Cytoscape ([Help](../cytoscape.md)) to look at the entire network. Each molecule (node) has the pie charts already drawn with red (G1 - Rosesporus) and blue (G2 - DSM5940).
 
 ![img](../img/tutorials/cytoscape3.png)
 

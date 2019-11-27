@@ -4,7 +4,7 @@ The GNPS public spectral libraries can be browsed, explored, and downloaded. The
 
 ### GNPS Community Library
 
-There are several spectral libraries available at GNPS. They are either imported from the community (e.g. [Massbank](LINK)), provided directly to GNPS as a large collection of annotated spectra (e.g. [Pesticide Library](LINK)), or aggregated from single MS/MS additions from the entire community (e.g. [GNPS-Community](LINK)).
+There are several spectral libraries available at GNPS. They are either imported from the community (e.g. [Massbank](https://gnps.ucsd.edu/ProteoSAFe/gnpslibrary.jsp?library=MASSBANK) ), provided directly to GNPS as a large collection of annotated spectra (e.g. [Pesticide Library](https://gnps.ucsd.edu/ProteoSAFe/gnpslibrary.jsp?library=GNPS-COLLECTIONS-PESTICIDES-POSITIVE) ), or aggregated from single MS/MS additions from the entire community (e.g. [GNPS-Community](https://gnps.ucsd.edu/ProteoSAFe/gnpslibrary.jsp?library=GNPS-LIBRARY) ).
 
 Clicking on a library brings users to a list of all MS/MS spectra that are in that library. The most up to date annotation is listed.
 

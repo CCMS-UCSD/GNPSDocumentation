@@ -10,6 +10,12 @@ If you would like to host a GNPS workshop together with the GNPS team, please re
 
  If you would like to organize your own GNPS workshop to train new users, try getting started with our standard [training modules](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules). If you would like more advanced materials, please reach out to [Ming](mailto: miw023@ucsd.edu) and we'd be happy to help you. For promotional materials check out our [logo page](logos.md).
 
+## GNPS Training Tutorial Modules
+
+We have standard training tutorial modules on GNPS. Check it out here:
+
+[Training modules](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules)
+
 ## Previous Workshops
 
 | Venue        | Description          | Dates | Material |

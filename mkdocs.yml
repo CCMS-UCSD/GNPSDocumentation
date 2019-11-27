@@ -1,6 +1,7 @@
 site_name: GNPS Documentation
-edit_uri: 'https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/'
-pages:
+edit_uri: https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/
+site_url: https://ccms-ucsd.github.io/GNPSDocumentation/
+nav:
     - GNPS Introduction: index.md
     - Is my data compatible with GNPS?: isgnpsright.md
     - Frequently Asked Questions: faq.md
@@ -20,7 +21,7 @@ pages:
     - Recommended Data Analysis:
         - Molecular Networking: networking.md
         - GC-MS Molecular Networking:
-            - GC-MS on GNPS: gc-ms-documentation.md
+            - GC-MS on GNPS: gcanalysis.md
             - GC-MS Deconvolution: gc-ms-deconvolution.md
             - GC-MS Library Search and Molecular Networking: gc-ms-library-molecular-network.md
         - Molecular Networking Views: networkingviews.md
