@@ -147,5 +147,5 @@ To create chemical maps, drag and drop the example [volatilome table](https://gi
 ![img](img/GC-MS_documentation/Fig_14.png)
 
 ## Page contributors
-Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzales (UCSD), Louis Felix Nothias (UCSD).
+Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzalez (Universidad de los Andes, UCSD), Louis Felix Nothias (UCSD).
 
