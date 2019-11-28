@@ -89,4 +89,4 @@ See [tutorial video](https://youtu.be/XodHMJcuwnk) on Kovats RI marker file crea
 [to be completed]
 
 ## Page contributors
-Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzales (UCSD), Louis Felix Nothias (UCSD), Robin Schmid (WWU Münster).
+Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzalez (UCSD), Louis Felix Nothias (UCSD), Robin Schmid (WWU Münster).
