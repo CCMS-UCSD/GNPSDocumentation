@@ -1,4 +1,6 @@
-## Metaminer - Insilico Peptidic Natural Products Tools
+# MetaMiner
+
+## Introduction
 
 **MetaMiner** is a metabologenomic pipeline which integrates metabolomic (tandem mass spectra) and genomic data to identify novel Ribosomally synthesized and Post-translationally modified Peptides (RiPPs) and the biosynthetic gene clusters encoding them. See Cao et al, *Cell Systems*, In press (2019) [https://doi.org/10.1016/j.cels.2019.09.004](https://www.sciencedirect.com/science/article/abs/pii/S2405471219303126) for more informations.
 
