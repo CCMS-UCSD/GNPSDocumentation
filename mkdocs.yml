@@ -45,7 +45,7 @@ nav:
         - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
         - MolNetEnhancer: molnetenhancer.md
         - MetaMiner: metaminer.md
-        - CycloNovo: cyclonovo.md
+        # CycloNovo: cyclonovo.md
         - Reanalysis of Data User Interface (ReDU): ReDU.md
     - Spectral Libraries:
         - Browsing Reference Spectral Libraries: browselibraries.md
