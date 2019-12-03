@@ -6,8 +6,8 @@
 
 **MetaMiner** is developed in collaboration of [Carnegie Mellon University](http://mohimanilab.cbd.cmu.edu), [Saint Petersburg State University](http://cab.spbu.ru) and the University of California San Diego (CA, USA) under the Apache 2.0 License. 
 
-The detailed documentation of MetaMiner can be accessed at this page:
-[https://github.com/ablab/npdtools/blob/master/docs/MetaMiner.md](https://github.com/ablab/npdtools/blob/master/docs/MetaMiner.md).
+The detailed documentation of MetaMiner can be accessed 
+[here](https://github.com/ablab/npdtools/blob/master/docs/MetaMiner.md).
 
 Below we are describing how to use **MetaMiner** on GNPS.
 
@@ -44,8 +44,8 @@ Select the tandem mass spectra file(s). The input format accepted are mzML/mzXML
 
 **Select the Sequence File (Required)**: Select the sequence file(s) or a directory with multiple sequence files inside. In the latter case, NPDtools recursively walks through the directory and picks up all files with appropriate extensions (.fna, .fasta, or .fa for nucleotide or amino acid FASTA files, .gbk for antiSMASH output, .txt for BOA output). You can specify an unlimited number of input sequence files/directories, they will be processed independently (see also --correspondence option below). We determine sequence file type by its extension. For separating between nucleotide and amino acid FASTA files, the content of a few first entries is analysed. At least one sequence file is required unless correspondence file with RefSeq IDs is specified. 
 
-**Select the Correspondence File (Required)**: 
-Path to a file describing correspondence between sequence and spectra files. The file should be tab-separated and has two columns listing basenames of spectra and sequence files. Sequence column may include RefSeq IDs prefixed with #RefSeq:. In the latter case, the corresponding references are automatically downloaded from NCBI. 
+**Select the Correspondence File**: 
+Path to a file describing correspondence between sequence and spectra files. The file should be tab-separated and has two columns listing basenames of spectra and sequence files. Sequence column may include RefSeq IDs prefixed with `#RefSeq:`. In the latter case, the corresponding references are automatically downloaded from NCBI. 
 
 Note that if a correspondence file not provided, the all-vs-all analysis is performed between the spectrum and sequences files.
 
@@ -104,8 +104,6 @@ MetaMiner uses both the genome mining and tandem mass spectra annotation. This c
 - The adducts detected must be confirmed using the MS1 spectrum (mono-charged, di-charged ?, protonated adduct ?, ...). This can be done with MZmine or other feature detection software.
 
 - The molecular formula must be verified. [Sirius](https://bio.informatik.uni-jena.de/software/sirius/) can be used for that (only for single-charged compounds).
-
-- Main fragment ions non-annotated by the DEREPLICATOR should be manually annotated.
 
 - Look at the biological source(s) (species) for the peptidic natural product (Google scholar, Dictionnary of Natural Products, AntiMarin, MarinLit, ...), to see if it is consistent with the species analyzed.
 
