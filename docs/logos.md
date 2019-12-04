@@ -1,4 +1,7 @@
-Feel free to use any of the following logos for your presentations.
+Feel free to use any of the following logos for your presentations. The following logos are licensed as CC BY.
+
+![img](https://licensebuttons.net/l/by/3.0/88x31.png)
+
 
 ## GNPS Logo
 
