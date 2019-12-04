@@ -28,4 +28,4 @@ The analysis conducted on GNPS as well as the deposited raw data could be shared
 
 
 ## Page contributors
-Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzalez (UCSD), Louis Felix Nothias (UCSD).
+Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzalez (Universidad de los Andes, UCSD), Louis Felix Nothias (UCSD).
