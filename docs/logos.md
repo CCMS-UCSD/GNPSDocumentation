@@ -22,3 +22,7 @@ PNG with URL
 ![img](img/logo/MASST_logo.png)
 
 ![img](img/logo/MASST_logo_with_url.png)
+
+## Global Foodomics
+
+![img](img/logo/globallogo2v5.png)
