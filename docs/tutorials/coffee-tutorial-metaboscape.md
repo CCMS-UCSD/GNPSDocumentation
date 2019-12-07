@@ -45,7 +45,7 @@ See the documentation to perform visualization of the molecular networking on th
 1. Open Cytoscape 3.4 (or more recent version).
 2. Install the Cytoscape App *ChemViz2* - http://apps.cytoscape.org/apps/chemviz2.
 3. Import the molecular networking files downloaded from GNPS into Cytoscape.
-    * Import the network topology. Go to *File/Import/Network/File* - select the .pairsinfo file in *networkedges_selfloop* folder. See documentation for more details [here](https://bix-lab.ucsd.edu/display/Public/Cytoscape+3.4+Visualization+and+Analysis+Documentation). 
+    * Import the network topology. Go to *File/Import/Network/File* - select the .pairsinfo file in *networkedges_selfloop* folder. 
     * Import the node information table. Go to *File/Import/Table/File* - select the .tsv file in *clusterinfosummarygroup_attributes_withIDs_withcomponentID* folder.
     * Import the MS/MS spectral library annotation table. Go to *File/Import/Table/File* - select the .tsv file in *result_specnets_DB* folder.
     * Import the bucket table (MS/MS only) exported from MetaboScape. Go to *File/Import/Table/File* - select the .csv file.

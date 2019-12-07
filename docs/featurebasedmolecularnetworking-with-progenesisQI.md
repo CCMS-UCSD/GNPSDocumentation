@@ -6,7 +6,7 @@ Below we describe how to use **Progenesis QI** with the FBMN workflow on [GNPS](
 
 ## Using Progenesis QI and the Feature-Based Molecular Networking on GNPS
 
-Progenesis QI is a proprietary LC-MS feature detection and alignment software developed by [Nonlinear Dynamics](http://www.nonlinear.com/progenesis/qi/](http://www.nonlinear.com/progenesis/qi/) that is compatible with Waters file format and other proprietary and open mass spectrometry format.
+Progenesis QI is a proprietary LC-MS feature detection and alignment software developed by [Nonlinear Dynamics](http://www.nonlinear.com/progenesis/qi/) that is compatible with Waters file format and other proprietary and open mass spectrometry format.
 
 Progenesis QI can perform feature detection, alignment and annotation of non-targeted LC-MS/MS data acquired either **in data-dependent analysis (DDA)** or **MSE data independent analysis (DIA)**, and can also uses the **ion mobility spectrometry (IMS) dimension**. Feature-based molecular networking (FBMN) can be performed on **any of these data types processed with Progenesis QI**.
 
@@ -26,14 +26,14 @@ For more information on Progenesis QI, please refer to the official documentatio
 
 ##### 1. Import and process the mass spectrometry data
 - In Progenesis QI (ver. 2.4, Nonlinear Dynamics), **import RAW data** from Waters QTof data-independent acquisition (DIA) modes such as SONAR, MSE or HDMSE. 
-- **Processed data** with Progenesis QI and export the results for GNPS analysis as indicated below. See the [Progenesis QI LC-MS tutorial](http://www.nonlinear.com/products/progenesis/lc-ms/tutorial/) and the [tutorial videos] (https://www.youtube.com/watch?v=hurottpvEO8&list=PLKkdMSX1HQ-UD8WVe9T9pcEWMzyw20FUi) for more informations.
+- **Processed data** with Progenesis QI and export the results for GNPS analysis as indicated below. See the [Progenesis QI LC-MS tutorial](http://www.nonlinear.com/products/progenesis/lc-ms/tutorial/) and the [tutorial videos](https://www.youtube.com/watch?v=hurottpvEO8&list=PLKkdMSX1HQ-UD8WVe9T9pcEWMzyw20FUi) for more informations.
 
 ##### 2. Export the processing results
 
 In the menu, under the “Identify Compounds” tab:
 
 - Select **“Export Compound Measurement”** to export the **feature quantification table** (CSV file) containing compound intensity and annotation can be exported (see below).
-- Select **“Export fragment database”** to the export the **MS/MS spectral summary** (MSP file) containing the list of representative MS/MS spectra (see below).
+- Select **“Export fragment database”** to the export the **MS/MS spectral summary** (MSP file) containing the list of representative MS/MS spectra (see below). **NOTE: Do not select tags to export**
 
 ![img](img/featurebasedmolecularnetworking/progenesis_3.png)
 
@@ -74,4 +74,4 @@ Louis Felix Nothias (UCSD), Ming Wang (UCSD), Bindesh Shrestha (Waters), Giorgis
 ### Join the GNPS Community !
 
 - For feature request, or to report bugs, please open an "Issue" on the [*CCMS-UCSD/GNPS_Workflows* GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows).
-- To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request" with the changes.
+- To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) repository, and make a "Pull Request" with the changes.

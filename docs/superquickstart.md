@@ -3,9 +3,15 @@ The Superquick start interface enables you to rapidly explore your data without 
 
 **IMPORTANT!**: The limitations to this method is that the files uploaded will not reside in your own account (though no one else can see them) and will removed on a monthly basis. Please create your own account for more persistent and reproducible analyses.
 
+You would be able to use the Super quickstart interface if you have the following requirements:
 
-1. Classic Molecular Networking ([see the detailed documentation](networking/)) - Analyze a few dozen samples in up to 3 cohorts
-2. Feature Based Molecular Networking ([see the detailed documentation](featurebasedmolecularnetworking/)) - Analyze molecular networks out of your favorite LC-MS feature detection/alignement software
+- [ ] The format of your files is mzXML/mzML/Thermo raw files.
+- [ ] You have less than 3 cohorts of samples.
+- [ ] Each file has a maximum of 50 spectrum files.
+- [ ] Each file has less than 200MB. 
+
+1. Classic Molecular Networking ([see the detailed documentation](networking.md)) - Analyze a few dozen samples in up to 3 cohorts
+2. Feature Based Molecular Networking ([see the detailed documentation](featurebasedmolecularnetworking.md)) - Analyze molecular networks out of your favorite LC-MS feature detection/alignement software
 
 ## Classic Molecular Networking
 
@@ -43,7 +49,7 @@ Simply drag and drop the files out of your feature detection and alignement tool
 
 1. the **feature quantification table** (.CSV file, or mzTab-M).
 2. the **MS/MS spectral summary** (MGF file or MSP file (Progenesis QI), or mzML (for mzTab-M).
-3. (Optional) Sample metadata file - The format can be found [here](networking/#metadata)/
+3. (Optional) Sample metadata file - The format can be found [here](metadata.md)
 4. (Optional) Additional features edge generated externally - [See the documentation](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/#advanced-extras).
 
 ### Analyze your Files
@@ -56,4 +62,4 @@ This will bring you to a GNPS workflow status page. If you entered your email, y
 
 ### Results
 
-To understand the results, please refer to the [feature based molecular networking page](featurebasedmolecularnetworking.md/).
+To understand the results, please refer to the [feature based molecular networking page](featurebasedmolecularnetworking.md).
