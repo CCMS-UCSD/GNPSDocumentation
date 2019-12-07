@@ -41,6 +41,7 @@ nav:
             - FBMN with mzTab-M: featurebasedmolecularnetworking-with-mztab-m.md
             - FBMN export to Cytoscape: featurebasedmolecularnetworking-cytoscape.md
         - FBMN - Ion Identity Networking:
+            - IIN Workflow: fbmn-iin.md
             - IIN with MZmine2: fbmn-iin-mzmine.md
             - IIN with XCMS: fbmn-iin-mzmine.md
             - IIN with MS-DIAL: fbmn-iin-mzmine.md
