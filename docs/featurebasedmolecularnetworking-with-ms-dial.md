@@ -148,7 +148,10 @@ Basically, you will need to upload the files produced by MS-DIAL:
 
 - The **feature quantification table** (.TXT file)
 - The **MS/MS spetral summary** file (.MGF file)
-- (Optional) The metadata table - requirements are described [here](networking.md#metadata). 
+- (Optional) The metadata table - requirements are described [here](metadata.md). 
+
+
+https://ccms-ucsd.github.io/GNPSDocumentation/metadata/
 
 **IMPORTANT WHEN USING A METADATA TABLE WITH MS-DIAL**: "filename" in the metadata files for FBMN with MS-DIAL should not contain file extensions (ex: "sample1.mzML" must be "sample1").
 

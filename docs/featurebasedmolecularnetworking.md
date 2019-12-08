@@ -59,7 +59,7 @@ Three type of input files are needed (test files for each software are accessibl
 
 2. A *MS/MS spectral summary* file with a list of MS/MS spectra associated with the LC-MS ion features (.MGF File). (.MGF file format).
 
-3. [Optional] *Metadata table* - described [here](networking.md#metadata)
+3. [Optional] *Metadata table* - format described [here](metadata.md)
 
 4. [Optional] *"Supplementary Pairs"* of additional edges - described [here](#advanced-extras)
 
@@ -69,7 +69,7 @@ Three type of input files are needed (test files for each software are accessibl
 
 2. Use the mzML file(s) associated with mzTab-M file.
 
-3. [Optional] *Metadata table* - described [here](networking.md#metadata)
+3. [Optional] *Metadata table* - format described [here](metadata.md)
  	
  	
 ## SuperQuick Feature Based Molecular Networking Workflow

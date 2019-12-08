@@ -41,7 +41,7 @@ The mzTab-M file and the associated mzML file(s) can be uploaded to the GNPS web
 
 - Select the mzML file(s). See the screenshot below.
 - Select the mzTab-M file as *Feature Quantification Table*.
-- (EXPERIMENTAL) Select the metadata table. Requirements are described [here](networking.md#metadata).  
+- (EXPERIMENTAL) Select the metadata table. Requirements are described [here](metadata.md).  
 
 ![img](img/featurebasedmolecularnetworking/mztab-M-standard.png)
 

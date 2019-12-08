@@ -113,7 +113,7 @@ After the processing with OpenMS, the output files can be used to run the Featur
 
 Make sure to select the correct table source (OpenMS).
 
-The main documentation for FBMN [can be accessed here](featurebasedmolecularnetworking.md).
+The main documentation for FBMN [can be accessed here](featurebasedmolecularnetworking.md). For metadata format requirements, see [this page](metadata.md)
 
 ### Page contributors
 Louis Felix Nothias (UCSD), Abinesh Sarvepalli (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).
