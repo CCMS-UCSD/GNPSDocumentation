@@ -45,6 +45,7 @@ nav:
         - MolNetEnhancer: molnetenhancer.md
         - Network Annotation Propagation (NAP): nap.md
         - Reanalysis of Data User Interface (ReDU): ReDU.md
+        - Qemistree: qemistree.md
 #        - CycloNovo
 #        - MetaRiPPQuest
     - Spectral Libraries:
