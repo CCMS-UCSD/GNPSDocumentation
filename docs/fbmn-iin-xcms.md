@@ -16,29 +16,29 @@ This work builds on the efforts of our many colleagues, please cite their work:
 
 ## Citations
 
-For IIN: Schmid et al. In preparation.
+**For IIN**: Schmid et al. In preparation.
 
-For FBMN: Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
+**For FBMN**: Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
 
-For GNPS: Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
+**For GNPS**: Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
-For XCMS 1) Tautenhahn R, Boettcher C, Neumann S. [Highly sensitive feature detection for
+**For XCMS** 1) Tautenhahn R, Boettcher C, Neumann S. [Highly sensitive feature detection for
 high resolution LC/MS](https://doi.org/10.1186/1471-2105-9-504) BMC
 Bioinformatics, 9:504 (2008).
 
-For XCMS 2) Smith, C.A., Want, E.J., O'Maille, G., Abagyan,R., Siuzdak, G. [XCMS: Processing
+**For XCMS** 2) Smith, C.A., Want, E.J., O'Maille, G., Abagyan,R., Siuzdak, G. [XCMS: Processing
 mass spectrometry data for metabolite profiling using nonlinear peak alignment, matching and identification.](https://pubs.acs.org/doi/10.1021/ac051437y)
 Analytical Chemistry, 78, 779–787 (2006).
 
-For CAMERA 1): Kuhl, C., Tautenhahn, R., Böttcher, C., Larson, T. R. & Neumann, S. [CAMERA: an integrated strategy for compound spectra extraction and annotation of liquid chromatography/mass spectrometry data sets.](https://doi.org/10.1021/ac202450g) Anal. Chem. 84, 283–289 (2012)
+**For CAMERA** 1): Kuhl, C., Tautenhahn, R., Böttcher, C., Larson, T. R. & Neumann, S. [CAMERA: an integrated strategy for compound spectra extraction and annotation of liquid chromatography/mass spectrometry data sets.](https://doi.org/10.1021/ac202450g) Anal. Chem. 84, 283–289 (2012)
 
-For CAMERA 2): Treutler, H. & Neumann, S. [Prediction, Detection, and Validation of Isotope Clusters in Mass Spectrometry Data](http://dx.doi.org/10.3390/metabo6040037). Metabolites 6, (2016)
+**For CAMERA** 2): Treutler, H. & Neumann, S. [Prediction, Detection, and Validation of Isotope Clusters in Mass Spectrometry Data](http://dx.doi.org/10.3390/metabo6040037). Metabolites 6, (2016)
 
 ## Running the FBMN IIN workflow with XCMS-CAMERA
 
-Step 1: Process your non-targeted LC-MS/MS data with XCMS-CAMERA following the [FBMN documentation guidelines](featurebasedmolecularnetworking-with-xcms3.md).
+**Step 1**: Process your non-targeted LC-MS/MS data with XCMS-CAMERA following the [FBMN documentation guidelines](featurebasedmolecularnetworking-with-xcms3.md).
 
-Step 2: Export the Supplementary Annotations/Pairs:
+**Step 2**: Export the Supplementary Annotations/Pairs:
 
 The use of XCMS and CAMERA to generate IIN relies on two custom utility functions:
 
@@ -48,7 +48,10 @@ The use of XCMS and CAMERA to generate IIN relies on two custom utility function
 
 Note that the utility function `formatSpectraForGNPS` of the FBMN must also be used to export MS2 spectra as MGF.
 
-See our tutorial below for example.
+**Step 3**: Run a FBMN job and add the Supplementary Pairs file following the [main IIN documentation](fbmn-iin.md)
+[See an example of job with IIN job with XCMS-CAMERA](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=1602e1709167425cac1c5441d9919a57)
+
+See our tutorial below for detailed example.
 
 ### Tutorials
 

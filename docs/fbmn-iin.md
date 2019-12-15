@@ -2,7 +2,19 @@
 
 ## Introduction
 
-The Ion Identity Networking (IIN) workflow complements the [Feature-Based Molecular Networking (FBMN)](featurebasedmolecularnetworking.md) by grouping MS2 spectra not only through similarity of MS2 spectra, but also of MS2 spectra whose precursor ions fulfill the retention time, peak shape, user-defined. It enables the visualization of patterns of ion species and brings together subnetwork from the same molecule to create an ion identity molecular family.
+The **Ion Identity Networking** (IIN) workflow complements the [Feature-Based Molecular Networking (FBMN)](featurebasedmolecularnetworking.md) by grouping MS2 spectra not only through similarity of MS2 spectra, but also of MS2 spectra whose precursor ions fulfill the retention time, peak shape, user-defined. It enables the visualization of patterns of ion species and brings together subnetwork from the same molecule to create an ion identity molecular family. IIN can be performed with [MZmine](iin-mzmine.md), [XCMS-CAMERA](fbmn-iin-xcms.md), or [MS-DIAL](fbmn-iin-msdial.md).
+
+## Citations
+
+This work builds on the efforts of our many colleagues, please cite their work:
+
+**For IIN**: Schmid et al. In preparation.
+
+**For FBMN**: Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
+
+**For GNPS**: Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
+
+And the tools you used to process your data.
 
 ## Running the IIN workflow
 
@@ -47,7 +59,6 @@ See an example of the Supplementary Pairs used in the Ion Identity Networking (I
 
 ## TO DO NOTES
 - Cytoscape documentation
-- Poiting
 
 ## Page contributors
 Robin Schmid (WWU, Münster, Germany), Daniel Petras (UCSD), Louis Felix Nothias (UCSD), Ming Wang (UCSD).
