@@ -26,7 +26,7 @@ This work builds on the efforts of our many colleagues, please cite their work:
 
 The integration of MS-DIAL and IIN is supported since version 2.99. After a standard processing data with MS-DIAL, the “Alignment results” can be exported for IIN analysis.
 
-**Step 1**: Process your non-targeted LC-MS/MS data with MS-DIAL following the [FBMN documentation guidelines](featurebasedmolecularnetworking-with-msdial.md).
+**Step 1**: Process your non-targeted LC-MS/MS data with MS-DIAL following the [FBMN documentation guidelines](featurebasedmolecularnetworking-with-ms-dial.md).
 
 **Step 2**: After processing your data export the Supplementary Annotation/Pairs files from the "Alignement results" using the option “GNPS export” and “Export GNPS edge files”.
 
