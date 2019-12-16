@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.1">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
     
     
       
@@ -52,7 +52,7 @@
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -1076,6 +1076,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#qiime2-integration-errors" class="md-nav__link">
+    Qiime2 integration errors
+  </a>
+  
+</li>
+      
       
       
       
@@ -1354,6 +1361,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#qiime2-integration-errors" class="md-nav__link">
+    Qiime2 integration errors
+  </a>
+  
+</li>
+      
       
       
       
@@ -1387,18 +1401,25 @@
 <p>"Missing filename in Metadata" - The metadata file included for networking is formatted incorrectly. Please refer to metadata formatting to correct this.</p>
 <h3 id="results-incorrect">Results Incorrect</h3>
 <h4 id="no-attributes-or-groups-in-output">No attributes or groups in output</h4>
+<p>Verify that file names match between metadata and data.</p>
 <p>Make sure the metadata file includes the appropriate columns and attributes are prefixed with ATTRIBUTE_ and that the metadata file is a tab separated text file.</p>
+<p>Avoid using special characters in metadata or file names.</p>
 <h2 id="library-search-dereplication">Library Search (Dereplication)</h2>
 <h3 id="no-results">No Results</h3>
 <ol>
-<li>Check that the parameters are OK...</li>
-<li>Make sure you have the right format</li>
-<li>Make sure you have MS/MS spectra in your data</li>
+<li>Check that the parameters are correct</li>
+<li>Make sure you have the right format for input</li>
+<li>Make sure you have MS/MS spectra in your data, this is summarized in the file summary link. </li>
 </ol>
 <h2 id="single-spectrum-search">Single Spectrum Search</h2>
 <p>A common error is missing intensities for masses. Simply masses are insufficient, intensities are also required.</p>
+<h2 id="qiime2-integration-errors">Qiime2 integration errors</h2>
+<p>The following may lead to "Page not found" output in qiime2 view for Emperor plots:
+1. Duplicate file names
+2. A column called “sample_name” in your metadata, this column should be removed. </p>
                 
                   
+                
                 
               
               
@@ -1466,7 +1487,7 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.8e03edeb.js"></script>
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
