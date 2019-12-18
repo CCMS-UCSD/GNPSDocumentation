@@ -1,7 +1,7 @@
 site_name: GNPS Documentation
 edit_uri: https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/
 site_url: https://ccms-ucsd.github.io/GNPSDocumentation/
-pages:
+nav:
     - GNPS Introduction: index.md
     - Is my data compatible with GNPS?: isgnpsright.md
     - Frequently Asked Questions: faq.md

@@ -79,7 +79,7 @@ Deconvolution of GC-EI-MS data can be performed within MZmine following the ADAP
 
 _feature list methods/Export Import/Export to GNPS-GC-MS (with ADAP)_ 
 
-## Kovats RI marker file in MZmine
+### Kovats RI marker file in MZmine
 MZmine (version 2.52 and later) also offers the extraction of Kovats RI markers into the GNPS GC-MS file format for this particular input.
 
 See [tutorial video](https://youtu.be/XodHMJcuwnk) on Kovats RI marker file creation within MZmine.

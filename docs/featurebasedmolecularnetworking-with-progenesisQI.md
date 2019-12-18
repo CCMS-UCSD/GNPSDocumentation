@@ -33,7 +33,7 @@ For more information on Progenesis QI, please refer to the official documentatio
 In the menu, under the “Identify Compounds” tab:
 
 - Select **“Export Compound Measurement”** to export the **feature quantification table** (CSV file) containing compound intensity and annotation can be exported (see below).
-- Select **“Export fragment database”** to the export the **MS/MS spectral summary** (MSP file) containing the list of representative MS/MS spectra (see below).
+- Select **“Export fragment database”** to the export the **MS/MS spectral summary** (MSP file) containing the list of representative MS/MS spectra (see below). **NOTE: Do not select tags to export**
 
 ![img](img/featurebasedmolecularnetworking/progenesis_3.png)
 
