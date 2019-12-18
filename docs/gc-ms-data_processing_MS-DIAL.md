@@ -38,7 +38,7 @@ Click “Browse” on this window and choose the files that you need to analyze.
 
 ![img](img/GC-MS_documentation/Fig_28.png)
 
-​         In this window, the user needs to assign/ choose correct File names, and choose their types, i.e., standard, samples, QC, Blank etc. and assign them a Class ID, and also if they were analyzed over various batches; any analytical order information, or if different injection volume. It looks:  
+In this window, the user needs to assign/ choose correct File names, and choose their types, i.e., standard, samples, QC, Blank etc. and assign them a Class ID, and also if they were analyzed over various batches; any analytical order information, or if different injection volume. It looks:  
 
 ![img](img/GC-MS_documentation/Fig_29.png)
 
@@ -88,7 +88,7 @@ A successfully submitted job looks like:
 
 ![img](img/GC-MS_documentation/Fig_40.png)
 
-​         A successfully finished job window on MS-DIAL looks like:  
+A successfully finished job window on MS-DIAL looks like:  
 
 ![img](img/GC-MS_documentation/Fig_41.png)
 

@@ -79,14 +79,14 @@ Deconvolution of GC-EI-MS data can be performed within MZmine following the ADAP
 
 _feature list methods/Export Import/Export to GNPS-GC-MS (with ADAP)_ 
 
-### Kovats RI marker file in MZmine
+## Kovats RI marker file in MZmine
 MZmine (version 2.52 and later) also offers the extraction of Kovats RI markers into the GNPS GC-MS file format for this particular input.
 
 See [tutorial video](https://youtu.be/XodHMJcuwnk) on Kovats RI marker file creation within MZmine.
 
 
 ## GC-MS data processing with MS-DIAL
-[to be completed]
+To access the documentation for GC-MS data processing with MS-Dial, click to this [link](gc-ms-data_processing_MS-DIAL.md).
 
 ## Page contributors
 Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzalez (Universidad de los Andes, UCSD), Louis Felix Nothias (UCSD), Robin Schmid (WWU Münster).
