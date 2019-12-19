@@ -86,7 +86,7 @@ See [tutorial video](https://youtu.be/XodHMJcuwnk) on Kovats RI marker file crea
 
 
 ## GC-MS data processing with MS-DIAL
-[to be completed]
+To access the documentation for GC-MS data processing with MS-Dial, click to this [link](gc-ms-data_processing_MS-DIAL.md).
 
 ## Page contributors
 Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzalez (Universidad de los Andes, UCSD), Louis Felix Nothias (UCSD), Robin Schmid (WWU Münster).
