@@ -7,7 +7,7 @@ The Superquick start interface enables you to rapidly explore your data without 
 
 You would be able to use the Super quickstart interface if you have the following requirements:
 
-- [ ] The format of your files is mzXML/mzML (Thermo raw files (.raw)/Bruker raw files (.d) can be converted on GNPS [Checkout this [documentation](fileconversion.md).])
+- [ ] The format of your files is mzXML/mzML (Thermo raw files (.raw) can be converted on GNPS [Checkout this [documentation](fileconversion.md).])
 - [ ] You have less than 3 cohorts of samples.
 - [ ] Each file has a maximum of 50 spectrum files.
 - [ ] Each file has less than 200MB. 
@@ -25,6 +25,7 @@ On the GNPS homepage navigate to the [super-quick start button](https://gnps-qui
 ## Classic Molecular Networking
 
 Please navigate to the [super quickstart page](https://gnps-quickstart.ucsd.edu/) to begin with Classic Molecular Networking!
+Classic Molecular Networking start page can be accessed [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D)
 
 ### Converting Data
 
@@ -50,7 +51,7 @@ This will bring you to a GNPS workflow status page. If you entered your email, y
 
 ![button](img/job_submission_dotd.PNG.png)
 
-Note: If you drag proprietary files, such as .d files into the Groups, you will be able to start the job, however it will fail, as shown here: 
+Note: If you drag proprietary files you will be able to start the job, however it will fail, as shown here: 
 
 ![button](img/job_failed.PNG)
 
@@ -62,6 +63,8 @@ To understand the results, please refer to the analysis section of the standard 
 ## Feature Based Molecular Networking
 
 Please navigate to the [super quickstart page](https://gnps-quickstart.ucsd.edu/featurebasednetworking) to begin with Feature Based Molecular Networking!
+Feature Based Molecular Networking job can also be started here: [Feature Based Molecular Networking](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D)
+Feature Based Molecular Networking [Documentation](featurebasedmolecularnetworking.md) 
 
 ### Selecting Files
 
