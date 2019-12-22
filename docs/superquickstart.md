@@ -7,7 +7,7 @@ The Superquick start interface enables you to rapidly explore your data without 
 
 You would be able to use the Super quickstart interface if you have the following requirements:
 
-- [ ] The format of your files is mzXML/mzML (Thermo raw files (.raw) can be converted on GNPS [Checkout this [documentation](fileconversion.md).])
+- [ ] The format of your files is mzXML/mzML/Thermo raw files (.raw). Other file types can be converted on GNPS [Checkout this [documentation](fileconversion.md).])
 - [ ] You have less than 3 cohorts of samples.
 - [ ] Each file has a maximum of 50 spectrum files.
 - [ ] Each file has less than 200MB. 
