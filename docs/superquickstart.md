@@ -25,7 +25,8 @@ On the GNPS homepage navigate to the [super-quick start button](https://gnps-qui
 ## Classic Molecular Networking
 
 Please navigate to the [super quickstart page](https://gnps-quickstart.ucsd.edu/) to begin with Classic Molecular Networking!
-Classic Molecular Networking start page can be accessed [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D)
+
+The standard Classic Molecular Networking analysis start page can be accessed [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D)
 
 ### Converting Data
 
@@ -63,7 +64,9 @@ To understand the results, please refer to the analysis section of the standard 
 ## Feature Based Molecular Networking
 
 Please navigate to the [super quickstart page](https://gnps-quickstart.ucsd.edu/featurebasednetworking) to begin with Feature Based Molecular Networking!
-Feature Based Molecular Networking job can also be started here: [Feature Based Molecular Networking](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D)
+
+The standard Feature Based Molecular Networking analysis start page can also be started here: [Feature Based Molecular Networking](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) 
+
 Feature Based Molecular Networking [Documentation](featurebasedmolecularnetworking.md) 
 
 ### Selecting Files
