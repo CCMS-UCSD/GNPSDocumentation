@@ -5,10 +5,10 @@ The Superquick start interface enables you to rapidly explore your data without 
 
 You would be able to use the Super quickstart interface if you have the following requirements:
 
-- [ ] The format of your files is mzXML/mzML/Thermo raw files.
-- [ ] You have less than 3 cohorts of samples.
-- [ ] Each file has a maximum of 50 spectrum files.
-- [ ] Each file has less than 200MB. 
+- The format of your files is mzXML/mzML/Thermo raw files.
+- You have less than 3 cohorts of samples.
+- Each file has a maximum of 50 spectrum files.
+- Each file has less than 200MB. 
 
 1. Classic Molecular Networking ([see the detailed documentation](networking.md)) - Analyze a few dozen samples in up to 3 cohorts
 2. Feature Based Molecular Networking ([see the detailed documentation](featurebasedmolecularnetworking.md)) - Analyze molecular networks out of your favorite LC-MS feature detection/alignement software
