@@ -71,8 +71,7 @@ nav:
     - Change Log: changelog.md
     - Join the GNPS community: gnps_community.md
     - GNPS Workshops: workshops.md
-    - Presentation Materials:
-        - Logos: logos.md
+    - GNPS Logos: logos.md
     - Contact: contact.md
     - API: api.md
 theme:
