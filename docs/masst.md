@@ -10,7 +10,7 @@ To search a single spectrum to see where it occurs in all public GNPS datasets, 
 
 ### 1. MASST Web Interface
 
-Click [here](https://proteosafe-extensions.ucsd.edu/masst) for the standalone MASST search interface, to get this start page:
+Click [here](https://masst.ucsd.edu) for the standalone MASST search interface, to get this start page:
 
 ![img](img/singlespectrum/MASST_standalone.PNG)
 
