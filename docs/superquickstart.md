@@ -17,7 +17,7 @@ The Super-Quick Start Interface supports both Classical Molecular Networking and
 
 On the GNPS homepage navigate to the [super-quick start button](https://gnps-quickstart.ucsd.edu/)
 
-![interface](img/homepage_button.png)
+![interface](img/superquick/homepage_button.png)
 
 1. Classic Molecular Networking ([see the detailed documentation](networking.md)) - Analyze a few dozen samples in up to 3 cohorts
 2. Feature Based Molecular Networking ([see the detailed documentation](featurebasedmolecularnetworking.md)) - Analyze molecular networks out of your favorite LC-MS feature detection/alignment software
@@ -36,25 +36,25 @@ Convert vendor formats to open formats using MSConvert locally or using the GNPS
 
 Simply drag and drop your mass spectrometry files (mzML, mzXML, or MGF) into the appropriate cohorts you want to compare. It is required to upload files to Cohort Group 1. Additional Groups can be used (to separate control and treatment samples, for example).
 
-![interface](img/superquickstart_selection.png)
+![interface](img/superquick/superquickstart_selection.png)
 
 Wait until each file is loaded, as shown here:
 
-![interface](img/file_upload.PNG)
+![interface](img/superquick/file_upload.PNG)
 
 ### Analyze Files
 
 Once files have been uploaded into appropriate cohorts, enter your email and click "Analyze Uploaded Files with GNPS Molecular Networking". Entering your email will give you a means of retrieving the job at a later time or if you close the browser.
 
-![button](img/superquickstart.png)
+![button](img/superquick/superquickstart.png)
 
 This will bring you to a GNPS workflow status page. If you entered your email, you will receive a notification once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this will be the only way for you to find the analysis again.
 
-![button](img/job_submission_dotd.PNG.png)
+![button](img/superquick/job_submission_dotd.PNG.png)
 
-Note: If you drag proprietary files you will be able to start the job, however it will fail, as shown here: 
+Note: If you drag vendor proprietary files (e.g. not mzML/mzXML) you will be able to start the job, however it will fail, as shown here: 
 
-![button](img/job_failed.PNG)
+![button](img/superquick/job_failed.PNG)
 
 ### Results
 
