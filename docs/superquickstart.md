@@ -50,7 +50,6 @@ Once files have been uploaded into appropriate cohorts, enter your email and cli
 
 This will bring you to a GNPS workflow status page. If you entered your email, you will receive a notification once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this will be the only way for you to find the analysis again.
 
-![button](img/superquick/job_submission_dotd.PNG.png)
 
 Note: If you drag vendor proprietary files (e.g. not mzML/mzXML) you will be able to start the job, however it will fail, as shown here: 
 
