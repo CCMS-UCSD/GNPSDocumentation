@@ -84,7 +84,7 @@ Once files have been uploaded, enter your email and click "Analyze Uploaded File
 ![button](img/superquickstart.png)
 
 This will bring you to a GNPS workflow status page. If you entered your email, you will receive a notification once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this will be the only way for you to find the analysis again.
-If you entered your GNPS log-in credentials then the job will be saved to your account. 
+If you entered your GNPS log-in credentials then the job will be saved to your account.
 
 ### Results
 
