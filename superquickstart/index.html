@@ -102,7 +102,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#classic-molecular-networking" tabindex="1" class="md-skip">
+      <a href="#no-log-in-required" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -284,6 +284,20 @@
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#no-log-in-required" class="md-nav__link">
+    No log-in required
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#super-quick-start-interface" class="md-nav__link">
+    Super-Quick Start Interface
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#classic-molecular-networking" class="md-nav__link">
@@ -1216,34 +1230,10 @@
       
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19" type="checkbox" id="nav-19">
-    
-    <label class="md-nav__link" for="nav-19">
-      Presentation Materials
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-19">
-        Presentation Materials
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../logos/" title="Logos" class="md-nav__link">
-      Logos
+    <a href="../logos/" title="GNPS Logos" class="md-nav__link">
+      GNPS Logos
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
     
@@ -1288,6 +1278,20 @@
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#no-log-in-required" class="md-nav__link">
+    No log-in required
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#super-quick-start-interface" class="md-nav__link">
+    Super-Quick Start Interface
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#classic-molecular-networking" class="md-nav__link">
@@ -1386,37 +1390,48 @@
                   <h1>Superquick Start Guide</h1>
                 
                 <p>The Superquick start interface enables you to rapidly explore your data without having to create an account or install any software besides your web browser and data conversion programs.</p>
-<p><strong>IMPORTANT!</strong>: The limitations to this method is that the files uploaded will not reside in your own account (though no one else can see them) and will removed on a monthly basis. Please create your own account for more persistent and reproducible analyses.</p>
+<h2 id="no-log-in-required">No log-in required</h2>
+<p><strong>IMPORTANT!</strong>: The limitations to this method is that the files uploaded will not reside in your own account (though no one else can see them) and will be removed on a monthly basis. Please create your own account for more persistent and reproducible analyses.</p>
 <p>You would be able to use the Super quickstart interface if you have the following requirements:</p>
 <ul>
-<li>[ ] The format of your files is mzXML/mzML/Thermo raw files.</li>
-<li>[ ] You have less than 3 cohorts of samples.</li>
-<li>[ ] Each file has a maximum of 50 spectrum files.</li>
-<li>
-<p>[ ] Each file has less than 200MB. </p>
-</li>
-<li>
-<p>Classic Molecular Networking (<a href="../networking/">see the detailed documentation</a>) - Analyze a few dozen samples in up to 3 cohorts</p>
-</li>
-<li>Feature Based Molecular Networking (<a href="../featurebasedmolecularnetworking/">see the detailed documentation</a>) - Analyze molecular networks out of your favorite LC-MS feature detection/alignement software</li>
+<li>The format of your files is mzXML/mzML/Thermo raw files.</li>
+<li>You have less than 3 cohorts of samples.</li>
+<li>Each file has a maximum of 50 spectrum files.</li>
+<li>Each file has less than 200MB. </li>
 </ul>
+<h2 id="super-quick-start-interface">Super-Quick Start Interface</h2>
+<p>The Super-Quick Start Interface supports both Classical Molecular Networking and Feature-based Molecular Networking.</p>
+<p>On the GNPS homepage navigate to the <a href="https://gnps-quickstart.ucsd.edu/">super-quick start button</a></p>
+<p><img alt="interface" src="../img/superquick/homepage_button.png" /></p>
+<ol>
+<li>Classic Molecular Networking (<a href="../networking/">see the detailed documentation</a>) - Analyze a few dozen samples in up to 3 cohorts</li>
+<li>Feature Based Molecular Networking (<a href="../featurebasedmolecularnetworking/">see the detailed documentation</a>) - Analyze molecular networks out of your favorite LC-MS feature detection/alignment software</li>
+</ol>
 <h2 id="classic-molecular-networking">Classic Molecular Networking</h2>
 <p>Please navigate to the <a href="https://gnps-quickstart.ucsd.edu/">super quickstart page</a> to begin with Classic Molecular Networking!</p>
+<p>The standard Classic Molecular Networking analysis start page can be accessed <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D">here</a></p>
 <h3 id="converting-data">Converting Data</h3>
-<p>Convert vendor formats to open formats using MSConvert locally. Checkout this <a href="../fileconversion/">documentation</a>.</p>
+<p>Convert vendor formats to open formats using MSConvert locally or using the GNPS format conversion tool. Checkout this <a href="../fileconversion/">documentation</a>.</p>
 <h3 id="selecting-files">Selecting Files</h3>
-<p>Simply drag and drop your mass spectrometry files (mzML, mzXML, or MGF) into the appropriate cohorts you want to compare. It is required to upload files at least to Cohort Group 1.</p>
-<p><img alt="interface" src="../img/superquickstart_selection.png" /></p>
+<p>Simply drag and drop your mass spectrometry files (mzML, mzXML, or MGF) into the appropriate cohorts you want to compare. It is required to upload files to Cohort Group 1. Additional Groups can be used (to separate control and treatment samples, for example).</p>
+<p><img alt="interface" src="../img/superquick/superquickstart_selection.png" /></p>
+<p>Wait until each file is loaded, as shown here:</p>
+<p><img alt="interface" src="../img/superquick/file_upload.PNG" /></p>
 <h3 id="analyze-files">Analyze Files</h3>
-<p>Once files have been uploaded into appropriate cohorts, enter your email and click "Analyze Uploaded Files with GNPS Molecular Networking".</p>
-<p><img alt="button" src="../img/superquickstart.png" /></p>
+<p>Once files have been uploaded into appropriate cohorts, enter your email and click "Analyze Uploaded Files with GNPS Molecular Networking". Entering your email will give you a means of retrieving the job at a later time or if you close the browser.</p>
+<p><img alt="button" src="../img/superquick/superquickstart.png" /></p>
 <p>This will bring you to a GNPS workflow status page. If you entered your email, you will receive a notification once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this will be the only way for you to find the analysis again.</p>
+<p>Note: If you drag vendor proprietary files (e.g. not mzML/mzXML) you will be able to start the job, however it will fail, as shown here: </p>
+<p><img alt="button" src="../img/superquick/job_failed.PNG" /></p>
 <h3 id="results">Results</h3>
-<p>To understand the results, please refer to the analysis section of the standard <a href="../quickstart/#view-analysis-results">quickstart guide</a>.</p>
+<p>You will receive an email when the job is complete if you entered it prior to submission. 
+To understand the results, please refer to the analysis section of the standard <a href="../quickstart/#view-analysis-results">quickstart guide</a>.</p>
 <h2 id="feature-based-molecular-networking">Feature Based Molecular Networking</h2>
 <p>Please navigate to the <a href="https://gnps-quickstart.ucsd.edu/featurebasednetworking">super quickstart page</a> to begin with Feature Based Molecular Networking!</p>
+<p>The standard Feature Based Molecular Networking analysis start page can also be started here: <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">Feature Based Molecular Networking</a> </p>
+<p>Feature Based Molecular Networking <a href="../featurebasedmolecularnetworking/">Documentation</a> </p>
 <h3 id="selecting-files_1">Selecting Files</h3>
-<p>Simply drag and drop the files out of your feature detection and alignement tool:</p>
+<p>Simply drag and drop the files generated by your feature detection and alignment tool:</p>
 <ol>
 <li>the <strong>feature quantification table</strong> (.CSV file, or mzTab-M).</li>
 <li>the <strong>MS/MS spectral summary</strong> (MGF file or MSP file (Progenesis QI), or mzML (for mzTab-M).</li>
@@ -1425,8 +1440,9 @@
 </ol>
 <h3 id="analyze-your-files">Analyze your Files</h3>
 <p>Once files have been uploaded, enter your email and click "Analyze Uploaded Files with GNPS Molecular Networking".</p>
-<p><img alt="button" src="../img/superquickstart.png" /></p>
-<p>This will bring you to a GNPS workflow status page. If you entered your email, you will receive a notification once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this will be the only way for you to find the analysis again.</p>
+<p><img alt="button" src="../img/superquick/superquickstart.png" /></p>
+<p>This will bring you to a GNPS workflow status page. If you entered your email, you will receive a notification once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this will be the only way for you to find the analysis again.
+If you entered your GNPS log-in credentials then the job will be saved to your account.</p>
 <h3 id="results_1">Results</h3>
 <p>To understand the results, please refer to the <a href="../featurebasedmolecularnetworking/">feature based molecular networking page</a>.</p>
                 

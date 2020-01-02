@@ -588,6 +588,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#documentation-for-ili" class="md-nav__link">
+    Documentation for Ìli
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -1293,34 +1313,10 @@
       
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19" type="checkbox" id="nav-19">
-    
-    <label class="md-nav__link" for="nav-19">
-      Presentation Materials
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-19">
-        Presentation Materials
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../logos/" title="Logos" class="md-nav__link">
-      Logos
+    <a href="../logos/" title="GNPS Logos" class="md-nav__link">
+      GNPS Logos
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
     
@@ -1513,6 +1509,26 @@
   <a href="#citation" class="md-nav__link">
     Citation
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-for-ili" class="md-nav__link">
+    Documentation for Ìli
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1915,6 +1931,27 @@ TODO: image and implement -->
 <p><a href="https://www.nature.com/articles/nbt.3597">Mingxun Wang, Jeremy J Carver, Vanessa V Phelan, Laura M Sanchez, Neha Garg, Yao Peng, et al. "Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking" Nature Biotechnology 34.8 (2016): 828-837. PMID: 27504778</a></p>
 <p>If you use MS-Cluster in your molecular networks, cite the following as well:</p>
 <p><a href="https://pubs.acs.org/doi/abs/10.1021/pr070361e">Frank, Ari M., et al. "Clustering millions of tandem mass spectra." Journal of proteome research 7.01 (2007): 113-122.</a></p>
+<h2 id="documentation-for-ili">Documentation for Ìli</h2>
+<p>Spatial distribution of molecular features can be visualized in 2D or 3D throughout Ìli in GNPS, a Molecular cartography approach <a href="https://www.nature.com/articles/nprot.2017.122">Protsyuk et al., 2017</a>. For mapping, it is necessary to upload the metadata (.txt) containing the ìli coordinates (x, y, z and radio) and the 2D or 3D model (STL format), along with the data files (mzXML format) for Classic Molecular Network.</p>
+<p>First, it is necessary to obtain the 2D/3D model. The 2D model may be a picture, a map or other, and the 3D model can be obtained by scanning the sample. The coordinates should be pointed in the 2D/3D model by Meshlab software before uploading in GNPS. A free Meshlab version can be downloaded from <a href="http://www.meshlab.net/">here</a>. In Meshlab, use the PickPoint tool to point coordinates in the model as figure below.</p>
+<p><img alt="Fig. 1" src="../img/ìli/Fig_1_meshlab.png" /></p>
+<p>A list with the coordinates will appear in the new box, and you can rename them according to your data. After that, a <strong>.csv table containing the coordinates</strong> and the <strong>.stl pointed model</strong> should be exported from Meshlab.</p>
+<p><img alt="Fig. 2" src="../img/ìli/Fig_2_meshlab.png" /></p>
+<p>More details about how to create a .csv table with the coordinates can be found <a href="https://github.com/MolecularCartography/Optimus/blob/master/Obtaining%20coordinates%20of%20sampling%20spots.md">here</a>. The coordinates must be added in the metadata (.txt format) according to <a href="https://ccms-ucsd.github.io/GNPSDocumentation/metadata/">ReDU format</a>.</p>
+<p><img alt="Fig. 3" src="../img/ìli/Fig_3_metadata.png" /></p>
+<p>All files should be selected according to indicated below:</p>
+<p><img alt="Fig. 4" src="../img/ìli/Fig_4_data-upload.png" /></p>
+<p>Finish selection and set the parameters to create the Molecular Network. More details regarding Classic Molecular Network can be found <a href="https://ccms-ucsd.github.io/GNPSDocumentation/networking/">here</a>.</p>
+<p>To create ìli visualization you must go in the <strong>Advanced Output Options</strong> and change the ìli <strong>Mapping Output</strong> to <strong>“Create”</strong>. Submit the job.</p>
+<p><img alt="Fig. 5" src="../img/ìli/Fig_5_create_ili.png" /></p>
+<p>Once the job was done, click on “View ìli in GNPS” to visualize the feature mapping.</p>
+<p><img alt="Fig. 6" src="../img/ìli/Fig_6_Vizualization.png" /></p>
+<p>A window for visualization will open. You can explore your data changing the feature in the bottom right. You can also set different parameters in the right window, such as the size of the spot or the color of mapping. There, you will also find some more examples to explore.</p>
+<p><img alt="Fig. 7" src="../img/ìli/Fig_7_Vizualization.png" /></p>
+<p>More details about ìli can be found <a href="https://github.com/MolecularCartography/ili">here</a>.</p>
+<h3 id="references">References</h3>
+<p>Protsyuk, I., et al. (2018). 3D molecular cartography using LC–MS facilitated by Optimus and'ili software. Nature protocols, 13(1), 134. <a href="https://doi.org/10.1038/nprot.2017.122">https://doi.org/10.1038/nprot.2017.122</a></p>
+<p><strong>Page contributors:</strong> Anelize Bauermeister; Mauricio Caraballo</p>
                 
                   
                 
