@@ -106,7 +106,8 @@ Before proceeding for any “quantitative metabolomics” data analysis, it is h
 
 In the “View” window:
 
-![img](img/GC-MS_documentation/Fig_45.png)
+<!--- ![img](img/GC-MS_documentation/Fig_45.png) --->
+_Missing Image_
 
 The user can take a look at the TICs, EIC, BPC, and / retention time correction window. 
 
@@ -114,7 +115,8 @@ The user can take a look at the TICs, EIC, BPC, and / retention time correction 
 
 For results, the user needs to go to the “Export” tab. In this tab the user can just obtained the ‘Peak List’, or the entire ‘Alignment Results’ or proceed to export for Molecular spectrum networking. Other functionalities include copying the screenshot of the current view, exporting the run Parameters, as well as exporting the normalization results.
 
-![img](img/GC-MS_documentation/Fig_47.png)
+<!---![img](img/GC-MS_documentation/Fig_47.png)--->
+_Missing Image_
 
 In the “Export tab, the users may choose “Alignment Result” in the following window:  
 
