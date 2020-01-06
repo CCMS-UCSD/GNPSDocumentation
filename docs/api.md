@@ -2,7 +2,11 @@
 
 ## GNPS Library Spectra
 
-### Getting Single Library Spectrum
+### All Public Library Spectra at GNPS
+
+```https://gnps-external.ucsd.edu/gnpslibraryjson```
+
+### Single Library Spectrum
 
 ```https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=<Library Accession>```
 
