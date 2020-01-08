@@ -40,3 +40,7 @@ Animated
 ![img](img/logo/ReDU_logo_with_url.png)
 
 ![img](img/logo/ReDU_logo_animated.gif)
+
+## MolNetEnhancer Logo
+
+![img](img/logo/MolNetEnhancer_logo.png)
