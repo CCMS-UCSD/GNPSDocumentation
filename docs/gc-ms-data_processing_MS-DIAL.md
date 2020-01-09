@@ -98,7 +98,7 @@ Clicking on the “Alignment navigator” panel on the specific “alignment res
 
 Once in the results window, the user can click on “Data visualization” and choose from Normalization, Principal Component Analysis, Partial Least Squares, Molecular Spectrum Networking and pathway Analysis. 
 
-![img](img/GC-MS_documentation/Fig_43.png)
+![img](img/GC-MS_documentation/Fig_43_b.png)
 
 
 Before proceeding for any “quantitative metabolomics” data analysis, it is highly recommended to perform data “normalization” at the least. The tool allows, either to skip normalization, or do it on the basis of Internal Standard, LOWESS, TIC or mTIC. 
