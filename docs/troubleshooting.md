@@ -40,5 +40,7 @@ A common error is missing intensities for masses. Simply masses are insufficient
 
 ## Qiime2 integration errors
 The following may lead to "Page not found" output in qiime2 view for Emperor plots:
+
 1. Duplicate file names
-2. A column called “sample_name” in your metadata, this column should be removed. 
+1. A column called “sample_name” in your metadata, this column should be removed. 
+1. Your filenames in the metadata do not align with the input data

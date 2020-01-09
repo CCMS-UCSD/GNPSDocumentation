@@ -2,7 +2,11 @@
 
 ## GNPS Library Spectra
 
-### Getting Single Library Spectrum
+### All Public Library Spectra at GNPS
+
+```https://gnps-external.ucsd.edu/gnpslibraryjson```
+
+### Single Library Spectrum
 
 ```https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=<Library Accession>```
 
@@ -70,3 +74,12 @@ If you have InChI Key
 ```https://gnps-structure.ucsd.edu/structureimg?smiles=<smiles string>```
 
 [Example](https://gnps-structure.ucsd.edu/structureimg?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+
+
+## ReDU
+
+### Per File Sample Information Query
+
+```https://redu.ucsd.edu/filename?query=<File full path in MassIVE>```
+
+[Example](https://redu.ucsd.edu/filename?query=f.MSV000082048/ccms_peak/Plate_28/30_84.mzML)
