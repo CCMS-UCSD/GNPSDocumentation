@@ -98,8 +98,8 @@ Clicking on the “Alignment navigator” panel on the specific “alignment res
 
 Once in the results window, the user can click on “Data visualization” and choose from Normalization, Principal Component Analysis, Partial Least Squares, Molecular Spectrum Networking and pathway Analysis. 
 
-<!---![img](img/GC-MS_documentation/Fig_43.png)--->
-_Missing Image_
+![img](img/GC-MS_documentation/Fig_43.png)
+
 
 Before proceeding for any “quantitative metabolomics” data analysis, it is highly recommended to perform data “normalization” at the least. The tool allows, either to skip normalization, or do it on the basis of Internal Standard, LOWESS, TIC or mTIC. 
 
@@ -107,8 +107,8 @@ Before proceeding for any “quantitative metabolomics” data analysis, it is h
 
 In the “View” window:
 
-<!--- ![img](img/GC-MS_documentation/Fig_45.png) --->
-_Missing Image_
+![img](img/GC-MS_documentation/Fig_45.png)
+
 
 The user can take a look at the TICs, EIC, BPC, and / retention time correction window. 
 
@@ -116,8 +116,8 @@ The user can take a look at the TICs, EIC, BPC, and / retention time correction 
 
 For results, the user needs to go to the “Export” tab. In this tab the user can just obtained the ‘Peak List’, or the entire ‘Alignment Results’ or proceed to export for Molecular spectrum networking. Other functionalities include copying the screenshot of the current view, exporting the run Parameters, as well as exporting the normalization results.
 
-<!---![img](img/GC-MS_documentation/Fig_47.png)--->
-_Missing Image_
+![img](img/GC-MS_documentation/Fig_47.png)
+
 
 In the “Export tab, the users may choose “Alignment Result” in the following window:  
 
