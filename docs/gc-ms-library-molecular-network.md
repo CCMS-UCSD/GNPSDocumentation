@@ -41,14 +41,15 @@ The **job window** proposed four fields of advanced search, filtering, network, 
 | Fragment Ion Mass Tolerance                                  | Maximum mass deviation between the observed fragments and the ions selected within the libraries included in the search. | The choice of the precursor mass tolerance setting is influenced directly by the accuracy of the mass analyzer being used to measure the precursor spectra. Default value is ± 0.025 Da for high-resolution mass spectrometers (q-TOF, q-Orbitrap). For low-resolution MS/MS instruments (e.g. , ion traps, triple-quadrupole/QqQ), a PIMT ion mass tolerance of ± 2.0 Da is recommended. Note that this parameters should be tuned depending on data. |
 | Score Threshold                                              | Minimum cosine score to be considered as an annotation in spectral library search. | 0.85 value is set as default. This value has been determined to effectively delineate subclasses and Levels 6 and 7 and usually performs well with data obtained through experiments without derivatization, but that will depend on the quality of the mass spectra obtained. For derivatized compounds the cosine value for good matches is generally lower by ~0.1 due to an inferior quality of the EI spectra. |
 
-| ***Advanced Search Options***                                |                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Fillable Field**                                           | **Definition**                                               | **Recommended User Input**                                   |
-| Library Class                                                | The level of library to include hits from.                   | Keep default of “Bronze” to include all possible hits from libraries. |
-| Top Hits Per Spectrum                                        | How many top hits ranked by the cosine score to be included into the results. | The default of 1. It is recommended to keep this number relatively high (for example, 10 to include top 10 matches) to allow for correct annotation selection if it is not a top hit. |
-| Spectral Library                                             | Selection of spectral libraries to include in the search.    | Select all appropriate EI libraries by selecting them and clicking “Library Files”. Click “Finish Selection” when completed. Any of the user’s own libraries could be included into the search as long as they are converted into .mgf format. If the libraries are curated and could be shared with the community, it is encouraged to upload them to GNPS as described [here](batchupload.md). |
-| Search Analogs                                               | Used for tandem MS data.                                     | Keep default of “Don’t Search”. This option is used for LC-MS data. |
-| Maximum Analog Search Mass Difference                        | Used for tandem MS data.                                     | Disabled when above option is set at “Don’t Search”.         |
+
+| ***Advanced Search Options***         |                                                              |                                                              |
+| ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Fillable Field**                    | **Definition**                                               | **Recommended User Input**                                   |
+| Library Class                         | The level of library to include hits from.                   | Keep default of “Bronze” to include all possible hits from libraries. |
+| Top Hits Per Spectrum                 | How many top hits ranked by the cosine score to be included into the results. | The default of 1. It is recommended to keep this number relatively high (for example, 10 to include top 10 matches) to allow for correct annotation selection if it is not a top hit. |
+| Spectral Library                      | Selection of spectral libraries to include in the search.    | Select all appropriate EI libraries by selecting them and clicking “Library Files”. Click “Finish Selection” when completed. Any of the user’s own libraries could be included into the search as long as they are converted into .mgf format. If the libraries are curated and could be shared with the community, it is encouraged to upload them to GNPS as described [here](batchupload.md). Users have access to open and public libraries uploaded to GNPS, these can be selected at: CCMS_SpectralLibraries -> GNPS_GC_Libraries. |
+| Search Analogs                        | Used for tandem MS data.                                     | Keep default of “Don’t Search”. This option is used for LC-MS data. |
+| Maximum Analog Search Mass Difference | Used for tandem MS data.                                     | Disabled when above option is set at “Don’t Search”.         |
 
 | ***Advanced Filtering Options***                             |                                                              |                                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -70,38 +71,41 @@ The **job window** proposed four fields of advanced search, filtering, network, 
 | Maximum shift between precursors                             | The maximum allowed difference in precursor m/z differences. | Must be set to the higher m/z expected in the analysis for EI data since no precursor information is available (default value of 500) |
 | Maximum Connected Component Size                             | Maximum number of nodes that can be connected in a single sub-network of a molecular network. This process iteratively breaks up large ‘hairball’ networks (of false positives) by removing the lowest scoring alignments (by cosine score) first until the resulting pieces fall below the maximum size. | Default setting is 100 – this value can be set to 0 to allow for an unlimited number of nodes or a higher setting can be used for larger data sets or for data sets containing many structurally-related molecules. Low value encourages breaking up the “hairball” clusters but increases the chance that some nodes become disconnected and fall out of the network. |
 
-| ***Advanced Kovats Index Calculation Options***              |                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Fillable Field**                                           | **Definition**                                               | **Recommended User Input**                                   |
-| Perform Kovats Calculation                                   | Whether to perform calculation of Kovats retention index.    | If the user need to calculate Kovats RIs for the compounds during library search this parameter should be selected. (i) The Input Carbon Marker File could be provided for Kovats markers, but it must be conducted with identical protocol as the rest of the experiment. (ii) The Carbon Marker File is not provided, so the Kovat’s RIs will be estimated based on dataset-wide annotations and perform a polynomial fitting to generate satisfactory regression based in the annotations with higher Cosine and its Kovats RIs (experimental feature, may not be suitable for all datasets). |
-| Input Carbon Marker File (Optional)                          | If provided, this information will be used for retention index (RI_ estimation. | The RI markers information should be submitted as a comma separated values (.csv) file in the following headers: Compound_Name - name of the compound (string), Carbon_Number - number of carbons (integer), RT - retention time in seconds (float). [Example File](static/gc_kovats_skin.csv). |
-| Cosine Threshold for Kovats Filter (Can be left blank, experimental feature) | The minimal value of cosine score for the library match to be used for Kovats RI values assignment. | Default value is set at 0.9 to limit inclusion of erroneous annotations that may introduce errors into the calculation. This value can be lower (0.85) for experiments with derivatization because the variation between experimental and theoretical Kovats RIs usually is higher. |
-| Kovats Retention Index Filtering Window (+/- %) (Can be left blank, experimental feature) | The allowable error window for the calculated/assigned Kovats RI for the annotation to be retained. | Default of +/-10%. This value can be higher according to the quality of the mass spectra or for experiments with derivatization because the variation between experimental and theoretical Kovats RIs usually is higher. Have in mind that all of the annotations will be shown when exploring results in the browser after completing the job. |
-| Retention time window starts/ends (mins) (Can be left blank, experimental feature) | The portion of chromatogram across the dataset to be used for selecting annotations for Kovats RI assignment. | Select values according to the specifics of experiment. The front end portion of chromatogram that contains dead volume elution, solvent delay, solvent peak or otherwise is unusable, as well as back end portion after all of the meaningful compounds have eluted (e.g. bakeout ramp, column bleeding) should be excluded. |
+| ***Advanced Kovats Index Calculation Options*** |                                                              |                                                              |
+| ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Fillable Field**                              | **Definition**                                               | **Recommended User Input**                                   |
+| Perform Kovats Calculation                      | Whether to perform calculation of Kovats retention index.    | If the user need to calculate Kovats RIs for the compounds during library search this parameter should be selected. (i) The Input Carbon Marker File could be provided for Kovats markers, but it must be conducted with identical protocol as the rest of the experiment. |
+| Input Carbon Marker File (Optional)             | If provided, this information will be used for retention index (RI_ estimation. | The RI markers information should be submitted as a comma separated values (.csv) file in the following headers: Compound_Name - name of the compound (string), Carbon_Number - number of carbons (integer), RT - retention time in seconds (float). [Example File](static/gc_kovats_skin.csv). |
+| MSHub Balance Score                             | The file that contains information for the balance score.    | The balance score is an estimation of mass spectrum patterns reproducibility across the entire dataset. This information is only available if deconvolution is conducted using MSHub and the file is appended automatically when launching library search job from completed MSHub deconvolution job. This file is optional and can be omitted when using deconvolution results from other deconvolution software. |
+| ***Advanced Deprecated Options***               |                                                              |                                                              |
+|                                                 |                                                              | These options are only relevant if/when the parent mass information is available and thus are strongly recommended to be left default. |
 
 ## Inspect the Results
 
 After the job has been completed, the **job status page** gives access to several molecular networking results views:
 
-(i) “View All Spectra DB” opens the interface that allows visualization of spectral matches to the reference database from selected libraries. It will display all of the top matches for each feature to different libraries and relevant information including retention time. 
+(i) “ View All Library Hits” opens the interface that allows visualization of spectral matches to the reference database from selected libraries. It will display all of the top matches for each feature to different libraries and relevant information including retention time. 
 
 - The displayed columns could be edited by clicking the “Select columns” link in the upper left corner. The possible annotations could be sorted by their cosine value to aid in selecting the best annotation using the researcher's judgment. The “Scan” field corresponds to the feature number in the .mgf file generated at the feature detection step and corresponds to the “No” field listed in the feature table. 
 
 - Clicking on the spectrum icon at the left side of the screen will show a mirror plot comparison between the query spectrum and the reference spectrum. This allows assessing the quality of matches between the deconvolution and the reference spectra. 
 
-(ii) The “View All Compounds” option accesses the list of top hits (Compound_Name) with the corresponding cosine and the balance score for all annotated spectra.
+(ii) The “View Top Hits” option accesses the list of: top hits (Compound_Name) with the corresponding Scan (feature number), matched library class, cosine, number of shared peaks between library entry and the spectral pattern, abundance as TIC, retention time given in units used in input raw files, and information from the reference library entry, for all annotated spectra.
 
-(iii) The "View All Spectra With Annotations" option gives access to all annotated spectra.
+
+(iii) The "View All Spectra With Annotations" option gives access to all annotated spectra with the same information listed. In addition, the balance score and Kovats RI values are also listed (if available) to allow including this information into making decisions for feature annotations.
 
 (vi) The link “View Kovats Calculation Result” shows Kovats calculation results for each spectrum if selected when launching the job.
 
-The button at the top of the page “Back to status page” allows going back. To visualize molecular networks generated, the user has to download the input network files from the “Download GraphML” link, save the folder, and unzip it.
+The displayed columns could be edited by clicking the "Select columns" link and selecting/deselecting columns as needed. 
+
+**NOTE**: Clicking the "Download" link in ether view would allow downloading the results as a table will all the associated information for each library hit (including InChi, SMILES and CAS, whenever available); the file with the name "MOLECULAR-LIBRARYSEARCH-GC*.tsv" is in the root of the downloadable compressed folder.
+
+The button at the top of the page “Back to status page” allows going back. To visualize molecular networks generated, the user has to download the input network files from the “Download Cytoscape Data” link, save the folder, and unzip it.
 
 In the job status page, some advanced views are available to visualized qiime2 emperor plots or bi-plots, and to download the associated tables. For more information, follow this [link](https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/#view-qiime2-emperor-plots).
 
 ![img](img/GC-MS_documentation/Fig_10.png)
-
-**NOTE:** The Kovats estimation feature is experimental. When clicking on “View Kovats Calculation Result”, if the following error is displayed: “There was an error retrieving the result data for block ‘main’ of workflow type ‘MOLECULAR-LIBRARYSEARCH-GC’”, this is an indication that the dataset does not contain a sufficient number of reference points for polynomial fitting to generate satisfactory regression (it does not pass internal quality check), because the information for RI reference markers is necessary to generate Kovats estimates for the submitted data. You just need to increase the number of files.
 
 ### Cloning a job
 If the same analysis needs to be repeated, it is possible to clone the job by clicking “clone” on the job status page. Cloning a job allows users to view all parameters and files that were used and rerun the job with the same, or adjusted parameters and files. Note that if data were imported from private user workspace and not from within MassIVE, other users will not have access to the data and consequently will not be able to rerun or reproduce the GNPS job.  
@@ -128,6 +132,8 @@ The network can be visualized in an external software such as Cytoscape [1], an 
 
 **(C)** Other information can be mapped onto the network, for example, the same zoom with cosine values between nodes is shown instead of compound name annotations.
 
+**NOTE**: The name of the node corresponds to the best match of the spectral pattern to the library across the entire dataset. Consequently, for some nodes the top match is not selected as the node's name as there exists other spectral pattern in the data that has better match to the same compound in the library. In such cases, the next best matching annotation is used. 
+
 ![img](img/GC-MS_documentation/Fig_11.png)
 
 ### Molecular mapping in ili
@@ -147,5 +153,5 @@ To create chemical maps, drag and drop the example [volatilome table](https://gi
 ![img](img/GC-MS_documentation/Fig_14.png)
 
 ## Page contributors
-Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzales (UCSD), Louis Felix Nothias (UCSD).
+Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzalez (Universidad de los Andes, UCSD), Louis Felix Nothias (UCSD).
 

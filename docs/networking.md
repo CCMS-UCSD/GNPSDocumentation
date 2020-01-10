@@ -207,3 +207,48 @@ If you are using GNPS for analysis, please cite the manuscript
 If you use MS-Cluster in your molecular networks, cite the following as well:
 
 [Frank, Ari M., et al. "Clustering millions of tandem mass spectra." Journal of proteome research 7.01 (2007): 113-122.](https://pubs.acs.org/doi/abs/10.1021/pr070361e)
+
+
+
+## Documentation for Ìli
+
+Spatial distribution of molecular features can be visualized in 2D or 3D throughout Ìli in GNPS, a Molecular cartography approach [Protsyuk et al., 2017](https://www.nature.com/articles/nprot.2017.122). For mapping, it is necessary to upload the metadata (.txt) containing the ìli coordinates (x, y, z and radio) and the 2D or 3D model (STL format), along with the data files (mzXML format) for Classic Molecular Network.
+
+First, it is necessary to obtain the 2D/3D model. The 2D model may be a picture, a map or other, and the 3D model can be obtained by scanning the sample. The coordinates should be pointed in the 2D/3D model by Meshlab software before uploading in GNPS. A free Meshlab version can be downloaded from [here](http://www.meshlab.net/). In Meshlab, use the PickPoint tool to point coordinates in the model as figure below.
+
+![Fig. 1](img/ìli/Fig_1_meshlab.png)
+
+A list with the coordinates will appear in the new box, and you can rename them according to your data. After that, a **.csv table containing the coordinates** and the **.stl pointed model** should be exported from Meshlab.
+
+![Fig. 2](img/ìli/Fig_2_meshlab.png)
+
+More details about how to create a .csv table with the coordinates can be found [here](https://github.com/MolecularCartography/Optimus/blob/master/Obtaining%20coordinates%20of%20sampling%20spots.md). The coordinates must be added in the metadata (.txt format) according to [ReDU format](https://ccms-ucsd.github.io/GNPSDocumentation/metadata/).
+
+![Fig. 3](img/ìli/Fig_3_metadata.png)
+
+All files should be selected according to indicated below:
+
+![Fig. 4](img/ìli/Fig_4_data-upload.png)
+
+Finish selection and set the parameters to create the Molecular Network. More details regarding Classic Molecular Network can be found [here](https://ccms-ucsd.github.io/GNPSDocumentation/networking/).
+
+To create ìli visualization you must go in the **Advanced Output Options** and change the ìli **Mapping Output** to **“Create”**. Submit the job.
+
+![Fig. 5](img/ìli/Fig_5_create_ili.png)
+
+Once the job was done, click on “View ìli in GNPS” to visualize the feature mapping.
+
+![Fig. 6](img/ìli/Fig_6_Vizualization.png)
+
+A window for visualization will open. You can explore your data changing the feature in the bottom right. You can also set different parameters in the right window, such as the size of the spot or the color of mapping. There, you will also find some more examples to explore.
+
+![Fig. 7](img/ìli/Fig_7_Vizualization.png)
+
+More details about ìli can be found [here](https://github.com/MolecularCartography/ili).
+
+### References
+
+Protsyuk, I., et al. (2018). 3D molecular cartography using LC–MS facilitated by Optimus and'ili software. Nature protocols, 13(1), 134. [https://doi.org/10.1038/nprot.2017.122](https://doi.org/10.1038/nprot.2017.122)
+ 
+**Page contributors:** Anelize Bauermeister; Mauricio Caraballo
+
