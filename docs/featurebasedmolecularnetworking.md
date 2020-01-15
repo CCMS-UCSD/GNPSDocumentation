@@ -155,7 +155,7 @@ There are additional normalization options specifically for the FBMN workflow:
 
 #### Advanced Extras
 
-"Supplementary Pairs" is an option to add extra edges to the resulting feature-based molecular network. It was initially implemented for the Ion Identity Networking (IIN) workflow. However, this approach is designed to stimulate the development and testing of new workflows as the input is an edge file in a generic csv format. An edge is described by the following table:
+"Supplementary Pairs" is an option to add extra edges to the resulting FBMN. It was initially implemented for the [Ion Identity Networking (IIN) workflow](fbmn-iin.md). The IIN supports currently MZmine, XCMS-CAMERA, and MS-DIAL. However, this approach is designed to stimulate the development and testing of new workflows as the input is an edge file in a generic CSV format. An edge is described by the following table:
 
 | Header        | Description |
 | ------------- |-------------|
@@ -165,8 +165,12 @@ There are additional normalization options specifically for the FBMN workflow:
 | Score | A numerical value for the score (cannot be empty) |
 | Annotation | A string annotation |
 
-**Example of the Supplementary Pairs used in the Ion Identity Networking (IIN) workflow**
+Note that if Supplementary Pairs from other software are used, it is mandatory that the as the LC-MS feature identifier (ID) matches the "SCANS=" number in the MGF file.
+
+Example of the Supplementary Pairs used in the [IIN) workflow](fbmn-iin.md). 
+
 ![img](img/featurebasedmolecularnetworking/fbmn_iin_edges.PNG)
+
 ![img](img/featurebasedmolecularnetworking/fbmn_advanced_extras.PNG)
 
 ### Inspecting the Results of FBMN on GNPS
