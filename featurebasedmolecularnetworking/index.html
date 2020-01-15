@@ -1043,6 +1043,78 @@
           
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-3" type="checkbox" id="nav-10-3">
+    
+    <label class="md-nav__link" for="nav-10-3">
+      FBMN - Ion Identity Networking
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-10-3">
+        FBMN - Ion Identity Networking
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fbmn-iin/" title="IIN Workflow" class="md-nav__link">
+      IIN Workflow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fbmn-iin-mzmine/" title="IIN with MZmine2" class="md-nav__link">
+      IIN with MZmine2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fbmn-iin-mzmine/" title="IIN with XCMS" class="md-nav__link">
+      IIN with XCMS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fbmn-iin-mzmine/" title="IIN with MS-DIAL" class="md-nav__link">
+      IIN with MS-DIAL
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
     <a href="../ms2lda/" title="MS2LDA and MotifDB Substructure Discovery" class="md-nav__link">
       MS2LDA and MotifDB Substructure Discovery
@@ -2150,7 +2222,7 @@
 </table>
 <p><img alt="img" src="../img/featurebasedmolecularnetworking/Advanced_Quantification_Options_2.png" /></p>
 <h4 id="advanced-extras">Advanced Extras</h4>
-<p>"Supplementary Pairs" is an option to add extra edges to the resulting feature-based molecular network. It was initially implemented for the Ion Identity Networking (IIN) workflow. However, this approach is designed to stimulate the development and testing of new workflows as the input is an edge file in a generic csv format. An edge is described by the following table:</p>
+<p>"Supplementary Pairs" is an option to add extra edges to the resulting FBMN. It was initially implemented for the <a href="../fbmn-iin/">Ion Identity Networking (IIN) workflow</a>. The IIN supports currently MZmine, XCMS-CAMERA, and MS-DIAL. However, this approach is designed to stimulate the development and testing of new workflows as the input is an edge file in a generic CSV format. An edge is described by the following table:</p>
 <table>
 <thead>
 <tr>
@@ -2181,9 +2253,10 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Example of the Supplementary Pairs used in the Ion Identity Networking (IIN) workflow</strong>
-<img alt="img" src="../img/featurebasedmolecularnetworking/fbmn_iin_edges.PNG" />
-<img alt="img" src="../img/featurebasedmolecularnetworking/fbmn_advanced_extras.PNG" /></p>
+<p>Note that if Supplementary Pairs from other software are used, it is mandatory that the as the LC-MS feature identifier (ID) matches the "SCANS=" number in the MGF file.</p>
+<p>Example of the Supplementary Pairs used in the <a href="../fbmn-iin/">IIN) workflow</a>. </p>
+<p><img alt="img" src="../img/featurebasedmolecularnetworking/fbmn_iin_edges.PNG" /></p>
+<p><img alt="img" src="../img/featurebasedmolecularnetworking/fbmn_advanced_extras.PNG" /></p>
 <h3 id="inspecting-the-results-of-fbmn-on-gnps">Inspecting the Results of FBMN on GNPS</h3>
 <p>After the completion of the FBMN job (this will take from 10 to 10 hours depending on your number of samples and instrument), you will receive an email notification with a link to the results page (see example below).</p>
 <p><img alt="Results" src="../img/featurebasedmolecularnetworking/results_FBMN.png" /></p>
