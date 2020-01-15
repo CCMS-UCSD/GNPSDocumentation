@@ -24,7 +24,7 @@ This work builds on the efforts of our many colleagues, please cite their work:
 
 ## Running the FBMN IIN workflow with MS-DIAL
 
-The integration of MS-DIAL and IIN is supported since version 2.99. After a standard processing data with MS-DIAL, the “Alignment results” can be exported for IIN analysis.
+The integration of MS-DIAL and IIN is supported since version 4.1 and support for FBMN from version 2.99. After a standard processing data with MS-DIAL, the “Alignment results” can be exported for IIN analysis.
 
 **Step 1**: Process your non-targeted LC-MS/MS data with MS-DIAL following the [FBMN documentation guidelines](featurebasedmolecularnetworking-with-ms-dial.md).
 
