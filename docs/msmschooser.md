@@ -6,35 +6,35 @@
 [MSMS-Chooser](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MS-CHOOSER%22%7D) is a GNPS workflow and open-source protocol to empower the community to collect MS/MS reference data and contribute to the public MS/MS reference library.
 
 **This is a community effort and welcome everyone to participate!**
-  - We encourage individuals to implement the protocols in their own laboratory.
-  - Individuals with chemical standards without access to instrumentation are encouraged to contact the Dorrestein lab to inquire about running standards in collaboration (see contact information below).
+  * We encourage individuals to implement the protocols in their own laboratory.
+  * Individuals with chemical standards without access to instrumentation are encouraged to contact the Dorrestein lab to inquire about running standards in collaboration (see contact information below).
 
 ---
 
 ## Requirements for MSMS-Chooser Workflow and Subsequent Addition of Spectra to the GNPS Library
-  - Complete MSMS-Chooser Template
-  - Data containing MS/MS data convereted to open-file formats (.mzXML or .mzML)
-  - Validation of MSMS-Chooser output (using drag-and-drop validator) + visual inspection of MS/MS spectra
-  - Email contacting Dorrestein Lab with task ID (see contact information below)
+  * Complete MSMS-Chooser Template
+  * Data containing MS/MS data convereted to open-file formats (.mzXML or .mzML)
+  * Validation of MSMS-Chooser output (using drag-and-drop validator) + visual inspection of MS/MS spectra
+  * Email contacting Dorrestein Lab with task ID (see contact information below)
 
 ---
 
 ## Step-by-Step Instructions
 
 ### Completion of MSMS-Chooser Template - [Link Here](https://docs.google.com/spreadsheets/d/1C6bpcaC2b4KpXaimkpslH4whlqKlN4T9DB-BKNYshjQ/edit?usp=sharing)
-1. Make a copy of the **MSMS-Chooser Template** by selecting “File” and then “Make a copy” - continue working in Google Sheets
-2. Fill out the MSMS-Chooser Template in the **"MSMS-Chooser Sample Template"** tab
+1. Make a copy of the **MSMS-Chooser Template** by selecting “File” and then “Make a copy” - continue working in Google Sheets.
+2. Fill out the MSMS-Chooser Template in the **"MSMS-Chooser Sample Template"** tab.
 
-> Notes:
-  > - A readme tab is included that describes what should be entered as well as an example and additional information is in documentation (GitHub). ** Important: You must record the position of each chemical in the 96-well plate. **
-  > - Only columns H-Q need to be complete if submitting samples to Dorrestein Lab - approval required before submitting samples.
-  > - **Please complete one row for each chemical in the positive mode and then copy and paste rows below and update the “IONMODE” column from “Positive” to “Negative”.
+    > Notes: <br>
+      - A readme tab is included that describes what should be entered as well as an example and additional information is in documentation (GitHub). **Important: You must record the position of each chemical in the 96-well plate.** <br>
+      - Only columns H-Q need to be complete if submitting samples to Dorrestein Lab - approval required before submitting samples. <br>
+      - **Please complete one row for each chemical in the positive mode and then copy and paste rows below and update the “IONMODE” column from “Positive” to “Negative”.** <br>
   
 3. Download a copy of the **MSMS-Chooser Submission File** tab.
 
-> Notes:
-  > - The MSMS-Chooser File required for submission is automatically generated in the "MSMS-Chooser Submission" tab
-  
+    > Notes: <br>
+      - The MSMS-Chooser File required for submission is automatically generated in the "MSMS-Chooser Submission" tab. <br>
+
 4. Download a copy of the applicable Sequence Table using the **Sequence Table Generator** tab as a .csv from Google Sheets.
   - Please double check the chemicals and well position match in the sequence table.
 
@@ -55,17 +55,18 @@
 1. Generate a solution of your sample (standard) at a concentration of 10 µM.
 2. Transfer 10 µL of your sample (standard) into a well in the 96 well plate recording the well position and chemical added.
 
-> Notes:
-  > - One sample should be added per well
+    > Notes: <br>
+      - One sample should be added per well. <br>
 
 3. Repeat transfer of 10 µL into wells
 4. Record plate number, well position, etc. in the sample submission template.
 5. Once all standards have been added to the 96-well plate, completely dry all solutions.
-> Notes:
-  > - Evaporation of the liquid can be done using the following techniques: Nitrogen gas evaporation or Low pressure evaporation system (Centrivap systems are recommended)
+
+    > Notes: <br>
+      - Evaporation of the liquid can be done using the following techniques: Nitrogen gas evaporation or Low pressure evaporation system (Centrivap systems are recommended). <br>
 
 6. Seal plate using the previously mentioned 96 Well plate cover. 
-    - Important: The material in the plate must be dry.
+  * Important: The material in the plate must be dry.
 7. Store plate at -20 °C prior to shipping.
 
 ---
@@ -84,8 +85,8 @@ Please select the following link:
 ### Post-Data Acqusition 
 1. It is recommended to completely dry all solutions.
 
-> Notes:
-  > - Evaporation of the liquid can be done using the following techniques: Nitrogen gas evaporation or Low pressure evaporation system (Centrivap systems are recommended)
+    > Notes: <br>
+      - Evaporation of the liquid can be done using the following techniques: Nitrogen gas evaporation or Low pressure evaporation system (Centrivap systems are recommended). <br>
   
 2. Place plates into a -20C freezer
 3. Convert raw data to .mzXML
@@ -97,20 +98,20 @@ Please select the following link:
 |-|-|-|-|
 
 4. Create a GNPS/MassIVE Dataset
-  - Upload the files to your GNPS account using an FTP client (preferred clients are WinSCP, CoreFTP, and CoffeeCup Free FTP)
-  - Name the MassIVE data set using the following format: “GNPS - MSMS-Chooser - [insert barcodes]”
-  - Upload all .raw files into the RAW folder and all .mzXML files into the PEAKS folder
-  - Upload the **MSMS-CHOOSER Submission** file (.tsv) from the NAS folder, download as .tsv, place in SUPPLEMENTAL folder
-  - Make data public
+  * Upload the files to your GNPS account using an FTP client (preferred clients are WinSCP, CoreFTP, and CoffeeCup Free FTP)
+  * Name the MassIVE data set using the following format: “GNPS - MSMS-Chooser - [insert barcodes]”
+  * Upload all .raw files into the RAW folder and all .mzXML files into the PEAKS folder
+  * Upload the **MSMS-CHOOSER Submission** file (.tsv) from the NAS folder, download as .tsv, place in SUPPLEMENTAL folder
+  * Make data public
 
 ### MSMS-Chooser (v1.0)
-This workflow selects spectra by precursor m/z. Several adducts are considered. 
-- Positive mode: M+H, M-H2O+H, 2M+Na, M+Na, M-2H2O+H, 2M+H, M+K, 2M+K
-- Negative mode: M-H, 2M-H, 2M-2H+Na 
+This workflow selects spectra by precursor m/z. Several adducts are considered. <br> 
+  - Positive mode: M+H, M-H2O+H, 2M+Na, M+Na, M-2H2O+H, 2M+H, M+K, 2M+K <br>
+  - Negative mode: M-H, 2M-H, 2M-2H+Na <br>
 
 1. Navigate to ProteoSAFe - [link here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MSMS-CHOOSER%22%7D).
-  - Select all .mzXML files, negative and positive, from MassIVE
-  - Select the **"MSMS-Chooser Submission"** file (.tsv) from MassIVE
+  * Select all .mzXML files, negative and positive, from MassIVE
+  * Select the **"MSMS-Chooser Submission"** file (.tsv) from MassIVE
 2. Launch the Job
 3. Download result file and test using the following Validator - [link here](https://gnps-quickstart.ucsd.edu/validatebatch).
 4. Send completed Job Link to Contacts (detailed below)
@@ -118,9 +119,9 @@ This workflow selects spectra by precursor m/z. Several adducts are considered.
 ---
 
 ## Contacts
-Morgan Panitchpakdi(mpanitch@ucsd.edu)
-Mingxun Wang (miw023@ucsd.edu)
-Alan Jarmusch (ajarmusch@ucsd.edu)
+Morgan Panitchpakdi(mpanitch@ucsd.edu) <br>
+Mingxun Wang (miw023@ucsd.edu) <br>
+Alan Jarmusch (ajarmusch@ucsd.edu) <br>
 
 ---
 
@@ -135,8 +136,8 @@ Vargas, F, Weldon, KC, Sikora, N, et al. Protocol for Community‐created Public
 ---
 
 ## Issues and Suggestions
-- Please submit any issues or suggestions via GitHub - [link here](https://github.com/CCMS-UCSD/GNPS_Workflows).
-- The use of the GNPS forum - [link here](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports) is encouraged.
+  * Please submit any issues or suggestions via GitHub - [link here](https://github.com/CCMS-UCSD/GNPS_Workflows).
+  * The use of the GNPS forum - [link here](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports) is encouraged.
 
 ---
 
