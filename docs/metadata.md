@@ -23,11 +23,12 @@ The use of a metadata file is an alternative way to assign groups when selecting
 **Note:** Although it is possible to use the legacy group mapping and attribute mapping file, we strongly advise against using this method.
 
 ## Requirements Specific to Qiime2
-GNPS communicates with Qiime2. PCoA visualized using EMPeror and Qiime outputs (.qza/.qzv), including a BIOM formated output, can be generated. GNPS will understand this extra metadata column and rewrite sample identifers for BIOM and metadata to this sample identifier rather than using the mass spectrometry filename by default. 
+GNPS communicates with Qiime2. PCoA visualized using EMPeror and Qiime outputs (.qza/.qzv), including a BIOM formated output, can be generated. Microbe-metabolite interactions can also be studied with [MMVEC](https://www.nature.com/articles/s41592-019-0616-3). GNPS will parse any extra column in the metadata file and output them in the Qiime2 supported files (BIOM/qza files). Note that by default the mass spectrometry filename will be used as sample name for Qiime2 files. Alternatively, it is possible to specify an additional metada column called "sample_name" that will be used instead as sample name in Qiime2, to enable joint mass spectrometry - metabolomics analysis such as MMVEC.
 
 * Save the file (must be tab-delimited text file)
 * Users must upload their data file
 * Users must select the metadata file and place it in the **"Metadata File"** folder
+* **Optional** Add an extra column called "sample_name" to the metadata file using a text editor. The sample name will replaced the mass spectrometry filename in the Qiime2 output. For joint mass spectrometry - sequencing analysis with MMVEC, provide the sequencing sample name as indicated in the qiime2 file used (BIOM/qza file).
 
 ## Requirements Specific to Qiita
 GNPS communicates with Qiita. Specifically, you can use the output of GNPS to add metabolomics data into an existing Qiita dataset. This is handled through the Biom table output as a qiime2 qza artifact. The key feature is renaming the mass spectrometry file into a sample identifier so that the identifiers are concordant. **Note: a Qiita ID with corresponding information must be created**
@@ -39,6 +40,7 @@ GNPS communicates with Qiita. Specifically, you can use the output of GNPS to ad
 * Users must select the metadata file and place it in the **"Metadata File"** folder
 
 **Note:** if performing additional analysis in Qiime using the .qza it is required to add a row indicating the type of variable.
+
 
 ## Requirements Specific to 'ili
 The metadata can also be used to specify spatial coordinates for direct visualization of the data in ['ili toolbox](https://ili.embl.de/). It creates really cool plots like this:
@@ -57,4 +59,4 @@ The metadata can also be used to specify spatial coordinates for direct visualiz
 * Users must upload the corresponding .STL file and place it in the **"STL Model for ili"** folder
 
 ## Page Contributions
-Alan K. Jarmusch (UCSD)
+Alan K. Jarmusch, Louis Felix Nothias (UCSD)
