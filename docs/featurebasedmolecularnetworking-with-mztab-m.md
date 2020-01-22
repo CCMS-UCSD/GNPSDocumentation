@@ -28,7 +28,7 @@ The FBMN workflow now supports the mzTab-M format (2.0, release 1.0.5). The **mz
 Basically, the **mzTab-M** is used to retrieve for each LC-MS/MS feature:
 
 - The abundance of the LC-MS/MS feature in each sample.
-- The filename (**mzML**) and index of the associated MS/MS spectrum. 
+- The filename (**mzML**) and the index of the most intense associated MS/MS spectrum. 
 
 After inputing the mzTab-M and mzML file(s), GNPS will automatically extract the MS/MS spectra from the mzML file and generate internally an **MS/MS spectral summary** that will be used for FBMN analysis.
 
