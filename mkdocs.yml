@@ -39,6 +39,12 @@ nav:
             - FBMN with Progenesis QI: featurebasedmolecularnetworking-with-progenesisQI.md
             - FBMN with mzTab-M: featurebasedmolecularnetworking-with-mztab-m.md
             - FBMN export to Cytoscape: featurebasedmolecularnetworking-cytoscape.md
+        - FBMN - Ion Identity Networking:
+            - IIN Workflow: fbmn-iin.md
+            - IIN with MZmine2: fbmn-iin-mzmine.md
+            - IIN with XCMS: fbmn-iin-xcms.md
+            - IIN with MS-DIAL: fbmn-iin-msdial.md
+        - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
         - Molecular Networking in Cytoscape: cytoscape.md
         - DEREPLICATOR: dereplicator.md
         - Network Annotation Propagation (NAP): nap.md
