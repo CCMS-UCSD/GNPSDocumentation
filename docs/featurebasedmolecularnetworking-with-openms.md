@@ -36,8 +36,8 @@ The OpenMS-GNPS pipeline is an experimetal workflow deployed currently on *prote
 
 ![img](img/openms/workflow_1.png)
 
-1. Connect to [https://proteomics2.ucsd.edu/ProteoSAFe/](https://proteomics2.ucsd.edu/ProteoSAFe/) (You will have to be logged in to *proteomics2.ucsd.edu* first).
-2. Select the workflow: `OpenMS + GNPS workflow`
+1. Log into [https://proteomics2.ucsd.edu](https://proteomics2.ucsd.edu/) (Create an account if necessary).
+2. Access the lastest version of the OpenMS + GNPS workflow (release 20) at [this address](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22%3A%20%22OPENMS%22%2C%20%22workflow_version%22%3A%20%22release_20%22%7D).
 3. In Import Data Files, select the input mzML files (prefered) or mzXML files (not recommended, because the pipeline would have to perform conversion to mzML)
 4. [TO BE RELEASED] Select the parameters from the presets `HPLC-Q-Exactive, UHPLC-Q-Exactive, HPLC-QTOF, UHPLC-Q-Exactive`.
 The corresponding OpenMS configuration files (.INI files) are available from that [GitHub repository] (https://github.com/Bioinformatic-squad-DorresteinLab/openms-gnps-workflow/presets/)). Alternatively, you can upload your OpenMS TOPP tool *parameter file* (.INI files). Note that *parameter files* can be updated with a text editor or with the *INIFileEditor* TOPP tool.
@@ -113,7 +113,7 @@ After the processing with OpenMS, the output files can be used to run the Featur
 
 Make sure to select the correct table source (OpenMS).
 
-The main documentation for FBMN [can be accessed here](featurebasedmolecularnetworking.md).
+The main documentation for FBMN [can be accessed here](featurebasedmolecularnetworking.md). For metadata format requirements, see [this page](metadata.md)
 
 ### Page contributors
 Louis Felix Nothias (UCSD), Abinesh Sarvepalli (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).
