@@ -247,9 +247,9 @@ See our [tutorial on using MZmine2](tutorials/americangutmzmine.md) for FBMN ana
 #### Source code
 The FBMN source code can be found on the [GNPS_Workflows GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking).
 
-The "formatter" scripts that convert input files of the supported softwares are accessible [in the *script/* folder](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking/tools/feature-based-molecular-networking/scripts).
+Requirements for the input files for each processing tool are described at https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking and representative input files are provided at [https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking/test/reference_input_file_for_formatter](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking/test/reference_input_file_for_formatter.g).
 
-References input/outpufiles for each processing tool supported [are available in the *test/reference_input_file_formatter/* folder](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking/test/reference_input_file_for_formatter)
+The "formatter" scripts that convert input files of the supported softwares are accessible [in the *script/* folder](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking/tools/feature-based-molecular-networking/scripts).
 
 #### Input files requirements
 
