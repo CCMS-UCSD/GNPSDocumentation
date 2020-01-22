@@ -558,30 +558,18 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../dereplicator/" title="DEREPLICATOR" class="md-nav__link">
-      DEREPLICATOR
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-2" type="checkbox" id="nav-10-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-1" type="checkbox" id="nav-10-1" checked>
     
-    <label class="md-nav__link" for="nav-10-2">
+    <label class="md-nav__link" for="nav-10-1">
       Feature Based Molecular Networking
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-10-2">
+      <label class="md-nav__title" for="nav-10-1">
         Feature Based Molecular Networking
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -629,8 +617,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../featurebasedmolecularnetworking-with-xcms3/" title="FBMN with XCMS3" class="md-nav__link">
-      FBMN with XCMS3
+    <a href="../featurebasedmolecularnetworking-with-xcms3/" title="FBMN with XCMS" class="md-nav__link">
+      FBMN with XCMS
     </a>
   </li>
 
@@ -863,13 +851,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-3" type="checkbox" id="nav-10-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-2" type="checkbox" id="nav-10-2">
     
-    <label class="md-nav__link" for="nav-10-3">
+    <label class="md-nav__link" for="nav-10-2">
       FBMN - Ion Identity Networking
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-10-3">
+      <label class="md-nav__title" for="nav-10-2">
         FBMN - Ion Identity Networking
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -958,8 +946,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../molnetenhancer/" title="MolNetEnhancer" class="md-nav__link">
-      MolNetEnhancer
+    <a href="../dereplicator/" title="DEREPLICATOR" class="md-nav__link">
+      DEREPLICATOR
     </a>
   </li>
 
@@ -972,6 +960,42 @@
   <li class="md-nav__item">
     <a href="../nap/" title="Network Annotation Propagation (NAP)" class="md-nav__link">
       Network Annotation Propagation (NAP)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ms2lda/" title="MS2LDA and MotifDB Substructure Discovery" class="md-nav__link">
+      MS2LDA and MotifDB Substructure Discovery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../molnetenhancer/" title="MolNetEnhancer" class="md-nav__link">
+      MolNetEnhancer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../metaminer/" title="MetaMiner" class="md-nav__link">
+      MetaMiner
     </a>
   </li>
 
@@ -1568,8 +1592,8 @@
 <p>The OpenMS-GNPS pipeline is an experimetal workflow deployed currently on <em>proteomics2.ucsd.edu</em> [https://proteomics2.ucsd.edu/ProteoSAFe/]). The job can be configured as follows:</p>
 <p><img alt="img" src="../img/openms/workflow_1.png" /></p>
 <ol>
-<li>Connect to <a href="https://proteomics2.ucsd.edu/ProteoSAFe/">https://proteomics2.ucsd.edu/ProteoSAFe/</a> (You will have to be logged in to <em>proteomics2.ucsd.edu</em> first).</li>
-<li>Select the workflow: <code>OpenMS + GNPS workflow</code></li>
+<li>Log into <a href="https://proteomics2.ucsd.edu/">https://proteomics2.ucsd.edu</a> (Create an account if necessary).</li>
+<li>Access the lastest version of the OpenMS + GNPS workflow (release 20) at <a href="https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22%3A%20%22OPENMS%22%2C%20%22workflow_version%22%3A%20%22release_20%22%7D">this address</a>.</li>
 <li>In Import Data Files, select the input mzML files (prefered) or mzXML files (not recommended, because the pipeline would have to perform conversion to mzML)</li>
 <li>[TO BE RELEASED] Select the parameters from the presets <code>HPLC-Q-Exactive, UHPLC-Q-Exactive, HPLC-QTOF, UHPLC-Q-Exactive</code>.
 The corresponding OpenMS configuration files (.INI files) are available from that [GitHub repository] (https://github.com/Bioinformatic-squad-DorresteinLab/openms-gnps-workflow/presets/)). Alternatively, you can upload your OpenMS TOPP tool <em>parameter file</em> (.INI files). Note that <em>parameter files</em> can be updated with a text editor or with the <em>INIFileEditor</em> TOPP tool.</li>
@@ -1636,7 +1660,7 @@ The corresponding OpenMS configuration files (.INI files) are available from tha
 <h3 id="running-the-fbmn-workflow-with-openms-files">Running the FBMN workflow with OpenMS files</h3>
 <p>After the processing with OpenMS, the output files can be used to run the Feature-Based Molecular Networking workflow on GNPS either using the [Superquick FBMN start page] (http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking) or <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">the standard interface of the FBMN workflow</a> (you need to be logged in GNPS first).</p>
 <p>Make sure to select the correct table source (OpenMS).</p>
-<p>The main documentation for FBMN <a href="../featurebasedmolecularnetworking/">can be accessed here</a>.</p>
+<p>The main documentation for FBMN <a href="../featurebasedmolecularnetworking/">can be accessed here</a>. For metadata format requirements, see <a href="../metadata/">this page</a></p>
 <h3 id="page-contributors">Page contributors</h3>
 <p>Louis Felix Nothias (UCSD), Abinesh Sarvepalli (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).</p>
 <h3 id="join-the-gnps-community">Join the GNPS Community !</h3>
@@ -1665,7 +1689,7 @@ The corresponding OpenMS configuration files (.INI files) are available from tha
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../featurebasedmolecularnetworking-with-xcms3/" title="FBMN with XCMS3" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../featurebasedmolecularnetworking-with-xcms3/" title="FBMN with XCMS" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1674,7 +1698,7 @@ The corresponding OpenMS configuration files (.INI files) are available from tha
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                FBMN with XCMS3
+                FBMN with XCMS
               </span>
             </div>
           </a>

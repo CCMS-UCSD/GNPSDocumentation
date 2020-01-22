@@ -639,27 +639,15 @@
           
 
 
-  <li class="md-nav__item">
-    <a href="../dereplicator/" title="DEREPLICATOR" class="md-nav__link">
-      DEREPLICATOR
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-2" type="checkbox" id="nav-10-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-1" type="checkbox" id="nav-10-1">
     
-    <label class="md-nav__link" for="nav-10-2">
+    <label class="md-nav__link" for="nav-10-1">
       Feature Based Molecular Networking
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-10-2">
+      <label class="md-nav__title" for="nav-10-1">
         Feature Based Molecular Networking
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -707,8 +695,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../featurebasedmolecularnetworking-with-xcms3/" title="FBMN with XCMS3" class="md-nav__link">
-      FBMN with XCMS3
+    <a href="../featurebasedmolecularnetworking-with-xcms3/" title="FBMN with XCMS" class="md-nav__link">
+      FBMN with XCMS
     </a>
   </li>
 
@@ -785,13 +773,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-3" type="checkbox" id="nav-10-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-2" type="checkbox" id="nav-10-2">
     
-    <label class="md-nav__link" for="nav-10-3">
+    <label class="md-nav__link" for="nav-10-2">
       FBMN - Ion Identity Networking
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-10-3">
+      <label class="md-nav__title" for="nav-10-2">
         FBMN - Ion Identity Networking
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -880,8 +868,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../molnetenhancer/" title="MolNetEnhancer" class="md-nav__link">
-      MolNetEnhancer
+    <a href="../dereplicator/" title="DEREPLICATOR" class="md-nav__link">
+      DEREPLICATOR
     </a>
   </li>
 
@@ -894,6 +882,42 @@
   <li class="md-nav__item">
     <a href="../nap/" title="Network Annotation Propagation (NAP)" class="md-nav__link">
       Network Annotation Propagation (NAP)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ms2lda/" title="MS2LDA and MotifDB Substructure Discovery" class="md-nav__link">
+      MS2LDA and MotifDB Substructure Discovery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../molnetenhancer/" title="MolNetEnhancer" class="md-nav__link">
+      MolNetEnhancer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../metaminer/" title="MetaMiner" class="md-nav__link">
+      MetaMiner
     </a>
   </li>
 
@@ -1404,11 +1428,12 @@
 * Users must select the metadata file and place it in the <strong>"Metadata File"</strong> folder</p>
 <p><strong>Note:</strong> Although it is possible to use the legacy group mapping and attribute mapping file, we strongly advise against using this method.</p>
 <h2 id="requirements-specific-to-qiime2">Requirements Specific to Qiime2</h2>
-<p>GNPS communicates with Qiime2. PCoA visualized using EMPeror and Qiime outputs (.qza/.qzv), including a BIOM formated output, can be generated. GNPS will understand this extra metadata column and rewrite sample identifers for BIOM and metadata to this sample identifier rather than using the mass spectrometry filename by default. </p>
+<p>GNPS communicates with Qiime2. PCoA visualized using EMPeror and Qiime outputs (.qza/.qzv), including a BIOM formated output, can be generated. Microbe-metabolite interactions can also be studied with <a href="https://www.nature.com/articles/s41592-019-0616-3">MMVEC</a>. GNPS will parse any extra column in the metadata file and output them in the Qiime2 supported files (BIOM/qza files). Note that by default the mass spectrometry filename will be used as sample name for Qiime2 files. Alternatively, it is possible to specify an additional metada column called "sample_name" that will be used instead as sample name in Qiime2, to enable joint mass spectrometry - metabolomics analysis such as MMVEC.</p>
 <ul>
 <li>Save the file (must be tab-delimited text file)</li>
 <li>Users must upload their data file</li>
 <li>Users must select the metadata file and place it in the <strong>"Metadata File"</strong> folder</li>
+<li><strong>Optional</strong> Add an extra column called "sample_name" to the metadata file using a text editor. The sample name will replaced the mass spectrometry filename in the Qiime2 output. For joint mass spectrometry - sequencing analysis with MMVEC, provide the sequencing sample name as indicated in the qiime2 file used (BIOM/qza file).</li>
 </ul>
 <h2 id="requirements-specific-to-qiita">Requirements Specific to Qiita</h2>
 <p>GNPS communicates with Qiita. Specifically, you can use the output of GNPS to add metabolomics data into an existing Qiita dataset. This is handled through the Biom table output as a qiime2 qza artifact. The key feature is renaming the mass spectrometry file into a sample identifier so that the identifiers are concordant. <strong>Note: a Qiita ID with corresponding information must be created</strong></p>
@@ -1440,7 +1465,7 @@
 <li>Users must upload the corresponding .STL file and place it in the <strong>"STL Model for ili"</strong> folder</li>
 </ul>
 <h2 id="page-contributions">Page Contributions</h2>
-<p>Alan K. Jarmusch (UCSD)</p>
+<p>Alan K. Jarmusch, Louis Felix Nothias (UCSD)</p>
                 
                   
                 

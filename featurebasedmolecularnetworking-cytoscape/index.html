@@ -558,30 +558,18 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../dereplicator/" title="DEREPLICATOR" class="md-nav__link">
-      DEREPLICATOR
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-2" type="checkbox" id="nav-10-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-1" type="checkbox" id="nav-10-1" checked>
     
-    <label class="md-nav__link" for="nav-10-2">
+    <label class="md-nav__link" for="nav-10-1">
       Feature Based Molecular Networking
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-10-2">
+      <label class="md-nav__title" for="nav-10-1">
         Feature Based Molecular Networking
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -629,8 +617,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../featurebasedmolecularnetworking-with-xcms3/" title="FBMN with XCMS3" class="md-nav__link">
-      FBMN with XCMS3
+    <a href="../featurebasedmolecularnetworking-with-xcms3/" title="FBMN with XCMS" class="md-nav__link">
+      FBMN with XCMS
     </a>
   </li>
 
@@ -945,13 +933,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-3" type="checkbox" id="nav-10-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-2" type="checkbox" id="nav-10-2">
     
-    <label class="md-nav__link" for="nav-10-3">
+    <label class="md-nav__link" for="nav-10-2">
       FBMN - Ion Identity Networking
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-10-3">
+      <label class="md-nav__title" for="nav-10-2">
         FBMN - Ion Identity Networking
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1040,8 +1028,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../molnetenhancer/" title="MolNetEnhancer" class="md-nav__link">
-      MolNetEnhancer
+    <a href="../dereplicator/" title="DEREPLICATOR" class="md-nav__link">
+      DEREPLICATOR
     </a>
   </li>
 
@@ -1054,6 +1042,42 @@
   <li class="md-nav__item">
     <a href="../nap/" title="Network Annotation Propagation (NAP)" class="md-nav__link">
       Network Annotation Propagation (NAP)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ms2lda/" title="MS2LDA and MotifDB Substructure Discovery" class="md-nav__link">
+      MS2LDA and MotifDB Substructure Discovery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../molnetenhancer/" title="MolNetEnhancer" class="md-nav__link">
+      MolNetEnhancer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../metaminer/" title="MetaMiner" class="md-nav__link">
+      MetaMiner
     </a>
   </li>
 
@@ -1731,11 +1755,11 @@
 <p>You can import the table file into Cytoscape. Click <em>Import Table from File System</em>, navigate to the “DB_result” folder and select the .csv file. Lastly, click OK in the opened window.</p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide17.PNG" /></p>
 <h3 id="import-supplementary-annotations-in-cytoscape">Import supplementary annotations in Cytoscape</h3>
-<p>Cytoscape allows to map additional annotations such as those produced by other workflows on GNPS. See the documentation for <a href="../dereplicator/">DEREPLICATOR</a>, <a href="../nap/">NAP</a>, <a href="../ms2lda/">MS2LDA</a>., for more details.</p>
-<p>The FBMN workflow makes possible to map the annotations (molecular formula, cross collision section, etc) made by the processing software used for FBMN (MZmine, XCMS, MetaboScape, MS-DIAL, Progenesis QI), or other tool that processed the same .MGF/.MSP file.</p>
-<p>Regardless of the tool, the procedure follows these steps:</p>
+<p>Cytoscape allows to map additional annotations such as those produced by other workflows on GNPS. See the documentation for <a href="../dereplicator/">DEREPLICATOR</a>, <a href="../nap/">NAP</a>, <a href="../ms2lda/">MS2LDA</a>, <a href="../molnetenhancer/">MolNetEnhancer</a> for more details.</p>
+<p>The FBMN workflow makes possible to map the annotations (molecular formula, cross collision section) made by the processing software used for FBMN (MZmine, XCMS, MetaboScape, MS-DIAL, Progenesis QI), or other third party software tool that processed the same .MGF/.MSP file. In addition it is possible to import any feature metadata and statistical results you are interested in.  </p>
+<p>Regardless of the tool and information to map, the importing procedure follows these steps:</p>
 <ul>
-<li>Obtain the annotation table that needs to be mapped. This table must contain a column that contains the <em>identifier</em> that matches the <em>name</em> column in the network. This identifier corresponds to the <em>SCANS</em> or <em>FEATURE_ID</em> in the .MGF file. </li>
+<li>Obtain the annotation table that needs to be mapped. This table must contain a column that contains the <em>identifier</em> that matches the <em>name</em> column in the network. This identifier corresponds to the <em>SCANS</em> or <em>FEATURE_ID</em> in the .MGF/.MSP file. </li>
 <li>Verify that the identifier are indeed matching between the network and table.</li>
 <li>Import the table in Cytoscape. Go to <em>Menu</em> / <em>Import</em> / <em>Import Table from File System</em>.</li>
 <li>In the preview window, click on the header of the <em>identifier</em> column to set the meaning to Key (a key logo shows up)</li>

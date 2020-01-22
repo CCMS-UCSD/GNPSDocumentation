@@ -558,30 +558,18 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../dereplicator/" title="DEREPLICATOR" class="md-nav__link">
-      DEREPLICATOR
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-2" type="checkbox" id="nav-10-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-1" type="checkbox" id="nav-10-1" checked>
     
-    <label class="md-nav__link" for="nav-10-2">
+    <label class="md-nav__link" for="nav-10-1">
       Feature Based Molecular Networking
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-10-2">
+      <label class="md-nav__title" for="nav-10-1">
         Feature Based Molecular Networking
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -629,8 +617,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../featurebasedmolecularnetworking-with-xcms3/" title="FBMN with XCMS3" class="md-nav__link">
-      FBMN with XCMS3
+    <a href="../featurebasedmolecularnetworking-with-xcms3/" title="FBMN with XCMS" class="md-nav__link">
+      FBMN with XCMS
     </a>
   </li>
 
@@ -716,13 +704,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-3" type="checkbox" id="nav-10-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-2" type="checkbox" id="nav-10-2">
     
-    <label class="md-nav__link" for="nav-10-3">
+    <label class="md-nav__link" for="nav-10-2">
       FBMN - Ion Identity Networking
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-10-3">
+      <label class="md-nav__title" for="nav-10-2">
         FBMN - Ion Identity Networking
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -811,8 +799,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../molnetenhancer/" title="MolNetEnhancer" class="md-nav__link">
-      MolNetEnhancer
+    <a href="../dereplicator/" title="DEREPLICATOR" class="md-nav__link">
+      DEREPLICATOR
     </a>
   </li>
 
@@ -825,6 +813,42 @@
   <li class="md-nav__item">
     <a href="../nap/" title="Network Annotation Propagation (NAP)" class="md-nav__link">
       Network Annotation Propagation (NAP)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ms2lda/" title="MS2LDA and MotifDB Substructure Discovery" class="md-nav__link">
+      MS2LDA and MotifDB Substructure Discovery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../molnetenhancer/" title="MolNetEnhancer" class="md-nav__link">
+      MolNetEnhancer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../metaminer/" title="MetaMiner" class="md-nav__link">
+      MetaMiner
     </a>
   </li>
 
@@ -1276,7 +1300,7 @@
 <p>Basically, the <strong>mzTab-M</strong> is used to retrieve for each LC-MS/MS feature:</p>
 <ul>
 <li>The abundance of the LC-MS/MS feature in each sample.</li>
-<li>The filename (<strong>mzML</strong>) and index of the associated MS/MS spectrum. </li>
+<li>The filename (<strong>mzML</strong>) and the index of the most intense associated MS/MS spectrum. </li>
 </ul>
 <p>After inputing the mzTab-M and mzML file(s), GNPS will automatically extract the MS/MS spectra from the mzML file and generate internally an <strong>MS/MS spectral summary</strong> that will be used for FBMN analysis.</p>
 <p>So far only <strong>mzTab-M</strong> from <strong>XCMS</strong> have tested, please let us know if you have difficulties running FBMN jobs from <strong>mzTab-M</strong> files exported with <strong>OpenMS</strong>, <strong>MS-DIAL</strong>, <strong>MZmine</strong>, and others.</p>
@@ -1286,7 +1310,7 @@
 <ul>
 <li>Select the mzML file(s). See the screenshot below.</li>
 <li>Select the mzTab-M file as <em>Feature Quantification Table</em>.</li>
-<li>(EXPERIMENTAL) Select the metadata table. Requirements are described <a href="../networking/#metadata">here</a>.  </li>
+<li>(EXPERIMENTAL) Select the metadata table. Requirements are described <a href="../metadata/">here</a>.  </li>
 </ul>
 <p><img alt="img" src="../img/featurebasedmolecularnetworking/mztab-M-standard.png" /></p>
 <p>More information on the FBMN on GNPS can be obtained at <a href="../featurebasedmolecularnetworking/">this documentation page</a>.</p>
