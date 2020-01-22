@@ -39,13 +39,13 @@ You can import the table file into Cytoscape. Click _Import Table from File Syst
 ![img](img/FBMN_Cytoscape/Slide17.PNG)
 
 ### Import supplementary annotations in Cytoscape
-Cytoscape allows to map additional annotations such as those produced by other workflows on GNPS. See the documentation for [DEREPLICATOR](dereplicator.md), [NAP](nap.md), [MS2LDA](ms2lda.md)., for more details.
+Cytoscape allows to map additional annotations such as those produced by other workflows on GNPS. See the documentation for [DEREPLICATOR](dereplicator.md), [NAP](nap.md), [MS2LDA](ms2lda.md), [MolNetEnhancer](molnetenhancer.md) for more details.
 
-The FBMN workflow makes possible to map the annotations (molecular formula, cross collision section, etc) made by the processing software used for FBMN (MZmine, XCMS, MetaboScape, MS-DIAL, Progenesis QI), or other tool that processed the same .MGF/.MSP file.
+The FBMN workflow makes possible to map the annotations (molecular formula, cross collision section) made by the processing software used for FBMN (MZmine, XCMS, MetaboScape, MS-DIAL, Progenesis QI), or other third party software tool that processed the same .MGF/.MSP file. In addition it is possible to import any feature metadata and statistical results you are interested in.  
 
-Regardless of the tool, the procedure follows these steps:
+Regardless of the tool and information to map, the importing procedure follows these steps:
 
--	Obtain the annotation table that needs to be mapped. This table must contain a column that contains the *identifier* that matches the *name* column in the network. This identifier corresponds to the *SCANS* or *FEATURE_ID* in the .MGF file. 
+-	Obtain the annotation table that needs to be mapped. This table must contain a column that contains the *identifier* that matches the *name* column in the network. This identifier corresponds to the *SCANS* or *FEATURE_ID* in the .MGF/.MSP file. 
 - Verify that the identifier are indeed matching between the network and table.
 - Import the table in Cytoscape. Go to *Menu* / *Import* / *Import Table from File System*.
 - In the preview window, click on the header of the *identifier* column to set the meaning to Key (a key logo shows up)

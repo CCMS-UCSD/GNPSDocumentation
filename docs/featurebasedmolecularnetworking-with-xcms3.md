@@ -101,7 +101,7 @@ More information on the Feature Based Molecular Networking workflow on GNPS can
 be obtained at [this documentation page](featurebasedmolecularnetworking.md).
 
 Note that you can upload a metadata table with your job. [See
-documentation](networking.md#metadata).
+documentation](metadata.md).
 
 ![img](img/featurebasedmolecularnetworking/xcms_quickstart.png)
 

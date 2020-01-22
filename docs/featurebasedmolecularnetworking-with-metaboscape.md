@@ -58,7 +58,7 @@ See a representative [FBMN job](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task
 
 
 ### C. Perform FBMN Job on GNPS
-Go to GNPS and perform a FBMN job. [Refer to that documentation](featurebasedmolecularnetworking.md).
+Go to GNPS and perform a FBMN job. [Refer to that documentation](featurebasedmolecularnetworking.md). For metadata format supported, see [this page](metadata.md)
 
 ![img](img/metaboscapeexportforgnps/quickstart_metaboscape.png)
 
