@@ -20,16 +20,27 @@ This section addresses some common issues with the analysis workflows at GNPS. I
 
 #### No attributes or groups in output
 
+Verify that file names match between metadata and data.
+
 Make sure the metadata file includes the appropriate columns and attributes are prefixed with ATTRIBUTE_ and that the metadata file is a tab separated text file.
+
+Avoid using special characters in metadata or file names.
 
 ## Library Search (Dereplication)
 
 ### No Results
 
-1. Check that the parameters are OK...
-2. Make sure you have the right format
-3. Make sure you have MS/MS spectra in your data
+1. Check that the parameters are correct
+2. Make sure you have the right format for input
+3. Make sure you have MS/MS spectra in your data, this is summarized in the file summary link. 
 
 ## Single Spectrum Search
 
 A common error is missing intensities for masses. Simply masses are insufficient, intensities are also required.
+
+## Qiime2 integration errors
+The following may lead to "Page not found" output in qiime2 view for Emperor plots:
+
+1. Duplicate file names
+1. A column called “sample_name” in your metadata, this column should be removed. 
+1. Your filenames in the metadata do not align with the input data

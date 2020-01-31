@@ -10,7 +10,7 @@ To search a single spectrum to see where it occurs in all public GNPS datasets, 
 
 ### 1. MASST Web Interface
 
-Click [here](https://proteosafe-extensions.ucsd.edu/masst) for the standalone MASST search interface, to get this start page:
+Click [here](https://masst.ucsd.edu) for the standalone MASST search interface, to get this start page:
 
 ![img](img/singlespectrum/MASST_standalone.PNG)
 
@@ -93,5 +93,4 @@ The files are located in the default group (G1). You can then name the job and a
 
 ## Citation
 
-Preprint available at: https://www.biorxiv.org/content/10.1101/591016v1 
-For the time being, please cite the GNPS publication.
+[Wang, M., Jarmusch, A.K., Vargas, F. et al. Mass spectrometry searches using MASST. Nat Biotechnol (2020) doi:10.1038/s41587-019-0375-9](https://www.nature.com/articles/s41587-019-0375-9)

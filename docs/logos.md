@@ -1,4 +1,4 @@
-Feel free to use any of the following logos for your presentations. The following logos are licensed as CC BY.
+Feel free to use any of the following logos for your presentations. The following logos are licensed as [CC BY](https://creativecommons.org/licenses/by/4.0/).
 
 ![img](https://licensebuttons.net/l/by/3.0/88x31.png)
 
@@ -40,3 +40,7 @@ Animated
 ![img](img/logo/ReDU_logo_with_url.png)
 
 ![img](img/logo/ReDU_logo_animated.gif)
+
+## MolNetEnhancer Logo
+
+![img](img/logo/MolNetEnhancer_logo.png)

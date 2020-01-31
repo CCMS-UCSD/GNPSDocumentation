@@ -20,7 +20,8 @@ We have standard training tutorial modules on GNPS. Check it out here:
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| MIT |Molecular Networking with MZmien and GNPS| Dec 5 2019 | -----|
+| UFMT Brazil | VI Workshop Etnofarmacologia - Use of the GNPS platform | Nov 18 - 28 2019 | 
+| MIT |Molecular Networking with MZmine and GNPS| Dec 5 2019 | -----|
 | [ASP 2019](http://aspmeetings.pharmacognosy.us/) | GNPS Beginner/Advanced Workshop (3h) | July 2019 | [Download](https://docs.google.com/document/d/1i80buu38_x79qeHVHGz2d_nyRYQJ92jV3mQfTtJLsB4/edit?usp=sharing) |
 | [RFMF2019](https://12-js-rfmf-2019.sciencesconf.org/), France | GNPS Beginner Workshop (4h) | May 20 | TBA |
 | [Metabolomics 2019](http://metabolomics2019.org/) | GNPS Beginner Workshop (2h) | June 22 | [Download](https://docs.google.com/document/d/1_qoMd73M9KTFJ3A37GDY9Yqjim0s9EoxiqUa7CUX_gY/edit?usp=sharing) |
