@@ -6,6 +6,10 @@
 
 ```https://gnps-external.ucsd.edu/gnpslibraryjson```
 
+### All Public Library Specta at GNPS with Peaks and Annotation History
+
+```https://gnps-external.ucsd.edu/gnpslibraryformattedwithpeaksjson```
+
 ### Single Library Spectrum
 
 ```https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=<Library Accession>```
