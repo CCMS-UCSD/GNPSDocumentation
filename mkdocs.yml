@@ -53,6 +53,7 @@ nav:
         - MetaMiner: metaminer.md
         # CycloNovo: cyclonovo.md
         - Reanalysis of Data User Interface (ReDU): ReDU.md
+        - Qemistree: qemistree.md
     - Spectral Libraries:
         - Browsing Reference Spectral Libraries: browselibraries.md
         - Add/Curate Reference Spectrum in the Library: spectrumcuration.md
