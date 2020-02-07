@@ -63,7 +63,7 @@ FBMN with Progenesis QI results can be performed using the using Superquick or t
 ![img](img/featurebasedmolecularnetworking/standard_progenesis_6.png)
 
 ## Mapping Progenesis QI annotations in Cytoscape
-Progenesis QI annotations or metadata can be mapped in Cytoscape as node attribute into the molecular networks. [See the Cytoscape documentation for FBMN](featurebasedmolecularnetworking-cytoscape.md). 
+Progenesis QI annotations or metadata can be mapped in Cytoscape as node attribute into the molecular networks. [See the Cytoscape documentation for FBMN](featurebasedmolecularnetworking-cytoscape.md). For metadata format requirement, see [this page](metadata.md).
 
 Helped is wanted to describe in detail the import procedure in Cytoscape.
 

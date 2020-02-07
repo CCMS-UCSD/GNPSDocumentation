@@ -65,4 +65,6 @@ The GNPS community is always welcoming suggestions and contributions. Be part of
 
 ### GNPS and MassIVE uptime
 
-<p><a href="https://stats.uptimerobot.com/Am4PLUWn3" target="myFrame"> Visualize the uptime status of all GNPS Services</a></p>
+This is a brief overview of whether our web services are up: [here](https://stats.uptimerobot.com/Am4PLUWn3). 
+
+And a more detailed functional test [status page](https://github.com/CCMS-UCSD/GNPS_Workflows#gnps-core-webserver-status).
