@@ -2,15 +2,17 @@
 
 ## Introduction
 
-The **Ion Identity Networking** (IIN) workflow complements the [Feature-Based Molecular Networking (FBMN)](featurebasedmolecularnetworking.md) by grouping MS2 spectra not only through similarity of MS2 spectra, but also of MS2 spectra whose precursor ions fulfill the retention time, peak shape, user-defined. It enables the visualization of patterns of ion species and brings together subnetwork from the same molecule to create an ion identity molecular family. IIN can be performed with [MZmine](fbmn-iin-mzmine.md), [XCMS-CAMERA](fbmn-iin-xcms.md), or [MS-DIAL](fbmn-iin-msdial.md).
+The **Ion Identity Networking** (IIN) workflow complements the [Feature-Based Molecular Networking (FBMN)](featurebasedmolecularnetworking.md) by grouping MS2 spectra not only through similarity of MS2 spectra, but also of MS2 spectra whose precursor ions fulfill the retention time, peak shape, user-defined parameters. It enables the visualization of patterns of ion species and brings together subnetwork from the same molecule to create an ion identity molecular family. IIN can be performed with [MZmine](fbmn-iin-mzmine.md), [XCMS-CAMERA](fbmn-iin-xcms.md), or [MS-DIAL](fbmn-iin-msdial.md).
 
-Finally, we apologize for the crudeness at parts of IIN documentation as it is currently a work in progress. 
+You can find more information about IIN in this [playlist](https://www.youtube.com/playlist?list=PL4L2Xw5k8ITyxSyBdrcv70LDKsP8QNuyN).
+
+Note that the IIN documentation is under construction. 
 
 ## Citations
 
 This work builds on the efforts of our many colleagues, please cite their work:
 
-**For IIN**: Schmid et al. In preparation.
+**For IIN**: Schmid R., Petras D., Nothias LF, et al. In preparation
 
 **For FBMN**: Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
 
@@ -59,10 +61,25 @@ See an example of the Supplementary Pairs used in the Ion Identity Networking (I
 
 ## Exploring the IIN workflow in Cytoscape
 
-TODO
+The additional edges that IIN identified as adducts and in-source modifications are visualized in Cytoscape.
+ 
+The different types of ions can be observed in different node colors if the Best Ion option is chosen in Fill Color, and Discrete Mapping type is selected.
 
-## TO DO NOTES
-- Cytoscape documentation
+![ScreenShot8](img/iin/ScreenShot8.png)
+
+The lines connecting the nodes can be deferred if the connection represents a cosine or a MS1 annotation from INN. In the Line Type option, select EdgeType with Discrete Mapping.
+
+![ScreenShot9](img/iin/ScreenShot9.png)
+
+The annotation of the adducts or in-source fragmentations connected in the MS1 level can be annotated in the edges connecting the corresponding nodes. In the Label option, select Edge Annotation with Passthrough Mapping.
+
+
+![ScreenShot10](img/iin/ScreenShot10.png)
+
+Specific types of adducts’ edges can be colored differently by selecting Stroke Color (Unselected) section, and choosing Edge Annotation and Discrete Mapping.
+
+![ScreenShot11](img/iin/ScreenShot11.png)
+
 
 ## Page contributors
 Robin Schmid (WWU, Münster, Germany), Daniel Petras (UCSD), Louis Felix Nothias (UCSD), Ming Wang (UCSD).
