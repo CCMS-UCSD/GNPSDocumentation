@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -42,17 +42,17 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -788,13 +788,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#to-do-notes" class="md-nav__link">
-    TO DO NOTES
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#page-contributors" class="md-nav__link">
     Page contributors
   </a>
@@ -1419,13 +1412,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#to-do-notes" class="md-nav__link">
-    TO DO NOTES
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#page-contributors" class="md-nav__link">
     Page contributors
   </a>
@@ -1453,11 +1439,12 @@
                 
                 <h1 id="ion-identity-networking-iin">Ion Identity Networking (IIN)</h1>
 <h2 id="introduction">Introduction</h2>
-<p>The <strong>Ion Identity Networking</strong> (IIN) workflow complements the <a href="../featurebasedmolecularnetworking/">Feature-Based Molecular Networking (FBMN)</a> by grouping MS2 spectra not only through similarity of MS2 spectra, but also of MS2 spectra whose precursor ions fulfill the retention time, peak shape, user-defined. It enables the visualization of patterns of ion species and brings together subnetwork from the same molecule to create an ion identity molecular family. IIN can be performed with <a href="../fbmn-iin-mzmine/">MZmine</a>, <a href="../fbmn-iin-xcms/">XCMS-CAMERA</a>, or <a href="../fbmn-iin-msdial/">MS-DIAL</a>.</p>
-<p>Finally, we apologize for the crudeness at parts of IIN documentation as it is currently a work in progress. </p>
+<p>The <strong>Ion Identity Networking</strong> (IIN) workflow complements the <a href="../featurebasedmolecularnetworking/">Feature-Based Molecular Networking (FBMN)</a> by grouping MS2 spectra not only through similarity of MS2 spectra, but also of MS2 spectra whose precursor ions fulfill the retention time, peak shape, user-defined parameters. It enables the visualization of patterns of ion species and brings together subnetwork from the same molecule to create an ion identity molecular family. IIN can be performed with <a href="../fbmn-iin-mzmine/">MZmine</a>, <a href="../fbmn-iin-xcms/">XCMS-CAMERA</a>, or <a href="../fbmn-iin-msdial/">MS-DIAL</a>.</p>
+<p>You can find more information about IIN in this <a href="https://www.youtube.com/playlist?list=PL4L2Xw5k8ITyxSyBdrcv70LDKsP8QNuyN">playlist</a>.</p>
+<p>Note that the IIN documentation is under construction. </p>
 <h2 id="citations">Citations</h2>
 <p>This work builds on the efforts of our many colleagues, please cite their work:</p>
-<p><strong>For IIN</strong>: Schmid et al. In preparation.</p>
+<p><strong>For IIN</strong>: Schmid R., Petras D., Nothias LF, et al. In preparation</p>
 <p><strong>For FBMN</strong>: Nothias, L.F. et al <a href="https://www.biorxiv.org/content/10.1101/812404v1">Feature-based Molecular Networking in the GNPS Analysis Environment</a> bioRxiv 812404 (2019).</p>
 <p><strong>For GNPS</strong>: Wang, M. et al. <a href="https://doi.org/10.1038/nbt.3597">Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking</a>. Nat. Biotechnol. 34, 828–837 (2016).</p>
 <p>And the tools you used to process your data.</p>
@@ -1510,16 +1497,19 @@
 <p>See an example of the Supplementary Pairs used in the Ion Identity Networking (IIN) workflow</p>
 <p><img alt="img" src="../img/featurebasedmolecularnetworking/fbmn_iin_edges.PNG" /></p>
 <h2 id="exploring-the-iin-workflow-in-cytoscape">Exploring the IIN workflow in Cytoscape</h2>
-<p>TODO</p>
-<h2 id="to-do-notes">TO DO NOTES</h2>
-<ul>
-<li>Cytoscape documentation</li>
-</ul>
+<p>The additional edges that IIN identified as adducts and in-source modifications are visualized in Cytoscape.</p>
+<p>The different types of ions can be observed in different node colors if the Best Ion option is chosen in Fill Color, and Discrete Mapping type is selected.</p>
+<p><img alt="ScreenShot8" src="../img/iin/ScreenShot8.png" /></p>
+<p>The lines connecting the nodes can be deferred if the connection represents a cosine or a MS1 annotation from INN. In the Line Type option, select EdgeType with Discrete Mapping.</p>
+<p><img alt="ScreenShot9" src="../img/iin/ScreenShot9.png" /></p>
+<p>The annotation of the adducts or in-source fragmentations connected in the MS1 level can be annotated in the edges connecting the corresponding nodes. In the Label option, select Edge Annotation with Passthrough Mapping.</p>
+<p><img alt="ScreenShot10" src="../img/iin/ScreenShot10.png" /></p>
+<p>Specific types of adducts’ edges can be colored differently by selecting Stroke Color (Unselected) section, and choosing Edge Annotation and Discrete Mapping.</p>
+<p><img alt="ScreenShot11" src="../img/iin/ScreenShot11.png" /></p>
 <h2 id="page-contributors">Page contributors</h2>
 <p>Robin Schmid (WWU, Münster, Germany), Daniel Petras (UCSD), Louis Felix Nothias (UCSD), Ming Wang (UCSD).</p>
                 
                   
-                
                 
               
               
@@ -1587,7 +1577,7 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
