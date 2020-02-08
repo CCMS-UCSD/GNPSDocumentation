@@ -51,14 +51,15 @@ Note that the utility function `formatSpectraForGNPS` of the FBMN must also be u
 **Step 3**: Run a FBMN job and add the Supplementary Pairs file following the [main IIN documentation](fbmn-iin.md)
 [See an example of job with IIN job with XCMS-CAMERA](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=1602e1709167425cac1c5441d9919a57)
 
+For visualizing results in Cytoscape. Please refer to the [main FBMNxIIN documentation](fbmn-iin.md).
+
 See our tutorial below for detailed example.
+
 
 ### Tutorials
 
 See our FBMN IIN tutorial with XCMS using a subset of the American Gut Project samples on this repository [DorresteinLaboratory/XCMS3_FeatureBasedMN/](https://github.com/DorresteinLaboratory/XCMS3_FeatureBasedMN/).
 
-## TO DO NOTES
-- Cytoscape documentation (import of the supplementary feature annotation file, mapping of the feature annotation).
 
 ## Contributors
 This integration was made possible by Johannes Rainer (Eurac Research) and Mar Garcia-Aloy (Eurac Research). This page was created by Louis Felix Nothias (UCSD).

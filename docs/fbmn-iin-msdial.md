@@ -33,6 +33,8 @@ The integration of MS-DIAL and IIN is supported since version 4.1 and support fo
 **Step 3**: Run a FBMN job and add the Supplementary Pairs file following the [main IIN documentation](fbmn-iin.md)
 [See an example of job with IIN job with MS-DIAL](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=ae661056ca1d4b119c0be48d83ec8150)
 
+For visualizing results in Cytoscape. Please refer to the [main FBMNxIIN documentation](fbmn-iin.md).
+
 ## Tutorials
 
 See our [MS-DIAL tutorial](tutorials/americangut-ms-dial.md) on using Feature Based Molecular Networking for the American Gut Project sample.
