@@ -26,14 +26,14 @@ f. In the downloaded folder, go to `qiime2_output` for the files `qiime2_table.q
  
 a. Go to the [Proteomics2](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp) server and select the QEMISTREE from the dropdown menu called workflow\
 
-b. In the input section add the following files:\
+b. In the input section add the following files:
 
-1. SIRIUS file for the Spectrum files\
-2. qiime2_table for quant_table\
-3. qiime2_metadata for metadata_table\
-4. DB_result file for library_identifications\
-
-Under the header, Advanced options select the instrument type (orbitrap or Q-tof). If you are signed in to the server the email address will auto-populate. If not, add your email address and click on submit. The runtime depends on the number of features in your dataset -- a typical dataset (few thousand features) will take a few hours.
+1. SIRIUS file for the Spectrum files
+2. qiime2_table for quant_table
+3. qiime2_metadata for metadata_table
+4. DB_result file for library_identifications
+\
+c. Under the header, Advanced options select the instrument type (orbitrap or Q-tof). If you are signed in to the server the email address will auto-populate. If not, add your email address and click on submit. The runtime depends on the number of features in your dataset -- a typical dataset (few thousand features) will take a few hours.
 
 **STEP 3: Analysing the results from a Qemistree job**
 
@@ -45,10 +45,10 @@ In the downloaded folder, the `output_folder ` has several data files. The qemis
 
 Here are the output files you need for the downstream steps:
 
-1. classified_feature_data.qza\
-2. merged_feature_table.qza\
-3. qemistree-pruned.qza\
-4. qemistree.qza\
+1. classified_feature_data.qza
+2. merged_feature_table.qza
+3. qemistree-pruned.qza
+4. qemistree.qza
 
 **STEP 4: Annotating Qemistree in QIIME2**
 
