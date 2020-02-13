@@ -32,7 +32,7 @@ b. In the input section add the following files:
 2. qiime2_table for quant_table
 3. qiime2_metadata for metadata_table
 4. DB_result file for library_identifications
-\
+
 c. Under the header, Advanced options select the instrument type (orbitrap or Q-tof). If you are signed in to the server the email address will auto-populate. If not, add your email address and click on submit. The runtime depends on the number of features in your dataset -- a typical dataset (few thousand features) will take a few hours.
 
 **STEP 3: Analysing the results from a Qemistree job**
