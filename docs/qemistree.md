@@ -13,24 +13,25 @@ Optional: A library identification file (tsv) which can also be downloaded from 
 
 Follow the steps below to generate the files:
 
-a. Follow the documentation for [Feature-Based Molecular Networking using MZmine2](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking-with-mzmine2/) to generate an aligned feature list for your LC-MS/MS data and export the necessary mgf and csv files for FBMN in GNPS.
-b. While still in MZmine2, select your aligned feature list, then click on the tab for Feature list methods and select Export/Import, followed by Export for SIRIUS.
-c. Choose the Mass list that you used to generate your feature list, and specify a path and Filename for your SIRIUS file. Click OK.
-d. Go to GNPS server and run an [FBMN](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) job using the GNPS quant csv, GNPS mgf (both generated in step a, above) and [ReDU](https://mwang87.github.io/ReDU-MS2-Documentation/HowtoContribute/) metadata file
-e. Once completed, go to the status page and click on the button Download qiime2 Emperor qzv
+a. Follow the documentation for [Feature-Based Molecular Networking using MZmine2](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking-with-mzmine2/) to generate an aligned feature list for your LC-MS/MS data and export the necessary mgf and csv files for FBMN in GNPS.\
+b. While still in MZmine2, select your aligned feature list, then click on the tab for Feature list methods and select Export/Import, followed by Export for SIRIUS.\
+c. Choose the Mass list that you used to generate your feature list, and specify a path and Filename for your SIRIUS file. Click OK.\
+d. Go to GNPS server and run an [FBMN](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) job using the GNPS quant csv, GNPS mgf (both generated in step a, above) and [ReDU](https://mwang87.github.io/ReDU-MS2-Documentation/HowtoContribute/) metadata file\
+e. Once completed, go to the status page and click on the button Download qiime2 Emperor qzv\
 f. In the downloaded folder, go to `qiime2_output` for the files `qiime2_table.qza` and `qiime2_metadata.tsv` and to `DB_result` for the tsv file within.
         	
  
 **STEP 2: Running a Qemistree job**
 
  
-a. Go to the [Proteomics2](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp) server and select the QEMISTREE from the dropdown menu called workflow
-In the input section add the following files:
+a. Go to the [Proteomics2](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp) server and select the QEMISTREE from the dropdown menu called workflow\
 
-i. SIRIUS file for the Spectrum files
-ii. qiime2_table for quant_table
-iii. qiime2_metadata for metadata_table
-iv. DB_result file for library_identifications
+b. In the input section add the following files:\
+
+1. SIRIUS file for the Spectrum files\
+2. qiime2_table for quant_table\
+3. qiime2_metadata for metadata_table\
+4. DB_result file for library_identifications\
 
 Under the header, Advanced options select the instrument type (orbitrap or Q-tof). If you are signed in to the server the email address will auto-populate. If not, add your email address and click on submit. The runtime depends on the number of features in your dataset -- a typical dataset (few thousand features) will take a few hours.
 
@@ -44,10 +45,10 @@ In the downloaded folder, the `output_folder ` has several data files. The qemis
 
 Here are the output files you need for the downstream steps:
 
-1. classified_feature_data.qza
-2. merged_feature_table.qza
-3. qemistree-pruned.qza
-4. qemistree.qza
+1. classified_feature_data.qza\
+2. merged_feature_table.qza\
+3. qemistree-pruned.qza\
+4. qemistree.qza\
 
 **STEP 4: Annotating Qemistree in QIIME2**
 
@@ -74,9 +75,10 @@ python _itol_metadata.py \
   --color-file-path /path-to-clade-colors-file.txt/ \
   --label-file-path /path-to-tip-label-files.txt/
   ```
+
 Both the path-to-clade-colors-file.txt and path-to-tip-label-files.txt files can be dragged and dropped on the iTOL website after the tree file has been uploaded.
 In addition, you can also compare the frequency of each tip (i.e. feature) across a user-defined  metadata category. The following command can be used to generate bar charts at the tips of the tree specifying the prevalence of the feature in particular metadata category:
-You will need the metadata file (qiime2_metadata.tsv for metadata.tsv below) from the FBMN job (typically in the qiime2_output folder).
+You will need the metadata file (`qiime2_metadata.tsv` for `metadata.tsv` below) from the FBMN job (typically in the qiime2_output folder).
 
 ```bash
 python _itol_metadata.py \
@@ -87,12 +89,13 @@ python _itol_metadata.py \
   --sample-metadata-column groups \
   --barchart-file-path /path-to-barchart-subclass-file.qza/
 ```
+
 Generating the final output:
 As described above, you need 4 files to visualize the tree in iTOL: a tree file (.qza extension), a clade color file (.txt extension), a tip label file (.txt extension) and a bar chart file (.qza extension). Then follow the step below:
 
-a. Go to the [iTOL](https://itol.embl.de/upload.cgi) website (Letunic et al). Enter desired tree name, tree text. Upload the qemistree.qza (or qemistree-pruned.qza file pruned at the desired taxonomy).
-b. Drag and drop the clade color file (.txt) and tip label file (.txt)
-c. Drag and drop the bar chart file (.qza)
+1. Go to the [iTOL](https://itol.embl.de/upload.cgi) website (Letunic et al). Enter desired tree name, tree text. Upload the qemistree.qza (or qemistree-pruned.qza file pruned at the desired taxonomy).
+2. Drag and drop the clade color file (.txt) and tip label file (.txt)
+3. Drag and drop the bar chart file (.qza)
 
 CITATIONS:
 
