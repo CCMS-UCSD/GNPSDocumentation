@@ -62,6 +62,7 @@ nav:
         - Open-source Method for Reference Library Generation:
             - Data Acqusition - Thermo QExactive (v1.0): msmschooserdataacquisitionQE.md
             - Computational Selection of MSMS to Include in Library (MSMS-Chooser): msmschooser.md
+        - GNPS Tag Contribution and Analyses: tag_info.md
     - Create a Public Datasets:
         - Dataset Creation/Sharing: datasets.md
         - Continuous Identification: continuousid.md
