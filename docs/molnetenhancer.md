@@ -12,7 +12,7 @@ The MolNetEnhancer worflow consists of two steps:
 
 MolNetEnhancer is freely availble as [Python](https://github.com/madeleineernst/pyMolNetEnhancer) and [R](https://github.com/madeleineernst/RMolNetEnhancer) package and open to contributions from the community on Github. Additionally, it is now also possible to run MolNetEnhancer through the GNPS interface:
 
-1. To run step 1 through the GNPS interface refer to the MS2LDA [documentation](https://ccms-ucsd.github.io/GNPSDocumentation/ms2lda/).
+1. To run step 1 through the GNPS interface refer to the MS2LDA [documentation](https://ccms-ucsd.github.io/GNPSDocumentation/ms2lda/) or through [MS2LDA.org](http://ms2lda.org).
 
 2. To run step 2 through the GNPS interface access this [link](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MOLNETENHANCER%22%7D), which will lead to the below displayed job entry page:
 
@@ -28,6 +28,7 @@ After providing the GNPSs analysis with a title, you'll need at least one job ID
 * Optional: NAP ID
 * Optional: DEREPLICATOR ID
 * Optional: VARQUEST ID
+* Optional: MS2LDA.org Job ID
 
 ## Quick start from processed Molecular Network
 
@@ -40,7 +41,7 @@ Please note that you can adapt the title and you must add the relevant <i>in sil
 
 Upon succesful completion, you will be able to see the output job page as displayed below:
 
-![img](img/molnetenhancer/output.png)
+![img](img/molnetenhancer/output_ClassyTree.png)
 
 There are different files for download available:
 
@@ -62,6 +63,13 @@ All columns related to chemical class information are labeled with 'CF_', and ch
 ### Direct Cytoscape Preview/Download
 
 This downloads the network with chemical class information mapped in the .cys format. You can open this file directly with [Cytoscape](https://cytoscape.org/). Chemical class information at the superclass level is already mapped. You can change to different levels of the chemical taxonomy as described above.
+
+
+### View qiime2 Emperor plots
+
+This loads the principal coordinates plot within the Qiime2 platform using a beta version of a UniFrac-based, chemically informed distance metric. Chemically-informed distance trees are built from the MolNetEnhancer retrieved chemical class information (MetaboDistTree-ClassyTree), which is based on the ClassyFire chemical ontology. 
+For more information on the algorithm refer to [this repository](https://github.com/madeleineernst/MetaboDistTrees). 
+
 
 ## Citations
 
@@ -88,6 +96,9 @@ MolNetEnhancer uses DEREPLICATOR:
 MolNetEnhancer uses automated chemical classification through ClassyFire: 
 [Feunang, Y. D.; Eisner, R.; Knox, C.; Chepelev, L.; Hastings, J.; Owen, G.; Fahy, E.; Steinbeck, C.; Subramanian, S.; Bolton, E.; Greiner, R.; Wishart, D.S. ClassyFire: automated chemical classification with a comprehensive, computable taxonomy. J. Cheminform. 2016, 8, 61.](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0174-y)
 
+Principal coordinates plots are visualised through the Qiime2 platform using EMPeror:
+[Bolyen, E.; Rideout, J. R.; Dillon, M. R.; et al. Reproducible, interactive, scalable and extensible microbiome data science using QIIME 2. Nat. Biotechnol. 2019, 37, 852-857.](https://www.nature.com/articles/s41587-019-0209-9) and
+[Vázquez-Baeza,Y.; Pirrung, M.; Gonzalez, A.; Knight R. EMPeror: a tool for visualizing high-throughput microbial community data. Gigascience 2013, 2, 16.](https://academic.oup.com/gigascience/article/2/1/2047-217X-2-16/2656132)
 
-
-
+Chemically-informed distances are calculated using the UniFrac distance metric:
+[Lazupone, C.; Knight R. UniFrac: a New Phylogenetic Method for Comparing Microbial Communities. Applied and Environmental Microbiology 2005, 71, 8228-8235.](https://aem.asm.org/content/71/12/8228)

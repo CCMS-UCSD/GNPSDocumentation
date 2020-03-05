@@ -84,7 +84,3 @@ Double click on the Continuous Mapping area of the menu to adjust the thickness 
 Below is a zoomed in portion of a network demonstrating the use of Cosine score for edge width determination.
 
 ![img](img/cytoscape/edge_3.png)
-
-##Cytoscape 2.8 Analysis (Legacy)
-
-See [legacy documentation](https://bix-lab.ucsd.edu/display/Public/Cytoscape+2.8.X+Visualization+and+Analysis+Documentation)

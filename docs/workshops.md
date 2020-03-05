@@ -2,18 +2,26 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-
+| TBD | TBD | TBD | -----|
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
 
 ## Host Your Own
 
- If you would like to organize your own GNPS workshop to train new users, please reach out to [Ming](mailto: miw023@ucsd.edu) and we'd be happy to provide you with training and promotional materials.
+ If you would like to organize your own GNPS workshop to train new users, try getting started with our standard [training modules](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules). If you would like more advanced materials, please reach out to [Ming](mailto: miw023@ucsd.edu) and we'd be happy to help you. For promotional materials check out our [logo page](logos.md).
+
+## GNPS Training Tutorial Modules
+
+We have standard training tutorial modules on GNPS. Check it out here:
+
+[Training modules](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules)
 
 ## Previous Workshops
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
+| UFMT Brazil | VI Workshop Etnofarmacologia - Use of the GNPS platform | Nov 18 - 28 2019 | 
+| MIT |Molecular Networking with MZmine and GNPS| Dec 5 2019 | -----|
 | [ASP 2019](http://aspmeetings.pharmacognosy.us/) | GNPS Beginner/Advanced Workshop (3h) | July 2019 | [Download](https://docs.google.com/document/d/1i80buu38_x79qeHVHGz2d_nyRYQJ92jV3mQfTtJLsB4/edit?usp=sharing) |
 | [RFMF2019](https://12-js-rfmf-2019.sciencesconf.org/), France | GNPS Beginner Workshop (4h) | May 20 | TBA |
 | [Metabolomics 2019](http://metabolomics2019.org/) | GNPS Beginner Workshop (2h) | June 22 | [Download](https://docs.google.com/document/d/1_qoMd73M9KTFJ3A37GDY9Yqjim0s9EoxiqUa7CUX_gY/edit?usp=sharing) |

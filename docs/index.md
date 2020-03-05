@@ -1,4 +1,4 @@
-![logo](/img/GNPS_logo_original.png)
+![logo](img/GNPS_logo_original.png)
 
 # Welcome to GNPS Documentation
 
@@ -8,17 +8,20 @@ As there are many aspects to GNPS, it can be a bit overwhelming. Here is a quick
 
 ### Analyze and Annotate
 
-* Perform [molecular networking and spectral library search](gnpsanalysisoverview.md) of MS/MS data utilizing computational tools (e.g. [Molecular Networking](networking.md), [Spectral Library Search](librarysearch.md), etc).
-* **NEW!** Perform advanced molecular networking and spectral library search with [Feature-Based Molecular Networking](featurebasedmolecularnetworking.md).
-* [Annotate/curate identified MS/MS spectra](spectrumcuration.md) in open-access GNPS reference spectra libraries.
-* Annotate peptidic natural products in MS/MS data with [DEREPLICATOR/VarQuest/DEREPLICATOR+](dereplicator.md) and [RiPPQuest](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-theoretical.jsp). <!--[MetaMiner](metaminer.md) , [CycloNovo](cyclonovo.md)-->
-* Propagate in silico annotations in your MS/MS data with [Network Annotation Propagation (NAP)](nap.md).
-* **NEW!** Search spectral Mass2Motifs in your MS/MS data [with MS2LDA](ms2lda.md).
+* Perform [**molecular networking** and **spectral library search**](gnpsanalysisoverview.md) of LC-MS/MS data utilizing computational tools (See [Molecular Networking](networking.md), [Spectral Library Search](librarysearch.md), etc).
+* [**Annotate/curate identified MS/MS spectra**](spectrumcuration.md) in open-access GNPS reference spectral libraries.
+* Annotate peptidic natural products in LC-MS/MS data with [**DEREPLICATOR**/VarQuest/DEREPLICATOR+](dereplicator.md) and [RiPPQuest](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-theoretical.jsp). <!--[MetaMiner](metaminer.md) , [CycloNovo](cyclonovo.md)-->
+* Propagate in silico annotations in your LC-MS/MS data with [**Network Annotation Propagation** (NAP)](nap.md).
+* **NEW!** Perform advanced molecular networking and spectral library search with [**Feature-Based Molecular Networking**](featurebasedmolecularnetworking.md). See [https://doi.org/10.1101/812404](https://doi.org/10.1101/812404).
+* **NEW!** Analyze [**GC-MS data**](gcanalysis.md) with GNPS (See [GC-MS deconvolution](gc-ms-deconvolution.md), and [GC-MS library search/molecular networks](gc-ms-library-molecular-network.md)).
+* **NEW!** Annotate your LC-MS/MS data with [**MolNetEnhancer**](molnetenhancer.md). See [https://doi.org/10.1101/654459](https://doi.org/10.1101/654459).
+* **NEW!** Search spectral Mass2Motifs in your LC-MS/MS data [with **MS2LDA**](ms2lda.md).
+* **NEW!** Give LC-MS/MS spectra biological/environmental context by searching against all public LC-MS/MS datasets ([**MASST Search**](masst.md)). See [https://doi.org/10.1101/591016](https://doi.org/10.1101/591016).
+* **NEW!** Find and co- or re-analyze public LC-MS/MS data via systematic sample information at [**ReDU**](ReDU.md). See [https://doi.org/10.1101/750471](https://doi.org/10.1101/750471).
 
 ### Share and Explore
 
 * Publish entire study datasets with the Mass Spectrometry Interactive Virtual Environment (MassIVE) data repository ([Dataset Submission](datasets.md)).
-* **NEW!** Give MS/MS spectra biological/environmental context by searching against all public MS/MS datasets ([MASST Search](masst.md)).
 * [Browse](datasets#browsing-datasets) and [Reanalyze](datasets#reanalyze-datasets) over 700 public datasets at GNPS
 * Automatic reanalysis of public datasets with automated reports of new identifications ([Continuous Identification](continuousid.md)).
 * Explore identifications of public datasets across entire repository ([Molecule Explorer](moleculeexplorer.md)).
@@ -55,23 +58,13 @@ Today, the scientific community is clamouring for reproducibility of results tha
 
 Put your MS/MS spectrum of a known compound in GNPS spectral libraries, so you never have to manually re-identify a compound in your own samples ever again. -->
 
+### Contribute to GNPS
+
+The GNPS community is always welcoming suggestions and contributions. Be part of the community and contribute ! See [that page for more informations](gnps_community.md).
+
+
 ### GNPS and MassIVE uptime
 
-<p><a href="https://stats.uptimerobot.com/Am4PLUWn3" target="myFrame"> Visualize the status of all GNPS Workflows</a></p>
+This is a brief overview of whether our web services are up: [here](https://stats.uptimerobot.com/Am4PLUWn3). 
 
-## GNPSDocumentation
-
-### Migration to the New Documentation
-
-Pardon our dust as we are migrating to this new documentation. During the transition, throughout the documentation we will be linking to our legacy documentation that is still relevant. Thank you for your patience.
-
-### Contributing to the New Documentation
-
-The GitHub repository for the documentation is available here [https://github.com/CCMS-UCSD/GNPSDocumentation](https://github.com/CCMS-UCSD/GNPSDocumentation).
-
-- For informations/feature request, please open an "Issue" on the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) GitHub repository.
-- To contribute to the GNPS documentation, fork the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request".
-
-### Legacy Documentation
-
-To checkout our legacy documentation in its entirely, you can find it [here](https://bix-lab.ucsd.edu/display/Public/GNPS+Documentation+Page).
+And a more detailed functional test [status page](https://github.com/CCMS-UCSD/GNPS_Workflows#gnps-core-webserver-status).
