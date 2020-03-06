@@ -1,5 +1,7 @@
 # How to Contribute Tags to GNPS and Analyses Currently Supported
 
+Pardon our dust as this is documentation is a work in progress! We also welcome your contributions. 
+
 ---
 
 ## Required Items and Summary of Steps for Contribution
