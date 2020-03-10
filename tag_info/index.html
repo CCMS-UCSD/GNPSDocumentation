@@ -1166,47 +1166,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#current-analyses" class="md-nav__link">
-    Current Analyses
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#-_1" class="md-nav__link">
-    ---
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-summary-the-tags-information-in-a-gnps-molecular-networking-job" class="md-nav__link">
-    1. Summary the tags information in a GNPS molecular networking job  
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-color-an-existing-gnps-molecular-networking-using-gnps-tags" class="md-nav__link">
-    2. Color an existing GNPS molecular networking using GNPS tags 
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-utilize-tagtracker-to-simplify-and-focus-the-analysis-of-a-gnps-molecular-network" class="md-nav__link">
-    3. Utilize "TagTracker" to simplify and focus the analysis of a GNPS molecular network  
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
       
       
       
@@ -1655,47 +1614,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#current-analyses" class="md-nav__link">
-    Current Analyses
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#-_1" class="md-nav__link">
-    ---
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-summary-the-tags-information-in-a-gnps-molecular-networking-job" class="md-nav__link">
-    1. Summary the tags information in a GNPS molecular networking job  
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-color-an-existing-gnps-molecular-networking-using-gnps-tags" class="md-nav__link">
-    2. Color an existing GNPS molecular networking using GNPS tags 
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-utilize-tagtracker-to-simplify-and-focus-the-analysis-of-a-gnps-molecular-network" class="md-nav__link">
-    3. Utilize "TagTracker" to simplify and focus the analysis of a GNPS molecular network  
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
       
       
       
@@ -1837,17 +1755,59 @@
 <li>New Terms, Corrections, Suggestions = GitHub - <a href="https://github.com/CCMS-UCSD/GNPS_Workflows">link here</a> <br></li>
 </ul>
 <h2 id="-">---</h2>
-<h2 id="current-analyses">Current Analyses</h2>
+<h1 id="current-analyses">Current Analyses</h1>
 <ol>
 <li><strong>Summary the tags information</strong> in a GNPS molecular networking job</li>
 <li>Color an existing <strong>GNPS molecular networking using GNPS tags</strong></li>
-<li>Utilize <strong>"TagTracker"</strong> to simplify and focus the analysis of a GNPS molecular network</li>
+<li><em>Coming Soon:</em> Utilize <strong>"TagTracker"</strong> to simplify and focus the analysis of a GNPS molecular network</li>
+<li><em>Coming Soon:</em> Analyze Tags using Metdata</li>
 </ol>
 <h2 id="-_1">---</h2>
-<h4 id="1-summary-the-tags-information-in-a-gnps-molecular-networking-job">1. <strong>Summary the tags information</strong> in a GNPS molecular networking job  <br></h4>
-<p>TBD</p>
-<h4 id="2-color-an-existing-gnps-molecular-networking-using-gnps-tags">2. Color an existing <strong>GNPS molecular networking using GNPS tags</strong> <br></h4>
-<p>TBD</p>
+<h1 id="1-summary-the-tags-information-in-a-gnps-molecular-networking-job">1. <strong>Summary the tags information</strong> in a GNPS molecular networking job  <br></h1>
+<ul>
+<li>Make a copy and download Master Tag Sheet (.tsv) from Google Sheets - <a href="https://docs.google.com/spreadsheets/d/1zgSpcgsSxRIgWdHH9khiEMmt2rvNL15raRFP8CxNnFE/edit?usp=sharing">link here</a></li>
+<li>Download the "View all library hits" table from GNPS
+<img alt="tag_summary" src="../img/tags/results_libraryhits.jpg" /></li>
+<li>Run the Jupyter Notebook or Code (R) = "Tags_Summary"<ul>
+<li>Update the paths in the #COMMON STEPS section</li>
+<li>Run the code (generates .pdf of figures, example below)</li>
+</ul>
+</li>
+<li>Modify graphs as desired <br>
+<img alt="tag_summary" src="../img/tags/GNPS_Summary_TAG.png" /></li>
+</ul>
+<h1 id="2-color-an-existing-gnps-molecular-networking-using-gnps-tags">2. Color an existing <strong>GNPS molecular networking using GNPS tags</strong> <br></h1>
+<ul>
+<li>Make a copy and download Master Tag Sheet (.tsv) from Google Sheets - <a href="https://docs.google.com/spreadsheets/d/1zgSpcgsSxRIgWdHH9khiEMmt2rvNL15raRFP8CxNnFE/edit?usp=sharing">link here</a></li>
+<li>Download the Cytoscape .graphML files via the "Download Cytoscape Data" or "Direct Cytoscape Preview/Download"
+<img alt="tag_summary" src="../img/tags/results_downloadcytoscape.jpg" /></li>
+<li>Download the Node Table<ul>
+<li>Open the molecular network in Cytoscape</li>
+<li>File -&gt; Export -&gt; Table to File -&gt; Select the option ending in "default node" in the dropdown -&gt; Update Path and Save
+<img alt="cytoscape_node" src="../img/tags/cytoscape_example.gif" /></li>
+</ul>
+</li>
+<li>Run the Jupyter Notebook or Code (R) = "Tags_Cytoscape"<ul>
+<li>Update the paths in the #COMMON STEPS section</li>
+<li>Run the code (generates and updated node table)</li>
+</ul>
+</li>
+<li>Import the Updated Node Table into Cytoscape
+<img alt="cytoscape_node" src="../img/tags/cytoscape_example_load.gif" /></li>
+<li><strong>Example Shown Above = Using node color to indicate chemicals tagged as "bacterial"</strong><ul>
+<li>Open node fill color in cytoscape</li>
+<li>Select "TAG_bacterial" and use discrete mapping<ul>
+<li>Value of 0.1 = no InChi and no tag information present</li>
+<li>Value of 0.0 = InChi present but not tagged based on selection</li>
+<li>Value of 1.0 = InChi present and tagged based on selection</li>
+</ul>
+</li>
+<li>Open node label in cytoscape</li>
+<li>Select "Compound_Name" and use passthrough mapping</li>
+<li><em>Interpretation</em> - Molecular netowrk linked glycocholic acid, a primary bile acid conjugated to glycine, and glycodeoxycholic acid, a secondary bile acid. Glycodeoxycholic acid is known to be produced by bacteria in the human gut (and other animals) and <strong>was</strong> tagged as bacterial (green). Glycocholic acid is known to be produced by human (and other animals) and <strong>was not</strong> tagged as bacterial (red). The nodes in grey do not have tags at the time of analysis.</li>
+</ul>
+</li>
+</ul>
 <h4 id="3-utilize-tagtracker-to-simplify-and-focus-the-analysis-of-a-gnps-molecular-network">3. Utilize <strong>"TagTracker"</strong> to simplify and focus the analysis of a GNPS molecular network  <br></h4>
 <p>TBD</p>
 <hr />
