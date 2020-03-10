@@ -95,20 +95,48 @@ Pardon our dust as this is documentation is a work in progress! We also welcome 
 ---
 ---
 
-## Current Analyses
+# Current Analyses
 1. **Summary the tags information** in a GNPS molecular networking job
 2. Color an existing **GNPS molecular networking using GNPS tags**
-3. Utilize **"TagTracker"** to simplify and focus the analysis of a GNPS molecular network
+3. *Coming Soon:* Utilize **"TagTracker"** to simplify and focus the analysis of a GNPS molecular network
+4. *Coming Soon:* Analyze Tags using Metdata
 
 ---
 ---
 
-#### 1. **Summary the tags information** in a GNPS molecular networking job  <br>
-TBD
+# 1. **Summary the tags information** in a GNPS molecular networking job  <br>
+- Make a copy and download Master Tag Sheet (.tsv) from Google Sheets - [link here](https://docs.google.com/spreadsheets/d/1zgSpcgsSxRIgWdHH9khiEMmt2rvNL15raRFP8CxNnFE/edit?usp=sharing)
+- Download the "View all library hits" table from GNPS
+![tag_summary](img/tags/results_libraryhits.jpg)
+- Run the Jupyter Notebook or Code (R) = "Tags_Summary"
+    - Update the paths in the #COMMON STEPS section
+    - Run the code (generates .pdf of figures, example below)
+- Modify graphs as desired <br>
+![tag_summary](img/tags/GNPS_Summary_TAG.png)
 
-#### 2. Color an existing **GNPS molecular networking using GNPS tags** <br>
-TBD
-
+# 2. Color an existing **GNPS molecular networking using GNPS tags** <br>
+- Make a copy and download Master Tag Sheet (.tsv) from Google Sheets - [link here](https://docs.google.com/spreadsheets/d/1zgSpcgsSxRIgWdHH9khiEMmt2rvNL15raRFP8CxNnFE/edit?usp=sharing)
+- Download the Cytoscape .graphML files via the "Download Cytoscape Data" or "Direct Cytoscape Preview/Download"
+![tag_summary](img/tags/results_downloadcytoscape.jpg)
+- Download the Node Table
+    - Open the molecular network in Cytoscape
+    - File -> Export -> Table to File -> Select the option ending in "default node" in the dropdown -> Update Path and Save
+![cytoscape_node](img/tags/cytoscape_example.gif)
+- Run the Jupyter Notebook or Code (R) = "Tags_Cytoscape"
+    - Update the paths in the #COMMON STEPS section
+    - Run the code (generates and updated node table)
+- Import the Updated Node Table into Cytoscape
+![cytoscape_node](img/tags/cytoscape_example_load.gif)
+- **Example Shown Above = Using node color to indicate chemicals tagged as "bacterial"**
+    - Open node fill color in cytoscape
+    - Select "TAG_bacterial" and use discrete mapping
+        - Value of 0.1 = no InChi and no tag information present
+        - Value of 0.0 = InChi present but not tagged based on selection
+        - Value of 1.0 = InChi present and tagged based on selection
+    - Open node label in cytoscape
+    - Select "Compound_Name" and use passthrough mapping
+    - *Interpretation* - Molecular netowrk linked glycocholic acid, a primary bile acid conjugated to glycine, and glycodeoxycholic acid, a secondary bile acid. Glycodeoxycholic acid is known to be produced by bacteria in the human gut (and other animals) and **was** tagged as bacterial (green). Glycocholic acid is known to be produced by human (and other animals) and **was not** tagged as bacterial (red). The nodes in grey do not have tags at the time of analysis.
+    
 #### 3. Utilize **"TagTracker"** to simplify and focus the analysis of a GNPS molecular network  <br>
 TBD
 
