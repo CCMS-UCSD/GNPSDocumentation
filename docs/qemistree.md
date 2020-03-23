@@ -52,7 +52,7 @@ Once the job is finished successfully, you will be able to see the status page a
 
 **1. View Summary** gives a list of the features and their classification at different taxonomic level. It tabulates the annotations for all features for which molecular fingerprints could be predicted using Sirius and CSI:FingerID (Dührkop et. al).
 
-**2.** Under **Advanced Views**, you can click on `View qiime2 Emperor Plots` to visualize the PCoA plot of the samples as a result of using Qemistree distances. Click on `View Qemistree iTOL Tree` to take you to the following page for visualization:
+**2.** Under **Advanced Views**, you can click on `View qiime2 Emperor Plots` to visualize the PCoA plot of the samples as a result of using Qemistree-weighted UniFrac distances. Click on `View Qemistree iTOL Tree` to take you to the following page for visualization:
 
 ![alt text](./img/qemistree/itoloutput.png "iTol Files")
 
@@ -64,11 +64,13 @@ For easy access, follow the `click here` button to the iTOL page directly where 
 ![alt text](./img/qemistree/treeexample.png "Qemistree file")
 Drag and drop to this page the `barplots.txt` file to visualize the relative abundance as  
 
+Please note that this tree is only available for 30 days & therefore it is recommended that you download the associated files and upload it in iTOL using their login credential for permanent storage.
 
+See the corresponding note here: https://github.com/biocore/q2-qemistree
 
 Alternatively, you can download all the files generated from this analysis clicking on `Download Qiime2 data`. Among the folders downloaded, the `output folder` contains qemistree.qza and qemistree-pruned.qza which are also tree files that can be uploaded to [iTOL](https://itol.embl.de/upload.cgi) to visualize the features and how they are related to one another. The qemistree.qza file contains all the features with molecular fingerprints, including those that were not annotated either using MS2 fragmentation (spectral library match) or Sirius+CSI:FingerID (in silico). It may, therefore, be useful to prune the tree for visualizations purposes and keep only the annotated features. By default, the workflow outputs `qemistree-pruned-smiles.qza`  which contains the features that were annotated to smiles level by ClassyFire (Djoumbou et. al.).
 
-You may also perform additional analyses in the QIIME2 environment, for which QIIME2 has to be installed on your computer. This can be done using the documentation [here](https://docs.qiime2.org/2019.10/install/).
+You may also perform additional analyses in the QIIME2 environment using the biocore documentation [here]( https://github.com/biocore/q2-qemistree). QIIME2 can be installed on your computer using the documentation [here](https://docs.qiime2.org/2019.10/install/). 
 
 
 CITATIONS:
