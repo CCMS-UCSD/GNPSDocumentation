@@ -9,7 +9,7 @@ Running a QEMISTREE job in GNPS requires 4 input files which can be generated us
 Required: A SIRIUS file generated from the MZmine workflow
 Required: A quant table called `qiime2_table` with all the features which can be downloaded from a processed FBMN job (found in folder qiime2_output)
 Optional: A metadata file called `qiime2_metadata` which can also be downloaded from a processed FBMN job (also found in folder qiime2_output)
-Optional: A library identification file (tsv) which can also be downloaded from a processed FBMN job (found in folder `DB_result`)
+Optional: A library identification file (tsv) which can also be downloaded from a processed FBMN job (found in folder `clusterinfo_summary`)
 
 Follow the steps below to generate the files:
 
@@ -17,85 +17,59 @@ a. Follow the documentation for [Feature-Based Molecular Networking using MZmine
 b. While still in MZmine2, select your aligned feature list, then click on the tab for Feature list methods and select Export/Import, followed by Export for SIRIUS.\
 c. Choose the Mass list that you used to generate your feature list, and specify a path and Filename for your SIRIUS file. Click OK.\
 d. Go to GNPS server and run an [FBMN](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) job using the GNPS quant csv, GNPS mgf (both generated in step a, above) and [ReDU](https://mwang87.github.io/ReDU-MS2-Documentation/HowtoContribute/) metadata file\
-e. Once completed, go to the status page and click on the button Download qiime2 Emperor qzv\
-f. In the downloaded folder, go to `qiime2_output` for the files `qiime2_table.qza` and `qiime2_metadata.tsv` and to `DB_result` for the tsv file within.
+e. Once completed, go to the status page and click on the button `Download qiime2 Emperor qzv`\
+f. In the downloaded folder, go to `qiime2_output` for the files `qiime2_table.qza` and `qiime2_metadata.tsv` and to `clusterinfo_summary` for the tsv file within.
         	
  
 **STEP 2: Running a Qemistree job**
 
  
-a. Go to the [Proteomics2](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp) server and select the QEMISTREE from the dropdown menu called workflow\
+**a.** Go to the [Proteomics2](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp) server and select the QEMISTREE from the dropdown menu called workflow\
 
-b. In the input section add the following files:
+![alt text](./img/qemistree/workflowpage.png "workflow")
 
-1. SIRIUS file for the Spectrum files
-2. qiime2_table for quant_table
-3. qiime2_metadata for metadata_table
-4. DB_result file for library_identifications
 
-c. Under the header, Advanced options select the instrument type (orbitrap or Q-tof). If you are signed in to the server the email address will auto-populate. If not, add your email address and click on submit. The runtime depends on the number of features in your dataset -- a typical dataset (few thousand features) will take a few hours.
+**b.** In the input section add the following files:
+
+1. SIRIUS file for Sirius MGF Spectrum files
+2. `qiime2_table` for Quantification Table
+3. `qiime2_metadata` for Metadata Table
+4. `clusterinfo_summary` file for Library Identifications
+
+**c.** Under the header: *Advanced options* select the following:
+1. instrument type: orbitrap or Q-tof
+2. Sample Metadata Column: Enter the column name of interest from the metadata file you used for FBMN or as seen in the `qiime2_metadata` file
+
+If you are signed in to the server the email address will auto-populate. If not, add your email address and click on submit. The runtime depends on the number of features in your dataset -- a typical dataset (few thousand features) will take a few hours.
 
 **STEP 3: Analysing the results from a Qemistree job**
 
-Once the job is finished successfully, you will be able to see the status page as below. Here, go to the View Summary page. This page tabulates the annotations for all features for which molecular fingerprints could be predicted using Sirius and CSI:FingerID (Dührkop et. al). Click on the download button to download the output files for downstream analyses and visualization.
+Once the job is finished successfully, you will be able to see the status page as below.
+
+![alt text](./img/qemistree/JobStatus.png "status page")
 
 
 
-In the downloaded folder, the `output_folder ` has several data files. The qemistree.qza and qemistree-pruned.qza are tree files that can be uploaded to [iTOL](https://itol.embl.de/upload.cgi) to visualize the features and how they are related to one another. The qemistree.qza file contains all the features with molecular fingerprints, including those that were not annotated either using MS2 fragmentation (spectral library match) or Sirius+CSI:FingerID (in silico). It may, therefore, be useful to prune the tree for visualizations purposes and keep only the annotated features. By default, the workflow outputs `qemistree-pruned.qza`  which contains the features that were annotated up  to class level by ClassyFire (Djoumbou et. al.).
+**1. View Summary** gives a list of the features and their classification at different taxonomic level. It tabulates the annotations for all features for which molecular fingerprints could be predicted using Sirius and CSI:FingerID (Dührkop et. al).
 
-Here are the output files you need for the downstream steps:
+**2.** Under **Advanced Views**, you can click on `View qiime2 Emperor Plots` to visualize the PCoA plot of the samples as a result of using Qemistree distances. Click on `View Qemistree iTOL Tree` to take you to the following page for visualization:
 
-1. classified_feature_data.qza
-2. merged_feature_table.qza
-3. qemistree-pruned.qza
-4. qemistree.qza
+![alt text](./img/qemistree/itoloutput.png "iTol Files")
 
-**STEP 4: Annotating Qemistree in QIIME2**
+**3.** Download the 4 required files by clicking on the boxes: **Qemistree, Labels, Colors, and Abundance**. These provide the tree file of the features that have smiles (`qemistree.tree`), the label for each tip of the tree (`labels.txt`), the color of each clade (`colors.txt`), and the relative abundance of the feature in the metadata category chosen for the job (`barplots.txt`). 
+Qemistree supports the classification of the features/molecules based on chemical taxonomy such as kingdom, superclass, class, subclass, direct_parent, and smiles.
 
-Qemistree supports the classification of the features/molecules based on chemical taxonomy such as kingdom, superclass, class, subclass, direct_parent, and smiles.  Python scripts written in the QIIME 2 environment for the Qemistree program can be used to annotate the leaves based on classified chemical taxonomy. To use the python scripts, QIIME2 has to be installed on your computer. This can be done using the documentation [here](https://docs.qiime2.org/2019.10/install/). 
-Once QIIME 2 is installed, activate your QIIME 2 environment and install q2-qemistree following the steps below:
+For easy access, follow the `click here` button to the iTOL page directly where it auto-populates the resultant tree, with the color and text files. Shown below is an example.
 
-```bash
-git clone https://github.com/biocore/q2-qemistree.git
-cd q2-qemistree
-pip install .
-qiime dev refresh-cache
-```
+![alt text](./img/qemistree/treeexample.png "Qemistree file")
+Drag and drop to this page the `barplots.txt` file to visualize the relative abundance as  
 
-For subsequent sessions, use the command conda activate qiime2-2019.10  to activate QIIME2 environment.
 
-The python script used to enhance the visualization of the tree in iTOL is called _itol_metadata.py and is included in the q2-qemistree package. The following command is used to generate a color and a label file at the desired taxonomy level:
-Make sure to provide the path to _itol_metadata.py  unless already in the q2-qemistree/q2_qemistree folder
 
-```bash
-python _itol_metadata.py \
-  --classified-feature-data classified-feature-data.qza \
-  --feature-data-column subclass \
-  --ms2-label False \
-  --color-file-path /path-to-clade-colors-file.txt/ \
-  --label-file-path /path-to-tip-label-files.txt/
-  ```
+Alternatively, you can download all the files generated from this analysis clicking on `Download Qiime2 data`. Among the folders downloaded, the `output folder` contains qemistree.qza and qemistree-pruned.qza which are also tree files that can be uploaded to [iTOL](https://itol.embl.de/upload.cgi) to visualize the features and how they are related to one another. The qemistree.qza file contains all the features with molecular fingerprints, including those that were not annotated either using MS2 fragmentation (spectral library match) or Sirius+CSI:FingerID (in silico). It may, therefore, be useful to prune the tree for visualizations purposes and keep only the annotated features. By default, the workflow outputs `qemistree-pruned-smiles.qza`  which contains the features that were annotated to smiles level by ClassyFire (Djoumbou et. al.).
 
-Both the path-to-clade-colors-file.txt and path-to-tip-label-files.txt files can be dragged and dropped on the iTOL website after the tree file has been uploaded.
-In addition, you can also compare the frequency of each tip (i.e. feature) across a user-defined  metadata category. The following command can be used to generate bar charts at the tips of the tree specifying the prevalence of the feature in particular metadata category:
-You will need the metadata file (`qiime2_metadata.tsv` for `metadata.tsv` below) from the FBMN job (typically in the qiime2_output folder).
+You may also perform additional analyses in the QIIME2 environment, for which QIIME2 has to be installed on your computer. This can be done using the documentation [here](https://docs.qiime2.org/2019.10/install/).
 
-```bash
-python _itol_metadata.py \
-  --classified-feature-data classified-feature-data.qza \
-  --feature-data-column subclass \
-  --feature-table merged-feature-table.qza \
-  --sample-metadata metadata.tsv \
-  --sample-metadata-column groups \
-  --barchart-file-path /path-to-barchart-subclass-file.qza/
-```
-
-Generating the final output:
-As described above, you need 4 files to visualize the tree in iTOL: a tree file (.qza extension), a clade color file (.txt extension), a tip label file (.txt extension) and a bar chart file (.qza extension). Then follow the step below:
-
-1. Go to the [iTOL](https://itol.embl.de/upload.cgi) website (Letunic et al). Enter desired tree name, tree text. Upload the qemistree.qza (or qemistree-pruned.qza file pruned at the desired taxonomy).
-2. Drag and drop the clade color file (.txt) and tip label file (.txt)
-3. Drag and drop the bar chart file (.qza)
 
 CITATIONS:
 
