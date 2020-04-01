@@ -1501,7 +1501,31 @@
 <p>(1), (2) The .mgf file containing the deconvolved EI spectra and the .csv feature quantification table automatically (with balance score) adds if the spectral library search is launched from the deconvolution job performed with MS-Hub. Otherwise, they can be added by the user from others processing software. The quantification table is formatted as the MZmine2 output table with a "raw ID", "row m/z", "row retention time" columns, and all the peak area values for all .mzML files.</p>
 <p>(3) Select your metadata table formatted as a tab-separated .txt file. To create your metadata table properly, see the documentation <a href="../metadata/">here</a>. </p>
 <p>(4) Public Libraries files are selected by default. However, user could add their libraries on GNPS by following the instructions <a href="../batchupload/">here</a>, or by uploading them in .mgf format (drag and drop on “Upload File” section). </p>
-<p>(5) The carbon marker table should be added. This table must be formatted as a comma separated values (.csv) file in the following headers: Compound_Name - name of the compound (string), Carbon_Number - number of carbons (integer), RT - retention time in seconds (float). <a href="../static/gc_kovats_skin.csv">Example File</a>. The file can also be created from the raw experimental chromatograms of the RI marker compounds using MZMine2 as described in this <a href="https://youtu.be/XodHMJcuwnk">video tutorial</a>. </p>
+<p>(5) The carbon marker table should be added. This table must be formatted as a comma separated values (.csv) file in the following headers:</p>
+<table>
+<thead>
+<tr>
+<th>Header</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Compound_Name</td>
+<td>name of the compound (string)</td>
+</tr>
+<tr>
+<td>Carbon_Number</td>
+<td>number of carbons (integer)</td>
+</tr>
+<tr>
+<td>RT</td>
+<td>retention time in seconds (float)</td>
+</tr>
+</tbody>
+</table>
+<p><a href="../static/gc_kovats_skin.csv">Example File</a>. </p>
+<p>The file can also be created from the raw experimental chromatograms of the RI marker compounds using MZMine2 as described in this <a href="https://youtu.be/XodHMJcuwnk">video tutorial</a>. </p>
 <p><img alt="img" src="../img/GC-MS_documentation/Fig_7.png" /></p>
 <p>The <strong>job window</strong> proposed four fields of advanced search, filtering, network, and Kovats index calculation options. Click on the “Show Fields” button to show advanced options. The default parameters recommended for obtaining good results have been determined and pre-populated as described in the table Parameters for Library Search. However, users are encouraged to adjust the settings as appropriate for their analysis. </p>
 <p>(7) Enter your email address.</p>
