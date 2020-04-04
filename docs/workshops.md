@@ -2,6 +2,7 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
+| Zoom! | GNPS Library Workshop/Hackathon | April 8 9AM PST| [Material](https://docs.google.com/document/d/1pu24hCoRr8trBhc_sJ34BiWamJHEpRkZYYnGYQRkAkU/edit?usp=sharing) | 
 | TBD | TBD | TBD | -----|
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
