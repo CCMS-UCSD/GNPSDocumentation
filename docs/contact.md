@@ -12,6 +12,7 @@ We are hosting online office hours on a bi-weekly basis online with Ming ([miw02
 
 [https://zoom.us/j/854069972](https://zoom.us/j/854069972)
 
+PW: 026951
 
 In office hours we'll cover new and old features of GNPS and most importantly we'll take your personal questions about GNPS, computational mass spectrometry, and any science you want to chat about!
 
@@ -22,5 +23,6 @@ Upcoming Office Hour Schedule
 | 2PM PST March 30 | GNPS Q and A / Additional Topic TBA |
 | 2PM PST April 6 | GNPS Q and A / Additional Topic TBA |
 | 2PM PST April 13 | GNPS Q and A / Additional Topic TBA |
+| 2PM PST April 20 | GNPS Q and A / Additional Topic TBA |
 
 
