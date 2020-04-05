@@ -15,7 +15,7 @@ If you would like to host a GNPS workshop together with the GNPS team, please re
 
 We have standard training tutorial modules on GNPS. Check it out here:
 
-[Training modules](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules)
+[Training modules](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules)
 
 ## Previous Workshops
 
