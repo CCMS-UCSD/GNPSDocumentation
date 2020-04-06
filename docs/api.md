@@ -8,7 +8,12 @@
 
 ### All Public Library Specta at GNPS with Peaks and Annotation History
 
-```https://gnps-external.ucsd.edu/gnpslibraryformattedwithpeaksjson```
+```https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.json```
+
+As MGF
+
+```https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.mgf```
+
 
 ### Single Library Spectrum
 
