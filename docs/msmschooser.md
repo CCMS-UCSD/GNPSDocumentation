@@ -113,8 +113,17 @@ This workflow selects spectra by precursor m/z. Several adducts are considered. 
   * Select all .mzXML files, negative and positive, from MassIVE
   * Select the **"MSMS-Chooser Submission"** file (.tsv) from MassIVE
 2. Launch the Job
-3. Download result file and test using the following Validator - [link here](https://gnps-quickstart.ucsd.edu/validatebatch).
-4. Send completed Job Link to Contacts (detailed below)
+
+---
+
+## Interpretation and Validation of MSMS-Chooser (v1.0) Results
+![img](img/MSMSChooserResults.png)
+
+The results can be accessed by clicking the "View Output Batch Table" link and the "View Spectrum" button on the left-hand side of the table for each chemical. **review of all data is strongly encouraged**
+1. After review, if all look acceptable
+ * click the “Next Step: Batch Anotation Validator on GNPS” and run the validation workflow. Once complete, email Morgan (ccms-web@cs.ucsd.edu) and send her the completed job from above. <br>
+2. After review, if you would like to remove MS/MS for any reason
+ * Download the “Download Output Batch Table” and delete the rows you would like to exclude. You should then follow the “[Batch Upload of Annotated Spectra](https://ccms-ucsd.github.io/GNPSDocumentation/batchupload/)" documentation (you will need to reselect the files and upload the modified “output batch table” in the “Annotation Table” option). Once complete, email Morgan (ccms-web@cs.ucsd.edu) and send her the completed job from above.
 
 ---
 
