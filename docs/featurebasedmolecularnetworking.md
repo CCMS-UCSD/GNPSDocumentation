@@ -59,7 +59,7 @@ Three type of input files are needed (test files for each software are accessibl
 
 2. A *MS/MS spectral summary* file with a list of MS/MS spectra associated with the LC-MS ion features (.MGF File). (.MGF file format).
 
-3. [Optional] *Metadata table* - described [here](networking.md#metadata)
+3. [Optional] *Metadata table* - format described [here](metadata.md)
 
 4. [Optional] *"Supplementary Pairs"* of additional edges - described [here](#advanced-extras)
 
@@ -69,7 +69,7 @@ Three type of input files are needed (test files for each software are accessibl
 
 2. Use the mzML file(s) associated with mzTab-M file.
 
-3. [Optional] *Metadata table* - described [here](networking.md#metadata)
+3. [Optional] *Metadata table* - format described [here](metadata.md)
  	
  	
 ## SuperQuick Feature Based Molecular Networking Workflow
@@ -155,7 +155,7 @@ There are additional normalization options specifically for the FBMN workflow:
 
 #### Advanced Extras
 
-"Supplementary Pairs" is an option to add extra edges to the resulting feature-based molecular network. It was initially implemented for the Ion Identity Networking (IIN) workflow. However, this approach is designed to stimulate the development and testing of new workflows as the input is an edge file in a generic csv format. An edge is described by the following table:
+"Supplementary Pairs" is an option to add extra edges to the resulting FBMN. It was initially implemented for the [Ion Identity Networking (IIN) workflow](fbmn-iin.md). The IIN supports currently MZmine, XCMS-CAMERA, and MS-DIAL. However, this approach is designed to stimulate the development and testing of new workflows as the input is an edge file in a generic CSV format. An edge is described by the following table:
 
 | Header        | Description |
 | ------------- |-------------|
@@ -165,8 +165,12 @@ There are additional normalization options specifically for the FBMN workflow:
 | Score | A numerical value for the score (cannot be empty) |
 | Annotation | A string annotation |
 
-**Example of the Supplementary Pairs used in the Ion Identity Networking (IIN) workflow**
+Note that if Supplementary Pairs from other software are used, it is mandatory that the as the LC-MS feature identifier (ID) matches the "SCANS=" number in the MGF file.
+
+Example of the Supplementary Pairs used in the [IIN) workflow](fbmn-iin.md). 
+
 ![img](img/featurebasedmolecularnetworking/fbmn_iin_edges.PNG)
+
 ![img](img/featurebasedmolecularnetworking/fbmn_advanced_extras.PNG)
 
 ### Inspecting the Results of FBMN on GNPS
@@ -245,34 +249,47 @@ See our [tutorial on using MZmine2](tutorials/americangutmzmine.md) for FBMN ana
 ## Development
 
 #### Source code
-- The FBMN source code can be found on the [GNPS_Workflows GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking).
+The FBMN source code can be found on the [GNPS_Workflows GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking).
+
+Requirements for the input files for each processing tool are described at https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking and representative input files are provided at [https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking/test/reference_input_file_for_formatter](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking/test/reference_input_file_for_formatter.g).
+
+The "formatter" scripts that convert input files of the supported softwares are accessible [in the *script/* folder](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking/tools/feature-based-molecular-networking/scripts).
 
 #### Input files requirements
 
+The FBMN workflow accepts as input files either:
 
-##### Feature quantification table
-The *feature quantification table* (.TXT or CSV file) needs to have unique *Feature IDentifier* (integer) for each LC-MS1 feature that must match the "SCANS=" header of the corresponding spectrum in the *MS/MS spectral summary* (.MGF file). Note that the number of LC-MS1 features in the *feature quantification table* can be larger than the number of LC-MS1 features with a spectrum in the *MS/MS spectral file*. And the *Feature IDentifier* does not have to be sequencial. As a result, the *feature quantification table* can contain LC-MS1 feature that doesn't have an associated MS/MS scan in the *MS/MS spectral file*. The PCoA generated with qiime2 EMPeror uses the entire content of *feature quantification table* provided.
+- A *MS/MS spectral summary* and a *feature quantification table*.
+- or an *mzTab-M* file and the associated *mzML* files.
 
-##### MS/MS spectral summary
-The format of the *feature quantification table* should be consistent with the representative *feature quantification tables* defined for each processing tool. See [this page for example files](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files). Note that internally, the *feature quantification table* file inputted by the user are converted to a standard internal format prior to FBMN analysis in GNPS. The python scripts used for the conversion *feature quantification Table* from various software [are available here](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking/tools/feature-based-molecular-networking/scripts). If you want to add support for another LC-MS processing tool, please contact us.
+##### MS/MS spectral summary and feature quantification table
+
+Applicable for MZmine, OpenMS, MS-DIAL, XCMS, MetaboScape, and Progenesis QI.
+
+###### MS/MS spectral summary
+The MS/MS spectral summary contains a list of representative spectra in the Mascot Generic Format (**MGF** file). An **MGF** file is a plain text file (ASCII) containing peak list information and spectra parameters (more information at [http://www.matrixscience.com/help/data_file_help.html](http://www.matrixscience.com/help/data_file_help.html). Note that for Progenesis QI, instead of an **MGF** file, an **MSP** file (NIST spectral library format) is used instead.
+
+###### Feature quantification table
+The *feature quantification table* (**TXT** or **CSV** file) is specific for each supported processing tool and processed internally by GNPS. Yet, it needs to contain a **Feature IDentifier** (integer) for each LC-MS1 feature that must be unique and match the "**SCANS=**" header of the corresponding spectrum in the *MS/MS spectral summary* (**MGF** file). Note that the number of LC-MS1 features in the *feature quantification table* can be larger than the number of LC-MS1 features with a spectrum in the *MS/MS spectral file*, and the *Feature IDentifier* does not have to be sequencial. As a result, the *feature quantification table* can contain LC-MS1 feature that does not have an associated MS/MS scan in the *MS/MS spectral file*. The PCoA generated with qiime2 EMPeror in FBMN workflow uses the entire content of *feature quantification table* provided.
+
+For all the processing tools supported, the mapping between the "**Feature ID**" of the *feature quantification table* should be consistent with the "**SCAN**" header of the representative spectrum in the *MS/MS spectral summary*. See [this page for example files](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files). Note that internally, the *feature quantification table* file inputted by the user are converted to a standard internal format prior to FBMN analysis in GNPS. The python scripts used for the conversion *feature quantification Table* from various software [are available here](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/feature-based-molecular-networking/tools/feature-based-molecular-networking/scripts). If you want to add support for another LC-MS processing tool, please contact us.
+
 
 ##### Support for mz-Tab-M format
 
 The **mzTab-M** format is a standardized output designed for the report of metabolomics MS-data processing results. The FBMN workflow now supports the mzTab-M format (2.0, release 1.0.5). The **mzTab-M** file has to be inputed along with the related **mzML** files. 
 
-Basically, the **mzTab-M** is used to retrieve for each LC-MS/MS feature:
+Basically, the **mzTab-M** file is used to retrieve for each LC-MS/MS feature:
 
 - The abundance of the LC-MS/MS feature in each sample.
-- The filename (**mzML**) and index of the associated MS/MS spectrum. 
+- The filename (**mzML**) and the index of the most intense associated MS/MS spectrum. 
 
-More informations in the [FBMN with mzTab-M documentation](featurebasedmolecularnetworking-with-mztab-m.md).
+Note that currently, the mzTab-M has been tested only with XCMS. More informations in the [FBMN with mzTab-M documentation](featurebasedmolecularnetworking-with-mztab-m.md).
 
+##### Programmatic Access to FBMN
 
-### Citation
+For programmatic access to the FBMN workflow, contact Mingxun Wang at <miw023@ucsd.edu>.
 
-This work builds on the efforts of our many colleagues, please make sure to cite the papers for their processing tools and the GNPS paper:
-
-Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
 ### Join the GNPS Community !
 

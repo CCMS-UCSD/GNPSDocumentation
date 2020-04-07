@@ -6,6 +6,15 @@
 
 ```https://gnps-external.ucsd.edu/gnpslibraryjson```
 
+### All Public Library Specta at GNPS with Peaks and Annotation History
+
+```https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.json```
+
+As MGF
+
+```https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.mgf```
+
+
 ### Single Library Spectrum
 
 ```https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=<Library Accession>```
@@ -83,3 +92,16 @@ If you have InChI Key
 ```https://redu.ucsd.edu/filename?query=<File full path in MassIVE>```
 
 [Example](https://redu.ucsd.edu/filename?query=f.MSV000082048/ccms_peak/Plate_28/30_84.mzML)
+
+## GNPS Continuous ID Data
+
+If you want to download all public datasets that have been processed by GNPS. You can find the dumps here:
+
+https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=25cc4f9135c6428aabe1f41a9e54c369&view=advanced_view
+
+This includes:
+
+1. Clustered MGFs for each dataset
+1. Identifications for clustered spectra
+1. Mapping of clusters back to original files and scans
+1. Molecular Networks for each dataset
