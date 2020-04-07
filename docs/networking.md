@@ -107,6 +107,7 @@ Click Finish Selection which will close the pop-up window.
 | Filter Precursor Ion Window | All peaks in a +/- 17 Da around precursor ion mass are deleted. By default, yes filter. This removes the residual precursor ion, which is frequently observed in MS/MS spectra acquired on qTOFs. | Filter | |
 | Filter library | Apply peak filters to library | Filter | |
 |Filter peaks in 50Da Window | Filter out peaks that are not top 6 most intense peaks in a +/- 50Da window | Filter | Turn off if your data is very small molecules as it might filter out a lot peaks in the lower mass ranges that might be signal. |
+| Filter Spectra from G6 as Blanks Before Networking | Enables the filtering out of consensus clusters for consideration in the molecular network if it appears in any file in G6 | Don't Filter | | 
 
 ### Parameter Presets
 
