@@ -29,24 +29,31 @@ nav:
         - MASST Search (Mass Search Tool): masst.md
         - Result Views Navigation: resultviews.md
     - Advanced Data Analysis:
-        - DEREPLICATOR: dereplicator.md
         - Feature Based Molecular Networking:
             - FBMN Workflow: featurebasedmolecularnetworking.md
             - FBMN with MZmine : featurebasedmolecularnetworking-with-mzmine2.md
             - FBMN with MS-DIAL: featurebasedmolecularnetworking-with-ms-dial.md
-            - FBMN with XCMS3: featurebasedmolecularnetworking-with-xcms3.md
+            - FBMN with XCMS: featurebasedmolecularnetworking-with-xcms3.md
             - FBMN with OpenMS: featurebasedmolecularnetworking-with-openms.md
             - FBMN with MetaboScape: featurebasedmolecularnetworking-with-metaboscape.md
             - FBMN with Progenesis QI: featurebasedmolecularnetworking-with-progenesisQI.md
             - FBMN with mzTab-M: featurebasedmolecularnetworking-with-mztab-m.md
             - FBMN export to Cytoscape: featurebasedmolecularnetworking-cytoscape.md
+        - FBMN - Ion Identity Networking:
+            - IIN Workflow: fbmn-iin.md
+            - IIN with MZmine2: fbmn-iin-mzmine.md
+            - IIN with XCMS: fbmn-iin-xcms.md
+            - IIN with MS-DIAL: fbmn-iin-msdial.md
         - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
         - Molecular Networking in Cytoscape: cytoscape.md
-        - MolNetEnhancer: molnetenhancer.md
+        - DEREPLICATOR: dereplicator.md
         - Network Annotation Propagation (NAP): nap.md
+        - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
+        - MolNetEnhancer: molnetenhancer.md
+        - MetaMiner: metaminer.md
+        # CycloNovo: cyclonovo.md
         - Reanalysis of Data User Interface (ReDU): ReDU.md
-#        - CycloNovo
-#        - MetaRiPPQuest
+        - Qemistree: qemistree.md
     - Spectral Libraries:
         - Browsing Reference Spectral Libraries: browselibraries.md
         - Add/Curate Reference Spectrum in the Library: spectrumcuration.md
@@ -55,6 +62,7 @@ nav:
         - Open-source Method for Reference Library Generation:
             - Data Acqusition - Thermo QExactive (v1.0): msmschooserdataacquisitionQE.md
             - Computational Selection of MSMS to Include in Library (MSMS-Chooser): msmschooser.md
+        - GNPS Tag Contribution and Analyses: tag_info.md
     - Create a Public Datasets:
         - Dataset Creation/Sharing: datasets.md
         - Continuous Identification: continuousid.md
@@ -70,9 +78,9 @@ nav:
         - FBMN analysis at GNPS: tutorials/featurebasedgnps.md
     - Change Log: changelog.md
     - Join the GNPS community: gnps_community.md
-    - GNPS Workshops: workshops.md
+    - GNPS Workshops/Training: workshops.md
     - GNPS Logos: logos.md
-    - Contact: contact.md
+    - Contact/Office Hours: contact.md
     - API: api.md
 theme:
     name: material

@@ -39,3 +39,7 @@ Users will be able to both add their own rating, add a comment for their given r
 This example continuous identification email informs subscribers that the dataset of interest has more IDs in the most recent round of continuous identifications. It will first list the title of the dataset, then the changes in identification counts, and finally direct links to explore the data. Users can go directly to the search results and view the new, different, and deleted identifications as well as go straight to the dataset page itself.
 
 ![img](img/datasets/subscription_email.png)
+
+## Download
+
+To download all the information related to continuosu ID, please refer [here](api.md#gnps-continuous-id-data). 
