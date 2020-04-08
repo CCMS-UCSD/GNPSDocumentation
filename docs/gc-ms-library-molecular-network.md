@@ -11,25 +11,23 @@ There are two options to open the job page for conducting a spectral library sea
 
 The **"Search Option" section** in the job window allows importing files needed for the spectral library search and the molecular networking generation. By clicking on "select Input Files", a pop-up window appears, allowing to select every needed file.
 
-(1), (2) The .mgf file containing the deconvolved EI spectra and the .csv feature quantification table automatically (with balance score) adds if the spectral library search is launched from the deconvolution job performed with MS-Hub. Otherwise, they can be added by the user from others processing software. The quantification table is formatted as the MZmine2 output table with a "raw ID", "row m/z", "row retention time" columns, and all the peak area values for all .mzML files.
+(1), (2) The .mgf file containing the deconvolved EI spectra and the .csv feature quantification table automatically (with balance score) adds if the spectral library search is launched from the deconvolution job performed with MS-Hub. Otherwise, they can be added by the user from others processing software (MS-DIAL, MZmine2, etc...). The quantification table is formatted as the MZmine2 output table with a "raw ID", "row m/z", "row retention time" columns, and all the peak area values for all .mzML files.
 
 (3) Select your metadata table formatted as a tab-separated .txt file. To create your metadata table properly, see the documentation [here](metadata.md). 
 
-(4) Public Libraries files are selected by default. However, user could add their libraries on GNPS by following the instructions [here](batchupload.md), or by uploading them in .mgf format (drag and drop on “Upload File” section). 
+(4) Public Libraries files are selected by default. However, user could add their libraries on GNPS by following the instructions [here](batchupload.md), or by uploading them in .mgf format (drag and drop on “Upload File” section). If the libraries are curated and could be shared with the community, it is encouraged to upload them to GNPS. 
 
-(5) The carbon marker table should be added. This table must be formatted as a comma separated values (.csv) file in the following headers:
+(5) The carbon marker table should be added. This table must be formatted as a comma separated values (.csv) file in the following headers: Compound_Name - name of the compound (string), Carbon_Number - number of carbons (integer), RT - retention time in seconds (float). [Example File](static/gc_kovats_skin.csv). The file can also be created from the raw experimental chromatograms of the RI marker compounds using MZMine2 as described in this [video tutorial](https://youtu.be/XodHMJcuwnk). 
 
-| Header | Description | 
-| -------|-------------|
-|Compound_Name | name of the compound (string) |
-| Carbon_Number | number of carbons (integer) |
-| RT | retention time in seconds (float) |
+(6) Click on the "Finish selection" button to close the pop-up window. 
 
-[Example File](static/gc_kovats_skin.csv). 
+![img](img/GC-MS_documentation/Picture7.png)
 
-The file can also be created from the raw experimental chromatograms of the RI marker compounds using MZMine2 as described in this [video tutorial](https://youtu.be/XodHMJcuwnk). 
+**Search Options** 
 
-![img](img/GC-MS_documentation/Fig_7.png)
+- *Fragment Ion Mass Tolerance* is the maximum mass deviation between the observed fragments and the ions selected within the libraries. The mass tolerance setting is related to the accuracy of the mass analyzer. Default value is ± 0.025 Da for high-resolution mass spectrometers (q-TOF, q-Orbitrap) while ± 2.0 Da is recommended for low-resolution MS/MS instruments (ion traps, triple-quadrupole/QqQ).
+- *Min Matched Peaks* is the minimum number of common fragment ions that should share a spectra to be considered as a spectral library annotation. This parameter should be tuned depending on the molecules of interest and experimental conditions. It is recommended to perform several jobs modifying this parameter for testing possible outcomes variations in annotations. Typically high quality features contain more than 15 ions in EI data.
+- *Score Threshold* is the minimum cosine score to be considered as an annotation in spectral library search. 0.85 value is set as default. This value has been determined to effectively delineate subclasses and Levels 6 and 7, and it usually performs well with data obtained through experiments without derivatization, but that will depend on the quality of the mass spectra obtained. For derivatized compounds, the cosine value for good matches is generally lower by ~0.1 due to an inferior quality of the EI spectra.
 
 The **job window** proposed four fields of advanced search, filtering, network, and Kovats index calculation options. Click on the “Show Fields” button to show advanced options. The default parameters recommended for obtaining good results have been determined and pre-populated as described in the table Parameters for Library Search. However, users are encouraged to adjust the settings as appropriate for their analysis. 
 
@@ -39,56 +37,41 @@ The **job window** proposed four fields of advanced search, filtering, network, 
 
 ![img](img/GC-MS_documentation/Fig_7B.png)
 
-**Table: Parameters for Library Search**
+**Advanced Search Options**
 
-| ***Search Options***                                         |                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Fillable Field**                                           | **Definition**                                               | **Recommended User Input**                                   |
-| Spectrum Files                                               | Selection of files needed to analyze.                        | The deconvoluted files usually are directly included into the Library search/Networking job. Allowed file formats are .mzML or .CDF. |
-| FORCE_EXACT_MATCH                                            |                                                              | Keep default value of 1.                                     |
-| Precursor Ion Mass Tolerance                                 | Maximum mass deviation between the observed precursor ion and the ions selected within the libraries included in the search. | The choice of the precursor mass tolerance setting usually is influenced directly by the accuracy of the mass analyzer being used to measure the precursor spectra in LC-MS analysis, but modification of this parameter are not meaningful for EI data because there is no precursor ion. 20000 is the default value to encompass all ions. |
-| Min Matched Peaks                                            | Minimum number of common fragment ions that should share a spectra to be considered as a spectral library annotation. | Default value is 6, but note that this parameter should be tuned depending on the molecules of interest and experimental conditions. It is recommended to perform several jobs modifying this parameter for testing possible outcomes variations in annotations. Typically high quality features contain more than 15 ions in EI data. |
-| Fragment Ion Mass Tolerance                                  | Maximum mass deviation between the observed fragments and the ions selected within the libraries included in the search. | The choice of the precursor mass tolerance setting is influenced directly by the accuracy of the mass analyzer being used to measure the precursor spectra. Default value is ± 0.025 Da for high-resolution mass spectrometers (q-TOF, q-Orbitrap). For low-resolution MS/MS instruments (e.g. , ion traps, triple-quadrupole/QqQ), a PIMT ion mass tolerance of ± 2.0 Da is recommended. Note that this parameters should be tuned depending on data. |
-| Score Threshold                                              | Minimum cosine score to be considered as an annotation in spectral library search. | 0.85 value is set as default. This value has been determined to effectively delineate subclasses and Levels 6 and 7 and usually performs well with data obtained through experiments without derivatization, but that will depend on the quality of the mass spectra obtained. For derivatized compounds the cosine value for good matches is generally lower by ~0.1 due to an inferior quality of the EI spectra. |
+- *Library Class* is the level of library to include hits. Keep default of “Bronze” to include all possible hits from libraries.
+- *Top Hits Per Spectrum* is how many top hits ranked by the cosine score to be included into the results. It is recommended to keep this number relatively high (for example, 10 to include top 10 matches) to increase the possibility to have a correct annotation if it is not in the first top hit.
+- *Spectral Library* allows to select spectral libraries to include in the search. 
 
+![img](img/GC-MS_documentation/Fig7C.png)
 
-| ***Advanced Search Options***         |                                                              |                                                              |
-| ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Fillable Field**                    | **Definition**                                               | **Recommended User Input**                                   |
-| Library Class                         | The level of library to include hits from.                   | Keep default of “Bronze” to include all possible hits from libraries. |
-| Top Hits Per Spectrum                 | How many top hits ranked by the cosine score to be included into the results. | The default of 1. It is recommended to keep this number relatively high (for example, 10 to include top 10 matches) to allow for correct annotation selection if it is not a top hit. |
-| Spectral Library                      | Selection of spectral libraries to include in the search.    | Select all appropriate EI libraries by selecting them and clicking “Library Files”. Click “Finish Selection” when completed. Any of the user’s own libraries could be included into the search as long as they are converted into .mgf format. If the libraries are curated and could be shared with the community, it is encouraged to upload them to GNPS as described [here](batchupload.md). Users have access to open and public libraries uploaded to GNPS, these can be selected at: CCMS_SpectralLibraries -> GNPS_GC_Libraries. |
-| Search Analogs                        | Used for tandem MS data.                                     | Keep default of “Don’t Search”. This option is used for LC-MS data. |
-| Maximum Analog Search Mass Difference | Used for tandem MS data.                                     | Disabled when above option is set at “Don’t Search”.         |
+**Advanced Filtering Options**
 
-| ***Advanced Filtering Options***                             |                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Fillable Field**                                           | **Definition**                                               | **Recommended User Input**                                   |
-| Filter StdDev Intensity                                      | Used for tandem MS data.                                     | It is highly recommended to use a default value of 0 so that no filter is applied. |
-| Filter precursor window                                      | Used for tandem MS data.                                     | “Don’t Filter” is set as default for the EI data because there is no precursor ion. |
-| Filter peaks in 50 Da window                                 | Removes peaks that are not one of the top 6 most intense within a +/- 50 Da window. | Depending on the deconvolution results, this could be turned on or off: if fragmentation patterns contain a large number of small peaks, this filtering should be turned off, as it may filter out relevant peaks that could be signal. |
-| Filter SNR Intensity                                         | All ions with a signal to noise ratio (SNR) in the EI spectrum below this value raw intensity will be deleted. | Use a default value of 0 so that no filter is applied, especially if the raw intensities of your data are very low. This value can be modified by the user for excluding background ions and just include the mass spectra of certain quality. |
-| Filter library                                               | Used for tandem MS data.                                     | Don’t Filter is set as default for the EI data because there is no precursor ion. |
-| Min Peak Int                                                 | All ions with a signal in the EI spectrum below this raw intensity will be deleted. | Use a default value of 0 so that no filter is applied, especially if the raw intensities of your data are very low. |
+- *Filter StdDev Intensity* , *Filter Precursor Window* and *Filter Library* are used for tandem MS data.  Leave defaults parameters, "0" and "Don’t Filter", respectively.  
+- *Filter SNR Intensity* and *Min Peak Int.* allow to delete all ions with a signal to noise ratio (SNR) or with  a signal, in the EI spectrum, below this value raw intensity. If raw intensities of your data are very low, use a default value of 0.  
+- *Filter peaks in 50Da Window* removes peaks that are not on the top 6 most intense within a +/- 50 Da window. If fragmentation patterns contain a large number of small peaks, this filtering should be turned off, as it may filter out relevant peaks that could be signal.
 
-| ***Advanced Network Options***                               |                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Fillable Field**                                           | **Definition**                                               | **Recommended User Input**                                   |
-| Meta-table (Optional)                                        | Selection of metadata to include in the search.              | The metadata file describes the samples properties and allows more flexibility for data analysis and visualization. It is an alternative way to assign groups when selecting data input files within the workflow of GNPS, see an example [here](metadata.md). |
-| Min pairs cos                                                | Minimum cosine score required for an edge to be formed between nodes. Lower value will increase the size of the clusters by inducing the clustering of less related spectra, higher value will limit do the opposite. | 0.7 value is set as default. This value has been determined to effectively delineate subclasses and Levels 6 and 7 and usually performs well with data obtained through experiments without derivatization, but that will depend on the quality of the mass spectra obtained. For derivatized compounds the cosine value for good matches is generally lower due to an inferior quality of the EI spectra. |
-| Network TopK                                                 | Pairs of nodes are reported only if they are found to be best matches in the topK in both directions that are above the minimum cosine score. | Default is set to 10. This value enables the network to be more or less complex. |
-| Quant-table (Optional)                                       | Table including feature ID, retention time (in min.) with balance score, Rel. Max Integral and Sample\Best order. | The quantification table usually is directly included into the Library search/Networking job or can be imported externally. External deconvolution tools do not provide balance score and it will not be available in the search results. |
-| Maximum shift between precursors                             | The maximum allowed difference in precursor m/z differences. | Must be set to the higher m/z expected in the analysis for EI data since no precursor information is available (default value of 500) |
-| Maximum Connected Component Size                             | Maximum number of nodes that can be connected in a single sub-network of a molecular network. This process iteratively breaks up large ‘hairball’ networks (of false positives) by removing the lowest scoring alignments (by cosine score) first until the resulting pieces fall below the maximum size. | Default setting is 100 – this value can be set to 0 to allow for an unlimited number of nodes or a higher setting can be used for larger data sets or for data sets containing many structurally-related molecules. Low value encourages breaking up the “hairball” clusters but increases the chance that some nodes become disconnected and fall out of the network. |
+![img](img/GC-MS_documentation/Fig7D.png)
 
-| ***Advanced Kovats Index Calculation Options*** |                                                              |                                                              |
-| ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Fillable Field**                              | **Definition**                                               | **Recommended User Input**                                   |
-| Perform Kovats Calculation                      | Whether to perform calculation of Kovats retention index.    | If the user need to calculate Kovats RIs for the compounds during library search this parameter should be selected. (i) The Input Carbon Marker File could be provided for Kovats markers, but it must be conducted with identical protocol as the rest of the experiment. |
-| Input Carbon Marker File (Optional)             | If provided, this information will be used for retention index (RI_ estimation. | The RI markers information should be submitted as a comma separated values (.csv) file in the following headers: Compound_Name - name of the compound (string), Carbon_Number - number of carbons (integer), RT - retention time in seconds (float). [Example File](static/gc_kovats_skin.csv). |
-| MSHub Balance Score                             | The file that contains information for the balance score.    | The balance score is an estimation of mass spectrum patterns reproducibility across the entire dataset. This information is only available if deconvolution is conducted using MSHub and the file is appended automatically when launching library search job from completed MSHub deconvolution job. This file is optional and can be omitted when using deconvolution results from other deconvolution software. |
-| ***Advanced Deprecated Options***               |                                                              |                                                              |
-|                                                 |                                                              | These options are only relevant if/when the parent mass information is available and thus are strongly recommended to be left default. |
+**Advanced Network Options**
+
+- *Min Pairs Cos* is the minimum cosine score required for an edge to be formed between nodes. Lower value will increase the size of the clusters by inducing the clustering of less related spectra, while higher value will be more restrictive. The value set as default is 0.7. This value has been determined to effectively delineate subclasses and Levels 6 and 7, and usually performs well with data obtained through experiments without derivatization. For derivatized compounds, the cosine value for good matches is generally lower due to an inferior quality of the EI spectra.
+- *Network TopK* is the maximum of neighbor nodes for one single node. The edge between two nodes are kept only if both nodes are within each other's TopK most similar nodes. 
+- *Maximum Connected Component Size* is the maximum number of nodes that can be connected in a single sub-network of a molecular network. This process iteratively breaks up large ‘hairball’ networks (of false positives) by removing the lowest scoring alignments (by cosine score) first until the resulting pieces fall below the maximum size.
+
+![img](img/GC-MS_documentation/Fig7E.png)
+
+**Advanced Kovats Index Calculation Options**
+
+- *Perform Kovats Calculation* is turn on if the user need to calculate Kovats RIs for the compounds during library search.
+- *Input Carbon Marker File (Optional)* allows to import your carbon marker file, use for retention index estimation, if needed.
+- *MSHub Balance Score* allows to import your file that contains information for the balance score. The balance score is an estimation of mass spectrum patterns reproducibility across the entire dataset only available if deconvolution is conducted using MSHub, if needed. 
+
+![img](img/GC-MS_documentation/Fig7F.png)
+
+**Advanced Dereplicated Options**
+
+These options are only relevant if/when the parent mass information is available, so it is strongly recommended to leave the default values.
 
 ## Inspect the Results
 
@@ -97,15 +80,13 @@ After the job has been completed, the **job status page** gives access to severa
 (i) “ View All Library Hits” opens the interface that allows visualization of spectral matches to the reference database from selected libraries. It will display all of the top matches for each feature to different libraries and relevant information including retention time. 
 
 - The displayed columns could be edited by clicking the “Select columns” link in the upper left corner. The possible annotations could be sorted by their cosine value to aid in selecting the best annotation using the researcher's judgment. The “Scan” field corresponds to the feature number in the .mgf file generated at the feature detection step and corresponds to the “No” field listed in the feature table. 
-
 - Clicking on the spectrum icon at the left side of the screen will show a mirror plot comparison between the query spectrum and the reference spectrum. This allows assessing the quality of matches between the deconvolution and the reference spectra. 
+- The results can be sorted by the *match score*, *balance score*, *number of shared peaks* in the spectrum (can also be set when launching the job), *TIC*, *Kovats RI* (if enabled by user), and *used library(ies)*. To filter the results, type upper and/or lower boundary values in the text field underneath the corresponding column header and hit "Enter" or click "Filter" button on the left. Cosine and balance score can be jointly used as filters for processing of the final results: the highest quality annotations would require to pass thresholds for both metrics. To ensure highest quality/lowest FDR of the top match, we recommend using the cosine of >0.9 and >60% correspondingly. Alternatively, poor match scores can also be considered if they pass a conservative balance score value of >80% . Note that the high match score simply reflects that a library spectrum exists that is highly similar to the query spectrum (an occurrence that is likely for large libraries and sparse patterns), while a high balance score is reflective of the high confidence in deconvolution of the spectral pattern. Higher values of both metrics would improve quality of matches, but the “optimal” thresholds are data-specific and may be dependent on the circumstances. However, we recommend to use the above values as a good starting point.
 
 (ii) The “View Top Hits” option accesses the list of: top hits (Compound_Name) with the corresponding Scan (feature number), matched library class, cosine, number of shared peaks between library entry and the spectral pattern, abundance as TIC, retention time given in units used in input raw files, and information from the reference library entry, for all annotated spectra.
 
 
 (iii) The "View All Spectra With Annotations" option gives access to all annotated spectra with the same information listed. In addition, the balance score and Kovats RI values are also listed (if available) to allow including this information into making decisions for feature annotations.
-
-(vi) The link “View Kovats Calculation Result” shows Kovats calculation results for each spectrum if selected when launching the job.
 
 The displayed columns could be edited by clicking the "Select columns" link and selecting/deselecting columns as needed. 
 
