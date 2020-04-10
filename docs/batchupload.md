@@ -2,6 +2,10 @@
 
 While there is an interface to upload single spectra, users who wish to batch upload many spectra into the libraries might find adding one spectra at a time cumbersome. Here we provide a method to batch upload many spectra.
 
+Here is a quick instructional video we have put together:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IbXBpud57Z8?start=1796" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Materials
 
 The materials that are required are:
