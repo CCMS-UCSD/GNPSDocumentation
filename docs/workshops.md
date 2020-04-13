@@ -2,6 +2,7 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
+| Zoom! | GNPS MASST | Tentatively 4/22/2020 | TBD |
 | TBD | TBD | TBD | -----|
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
