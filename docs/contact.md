@@ -20,9 +20,8 @@ Upcoming Office Hour Schedule
 
 |     Date/Time    | Subjects Covered          |
 | ------------- |------------- |
-| 2PM PST March 30 | GNPS Q and A / Additional Topic TBA |
-| 2PM PST April 6 | GNPS Q and A / Additional Topic TBA |
 | 2PM PST April 13 | GNPS Q and A / Additional Topic TBA |
 | 2PM PST April 20 | GNPS Q and A / Additional Topic TBA |
+| 2PM PST April 27 | GNPS Q and A / Additional Topic TBA |
 
 
