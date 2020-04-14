@@ -2,8 +2,13 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Zoom! | GNPS MASST | Tentatively 4/22/2020 | TBD |
-| TBD | TBD | TBD | -----|
+| Zoom! | GNPS MASST | 4/22/2020 9AM PST | TBD |
+| Zoom! | GNPS Classical Molecular Networking | 4/29/2020 9AM PST | TBD |
+| Zoom! | GNPS ReDU | Early May | TBD |
+| Zoom! | GNPS Feature Based Molecular Networking (MZmine2) | 5/13/2020 9AM PST | TBD |
+| Zoom! | GNPS Feature Based Molecular Networking (Job Submssions and Exploration) | 5/14/2020 9AM PST | TBD |
+| Zoom! | GNPS Ion-Identity Networking, Native Metbolomics	| 5/20/2020 9AM PST | TBD |
+|TBD | TBD | TBD | -----|
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
 
