@@ -14,6 +14,10 @@ As MGF
 
 ```https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.mgf```
 
+As MSP
+
+```https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.msp```
+
 
 ### Single Library Spectrum
 
