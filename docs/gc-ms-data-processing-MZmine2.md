@@ -1,3 +1,5 @@
+# GC-MS data processing with MZmine2
+
 Below, we describe briefly how to perform pre-processing GC-MS data. To do that, the following steps are required:
 
 1. the detection of mass from the .mzML files to build extracted ion chromatograms
@@ -73,3 +75,9 @@ Once your table is ready, select it and then **export** it by following “Featu
 The exported files are the .mgf file containing the deconvolved EI spectra and the .csv feature quantification table. Those exported .mgf file and .csv feature table can be used for the GNPS library search/molecular networking workflow directly, without any modifications. They need to be provided as input files by adding to the: “Deconvolved EI Spectra MGF File” and “Feature Quantification Table” correspondingly.
 
 **![img](img/GC-MS_documentation/Picture14.png)**
+
+
+
+## Page contributors
+
+Melissa Nothias-Esposito (UCSD)
