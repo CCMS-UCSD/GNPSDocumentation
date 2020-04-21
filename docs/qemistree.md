@@ -7,7 +7,7 @@
  
 **STEP 1: Collecting the right input files**
 
-Running a QEMISTREE job in GNPS requires 4 input files which can be generated using a combination of LC-MS/MS processing software [MZmine](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking-with-mzmine2/) and [Feature-Based Molecular Networking](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/). The files are:
+Users can perform QEMISTREE analysis in GNPS after processing LC-MS/MS data through [Feature-Based Molecular Networking or FBMN](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/) using [MZmine](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395). The input files for Qemistree are:
 
 **1. Required**: A SIRIUS file generated from the MZmine workflow
 
@@ -48,7 +48,7 @@ f. In the downloaded folder, go to `qiime2_output` for the files `qiime2_table.q
 4. `clusterinfo_summary` file for Library Identifications
 
 **c.** Under the header: *Advanced options* select the following:
-1. instrument type: orbitrap or Q-tof
+1. instrument type: Orbitrap or Q-TOF
 2. Sample Metadata Column: Enter the column name of interest from the metadata file you used for FBMN or as seen in the `qiime2_metadata` file
 
 If you are signed in to the server the email address will auto-populate. If not, add your email address and click on submit. The runtime depends on the number of features in your dataset -- a typical dataset (few thousand features) can take a few hours.
@@ -65,49 +65,43 @@ Once the job is finished successfully, you will be able to see the status page a
 
 **1. View Summary** gives a list of the features and their classification at different taxonomic level. It tabulates the annotations for all features for which molecular fingerprints could be predicted using Sirius and CSI:FingerID (Dührkop et. al).
 
-**2.** Under **Advanced Views**, you can click on `View qiime2 Emperor Plots` to visualize the PCoA plot of the samples as a result of using Qemistree-weighted UniFrac distances. Click on `View Qemistree iTOL Tree` to take you to the following page for visualization:
+**2.** Under **Advanced Views**, you can click on `View qiime2 Emperor Plots` to visualize the PCoA plot of the samples as a result of using Qemistree-weighted [UniFrac distances](https://www.ncbi.nlm.nih.gov/pubmed/16332807). Click on `View Qemistree iTOL Tree` to take you to the following page for visualization:
 
 ![alt text](./img/qemistree/itoloutput.png "iTol Files")
 
 **3.** Download the 4 required files by clicking on the boxes: **Qemistree, Labels, Colors, and Abundance**. These provide the tree file of the features that have smiles (`qemistree.tree`), the label for each tip of the tree (`labels.txt`), the color of each clade (`colors.txt`), and the relative abundance of the feature in the metadata category chosen for the job (`barplots.txt`). 
-Qemistree supports the classification of the features/molecules based on chemical taxonomy such as kingdom, superclass, class, subclass, direct_parent, and smiles.
 
-For easy access, follow the `click here` button to the iTOL page directly where it auto-populates the resultant tree, with the color and text files. Shown below is an example.
+Qemistree classification of the features/molecules based on [ClassyFire](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0174-y) chemical taxonomy into chemical kingdom, superclass, class, subclass, and direct_parent which can be visualized as tip labels in the tree. For easy access, follow the `click here` button for Qemistree visualization in [iTOL](https://academic.oup.com/nar/article/47/W1/W256/5424068) where the resultant tree is auto-populated with the clade color, tip labels and sample group abundances. Shown below is an example.
 
 ![alt text](./img/qemistree/treeexample.png "Qemistree file")
-Drag and drop to this page the `barplots.txt` file to visualize the relative abundance of each feature in the metadata category you chose.
+Click on `Datasets` tab in iTOL to visualize the relative abundance of each feature in the sample metadata category you chose in the Qemistree GNPS job. You can modify the aethetics of tis visualization (such as colors, fonts, sizes etc) interactively by using the control panel in iTOL. 
 
-Please note that this tree is only available for 30 days & therefore it is recommended that you download the associated files and upload it in iTOL using their login credential for permanent storage.
+Please note that the auto-populated tree is only available for 30 days & therefore it is recommended that you download the associated files and upload it in iTOL using your login credential for permanent storage.
 
 See the corresponding note here: https://github.com/biocore/q2-qemistree
 
+**4.** For advanced analysis, you can download all the files generated from this analysis clicking on `Download Qiime2 data`. Among the folders downloaded, the `output folder` contains `qemistree.qza` and `qemistree-pruned-smiles.qza` which are two tree files that can be uploaded to [iTOL](https://itol.embl.de/upload.cgi) to visualize the features and how they are related to one another. The `qemistree.qza` file contains all the features for which molecular fingerprints could be predicted using Sirius+CSI:FingerID. Additionally, the workflow outputs `qemistree-pruned-smiles.qza` which contains the features that were annotated with molecular structures using spectral matching or CSI:FingerID. Additionally, `output_folder` also contains `merged-feature-table.qza` with abundances of features per sample and `classified-feature-data.qza` with feature metadata such as parent mass, retention time, spectral library match, molecular structures and Classyfire chemical taxonomy for each feature. 
+You can use these files to perform additional analyses in the QIIME2 which can be installed on your computer using the documentation [here](https://docs.qiime2.org/2019.10/install/). Advanced users may also refer to the Qemistree command-line documentation available [here](https://github.com/biocore/q2-qemistree). 
 
 ****
 
 
-**STEP 4: Analysing the results using the Qemistree dashboard**
+**STEP 4: Visualizing chemical trees using the Qemistree dashboard**
 
-The [Qemistree dashboard](https://qemistree.ucsd.edu/) provides a web-based platform to explore the results of your Qemistree results (show below). You can prune the tree at the desired chemical taxonomic level and visualize the relative abundance of each feature using metadata column names.
+You can further explore and modify the Qemistree visualization interactively using the [Qemistree dashboard](https://qemistree.ucsd.edu/). This dashboard is also available as a link on Qemistree job status page. 
 
 ![alt text](./img/qemistree/qemistree_dashboard.png "Qemistree Dashbaord")
 
-Enter the following information to visualize the data:
+Enter the following information to visualize Qemistree:
 
-1. Qemistree task: This is the unique ID of the job and can be found in the Jobs page in the `Description` column.
-2. Column to filter qemistree: Enter the taxonomic level at which to prune the tree.
-3. Column to label features: Enter the taxonomic level at which to label each feature on the tree.
-4. Choose additional options for labelling features by MS2 library match or parent m/z values.
+1. Qemistree task: This is the unique ID of Qemistree job on GNPS. It can be found in the Jobs page in the `Description` column.
+2. Column to filter qemistree features: Enter the feature metadata column to prune the tree. This can be a chemical taxonomy level or structural annotation type (all structures, MS2 structures, CSI:FingerID structures)
+3. Column to label tree tips: Enter chemical taxonomic level that should be used to label each feature on the tree (tree tips).
+4. You can additional options for labelling features by MS2 library match or parent m/z values, when a feature cannot be assigned a chemical taxonomy by ClassyFire.
 5. Choose metadata column by which to visualize the abundance of the features, and whether to normalize the abundance.
 6. Click on Submit.
 
-This will show the iTOL Qemistree visualization.
-
-
-****
-
-Alternatively, you can download all the files generated from this analysis clicking on `Download Qiime2 data`. Among the folders downloaded, the `output folder` contains qemistree.qza and qemistree-pruned.qza which are also tree files that can be uploaded to [iTOL](https://itol.embl.de/upload.cgi) to visualize the features and how they are related to one another. The qemistree.qza file contains all the features with molecular fingerprints, including those that were not annotated either using MS2 fragmentation (spectral library match) or Sirius+CSI:FingerID (in silico). It may, therefore, be useful to prune the tree for visualizations purposes and keep only the annotated features. By default, the workflow outputs `qemistree-pruned-smiles.qza`  which contains the features that were annotated to smiles level by ClassyFire (Djoumbou et. al.).
-
-You may also perform additional analyses in the QIIME2 environment using the biocore documentation [here]( https://github.com/biocore/q2-qemistree). QIIME2 can be installed on your computer using the documentation [here](https://docs.qiime2.org/2019.10/install/). 
+You can quickly generate many Qemistree-iTOL visualizations to explore your the chemical diverity in your metabolomics data.
 
 
 **CITATIONS**:
