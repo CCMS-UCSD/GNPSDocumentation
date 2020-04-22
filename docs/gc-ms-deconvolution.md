@@ -75,9 +75,7 @@ The feature table is formatted as a MZmine table output.
 
 
 ## GC-MS data processing with ADAP-MZmine
-Deconvolution of GC-EI-MS data can be performed within MZmine following the ADAP workflow. Refer to the [ADAP manual](https://mzmine.github.io/documentation.html) on the MZmine website for a step-by-step introduction. A new module (introduced in MZmine 2.52) allows to export data processing results into the correct input format for the GNPS GC-MS workflow (quantification table as .csv and a spectra summary file as .mgf). The module is available in the MZmine menu: 
-
-_feature list methods/Export Import/Export to GNPS-GC-MS (with ADAP)_ 
+Deconvolution of GC-EI-MS data can be performed within MZmine. User can follow the ADAP step-by-step documentation [here](gc-ms-data-processing-MZmine2.md) or refer to the [ADAP manual](https://mzmine.github.io/documentation.html) on the MZmine website for detailed instructions.
 
 ### Kovats RI marker file in MZmine
 MZmine (version 2.52 and later) also offers the extraction of Kovats RI markers into the GNPS GC-MS file format for this particular input.
@@ -85,8 +83,10 @@ MZmine (version 2.52 and later) also offers the extraction of Kovats RI markers 
 See [tutorial video](https://youtu.be/XodHMJcuwnk) on Kovats RI marker file creation within MZmine.
 
 
+
 ## GC-MS data processing with MS-DIAL
-To access the documentation for GC-MS data processing with MS-Dial, click to this [link](gc-ms-data_processing_MS-DIAL.md).
+
+Deconvolution of GC-EI-MS data can be performed within MS-DIAL. User can follow the step-by-step documentation [here](gc-ms-data_processing_MS-DIAL.md) or refer to the [MS-DIAL documentation](https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial.html) website for detailed introduction.
 
 
 
@@ -94,7 +94,7 @@ To access the documentation for GC-MS data processing with MS-Dial, click to thi
 
 Aksenov, A. A. et al  [Algorithmic Learning for Auto-deconvolution of GC-MS Data to Enable Molecular Networking within GNPS.](https://www.biorxiv.org/content/10.1101/2020.01.13.905091v1) 
 
-doi: https://doi.org/10.1101/2020.01.13.905091
+https://doi.org/10.1101/2020.01.13.905091
 
 
 

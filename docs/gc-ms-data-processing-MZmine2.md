@@ -26,13 +26,19 @@ Before starting, files from GC-MS analysis must be converted from proprietary ve
 
 ![img](img/GC-MS_documentation/Picture2.png)
 
+### Detection of mass
+
 The **masses detection** is going to detect individual ions in each scan and to generate a mass list of each scan. Select your .mzML files of interest on the “Raw data” window, then go to “Raw data methods / Feature detection / Mass detection” and set a *Noise level* as shown in the following picture. Make sure your threshold is not too high by clicking on “Show preview”. Then click “ok” to process. 
 
 **![img](img/GC-MS_documentation/Picture3.png)**
 
+### Detection of peaks
+
 Open the **ADAP chromatogram builder** window by following “Raw data methods / Feature detection / ADAP Chromatogram builder”. This module is going to connect data points from the previously created mass lists of each scan and generate an extracted ion chromatograms. Set the parameters accordingly to the instrument used. Click “Help” at the bottom of the pop-up window, or go on each parameter to see the details and how to set the parameters properly. When it is finished, click “OK”.
 
 **![img](img/GC-MS_documentation/Picture4.png)**
+
+### Spectral deconvolution
 
 The **chromatogram deconvolution** consists of the detection and the separation of individual peaks in each chromatogram. After selecting your previously generated chromatograms in the “Feature lists” window, open the parameter window by following “Feature list methods / Feature detection / Chromatogram deconvolution”, then select *Wavelets (ADAP)* for the “Algorithm”. 
 
@@ -56,9 +62,13 @@ When the selection is finished, crossing “Show preview” allows to see the in
 
 **![img](img/GC-MS_documentation/Picture9.png)**
 
+### Alignment of the peak lists
+
 The **ADAP alignment** module calculates the similarity between fragmentation mass spectra to find the best alignment. When the previously generated spectral deconvolution lists are selected, set the alignment parameters in the window which opens when following “Feature list method / Alignment / ADAP Aligner (GC)”. Click “Ok”, then the aligned feature list appears in the “Feature lists” window. 
 
 **![img](img/GC-MS_documentation/Picture10.png)**
+
+### Missing peaks search
 
 Finally, a module named “**Peak finder** (multithreaded)”, available in “Feature list methods / Gap filling / Peak finder (multithreaded)” is used to search and find missing peaks in the feature list previously generated from the peaks in the raw data. Select your aligned feature list, then apply peak finder parameters by clicking “Ok”.
 
@@ -68,7 +78,9 @@ Open the generated aligned table by double-clicking on it. Taking a look at this
 
 **![img](img/GC-MS_documentation/Picture12.png)**
 
-Once your table is ready, select it and then **export** it by following “Feature list methods / Export/Import / Export to GNPS-GC-MS (with ADAP)”. In the open window, complete the *filename* and press “Ok”.
+### Export results 
+
+A new module (introduced in MZmine 2.52) allows to export data processing results (quantification table as .csv and a spectra summary file as .mgf) into the correct input format for the GNPS GC-MS library search workflow . The **export** module is available at “Feature list methods / Export/Import / Export to GNPS-GC-MS (with ADAP)”. In the open window, complete the *filename* and press “Ok”.
 
 **![img](img/GC-MS_documentation/Picture13.png)**
 
@@ -80,4 +92,4 @@ The exported files are the .mgf file containing the deconvolved EI spectra and t
 
 ## Page contributors
 
-Melissa Nothias-Esposito (UCSD)
+Melissa Nothias-Esposito (UCSD), Louis Felix Nothias (UCSD), Aleksandr Smirnov (UNC Charlotte), Alexander Aksenov (UCSD)

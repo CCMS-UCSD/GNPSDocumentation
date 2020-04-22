@@ -149,7 +149,7 @@ To create chemical maps, drag and drop the example [volatilome table](https://gi
 
 Aksenov, A. A. et al  [Algorithmic Learning for Auto-deconvolution of GC-MS Data to Enable Molecular Networking within GNPS.](https://www.biorxiv.org/content/10.1101/2020.01.13.905091v1) 
 
-doi: https://doi.org/10.1101/2020.01.13.905091
+https://doi.org/10.1101/2020.01.13.905091
 
 
 
