@@ -22,11 +22,20 @@ Below, we describe briefly how to perform processing GC-MS data. To do that, the
 
 For detailed instructions and more information about parameters used in the steps 1/2/4, see the section of pre-processing LC-MS data, and for the step 3, see the section pre-processing GC-MS data available in [ADAP user manual](https://mzmine.github.io/ADAP_user_manual.pdf). At each step, click on "Help" to see how to fell out the parameters correctly. 
 
-Before starting, files from GC-MS analysis must be converted from proprietary vendor format to .mzML file format. Also, if the GC-MS data is in the profile mode, then it has to be centroided. To convert and centroid data, please see our[ conversion guide](https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/). Then, download the latest version of [MZmine](https://mzmine.github.io/documentation.html). Once you have your .mzML files and MZmine2 opened, **import your raw data files** into a project by following “Raw data methods / raw data import” and select your files. Your .mzML files are now in the “Raw data” window. 
+Before starting, it is recommended to convert the files to .mzML format, but note that MZmine can also accept .netCDF and several proprietary vendor format. 
+
+### Conversion to mzML with MSConvert
+The GC-MS data is in the profile mode, then it has to be centroided. To convert and centroid data, please see our[ conversion guide](https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/). 
+
+### Installation of MZmine
+
+Download the latest version of [MZmine](https://mzmine.github.io/documentation.html). Once you have your .mzML files and MZmine opened, **import your raw data files** into a project by following “Raw data methods / raw data import” and select your files. Your .mzML files are now in the “Raw data” window. 
 
 **![img](img/GC-MS_documentation/Picture1.png)**
 
-**Save** your current project by clicking on “Project / Save project as”. It is important to save your project regularly and for future access to the processing results. In addition it is recommended to use a batch file to save the parameters for reproducibility.
+**Save** your current project by clicking on “Project / Save project as”. It is important to save your project regularly and for future access to the processing results. 
+
+**Reproducibility with the batch mode** After having optimised the parameters in the GUI, it is strongly recommended to consolidate the parameters used for MZmine processing in a batch file (batch mode). This will ensure reproducibility of your analysis. 
 
 ![img](img/GC-MS_documentation/Picture2.png)
 
