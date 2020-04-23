@@ -2,19 +2,19 @@
 
 Below, we describe briefly how to perform processing GC-MS data. To do that, the following steps are required:
 
-1. the detection of masses from the .mzML files to build extracted ion chromatograms
+1. The detection of masses from the .mzML files to build extracted ion chromatograms
 
-2. the detection of features/peaks from the built chromatograms
+2. The detection of features/peaks from the built chromatograms
 
-3. the spectral deconvolution can be done with one of the following algorithms:
+3. The spectral deconvolution can be done with one of the following algorithms:
 
    ​	- Hierarchical Clustering
 
    ​	- Multivariate Curve Resolution
 
-5. the alignment of the peaklists
+5. The alignment of the peaklists
 
-6. the missing peaks search
+6. The missing peaks search
 
 7. Exporting the files for GNPS
 
@@ -105,6 +105,12 @@ The exported files are the .MGF file containing the deconvolved EI spectra and t
 
 ### Uploading the files to GNPS and run a the GC-MS workflow
 Please refer to the following page for more information on the [GC-GNPS workflow](gc-ms-library-molecular-network.md).
+
+### Kovats RI marker file in MZmine
+MZmine (version 2.52 and later) also offers the extraction of Kovats RI markers into the GNPS GC-MS file format.
+
+See [tutorial video](https://youtu.be/XodHMJcuwnk) on Kovats RI marker file creation within MZmine.
+
 
 ## Page contributors
 
