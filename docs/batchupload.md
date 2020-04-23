@@ -67,6 +67,7 @@ Users will need to upload their files into GNPS. To do this please refer to the 
 To actually add the spectra to the libraries, users will
 
 1. Export excel file as a tab separated text file and upload to GNPS (recommended export from Windows office 2013 or newer. Verify that line endings are UNIX and not Windows line endings)
-2. Users will then need to contact Morgan (ccms-web@cs.ucsd.edu) and send her the batch and spectrum files.
-3. A private spectral library will then be created by Morgan. 
-4. After the contributor may review the library to be made into a public library. 
+1. Launch Batch Validator Workflow with all spectrum files and annotation table found [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22ADD-BATCH-ANNOTATED-VALIDATOR%22%7D). NOTE: Creating spectral libraries from MGF files is high discouraged. If you do insist, you must make sure your MGFs start from scan 1 and are incremented sequentially without any missing scans. 
+1. Users will then need to contact Morgan (ccms-web@cs.ucsd.edu) and send her the completed job from above.
+1. A private spectral library will then be created by Morgan. 
+1. After the contributor may review the library to be made into a public library and will be made public after approval. 
