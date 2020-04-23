@@ -103,6 +103,7 @@ The exported files are the .MGF file containing the deconvolved EI spectra and t
 
 **![img](img/GC-MS_documentation/Picture14.png)**
 
+### Uploading the files to GNPS and run a the GC-MS workflow
 Please refer to the following page for more information on the [GC-GNPS workflow](gc-ms-library-molecular-network.md).
 
 ## Page contributors
