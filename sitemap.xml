@@ -311,6 +311,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://ccms-ucsd.github.io/GNPSDocumentation/toolindex/</loc>
+     <lastmod>2020-04-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://ccms-ucsd.github.io/GNPSDocumentation/api/</loc>
      <lastmod>2020-04-24</lastmod>
      <changefreq>daily</changefreq>
