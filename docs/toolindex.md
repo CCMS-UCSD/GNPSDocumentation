@@ -52,3 +52,4 @@ Please help us fill in more completely!
 | [NPAtlas](https://www.npatlas.org/joomla/) | --- | --- |
 | [MIBiG](https://mibig.secondarymetabolites.org/) | --- | --- |
 | [ClassyFire](http://classyfire.wishartlab.com/) | --- | --- |
+| [SMART NMR](http://smart.ucsd.edu) | --- | --- |
