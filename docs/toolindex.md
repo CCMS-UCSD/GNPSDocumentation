@@ -33,7 +33,7 @@ Please help us fill in more completely!
 |---|---|---|
 | [ReDU](https://redu.ucsd.edu/) | [Documentation](https://mwang87.github.io/ReDU-MS2-Documentation/) | [GitHub](https://github.com/mwang87/ReDU-MS2-GNPS) |
 | [GNPS Structure Server](https://gnps-structure.ucsd.edu/) | Structure processing worker | TODO! |
-| [GNPS Quickstart](https://gnps-quickstart.ucsd.edu) | TODO | TODO |
+| [GNPS Quickstart/Batch Validator](https://gnps-quickstart.ucsd.edu) | TODO | TODO |
 | [GNPS Cytoscape](https://gnps-cytoscape.ucsd.edu) | TODO | TODO |
 | [GNPS MASST](https://masst.ucsd.edu) | TODO | TODO |
 | [Metabolomics Spectrum Resolver](https://metabolomics-usi.ucsd.edu) | TODO | TODO |
@@ -42,4 +42,4 @@ Please help us fill in more completely!
 | [GNPS Task Esquisse Server (Beta)](http://dorresteintesthub.ucsd.edu:8347/) | TODO | TODO |
 | [GNPS Result View Esquisse Server (Super Beta)](http://dorresteintesthub.ucsd.edu:8359/) | TODO | TODO |
 | [GNPS Text Esquisse Server (Super Beta)](https://gnps.shinyapps.io/text_entry/) | TODO | TODO |
-| []() | TODO | TODO |
+| [GNPS Library Dash Explorer]() | TODO | TODO |
