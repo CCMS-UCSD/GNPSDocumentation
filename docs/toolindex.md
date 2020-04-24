@@ -43,3 +43,12 @@ Please help us fill in more completely!
 | [GNPS Result View Esquisse Server (Super Beta)](http://dorresteintesthub.ucsd.edu:8359/) | TODO | TODO |
 | [GNPS Text Esquisse Server (Super Beta)](https://gnps.shinyapps.io/text_entry/) | TODO | TODO |
 | [GNPS Library Dash Explorer](http://dorresteinappshub.ucsd.edu:6546/) | TODO | TODO |
+
+## Community Tools GNPS Interfaces with
+
+| Tool  | Documentation | Source Code |
+|---|---|---|
+| [MS2LDA.org](http://ms2lda.org/) | --- | --- |
+| [NPAtlas](https://www.npatlas.org/joomla/) | --- | --- |
+| [MIBiG](https://mibig.secondarymetabolites.org/) | --- | --- |
+| [ClassyFire](http://classyfire.wishartlab.com/) | --- | --- |
