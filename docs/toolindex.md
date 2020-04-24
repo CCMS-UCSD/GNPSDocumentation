@@ -7,7 +7,7 @@ However, we recognize it might be difficult for people to simply see what all is
 ## GNPS Workflows
 
 | Workflow  | GNPS Link  | Beta Link  | Documentation | Source Code |
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 | Molecular Networking  | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D)  | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D) | [Documentation]() | [Github](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/metabolomics-snets-v2) 
 
 
@@ -16,4 +16,4 @@ However, we recognize it might be difficult for people to simply see what all is
 
 | Tool  | Documentation | Source Code |
 |---|---|---|
-| [ReDU](https://redu.ucsd.edu/) | [Documentation](https://mwang87.github.io/ReDU-MS2-Documentation/) | [GitHub] (https://github.com/mwang87/ReDU-MS2-GNPS) |
+| [ReDU](https://redu.ucsd.edu/) | [Documentation](https://mwang87.github.io/ReDU-MS2-Documentation/) | [GitHub](https://github.com/mwang87/ReDU-MS2-GNPS) |
