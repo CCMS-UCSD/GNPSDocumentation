@@ -1,14 +1,12 @@
 # GC-MS Deconvolution for GNPS
 
 
-The GC-MS data have to be processed before performing the **spectral library search and molecular networking workflow**. [See more information here](gc-ms-library-molecular-network.md). Below, we describe how to use the GC-MS deconvolution workflow on GNPS that uses MS-Hub. Alternatively, ADAP-MZmine or MS-DIAL can be used.
-
+The GC-MS data have to be processed before performing the **spectral library search and molecular networking workflow**. [See more information here](gc-ms-library-molecular-network.md). Below, we describe how to use the GC-MS deconvolution workflow on GNPS that uses MS-Hub. Alternatively, [ADAP-MZmine](gc-ms-data-processing-MZmine2.md) or [MS-DIAL](gc-ms-data_processing_MS-DIAL.md) can be used.
 
 ## GC-MS Deconvolution Workflow on GNPS with MS-Hub
 
-
 ### Configure the Workflow
-Log in to GNPS  ([gnps.ucsd.edu](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp)). If an account has to be created first, refer to GNPS documentation at the [quickstart](https://ccms-ucsd.github.io/GNPSDocumentation/quickstart/) banner. Before starting, files from GC-MS analysis must be converted from proprietary vendor formats to .mzML, or .CDF file formats. To convert, please see our [conversion guide](https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/). 
+Log in to GNPS ([gnps.ucsd.edu](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp)). If an account has to be created first, refer to GNPS documentation at the [quickstart](https://ccms-ucsd.github.io/GNPSDocumentation/quickstart/) banner. Before starting, files from GC-MS analysis must be converted from proprietary vendor formats to .mzML, or .CDF file formats. To convert, please see our [conversion guide](https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/). 
 
 The GNPS home page includes two sections to launch GNPS GC-MS data analysis job, one for data processing - deconvolution and one for GC-MS library search/networking. By clicking on the **“Process Raw GC-MS data” icon**, a job page opens.
 
@@ -73,7 +71,6 @@ The feature table is formatted as a MZmine table output.
 ![img](img/GC-MS_documentation/Fig_6B.png)
 
 
-
 ## GC-MS data processing with ADAP-MZmine
 Deconvolution of GC-EI-MS data can be performed within MZmine. User can follow the ADAP step-by-step documentation [here](gc-ms-data-processing-MZmine2.md) or refer to the [ADAP manual](https://mzmine.github.io/documentation.html) on the MZmine website for detailed instructions.
 
@@ -82,13 +79,9 @@ MZmine (version 2.52 and later) also offers the extraction of Kovats RI markers 
 
 See [tutorial video](https://youtu.be/XodHMJcuwnk) on Kovats RI marker file creation within MZmine.
 
-
-
 ## GC-MS data processing with MS-DIAL
 
 Deconvolution of GC-EI-MS data can be performed within MS-DIAL. User can follow the step-by-step documentation [here](gc-ms-data_processing_MS-DIAL.md) or refer to the [MS-DIAL documentation](https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial.html) website for detailed introduction.
-
-
 
 ## Citation
 

@@ -4,7 +4,7 @@
 
 To convert the Vendor specific files, go [here](http://proteowizard.sourceforge.net/download.html) to download and use msConvert or the default GNPS File converter on [GNPS-quickstart](https://gnps-quickstart.ucsd.edu/conversion) (drag and drop).  
 
-Browse the RAW files from Vendor into msConvert interface. Typically .mzML output format is chosen with binary code precision of 64 bit for high resolution spectra. Uncheck the “Use zlib compression” option and select msLevel 1. Also, .mzML format is amenable to MS-DIAL analysis. The msConvert window looks like:  
+Browse the RAW files from Vendor into MSConvert interface. Typically .mzML output format is chosen with binary code precision of 64 bit for high resolution spectra. Uncheck the “Use zlib compression” option and select msLevel 1. Also, .mzML format is amenable to MS-DIAL analysis. The MSConvert window looks like:  
 
 **![img](img/GC-MS_documentation/Fig_20.png)**
 
@@ -70,9 +70,19 @@ To export the generated tables, click on the “Export” tab, and chose “**Al
 
 ![img](img/GC-MS_documentation/Fig_48.png)
 
-A new module on GNPS allows to use processing data with MS-DIAL (quantification table as area.text and a spectra summary file as .mgf) into the correct input format to lunch the GC-MS Spectral Library Search job [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MOLECULAR-LIBRARYSEARCH-GC%22%7D).
+A new module on GNPS allows to use the results of MS-DIAL processing (quantification table as area.TXT and a spectral summary file as .MGF) into the correct input format to lunch the GC-GNPS workflow.
 
-  
+### Uploading the files to GNPS and run a the GC-MS workflow
+Please refer to the following page for more information on the [GC-GNPS workflow](gc-ms-library-molecular-network.md).
+
+
+
+## Citation
+
+Tsugawa, H., Cajka, T., Kind, T. *et al.* [MS-DIAL: data-independent MS/MS deconvolution for comprehensive metabolome analysis.](https://www.nature.com/articles/nmeth.3393#citeas) *Nat Methods* **12,** 523–526 (2015).
+
+
 
 ## Page contributors
+
 Biswapriya Biswavas Misra (Wake Forest University), Melissa Nothias-Esposito (UCSD), Louis Felix Nothias (UCSD)
