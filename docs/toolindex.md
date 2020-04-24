@@ -35,6 +35,6 @@ However, we recognize it might be difficult for people to simply see what all is
 | [GNPS Cytoscape](https://gnps-cytoscape.ucsd.edu) | TODO | TODO |
 | [GNPS MASST](https://masst.ucsd.edu) | TODO | TODO |
 | [Metabolomics Spectrum Resolver](https://metabolomics-usi.ucsd.edu) | TODO | TODO |
-| [Qemistree Dashboard](https://emistree.ucsd.edu) | TODO | TODO |
+| [Qemistree Dashboard](https://qemistree.ucsd.edu) | TODO | TODO |
 | [GNPS Networking URL Formatter](https://gnps-urlworkflow.herokuapp.com/) | TODO | TODO |
 | []() | TODO | TODO |
