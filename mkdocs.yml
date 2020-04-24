@@ -81,6 +81,7 @@ nav:
     - GNPS Workshops/Training: workshops.md
     - GNPS Logos: logos.md
     - Contact/Office Hours: contact.md
+    - GNPS Tool Index: toolindex.md
     - API: api.md
 theme:
     name: material
