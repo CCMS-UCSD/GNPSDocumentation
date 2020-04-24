@@ -42,4 +42,4 @@ Please help us fill in more completely!
 | [GNPS Task Esquisse Server (Beta)](http://dorresteintesthub.ucsd.edu:8347/) | TODO | TODO |
 | [GNPS Result View Esquisse Server (Super Beta)](http://dorresteintesthub.ucsd.edu:8359/) | TODO | TODO |
 | [GNPS Text Esquisse Server (Super Beta)](https://gnps.shinyapps.io/text_entry/) | TODO | TODO |
-| [GNPS Library Dash Explorer]() | TODO | TODO |
+| [GNPS Library Dash Explorer](http://dorresteinappshub.ucsd.edu:6546/) | TODO | TODO |
