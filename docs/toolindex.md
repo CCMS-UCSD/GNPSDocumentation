@@ -30,3 +30,11 @@ However, we recognize it might be difficult for people to simply see what all is
 | Tool  | Documentation | Source Code |
 |---|---|---|
 | [ReDU](https://redu.ucsd.edu/) | [Documentation](https://mwang87.github.io/ReDU-MS2-Documentation/) | [GitHub](https://github.com/mwang87/ReDU-MS2-GNPS) |
+| [GNPS Structure Server](https://gnps-structure.ucsd.edu/) | Structure processing worker | TODO! |
+| [GNPS Quickstart](https://gnps-quickstart.ucsd.edu) | TODO | TODO |
+| [GNPS Cytoscape](https://gnps-cytoscape.ucsd.edu) | TODO | TODO |
+| [GNPS MASST](https://masst.ucsd.edu) | TODO | TODO |
+| [Metabolomics Spectrum Resolver](https://metabolomics-usi.ucsd.edu) | TODO | TODO |
+| [Qemistree Dashboard](https://emistree.ucsd.edu) | TODO | TODO |
+| [GNPS Networking URL Formatter](https://gnps-urlworkflow.herokuapp.com/) | TODO | TODO |
+| []() | TODO | TODO |
