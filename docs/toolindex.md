@@ -6,6 +6,8 @@ However, we recognize it might be difficult for people to simply see what all is
 
 Please help us fill in more completely!
 
+Last changed: {{revision_date}}
+
 ## GNPS Workflows
 
 | Workflow  | GNPS Link  | Beta Link  | Documentation | Source Code |
@@ -54,3 +56,5 @@ Please help us fill in more completely!
 | [MIBiG](https://mibig.secondarymetabolites.org/) | --- | --- |
 | [ClassyFire](http://classyfire.wishartlab.com/) | --- | --- |
 | [SMART NMR](http://smart.ucsd.edu) | --- | --- |
+
+

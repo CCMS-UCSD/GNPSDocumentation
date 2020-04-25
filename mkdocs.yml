@@ -98,4 +98,9 @@ theme:
 #theme: readthedocs
 #theme:
 #  name: 'rtd-dropdown'
+
+plugins:
+    - search
+    - git-revision-date
+    
 google_analytics: ['UA-8412213-5', 'ccms-ucsd.github.io']
