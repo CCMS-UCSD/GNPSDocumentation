@@ -6,7 +6,7 @@ However, we recognize it might be difficult for people to simply see what all is
 
 Please help us fill in more completely!
 
-Last changed: {{revision_date}}
+Last changed: {{ git_revision_date }}
 
 ## GNPS Workflows
 
