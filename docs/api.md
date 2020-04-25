@@ -55,7 +55,7 @@ GNPS job results page in JSON format:
 
 [Example](https://gnps-structure.ucsd.edu/inchikey?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
-### Conversion to monoisotopic mass
+### Conversion to exact mass
 
 ```https://gnps-structure.ucsd.edu/structuremass?smiles=<smiles string>```
 
