@@ -2,7 +2,7 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Zoom! | GNPS Classical Molecular Networking | 4/29/2020 9AM PST | TBD |
+| Zoom! | GNPS Classical Molecular Networking | 4/29/2020 9AM PST | [Material](https://docs.google.com/document/d/1_aPUG0H4_v3hfVQ5uZTRv-lSPEuhooyiUZVNd1S21rw/edit?usp=sharing) |
 | Zoom! | GNPS ReDU | 5/6/2020 9AM PST | TBD |
 | Zoom! | GNPS Feature Based Molecular Networking (MZmine2) | 5/13/2020 9AM PST | TBD |
 | Zoom! | GNPS Feature Based Molecular Networking (Job Submssions and Exploration) | 5/14/2020 9AM PST | TBD |
