@@ -20,8 +20,7 @@ Upcoming Office Hour Schedule
 
 |     Date/Time    | Subjects Covered          |
 | ------------- |------------- |
-| 2PM PST April 13 | GNPS Q and A / Additional Topic TBA |
-| 2PM PST April 20 | GNPS Q and A / Merging Positive and Negative Networks |
 | 2PM PST April 27 | GNPS Q and A / Additional Topic TBA |
-
+| 2PM PST May 4 | GNPS Q and A / Additional Topic TBA |
+| 2PM PST May 1 | GNPS Q and A / Additional Topic TBA |
 
