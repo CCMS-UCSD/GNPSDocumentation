@@ -37,6 +37,8 @@ NOTE: do not change the spectral library that is selected.
 
 ### Annotation Fields
 
+For a full set of parameters, see [this](batchupload.md#field-information)
+
 **Sample Parameters**
 
 |     Field    | Description          | Default |  Required |
@@ -78,16 +80,4 @@ NOTE: do not change the spectral library that is selected.
 | Your Data |  Incomplete Structure Proposed | Cannot based on MS/MS | N/A | please annotate with the **common name** and indicate the position is unknown using "X" | (X)-Methylxanthine |
 | Your Data | No Structure Information | No Position Information | Mass shift provided via Molecular Networking | please annotate with the **common name** of the chemical it is connected to and indicate mass shift. Mass shift indicated by nominal mass followed by putative formula difference (if the formula difference is unknown please enter "X"). No SMILES or Inchi should be provided. | Caffeine +14(CH2) <br> Caffeine +52(X)|
 
-### Validation Spectra Selection
 
-To validate the input file and scan a user has selected, there is a plotting section that will attempt to plot the spectrum selected.
-
-![img](img/libraries/validation_plot.png)
-
-To plot the spectrum, click "Plot It!". Additionally, if users would like to see the annotation with a peptide fragment highlights, users can enter a peptide in the Peptide field, but this will not be stored in the annotation.
-
-If the plotting succeeded and a spectrum appears, then the selection for the spectrum is done correctly.
-
-![img](img/libraries/validation_spectrum.png)
-
-If there was an error, check the original file was converted correctly and the scan number is not 0.
