@@ -24,7 +24,7 @@ We have standard training tutorial modules on GNPS. Check it out here:
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Zoom! | GNPS Classical Molecular Networking | 4/29/2020 9AM PST | [Material](https://docs.google.com/document/d/1_aPUG0H4_v3hfVQ5uZTRv-lSPEuhooyiUZVNd1S21rw/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=AUEcEnqjQK0&feature=youtu.be) |
+| Zoom! | GNPS Classical Molecular Networking | 4/29/2020 9AM PST | [Material](https://docs.google.com/document/d/1_aPUG0H4_v3hfVQ5uZTRv-lSPEuhooyiUZVNd1S21rw/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=PqTuex0nsGk) |
 | Zoom! | GNPS MASST | 4/22/2020 9AM PST | [Material](https://docs.google.com/document/d/1rzPLGA0-3DbFkUKVpIyUrj_7MLhqCvSSPskVO9gR1D0/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=14hGi6FtZIM) |
 | Zoom! | GNPS Library Workshop/Hackathon | April 8 9AM PST| [Material](https://docs.google.com/document/d/1pu24hCoRr8trBhc_sJ34BiWamJHEpRkZYYnGYQRkAkU/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=IbXBpud57Z8) | 
 | UFMT Brazil | VI Workshop Etnofarmacologia - Use of the GNPS platform | Nov 18 - 28 2019 | 
