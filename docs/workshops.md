@@ -2,7 +2,11 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| TBD | TBD | TBD | -----|
+| Zoom! | GNPS ReDU | 5/6/2020 9AM PST | TBD |
+| Zoom! | GNPS Feature Based Molecular Networking (MZmine2) | 5/13/2020 9AM PST | TBD |
+| Zoom! | GNPS Feature Based Molecular Networking (Job Submssions and Exploration) | 5/14/2020 9AM PST | TBD |
+| Zoom! | GNPS Ion-Identity Networking, Native Metabolomics	| 5/20/2020 9AM PST | TBD |
+|TBD | TBD | TBD | -----|
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
 
@@ -14,12 +18,15 @@ If you would like to host a GNPS workshop together with the GNPS team, please re
 
 We have standard training tutorial modules on GNPS. Check it out here:
 
-[Training modules](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules)
+[Training modules](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules)
 
 ## Previous Workshops
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
+| Zoom! | GNPS Classical Molecular Networking | 4/29/2020 9AM PST | [Material](https://docs.google.com/document/d/1_aPUG0H4_v3hfVQ5uZTRv-lSPEuhooyiUZVNd1S21rw/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=PqTuex0nsGk) |
+| Zoom! | GNPS MASST | 4/22/2020 9AM PST | [Material](https://docs.google.com/document/d/1rzPLGA0-3DbFkUKVpIyUrj_7MLhqCvSSPskVO9gR1D0/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=14hGi6FtZIM) |
+| Zoom! | GNPS Library Workshop/Hackathon | April 8 9AM PST| [Material](https://docs.google.com/document/d/1pu24hCoRr8trBhc_sJ34BiWamJHEpRkZYYnGYQRkAkU/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=IbXBpud57Z8) | 
 | UFMT Brazil | VI Workshop Etnofarmacologia - Use of the GNPS platform | Nov 18 - 28 2019 | 
 | MIT |Molecular Networking with MZmine and GNPS| Dec 5 2019 | -----|
 | [ASP 2019](http://aspmeetings.pharmacognosy.us/) | GNPS Beginner/Advanced Workshop (3h) | July 2019 | [Download](https://docs.google.com/document/d/1i80buu38_x79qeHVHGz2d_nyRYQJ92jV3mQfTtJLsB4/edit?usp=sharing) |

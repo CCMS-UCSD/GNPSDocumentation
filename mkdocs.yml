@@ -62,6 +62,7 @@ nav:
         - Open-source Method for Reference Library Generation:
             - Data Acqusition - Thermo QExactive (v1.0): msmschooserdataacquisitionQE.md
             - Computational Selection of MSMS to Include in Library (MSMS-Chooser): msmschooser.md
+        - GNPS Tag Contribution and Analyses: tag_info.md
     - Create a Public Datasets:
         - Dataset Creation/Sharing: datasets.md
         - Continuous Identification: continuousid.md
@@ -77,23 +78,16 @@ nav:
         - FBMN analysis at GNPS: tutorials/featurebasedgnps.md
     - Change Log: changelog.md
     - Join the GNPS community: gnps_community.md
-    - GNPS Workshops: workshops.md
+    - GNPS Workshops/Training: workshops.md
     - GNPS Logos: logos.md
-    - Contact: contact.md
+    - Contact/Office Hours: contact.md
+    - GNPS Tool Index: toolindex.md
     - API: api.md
 theme:
     name: material
-    #name: readthedocs
+    
+plugins:
+    - search
+    - git-revision-date
 
-    #palette:
-    #    primary: 'light blue'
-    #    accent: 'orange'
-    #font:
-    #    text: 'Roboto'
-    #    code: 'Roboto Mono'
-
-    #logo: 'img/GNPS_logo.jpg'
-#theme: readthedocs
-#theme:
-#  name: 'rtd-dropdown'
 google_analytics: ['UA-8412213-5', 'ccms-ucsd.github.io']

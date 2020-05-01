@@ -8,7 +8,16 @@
 
 ### All Public Library Specta at GNPS with Peaks and Annotation History
 
-```https://gnps-external.ucsd.edu/gnpslibraryformattedwithpeaksjson```
+```https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.json```
+
+As MGF
+
+```https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.mgf```
+
+As MSP
+
+```https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.msp```
+
 
 ### Single Library Spectrum
 
@@ -46,7 +55,7 @@ GNPS job results page in JSON format:
 
 [Example](https://gnps-structure.ucsd.edu/inchikey?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
-### Conversion to monoisotopic mass
+### Conversion to exact mass
 
 ```https://gnps-structure.ucsd.edu/structuremass?smiles=<smiles string>```
 
@@ -60,11 +69,17 @@ GNPS job results page in JSON format:
 
 ### Structure Classyfire
 
-If you have Smiles or InChI
+If you have Smiles
 
 ```https://gnps-structure.ucsd.edu/classyfire?smiles=<smiles string>```
 
 [Example](https://gnps-structure.ucsd.edu/classyfire?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+
+If you have InChI
+
+```https://gnps-structure.ucsd.edu/classyfire?inchi=<InChI string>```
+
+[Example](https://gnps-structure.ucsd.edu/classyfire?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3)
 
 If you have InChI Key
 
@@ -87,3 +102,16 @@ If you have InChI Key
 ```https://redu.ucsd.edu/filename?query=<File full path in MassIVE>```
 
 [Example](https://redu.ucsd.edu/filename?query=f.MSV000082048/ccms_peak/Plate_28/30_84.mzML)
+
+## GNPS Continuous ID Data
+
+If you want to download all public datasets that have been processed by GNPS. You can find the dumps here:
+
+https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=25cc4f9135c6428aabe1f41a9e54c369&view=advanced_view
+
+This includes:
+
+1. Clustered MGFs for each dataset
+1. Identifications for clustered spectra
+1. Mapping of clusters back to original files and scans
+1. Molecular Networks for each dataset
