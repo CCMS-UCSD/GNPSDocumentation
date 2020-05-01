@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://ccms-ucsd.github.io/GNPSDocumentation/gc-ms-data_processing_MS-DIAL/">
+        <link rel="canonical" href="https://ccms-ucsd.github.io/GNPSDocumentation/gc-ms-data-processing-MZmine2/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>GC-MS data processing with MS-DIAL - GNPS Documentation</title>
+        <title>GC-MS data processing with MZmine - GNPS Documentation</title>
       
     
     
@@ -102,7 +102,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#gc-ms-data-processing-with-ms-dial" tabindex="1" class="md-skip">
+      <a href="#gc-ms-data-processing-with-mzmine" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -128,7 +128,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                GC-MS data processing with MS-DIAL
+                GC-MS data processing with MZmine
               
             </span>
           
@@ -1298,22 +1298,57 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#convert-data" class="md-nav__link">
-    Convert data
+  <a href="#conversion-to-mzml-with-msconvert" class="md-nav__link">
+    Conversion to mzML with MSConvert
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#processing-data" class="md-nav__link">
-    Processing data
+  <a href="#installation-of-mzmine" class="md-nav__link">
+    Installation of MZmine
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#visualize-data" class="md-nav__link">
-    Visualize data
+  <a href="#detection-of-masses" class="md-nav__link">
+    Detection of masses
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detection-of-peaks" class="md-nav__link">
+    Detection of peaks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chromatogrampeak-deconvolution" class="md-nav__link">
+    Chromatogram/Peak deconvolution
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spectral-deconvolution" class="md-nav__link">
+    Spectral deconvolution
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alignment-of-the-peak-lists-accross-multiple-samples" class="md-nav__link">
+    Alignment of the peak lists accross multiple samples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#missing-peaks-search" class="md-nav__link">
+    Missing peaks search
   </a>
   
 </li>
@@ -1328,6 +1363,13 @@
         <li class="md-nav__item">
   <a href="#uploading-the-files-to-gnps-and-run-a-the-gc-ms-workflow" class="md-nav__link">
     Uploading the files to GNPS and run a the GC-MS workflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kovats-ri-marker-file-in-mzmine" class="md-nav__link">
+    Kovats RI marker file in MZmine
   </a>
   
 </li>
@@ -1362,52 +1404,91 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/gc-ms-data_processing_MS-DIAL.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/gc-ms-data-processing-MZmine2.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="gc-ms-data-processing-with-ms-dial">GC-MS data processing with MS-DIAL</h1>
-<h3 id="convert-data">Convert data</h3>
-<p>To convert the Vendor specific files, go <a href="http://proteowizard.sourceforge.net/download.html">here</a> to download and use msConvert or the default GNPS File converter on <a href="https://gnps-quickstart.ucsd.edu/conversion">GNPS-quickstart</a> (drag and drop).  </p>
-<p>Browse the RAW files from Vendor into MSConvert interface. Typically .mzML output format is chosen with binary code precision of 64 bit for high resolution spectra. Uncheck the “Use zlib compression” option and select msLevel 1. Also, .mzML format is amenable to MS-DIAL analysis. The MSConvert window looks like:  </p>
-<p><strong><img alt="img" src="../img/GC-MS_documentation/Fig_20.png" /></strong></p>
-<p>Download the most updated version of <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4449330/">MS-DIAL</a> from RIKEN PRIMe site. MS-DIAL has an extensive tutorial  for step-by-step guidance <a href="https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial.html">here</a>. Open MS-DIAL by clicking on the icon or shortcut.  </p>
-<p><img alt="img" src="../img/GC-MS_documentation/Fig_22.png" /></p>
-<h3 id="processing-data">Processing data</h3>
-<p>In the MS-DIAL software interface pops up, import your file by clicking on “File” option. As highlighted for the GC-EI-MS data, choose “Hard ionization” and then choose “Centroid” or “Profile” based on your mass-spec vendor data. You may add other information under the “Advanced” tag for more meta data.  </p>
-<p><img alt="img" src="../img/GC-MS_documentation/Fig_24.png" /></p>
-<p>In this window, click on “Browse” to open the folders where the converted .mzML files are stored. The project file path and where the converted files need to sit have to be identical, and assigns a project ID with .mtd suffix.</p>
-<p><img alt="img" src="../img/GC-MS_documentation/Fig_25.png" /></p>
-<p>Hit “Next” to go to the next page.</p>
-<p>On the next page, click “Browse” and choose the files that you need to analyze.</p>
-<p><img alt="img" src="../img/GC-MS_documentation/Fig_28.png" /></p>
-<p>In this window, the user needs to associate correct File names with their types (standard, samples, QC, Blank etc...), and assign them a Class ID. Any analytical order information, various batches or different injection volume can be set if needed.  </p>
-<p><img alt="img" src="../img/GC-MS_documentation/Fig_29.png" /></p>
-<p>Then, hit next. In the new window, provide “<strong>Data collection</strong>” information such as <em>mass range begin</em> and <em>end</em>, depending on your data, <em>Retention time</em> (min), and <em>Number of threads</em> which could be left at the default value of 1.</p>
-<p><img alt="img" src="../img/GC-MS_documentation/Fig_30.png" /></p>
-<p>In the “<strong>Peak Detection</strong>” Window, provide the <em>Minimum peak height</em> information, which is typically 10,000 or higher for high resolution instruments like QEGC-Orbitrap-MS. For <em>accurate mass</em>, the box must be check, and provide same values for the <em>Mass slice width</em> and <em>Mass accuracy</em>. "Advanced" option can be left as default.</p>
-<p><img alt="img" src="../img/GC-MS_documentation/Fig_31.png" /></p>
-<p>In the “<strong>MS1Dec</strong>” tab, the "Deconvolution parameters" can be set as shown in the picture. </p>
-<p><img alt="img" src="../img/GC-MS_documentation/Fig_32.png" /></p>
-<p>The “<strong>Identification</strong>” tab should not be completed as the library search is performed on GNPS. </p>
-<p>Click on the “<strong>Alignment</strong>” tab, a default “Result name” is given to the alignment table, but the user can change it. Alignment can be based on <em>RI</em> or <em>RT</em>. An additional <em>EI similarity tolerance</em> can be set during alignment as well. The advanced parameters can be optionally changed.</p>
-<p><img alt="img" src="../img/GC-MS_documentation/Fig_38.png" /></p>
-<p>The last tab named “<strong>Filtering</strong>”, allows the user to set certain filters depending on the question in hand or ignore it. Once all Tabs are filled with user specific/default options, the user can click “Finish” to start the process. </p>
-<p><img alt="img" src="../img/GC-MS_documentation/Fig_39.png" /></p>
-<h3 id="visualize-data">Visualize data</h3>
-<p>A successfully finished job window on MS-DIAL looks like:  </p>
-<p><img alt="img" src="../img/GC-MS_documentation/Fig_41.png" /></p>
-<p>By clicking on the “Alignment navigator” panel (bottom left) on the specific alignment result file, user can see the generated alignment table. This table can be sorted by <em>ID</em>, <em>RT</em>, <em>RI</em>, <em>Quant mass</em>, <em>S/N</em>, and other statistical values, and/or filtered by <em>Metabolite name</em>, <em>m/z range</em>, or <em>RT range</em>. </p>
-<p><img alt="img" src="../img/GC-MS_documentation/Fig_42.png" /></p>
+                <h1 id="gc-ms-data-processing-with-mzmine">GC-MS data processing with MZmine</h1>
+<p>Below, we describe briefly how to perform processing GC-MS data. To do that, the following steps are required:</p>
+<ol>
+<li>
+<p>The detection of masses from the .mzML files to build extracted ion chromatograms</p>
+</li>
+<li>
+<p>The detection of features/peaks from the built chromatograms</p>
+</li>
+<li>
+<p>The spectral deconvolution can be done with one of the following algorithms:</p>
+</li>
+</ol>
+<p>​    - Hierarchical Clustering</p>
+<p>​    - Multivariate Curve Resolution</p>
+<ol>
+<li>
+<p>The alignment of the peaklists</p>
+</li>
+<li>
+<p>The missing peaks search</p>
+</li>
+<li>
+<p>Exporting the files for GNPS</p>
+</li>
+<li>
+<p>Uploading the files to GNPS and run a the GC-MS workflow</p>
+</li>
+</ol>
+<p>For detailed instructions and more information about parameters used in the steps 1/2/4, see the section of pre-processing LC-MS data, and for the step 3, see the section pre-processing GC-MS data available in <a href="https://mzmine.github.io/ADAP_user_manual.pdf">ADAP user manual</a>. At each step, click on "Help" to see how to fell out the parameters correctly. </p>
+<p>Before starting, it is recommended to convert the files to .mzML format, but note that MZmine can also accept .netCDF and several proprietary vendor format. </p>
+<h3 id="conversion-to-mzml-with-msconvert">Conversion to mzML with MSConvert</h3>
+<p>The GC-MS data is in the profile mode, then it has to be centroided. To convert and centroid data, please see our<a href="https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/"> conversion guide</a>. </p>
+<h3 id="installation-of-mzmine">Installation of MZmine</h3>
+<p>Download the latest version of <a href="https://mzmine.github.io/documentation.html">MZmine</a>. Once you have your .mzML files and MZmine opened, <strong>import your raw data files</strong> into a project by following “Raw data methods / raw data import” and select your files. Your .mzML files are now in the “Raw data” window. </p>
+<p><strong><img alt="img" src="../img/GC-MS_documentation/Picture1.png" /></strong></p>
+<p><strong>Save</strong> your current project by clicking on “Project / Save project as”. It is important to save your project regularly and for future access to the processing results. </p>
+<p><strong>Reproducibility with the batch mode</strong> After having optimised the parameters in the GUI, it is strongly recommended to consolidate the parameters used for MZmine processing in a batch file (batch mode). This will ensure reproducibility of your analysis. </p>
+<p><img alt="img" src="../img/GC-MS_documentation/Picture2.png" /></p>
+<h3 id="detection-of-masses">Detection of masses</h3>
+<p>The <strong>masses detection</strong> is going to detect individual ions in each scan and to generate a mass list of each scan. Select your .mzML files of interest on the “Raw data” window, then go to “Raw data methods / Feature detection / Mass detection” and set a <em>Noise level</em> as shown in the following picture. Make sure your threshold is not too high by clicking on “Show preview”. Then click “ok” to process. </p>
+<p><strong><img alt="img" src="../img/GC-MS_documentation/Picture3.png" /></strong></p>
+<h3 id="detection-of-peaks">Detection of peaks</h3>
+<p>Open the <strong>ADAP chromatogram builder</strong> window by following “Raw data methods / Feature detection / ADAP Chromatogram builder”. This module is going to connect data points from the previously created mass lists of each scan and generate an extracted ion chromatograms. Set the parameters accordingly to the instrument used. Click “Help” at the bottom of the pop-up window, or go on each parameter to see the details and how to set the parameters properly. When it is finished, click “OK”.</p>
+<p><strong><img alt="img" src="../img/GC-MS_documentation/Picture4.png" /></strong></p>
+<h3 id="chromatogrampeak-deconvolution">Chromatogram/Peak deconvolution</h3>
+<p>The <strong>chromatogram deconvolution</strong> consists of the detection and the separation of individual peaks in each chromatogram. After selecting your previously generated chromatograms in the “Feature lists” window, open the parameter window by following “Feature list methods / Feature detection / Chromatogram deconvolution”, then select <em>Wavelets (ADAP)</em> for the “Algorithm”. </p>
+<p><strong><img alt="img" src="../img/GC-MS_documentation/Picture5.png" /></strong></p>
+<p>Then, by clicking on the ellipse, a parameter window opens. Choose <em>Wavelet Coeff. SN</em> and set the parameters accordingly to the instrument used and previous parameters used to generate chromatograms.  The <em>RT wavelet range</em> parameter is chosen by looking at the peak-detection results when clicking on “Show preview”. By trying several different values, see when the picks-detection (colored picks) is optimal in some <em>Chromatogram</em> for each <em>Feature list</em>. Then click on the “ok” button. This step of peak-detection could take a while. </p>
+<p><strong><img alt="img" src="../img/GC-MS_documentation/Picture6.png" /></strong></p>
+<h3 id="spectral-deconvolution">Spectral deconvolution</h3>
+<p>During the <strong>spectral deconvolution</strong>, similar peaks are combined and then, a pseudo fragmentation spectrum is built (also called deconvoluted spectrum), using peaks intensities. Two spectral deconvolution algorithms are available: <strong>Hierarchical Clustering</strong> and <strong>Multivariate Curve Resolution</strong>. </p>
+<p>​       The <strong>Hierarchical Clustering</strong> is fast but requires users to specify multiple parameters. It can be run by following “Feature list methods / Spectral deconvolution / Hierarchical Clustering” when your previously generated chromatograms deconvoluted are selected. Check the box “Show preview” to preview the first clustering parameters (top right) and peaks that passed the filter with the second clustering parameters (bottom right), by selecting <em>Cluster list</em> from your <em>Feature list</em>. The first parameters <em>Min cluster distance</em> / <em>Min cluster size</em> / <em>Min cluster intensity</em> refer to the ability to combine peaks based on the proximity of their retention times. The filtering parameters are <em>Find shared peaks</em> / <em>Min edge-to-height ratio</em> / <em>Min delta-to-height ratio</em> / <em>Min sharpness</em> / <em>Exclude m/z values</em>. The last parameter <em>Shape-similarity tolerance (0..90)</em>, involved in the second clustering step, refines the clusters by calculating the similarity of the peak’s shapes. Finally, the module “Model based on” allows us to take the highest <em>Sharpness</em> or <em>M/Z value</em> passed peaks to propose as a model peak. When each parameter are set properly, process the spectral deconvolution by clicking on “OK”.</p>
+<p><strong><img alt="img" src="../img/GC-MS_documentation/Picture7b.png" /></strong></p>
+<p>​       The <strong>Multivariate Curve Resolution</strong> is slower but only a few parameters are used. Its model peaks that can have arbitrary shapes. Open the parameters window by following “Feature list methods / Spectral deconvolution / Multivariate Curve Resolution”. Because of the spectral deconvolution uses “Chromatograms” and detected “Peaks” previously generated, the user must select them using the “Specific feature lists” option for both, then click on the ellipsis button and check the boxes of the chromatograms and peaks list of interest, or using the “Feature list name pattern” option. After those parameters are set, click “Ok”.</p>
+<p><strong><img alt="img" src="../img/GC-MS_documentation/Picture8.png" /></strong></p>
+<p>When the selection is finished, crossing “Show preview” allows to see the influence of the parameters on the <em>Clusters</em> for each <em>Feature list</em>. Look at the preview plot (top right) for the <em>Deconvolution window tolerance width</em> parameter and the model peaks (right bottom) for <em>Retention time tolerance</em> and <em>Minimum Number of Peaks</em> parameters. Process the spectral deconvolution with the “Ok” button.</p>
+<p><strong><img alt="img" src="../img/GC-MS_documentation/Picture9.png" /></strong></p>
+<h3 id="alignment-of-the-peak-lists-accross-multiple-samples">Alignment of the peak lists accross multiple samples</h3>
+<p>The <strong>ADAP alignment</strong> module calculates the similarity between fragmentation mass spectra to find the best alignment. When the previously generated spectral deconvolution lists are selected, set the alignment parameters in the window which opens when following “Feature list method / Alignment / ADAP Aligner (GC)”. Click “Ok”, then the aligned feature list appears in the “Feature lists” window. </p>
+<p><strong><img alt="img" src="../img/GC-MS_documentation/Picture10.png" /></strong></p>
+<h3 id="missing-peaks-search">Missing peaks search</h3>
+<p>Finally, a module named “<strong>Peak finder</strong> (multithreaded)”, available in “Feature list methods / Gap filling / Peak finder (multithreaded)” is used to search and find missing peaks in the feature list previously generated from the peaks in the raw data. Select your aligned feature list, then apply peak finder parameters by clicking “Ok”.</p>
+<p><strong><img alt="img" src="../img/GC-MS_documentation/Picture11.png" /></strong></p>
+<p>Open the generated aligned table by double-clicking on it. Taking a look at this table can help to define if the used parameters are good enough. This table can, not only be ordered by the <em>ID</em>, giving information about the number of detected features, but also by the <em>m/z</em> or the <em>RT</em>.</p>
+<p><strong><img alt="img" src="../img/GC-MS_documentation/Picture12.png" /></strong></p>
 <h3 id="export-results">Export results</h3>
-<p>To export the generated tables, click on the “Export” tab, and chose “<strong>Alignment Result export</strong>”. In the Alignment window, chose a "Directory" to save the results, and select the correct “file” corresponding to your aligned table. The user should check <em>Raw data matrix</em> (Height and Area), <em>Normalized data matrix</em>, <em>Representative spectra</em>, <em>Parameters</em>, <em>Peak ID matrix</em>, <em>Retention time matrix</em>, <em>m/z matrix</em>, and <em>S/N matrix export</em> boxes. Spectra-type should be selected to ‘centroid’ and as “.mgf” format for the downstream GNPS analysis workflows. Then, the user can click “Export”. </p>
-<p><img alt="img" src="../img/GC-MS_documentation/Fig_48.png" /></p>
-<p>A new module on GNPS allows to use the results of MS-DIAL processing (quantification table as area.TXT and a spectral summary file as .MGF) into the correct input format to lunch the GC-GNPS workflow.</p>
+<p>A new module (introduced in MZmine 2.52) allows to export the GC-MS data processing results (feature quantification table as .CSV and a spectral summary file as .MGF) into the correct input format for the GNPS GC-MS library search workflow. The <strong>export</strong> module is available at “Feature list methods / Export / Import / Export to GNPS-GC-MS (with ADAP)”. In the open window, complete the <em>filename</em> and press “Ok”.</p>
+<p><strong><img alt="img" src="../img/GC-MS_documentation/Picture13.png" /></strong></p>
+<p>The exported files are the .MGF file containing the deconvolved EI spectra and the .CSV feature quantification table. Those exported .MGF file and .CSV feature table can be used for the GNPS library search/molecular networking workflow directly, without any modifications. They need to be provided as input files by adding to the: “Deconvolved EI Spectra MGF File” and “Feature Quantification Table” correspondingly.</p>
+<p><strong><img alt="img" src="../img/GC-MS_documentation/Picture14.png" /></strong></p>
 <h3 id="uploading-the-files-to-gnps-and-run-a-the-gc-ms-workflow">Uploading the files to GNPS and run a the GC-MS workflow</h3>
 <p>Please refer to the following page for more information on the <a href="../gc-ms-library-molecular-network/">GC-GNPS workflow</a>.</p>
+<h3 id="kovats-ri-marker-file-in-mzmine">Kovats RI marker file in MZmine</h3>
+<p>MZmine (version 2.52 and later) also offers the extraction of Kovats RI markers into the GNPS GC-MS file format.</p>
+<p>See <a href="https://youtu.be/XodHMJcuwnk">tutorial video</a> on Kovats RI marker file creation within MZmine.</p>
 <h2 id="citation">Citation</h2>
-<p>Tsugawa, H., Cajka, T., Kind, T. <em>et al.</em> <a href="https://www.nature.com/articles/nmeth.3393#citeas">MS-DIAL: data-independent MS/MS deconvolution for comprehensive metabolome analysis.</a> <em>Nat Methods</em> <strong>12,</strong> 523–526 (2015).</p>
+<p>Jiang  W,  Qiu  Y,  Ni  Y,  Su  M,  Jia  W,  Du  X: <a href="https://pubs.acs.org/doi/abs/10.1021/pr1007703">An  automated  data  analysis  pipeline  for GC-TOF-MS metabonomics studies.</a> J Proteome Res 2010, 9(11):5974-5981.</p>
+<p>Ni Y, Qiu Y, Jiang W, Suttlemyre K, Su M, Zhang W, Jia W, Du X: <a href="https://pubs.acs.org/doi/abs/10.1021/ac300898h">ADAP-GC 2.0:  deconvolution of coeluting metabolites from GC/TOF-MS data for metabolomics studies.</a> Anal Chem 2012, 84(15):6619-6629.</p>
+<p>Ni Y, Su M, Qiu Y, Jia W, Du X: <a href="https://pubs.acs.org/doi/abs/10.1021/acs.analchem.6b02222">ADAP-GC 3.0: Improved Peak Detection and De-convolution of Co-eluting Metabolites from GC/TOF-MS Data for Metabolomics Studies.</a> Anal Chem 2016, 88(17):8802-8811.</p>
 <h2 id="page-contributors">Page contributors</h2>
-<p>Biswapriya Biswavas Misra (Wake Forest University), Melissa Nothias-Esposito (UCSD), Louis Felix Nothias (UCSD)</p>
+<p>Melissa Nothias-Esposito (UCSD), Louis Felix Nothias (UCSD), Aleksandr Smirnov (UNC Charlotte), Alexander Aksenov (UCSD)</p>
                 
                   
                 
