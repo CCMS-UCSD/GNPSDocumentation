@@ -2,7 +2,7 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Zoom! | GNPS ReDU | 5/6/2020 9AM PST | TBD |
+| Zoom! | GNPS ReDU | 5/6/2020 9AM PST | [Material](https://docs.google.com/document/d/1-PgmPntirA4xOxHTXnc0DT0-ikkm_DX2v3lgh99fm-o/edit?usp=sharing) |
 | Zoom! | GNPS Feature Based Molecular Networking (MZmine2) | 5/13/2020 9AM PST | TBD |
 | Zoom! | GNPS Feature Based Molecular Networking (Job Submssions and Exploration) | 5/14/2020 9AM PST | TBD |
 | Zoom! | GNPS Ion-Identity Networking, Native Metabolomics	| 5/20/2020 9AM PST | TBD |
