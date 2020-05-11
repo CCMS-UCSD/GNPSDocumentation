@@ -54,12 +54,12 @@ Last changed: {{ git_revision_date }}
 
 ## Community Tools GNPS Interfaces with
 
-| Tool  | Documentation | Source Code |
-|---|---|---|
-| [MS2LDA.org](http://ms2lda.org/) | --- | --- |
-| [NPAtlas](https://www.npatlas.org/joomla/) | --- | --- |
-| [MIBiG](https://mibig.secondarymetabolites.org/) | --- | --- |
-| [ClassyFire](http://classyfire.wishartlab.com/) | --- | --- |
-| [SMART NMR](http://smart.ucsd.edu) | --- | --- |
-| MassBank | | |
+| Tool  | Publication |
+|---|---|
+| [MS2LDA.org](http://ms2lda.org/) | [Citation](https://academic.oup.com/bioinformatics/article/34/2/317/4158166) |
+| [NPAtlas](https://www.npatlas.org/joomla/) | [Citation](https://pubs.acs.org/doi/10.1021/acscentsci.9b00806) |
+| [MIBiG](https://mibig.secondarymetabolites.org/) | [Citation](https://academic.oup.com/nar/article/48/D1/D454/5587631) |
+| [ClassyFire](http://classyfire.wishartlab.com/) | [Citation](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0174-y) |
+| [SMART NMR](http://smart.ucsd.edu) | [Citation](https://pubs.acs.org/doi/abs/10.1021/jacs.9b13786) |
+| MassBank | [Citation](https://onlinelibrary.wiley.com/doi/full/10.1002/jms.1777?casa_token=Wr51kpu9hCgAAAAA%3AERBV24GFextLVnW0J4SDcdJAskSYG2eqf2tgh8AUBeowVLnKBErbLqJxEzOQJUz2MqrI5dKr47zSVXw) | 
 
