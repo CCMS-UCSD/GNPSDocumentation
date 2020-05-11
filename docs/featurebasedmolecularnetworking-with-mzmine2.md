@@ -35,6 +35,7 @@ Please consult the resources below for more details on MZmine processing:
 
 - The official documentation [http://mzmine.github.io/documentation.html](http://mzmine.github.io/documentation.html),
 - The [MZmine tutorial](http://www.pharmacognosie-parisdescartes.fr/pdf/150420_MZmine_Tutorial_UNIGE.pdf) by Pierre-Marie Allard and Joelle Houriet from the University of Geneva.
+- [ADAP User Manual](https://mzmine.github.io/ADAP_user_manual.pdf)
 - The video tutorial below about [MZmine2 processing for Feature Based Molecular Networking](tutorials/americangutmzmine.md). **Note that this video is slighlty outdatted**, so please refer to the steps described in this documentation.
 
 <iframe width="600" height="350" src="https://www.youtube.com/embed/5jjMllbwD-U"> </iframe>
