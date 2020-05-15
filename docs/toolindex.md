@@ -63,3 +63,6 @@ Last changed: {{ git_revision_date }}
 | [SMART NMR](http://smart.ucsd.edu) | [Citation](https://pubs.acs.org/doi/abs/10.1021/jacs.9b13786) |
 | MassBank | [Citation](https://onlinelibrary.wiley.com/doi/full/10.1002/jms.1777?casa_token=Wr51kpu9hCgAAAAA%3AERBV24GFextLVnW0J4SDcdJAskSYG2eqf2tgh8AUBeowVLnKBErbLqJxEzOQJUz2MqrI5dKr47zSVXw) | 
 
+## GNPS Tools Interoperability Graph
+
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVERcblx0QShMQyBNUy9NUyBWZW5kb3IgTWFzcyBTcGVjdHJvbWV0cnkgRGF0YSkgLS0-IEJbTVNDb252ZXJ0XVxuXHRBIC0tPiBDW0dOUFMgUXVpY2tzdGFydF1cblx0QyAtLT4gRChPcGVuIG16TUwgRm9ybWF0KVxuICBCIC0tPiBEXG5cdFx0XHRcdFx0IiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjpmYWxzZX0)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcblx0QShMQyBNUy9NUyBWZW5kb3IgTWFzcyBTcGVjdHJvbWV0cnkgRGF0YSkgLS0-IEJbTVNDb252ZXJ0XVxuXHRBIC0tPiBDW0dOUFMgUXVpY2tzdGFydF1cblx0QyAtLT4gRChPcGVuIG16TUwgRm9ybWF0KVxuICBCIC0tPiBEXG5cdFx0XHRcdFx0IiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjpmYWxzZX0)
