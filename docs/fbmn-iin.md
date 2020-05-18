@@ -1,8 +1,8 @@
-# Ion Identity Networking (IIN)
+# Ion Identity Molecular Networking (IIMN)
 
 ## Introduction
 
-The **Ion Identity Networking** (IIN) workflow complements the [Feature-Based Molecular Networking (FBMN)](featurebasedmolecularnetworking.md) by grouping MS2 spectra not only through similarity of MS2 spectra, but also of MS2 spectra whose precursor ions fulfill the retention time, peak shape, user-defined parameters. It enables the visualization of patterns of ion species and brings together subnetwork from the same molecule to create an ion identity molecular family. IIN can be performed with [MZmine](fbmn-iin-mzmine.md), [XCMS-CAMERA](fbmn-iin-xcms.md), or [MS-DIAL](fbmn-iin-msdial.md).
+The **Ion Identity Molecular Networking** (IIMN) workflow complements the [Feature-Based Molecular Networking (FBMN)](featurebasedmolecularnetworking.md) by grouping MS2 spectra not only through similarity of MS2 spectra, but also of MS2 spectra whose precursor ions fulfill the retention time, peak shape, user-defined parameters. It enables the visualization of patterns of ion species and brings together subnetwork from the same molecule to create an ion identity molecular family. IIN can be performed with [MZmine](fbmn-iin-mzmine.md), [XCMS-CAMERA](fbmn-iin-xcms.md), or [MS-DIAL](fbmn-iin-msdial.md).
 
 You can find more information about IIN in this [playlist](https://www.youtube.com/playlist?list=PL4L2Xw5k8ITyxSyBdrcv70LDKsP8QNuyN).
 
@@ -20,7 +20,7 @@ This work builds on the efforts of our many colleagues, please cite their work:
 
 And the tools you used to process your data.
 
-## Running the IIN workflow
+## Running the IIMN workflow
 
 The Ion Identity Networking workflow is run throught the [FBMN workflow](featurebasedmolecularnetworking.md) by providing Supplementary Annotation/Pairs files in the "Advanced Extras" panel of the standard [FBMN workflow interface](featurebasedmolecularnetworking.md).
 
@@ -59,9 +59,9 @@ See an example of the Supplementary Pairs used in the Ion Identity Networking (I
 ![img](img/featurebasedmolecularnetworking/fbmn_iin_edges.PNG)
 
 
-## Exploring the IIN workflow in Cytoscape
+## Exploring the IIMN workflow in Cytoscape
 
-The additional edges that IIN identified as adducts and in-source modifications are visualized in Cytoscape.
+The additional edges that IIMN identified as adducts and in-source modifications are visualized in Cytoscape.
  
 The different types of ions can be observed in different node colors if the Best Ion option is chosen in Fill Color, and Discrete Mapping type is selected.
 
