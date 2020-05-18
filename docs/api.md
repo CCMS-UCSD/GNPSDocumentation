@@ -87,6 +87,9 @@ If you have InChI Key
 
 [Example](https://gnps-classyfire.ucsd.edu/entities/RYYVLZVUVIJVGH-UHFFFAOYSA-N.json)
 
+Additionally, in case the inchikey is not classified, you can provide ```smiles``` or ```inchi``` arguments for 
+us to push to the Wishart servers to classify. 
+
 
 ### Structure Image
 
