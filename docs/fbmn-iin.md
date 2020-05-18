@@ -12,11 +12,11 @@ Note that the IIN documentation is under construction.
 
 This work builds on the efforts of our many colleagues, please cite their work:
 
-**For IIN**: Schmid R., Petras D., Nothias LF, et al. In preparation
+**For IIN**: Schmid R., Petras D., Nothias LF, et al. [Ion Identity Molecular Networking in the GNPS Environment](https://www.biorxiv.org/content/10.1101/2020.05.11.088948v1) bioRxiv 088948 (2020).
 
-**For FBMN**: Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
+**For FBMN**: Nothias, L.F., Petras D., Schmid R, et al. [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
 
-**For GNPS**: Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
+**For GNPS**: Wang, M., Carver J, Phelan V.V., et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
 And the tools you used to process your data.
 
