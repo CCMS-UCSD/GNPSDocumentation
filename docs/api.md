@@ -82,6 +82,8 @@
 ]
 ```
 
+</details>
+
 As MGF
 
 ```https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.mgf```
