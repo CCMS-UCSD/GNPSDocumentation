@@ -10,7 +10,7 @@
 
 ```https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.json```
 
-??? note "Example JSON Format"
+??? info "Example JSON Format"
 
     ``` JSON
     [
