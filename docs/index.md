@@ -22,7 +22,7 @@ As there are many aspects to GNPS, it can be a bit overwhelming. Here is a quick
 ### Share and Explore
 
 * Publish entire study datasets with the Mass Spectrometry Interactive Virtual Environment (MassIVE) data repository ([Dataset Submission](datasets.md)).
-* [Browse](datasets#browsing-datasets) and [Reanalyze](datasets#reanalyze-datasets) over 700 public datasets at GNPS
+* [Browse](datasets#browsing-datasets) and [Reanalyze](datasets#reanalyze-datasets) over 1500 public datasets at GNPS
 * Automatic reanalysis of public datasets with automated reports of new identifications ([Continuous Identification](continuousid.md)).
 * Explore identifications of public datasets across entire repository ([Molecule Explorer](moleculeexplorer.md)).
 
