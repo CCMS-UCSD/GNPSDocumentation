@@ -12,7 +12,7 @@
 
 <details><summary>Example Format</summary>
   
-  ```
+```
   [
     {
         "spectrum_id": "CCMSLIB00000579358",
