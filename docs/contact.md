@@ -22,4 +22,5 @@ Upcoming Office Hour Schedule
 | ------------- |------------- |
 | 2PM PST May 11 | GNPS Q and A / Additional Topic TBA |
 | 2PM PST May 18 | GNPS Q and A / Additional Topic TBA |
+| 2PM PST May 25 | GNPS Q and A / Additional Topic TBA |
 
