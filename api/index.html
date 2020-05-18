@@ -1651,80 +1651,76 @@
 <p><code>https://gnps-external.ucsd.edu/gnpslibraryjson</code></p>
 <h3 id="all-public-library-specta-at-gnps-with-peaks-and-annotation-history">All Public Library Specta at GNPS with Peaks and Annotation History</h3>
 <p><code>https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.json</code></p>
-<details><summary>Example Format</summary>
-
-<pre><code>  [
-    {
-        &quot;spectrum_id&quot;: &quot;CCMSLIB00000579358&quot;,
-        &quot;source_file&quot;: &quot;Training_001.mgf&quot;,
-        &quot;task&quot;: &quot;03c206430208430c887ca025ea6c3641&quot;,
-        &quot;scan&quot;: &quot;1&quot;,
-        &quot;ms_level&quot;: &quot;2&quot;,
-        &quot;library_membership&quot;: &quot;CASMI&quot;,
-        &quot;spectrum_status&quot;: &quot;1&quot;,
-        &quot;peaks_json&quot;: &quot;[[164.033997,32294.500000],[179.057495,129907.101562]]&quot;,
-        &quot;splash&quot;: &quot;null-null-null-null&quot;,
-        &quot;submit_user&quot;: &quot;lfnothias&quot;,
-        &quot;Compound_Name&quot;: &quot;Theophyllin&quot;,
-        &quot;Ion_Source&quot;: &quot;LC-ESI&quot;,
-        &quot;Compound_Source&quot;: &quot;Commercial&quot;,
-        &quot;Instrument&quot;: &quot;Orbitrap&quot;,
-        &quot;PI&quot;: &quot;CASMI&quot;,
-        &quot;Data_Collector&quot;: &quot;CASMI2016&quot;,
-        &quot;Adduct&quot;: &quot;M-H&quot;,
-        &quot;Scan&quot;: &quot;-1&quot;,
-        &quot;Precursor_MZ&quot;: &quot;179.057&quot;,
-        &quot;ExactMass&quot;: &quot;0.0&quot;,
-        &quot;Charge&quot;: &quot;1&quot;,
-        &quot;CAS_Number&quot;: &quot;N/A&quot;,
-        &quot;Pubmed_ID&quot;: &quot;33919&quot;,
-        &quot;Smiles&quot;: &quot;CN1C2=C(NC=N2)C(=O)N(C)C1=O&quot;,
-        &quot;INCHI&quot;: &quot;\&quot;InChI=1S/C7H8N4O2/c1-10-5-4(8-3-9-5)6(12)11(2)7(10)13/h3H,1-2H3,(H,8,9)\&quot;&quot;,
-        &quot;INCHI_AUX&quot;: &quot;N/A&quot;,
-        &quot;Library_Class&quot;: &quot;1&quot;,
-        &quot;SpectrumID&quot;: &quot;CCMSLIB00000579358&quot;,
-        &quot;Ion_Mode&quot;: &quot; Negative&quot;,
-        &quot;create_time&quot;: &quot;2016-05-24 18:27:20.0&quot;,
-        &quot;task_id&quot;: &quot;03c206430208430c887ca025ea6c3641&quot;,
-        &quot;user_id&quot;: &quot;null&quot;,
-        &quot;InChIKey_smiles&quot;: &quot;ZFXYFBGIUFBOJW-UHFFFAOYSA-N&quot;,
-        &quot;InChIKey_inchi&quot;: &quot;None&quot;,
-        &quot;Formula_smiles&quot;: &quot;C7H8N4O2&quot;,
-        &quot;Formula_inchi&quot;: &quot;&quot;,
-        &quot;url&quot;: &quot;https://gnps.ucsd.edu/ProteoSAFe/gnpslibraryspectrum.jsp?SpectrumID=CCMSLIB00000579358&quot;,
-        &quot;annotation_history&quot;: [
-            {
-                &quot;Compound_Name&quot;: &quot;Theophyllin&quot;,
-                &quot;Ion_Source&quot;: &quot;LC-ESI&quot;,
-                &quot;Compound_Source&quot;: &quot;Commercial&quot;,
-                &quot;Instrument&quot;: &quot;Orbitrap&quot;,
-                &quot;PI&quot;: &quot;CASMI&quot;,
-                &quot;Data_Collector&quot;: &quot;CASMI2016&quot;,
-                &quot;Adduct&quot;: &quot;M-H&quot;,
-                &quot;Scan&quot;: &quot;-1&quot;,
-                &quot;Precursor_MZ&quot;: &quot;179.057&quot;,
-                &quot;ExactMass&quot;: &quot;0.0&quot;,
-                &quot;Charge&quot;: &quot;1&quot;,
-                &quot;CAS_Number&quot;: &quot;N/A&quot;,
-                &quot;Pubmed_ID&quot;: &quot;33919&quot;,
-                &quot;Smiles&quot;: &quot;CN1C2=C(NC=N2)C(=O)N(C)C1=O&quot;,
-                &quot;INCHI&quot;: &quot;\&quot;InChI=1S/C7H8N4O2/c1-10-5-4(8-3-9-5)6(12)11(2)7(10)13/h3H,1-2H3,(H,8,9)\&quot;&quot;,
-                &quot;INCHI_AUX&quot;: &quot;N/A&quot;,
-                &quot;Library_Class&quot;: &quot;1&quot;,
-                &quot;SpectrumID&quot;: &quot;CCMSLIB00000579358&quot;,
-                &quot;Ion_Mode&quot;: &quot; Negative&quot;,
-                &quot;create_time&quot;: &quot;2016-05-24 18:27:20.0&quot;,
-                &quot;task_id&quot;: &quot;03c206430208430c887ca025ea6c3641&quot;,
-                &quot;user_id&quot;: &quot;lfnothias&quot;
-            }
-        ]
-    }
-]
-</code></pre>
-
+<details class="note"><summary>Example JSON Format</summary><div class="highlight"><pre><span></span><code><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;spectrum_id&quot;</span><span class="p">:</span> <span class="s2">&quot;CCMSLIB00000579358&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;source_file&quot;</span><span class="p">:</span> <span class="s2">&quot;Training_001.mgf&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;task&quot;</span><span class="p">:</span> <span class="s2">&quot;03c206430208430c887ca025ea6c3641&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;scan&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ms_level&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;library_membership&quot;</span><span class="p">:</span> <span class="s2">&quot;CASMI&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;spectrum_status&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;peaks_json&quot;</span><span class="p">:</span> <span class="s2">&quot;[[164.033997,32294.500000],[179.057495,129907.101562]]&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;splash&quot;</span><span class="p">:</span> <span class="s2">&quot;null-null-null-null&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;submit_user&quot;</span><span class="p">:</span> <span class="s2">&quot;lfnothias&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Compound_Name&quot;</span><span class="p">:</span> <span class="s2">&quot;Theophyllin&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Ion_Source&quot;</span><span class="p">:</span> <span class="s2">&quot;LC-ESI&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Compound_Source&quot;</span><span class="p">:</span> <span class="s2">&quot;Commercial&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Instrument&quot;</span><span class="p">:</span> <span class="s2">&quot;Orbitrap&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;PI&quot;</span><span class="p">:</span> <span class="s2">&quot;CASMI&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Data_Collector&quot;</span><span class="p">:</span> <span class="s2">&quot;CASMI2016&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Adduct&quot;</span><span class="p">:</span> <span class="s2">&quot;M-H&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Scan&quot;</span><span class="p">:</span> <span class="s2">&quot;-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Precursor_MZ&quot;</span><span class="p">:</span> <span class="s2">&quot;179.057&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ExactMass&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Charge&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;CAS_Number&quot;</span><span class="p">:</span> <span class="s2">&quot;N/A&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Pubmed_ID&quot;</span><span class="p">:</span> <span class="s2">&quot;33919&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Smiles&quot;</span><span class="p">:</span> <span class="s2">&quot;CN1C2=C(NC=N2)C(=O)N(C)C1=O&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;INCHI&quot;</span><span class="p">:</span> <span class="s2">&quot;\&quot;InChI=1S/C7H8N4O2/c1-10-5-4(8-3-9-5)6(12)11(2)7(10)13/h3H,1-2H3,(H,8,9)\&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;INCHI_AUX&quot;</span><span class="p">:</span> <span class="s2">&quot;N/A&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Library_Class&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;SpectrumID&quot;</span><span class="p">:</span> <span class="s2">&quot;CCMSLIB00000579358&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Ion_Mode&quot;</span><span class="p">:</span> <span class="s2">&quot; Negative&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;create_time&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-05-24 18:27:20.0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;task_id&quot;</span><span class="p">:</span> <span class="s2">&quot;03c206430208430c887ca025ea6c3641&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;null&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;InChIKey_smiles&quot;</span><span class="p">:</span> <span class="s2">&quot;ZFXYFBGIUFBOJW-UHFFFAOYSA-N&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;InChIKey_inchi&quot;</span><span class="p">:</span> <span class="s2">&quot;None&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Formula_smiles&quot;</span><span class="p">:</span> <span class="s2">&quot;C7H8N4O2&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Formula_inchi&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://gnps.ucsd.edu/ProteoSAFe/gnpslibraryspectrum.jsp?SpectrumID=CCMSLIB00000579358&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;annotation_history&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;Compound_Name&quot;</span><span class="p">:</span> <span class="s2">&quot;Theophyllin&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;Ion_Source&quot;</span><span class="p">:</span> <span class="s2">&quot;LC-ESI&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;Compound_Source&quot;</span><span class="p">:</span> <span class="s2">&quot;Commercial&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;Instrument&quot;</span><span class="p">:</span> <span class="s2">&quot;Orbitrap&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;PI&quot;</span><span class="p">:</span> <span class="s2">&quot;CASMI&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;Data_Collector&quot;</span><span class="p">:</span> <span class="s2">&quot;CASMI2016&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;Adduct&quot;</span><span class="p">:</span> <span class="s2">&quot;M-H&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;Scan&quot;</span><span class="p">:</span> <span class="s2">&quot;-1&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;Precursor_MZ&quot;</span><span class="p">:</span> <span class="s2">&quot;179.057&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;ExactMass&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;Charge&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;CAS_Number&quot;</span><span class="p">:</span> <span class="s2">&quot;N/A&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;Pubmed_ID&quot;</span><span class="p">:</span> <span class="s2">&quot;33919&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;Smiles&quot;</span><span class="p">:</span> <span class="s2">&quot;CN1C2=C(NC=N2)C(=O)N(C)C1=O&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;INCHI&quot;</span><span class="p">:</span> <span class="s2">&quot;\&quot;InChI=1S/C7H8N4O2/c1-10-5-4(8-3-9-5)6(12)11(2)7(10)13/h3H,1-2H3,(H,8,9)\&quot;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;INCHI_AUX&quot;</span><span class="p">:</span> <span class="s2">&quot;N/A&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;Library_Class&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;SpectrumID&quot;</span><span class="p">:</span> <span class="s2">&quot;CCMSLIB00000579358&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;Ion_Mode&quot;</span><span class="p">:</span> <span class="s2">&quot; Negative&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;create_time&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-05-24 18:27:20.0&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;task_id&quot;</span><span class="p">:</span> <span class="s2">&quot;03c206430208430c887ca025ea6c3641&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;lfnothias&quot;</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
 
 </details>
-
 <p>As MGF</p>
 <p><code>https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.mgf</code></p>
 <p>As MSP</p>
