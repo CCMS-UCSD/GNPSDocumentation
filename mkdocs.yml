@@ -91,4 +91,10 @@ plugins:
     - search
     - git-revision-date
 
+markdown_extensions:
+    - admonition
+    - pymdownx.superfences
+    - pymdownx.details
+
+
 google_analytics: ['UA-8412213-5', 'ccms-ucsd.github.io']
