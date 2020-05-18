@@ -6,13 +6,12 @@ The **Ion Identity Molecular Networking** (IIMN) workflow complements the [Featu
 
 You can find more information about IIN in this [playlist](https://www.youtube.com/playlist?list=PL4L2Xw5k8ITyxSyBdrcv70LDKsP8QNuyN).
 
-Note that the IIN documentation is under construction. 
 
 ## Citations
 
 This work builds on the efforts of our many colleagues, please cite their work:
 
-**For IIN**: Schmid R., Petras D., Nothias LF, et al. [Ion Identity Molecular Networking in the GNPS Environment](https://www.biorxiv.org/content/10.1101/2020.05.11.088948v1) bioRxiv 088948 (2020).
+**For IIMN**: Schmid R., Petras D., Nothias LF, et al. [Ion Identity Molecular Networking in the GNPS Environment](https://www.biorxiv.org/content/10.1101/2020.05.11.088948v1) bioRxiv 088948 (2020).
 
 **For FBMN**: Nothias, L.F., Petras D., Schmid R, et al. [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
 
