@@ -50,8 +50,8 @@ Here are the steps that aid in the creation of the proper templates to acquire d
 
 ### Sample Preparation - Protocol
 1. Generate a solution of your sample (standard) at a concentration of 10 µM.
-    > Notes: <br>
-      - The amount of material needed for detection is not universal and will vary by chemical. The value is a suggested starting place. <br>
+!!! note
+    The amount of material needed for detection is not universal and will vary by chemical. The value is a suggested starting place.
       
 2. Transfer 10 µL of your sample (standard) into a well in the 96 well plate recording the well position and chemical added.
 
