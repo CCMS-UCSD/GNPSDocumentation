@@ -96,9 +96,6 @@ plugins:
         show_contribution: true
     - git-revision-date-localized:
         type: datetime
-    # - pdf-export:
-    #     combined: true
-    #     combined_output_path: ./documentation.pdf
 
 markdown_extensions:
     - admonition
