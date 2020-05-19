@@ -1,12 +1,13 @@
 # GNPS Tool Index
 
+Last changed: {{ git_revision_date }}
+
 This is a global tool index for GNPS. Throughout this documentation we have very detailed information for how to use way more tools than we though we'd have, but its a good problem to have!
 
 However, we recognize it might be difficult for people to simply see what all is availble in GNPS as tool and web services. This table is always evolving and hope to make it easier for people to navigate. 
 
 Please help us fill in more completely!
 
-Last changed: {{ git_revision_date }}
 
 ## GNPS Workflows
 
