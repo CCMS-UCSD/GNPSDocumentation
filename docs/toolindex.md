@@ -24,8 +24,8 @@ Last changed: {{ git_revision_date }}
 | Annotation | Network Annotation Propogation (NAP) | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/?params=%7B%22workflow%22:%22NAP_CCMS2%22%7D) | --- | [Documentation](nap.md) | [GitHub](https://github.com/DorresteinLaboratory/NAP_ProteoSAFe/) | [Citation](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006089) |
 | Annotation | Sirius - Bocker Lab | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22SIRIUS%22%7D)   | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22SIRIUS%22%7D) |
 | Annotation | Qemistree | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22QEMISTREE%22%7D)   | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22QEMISTREE%22%7D) |
-| Annotation | Dereplicator | --- | --- |
-| Annotation | Dereplicator+ | --- | --- |
+| Annotation | Dereplicator | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22DEREPLICATOR%22%7D) | --- |
+| Annotation | Dereplicator+ | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22DEREPLICATOR_PLUS%22%7D) | --- |
 | Annotation | MetaMiner | --- | --- |
 | Data Processing | MSHub-GC Deconvolution  | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B"workflow":"MSHUB-GC"%7D)   | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B"workflow":"MSHUB-GC"%7D) | 
 | Data Processing | OpenMS Feature Detector for FBMN - Future Feature  | [Workflow]()   | [Workflow]() |---|
@@ -34,7 +34,6 @@ Last changed: {{ git_revision_date }}
 
 
 ## GNPS Web Tools
-
 
 | Tool  | Documentation | Source Code | Citation |
 |---|---|---|---|
