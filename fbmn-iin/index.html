@@ -1511,23 +1511,23 @@
                   
                 
                 
-                <h1 id="ion-identity-molecular-networking-iimn">Ion Identity Molecular Networking (IIMN)</h1>
-<h2 id="introduction">Introduction</h2>
+                <h1 id="ion-identity-molecular-networking-iimn">Ion Identity Molecular Networking (IIMN)<a class="headerlink" href="#ion-identity-molecular-networking-iimn" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>The <strong>Ion Identity Molecular Networking</strong> (IIMN) workflow complements the <a href="../featurebasedmolecularnetworking/">Feature-Based Molecular Networking (FBMN)</a> by grouping MS2 spectra not only through similarity of MS2 spectra, but also of MS2 spectra whose precursor ions fulfill the retention time, peak shape, user-defined parameters. It enables the visualization of patterns of ion species and brings together subnetwork from the same molecule to create an ion identity molecular family. IIN can be performed with <a href="../fbmn-iin-mzmine/">MZmine</a>, <a href="../fbmn-iin-xcms/">XCMS-CAMERA</a>, or <a href="../fbmn-iin-msdial/">MS-DIAL</a>.</p>
 <p>You can find more information about IIN in this <a href="https://www.youtube.com/playlist?list=PL4L2Xw5k8ITyxSyBdrcv70LDKsP8QNuyN">playlist</a>.</p>
-<h2 id="citations">Citations</h2>
+<h2 id="citations">Citations<a class="headerlink" href="#citations" title="Permanent link">&para;</a></h2>
 <p>This work builds on the efforts of our many colleagues, please cite their work:</p>
 <p><strong>For IIMN</strong>: Schmid R., Petras D., Nothias LF, et al. <a href="https://www.biorxiv.org/content/10.1101/2020.05.11.088948v1">Ion Identity Molecular Networking in the GNPS Environment</a> bioRxiv 088948 (2020).</p>
 <p><strong>For FBMN</strong>: Nothias, L.F., Petras D., Schmid R, et al. <a href="https://www.biorxiv.org/content/10.1101/812404v1">Feature-based Molecular Networking in the GNPS Analysis Environment</a> bioRxiv 812404 (2019).</p>
 <p><strong>For GNPS</strong>: Wang, M., Carver J, Phelan V.V., et al. <a href="https://doi.org/10.1038/nbt.3597">Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking</a>. Nat. Biotechnol. 34, 828–837 (2016).</p>
 <p>And the tools you used to process your data.</p>
-<h2 id="running-the-iimn-workflow">Running the IIMN workflow</h2>
+<h2 id="running-the-iimn-workflow">Running the IIMN workflow<a class="headerlink" href="#running-the-iimn-workflow" title="Permanent link">&para;</a></h2>
 <p>The Ion Identity Networking workflow is run throught the <a href="../featurebasedmolecularnetworking/">FBMN workflow</a> by providing Supplementary Annotation/Pairs files in the "Advanced Extras" panel of the standard <a href="../featurebasedmolecularnetworking/">FBMN workflow interface</a>.</p>
 <p><img alt="img" src="../img/iin/iin_supplementary_pairs.png" /></p>
 <p>Alternatively, the <a href="https://gnps-quickstart.ucsd.edu/featurebasednetworking">quickstart interface for FBMN </a> can also be used:</p>
 <p><img alt="img" src="../img/iin/quickstart_iin_clear.png" /></p>
 <p>Note that multiple Supplementary Pairs files can specified. Their content will be added.</p>
-<h2 id="generating-supplementary-pairs">Generating Supplementary Pairs</h2>
+<h2 id="generating-supplementary-pairs">Generating Supplementary Pairs<a class="headerlink" href="#generating-supplementary-pairs" title="Permanent link">&para;</a></h2>
 <p>The Supplementary Annotations/Pairs files can be generated with the following software:</p>
 <ul>
 <li><strong>MZmine</strong>: <a href="../fbmn-iin-mzmine/">See the documentation</a></li>
@@ -1535,7 +1535,7 @@
 <li><strong>MS-DIAL</strong>: <a href="../fbmn-iin-msdial/">See the documentation</a></li>
 </ul>
 <p>Alternatively, the results of other software could be used as long as the LC-MS feature identifier (ID) matches the "SCANS=" number in the MGF file.</p>
-<h4 id="supplementary-pairs">Supplementary pairs</h4>
+<h4 id="supplementary-pairs">Supplementary pairs<a class="headerlink" href="#supplementary-pairs" title="Permanent link">&para;</a></h4>
 <p>The Supplementary Pairs is a .CSV format file (coma separated), and must contains the following columns:</p>
 <table>
 <thead>
@@ -1569,7 +1569,7 @@
 </table>
 <p>See an example of the Supplementary Pairs used in the Ion Identity Networking (IIN) workflow</p>
 <p><img alt="img" src="../img/featurebasedmolecularnetworking/fbmn_iin_edges.PNG" /></p>
-<h2 id="exploring-the-iimn-workflow-in-cytoscape">Exploring the IIMN workflow in Cytoscape</h2>
+<h2 id="exploring-the-iimn-workflow-in-cytoscape">Exploring the IIMN workflow in Cytoscape<a class="headerlink" href="#exploring-the-iimn-workflow-in-cytoscape" title="Permanent link">&para;</a></h2>
 <p>The additional edges that IIMN identified as adducts and in-source modifications are visualized in Cytoscape.</p>
 <p>The different types of ions can be observed in different node colors if the Best Ion option is chosen in Fill Color, and Discrete Mapping type is selected.</p>
 <p><img alt="ScreenShot8" src="../img/iin/ScreenShot8.png" /></p>
@@ -1579,7 +1579,7 @@
 <p><img alt="ScreenShot10" src="../img/iin/ScreenShot10.png" /></p>
 <p>Specific types of adducts’ edges can be colored differently by selecting Stroke Color (Unselected) section, and choosing Edge Annotation and Discrete Mapping.</p>
 <p><img alt="ScreenShot11" src="../img/iin/ScreenShot11.png" /></p>
-<h2 id="page-contributors">Page contributors</h2>
+<h2 id="page-contributors">Page contributors<a class="headerlink" href="#page-contributors" title="Permanent link">&para;</a></h2>
 <p>Robin Schmid (WWU, Münster, Germany), Daniel Petras (UCSD), Louis Felix Nothias (UCSD), Ming Wang (UCSD).</p>
                 
                   

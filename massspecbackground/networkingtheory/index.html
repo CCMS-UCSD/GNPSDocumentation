@@ -1571,9 +1571,9 @@
                 
                   <h1>Molecular Networking</h1>
                 
-                <h2 id="molecular-networking-theory">Molecular Networking Theory</h2>
+                <h2 id="molecular-networking-theory">Molecular Networking Theory<a class="headerlink" href="#molecular-networking-theory" title="Permanent link">&para;</a></h2>
 <p>While there are many publications out there giving algorithmic and intuition into molecular networking, we attempt a cliff notes version here.</p>
-<h3 id="spectral-similarity-related-to-molecular-structure-similarity">Spectral Similarity Related to Molecular Structure Similarity</h3>
+<h3 id="spectral-similarity-related-to-molecular-structure-similarity">Spectral Similarity Related to Molecular Structure Similarity<a class="headerlink" href="#spectral-similarity-related-to-molecular-structure-similarity" title="Permanent link">&para;</a></h3>
 <p>A key concept in tandem mass spectrometry is that repeated MS/MS acquisitions of a molecule under the same experimental conditions (e.g. same instrument, collision energy, abundance, charge state) will yield highly similar MS/MS spectra. That is, fragmentation of molecules is consistent. This enables the identification of MS/MS spectra to libraries of reference compounds.</p>
 <p>Extending this concept, we have observed that structurally related molecules also exhibit similar fragmentation, with some caveats. Intuitively, two molecules that differ by the addition of a single chemical moiety, which does not contribute to a significant difference in molecule mass and not drastically change the bond energies of the molecule (e.g. Oxidation, methylation, glycosylation), will not drastically perturb the gas phase chemistry of fragmentation.  </p>
 <p>Given that relative bond strengths between the two molecules do not drastically differ, the same bonds will undergo similar fragmentation within the collision cell of the mass spectrometer. The resulting corresponding product ions in the MS/MS spectra from the two molecules will either include the additional chemical moiety or will not. In cases fragments do not, the chemical moiety could either have</p>
@@ -1589,7 +1589,7 @@
 <p><img alt="img" src="../../img/networking_theory/network_example.png" /></p>
 <p><a href="http://www.pnas.org/content/109/26/E1743">Watrous et al. PNAS</a></p>
 <p>We consider both of these possibilities for each and every peak between two MS/MS spectra and explore how we do that below.</p>
-<h3 id="spectrum-alignment">Spectrum Alignment</h3>
+<h3 id="spectrum-alignment">Spectrum Alignment<a class="headerlink" href="#spectrum-alignment" title="Permanent link">&para;</a></h3>
 <p>We will use a toy example here to demonstrate intuitively how we are able to consider an alignment between two MS/MS spectra.</p>
 <p>Given two molecules that differ by a single chemical moiety that each produce fragmentation as shown</p>
 <p><img alt="img" src="../../img/networking_theory/networking_1.png" /></p>
@@ -1603,18 +1603,18 @@
 <p><img alt="img" src="../../img/networking_theory/Slide5.PNG" /></p>
 <p>All of these potential alignments can be explored and the best scoring alignment is determined between the two MS/MS spectra and is called the alignment score.</p>
 <p>The total number of potential alignments is exponential (2 ^ N, where N is the number of peaks) and is computationally expensive. GNPS has implemented algorithms that can efficiently approximate this alignment.</p>
-<h3 id="alignment-of-entire-dataset">Alignment of Entire Dataset</h3>
+<h3 id="alignment-of-entire-dataset">Alignment of Entire Dataset<a class="headerlink" href="#alignment-of-entire-dataset" title="Permanent link">&para;</a></h3>
 <p>So far we've investigated how to align one MS/MS spectrum to another, but have not created molecular networks across an entire dataset of MS/MS spectra. Since we do not know a priori, which MS/MS spectra will be structurally similar to any others, we must try aligning all MS/MS spectra within a dataset to all others. GNPS calculates the score between all MS/MS spectra within a dataset that provides the starting point of a molecular network.</p>
-<h3 id="network-filtering-for-visualization">Network Filtering for Visualization</h3>
+<h3 id="network-filtering-for-visualization">Network Filtering for Visualization<a class="headerlink" href="#network-filtering-for-visualization" title="Permanent link">&para;</a></h3>
 <p>The alignments between all MS/MS spectra must be filtered in order to produce molecular networks that can be visualized and interpretable.</p>
-<h4 id="alignment-score-filtering">Alignment Score Filtering</h4>
+<h4 id="alignment-score-filtering">Alignment Score Filtering<a class="headerlink" href="#alignment-score-filtering" title="Permanent link">&para;</a></h4>
 <p>The most basic filter is by alignment score between MS/MS spectra. Generally, the default of cosine of 0.7 and 6 minimum matches peaks reduces the number of false positive alignments tremendously.</p>
-<h4 id="neighbor-top-k">Neighbor Top K</h4>
+<h4 id="neighbor-top-k">Neighbor Top K<a class="headerlink" href="#neighbor-top-k" title="Permanent link">&para;</a></h4>
 <p>A pathological case in Molecular Networks are promiscuous MS/MS spectra that align to many other MS/MS spectra due to a low complexity of fragmentation. To counteract this, only retain alignments between alignments between MS/MS spectra that mutually rank each other highly in the alignment score. Just like in human relationships, who wants a best friend who has a million other best friends?</p>
-<h4 id="connected-component-max-size">Connected Component Max Size</h4>
+<h4 id="connected-component-max-size">Connected Component Max Size<a class="headerlink" href="#connected-component-max-size" title="Permanent link">&para;</a></h4>
 <p>Even with the above filters, the occasional false positive connections causes hairball networks that make visualization/interpretation difficult. The connected component size filter limits the maximum size of a single molecular network to a parameterized number of nodes (100 by default). This process iteratively breaks up large hairball networks by removing the lowest scoring alignments (by cosine score) first until the resulting pieces fall below the maximum size.</p>
-<h3 id="limitation-of-molecular-networking">Limitation of Molecular Networking</h3>
-<h4 id="multiple-modifications">Multiple Modifications</h4>
+<h3 id="limitation-of-molecular-networking">Limitation of Molecular Networking<a class="headerlink" href="#limitation-of-molecular-networking" title="Permanent link">&para;</a></h3>
+<h4 id="multiple-modifications">Multiple Modifications<a class="headerlink" href="#multiple-modifications" title="Permanent link">&para;</a></h4>
 <p>Molecular networking is unable to align spectra from molecules that differ by two distinct structural modifications. We have observed that this limitation is ameliorated in biological datasets because chemical modifications are enzymatically catalyzed. In the event that two molecules differ by two distinct chemical modification which cannot be connected by molecular networking, an intermediate molecule which differs by only a single chemical modification to the respective molecules and links all three molecules into a molecular family.</p>
                 
                   

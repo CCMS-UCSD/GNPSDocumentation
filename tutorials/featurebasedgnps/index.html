@@ -1549,20 +1549,20 @@
                 
                 <p>In this tutorial you will be guided into running the Feature Based Molecular Network (FBMN) workflow on GNPS to reproduce some findings of the <a href="http://humanfoodproject.com/americangut/">American Gut Project</a> described in this manuscript:</p>
 <p>McDonald, D. et al. American Gut: an Open Platform for Citizen Science Microbiome Research. mSystems 3, (2018). <a href="http://dx.doi.org/10.1128/mSystems.00031-18">http://dx.doi.org/10.1128/mSystems.00031-18</a></p>
-<h2 id="learning-objectives">Learning Objectives</h2>
+<h2 id="learning-objectives">Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Run the Feature Based Molecular Networking using MZmine2 outputted files along with a metadata table. <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">See the workflow here</a> (Note that you must be logged in GNPS first).</li>
 <li>Explore Molecular Networking results briefly in GNPS</li>
 <li>Export Molecular Network to Cytoscape</li>
 </ol>
-<h2 id="prerequisites">Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <p>The LC-MS/MS data have first to be processed with MZmine2. The resulting MZmine2 output files needed for FBMN are provided here. If you have not learned that process yet, refer to this <a href="tutorials/americangutmzmine">MZmine2 tutorial</a>.</p>
-<h2 id="experimental-setup">Experimental Setup</h2>
+<h2 id="experimental-setup">Experimental Setup<a class="headerlink" href="#experimental-setup" title="Permanent link">&para;</a></h2>
 <p>We will use a subset of the LC-MS/MS analysis from the <a href="http://humanfoodproject.com/americangut/">American Gut Project</a>. The samples consist of fecal samples provided by participants and the subset selected consists of participants that have high and low consumption of plants. MZmine2 was used to detect features and output a feature quantification table (CSV format) and a MS2 spectral file (MGF format). 
 The feature quantification table contains the intensity values for every aligned peak accross the samples, while the MS2 spectral file contains a single MS2 representing each aligned peak. There is a dedicated <a href="tutorials/americangutmzmine">MZmine2 tutorial</a> describing that process.</p>
-<h2 id="data-availability">Data Availability</h2>
+<h2 id="data-availability">Data Availability<a class="headerlink" href="#data-availability" title="Permanent link">&para;</a></h2>
 <p>The LC-MS/MS data can be found in the <a href="https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=de2d18fd91804785bce8c225cc94a444">MassIVE dataset MSV000082678</a>.</p>
-<h3 id="files-needed-for-tutorial">Files Needed for Tutorial</h3>
+<h3 id="files-needed-for-tutorial">Files Needed for Tutorial<a class="headerlink" href="#files-needed-for-tutorial" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1593,19 +1593,19 @@ The feature quantification table contains the intensity values for every aligned
 </tr>
 </tbody>
 </table>
-<h3 id="demo-gnps-job-of-feature-based-molecular-networking">Demo GNPS job of Feature Based Molecular Networking</h3>
+<h3 id="demo-gnps-job-of-feature-based-molecular-networking">Demo GNPS job of Feature Based Molecular Networking<a class="headerlink" href="#demo-gnps-job-of-feature-based-molecular-networking" title="Permanent link">&para;</a></h3>
 <p><a href="https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=52a390c8eb654b7fa8d61a1c7a4aaab5">Here is an example FBMN</a> job with files resulting from MZmine2 processing of a subset of the [American Gut Project] (http://humanfoodproject.com/americangut/).</p>
-<h2 id="required-software-installs">Required Software Installs</h2>
+<h2 id="required-software-installs">Required Software Installs<a class="headerlink" href="#required-software-installs" title="Permanent link">&para;</a></h2>
 <ol>
 <li>FTP Client (e.g. WinSCP, DO NOT FileZilla!) <a href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/">See instructions here</a></li>
 <li><a href="http://www.cytoscape.org/download.php">Cytocape</a> for network visualization</li>
 </ol>
-<h2 id="for-step-by-step-tutorial-on-feature-based-molecular-networking">For step-by-step tutorial on Feature Based Molecular Networking</h2>
+<h2 id="for-step-by-step-tutorial-on-feature-based-molecular-networking">For step-by-step tutorial on Feature Based Molecular Networking<a class="headerlink" href="#for-step-by-step-tutorial-on-feature-based-molecular-networking" title="Permanent link">&para;</a></h2>
 <p><strong>IMPORTANT:</strong> Note that the Feature Based Molecular Networking workflow has been slightly updated since the following videos were produced. Please refer to this page for the most recent description of <a href="../../featurebasedmolecularnetworking-with-mzmine2/">step-by-step MZmine2 processing for the FBMN workflow</a>. </p>
-<h2 id="video-tutorial-analyze-feature-based-molecular-networking-in-gnps">Video Tutorial - Analyze Feature Based Molecular Networking in GNPS</h2>
+<h2 id="video-tutorial-analyze-feature-based-molecular-networking-in-gnps">Video Tutorial - Analyze Feature Based Molecular Networking in GNPS<a class="headerlink" href="#video-tutorial-analyze-feature-based-molecular-networking-in-gnps" title="Permanent link">&para;</a></h2>
 <iframe width="800" height="500" src="https://www.youtube.com/embed/NTkQ0fS1aug"> </iframe>
 
-<h2 id="video-tutorial-quick-mzmine2-export-to-gnps-feature-based-molecular-networking">Video Tutorial - Quick MZMine2 Export to GNPS Feature Based Molecular Networking</h2>
+<h2 id="video-tutorial-quick-mzmine2-export-to-gnps-feature-based-molecular-networking">Video Tutorial - Quick MZMine2 Export to GNPS Feature Based Molecular Networking<a class="headerlink" href="#video-tutorial-quick-mzmine2-export-to-gnps-feature-based-molecular-networking" title="Permanent link">&para;</a></h2>
 <iframe width="800" height="500" src="https://www.youtube.com/embed/vFcGG7T_44E"> </iframe>
                 
                   

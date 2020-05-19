@@ -1497,12 +1497,12 @@
                   
                 
                 
-                <h1 id="msms-chooser-data-acquisition-qexactive-v10">MSMS-Chooser: Data Acquisition - QExactive (v1.0)</h1>
-<h2 id="summary">Summary</h2>
+                <h1 id="msms-chooser-data-acquisition-qexactive-v10">MSMS-Chooser: Data Acquisition - QExactive (v1.0)<a class="headerlink" href="#msms-chooser-data-acquisition-qexactive-v10" title="Permanent link">&para;</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
 <p><strong>This document details an open-source protocol for the Thermo QExactive mass spectrometer coupled to the Thermo Vanquish UHPLC</strong> used to combination with <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MSMS-CHOOSER%22%7D">MSMS-Chooser</a>, a GNPS workflow and open-source protocol to empower the community to collect MS/MS reference data and contribute to the public MS/MS reference library.</p>
 <p>1-5 μL of sample is introduced into a flow of MeOH-Water (1:1) with ~0.1% formic acid at 0.5 mL/min via injection from the autosampler. The needle is washed for 3 s prior to injection, flow rate of 10 μL/sec. Data acquisition for each injection is 0.3 minutes with the majority of the sample arriving ~0.05 - 0.1 min after injection. Data-dependant acquisition is used to collect data on the top 5 precursors at a resolution of 35,000. MS/MS data are collected using an isolation width of m/z 1.7 and stepped normalized collision energy of 20, 30, and 40. Separate positive and negative ionization mode methods were created with differences in the ionization source parameters. Further details can be found in the method files.</p>
 <p>Data acquisition takes 0.3 min followed by 0.3 - 0.4 min of needle washing and drawing of the next sample before the next sample. The total processes taking ~45 - 50 s for one injection sequence. The flow continues during the needle washing and drawing time, effectively flushing the line for ~30 s in between samples. </p>
-<h2 id="required-materials">Required Materials</h2>
+<h2 id="required-materials">Required Materials<a class="headerlink" href="#required-materials" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Vanquish UHPLC<ul>
 <li>Solvent A - water (HPLC grade) w/ ~0.1% formic acid (v/v) = 4 L of water (HPLC grade) + 4 mL of formic acid using glass syringe, mix by inverting bottle 15 times.</li>
@@ -1515,8 +1515,8 @@
 <li>MS calibration solution specific to calibration protocol</li>
 <li>MS tune and MS method files can be downloaded from <a href="https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=5e567bd3eb1e40ad975a25dac3f5bf11">MassIVE</a>.</li>
 </ol>
-<h2 id="step-by-step-instructions">Step-by-Step Instructions</h2>
-<h3 id="data-acquisition">Data Acquisition</h3>
+<h2 id="step-by-step-instructions">Step-by-Step Instructions<a class="headerlink" href="#step-by-step-instructions" title="Permanent link">&para;</a></h2>
+<h3 id="data-acquisition">Data Acquisition<a class="headerlink" href="#data-acquisition" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Create a folder on the local computer following this standard “D:\SOPGNPSChemicaltoLibrary[insert barcode]”</li>
 <li>Obtain the <strong>MSMS-Chooser sequence table</strong> and copy it to a folder on the local computer.</li>
@@ -1542,9 +1542,9 @@
 </li>
 <li>Save the sequence file and start data collection</li>
 </ol>
-<h2 id="issues-and-suggestions">Issues and Suggestions</h2>
+<h2 id="issues-and-suggestions">Issues and Suggestions<a class="headerlink" href="#issues-and-suggestions" title="Permanent link">&para;</a></h2>
 <p>Please submit any issues or suggestions via <a href="https://github.com/CCMS-UCSD/GNPS_Workflows">GitHub</a>. The use of the <a href="https://groups.google.com/forum/#!forum/molecular_networking_bug_reports">GNPS forum</a> is encouraged.</p>
-<h2 id="page-contributions">Page Contributions</h2>
+<h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h2>
 <p>Alan K. Jarmusch (UCSD)</p>
                 
                   

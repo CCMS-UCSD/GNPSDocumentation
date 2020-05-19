@@ -1627,12 +1627,12 @@
                 
                   <h1>FBMN with XCMS</h1>
                 
-                <h2 id="introduction">Introduction</h2>
+                <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>The main documentation for <strong>Feature-Based Molecular Networking</strong> (FBMN) <a href="../featurebasedmolecularnetworking/">can be accessed here</a>. See <a href="https://www.biorxiv.org/content/10.1101/812404v1">our preprint on bioaRxiv</a>.</p>
 <p>Below follows a description on how to use <strong>XCMS</strong> (ver. &gt;= 3) with the
 FBMN workflow on GNPS.</p>
-<h2 id="mass-spectrometry-processing-with-xcms">Mass spectrometry processing with XCMS</h2>
-<h3 id="citations-and-development">Citations and development</h3>
+<h2 id="mass-spectrometry-processing-with-xcms">Mass spectrometry processing with XCMS<a class="headerlink" href="#mass-spectrometry-processing-with-xcms" title="Permanent link">&para;</a></h2>
+<h3 id="citations-and-development">Citations and development<a class="headerlink" href="#citations-and-development" title="Permanent link">&para;</a></h3>
 <p>This work builds on the efforts of our many colleagues, please cite their work: </p>
 <p>Nothias, L.F. et al <a href="https://www.biorxiv.org/content/10.1101/812404v1">Feature-based Molecular Networking in the GNPS Analysis Environment</a> bioRxiv 812404 (2019).</p>
 <p>Wang, M. et al. <a href="https://doi.org/10.1038/nbt.3597">Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking</a>. Nat. Biotechnol. 34, 828–837 (2016).</p>
@@ -1643,7 +1643,7 @@ Bioinformatics, 9:504 (2008).</p>
 <p>Smith, C.A., Want, E.J., O'Maille, G., Abagyan,R., Siuzdak, G. <a href="https://pubs.acs.org/doi/10.1021/ac051437y">XCMS: Processing
 mass spectrometry data for metabolite profiling using nonlinear peak alignment, matching and identification.</a>
 Analytical Chemistry, 78, 779–787 (2006).</p>
-<h3 id="installation">Installation</h3>
+<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
 <p><strong>1</strong> - Install the latest version of XCMS3 from Bioconductor (ver. &gt;= 3.4) in R with:</p>
 <div class="highlight"><pre><span></span><code>install(&quot;BiocManager&quot;)
 BiocManager::install(&quot;xcms&quot;)
@@ -1652,8 +1652,8 @@ BiocManager::install(&quot;xcms&quot;)
 <p>Alternatively, see the [xcms Bioconductor package] (https://www.bioconductor.org/packages/release/bioc/html/xcms.html).</p>
 <p><strong>2</strong> - Retrieve the custom utility function from the <em>XCMS-GNPS-TOOLS</em> GitHub repository
 <a href="https://github.com/jorainer/xcms-gnps-tools">https://github.com/jorainer/xcms-gnps-tools</a>.</p>
-<h3 id="mass-spectrometry-data-processing-with-xcms">Mass Spectrometry Data Processing with XCMS.</h3>
-<h4 id="1-introduction">1. Introduction</h4>
+<h3 id="mass-spectrometry-data-processing-with-xcms">Mass Spectrometry Data Processing with XCMS.<a class="headerlink" href="#mass-spectrometry-data-processing-with-xcms" title="Permanent link">&para;</a></h3>
+<h4 id="1-introduction">1. Introduction<a class="headerlink" href="#1-introduction" title="Permanent link">&para;</a></h4>
 <p>Below we are presenting the key steps required to process with XCMS
 non-targeted LC-MS/MS data collected using data dependent acquisition. For more information on XCMS, consult these resources:</p>
 <ul>
@@ -1672,11 +1672,11 @@ notebook</em> and <em>RCommander script</em> on
 the acquisition parameters, and the samples investigated. The following
 documentation serves as a basic guideline for using XCMS with the Feature-Based
 Molecular Networking workflow.</p>
-<h4 id="2-convert-your-data">2. Convert your Data</h4>
+<h4 id="2-convert-your-data">2. Convert your Data<a class="headerlink" href="#2-convert-your-data" title="Permanent link">&para;</a></h4>
 <p>XCMS accepts different input formats. Note that we recommand to convert
 your files to the mzML format before using XCMS for processing. <a href="../fileconversion/">See the
 documentation here</a>. This will simplify the subsquent use of other mass spectrometry tools and data deposition on a public repository like <a href="../datasets/">MassIVE</a> or <a href="https://www.ebi.ac.uk/metabolights/">MetaboLights</a>.</p>
-<h4 id="3-process-with-xcms">3. Process with XCMS</h4>
+<h4 id="3-process-with-xcms">3. Process with XCMS<a class="headerlink" href="#3-process-with-xcms" title="Permanent link">&para;</a></h4>
 <p>These are typical steps used for the processing of non-targeted LC-MS/MS data with XCMS:</p>
 <ol>
 <li>Import data (<code>readMSData</code>)</li>
@@ -1700,7 +1700,7 @@ documentation here</a>. This will simplify the subsquent use of other mass spect
 </ul>
 </li>
 </ol>
-<h3 id="perform-fbmn-on-gnps">Perform FBMN on GNPS</h3>
+<h3 id="perform-fbmn-on-gnps">Perform FBMN on GNPS<a class="headerlink" href="#perform-fbmn-on-gnps" title="Permanent link">&para;</a></h3>
 <p>The files exported from XCMS3 can be uploaded to the GNPS web-platform and a
 Feature-Based Molecular Networking job can be launched.</p>
 <p>FBMN with XCMS3 can be performed either using the [Superquick FBMN start page] (http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking) or <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">the standard interface of the FBMN workflow</a> (you need to be logged in GNPS first).</p>
@@ -1709,7 +1709,7 @@ be obtained at <a href="../featurebasedmolecularnetworking/">this documentation 
 <p>Note that you can upload a metadata table with your job. <a href="../metadata/">See
 documentation</a>.</p>
 <p><img alt="img" src="../img/featurebasedmolecularnetworking/xcms_quickstart.png" /></p>
-<h4 id="representative-results-files-and-job">Representative results files and job</h4>
+<h4 id="representative-results-files-and-job">Representative results files and job<a class="headerlink" href="#representative-results-files-and-job" title="Permanent link">&para;</a></h4>
 <p><strong>Option A</strong> - With a <em>feature quantification table</em> and a <em>MS/MS spectral summary file</em>:</p>
 <ol>
 <li>The <strong>feature quantification table</strong> (.TXT file) - <a href="../tutorials/AG_tutorial_files/XCMS3-GNPS_AG_test_featuretable.txt">Download here</a></li>
@@ -1724,12 +1724,12 @@ documentation</a>.</p>
 <li>The corresponding <strong>mzML</strong> file(s) - <a href="tutorials/AG_tutorial_files/TBProvided">Download here</a></li>
 </ol>
 <p>Here is an example <a href="TBProv">FBMN job with XCMS using a mzTab-M file and mzML files</a> from a subset of the American Gut Project.</p>
-<h2 id="tutorials">Tutorials</h2>
+<h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
 <p>See our FBMN tutorial with XCMS using a subset of the American Gut Project samples on this repository <a href="https://github.com/DorresteinLaboratory/XCMS3_FeatureBasedMN/">DorresteinLaboratory/XCMS3_FeatureBasedMN/</a>.</p>
-<h3 id="page-contributors">Page contributors</h3>
+<h3 id="page-contributors">Page contributors<a class="headerlink" href="#page-contributors" title="Permanent link">&para;</a></h3>
 <p>Johannes Rainer (Eurac Research), Madeleine Ernst (UCSD), Ricardo da Silva
 (UCSD), Michael Witting (Helmholtz Zentrum Munich), Louis Felix Nothias (UCSD) and Ming Wang (UCDS). </p>
-<h3 id="join-the-gnps-community">Join the GNPS Community !</h3>
+<h3 id="join-the-gnps-community">Join the GNPS Community !<a class="headerlink" href="#join-the-gnps-community" title="Permanent link">&para;</a></h3>
 <ul>
 <li>For feature request, or to report bugs, please open an "Issue" on the <a href="https://github.com/CCMS-UCSD/GNPS_Workflows"><em>CCMS-UCSD/GNPS_Workflows</em> GitHub repository</a>.</li>
 <li>To contribute to the GNPS documentation, please use GitHub by forking the <a href="https://github.com/CCMS-UCSD/GNPSDocumentation"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request" with the changes.</li>

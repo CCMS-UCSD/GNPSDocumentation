@@ -1613,26 +1613,26 @@
                 
                   <h1>FBMN with MetaboScape</h1>
                 
-                <h2 id="introduction">Introduction</h2>
+                <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>The main documentation for <strong>Feature-Based Molecular Networking</strong> (FBMN) <a href="../featurebasedmolecularnetworking/">can be accessed here</a>. See <a href="https://www.biorxiv.org/content/10.1101/812404v1">our preprint on bioaRxiv</a>.</p>
 <p>Below we describe how to use <strong>MetaboScape</strong> with the FBMN workflow on GNPS.</p>
-<h2 id="citations-and-development">Citations and development</h2>
+<h2 id="citations-and-development">Citations and development<a class="headerlink" href="#citations-and-development" title="Permanent link">&para;</a></h2>
 <p>This work builds on the efforts of our many colleagues, please cite their work:</p>
 <p>Nothias, L.F. et al <a href="https://www.biorxiv.org/content/10.1101/812404v1">Feature-based Molecular Networking in the GNPS Analysis Environment</a> bioRxiv 812404 (2019).</p>
 <p>Wang, M. et al. <a href="https://doi.org/10.1038/nbt.3597">Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking</a>. Nat. Biotechnol. 34, 828–837 (2016).</p>
-<h2 id="using-metaboscape-and-fbmn">Using MetaboScape and FBMN</h2>
+<h2 id="using-metaboscape-and-fbmn">Using MetaboScape and FBMN<a class="headerlink" href="#using-metaboscape-and-fbmn" title="Permanent link">&para;</a></h2>
 <p>MetaboScape can be used to process LC-MS/MS Bruker Daltonics data files (i.e. *.d files). After the processing with MetaboScape, the output files can be used to run the Feature-Based Molecular Networking workflow on GNPS either using the [Superquick FBMN start page] (http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking) or <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">the standard interface of the FBMN workflow</a> (you need to be logged in to GNPS first).</p>
 <p><strong>Requirements:</strong> 
 Install <a href="https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html">MetaboScape</a> (at least version 2.0) and get a valid license. </p>
-<h3 id="a-perform-feature-detection-with-profile-analysis">A. Perform Feature Detection with Profile Analysis</h3>
-<h4 id="nontargeted-lc-msms">Nontargeted LC-MS/MS</h4>
+<h3 id="a-perform-feature-detection-with-profile-analysis">A. Perform Feature Detection with Profile Analysis<a class="headerlink" href="#a-perform-feature-detection-with-profile-analysis" title="Permanent link">&para;</a></h3>
+<h4 id="nontargeted-lc-msms">Nontargeted LC-MS/MS<a class="headerlink" href="#nontargeted-lc-msms" title="Permanent link">&para;</a></h4>
 <ol>
 <li>Open <em>Profile Analysis</em> and perform feature detection on your data following <em>Profile Analysis</em> documentation to generate an ion feature bucket table.</li>
 <li>Define groups and/or attributes to enhance downstream data analysis (see <strong>3.3.4</strong> in the <strong>MetaboScape 2.0 tutorial documentation</strong>). The groups and/or attributes defined in <em>Profile Analysis</em> will be visualized in the molecular networks using pie chart diagram.</li>
 <li><strong>IMPORTANT</strong>: Create one common group named 'SAMPLE' for all the samples. It will be used for molecular networking visualization.</li>
 <li>Export the bucket table to MetaboScape (see <strong>3.1</strong> in the <strong>MetaboScape 2.0 tutorial documentation</strong>).</li>
 </ol>
-<h3 id="b-use-metaboscape-to-annotate-msms-spectra">B. Use MetaboScape to Annotate MS/MS spectra</h3>
+<h3 id="b-use-metaboscape-to-annotate-msms-spectra">B. Use MetaboScape to Annotate MS/MS spectra<a class="headerlink" href="#b-use-metaboscape-to-annotate-msms-spectra" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Open MetaboScape.</li>
 <li>Open the project in MetaboScape (see <strong>3.7</strong> in <strong>MetaboScape 2.0 tutorial documentation</strong>).</li>
@@ -1654,20 +1654,20 @@ Install <a href="https://www.bruker.com/products/mass-spectrometry-and-separatio
 <ol>
 <li>The <strong>MS/MS spectral summary</strong> (.MGF file) and the <strong>feature quantification table</strong> (.CSV file) will be used to perform a FBMN job on GNPS (see below).</li>
 </ol>
-<h4 id="processing-ims-data-pasef">Processing IMS Data (PASEF)</h4>
+<h4 id="processing-ims-data-pasef">Processing IMS Data (PASEF)<a class="headerlink" href="#processing-ims-data-pasef" title="Permanent link">&para;</a></h4>
 <p>The FBMN supports Ion Mobility Spectrometry (IMS) Data acquired in data-dependent acquisition mode using Parallel Accumulation-Serial Fragmentation (PASEF) and processed with MetaboScape (ver. 5.0). Process the IMS data following the MetaboScape documentation and do <em>Export to GNPS format</em> as indicated above. The cross collission section values and other annotations can be subsequently mapped in Cytoscape.</p>
 <p>See a representative <a href="https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=0d89db67b0974939a91cb7d5bfe87072">FBMN job</a> made from PASEF data (timsTOF) processed with MetaboScape (ver. 5.0). The Bruker files are available on the following MassIVE deposition (<a href="https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=36fea50f5e7b4a049d336f28c5884ff9&amp;view=advanced_view">MSV000084402</a>)</p>
-<h3 id="c-perform-fbmn-job-on-gnps">C. Perform FBMN Job on GNPS</h3>
+<h3 id="c-perform-fbmn-job-on-gnps">C. Perform FBMN Job on GNPS<a class="headerlink" href="#c-perform-fbmn-job-on-gnps" title="Permanent link">&para;</a></h3>
 <p>Go to GNPS and perform a FBMN job. <a href="../featurebasedmolecularnetworking/">Refer to that documentation</a>. For metadata format supported, see <a href="../metadata/">this page</a></p>
 <p><img alt="img" src="../img/metaboscapeexportforgnps/quickstart_metaboscape.png" /></p>
-<h3 id="d-map-metaboscape-annotation-in-cytoscape">D. Map MetaboScape Annotation in Cytoscape</h3>
+<h3 id="d-map-metaboscape-annotation-in-cytoscape">D. Map MetaboScape Annotation in Cytoscape<a class="headerlink" href="#d-map-metaboscape-annotation-in-cytoscape" title="Permanent link">&para;</a></h3>
 <p>See the <a href="../tutorials/coffee-tutorial-metaboscape/">step-by-step tutorial using MetaboScape 2.0 and the FBMN</a> for more details.</p>
-<h2 id="step-by-step-tutorial">Step-by-Step Tutorial</h2>
+<h2 id="step-by-step-tutorial">Step-by-Step Tutorial<a class="headerlink" href="#step-by-step-tutorial" title="Permanent link">&para;</a></h2>
 <p>See the <a href="../tutorials/coffee-tutorial-metaboscape/">step-by-step tutorial using MetaboScape 2.0 and the FBMN</a> for the Coffee tutorial (part of the <strong>MetaboScape 2.0 documentation</strong>).</p>
 <p><img alt="img" src="../img/metaboscapeexportforgnps/Cyto13.PNG" /></p>
-<h3 id="page-contributors">Page contributors</h3>
+<h3 id="page-contributors">Page contributors<a class="headerlink" href="#page-contributors" title="Permanent link">&para;</a></h3>
 <p>Louis Felix Nothias (UCSD), Tam Dang (Tech. Univ. Berlin), Kevin Ngoc (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).</p>
-<h3 id="join-the-gnps-community">Join the GNPS Community !</h3>
+<h3 id="join-the-gnps-community">Join the GNPS Community !<a class="headerlink" href="#join-the-gnps-community" title="Permanent link">&para;</a></h3>
 <ul>
 <li>For feature request, or to report bugs, please open an "Issue" on the <a href="https://github.com/CCMS-UCSD/GNPS_Workflows"><em>CCMS-UCSD/GNPS_Workflows</em> GitHub repository</a>.</li>
 <li>To contribute to the GNPS documentation, please use GitHub by forking the <a href="https://github.com/CCMS-UCSD/GNPSDocumentation"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request" with the changes.</li>

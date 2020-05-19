@@ -1493,8 +1493,8 @@
                   <h1>MSHUB Kovats</h1>
                 
                 <p>In this tutorial you will be guided into running the MSHUB deconvolution integrating GC Library Search workflow on GNPS.</p>
-<h2 id="pipeline">Pipeline</h2>
-<h3 id="to-create-and-launch-gnps-feature-detection-job">To create and launch GNPS feature detection job:</h3>
+<h2 id="pipeline">Pipeline<a class="headerlink" href="#pipeline" title="Permanent link">&para;</a></h2>
+<h3 id="to-create-and-launch-gnps-feature-detection-job">To create and launch GNPS feature detection job:<a class="headerlink" href="#to-create-and-launch-gnps-feature-detection-job" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Log in to GNPS (gnps.ucsd.edu)</li>
 <li>Upload data to MassIVE (massive.ucsd.edu) or import an existing dataset. All of the data must be collected using the same GC protocol.</li>
@@ -1502,15 +1502,15 @@
 <li>Select the files that need to be processed and click “Submit” (no explicit settings need to be entered as MSHub determines optimal settings internally without user input).</li>
 <li>When the job has completed, the feature table and .mgf file for all detected features could be downloaded by clicking “[ all_features_table ]” and “[Download Quant Table]”.</li>
 </ol>
-<h3 id="to-create-and-launch-gnps-library-search-job">To create and launch GNPS library search job:</h3>
+<h3 id="to-create-and-launch-gnps-library-search-job">To create and launch GNPS library search job:<a class="headerlink" href="#to-create-and-launch-gnps-library-search-job" title="Permanent link">&para;</a></h3>
 <ol>
 <li>When feature detection job is completed, the link “launch library search” will become available. Clicking this link will launch library search job.
 Alternatively, the .mgf file of all features downloaded from the feature detection workflow could be uploaded in the same way as the original data. The file can then be selected by clicking “Spectrum Files” under “Search Options” tab and selecting the uploaded .mgf file. Once files have been selected, the popup window can be closed by clicking on “Finish Selection”.
 NOTE: The default parameters recommended for obtaining good results have been determined and prepopulated. However, users are encouraged to adjust the settings as appropriate for their analysis.</li>
 <li>After the appropriate settings are entered, the job can be launched by clicking Submit”.</li>
 </ol>
-<h2 id="parameter-explanation">Parameter Explanation</h2>
-<h3 id="advanced-network-options">Advanced Network Options</h3>
+<h2 id="parameter-explanation">Parameter Explanation<a class="headerlink" href="#parameter-explanation" title="Permanent link">&para;</a></h2>
+<h3 id="advanced-network-options">Advanced Network Options<a class="headerlink" href="#advanced-network-options" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1662,32 +1662,32 @@ NOTE: The default parameters recommended for obtaining good results have been de
 </tr>
 </tbody>
 </table>
-<h2 id="assessing-the-results-of-library-search">Assessing the results of library search</h2>
+<h2 id="assessing-the-results-of-library-search">Assessing the results of library search<a class="headerlink" href="#assessing-the-results-of-library-search" title="Permanent link">&para;</a></h2>
 <p>Once the job has completed, the putative matches to all selected libraries could be viewed under one of the links: “View All Spectra DB”; “View All Compounds”; “View Kovats Calculation Result”.
 The possible annotations could be sorted by their cosine value and/or RI error rate to aid in selecting best annotation using researcher’s judgement.
 In addition, the results could be downloaded as a table for all of the matches (“Download Not Filtered Computed Kovats Index Files”) or matches filtered by the Kovats RI window set when launching the job (“Download Filtered Computed Kovats Index Files”).
 If clicking on the “View Kovats Calculation Result” results in an error: “There was an error retrieving the result data for block "main" of workflow type "MOLECULAR-LIBRARYSEARCH-GC"”, this is indication that the dataset does not contain sufficient number of reference points for polynomial fitting to generate satisfactory regression (it does not pass internal quality check). In this case submitting the information for RI reference markers is necessary to generate Kovats estimates for the submitted data.
 The results can be visualized as a network (see “Molecular Networking” and the “Biological Case Study” sections below) by downloading and importing the GraphML file “Download GraphML”. The detailed</p>
-<h3 id="view-all-spectra-db">View All Spectra DB</h3>
+<h3 id="view-all-spectra-db">View All Spectra DB<a class="headerlink" href="#view-all-spectra-db" title="Permanent link">&para;</a></h3>
 <p>This option will display all of the top matches for each feature and relevant information including retention time. The “Scan” field corresponds to the feature number in the .mgf file generated at the feature detection step and corresponds to the number listed in the feature table. Clicking on the spectrum icon at the left side of the screen would show mirror plot that could be investigated.</p>
-<h3 id="view-all-compounds">View All Compounds</h3>
+<h3 id="view-all-compounds">View All Compounds<a class="headerlink" href="#view-all-compounds" title="Permanent link">&para;</a></h3>
 <p>This option will display only the cop hits for each feature of the top match.</p>
-<h3 id="view-kovats-calculation-result">“View Kovats Calculation Result”</h3>
+<h3 id="view-kovats-calculation-result">“View Kovats Calculation Result”<a class="headerlink" href="#view-kovats-calculation-result" title="Permanent link">&para;</a></h3>
 <p>This option will display all of the top matches for each feature and in addition will list the information for the Kovats RI calculation or assignment. This information includes:</p>
-<h3 id="kovats_index_lib_record">Kovats_Index_Lib_Record</h3>
+<h3 id="kovats_index_lib_record">Kovats_Index_Lib_Record<a class="headerlink" href="#kovats_index_lib_record" title="Permanent link">&para;</a></h3>
 <p>This is the library value of Kovats RI for the match. In no record available, “None” is listed.</p>
-<h3 id="kovats_index_calculated">Kovats_Index_calculated</h3>
+<h3 id="kovats_index_calculated">Kovats_Index_calculated<a class="headerlink" href="#kovats_index_calculated" title="Permanent link">&para;</a></h3>
 <p>This is the value of calculated or assigned value of the RI.</p>
-<h3 id="kovats_index_error">Kovats_Index_Error</h3>
+<h3 id="kovats_index_error">Kovats_Index_Error<a class="headerlink" href="#kovats_index_error" title="Permanent link">&para;</a></h3>
 <p>This is the error between the calculated/assigned RI value and the library entry. If no library value was available, “None” is listed.</p>
-<h2 id="capturing-information-by-adding-reference-spectra-from-your-data">Capturing information by adding reference spectra from your data.</h2>
+<h2 id="capturing-information-by-adding-reference-spectra-from-your-data">Capturing information by adding reference spectra from your data.<a class="headerlink" href="#capturing-information-by-adding-reference-spectra-from-your-data" title="Permanent link">&para;</a></h2>
 <p>High confidence spectra from experimental data or pure standards could be added as a reference spectrum to GNPS for future reference.
 Single spectrum submission
 If the user wishes to upload &gt;50 reference spectra to GNPS, a batch upload should be used to as detailed in the online help documentation. The compliance of the file format can be verified using online tool.</p>
-<h2 id="data-sharing-and-cloning-a-job">Data Sharing and Cloning a Job</h2>
+<h2 id="data-sharing-and-cloning-a-job">Data Sharing and Cloning a Job<a class="headerlink" href="#data-sharing-and-cloning-a-job" title="Permanent link">&para;</a></h2>
 <p>The analysis conducted on GNPS as well as the deposited raw data could be shared as a hyperlink to the GNPS job(s) and the MassIVE accession number, correspondingly. GNPS stores data inputs and setting used for the analyses of the data, so the analysis could be shared and reproduced.
 If the same analysis needs to be repeated, it is possible to clone the job by clicking ‘clone’ on the job status page.  Cloning a job allows users to view all parameters and files that were used and rerun the job (feature detection or library search) with the same (or adjusted) parameters and files. Note that if data were imported from private user workspace and not from within MassIVE, other users will not have access to the data and consequently will not be able to rerun or reproduce the GNPS job.  </p>
-<h2 id="troubleshooting">Troubleshooting</h2>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1710,7 +1710,7 @@ If the same analysis needs to be repeated, it is possible to clone the job by cl
 </tr>
 </tbody>
 </table>
-<h2 id="example-files-for-gc-kovats-workflow">Example Files for GC-KOVATS workflow</h2>
+<h2 id="example-files-for-gc-kovats-workflow">Example Files for GC-KOVATS workflow<a class="headerlink" href="#example-files-for-gc-kovats-workflow" title="Permanent link">&para;</a></h2>
 <p><a href="https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=01b84979f35944f3a23505d0125278e5">workflow</a>  <br />
 <a href="https://www.dropbox.com/sh/mudehag9vidpgng/AAA7TByw65ncQSjtB43i5t4Ea?dl=0">raw data format</a> <br />
 <a href="https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=01b84979f35944f3a23505d0125278e5&amp;view=view_kovats">result</a> <br /></p>

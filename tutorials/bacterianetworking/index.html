@@ -1574,9 +1574,9 @@
                   <h1>Molecular Networking - Analog Discovery in Microbial Extracts</h1>
                 
                 <p>In this tutorial, we highlight how GNPS and molecular networking can help users uncover unique molecules being produced a new strain of bacteria.</p>
-<h2 id="experimental-setup">Experimental Setup</h2>
+<h2 id="experimental-setup">Experimental Setup<a class="headerlink" href="#experimental-setup" title="Permanent link">&para;</a></h2>
 <p>Microbial extracts from Streptomyces roseosporus and Streptomyces sp. DSM5940 were analyzed on an LTQ FT mass spectrometer. The mass spectrometer was operated in data dependent positive ion mode; automatically switching between full scan high resolution FT MS and low resolution LTQ MS/MS acquisitions. Full scan MS spectra were acquired in the FT and the top six most intense ions in a particular scan were fragmented using collision induced dissociation (CID) at a constant collision energy of 35eV, an activation Q of 0.25, and an activation time of 50 to 80 ms.</p>
-<h2 id="data-availability">Data Availability</h2>
+<h2 id="data-availability">Data Availability<a class="headerlink" href="#data-availability" title="Permanent link">&para;</a></h2>
 <p>MS/MS data can be found in the <a href="https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=d74ca92d9dec4e2883f28506c670e3ca">MassIVE dataset MSV000079204</a>.</p>
 <p>There are a total of four mzXML mass spectrometry files that have already been converted for analysis.</p>
 <table>
@@ -1605,16 +1605,16 @@
 </tr>
 </tbody>
 </table>
-<h2 id="running-molecular-networking">Running Molecular Networking</h2>
+<h2 id="running-molecular-networking">Running Molecular Networking<a class="headerlink" href="#running-molecular-networking" title="Permanent link">&para;</a></h2>
 <p>Select <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D">molecular networking analysis</a>.</p>
-<h3 id="selecting-files">Selecting Files</h3>
+<h3 id="selecting-files">Selecting Files<a class="headerlink" href="#selecting-files" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Click "Select Input Files" - <a href="../../networking/#selecting-files-to-analyze">Help</a></li>
 <li>Import MSV000079204 to analyze - <a href="../../networking/#selecting-files-to-analyze">Help</a></li>
 <li>Select S. roseosporus files into Group G1 and Streptomyces sp. DSM5940 into Group G2</li>
 </ol>
 <p><img alt="img" src="../../img/tutorials/strep_selection.png" /></p>
-<h3 id="updating-parameters">Updating parameters</h3>
+<h3 id="updating-parameters">Updating parameters<a class="headerlink" href="#updating-parameters" title="Permanent link">&para;</a></h3>
 <p>These parameters were selected to be appropriate for a small dataset and a little on the loose side. The following are the updates that deviate from the default.</p>
 <ol>
 <li>Advanced Network Options - Min Pairs Cos: 0.65</li>
@@ -1623,15 +1623,15 @@
 <li>Advanced Filtering Options - Filter peaks in 50Da Window: Don't Filter</li>
 <li>Advanced Filtering Options - Filter Library: Don't Filter</li>
 </ol>
-<h3 id="pre-filled-example">Pre-filled example</h3>
+<h3 id="pre-filled-example">Pre-filled example<a class="headerlink" href="#pre-filled-example" title="Permanent link">&para;</a></h3>
 <p>If you want to see a pre-filled example, see <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?task=24b62946372c4044b49fceb662856e41">here</a>.</p>
-<h2 id="analyzing-results-in-browser">Analyzing Results in Browser</h2>
+<h2 id="analyzing-results-in-browser">Analyzing Results in Browser<a class="headerlink" href="#analyzing-results-in-browser" title="Permanent link">&para;</a></h2>
 <p>This is an example <a href="https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=24b62946372c4044b49fceb662856e41">completed molecular networking analysis</a>.</p>
-<h3 id="exploring-identified-compounds-in-data">Exploring Identified Compounds in Data</h3>
+<h3 id="exploring-identified-compounds-in-data">Exploring Identified Compounds in Data<a class="headerlink" href="#exploring-identified-compounds-in-data" title="Permanent link">&para;</a></h3>
 <p>Click the "View All Library Hits".</p>
 <p>This will list all library compounds that were matched. Here we can see many different antibiotics, e.g. Stenothricin, Arylomycin, Daptomycin, and Mureidomycin.</p>
 <p><img alt="img" src="../../img/tutorials/identifications.png" /></p>
-<h3 id="exploring-molecular-networks-including-stenothricin">Exploring Molecular Networks including Stenothricin</h3>
+<h3 id="exploring-molecular-networks-including-stenothricin">Exploring Molecular Networks including Stenothricin<a class="headerlink" href="#exploring-molecular-networks-including-stenothricin" title="Permanent link">&para;</a></h3>
 <p>Click the "View All Clusters With IDs". This brings you to a list of all MS/MS detected in your samples. We can filter on "Stenothricin" in the LibraryID column. Click on "View Network" for any of the Stenothricin compounds:</p>
 <p><img alt="img" src="../../img/tutorials/viewnetwork.png" /></p>
 <p>Here we can see the molecular network of related compounds to Stenothricin</p>
@@ -1646,14 +1646,14 @@
 <p><img alt="img" src="../../img/tutorials/network4.png" /></p>
 <p>We can see the Stenothricin-GNPS 2 is a molecule which we discovered using molecular networking. We can further interrogate the similarity at the fragmentation level by clicking the edge between the two nodes to visualize the MS/MS spectra and align the peaks</p>
 <p><img alt="img" src="../../img/tutorials/network5.png" /></p>
-<h2 id="analyzing-global-network-with-cytoscape">Analyzing Global Network with Cytoscape</h2>
+<h2 id="analyzing-global-network-with-cytoscape">Analyzing Global Network with Cytoscape<a class="headerlink" href="#analyzing-global-network-with-cytoscape" title="Permanent link">&para;</a></h2>
 <p>Click the "Direct Cytoscape Preview/Download" to get a preformatted cytoscape file</p>
 <p><img alt="img" src="../../img/tutorials/cytoscape1.png" /></p>
 <p>In this preview you can even see from a high level the red and blue molecules that represent the G1 (roseosporus) and G2 (DSM5940) respectively. Download the Cytoscape file and view in cytoscape to dig further!</p>
 <p>Open network in Cytoscape (<a href="../../cytoscape/">Help</a>) to look at the entire network. Each molecule (node) has the pie charts already drawn with red (G1 - Rosesporus) and blue (G2 - DSM5940).</p>
 <p><img alt="img" src="../../img/tutorials/cytoscape3.png" /></p>
 <p>Good Luck!</p>
-<h2 id="homework">Homework</h2>
+<h2 id="homework">Homework<a class="headerlink" href="#homework" title="Permanent link">&para;</a></h2>
 <p>Look for putative analogs of other antibiotics such as Arylomycin and Daptomycin.</p>
                 
                   

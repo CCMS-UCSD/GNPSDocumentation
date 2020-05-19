@@ -1483,10 +1483,10 @@
                   
                 
                 
-                <h1 id="metadata">Metadata</h1>
-<h2 id="summary">Summary</h2>
+                <h1 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link">&para;</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
 <p>The metadata file used in GNPS describes the properties of a file (<em>e.g.</em> sample type, year of analysis, and collection method). Metadata adhering to the accepted formatting for each tool enhances data analysis and visualization options. We strongly encourage you to prepare metadata files in advance and <a href="https://mwang87.github.io/ReDU-MS2-Documentation/HowtoContribute/">upload</a> to the supplementary file folder in the corresponding MassIVE dataset.</p>
-<h2 id="format">Format</h2>
+<h2 id="format">Format<a class="headerlink" href="#format" title="Permanent link">&para;</a></h2>
 <p>The recommended starting point is the <a href="https://docs.google.com/spreadsheets/d/1v71bnUd8fiXX51zuZIUAvYETWmpwFQj-M3mu4CNsHBU/edit?usp=sharing">ReDU Sample Information Template</a> (additional documentation can be found <a href="https://mwang87.github.io/ReDU-MS2-Documentation/HowtoContribute/">here</a>). Users can add an unlimited amount of additional columns to the ReDU Sample Information Template. There are specific instructions on required columns and formatting detailed for GNPS tools below.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1522,7 +1522,7 @@
 <p class="admonition-title">Danger</p>
 <p>Although it is possible to use the legacy group mapping and attribute mapping file, we strongly advise against using        this method.</p>
 </div>
-<h2 id="requirements-specific-to-qiime2">Requirements Specific to Qiime2</h2>
+<h2 id="requirements-specific-to-qiime2">Requirements Specific to Qiime2<a class="headerlink" href="#requirements-specific-to-qiime2" title="Permanent link">&para;</a></h2>
 <p>GNPS communicates with Qiime2. PCoA visualized using EMPeror and Qiime outputs (.qza/.qzv), including a BIOM formated output, can be generated. Microbe-metabolite interactions can also be studied with <a href="https://www.nature.com/articles/s41592-019-0616-3">MMVEC</a>. GNPS will parse any extra column in the metadata file and output them in the Qiime2 supported files (BIOM/qza files). Note that by default the mass spectrometry filename will be used as sample name for Qiime2 files. Alternatively, it is possible to specify an additional metada column called "sample_name" that will be used instead as sample name in Qiime2, to enable joint mass spectrometry - metabolomics analysis such as MMVEC.</p>
 <ul>
 <li>Save the file (must be tab-delimited text file)</li>
@@ -1530,7 +1530,7 @@
 <li>Users must select the metadata file and place it in the <strong>"Metadata File"</strong> folder</li>
 <li><strong>Optional</strong> Add an extra column called "sample_name" to the metadata file using a text editor. The sample name will replaced the mass spectrometry filename in the Qiime2 output. For joint mass spectrometry - sequencing analysis with MMVEC, provide the sequencing sample name as indicated in the qiime2 file used (BIOM/qza file).</li>
 </ul>
-<h2 id="requirements-specific-to-qiita">Requirements Specific to Qiita</h2>
+<h2 id="requirements-specific-to-qiita">Requirements Specific to Qiita<a class="headerlink" href="#requirements-specific-to-qiita" title="Permanent link">&para;</a></h2>
 <p>GNPS communicates with Qiita. Specifically, you can use the output of GNPS to add metabolomics data into an existing Qiita dataset. This is handled through the Biom table output as a qiime2 qza artifact. The key feature is renaming the mass spectrometry file into a sample identifier so that the identifiers are concordant. </p>
 <div class="admonition info">
 <p class="admonition-title">A Qiita ID with corresponding information must first be created.</p>
@@ -1546,7 +1546,7 @@
 <li>Users must select the metadata file and place it in the <strong>"Metadata File"</strong> folder</li>
 </ul>
 <p>If performing additional analysis in Qiime using the .qza, it is required to add a row indicating the type of variable.</p>
-<h2 id="requirements-specific-to-ili">Requirements Specific to 'ili</h2>
+<h2 id="requirements-specific-to-ili">Requirements Specific to 'ili<a class="headerlink" href="#requirements-specific-to-ili" title="Permanent link">&para;</a></h2>
 <p>The metadata can also be used to specify spatial coordinates for direct visualization of the data in <a href="https://ili.embl.de/">'ili toolbox</a>. It creates really cool plots like this:
 <img alt="ili_example" src="../img/networking/ili_example.png" /></p>
 <div class="admonition info">
@@ -1567,7 +1567,7 @@
 <li>Users must select the metadata file and place it in the <strong>"Metadata File"</strong> folder</li>
 <li>Users must upload the corresponding .STL file and place it in the <strong>"STL Model for ili"</strong> folder</li>
 </ul>
-<h2 id="page-contributions">Page Contributions</h2>
+<h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h2>
 <p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (44.58%), <a href='mailto:41308046+alan-jarmusch@users.noreply.github.com'>alan-jarmusch</a> (42.17%), <a href='mailto:56978223+emgentry@users.noreply.github.com'>emgentry</a> (13.25%)</span></p>
                 
                   

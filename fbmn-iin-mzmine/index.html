@@ -1619,20 +1619,20 @@
                   
                 
                 
-                <h1 id="iin-with-mzmine">IIN with MZmine</h1>
-<h2 id="introduction">Introduction</h2>
+                <h1 id="iin-with-mzmine">IIN with MZmine<a class="headerlink" href="#iin-with-mzmine" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>Ion Identity Network (IIN) is a computational method based on LC-MS peak shape correlation analysis that allows to correlate different ions, including adducts, multimers and in-source fragmentation, that can be formed from the same molecule during the ESI ionization. This is an advanced option one might choose while processing data for <a href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/">Feature Based Molecular Network (FBMN)</a>. The supported tools for IIN are: MZmine, XCMS, and MS-DIAL.</p>
 <p>You can find more information about IIN in this <a href="https://www.youtube.com/playlist?list=PL4L2Xw5k8ITyxSyBdrcv70LDKsP8QNuyN">playlist</a>.</p>
-<h2 id="development-and-installation">Development and Installation</h2>
+<h2 id="development-and-installation">Development and Installation<a class="headerlink" href="#development-and-installation" title="Permanent link">&para;</a></h2>
 <p>For Ion Identity Network with MZmine, download the MZmine software (MZmine-2.37.corr17.7_kai_merge2 version) available <a href="https://github.com/robinschmid/mzmine2/releases">here</a>.</p>
-<h2 id="data-processing-with-mzmine-for-fbmn-and-iin">Data Processing with MZmine for FBMN and IIN</h2>
+<h2 id="data-processing-with-mzmine-for-fbmn-and-iin">Data Processing with MZmine for FBMN and IIN<a class="headerlink" href="#data-processing-with-mzmine-for-fbmn-and-iin" title="Permanent link">&para;</a></h2>
 <p>The sequence of steps for data processing in MZmine are mostly shared with the <a href="../featurebasedmolecularnetworking-with-mzmine2/">data processing steps with MZmine for FBMN</a> (from step 1. data import, to 7. gap filling / 8. normalization), however, before exporting to GNPS, some steps for IIN should be included to obtain edge annotations. The scheme below shows the steps involved in the IIN workflow with MZmine.</p>
 <p><img alt="IIN_processing_scheme" src="../img/iin/IIN_Scheme_1.png" /></p>
-<h3 id="processing-steps-for-iin-with-mzmine">Processing steps for IIN with MZmine</h3>
-<h4 id="start-the-process-with-fbmn-steps">Start the process with FBMN steps</h4>
+<h3 id="processing-steps-for-iin-with-mzmine">Processing steps for IIN with MZmine<a class="headerlink" href="#processing-steps-for-iin-with-mzmine" title="Permanent link">&para;</a></h3>
+<h4 id="start-the-process-with-fbmn-steps">Start the process with FBMN steps<a class="headerlink" href="#start-the-process-with-fbmn-steps" title="Permanent link">&para;</a></h4>
 <p>Process you data similarly to steps 1 to 7/8 of the <a href="../featurebasedmolecularnetworking-with-mzmine2/">FBMN workflow</a>.</p>
-<h4 id="perform-iin-specific-steps">Perform IIN specific steps</h4>
-<h5 id="step-9-metacorrelate">Step 9 - metaCorrelate</h5>
+<h4 id="perform-iin-specific-steps">Perform IIN specific steps<a class="headerlink" href="#perform-iin-specific-steps" title="Permanent link">&para;</a></h4>
+<h5 id="step-9-metacorrelate">Step 9 - metaCorrelate<a class="headerlink" href="#step-9-metacorrelate" title="Permanent link">&para;</a></h5>
 <p>Once the last step of FBMN has been completed, the "aligned peaklist" must be selected to continue with IIN. Start by applying the metaCorrelate module, which will be used to search for correlating ions/features in different samples, scan events and MS levels.</p>
 <p>Go to Menu: Peak list methods &gt; Row grouping &gt; metaCorrelate.</p>
 <p><img alt="ScreenShot1" src="../img/iin/ScreenShot1.png" /></p>
@@ -1642,7 +1642,7 @@
 <p><img alt="ScreenShot2" src="../img/iin/ScreenShot2.png" /></p>
 <p>Click on OK and a new feature list will be generated on the right panel.</p>
 <p>At this point, the IIN should be built (it will be searching for adducts, in-source fragments and clusters in the dataset).</p>
-<h5 id="step-10-ion-identity-networking">Step 10 - Ion Identity Networking</h5>
+<h5 id="step-10-ion-identity-networking">Step 10 - Ion Identity Networking<a class="headerlink" href="#step-10-ion-identity-networking" title="Permanent link">&para;</a></h5>
 <p>Go to Menu: Peak list methods &gt; Identification &gt; Ion Identity Networks &gt; Ion Identity Networking.
 [IMPORTANT]: Make sure the aligned peaklist process with the metaCorrelate module is selected.</p>
 <p><img alt="ScreenShot3" src="../img/iin/ScreenShot3.png" /></p>
@@ -1652,7 +1652,7 @@ The ion identity library can be used to select the adducts of interest and the m
 <p>In the case that, in addition to the most common adducts ([M+Na]+, [M+K]+, [M+H]+, [2M+H]+, etc), more specific ions are observed in the dataset and are not included in the software’s list, it is possible to create new ones by clicking in “Add…” and filling the required information. It is also possible to combine adducts to create a new customized one clicking in “Combine…”. In the case of a combination, the adducts present in the list should be added to the right panel, selected and then added again to the previous list.</p>
 <p><img alt="ScreenShot5" src="../img/iin/ScreenShot5.png" /></p>
 <p>This step can performed multiple times to append annotations from modifications that might be more specific ([M-H2O], [M-CO], etc) with different parameters.</p>
-<h5 id="step-11-feature-export-for-gnps">Step 11 - Feature export for GNPS:</h5>
+<h5 id="step-11-feature-export-for-gnps">Step 11 - Feature export for GNPS:<a class="headerlink" href="#step-11-feature-export-for-gnps" title="Permanent link">&para;</a></h5>
 <p>In this step, the 3 files required for running a IIN job on GNPS are going to be exported. It is similar to the exporting step with the FBMN workflow. The three files are:
 ·      The feature quantification table (.CSV file format), with LC-MS feature intensities;
 ·      The MS/MS spectral summary (.MGF file), with a representative MS/MS spectrum per LC-MS feature. The MS/MS spectrum correspond either to the most intense MS/MS found for the feature, or to the merged spectrum;
@@ -1663,16 +1663,16 @@ The ion identity library can be used to select the adducts of interest and the m
 <p>Name the filename in .mgf format and choose filter rows only with MS2 data.</p>
 <p><img alt="ScreenShot7" src="../img/iin/ScreenShot7.png" /></p>
 <p>[IMPORTANT]: The additional steps included in MZmine for IIN are currently note saved when you save your project, therefore, once the data was processed, you have to export and save the files, otherwise after reopening the project in the futur, it will possible to export only the feature quantification table (.CSV file format), and the MS/MS spectral summary (.MGF file).</p>
-<h5 id="step-12-run-the-fbmnxiin-job-on-gnps">Step 12 - Run the FBMNxIIN job on GNPS</h5>
+<h5 id="step-12-run-the-fbmnxiin-job-on-gnps">Step 12 - Run the FBMNxIIN job on GNPS<a class="headerlink" href="#step-12-run-the-fbmnxiin-job-on-gnps" title="Permanent link">&para;</a></h5>
 <p>If you used the option "Submit to GNPS" your job should have been launched automatically on GNPS. If needed, clone the job with different parameters. 
 Alternatively, you can upload your files <a href="https://ccms-ucsd.github.io/GNPSDocumentation/fileupload/">via FTP</a> and configure an <a href="../fbmn-iin/">FBMNxIIN job on GNPS</a>.</p>
-<h5 id="step-13-visualization-in-cytoscape">Step 13 - Visualization in Cytoscape</h5>
+<h5 id="step-13-visualization-in-cytoscape">Step 13 - Visualization in Cytoscape<a class="headerlink" href="#step-13-visualization-in-cytoscape" title="Permanent link">&para;</a></h5>
 <p>The additional edges that IIN identified as adducts and in-source modifications are visualized in Cytoscape. See the the <a href="../fbmn-iin/">main FBMNxIIN page for more details</a>.</p>
-<h2 id="citations">Citations</h2>
+<h2 id="citations">Citations<a class="headerlink" href="#citations" title="Permanent link">&para;</a></h2>
 <p>This work builds on the efforts of our many colleagues, please cite their work:</p>
 <p><strong>For IIN</strong>: Schmid R., Petras D., Nothias LF, et al. In preparation.</p>
 <p><strong>For FBMN</strong>: Nothias, L.F. et al <a href="https://www.biorxiv.org/content/10.1101/812404v1">Feature-based Molecular Networking in the GNPS Analysis Environment</a> bioRxiv 812404 (2019).</p>
-<h2 id="page-contributors">Page Contributors</h2>
+<h2 id="page-contributors">Page Contributors<a class="headerlink" href="#page-contributors" title="Permanent link">&para;</a></h2>
 <p>Helena Mannochio Russo (UNESP), Anelize Bauermeister (USP), Daniel Petras (UCSD), Allegra Aron (UCSD).</p>
                 
                   

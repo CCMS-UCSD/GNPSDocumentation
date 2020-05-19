@@ -1819,20 +1819,20 @@
                 
                   <h1>FBMN export to Cytoscape</h1>
                 
-                <h2 id="introduction-to-fbmn">Introduction to FBMN</h2>
+                <h2 id="introduction-to-fbmn">Introduction to FBMN<a class="headerlink" href="#introduction-to-fbmn" title="Permanent link">&para;</a></h2>
 <p>The main documentation for <strong>Feature-Based Molecular Networking</strong> (FBMN) <a href="../featurebasedmolecularnetworking/">can be accessed here</a>. See <a href="https://www.biorxiv.org/content/10.1101/812404v1">our preprint on bioaRxiv</a>.</p>
 <p>The documentation for FBMN using <strong>Cytoscape</strong> is provided below.</p>
-<h2 id="feature-based-molecular-networking-in-cytoscape">Feature-Based Molecular Networking in Cytoscape</h2>
+<h2 id="feature-based-molecular-networking-in-cytoscape">Feature-Based Molecular Networking in Cytoscape<a class="headerlink" href="#feature-based-molecular-networking-in-cytoscape" title="Permanent link">&para;</a></h2>
 <p>Nothias, L.F. et al <a href="https://www.biorxiv.org/content/10.1101/812404v1">Feature-based Molecular Networking in the GNPS Analysis Environment</a> bioRxiv 812404 (2019).</p>
 <p>Wang, M. et al. <a href="https://doi.org/10.1038/nbt.3597">Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking</a>. Nat. Biotechnol. 34, 828–837 (2016).</p>
 <p>Cytoscape is an open source software platform used to visualize, analyze and annotate molecular networks from GNPS. Cytoscape is available for download from <a href="http://www.cytoscape.org">here</a>. The instructions were created with Cytoscape 3.7.</p>
 <p>Shannon, P., et al. (2003). Cytoscape: a software environment for integrated models of biomolecular interaction networks. <em>Genome Res, 13</em>(11), 2498-2504. <a href="doi:10.1101/gr.1239303">doi:10.1101/gr.1239303</a></p>
-<h3 id="downloading-cytoscape-files-from-gnps">Downloading Cytoscape Files from GNPS</h3>
+<h3 id="downloading-cytoscape-files-from-gnps">Downloading Cytoscape Files from GNPS<a class="headerlink" href="#downloading-cytoscape-files-from-gnps" title="Permanent link">&para;</a></h3>
 <p>The first step is to download the input file (.graphML file format) for import into Cytoscape. From the job status page in the Feature-Based Molecular Networking workflow, click on <em>Download Cytoscape Data</em>. Save and unzip the downloaded file.  </p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide1.PNG" /></p>
 <p>Unzip the file and the resulting folder will look like this:</p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide2.PNG" /></p>
-<h3 id="import-the-molecular-network-in-cytoscape">Import the molecular network in Cytoscape</h3>
+<h3 id="import-the-molecular-network-in-cytoscape">Import the molecular network in Cytoscape<a class="headerlink" href="#import-the-molecular-network-in-cytoscape" title="Permanent link">&para;</a></h3>
 <p>To import the network file into Cytoscape:
 *    in Cytoscape click on <em>Import Network from File System</em> and then choose the <em>.graphml</em> file. 
 *   Alternatively, you can drag and drop the .graphml file into Cytoscape.</p>
@@ -1840,7 +1840,7 @@
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide3.PNG" /></p>
 <p>You can import the table file into Cytoscape. Click <em>Import Table from File System</em>, navigate to the “DB_result” folder and select the .csv file. Lastly, click OK in the opened window.</p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide17.PNG" /></p>
-<h3 id="import-supplementary-annotations-in-cytoscape">Import supplementary annotations in Cytoscape</h3>
+<h3 id="import-supplementary-annotations-in-cytoscape">Import supplementary annotations in Cytoscape<a class="headerlink" href="#import-supplementary-annotations-in-cytoscape" title="Permanent link">&para;</a></h3>
 <p>Cytoscape allows to map additional annotations such as those produced by other workflows on GNPS. See the documentation for <a href="../dereplicator/">DEREPLICATOR</a>, <a href="../nap/">NAP</a>, <a href="../ms2lda/">MS2LDA</a>, <a href="../molnetenhancer/">MolNetEnhancer</a> for more details.</p>
 <p>The FBMN workflow makes possible to map the annotations (molecular formula, cross collision section) made by the processing software used for FBMN (MZmine, XCMS, MetaboScape, MS-DIAL, Progenesis QI), or other third party software tool that processed the same .MGF/.MSP file. In addition it is possible to import any feature metadata and statistical results you are interested in.  </p>
 <p>Regardless of the tool and information to map, the importing procedure follows these steps:</p>
@@ -1853,63 +1853,63 @@
 [<strong>IMPORTANT</strong>] If columns already exist in the network, they will be replaced by the imported table ! Rename the header(s) of the imported table if necessary.</li>
 <li>Explore the annotation in the molecular network (see below).</li>
 </ul>
-<h3 id="rotation-of-the-network">Rotation of the Network</h3>
+<h3 id="rotation-of-the-network">Rotation of the Network<a class="headerlink" href="#rotation-of-the-network" title="Permanent link">&para;</a></h3>
 <p>To rotate the entire molecular network choose the <em>Layout</em> tab and click <em>Node Layout tool</em>. In the opened window, uncheck the <em>Selected Only</em> box to rotate the entire network and move the blue bar to 90. You can also select specific subnetworks and rotate them by checking <em>Selected only</em>.</p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide4.PNG" /></p>
-<h3 id="table-panel-visualization-data">Table Panel Visualization Data</h3>
+<h3 id="table-panel-visualization-data">Table Panel Visualization Data<a class="headerlink" href="#table-panel-visualization-data" title="Permanent link">&para;</a></h3>
 <p>For advanced network visualisation and data analysis, you may click on <em>Table Panel</em> and select node or edge column information (network metadata) to be displayed. For example,  in the <em>Node Table</em>, you can select the <em>"Compound_name"</em> (name of the spectral library match), the "<em>parent mass"</em> (precursor ion mass), the "<em>RTconsensus"</em> (retention time for the node), "<em>MZErrorPPM"</em> (ppm error with the spectral library match) and any attributes of interest in your in <em>Node Table</em> (node metadata).</p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide5.PNG" /></p>
-<h3 id="create-a-new-style">Create a New Style</h3>
+<h3 id="create-a-new-style">Create a New Style<a class="headerlink" href="#create-a-new-style" title="Permanent link">&para;</a></h3>
 <p>A style can be created by clicking on <em>Create New Style</em> and a style name can be specified (e.g. "High vs Low Plant Consumer"). The created style can be exported by going in the main menu to <em>File</em> &gt; <em>Export</em> &gt; <em>Styles to File</em>, or a previous style can be imported by clicking on <em>Import</em> &gt; <em>Style From File</em> in the <em>File</em> menu. </p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide6.PNG" /></p>
-<h3 id="edit-the-style">Edit the Style</h3>
-<h4 id="node-styling">Node Styling</h4>
-<h5 id="label">Label</h5>
+<h3 id="edit-the-style">Edit the Style<a class="headerlink" href="#edit-the-style" title="Permanent link">&para;</a></h3>
+<h4 id="node-styling">Node Styling<a class="headerlink" href="#node-styling" title="Permanent link">&para;</a></h4>
+<h5 id="label">Label<a class="headerlink" href="#label" title="Permanent link">&para;</a></h5>
 <p>In the  <em>Control Panel</em> (left panel), go to the <em>Style</em> tab. Within the <em>Node</em> sub-tab, the properties of the node style can be modified. For example, you can choose the <em>precursor mass</em> as node label for the molecular networks [you need to select  <em>Passthrough Mapping</em> as the <em>Mapping Type</em>]. Go to <em>Properties</em> to display more style properties. </p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide7.PNG" /></p>
-<h5 id="size">Size</h5>
+<h5 id="size">Size<a class="headerlink" href="#size" title="Permanent link">&para;</a></h5>
 <p>In order to match the label size to the node size, go into <em>Style panel</em>, at <em>Label Front Size</em> option, select “<em>SumPeakIntensity</em>” or the “<em>number of spectra</em>” (as selected for node size) as <em>Column and Continuous Mapping</em> as <em>Mapping Type</em>. As described above, begin by setting the value for minimum and maximum node size value with the button Set Min and Max, then choose the same continuous mapping as used for the node size.</p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide8.PNG" /></p>
-<h5 id="pie-charts">Pie charts</h5>
+<h5 id="pie-charts">Pie charts<a class="headerlink" href="#pie-charts" title="Permanent link">&para;</a></h5>
 <p>If you used a metadata table, the node table will contain group columns for each group specified in the metadata table. The group columns starts with "_GNPSGROUP__" and will consist of the mean (default and recommended) or summed intensity of the ion across the group's samples based on the MS1 feature table (LC-MS peak area). This group columns can be used to visualize groups as pie charts in the network.</p>
 <p>To start visualizing pie charts on node for the groups, click on the left box (<em>Def</em> column) for the <em>Image/Chart1</em> node property. Choose the <em>Charts</em> tab and select the <em>Pie Chart Icon</em>. Now, in the <em>Data</em> sub-tab, select the group columns you are interested in visualizing in the <em>Select Columns</em> box (e.g. <em>"GNPSGROUP: Less_than 5"</em> (low plant consumers) and <em>"GNPSGROUP:More_than_30"</em> (high plant consumers)). Click on <em>Options</em> (under <em>Data</em>) to choose colors for the Groups (groups are numbered based on their position in the <em>Selected Columns</em> box). Click <em>Apply</em> when you are done with your selection.</p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide9.PNG" /></p>
-<h4 id="edge-styling">Edge Styling</h4>
-<h5 id="width">Width</h5>
+<h4 id="edge-styling">Edge Styling<a class="headerlink" href="#edge-styling" title="Permanent link">&para;</a></h4>
+<h5 id="width">Width<a class="headerlink" href="#width" title="Permanent link">&para;</a></h5>
 <p>To aid in the visualization of individual node similarities within a cluster, the cosine score is displayed as an edge. The cosine scores define similarity between two MS/MS spectra. Scores ranging from 0 (totally dissimilar) to 1 (identical). The edge thickness can be used to visualize the cosine score value between related nodes. For this we will use the cosine-score-based continuous mapping for the edge thickness. Go to the <em>Style</em> tab, and the <em>Edge</em> sub-tab. From the <em>Width</em> property drop down menu, select <em>"cosine_score"</em> for the <em>Column</em> and <em>Continuous Mapping</em> for the <em>Mapping Type</em>. Double click on the <em>Continuous Mapping</em> area of the menu to adjust the thickness of the edge. Click OK to apply the setting changes. Optimise the minimum and maximum value for the continuous mapping.</p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide10.PNG" /></p>
-<h3 id="mining-information-in-the-network">Mining information in the network</h3>
-<h3 id="sub-network-creation">Sub-network creation</h3>
+<h3 id="mining-information-in-the-network">Mining information in the network<a class="headerlink" href="#mining-information-in-the-network" title="Permanent link">&para;</a></h3>
+<h3 id="sub-network-creation">Sub-network creation<a class="headerlink" href="#sub-network-creation" title="Permanent link">&para;</a></h3>
 <p>To separate one or multilple specific desired network(s), press “ctrl” or “command” (windows or MacOS, respectively) at the same time drag the mouse to select the network(s). Then, click on the symbol as shown below. Automatically, the sub-network is created. For going back to the main network, go into the <em>Control Panel</em>, select <em>Network</em> and then choose the main network.</p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide18.PNG" /></p>
-<h4 id="the-toolbar-function">The Toolbar function</h4>
+<h4 id="the-toolbar-function">The Toolbar function<a class="headerlink" href="#the-toolbar-function" title="Permanent link">&para;</a></h4>
 <p>The Cytoscape's toolbar can be used to search nodes or edge metadata (e.g., <em>"shared name"</em>). Note that this feature is very slow, especially with large networks. The list of nodes in the Note Table will be updated. You can select nodes of interest, perform right-click for <em>Select nodes</em> and then click on the <em>+ magnifier</em> in the main menu to perform a zoom on the selected node.</p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide11.PNG" /></p>
-<h4 id="the-select-function">The Select function</h4>
+<h4 id="the-select-function">The Select function<a class="headerlink" href="#the-select-function" title="Permanent link">&para;</a></h4>
 <p>The Select function can be used to create a selection of nodes and/or edges based on their metadata and/or network topology. Go to the <em>Control Panel</em> and click on <em>Select</em> tab. Then, click on the "<em>+</em>" button and choose between column, degree, or topology filter(s) to add different filter properties. The "<em>x</em>" button deletes the corresponding property. For each filter property, various options are provided depending on the column type (numeric column:  <em>is</em>, <em>is not</em>, <em>between</em>; for string column: <em>contains</em> and <em>does not contain</em>. Here, we create <em>annotation filter</em> that selects nodes by the spectral library match with 10 ppm maximum error between precursor ions ("<em>MZErrorPPM</em>" from 0 to 10). By default, the filter should be automatically applied to the network, otherwise click <em>Apply</em>. Under the Filter tab, the number of nodes meeting the filter property variables (here 160 nodes) will be selected. These nodes are automatically selected and highlighted in yellow in the network.</p>
 <p>Filters are very powerful network analysis tools that can be modified, saved and exported. To rename, remove, create a new filter, or other options, click on the right button beside the Filter list menu. The list of available Filters will appear in the top part of the panel. </p>
 <p>For more details and options, follow this <a href="http://manual.cytoscape.org/en/stable/Finding_and_Filtering_Nodes_and_Edges.html#filters">link</a>. </p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide12.PNG" /></p>
-<h3 id="bypass-mode-for-style-property">Bypass mode for style property</h3>
+<h3 id="bypass-mode-for-style-property">Bypass mode for style property<a class="headerlink" href="#bypass-mode-for-style-property" title="Permanent link">&para;</a></h3>
 <p>A bypass could be applied to selected nodes and/or edged by going into the <em>Style</em> panel, and clicking on the <em>Byp.</em> column for the property you want to change such as <em>Border paint</em> and <em>Border Width</em>. For modifying or removing the bypass property, select the nodes of interest, click right and choose <em>Remove Bypass</em> or <em>set Bypass</em> option. </p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide13.PNG" /></p>
-<h3 id="drawing-structure-in-nodes">Drawing structure in nodes</h3>
+<h3 id="drawing-structure-in-nodes">Drawing structure in nodes<a class="headerlink" href="#drawing-structure-in-nodes" title="Permanent link">&para;</a></h3>
 <p>The chemical structures can be visualized in the node using chemViz2 bioinformatics plugin for Cytoscape (<a href="http://www.cgl.ucsf.edu/cytoscape/chemViz/">http://www.cgl.ucsf.edu/cytoscape/chemViz/</a>). First, the chemViz2 plugin has to be installed. To do that, go to the <em>Apps</em> tab in the main menu, then open <em>App Manager</em>. In the <em>Install Apps</em> tab click on <em>chemViz2</em> and install it by clicking <em>Install</em>. For more information about chemViz2, refer to the information available on the <a href="http://www.cgl.ucsf.edu/cytoscape/chemViz/">chemViz2 website</a>. </p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide14.PNG" /></p>
 <p>Once installed, chemViz2 can be used to display chemical structures on nodes. First, you will have to verify that chemViz2 is properly parameterized. Select <em>Apps</em> in the main menu, go to <em>Cheminformatics Tools</em> and click <em>Settings</em>. In the <em>Attribute Settings</em> section, choose <em>node.Smiles</em> for <em>SMILES Attribute</em> and/or <em>node.INCHI</em> for <em>InCHI Attribute</em>. Apply it by clicking <em>OK</em>. </p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide15.PNG" /></p>
 <p>Finally, to draw structures in the nodes, return to <em>Apps</em> &gt; <em>Cheminformatics Tools</em> &gt; <em>Paint Structures</em> and select <em>on all nodes</em> or <em>on selected nodes</em>. Visualize the results. If needed, create a dedicated style to facilitate structure visualization. </p>
 <p><img alt="img" src="../img/FBMN_Cytoscape/Slide16.PNG" /></p>
-<h3 id="mapping-other-node-information">Mapping other node information</h3>
+<h3 id="mapping-other-node-information">Mapping other node information<a class="headerlink" href="#mapping-other-node-information" title="Permanent link">&para;</a></h3>
 <p>Cytoscape enables to map informations obtained from the other workflows/softwares. Visualize this annotation by creating novel styles and changing its properties.</p>
-<h2 id="video-tutorial-fbmn-and-cytoscape">Video Tutorial FBMN and Cytoscape</h2>
+<h2 id="video-tutorial-fbmn-and-cytoscape">Video Tutorial FBMN and Cytoscape<a class="headerlink" href="#video-tutorial-fbmn-and-cytoscape" title="Permanent link">&para;</a></h2>
 <p>Our <a href="../tutorials/featurebasedgnps/">tutorial on running the FBMN analysis on GNPS including a Cytoscape demo</a>.</p>
 <iframe width="600" height="375" src="https://www.youtube.com/embed/NTkQ0fS1aug"> </iframe>
 
 <p>See our <a href="../tutorials/americangutmzmine/">tutorial on using MZmine2</a> for the FBMN analysis of a cohort from the <a href="http://humanfoodproject.com/americangut/">American Gut Project</a>.</p>
-<h3 id="page-contributors">Page contributors</h3>
+<h3 id="page-contributors">Page contributors<a class="headerlink" href="#page-contributors" title="Permanent link">&para;</a></h3>
 <p>Melissa Esposito (UCSD), Irina Koester (SIO, UCSD), Christian Martin (INDICASAT), Louis Felix Nothias (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).</p>
-<h3 id="join-the-gnps-community">Join the GNPS Community !</h3>
+<h3 id="join-the-gnps-community">Join the GNPS Community !<a class="headerlink" href="#join-the-gnps-community" title="Permanent link">&para;</a></h3>
 <ul>
 <li>For feature request, or to report bugs, please open an "Issue" on the <a href="https://github.com/CCMS-UCSD/GNPS_Workflows"><em>CCMS-UCSD/GNPS_Workflows</em> GitHub repository</a>.</li>
 <li>To contribute to the GNPS documentation, please use GitHub by forking the <a href="https://github.com/CCMS-UCSD/GNPSDocumentation"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request" with the changes.</li>

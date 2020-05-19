@@ -1411,14 +1411,14 @@
                   
                 
                 
-                <h1 id="gc-ms-data-processing-with-ms-dial">GC-MS data processing with MS-DIAL</h1>
-<h3 id="convert-data">Convert data</h3>
+                <h1 id="gc-ms-data-processing-with-ms-dial">GC-MS data processing with MS-DIAL<a class="headerlink" href="#gc-ms-data-processing-with-ms-dial" title="Permanent link">&para;</a></h1>
+<h3 id="convert-data">Convert data<a class="headerlink" href="#convert-data" title="Permanent link">&para;</a></h3>
 <p>To convert the Vendor specific files, go <a href="http://proteowizard.sourceforge.net/download.html">here</a> to download and use msConvert or the default GNPS File converter on <a href="https://gnps-quickstart.ucsd.edu/conversion">GNPS-quickstart</a> (drag and drop).  </p>
 <p>Browse the RAW files from Vendor into MSConvert interface. Typically .mzML output format is chosen with binary code precision of 64 bit for high resolution spectra. Uncheck the “Use zlib compression” option and select msLevel 1. Also, .mzML format is amenable to MS-DIAL analysis. The MSConvert window looks like:  </p>
 <p><strong><img alt="img" src="../img/GC-MS_documentation/Fig_20.png" /></strong></p>
 <p>Download the most updated version of <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4449330/">MS-DIAL</a> from RIKEN PRIMe site. MS-DIAL has an extensive tutorial  for step-by-step guidance <a href="https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial.html">here</a>. Open MS-DIAL by clicking on the icon or shortcut.  </p>
 <p><img alt="img" src="../img/GC-MS_documentation/Fig_22.png" /></p>
-<h3 id="processing-data">Processing data</h3>
+<h3 id="processing-data">Processing data<a class="headerlink" href="#processing-data" title="Permanent link">&para;</a></h3>
 <p>In the MS-DIAL software interface pops up, import your file by clicking on “File” option. As highlighted for the GC-EI-MS data, choose “Hard ionization” and then choose “Centroid” or “Profile” based on your mass-spec vendor data. You may add other information under the “Advanced” tag for more meta data.  </p>
 <p><img alt="img" src="../img/GC-MS_documentation/Fig_24.png" /></p>
 <p>In this window, click on “Browse” to open the folders where the converted .mzML files are stored. The project file path and where the converted files need to sit have to be identical, and assigns a project ID with .mtd suffix.</p>
@@ -1439,20 +1439,20 @@
 <p><img alt="img" src="../img/GC-MS_documentation/Fig_38.png" /></p>
 <p>The last tab named “<strong>Filtering</strong>”, allows the user to set certain filters depending on the question in hand or ignore it. Once all Tabs are filled with user specific/default options, the user can click “Finish” to start the process. </p>
 <p><img alt="img" src="../img/GC-MS_documentation/Fig_39.png" /></p>
-<h3 id="visualize-data">Visualize data</h3>
+<h3 id="visualize-data">Visualize data<a class="headerlink" href="#visualize-data" title="Permanent link">&para;</a></h3>
 <p>A successfully finished job window on MS-DIAL looks like:  </p>
 <p><img alt="img" src="../img/GC-MS_documentation/Fig_41.png" /></p>
 <p>By clicking on the “Alignment navigator” panel (bottom left) on the specific alignment result file, user can see the generated alignment table. This table can be sorted by <em>ID</em>, <em>RT</em>, <em>RI</em>, <em>Quant mass</em>, <em>S/N</em>, and other statistical values, and/or filtered by <em>Metabolite name</em>, <em>m/z range</em>, or <em>RT range</em>. </p>
 <p><img alt="img" src="../img/GC-MS_documentation/Fig_42.png" /></p>
-<h3 id="export-results">Export results</h3>
+<h3 id="export-results">Export results<a class="headerlink" href="#export-results" title="Permanent link">&para;</a></h3>
 <p>To export the generated tables, click on the “Export” tab, and chose “<strong>Alignment Result export</strong>”. In the Alignment window, chose a "Directory" to save the results, and select the correct “file” corresponding to your aligned table. The user should check <em>Raw data matrix</em> (Height and Area), <em>Normalized data matrix</em>, <em>Representative spectra</em>, <em>Parameters</em>, <em>Peak ID matrix</em>, <em>Retention time matrix</em>, <em>m/z matrix</em>, and <em>S/N matrix export</em> boxes. Spectra-type should be selected to ‘centroid’ and as “.mgf” format for the downstream GNPS analysis workflows. Then, the user can click “Export”. </p>
 <p><img alt="img" src="../img/GC-MS_documentation/Fig_48.png" /></p>
 <p>A new module on GNPS allows to use the results of MS-DIAL processing (quantification table as area.TXT and a spectral summary file as .MGF) into the correct input format to lunch the GC-GNPS workflow.</p>
-<h3 id="uploading-the-files-to-gnps-and-run-a-the-gc-ms-workflow">Uploading the files to GNPS and run a the GC-MS workflow</h3>
+<h3 id="uploading-the-files-to-gnps-and-run-a-the-gc-ms-workflow">Uploading the files to GNPS and run a the GC-MS workflow<a class="headerlink" href="#uploading-the-files-to-gnps-and-run-a-the-gc-ms-workflow" title="Permanent link">&para;</a></h3>
 <p>Please refer to the following page for more information on the <a href="../gc-ms-library-molecular-network/">GC-GNPS workflow</a>.</p>
-<h2 id="citation">Citation</h2>
+<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
 <p>Tsugawa, H., Cajka, T., Kind, T. <em>et al.</em> <a href="https://www.nature.com/articles/nmeth.3393#citeas">MS-DIAL: data-independent MS/MS deconvolution for comprehensive metabolome analysis.</a> <em>Nat Methods</em> <strong>12,</strong> 523–526 (2015).</p>
-<h2 id="page-contributors">Page contributors</h2>
+<h2 id="page-contributors">Page contributors<a class="headerlink" href="#page-contributors" title="Permanent link">&para;</a></h2>
 <p>Biswapriya Biswavas Misra (Wake Forest University), Melissa Nothias-Esposito (UCSD), Louis Felix Nothias (UCSD)</p>
                 
                   

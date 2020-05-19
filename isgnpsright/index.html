@@ -1455,15 +1455,15 @@
 </div>
 <!-- To check whether your data file is appropriate for GNPS, check out our [GNPS QC Checker](TODO). -->
 
-<h2 id="ionization-type">Ionization Type</h2>
+<h2 id="ionization-type">Ionization Type<a class="headerlink" href="#ionization-type" title="Permanent link">&para;</a></h2>
 <p>GNPS supports data from soft ionization sources, e.g. electro spray ionization (ESI), Atmospheric-pressure chemical ionization (APCI), Matrix-assisted laser desorption/ionization (MALDI).</p>
-<h2 id="fragmentation">Fragmentation</h2>
+<h2 id="fragmentation">Fragmentation<a class="headerlink" href="#fragmentation" title="Permanent link">&para;</a></h2>
 <p>GNPS only accepts data dependent acquisition data (DDA), i.e. molecules were fragmented with collision induced dissociation (CID), Higher-energy collisional dissociation (HCD), or Electron-transfer dissociation (ETD). This produces tandem mass spectra (MS/MS) that can be identified via spectral library search and organized into families of molecules with molecular networking.</p>
-<h2 id="data-sizes">Data Sizes</h2>
+<h2 id="data-sizes">Data Sizes<a class="headerlink" href="#data-sizes" title="Permanent link">&para;</a></h2>
 <p>GNPS was designed to process MS/MS datasets of entire LC/MS runs. Many of the analysis tools were meant for datasets with at least hundreds of MS/MS spectra. While it is feasible to analyze a small amount of MS/MS spectra, certain capabilities (e.g. Molecular Networking) will not be effective at such small scales.</p>
 <p>For extremely small datasets (e.g. single MS/MS spectra), we recommend utilizing our <a href="../masst/">MASST search</a> tool and not molecular networking.</p>
 <p>For datasets that at least include an entire LC/MS run of MS/MS spectra, all workflows will accept. For molecular networking, please refer to the parameters and <a href="../networking/#Parameter Presets">presets</a>.</p>
-<h2 id="file-formats">File Formats</h2>
+<h2 id="file-formats">File Formats<a class="headerlink" href="#file-formats" title="Permanent link">&para;</a></h2>
 <p>Mass spectrometry files must be converted from proprietary vendor formats to open file formats. GNPS currently support .mzXML, .mzML, and .mgf formats for analysis. To convert, please see our <a href="../fileconversion/">conversion guide</a>.</p>
 <p>Our tools do NOT support .mzData, .xml, .raw, .RAW, .wiff, .scan, .d, and .cdf formats.</p>
                 

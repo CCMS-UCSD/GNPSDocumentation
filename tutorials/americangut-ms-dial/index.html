@@ -1549,26 +1549,26 @@
                 
                   <h1>FBMN with MS-DIAL - Microbiome Molecules in Fecal Samples in American Gut Project</h1>
                 
-                <h2 id="tutorial-introduction">Tutorial introduction</h2>
+                <h2 id="tutorial-introduction">Tutorial introduction<a class="headerlink" href="#tutorial-introduction" title="Permanent link">&para;</a></h2>
 <p>In this tutorial you will be guided into running MS-DIAL for the Feature Based Molecular Network (FBMN) workflow on GNPS to reproduce some findings of the <a href="http://humanfoodproject.com/americangut/">American Gut Project</a> described <a href="http://dx.doi.org/10.1128/mSystems.00031-18">in this manuscript</a></p>
-<h2 id="citations">Citations</h2>
+<h2 id="citations">Citations<a class="headerlink" href="#citations" title="Permanent link">&para;</a></h2>
 <p>Tsugawa, H., Cajka, T., Kind, T., Ma, Y., Higgins, B., Ikeda, K., Kanazawa, M., VanderGheynst, J., Fiehn, O. &amp; Arita, M. <a href="http://dx.doi.org/10.1038/nmeth.3393">MS-DIAL: data-independent MS/MS deconvolution for comprehensive metabolome analysis.</a> Nature Methods 12, 523-526 (2015).</p>
 <p>Lai, Z., Tsugawa, H., Wohlgemuth, G., Mehta, S., Mueller, M., Zheng, Y., Ogiwara, A., Meissen, J., Showalter, M., Takeuchi, K., Kind, T., Beal, P., Arita, M. &amp; Fiehn, O. <a href="http://dx.doi.org/10.1038/nmeth.4512">Identifying metabolites by integrating metabolome databases with mass spectrometry cheminformatics.</a> Nature Methods 15, 53-56 (2018).</p>
 <p>McDonald, D. et al. American Gut: an Open Platform for Citizen Science Microbiome Research. mSystems 3, (2018). <a href="http://dx.doi.org/10.1128/mSystems.00031-18">http://dx.doi.org/10.1128/mSystems.00031-18</a></p>
-<h2 id="learning-objectives">Learning Objectives</h2>
+<h2 id="learning-objectives">Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Learn how to download files from a GNPS/MassIVE Dataset. <a href="../../fileupload/">See instructions here</a>.</li>
 <li>Run MS-DIAL feature detection on LC-MS/MS data. <a href="../../featurebasedmolecularnetworking-with-ms-dial/">See tutorial here</a>, and output a feature quantification table and a MS2 spectral file.</li>
 <li>Run the Feature Based Molecular Networking (FBMN) with MS-DIAL files on GNPS. <a href="../../featurebasedmolecularnetworking/">See the tutorial here</a>.</li>
 <li>Visualize the results of FBMN with Cytoscape <a href="../../featurebasedmolecularnetworking-cytoscape/">See the tutorial here</a>.</li>
 </ol>
-<h2 id="experimental-setup">Experimental Setup</h2>
+<h2 id="experimental-setup">Experimental Setup<a class="headerlink" href="#experimental-setup" title="Permanent link">&para;</a></h2>
 <p>We will use a subset of the LC-MS/MS analysis from the <a href="http://humanfoodproject.com/americangut/">American Gut Project</a>. The samples consist of fecal samples provided by participants and the subset selected consists of participants that have high and low consumption of plants. MS-DIAL will be used to detect features and output a feature quantification table (TXT format) and a MS2 spectral file (MGF format).
 The feature quantification table contains the intensity values for every aligned peak accross the samples, while the MS2 spectral file contains a single MS2 representing each aligned peak.</p>
-<h2 id="data-and-files-needed-for-the-tutorial">Data and Files Needed for the Tutorial</h2>
+<h2 id="data-and-files-needed-for-the-tutorial">Data and Files Needed for the Tutorial<a class="headerlink" href="#data-and-files-needed-for-the-tutorial" title="Permanent link">&para;</a></h2>
 <p>LC-MS/MS data can be found in the <a href="https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=de2d18fd91804785bce8c225cc94a444">MassIVE dataset MSV000082678</a>.
 Study metadata (.TXT format) can <a href="ftp://massive.ucsd.edu/MSV000082678/other/">downloaded here</a>.</p>
-<h2 id="ms-dial-representative-output-files">MS-DIAL representative output files</h2>
+<h2 id="ms-dial-representative-output-files">MS-DIAL representative output files<a class="headerlink" href="#ms-dial-representative-output-files" title="Permanent link">&para;</a></h2>
 <p>These files are not needed for the tutorial but are provided here as reference files, or if you wanna by pass the MS-DIAL processing.</p>
 <table>
 <thead>
@@ -1596,25 +1596,25 @@ Study metadata (.TXT format) can <a href="ftp://massive.ucsd.edu/MSV000082678/ot
 </tr>
 </tbody>
 </table>
-<h2 id="required-software-installs">Required Software Installs</h2>
+<h2 id="required-software-installs">Required Software Installs<a class="headerlink" href="#required-software-installs" title="Permanent link">&para;</a></h2>
 <ol>
 <li>FTP Client (e.g. WinSCP, DO NOT FileZilla!). <a href="../../fileupload/">See instructions here</a>.</li>
 <li><a href="http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/">MS-DIAL</a> for feature detection (available only on Windows).</li>
 <li><a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp">An account on GNPS</a>.</li>
 <li><a href="http://www.cytoscape.org/download.php">Cytocape</a> for network visualization.</li>
 </ol>
-<h2 id="video-tutorial-running-ms-dial-for-fbmn">Video Tutorial - Running MS-DIAL for FBMN</h2>
+<h2 id="video-tutorial-running-ms-dial-for-fbmn">Video Tutorial - Running MS-DIAL for FBMN<a class="headerlink" href="#video-tutorial-running-ms-dial-for-fbmn" title="Permanent link">&para;</a></h2>
 <iframe width="800" height="500" src="https://www.youtube.com/embed/hxk40jwAkcc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<h2 id="running-fbmn-on-gnps">Running FBMN on GNPS</h2>
+<h2 id="running-fbmn-on-gnps">Running FBMN on GNPS<a class="headerlink" href="#running-fbmn-on-gnps" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../../featurebasedmolecularnetworking/">See the FBMN documentation</a>.</li>
 </ul>
-<h2 id="analyzing-the-results-of-fbmn-with-cytoscape">Analyzing the Results of FBMN with Cytoscape</h2>
+<h2 id="analyzing-the-results-of-fbmn-with-cytoscape">Analyzing the Results of FBMN with Cytoscape<a class="headerlink" href="#analyzing-the-results-of-fbmn-with-cytoscape" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../../featurebasedmolecularnetworking-cytoscape/">See the documentation for using Cytoscape for FBMN analysis</a>.</li>
 </ul>
-<h2 id="follow-up-tutorial-in-gnps">Follow up Tutorial in GNPS</h2>
+<h2 id="follow-up-tutorial-in-gnps">Follow up Tutorial in GNPS<a class="headerlink" href="#follow-up-tutorial-in-gnps" title="Permanent link">&para;</a></h2>
 <p>Checkout the follow up <a href="../featurebasedgnps/">tutorial</a> on how to do FBMN with MZmine2 and GNPS.</p>
 <p>Other tutorials are available from the main <a href="../../featurebasedmolecularnetworking/">Feature Based Molecular Networking Workflow page</a>.</p>
                 

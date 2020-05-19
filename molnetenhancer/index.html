@@ -1363,7 +1363,7 @@
                   
                 
                 
-                <h1 id="molnetenhancer-enhanced-molecular-networks-by-integrating-metabolome-mining-and-annotation-tools">MolNetEnhancer: Enhanced Molecular Networks by Integrating Metabolome Mining and Annotation Tools</h1>
+                <h1 id="molnetenhancer-enhanced-molecular-networks-by-integrating-metabolome-mining-and-annotation-tools">MolNetEnhancer: Enhanced Molecular Networks by Integrating Metabolome Mining and Annotation Tools<a class="headerlink" href="#molnetenhancer-enhanced-molecular-networks-by-integrating-metabolome-mining-and-annotation-tools" title="Permanent link">&para;</a></h1>
 <p><img alt="img" src="../img/molnetenhancer/MainFigure.jpg" /></p>
 <p>MolNetEnhancer is a workflow that enables to combine the outputs from molecular networking, MS2LDA, <i>in silico</i> structure annotation tools (such as Network Annotation Propagation or DEREPLICATOR) and the automated chemical classification through ClassyFire to provide a more comprehensive chemical overview of metabolomics data whilst at the same time illuminating structural details for each fragmentation spectrum. For more information refer to the main MolNetEnhancer <a href="https://www.mdpi.com/2218-1989/9/7/144">publication</a>. </p>
 <p>The MolNetEnhancer worflow consists of two steps:</p>
@@ -1382,7 +1382,7 @@
 </ol>
 <p><img alt="img" src="../img/molnetenhancer/overview.png" /></p>
 <p>In the following section, we explain what input files are needed, and what kind of output you'll get.</p>
-<h1 id="collecting-the-right-input-ids">Collecting the right input IDs</h1>
+<h1 id="collecting-the-right-input-ids">Collecting the right input IDs<a class="headerlink" href="#collecting-the-right-input-ids" title="Permanent link">&para;</a></h1>
 <p>After providing the GNPSs analysis with a title, you'll need at least one job ID and up to 3 job IDs from GNPS <i>in silico</i> structure annotation to start the MolNetEnhancer chemical class annotation, including:</p>
 <ul>
 <li>Required: GNPS Task ID</li>
@@ -1391,15 +1391,15 @@
 <li>Optional: VARQUEST ID</li>
 <li>Optional: MS2LDA.org Job ID</li>
 </ul>
-<h2 id="quick-start-from-processed-molecular-network">Quick start from processed Molecular Network</h2>
+<h2 id="quick-start-from-processed-molecular-network">Quick start from processed Molecular Network<a class="headerlink" href="#quick-start-from-processed-molecular-network" title="Permanent link">&para;</a></h2>
 <p>To facilitate MolNetEnhancer analysis of processed Molecular Networking jobs, in the newest (V2) version under "Advanced Views - Experimental Views" there is a button <u>Enhance with MolNetEnhancer</u> that will bring you directly to the MolNetEnhancer chemical class annotation analysis page with the GNPS Task ID prefilled. See also the animated GIF below.
 Please note that you can adapt the title and you must add the relevant <i>in silico</i> structure annotation job IDs for your data set.</p>
 <p><img alt="img" src="../img/molnetenhancer/giphy.gif" /></p>
-<h1 id="molnetenhancer-output-files">MolNetEnhancer output files</h1>
+<h1 id="molnetenhancer-output-files">MolNetEnhancer output files<a class="headerlink" href="#molnetenhancer-output-files" title="Permanent link">&para;</a></h1>
 <p>Upon succesful completion, you will be able to see the output job page as displayed below:</p>
 <p><img alt="img" src="../img/molnetenhancer/output_ClassyTree.png" /></p>
 <p>There are different files for download available:</p>
-<h3 id="download-network">Download Network</h3>
+<h3 id="download-network">Download Network<a class="headerlink" href="#download-network" title="Permanent link">&para;</a></h3>
 <p>This downloads the network with chemical class information mapped in the .graphml format. To visualize results import the .graphml output file into <a href="https://cytoscape.org/">Cytoscape</a>. To color nodes based on the chemical subclass for example select 'Fill Color' in the 'Node' tab to the left and choose 'CF_subclass' as <i>Column</i> and 'Discrete Mapping' as <i>Mapping Type</i>:
 <img alt="img" src="../img/molnetenhancer/ChemicalClassesMapped.png" /></p>
 <p>Each molecular family is associated with a classification score at each level of the chemical taxonomy. The figure below retrieved from <a href="https://www.mdpi.com/2218-1989/9/7/144">Ernst and co-workers</a>, illustrates how this classification score is calculated. A hypothetical molecular family consisting of 6 nodes, for which chemical structural information could be retrieved for a total of 4 nodes is shown in (a). MolNetEnhancer calculates the total number of nodes per chemical class and subsequently assigns the most abundant chemical class to the respective molecular family. The molecular family illustrated in (a), was classified as ‘flavonoids’ at the chemical class level by MolNetEnhancer, with a score of 0.375, which translates to the majority of the putative structural annotations within this molecular family (2.25 nodes out of 6) belong to the flavonoid structural class (b):</p>
@@ -1407,16 +1407,16 @@ Please note that you can adapt the title and you must add the relevant <i>in sil
 <p>To color nodes based on the chemical subclass score select 'Fill Color' in the 'Node' tab to the left and choose 'CF_subclass_score' as <i>Column</i> and 'Continuous Mapping' as <i>Mapping Type</i>:
 <img alt="img" src="../img/molnetenhancer/ChemicalClassScoreMapped.png" /></p>
 <p>All columns related to chemical class information are labeled with 'CF_', and chemical class information at other hierarchical levels of the chemical taxonomy can be mapped analogously (e.g. CF_superclass, CF_superclass_score, CF_class, etc.). </p>
-<h3 id="direct-cytoscape-previewdownload">Direct Cytoscape Preview/Download</h3>
+<h3 id="direct-cytoscape-previewdownload">Direct Cytoscape Preview/Download<a class="headerlink" href="#direct-cytoscape-previewdownload" title="Permanent link">&para;</a></h3>
 <p>This downloads the network with chemical class information mapped in the .cys format. You can open this file directly with <a href="https://cytoscape.org/">Cytoscape</a>. Chemical class information at the superclass level is already mapped. You can change to different levels of the chemical taxonomy as described above.</p>
-<h3 id="view-qiime2-emperor-plots">View qiime2 Emperor plots</h3>
+<h3 id="view-qiime2-emperor-plots">View qiime2 Emperor plots<a class="headerlink" href="#view-qiime2-emperor-plots" title="Permanent link">&para;</a></h3>
 <p>This loads the principal coordinates plot within the Qiime2 platform using a beta version of a UniFrac-based, chemically informed distance metric. Chemically-informed distance trees are built from the MolNetEnhancer retrieved chemical class information (MetaboDistTree-ClassyTree), which is based on the ClassyFire chemical ontology. 
 For more information on the algorithm refer to <a href="https://github.com/madeleineernst/MetaboDistTrees">this repository</a>. </p>
-<h2 id="citations">Citations</h2>
+<h2 id="citations">Citations<a class="headerlink" href="#citations" title="Permanent link">&para;</a></h2>
 <p>Have you found MolNetEnhancer to be useful for your data analysis? Please cite the relevant literature from below.</p>
-<h3 id="main-citation">Main citation</h3>
+<h3 id="main-citation">Main citation<a class="headerlink" href="#main-citation" title="Permanent link">&para;</a></h3>
 <p><a href="https://www.mdpi.com/2218-1989/9/7/144">Ernst, M.; Kang, K.B.; Caraballo-Rodríguez, A. M.; Nothias, L.-F.; Wandy, J.; Chen, C.; Wang, M.; Rogers, S.; Medema, M.H.; Dorrestein, P.C. and van der Hooft, J.J.J. MolNetEnhancer: Enhanced Molecular Networks by Integrating Metabolome Mining and Annotation Tools. Metabolites 2019, 9 (7): 144.</a></p>
-<h3 id="other-citations">Other citations</h3>
+<h3 id="other-citations">Other citations<a class="headerlink" href="#other-citations" title="Permanent link">&para;</a></h3>
 <p>MolNetEnhancer uses molecular networking through GNPS: 
 <a href="https://www.nature.com/articles/nbt.3597">Wang, M.; Carver, J. J.; Phelan, V. V.; Sanchez, L. M.; Garg, N.; Peng, Y.; Nguyen, D. D.; Watrous, J.; Kapono, C. A.; Luzzatto-Knaan, T.; et al. Sharing and Community Curation of Mass Spectrometry Data with Global Natural Products Social Molecular Networking. Nat. Biotechnol. 2016, 34 (8), 828–837.</a></p>
 <p>MolNetEnhancer uses untargeted substructure exploration through MS2LDA: 

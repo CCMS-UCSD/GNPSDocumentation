@@ -1565,8 +1565,8 @@
                   
                 
                 
-                <h1 id="gc-ms-spectral-library-search-and-molecular-networking">GC-MS Spectral Library Search and Molecular Networking</h1>
-<h2 id="configure-the-workflow">Configure the workflow</h2>
+                <h1 id="gc-ms-spectral-library-search-and-molecular-networking">GC-MS Spectral Library Search and Molecular Networking<a class="headerlink" href="#gc-ms-spectral-library-search-and-molecular-networking" title="Permanent link">&para;</a></h1>
+<h2 id="configure-the-workflow">Configure the workflow<a class="headerlink" href="#configure-the-workflow" title="Permanent link">&para;</a></h2>
 <p>There are two options to open the job page for conducting a spectral library search and create a molecular network.</p>
 <ul>
 <li>By clicking on the link “Search Spectral Library and Molecular Network” from the deconvolution job page status. See <em>GC-MS Deconvolution for GNPS</em> documentation. </li>
@@ -1620,7 +1620,7 @@
 <p><img alt="img" src="../img/GC-MS_documentation/Fig7F.png" /></p>
 <p><strong>Advanced Dereplicated Options</strong></p>
 <p>These options are only relevant if/when the parent mass information is available, so it is strongly recommended to leave the default values.</p>
-<h2 id="inspect-the-results">Inspect the Results</h2>
+<h2 id="inspect-the-results">Inspect the Results<a class="headerlink" href="#inspect-the-results" title="Permanent link">&para;</a></h2>
 <p>After the job has been completed, the <strong>job status page</strong> gives access to several molecular networking results views:</p>
 <p>(i) “ View All Library Hits” opens the interface that allows visualization of spectral matches to the reference database from selected libraries. It will display all of the top matches for each feature to different libraries and relevant information including retention time. </p>
 <ul>
@@ -1635,14 +1635,14 @@
 <p>The button at the top of the page “Back to status page” allows going back. To visualize molecular networks generated, the user has to download the input network files from the “Download Cytoscape Data” link, save the folder, and unzip it.</p>
 <p>In the job status page, some advanced views are available to visualized qiime2 emperor plots or bi-plots, and to download the associated tables. For more information, follow this <a href="https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/#view-qiime2-emperor-plots">link</a>.</p>
 <p><img alt="img" src="../img/GC-MS_documentation/Fig_10.png" /></p>
-<h3 id="cloning-a-job">Cloning a job</h3>
+<h3 id="cloning-a-job">Cloning a job<a class="headerlink" href="#cloning-a-job" title="Permanent link">&para;</a></h3>
 <p>If the same analysis needs to be repeated, it is possible to clone the job by clicking “clone” on the job status page. Cloning a job allows users to view all parameters and files that were used and rerun the job with the same, or adjusted parameters and files. Note that if data were imported from private user workspace and not from within MassIVE, other users will not have access to the data and consequently will not be able to rerun or reproduce the GNPS job.  </p>
-<h3 id="sharing-data">Sharing data</h3>
+<h3 id="sharing-data">Sharing data<a class="headerlink" href="#sharing-data" title="Permanent link">&para;</a></h3>
 <p>The analysis conducted on GNPS as well as the deposited raw data could be shared as a hyperlink to the GNPS job(s) and the MassIVE accession number, correspondingly. GNPS stores data inputs and setting used for the analyses of the data, so the analysis could be shared and reproduced. <a href="../datasets/">See the documentation</a>.</p>
-<h3 id="addingcurating-reference-spectra">Adding/Curating reference spectra</h3>
+<h3 id="addingcurating-reference-spectra">Adding/Curating reference spectra<a class="headerlink" href="#addingcurating-reference-spectra" title="Permanent link">&para;</a></h3>
 <p>High confidence spectra from experimental data or pure standards could be added as a reference spectrum to GNPS for future reference. <a href="../spectrumcuration/">See documentation</a>. If the user wishes to upload &gt;50 reference spectra to GNPS, a batch upload should be used to as detailed in the <a href="../batchupload/">online help</a>. The compliance of the file format can be verified using an online workflow.</p>
-<h2 id="visualization">Visualization</h2>
-<h3 id="network-visualization-in-cytoscape">Network Visualization in Cytoscape</h3>
+<h2 id="visualization">Visualization<a class="headerlink" href="#visualization" title="Permanent link">&para;</a></h2>
+<h3 id="network-visualization-in-cytoscape">Network Visualization in Cytoscape<a class="headerlink" href="#network-visualization-in-cytoscape" title="Permanent link">&para;</a></h3>
 <p>The network can be visualized in an external software such as Cytoscape [1], an open-source software platform used to visualize, analyze, and annotate molecular networks from GNPS. Cytoscape is available for download from<a href="http://www.cytoscape.org/"> here</a>. This software allowed to encode any property of the network (i.e. node shape or color, edge thickness) with a metadata category (i.e. cohort, cosine score, compound family). An online tutorial, created with Cytoscape 3.7, used for molecular networking generated with LC-MS/MS data, can be accessed <a href="../featurebasedmolecularnetworking-cytoscape/">here</a>. Many of these steps could be reproduced in the same way for molecular networking from GC-MS data. </p>
 <p>[1] Shannon, P., et al. (2003). Cytoscape: a software environment for integrated models of biomolecular interaction networks. <em>Genome Res, 13</em>(11), 2498-2504. doi:10.1101/gr.1239303</p>
 <p><strong>(A)</strong> Here we show an example of molecular networks visualizing in Cytoscape, generated from a study of volatiles related to aging of IPA beer (<a href="https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=1b300f711b404a3a8a9325352974adcd">GNPS link</a>). In Cytoscape, the different aging times (0, 1, 2, 3, 4, 5, 6, 8, 12, and 20 days) are represented by different colors, and the metabolites present in the beer (each node) can be mapped on the molecular networks. The size of each node represents the total abundance of the feature and the colors in the pie chart shows the proportions of the compound at different aging duration times (gradient from green to yellow to red). </p>
@@ -1650,7 +1650,7 @@
 <p><strong>(C)</strong> Other information can be mapped onto the network, for example, the same zoom with cosine values between nodes is shown instead of compound name annotations.</p>
 <p><strong>NOTE</strong>: The name of the node corresponds to the best match of the spectral pattern to the library across the entire dataset. Consequently, for some nodes the top match is not selected as the node's name as there exists other spectral pattern in the data that has better match to the same compound in the library. In such cases, the next best matching annotation is used. </p>
 <p><img alt="img" src="../img/GC-MS_documentation/Fig_11.png" /></p>
-<h3 id="molecular-mapping-in-ili">Molecular mapping in ili</h3>
+<h3 id="molecular-mapping-in-ili">Molecular mapping in ili<a class="headerlink" href="#molecular-mapping-in-ili" title="Permanent link">&para;</a></h3>
 <p>Spatial distribution of different chemical features could be visualized in 2D or 3D using ili, a visualization app for 3D molecular cartography [2]. ‘ili could be used either on the <a href="http://ili.embl.de/">website</a> or as a <a href="https://goo.gl/3KAA8U">Chrome extension</a>. For mapping, two files need to be uploaded (DRAG AND DROP): an image for 2D (PNG or JPG format) or model for 3D (STL format), and a .cvs file with the coordinates of the spots on the model that corresponds to the sampled locations. Examples of mapping applications are available on ‘ili <a href="https://ili.embl.de/">website</a>. Here it is demonstrated how to map the volatile data on the same model as shown in the “Human skin metabolome” example. </p>
 <p>[2] Protsyuk, I., et al. (2018). 3D molecular cartography using LC–MS facilitated by Optimus and'ili software. <em>Nature protocols</em>, <em>13</em>(1), 134.https://doi.org/10.1038/nprot.2017.122</p>
 <p><img alt="img" src="../img/GC-MS_documentation/Fig_12.png" /></p>
@@ -1658,10 +1658,10 @@
 <p><img alt="img" src="../img/GC-MS_documentation/Fig_13.png" /></p>
 <p>To create chemical maps, drag and drop the example <a href="https://github.com/aaksenov1/Human-volatilome-3D-mapping-">volatilome table</a> human 3D model. Different parameters can be set such as the spots, the mapping color, or the angles of visualization. To display different features, click on the feature identifier value listed above the color scale on the bottom right corner of the screen and select features to display. To annotate molecular features of interest, refer to the GNPS library search job for the matching features.</p>
 <p><img alt="img" src="../img/GC-MS_documentation/Fig_14.png" /></p>
-<h2 id="citation">Citation</h2>
+<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
 <p>Aksenov, A. A. et al  <a href="https://www.biorxiv.org/content/10.1101/2020.01.13.905091v1">Algorithmic Learning for Auto-deconvolution of GC-MS Data to Enable Molecular Networking within GNPS.</a> </p>
 <p>https://doi.org/10.1101/2020.01.13.905091</p>
-<h2 id="page-contributors">Page contributors</h2>
+<h2 id="page-contributors">Page contributors<a class="headerlink" href="#page-contributors" title="Permanent link">&para;</a></h2>
 <p>Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzalez (Universidad de los Andes, UCSD), Louis Felix Nothias (UCSD).</p>
                 
                   

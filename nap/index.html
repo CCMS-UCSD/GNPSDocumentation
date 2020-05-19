@@ -1749,10 +1749,10 @@
                 
                   <h1>Network Annotation Propagation (NAP)</h1>
                 
-                <h2 id="network-annotation-propagation-overview">Network Annotation Propagation Overview</h2>
+                <h2 id="network-annotation-propagation-overview">Network Annotation Propagation Overview<a class="headerlink" href="#network-annotation-propagation-overview" title="Permanent link">&para;</a></h2>
 <p>Network Annotation Propagation (NAP) uses spectral networks to propagate information from spectral library matching, in order to improve in silico fragmentation candidate structure ranking. This workflow is currently in beta development stages so any feedback is welcome to improve analysis and usability. It is available <a href="https://proteomics2.ucsd.edu/ProteoSAFe/?params=%7B%22workflow%22:%22NAP_CCMS2%22%7D">here</a> under 'NAP_CCMS' Workflow drop down menu.</p>
 <p>Check out the full <a href="https://github.com/DorresteinLaboratory/NAP_ProteoSAFe/">documentation</a>.</p>
-<h2 id="nap-short-hands-on-tutorial">NAP short hands on tutorial</h2>
+<h2 id="nap-short-hands-on-tutorial">NAP short hands on tutorial<a class="headerlink" href="#nap-short-hands-on-tutorial" title="Permanent link">&para;</a></h2>
 <p>The aim of this tutorial is to work as a guided tour through this documentation page and exploring the finding of <a href="#citation">Kang et al., (2018)</a>.</p>
 <ol>
 <li>Go to <a href="#structure-database">Structure database</a> section, download the example in house database (two columns file), add the structure <a href="http://bioinf-applied.charite.de/supernatural_new/index.php?site=search5&amp;np_id=SN00230021">SN00230021</a> to the file and generate the formatted database. Make sure you use an excel like software and save as tab separated text file;</li>
@@ -1760,13 +1760,13 @@
 <li>When your job is processed, you should receive a <a href="https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=2d7b00ff710c42438146f2bc311f1785">link</a> similar to that. Go to section <a href="#online-exploration-of-nap-results">Online Exploration</a> and browse the results; </li>
 <li>Follow the same <a href="https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=2d7b00ff710c42438146f2bc311f1785">link</a> above. Go to section <a href="#nap-visualization-in-cytoscape">NAP Visualization in Cytoscape</a> and browse the results; </li>
 </ol>
-<h2 id="data-input-preparation">Data Input Preparation</h2>
+<h2 id="data-input-preparation">Data Input Preparation<a class="headerlink" href="#data-input-preparation" title="Permanent link">&para;</a></h2>
 <p>The following inputs are used for NAP:</p>
 <ol>
 <li>Molecular network task id, see <a href="../networking/">Molecular Networking</a> (required)</li>
 <li>Identifier(s) of databases and/or user provided databases (required)</li>
 </ol>
-<h3 id="structure-database">Structure database</h3>
+<h3 id="structure-database">Structure database<a class="headerlink" href="#structure-database" title="Permanent link">&para;</a></h3>
 <p>There are basically three options for database structure selection:</p>
 <ol>
 <li>Input one or more databases, separated by ",". Available options are: GNPS, HMDB, SUPNAT, CHEBI, DRUGBANK and FooDB. Be aware that these databases are static and new changes on the source databases are not incorporated automatically.</li>
@@ -1781,8 +1781,8 @@ A standard format is required for the in house database. One can easily collect 
 <ol>
 <li>The combination of the two databases above. NAP allows the combination of different databases, either through multiple database identifiers, or by the combination of identifiers and text file. While this feature allows flexibility, it is important narrow the search space for the system under study.</li>
 </ol>
-<h2 id="running-nap">Running NAP</h2>
-<h3 id="nap-workflow-selection">NAP Workflow Selection</h3>
+<h2 id="running-nap">Running NAP<a class="headerlink" href="#running-nap" title="Permanent link">&para;</a></h2>
+<h3 id="nap-workflow-selection">NAP Workflow Selection<a class="headerlink" href="#nap-workflow-selection" title="Permanent link">&para;</a></h3>
 <p>From the main <a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp">GNPS page</a>, you can access NAP clicking the banner</p>
 <p><img alt="napanalysis" src="../img/nap/nap_selection.png" /></p>
 <p>and then selecting NAP in the corresponding description. You can also directly open clicking <a href="https://proteomics2.ucsd.edu/ProteoSAFe/?params=%7B%22workflow%22:%22NAP_CCMS2%22%7D">"here"</a>.</p>
@@ -1792,7 +1792,7 @@ A standard format is required for the in house database. One can easily collect 
 <p><img alt="taskid" src="../img/nap/gnps_taskid_example.png" /></p>
 <p>and the molecular family (connected component) containing the 'cluster index' 56 can be inspected in the <a href="https://gnps.ucsd.edu/ProteoSAFe/result.jsp?view=network_displayer&amp;componentindex=1&amp;task=3b215c4b25594b9c85d92de547815c0a#%7B%7D">molecular network</a>. </p>
 <p>A detailed description of the parameters is provided <a href="#parameter-walkthrough">below</a>.</p>
-<h3 id="parameter-walkthrough">Parameter Walkthrough</h3>
+<h3 id="parameter-walkthrough">Parameter Walkthrough<a class="headerlink" href="#parameter-walkthrough" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1884,59 +1884,59 @@ A standard format is required for the in house database. One can easily collect 
 </tr>
 </tbody>
 </table>
-<h2 id="online-exploration-of-nap-results">Online Exploration of NAP results</h2>
+<h2 id="online-exploration-of-nap-results">Online Exploration of NAP results<a class="headerlink" href="#online-exploration-of-nap-results" title="Permanent link">&para;</a></h2>
 <p>After completing a NAP workflow, the results can be browsed in the web interface. The web interface provides a quick and easy way to perform initial analysis of your data, particularly if you are interested in a specific structure or class of structures and want to inspect in the results.</p>
 <p>To have access to the web interface click on the 'EXPERIMENTAL - NAPviewer' at the results page: </p>
 <p><img alt="napviewer_linkout" src="../img/nap/nap_results_page_web.png" /></p>
 <p>The result summaries can be divided in four sections.</p>
-<h3 id="1-structure-view">1. Structure view</h3>
+<h3 id="1-structure-view">1. Structure view<a class="headerlink" href="#1-structure-view" title="Permanent link">&para;</a></h3>
 <p>NAP attempts to re-rank the candidate structures provided by <a href="http://c-ruttkies.github.io/MetFrag/">MetFrag</a> using the information provided by the molecular network. This first view shows the <strong>S</strong>tructures ranked by MetFrag and the ones re-ranked by NAP to allow the user to quickly inspect if the propagation improved the ranking:</p>
 <p><img alt="napviewer_structures" src="../img/nap/napviewer_structure_view_mouse.png" /></p>
-<h3 id="2-graph-view">2. Graph view</h3>
+<h3 id="2-graph-view">2. Graph view<a class="headerlink" href="#2-graph-view" title="Permanent link">&para;</a></h3>
 <p>As the re-ranking is performing obtaining information from neighbor nodes, the <strong>G</strong>raph view displays the direct neighbor's first candidate structures of a given re-ranked node to allow the user to inspect if the re-ranking is consistent in the network:</p>
 <p><img alt="napviewer_graph" src="../img/nap/napviewer_node_view_mouse.png" /></p>
 <p>The node border colors indicate the source of structure: green - reference spectral library structure; magenta MetFrag's first candidate; blue Fusion's first candidate and red Consensus' first candidate.</p>
-<h3 id="3-fragment-view">3. Fragment view</h3>
+<h3 id="3-fragment-view">3. Fragment view<a class="headerlink" href="#3-fragment-view" title="Permanent link">&para;</a></h3>
 <p>Some important aspects of structural prediction are: how many fragments were predicted, which fragments and which substructures were assigned to the predictions. The <strong>F</strong>ragment view displays the direct fragments predicted for each structure in the candidate list of a given fragmentation spectrum (represented by a node in the network):</p>
 <p><img alt="napviewer_graph" src="../img/nap/napviewer_fragmentation_mouse.png" /></p>
 <p>By hovering the mouse over the candidate fragment it is possible to see the substructure predicted for the fragment.</p>
-<h3 id="4-full-candidate-list-view">4. Full candidate list view</h3>
+<h3 id="4-full-candidate-list-view">4. Full candidate list view<a class="headerlink" href="#4-full-candidate-list-view" title="Permanent link">&para;</a></h3>
 <p>As structural prediction is very challenging. The correct candidate may not be the first in the list, therefore it is important to be able to browse the candidate list. The <strong>Link</strong> containing the full list of candidate structures found in NAP search is provided. The first column of the candidate's table contains a link out for the respective database where the structure was originated. The table also contains the ranking for MetFrag, Fusion and Consensus, the link for number of fragments predicted for each candidate structure, a link to fragment plot representation and a column with color coded structural similarity grouping that can be easily associated with candidate's <a href="http://classyfire.wishartlab.com/">ClassyFire</a> class, when available:</p>
 <p><img alt="napviewer_graph" src="../img/nap/napviewer_candidate_list_group.png" /></p>
-<h2 id="nap-visualization-in-cytoscape">NAP Visualization in Cytoscape</h2>
+<h2 id="nap-visualization-in-cytoscape">NAP Visualization in Cytoscape<a class="headerlink" href="#nap-visualization-in-cytoscape" title="Permanent link">&para;</a></h2>
 <p>In a similar way as <a href="../networking/">Molecular Networking</a> uses <a href="../cytoscape/">Cytoscape</a> to visualize the whole network, we can visualize structure prediction of entire connected component or networks using the output from NAP.</p>
 <p>Cytoscape (we have used version &gt;= 3.4) is available for download from <a href="http://www.cytoscape.org">here</a>. </p>
-<h3 id="download-nap-cytoscape-files">Download NAP Cytoscape files</h3>
+<h3 id="download-nap-cytoscape-files">Download NAP Cytoscape files<a class="headerlink" href="#download-nap-cytoscape-files" title="Permanent link">&para;</a></h3>
 <p>To download NAP's Cytoscape file, go back to the results page of your task:</p>
 <p><img alt="nap_cytoscape" src="../img/nap/nap_results_page_summary.png" /></p>
 <p>and download the compacted file containing the 'structure_graph_alt.xgmml' file.</p>
 <p><img alt="nap_download" src="../img/nap/nap_results_page_summary_download.png" /></p>
 <p>After the download, remember to uncompress the file for downstream use.</p>
-<h3 id="installing-the-chemviz-plugin">Installing the ChemViz plugin</h3>
+<h3 id="installing-the-chemviz-plugin">Installing the ChemViz plugin<a class="headerlink" href="#installing-the-chemviz-plugin" title="Permanent link">&para;</a></h3>
 <p>To visualize the structures on NAP output we need the <a href="https://apps.cytoscape.org/apps/chemviz">ChemViz</a> plugin. The easiest way to install it is using Cytoscape's App Manager, as shown below:</p>
 <p><img alt="install_chemviz" src="../img/nap/chemviz_install.gif" /></p>
-<h2 id="load-nap-cytoscape-file-and-apply-layout">Load NAP Cytoscape file and apply layout</h2>
+<h2 id="load-nap-cytoscape-file-and-apply-layout">Load NAP Cytoscape file and apply layout<a class="headerlink" href="#load-nap-cytoscape-file-and-apply-layout" title="Permanent link">&para;</a></h2>
 <p>Load the 'structure_graph_alt.xgmml' file:</p>
 <p><img alt="nap_cytoscape" src="../img/nap/load_xgmml.gif" /></p>
 <p>and apply a layout to spread the nodes:</p>
 <p><img alt="nap_layout" src="../img/nap/cytoscape_layout.gif" /></p>
-<h2 id="change-image-display-properties-and-paint-library-match-structure">Change image display properties and paint library match structure</h2>
+<h2 id="change-image-display-properties-and-paint-library-match-structure">Change image display properties and paint library match structure<a class="headerlink" href="#change-image-display-properties-and-paint-library-match-structure" title="Permanent link">&para;</a></h2>
 <p>The 'structure_graph_alt.xgmml' file contains some pre-set elements to aid structure display. Nodes possessing a structure are empty squares. Node borders are either green (spectral library match) or blue (in silico prediction). In silico predictions can be a combination of MetFrag, Fusion and Consensus. Browsing the 'Table Panel' is possible to inspect which scoring method has structures available in the columns MetFrag/Fusion/ConsensusSMILES. To use one of these columns to display the structures we have first to change the properties of ChemViz, by doing:</p>
 <p><img alt="library_smiles" src="../img/nap/set_spectral_library_smiles.gif" /></p>
 <p>After setting the desired source column to display the structure one can just 'paint' the structure on the node:</p>
 <p><img alt="paint_library" src="../img/nap/paint_spectral_library_structure.gif" /></p>
-<h3 id="change-display-properties-and-paint-on-multiple-nodes">Change display properties and paint on multiple nodes</h3>
+<h3 id="change-display-properties-and-paint-on-multiple-nodes">Change display properties and paint on multiple nodes<a class="headerlink" href="#change-display-properties-and-paint-on-multiple-nodes" title="Permanent link">&para;</a></h3>
 <p>As we described in the publications <a href="#citation">below</a> we have a decreasing order of confidence on structural prediction spectral library match &gt; Fusion scoring &gt; Consensus scoring &gt; MetFrag scoring. To change for Fusion scoring structures you can do:</p>
 <p><img alt="fusion_smiles" src="../img/nap/set_fusion_smiles.gif" /></p>
 <p>and paint the structures:</p>
 <p><img alt="paint_fusion" src="../img/nap/paint_fusion_structure.gif" /></p>
-<h3 id="display-the-list-of-candidates">Display the list of candidates</h3>
+<h3 id="display-the-list-of-candidates">Display the list of candidates<a class="headerlink" href="#display-the-list-of-candidates" title="Permanent link">&para;</a></h3>
 <p>As discussed in the <a href="#online-exploration-of-nap-results">Online Exploration</a> section, the most correct structure may not be the first candidate. Therefore we can display the structures outputted from our <a href="#parameter-walkthrough">initial parameters</a>:</p>
 <p><img alt="cand_chemviz" src="../img/nap/display_consensus_candidates.gif" /></p>
-<h2 id="citation">Citation</h2>
+<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
 <p><a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006089">da Silva, Ricardo R., Mingxun Wang, Louis-Félix Nothias, Justin JJ van der Hooft, Andrés Mauricio Caraballo-Rodríguez, Evan Fox, Marcy J. Balunas, Jonathan L. Klassen, Norberto Peporine Lopes, and Pieter C. Dorrestein. "Propagating annotations of molecular networks using in silico fragmentation." PLoS computational biology 14, no. 4 (2018): e1006089.</a></p>
 <p><a href="https://pubs.acs.org/doi/abs/10.1021/acs.jnatprod.8b00292">Kyo Bin Kang, Eun Jin Park, Ricardo R. da Silva, Hyun Woo Kim, Pieter C. Dorrestein, Sang Hyun Sung. "Targeted Isolation of Neuroprotective Dicoumaroyl Neolignans and Lignans from Sageretia theezans Using in Silico Molecular Network Annotation Propagation-Based Dereplication" Journal of Natural Products, 2018, 81 (8), pp 1819–1828</a></p>
-<h2 id="contribute-to-the-documentation">Contribute to the Documentation</h2>
+<h2 id="contribute-to-the-documentation">Contribute to the Documentation<a class="headerlink" href="#contribute-to-the-documentation" title="Permanent link">&para;</a></h2>
 <ul>
 <li>For informations/feature request, please open an "Issue" on the <a href="https://github.com/CCMS-UCSD/GNPSDocumentation"><em>CCMS-UCSD/GNPSDocumentation</em></a> GitHub repository.</li>
 <li>To contribute directly to the GNPS documentation, fork the <a href="https://github.com/CCMS-UCSD/GNPSDocumentation"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request".</li>

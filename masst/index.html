@@ -1588,24 +1588,24 @@
                   <h1>MASST Search (Mass Search Tool)</h1>
                 
                 <p><img alt="logo" src="../img/logo/MASST_logo.png" /></p>
-<h2 id="overview">Overview</h2>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>Query a single MS/MS spectrum across all public GNPS datasets. The mass spectrometry equivalent of NCBI BLAST helps to put the query spectrum in context of where else it occurs (including sample information) as well as search a single MS/MS spectrum against all public spectral libraries.</p>
-<h2 id="workflow-selection">Workflow Selection</h2>
+<h2 id="workflow-selection">Workflow Selection<a class="headerlink" href="#workflow-selection" title="Permanent link">&para;</a></h2>
 <p>To search a single spectrum to see where it occurs in all public GNPS datasets, there are three ways to populate the search.</p>
-<h3 id="1-masst-web-interface">1. MASST Web Interface</h3>
+<h3 id="1-masst-web-interface">1. MASST Web Interface<a class="headerlink" href="#1-masst-web-interface" title="Permanent link">&para;</a></h3>
 <p>Click <a href="https://masst.ucsd.edu">here</a> for the standalone MASST search interface, to get this start page:</p>
 <p><img alt="img" src="../img/singlespectrum/MASST_standalone.PNG" /></p>
-<h3 id="2-manual-workflow-entering">2. Manual Workflow Entering</h3>
+<h3 id="2-manual-workflow-entering">2. Manual Workflow Entering<a class="headerlink" href="#2-manual-workflow-entering" title="Permanent link">&para;</a></h3>
 <p>From the main <a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp">GNPS page</a>, click the <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22SEARCH_SINGLE_SPECTRUM%22,%22library_on_server%22:%22d.speclibs;%22%7D">"Query Spectrum"</a> button.</p>
 <p><img alt="analysis" src="../img/singlespectrum/singlespectrum_selection.png" /></p>
-<h3 id="3-from-molecular-networking">3. From Molecular Networking</h3>
+<h3 id="3-from-molecular-networking">3. From Molecular Networking<a class="headerlink" href="#3-from-molecular-networking" title="Permanent link">&para;</a></h3>
 <p>In analyzing your molecular networks, you can click the "Search Spec" button on the <a href="../networkingviews/#view-all-clusters-with-ids">View ALL Clusters With IDs</a> link to pre-populate parent mass and peaks.</p>
 <p><img alt="img" src="../img/singlespectrum/searchspecnetworkinglink.png" /></p>
-<h2 id="parameters">Parameters</h2>
+<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <p>The query parameters are similar library search, however, users are required to enter the precursor m/z and peaks.</p>
 <p>The peaks input requires a peak per line with mass followed my intensity, separated by a space or a tab. See an <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?task=fc961b77a34942408a832fd94da7dbd3">demonstration</a> input spectrum.</p>
 <p><img alt="img" src="../img/singlespectrum/singlespectrum_input.png" /></p>
-<h3 id="search-options">Search Options</h3>
+<h3 id="search-options">Search Options<a class="headerlink" href="#search-options" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1637,7 +1637,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="advanced-search-options">Advanced Search Options</h3>
+<h3 id="advanced-search-options">Advanced Search Options<a class="headerlink" href="#advanced-search-options" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1669,7 +1669,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="advanced-filtering-options">Advanced Filtering Options</h3>
+<h3 id="advanced-filtering-options">Advanced Filtering Options<a class="headerlink" href="#advanced-filtering-options" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1712,21 +1712,21 @@
 </tr>
 </tbody>
 </table>
-<h2 id="results">Results</h2>
+<h2 id="results">Results<a class="headerlink" href="#results" title="Permanent link">&para;</a></h2>
 <p>Query results are separated into two categories, spectral library search and GNPS dataset queries. Spectral library search results are presented in a similar fashion as the batch library search workflow, please refer to that <a href="../librarysearch/">documentation</a>.</p>
 <p>The top scoring match to public GNPS datasets are listed in the "Dataset Matches".</p>
 <p><img alt="img" src="../img/singlespectrum/datasetmatches.png" /></p>
 <p>The quality of the match can be inspected by clicking the "plotting" icon at the left of each row. Further, we can drill down to the exact files within each dataset that spectrum matched to by clicking "View File Matches in Dataset".</p>
 <p><img alt="img" src="../img/singlespectrum/datasetfilematches.png" /></p>
 <p>This view provides the full file path for all the files from each dataset along with the associated metadata for each file.</p>
-<h2 id="re-analysis-of-found-files">Re-analysis of found files</h2>
+<h2 id="re-analysis-of-found-files">Re-analysis of found files<a class="headerlink" href="#re-analysis-of-found-files" title="Permanent link">&para;</a></h2>
 <p>Clicking on [Analyze Files Found With Molecular Networking] will select all of the individual files identified through the single spectrum search and place them into a group. </p>
 <p><img alt="img" src="../img/singlespectrum/MASST_reanalysis1.PNG" /></p>
 <p>The window below will appear and you can then click on [Reanalyze with Molecular Networking] to launch a molecular networking job with the files that were found.</p>
 <p><img alt="img" src="../img/singlespectrum/MASST_reanalysis2.PNG" /></p>
 <p>The files are located in the default group (G1). You can then name the job and adjust parameters as applicable for your search. You can also add additional files to your job into one of the other default groups by clicking on [Select input files]. </p>
 <p><img alt="img" src="../img/singlespectrum/MASST_reanalysis3.PNG" /></p>
-<h2 id="citation">Citation</h2>
+<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
 <p><a href="https://www.nature.com/articles/s41587-019-0375-9">Wang, M., Jarmusch, A.K., Vargas, F. et al. Mass spectrometry searches using MASST. Nat Biotechnol (2020) doi:10.1038/s41587-019-0375-9</a></p>
                 
                   

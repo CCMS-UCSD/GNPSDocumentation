@@ -1725,63 +1725,63 @@
                 
                   <h1>DEREPLICATOR</h1>
                 
-                <h2 id="dereplicator-insilico-peptidic-natural-products-tools">DEREPLICATOR - Insilico Peptidic Natural Products Tools</h2>
+                <h2 id="dereplicator-insilico-peptidic-natural-products-tools">DEREPLICATOR - Insilico Peptidic Natural Products Tools<a class="headerlink" href="#dereplicator-insilico-peptidic-natural-products-tools" title="Permanent link">&para;</a></h2>
 <p>The Insilico Peptidic Natural Products <strong>DEREPLICATOR</strong> is a bioinformatic tool available on GNPS that allows the annotation of known peptidic natural products in MS/MS data using in silico fragmentation tree.</p>
 <p>The introduction of <strong>DEREPLICATOR VarQuest</strong> made possible to search variants of known peptidic natural products on GNPS.</p>
 <p>The introduction of <strong>DEREPLICATOR+ (PLUS)</strong> improved the confidence in the annotation from the DEREPLICATOR, and expanded annotations to non-peptidic natural products on GNPS. </p>
 <p>These algorithms and software are developed in collaboration of <a href="http://cab.spbu.ru">Saint Petersburg State University</a> (Russia), 
 <a href="http://cseweb.ucsd.edu/~ppevzner/">University of California San Diego</a> (CA, USA) 
 and <a href="http://mohimanilab.cbd.cmu.edu">Carnegie Mellon University</a> (PA, USA).</p>
-<h2 id="manuscripts-and-citations">Manuscripts and Citations</h2>
+<h2 id="manuscripts-and-citations">Manuscripts and Citations<a class="headerlink" href="#manuscripts-and-citations" title="Permanent link">&para;</a></h2>
 <p>If you used DEREPLICATOR tools, please cite the corresponding manuscripts:</p>
 <p><strong>DEREPLICATOR:</strong>
 Mohimani et al., Dereplication of Peptidic Natural Products Through Database Search of Mass Spectra, <em>Nature Chemical Biology</em>, 13, 30–37 (2017). <a href="https://doi.org/10.1038/nchembio.2219">https://doi.org/10.1038/nchembio.2219</a>.</p>
 <p><strong>DEREPLICATOR VarQuest</strong>: Gurevich, A. et al. Increased diversity of peptidic natural products revealed by modification-tolerant database search of mass spectra. <em>Nature Microbiology</em> 3, 319–327 (2018). <a href="https://doi.org/10.1038/s41564-017-0094-2">https://doi.org/10.1038/s41564-017-0094-2</a></p>
 <p><strong>DEREPLICATOR+</strong>: Mohimani, H. et al. Dereplication of microbial metabolites through database search of mass spectra. <em>Nature Communication</em> 9, 4035 (2018). <a href="https://doi.org/10.1038/s41467-018-06082-8">https://doi.org/10.1038/s41467-018-06082-8</a></p>
-<h2 id="development">Development</h2>
+<h2 id="development">Development<a class="headerlink" href="#development" title="Permanent link">&para;</a></h2>
 <p>The <a href="https://github.com/ablab/npdtools">GitHub repository</a> provides latest source code and release. </p>
-<h2 id="accessing-the-dereplicator-tools-on-gnps">Accessing the DEREPLICATOR tools on GNPS</h2>
+<h2 id="accessing-the-dereplicator-tools-on-gnps">Accessing the DEREPLICATOR tools on GNPS<a class="headerlink" href="#accessing-the-dereplicator-tools-on-gnps" title="Permanent link">&para;</a></h2>
 <p>The <strong>DEREPLICATOR (VarQuest)</strong>, and <strong>DEREPLICATOR+</strong> are available on GNPS on the <a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-theoretical.jsp">in silico tools page</a>.</p>
-<h4 id="step-1-go-to-gnps">STEP 1: Go to GNPS</h4>
+<h4 id="step-1-go-to-gnps">STEP 1: Go to GNPS<a class="headerlink" href="#step-1-go-to-gnps" title="Permanent link">&para;</a></h4>
 <p>Go to <a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp">http://gnps.ucsd.edu</a>, and create/login to your account.</p>
-<h4 id="step-2-access-dereplicator">STEP 2: Access DEREPLICATOR</h4>
+<h4 id="step-2-access-dereplicator">STEP 2: Access DEREPLICATOR<a class="headerlink" href="#step-2-access-dereplicator" title="Permanent link">&para;</a></h4>
 <p>Find the "In Silico Tools" box and click on "Browse Tools".</p>
 <p><img alt="img" src="../img/dereplicator/Figure1.png" /></p>
 <p>Choose either DEREPLICATOR (VarQuest) or DEREPLICATOR+.</p>
 <p><img alt="img" src="../img/dereplicator/Figure2.png" /></p>
-<h4 id="step-3-select-your-files">STEP 3: SELECT YOUR FILES</h4>
+<h4 id="step-3-select-your-files">STEP 3: SELECT YOUR FILES<a class="headerlink" href="#step-3-select-your-files" title="Permanent link">&para;</a></h4>
 <p><strong>Select/Import a mass spectrometry file</strong>:
 The input format accepted are mzML/mzXML/MGF. Note that have the option to import an existing GNPS dataset (by clicking on "Share Files") or upload your own data (by clicking on "Upload Files"). See the corresponding GNPS documentation for FTP upload.</p>
 <p>After getting done with selecting files, click on Finish Selection.</p>
-<h4 id="step-4-configure">STEP 4: CONFIGURE</h4>
+<h4 id="step-4-configure">STEP 4: CONFIGURE<a class="headerlink" href="#step-4-configure" title="Permanent link">&para;</a></h4>
 <p><strong>Configure the parameters for the DEREPLICATOR job</strong>:
 Select a title for your job, and adjust parameters depending on your data and the mass spectrometer used.</p>
 <p><img alt="img" src="../img/dereplicator/Figure3.png" /></p>
-<h5 id="basic-options">BASIC OPTIONS:</h5>
+<h5 id="basic-options">BASIC OPTIONS:<a class="headerlink" href="#basic-options" title="Permanent link">&para;</a></h5>
 <p>-- <strong>Precursor Ion Mass Tolerance</strong>:  This value specifies how much fragment ions can be shifted from their expected m/z values. Default value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ).</p>
 <p>-- <strong>Fragment ion Mass Tolerance</strong>: This value specifies how much fragment ions can be shifted from their expected m/z values. Default value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ).</p>
 <p>-- <strong>Search analog (VarQuest)</strong> [RECOMMENDED TO USE]: The VarQuest algorithm can search for analogs of known natural products in MS/MS data using Dereplicator. VarQuest is a modification-tolerant database search tool that discovers unexpected modifications in a blind mode. Since the computational space for variable PNP identification is computationally expensive, VarQuest first constructs a set of feasible PSM using a simple scoring approach and further filters out this set using a rigorous scoring method. Using VarQuest will increase the job time. The use of VarQuest analogs option is recommended as it expands the search space, and it reduces the overall run time.</p>
-<h5 id="advanced-options">ADVANCED OPTIONS:</h5>
+<h5 id="advanced-options">ADVANCED OPTIONS:<a class="headerlink" href="#advanced-options" title="Permanent link">&para;</a></h5>
 <p>-- <strong>PNP database</strong> : a choice of two databases Regular/Extended (Extended one is more informative but 2 times larger, i.e. two times slower processing)</p>
 <p>-- <strong>Mimimum number of AA</strong>: Dereplicator is able to search for short peptides. This parameter determines what is the minimum number of amino acids, we consider for the compounds that are considered in Dereplicator search.</p>
 <p>-- <strong>Accurate P-values</strong> : accurate (but slow) algorithm for P-value computation (MS-DPR), by default raw estimation is used.</p>
 <p>-- <strong>Max charge</strong>: Maximum charge allowed.</p>
-<h5 id="advanced-dereplicator-options">ADVANCED DEREPLICATOR OPTIONS:</h5>
+<h5 id="advanced-dereplicator-options">ADVANCED DEREPLICATOR OPTIONS:<a class="headerlink" href="#advanced-dereplicator-options" title="Permanent link">&para;</a></h5>
 <p>-- <strong>Max Isotopic Shift</strong>: When working with molecules with 1000 Da  or higher masses, mass spectrometers commonly predict the precursor mass 1 or 2 Da higher than the monoisotopic mass due to the isotopic pattern. Setting Maximum isotopic shift to higher than 0 allows Dereplicator to consider these shifts in the precursor mass.</p>
 <p>-- <strong>Adducts</strong> : Dereplicator can search in addition to protonated adducts, sodiated and potassium adducts.</p>
-<h5 id="advanced-varquest-options">ADVANCED VARQUEST OPTIONS:</h5>
+<h5 id="advanced-varquest-options">ADVANCED VARQUEST OPTIONS:<a class="headerlink" href="#advanced-varquest-options" title="Permanent link">&para;</a></h5>
 <p>-- <strong>Max Allowed Modification Mass</strong> : Maximum difference allowed between the precursor ion of an unknown modified peptide and the (dereplicated) known peptide.</p>
 <p>-- <strong>Min Matched Peaks with Known Compound</strong> : Minimum number of common peaks between the MS/MS spectrum of an unknown modified peptide and the (dereplicated) known peptide.</p>
 <p>Select an email. Then click on submit.</p>
 <p>You will soon get an email with the link to the results when your job is finished. You can also check the status of your job in "Jobs" section.</p>
-<h4 id="step-5-view-results">STEP 5: VIEW RESULTS</h4>
+<h4 id="step-5-view-results">STEP 5: VIEW RESULTS<a class="headerlink" href="#step-5-view-results" title="Permanent link">&para;</a></h4>
 <p><strong>See the DEREPLICATOR job status</strong>:</p>
 <p>The status of the job can be vizualized in your account job list, and through the link in provided in email you will received when the job is done.</p>
 <p>The job can be <em>Cloned</em>, for further parameters modifications. Summary Statistics and Workflow Parameters can be consulted on the respective links.</p>
 <p>Clic on <em>View Unique Peptides</em> (recommended), to have get the list of annotated molecules.</p>
 <p>Clic on the <em>View All PSM</em> (Peptide-Spectrum Match) to have detailed view of the peptides-to-spectrum matches.</p>
 <p><img alt="img" src="../img/dereplicator/Figure4.png" /></p>
-<h4 id="step-6-analyse">STEP 6: ANALYSE</h4>
+<h4 id="step-6-analyse">STEP 6: ANALYSE<a class="headerlink" href="#step-6-analyse" title="Permanent link">&para;</a></h4>
 <p><strong>Explore the DEREPLICATOR annotations:</strong>
 Annotations can be sorted using various column (usually the score or the p-value), or a compound name can be searched with the filter function.</p>
 <p><img alt="img" src="../img/dereplicator/Figure5.png" /></p>
@@ -1792,14 +1792,14 @@ Annotations can be sorted using various column (usually the score or the p-value
 <p>In the Annotated fragments table, lists the ion fragments that matched with the fragmentation tree, along with their mass error, charge and intensities.</p>
 <p>Click on a blue peak to highlighted the corresponding fragment on the molecular structure, along with its properties.</p>
 <p><img alt="img" src="../img/dereplicator/Figure7.png" /></p>
-<h4 id="step-7-validate">STEP 7: VALIDATE</h4>
+<h4 id="step-7-validate">STEP 7: VALIDATE<a class="headerlink" href="#step-7-validate" title="Permanent link">&para;</a></h4>
 <p><strong>Validate a DEREPLICATOR annotation</strong>:
 More than 60% of Dereplicator annotations on GNPS Massive datasets (April 2016) were manually curated.</p>
-<h5 id="validating-a-dereplicator-annotation-msi-level-1">Validating a DEREPLICATOR annotation (MSI level 1):</h5>
+<h5 id="validating-a-dereplicator-annotation-msi-level-1">Validating a DEREPLICATOR annotation (MSI level 1):<a class="headerlink" href="#validating-a-dereplicator-annotation-msi-level-1" title="Permanent link">&para;</a></h5>
 <ul>
 <li>A level 1 MSI identification can be achieved of the reference material is available for the compound, by ordering the compound and analyzing it with the same method LC-MS/MS. The MS/MS spectrum and retention time should be identical between the observed and reference MS/MS spectra (co-injection can be done to verify retention time).</li>
 </ul>
-<h5 id="annotation-with-the-dereplicator-msi-level-2-or-3-one-must">Annotation with the DEREPLICATOR (MSI level 2 or 3), one must:</h5>
+<h5 id="annotation-with-the-dereplicator-msi-level-2-or-3-one-must">Annotation with the DEREPLICATOR (MSI level 2 or 3), one must:<a class="headerlink" href="#annotation-with-the-dereplicator-msi-level-2-or-3-one-must" title="Permanent link">&para;</a></h5>
 <ul>
 <li>
 <p>The MS/MS spectrum from the raw file must be inspected (consistency, noise level, ...)</p>
@@ -1820,7 +1820,7 @@ More than 60% of Dereplicator annotations on GNPS Massive datasets (April 2016) 
 <p>If genome sequence(s) are available, genome mining can be performed to search potential biogenetic gene clusters.</p>
 </li>
 </ul>
-<h4 id="mapping-dereplicator-results-on-molecular-networks">Mapping DEREPLICATOR results on molecular networks</h4>
+<h4 id="mapping-dereplicator-results-on-molecular-networks">Mapping DEREPLICATOR results on molecular networks<a class="headerlink" href="#mapping-dereplicator-results-on-molecular-networks" title="Permanent link">&para;</a></h4>
 <ol>
 <li>
 <p>Run molecular networks with the spectral data (Files format can be mzML/mzXML/MGF). <a href="../networking/">See the following documentation</a>. Note that the <a href="../featurebasedmolecularnetworking/">Feature-Based Molecular Network workflow</a> can run the <strong>DEREPLICATOR VarQuest</strong> automatically (with default parameters only).</p>
@@ -1868,14 +1868,14 @@ More than 60% of Dereplicator annotations on GNPS Massive datasets (April 2016) 
 <p>The structure can be viewed with the ChemViz2 plugin . See the <a href="../nap/">Network Annotation Propagation</a> documentation for more details.</p>
 </li>
 </ol>
-<h2 id="to-do">TO DO</h2>
+<h2 id="to-do">TO DO<a class="headerlink" href="#to-do" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Documentation for Dereplicator+</li>
 <li>Provide new documentation link on Legacy documentation and GNPS in silico page.</li>
 </ul>
-<h2 id="page-contributors">Page contributors</h2>
+<h2 id="page-contributors">Page contributors<a class="headerlink" href="#page-contributors" title="Permanent link">&para;</a></h2>
 <p>Louis Felix Nothias (UCSD), Hosein Mohimani (Carnegie Mellon Univ.)</p>
-<h2 id="contribute-to-the-documentation">Contribute to the Documentation</h2>
+<h2 id="contribute-to-the-documentation">Contribute to the Documentation<a class="headerlink" href="#contribute-to-the-documentation" title="Permanent link">&para;</a></h2>
 <ul>
 <li>For informations/feature request, please open an "Issue" on the <a href="https://github.com/CCMS-UCSD/GNPSDocumentation"><em>CCMS-UCSD/GNPSDocumentation</em></a> GitHub repository.</li>
 <li>To contribute directly to the GNPS documentation, fork the <a href="https://github.com/CCMS-UCSD/GNPSDocumentation"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request".</li>
