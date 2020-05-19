@@ -68,3 +68,7 @@ The GNPS community is always welcoming suggestions and contributions. Be part of
 This is a brief overview of whether our web services are up: [here](https://stats.uptimerobot.com/Am4PLUWn3). 
 
 And a more detailed functional test [status page](https://github.com/CCMS-UCSD/GNPS_Workflows#gnps-core-webserver-status).
+
+### GNPS Documentation Site Authors
+
+{{ git_site_authors }}

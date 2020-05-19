@@ -92,8 +92,12 @@ theme:
 
 plugins:
     - search
+    - git-authors
     - git-revision-date-localized:
         type: datetime
+    # - pdf-export:
+    #     combined: true
+    #     combined_output_path: ./documentation.pdf
 
 markdown_extensions:
     - admonition
