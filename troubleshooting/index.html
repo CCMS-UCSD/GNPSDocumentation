@@ -1191,19 +1191,6 @@
     Results Incorrect
   </a>
   
-    <nav class="md-nav" aria-label="Results Incorrect">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#no-attributes-or-groups-in-output" class="md-nav__link">
-    No attributes or groups in output
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -1216,31 +1203,18 @@
     Library Search (Dereplication)
   </a>
   
-    <nav class="md-nav" aria-label="Library Search (Dereplication)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#no-results" class="md-nav__link">
-    No Results
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
-  <a href="#single-spectrum-search" class="md-nav__link">
-    Single Spectrum Search
+  <a href="#masst-single-spectrum-search" class="md-nav__link">
+    MASST (Single Spectrum Search)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#qiime2-integration-errors" class="md-nav__link">
-    Qiime2 integration errors
+  <a href="#qiime2-errors" class="md-nav__link">
+    Qiime2 errors
   </a>
   
 </li>
@@ -1471,19 +1445,6 @@
     Results Incorrect
   </a>
   
-    <nav class="md-nav" aria-label="Results Incorrect">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#no-attributes-or-groups-in-output" class="md-nav__link">
-    No attributes or groups in output
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -1496,31 +1457,18 @@
     Library Search (Dereplication)
   </a>
   
-    <nav class="md-nav" aria-label="Library Search (Dereplication)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#no-results" class="md-nav__link">
-    No Results
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
-  <a href="#single-spectrum-search" class="md-nav__link">
-    Single Spectrum Search
+  <a href="#masst-single-spectrum-search" class="md-nav__link">
+    MASST (Single Spectrum Search)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#qiime2-integration-errors" class="md-nav__link">
-    Qiime2 integration errors
+  <a href="#qiime2-errors" class="md-nav__link">
+    Qiime2 errors
   </a>
   
 </li>
@@ -1561,26 +1509,28 @@
 <details open="open"><summary>Missing filename in Metadata</summary><p>The metadata file included for networking is formatted incorrectly. Please refer to metadata formatting to correct this.</p>
 </details>
 <h3 id="results-incorrect">Results Incorrect</h3>
-<h4 id="no-attributes-or-groups-in-output">No attributes or groups in output</h4>
-<p>Verify that file names match between metadata and data.</p>
+<details open="open"><summary>No attributes or groups in output</summary><p>Verify that file names match between metadata and data.</p>
 <p>Make sure the metadata file includes the appropriate columns and attributes are prefixed with ATTRIBUTE_ and that the metadata file is a tab separated text file.</p>
 <p>Avoid using special characters in metadata or file names.</p>
+</details>
 <h2 id="library-search-dereplication">Library Search (Dereplication)</h2>
-<h3 id="no-results">No Results</h3>
-<ol>
+<details open="open"><summary>No Results</summary><ol>
 <li>Check that the parameters are correct</li>
 <li>Make sure you have the right format for input</li>
 <li>Make sure you have MS/MS spectra in your data, this is summarized in the file summary link. </li>
 </ol>
-<h2 id="single-spectrum-search">Single Spectrum Search</h2>
-<p>A common error is missing intensities for masses. Simply masses are insufficient, intensities are also required.</p>
-<h2 id="qiime2-integration-errors">Qiime2 integration errors</h2>
-<p>The following may lead to "Page not found" output in qiime2 view for Emperor plots:</p>
+</details>
+<h2 id="masst-single-spectrum-search">MASST (Single Spectrum Search)</h2>
+<details open="open"><summary>Error: m/z and intensity not separated properly</summary><p>A common error is missing intensities for masses. Simply masses are insufficient, intensities are also required.</p>
+</details>
+<h2 id="qiime2-errors">Qiime2 errors</h2>
+<details open="open"><summary>Page not found output in qiime2 view for Emperor plots</summary><p>You could have:</p>
 <ol>
 <li>Duplicate file names</li>
 <li>A column called “sample_name” in your metadata, this column should be removed. </li>
 <li>Your filenames in the metadata do not align with the input data</li>
 </ol>
+</details>
                 
                   
                     
@@ -1589,7 +1539,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: May 19, 2020 21:22:55
+      Last update: May 19, 2020 21:29:56
     
   </small>
 </div>
