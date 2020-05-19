@@ -8,7 +8,7 @@ Click the download icon to get an MGF version of the spectral library.
 
 With a full list that can be found [here](https://gnps-external.ucsd.edu/gnpslibrary).
 
-??? MGF Format for GNPS Library Spectrum
+??? info "MGF Format for GNPS Library Spectrum"
     ```
     BEGIN IONS
     PEPMASS=561.365
