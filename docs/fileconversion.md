@@ -6,7 +6,7 @@ GNPS supports mzXML, mzML, and mgf formats for analysis. Our tools do NOT suppor
 
 Drag and drop files on our server [here](https://gnps-quickstart.ucsd.edu/conversion) and hit convert. 
 
-You will receive a download of all the converted files. 
+You will receive a download of all the converted files in a zip file that is ready to be analyzed! 
 
 ## Data Conversion (Easy)
 
