@@ -89,10 +89,11 @@ nav:
     - API: api.md
 theme:
     name: material
-    
+
 plugins:
     - search
-    - git-revision-date
+    - git-revision-date-localized:
+        type: datetime
 
 markdown_extensions:
     - admonition
