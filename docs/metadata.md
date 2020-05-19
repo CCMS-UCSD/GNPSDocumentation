@@ -61,7 +61,7 @@ The metadata can also be used to specify spatial coordinates for direct visualiz
     1. "COORDINATE_Z" - Z coordinate on the 2D/3D model
     1. "COORDINATE_radius" - radius for the spot in 'ili toolbox.
     
-    **"filename" must be the first column
+    **"filename" must be the first column**
     
 ![ili](img/networking/ili-table.png)
 
