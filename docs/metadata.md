@@ -71,4 +71,4 @@ The metadata can also be used to specify spatial coordinates for direct visualiz
 * Users must upload the corresponding .STL file and place it in the **"STL Model for ili"** folder
 
 ## Page Contributions
-Alan K. Jarmusch, Louis Felix Nothias (UCSD)
+Alan K. Jarmusch, Louis Felix Nothias, Emily Gentry (UCSD)
