@@ -20,20 +20,20 @@ Here are the steps that aid in the creation of the proper templates to acquire d
 1. Make a copy of the **MSMS-Chooser Preparation Template** by selecting “File” and then “Make a copy”. We **strongly encourage** users to continue working in Google Sheets as the formatting will be maintained.
 2. Fill out the MSMS-Chooser Template in the **"MSMS-Chooser Sample Template"** tab.
 
-    > Notes: <br>
-      - The first tab describes what should be entered as well as an example and additional information is in documentation (GitHub). **Important: You must record the position of each chemical in the 96-well plate.** <br>
-      - Only columns H-Q need to be complete if submitting samples to Dorrestein Lab - approval required before submitting samples. <br>
-      - **Please complete one row for each chemical in the positive mode and then copy and paste rows below and update the “IONMODE” column from “Positive” to “Negative”.** <br>
+!!! info
+    - The first tab describes what should be entered as well as an example and additional information is in documentation (GitHub). **Important: You must record the position of each chemical in the 96-well plate.**
+    - Only columns H-Q need to be complete if submitting samples to Dorrestein Lab - approval required before submitting samples.
+    - **Please complete one row for each chemical in the positive mode and then copy and paste rows below and update the “IONMODE” column from “Positive” to “Negative”.** 
   
 3. Download a copy of the **MSMS-Chooser Submission File** tab as a .tsv file by selecting "File", "Download", and then "Tab-separated value (.tsv, current sheet)."
 
-    > Notes: <br>
-      - The MSMS-Chooser File required for submission is automatically generated in the "MSMS-Chooser Submission" tab. <br>
+!!! info
+    The MSMS-Chooser File required for submission is automatically generated in the "MSMS-Chooser Submission" tab.
 
 4. Download a copy of the applicable Sequence Table using the **Sequence Table Generator** tab as a .csv file from Google Sheets by selecting "File", "Download", and then "Comma-separated value (.csv, current sheet)."
 
-    > Notes: <br>
-      - Please double check the chemicals and well position indicated in the submission file match the sequence table. <br>
+!!! info
+    Please double check the chemicals and well position indicated in the submission file match the sequence table.
 
 ---
 
@@ -55,15 +55,15 @@ Here are the steps that aid in the creation of the proper templates to acquire d
       
 2. Transfer 10 µL of your sample (standard) into a well in the 96 well plate recording the well position and chemical added.
 
-    > Notes: <br>
-      - One sample should be added per well. <br>
+!!! info
+    One sample should be added per well.
 
 3. Repeat transfer of 10 µL into wells
 4. Record plate number, well position, etc. in the sample submission template.
 5. Once all standards have been added to the 96-well plate, completely dry all solutions.
 
-    > Notes: <br>
-      - Evaporation of the liquid can be done using the following techniques: Nitrogen gas evaporation or low pressure evaporation system (Centrivap systems are recommended). <br>
+!!! info
+    Evaporation of the liquid can be done using the following techniques: Nitrogen gas evaporation or low pressure evaporation system (Centrivap systems are recommended).
 
 6. Seal plate using the previously mentioned 96 well plate cover.
 7. If analysis is to be performed in your laboratory, then we suggest storing the material dried in the 96 well plate, covered, at -20 °C prior to analysis. If you desired to collaborate with the Dorrestein lab, then the material **must be dried in a 96 well plate and covered** for shipping and should be stored at -20 °C.
@@ -84,8 +84,8 @@ Please select the following link:
 ### Post-Data Acqusition 
 1. It is recommended to completely dry all solutions.
 
-    > Notes: <br>
-      - Evaporation of the liquid can be done using the following techniques: Nitrogen gas evaporation or Low pressure evaporation system (Centrivap systems are recommended). <br>
+!!! info
+    Evaporation of the liquid can be done using the following techniques: Nitrogen gas evaporation or Low pressure evaporation system (Centrivap systems are recommended). <br>
   
 2. Place plates into a -20C freezer.
 3. Convert raw data to .mzXML (see table at end of this section).
@@ -109,11 +109,12 @@ Please select the following link:
 
 **"What if I alreadly have data collected, can MSMS-Chooser help me?"**
   - Yes! MSMS-Chooser can be used as a shortcut and help you perform the steps of finding the MS/MS spectra in your files and format the data for inclusion in the GNPS MS/MS reference library. However, this was not the original intent of the MSMS-Chooser workflow. You should create a copy and completely fill the **"MSMS-Chooser Sample Template"** tab, download it, and include it with the files in the MSMS-Chooser workflow. The MSMS-Chooser workflow will go through your data and select a MS/MS spectrum for every chemical as indicated in the Sample Template. We have used MSMS-Chooser to help create the [BILELIB19](https://gnps.ucsd.edu/ProteoSAFe/gnpslibrary.jsp?library=BILELIB19) library in GNPS.
-    > Notes: <br>
-      - **ALL** data should be reviewed for accuracy. If chemical separation is performed prior to analysis, then special attention should be given to the MS/MS spectrum and retention time. MSMS-Chooser only matches on accurate mass (currently) and isobaric compounds eluting at different times might be confused. <br>
+
+!!! info
+    **ALL** data should be reviewed for accuracy. If chemical separation is performed prior to analysis, then special attention should be given to the MS/MS spectrum and retention time. MSMS-Chooser only matches on accurate mass (currently) and isobaric compounds eluting at different times might be confused. <br>
       
-**"Can I use this method to run isolated, possibly impure, chemicals?"**
-   - Yes! GNPS MS/MS spectral libraries allow any contribution even if the structure or identification is not fully confirmed. The GNPS community will help correct any inaccuracies over time with provenance of all edits and updates.
+!!! question "Can I use this method to run isolated, possibly impure, chemicals?"
+    Yes! GNPS MS/MS spectral libraries allow any contribution even if the structure or identification is not fully confirmed. The GNPS community will help correct any inaccuracies over time with provenance of all edits and updates.
 
 ---
 
