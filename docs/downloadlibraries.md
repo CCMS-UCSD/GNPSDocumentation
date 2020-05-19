@@ -6,6 +6,8 @@ Download GNPS Spectral libraries on each of the spectral library pages.
 
 Click the download icon to get an MGF version of the spectral library.
 
+With a full list that can be found [here](https://gnps-external.ucsd.edu/gnpslibrary).
+
 ??? MGF Format for GNPS Library Spectrum
     ```
     BEGIN IONS
