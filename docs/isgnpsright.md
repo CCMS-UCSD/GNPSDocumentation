@@ -1,4 +1,5 @@
-GNPS supports the analysis of tandem mass (MS/MS or MS2) data and EI GC/MS data. Below are additional guidelines that describe the kinds of data that GNPS's analysis tools and shared knowledgebase handle.
+!!! question "What kind of data goes GNPS support?"
+  GNPS supports the analysis of tandem mass (MS/MS or MS2) data and EI GC/MS data. Below are additional guidelines that describe the kinds of data that GNPS's analysis tools and shared knowledgebase handle.
 
 <!-- To check whether your data file is appropriate for GNPS, check out our [GNPS QC Checker](TODO). -->
 
