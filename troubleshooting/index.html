@@ -1180,8 +1180,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#failed-job" class="md-nav__link">
-    Failed Job
+  <a href="#failed-molecular-networking-job" class="md-nav__link">
+    Failed Molecular Networking Job
   </a>
   
 </li>
@@ -1460,8 +1460,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#failed-job" class="md-nav__link">
-    Failed Job
+  <a href="#failed-molecular-networking-job" class="md-nav__link">
+    Failed Molecular Networking Job
   </a>
   
 </li>
@@ -1548,15 +1548,18 @@
                 <h1 id="overview">Overview</h1>
 <p>This section addresses some common issues with the analysis workflows at GNPS. If you run into any of these common issues, hopefully this page will give you actionable steps to address them. If this page cannot help you, please refer to the <a href="https://groups.google.com/forum/#!forum/molecular_networking_bug_reports">forum</a> to help answer your questions.</p>
 <h2 id="molecular-networking">Molecular Networking</h2>
-<h3 id="failed-job">Failed Job</h3>
-<p>"Empty MS/MS". - This means that your input data has no MS/MS spectra. This could mean one of several things</p>
+<h3 id="failed-molecular-networking-job">Failed Molecular Networking Job</h3>
+<details open="open"><summary>Empty MS/MS</summary><p>This means that your input data has no MS/MS spectra. This could mean one of several things</p>
 <ol>
 <li>The file format input is incorrect. Please make sure it is a <a href="../fileconversion/">supported file format</a> for GNPS.</li>
 <li>The mass spectrometry files do not contain MS/MS spectra. These files cannot be analyzed by GNPS.</li>
 <li>The filtering criteria are too aggressive. Please use an appropriate preset for your data.</li>
 </ol>
-<p>"spectral library search exceeded memory" - This means that the spectral library search step used too much memory and had to be terminated. This is likely caused by changing the set of spectral libraries used in search. It is not recommended to change the set of libraries included unless you are an advanced users. Please remove all libraries except for the default "speclibs" and rerun.</p>
-<p>"Missing filename in Metadata" - The metadata file included for networking is formatted incorrectly. Please refer to metadata formatting to correct this.</p>
+</details>
+<details open="open"><summary>spectral library search exceeded memory</summary><p>This means that the spectral library search step used too much memory and had to be terminated. This is likely caused by changing the set of spectral libraries used in search. It is not recommended to change the set of libraries included unless you are an advanced users. Please remove all libraries except for the default "speclibs" and rerun.</p>
+</details>
+<details open="open"><summary>Missing filename in Metadata</summary><p>The metadata file included for networking is formatted incorrectly. Please refer to metadata formatting to correct this.</p>
+</details>
 <h3 id="results-incorrect">Results Incorrect</h3>
 <h4 id="no-attributes-or-groups-in-output">No attributes or groups in output</h4>
 <p>Verify that file names match between metadata and data.</p>
@@ -1586,7 +1589,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: December 21, 2019 17:18:02
+      Last update: May 19, 2020 21:22:55
     
   </small>
 </div>
