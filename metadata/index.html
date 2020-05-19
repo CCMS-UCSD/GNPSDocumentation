@@ -1523,7 +1523,7 @@
 <h2 id="requirements-specific-to-qiita">Requirements Specific to Qiita</h2>
 <p>GNPS communicates with Qiita. Specifically, you can use the output of GNPS to add metabolomics data into an existing Qiita dataset. This is handled through the Biom table output as a qiime2 qza artifact. The key feature is renaming the mass spectrometry file into a sample identifier so that the identifiers are concordant. </p>
 <div class="admonition info">
-<p class="admonition-title">A Qiita ID with corresponding information must be created.</p>
+<p class="admonition-title">A Qiita ID with corresponding information must first be created.</p>
 </div>
 <ul>
 <li>
@@ -1541,12 +1541,14 @@
 <img alt="ili_example" src="../img/networking/ili_example.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Extra columns are required in the metadata file</p>
-<p>A text editor should be used to add the following columns in order (required):
-    1. "COORDINATE_X" - X coordinate on the 2D/3D model
-    2. "COORDINATE_Y" - Y coordinate on the 2D/3D model
-    3. "COORDINATE_Z" - Z coordinate on the 2D/3D model
-    4. "COORDINATE_radius" - radius for the spot in 'ili toolbox.
-**"filename" must be the first column</p>
+<p>A text editor should be used to add the following columns in order (required):</p>
+<ol>
+<li>"COORDINATE_X" - X coordinate on the 2D/3D model</li>
+<li>"COORDINATE_Y" - Y coordinate on the 2D/3D model</li>
+<li>"COORDINATE_Z" - Z coordinate on the 2D/3D model</li>
+<li>"COORDINATE_radius" - radius for the spot in 'ili toolbox.</li>
+</ol>
+<p>**"filename" must be the first column</p>
 </div>
 <p><img alt="ili" src="../img/networking/ili-table.png" /></p>
 <ul>
