@@ -8,10 +8,10 @@ The spectral libraries are categorized based upon quality of the data. The level
 
 |     Quality Level    | Description          | Quality Number |
 | ------------- |-------------| -----|
-| Gold | Synthetic, Complete structural characterization with NMR, crystallography or other standard methods as defined in the publication guidelines for Journal of Natural Products, Privileged users | 1 |
+| Gold :star: | Synthetic, Complete structural characterization with NMR, crystallography or other standard methods as defined in the publication guidelines for Journal of Natural Products, Privileged users | 1 |
 | Silver | Isolated or lysate/crude, Published data showing presence of molecule in the sample | 2 |
 | Bronze | Any other putative, complete or partial annotation | 3 |
-| Challenge | Unknown Identity, open to community to help annotate | 10 |
+| Challenge :muscle: | Unknown Identity, open to community to help annotate | 10 |
 
 By default, users will have access to Bronze, but approval is required to contribute to silver and gold libraries. To obtain training and access please email [Mingxun Wang](mailto:miw023@ucsd.edu).
 
@@ -33,7 +33,8 @@ to be brought to the Add Single Annotated Spectrum workflow. By default, users w
 
 Select an input spectrum file.
 
-NOTE: do not change the spectral library that is selected.
+!!! note
+	Do not change the spectral library that is selected.
 
 ### Annotation Fields
 
