@@ -37,4 +37,6 @@
 !!! info "What Browsers Does GNPS Support"
     We officially test on the latest Chrome browser. Other browsers, e.g. Firefox, Internet Explorer, Opera, Edge, are not officially supported but likely will not have any issues with GNPS.
 
-Page Authors: {{ git_page_authors }}
+## Page Contributions
+
+{{ git_page_authors }}
