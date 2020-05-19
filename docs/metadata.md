@@ -6,6 +6,14 @@ The metadata file used in GNPS describes the properties of a file (*e.g.* sample
 ## Format
 The recommended starting point is the [ReDU Sample Information Template](https://docs.google.com/spreadsheets/d/1v71bnUd8fiXX51zuZIUAvYETWmpwFQj-M3mu4CNsHBU/edit?usp=sharing) (additional documentation can be found [here](https://mwang87.github.io/ReDU-MS2-Documentation/HowtoContribute/)). Users can add an unlimited amount of additional columns to the ReDU Sample Information Template. There are specific instructions on required columns and formatting detailed for GNPS tools below.
 
+!!! note
+    This standard metadata format works for the following GNPS tools
+    
+    1. Classical Molecular Networking
+    1. Feature Based Molecular Networking
+    1. GC Molecular Networking
+    1. Qemistree
+
 Metadata file used must be a tab-delimited text file. A .tsv can be downloaded from the ReDU Sample Information Template. Users that create a metadata file without using the ReDU Sample Information Template using a text editor (e.g. Microsoft Excel, Notepad++ for Windows, gedit for Linux, TextWrangler for Mac OS) should save as a .txt (tab-delimited). 
 
 !!! warning
