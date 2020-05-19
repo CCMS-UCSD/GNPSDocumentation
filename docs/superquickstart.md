@@ -3,7 +3,8 @@ The Superquick start interface enables you to rapidly explore your data without 
 
 ## No log-in required
 
-**IMPORTANT!**: The limitations to this method is that the files uploaded will not reside in your own account (though no one else can see them) and will be removed on a monthly basis. Please create your own account for more persistent and reproducible analyses.
+!!! warning 
+    The limitations to this method is that the files uploaded will not reside in your own account (though no one else can see them) and will be removed on a monthly basis. Please create your own account for more persistent and reproducible analyses.
 
 You would be able to use the Super quickstart interface if you have the following requirements:
 
