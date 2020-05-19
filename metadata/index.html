@@ -1495,7 +1495,7 @@
 </div>
 <p><strong>Example metadata file without using the ReDU Sample Information Template</strong>
 <a href="https://raw.githubusercontent.com/DorresteinLaboratory/GNPS-Trinity/master/GNPS-Trinity_template_files/metadata_GNPS_AMG_demo.txt">Right-click, and Save link as</a> to download. A text editor can be used to edit it as desired. </p>
-<div class="admonition note">
+<div class="admonition info">
 <p class="admonition-title">Formatting metadata</p>
 <p>The only required columns in the metadata is <strong>"filename"</strong> and the file names should match those uploaded to MassIVE.      <strong>Capitalization matters.</strong></p>
 </div>
@@ -1508,8 +1508,8 @@
 <li>Users must upload their data file</li>
 <li>Users must select the metadata file and place it in the <strong>"Metadata File"</strong> folder</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
 <p>Although it is possible to use the legacy group mapping and attribute mapping file, we strongly advise against using        this method.</p>
 </div>
 <h2 id="requirements-specific-to-qiime2">Requirements Specific to Qiime2</h2>
@@ -1522,9 +1522,8 @@
 </ul>
 <h2 id="requirements-specific-to-qiita">Requirements Specific to Qiita</h2>
 <p>GNPS communicates with Qiita. Specifically, you can use the output of GNPS to add metabolomics data into an existing Qiita dataset. This is handled through the Biom table output as a qiime2 qza artifact. The key feature is renaming the mass spectrometry file into a sample identifier so that the identifiers are concordant. </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>A Qiita ID with corresponding information must be created.</p>
+<div class="admonition info">
+<p class="admonition-title">A Qiita ID with corresponding information must be created.</p>
 </div>
 <ul>
 <li>
@@ -1536,20 +1535,20 @@
 <li>Users must upload their data file</li>
 <li>Users must select the metadata file and place it in the <strong>"Metadata File"</strong> folder</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
 <p>If performing additional analysis in Qiime using the .qza, it is required to add a row indicating the type of variable.</p>
-</div>
 <h2 id="requirements-specific-to-ili">Requirements Specific to 'ili</h2>
 <p>The metadata can also be used to specify spatial coordinates for direct visualization of the data in <a href="https://ili.embl.de/">'ili toolbox</a>. It creates really cool plots like this:
-<img alt="ili_example" src="../img/networking/ili_example.png" />
-* <strong>Extra columns are required in the metadata file</strong> A text editor should be used to add the following columns in order (required):
-1. "COORDINATE_X" - X coordinate on the 2D/3D model
-2. "COORDINATE_Y" - Y coordinate on the 2D/3D model
-3. "COORDINATE_Z" - Z coordinate on the 2D/3D model
-4. "COORDINATE_radius" - radius for the spot in 'ili toolbox.
-**"filename" must be the first column
-<img alt="ili" src="../img/networking/ili-table.png" /></p>
+<img alt="ili_example" src="../img/networking/ili_example.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Extra columns are required in the metadata file</p>
+<p>A text editor should be used to add the following columns in order (required):
+    1. "COORDINATE_X" - X coordinate on the 2D/3D model
+    2. "COORDINATE_Y" - Y coordinate on the 2D/3D model
+    3. "COORDINATE_Z" - Z coordinate on the 2D/3D model
+    4. "COORDINATE_radius" - radius for the spot in 'ili toolbox.
+**"filename" must be the first column</p>
+</div>
+<p><img alt="ili" src="../img/networking/ili-table.png" /></p>
 <ul>
 <li>Save the file (must be tab-delimited text file)</li>
 <li>Users must upload their data file</li>
