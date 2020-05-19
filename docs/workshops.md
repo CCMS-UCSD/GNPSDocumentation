@@ -1,7 +1,5 @@
 ## Upcoming Workshops
 
-Last changed: {{ git_revision_date }}
-
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
 | Zoom! | GNPS Ion-Identity Networking, Native Metabolomics	| 5/20/2020 9AM PST | [Material](https://docs.google.com/document/d/1Fasu3Gh0PsgW6-KW-FmKz-NgU6OLXrRHm_zAssVGZ-M/edit?usp=sharing) |
