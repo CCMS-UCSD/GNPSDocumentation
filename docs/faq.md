@@ -15,6 +15,8 @@
 ## Spectral Libraries
 
 !!! question "How do I get access to the public spectral libraries?"
+    They will be shared with you by default and selected automatically when performing an analysis that requires spectral libraries. This is all included in shared user speclibs. If it does not show up, then do the following.
+    
     On the select input files popup, click on the shared files tab, and enter speclibs as an import share.
 
     ![Screenshot](img/faq/shared_libs.png)
