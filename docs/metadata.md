@@ -40,7 +40,7 @@ GNPS communicates with Qiime2. PCoA visualized using EMPeror and Qiime outputs (
 GNPS communicates with Qiita. Specifically, you can use the output of GNPS to add metabolomics data into an existing Qiita dataset. This is handled through the Biom table output as a qiime2 qza artifact. The key feature is renaming the mass spectrometry file into a sample identifier so that the identifiers are concordant. 
 
 !!! note
-A Qiita ID with corresponding information must be created.
+    A Qiita ID with corresponding information must be created.
 
 * **Add an extra column called "sample_name" to the metadata file using a text editor.** The identifer must contain the Qiita ID prepended to the sample identifier using a period (*e.g.* 10317.000096815).
 
@@ -49,7 +49,7 @@ A Qiita ID with corresponding information must be created.
 * Users must select the metadata file and place it in the **"Metadata File"** folder
 
 !!! note
-If performing additional analysis in Qiime using the .qza, it is required to add a row indicating the type of variable.
+    If performing additional analysis in Qiime using the .qza, it is required to add a row indicating the type of variable.
 
 ## Requirements Specific to 'ili
 The metadata can also be used to specify spatial coordinates for direct visualization of the data in ['ili toolbox](https://ili.embl.de/). It creates really cool plots like this:
