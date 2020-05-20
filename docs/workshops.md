@@ -5,6 +5,7 @@
 | YouTube | Utilizing GNPS and MS2LDA for some molecular networking discovery	| 5/21/2020 6AM PST | [LiveStream](https://www.youtube.com/watch?v=Cc6eKGZQ1Qw&feature=youtu.be) |
 | Zoom! | GC-MS deconvolution, library search and molecular networking	| 5/27/2020 9AM PST | TBD |
 | Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 6/3/2020 9AM PST | TBD |
+| Zoom! | GNPS Merge Polarity Networks - Merging Networks from Positive and Negative Mode	| 6/10/2020 9AM PST | TBD |
 |TBD | TBD | TBD | -----|
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
