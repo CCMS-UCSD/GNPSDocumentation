@@ -2,7 +2,6 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Zoom! | GNPS Ion-Identity Networking, Native Metabolomics	| 5/20/2020 9AM PST | [Material](https://docs.google.com/document/d/1Fasu3Gh0PsgW6-KW-FmKz-NgU6OLXrRHm_zAssVGZ-M/edit?usp=sharing) |
 | YouTube | Utilizing GNPS and MS2LDA for some molecular networking discovery	| 5/21/2020 6AM PST | [LiveStream](https://www.youtube.com/watch?v=Cc6eKGZQ1Qw&feature=youtu.be) |
 | Zoom! | GC-MS deconvolution, library search and molecular networking	| 5/27/2020 9AM PST | TBD |
 | Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 6/3/2020 9AM PST | TBD |
@@ -24,6 +23,7 @@ We have standard training tutorial modules on GNPS. Check it out here:
 
 | Venue        | Description          | Dates | Material | Estimated Attendance |
 | ------------- |-------------| -----| -----| ----- | 
+| Zoom! | GNPS Ion-Identity Networking, Native Metabolomics	| 5/20/2020 9AM PST | [Material](https://docs.google.com/document/d/1Fasu3Gh0PsgW6-KW-FmKz-NgU6OLXrRHm_zAssVGZ-M/edit?usp=sharing) | --- |
 | Zoom! | GNPS Feature Based Molecular Networking (MZmine2) | 5/13/2020 9AM PST | [Material](https://docs.google.com/document/d/152tYylUf9Ka3J-avLzztlNBeWbg2xwBCC3orWyEw25c/edit?usp=sharing)| 103 |
 | Zoom! | GNPS Feature Based Molecular Networking (Job Submssions and Exploration) | 5/14/2020 9AM PST | [Material](https://docs.google.com/document/d/1cYtCUHgKQMyXyc7tSi8vXUcMkgnvd-p50b-fiLFZZfU/edit?usp=sharing) | 147 |
 | Zoom! | GNPS ReDU | 5/6/2020 9AM PST | [Material](https://docs.google.com/document/d/1-PgmPntirA4xOxHTXnc0DT0-ikkm_DX2v3lgh99fm-o/edit?usp=sharing) [Video](https://youtu.be/I-CdsHESLJ8) | --- |
