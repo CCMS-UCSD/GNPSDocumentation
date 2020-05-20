@@ -63,9 +63,9 @@ nav:
         - Reference Spectral Library Batch Addition: batchupload.md
         - Downloading Reference Spectral Libraries: downloadlibraries.md
         - Open-source Method for Reference Library Generation:
-            - Data Acqusition - Thermo QExactive (v1.0): msmschooserdataacquisitionQE.md
-            - Computational Data Acquisition Prep: msmschooserdataacquisitioncomputational.md
             - MSMS-Chooser Workflow: msmschooser.md
+            - Computational Data Acquisition Prep: msmschooserdataacquisitioncomputational.md
+            - Data Acqusition - Thermo QExactive (v1.0): msmschooserdataacquisitionQE.md
         - GNPS Tag Contribution and Analyses: tag_info.md
     - Create a Public Datasets:
         - Dataset Creation/Sharing: datasets.md

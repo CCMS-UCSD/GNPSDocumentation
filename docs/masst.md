@@ -76,6 +76,11 @@ The quality of the match can be inspected by clicking the "plotting" icon at the
 
 This view provides the full file path for all the files from each dataset along with the associated metadata for each file.
 
+!!! faq "FAQ - What if I do not see any results?"
+	There are a few scenarios in which a MASST search will not yield any hits including the following:
+	- The query spectrum has not been observed in public data avaliable as the public data is not comprehensive and certain sample types are better represented than others.
+	- The chemical observed (specifically the query spectrum) could be genuinely unique to your data - great news, if you are looking for new drugs derived from natural products (for example).
+	
 ## Re-analysis of found files
 
 Clicking on [Analyze Files Found With Molecular Networking] will select all of the individual files identified through the single spectrum search and place them into a group. 
@@ -93,4 +98,10 @@ The files are located in the default group (G1). You can then name the job and a
 
 ## Citation
 
-[Wang, M., Jarmusch, A.K., Vargas, F. et al. Mass spectrometry searches using MASST. Nat Biotechnol (2020) doi:10.1038/s41587-019-0375-9](https://www.nature.com/articles/s41587-019-0375-9)
+!!! cite "Recommended Citation"
+	[Wang, M., Jarmusch, A.K., Vargas, F. et al. Mass spectrometry searches using MASST. Nat Biotechnol (2020) doi:10.1038/s41587-019-0375-9](https://www.nature.com/articles/s41587-019-0375-9)
+
+
+## Page Contributions
+
+{{ git_page_authors }}
