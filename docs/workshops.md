@@ -22,13 +22,13 @@ We have standard training tutorial modules on GNPS. Check it out here:
 
 ## Previous Workshops
 
-| Venue        | Description          | Dates | Material |
-| ------------- |-------------| -----| -----|
-| Zoom! | GNPS Feature Based Molecular Networking (MZmine2) | 5/13/2020 9AM PST | [Material](https://docs.google.com/document/d/152tYylUf9Ka3J-avLzztlNBeWbg2xwBCC3orWyEw25c/edit?usp=sharing)|
-| Zoom! | GNPS Feature Based Molecular Networking (Job Submssions and Exploration) | 5/14/2020 9AM PST | [Material](https://docs.google.com/document/d/1cYtCUHgKQMyXyc7tSi8vXUcMkgnvd-p50b-fiLFZZfU/edit?usp=sharing) |
-| Zoom! | GNPS ReDU | 5/6/2020 9AM PST | [Material](https://docs.google.com/document/d/1-PgmPntirA4xOxHTXnc0DT0-ikkm_DX2v3lgh99fm-o/edit?usp=sharing) [Video](https://youtu.be/I-CdsHESLJ8) |
-| Zoom! | GNPS Classical Molecular Networking | 4/29/2020 9AM PST | [Material](https://docs.google.com/document/d/1_aPUG0H4_v3hfVQ5uZTRv-lSPEuhooyiUZVNd1S21rw/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=PqTuex0nsGk) |
-| Zoom! | GNPS MASST | 4/22/2020 9AM PST | [Material](https://docs.google.com/document/d/1rzPLGA0-3DbFkUKVpIyUrj_7MLhqCvSSPskVO9gR1D0/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=14hGi6FtZIM) |
+| Venue        | Description          | Dates | Material | Estimated Attendance |
+| ------------- |-------------| -----| -----| ----- | 
+| Zoom! | GNPS Feature Based Molecular Networking (MZmine2) | 5/13/2020 9AM PST | [Material](https://docs.google.com/document/d/152tYylUf9Ka3J-avLzztlNBeWbg2xwBCC3orWyEw25c/edit?usp=sharing)| 103 |
+| Zoom! | GNPS Feature Based Molecular Networking (Job Submssions and Exploration) | 5/14/2020 9AM PST | [Material](https://docs.google.com/document/d/1cYtCUHgKQMyXyc7tSi8vXUcMkgnvd-p50b-fiLFZZfU/edit?usp=sharing) | 147 |
+| Zoom! | GNPS ReDU | 5/6/2020 9AM PST | [Material](https://docs.google.com/document/d/1-PgmPntirA4xOxHTXnc0DT0-ikkm_DX2v3lgh99fm-o/edit?usp=sharing) [Video](https://youtu.be/I-CdsHESLJ8) | --- |
+| Zoom! | GNPS Classical Molecular Networking | 4/29/2020 9AM PST | [Material](https://docs.google.com/document/d/1_aPUG0H4_v3hfVQ5uZTRv-lSPEuhooyiUZVNd1S21rw/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=PqTuex0nsGk) | --- |
+| Zoom! | GNPS MASST | 4/22/2020 9AM PST | [Material](https://docs.google.com/document/d/1rzPLGA0-3DbFkUKVpIyUrj_7MLhqCvSSPskVO9gR1D0/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=14hGi6FtZIM) | --- |
 | Zoom! | GNPS Library Workshop/Hackathon | April 8 9AM PST| [Material](https://docs.google.com/document/d/1pu24hCoRr8trBhc_sJ34BiWamJHEpRkZYYnGYQRkAkU/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=IbXBpud57Z8) | 
 | UFMT Brazil | VI Workshop Etnofarmacologia - Use of the GNPS platform | Nov 18 - 28 2019 | 
 | MIT |Molecular Networking with MZmine and GNPS| Dec 5 2019 | -----|
