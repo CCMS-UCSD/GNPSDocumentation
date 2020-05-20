@@ -59,6 +59,7 @@ nav:
         - Qemistree: qemistree.md
         - MMVEC: mmvec.md
         - Merge Network Polarity: mergepolarity.md
+        - Chemical Directionality: chemdir.md
     - Spectral Libraries:
         - Browsing Reference Spectral Libraries: browselibraries.md
         - Add/Curate Reference Spectrum in the Library: spectrumcuration.md
