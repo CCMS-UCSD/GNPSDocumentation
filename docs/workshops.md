@@ -5,6 +5,7 @@
 | Zoom! | GC-MS deconvolution, library search and molecular networking	| 5/27/2020 9AM PST | TBD |
 | Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 6/3/2020 9AM PST | TBD |
 | Zoom! | GNPS Merge Polarity Networks - Merging Networks from Positive and Negative Mode	| 6/10/2020 9AM PST | TBD |
+| Zoom! | GNPS Classical Molecular Networking in Espanol | 6/17/2020 9AM PST | TBD |
 | Zoom! | Metabolomics Spectrum Resolver - Unifing spectrum rendering and customization	| 7/1/2020 9AM PST | TBD |
 |TBD | TBD | TBD | -----|
 
