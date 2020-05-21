@@ -7,6 +7,7 @@
 | Zoom! | GNPS Merge Polarity Networks - Merging Networks from Positive and Negative Mode	| 6/10/2020 9AM PST | TBD |
 | Zoom! | GNPS Classical Molecular Networking in Espanol | 6/17/2020 9AM PST | TBD |
 | Zoom! | Metabolomics Spectrum Resolver - Unifing spectrum rendering and customization	| 7/1/2020 9AM PST | TBD |
+| Zoom! | GNPS Users Meeting - Presentations from the Community	| 7/8/2020 9AM PST | TBD |
 |TBD | TBD | TBD | -----|
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
