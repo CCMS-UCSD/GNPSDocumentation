@@ -49,6 +49,7 @@ Please help us fill in more completely!
 | [GNPS Text Esquisse Server (Super Beta)](https://gnps.shinyapps.io/text_entry/) | TODO | TODO |
 | [GNPS Library Dash Explorer](http://dorresteinappshub.ucsd.edu:6546/) | TODO | TODO |
 | [GNPS Mass Spec Calculator](https://gnps-masscalculator.herokuapp.com/) | TODO | TODO |
+| [GNPS Usage Stats Dashboard](https://gnpsusage.herokuapp.com/) | --- | --- |
 
 ## Community Tools GNPS Interfaces with
 
