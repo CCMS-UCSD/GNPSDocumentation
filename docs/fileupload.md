@@ -7,7 +7,10 @@ Please checkout our [Legacy Documentation](http://proteomics.ucsd.edu/service/ma
 
 ## Browser File Uploads
 
-To upload files to GNPS using the browser (limited to 20MB), you can use our web drag and drop uploader.
+To upload files to GNPS using the browser, you can use our web drag and drop uploader.
+
+!!! note
+    This browser upload is limited to 20 MB for each size
 
 This is not the recommended manner to upload files, but if you're in a hurry, we can't fault you.
 

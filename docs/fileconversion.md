@@ -6,7 +6,7 @@ GNPS supports mzXML, mzML, and mgf formats for analysis. Our tools do NOT suppor
 
 Drag and drop files on our server [here](https://gnps-quickstart.ucsd.edu/conversion) and hit convert. 
 
-You will receive a download of all the converted files. 
+You will receive a download of all the converted files in a zip file that is ready to be analyzed! 
 
 ## Data Conversion (Easy)
 
@@ -51,7 +51,8 @@ If you are a vendor and think there are better methods to convert your files to 
 
 Download and install ProteoWizard from [here](http://proteowizard.sourceforge.net/downloads.shtml).
 
-**IMPORTANT:**: Make sure to choose a Windows-compatible version (includes vendor reader support). You must also have .NET [Framework 3.5 SP1](http://www.microsoft.com/en-us/download/details.aspx?id=22) and [4.0](http://www.microsoft.com/en-us/download/details.aspx?id=17851) installed.
+!!! info 
+    Make sure to choose a Windows-compatible version (includes vendor reader support). You must also have .NET [Framework 3.5 SP1](http://www.microsoft.com/en-us/download/details.aspx?id=22) and [4.0](http://www.microsoft.com/en-us/download/details.aspx?id=17851) installed.
 
 After installation, from the Start Menu, click the ProteoWizard folder and open MSConvert.
 
@@ -63,15 +64,14 @@ After installation, from the Start Menu, click the ProteoWizard folder and open 
 
 - Under filters, choose Peak Picking with Vendor checked, in order to centroid the data. Indicate MS-Levels 1-2. Click Add to add the filter.
 
-**CRITICAL !** Make sure the PeakPicking filter is the first filter in the list (top position), otherwise the conversion will not be centroided !
+???+ danger Peak Peaking Filter Order
+    Make sure the PeakPicking filter is the first filter in the list (top position), otherwise the conversion will not be centroided!
+    ![img](img/conversion/msconvert_params.png)
 
 - Save the parameters for the next conversion. This will save you some time and prevent misconfiguration. In Presets (left bottom), click on Save Presets, and select "Save as default for the format".
 
 - Click on Start.  Check your folder for the new .mzML/.mzXML files. Verify that these files open properly in Insilicos or [TOPP View (OpenMS)](http://www.openms.de/).
 
-##### View of the MSConvert conversion parameters:
-
-![img](img/conversion/msconvert_params.png)
 
 
 ### Advanced Online Conversion with Proteowizard (MSConvert)

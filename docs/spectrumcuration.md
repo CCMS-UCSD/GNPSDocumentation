@@ -8,10 +8,10 @@ The spectral libraries are categorized based upon quality of the data. The level
 
 |     Quality Level    | Description          | Quality Number |
 | ------------- |-------------| -----|
-| Gold | Synthetic, Complete structural characterization with NMR, crystallography or other standard methods as defined in the publication guidelines for Journal of Natural Products, Privileged users | 1 |
+| Gold :star: | Synthetic, Complete structural characterization with NMR, crystallography or other standard methods as defined in the publication guidelines for Journal of Natural Products, Privileged users | 1 |
 | Silver | Isolated or lysate/crude, Published data showing presence of molecule in the sample | 2 |
 | Bronze | Any other putative, complete or partial annotation | 3 |
-| Challenge | Unknown Identity, open to community to help annotate | 10 |
+| Challenge :muscle: | Unknown Identity, open to community to help annotate | 10 |
 
 By default, users will have access to Bronze, but approval is required to contribute to silver and gold libraries. To obtain training and access please email [Mingxun Wang](mailto:miw023@ucsd.edu).
 
@@ -33,9 +33,12 @@ to be brought to the Add Single Annotated Spectrum workflow. By default, users w
 
 Select an input spectrum file.
 
-NOTE: do not change the spectral library that is selected.
+!!! note
+	Do not change the spectral library that is selected.
 
 ### Annotation Fields
+
+For a full set of parameters, see [this](batchupload.md#field-information)
 
 **Sample Parameters**
 
@@ -78,16 +81,4 @@ NOTE: do not change the spectral library that is selected.
 | Your Data |  Incomplete Structure Proposed | Cannot based on MS/MS | N/A | please annotate with the **common name** and indicate the position is unknown using "X" | (X)-Methylxanthine |
 | Your Data | No Structure Information | No Position Information | Mass shift provided via Molecular Networking | please annotate with the **common name** of the chemical it is connected to and indicate mass shift. Mass shift indicated by nominal mass followed by putative formula difference (if the formula difference is unknown please enter "X"). No SMILES or Inchi should be provided. | Caffeine +14(CH2) <br> Caffeine +52(X)|
 
-### Validation Spectra Selection
 
-To validate the input file and scan a user has selected, there is a plotting section that will attempt to plot the spectrum selected.
-
-![img](img/libraries/validation_plot.png)
-
-To plot the spectrum, click "Plot It!". Additionally, if users would like to see the annotation with a peptide fragment highlights, users can enter a peptide in the Peptide field, but this will not be stored in the annotation.
-
-If the plotting succeeded and a spectrum appears, then the selection for the spectrum is done correctly.
-
-![img](img/libraries/validation_spectrum.png)
-
-If there was an error, check the original file was converted correctly and the scan number is not 0.

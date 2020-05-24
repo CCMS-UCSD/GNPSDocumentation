@@ -1,6 +1,9 @@
 site_name: GNPS Documentation
-edit_uri: https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/
 site_url: https://ccms-ucsd.github.io/GNPSDocumentation/
+edit_uri: https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/
+repo_name: CCMS-UCSD/GNPSDocumentation
+repo_url: https://github.com/CCMS-UCSD/GNPSDocumentation
+
 nav:
     - GNPS Introduction: index.md
     - Is my data compatible with GNPS?: isgnpsright.md
@@ -54,14 +57,18 @@ nav:
         # CycloNovo: cyclonovo.md
         - Reanalysis of Data User Interface (ReDU): ReDU.md
         - Qemistree: qemistree.md
+        - MMVEC: mmvec.md
+        - Merge Network Polarity: mergepolarity.md
+        - Chemical Directionality: chemdir.md
     - Spectral Libraries:
         - Browsing Reference Spectral Libraries: browselibraries.md
         - Add/Curate Reference Spectrum in the Library: spectrumcuration.md
         - Reference Spectral Library Batch Addition: batchupload.md
         - Downloading Reference Spectral Libraries: downloadlibraries.md
         - Open-source Method for Reference Library Generation:
+            - MSMS-Chooser Workflow: msmschooser.md
+            - Computational Data Acquisition Prep: msmschooserdataacquisitioncomputational.md
             - Data Acqusition - Thermo QExactive (v1.0): msmschooserdataacquisitionQE.md
-            - Computational Selection of MSMS to Include in Library (MSMS-Chooser): msmschooser.md
         - GNPS Tag Contribution and Analyses: tag_info.md
     - Create a Public Datasets:
         - Dataset Creation/Sharing: datasets.md
@@ -81,20 +88,27 @@ nav:
     - GNPS Workshops/Training: workshops.md
     - GNPS Logos: logos.md
     - Contact/Office Hours: contact.md
+    - GNPS Tool Index: toolindex.md
     - API: api.md
 theme:
     name: material
-    #name: readthedocs
 
-    #palette:
-    #    primary: 'light blue'
-    #    accent: 'orange'
-    #font:
-    #    text: 'Roboto'
-    #    code: 'Roboto Mono'
+plugins:
+    - search
+    - git-authors:
+        show_contribution: true
+    - git-revision-date-localized:
+        type: datetime
 
-    #logo: 'img/GNPS_logo.jpg'
-#theme: readthedocs
-#theme:
-#  name: 'rtd-dropdown'
+markdown_extensions:
+    - toc:
+        permalink: true
+    - admonition
+    - pymdownx.superfences
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_index: !!python/name:pymdownx.emoji.twemoji
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+            
+
 google_analytics: ['UA-8412213-5', 'ccms-ucsd.github.io']
