@@ -2,7 +2,7 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Zoom! | GC-MS deconvolution, library search and molecular networking	| 5/27/2020 9AM PST | TBD |
+| Zoom! | GC-MS deconvolution, library search and molecular networking	| 5/27/2020 9AM PST | [Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit#) |
 | Zoom! | GNPS MolNetEnhancer	| 6/3/2020 9AM PST | TBD |
 | Zoom! | GNPS Merge Polarity Networks - Merging Networks from Positive and Negative Mode	| 6/10/2020 9AM PST | TBD |
 | Zoom! | GNPS Classical Molecular Networking in Espanol | 6/17/2020 9AM PST | TBD |
