@@ -2,7 +2,7 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Zoom! | GC-MS deconvolution, library search and molecular networking	| 5/27/2020 9AM PST | TBD |
+| Zoom! | GC-MS deconvolution, library search and molecular networking	| 5/27/2020 9AM PST | [Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit#) |
 | Zoom! | GNPS MolNetEnhancer	| 6/3/2020 9AM PST | TBD |
 | Zoom! | GNPS Merge Polarity Networks - Merging Networks from Positive and Negative Mode	| 6/10/2020 9AM PST | TBD |
 | Zoom! | GNPS Classical Molecular Networking in Espanol | 6/17/2020 9AM PST | TBD |
@@ -29,8 +29,8 @@ We have standard training tutorial modules on GNPS. Check it out here:
 | ------------- |-------------| -----| -----| ----- | 
 | YouTube | Utilizing GNPS and MS2LDA for some molecular networking discovery	| 5/21/2020 6AM PST | [LiveStream](https://www.youtube.com/watch?v=Cc6eKGZQ1Qw&feature=youtu.be) | --- |
 | Zoom! | GNPS Ion-Identity Networking, Native Metabolomics	| 5/20/2020 9AM PST | [Material](https://docs.google.com/document/d/1Fasu3Gh0PsgW6-KW-FmKz-NgU6OLXrRHm_zAssVGZ-M/edit?usp=sharing) | 65 |
-| Zoom! | GNPS Feature Based Molecular Networking (MZmine2) | 5/13/2020 9AM PST | [Material](https://docs.google.com/document/d/152tYylUf9Ka3J-avLzztlNBeWbg2xwBCC3orWyEw25c/edit?usp=sharing)| 103 |
-| Zoom! | GNPS Feature Based Molecular Networking (Job Submssions and Exploration) | 5/14/2020 9AM PST | [Material](https://docs.google.com/document/d/1cYtCUHgKQMyXyc7tSi8vXUcMkgnvd-p50b-fiLFZZfU/edit?usp=sharing) | 147 |
+| Zoom! | GNPS Feature Based Molecular Networking (Job Submssions and Exploration) | 5/14/2020 9AM PST | [Material](https://docs.google.com/document/d/1cYtCUHgKQMyXyc7tSi8vXUcMkgnvd-p50b-fiLFZZfU/edit?usp=sharing) | 103 |
+| Zoom! | GNPS Feature Based Molecular Networking (MZmine2) | 5/13/2020 9AM PST | [Material](https://docs.google.com/document/d/152tYylUf9Ka3J-avLzztlNBeWbg2xwBCC3orWyEw25c/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=MwdJ6mVkdJY&feature=youtu.be)| 147 |
 | Zoom! | GNPS ReDU | 5/6/2020 9AM PST | [Material](https://docs.google.com/document/d/1-PgmPntirA4xOxHTXnc0DT0-ikkm_DX2v3lgh99fm-o/edit?usp=sharing) [Video](https://youtu.be/I-CdsHESLJ8) | --- |
 | Zoom! | GNPS Classical Molecular Networking | 4/29/2020 9AM PST | [Material](https://docs.google.com/document/d/1_aPUG0H4_v3hfVQ5uZTRv-lSPEuhooyiUZVNd1S21rw/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=PqTuex0nsGk) | 60 |
 | Zoom! | GNPS MASST | 4/22/2020 9AM PST | [Material](https://docs.google.com/document/d/1rzPLGA0-3DbFkUKVpIyUrj_7MLhqCvSSPskVO9gR1D0/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=14hGi6FtZIM) | 54 |
