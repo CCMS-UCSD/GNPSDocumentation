@@ -153,6 +153,19 @@ There are additional normalization options specifically for the FBMN workflow:
 
 ![img](img/featurebasedmolecularnetworking/Advanced_Quantification_Options_2.png)
 
+
+#### Advanced Univariate Statistics Options
+
+These options will enabling the calculation of statistics as well as draw box plots for exploring. 
+
+| Parameter        | Description          | Default |
+| ------------- |-------------| -----|
+| Metadata Column to Compare | This is the column name in your metadata (e.g. ATTRIBUTE_condition) | Empty | 
+| Metadata Field to Compare | This is the first field in the metadata data column to compare (e.g. CONTROL) | Empty |
+| Metadata Field to Compare | This is the second field in the metadata data column to compare (e.g. CASE) | Empty |
+| Metadata Column to Facet | This is another column where you can facet based on the terms (e.g. ATTRIBUTE_media) | Empty | 
+
+
 #### Advanced Extras
 
 "Supplementary Pairs" is an option to add extra edges to the resulting FBMN. It was initially implemented for the [Ion Identity Networking (IIN) workflow](fbmn-iin.md). The IIN supports currently MZmine, XCMS-CAMERA, and MS-DIAL. However, this approach is designed to stimulate the development and testing of new workflows as the input is an edge file in a generic CSV format. An edge is described by the following table:
