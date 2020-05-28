@@ -142,7 +142,7 @@ While this SuperQuick FBMN interface is convenient for quick analysis, we recomm
 | Filter library | Apply peak filters to library | Filter | |
 |Filter peaks in 50Da Window | Filter out peaks that are not in the top 6 most intense peaks in a +/- 50Da window | Filter |
 
-#### Advanced quantification options
+#### Advanced Quantification Options
 
 There are additional normalization options specifically for the FBMN workflow:
 
@@ -180,7 +180,7 @@ These options will enabling the calculation of statistics as well as draw box pl
 
 Note that if Supplementary Pairs from other software are used, it is mandatory that the as the LC-MS feature identifier (ID) matches the "SCANS=" number in the MGF file.
 
-Example of the Supplementary Pairs used in the [IIN) workflow](fbmn-iin.md). 
+Example of the Supplementary Pairs used in the [IIN workflow](fbmn-iin.md). 
 
 ![img](img/featurebasedmolecularnetworking/fbmn_iin_edges.PNG)
 
