@@ -252,7 +252,6 @@ EMPeror, is an open source and web browser enabled tool that allows researchers 
 
 ### Video Tutorial - Analyze FBMN in GNPS
 
-This video presents
 <iframe width="600" height="400" src="https://www.youtube.com/embed/NTkQ0fS1aug"> </iframe>
 
 ## Tutorials
