@@ -48,8 +48,10 @@ Please help us fill in more completely!
 | [GNPS Result View Esquisse Server (Super Beta)](http://dorresteintesthub.ucsd.edu:8359/) | TODO | TODO |
 | [GNPS Text Esquisse Server (Super Beta)](https://gnps.shinyapps.io/text_entry/) | TODO | TODO |
 | [GNPS Library Dash Explorer](http://dorresteinappshub.ucsd.edu:6546/) | TODO | TODO |
-| [GNPS Mass Spec Calculator](https://gnps-masscalculator.herokuapp.com/) | TODO | TODO |
+| [GNPS Mass Spec Calculator (Beta)](https://gnps-masscalculator.herokuapp.com/) | TODO | TODO |
 | [GNPS Usage Stats Dashboard](https://gnps-usage-stats.herokuapp.com/) | [GitHub](https://github.com/mwang87/GNPS_StatsSummaryDashboard) | --- |
+| [GNPS Upset Plot Dashboard (Beta)](https://gnps-classical-comparison.herokuapp.com/) | [GitHub](https://github.com/mwang87/GNPS_ClassicalNetworkGroupsComparisonDashboard) | --- |
+
 
 ## Community Tools GNPS Interfaces with
 
