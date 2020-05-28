@@ -55,7 +55,7 @@ This will bring you to a GNPS workflow status page. If you entered your email, y
 !!! warning 
     If you drag vendor proprietary files (e.g. not mzML/mzXML) you will be able to start the job, however it will fail, as shown here: 
 
-![button](img/superquick/job_failed.PNG)
+    ![button](img/superquick/job_failed.PNG)
 
 ### Results
 
