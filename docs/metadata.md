@@ -46,9 +46,16 @@ Using metadata in Google Sheets is a relatively new feature and we warn there mi
 
 In order to use Google Sheets as your source of metadata you will need to accomplish the following steps. 
 
-!!! info
-    Make sure you metadata is the first sheet of your Google Sheets
+???+ info "Make sure you metadata is the first sheet of your Google Sheets"
+    ![](img/metadata/sheets1.png)
     
+???+ info "Share metadata so that others can view simply by having the link"
+    ![](img/metadata/share1.png)
+    ![](img/metadata/share2.png)
+
+???+ info "Paste Link into Metadata Field in GNPS"
+    ![](img/metadata/paste1.png)
+
 
 ## Requirements Specific to Molecular Networking
 The use of a metadata file is an alternative way to assign groups when selecting data input files within the workflow of GNPS. The current version of molecular networking allows to use the metadata table as an input. 
