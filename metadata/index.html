@@ -390,9 +390,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#format" class="md-nav__link">
-    Format
+  <a href="#metadata-formats" class="md-nav__link">
+    Metadata Formats
   </a>
+  
+    <nav class="md-nav" aria-label="Metadata Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#redu-metadata" class="md-nav__link">
+    ReDU Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#barebones-metadata" class="md-nav__link">
+    Barebones Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-sheets-metadata" class="md-nav__link">
+    Google Sheets Metadata
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1465,9 +1492,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#format" class="md-nav__link">
-    Format
+  <a href="#metadata-formats" class="md-nav__link">
+    Metadata Formats
   </a>
+  
+    <nav class="md-nav" aria-label="Metadata Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#redu-metadata" class="md-nav__link">
+    ReDU Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#barebones-metadata" class="md-nav__link">
+    Barebones Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-sheets-metadata" class="md-nav__link">
+    Google Sheets Metadata
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1521,9 +1575,19 @@
                 
                 <h1 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link">&para;</a></h1>
 <h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
-<p>The metadata file used in GNPS describes the properties of a file (<em>e.g.</em> sample type, year of analysis, and collection method). Metadata adhering to the accepted formatting for each tool enhances data analysis and visualization options. We strongly encourage you to prepare metadata files in advance and <a href="https://mwang87.github.io/ReDU-MS2-Documentation/HowtoContribute/">upload</a> to the supplementary file folder in the corresponding MassIVE dataset.</p>
-<h2 id="format">Format<a class="headerlink" href="#format" title="Permanent link">&para;</a></h2>
-<p>The recommended starting point is the <a href="https://docs.google.com/spreadsheets/d/1v71bnUd8fiXX51zuZIUAvYETWmpwFQj-M3mu4CNsHBU/edit?usp=sharing">ReDU Sample Information Template</a> (additional documentation can be found <a href="https://mwang87.github.io/ReDU-MS2-Documentation/HowtoContribute/">here</a>). Users can add an unlimited amount of additional columns to the ReDU Sample Information Template. There are specific instructions on required columns and formatting detailed for GNPS tools below.</p>
+<p>The metadata file used in GNPS describes the properties of a file/sample (<em>e.g.</em> sample type, year of analysis, and collection method). Metadata adhering to the accepted formatting for each tool enhances data analysis and visualization options. We strongly encourage you to prepare metadata files in advance and <a href="https://mwang87.github.io/ReDU-MS2-Documentation/HowtoContribute/">upload</a> to the supplementary file folder in the corresponding MassIVE dataset. However, we understand that all of this information might not be available, so it is a suggest starting point. </p>
+<h2 id="metadata-formats">Metadata Formats<a class="headerlink" href="#metadata-formats" title="Permanent link">&para;</a></h2>
+<p>There are two metadata formats we accept for the majority of GNPS workflows:</p>
+<ol>
+<li>tab separated tsv file</li>
+<li>Google Sheets shared link</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Google Sheets is currently only supported in Classical Molecular Networking Release 22 or later.</p>
+</div>
+<h3 id="redu-metadata">ReDU Metadata<a class="headerlink" href="#redu-metadata" title="Permanent link">&para;</a></h3>
+<p>The recommended starting point for both of these metadata is  <a href="https://docs.google.com/spreadsheets/d/1v71bnUd8fiXX51zuZIUAvYETWmpwFQj-M3mu4CNsHBU/edit?usp=sharing">ReDU Sample Information Template</a> (additional documentation can be found <a href="https://mwang87.github.io/ReDU-MS2-Documentation/HowtoContribute/">here</a>). Users can add an unlimited amount of additional columns to the ReDU Sample Information Template. To add additional columns that are recognized by GNPS workflows, you can prefix the column header with ATTRIBUTE_ (e.g. ATTRIBUTE_Organism). There are specific instructions on required columns and formatting detailed for GNPS tools below.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This standard metadata format works for the following GNPS tools</p>
@@ -1539,12 +1603,23 @@
 <p class="admonition-title">Warning</p>
 <p>Excel (xlsx), rich text (rtf) are not supported.</p>
 </div>
-<p><strong>Example metadata file without using the ReDU Sample Information Template</strong>
-<a href="https://raw.githubusercontent.com/DorresteinLaboratory/GNPS-Trinity/master/GNPS-Trinity_template_files/metadata_GNPS_AMG_demo.txt">Right-click, and Save link as</a> to download. A text editor can be used to edit it as desired. </p>
+<h3 id="barebones-metadata">Barebones Metadata<a class="headerlink" href="#barebones-metadata" title="Permanent link">&para;</a></h3>
+<p>Starting from scratch, you can simply list the filenames for your mass spectrometry files and extra columns describing each file. </p>
+<p>Here is an example file without the ReDU Sample Information template in <a href="https://docs.google.com/spreadsheets/d/1pSrqOdmMVBhVGpxIZeglToxihymTuaR4_sqTbLBlgOA/edit?usp=sharing">Google Sheets</a> and as a tsv download if you <a href="https://raw.githubusercontent.com/DorresteinLaboratory/GNPS-Trinity/master/GNPS-Trinity_template_files/metadata_GNPS_AMG_demo.txt">Right-click, and Save link as</a> to download. A text editor can be used to edit it as desired. </p>
 <div class="admonition info">
 <p class="admonition-title">Formatting metadata</p>
-<p>The only required columns in the metadata is <strong>"filename"</strong> and the file names should match those uploaded to MassIVE.      <strong>Capitalization matters.</strong></p>
+<p>The only required columns in the metadata is <strong>"filename"</strong> and the file names should match those uploaded to GNPS and selected for analysis.       <strong>Capitalization matters.</strong></p>
 </div>
+<h3 id="google-sheets-metadata">Google Sheets Metadata<a class="headerlink" href="#google-sheets-metadata" title="Permanent link">&para;</a></h3>
+<p>Using metadata in Google Sheets is a relatively new feature and we warn there might be some bumps in the road. You can find the a barebones example <a href="https://docs.google.com/spreadsheets/d/1WGAs9YkZMO2C-iNh3N7QwvJI21Ogz9Zb8dNj8-eQRqg/edit?ouid=112039669197743156595&amp;usp=sheets_home&amp;ths=true">here</a>. </p>
+<p>In order to use Google Sheets as your source of metadata you will need to accomplish the following steps. </p>
+<details class="info" open="open"><summary>Make sure you metadata is the first sheet of your Google Sheets</summary><p><img alt="" src="../img/metadata/sheets1.png" /></p>
+</details>
+<details class="info" open="open"><summary>Share metadata so that others can view simply by having the link</summary><p><img alt="" src="../img/metadata/share1.png" />
+<img alt="" src="../img/metadata/share2.png" /></p>
+</details>
+<details class="info" open="open"><summary>Paste Link into Metadata Field in GNPS</summary><p><img alt="" src="../img/metadata/paste1.png" /></p>
+</details>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Indicate which metadata columns should be considered in analysis by opening the file in a text editor and adding             "ATTRIBUTE_" to the header of the column.</p>
@@ -1556,7 +1631,7 @@
 </ul>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
-<p>Although it is possible to use the legacy group mapping and attribute mapping file, we strongly advise against using        this method.</p>
+<p>Although it is possible to use the legacy group mapping and attribute mapping file, we strongly advise against using this method.</p>
 </div>
 <h2 id="requirements-specific-to-qiime2">Requirements Specific to Qiime2<a class="headerlink" href="#requirements-specific-to-qiime2" title="Permanent link">&para;</a></h2>
 <p>GNPS communicates with Qiime2. PCoA visualized using EMPeror and Qiime outputs (.qza/.qzv), including a BIOM formated output, can be generated. Microbe-metabolite interactions can also be studied with <a href="https://www.nature.com/articles/s41592-019-0616-3">MMVEC</a>. GNPS will parse any extra column in the metadata file and output them in the Qiime2 supported files (BIOM/qza files). Note that by default the mass spectrometry filename will be used as sample name for Qiime2 files. Alternatively, it is possible to specify an additional metada column called "sample_name" that will be used instead as sample name in Qiime2, to enable joint mass spectrometry - metabolomics analysis such as MMVEC.</p>
@@ -1604,7 +1679,7 @@
 <li>Users must upload the corresponding .STL file and place it in the <strong>"STL Model for ili"</strong> folder</li>
 </ul>
 <h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h2>
-<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (44.58%), <a href='mailto:41308046+alan-jarmusch@users.noreply.github.com'>alan-jarmusch</a> (42.17%), <a href='mailto:56978223+emgentry@users.noreply.github.com'>emgentry</a> (13.25%)</span></p>
+<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (64.35%), <a href='mailto:41308046+alan-jarmusch@users.noreply.github.com'>alan-jarmusch</a> (26.09%), <a href='mailto:56978223+emgentry@users.noreply.github.com'>emgentry</a> (9.57%)</span></p>
                 
                   
                     
@@ -1613,7 +1688,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: May 19, 2020 19:39:03
+      Last update: May 30, 2020 00:23:48
     
   </small>
 </div>
