@@ -1,7 +1,5 @@
 ## GNPS Workflow Contact information
 
-Last changed: {{ git_revision_date }}
-
 If you have any questions about how to use GNPS please first ask the community at the GNPS forum located [here](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports).
 
 In the event that there is an issue with the GNPS website or workflows, please contact the administrators at [ccms-web@cs.ucsd.edu](mailto: ccms-web@cs.ucsd.edu).
@@ -28,4 +26,4 @@ Upcoming Office Hour Schedule
 
 Please also take the time to RSVP that you're going to attend and what questions you may have so we know who to let in as well as what to expect:
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOCaOmZ6Q5ggsmnQ414SSYBrshpX-Ibt4ENh2TPkQiBBR2qw/viewform?embedded=true" width="640" height="594" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOCaOmZ6Q5ggsmnQ414SSYBrshpX-Ibt4ENh2TPkQiBBR2qw/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
