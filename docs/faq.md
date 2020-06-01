@@ -28,6 +28,17 @@
 
 !!! question "Can I select more than one file at a time for each group in molecular networking?"
     Yes. Within each group you can select multiple files, even folders of spectra. Simply highlight the multiple files/folders you want to select and then add to the appropriate group.
+    
+!!! questions "What are the advantages and disadvantages of FBMN vs Classical Molecular Networking"
+    Feature Based Molecular Networking (FBMN) provides the following advantages
+    1. Area under the curve quantification
+    1. Isomer resolution
+    1. Filtration of MS/MS that come from chromatographic features
+    1. Potential inclusion of other types of edges (e.g. IIN)
+    However, the downsides include
+    1. Requires feature finding pre-processing (e.g. MZMine2)
+    1. Less sensitive to consider all MS/MS than classical
+    1. More parameters to set
 
 ## Mass Spectrometry Types
 
