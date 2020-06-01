@@ -18,9 +18,14 @@ If you would like to host a GNPS workshop together with the GNPS team, please re
 
 ## GNPS Training Tutorial Modules
 
-We have standard training tutorial modules on GNPS. Check it out here:
+We have standard training tutorial modules on GNPS. These are available fully in [GitHub](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules). 
 
-[Training modules](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules)
+Here is a table to briefly browse them
+
+| Module        | Description          | Link |  
+| ------------- |-------------| -----| 
+| Module 1 | Classical Molecular Networking | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module01a-Classic-NetworkingSubmission) | 
+
 
 ## Previous Workshops
 
