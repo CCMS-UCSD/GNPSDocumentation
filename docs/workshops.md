@@ -3,7 +3,7 @@
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
 | Zoom! | GNPS MolNetEnhancer	| 6/3/2020 9AM PST | TBD |
-| Zoom! | GNPS Merge Polarity Networks - Merging Networks from Positive and Negative Mode	| 6/10/2020 9AM PST | TBD |
+| Zoom! | GNPS Merge Polarity Networks - Merging Networks from Positive and Negative Mode	| 6/10/2020 9AM PST | [Material](https://docs.google.com/document/d/1qyepInMfujbG7Mgbm4fnuQf87i8JctvTUKjTs69T_os/edit?usp=sharing) |
 | Zoom! | GNPS Classical Molecular Networking in Espanol | 6/17/2020 9AM PST | TBD |
 | Zoom! | Metabolomics Spectrum Resolver - Unifing spectrum rendering and customization	| 7/1/2020 9AM PST | TBD |
 | Zoom! | GNPS Users Meeting - Presentations from the Community	| 7/8/2020 9AM PST | TBD |
