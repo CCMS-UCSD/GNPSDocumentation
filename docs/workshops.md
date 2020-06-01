@@ -25,6 +25,17 @@ Here is a table to briefly browse them
 | Module        | Description          | Link |  
 | ------------- |-------------| -----| 
 | Module 1 | Classical Molecular Networking | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module01a-Classic-NetworkingSubmission) | 
+| Module 2 | Molecular Molecular Theory | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module02-MolecularNetworkingOverview) |
+| Module 3 | Exploring Molecular Networks | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module03-ExploringNetworksBrowser) |
+| Module 4 | Cytoscape Networks | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module04-CytoscapeNetworks) |
+| Module 5 | Feature Based  Molecular Networking | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module05-FeatureBasedNetworking) |
+| Module 6 | MASST | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module06-MASST) |
+| Module 7 | Qiime2 Analysis | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module07-Qiime2Analysis) |
+| Module 8 | ReDU | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module08-ReDU) |
+| Module 10 | In Silico Analysis | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module10-insilico) |
+| Module 11 | MolNetEnhancer | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module11-Molnetenhancer) |
+| Module 12 | MS2LDA | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module12-MS2LDA) |
+| Module 13 | Adding Reference Library Spectra | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module13-AddingReferenceSpectra) |
 
 
 ## Previous Workshops
