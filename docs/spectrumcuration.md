@@ -81,4 +81,10 @@ For a full set of parameters, see [this](batchupload.md#field-information)
 | Your Data |  Incomplete Structure Proposed | Cannot based on MS/MS | N/A | please annotate with the **common name** and indicate the position is unknown using "X" | (X)-Methylxanthine |
 | Your Data | No Structure Information | No Position Information | Mass shift provided via Molecular Networking | please annotate with the **common name** of the chemical it is connected to and indicate mass shift. Mass shift indicated by nominal mass followed by putative formula difference (if the formula difference is unknown please enter "X"). No SMILES or Inchi should be provided. | Caffeine +14(CH2) <br> Caffeine +52(X)|
 
+### License
 
+All GNPS Reference spectra contributed directly to GNPS by default will have the [CC BY](https://creativecommons.org/licenses/by/4.0/) license.
+
+![img](https://licensebuttons.net/l/by/3.0/88x31.png)
+
+Third party libraries imported may not conform to the CC BY license and should be verified by users. 
