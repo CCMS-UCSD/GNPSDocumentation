@@ -41,7 +41,7 @@
 ## GNPS Account
 
 !!! question "How can I reset my password"
-    For now please go ahead and contact our admins via this [page](contact.md]
+    For now please go ahead and contact our admins via this [page](contact.md).
 
 ## Browser Support
 
