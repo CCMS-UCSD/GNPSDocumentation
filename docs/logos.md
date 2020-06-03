@@ -46,7 +46,7 @@ Animated
 ![img](img/logo/MolNetEnhancer_logo.png)
 
 
-## Logos for Zoom
+## Logos for Zoom Background
 
 ![img](img/logo/zoom/Slide1.PNG)
 
