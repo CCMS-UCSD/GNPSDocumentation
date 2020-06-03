@@ -44,3 +44,16 @@ Animated
 ## MolNetEnhancer Logo
 
 ![img](img/logo/MolNetEnhancer_logo.png)
+
+
+## Logos for Zoom
+
+![img](img/logo/zoom/Slide1.PNG)
+
+![img](img/logo/zoom/Slide2.PNG)
+
+![img](img/logo/zoom/Slide3.PNG)
+
+![img](img/logo/zoom/Slide4.PNG)
+
+
