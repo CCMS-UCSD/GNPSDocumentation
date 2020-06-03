@@ -2,7 +2,6 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Zoom! | GNPS MolNetEnhancer	| 6/3/2020 9AM PST | [Material](https://docs.google.com/document/d/1qyepInMfujbG7Mgbm4fnuQf87i8JctvTUKjTs69T_os/edit?usp=sharing) |
 | Zoom! | GNPS Merge Polarity Networks - Merging Networks from Positive and Negative Mode	| 6/10/2020 9AM PST | TBD |
 | Zoom! | GNPS Classical Molecular Networking in Espanol | 6/17/2020 9AM PST | TBD |
 | Zoom! | Metabolomics Spectrum Resolver - Unifing spectrum rendering and customization	| 7/1/2020 9AM PST | TBD |
@@ -42,6 +41,7 @@ Here is a table to briefly browse them
 
 | Venue        | Description          | Dates | Material | Estimated Attendance |
 | ------------- |-------------| -----| -----| ----- |
+| Zoom! | GNPS MolNetEnhancer	| 6/3/2020 9AM PST | [Material](https://docs.google.com/document/d/1qyepInMfujbG7Mgbm4fnuQf87i8JctvTUKjTs69T_os/edit?usp=sharing) | 47 |
 | Zoom! | GC-MS deconvolution, library search and molecular networking | 5/27/2020 9AM PST | [Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit) | --- |
 | YouTube | Utilizing GNPS and MS2LDA for some molecular networking discovery	| 5/21/2020 6AM PST | [LiveStream](https://www.youtube.com/watch?v=Cc6eKGZQ1Qw&feature=youtu.be) | --- |
 | Zoom! | GNPS Ion-Identity Networking, Native Metabolomics	| 5/20/2020 9AM PST | [Material](https://docs.google.com/document/d/1Fasu3Gh0PsgW6-KW-FmKz-NgU6OLXrRHm_zAssVGZ-M/edit?usp=sharing) | 65 |
