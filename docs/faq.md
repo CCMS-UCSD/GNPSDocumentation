@@ -38,6 +38,11 @@
 !!! question "Does GNPS support data independent acquisition (DIA) data types such as MSe and SWATH?"
     GNPS natively does not support these types of data with large isolation windows. We recommend that these data be preprocessed so that individual molecule fragmentation can be deconvoluted with tool such as [DIA-Umpire](http://diaumpire.sourceforge.net/) or Progenesis QI (MSe) and you can find our documentation [here](featurebasedmolecularnetworking-with-progenesisQI.md).
 
+## GNPS Account
+
+!!! question "How can I reset my password"
+    For now please go ahead and contact our admins via this [page](contact.md]
+
 ## Browser Support
 
 !!! question "What Browsers Does GNPS Support"
