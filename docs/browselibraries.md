@@ -37,3 +37,9 @@ In the event that annotations are incomplete or incorrect, users have the option
 Revision history of the spectrum. Sorted in reverse chronological order, with most recent revisions first. To comment on a specific revision of the annotations, users can click the comment button for each annotation row. To view comments on each annotation, users can click the double down arrow at the left of the row.
 
 ![img](img/libraries/annotation_history.png)
+
+### License
+
+All GNPS Reference spectra contributed directly to GNPS by default will have the [CC0](https://creativecommons.org/publicdomain/zero/1.0/) license.
+
+Third party libraries imported may not conform to the CC BY license and should be verified by users. 
