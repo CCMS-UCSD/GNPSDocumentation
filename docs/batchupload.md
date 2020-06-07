@@ -75,3 +75,9 @@ To actually add the spectra to the libraries, users will
 1. Users will then need to contact Morgan (ccms-web@cs.ucsd.edu) and send her the completed job from above.
 1. A private spectral library will then be created by Morgan. 
 1. After the contributor may review the library to be made into a public library and will be made public after approval. 
+
+### License
+
+All GNPS Reference spectra contributed directly to GNPS by default will have the [CC0](https://creativecommons.org/publicdomain/zero/1.0/) license.
+
+Third party libraries imported may not conform to the CC BY license and should be verified by users. 
