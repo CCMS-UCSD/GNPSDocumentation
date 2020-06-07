@@ -56,3 +56,9 @@ With a full list that can be found [here](https://gnps-external.ucsd.edu/gnpslib
     END IONS
 
     ```
+
+### License
+
+All GNPS Reference spectra contributed directly to GNPS by default will have the [CC0](https://creativecommons.org/publicdomain/zero/1.0/) license.
+
+Third party libraries imported may not conform to the CC BY license and should be verified by users. 
