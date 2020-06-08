@@ -1,6 +1,5 @@
-## Supported Formats at GNPS
-
-GNPS supports mzXML, mzML, and mgf formats for analysis. Our tools do NOT support mzData, xml, raw, RAW, wiff, scan, d, and cdf formats. If some of your files are in these formats, please use the following guide to convert them to open formats supported by GNPS.
+!!! info "Supported Formats at GNPS"
+    GNPS supports mzXML, mzML, and mgf formats for analysis. Our tools do NOT support mzData, xml, raw, RAW, wiff, scan, d, and cdf formats. If some of your files are in these formats, please use the following guide to convert them to open formats supported by GNPS.
 
 ## Data Conversion (Super Easy)
 
