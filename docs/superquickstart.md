@@ -10,7 +10,7 @@ You would be able to use the Super quickstart interface if you have the followin
 
 - The format of your files is mzXML/mzML/Thermo raw files.
 - You have less than 3 cohorts of samples.
-- Each file has a maximum of 50 spectrum files.
+- Each analysis has a maximum of 50 spectrum files.
 - Each file has less than 200MB. 
 
 ## Super-Quick Start Interface
