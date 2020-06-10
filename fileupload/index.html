@@ -1460,7 +1460,35 @@
                 
                 <p>To upload files to GNPS for analysis, the preferred method is to use an FTP client. This provides a robust and batch manner to upload many files. The one big downside is that you have to have to install an FTP client if you don't already have one. We offer as an alternative an online browser drag and drop that is limited to small files.</p>
 <h2 id="ftp-batch-file-uploads">FTP Batch File Uploads<a class="headerlink" href="#ftp-batch-file-uploads" title="Permanent link">&para;</a></h2>
-<p>Please checkout our <a href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/">Legacy Documentation</a> on how to upload files via FTP. This requires you to have already created a GNPS account. If you have not yet done so please follow these <a href="../quickstart/#create-a-gnps-account">instructions</a>.</p>
+<p>To upload data, this requires you to have already created a GNPS account. If you have not yet done so please follow these <a href="../quickstart/#create-a-gnps-account">instructions</a>.</p>
+<p>Once you have a GNPS  account, it is strongly recommended that you use FTP to upload your dataset files to your account, as opposed to the GNPS web interface. This is because the web-based upload interface is optimized for quick uploads of small files, whereas for the much larger files, FTP is much more stable and robust.</p>
+<p>To connect to your GNPS user account via FTP, simply log on to the FTP server at massive.ucsd.edu, using the same username and password as your GNPS web account.</p>
+<table>
+<thead>
+<tr>
+<th>GNPS FTP Server</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="ftp://massive.ucsd.edu">massive.ucsd.edu</a></td>
+</tr>
+</tbody>
+</table>
+<p>To do this, you will need to use your preferred FTP client program. There are many good free FTP clients, but a few of the more popular ones that have been tested with MassIVE include:</p>
+<p><a href="https://winscp.net/eng/index.php">WinSCP</a> (recommended and used for the example illustrations below)<br />
+<a href="http://www.coreftp.com/">CoreFTP</a><br />
+<a href="http://www.coffeecup.com/free-ftp/">CoffeeCup Free FTP</a></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>We no longer recommend FileZilla, since it was found to contain malware in a recent update.</p>
+</div>
+<p>Most FTP client programs use a similar interface. There is usually some sort of server or session management interface, allowing you to set up and store your connection information for a particular FTP server, and then re-connect to that server easily. For example, in WinSCP:</p>
+<p><img alt="WinSCP_quick_connect_TLS" src="../img/uploader/WinSCP_quick_connect.png" /></p>
+<p>When setting up your FTP server connection, be sure to use plain FTP with no encryption. Then enter massive.ucsd.edu as the server or “host” name (port 21), followed by your GNPS username and password, and the client should connect you to your user file space.</p>
+<p>From there, you can upload files by finding them on your computer (usually in the left panel) and then dragging them over to the server (usually in the right panel), or you can download files from the server to your computer by dragging them in the reverse direction.</p>
+<p>You can also experiment with the FTP client interface to move and rename files and folders on the server, so as to reorganize your uploaded data in whatever manner you prefer.</p>
+<p><img alt="WinSCP_file_interface" src="../img/uploader/WinSCP_file_interface.png" /></p>
 <h2 id="browser-file-uploads">Browser File Uploads<a class="headerlink" href="#browser-file-uploads" title="Permanent link">&para;</a></h2>
 <p>To upload files to GNPS using the browser, you can use our web drag and drop uploader.</p>
 <div class="admonition note">
@@ -1482,7 +1510,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: May 19, 2020 16:26:42
+      Last update: June 10, 2020 18:41:36
     
   </small>
 </div>
