@@ -24,7 +24,7 @@ To do this, you will need to use your preferred FTP client program. There are ma
 
 Most FTP client programs use a similar interface. There is usually some sort of server or session management interface, allowing you to set up and store your connection information for a particular FTP server, and then re-connect to that server easily. For example, in WinSCP:
 
-![WinSCP_quick_connect_TLS](img/upload_data/WinSCP_quick_connect.png)
+![WinSCP_quick_connect_TLS](img/uploader/WinSCP_quick_connect.png)
 
 When setting up your FTP server connection, be sure to use plain FTP with no encryption. Then enter massive.ucsd.edu as the server or “host” name (port 21), followed by your GNPS username and password, and the client should connect you to your user file space.
 
@@ -32,7 +32,7 @@ From there, you can upload files by finding them on your computer (usually in th
 
 You can also experiment with the FTP client interface to move and rename files and folders on the server, so as to reorganize your uploaded data in whatever manner you prefer.
 
-![WinSCP_file_interface](img/upload_data/WinSCP_file_interface.png)
+![WinSCP_file_interface](img/uploader/WinSCP_file_interface.png)
 
 ## Browser File Uploads
 
