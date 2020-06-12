@@ -1609,7 +1609,12 @@
 </ul>
 <p><strong><img alt="img" src="../img/GC-MS_documentation/Fig_1B.png" /></strong></p>
 <p>The <strong>"Search Option" section</strong> in the job window allows importing files needed for the spectral library search and the molecular networking generation. By clicking on "select Input Files", a pop-up window appears, allowing to select every needed file.</p>
-<p>(1), (2) The .mgf file containing the deconvolved EI spectra and the .csv feature quantification table automatically (with balance score) adds if the spectral library search is launched from the deconvolution job performed with MS-Hub. Otherwise, they can be added by the user from others processing software (MS-DIAL, MZmine2, etc...). The quantification table is formatted as the MZmine2 output table with a "raw ID", "row m/z", "row retention time" columns, and all the peak area values for all .mzML files.</p>
+<p>(1), (2) The .mgf file containing the deconvolved EI spectra and the .csv feature quantification table automatically (with balance score) adds if the spectral library search is launched from the deconvolution job performed with MS-Hub. Otherwise, they can be added by the user from others processing software (MS-DIAL, MZmine2, etc...). The quantification table can be exported from the follow tools:</p>
+<ol>
+<li>MZmine2</li>
+<li>MS-Dial</li>
+<li>MS-Hub</li>
+</ol>
 <p>(3) Select your metadata table formatted as a tab-separated .txt file. To create your metadata table properly, see the documentation <a href="../metadata/">here</a>. </p>
 <p>(4) Public Libraries files are selected by default. However, user could add their libraries on GNPS by following the instructions <a href="../batchupload/">here</a>, or by uploading them in .mgf format (drag and drop on “Upload File” section). If the libraries are curated and could be shared with the community, it is encouraged to upload them to GNPS. </p>
 <p>(5) The carbon marker table should be added. This table must be formatted as a comma separated values (.csv) file in the following headers: Compound_Name - name of the compound (string), Carbon_Number - number of carbons (integer), RT - retention time in seconds (float). <a href="../static/gc_kovats_skin.csv">Example File</a>. The file can also be created from the raw experimental chromatograms of the RI marker compounds using MZMine2 as described in this <a href="https://youtu.be/XodHMJcuwnk">video tutorial</a>. </p>
@@ -1706,7 +1711,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: April 22, 2020 20:49:54
+      Last update: June 12, 2020 23:09:54
     
   </small>
 </div>
