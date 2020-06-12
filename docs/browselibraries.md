@@ -48,6 +48,8 @@ Additionally, separate libraries that are not selected by default are located fo
 CCMS_SpectralLibraries/GNPS_Propogated_Libraries
 ```
 
+![img](img/libraries/extralibraries.png)
+
 These are propogated spectral libraries that inherently are less confident but this provides an avenue to give more identifications. 
 
 ### License
