@@ -38,6 +38,18 @@ Revision history of the spectrum. Sorted in reverse chronological order, with mo
 
 ![img](img/libraries/annotation_history.png)
 
+### Using Spectral Libraries in GNPS Analysis
+
+The default spectral libraries are located in the speclibs folder in GNPS. 
+
+Additionally, separate libraries that are not selected by default are located for example:
+
+```
+CCMS_SpectralLibraries/GNPS_Propogated_Libraries
+```
+
+These are propogated spectral libraries that inherently are less confident but this provides an avenue to give more identifications. 
+
 ### License
 
 All GNPS Reference spectra contributed directly to GNPS by default will have the [CC0](https://creativecommons.org/publicdomain/zero/1.0/) license.
