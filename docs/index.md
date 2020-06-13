@@ -22,7 +22,7 @@ As there are many aspects to GNPS, it can be a bit overwhelming. Here is a quick
 ### Share and Explore
 
 * Publish entire study datasets with the Mass Spectrometry Interactive Virtual Environment (MassIVE) data repository ([Dataset Submission](datasets.md)).
-* [Browse](datasets#browsing-datasets) and [Reanalyze](datasets#reanalyze-datasets) over 700 public datasets at GNPS
+* [Browse](datasets#browsing-datasets) and [Reanalyze](datasets#reanalyze-datasets) over 1500 public datasets at GNPS
 * Automatic reanalysis of public datasets with automated reports of new identifications ([Continuous Identification](continuousid.md)).
 * Explore identifications of public datasets across entire repository ([Molecule Explorer](moleculeexplorer.md)).
 
@@ -62,9 +62,23 @@ Put your MS/MS spectrum of a known compound in GNPS spectral libraries, so you n
 
 The GNPS community is always welcoming suggestions and contributions. Be part of the community and contribute ! See [that page for more informations](gnps_community.md).
 
+### Citation
+
+!!! cite "Recommended Citation"
+	[Mingxun Wang, Jeremy J. Carver, Vanessa V. Phelan, Laura M. Sanchez, Neha Garg, Yao Peng, Don Duy Nguyen et al. "Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking." Nature biotechnology 34, no. 8 (2016): 828. PMID: 27504778](https://www.nature.com/articles/nbt.3597)
 
 ### GNPS and MassIVE uptime
 
 This is a brief overview of whether our web services are up: [here](https://stats.uptimerobot.com/Am4PLUWn3). 
 
 And a more detailed functional test [status page](https://github.com/CCMS-UCSD/GNPS_Workflows#gnps-core-webserver-status).
+
+### GNPS Documentation Site Authors
+
+We would like to thank the following contributors to the documentation. 
+
+However, we want to acknowledge that we have moved documentation in 2018 to GitHub from our previous wiki and those contributions are not reflected in these numbers
+and were broadly subsumed into Ming Wang's contributions. These first additions to the documentation were invaluable and a few of those pioneers were 
+Vanessa Phelan, Laura Sanchez, Laura Pace, Alexey Guruvich, and Don D. Nguyen. 
+
+{{ git_site_authors }}

@@ -35,9 +35,7 @@ Visualize the status of all GNPS Workflows: [https://stats.uptimerobot.com/Am4PL
 3. Install requirements
 
 ```
-conda install -c conda-forge mkdocs
-conda install -c conda-forge mkdocs-material
-pip install mkdocs-minify-plugin
+pip install -r requirements.txt
 ```
 
 4. Serve locally
