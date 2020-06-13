@@ -98,6 +98,6 @@ This work builds on the efforts of our many colleagues, please cite their work:
 
 **For FBMN**: Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
 
+## Page Contributions
 
-## Page Contributors
-Helena Mannochio Russo (UNESP), Anelize Bauermeister (USP), Daniel Petras (UCSD), Allegra Aron (UCSD).
+{{ git_page_authors }}

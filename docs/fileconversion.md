@@ -76,3 +76,7 @@ After installation, from the Start Menu, click the ProteoWizard folder and open 
 ### Advanced Online Conversion with Proteowizard (MSConvert)
 
 It is possible to convert spectrum files online at the sister site - MassIVE. This site is able to handle thermo RAW and Sciex Wiff files. Please check it out [here](http://proteomics.ucsd.edu/service/massive/documentation/submit-data/).
+
+## Page Contributors
+
+{{ git_page_authors }}

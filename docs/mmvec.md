@@ -18,3 +18,7 @@ This is a tsv file that describes the identification of the metabolites. The req
 ## Exploring the Results
 
 ## Demonstration Data
+
+## Page Contributors
+
+{{ git_page_authors }}

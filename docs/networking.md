@@ -251,5 +251,7 @@ More details about ìli can be found [here](https://github.com/MolecularCartogra
 
 Protsyuk, I., et al. (2018). 3D molecular cartography using LC–MS facilitated by Optimus and'ili software. Nature protocols, 13(1), 134. [https://doi.org/10.1038/nprot.2017.122](https://doi.org/10.1038/nprot.2017.122)
  
-**Page contributors:** Anelize Bauermeister; Mauricio Caraballo
+## Page Contributors
+
+{{ git_page_authors }}
 

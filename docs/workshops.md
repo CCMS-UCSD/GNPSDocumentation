@@ -65,3 +65,8 @@ Here is a table to briefly browse them
 | Metabolomics 2018 | GNPS Introduction, Molecular Networking - Food Analysis, `ili 3D cartography of plants, MS2LDA | July 2018 | Coming Soon ||
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xotOmx11UTebhBV-LfYgLsKrfdyprw4z" width="640" height="480"></iframe>
+
+
+## Page Contributors
+
+{{ git_page_authors }}

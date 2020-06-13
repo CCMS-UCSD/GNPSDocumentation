@@ -59,3 +59,7 @@ To access your data, either click the link in the email or click the DONE link u
 | View All Spectra Hits | View all library matches |
 | View Top Hits | View only top hit per query spectrum |
 | View All Compounds | Unique set of compounds in matches |
+
+## Page Contributors
+
+{{ git_page_authors }}

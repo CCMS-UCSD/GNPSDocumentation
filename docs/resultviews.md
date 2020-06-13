@@ -25,3 +25,7 @@ In order to download the data for a result table in GNPS that you are currently 
 ![img](img/results/download1.png)
 
 ![img](img/results/download2.png)
+
+## Page Contributors
+
+{{ git_page_authors }}

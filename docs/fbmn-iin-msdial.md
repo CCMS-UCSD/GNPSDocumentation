@@ -46,5 +46,10 @@ See our [MS-DIAL tutorial](tutorials/americangut-ms-dial.md) on using Feature Ba
 - Cytoscape documentation
 - Tutorial IIN
 
-## Contributors
-This integration was made possible by Hiroshi Tsugawa (Riken). This page was created by Louis Felix Nothias (UCSD).
+## Acknowledgements
+
+This integration was made possible by Hiroshi Tsugawa (Riken).
+
+## Page Contributions
+
+{{ git_page_authors }}

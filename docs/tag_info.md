@@ -141,3 +141,8 @@ Pardon our dust as this is documentation is a work in progress! We also welcome 
 TBD
 
 ---
+
+
+## Page Contributors
+
+{{ git_page_authors }}
