@@ -42,6 +42,11 @@
 
 !!! question "How can I reset my password"
     For now please go ahead and contact our admins via this [page](contact.md).
+    
+## GNPS Lexicon
+
+!!! question "What is the definition of that word in the context of GNPS ?"
+    Please refer to the [GNPS lexicon page](lexicon.md). To suggest additional definition, please open up an issue on [our GitHub](https://github.com/CCMS-UCSD/GNPSDocumentation/).
 
 ## Browser Support
 
