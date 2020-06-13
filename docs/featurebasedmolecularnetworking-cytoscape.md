@@ -160,10 +160,11 @@ Our [tutorial on running the FBMN analysis on GNPS including a Cytoscape demo](t
 
 See our [tutorial on using MZmine2](tutorials/americangutmzmine.md) for the FBMN analysis of a cohort from the [American Gut Project](http://humanfoodproject.com/americangut/).
 
-### Page contributors
-Melissa Esposito (UCSD), Irina Koester (SIO, UCSD), Christian Martin (INDICASAT), Louis Felix Nothias (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).
-
 ### Join the GNPS Community !
 
 - For feature request, or to report bugs, please open an "Issue" on the [*CCMS-UCSD/GNPS_Workflows* GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows).
 - To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) repository, and make a "Pull Request" with the changes.
+
+## Page Contributions
+
+{{ git_page_authors }}

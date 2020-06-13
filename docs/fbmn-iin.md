@@ -81,6 +81,6 @@ Specific types of adducts’ edges can be colored differently by selecting Strok
 
 ![ScreenShot11](img/iin/ScreenShot11.png)
 
+## Page Contributions
 
-## Page contributors
-Robin Schmid (WWU, Münster, Germany), Daniel Petras (UCSD), Louis Felix Nothias (UCSD), Ming Wang (UCSD).
+{{ git_page_authors }}

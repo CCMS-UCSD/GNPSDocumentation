@@ -57,3 +57,6 @@ Animated
 ![img](img/logo/zoom/Slide4.PNG)
 
 
+## Page Contributors
+
+{{ git_page_authors }}

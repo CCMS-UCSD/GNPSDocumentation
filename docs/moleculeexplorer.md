@@ -19,3 +19,7 @@ In the final level of granularity, the molecule can be traced down to the set of
 [Here](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?view=molecule_explorer_v2_filedetails&task=698fc5a09db74c7492983b3673ff5bf6#%7B%22compound_name_input%22%3A%22Avobenzone%22%2C%22Original_Path_input%22%3A%22MSV000078556%22%7D) we can see that within the Skin Cartography Dataset, Avobenzone appears in only files from human swabs and not blanks:
 
 ![img](img/explorer/avobenzone.png)
+
+## Page Contributors
+
+{{ git_page_authors }}

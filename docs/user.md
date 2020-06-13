@@ -21,3 +21,8 @@ Users can see all datasets they are subscribed to
 These are all the annotated MS/MS spectra you have contributed to the community GNPS library.
 
 ![img](img/user/spectra.png)
+
+
+## Page Contributors
+
+{{ git_page_authors }}

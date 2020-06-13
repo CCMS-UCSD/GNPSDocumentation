@@ -17,9 +17,8 @@ Your are kindly invited to open "issues" on our GitHub repositories, and propose
 ## GNPS Forum
 Discussions and suggestions can also take place on the GNPS forum at [https://groups.google.com/forum/#!forum/molecular_networking_bug_reports](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports).
 
-## Page contributors
-Louis Felix Nothias (UCSD) and Ming Wang (UCSD).
+## Page Contributors
 
-
+{{ git_page_authors }}
 
 
