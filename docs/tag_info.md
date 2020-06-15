@@ -96,7 +96,7 @@
 - Email file to admins ... (add contact info here).
 
 ???+ example "how to download"
-	![how to download](download.gif)
+	![how to download](docs/img/tags/download.gif)
 	
 !!! Success
 	Congrats and thank you for contributing tags to GNPS! This is a community effort and every contribution helps! :thumbsup:
