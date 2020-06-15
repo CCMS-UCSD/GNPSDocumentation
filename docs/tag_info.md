@@ -32,7 +32,7 @@
 - Save a copy of the sample information template by going to **"File - Make a copy"** into a personal google drive
 
 ???+ example "how to make a copy of the GNPS Tag Template - .gif"
-	![Make a copy of the template](make_a_copy.gif)
+	![Make a copy of the template](docs/img/tags/make_a_copy.gif)
 
 !!! info
 		For projects with >2000 annotations, please use the large-scale project version of the GNPS tag template - [link here](https://docs.google.com/spreadsheets/d/1_0Efw0uLXMmyvsCma8e0Pn4ag9IUMx_vv2nRgTjJdK0/edit?usp=sharing) and complete it as described above.
@@ -47,7 +47,7 @@
 		- **Download** the **"View all spectra hits"** table from the GNPS results page.
 
 ???+ example "where you can find the information to download"
-	![library_hits](results_libraryhits.jpg)
+	![library_hits](docs/img/tags/results_libraryhits.jpg)
 	
 ## 3. Setting up the **GNPS Tag Template** with Your Annotation Information 
 - Copy and paste the entire table contents (including the header) into the **"Input_GNPS_LibraryHitsTable"** tab in the GNPS Tag Template.
@@ -57,7 +57,7 @@
 	- All columns in light grey are for reference only and should **not** be modified.
 
 ???+ example "how to copy and paste into the template"
-	![copy information](copy_paste_annotations.gif)
+	![copy information](docs/img/tags/copy_paste_annotations.gif)
 
 ## 4. Manual completion of the **GNPS Tag Template** 
 ### 4.1. Open the **"GNPS Tag - Batch Tag Template"** tab and check the "Tag_Status1" and "Action1" columns.
@@ -75,7 +75,7 @@
 	- if additional terms are required, please submit an issue on GitHub - [link here](https://github.com/CCMS-UCSD/GNPS_Workflows).
 
 ???+ example "evalute action1"
-	![action1](action1.gif)
+	![action1](docs/img/tags/action1.gif)
 
 ### 4.2. **IF** instructed to review **Check Tag_Status2 and Action2** in the previous step.
 - review the information and the following actions.
@@ -89,7 +89,7 @@
 	- make sure to include either a value in the **"Add_InCHIKey-Planar"** column or indicate that an InChIKey cannot be created in the **"No InChIKey-Planar"**. 
 
 ???+ example "evalute action2"
-	![action2](action2.gif)
+	![action2](docs/img/tags/action2.gif)
 
 ### 4.3 Download the "GNPS Tag - Batch Tag Template"
 - Download the "GNPS Tag - Batch Tag Template" as a .tsv
