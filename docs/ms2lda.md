@@ -202,3 +202,7 @@ Have you found MS2LDA to be useful for your data analysis? Please cite the relev
 Latest developments in MS2LDA.org: introduction of [MotifDB](http://ms2lda.org/motifdb/) with annotated Mass2Motif sets and [MAGMa](http://www.emetabolomics.org) integration for Mass2Motif annotation of reference compounds
 
 [Rogers, Simon, Cher Wei Ong, Joe Wandy, Madeleine Ernst, Lars Ridder, and Justin J.J. van der Hooft. "Deciphering complex metabolite mixtures by unsupervised and supervised substructure discovery and semi-automated annotation from MS/MS spectra." Faraday Discussions themed collection  Challenges in analysis of complex natural mixtures (2019).](https://pubs.rsc.org/en/Content/ArticleLanding/2019/FD/C8FD00235E#!divAbstract)
+
+## Page Contributors
+
+{{ git_page_authors }}

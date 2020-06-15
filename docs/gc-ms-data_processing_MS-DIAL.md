@@ -81,8 +81,6 @@ Please refer to the following page for more information on the [GC-GNPS workflow
 
 Tsugawa, H., Cajka, T., Kind, T. *et al.* [MS-DIAL: data-independent MS/MS deconvolution for comprehensive metabolome analysis.](https://www.nature.com/articles/nmeth.3393#citeas) *Nat Methods* **12,** 523–526 (2015).
 
+## Page Contributors
 
-
-## Page contributors
-
-Biswapriya Biswavas Misra (Wake Forest University), Melissa Nothias-Esposito (UCSD), Louis Felix Nothias (UCSD)
+{{ git_page_authors }}

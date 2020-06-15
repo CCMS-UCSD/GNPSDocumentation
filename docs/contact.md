@@ -27,3 +27,7 @@ Upcoming Office Hour Schedule
 Please also take the time to RSVP that you're going to attend and what questions you may have so we know who to let in as well as what to expect:
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOCaOmZ6Q5ggsmnQ414SSYBrshpX-Ibt4ENh2TPkQiBBR2qw/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+## Page Contributions
+
+{{ git_page_authors }}

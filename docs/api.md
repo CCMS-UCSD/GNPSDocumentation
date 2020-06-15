@@ -219,3 +219,7 @@ This includes:
 1. Identifications for clustered spectra
 1. Mapping of clusters back to original files and scans
 1. Molecular Networks for each dataset
+
+## Page Contributions
+
+{{ git_page_authors }}

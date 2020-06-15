@@ -54,3 +54,8 @@ To select the folder to upload files into, click on a single folder in the file 
 Now drag and drop your files into the Drag and Drop area to upload.
 
 ![img](img/uploader/drag_box.png)
+
+
+## Page Contributors
+
+{{ git_page_authors }}

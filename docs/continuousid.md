@@ -43,3 +43,7 @@ This example continuous identification email informs subscribers that the datase
 ## Download
 
 To download all the information related to continuosu ID, please refer [here](api.md#gnps-continuous-id-data). 
+
+## Page Contributions
+
+{{ git_page_authors }}

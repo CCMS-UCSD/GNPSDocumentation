@@ -119,6 +119,7 @@
 	- New Terms, Corrections, Suggestions = GitHub - [link here](https://github.com/CCMS-UCSD/GNPS_Workflows)
 	- The use of the [GNPS forum](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports) is encouraged.
 
-## Page Contributions
+
+## Page Contributors
 
 {{ git_page_authors }}

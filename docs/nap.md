@@ -198,3 +198,7 @@ As discussed in the [Online Exploration](#online-exploration-of-nap-results) sec
 
 - For informations/feature request, please open an "Issue" on the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) GitHub repository.
 - To contribute directly to the GNPS documentation, fork the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) repository, and make a "Pull Request".
+
+## Page Contributors
+
+{{ git_page_authors }}

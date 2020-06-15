@@ -91,3 +91,7 @@ To browse all comments per dataset, a table is shown
 Users can find related MassIVE datasets to the current one. Currently relatedness of datasets is determine by the number of shared identified compounds between the two. Users can see a view like this:
 
 ![img](img/datasets/related_datasets.png)
+
+## Page Contributions
+
+{{ git_page_authors }}

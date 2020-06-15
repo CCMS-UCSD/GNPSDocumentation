@@ -90,3 +90,7 @@ If you entered your GNPS log-in credentials then the job will be saved to your a
 ### Results
 
 To understand the results, please refer to the [feature based molecular networking page](featurebasedmolecularnetworking.md).
+
+## Page Contributors
+
+{{ git_page_authors }}
