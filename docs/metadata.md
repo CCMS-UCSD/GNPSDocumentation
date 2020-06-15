@@ -11,8 +11,9 @@ There are two metadata formats we accept for the majority of GNPS workflows:
 1. tab separated tsv file
 1. Google Sheets shared link
 
-!!! note
-    Google Sheets is currently only supported in Classical Molecular Networking Release 22 or later.
+!!! note "Google Sheets Supported Workflows"
+    * Classical Molecular Networking Release 22 or later
+    * FBMN Release 23 or later
 
 ### ReDU Metadata
 
