@@ -45,6 +45,17 @@ PubMedID: 24025162
 Brief description of the data submitted: RAW Files used to generate Figure 4. Bacterial network with a cosine similarity score cutoff of 0.65. This network was generated from direct infusion of extracts or direct
 ```
 
+### Recommendations For Data Collection
+
+There are several data collections in MassIVE dataset creation. These were originally created to serve proteomics data, and thus we offer the following recommendations for metabolomics/natural products datasets. 
+
+| Collection | Recommended Data | Extension Types | 
+| ---------- | ---------------- | --------------- | 
+| raw        | Instrument vendor data | .d, .raw, .wiff, etc. | 
+| peak       | Open format raw data | .mzML, .mzXML |
+| metadata   | gnps metadata describing your study | .tsv | 
+| other      | This is other information, that might include cytoscape files, feature finding batch files, feature finding quant, feature finding ms2 mgf files, or basically any supplementary files that are relevant to your data | .tsv, .mgf, .xml, etc. | 
+
 ### Making Dataset Public
 
 After submitting your dataset to MassIVE, you must **explicity** make the dataset public, by clicking the make public button:
