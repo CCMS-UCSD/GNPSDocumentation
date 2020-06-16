@@ -51,10 +51,13 @@ There are several data collections in MassIVE dataset creation. These were origi
 
 | Collection | Recommended Data | Extension Types | 
 | ---------- | ---------------- | --------------- | 
-| raw        | Instrument vendor data | .d, .raw, .wiff, etc. | 
-| peak       | Open format raw data | .mzML, .mzXML |
-| metadata   | gnps metadata describing your study | .tsv | 
-| other      | This is other information, that might include cytoscape files, feature finding batch files, feature finding quant, feature finding ms2 mgf files, or basically any supplementary files that are relevant to your data | .tsv, .mgf, .xml, etc. | 
+| Raw Spectrum Files        | Instrument vendor data | .d, .raw, .wiff, etc. | 
+| Peak List Files       | Open format raw data | .mzML, .mzXML |
+| Metadata   | gnps metadata describing your study | .tsv | 
+| Supplementary Files      | This is other information, that might include cytoscape files, feature finding batch files, feature finding quant, feature finding ms2 mgf files, or basically any supplementary files that are relevant to your data | .tsv, .mgf, .xml, etc. | 
+
+!!! info
+    All other collections are optional and we recommend to generally not provide them unless you specifically desire to and understand their semantics. This can be found [here](https://ccms-ucsd.github.io/MassIVEDocumentation/#submission_workflow/#submission-file-categories). 
 
 ### Making Dataset Public
 
