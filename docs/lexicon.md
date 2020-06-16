@@ -112,7 +112,7 @@ To disambiguate with the feature-based molecular networking, this method is also
 
 ### Datasets wide analysis tools
 
-**ReDU:** an interface for meta-analysis of spectral matches of fragmentation spectra from public datasets available on GNPS.More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/ReDU/](redu.md).
+**ReDU:** an interface for meta-analysis of spectral matches of fragmentation spectra from public datasets available on GNPS.More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/ReDU/](ReDU.md).
 
 **MASST** : a mass spectrometry equivalent of NCBI BLAST. MASST enables querying a given fragmentation spectrum against all fragmentation spectra in public datasets. More information at [https://ccms-ucsd.github.io/GNPSDocumentation/masst/](masst.md).
 
