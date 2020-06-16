@@ -66,7 +66,7 @@ To disambiguate with the feature-based molecular networking, this method is also
 
 **ClassyTree** : a chemically-informed distance metric that uses ClassyFire chemical class information for enhanced comparison of chemical profiles. A tree of the annotated metabolites is constructed based on the hierarchy of their respective chemical classes. Using the UniFrac metric, the chemical structural relatedness of the annotated molecules in each sample is thus considered when comparing multiple samples. Samples that contain similar chemical class profiles will end up closer to each other even if the individual molecules are slightly different. The method is not published yet but more information can be found here [[https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/](molnetenhancer.md)] and here [[https://github.com/madeleineernst/MetaboDistTrees](https://github.com/madeleineernst/MetaboDistTrees)].
 
-**MotifTree** : a chemically-informed distance metric that uses MS2LDA substructure information for enhanced comparison of chemical profiles. The substructures found in molecules of each sample are considered when comparing multiple samples, by constructing a tree of metabolites based on shared substructures. Samples that contain similar substructure profiles will end up closer to each other even if the individual molecules are slightly different. The method is not published yet but more information can be found here [[https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/](molnetenhancer.ms)] and here [[https://github.com/madeleineernst/MetaboDistTrees](https://github.com/madeleineernst/MetaboDistTrees)].
+**MotifTree** : a chemically-informed distance metric that uses MS2LDA substructure information for enhanced comparison of chemical profiles. The substructures found in molecules of each sample are considered when comparing multiple samples, by constructing a tree of metabolites based on shared substructures. Samples that contain similar substructure profiles will end up closer to each other even if the individual molecules are slightly different. The method is not published yet but more information can be found here [[https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/](molnetenhancer.md)] and here [[https://github.com/madeleineernst/MetaboDistTrees](https://github.com/madeleineernst/MetaboDistTrees)].
 
 ### GC-MS on GNPS
 
@@ -74,7 +74,7 @@ To disambiguate with the feature-based molecular networking, this method is also
 
 **GC molecular network:** molecular network of &quot;deconvoluted&quot; or &quot;pure&quot; electron ionisation (EI) spectra. It uses a modified version of the cosine score employed in molecular networks for LC-MS/MS.
 
-**GC-MS Deconvolution:** data processing for GC-MS data obtained in electron ionisation (EI) mode. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/gc-ms-deconvolution/](gc-ms-deconvolution.ms).
+**GC-MS Deconvolution:** data processing for GC-MS data obtained in electron ionisation (EI) mode. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/gc-ms-deconvolution/](gc-ms-deconvolution.md).
 
 **MSHub:** a deconvolution algorithm that conducts dataset-wide deconvolution across all provided samples.
 
@@ -112,7 +112,7 @@ To disambiguate with the feature-based molecular networking, this method is also
 
 ### Datasets wide analysis tools
 
-**ReDU:** an interface for meta-analysis of spectral matches of fragmentation spectra from public datasets available on GNPS.More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/ReDU/](https://ccms-ucsd.github.io/GNPSDocumentation/ReDU/).
+**ReDU:** an interface for meta-analysis of spectral matches of fragmentation spectra from public datasets available on GNPS.More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/ReDU/](redu.md).
 
 **MASST** : a mass spectrometry equivalent of NCBI BLAST. MASST enables querying a given fragmentation spectrum against all fragmentation spectra in public datasets. More information at [https://ccms-ucsd.github.io/GNPSDocumentation/masst/](masst.md).
 
