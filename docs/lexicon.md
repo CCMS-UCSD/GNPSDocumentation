@@ -42,7 +42,7 @@ To disambiguate with the feature-based molecular networking, this method is also
 
 **Feature quantification table:** a table summarizing for each mass spectrometry feature the qualitative (m/z, retention time, adduct type, etc.) and quantitative information (area under the curve, peak height, spectral count).
 
-**Meta data table:** a table summarizing qualitative and experimental information associated with each sample. This table is a prerequisite for using many tools on GNPS.
+**Metadata table:** a table summarizing qualitative and experimental information associated with each sample. This table is a prerequisite for using many tools on GNPS. Additional information can be found [here](metadata.md).
 
 ### Annotation of fragmentation spectra
 
@@ -76,7 +76,7 @@ To disambiguate with the feature-based molecular networking, this method is also
 
 **GC-MS Deconvolution:** data processing for GC-MS data obtained in electron ionisation (EI) mode. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/gc-ms-deconvolution/](https://ccms-ucsd.github.io/GNPSDocumentation/gc-ms-deconvolution/).
 
-**MSHub:** a neural network-based deconvolution algorithm that conducts dataset-wide deconvolution across all provided samples.
+**MSHub:** a deconvolution algorithm that conducts dataset-wide deconvolution across all provided samples.
 
 ### SIRIUS
 
@@ -98,9 +98,9 @@ To disambiguate with the feature-based molecular networking, this method is also
 
 **MassIVE:** a community resource to promote the exchange of mass spectrometry data. See [https://massive.ucsd.edu](https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp) **.** Data from MassIVE can be directly imported into the GNPS environment.
 
-**Proteomics2:** the beta-test server for workflow in development on GNPS. See [proteomics2.ucsd.edu](https://proteomics2.ucsd.edu/)
+**Proteomics2:** the beta-test server for workflow in development at GNPS. See [proteomics2.ucsd.edu](https://proteomics2.ucsd.edu/)
 
-**ProteoSAFE:** the workflow manager for job scheduling on the cluster from Center of Computational Mass Spectrometry (CCMS) hosting GNPS and MassIVE.
+**ProteoSAFe:** the workflow manager for job scheduling on the cluster from Center of Computational Mass Spectrometry (CCMS) hosting GNPS and MassIVE.
 
 **Quickstart interface:** a simplified web-interface of GNPS that accelerates GNPS job preparation for molecular networking, FBMN, and data conversion/deposition. See [https://gnps-quickstart.ucsd.edu/featurebasednetworking](https://gnps-quickstart.ucsd.edu/featurebasednetworking).
 
