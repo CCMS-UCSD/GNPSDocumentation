@@ -16,11 +16,11 @@ To disambiguate with the feature-based molecular networking, this method is also
 
 **Molecular family:** a group of fragmentation spectra that have a high similarity degree. In the molecular network, they correspond to group/cluster of connected nodes.
 
-**Feature-based molecular networking (FBMN):** an advanced method for molecular networking that provides accurate ion abundance for statistical analysis and provides support for isomer resolution or ion mobility. FBMN requires the processing of the LC-MS/MS with tools such as MZmine or XCMS, prior to performing molecular networking. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/).
+**Feature-based molecular networking (FBMN):** an advanced method for molecular networking that provides accurate ion abundance for statistical analysis and provides support for isomer resolution or ion mobility. FBMN requires the processing of the LC-MS/MS with tools such as MZmine or XCMS, prior to performing molecular networking. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/](featurebasedmolecularnetworking.md).
 
-**Ion Identity Networking:** a workflow that complements the molecular networking (FBMN workflow) by grouping fragmentation spectra using peak shape correlation analysis in addition to spectral similarity. This creates ion identity molecular families by adding new edges. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/fbmn-iin/](https://ccms-ucsd.github.io/GNPSDocumentation/fbmn-iin/)
+**Ion Identity Networking:** a workflow that complements the molecular networking (FBMN workflow) by grouping fragmentation spectra using peak shape correlation analysis in addition to spectral similarity. This creates ion identity molecular families by adding new edges. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/fbmn-iin/](fbmn-iin.md)
 
-**Cytoscape:** a software for network visualization and analysis. Molecular networks from GNPS can be imported in Cytoscape for interpretation. See the following page: [https://ccms-ucsd.github.io/GNPSDocumentation/cytoscape/](https://ccms-ucsd.github.io/GNPSDocumentation/cytoscape/).
+**Cytoscape:** a software for network visualization and analysis. Molecular networks from GNPS can be imported in Cytoscape for interpretation. See the following page: [https://ccms-ucsd.github.io/GNPSDocumentation/cytoscape/](cytoscape.md).
 
 **Node table:** a table summarizing molecular network node information (i.e m/z, retention time).
 
@@ -28,7 +28,7 @@ To disambiguate with the feature-based molecular networking, this method is also
 
 ### Data processing - Feature-based molecular networking.
 
-**Data conversion:** the process of converting the mass spectrometry data from a format to another. Many data processing and annotation tools require first to convert vendor format to an open source. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion](https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion)
+**Data conversion:** the process of converting the mass spectrometry data from a format to another. Many data processing and annotation tools require first to convert vendor format to an open source. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion](fileconversion.md)
 
 **Raw data:** Rawrefers to the &quot;unprocessed&quot; mass spectrometry data, although the spectra are often centroided. These include vendor specific formats (i.e. .raw, .d format) and open format (i.e. mzML).
 
@@ -46,27 +46,27 @@ To disambiguate with the feature-based molecular networking, this method is also
 
 ### Annotation of fragmentation spectra
 
-**Spectral library search:** the process of matching an experimental fragmentation spectrum (query spectrum) against reference spectra in public or commercial libraries. See more information on GNPS [https://ccms-ucsd.github.io/GNPSDocumentation/librarysearch/](https://ccms-ucsd.github.io/GNPSDocumentation/librarysearch/).
+**Spectral library search:** the process of matching an experimental fragmentation spectrum (query spectrum) against reference spectra in public or commercial libraries. See more information on GNPS [https://ccms-ucsd.github.io/GNPSDocumentation/librarysearch/](librarysearch.md).
 
 **Passatutto:** a method for estimating false discovery rate (FDR) of spectral match annotation against spectral libraries. More information at[https://www.nature.com/articles/s41467-017-01318-5](https://www.nature.com/articles/s41467-017-01318-5).
 
-**DEREPLICATOR tools:** a dereplication algorithm designed for the annotation of known small peptidic molecules from fragmentation spectra. DEREPLICATOR VarQuest is a variant that can search for novel derivatives of known molecules that are differing by one amino acid residue. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/dereplicator/](https://ccms-ucsd.github.io/GNPSDocumentation/dereplicator/).
+**DEREPLICATOR tools:** a dereplication algorithm designed for the annotation of known small peptidic molecules from fragmentation spectra. DEREPLICATOR VarQuest is a variant that can search for novel derivatives of known molecules that are differing by one amino acid residue. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/dereplicator/](dereplicator.md).
 
-**Network Annotation Propagation (NAP)**: an annotation method for fragmentation spectra that relies on 1) an silico annotation tools (MetFrag), and 2) molecular networks topology, to rerank the list of candidates proposed by MetFrag. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/nap/](https://ccms-ucsd.github.io/GNPSDocumentation/nap/).
+**Network Annotation Propagation (NAP)**: an annotation method for fragmentation spectra that relies on 1) an silico annotation tools (MetFrag), and 2) molecular networks topology, to rerank the list of candidates proposed by MetFrag. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/nap/](nap.md).
 
-**MS2LDA** : a tool that decomposes molecular fragmentation data derived from large metabolomics experiments into annotated Mass2Motifs. Mass2Motifs refers to fragmentation patterns of co-occurring mass fragment peaks and/or neutral losses that often represent molecular substructures. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/ms2lda/](https://ccms-ucsd.github.io/GNPSDocumentation/ms2lda/).
+**MS2LDA** : a tool that decomposes molecular fragmentation data derived from large metabolomics experiments into annotated Mass2Motifs. Mass2Motifs refers to fragmentation patterns of co-occurring mass fragment peaks and/or neutral losses that often represent molecular substructures. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/ms2lda/](ms2lda.md).
 
 **ClassyFire** : a tool that adds chemical class information to structures using a manually curated and hierarchical ontology. More information can be found here: [http://classyfire.wishartlab.com](http://classyfire.wishartlab.com/).
 
-**MolNetEnhancer** : a workflow that combines the outputs from molecular networking and in-silico annotation tools such as MS2LDA, NAP, DEREPLICATOR, and ClassyFire. MolNetEnhancer provides a comprehensive chemical overview by annotating chemical classes for molecular families whilst summarizing structural details for each fragmentation spectrum in the molecular network. More information at **:** [https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/](https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/)
+**MolNetEnhancer** : a workflow that combines the outputs from molecular networking and in-silico annotation tools such as MS2LDA, NAP, DEREPLICATOR, and ClassyFire. MolNetEnhancer provides a comprehensive chemical overview by annotating chemical classes for molecular families whilst summarizing structural details for each fragmentation spectrum in the molecular network. More information at **:** [https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/](molnetenhancer.md)
 
-**Metaminer** : a metabologenomic pipeline which integrates fragmentation spectra analysis and biosynthetic gene cluster analysis to identify novel Ribosomally synthesized and Post-translationally modified Peptides (RiPPs) and the biosynthetic gene clusters encoding them. More information at [https://ccms-ucsd.github.io/GNPSDocumentation/metaminer/](https://ccms-ucsd.github.io/GNPSDocumentation/metaminer/).
+**Metaminer** : a metabologenomic pipeline which integrates fragmentation spectra analysis and biosynthetic gene cluster analysis to identify novel Ribosomally synthesized and Post-translationally modified Peptides (RiPPs) and the biosynthetic gene clusters encoding them. More information at [https://ccms-ucsd.github.io/GNPSDocumentation/metaminer/](metaminer.md).
 
-**Qemistree:** a method that generates a tree of metabolites from fragmentation spectra analysis for enhanced comparison of chemical profiles using chemically-informed distance metrics. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/qemistree/](https://ccms-ucsd.github.io/GNPSDocumentation/qemistree/)
+**Qemistree:** a method that generates a tree of metabolites from fragmentation spectra analysis for enhanced comparison of chemical profiles using chemically-informed distance metrics. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/qemistree/](qemistree.md)
 
-**ClassyTree** : a chemically-informed distance metric that uses ClassyFire chemical class information for enhanced comparison of chemical profiles. A tree of the annotated metabolites is constructed based on the hierarchy of their respective chemical classes. Using the UniFrac metric, the chemical structural relatedness of the annotated molecules in each sample is thus considered when comparing multiple samples. Samples that contain similar chemical class profiles will end up closer to each other even if the individual molecules are slightly different. The method is not published yet but more information can be found here [[https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/](https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/)] and here [[https://github.com/madeleineernst/MetaboDistTrees](https://github.com/madeleineernst/MetaboDistTrees)].
+**ClassyTree** : a chemically-informed distance metric that uses ClassyFire chemical class information for enhanced comparison of chemical profiles. A tree of the annotated metabolites is constructed based on the hierarchy of their respective chemical classes. Using the UniFrac metric, the chemical structural relatedness of the annotated molecules in each sample is thus considered when comparing multiple samples. Samples that contain similar chemical class profiles will end up closer to each other even if the individual molecules are slightly different. The method is not published yet but more information can be found here [[https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/](molnetenhancer.md)] and here [[https://github.com/madeleineernst/MetaboDistTrees](https://github.com/madeleineernst/MetaboDistTrees)].
 
-**MotifTree** : a chemically-informed distance metric that uses MS2LDA substructure information for enhanced comparison of chemical profiles. The substructures found in molecules of each sample are considered when comparing multiple samples, by constructing a tree of metabolites based on shared substructures. Samples that contain similar substructure profiles will end up closer to each other even if the individual molecules are slightly different. The method is not published yet but more information can be found here [[https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/](https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/)] and here [[https://github.com/madeleineernst/MetaboDistTrees](https://github.com/madeleineernst/MetaboDistTrees)].
+**MotifTree** : a chemically-informed distance metric that uses MS2LDA substructure information for enhanced comparison of chemical profiles. The substructures found in molecules of each sample are considered when comparing multiple samples, by constructing a tree of metabolites based on shared substructures. Samples that contain similar substructure profiles will end up closer to each other even if the individual molecules are slightly different. The method is not published yet but more information can be found here [[https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/](molnetenhancer.ms)] and here [[https://github.com/madeleineernst/MetaboDistTrees](https://github.com/madeleineernst/MetaboDistTrees)].
 
 ### GC-MS on GNPS
 
@@ -74,7 +74,7 @@ To disambiguate with the feature-based molecular networking, this method is also
 
 **GC molecular network:** molecular network of &quot;deconvoluted&quot; or &quot;pure&quot; electron ionisation (EI) spectra. It uses a modified version of the cosine score employed in molecular networks for LC-MS/MS.
 
-**GC-MS Deconvolution:** data processing for GC-MS data obtained in electron ionisation (EI) mode. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/gc-ms-deconvolution/](https://ccms-ucsd.github.io/GNPSDocumentation/gc-ms-deconvolution/).
+**GC-MS Deconvolution:** data processing for GC-MS data obtained in electron ionisation (EI) mode. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/gc-ms-deconvolution/](gc-ms-deconvolution.ms).
 
 **MSHub:** a deconvolution algorithm that conducts dataset-wide deconvolution across all provided samples.
 
@@ -104,17 +104,17 @@ To disambiguate with the feature-based molecular networking, this method is also
 
 **Quickstart interface:** a simplified web-interface of GNPS that accelerates GNPS job preparation for molecular networking, FBMN, and data conversion/deposition. See [https://gnps-quickstart.ucsd.edu/featurebasednetworking](https://gnps-quickstart.ucsd.edu/featurebasednetworking).
 
-**Continuous identification:** an automatic workflow on GNPS that periodically reanalyses public datasets for novel matches between fragmentation spectra and new spectral library entries. More information at [https://ccms-ucsd.github.io/GNPSDocumentation/continuousid/](https://ccms-ucsd.github.io/GNPSDocumentation/continuousid/).
+**Continuous identification:** an automatic workflow on GNPS that periodically reanalyses public datasets for novel matches between fragmentation spectra and new spectral library entries. More information at [https://ccms-ucsd.github.io/GNPSDocumentation/continuousid/](continuousid.md).
 
 **Metabolomics Spectrum Identifier Resolver:** a web-server that facilitates the accession and visualization of a defined fragmentation spectrum on a public repository, including GNPS. See [https://metabolomics-usi.ucsd.edu/](https://metabolomics-usi.ucsd.edu/).
 
-**GNPS tags** : refers to community-curated tags associated to a fragmentation spectra in GNPS spectral libraries entries. More information at [https://ccms-ucsd.github.io/GNPSDocumentation/tag\_info/](https://ccms-ucsd.github.io/GNPSDocumentation/tag_info/).
+**GNPS tags** : refers to community-curated tags associated to a fragmentation spectra in GNPS spectral libraries entries. More information at [https://ccms-ucsd.github.io/GNPSDocumentation/tag\_info/](tag_info.md).
 
 ### Datasets wide analysis tools
 
 **ReDU:** an interface for meta-analysis of spectral matches of fragmentation spectra from public datasets available on GNPS.More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/ReDU/](https://ccms-ucsd.github.io/GNPSDocumentation/ReDU/).
 
-**MASST** : a mass spectrometry equivalent of NCBI BLAST. MASST enables querying a given fragmentation spectrum against all fragmentation spectra in public datasets. More information at [https://ccms-ucsd.github.io/GNPSDocumentation/masst/](https://ccms-ucsd.github.io/GNPSDocumentation/masst/).
+**MASST** : a mass spectrometry equivalent of NCBI BLAST. MASST enables querying a given fragmentation spectrum against all fragmentation spectra in public datasets. More information at [https://ccms-ucsd.github.io/GNPSDocumentation/masst/](masst.md).
 
 ### Data analysis and multiomics integration
 
