@@ -3,6 +3,7 @@
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
 | Zoom! | GNPS Classical Molecular Networking in Español | 6/17/2020 9AM PST | [Material](https://docs.google.com/document/d/1sR9QjF5kCix7iJs1PQUm0rPwX1Naxwarxqxd04gBesw/edit) |
+| Zoom! | GNPS - MS2LDA | 6/24/2020 9AM PST | TBD |
 | Zoom! | Metabolomics Spectrum Resolver - Unifing spectrum rendering and customization	| 7/1/2020 9AM PST | TBD |
 | Zoom! | GNPS Users Meeting - Presentations from the Community	| 7/8/2020 9AM PST | TBD |
 | Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 7/15/2020 9AM PST | TBD |
