@@ -9,7 +9,7 @@
 !!! info "Supported Workflows in GNPS"
 	1. Molecular Networking (classic)
 	2. Library Search
-	3. **pending** Feature-based Molecular Networking
+	3. Feature-based Molecular Networking
 
 ---
 
@@ -17,7 +17,6 @@
 
 !!! info "Required Items"
 		1. **Completed Task From a Supported GNPS Workflow**.
-			- Please sign-up at the MassIVE homepage - [link here](https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp)
 			- Please sign-up at the GNPS homepage - [link here](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp)
 		2. **Completed GNPS Tag Template**
 			- GNPS Tag Template - [link here](https://docs.google.com/spreadsheets/d/1oRsE9Z8lhIx-sKiADPgh6ivBX0jrCS2N_4X97fN_oKA/edit?usp=sharing).
@@ -45,6 +44,8 @@
 		- **Download** the **"View all library hits"** table from the GNPS results page.
 	- Library Search
 		- **Download** the **"View all spectra hits"** table from the GNPS results page.
+	- Feature-based Molecular Networking
+		- **Download** the **"View all library hits"** table from the GNPS results page.
 
 ???+ example "where you can find the information to download"
 	![library_hits](img/tags/results_libraryhits.jpg)
