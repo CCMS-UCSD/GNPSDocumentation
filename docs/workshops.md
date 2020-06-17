@@ -35,7 +35,8 @@ Here is a table to briefly browse them
 | Module 11 | MolNetEnhancer | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module11-Molnetenhancer) |
 | Module 12 | MS2LDA | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module12-MS2LDA) |
 | Module 13 | Adding Reference Library Spectra | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module13-AddingReferenceSpectra) |
-
+| Module 15 | Merge Network Polarity | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module15-MergeNetworkPolarity) |
+	
 
 ## Previous Workshops
 
