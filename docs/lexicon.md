@@ -2,7 +2,7 @@
 
 ### Molecular Networking
 
-**Molecular networking** : a method that computes pairwise spectral similarity between fragmentation spectra (using a modified cosine score) and visualizes the results as a network. Spectra are represented as &quot;nodes&quot;, and these nodes are connected by &quot;edge&quot; when their pairwise similarities are above a similarity threshold. Groups of connected nodes form a &quot;molecular family&quot;. Two methods exist to generate molecular networks 1) classical molecular networking that is built on the fragmentation spectra level only, and the 2) feature-based molecular networking that is coupled with LC-MS feature detection and alignment.
+**Molecular Networking** : a method that computes pairwise spectral similarity between fragmentation spectra (using a modified cosine score) and visualizes the results as a network. Spectra are represented as &quot;nodes&quot;, and these nodes are connected by &quot;edge&quot; when their pairwise similarities are above a similarity threshold. Groups of connected nodes form a &quot;molecular family&quot;. Two methods exist to generate molecular networks 1) classical molecular networking that is built on the fragmentation spectra level only, and the 2) feature-based molecular networking that is coupled with LC-MS feature detection and alignment.
 
 To disambiguate with the feature-based molecular networking, this method is also called &quot; **classical molecular networking**&quot;.
 
@@ -153,3 +153,6 @@ To disambiguate with the feature-based molecular networking, this method is also
 **Number of ID&#39;s spectra:** Number of spectra that has a match with a reference compound found in LC-MS or GC-MS libraries.
 
 **Number of ID&#39;s spectra not in components:** Number of spectra clustered as singlets (nodes without connection) that have a match with a reference compound found in LC-MS or GC-MS libraries.
+
+## Page Contributions
+{{ git_page_authors }}
