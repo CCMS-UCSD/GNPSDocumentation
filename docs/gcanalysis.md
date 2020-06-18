@@ -28,6 +28,6 @@ The analysis conducted on GNPS as well as the deposited raw data could be shared
 ### Adding/Curating reference spectra
  High confidence spectra from experimental data or pure standards could be added as a reference spectrum to GNPS for future reference. [See documentation](spectrumcuration.md). If the user wishes to upload >50 reference spectra to GNPS, a batch upload should be used to as detailed in the [online help](batchupload.md). The compliance of the file format can be verified using an online workflow.
 
+## Page Contributors
 
-## Page contributors
-Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzalez (Universidad de los Andes, UCSD), Louis Felix Nothias (UCSD).
+{{ git_page_authors }}

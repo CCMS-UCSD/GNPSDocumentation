@@ -79,6 +79,6 @@ We would like to thank the following contributors to the documentation.
 
 However, we want to acknowledge that we have moved documentation in 2018 to GitHub from our previous wiki and those contributions are not reflected in these numbers
 and were broadly subsumed into Ming Wang's contributions. These first additions to the documentation were invaluable and a few of those pioneers were 
-Vanessa Phelan, Laura Sanchez, Laura Pace, Alexey Guruvich, and Don D. Nguyen. 
+Vanessa Phelan, Laura Sanchez, Laura Pace, Alexey Gurevich, and Don D. Nguyen. 
 
 {{ git_site_authors }}

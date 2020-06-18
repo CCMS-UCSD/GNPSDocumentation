@@ -47,11 +47,12 @@ The mzTab-M file and the associated mzML file(s) can be uploaded to the GNPS web
 
 More information on the FBMN on GNPS can be obtained at [this documentation page](featurebasedmolecularnetworking.md).
 
-### Page contributors
-
-Louis Felix Nothias (UCSD), Steffen Neunmann (Leibniz Insitute for Plant Biochemistry), and Ming Wang (UCDS). 
 
 ### Join the GNPS Community !
 
 - For feature request, or to report bugs, please open an "Issue" on the [*CCMS-UCSD/GNPS_Workflows* GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows).
 - To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) repository, and make a "Pull Request" with the changes.
+
+## Page Contributors
+
+{{ git_page_authors }}

@@ -211,9 +211,7 @@ us to push to the Wishart servers to classify.
 
 ## GNPS Continuous ID Data
 
-If you want to download all public datasets that have been processed by GNPS. You can find the dumps here:
-
-https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=25cc4f9135c6428aabe1f41a9e54c369&view=advanced_view
+If you want to download all public datasets that have been processed by GNPS. You can find a dump of all these files in this dataset [MSV000084314](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=25cc4f9135c6428aabe1f41a9e54c369&view=advanced_view). 
 
 This includes:
 
@@ -221,3 +219,7 @@ This includes:
 1. Identifications for clustered spectra
 1. Mapping of clusters back to original files and scans
 1. Molecular Networks for each dataset
+
+## Page Contributions
+
+{{ git_page_authors }}

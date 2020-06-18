@@ -37,3 +37,27 @@ In the event that annotations are incomplete or incorrect, users have the option
 Revision history of the spectrum. Sorted in reverse chronological order, with most recent revisions first. To comment on a specific revision of the annotations, users can click the comment button for each annotation row. To view comments on each annotation, users can click the double down arrow at the left of the row.
 
 ![img](img/libraries/annotation_history.png)
+
+### Using Spectral Libraries in GNPS Analysis
+
+The default spectral libraries are located in the speclibs folder in GNPS. 
+
+Additionally, separate libraries that are not selected by default are located for example:
+
+```
+CCMS_SpectralLibraries/GNPS_Propogated_Libraries
+```
+
+![img](img/libraries/extralibraries.png)
+
+These are propogated spectral libraries that inherently are less confident but this provides an avenue to give more identifications. 
+
+### License
+
+All GNPS Reference spectra contributed directly to GNPS by default will have the [CC0](https://creativecommons.org/publicdomain/zero/1.0/) license.
+
+Third party libraries imported may not conform to the CC BY license and should be verified by users. 
+
+## Page Contributions
+
+{{ git_page_authors }}

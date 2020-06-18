@@ -1,6 +1,5 @@
-## Supported Formats at GNPS
-
-GNPS supports mzXML, mzML, and mgf formats for analysis. Our tools do NOT support mzData, xml, raw, RAW, wiff, scan, d, and cdf formats. If some of your files are in these formats, please use the following guide to convert them to open formats supported by GNPS.
+!!! info "Supported Formats at GNPS"
+    GNPS supports mzXML, mzML, and mgf formats for analysis. Our tools do NOT support mzData, xml, raw, RAW, wiff, scan, d, and cdf formats. If some of your files are in these formats, please use the following guide to convert them to open formats supported by GNPS.
 
 ## Data Conversion (Super Easy)
 
@@ -77,3 +76,7 @@ After installation, from the Start Menu, click the ProteoWizard folder and open 
 ### Advanced Online Conversion with Proteowizard (MSConvert)
 
 It is possible to convert spectrum files online at the sister site - MassIVE. This site is able to handle thermo RAW and Sciex Wiff files. Please check it out [here](http://proteomics.ucsd.edu/service/massive/documentation/submit-data/).
+
+## Page Contributors
+
+{{ git_page_authors }}

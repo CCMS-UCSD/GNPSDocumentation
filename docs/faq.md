@@ -28,11 +28,25 @@
 
 !!! question "Can I select more than one file at a time for each group in molecular networking?"
     Yes. Within each group you can select multiple files, even folders of spectra. Simply highlight the multiple files/folders you want to select and then add to the appropriate group.
+    
+!!! question "What are the advantages and disadvantages of FBMN vs Classical Molecular Networking"
+    Feature Based Molecular Networking (FBMN) provides the following advantages: Area under the curve quantification, Isomer resolution, Filtration of MS/MS that come from chromatographic features, Potential inclusion of other types of edges (e.g. IIN)
+    However, the downsides include: Requires feature finding pre-processing (e.g. MZMine2), Less sensitive to consider all MS/MS than classical, More parameters to set
 
 ## Mass Spectrometry Types
 
 !!! question "Does GNPS support data independent acquisition (DIA) data types such as MSe and SWATH?"
     GNPS natively does not support these types of data with large isolation windows. We recommend that these data be preprocessed so that individual molecule fragmentation can be deconvoluted with tool such as [DIA-Umpire](http://diaumpire.sourceforge.net/) or Progenesis QI (MSe) and you can find our documentation [here](featurebasedmolecularnetworking-with-progenesisQI.md).
+
+## GNPS Account
+
+!!! question "How can I reset my password"
+    For now please go ahead and contact our admins via this [page](contact.md).
+    
+## GNPS Lexicon
+
+!!! question "What is the definition of that word in the context of GNPS ?"
+    Please refer to the [GNPS lexicon page](lexicon.md). To suggest additional definition, please open up an issue on [our GitHub](https://github.com/CCMS-UCSD/GNPSDocumentation/).
 
 ## Browser Support
 

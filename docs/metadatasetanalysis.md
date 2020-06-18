@@ -8,3 +8,7 @@ Easily select LC/MS files to compare based upon metadata attributes (e.g. Skin v
 2. Find differentially identified compounds across these groups
 
 Try it out [here](http://mingwangbeta.ucsd.edu:5000/). 
+
+## Page Contributors
+
+{{ git_page_authors }}

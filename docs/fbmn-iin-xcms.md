@@ -61,5 +61,10 @@ See our tutorial below for detailed example.
 See our FBMN IIN tutorial with XCMS using a subset of the American Gut Project samples on this repository [DorresteinLaboratory/XCMS3_FeatureBasedMN/](https://github.com/DorresteinLaboratory/XCMS3_FeatureBasedMN/).
 
 
-## Contributors
-This integration was made possible by Johannes Rainer (Eurac Research) and Mar Garcia-Aloy (Eurac Research). This page was created by Louis Felix Nothias (UCSD).
+## Acknowledgements
+
+This integration was made possible by Johannes Rainer (Eurac Research) and Mar Garcia-Aloy (Eurac Research). 
+
+## Page Contributions
+
+{{ git_page_authors }}

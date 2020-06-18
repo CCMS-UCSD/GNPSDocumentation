@@ -90,7 +90,6 @@ Aksenov, A. A. et al  [Algorithmic Learning for Auto-deconvolution of GC-MS Data
 https://doi.org/10.1101/2020.01.13.905091
 
 
+## Page Contributors
 
-## Page contributors
-
-Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzalez (Universidad de los Andes, UCSD), Louis Felix Nothias (UCSD), Robin Schmid (WWU Münster).
+{{ git_page_authors }}

@@ -1,10 +1,8 @@
 ## GNPS Workflow Contact information
 
-Last changed: {{ git_revision_date }}
-
 If you have any questions about how to use GNPS please first ask the community at the GNPS forum located [here](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports).
 
-In the event that there is an issue with the GNPS website or workflows, please contact the administrators at [ccms-web@cs.ucsd.edu](mailto: ccms-web@cs.ucsd.edu).
+In the event that there is an issue with the GNPS website, please contact the administrators at [ccms-web@cs.ucsd.edu](mailto: ccms-web@cs.ucsd.edu).
 
 For more in-depth assistance, we invite you to attend the numerous GNPS workshops we offer at UCSD and at conferences throughout the year. Check out the upcoming [workshops](workshops.md).
 
@@ -22,7 +20,14 @@ Upcoming Office Hour Schedule
 
 |     Date/Time    | Subjects Covered          |
 | ------------- |------------- |
-| 2PM PST May 11 | GNPS Q and A / Additional Topic TBA |
-| 2PM PST May 18 | GNPS Q and A / Additional Topic TBA |
-| 2PM PST May 25 | GNPS Q and A / Additional Topic TBA |
+| 2PM PST June 1 | GNPS Q and A / Additional Topic TBA |
+| 2PM PST June 8 | GNPS Q and A / Additional Topic TBA |
+| 2PM PST June 15 | GNPS Q and A / Additional Topic TBA |
 
+Please also take the time to RSVP that you're going to attend and what questions you may have so we know who to let in as well as what to expect:
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOCaOmZ6Q5ggsmnQ414SSYBrshpX-Ibt4ENh2TPkQiBBR2qw/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+## Page Contributions
+
+{{ git_page_authors }}

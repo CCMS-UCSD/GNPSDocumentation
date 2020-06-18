@@ -121,8 +121,6 @@ Ni Y, Qiu Y, Jiang W, Suttlemyre K, Su M, Zhang W, Jia W, Du X: [ADAP-GC 2.0:  d
 
 Ni Y, Su M, Qiu Y, Jia W, Du X: [ADAP-GC 3.0: Improved Peak Detection and De-convolution of Co-eluting Metabolites from GC/TOF-MS Data for Metabolomics Studies.](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.6b02222) Anal Chem 2016, 88(17):8802-8811.
 
+## Page Contributors
 
-
-## Page contributors
-
-Melissa Nothias-Esposito (UCSD), Louis Felix Nothias (UCSD), Aleksandr Smirnov (UNC Charlotte), Alexander Aksenov (UCSD)
+{{ git_page_authors }}
