@@ -10,7 +10,7 @@ You would be able to use the Super quickstart interface if you have the followin
 
 - The format of your files is mzXML/mzML/Thermo raw files.
 - You have less than 3 cohorts of samples.
-- Each file has a maximum of 50 spectrum files.
+- Each analysis has a maximum of 50 spectrum files.
 - Each file has less than 200MB. 
 
 ## Super-Quick Start Interface
@@ -52,9 +52,9 @@ Once files have been uploaded into appropriate cohorts, enter your email and cli
 This will bring you to a GNPS workflow status page. If you entered your email, you will receive a notification once the analysis job is complete. If you did not enter an email, save the URL of the analysis as this will be the only way for you to find the analysis again.
 
 
-Note: If you drag vendor proprietary files (e.g. not mzML/mzXML) you will be able to start the job, however it will fail, as shown here: 
-
-![button](img/superquick/job_failed.PNG)
+!!! warning 
+    If you drag vendor proprietary files (e.g. not mzML/mzXML) you will be able to start the job, however it will fail, as shown here: 
+    ![button](img/superquick/job_failed.PNG)
 
 ### Results
 
@@ -90,3 +90,7 @@ If you entered your GNPS log-in credentials then the job will be saved to your a
 ### Results
 
 To understand the results, please refer to the [feature based molecular networking page](featurebasedmolecularnetworking.md).
+
+## Page Contributors
+
+{{ git_page_authors }}

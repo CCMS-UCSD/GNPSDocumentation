@@ -138,10 +138,11 @@ When one sequence file is used, it is possible to use either the classical or fe
 
 9. Select/Unselect column as needed, and eventually change the name for table header if they are already in the molecular networks (otherwise, they will be replaced with the new table imported).
 
-## Page contributors
-Alexey Gurevich (Saint Petersburg University), Hosein Mohimani (Carnegie Mellon Univ.), Louis Felix Nothias (UCSD).
-
 ## Contribute to the Documentation
 
 - For informations/feature request, please open an "Issue" on the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) GitHub repository.
 - To contribute directly to the GNPS documentation, fork the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) repository, and make a "Pull Request".
+
+## Page Contributors
+
+{{ git_page_authors }}

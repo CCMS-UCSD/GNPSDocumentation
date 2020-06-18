@@ -128,12 +128,16 @@ Here is an example [FBMN job with XCMS using a mzTab-M file and mzML files](TBPr
 
 See our FBMN tutorial with XCMS using a subset of the American Gut Project samples on this repository [DorresteinLaboratory/XCMS3_FeatureBasedMN/](https://github.com/DorresteinLaboratory/XCMS3_FeatureBasedMN/).
 
-### Page contributors
+### Acknowledgements
 
 Johannes Rainer (Eurac Research), Madeleine Ernst (UCSD), Ricardo da Silva
-(UCSD), Michael Witting (Helmholtz Zentrum Munich), Louis Felix Nothias (UCSD) and Ming Wang (UCDS). 
+(UCSD), Michael Witting (Helmholtz Zentrum Munich)
 
 ### Join the GNPS Community !
 
 - For feature request, or to report bugs, please open an "Issue" on the [*CCMS-UCSD/GNPS_Workflows* GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows).
 - To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) repository, and make a "Pull Request" with the changes.
+
+## Page Contributors
+
+{{ git_page_authors }}

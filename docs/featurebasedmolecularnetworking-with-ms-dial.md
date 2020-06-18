@@ -150,22 +150,21 @@ Basically, you will need to upload the files produced by MS-DIAL:
 - The **MS/MS spetral summary** file (.MGF file)
 - (Optional) The metadata table - requirements are described [here](metadata.md). 
 
-
-https://ccms-ucsd.github.io/GNPSDocumentation/metadata/
-
 **IMPORTANT WHEN USING A METADATA TABLE WITH MS-DIAL**: "filename" in the metadata files for FBMN with MS-DIAL should not contain file extensions (ex: "sample1.mzML" must be "sample1").
 
 Here is an example MS-DIAL networking [job](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=501aee83c98940f8a076d40d29ccc1f4) from a subset of the American Gut Project.
-
 
 ### Tutorials
 
 See our [MS-DIAL tutorial](tutorials/americangut-ms-dial.md) on using Feature Based Molecular Networking for the American Gut Project sample.
 
-### Page contributors
-Kyo Bin Kang (Sookmyung Women's University), Heejung Yang (Kangwon National University) Louis Felix Nothias (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).
-
 ### Join the GNPS Community !
 
 - For feature request, or to report bugs, please open an "Issue" on the [*CCMS-UCSD/GNPS_Workflows* GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows).
 - To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) repository, and make a "Pull Request" with the changes.
+
+=======
+
+## Page Contributions
+
+{{ git_page_authors }}

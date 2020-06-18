@@ -11,6 +11,7 @@ nav:
     - Superquick Start Guide: superquickstart.md
     - Quick Start Guide: quickstart.md
     - GNPS Analysis Tools Overview: gnpsanalysisoverview.md
+    - GNPS Lexicon: lexicon.md
     - Mass Spec/Computational Background:
 #        - Targeted vs Untargeted: massspecbackground/targeteduntargeted.md
 #        - Tandem Mass Spectrometry (MS/MS): massspecbackground/tandemms.md

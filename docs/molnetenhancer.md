@@ -102,3 +102,7 @@ Principal coordinates plots are visualised through the Qiime2 platform using EMP
 
 Chemically-informed distances are calculated using the UniFrac distance metric:
 [Lazupone, C.; Knight R. UniFrac: a New Phylogenetic Method for Comparing Microbial Communities. Applied and Environmental Microbiology 2005, 71, 8228-8235.](https://aem.asm.org/content/71/12/8228)
+
+## Page Contributors
+
+{{ git_page_authors }}

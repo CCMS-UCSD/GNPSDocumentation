@@ -142,7 +142,7 @@ While this SuperQuick FBMN interface is convenient for quick analysis, we recomm
 | Filter library | Apply peak filters to library | Filter | |
 |Filter peaks in 50Da Window | Filter out peaks that are not in the top 6 most intense peaks in a +/- 50Da window | Filter |
 
-#### Advanced quantification options
+#### Advanced Quantification Options
 
 There are additional normalization options specifically for the FBMN workflow:
 
@@ -152,6 +152,19 @@ There are additional normalization options specifically for the FBMN workflow:
 | Aggregation Method for Peak Abundances Per Group | The ion feature intensity (LC-MS1 peak area) can be aggregated by GROUPS from the metadatable with either a *Sum* or *Average* (RECOMMENDED, because it is more robust to the difference in the number of samples per GROUPS). | Average  |
 
 ![img](img/featurebasedmolecularnetworking/Advanced_Quantification_Options_2.png)
+
+
+#### Advanced Univariate Statistics Options
+
+These options will enabling the calculation of statistics as well as draw box plots for exploring. 
+
+| Parameter        | Description          | Default |
+| ------------- |-------------| -----|
+| Metadata Column to Compare | This is the column name in your metadata (e.g. ATTRIBUTE_condition) | Empty | 
+| Metadata Field to Compare | This is the first field in the metadata data column to compare (e.g. CONTROL) | Empty |
+| Metadata Field to Compare | This is the second field in the metadata data column to compare (e.g. CASE) | Empty |
+| Metadata Column to Facet | This is another column where you can facet based on the terms (e.g. ATTRIBUTE_media) | Empty | 
+
 
 #### Advanced Extras
 
@@ -167,7 +180,7 @@ There are additional normalization options specifically for the FBMN workflow:
 
 Note that if Supplementary Pairs from other software are used, it is mandatory that the as the LC-MS feature identifier (ID) matches the "SCANS=" number in the MGF file.
 
-Example of the Supplementary Pairs used in the [IIN) workflow](fbmn-iin.md). 
+Example of the Supplementary Pairs used in the [IIN workflow](fbmn-iin.md). 
 
 ![img](img/featurebasedmolecularnetworking/fbmn_iin_edges.PNG)
 
@@ -239,7 +252,6 @@ EMPeror, is an open source and web browser enabled tool that allows researchers 
 
 ### Video Tutorial - Analyze FBMN in GNPS
 
-This video presents
 <iframe width="600" height="400" src="https://www.youtube.com/embed/NTkQ0fS1aug"> </iframe>
 
 ## Tutorials
@@ -296,5 +308,6 @@ For programmatic access to the FBMN workflow, contact Mingxun Wang at <miw023@uc
 - For feature request, or to report bugs, please open an "Issue" on the [*CCMS-UCSD/GNPS_Workflows* GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows).
 - To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) repository, and make a "Pull Request" with the changes.
 
-## Page contributors
-Louis Felix Nothias (UCSD), Ming Wang (UCSD), Laura-Isobel McCall (University of Oklahoma), Andrés Mauricio Caraballo Rodríguez (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany), Robin Schmid (WWU, Münster, Germany).
+## Page Contributions
+
+{{ git_page_authors }}
