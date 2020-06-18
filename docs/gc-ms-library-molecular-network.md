@@ -164,7 +164,6 @@ https://doi.org/10.1101/2020.01.13.905091
 
 
 
-## Page contributors
+## Page Contributors	
 
-Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzalez (Universidad de los Andes, UCSD), Louis Felix Nothias (UCSD).
-
+{{ git_page_authors }}
