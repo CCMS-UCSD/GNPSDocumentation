@@ -89,3 +89,7 @@ Double click on the Continuous Mapping area of the menu to adjust the thickness 
 Below is a zoomed in portion of a network demonstrating the use of Cosine score for edge width determination.
 
 ![img](img/cytoscape/edge_3.png)
+
+## Page Contributions
+
+{{ git_page_authors }}

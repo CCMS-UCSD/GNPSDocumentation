@@ -11,7 +11,9 @@ There are two options to open the job page for conducting a spectral library sea
 
 The **"Search Option" section** in the job window allows importing files needed for the spectral library search and the molecular networking generation. By clicking on "select Input Files", a pop-up window appears, allowing to select every needed file.
 
-(1), (2) The .mgf file containing the deconvolved EI spectra and the .csv feature quantification table automatically (with balance score) adds if the spectral library search is launched from the deconvolution job performed with MS-Hub. Otherwise, they can be added by the user from others processing software (MS-DIAL, MZmine2, etc...). The quantification table is formatted as the MZmine2 output table with a "raw ID", "row m/z", "row retention time" columns, and all the peak area values for all .mzML files.
+(1), (2) The .mgf file containing the deconvolved EI spectra and the .csv feature quantification table automatically (with balance score) adds if the spectral library search is launched from the deconvolution job performed with MS-Hub. Otherwise, they can be added by the user from others processing software (MS-DIAL, MZmine2, etc...). The right "Quantification Table Source" has to be selected.
+
+![img](img/GC-MS_documentation/PictureA.png)
 
 (3) Select your metadata table formatted as a tab-separated .txt file. To create your metadata table properly, see the documentation [here](metadata.md). 
 
@@ -127,6 +129,15 @@ The network can be visualized in an external software such as Cytoscape [1], an 
 
 ![img](img/GC-MS_documentation/Fig_11.png)
 
+
+
+The videos demonstrate some of the examples how the networks could be used.
+Using molecular networking to combine different datasets (https://www.youtube.com/watch?v=bDZj7NI-ZGw)
+Using molecular networks to find incorrect annotations (https://www.youtube.com/watch?v=r7DSsL03Hbk)
+Using networks to explore chemistry (https://www.youtube.com/watch?v=fWus3zhKbOA)
+Using molecular networks for new compound discovery (https://www.youtube.com/watch?v=eNLPrAjuX6w)
+Using of networking for biological function discovery (https://www.youtube.com/watch?v=cNPW6V3RJY4)
+
 ### Molecular mapping in ili
 
 Spatial distribution of different chemical features could be visualized in 2D or 3D using ili, a visualization app for 3D molecular cartography [2]. ‘ili could be used either on the [website](http://ili.embl.de/) or as a [Chrome extension](https://goo.gl/3KAA8U). For mapping, two files need to be uploaded (DRAG AND DROP): an image for 2D (PNG or JPG format) or model for 3D (STL format), and a .cvs file with the coordinates of the spots on the model that corresponds to the sampled locations. Examples of mapping applications are available on ‘ili [website](https://ili.embl.de/). Here it is demonstrated how to map the volatile data on the same model as shown in the “Human skin metabolome” example. 
@@ -153,7 +164,6 @@ https://doi.org/10.1101/2020.01.13.905091
 
 
 
-## Page contributors
+## Page Contributors	
 
-Alexander Aksenov (UCSD), Melissa Nothias-Esposito (UCSD), Mabel C. Gonzalez (Universidad de los Andes, UCSD), Louis Felix Nothias (UCSD).
-
+{{ git_page_authors }}

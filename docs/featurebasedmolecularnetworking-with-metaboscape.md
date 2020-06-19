@@ -71,10 +71,11 @@ See the [step-by-step tutorial using MetaboScape 2.0 and the FBMN](tutorials/cof
 
 ![img](img/metaboscapeexportforgnps/Cyto13.PNG)
 
-### Page contributors
-Louis Felix Nothias (UCSD), Tam Dang (Tech. Univ. Berlin), Kevin Ngoc (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).
-
 ### Join the GNPS Community !
 
 - For feature request, or to report bugs, please open an "Issue" on the [*CCMS-UCSD/GNPS_Workflows* GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows).
 - To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) repository, and make a "Pull Request" with the changes.
+
+## Page Contributions
+
+{{ git_page_authors }}

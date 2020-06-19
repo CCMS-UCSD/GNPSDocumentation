@@ -1,4 +1,5 @@
-GNPS supports the analysis of tandem mass (MS/MS or MS2) data and EI GC/MS data. Below are additional guidelines that describe the kinds of data that GNPS's analysis tools and shared knowledgebase handle.
+!!! question "What kind of data goes GNPS support?"
+    GNPS supports the analysis of tandem mass (MS/MS or MS2) data and EI GC/MS data. Below are additional guidelines that describe the kinds of data that GNPS's analysis tools and shared knowledgebase handle.
 
 <!-- To check whether your data file is appropriate for GNPS, check out our [GNPS QC Checker](TODO). -->
 
@@ -23,3 +24,7 @@ For datasets that at least include an entire LC/MS run of MS/MS spectra, all wor
 Mass spectrometry files must be converted from proprietary vendor formats to open file formats. GNPS currently support .mzXML, .mzML, and .mgf formats for analysis. To convert, please see our [conversion guide](fileconversion.md).
 
 Our tools do NOT support .mzData, .xml, .raw, .RAW, .wiff, .scan, .d, and .cdf formats.
+
+## Page Contributions
+
+{{ git_page_authors }}

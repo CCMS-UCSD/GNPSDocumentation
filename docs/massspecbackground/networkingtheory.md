@@ -19,6 +19,7 @@ Since corresponding product ions between structurally similar molecules can eith
 2. Appear shifted by the mass of the chemical moiety
 
 ![img](../img/networking_theory/network_example.png)
+
 [Watrous et al. PNAS](http://www.pnas.org/content/109/26/E1743)
 
 
