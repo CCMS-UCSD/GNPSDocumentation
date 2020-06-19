@@ -64,7 +64,7 @@ Once the job is finished successfully, you will see the status page as below.
 
 ![alt text](./img/qemistree/Qemistree_statuspage.png "status page")
 
-**1. View Summary** gives a list of the molecules, their structures and the chemical taxonomy assigned by [ClassyFire](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0174-y) taxonomic levels. It tabulates the annotations for all MS/MS spectra for which we could predict molecular fingerprint using Sirius and CSI:FingerID([Dührkop et. al]((https://www.pnas.org/content/112/41/12580))).
+**1. View Summary** gives a list of the molecules, their structures and the chemical taxonomy assigned by [ClassyFire](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0174-y) taxonomic levels. It tabulates the annotations for all MS/MS spectra for which we could predict molecular fingerprint using Sirius and CSI:FingerID [Dührkop et. al](https://www.pnas.org/content/112/41/12580).
 
 ![alt text](./img/qemistree/itoloutput.png "iTol Files")
 
