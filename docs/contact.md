@@ -20,9 +20,7 @@ Upcoming Office Hour Schedule
 
 |     Date/Time    | Subjects Covered          |
 | ------------- |------------- |
-| 2PM PST June 1 | GNPS Q and A / Additional Topic TBA |
-| 2PM PST June 8 | GNPS Q and A / Additional Topic TBA |
-| 2PM PST June 15 | GNPS Q and A / Additional Topic TBA |
+| 2PM PST Weekly | GNPS Q and A |
 
 Please also take the time to RSVP that you're going to attend and what questions you may have so we know who to let in as well as what to expect:
 
