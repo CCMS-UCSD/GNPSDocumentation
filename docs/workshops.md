@@ -43,7 +43,7 @@ Here is a table to briefly browse them
 | ------------- |-------------| -----| -----| ----- |
 | Zoom! | GNPS Classical Molecular Networking in Español | 6/17/2020 9AM PST | [Material](https://docs.google.com/document/d/1sR9QjF5kCix7iJs1PQUm0rPwX1Naxwarxqxd04gBesw/edit) | 60 |
 | Zoom! | GNPS Merge Polarity Networks - Merging Networks from Positive and Negative Mode	| 6/11/2020 9AM PST | [Material](https://docs.google.com/document/d/1-dwuCXvbGEbrFADPmjZXRQWOtcaElXaNxRqcqLEK-us/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=wHdr9coLmoQ)  | 30 |
-| Zoom! | GNPS MolNetEnhancer	| 6/3/2020 9AM PST | [Material](https://docs.google.com/document/d/1qyepInMfujbG7Mgbm4fnuQf87i8JctvTUKjTs69T_os/edit?usp=sharing) | 47 |
+| Zoom! | GNPS MolNetEnhancer	| 6/3/2020 9AM PST | [Material](https://docs.google.com/document/d/1qyepInMfujbG7Mgbm4fnuQf87i8JctvTUKjTs69T_os/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=-4DE_ZfF2vc) | 47 |
 | Zoom! | GC-MS deconvolution, library search and molecular networking | 5/27/2020 9AM PST | [Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit) | 44 |
 | YouTube | Utilizing GNPS and MS2LDA for some molecular networking discovery	| 5/21/2020 6AM PST | [LiveStream](https://www.youtube.com/watch?v=Cc6eKGZQ1Qw&feature=youtu.be) | --- |
 | Zoom! | GNPS Ion-Identity Networking, Native Metabolomics	| 5/20/2020 9AM PST | [Material](https://docs.google.com/document/d/1Fasu3Gh0PsgW6-KW-FmKz-NgU6OLXrRHm_zAssVGZ-M/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=tb7LxaeNvcw) | 65 |
