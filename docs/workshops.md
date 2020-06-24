@@ -2,7 +2,6 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Zoom! | GNPS - MS2LDA | 6/24/2020 9AM PST | [Material](https://docs.google.com/document/d/1i0oXux-plxF9oxK-MFIBgARkqM-wJzKPAjj-XVhrHk4/edit) |
 | Zoom! | Metabolomics Spectrum Resolver - Unifing spectrum rendering and customization	| 7/1/2020 9AM PST | TBD |
 | Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 7/15/2020 9AM PST | TBD |
 | Zoom! | GNPS Users Meeting - Presentations from the Community	| 7/29/2020 9AM PST | TBD |
@@ -41,6 +40,7 @@ Here is a table to briefly browse them
 
 | Venue        | Description          | Dates | Material | Estimated Attendance |
 | ------------- |-------------| -----| -----| ----- |
+| Zoom! | GNPS - MS2LDA | 6/24/2020 9AM PST | [Material](https://docs.google.com/document/d/1i0oXux-plxF9oxK-MFIBgARkqM-wJzKPAjj-XVhrHk4/edit) | 40 |
 | Zoom! | GNPS Classical Molecular Networking in Español | 6/17/2020 9AM PST | [Material](https://docs.google.com/document/d/1sR9QjF5kCix7iJs1PQUm0rPwX1Naxwarxqxd04gBesw/edit) | 60 |
 | Zoom! | GNPS Merge Polarity Networks - Merging Networks from Positive and Negative Mode	| 6/11/2020 9AM PST | [Material](https://docs.google.com/document/d/1-dwuCXvbGEbrFADPmjZXRQWOtcaElXaNxRqcqLEK-us/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=wHdr9coLmoQ)  | 30 |
 | Zoom! | GNPS MolNetEnhancer	| 6/3/2020 9AM PST | [Material](https://docs.google.com/document/d/1qyepInMfujbG7Mgbm4fnuQf87i8JctvTUKjTs69T_os/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=-4DE_ZfF2vc) | 47 |
