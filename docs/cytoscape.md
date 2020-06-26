@@ -19,7 +19,7 @@ To re-style it with our presets, at the bottom we have a few styles already popu
 ![img](img/cytoscape/cytoscape_preview_restyle.png)
 
 !!! note "Contributing Alternative Styles"
-  If you would like to suggest a new style, please send us a .cys file and the name of the style you have created within the Cytoscape file for us to add. 
+    If you would like to suggest a new style, please send us a .cys file and the name of the style you have created within the Cytoscape file for us to add. 
 
 ## Cytoscape 3.6 Analysis (Recommended)
 
