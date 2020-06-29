@@ -17,10 +17,6 @@ Help us improving GNPS Documentation !
 
 GNPS Workflows are available on the following repository: [https://github.com/CCMS-UCSD/GNPS_Workflows](https://github.com/CCMS-UCSD/GNPS_Workflows)
 
-### GNPS and MassIVE uptime
-
-Visualize the status of all GNPS Workflows: [https://stats.uptimerobot.com/Am4PLUWn3](https://stats.uptimerobot.com/Am4PLUWn3)
-
 ### Development Setup for Local Development
 
 1. Install miniconda3 (https://docs.conda.io/en/latest/miniconda.html)
