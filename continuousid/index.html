@@ -1182,9 +1182,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#download" class="md-nav__link">
-    Download
+  <a href="#download-living-data" class="md-nav__link">
+    Download Living Data
   </a>
+  
+    <nav class="md-nav" aria-label="Download Living Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organization-of-the-ftp-repository" class="md-nav__link">
+    Organization of the FTP Repository
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1506,9 +1519,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#download" class="md-nav__link">
-    Download
+  <a href="#download-living-data" class="md-nav__link">
+    Download Living Data
   </a>
+  
+    <nav class="md-nav" aria-label="Download Living Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organization-of-the-ftp-repository" class="md-nav__link">
+    Organization of the FTP Repository
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1587,8 +1613,14 @@
 <h2 id="continuous-id-subscription-email">Continuous ID Subscription Email<a class="headerlink" href="#continuous-id-subscription-email" title="Permanent link">&para;</a></h2>
 <p>This example continuous identification email informs subscribers that the dataset of interest has more IDs in the most recent round of continuous identifications. It will first list the title of the dataset, then the changes in identification counts, and finally direct links to explore the data. Users can go directly to the search results and view the new, different, and deleted identifications as well as go straight to the dataset page itself.</p>
 <p><img alt="img" src="../img/datasets/subscription_email.png" /></p>
-<h2 id="download">Download<a class="headerlink" href="#download" title="Permanent link">&para;</a></h2>
-<p>To download all the information related to continuosu ID, please refer <a href="../api/#gnps-continuous-id-data">here</a>. </p>
+<h2 id="download-living-data">Download Living Data<a class="headerlink" href="#download-living-data" title="Permanent link">&para;</a></h2>
+<p>This dataset: <a href="https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=25cc4f9135c6428aabe1f41a9e54c369">MSV000084314</a>, including molecular networks, clustering, and library identifications. </p>
+<h3 id="organization-of-the-ftp-repository">Organization of the FTP Repository<a class="headerlink" href="#organization-of-the-ftp-repository" title="Permanent link">&para;</a></h3>
+<p>They are organized respectively in 4 folders: </p>
+<p>1) <strong>CLUSTERSUMMARY</strong> - Represents the clusters for each dataset and the associated metadata (e.g. mz, rt, and number of MS2 spectra)
+2) <strong>CLUSTERINFO</strong> - Represents the clustering enabling tracing back from the clusters to the original files and scans they came from MGF - Clustered MS/MS spectra represented as an MGF file - scan numbers correspond to cluster index in 
+3) <strong>CLUSTERSUMMARY PAIRS</strong> - Molecular Networking alignment pairs representing spectral similarity
+4) <strong>IDENTIFICATIONS</strong> - Spectral library identifications reported by living data/continuous id to the latest GNPS spectral libraries (scan numbers also correspond to cluster index)</p>
 <h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h2>
 <p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a></span></p>
                 
@@ -1599,7 +1631,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: June 13, 2020 23:18:29
+      Last update: June 29, 2020 23:10:54
     
   </small>
 </div>
