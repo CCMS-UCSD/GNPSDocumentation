@@ -6,10 +6,6 @@
 ### Introduction to GNPS
 Global Natural Products Social Molecular Networking (GNPS, [http://gnps.ucsd.edu/](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash2.jsp)) is a web-based mass spectrometry ecosystem that aims to be an open-access knowledge base for community-wide organization and sharing of raw, processed or identified tandem mass (MS/MS) spectrometry data. GNPS aids in identification and discovery throughout the entire life cycle of data; from initial data acquisition/analysis to post publication.
 
-### Migration to the New Documentation
-
-The GNPSDocumentation can be found at [https://ccms-ucsd.github.io/GNPSDocumentation/](https://ccms-ucsd.github.io/GNPSDocumentation/).
-
 ### Contributing to the New Documentation
 
 Help us improving GNPS Documentation !
@@ -20,10 +16,6 @@ Help us improving GNPS Documentation !
 ### GNPS Workflows
 
 GNPS Workflows are available on the following repository: [https://github.com/CCMS-UCSD/GNPS_Workflows](https://github.com/CCMS-UCSD/GNPS_Workflows)
-
-### GNPS and MassIVE uptime
-
-Visualize the status of all GNPS Workflows: [https://stats.uptimerobot.com/Am4PLUWn3](https://stats.uptimerobot.com/Am4PLUWn3)
 
 ### Development Setup for Local Development
 
