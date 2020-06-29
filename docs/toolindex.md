@@ -42,7 +42,7 @@ Please help us fill in more completely!
 | [GNPS Cytoscape](https://gnps-cytoscape.ucsd.edu) | TODO | TODO |
 | [GNPS MASST](https://masst.ucsd.edu) | [Documentation](https://ccms-ucsd.github.io/GNPSDocumentation/masst/) | TODO | [Citation](https://www.nature.com/articles/s41587-019-0375-9)|
 | [Metabolomics Spectrum Resolver](https://metabolomics-usi.ucsd.edu) | --- | [GitHub](https://github.com/mwang87/MetabolomicsSpectrumResolver) | TODO |
-| [Qemistree Dashboard](https://qemistree.ucsd.edu) | --- | TODO |
+| [Qemistree Dashboard](https://qemistree.ucsd.edu) | [Documentation](qemistree.md) | TODO |
 | [GNPS Networking URL Formatter](https://gnps-urlworkflow.herokuapp.com/) | --- | TODO |
 | [GNPS Task Esquisse Server (Beta)](http://dorresteintesthub.ucsd.edu:8347/) | --- | TODO |
 | [GNPS Result View Esquisse Server (Super Beta)](http://dorresteintesthub.ucsd.edu:8359/) | --- | TODO |
