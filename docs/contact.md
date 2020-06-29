@@ -20,7 +20,7 @@ Upcoming Office Hour Schedule
 
 |     Date/Time    | Subjects Covered          |
 | ------------- |------------- |
-| 2PM PST Weekly | GNPS Q and A |
+| 2PM PST Weekly on Monday | GNPS Q and A |
 
 Please also take the time to RSVP that you're going to attend and what questions you may have so we know who to let in as well as what to expect:
 
