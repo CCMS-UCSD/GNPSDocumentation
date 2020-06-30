@@ -61,6 +61,7 @@ nav:
         - MMVEC: mmvec.md
         - Merge Network Polarity: mergepolarity.md
         - Chemical Directionality: chemdir.md
+        - Spectrum Resolover: usi.md
     - Spectral Libraries:
         - Browsing Reference Spectral Libraries: browselibraries.md
         - Add/Curate Reference Spectrum in the Library: spectrumcuration.md
