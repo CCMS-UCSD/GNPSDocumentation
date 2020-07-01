@@ -3,6 +3,8 @@
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
 | Zoom! | Metabolomics Spectrum Resolver - Unifing spectrum rendering and customization	| 7/1/2020 9AM PST | [Materials](https://docs.google.com/document/d/1xAbhHj4T3BV80oKuwmaxVl4HprecjquqRtnhCZOVVHQ/edit?usp=sharing) |
+| Zoom! | GNPS Feature Based Molecular Networking in Espanol	| 7/8/2020 9AM PST | TBD |
+| Zoom! | GNPS Feature Based Molecular Networking in Espanol2	| 7/9/2020 9AM PST | TBD |
 | Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 7/15/2020 9AM PST | TBD |
 | Zoom! | GNPS Users Meeting - Presentations from the Community	| 7/29/2020 9AM PST | TBD |
 |TBD | TBD | TBD | -----|
