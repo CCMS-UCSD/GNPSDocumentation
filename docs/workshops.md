@@ -5,6 +5,7 @@
 | Zoom! | GNPS Feature Based Molecular Networking in Espanol	| 7/8/2020 9AM PST | TBD |
 | Zoom! | GNPS Feature Based Molecular Networking in Espanol2	| 7/9/2020 9AM PST | TBD |
 | Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 7/15/2020 9AM PST | TBD |
+| Zoom! | GNPS Classical Molecular Networking in Portuguese | 7/22/2020 9AM PST | TBD | 
 | Zoom! | GNPS Users Meeting - Presentations from the Community	| 7/29/2020 9AM PST | TBD |
 |TBD | TBD | TBD | -----|
 
