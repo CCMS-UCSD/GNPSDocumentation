@@ -19,49 +19,7 @@ The follow data is can be put into molecular networking.
 Molecular networking supports mzXML, mzML, and mgf file formats. To convert your file to the appropriate formats, check out our [documentation](fileconversion.md).
 
 ### Metadata
-
-The metadata file describes the samples properties and allows more flexibility for data analysis and visualization. It is an alternative way to assign groups when selecting data input files within the workflow of GNPS.
-
-The current version of molecular networking allows to use the metadata table as an input. Although it is possible to use the legacy group mapping and attribute mapping file, we strongly advise to prepare metadata table instead.
-
-#### Format
-
-The metadata table is a text file (Tab separated) that users must create these file themselves using a text editor (e.g. Microsoft Excel, Notepad++ for Windows, gedit for Linux, TextWrangler for Mac OS). Using Metadata table can greatly ease the visualization and analysis of data within Cytoscape. We strongly encourage you to prepare those in advance and to share it publicly with your MassIVE data.
-
-You can download an example and edit it appropriately. Finally users will need to upload just as you would upload data input files and select it in the metadata table file upload selection. For a metadata table file template, you can use the following .txt file - [Right-click, and Save link as](https://raw.githubusercontent.com/DorresteinLaboratory/GNPS-Trinity/master/GNPS-Trinity_template_files/metadata_GNPS_AMG_demo.txt).
-
-![metadata](img/networking/Metadata_table_view.png)
-
-The only required columns in the metadata is "filename". NOTE: capitalization matters.
-
-Metadata columns that will be considered by molecular networking must be prefixed by "ATTRIBUTE_".
-
-Please ensure that the file is saved as a tab separated text file. Excel (xlsx), rich text (rtf) are not acceptable.
-
-For Qiita users that wish to reconcile sample identifiers so that the biom and metadata output are compatible with Qiita, please provide an extra column (#SampleID). GNPS will understand this extra metadata column and rewrite sample identifers for BIOM and metadata to this sample identifier rather than using the mass spectrometry filename by default. 
-
-Pardon our dust as we are migrating this documentation, if we missed anything, please check out our [Legacy Documentation](https://bix-lab.ucsd.edu/display/Public/Metadata+table+in+GNPS).
-
-### \`ili 3D Mapping Files
-
-The metadata can also be used to specify spatial coordinates for direct visualization of the data in ['ili toolbox](https://ili.embl.de/). Note that an .STL binary file must selected as an input in the workflow.
-
-The following headers are required:
-
-1. "COORDINATE_X" - X coordinate on the 2D/3D model
-2. "COORDINATE_Y" - Y coordinate on the 2D/3D model
-3. "COORDINATE_Z" - Z coordinate on the 2D/3D model
-4. "COORDINATE_radius" - radius for the spot in 'ili toolbox.
-
-![ili](img/networking/ili-table.png)
-
-Additionally, a 3D STL file will need to be provided to visualize all the molecule intensities onto. It creates really cool plots like this:
-
-![ili_example](img/networking/ili_example.png)
-
-### Legacy Group and Attribute Mapping Format
-
-This format has been replaced by the above Metadata format. While it is still supported it is not recommended. Please see the details [here](https://bix-lab.ucsd.edu/display/Public/Metadata+table+in+GNPS).
+More information provided [here](metadata.md).
 
 ## Running Molecular Networking
 
@@ -118,7 +76,7 @@ Click Finish Selection which will close the pop-up window.
 | Parameter        | Description          | Default | Notes |
 | ------------- |-------------| -----| -----|
 | Min Pairs Cos | Minimum cosine score that must occur between a pair of consensus MS/MS spectra in order for an edge to be formed in the molecular network.  | 0.7 | Lower value will increase the size of the clusters by inducing the clustering of less related MS/MS spectra, higher value will limit do the opposite. |
-| Minimum Matched Fragment Ion (Min Matched Peaks) | Parameters used for molecular networking. Is the minimum number of common fragment ions that are shared by two separate consensus MS/MS spectra in order to be connected by an edge in the molecular network | 6 | A low value will permit linkages between spectra of molecules with few similar fragment ions, but it will result in many more less-related spectra being connected to the network. An higher value will do the opposite. Default value is 6, but note that this parameters should be adjusted depending on the experimental conditions for mass spectra acquisition (such as mode of ionisation, fragmentation conditions, and the mobile phase,  ...), and the collision-induced fragmentation behavior of the molecules of interest within the samples. High molecular weight (MW) compounds, and compounds with more hetero-atoms will generally tend to produce more fragment ions. However, this rule cannot be systematized. For example, some lipids with high MW generate only few fragment ions. |
+| Minimum Matched Fragment Ion (Min Matched Peaks) | Parameters used for molecular networking. Is the minimum number of common fragment ions that are shared by two separate consensus MS/MS spectra in order to be connected by an edge in the molecular network | 6 | A low value will permit linkages between spectra of molecules with few similar fragment ions, but it will result in many more less-related spectra being connected to the network. An higher value will do the opposite. Default value is 6, but note that this parameters should be adjusted depending on the experimental conditions for mass spectra acquisition (such as mode of ionisation, fragmentation conditions, and the mobile phase,  ...), and the collision-induced fragmentation behavior of the molecules of interest within the samples. High molecular weight (MW) compounds, and compounds with more hetero-atoms will generally tend to produce more fragment ions. However, this rule cannot be systematized. For example, some lipids with high MW generate only few fragment ions. Note that spectra with fewer than 5 fragment ions will by default not be considered for networking and result in single nodes.|
 | Node TopK	| Maximum number of neighbor nodes for one single node  | 10 | The edge between two nodes are kept only if both nodes are within each other's ‘TopK’ most similar nodes.  For example, if this value is set at 20, then a single node may be connected to up to 20 other nodes.  Keeping this value low makes very large networks (many nodes) much easier to visualize. |
 |Minimum Cluster Size  | Minimum number of MS/MS spectra in a consensus MS/MS spectra to be considered for molecular networking | 2 | Requires MS-Cluster to be on. This parameter should be tuned based on the dataset size. See presets below |
 | Run MSCluster | Cluster MS/MS spectra before networking | Yes | MSCluster will analyze every MS/MS spectra resulting from ions that fall within the defined precursor ion mass tolerance, and will merge the nearly-identical MS/MS spectra (above the cosine score) into a single consensus MS/MS spectrum. Each consensus MS/MS spectrum usually consist of multiple MS/MS spectra from across multiple LC-MS runs (or data files) |
@@ -149,6 +107,7 @@ Click Finish Selection which will close the pop-up window.
 | Filter Precursor Ion Window | All peaks in a +/- 17 Da around precursor ion mass are deleted. By default, yes filter. This removes the residual precursor ion, which is frequently observed in MS/MS spectra acquired on qTOFs. | Filter | |
 | Filter library | Apply peak filters to library | Filter | |
 |Filter peaks in 50Da Window | Filter out peaks that are not top 6 most intense peaks in a +/- 50Da window | Filter | Turn off if your data is very small molecules as it might filter out a lot peaks in the lower mass ranges that might be signal. |
+| Filter Spectra from G6 as Blanks Before Networking | Enables the filtering out of consensus clusters for consideration in the molecular network if it appears in any file in G6 | Don't Filter | | 
 
 ### Parameter Presets
 
@@ -249,3 +208,50 @@ If you are using GNPS for analysis, please cite the manuscript
 If you use MS-Cluster in your molecular networks, cite the following as well:
 
 [Frank, Ari M., et al. "Clustering millions of tandem mass spectra." Journal of proteome research 7.01 (2007): 113-122.](https://pubs.acs.org/doi/abs/10.1021/pr070361e)
+
+
+
+## Documentation for Ìli
+
+Spatial distribution of molecular features can be visualized in 2D or 3D throughout Ìli in GNPS, a Molecular cartography approach [Protsyuk et al., 2017](https://www.nature.com/articles/nprot.2017.122). For mapping, it is necessary to upload the metadata (.txt) containing the ìli coordinates (x, y, z and radio) and the 2D or 3D model (STL format), along with the data files (mzXML format) for Classic Molecular Network.
+
+First, it is necessary to obtain the 2D/3D model. The 2D model may be a picture, a map or other, and the 3D model can be obtained by scanning the sample. The coordinates should be pointed in the 2D/3D model by Meshlab software before uploading in GNPS. A free Meshlab version can be downloaded from [here](http://www.meshlab.net/). In Meshlab, use the PickPoint tool to point coordinates in the model as figure below.
+
+![Fig. 1](img/ìli/Fig_1_meshlab.png)
+
+A list with the coordinates will appear in the new box, and you can rename them according to your data. After that, a **.csv table containing the coordinates** and the **.stl pointed model** should be exported from Meshlab.
+
+![Fig. 2](img/ìli/Fig_2_meshlab.png)
+
+More details about how to create a .csv table with the coordinates can be found [here](https://github.com/MolecularCartography/Optimus/blob/master/Obtaining%20coordinates%20of%20sampling%20spots.md). The coordinates must be added in the metadata (.txt format) according to [ReDU format](https://ccms-ucsd.github.io/GNPSDocumentation/metadata/).
+
+![Fig. 3](img/ìli/Fig_3_metadata.png)
+
+All files should be selected according to indicated below:
+
+![Fig. 4](img/ìli/Fig_4_data-upload.png)
+
+Finish selection and set the parameters to create the Molecular Network. More details regarding Classic Molecular Network can be found [here](https://ccms-ucsd.github.io/GNPSDocumentation/networking/).
+
+To create ìli visualization you must go in the **Advanced Output Options** and change the ìli **Mapping Output** to **“Create”**. Submit the job.
+
+![Fig. 5](img/ìli/Fig_5_create_ili.png)
+
+Once the job was done, click on “View ìli in GNPS” to visualize the feature mapping.
+
+![Fig. 6](img/ìli/Fig_6_Vizualization.png)
+
+A window for visualization will open. You can explore your data changing the feature in the bottom right. You can also set different parameters in the right window, such as the size of the spot or the color of mapping. There, you will also find some more examples to explore.
+
+![Fig. 7](img/ìli/Fig_7_Vizualization.png)
+
+More details about ìli can be found [here](https://github.com/MolecularCartography/ili).
+
+### References
+
+Protsyuk, I., et al. (2018). 3D molecular cartography using LC–MS facilitated by Optimus and'ili software. Nature protocols, 13(1), 134. [https://doi.org/10.1038/nprot.2017.122](https://doi.org/10.1038/nprot.2017.122)
+ 
+## Page Contributors
+
+{{ git_page_authors }}
+

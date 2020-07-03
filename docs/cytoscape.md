@@ -14,6 +14,12 @@ This will bring you to a new interface where you will see a preview and a downlo
 
 ![img](img/cytoscape/cytoscape_preview_download.png)
 
+To re-style it with our presets, at the bottom we have a few styles already populated. 
+
+![img](img/cytoscape/cytoscape_preview_restyle.png)
+
+!!! note "Contributing Alternative Styles"
+    If you would like to suggest a new style, please send us a .cys file and the name of the style you have created within the Cytoscape file for us to add. 
 
 ## Cytoscape 3.6 Analysis (Recommended)
 
@@ -85,6 +91,6 @@ Below is a zoomed in portion of a network demonstrating the use of Cosine score 
 
 ![img](img/cytoscape/edge_3.png)
 
-##Cytoscape 2.8 Analysis (Legacy)
+## Page Contributions
 
-See [legacy documentation](https://bix-lab.ucsd.edu/display/Public/Cytoscape+2.8.X+Visualization+and+Analysis+Documentation)
+{{ git_page_authors }}

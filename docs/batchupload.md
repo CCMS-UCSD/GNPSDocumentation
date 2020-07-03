@@ -2,13 +2,16 @@
 
 While there is an interface to upload single spectra, users who wish to batch upload many spectra into the libraries might find adding one spectra at a time cumbersome. Here we provide a method to batch upload many spectra.
 
+Here is a quick instructional video we have put together:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IbXBpud57Z8?start=1796" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Materials
 
 The materials that are required are:
 
-1. Annotation Spread Sheet
-2. Empty MGF file meant to be library to populate
-3. Source mzXML/mzML/mgf mass spectra files to pull MS/MS spectra 
+1. Annotation Spread Sheet (This can be produced below manually by selecting scans in the mass spec data, or automatically generated with the MSMS-Chooser workflow - see documentation)
+2. Source mzXML/mzML/mgf mass spectra files to pull MS/MS spectra 
 
 ## Annotation Spread Sheet
 
@@ -22,7 +25,7 @@ Export from this Excel file as a tab separated text file (recommended export fro
 
 ### Batch File Annotation
 
-To check the validity of your batch file, check out our [batch validator](http://dorresteinappshub.ucsd.edu:5020/).
+To check the validity of your batch file, check out our [batch validator](https://gnps-quickstart.ucsd.edu/validatebatch).
 
 ## Field Information
 
@@ -63,12 +66,22 @@ It must be noted that filenames must match exactly to those users are uploading.
 
 Users will need to upload their files into GNPS. To do this please refer to the upload documentation [here](fileupload.md).
 
-## Spectrum Addition to Library
+## Creation/Publication of Spectral Library
 
 To actually add the spectra to the libraries, users will
 
-1. Need to upload an empty mgf file to GNPS so that it appears in the file selector directory.
-2. Export excel file as a tab separated text file and uploaded to GNPS (recommended export from Windows office 2013 or newer. Verify that line endings are UNIX and not Windows line endings).
-3. Users will then need to [click here](http://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22ADD-BATCH-ANNOTATED%22%7D) to utilize the batch workflow and select the mgf file created to hold the library, the input spectrum files, and the text version of the annotations. Addendum: Access to workflow is restricted - To request access please email Ming (ccms-web@cs.ucsd.edu)
-4. After the workflow completes, the mgf file will now be populated with the baych uploaded spectra.
-5. To contribute this library to the public GNPS library, please email Ming (ccms-web@cs.ucsd.edu), listing the location of the library and the public library it should be added to for approval.
+1. Export excel file as a tab separated text file and upload to GNPS (recommended export from Windows office 2013 or newer. Verify that line endings are UNIX and not Windows line endings)
+1. Launch Batch Validator Workflow with all spectrum files and annotation table found [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22ADD-BATCH-ANNOTATED-VALIDATOR%22%7D). NOTE: Creating spectral libraries from MGF files is discouragedas it is not a well defined format. If you do insist, you must make sure each MGF start from scan 1 (e.g. SCANS=1 in the file) and are incremented sequentially without any missing scan numbers. 
+1. Users will then need to contact Morgan (ccms-web@cs.ucsd.edu) and send her the completed job from above.
+1. A private spectral library will then be created by Morgan. 
+1. After the contributor may review the library to be made into a public library and will be made public after approval. 
+
+### License
+
+All GNPS Reference spectra contributed directly to GNPS by default will have the [CC0](https://creativecommons.org/publicdomain/zero/1.0/) license.
+
+Third party libraries imported may not conform to the CC BY license and should be verified by users. 
+
+## Page Contributions
+
+{{ git_page_authors }}

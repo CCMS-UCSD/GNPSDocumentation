@@ -2,8 +2,6 @@
 
 One of the major limitations in discovering new chemical entities is determining which metabolites are known compounds within complex biological samples. A way to overcome this limitation is to compare the MS2 spectra of the unknown metabolite with a library of MS/MS spectra generated from structurally characterized metabolites. Herein, this comparison is based upon the similarity cosine scoring of MS/MS spectra.  
 
-See [Legacy Documentation](https://bix-lab.ucsd.edu/display/Public/Dereplication+Documentation)
-
 ### Dereplication Workflow
 
 From the main [GNPS page](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp), click the ["Match Search"](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MOLECULAR-LIBRARYSEARCH-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D) button.
@@ -61,3 +59,7 @@ To access your data, either click the link in the email or click the DONE link u
 | View All Spectra Hits | View all library matches |
 | View Top Hits | View only top hit per query spectrum |
 | View All Compounds | Unique set of compounds in matches |
+
+## Page Contributors
+
+{{ git_page_authors }}

@@ -31,7 +31,7 @@ For a more detailed description of all the ways to upload data, please refer to 
 
 ## Molecular Networking Input
 
-Navigate to the molecular networking [analysis page](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS%22,%22library_on_server%22:%22d.speclibs;%22%7D).
+Navigate to the molecular networking [analysis page](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D).
 
 ### Molecular Networking Parameter Presets
 
@@ -81,3 +81,7 @@ This brings you to a list of all the individual networks (connected components) 
 ### Advanced Online Visualization
 
 For a more detailed guide on how to explore the molecular networks online, please refer to our [documentation](networking.md)
+
+## Page Contributions
+
+{{ git_page_authors }}

@@ -45,6 +45,20 @@ PubMedID: 24025162
 Brief description of the data submitted: RAW Files used to generate Figure 4. Bacterial network with a cosine similarity score cutoff of 0.65. This network was generated from direct infusion of extracts or direct
 ```
 
+### Recommendations For Data Collection
+
+There are several data collections in MassIVE dataset creation. These were originally created to serve proteomics data, and thus we offer the following recommendations for metabolomics/natural products datasets. 
+
+| Collection | Recommended Data | Extension Types | 
+| ---------- | ---------------- | --------------- | 
+| Raw Spectrum Files        | Instrument vendor data | .d, .raw, .wiff, etc. | 
+| Peak List Files       | Open format raw data | .mzML, .mzXML |
+| Metadata   | gnps metadata describing your study | .tsv | 
+| Supplementary Files      | This is other information, that might include cytoscape files, feature finding batch files, feature finding quant, feature finding ms2 mgf files, or basically any supplementary files that are relevant to your data | .tsv, .mgf, .xml, etc. | 
+
+!!! info
+    All other collections are optional and we recommend to generally not provide them unless you specifically desire to and understand their semantics. This can be found [here](https://ccms-ucsd.github.io/MassIVEDocumentation/#submission_workflow/#submission-file-categories). 
+
 ### Making Dataset Public
 
 After submitting your dataset to MassIVE, you must **explicity** make the dataset public, by clicking the make public button:
@@ -61,17 +75,17 @@ Users may subscribe to datasets to receive email notifications of new identifica
 
 To browse all public datasets, click the "Datasets" link at the top menu bar. This brings users to a list of all public GNPS-MassIVE datasets.
 
-![img](/img/datasets/browse_datasets.png)
+![img](img/datasets/browse_datasets.png)
 
 ### Downloading Dataset Contents
 
 To download the contents of a dataset, you can reach the FTP url of each dataset by click the FTP link.
 
-![img](/img/datasets/dataset_ftp.png)
+![img](img/datasets/dataset_ftp.png)
 
 ## Reanalyze Datasets
 
-Dataset data can be re-analyzed with the tools at GNPS. In order to import the dataset into your own workspace to select files, please refer to [this documentation](networking/#selecting-files-to-analyze).
+Dataset data can be re-analyzed with the tools at GNPS. In order to import the dataset into your own workspace to select files, please refer to [this documentation](networking.md#selecting-files-to-analyze).
 
 ## Social Networking with Datasets
 
@@ -79,15 +93,19 @@ Dataset data can be re-analyzed with the tools at GNPS. In order to import the d
 
 Users may make a comment on a dataset by clicking the "Comment on Dataset Link":
 
-![img](/img/datasets/comment_dataset.png)
+![img](img/datasets/comment_dataset.png)
 
 To browse all comments per dataset, a table is shown
 
-![img](/img/datasets/dataset_comments.png)
+![img](img/datasets/dataset_comments.png)
 
 
 ### Finding Related Datasets
 
 Users can find related MassIVE datasets to the current one. Currently relatedness of datasets is determine by the number of shared identified compounds between the two. Users can see a view like this:
 
-![img](/img/datasets/related_datasets.png)
+![img](img/datasets/related_datasets.png)
+
+## Page Contributions
+
+{{ git_page_authors }}

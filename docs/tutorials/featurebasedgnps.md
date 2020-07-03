@@ -41,7 +41,7 @@ The LC-MS/MS data can be found in the [MassIVE dataset MSV000082678](https://mas
 
 ## For step-by-step tutorial on Feature Based Molecular Networking
 
-**IMPORTANT:** Note that the Feature Based Molecular Networking workflow has been slightly updated since the following videos were produced. Please refer to this page for the most recent description of [step-by-step MZmine2 processing for the FBMN workflow](../featurebasedmolecularnetworking-with-mzmine2). 
+**IMPORTANT:** Note that the Feature Based Molecular Networking workflow has been slightly updated since the following videos were produced. Please refer to this page for the most recent description of [step-by-step MZmine2 processing for the FBMN workflow](../featurebasedmolecularnetworking-with-mzmine2.md). 
 
 ## Video Tutorial - Analyze Feature Based Molecular Networking in GNPS
 

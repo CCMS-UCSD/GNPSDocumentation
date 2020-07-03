@@ -1,14 +1,17 @@
 site_name: GNPS Documentation
-pages:
+site_url: https://ccms-ucsd.github.io/GNPSDocumentation/
+edit_uri: https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/
+repo_name: CCMS-UCSD/GNPSDocumentation
+repo_url: https://github.com/CCMS-UCSD/GNPSDocumentation
+
+nav:
     - GNPS Introduction: index.md
     - Is my data compatible with GNPS?: isgnpsright.md
     - Frequently Asked Questions: faq.md
     - Superquick Start Guide: superquickstart.md
     - Quick Start Guide: quickstart.md
     - GNPS Analysis Tools Overview: gnpsanalysisoverview.md
-    - Change Log: changelog.md
-    - Contact: contact.md
-    - GNPS Workshops: workshops.md
+    - GNPS Lexicon: lexicon.md
     - Mass Spec/Computational Background:
 #        - Targeted vs Untargeted: massspecbackground/targeteduntargeted.md
 #        - Tandem Mass Spectrometry (MS/MS): massspecbackground/tandemms.md
@@ -18,51 +21,95 @@ pages:
     - Data Preparation/Upload:
         - Mass Spectrometry File Conversion: fileconversion.md
         - GNPS File Upload: fileupload.md
+        - Metadata: metadata.md
     - Recommended Data Analysis:
         - Molecular Networking: networking.md
+        - GC-MS Molecular Networking:
+            - GC-MS on GNPS: gcanalysis.md
+            - GC-MS Deconvolution: gc-ms-deconvolution.md
+            - GC-MS Library Search and Molecular Networking: gc-ms-library-molecular-network.md
         - Molecular Networking Views: networkingviews.md
         - Spectral Library Search: librarysearch.md
         - MASST Search (Mass Search Tool): masst.md
         - Result Views Navigation: resultviews.md
     - Advanced Data Analysis:
-        - Molecular Networking in Cytoscape: cytoscape.md
-        - Dereplicator: dereplicator.md
-        - Network Annotation Propagation (NAP): nap.md
         - Feature Based Molecular Networking:
-            - Overview: featurebasedmolecularnetworking.md
-            - MZmine2 Tutorial: featurebasedmolecularnetworking-with-mzmine2.md
+            - FBMN Workflow: featurebasedmolecularnetworking.md
+            - FBMN with MZmine : featurebasedmolecularnetworking-with-mzmine2.md
+            - FBMN with MS-DIAL: featurebasedmolecularnetworking-with-ms-dial.md
+            - FBMN with XCMS: featurebasedmolecularnetworking-with-xcms3.md
+            - FBMN with OpenMS: featurebasedmolecularnetworking-with-openms.md
+            - FBMN with MetaboScape: featurebasedmolecularnetworking-with-metaboscape.md
+            - FBMN with Progenesis QI: featurebasedmolecularnetworking-with-progenesisQI.md
+            - FBMN with mzTab-M: featurebasedmolecularnetworking-with-mztab-m.md
+            - FBMN export to Cytoscape: featurebasedmolecularnetworking-cytoscape.md
+        - FBMN - Ion Identity Networking:
+            - IIN Workflow: fbmn-iin.md
+            - IIN with MZmine2: fbmn-iin-mzmine.md
+            - IIN with XCMS: fbmn-iin-xcms.md
+            - IIN with MS-DIAL: fbmn-iin-msdial.md
         - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
+        - Molecular Networking in Cytoscape: cytoscape.md
+        - DEREPLICATOR: dereplicator.md
+        - Network Annotation Propagation (NAP): nap.md
+        - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
+        - MolNetEnhancer: molnetenhancer.md
+        - MetaMiner: metaminer.md
+        # CycloNovo: cyclonovo.md
+        - Reanalysis of Data User Interface (ReDU): ReDU.md
+        - Qemistree: qemistree.md
+        - MMVEC: mmvec.md
+        - Merge Network Polarity: mergepolarity.md
+        - Chemical Directionality: chemdir.md
+    - Spectral Libraries:
+        - Browsing Reference Spectral Libraries: browselibraries.md
+        - Add/Curate Reference Spectrum in the Library: spectrumcuration.md
+        - Reference Spectral Library Batch Addition: batchupload.md
+        - Downloading Reference Spectral Libraries: downloadlibraries.md
+        - Open-source Method for Reference Library Generation:
+            - MSMS-Chooser Workflow: msmschooser.md
+            - Computational Data Acquisition Prep: msmschooserdataacquisitioncomputational.md
+            - Data Acqusition - Thermo QExactive (v1.0): msmschooserdataacquisitionQE.md
+        - GNPS Tag Contribution and Analyses: tag_info.md
+    - Create a Public Datasets:
+        - Dataset Creation/Sharing: datasets.md
+        - Continuous Identification: continuousid.md
+        - Molecule Explorer: moleculeexplorer.md
     - Community/Social Features:
-        - Spectral Libraries:
-            - Browsing Reference Spectral Libraries: browselibraries.md
-            - Reference Spectral Library Curation: spectrumcuration.md
-            - Reference Spectral Library Batch Addition: batchupload.md
-            - Downloading Reference Spectral Libraries: downloadlibraries.md
-        - Datasets:
-            - Dataset Creation/Sharing: datasets.md
-            - Continuous Identification: continuousid.md
-            - Molecule Explorer: moleculeexplorer.md
         - User Page: user.md
     - Troubleshooting: troubleshooting.md
     - Tutorial Guides:
         - Molecular Networking - Analog Discovery in Microbial Extracts: tutorials/bacterianetworking.md
-        - Feature Based Molecular Networking - MZmine2 Feature Detection - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangutmzmine.md
-        - Feature Based Molecular Networking - GNPS: tutorials/featurebasedgnps.md
-    - Presentation Materials:
-        - Logos: logos.md
+        - Feature-Based Molecular Networking (FBMN) with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangutmzmine.md
+        - FBMN with MS-DIAL - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangut-ms-dial.md
+        - FBMN with MetaboScape - Coffee Analysis: tutorials/coffee-tutorial-metaboscape.md
+        - FBMN analysis at GNPS: tutorials/featurebasedgnps.md
+    - Change Log: changelog.md
+    - Join the GNPS community: gnps_community.md
+    - GNPS Workshops/Training: workshops.md
+    - GNPS Logos: logos.md
+    - Contact/Office Hours: contact.md
+    - GNPS Tool Index: toolindex.md
+    - API: api.md
 theme:
     name: material
-    #name: readthedocs
 
-    #palette:
-    #    primary: 'light blue'
-    #    accent: 'orange'
-    #font:
-    #    text: 'Roboto'
-    #    code: 'Roboto Mono'
+plugins:
+    - search
+    - git-authors:
+        show_contribution: true
+    - git-revision-date-localized:
+        type: datetime
 
-    #logo: 'img/GNPS_logo.jpg'
-#theme: readthedocs
-#theme:
-#  name: 'rtd-dropdown'
+markdown_extensions:
+    - toc:
+        permalink: true
+    - admonition
+    - pymdownx.superfences
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_index: !!python/name:pymdownx.emoji.twemoji
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+            
+
 google_analytics: ['UA-8412213-5', 'ccms-ucsd.github.io']

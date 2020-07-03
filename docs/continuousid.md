@@ -39,3 +39,21 @@ Users will be able to both add their own rating, add a comment for their given r
 This example continuous identification email informs subscribers that the dataset of interest has more IDs in the most recent round of continuous identifications. It will first list the title of the dataset, then the changes in identification counts, and finally direct links to explore the data. Users can go directly to the search results and view the new, different, and deleted identifications as well as go straight to the dataset page itself.
 
 ![img](img/datasets/subscription_email.png)
+
+## Download Living Data
+
+This dataset: [MSV000084314](https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=25cc4f9135c6428aabe1f41a9e54c369) includes molecular networks, clustering, and library identifications. 
+
+### Organization of the FTP Repository
+
+They are organized respectively in 4 folders: 
+
+1. **CLUSTERSUMMARY** - Represents the clusters for each dataset and the associated metadata (e.g. mz, rt, and number of MS2 spectra)
+2. **CLUSTERINFO** - Represents the clustering enabling tracing back from the clusters to the original files and scans they came from MGF - Clustered MS/MS spectra represented as an MGF file - scan numbers correspond to cluster index in 
+3. **CLUSTERSUMMARY PAIRS** - Molecular Networking alignment pairs representing spectral similarity
+4. **IDENTIFICATIONS** - Spectral library identifications reported by living data/continuous id to the latest GNPS spectral libraries (scan numbers also correspond to cluster index)
+
+
+## Page Contributions
+
+{{ git_page_authors }}
