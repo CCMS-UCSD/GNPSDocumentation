@@ -6,6 +6,8 @@ GNPS now offers support for GC-MS data. Two workflows are available.
 
 ![img](img/GC-MS_documentation/Fig_1.png)
 
+The video tutorial can be found [here](https://www.youtube.com/watch?v=KIOim2h8i64).
+
 ## GC-MS Deconvolution Workflow
 
 More information **GC-MS online deconvolution workflow** with MS-Hub, or ADAP-MZmine, or MS-DIAL. [See here](gc-ms-deconvolution.md) .

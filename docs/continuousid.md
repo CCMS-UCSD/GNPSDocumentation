@@ -40,9 +40,19 @@ This example continuous identification email informs subscribers that the datase
 
 ![img](img/datasets/subscription_email.png)
 
-## Download
+## Download Living Data
 
-To download all the information related to continuosu ID, please refer [here](api.md#gnps-continuous-id-data). 
+This dataset: [MSV000084314](https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=25cc4f9135c6428aabe1f41a9e54c369) includes molecular networks, clustering, and library identifications. 
+
+### Organization of the FTP Repository
+
+They are organized respectively in 4 folders: 
+
+1. **CLUSTERSUMMARY** - Represents the clusters for each dataset and the associated metadata (e.g. mz, rt, and number of MS2 spectra)
+2. **CLUSTERINFO** - Represents the clustering enabling tracing back from the clusters to the original files and scans they came from MGF - Clustered MS/MS spectra represented as an MGF file - scan numbers correspond to cluster index in 
+3. **CLUSTERSUMMARY PAIRS** - Molecular Networking alignment pairs representing spectral similarity
+4. **IDENTIFICATIONS** - Spectral library identifications reported by living data/continuous id to the latest GNPS spectral libraries (scan numbers also correspond to cluster index)
+
 
 ## Page Contributions
 
