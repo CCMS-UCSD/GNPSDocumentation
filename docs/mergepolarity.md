@@ -3,8 +3,7 @@ Here we merge polarity between positive and negative networks.
 ## Workflow
 The workflow is available on GNPS [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MERGE_NETWORKS_POLARITY%22%7D)
 The merge polarity workflow can be performed on both classical and feature based molecular networking (FBMN) jobs. 
-
-## Input Data
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 A GNPS job is run on positive mode data and another job is run on negative mode data; the input is then the GNPS ID of both jobs. These jobs can be either classical or feature based molecular networking (FBMN) jobs. 
 
