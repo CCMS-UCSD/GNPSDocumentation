@@ -52,6 +52,11 @@ Please help us fill in more completely!
 | [GNPS Usage Stats Dashboard](https://gnps-usage-stats.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_StatsSummaryDashboard) | --- |
 | [GNPS Upset Plot Dashboard (Beta)](https://gnps-classical-comparison.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_ClassicalNetworkGroupsComparisonDashboard) | --- |
 
+## GNPS Interactive Notebooks
+
+| Tool  | Documentation | Source Code | Binder Link | Citation |
+|---|---|---|---|---|
+
 
 ## Community Tools GNPS Interfaces with
 
