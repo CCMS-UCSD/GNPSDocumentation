@@ -42,7 +42,7 @@ These parameters were selected to be appropriate for a small dataset and a littl
 
 ### Pre-filled example
 
-If you want to see a pre-filled example, see [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?task=24b62946372c4044b49fceb662856e41).
+If you want to see a pre-filled example, see [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?task=a3afa1ec5ca44260b6cc97aef2725fd8&params=%7b%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22workflow_version%22:%22current%22%7d).
 
 ## Analyzing Results in Browser
 
