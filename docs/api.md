@@ -193,6 +193,8 @@ If you have InChI Key
 Additionally, in case the inchikey is not classified, you can provide ```smiles``` or ```inchi``` arguments for 
 us to push to the Wishart servers to classify. 
 
+!!! note "ClassyFire" 
+    ClassyFire is tool from the Wishart Lab - check it out [here](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0174-y)
 
 ### Structure Image
 
