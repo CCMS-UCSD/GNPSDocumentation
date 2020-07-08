@@ -6,6 +6,9 @@
 
 !!! question "Will MassIVE datasets that I create be public by default?"
     No, when creating a MassIVE dataset, it is not public by default. On the input form page, you are able to set a password to access the MassIVE dataset. There is a Make Public link to make your dataset open to the public and documentation can be found here here. Such a feature is very useful because users can create a MassIVE dataset prior to publication submission that is private and password protected. The MassIVE dataset link can be provided to reviewers along with the password so to provide better transparency and increase probability of manuscript acceptance.
+    
+!!! question "Will my GNPS Analysis Tasks be public?"
+    No, by default, when you run an analysis at GNPS (e.g. Molecular Networking) that task will be private only to you. Each task is identified by this 32 task identifier (you can find it in the URL). If you share the URL with a collaborator, they will be able to visualize the results and explore the analysis. We recommend putting these URLs for task analyses in the methods section of your manuscripts. 
 
 ## Data Organization
 
