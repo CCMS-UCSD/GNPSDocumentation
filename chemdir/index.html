@@ -55,7 +55,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#page-contributions" class="md-skip">
+        <a href="#chemical-directionality-chemdir" class="md-skip">
           Skip to content
         </a>
       
@@ -937,6 +937,27 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#chemical-directionality-chemdir" class="md-nav__link">
+    Chemical Directionality (ChemDir)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    Development
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#page-contributions" class="md-nav__link">
     Page Contributions
   </a>
@@ -1429,6 +1450,27 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#chemical-directionality-chemdir" class="md-nav__link">
+    Chemical Directionality (ChemDir)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    Development
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#page-contributions" class="md-nav__link">
     Page Contributions
   </a>
@@ -1457,9 +1499,39 @@
                 
                   <h1>Chemical Directionality</h1>
                 
-                <p>Pardon our dust, this is a work in progress...</p>
+                <h2 id="chemical-directionality-chemdir">Chemical Directionality (ChemDir)<a class="headerlink" href="#chemical-directionality-chemdir" title="Permanent link">&para;</a></h2>
+<p>The Chemical Directionality (ChemDir) concept applied here is defined by relative abundance changes between two neighbouring nodes within a molecular network. By taking advantage of the <a href="https://www.biorxiv.org/content/10.1101/812404v1.full">feature-based molecular network workflow (FBMN)</a>, we used the peak area across the longitudinal (or spatial) data series as a measure of the abundance for each detected feature among events. ChemDir facilitates the prioritisation of putative transformations in tandem mass spectrometry (MS/MS) data using the Global Natural Products Social Molecular Network <a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp">(GNPS)</a> environment.</p>
+<p><strong>Workflow</strong> 
+Make sure you select the ChemDir workflow </p>
+<p><strong>Title</strong> 
+Name your job to be easily recognize by yourself as it will be available in your jobs tab</p>
+<p><strong>Enter GNPS Network Task ID (Required)</strong>
+Copy and paste the FBMN task ID from your previous FBMN  job</p>
+<p><strong>METADATA_COLUMN</strong>
+Define a metadata column header based on the exact metadata table provided for the FBMN job ID you are using in this ChemDir workflow</p>
+<p><strong>TIME_SERIES</strong>
+Provide the variables that are interested in based on your longitudinal analysis. Example: 0,1,2,3; comma separated values, can be integers or strings. The variables provided here must match entries from the metadata column specified in METADATA_COLUMN.</p>
+<p><strong>MIN_AREA_THRESHOLD</strong> 
+Min peak area; defined during feature finding; job specific. The value used here will replace any 0 value from your dataset for ChemDir.</p>
+<p><strong>METADATA_FILTER_COLUMN</strong>
+It is possible to filter the dataset based on the columns of interest. </p>
+<p><strong>METADATA_FILTER_TERM</strong>
+It is possible to filter the column used from your dataset based on the specific term of interest for the analysis.</p>
+<p><strong>Job status</strong>
+Once your job is finished, you will be able to explore the results.</p>
+<p><strong>Summary table</strong>
+This table provides the general overview of every pair node compared via ChemDir.  </p>
+<p><strong>Direct Cytoscape preview</strong>
+This enables you to directly download and explore the data in Cytoscape.</p>
+<p><strong>ChemDir dashboard</strong>
+This enables you to quickly explore the maximum ChemDir scores and their correspondent DeltaMZ observed from your dataset.</p>
+<h2 id="development">Development<a class="headerlink" href="#development" title="Permanent link">&para;</a></h2>
+<p>Source code
+There are two portions of the ChemDir infrastructure: <a href="https://github.com/mwang87/ChemDir">ChemDir GNPS/ProteoSAFe workflow</a> and the <a href="https://github.com/mwang87/ChemDir_Dashboard">ChemDir Results Exploration Dashboard</a>. </p>
+<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
+<p>To be updated</p>
 <h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h2>
-<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a></span></p>
+<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (9.23%), <a href='mailto:amcaraballor@gmail.com'>amcaraballor</a> (90.77%)</span></p>
                 
                   
                     
@@ -1468,7 +1540,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 13, 2020 23:18:29</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 3, 2020 22:29:47</span>
     
   </small>
 </div>
