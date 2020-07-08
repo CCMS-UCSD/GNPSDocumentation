@@ -34,6 +34,8 @@ Please help us fill in more completely!
 
 ## GNPS Web Tools
 
+These are web tools that is run by the GNPS team and provides complementary funcationality to GNPS. 
+
 | Tool  | Documentation | Source Code | Citation |
 |---|---|---|---|
 | [ReDU](https://redu.ucsd.edu/) | [Documentation](https://mwang87.github.io/ReDU-MS2-Documentation/) | [GitHub](https://github.com/mwang87/ReDU-MS2-GNPS) | [Citation](https://www.biorxiv.org/content/10.1101/750471v1)|
@@ -51,6 +53,15 @@ Please help us fill in more completely!
 | [GNPS Mass Spec Calculator (Beta)](https://gnps-masscalculator.herokuapp.com/) | --- | TODO |
 | [GNPS Usage Stats Dashboard](https://gnps-usage-stats.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_StatsSummaryDashboard) | --- |
 | [GNPS Upset Plot Dashboard (Beta)](https://gnps-classical-comparison.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_ClassicalNetworkGroupsComparisonDashboard) | --- |
+
+## GNPS Jupyter Notebooks
+
+These are Jupyter Notebooks that interact with GNPS web resources and do further processing. They serve as a prototype for future built-in infrastructure, check it out!
+
+| Tool | Documentation | Source Code | Binder Launch |
+| ---- | ------------- | ----------- | ------------- |
+| GNPS MASST Post Processing | TODO | [GitHub](https://github.com/mwang87/GNPS_MASST_Notebooks) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mwang87/GNPS_MASST_Notebooks/master) |
+
 
 
 ## Community Tools GNPS Interfaces with
