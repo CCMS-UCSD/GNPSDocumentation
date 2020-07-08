@@ -1503,35 +1503,47 @@
 <p>The Chemical Directionality (ChemDir) concept applied here is defined by relative abundance changes between two neighbouring nodes within a molecular network. By taking advantage of the <a href="https://www.biorxiv.org/content/10.1101/812404v1.full">feature-based molecular network workflow (FBMN)</a>, we used the peak area across the longitudinal (or spatial) data series as a measure of the abundance for each detected feature among events. ChemDir facilitates the prioritisation of putative transformations in tandem mass spectrometry (MS/MS) data using the Global Natural Products Social Molecular Network <a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp">(GNPS)</a> environment.</p>
 <p><strong>Workflow</strong> 
 Make sure you select the ChemDir workflow </p>
+<p><img alt="img" src="../img/ChemDir/ChemDir_step1.PNG" /></p>
 <p><strong>Title</strong> 
 Name your job to be easily recognize by yourself as it will be available in your jobs tab</p>
+<p><img alt="img" src="../img/ChemDir/ChemDir_step2.PNG" /></p>
 <p><strong>Enter GNPS Network Task ID (Required)</strong>
 Copy and paste the FBMN task ID from your previous FBMN  job</p>
+<p><img alt="img" src="../img/ChemDir/ChemDir_step3.PNG" /></p>
 <p><strong>METADATA_COLUMN</strong>
 Define a metadata column header based on the exact metadata table provided for the FBMN job ID you are using in this ChemDir workflow</p>
+<p><img alt="img" src="../img/ChemDir/ChemDir_step4.PNG" /></p>
 <p><strong>TIME_SERIES</strong>
 Provide the variables that are interested in based on your longitudinal analysis. Example: 0,1,2,3; comma separated values, can be integers or strings. The variables provided here must match entries from the metadata column specified in METADATA_COLUMN.</p>
+<p><img alt="img" src="../img/ChemDir/ChemDir_step5.PNG" /></p>
 <p><strong>MIN_AREA_THRESHOLD</strong> 
 Min peak area; defined during feature finding; job specific. The value used here will replace any 0 value from your dataset for ChemDir.</p>
+<p><img alt="img" src="../img/ChemDir/ChemDir_step6.PNG" /></p>
 <p><strong>METADATA_FILTER_COLUMN</strong>
 It is possible to filter the dataset based on the columns of interest. </p>
+<p><img alt="img" src="../img/ChemDir/ChemDir_step7.PNG" /></p>
 <p><strong>METADATA_FILTER_TERM</strong>
 It is possible to filter the column used from your dataset based on the specific term of interest for the analysis.</p>
+<p><img alt="img" src="../img/ChemDir/ChemDir_step8.PNG" /></p>
 <p><strong>Job status</strong>
 Once your job is finished, you will be able to explore the results.</p>
+<p><img alt="img" src="../img/ChemDir/ChemDir_step9.PNG" /></p>
 <p><strong>Summary table</strong>
 This table provides the general overview of every pair node compared via ChemDir.  </p>
+<p><img alt="img" src="../img/ChemDir/ChemDir_step10.PNG" /></p>
 <p><strong>Direct Cytoscape preview</strong>
 This enables you to directly download and explore the data in Cytoscape.</p>
+<p><img alt="img" src="../img/ChemDir/ChemDir_step11b.PNG" /></p>
 <p><strong>ChemDir dashboard</strong>
 This enables you to quickly explore the maximum ChemDir scores and their correspondent DeltaMZ observed from your dataset.</p>
+<p><img alt="img" src="../img/ChemDir/ChemDir_step12.PNG" /></p>
 <h2 id="development">Development<a class="headerlink" href="#development" title="Permanent link">&para;</a></h2>
 <p>Source code
 There are two portions of the ChemDir infrastructure: <a href="https://github.com/mwang87/ChemDir">ChemDir GNPS/ProteoSAFe workflow</a> and the <a href="https://github.com/mwang87/ChemDir_Dashboard">ChemDir Results Exploration Dashboard</a>. </p>
 <h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
 <p>To be updated</p>
 <h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h2>
-<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (9.23%), <a href='mailto:amcaraballor@gmail.com'>amcaraballor</a> (90.77%)</span></p>
+<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (7.79%), <a href='mailto:amcaraballor@gmail.com'>amcaraballor</a> (92.21%)</span></p>
                 
                   
                     
@@ -1540,7 +1552,7 @@ There are two portions of the ChemDir infrastructure: <a href="https://github.co
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 3, 2020 22:29:47</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 8, 2020 19:46:31</span>
     
   </small>
 </div>
