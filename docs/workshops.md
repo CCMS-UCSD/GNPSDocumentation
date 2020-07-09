@@ -2,8 +2,6 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Zoom! | GNPS Feature Based Molecular Networking in Espanol - Part 1	| 7/8/2020 9AM PST | [Material](https://docs.google.com/document/d/1raBdT8QuHntm-im7DjxB3epG7_D_JEAXNY-_AoFvaWc/edit?usp=sharing) |
-| Zoom! | GNPS Feature Based Molecular Networking in Espanol - Part 2| 7/9/2020 9AM PST | [Material](https://docs.google.com/document/d/1wleocmsb1hoJrREujJFVjMH3wz4jH8MnpcMqbg1j5j0/edit?usp=sharing) |
 | Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 7/15/2020 9AM PST | TBD |
 | Zoom! | GNPS Classical Molecular Networking in Portuguese | 7/22/2020 9AM PST | TBD | 
 | Zoom! | GNPS Users Meeting - Presentations from the Community	| 7/29/2020 9AM PST | TBD |
@@ -42,6 +40,8 @@ Here is a table to briefly browse them
 
 | Venue        | Description          | Dates | Material | Estimated Attendance |
 | ------------- |-------------| -----| -----| ----- |
+| Zoom! | GNPS Feature Based Molecular Networking in Espanol - Part 1	| 7/8/2020 9AM PST | [Material](https://docs.google.com/document/d/1raBdT8QuHntm-im7DjxB3epG7_D_JEAXNY-_AoFvaWc/edit?usp=sharing) | 40 |
+| Zoom! | GNPS Feature Based Molecular Networking in Espanol - Part 2| 7/9/2020 9AM PST | [Material](https://docs.google.com/document/d/1wleocmsb1hoJrREujJFVjMH3wz4jH8MnpcMqbg1j5j0/edit?usp=sharing) | 50 |
 | Zoom! | Metabolomics Spectrum Resolver - Unifing spectrum rendering and customization	| 7/1/2020 9AM PST | [Materials](https://docs.google.com/document/d/1xAbhHj4T3BV80oKuwmaxVl4HprecjquqRtnhCZOVVHQ/edit?usp=sharing) | 35 |
 | Zoom! | GNPS - MS2LDA | 6/24/2020 9AM PST | [Material](https://docs.google.com/document/d/1i0oXux-plxF9oxK-MFIBgARkqM-wJzKPAjj-XVhrHk4/edit) | 40 |
 | Zoom! | GNPS Classical Molecular Networking in Español | 6/17/2020 9AM PST | [Material](https://docs.google.com/document/d/1sR9QjF5kCix7iJs1PQUm0rPwX1Naxwarxqxd04gBesw/edit) [Video](https://www.youtube.com/watch?v=hTZzZI3PtR0) | 60 |
