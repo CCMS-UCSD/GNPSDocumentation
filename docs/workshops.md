@@ -4,7 +4,7 @@
 | ------------- |-------------| -----| -----|
 | Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 7/15/2020 9AM PST | TBD |
 | Zoom! | GNPS Classical Molecular Networking in Portuguese | 7/22/2020 9AM PST | TBD | 
-| Zoom! | GNPS Users Meeting - Presentations from the Community	| 7/29/2020 9AM PST | TBD |
+| Zoom! | GNPS GC - Part 2	| 7/29/2020 9AM PST | TBD |
 |TBD | TBD | TBD | -----|
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
