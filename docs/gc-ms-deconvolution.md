@@ -39,6 +39,12 @@ The GNPS home page includes two sections to launch GNPS GC-MS data analysis job,
 
 The **“Advanced MSHub Processing” section** displays some automatic setting parameters (related to peak symmetry and baseline adjustment) determined internally by MSHub. The user does not need to provide settings, although they can be set manually, should the user choose to do so. 
 
+The adjustable settings are:
+-PYMS_INTERPEAK_ALIGN_MAXPEAKSHIFT: the allowable shift of chromatographic peaks that need to be aligned
+-PYMS_DECONV_INTENSITY_THRESHOLD: the threshold to filter out noise peaks
+-PYMS_DECONV_LEFT_ANG_THRESHOLD: the slope of the rising edge of the peak to be considered as valid
+-PYMS_DECONV_RIGHT_ANG_THRESHOLD: the slope of the falling edge of the peak to be considered as valid
+
 (8) In the **“Advanced Clustering” section**, the cluster spectra have to be turned off (CLUSTER_SPECTRA = NO). The TIME_UNIT must be set as minutes or seconds, depending on the chromatography time units of your data (typically the default time units are seconds in NetCDF files and minutes in .mzML files). 
 
 (9) Enter your email address.
