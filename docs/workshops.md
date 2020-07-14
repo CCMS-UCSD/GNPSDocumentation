@@ -2,7 +2,7 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 7/15/2020 9AM PST | TBD |
+| Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 7/15/2020 9AM PST | [Material](https://docs.google.com/document/d/1srJxW1DxMNsOyT8YlraBmDJHJkI9EDw3l2JRmQL2jjI/edit?usp=sharing) |
 | Zoom! | GNPS Classical Molecular Networking in Portuguese | 7/22/2020 9AM PST | TBD | 
 | Zoom! | GNPS GC - Part 2	| 7/29/2020 9AM PST | TBD |
 |TBD | TBD | TBD | -----|
