@@ -1500,7 +1500,7 @@
                   <h1>Chemical Directionality</h1>
                 
                 <h2 id="chemical-directionality-chemdir">Chemical Directionality (ChemDir)<a class="headerlink" href="#chemical-directionality-chemdir" title="Permanent link">&para;</a></h2>
-<p>The Chemical Directionality (ChemDir) concept applied here is defined by relative abundance changes between two neighbouring nodes within a molecular network. By taking advantage of the <a href="https://www.biorxiv.org/content/10.1101/812404v1.full">feature-based molecular network workflow (FBMN)</a>, we used the peak area across the longitudinal (or spatial) data series as a measure of the abundance for each detected feature among events. ChemDir facilitates the prioritisation of putative transformations in tandem mass spectrometry (MS/MS) data using the Global Natural Products Social Molecular Network <a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp">(GNPS)</a> environment.</p>
+<p>The Chemical Directionality (ChemDir) concept applied here is defined by relative abundance changes between two neighbouring nodes within a molecular network. By taking advantage of the <a href="https://www.biorxiv.org/content/10.1101/812404v1.full">feature-based molecular network workflow (FBMN)</a>, we used the raw peak area across the longitudinal (or spatial) data series as a measure of the abundance for each detected feature among events. ChemDir facilitates the prioritisation of putative transformations in tandem mass spectrometry (MS/MS) data using the Global Natural Products Social Molecular Network <a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp">(GNPS)</a> environment.</p>
 <p><strong>Workflow</strong> 
 Make sure you select the ChemDir workflow </p>
 <p><img alt="img" src="../img/ChemDir/ChemDir_step1.PNG" /></p>
@@ -1514,7 +1514,7 @@ Copy and paste the FBMN task ID from your previous FBMN  job</p>
 Define a metadata column header based on the exact metadata table provided for the FBMN job ID you are using in this ChemDir workflow</p>
 <p><img alt="img" src="../img/ChemDir/ChemDir_step4.PNG" /></p>
 <p><strong>TIME_SERIES</strong>
-Provide the variables that are interested in based on your longitudinal analysis. Example: 0,1,2,3; comma separated values, can be integers or strings. The variables provided here must match entries from the metadata column specified in METADATA_COLUMN.</p>
+Provide the variables that you are interested in based on your longitudinal analysis. Example: 0,1,2,3; comma separated values, can be integers or strings; no spaces between variables. The variables provided here must match entries from the metadata column specified in METADATA_COLUMN.</p>
 <p><img alt="img" src="../img/ChemDir/ChemDir_step5.PNG" /></p>
 <p><strong>MIN_AREA_THRESHOLD</strong> 
 Min peak area; defined during feature finding; job specific. The value used here will replace any 0 value from your dataset for ChemDir.</p>
@@ -1543,7 +1543,7 @@ There are two portions of the ChemDir infrastructure: <a href="https://github.co
 <h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
 <p>To be updated</p>
 <h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h2>
-<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (7.79%), <a href='mailto:amcaraballor@gmail.com'>amcaraballor</a> (92.21%)</span></p>
+<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (7.79%), <a href='mailto:amcaraballor@gmail.com'>amcaraballor</a> (89.61%), <a href='mailto:mccall.lauraisobel@gmail.com'>Laura-Isobel McCall</a> (2.6%)</span></p>
                 
                   
                     
@@ -1552,7 +1552,7 @@ There are two portions of the ChemDir infrastructure: <a href="https://github.co
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 8, 2020 19:46:31</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 15, 2020 17:51:44</span>
     
   </small>
 </div>
