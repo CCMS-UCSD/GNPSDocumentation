@@ -3,7 +3,7 @@
 
 ## Chemical Directionality (ChemDir)
 
-The Chemical Directionality (ChemDir) concept applied here is defined by relative abundance changes between two neighbouring nodes within a molecular network. By taking advantage of the [feature-based molecular network workflow (FBMN)](https://www.biorxiv.org/content/10.1101/812404v1.full), we used the peak area across the longitudinal (or spatial) data series as a measure of the abundance for each detected feature among events. ChemDir facilitates the prioritisation of putative transformations in tandem mass spectrometry (MS/MS) data using the Global Natural Products Social Molecular Network [(GNPS)](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp) environment.
+The Chemical Directionality (ChemDir) concept applied here is defined by relative abundance changes between two neighbouring nodes within a molecular network. By taking advantage of the [feature-based molecular network workflow (FBMN)](https://www.biorxiv.org/content/10.1101/812404v1.full), we used the raw peak area across the longitudinal (or spatial) data series as a measure of the abundance for each detected feature among events. ChemDir facilitates the prioritisation of putative transformations in tandem mass spectrometry (MS/MS) data using the Global Natural Products Social Molecular Network [(GNPS)](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp) environment.
 
 **Workflow** 
 Make sure you select the ChemDir workflow 
@@ -26,7 +26,7 @@ Define a metadata column header based on the exact metadata table provided for t
 ![img](img/ChemDir/ChemDir_step4.PNG)
 
 **TIME_SERIES**
-Provide the variables that are interested in based on your longitudinal analysis. Example: 0,1,2,3; comma separated values, can be integers or strings. The variables provided here must match entries from the metadata column specified in METADATA_COLUMN.
+Provide the variables that you are interested in based on your longitudinal analysis. Example: 0,1,2,3; comma separated values, can be integers or strings; no spaces between variables. The variables provided here must match entries from the metadata column specified in METADATA_COLUMN.
 
 ![img](img/ChemDir/ChemDir_step5.PNG)
 
