@@ -34,7 +34,8 @@ Here is a table to briefly browse them
 | Module 12 | MS2LDA | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module12-MS2LDA) |
 | Module 13 | Adding Reference Library Spectra | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module13-AddingReferenceSpectra) |
 | Module 15 | Merge Network Polarity | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module15-MergeNetworkPolarity) |
-	
+| Module 16 | Metabolomics Spectrum Resolver | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module16-MetabolomicsSpectrumResolver) |
+| Module 17 | ChemDir | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module17-ChemDir) |
 
 ## Previous Workshops
 
