@@ -5,6 +5,9 @@
 
 The Chemical Directionality (ChemDir) concept applied here is defined by relative abundance changes between two neighbouring nodes within a molecular network. By taking advantage of the [feature-based molecular network workflow (FBMN)](https://www.biorxiv.org/content/10.1101/812404v1.full), we used the raw peak area across the longitudinal (or spatial) data series as a measure of the abundance for each detected feature among events. ChemDir facilitates the prioritisation of putative transformations in tandem mass spectrometry (MS/MS) data using the Global Natural Products Social Molecular Network [(GNPS)](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp) environment.
 
+!!! note "FBMN Version Compatibility"
+    We require a FBMN that is release_18 or newer. If your job is older than that, simply clone to latest to get the latest version and it should be compatible with ChemDir
+
 **Workflow** 
 Make sure you select the ChemDir workflow 
 
