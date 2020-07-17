@@ -2,7 +2,6 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 7/15/2020 9AM PST | [Material](https://docs.google.com/document/d/1srJxW1DxMNsOyT8YlraBmDJHJkI9EDw3l2JRmQL2jjI/edit?usp=sharing) |
 | Zoom! | GNPS Classical Molecular Networking in Portuguese | 7/22/2020 9AM PST | TBD | 
 | Zoom! | GNPS GC - Part 2	| 7/29/2020 9AM PST | TBD |
 |TBD | TBD | TBD | -----|
@@ -34,12 +33,14 @@ Here is a table to briefly browse them
 | Module 12 | MS2LDA | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module12-MS2LDA) |
 | Module 13 | Adding Reference Library Spectra | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module13-AddingReferenceSpectra) |
 | Module 15 | Merge Network Polarity | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module15-MergeNetworkPolarity) |
-	
+| Module 16 | Metabolomics Spectrum Resolver | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module16-MetabolomicsSpectrumResolver) |
+| Module 17 | ChemDir | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module17-ChemDir) |
 
 ## Previous Workshops
 
 | Venue        | Description          | Dates | Material | Estimated Attendance |
 | ------------- |-------------| -----| -----| ----- |
+| Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 7/15/2020 9AM PST | [Material](https://docs.google.com/document/d/1srJxW1DxMNsOyT8YlraBmDJHJkI9EDw3l2JRmQL2jjI/edit?usp=sharing) | 40 |
 | Zoom! | GNPS Feature Based Molecular Networking in Espanol - Part 1	| 7/8/2020 9AM PST | [Material](https://docs.google.com/document/d/1raBdT8QuHntm-im7DjxB3epG7_D_JEAXNY-_AoFvaWc/edit?usp=sharing) | 40 |
 | Zoom! | GNPS Feature Based Molecular Networking in Espanol - Part 2| 7/9/2020 9AM PST | [Material](https://docs.google.com/document/d/1wleocmsb1hoJrREujJFVjMH3wz4jH8MnpcMqbg1j5j0/edit?usp=sharing) | 50 |
 | Zoom! | Metabolomics Spectrum Resolver - Unifing spectrum rendering and customization	| 7/1/2020 9AM PST | [Materials](https://docs.google.com/document/d/1xAbhHj4T3BV80oKuwmaxVl4HprecjquqRtnhCZOVVHQ/edit?usp=sharing) | 35 |
