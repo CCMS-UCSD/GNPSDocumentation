@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Sirius is an in silico analysis tool developed by the Bocker Lab. 
+Sirius is an in silico analysis tool developed by the [Bocker Lab](https://bio.informatik.uni-jena.de/software/sirius/).
 
 ## GNPS Workflow
 
@@ -12,7 +12,7 @@ In GNPS, we have brought Sirius in house to enable users to perform automated hi
 1. Structure Assignment
 1. Compound Class Prediction
 
-## Output Visualization
+## Results
 
 Lorem Ipsum
 
