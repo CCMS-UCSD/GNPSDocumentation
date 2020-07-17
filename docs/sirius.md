@@ -12,6 +12,8 @@ In GNPS, we have brought Sirius in house to enable users to perform automated hi
 1. Structure Assignment
 1. Compound Class Prediction
 
+Checkout the beta workflow [here](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22SIRIUS%22%7D).
+
 ## Results
 
 Lorem Ipsum
