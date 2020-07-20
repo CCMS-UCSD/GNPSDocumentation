@@ -1,9 +1,10 @@
-## Upcoming Workshops
+## Upcoming Workshops and Events
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
 | Zoom! | GNPS Classical Molecular Networking in Portuguese | 7/22/2020 9AM PST | TBD | 
 | Zoom! | GNPS GC - Part 2	| 7/29/2020 9AM PST | TBD |
+| Zoom! | 1st GNPS User Meeting	| 8/26/2020 9AM PST | [More Information](https://docs.google.com/document/d/1CR2gURxDJimbaIcqszm6msHx55VQ5IIM2dtsvQWapGY/edit?usp=sharing) |
 |TBD | TBD | TBD | -----|
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
