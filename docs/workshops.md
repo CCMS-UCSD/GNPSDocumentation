@@ -2,7 +2,7 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Zoom! | GNPS Classical Molecular Networking in Portuguese | 7/22/2020 9AM PST | Material(https://docs.google.com/document/d/17YFhsFWRxFNdHBhEQB3cQkOocXu-jWBtTsDWwek56oU) | TBD | 
+| Zoom! | GNPS Classical Molecular Networking in Portuguese | 7/22/2020 9AM PST | [Material](https://docs.google.com/document/d/17YFhsFWRxFNdHBhEQB3cQkOocXu-jWBtTsDWwek56oU) | TBD | 
 | Zoom! | GNPS GC - Part 2	| 7/29/2020 9AM PST | TBD |
 | Zoom! | 1st GNPS User Meeting	| 8/26/2020 9AM PST | [More Information](https://docs.google.com/document/d/1CR2gURxDJimbaIcqszm6msHx55VQ5IIM2dtsvQWapGY/edit?usp=sharing) |
 |TBD | TBD | TBD | -----|
