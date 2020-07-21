@@ -193,6 +193,9 @@ If you have InChI Key
 Additionally, in case the inchikey is not classified, you can provide ```smiles``` or ```inchi``` arguments for 
 us to push to the Wishart servers to classify. 
 
+!!! note "ClassyFire" 
+    ClassyFire is tool from the Wishart Lab - check it out [here](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0174-y). Here is the recommended citation: 
+    Feunang, Yannick Djoumbou, Roman Eisner, Craig Knox, Leonid Chepelev, Janna Hastings, Gareth Owen, Eoin Fahy et al. "ClassyFire: automated chemical classification with a comprehensive, computable taxonomy." Journal of cheminformatics 8, no. 1 (2016): 61.
 
 ### Structure Image
 
@@ -209,16 +212,6 @@ us to push to the Wishart servers to classify.
 
 [Example](https://redu.ucsd.edu/filename?query=f.MSV000082048/ccms_peak/Plate_28/30_84.mzML)
 
-## GNPS Continuous ID Data
-
-If you want to download all public datasets that have been processed by GNPS. You can find a dump of all these files in this dataset [MSV000084314](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=25cc4f9135c6428aabe1f41a9e54c369&view=advanced_view). 
-
-This includes:
-
-1. Clustered MGFs for each dataset
-1. Identifications for clustered spectra
-1. Mapping of clusters back to original files and scans
-1. Molecular Networks for each dataset
 
 ## Page Contributions
 

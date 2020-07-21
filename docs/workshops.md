@@ -1,12 +1,10 @@
-## Upcoming Workshops
+## Upcoming Workshops and Events
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Zoom! | GNPS Classical Molecular Networking in Español | 6/17/2020 9AM PST | [Material](https://docs.google.com/document/d/1sR9QjF5kCix7iJs1PQUm0rPwX1Naxwarxqxd04gBesw/edit) |
-| Zoom! | GNPS - MS2LDA | 6/24/2020 9AM PST | TBD |
-| Zoom! | Metabolomics Spectrum Resolver - Unifing spectrum rendering and customization	| 7/1/2020 9AM PST | TBD |
-| Zoom! | GNPS Users Meeting - Presentations from the Community	| 7/8/2020 9AM PST | TBD |
-| Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 7/15/2020 9AM PST | TBD |
+| Zoom! | GNPS Classical Molecular Networking in Portuguese | 7/22/2020 9AM PST | [Material](https://docs.google.com/document/d/17YFhsFWRxFNdHBhEQB3cQkOocXu-jWBtTsDWwek56oU) | TBD | 
+| Zoom! | GNPS GC - Part 2	| 7/29/2020 9AM PST | TBD |
+| Zoom! | 1st GNPS User Meeting	| 8/26/2020 9AM PST | [More Information](https://docs.google.com/document/d/1CR2gURxDJimbaIcqszm6msHx55VQ5IIM2dtsvQWapGY/edit?usp=sharing) |
 |TBD | TBD | TBD | -----|
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
@@ -35,14 +33,22 @@ Here is a table to briefly browse them
 | Module 11 | MolNetEnhancer | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module11-Molnetenhancer) |
 | Module 12 | MS2LDA | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module12-MS2LDA) |
 | Module 13 | Adding Reference Library Spectra | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module13-AddingReferenceSpectra) |
-
+| Module 15 | Merge Network Polarity | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module15-MergeNetworkPolarity) |
+| Module 16 | Metabolomics Spectrum Resolver | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module16-MetabolomicsSpectrumResolver) |
+| Module 17 | ChemDir | [Link](https://github.com/CCMS-UCSD/GNPS_TrainingTutorialModules/tree/master/modules/Module17-ChemDir) |
 
 ## Previous Workshops
 
 | Venue        | Description          | Dates | Material | Estimated Attendance |
 | ------------- |-------------| -----| -----| ----- |
-| Zoom! | GNPS Merge Polarity Networks - Merging Networks from Positive and Negative Mode	| 6/11/2020 9AM PST | [Material](https://docs.google.com/document/d/1-dwuCXvbGEbrFADPmjZXRQWOtcaElXaNxRqcqLEK-us/edit?usp=sharing) | 30 |
-| Zoom! | GNPS MolNetEnhancer	| 6/3/2020 9AM PST | [Material](https://docs.google.com/document/d/1qyepInMfujbG7Mgbm4fnuQf87i8JctvTUKjTs69T_os/edit?usp=sharing) | 47 |
+| Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 7/15/2020 9AM PST | [Material](https://docs.google.com/document/d/1srJxW1DxMNsOyT8YlraBmDJHJkI9EDw3l2JRmQL2jjI/edit?usp=sharing) | 40 |
+| Zoom! | GNPS Feature Based Molecular Networking in Espanol - Part 1	| 7/8/2020 9AM PST | [Material](https://docs.google.com/document/d/1raBdT8QuHntm-im7DjxB3epG7_D_JEAXNY-_AoFvaWc/edit?usp=sharing) | 40 |
+| Zoom! | GNPS Feature Based Molecular Networking in Espanol - Part 2| 7/9/2020 9AM PST | [Material](https://docs.google.com/document/d/1wleocmsb1hoJrREujJFVjMH3wz4jH8MnpcMqbg1j5j0/edit?usp=sharing) | 50 |
+| Zoom! | Metabolomics Spectrum Resolver - Unifing spectrum rendering and customization	| 7/1/2020 9AM PST | [Materials](https://docs.google.com/document/d/1xAbhHj4T3BV80oKuwmaxVl4HprecjquqRtnhCZOVVHQ/edit?usp=sharing) | 35 |
+| Zoom! | GNPS - MS2LDA | 6/24/2020 9AM PST | [Material](https://docs.google.com/document/d/1i0oXux-plxF9oxK-MFIBgARkqM-wJzKPAjj-XVhrHk4/edit) | 40 |
+| Zoom! | GNPS Classical Molecular Networking in Español | 6/17/2020 9AM PST | [Material](https://docs.google.com/document/d/1sR9QjF5kCix7iJs1PQUm0rPwX1Naxwarxqxd04gBesw/edit) [Video](https://www.youtube.com/watch?v=hTZzZI3PtR0) | 60 |
+| Zoom! | GNPS Merge Polarity Networks - Merging Networks from Positive and Negative Mode	| 6/11/2020 9AM PST | [Material](https://docs.google.com/document/d/1-dwuCXvbGEbrFADPmjZXRQWOtcaElXaNxRqcqLEK-us/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=wHdr9coLmoQ)  | 30 |
+| Zoom! | GNPS MolNetEnhancer	| 6/3/2020 9AM PST | [Material](https://docs.google.com/document/d/1qyepInMfujbG7Mgbm4fnuQf87i8JctvTUKjTs69T_os/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=-4DE_ZfF2vc) | 47 |
 | Zoom! | GC-MS deconvolution, library search and molecular networking | 5/27/2020 9AM PST | [Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit) | 44 |
 | YouTube | Utilizing GNPS and MS2LDA for some molecular networking discovery	| 5/21/2020 6AM PST | [LiveStream](https://www.youtube.com/watch?v=Cc6eKGZQ1Qw&feature=youtu.be) | --- |
 | Zoom! | GNPS Ion-Identity Networking, Native Metabolomics	| 5/20/2020 9AM PST | [Material](https://docs.google.com/document/d/1Fasu3Gh0PsgW6-KW-FmKz-NgU6OLXrRHm_zAssVGZ-M/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=tb7LxaeNvcw) | 65 |

@@ -12,7 +12,7 @@ Please help us fill in more completely!
 | Category  | Workflow  | GNPS Link  | Beta Link  | Documentation | Source Code | Citation | 
 |---|---|---|---|---|---|---|
 | Networking | Molecular Networking  | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D)  | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D) | [Documentation](networking.md) | [Github](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/metabolomics-snets-v2) | [Citation](https://www.nature.com/articles/nbt.3597) |
-| Networking | Feature-Based Molecular Networking  | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D)   | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) |
+| Networking | Feature-Based Molecular Networking  | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D)   | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) | [Documentation](featurebasedmolecularnetworking.md) 
 | Networking | Merge Polarity Networks  | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MERGE_NETWORKS_POLARITY%22%7D)   | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MERGE_NETWORKS_POLARITY%22%7D) | [Documentation](mergepolarity.md) |
 | Networking | MS2LDA Motif DB  | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MS2LDA_MOTIFDB%22%7D)   | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MS2LDA_MOTIFDB%22%7D) | [Documentation](ms2lda.md) |  [Github-ms2lda](https://github.com/sdrogers/lda), [Github-ms2ldaviz](https://github.com/sdrogers/ms2ldaviz)  | [Citation-ms2lda](https://www.pnas.org/content/113/48/13738), [Citation-ms2ldaviz](https://academic.oup.com/bioinformatics/article/34/2/317/4158166) |
 | Networking | MolNetEnhancer / MetaboDistTree  | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MOLNETENHANCER%22%7D)   | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MOLNETENHANCER%22%7D) | [Documentation](molnetenhancer.md)|  [Github-MolNetEnhancer](https://github.com/madeleineernst/pyMolNetEnhancer), [Github-MetaboDistTrees](https://github.com/madeleineernst/MetaboDistTrees) | [Citation](https://www.mdpi.com/2218-1989/9/7/144) |
@@ -29,10 +29,12 @@ Please help us fill in more completely!
 | Data Processing | MSHub-GC Deconvolution  | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B"workflow":"MSHUB-GC"%7D)   | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B"workflow":"MSHUB-GC"%7D) | 
 | Data Processing | OpenMS Feature Detector for FBMN - Future Feature  | [Workflow]()   | [Workflow]() |---|
 | Data Processing | LC - MZMine2 | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22LC_MZMINE2%22%7D) | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22LC_MZMINE2%22%7D) |
-| Data Processing | MSMS-Chooser  | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MSMS-CHOOSER%22%7D)   | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MSMS-CHOOSER%22%7D) |[Documentation](https://ccms-ucsd.github.io/GNPSDocumentation/msmschooser/)| [Github](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/msms-chooser) |[Citation](https://onlinelibrary.wiley.com/doi/abs/10.1002/rcm.8725)| 
-
+| Data Processing | MSMS-Chooser  | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MSMS-CHOOSER%22%7D)   | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MSMS-CHOOSER%22%7D) |[Documentation](msmschooser.md)| [Github](https://github.com/CCMS-UCSD/GNPS_Workflows/tree/master/msms-chooser) |[Citation](https://onlinelibrary.wiley.com/doi/abs/10.1002/rcm.8725)| 
+| Data Processing | ChemDir  | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22%3A%20%22CHEMDIR%22%7D)   | --- |[Documentation](chemdir.md)| --- |---|
 
 ## GNPS Web Tools
+
+These are web tools that is run by the GNPS team and provides complementary funcationality to GNPS. 
 
 | Tool  | Documentation | Source Code | Citation |
 |---|---|---|---|
@@ -41,16 +43,26 @@ Please help us fill in more completely!
 | [GNPS Quickstart/Batch Validator](https://gnps-quickstart.ucsd.edu) | TODO | TODO |
 | [GNPS Cytoscape](https://gnps-cytoscape.ucsd.edu) | TODO | TODO |
 | [GNPS MASST](https://masst.ucsd.edu) | [Documentation](https://ccms-ucsd.github.io/GNPSDocumentation/masst/) | TODO | [Citation](https://www.nature.com/articles/s41587-019-0375-9)|
-| [Metabolomics Spectrum Resolver](https://metabolomics-usi.ucsd.edu) | [GitHub](https://github.com/mwang87/MetabolomicsSpectrumResolver) | TODO |
-| [Qemistree Dashboard](https://qemistree.ucsd.edu) | TODO | TODO |
-| [GNPS Networking URL Formatter](https://gnps-urlworkflow.herokuapp.com/) | TODO | TODO |
-| [GNPS Task Esquisse Server (Beta)](http://dorresteintesthub.ucsd.edu:8347/) | TODO | TODO |
-| [GNPS Result View Esquisse Server (Super Beta)](http://dorresteintesthub.ucsd.edu:8359/) | TODO | TODO |
-| [GNPS Text Esquisse Server (Super Beta)](https://gnps.shinyapps.io/text_entry/) | TODO | TODO |
-| [GNPS Library Dash Explorer](http://dorresteinappshub.ucsd.edu:6546/) | TODO | TODO |
-| [GNPS Mass Spec Calculator (Beta)](https://gnps-masscalculator.herokuapp.com/) | TODO | TODO |
-| [GNPS Usage Stats Dashboard](https://gnps-usage-stats.herokuapp.com/) | [GitHub](https://github.com/mwang87/GNPS_StatsSummaryDashboard) | --- |
-| [GNPS Upset Plot Dashboard (Beta)](https://gnps-classical-comparison.herokuapp.com/) | [GitHub](https://github.com/mwang87/GNPS_ClassicalNetworkGroupsComparisonDashboard) | --- |
+| [Metabolomics Spectrum Resolver](https://metabolomics-usi.ucsd.edu) | --- | [GitHub](https://github.com/mwang87/MetabolomicsSpectrumResolver) | TODO |
+| [Qemistree Dashboard](https://qemistree.ucsd.edu) | [Documentation](qemistree.md) | TODO |
+| [GNPS Networking URL Formatter](https://gnps-urlworkflow.herokuapp.com/) | --- | TODO |
+| [GNPS Task Esquisse Server (Beta)](http://dorresteintesthub.ucsd.edu:8347/) | --- | TODO |
+| [GNPS Result View Esquisse Server (Super Beta)](http://dorresteintesthub.ucsd.edu:8359/) | --- | TODO |
+| [GNPS Text Esquisse Server (Super Beta)](https://gnps.shinyapps.io/text_entry/) | --- | TODO |
+| [GNPS Library Dash Explorer](http://dorresteinappshub.ucsd.edu:6546/) | --- | TODO |
+| [GNPS Mass Spec Calculator (Beta)](https://gnps-masscalculator.herokuapp.com/) | --- | TODO |
+| [GNPS Usage Stats Dashboard](https://gnps-usage-stats.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_StatsSummaryDashboard) | --- |
+| [GNPS Upset Plot Dashboard (Beta)](https://gnps-classical-comparison.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_ClassicalNetworkGroupsComparisonDashboard) | --- |
+
+## GNPS Jupyter Notebooks
+
+These are Jupyter Notebooks that interact with GNPS web resources and do further processing. They serve as a prototype for future built-in infrastructure, check it out!
+
+| Tool | Documentation | Source Code | Binder Launch |
+| ---- | ------------- | ----------- | ------------- |
+| GNPS MASST Post Processing | TODO | [GitHub](https://github.com/mwang87/GNPS_MASST_Notebooks) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mwang87/GNPS_MASST_Notebooks/master) |
+| GNPS Bioactive Molecular Networks | TODO | [GitHub](https://github.com/DorresteinLaboratory/Bioactive_Molecular_Networks) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DorresteinLaboratory/Bioactive_Molecular_Networks/master) |
+
 
 
 ## Community Tools GNPS Interfaces with
@@ -62,7 +74,9 @@ Please help us fill in more completely!
 | [MIBiG](https://mibig.secondarymetabolites.org/) | [Citation](https://academic.oup.com/nar/article/48/D1/D454/5587631) |
 | [ClassyFire](http://classyfire.wishartlab.com/) | [Citation](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0174-y) |
 | [SMART NMR](http://smart.ucsd.edu) | [Citation](https://pubs.acs.org/doi/abs/10.1021/jacs.9b13786) |
-| MassBank | [Citation](https://onlinelibrary.wiley.com/doi/full/10.1002/jms.1777?casa_token=Wr51kpu9hCgAAAAA%3AERBV24GFextLVnW0J4SDcdJAskSYG2eqf2tgh8AUBeowVLnKBErbLqJxEzOQJUz2MqrI5dKr47zSVXw) | 
+| MassBank | [Citation](https://onlinelibrary.wiley.com/doi/full/10.1002/jms.1777?casa_token=Wr51kpu9hCgAAAAA%3AERBV24GFextLVnW0J4SDcdJAskSYG2eqf2tgh8AUBeowVLnKBErbLqJxEzOQJUz2MqrI5dKr47zSVXw) |
+| Cytoscape | [Citation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC403769/) |
+| ProteoWizard | [Citation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2732273/) |
 
 ## GNPS Tools Interoperability Graph
 
