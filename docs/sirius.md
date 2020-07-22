@@ -17,11 +17,13 @@ Checkout the beta workflow [here](https://proteomics2.ucsd.edu/ProteoSAFe/index.
 
 For more information on SIRIUS, [please refer to the official SIRIUS documentation](https://bio.informatik.uni-jena.de/software/sirius/).
 
-### with the Feature-Based Molecular Networking
+### With the Feature-Based Molecular Networking
 
-Run the feature-based 
+The MGF file from the [Feature-Based Molecular Networking workflow](featurebasedmolecularnetworking.md) can be used as input for the SIRIUS workflow. The results can then be mapped on the molecular networks. When using MZmine, for best results, uses the SIRIUSExport module from the same aligned peaklist.
 
-### with the SIRIUS mzML parser
+### With the SIRIUS mzML parser [Experimental]
+
+SIRIUS has now a built-in mzML parser. The SIRIUS workflow on GNPS allows the selection of one mzML file. This is an experimental features under development.
 
 ## Results
 
