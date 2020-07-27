@@ -2,7 +2,7 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Zoom! | GNPS GC - Part 2	| 7/29/2020 9AM PST | TBD |
+| Zoom! | GNPS GC - Part 2	| 7/29/2020 9AM PST | [Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit?ts=5f1f15d2)|
 | Zoom! | 1st GNPS User Meeting	| 8/26/2020 9AM PST | [More Information](https://docs.google.com/document/d/1CR2gURxDJimbaIcqszm6msHx55VQ5IIM2dtsvQWapGY/edit?usp=sharing) |
 |TBD | TBD | TBD | -----|
 
