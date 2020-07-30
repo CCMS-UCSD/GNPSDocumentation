@@ -1774,6 +1774,8 @@ The corresponding OpenMS configuration files (.INI files) are available from tha
 <ul>
 <li>The <em>IDMapper</em> has to be run on the featureXML files, in order to associate MS2 scan(s) (peptide annotation) with each feature. These peptide annotations are used by the GNPSExport.</li>
 <li>The <em>FileFilter</em> has to be run on the consensusXML file, prior to the GNPSExport, in order to remove consensusElements without MS2 scans (peptide annotation).</li>
+<li>Note that mass accuracy and the retention time window for the pairing between MS2 scan(s) and a LC-MS feature
+or consensusElement is defined at the IDMapper tool step for features.</li>
 </ul>
 <h4 id="the-gnpsexport-topp-tool">The GNPSExport TOPP tool<a class="headerlink" href="#the-gnpsexport-topp-tool" title="Permanent link">&para;</a></h4>
 <p>The <em>GNPSExport TOPP tool</em> can be run on the consensusXML file and corresponding mzML files to generate a MS/MS spectral file (MGF format) and corresponding feature quantification table (.TXT format) that contains LC-MS peak area intensities.</p>
@@ -1789,20 +1791,19 @@ The corresponding OpenMS configuration files (.INI files) are available from tha
 <h5 id="options-for-the-consensus-msms-spectra-output_type">Options for the consensus MS/MS spectra: <code>output_type</code><a class="headerlink" href="#options-for-the-consensus-msms-spectra-output_type" title="Permanent link">&para;</a></h5>
 <ul>
 <li>
-<p><strong>Merge [RECOMMENDED]</strong>: <code>merged_spectra</code> - For each <em>consensusElement</em>, the GNPSExport will merge all eligible MS/MS scans into one representative <em>consensus MS/MS spectrum</em>. Eligible MS/MS scans have a pairwise <em>cosine similarity</em> with the MS/MS scan of highest precursor intensity above the <em>Cosine Similarity Treshold</em>. The fragment ions of merged MS/MS scans are binned in m/z (or Da) range defined by the <em>Binning width</em> parameter.</p>
+<p><strong>Most intense</strong> [default]: <code>most_intense</code> - For each <em>consensusElement</em>, the GNPSExport will output the <em>most intense</em> MS/MS scan (with the highest precursor ion intensity) as <em>representative MS/MS spectrum</em>.</p>
+</li>
+<li>
+<p><strong>All MS/MS</strong>: <code>full_spectra</code> - For each <em>consensusElement</em>, the GNPSExport will output <em>All MS/MS scans</em>.</p>
+</li>
+<li>
+<p><strong>Merge</strong> [Experimental]: <code>merged_spectra</code> - For each <em>consensusElement</em>, the GNPSExport will merge all eligible MS/MS scans into one representative <em>MS/MS spectrum</em>. Eligible MS/MS scans have a pairwise <em>cosine similarity</em> with the MS/MS scan of highest precursor intensity above the <em>Cosine Similarity Treshold</em>. The fragment ions of merged MS/MS scans are binned in m/z (or Da) range defined by the <em>Binning width</em> parameter.</p>
 <ul>
 <li><strong>Cosine Similarity Treshold</strong>: <code>merged_spectra:cos_similarity</code> (float, default: 0.9) - Parameter that defines <em>Cosine Similarity Treshold</em> for the pairwise <em>cosine similarity</em> between the MS/MS scan with the highest precursor intensity and the other MS/MS scans.</li>
 <li><strong>Binning width</strong>: <code>merged_spectra:ms2_binned_size</code> (float, default: 0.02 Daltons) -  Parameter that defines the <em>Binning width</em> of fragment ions during the merging of eligible MS/MS spectra.</li>
 </ul>
 </li>
-<li>
-<p><strong>Most intense</strong>: <code>most_intense</code> - For each <em>consensusElement</em>, the GNPSExport will output the <em>most intense</em> MS/MS scan (with the highest precursor ion intensity) as <em>consensus MS/MS spectrum</em>.</p>
-</li>
-<li>
-<p><strong>All MS/MS</strong>: <code>full_spectra</code> - For each <em>consensusElement</em>, the GNPSExport will output <em>All MS/MS scans</em>.</p>
-</li>
 </ul>
-<p>Note that <em>mass accuracy</em> and the <em>retention time window</em> for the pairing between MS/MS scans and a LC-MS feature orconsensusElement is defined at the <em>IDMapper tool</em> step.</p>
 <h3 id="running-the-fbmn-workflow-with-openms-files">Running the FBMN workflow with OpenMS files<a class="headerlink" href="#running-the-fbmn-workflow-with-openms-files" title="Permanent link">&para;</a></h3>
 <p>After the processing with OpenMS, the output files can be used to run the Feature-Based Molecular Networking workflow on GNPS either using the [Superquick FBMN start page] (http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking) or <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">the standard interface of the FBMN workflow</a> (you need to be logged in GNPS first).</p>
 <p>Make sure to select the correct table source (OpenMS).</p>
@@ -1813,7 +1814,7 @@ The corresponding OpenMS configuration files (.INI files) are available from tha
 <li>To contribute to the GNPS documentation, please use GitHub by forking the <a href="https://github.com/CCMS-UCSD/GNPSDocumentation"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request" with the changes.</li>
 </ul>
 <h2 id="page-contributors">Page Contributors<a class="headerlink" href="#page-contributors" title="Permanent link">&para;</a></h2>
-<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (7.2%), <a href='mailto:louisfelix.nothias@gmail.com'>lfnothias</a> (83.2%), <a href='mailto:iprotsyuk@google.com'>Ivan Protsyuk</a> (9.6%)</span></p>
+<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (7.26%), <a href='mailto:louisfelix.nothias@gmail.com'>lfnothias</a> (83.87%), <a href='mailto:iprotsyuk@google.com'>Ivan Protsyuk</a> (8.87%)</span></p>
                 
                   
                     
@@ -1822,7 +1823,7 @@ The corresponding OpenMS configuration files (.INI files) are available from tha
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 13, 2020 23:18:29</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 22, 2020 00:02:36</span>
     
   </small>
 </div>

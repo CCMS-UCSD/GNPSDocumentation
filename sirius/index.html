@@ -904,12 +904,59 @@
     GNPS Workflow
   </a>
   
+    <nav class="md-nav" aria-label="GNPS Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#workflow-description" class="md-nav__link">
+    Workflow description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-the-feature-based-molecular-networking" class="md-nav__link">
+    With the Feature-Based Molecular Networking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-the-sirius-mzml-parser-experimental" class="md-nav__link">
+    With the SIRIUS mzML parser [Experimental]
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#results" class="md-nav__link">
     Results
   </a>
+  
+    <nav class="md-nav" aria-label="Results">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#viewing-the-results" class="md-nav__link">
+    Viewing the results
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-the-results-onto-the-molecular-networks" class="md-nav__link">
+    Mapping the results onto the molecular networks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -922,8 +969,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#main-citation" class="md-nav__link">
-    Main citation
+  <a href="#main-citations" class="md-nav__link">
+    Main citations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-citations" class="md-nav__link">
+    Additional citations
   </a>
   
 </li>
@@ -1499,12 +1553,59 @@
     GNPS Workflow
   </a>
   
+    <nav class="md-nav" aria-label="GNPS Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#workflow-description" class="md-nav__link">
+    Workflow description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-the-feature-based-molecular-networking" class="md-nav__link">
+    With the Feature-Based Molecular Networking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-the-sirius-mzml-parser-experimental" class="md-nav__link">
+    With the SIRIUS mzML parser [Experimental]
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#results" class="md-nav__link">
     Results
   </a>
+  
+    <nav class="md-nav" aria-label="Results">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#viewing-the-results" class="md-nav__link">
+    Viewing the results
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-the-results-onto-the-molecular-networks" class="md-nav__link">
+    Mapping the results onto the molecular networks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1517,8 +1618,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#main-citation" class="md-nav__link">
-    Main citation
+  <a href="#main-citations" class="md-nav__link">
+    Main citations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-citations" class="md-nav__link">
+    Additional citations
   </a>
   
 </li>
@@ -1555,25 +1663,52 @@
                   
                 
                 
-                <h1 id="sirius">Sirius<a class="headerlink" href="#sirius" title="Permanent link">&para;</a></h1>
+                <h1 id="sirius">SIRIUS<a class="headerlink" href="#sirius" title="Permanent link">&para;</a></h1>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
-<p>Sirius is an in silico analysis tool developed by the <a href="https://bio.informatik.uni-jena.de/software/sirius/">Bocker Lab</a>.</p>
+<p>SIRIUS is an tool for the computational annotation of fragmentation spectra tool developed by the <a href="https://bio.informatik.uni-jena.de/software/sirius/">Böcker Lab at Jena University</a>.</p>
 <h2 id="gnps-workflow">GNPS Workflow<a class="headerlink" href="#gnps-workflow" title="Permanent link">&para;</a></h2>
-<p>In GNPS, we have brought Sirius in house to enable users to perform automated high throughput analysis with Sirius. There are three distinct operations we support for Sirius:</p>
+<h4 id="workflow-description">Workflow description<a class="headerlink" href="#workflow-description" title="Permanent link">&para;</a></h4>
+<p>We are working on deploying SIRIUS on GNPS to enable users to perform automated high throughput computational annotation. Various annotations using the SIRIUS modules:</p>
 <ol>
-<li>Formula Prediction</li>
-<li>Structure Assignment</li>
-<li>Compound Class Prediction</li>
+<li>Molecular formula prediction with <em>SIRIUS</em> and <em>ZODIAC</em>.</li>
+<li>Structure assignment with <em>CSI:FingerID</em> and <em>COSMIC</em>.</li>
+<li>Compound class prediction with <em>CANOPUS</em>.</li>
 </ol>
 <p>Checkout the beta workflow <a href="https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22SIRIUS%22%7D">here</a>.</p>
+<p>For more information on SIRIUS, <a href="https://bio.informatik.uni-jena.de/software/sirius/">please refer to the official SIRIUS documentation</a>.</p>
+<h3 id="with-the-feature-based-molecular-networking">With the Feature-Based Molecular Networking<a class="headerlink" href="#with-the-feature-based-molecular-networking" title="Permanent link">&para;</a></h3>
+<p>The MGF file from the <a href="../featurebasedmolecularnetworking/">Feature-Based Molecular Networking workflow</a> can be used as input for the SIRIUS workflow. The results can then be mapped on the molecular networks. When using MZmine, for best results, uses the SIRIUSExport module from the same aligned peaklist.</p>
+<h3 id="with-the-sirius-mzml-parser-experimental">With the SIRIUS mzML parser [Experimental]<a class="headerlink" href="#with-the-sirius-mzml-parser-experimental" title="Permanent link">&para;</a></h3>
+<p>SIRIUS has now a built-in mzML parser. The SIRIUS workflow on GNPS allows the selection of one mzML file. This is an experimental features under development.</p>
 <h2 id="results">Results<a class="headerlink" href="#results" title="Permanent link">&para;</a></h2>
-<p>Lorem Ipsum</p>
+<h3 id="viewing-the-results">Viewing the results<a class="headerlink" href="#viewing-the-results" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>View Molecular Formula Summary</strong>: view molecular formula annotations results from <em>SIRIUS</em> and <em>ZODIAC</em>.</p>
+<p><strong>View Compound Summary</strong>:  view structure assignment with <em>CSI:FingerID</em> and <em>COSMIC</em>.</p>
+<p><strong>View CANOPUS results</strong>: view compound class prediction with <em>CANOPUS</em>.</p>
+</blockquote>
+<h3 id="mapping-the-results-onto-the-molecular-networks">Mapping the results onto the molecular networks<a class="headerlink" href="#mapping-the-results-onto-the-molecular-networks" title="Permanent link">&para;</a></h3>
+<p>If you used the <a href="../featurebasedmolecularnetworking/">Feature-Based Molecular Networking workflow</a>, you can map SIRIUS annotation onto the molecular networks in Cytoscape.</p>
+<ul>
+<li>Clic on the "download" button to download the results. </li>
+<li>Import the results onto your network. More informations should be added here</li>
+</ul>
 <h2 id="citations">Citations<a class="headerlink" href="#citations" title="Permanent link">&para;</a></h2>
-<p>If you found this workflow to be useful for your data analysis, please cite the relevant literature from below.</p>
-<h3 id="main-citation">Main citation<a class="headerlink" href="#main-citation" title="Permanent link">&para;</a></h3>
-<p><a href="https://www.nature.com/articles/s41592-019-0344-8">Kai Dührkop, Markus Fleischauer, Marcus Ludwig, Alexander A. Aksenov, Alexey V. Melnik, Marvin Meusel, Pieter C. Dorrestein, Juho Rousu, and Sebastian Böcker, Sirius 4: turning tandem mass spectra into metabolite structure information, Nat methods, 16, 2019.</a></p>
+<p>The GNPS workflow is brought to you Ming Wang and Louis Felix Nothias. If you found this workflow useful for your data analysis, please cite the relevant literature from below.</p>
+<h3 id="main-citations">Main citations<a class="headerlink" href="#main-citations" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>SIRIUS</strong>: <a href="https://www.nature.com/articles/s41592-019-0344-8">K. Dührkop, et al., SIRIUS 4: a rapid tool for turning tandem mass spectra into metabolite structure information. Nat. Methods 16, 299–302 (2019).</a></li>
+<li><strong>ZODIAC</strong>: <a href="">M. Ludwig, et al., ZODIAC: database-independent molecular formula annotation using Gibbs sampling reveals unknown small molecules. bioRxiv (2019).</a></li>
+<li><strong>CSI:FingerID</strong> <a href="https://www.pnas.org/content/112/41/12580">K. Dührkop, H. Shen, M. Meusel, J. Rousu, S. Böcker, Searching molecular structure databases with tandem mass spectra using CSI:FingerID. Proc. Natl. Acad. Sci. U. S. A. 112, 12580–12585 (2015).</a></li>
+<li><strong>CANOPUS</strong> <a href="https://www.biorxiv.org/content/10.1101/2020.04.17.046672v1">K. Dührkop, et al., Classes for the masses: Systematic classification of unknowns using fragmentation spectra. bioRxiv, 2020.04.17.046672 (2020).</a></li>
+</ol>
+<h3 id="additional-citations">Additional citations<a class="headerlink" href="#additional-citations" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="">S. Böcker, M. C. Letzel, Z. Lipták, A. Pervukhin, SIRIUS: decomposing isotope patterns for metabolite identification. Bioinformatics 25, 218–224 (2009).</a></li>
+<li><a href="">S. Böcker, K. Dührkop, Fragmentation trees reloaded. J. Cheminform. 8, 5 (2016).</a></li>
+</ol>
 <h2 id="page-contributors">Page Contributors<a class="headerlink" href="#page-contributors" title="Permanent link">&para;</a></h2>
-<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a></span></p>
+<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (35.48%), <a href='mailto:louisfelix.nothias@gmail.com'>lfnothias</a> (64.52%)</span></p>
                 
                   
                     
@@ -1582,7 +1717,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 17, 2020 21:25:42</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 22, 2020 04:31:55</span>
     
   </small>
 </div>
