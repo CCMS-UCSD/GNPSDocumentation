@@ -21,10 +21,13 @@ For more information on SIRIUS, [please refer to the official SIRIUS documentati
 
 The MGF file from the [Feature-Based Molecular Networking workflow](featurebasedmolecularnetworking.md) can be used as input for the SIRIUS workflow. The results can then be mapped on the molecular networks. When using MZmine, for best results, uses the SIRIUSExport module from the same aligned peaklist.
 
-### With the SIRIUS mzML parser [Experimental]
+### With the SIRIUS mzML parser 
 
-SIRIUS has now a built-in mzML parser. The SIRIUS workflow on GNPS allows the selection of one mzML file. This is an experimental features under development.
+SIRIUS has now a built-in mzML parser. The SIRIUS workflow on GNPS allows the selection of one mzML file. 
 
+!!! warning
+    Note this support is currently experimental and under development! 
+    
 ## Results
 
 ### Viewing the results
