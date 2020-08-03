@@ -2,7 +2,6 @@
 
 | Venue        | Description          | Dates | Material |
 | ------------- |-------------| -----| -----|
-| Zoom! | GNPS GC - Part 2	| 7/29/2020 9AM PST | [Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit?ts=5f1f15d2)|
 | Zoom! | 1st GNPS User Meeting	| 8/26/2020 9AM PST | [More Information](https://docs.google.com/document/d/1CR2gURxDJimbaIcqszm6msHx55VQ5IIM2dtsvQWapGY/edit?usp=sharing) |
 |TBD | TBD | TBD | -----|
 
@@ -40,6 +39,7 @@ Here is a table to briefly browse them
 
 | Venue        | Description          | Dates | Material | Estimated Attendance |
 | ------------- |-------------| -----| -----| ----- |
+| Zoom! | GNPS GC - Part 2	| 7/29/2020 9AM PST | [Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit?ts=5f1f15d2)| 20 |
 | Zoom! | GNPS Classical Molecular Networking in Portuguese | 7/22/2020 9AM PST | [Material](https://docs.google.com/document/d/17YFhsFWRxFNdHBhEQB3cQkOocXu-jWBtTsDWwek56oU) | 450 | 
 | Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 7/15/2020 9AM PST | [Material](https://docs.google.com/document/d/1srJxW1DxMNsOyT8YlraBmDJHJkI9EDw3l2JRmQL2jjI/edit?usp=sharing) | 40 |
 | Zoom! | GNPS Feature Based Molecular Networking in Espanol - Part 1	| 7/8/2020 9AM PST | [Material](https://docs.google.com/document/d/1raBdT8QuHntm-im7DjxB3epG7_D_JEAXNY-_AoFvaWc/edit?usp=sharing) | 40 |
