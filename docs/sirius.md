@@ -21,10 +21,13 @@ For more information on SIRIUS, [please refer to the official SIRIUS documentati
 
 The MGF file from the [Feature-Based Molecular Networking workflow](featurebasedmolecularnetworking.md) can be used as input for the SIRIUS workflow. The results can then be mapped on the molecular networks. When using MZmine, for best results, uses the SIRIUSExport module from the same aligned peaklist.
 
-### With the SIRIUS mzML parser [Experimental]
+### With the SIRIUS mzML parser 
 
-SIRIUS has now a built-in mzML parser. The SIRIUS workflow on GNPS allows the selection of one mzML file. This is an experimental features under development.
+SIRIUS has now a built-in mzML parser. The SIRIUS workflow on GNPS allows the selection of one mzML file. 
 
+!!! warning
+    Note this support is currently experimental and under development! 
+    
 ## Results
 
 ### Viewing the results
@@ -38,8 +41,17 @@ SIRIUS has now a built-in mzML parser. The SIRIUS workflow on GNPS allows the se
 
 If you used the [Feature-Based Molecular Networking workflow](featurebasedmolecularnetworking.md), you can map SIRIUS annotation onto the molecular networks in Cytoscape.
 
-- Clic on the "download" button to download the results. 
-- Import the results onto your network. More informations should be added here
+A quick way to do this can be found in this [Notebook](https://github.com/mwang87/GNPS_Sirius_Integration_Notebooks). Simply enter the FBMN task and Sirius task and you'll get a merged graphml that can be dragged into Cytoscape. 
+
+### Example Analysis
+
+Checkout this analyis of this E Coli data found [here](https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=9e16787375fe4ab1816ca01f7e5b7820). The steps we took were:
+
+1. [Feature Finding with MZmine2](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=8e54833ebf414238963da847ac743fe1)
+1. [Feature Based Molecular Networking](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=bb6766d6f48c4cb6bd84fd620da9cae5)
+1. [Sirius in GNPS](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=72542358ffca4eeda6a4b50d06b91e60)
+
+Let us know what you think!
 
 ## Citations
 
