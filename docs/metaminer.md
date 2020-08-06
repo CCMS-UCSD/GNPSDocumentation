@@ -143,6 +143,10 @@ When one sequence file is used, it is possible to use either the classical or fe
 - For informations/feature request, please open an "Issue" on the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) GitHub repository.
 - To contribute directly to the GNPS documentation, fork the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) repository, and make a "Pull Request".
 
+!!! cite "Recommended Citation" - [MetaMiner: A Scalable Peptidogenomics Approach for Discovery of Ribosomal Peptide Natural Products with Blind Modifications from Microbial Communities. Cao et al. Cell Systems 2019, 9(6), 600-608](https://pubmed.ncbi.nlm.nih.gov/31629686/)
+
+
+
 ## Page Contributors
 
 {{ git_page_authors }}
