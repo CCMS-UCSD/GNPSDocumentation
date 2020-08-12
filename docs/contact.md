@@ -8,7 +8,7 @@ For more in-depth assistance, we invite you to attend the numerous GNPS workshop
 
 ## GNPS Office Hours
 
-We are hosting online office hours on a bi-weekly basis online with Ming ([miw023@ucsd.edu](mainto:miw023@ucsd.edu) via Zoom:
+We are hosting online office hours on a bi-weekly basis online with Ming ([miw023@ucsd.edu](mainto:miw023@ucsd.edu)) via Zoom:
 
 https://ucsd.zoom.us/j/96785479814
 
