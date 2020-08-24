@@ -83,8 +83,8 @@ These are typical steps used for the processing of non-targeted LC-MS/MS data wi
 6. Run CAMERA for adduct annotation (`xsAnnotate`).
 6. Export the results file for FBMN on GNPS:
 	- **Option A** - Export a **feature quantification table** and a **MS/MS spectral summary file**:
-		-	Export a **feature quantification table** with ion intensities (.TXT file format) (`writeMgfData`).
-		-  	Export a **MS/MS spectral summary file** (.MGF file format). Note that it is recommended to use the maxTIC option for the MGF export. (`write.table`)
+		-	Export a **feature quantification table** with ion intensities (.TXT file format) (`write.table`).
+		-  	Export a **MS/MS spectral summary file** (.MGF file format). Note that it is recommended to use the maxTIC option for the MGF export. (`writeMgfData`)
 	- **Option B** - Export an **mzTab-M file**:
  
  		- Export and select the **mzTab-M file** in the interface. The use of the mzTab-M requires the subsequent upload of the mzML files used during the XCMS processing. See and cite this [publication](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.8b04310).
