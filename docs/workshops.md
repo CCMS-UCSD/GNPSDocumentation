@@ -38,7 +38,7 @@ Here is a table to briefly browse them
 
 | Venue        | Description          | Dates | Material | Estimated Attendance |
 | ------------- |-------------| -----| -----| ----- |
-| Zoom! | 1st GNPS User Meeting	| 8/26/2020 9AM PST | [Program](https://docs.google.com/document/d/1CR2gURxDJimbaIcqszm6msHx55VQ5IIM2dtsvQWapGY/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=4HMjK4Js8xI) |
+| Zoom! | 1st GNPS User Meeting	| 8/26/2020 9AM PST | [Program](https://docs.google.com/document/d/1CR2gURxDJimbaIcqszm6msHx55VQ5IIM2dtsvQWapGY/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=4HMjK4Js8xI) | 300 |
 | Zoom! | GNPS GC - Part 2	| 7/29/2020 9AM PST | [Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit?ts=5f1f15d2)| 20 |
 | Zoom! | GNPS Classical Molecular Networking in Portuguese | 7/22/2020 9AM PST | [Material](https://docs.google.com/document/d/17YFhsFWRxFNdHBhEQB3cQkOocXu-jWBtTsDWwek56oU) | 450 | 
 | Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 7/15/2020 9AM PST | [Material](https://docs.google.com/document/d/1srJxW1DxMNsOyT8YlraBmDJHJkI9EDw3l2JRmQL2jjI/edit?usp=sharing) | 40 |
