@@ -53,6 +53,7 @@ These are web tools that is run by the GNPS team and provides complementary func
 | [GNPS Mass Spec Calculator (Beta)](https://gnps-masscalculator.herokuapp.com/) | --- | TODO |
 | [GNPS Usage Stats Dashboard](https://gnps-usage-stats.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_StatsSummaryDashboard) | --- |
 | [GNPS Upset Plot Dashboard (Beta)](https://gnps-classical-comparison.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_ClassicalNetworkGroupsComparisonDashboard) | --- |
+| [NP Classifier](https://npclassifier.ucsd.edu/) | --- | [GitHub](https://github.com/mwang87/NP-Classifier) |
 
 ## GNPS Jupyter Notebooks
 
