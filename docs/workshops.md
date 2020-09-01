@@ -60,15 +60,15 @@ Here is a table to briefly browse them
 | Zoom! | GNPS Library Workshop/Hackathon | April 8 9AM PST| Mingxun Wang, Alan Jarmusch, Morgan Panitchpakdi, Emily Gentry | [Material](https://docs.google.com/document/d/1pu24hCoRr8trBhc_sJ34BiWamJHEpRkZYYnGYQRkAkU/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=IbXBpud57Z8) | 60 |
 | UFMT Brazil | VI Workshop Etnofarmacologia - Use of the GNPS platform | Nov 18 - 28 2019 | Mauricio Caraballo |||
 | MIT |Molecular Networking with MZmine and GNPS| Dec 5 2019 | Tomas Pluska, Daniel Petras, Robin Schmid | -----||
-| [ASP 2019](http://aspmeetings.pharmacognosy.us/) | GNPS Beginner/Advanced Workshop (3h) | July 2019 | Mingxun Wang | [Download](https://docs.google.com/document/d/1i80buu38_x79qeHVHGz2d_nyRYQJ92jV3mQfTtJLsB4/edit?usp=sharing) | 60 |
+| [ASP 2019](http://aspmeetings.pharmacognosy.us/) | GNPS Beginner/Advanced Workshop (3h) | July 2019 | Mingxun Wang, Pieter Dorrestein, Mauricio Caraballo | [Download](https://docs.google.com/document/d/1i80buu38_x79qeHVHGz2d_nyRYQJ92jV3mQfTtJLsB4/edit?usp=sharing) | 60 |
 | [RFMF2019](https://12-js-rfmf-2019.sciencesconf.org/), France | GNPS Beginner Workshop (4h) | May 20 |  | TBA ||
 | [Metabolomics 2019](http://metabolomics2019.org/) | GNPS Beginner Workshop (2h) | June 22 | Mingxun Wang, Madeleine Ernst, Zdenek Kamenik, Justin van der Hooft, Louis-Felix Nothias | [Download](https://docs.google.com/document/d/1_qoMd73M9KTFJ3A37GDY9Yqjim0s9EoxiqUa7CUX_gY/edit?usp=sharing) ||
-| Prague | GNPS Workshop (4h) | June 28| Mingxun Wang, Louis-Felix Nothias, Robin Schmid | TBA | 20 |
+| Prague | GNPS Workshop (4h) | June 28| Mingxun Wang, Louis-Felix Nothias, Robin Schmid, Justin van der Hooft | TBA | 20 |
 | NPS2019 - Symposia of Natural Products | Natural Product Dereplication using GNPS | Feb 5, 2019 | Madeleine Ernst, Daniel Petras, Mauricio Caraballo, Pieter Dorrestein | Coming Soon! ||
 | CCMS School - Natural Product Training | GNPS, Molecular Networking, Library Search, Quantitative Analysis, NP Database Search, De novo cyclopeptide sequencing | Dec 12/13 2018 | Louis-Felix Nothias, Daniel Petras | [Download](https://www.dropbox.com/s/zyxhxcsgh3b65qk/CCMS%20School%20GNPS%20Workshop.pptx?dl=1) ||
 | EMSC Workshop 2018 | This short course is aimed at explaining how to use the METASPACE and GNPS platforms for large scale data analysis in mass spectrometry (MS) based metabolomics experiments | March 11, 2018 | Daniel Petras, Pieter Dorrestein | [Download](https://www.dropbox.com/s/ob8kh5su081hexf/EMSC2018-GNPS-Workshop.pdf?dl=1) ||
 | GNPS workshop in Grahamstown, South Africa (Rhodes University) |  GNPS introduction with Molecular Networking | November 14, 2018 | Emily Gentry, Allegra Aron, Daniel Petras | N/A ||
-| ASP 2018 | GNPS Introduction, Molecular Networking - Natural Product Discovery in bacterial extraction, `ili 3D cartography, MetBLAST - leveraging public datasets | July 2018 | Mingxun Wang | [Download](ftp://massive.ucsd.edu/MSV000082622/updates/2018-08-02_mwang87_0a19cfec/other/ASP2018_GNPS_Workshop.zip) ||
+| ASP 2018 | GNPS Introduction, Molecular Networking - Natural Product Discovery in bacterial extraction, `ili 3D cartography, MASST - leveraging public datasets | July 2018 | Mingxun Wang, Pieter Dorrestein, Mauricio Caraballo, Kyo Bin Kang | [Download](ftp://massive.ucsd.edu/MSV000082622/updates/2018-08-02_mwang87_0a19cfec/other/ASP2018_GNPS_Workshop.zip) ||
 | Metabolomics 2018 | GNPS Introduction, Molecular Networking - Food Analysis, `ili 3D cartography of plants, MS2LDA | July 2018 |  | Coming Soon ||
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xotOmx11UTebhBV-LfYgLsKrfdyprw4z" width="640" height="480"></iframe>
