@@ -1,8 +1,8 @@
 ## Upcoming Workshops and Events
 
-| Venue        | Description          | Dates | Material |
-| ------------- |-------------| -----| -----|
-|TBD | TBD | TBD | -----|
+| Venue        | Description          | Dates |  Speakers/Instructors |Material |
+| ------------- |-------------| -----| -----| -----|
+|TBD | TBD | TBD | -----| -----|
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
 
