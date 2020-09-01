@@ -1,8 +1,8 @@
 ## Upcoming Workshops and Events
 
-| Venue        | Description          | Dates | Material |
-| ------------- |-------------| -----| -----|
-|TBD | TBD | TBD | -----|
+| Venue        | Description          | Dates |  Speakers/Instructors |Material |
+| ------------- |-------------| -----| -----| -----|
+|TBD | TBD | TBD | -----| -----|
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
 
@@ -36,40 +36,40 @@ Here is a table to briefly browse them
 
 ## Previous Workshops
 
-| Venue        | Description          | Dates | Material | Estimated Attendance |
-| ------------- |-------------| -----| -----| ----- |
-| Zoom! | 1st GNPS User Meeting	| 8/26/2020 9AM PST | [Program](https://docs.google.com/document/d/1CR2gURxDJimbaIcqszm6msHx55VQ5IIM2dtsvQWapGY/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=4HMjK4Js8xI) | 300 |
-| Zoom! | GNPS GC - Part 2	| 7/29/2020 9AM PST | [Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit?ts=5f1f15d2)| 20 |
-| Zoom! | GNPS Classical Molecular Networking in Portuguese | 7/22/2020 9AM PST | [Material](https://docs.google.com/document/d/17YFhsFWRxFNdHBhEQB3cQkOocXu-jWBtTsDWwek56oU) | 450 | 
-| Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 7/15/2020 9AM PST | [Material](https://docs.google.com/document/d/1srJxW1DxMNsOyT8YlraBmDJHJkI9EDw3l2JRmQL2jjI/edit?usp=sharing) | 40 |
-| Zoom! | GNPS Feature Based Molecular Networking in Espanol - Part 1	| 7/8/2020 9AM PST | [Material](https://docs.google.com/document/d/1raBdT8QuHntm-im7DjxB3epG7_D_JEAXNY-_AoFvaWc/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=0xWMAwM8x3U&feature=youtu.be)| 40 |
-| Zoom! | GNPS Feature Based Molecular Networking in Espanol - Part 2| 7/9/2020 9AM PST | [Material](https://docs.google.com/document/d/1wleocmsb1hoJrREujJFVjMH3wz4jH8MnpcMqbg1j5j0/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=l90j5T8EQbw&feature=youtu.be)| 50 |
-| Zoom! | Metabolomics Spectrum Resolver - Unifing spectrum rendering and customization	| 7/1/2020 9AM PST | [Materials](https://docs.google.com/document/d/1xAbhHj4T3BV80oKuwmaxVl4HprecjquqRtnhCZOVVHQ/edit?usp=sharing) | 35 |
-| Zoom! | GNPS - MS2LDA | 6/24/2020 9AM PST | [Material](https://docs.google.com/document/d/1i0oXux-plxF9oxK-MFIBgARkqM-wJzKPAjj-XVhrHk4/edit) [Video](https://www.youtube.com/watch?v=0wKUmjPy40s) | 40 |
-| Zoom! | GNPS Classical Molecular Networking in Español | 6/17/2020 9AM PST | [Material](https://docs.google.com/document/d/1sR9QjF5kCix7iJs1PQUm0rPwX1Naxwarxqxd04gBesw/edit) [Video](https://www.youtube.com/watch?v=hTZzZI3PtR0) | 60 |
-| Zoom! | GNPS Merge Polarity Networks - Merging Networks from Positive and Negative Mode	| 6/11/2020 9AM PST | [Material](https://docs.google.com/document/d/1-dwuCXvbGEbrFADPmjZXRQWOtcaElXaNxRqcqLEK-us/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=wHdr9coLmoQ)  | 30 |
-| Zoom! | GNPS MolNetEnhancer	| 6/3/2020 9AM PST | [Material](https://docs.google.com/document/d/1qyepInMfujbG7Mgbm4fnuQf87i8JctvTUKjTs69T_os/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=-4DE_ZfF2vc) | 47 |
-| Zoom! | GC-MS deconvolution, library search and molecular networking | 5/27/2020 9AM PST | [Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit) | 44 |
-| YouTube | Utilizing GNPS and MS2LDA for some molecular networking discovery	| 5/21/2020 6AM PST | [LiveStream](https://www.youtube.com/watch?v=Cc6eKGZQ1Qw&feature=youtu.be) | --- |
-| Zoom! | GNPS Ion-Identity Networking, Native Metabolomics	| 5/20/2020 9AM PST | [Material](https://docs.google.com/document/d/1Fasu3Gh0PsgW6-KW-FmKz-NgU6OLXrRHm_zAssVGZ-M/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=tb7LxaeNvcw) | 65 |
-| Zoom! | GNPS Feature Based Molecular Networking (Job Submssions and Exploration) | 5/14/2020 9AM PST | [Material](https://docs.google.com/document/d/1cYtCUHgKQMyXyc7tSi8vXUcMkgnvd-p50b-fiLFZZfU/edit?usp=sharing) | 103 |
-| Zoom! | GNPS Feature Based Molecular Networking (MZmine2) | 5/13/2020 9AM PST | [Material](https://docs.google.com/document/d/152tYylUf9Ka3J-avLzztlNBeWbg2xwBCC3orWyEw25c/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=MwdJ6mVkdJY&feature=youtu.be)| 147 |
-| Zoom! | GNPS ReDU | 5/6/2020 9AM PST | [Material](https://docs.google.com/document/d/1-PgmPntirA4xOxHTXnc0DT0-ikkm_DX2v3lgh99fm-o/edit?usp=sharing) [Video](https://youtu.be/I-CdsHESLJ8) | 40 |
-| Zoom! | GNPS Classical Molecular Networking | 4/29/2020 9AM PST | [Material](https://docs.google.com/document/d/1_aPUG0H4_v3hfVQ5uZTRv-lSPEuhooyiUZVNd1S21rw/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=PqTuex0nsGk) | 60 |
-| Zoom! | GNPS MASST | 4/22/2020 9AM PST | [Material](https://docs.google.com/document/d/1rzPLGA0-3DbFkUKVpIyUrj_7MLhqCvSSPskVO9gR1D0/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=14hGi6FtZIM) | 54 |
-| Zoom! | GNPS Library Workshop/Hackathon | April 8 9AM PST| [Material](https://docs.google.com/document/d/1pu24hCoRr8trBhc_sJ34BiWamJHEpRkZYYnGYQRkAkU/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=IbXBpud57Z8) | 60 |
-| UFMT Brazil | VI Workshop Etnofarmacologia - Use of the GNPS platform | Nov 18 - 28 2019 |||
-| MIT |Molecular Networking with MZmine and GNPS| Dec 5 2019 | -----||
-| [ASP 2019](http://aspmeetings.pharmacognosy.us/) | GNPS Beginner/Advanced Workshop (3h) | July 2019 | [Download](https://docs.google.com/document/d/1i80buu38_x79qeHVHGz2d_nyRYQJ92jV3mQfTtJLsB4/edit?usp=sharing) | 60 |
-| [RFMF2019](https://12-js-rfmf-2019.sciencesconf.org/), France | GNPS Beginner Workshop (4h) | May 20 | TBA ||
-| [Metabolomics 2019](http://metabolomics2019.org/) | GNPS Beginner Workshop (2h) | June 22 | [Download](https://docs.google.com/document/d/1_qoMd73M9KTFJ3A37GDY9Yqjim0s9EoxiqUa7CUX_gY/edit?usp=sharing) ||
-| Prague | GNPS Workshop (4h) | June 28| TBA | 20 |
-| NPS2019 - Symposia of Natural Products | Natural Product Dereplication using GNPS | Feb 5, 2019 | Coming Soon! ||
-| CCMS School - Natural Product Training | GNPS, Molecular Networking, Library Search, Quantitative Analysis, NP Database Search, De novo cyclopeptide sequencing | Dec 12/13 2018 | [Download](https://www.dropbox.com/s/zyxhxcsgh3b65qk/CCMS%20School%20GNPS%20Workshop.pptx?dl=1) ||
-| EMSC Workshop 2018 | This short course is aimed at explaining how to use the METASPACE and GNPS platforms for large scale data analysis in mass spectrometry (MS) based metabolomics experiments | March 11, 2018 | [Download](https://www.dropbox.com/s/ob8kh5su081hexf/EMSC2018-GNPS-Workshop.pdf?dl=1) ||
-| GNPS workshop in Grahamstown, South Africa (Rhodes University) |  GNPS introduction with Molecular Networking | November 14, 2018 | N/A ||
-| ASP 2018 | GNPS Introduction, Molecular Networking - Natural Product Discovery in bacterial extraction, `ili 3D cartography, MetBLAST - leveraging public datasets | July 2018 | [Download](ftp://massive.ucsd.edu/MSV000082622/updates/2018-08-02_mwang87_0a19cfec/other/ASP2018_GNPS_Workshop.zip) ||
-| Metabolomics 2018 | GNPS Introduction, Molecular Networking - Food Analysis, `ili 3D cartography of plants, MS2LDA | July 2018 | Coming Soon ||
+| Venue        | Description          | Dates | Speakers/Instructors | Material | Estimated Attendance |
+| ------------- |-------------| -----| -----| -----| ----- |
+| Zoom! | 1st GNPS User Meeting	| 8/26/2020 9AM PST | GNPS Community | [Program](https://docs.google.com/document/d/1CR2gURxDJimbaIcqszm6msHx55VQ5IIM2dtsvQWapGY/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=4HMjK4Js8xI) | 300 |
+| Zoom! | GNPS GC - Part 2	| 7/29/2020 9AM PST |  Alexander Aksenov, Mabel Gonzalez |[Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit?ts=5f1f15d2)| 20 |
+| Zoom! | GNPS Classical Molecular Networking in Portuguese | 7/22/2020 9AM PST | Anelize Bauermeister, Helena Mannochio | [Material](https://docs.google.com/document/d/17YFhsFWRxFNdHBhEQB3cQkOocXu-jWBtTsDWwek56oU) | 450 | 
+| Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 7/15/2020 9AM PST | Daniel Petras, Mauricio Caraballo, Mingxun Wang |[Material](https://docs.google.com/document/d/1srJxW1DxMNsOyT8YlraBmDJHJkI9EDw3l2JRmQL2jjI/edit?usp=sharing) | 40 |
+| Zoom! | GNPS Feature Based Molecular Networking in Espanol - Part 1	| 7/8/2020 9AM PST | Mauricio Caraballo, Daniel Petras | [Material](https://docs.google.com/document/d/1raBdT8QuHntm-im7DjxB3epG7_D_JEAXNY-_AoFvaWc/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=0xWMAwM8x3U&feature=youtu.be)| 40 |
+| Zoom! | GNPS Feature Based Molecular Networking in Espanol - Part 2| 7/9/2020 9AM PST | Mauricio Caraballo, Daniel Petras | [Material](https://docs.google.com/document/d/1wleocmsb1hoJrREujJFVjMH3wz4jH8MnpcMqbg1j5j0/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=l90j5T8EQbw&feature=youtu.be)| 50 |
+| Zoom! | Metabolomics Spectrum Resolver - Unifing spectrum rendering and customization	| 7/1/2020 9AM PST | Mingxun Wang , Wout Bittremieux | [Materials](https://docs.google.com/document/d/1xAbhHj4T3BV80oKuwmaxVl4HprecjquqRtnhCZOVVHQ/edit?usp=sharing) | 35 |
+| Zoom! | GNPS - MS2LDA | 6/24/2020 9AM PST |  Justin van der Hooft, Simon Rogers, Joe Wandy, Madeleine Ernst, Mingxun Wang |[Material](https://docs.google.com/document/d/1i0oXux-plxF9oxK-MFIBgARkqM-wJzKPAjj-XVhrHk4/edit) [Video](https://www.youtube.com/watch?v=0wKUmjPy40s) | 40 |
+| Zoom! | GNPS Classical Molecular Networking in Español | 6/17/2020 9AM PST | Mauricio Caraballo, Mabel Gonzalez, Daniel Petras | [Material](https://docs.google.com/document/d/1sR9QjF5kCix7iJs1PQUm0rPwX1Naxwarxqxd04gBesw/edit) [Video](https://www.youtube.com/watch?v=hTZzZI3PtR0) | 60 |
+| Zoom! | GNPS Merge Polarity Networks - Merging Networks from Positive and Negative Mode	| 6/11/2020 9AM PST | Mingxun Wang, Allegra Aron | [Material](https://docs.google.com/document/d/1-dwuCXvbGEbrFADPmjZXRQWOtcaElXaNxRqcqLEK-us/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=wHdr9coLmoQ)  | 30 |
+| Zoom! | GNPS MolNetEnhancer	| 6/3/2020 9AM PST | Madeleine Ernst, Mauricio Caraballo, Mingxun Wang | [Material](https://docs.google.com/document/d/1qyepInMfujbG7Mgbm4fnuQf87i8JctvTUKjTs69T_os/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=-4DE_ZfF2vc) | 47 |
+| Zoom! | GC-MS deconvolution, library search and molecular networking | 5/27/2020 9AM PST | Alexander Aksenov, Mabel Gonzalez | [Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit) | 44 |
+| YouTube | Utilizing GNPS and MS2LDA for some molecular networking discovery	| 5/21/2020 6AM PST |  | [LiveStream](https://www.youtube.com/watch?v=Cc6eKGZQ1Qw&feature=youtu.be) | --- |
+| Zoom! | GNPS Ion-Identity Networking, Native Metabolomics	| 5/20/2020 9AM PST | Robin Schmid, Daniel Petras, Allegra Aron | [Material](https://docs.google.com/document/d/1Fasu3Gh0PsgW6-KW-FmKz-NgU6OLXrRHm_zAssVGZ-M/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=tb7LxaeNvcw) | 65 |
+| Zoom! | GNPS Feature Based Molecular Networking (Job Submssions and Exploration) | 5/14/2020 9AM PST | Louis-Felix Nothias, Daniel Petras, Allegra Aron| [Material](https://docs.google.com/document/d/1cYtCUHgKQMyXyc7tSi8vXUcMkgnvd-p50b-fiLFZZfU/edit?usp=sharing) | 103 |
+| Zoom! | GNPS Feature Based Molecular Networking (MZmine2) | 5/13/2020 9AM PST | Daniel Petras, Allegra Aron | [Material](https://docs.google.com/document/d/152tYylUf9Ka3J-avLzztlNBeWbg2xwBCC3orWyEw25c/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=MwdJ6mVkdJY&feature=youtu.be)| 147 |
+| Zoom! | GNPS ReDU | 5/6/2020 9AM PST | Alan Jarmusch, Mingxun Wang, Chrissy Aceves, Julia Gauglitz | [Material](https://docs.google.com/document/d/1-PgmPntirA4xOxHTXnc0DT0-ikkm_DX2v3lgh99fm-o/edit?usp=sharing) [Video](https://youtu.be/I-CdsHESLJ8) | 40 |
+| Zoom! | GNPS Classical Molecular Networking | 4/29/2020 9AM PST | Emily Gentry, Mingxun Wang, Morgan Panitchpakdi | [Material](https://docs.google.com/document/d/1_aPUG0H4_v3hfVQ5uZTRv-lSPEuhooyiUZVNd1S21rw/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=PqTuex0nsGk) | 60 |
+| Zoom! | GNPS MASST | 4/22/2020 9AM PST | Mingxun Wang, Alan Jarmusch, Morgan Panitchpakdi, Emily Gentry | [Material](https://docs.google.com/document/d/1rzPLGA0-3DbFkUKVpIyUrj_7MLhqCvSSPskVO9gR1D0/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=14hGi6FtZIM) | 54 |
+| Zoom! | GNPS Library Workshop/Hackathon | April 8 9AM PST| Mingxun Wang, Alan Jarmusch, Morgan Panitchpakdi, Emily Gentry | [Material](https://docs.google.com/document/d/1pu24hCoRr8trBhc_sJ34BiWamJHEpRkZYYnGYQRkAkU/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=IbXBpud57Z8) | 60 |
+| UFMT Brazil | VI Workshop Etnofarmacologia - Use of the GNPS platform | Nov 18 - 28 2019 | Mauricio Caraballo |||
+| MIT |Molecular Networking with MZmine and GNPS| Dec 5 2019 | Tomas Pluska, Daniel Petras, Robin Schmid | -----||
+| [ASP 2019](http://aspmeetings.pharmacognosy.us/) | GNPS Beginner/Advanced Workshop (3h) | July 2019 | Mingxun Wang, Pieter Dorrestein, Mauricio Caraballo | [Download](https://docs.google.com/document/d/1i80buu38_x79qeHVHGz2d_nyRYQJ92jV3mQfTtJLsB4/edit?usp=sharing) | 60 |
+| [RFMF2019](https://12-js-rfmf-2019.sciencesconf.org/), France | GNPS Beginner Workshop (4h) | May 20 |  | TBA ||
+| [Metabolomics 2019](http://metabolomics2019.org/) | GNPS Beginner Workshop (2h) | June 22 | Mingxun Wang, Madeleine Ernst, Zdenek Kamenik, Justin van der Hooft, Louis-Felix Nothias | [Download](https://docs.google.com/document/d/1_qoMd73M9KTFJ3A37GDY9Yqjim0s9EoxiqUa7CUX_gY/edit?usp=sharing) ||
+| Prague | GNPS Workshop (4h) | June 28| Mingxun Wang, Louis-Felix Nothias, Robin Schmid, Justin van der Hooft | TBA | 20 |
+| NPS2019 - Symposia of Natural Products | Natural Product Dereplication using GNPS | Feb 5, 2019 | Madeleine Ernst, Daniel Petras, Mauricio Caraballo, Pieter Dorrestein | Coming Soon! ||
+| CCMS School - Natural Product Training | GNPS, Molecular Networking, Library Search, Quantitative Analysis, NP Database Search, De novo cyclopeptide sequencing | Dec 12/13 2018 | Louis-Felix Nothias, Daniel Petras | [Download](https://www.dropbox.com/s/zyxhxcsgh3b65qk/CCMS%20School%20GNPS%20Workshop.pptx?dl=1) ||
+| EMSC Workshop 2018 | This short course is aimed at explaining how to use the METASPACE and GNPS platforms for large scale data analysis in mass spectrometry (MS) based metabolomics experiments | March 11, 2018 | Daniel Petras, Pieter Dorrestein | [Download](https://www.dropbox.com/s/ob8kh5su081hexf/EMSC2018-GNPS-Workshop.pdf?dl=1) ||
+| GNPS workshop in Grahamstown, South Africa (Rhodes University) |  GNPS introduction with Molecular Networking | November 14, 2018 | Emily Gentry, Allegra Aron, Daniel Petras | N/A ||
+| ASP 2018 | GNPS Introduction, Molecular Networking - Natural Product Discovery in bacterial extraction, `ili 3D cartography, MASST - leveraging public datasets | July 2018 | Mingxun Wang, Pieter Dorrestein, Mauricio Caraballo, Kyo Bin Kang | [Download](ftp://massive.ucsd.edu/MSV000082622/updates/2018-08-02_mwang87_0a19cfec/other/ASP2018_GNPS_Workshop.zip) ||
+| Metabolomics 2018 | GNPS Introduction, Molecular Networking - Food Analysis, `ili 3D cartography of plants, MS2LDA | July 2018 |  | Coming Soon ||
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xotOmx11UTebhBV-LfYgLsKrfdyprw4z" width="640" height="480"></iframe>
 
