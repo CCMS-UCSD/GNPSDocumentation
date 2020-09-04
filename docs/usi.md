@@ -4,7 +4,11 @@ Pardon our dust as this is a work in progress
 
 ## Universally Resolve MS/MS Data
 
-Lorem Ipsum
+This tool is meant to be able to show USIs from various sources. It will achieve the following goals:
+
+1. Enable creation of embeddable images in publications that will link out to viewable/interactable spectrum plots.
+2. 3rd party embedding for visualization of spectra that exist in repositories (e.g. MassIVE, PRIDE, PeptideAtlas).
+3. 3rd party embedding of QR code.
 
 ### Data Sources
 
@@ -23,7 +27,9 @@ Full details on formats of the identifiers can be found at [Link](Github Link).
 
 ## Customization of Visualization
 
-Lorem Ipsum
+- `mz_min`: Minimum m/z value.
+- `mz_max`: Maximum m/z value.
+- `annotate_peaks`: Defines which peaks in which spectrum (top or bottom) will be annotated. The parameters is a list of lists of m/z values of the peaks to be annotated. For a single spectrum plot it should be a single nested list (i.e. `[[m1, m2]]`), for a mirror plot it should be two nested lists for the top spectrum and the bottom spectrum (i.e. `[[s1m1,s1m2],[s2m1,s2m2]]`).
 
 ## Web API
 
