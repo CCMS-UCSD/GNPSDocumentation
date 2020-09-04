@@ -45,6 +45,10 @@ Full details on formats of the identifiers can be found at [Link](Github Link).
 1. /svg/mirror
 1. /png/mirror
 
+## Source Code
+
+Checkout the source code and contribute at [GitHub](https://github.com/mwang87/MetabolomicsSpectrumResolver).
+
 ## Page Contributors
 
 {{ git_page_authors }}
