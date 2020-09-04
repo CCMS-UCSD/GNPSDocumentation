@@ -45,6 +45,9 @@ Animated
 
 ![img](img/logo/MolNetEnhancer_logo.png)
 
+## ChemDir Log
+
+![img](img/logo/ChemDir_Logo_grey_scale.png)
 
 ## Logos for Zoom Background
 

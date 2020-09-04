@@ -40,8 +40,8 @@ In the menu, under the “Identify Compounds” tab:
 ![img](img/featurebasedmolecularnetworking/progenesis_4.png)
 
 
-###### Additional notes
-Alternatively, the Symphony software can be used the ion peaks in the entire RAW file can be detected, centroided, and deconvoluted, and converted to a suitable open-source data formats such as Mascot generic format (mgf), mzML, mzXML. More info on in the following note: [See more information in the Nov. 2018 Waters Technology Brief](https://www.waters.com/webassets/cms/library/docs/720006415en.pdf). These files can be processed by other softwares supported FBMN, or can be used for classical molecular networking analysis. 
+!!! note 
+    Alternatively, the Symphony software can be used the ion peaks in the entire RAW file can be detected, centroided, and deconvoluted, and converted to a suitable open-source data formats such as Mascot generic format (mgf), mzML, mzXML. More info on in the following note: [See more information in the Nov. 2018 Waters Technology Brief](https://www.waters.com/webassets/cms/library/docs/720006415en.pdf). These files can be processed by other softwares supported FBMN, or can be used for classical molecular networking analysis. 
 
 
 ## Running a molecular network on GNPS
@@ -69,7 +69,7 @@ Helped is wanted to describe in detail the import procedure in Cytoscape.
 
 
 ### Acknowledgements
-Bindesh Shrestha (Waters), Giorgis Isaac (Waters and Jonathan McSayles (Waters).
+Bindesh Shrestha (Waters), Giorgis Isaac (Waters) and Jonathan McSayles (Waters).
 
 ### Join the GNPS Community !
 
