@@ -55,6 +55,7 @@ nav:
         - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
         - MolNetEnhancer: molnetenhancer.md
         - MetaMiner: metaminer.md
+        - Sirius: sirius.md
         # CycloNovo: cyclonovo.md
         - Reanalysis of Data User Interface (ReDU): ReDU.md
         - Qemistree: qemistree.md
@@ -92,6 +93,7 @@ nav:
     - Contact/Office Hours: contact.md
     - GNPS Tool Index: toolindex.md
     - API: api.md
+    - For Developers: developers.md
 theme:
     name: material
 

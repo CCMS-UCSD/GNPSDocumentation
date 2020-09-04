@@ -4,7 +4,7 @@
 		Pardon our dust as this is documentation is a work in progress! We also welcome your contributions. 
 
 ## "What are tags?"
-**Tags reflect high-level information about your data!** The tagging system in GNPS aims to generate a high-level summary of the chemical annotations provided by spectral library matching (*i.e.* matching of acquired MS/MS product ion scans with reference MS/MS spectra). Our goal is to reduce the amount of expert knowledge and the amount of trivial research needed to provide initial context to chemicals annotated from data run through the GNPS platform.
+Tags are essentially metadata about chemicals. We utilize a set of ontologies and controlled vocabulary (the same shared with [ReDU](https://redu.ucsd.edu/)). **Tags reflect high-level information about your data!** The tagging system in GNPS aims to generate a high-level summary of the chemical annotations provided by spectral library matching (*i.e.* matching of acquired MS/MS product ion scans with reference MS/MS spectra). Our goal is to reduce the amount of expert knowledge and the amount of trivial research needed to provide initial context to chemicals annotated from data run through the GNPS platform.
 
 !!! info "Supported Workflows in GNPS"
 	1. Molecular Networking (classic)
@@ -39,17 +39,17 @@
 ## 2. Obtain the Annotation Information From the Supported GNPS Workflows
 - Download the annotation information from GNPS and open it in a spreadsheet program.
 
-!!! info
+!!!+ info "where you can find the information to download"
 	- Molecular Networking (Classic)
 		- **Download** the **"View all library hits"** table from the GNPS results page.
+				![MolNetsDownload](img/tags/MolNets_filelocation.png)
 	- Library Search
 		- **Download** the **"View all spectra hits"** table from the GNPS results page.
+				![LibrarySearchDownload](img/tags/LibrarySearch_filelocation.png)
 	- Feature-based Molecular Networking
 		- **Download** the **"View all library hits"** table from the GNPS results page.
+				![FBMNDownload](img/tags/FBMN_filelocation.png)
 
-???+ example "where you can find the information to download"
-	![library_hits](img/tags/results_libraryhits.jpg)
-	
 ## 3. Setting up the **GNPS Tag Template** with Your Annotation Information 
 - Copy and paste the entire table contents (including the header) into the **"Input_GNPS_LibraryHitsTable"** tab in the GNPS Tag Template.
 - If done correctly, information relevant to tagging should appear in the **"GNPS Tag - Batch Tag Template"** tab in columns A-D.
