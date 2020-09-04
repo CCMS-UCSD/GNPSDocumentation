@@ -16,12 +16,13 @@ This tool is meant to be able to show USIs from various sources. It will achieve
 
 The following are supported
 
-1. GNPS/MassIVE Datasets
-1. GNPS Spectral Libraries
-1. MassBank Spectral Libraries
-1. MOTIFDB
-1. GNPS Task Data (e.g. Molecular Networking)
-1. MS2LDA.org Analyses
+1. GNPS Molecular Networking Clustered Spectra
+2. GNPS Spectral Libraries
+3. ProteoXchange Repository Data
+4. MS2LDA Reference Motifs
+5. MassBank Library Spectra
+6. MetaboLights Dataset Spectra
+7. Metabolomics Workbench Dataset Spectra
 
 Full details on formats of the identifiers can be found at [Link](Github Link). 
 
