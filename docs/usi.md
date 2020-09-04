@@ -32,9 +32,18 @@ Full details on formats of the identifiers can be found at [Link](Github Link).
 - `mz_max`: Maximum m/z value.
 - `annotate_peaks`: Defines which peaks in which spectrum (top or bottom) will be annotated. The parameters is a list of lists of m/z values of the peaks to be annotated. For a single spectrum plot it should be a single nested list (i.e. `[[m1, m2]]`), for a mirror plot it should be two nested lists for the top spectrum and the bottom spectrum (i.e. `[[s1m1,s1m2],[s2m1,s2m2]]`).
 
-## Web API
+## Web API Endpoints
 
-Lorem Ipsum
+1. /png/
+1. /svg/
+1. /json/
+1. /api/proxi/v0.1/spectra
+1. /csv/
+1. /qrcode/
+1. /spectrum/
+1. /mirror/
+1. /svg/mirror
+1. /png/mirror
 
 ## Page Contributors
 
