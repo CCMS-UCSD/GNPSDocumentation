@@ -55,7 +55,7 @@ These are web tools that is run by the GNPS team and provides complementary func
 | [GNPS Upset Plot Dashboard (Beta)](https://gnps-classical-comparison.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_ClassicalNetworkGroupsComparisonDashboard) | --- |
 | [NP Classifier](https://npclassifier.ucsd.edu/) | --- | [GitHub](https://github.com/mwang87/NP-Classifier) |
 | [GNPS LCMS Explorer](https://gnps-lcms.ucsd.edu/) | --- | --- |
-| [GNPS FBMN Box Plotting Dashboard](http://dorresteintesthub.ucsd.edu:6548) | --- | --- |
+| [GNPS FBMN Box Plotting Dashboard](http://dorresteintesthub.ucsd.edu:6549) | --- | --- |
 
 ## GNPS Jupyter Notebooks
 
