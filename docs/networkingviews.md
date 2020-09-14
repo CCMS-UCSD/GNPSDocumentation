@@ -90,6 +90,10 @@ The default labeling is the cluster/node index which is rather uninformative, bu
 
 An additional way to customize the view of the networks is to color the nodes. By default the nodes are gray, but users can color the nodes based upon spectra counts of the groups they came from. By default the coloring labels will be based upon the default groups G1, G2, G3, G4, G5, and G6. The coloring of each node will be a pie, and the proportion colored of that pie is the proportion of the spectral counts coming from each respective group. Additionally, the Node Coloring legend describes the color for each group. Users can also use their own group names if they defined their own arbitrary groups when creating the network.
 
+!!! note "Custom Groups"
+    If you would like to display custom groups instead of G1 through G6, you will be able to enter your own group name in the fields next to the colors. However, you will need to prefix you group name with ```GNPSGROUP:```
+
+
 To draw the pies, click "Draw Pies"
 
 ![img](img/networkingviews/drawpies.png)
