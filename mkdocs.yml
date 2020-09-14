@@ -33,6 +33,7 @@ nav:
         - MASST Search (Mass Search Tool): masst.md
         - Result Views Navigation: resultviews.md
     - Advanced Data Analysis:
+        - Molecular Networking Files: networkingfiles.md
         - Feature Based Molecular Networking:
             - FBMN Workflow: featurebasedmolecularnetworking.md
             - FBMN with MZmine : featurebasedmolecularnetworking-with-mzmine2.md
