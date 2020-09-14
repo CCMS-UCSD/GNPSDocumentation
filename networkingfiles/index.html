@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking-with-openms/">
+        <link rel="canonical" href="https://ccms-ucsd.github.io/GNPSDocumentation/networkingfiles/">
       
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
@@ -17,7 +17,7 @@
     
     
       
-        <title>FBMN with OpenMS - GNPS Documentation</title>
+        <title>Molecular Networking Files - GNPS Documentation</title>
       
     
     
@@ -55,7 +55,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction-to-fbmn-with-openms" class="md-skip">
+        <a href="#molecular-networking-files-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -83,7 +83,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              FBMN with OpenMS
+              Molecular Networking Files
             
           </span>
         </div>
@@ -536,11 +536,79 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../networkingfiles/" title="Molecular Networking Files" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Molecular Networking Files
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Molecular Networking Files" class="md-nav__link md-nav__link--active">
       Molecular Networking Files
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#molecular-networking-files-overview" class="md-nav__link">
+    Molecular Networking Files Overview
+  </a>
+  
+    <nav class="md-nav" aria-label="Molecular Networking Files Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clusterinfo" class="md-nav__link">
+    ClusterInfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clustersummary" class="md-nav__link">
+    ClusterSummary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#library-identifications" class="md-nav__link">
+    Library Identifications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graphml" class="md-nav__link">
+    GraphML
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -548,12 +616,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-2" type="checkbox" id="nav-11-2" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-2" type="checkbox" id="nav-11-2">
     
     <label class="md-nav__link" for="nav-11-2">
       Feature Based Molecular Networking
@@ -619,167 +685,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        FBMN with OpenMS
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" title="FBMN with OpenMS" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../featurebasedmolecularnetworking-with-openms/" title="FBMN with OpenMS" class="md-nav__link">
       FBMN with OpenMS
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction-to-fbmn-with-openms" class="md-nav__link">
-    Introduction to FBMN with OpenMS
-  </a>
-  
-    <nav class="md-nav" aria-label="Introduction to FBMN with OpenMS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#citations" class="md-nav__link">
-    Citations
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#development" class="md-nav__link">
-    Development
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#feature-detection-with-openms-for-the-fbmn" class="md-nav__link">
-    Feature Detection with OpenMS for the FBMN
-  </a>
-  
-    <nav class="md-nav" aria-label="Feature Detection with OpenMS for the FBMN">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#running-the-openms-gnps-pipeline-on-gnps-web-platform" class="md-nav__link">
-    Running the OpenMS-GNPS pipeline on GNPS web-platform
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#running-the-openms-gnps-pipeline-with-openms-topp-tools" class="md-nav__link">
-    Running the OpenMS-GNPS pipeline with OpenMS TOPP tools
-  </a>
-  
-    <nav class="md-nav" aria-label="Running the OpenMS-GNPS pipeline with OpenMS TOPP tools">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#installation-and-requirement" class="md-nav__link">
-    Installation and requirement
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#representative-openms-gnps-workflow" class="md-nav__link">
-    Representative OpenMS-GNPS workflow
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#requirements-for-the-openms-gnps-pipeline" class="md-nav__link">
-    Requirements for the OpenMS-GNPS pipeline
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-gnpsexport-topp-tool" class="md-nav__link">
-    The GNPSExport TOPP tool
-  </a>
-  
-    <nav class="md-nav" aria-label="The GNPSExport TOPP tool">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#usage-and-options-for-gnpsexport-topp-tool" class="md-nav__link">
-    Usage and Options for GNPSExport TOPP tool:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#options-for-the-consensus-msms-spectra-output_type" class="md-nav__link">
-    Options for the consensus MS/MS spectra: output_type
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#running-the-fbmn-workflow-with-openms-files" class="md-nav__link">
-    Running the FBMN workflow with OpenMS files
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#join-the-gnps-community" class="md-nav__link">
-    Join the GNPS Community !
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#page-contributors" class="md-nav__link">
-    Page Contributors
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1535,131 +1445,43 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction-to-fbmn-with-openms" class="md-nav__link">
-    Introduction to FBMN with OpenMS
+  <a href="#molecular-networking-files-overview" class="md-nav__link">
+    Molecular Networking Files Overview
   </a>
   
-    <nav class="md-nav" aria-label="Introduction to FBMN with OpenMS">
+    <nav class="md-nav" aria-label="Molecular Networking Files Overview">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#citations" class="md-nav__link">
-    Citations
+  <a href="#clusterinfo" class="md-nav__link">
+    ClusterInfo
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#development" class="md-nav__link">
-    Development
+  <a href="#clustersummary" class="md-nav__link">
+    ClusterSummary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#library-identifications" class="md-nav__link">
+    Library Identifications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graphml" class="md-nav__link">
+    GraphML
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#feature-detection-with-openms-for-the-fbmn" class="md-nav__link">
-    Feature Detection with OpenMS for the FBMN
-  </a>
-  
-    <nav class="md-nav" aria-label="Feature Detection with OpenMS for the FBMN">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#running-the-openms-gnps-pipeline-on-gnps-web-platform" class="md-nav__link">
-    Running the OpenMS-GNPS pipeline on GNPS web-platform
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#running-the-openms-gnps-pipeline-with-openms-topp-tools" class="md-nav__link">
-    Running the OpenMS-GNPS pipeline with OpenMS TOPP tools
-  </a>
-  
-    <nav class="md-nav" aria-label="Running the OpenMS-GNPS pipeline with OpenMS TOPP tools">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#installation-and-requirement" class="md-nav__link">
-    Installation and requirement
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#representative-openms-gnps-workflow" class="md-nav__link">
-    Representative OpenMS-GNPS workflow
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#requirements-for-the-openms-gnps-pipeline" class="md-nav__link">
-    Requirements for the OpenMS-GNPS pipeline
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-gnpsexport-topp-tool" class="md-nav__link">
-    The GNPSExport TOPP tool
-  </a>
-  
-    <nav class="md-nav" aria-label="The GNPSExport TOPP tool">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#usage-and-options-for-gnpsexport-topp-tool" class="md-nav__link">
-    Usage and Options for GNPSExport TOPP tool:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#options-for-the-consensus-msms-spectra-output_type" class="md-nav__link">
-    Options for the consensus MS/MS spectra: output_type
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#running-the-fbmn-workflow-with-openms-files" class="md-nav__link">
-    Running the FBMN workflow with OpenMS files
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#join-the-gnps-community" class="md-nav__link">
-    Join the GNPS Community !
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#page-contributors" class="md-nav__link">
-    Page Contributors
-  </a>
   
 </li>
       
@@ -1675,7 +1497,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/featurebasedmolecularnetworking-with-openms.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/blob/master/docs/networkingfiles.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -1683,108 +1505,18 @@
                   
                 
                 
-                  <h1>FBMN with OpenMS</h1>
+                  <h1>Molecular Networking Files</h1>
                 
-                <h2 id="introduction-to-fbmn-with-openms">Introduction to FBMN with OpenMS<a class="headerlink" href="#introduction-to-fbmn-with-openms" title="Permanent link">&para;</a></h2>
-<p>The main documentation for <strong>Feature-Based Molecular Networking</strong> (FBMN) <a href="../featurebasedmolecularnetworking/">can be accessed here</a>. See <a href="https://www.biorxiv.org/content/10.1101/812404v1">our preprint on bioaRxiv</a>.</p>
-<p>Below we are describing how to use <strong>OpenMS</strong> with the FBMN workflow on GNPS. </p>
-<h3 id="citations">Citations<a class="headerlink" href="#citations" title="Permanent link">&para;</a></h3>
-<p>This work builds on the efforts of our many colleagues, please cite their work:</p>
-<p>Nothias, L.F. et al <a href="https://www.biorxiv.org/content/10.1101/812404v1">Feature-based Molecular Networking in the GNPS Analysis Environment</a> bioRxiv 812404 (2019).</p>
-<p>Wang, M. et al. <a href="https://doi.org/10.1038/nbt.3597">Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking</a>. Nat. Biotechnol. 34, 828–837 (2016).</p>
-<p>Röst, H. L. et al. OpenMS: a flexible open-source software platform for mass spectrometry data analysis. Nat. Methods 13, 741–748 (2016). <a href="https://doi.org/10.1038/nmeth.3959">https://doi.org/10.1038/nmeth.3959</a></p>
-<h3 id="development">Development<a class="headerlink" href="#development" title="Permanent link">&para;</a></h3>
-<p>The OpenMS website at <a href="https://www.openms.de/">https://www.openms.de/</a></p>
-<p>The GNPSExport TOPP tool code can be found on <a href="https://github.com/OpenMS/OpenMS">OpenMS GitHub repository</a> and the lastest version on <a href="https://github.com/Bioinformatic-squad-DorresteinLab/OpenMS/blob/develop/src/topp/GNPSExport.cpp">this fork repository</a>.</p>
-<p>The code for the Open-GNPS pipeline (ProteoSAFe workflow and python wrapper) is available on <a href="https://github.com/Bioinformatic-squad-DorresteinLab/openms-gnps-workflow">this GitHub repository</a>.</p>
-<h2 id="feature-detection-with-openms-for-the-fbmn">Feature Detection with OpenMS for the FBMN<a class="headerlink" href="#feature-detection-with-openms-for-the-fbmn" title="Permanent link">&para;</a></h2>
-<p>We have developed an OpenMS-GNPS pipeline that can be used for the processing of metabolomics LC-MS data with OpenMS and Feature Based Molecular Networking (FBMN). This pipeline uses OpenMS tools and the GNPSExport (part of OpenMS TOPP tools).</p>
-<p>In brief, after running an <em>OpenMS "metabolomics" pipeline</em>, the <em>GNPSExport TOPP tool</em> can be used on the consensusXML file and corresponding mzML files to generate the files needed for FBMN on GNPS. These two files are:</p>
-<ul>
-<li>The <strong>feature quantification table</strong> (.TXT format) which is generated with the TextExport tool.</li>
-<li>The <strong>MS2 spectral summary</strong> file (.MGF format) which is generated with the GNPSExport tool.</li>
-</ul>
-<h3 id="running-the-openms-gnps-pipeline-on-gnps-web-platform">Running the OpenMS-GNPS pipeline on GNPS web-platform<a class="headerlink" href="#running-the-openms-gnps-pipeline-on-gnps-web-platform" title="Permanent link">&para;</a></h3>
-<p>The OpenMS-GNPS pipeline is an experimetal workflow deployed currently on <em>proteomics2.ucsd.edu</em> [https://proteomics2.ucsd.edu/ProteoSAFe/]). The job can be configured as follows:</p>
-<p><img alt="img" src="../img/openms/workflow_1.png" /></p>
-<ol>
-<li>Log into <a href="https://proteomics2.ucsd.edu/">https://proteomics2.ucsd.edu</a> (Create an account if necessary).</li>
-<li>Access the lastest version of the OpenMS + GNPS workflow (release 20) at <a href="https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22%3A%20%22OPENMS%22%2C%20%22workflow_version%22%3A%20%22release_20%22%7D">this address</a>.</li>
-<li>In Import Data Files, select the input mzML files (prefered) or mzXML files (not recommended, because the pipeline would have to perform conversion to mzML)</li>
-<li>[TO BE RELEASED] Select the parameters from the presets <code>HPLC-Q-Exactive, UHPLC-Q-Exactive, HPLC-QTOF, UHPLC-Q-Exactive</code>.
-The corresponding OpenMS configuration files (.INI files) are available from that [GitHub repository] (https://github.com/Bioinformatic-squad-DorresteinLab/openms-gnps-workflow/presets/)). Alternatively, you can upload your OpenMS TOPP tool <em>parameter file</em> (.INI files). Note that <em>parameter files</em> can be updated with a text editor or with the <em>INIFileEditor</em> TOPP tool.</li>
-<li>Wait for the job to complete. You will get a notification.</li>
-<li>Download the main output files with "Download OpenMS Output Files" and/or all the files with "Download Workflow Files".</li>
-<li>Unzip the archive.</li>
-<li>Examine the consensusXML file (in the <em>filefilter</em> folder) with TOPPAS.</li>
-<li>The <code>gnpsexport</code> folder contains the <em>MS/MS spectral summary file</em> (.MGF file)</li>
-<li>The <code>textexporter</code> folder contains the <em>feature quantification table</em> (.TXT file).</li>
-<li>Click a FBMN workflow on GNPS by clicking on "<em>Run a Feature-Based Molecular Networking at GNPS</em>" Note that you have to be logged in to GNPS first, <a href="https://gnps.ucsd.edu">https://gnps.ucsd.edu</a>). See documentation for <a href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/">the FBMN workflow on GNPS</a>.</li>
-<li>Alternatively, upload these files via FTP for <a href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/">FBMN on GNPS</a>, or use them for other annotation tools (<a href="../dereplicator/">DEREPLICATOR</a>, <a href="../ms2lda/">Mass2Motif</a>, <a href="../nap/">NAP</a>.</li>
-</ol>
-<p><img alt="img" src="../img/openms/results_1.png" /></p>
-<h3 id="running-the-openms-gnps-pipeline-with-openms-topp-tools">Running the OpenMS-GNPS pipeline with OpenMS TOPP tools<a class="headerlink" href="#running-the-openms-gnps-pipeline-with-openms-topp-tools" title="Permanent link">&para;</a></h3>
-<h5 id="installation-and-requirement">Installation and requirement<a class="headerlink" href="#installation-and-requirement" title="Permanent link">&para;</a></h5>
-<p>Installing OpenMS TOPP tools: See the OpenMS website at <a href="https://www.openms.de/">https://www.openms.de/</a></p>
-<h5 id="representative-openms-gnps-workflow">Representative OpenMS-GNPS workflow<a class="headerlink" href="#representative-openms-gnps-workflow" title="Permanent link">&para;</a></h5>
-<p>A representative OpenMS-GNPS workflow would sequencially use these OpenMS TOPP tools:</p>
-<ol>
-<li>Input the mzML files.</li>
-<li>Run the <em>FeatureFinderMetabo</em> tool on the mzML files.</li>
-<li>Run the <em>IDMapper</em> tool on the featureXML and mzML files.</li>
-<li>Run the <em>MapAlignerPoseClustering</em> tool on the featureXML files.</li>
-<li>Run the <em>MetaboliteAdductDecharger</em> tool on the featureXML files.</li>
-<li>Run the <em>FeatureLinkerUnlabeledKD</em> tool or <em>FeatureLinkerUnlabeledQT</em>, on the featureXML files and output a consensusXML file.</li>
-<li>Run the <em>FileFilter</em> tool on the consensusXML file to keep only consensusElements with at least MS/MS scan (peptide annotation).  </li>
-<li>Run the <em>GNPSExport</em> tool on the "filtered consensusXML file" to export an .MGF file.</li>
-<li>Run the <em>TextExport</em> tool on the "filtered consensusXML file" to export a .TXT file.</li>
-<li>Upload your files to GNPS and run the Feature-Based Molecular Networking workflow. See the main documentation for <a href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/">using FBMN on GNPS</a>.</li>
-</ol>
-<h5 id="requirements-for-the-openms-gnps-pipeline">Requirements for the OpenMS-GNPS pipeline<a class="headerlink" href="#requirements-for-the-openms-gnps-pipeline" title="Permanent link">&para;</a></h5>
-<ul>
-<li>The <em>IDMapper</em> has to be run on the featureXML files, in order to associate MS2 scan(s) (peptide annotation) with each feature. These peptide annotations are used by the GNPSExport.</li>
-<li>The <em>FileFilter</em> has to be run on the consensusXML file, prior to the GNPSExport, in order to remove consensusElements without MS2 scans (peptide annotation).</li>
-<li>Note that mass accuracy and the retention time window for the pairing between MS2 scan(s) and a LC-MS feature
-or consensusElement is defined at the IDMapper tool step for features.</li>
-</ul>
-<h4 id="the-gnpsexport-topp-tool">The GNPSExport TOPP tool<a class="headerlink" href="#the-gnpsexport-topp-tool" title="Permanent link">&para;</a></h4>
-<p>The <em>GNPSExport TOPP tool</em> can be run on the consensusXML file and corresponding mzML files to generate a MS/MS spectral file (MGF format) and corresponding feature quantification table (.TXT format) that contains LC-MS peak area intensities.</p>
-<p>For each <em>consensusElement</em> in the consensusXML file, <em>GNPSExport</em> produces one representative <em>consensus MS/MS spectrum</em> (named <em>peptide annotation</em> in OpenMS jargon) saved to the <em>MS/MS spectral summary file</em> (.MGF file). Several modes for the generation of the <em>consensus MS/MS spectrum</em> are available and described below. Note that these parameters are defined in the GNPSExport parameters file (.INI file, <a href="../openms_gnpsexport/GNPSExport.ini">available with that link</a>).</p>
-<h5 id="usage-and-options-for-gnpsexport-topp-tool">Usage and Options for GNPSExport TOPP tool:<a class="headerlink" href="#usage-and-options-for-gnpsexport-topp-tool" title="Permanent link">&para;</a></h5>
-<p><code>GNPSExport --help</code></p>
-<div class="highlight"><pre><span></span><code>GNPSExport -ini iniFile-GNPSExport.ini
-           -in_cm filefilter.consensusXML
-           -in_mzml inputFile0.mzML inputFile1.mzML
-           -out GNPSExport_output.mgf
-</code></pre></div>
-
-<h5 id="options-for-the-consensus-msms-spectra-output_type">Options for the consensus MS/MS spectra: <code>output_type</code><a class="headerlink" href="#options-for-the-consensus-msms-spectra-output_type" title="Permanent link">&para;</a></h5>
-<ul>
-<li>
-<p><strong>Most intense</strong> [default]: <code>most_intense</code> - For each <em>consensusElement</em>, the GNPSExport will output the <em>most intense</em> MS/MS scan (with the highest precursor ion intensity) as <em>representative MS/MS spectrum</em>.</p>
-</li>
-<li>
-<p><strong>All MS/MS</strong>: <code>full_spectra</code> - For each <em>consensusElement</em>, the GNPSExport will output <em>All MS/MS scans</em>.</p>
-</li>
-<li>
-<p><strong>Merge</strong> [Experimental]: <code>merged_spectra</code> - For each <em>consensusElement</em>, the GNPSExport will merge all eligible MS/MS scans into one representative <em>MS/MS spectrum</em>. Eligible MS/MS scans have a pairwise <em>cosine similarity</em> with the MS/MS scan of highest precursor intensity above the <em>Cosine Similarity Treshold</em>. The fragment ions of merged MS/MS scans are binned in m/z (or Da) range defined by the <em>Binning width</em> parameter.</p>
-<ul>
-<li><strong>Cosine Similarity Treshold</strong>: <code>merged_spectra:cos_similarity</code> (float, default: 0.9) - Parameter that defines <em>Cosine Similarity Treshold</em> for the pairwise <em>cosine similarity</em> between the MS/MS scan with the highest precursor intensity and the other MS/MS scans.</li>
-<li><strong>Binning width</strong>: <code>merged_spectra:ms2_binned_size</code> (float, default: 0.02 Daltons) -  Parameter that defines the <em>Binning width</em> of fragment ions during the merging of eligible MS/MS spectra.</li>
-</ul>
-</li>
-</ul>
-<h3 id="running-the-fbmn-workflow-with-openms-files">Running the FBMN workflow with OpenMS files<a class="headerlink" href="#running-the-fbmn-workflow-with-openms-files" title="Permanent link">&para;</a></h3>
-<p>After the processing with OpenMS, the output files can be used to run the Feature-Based Molecular Networking workflow on GNPS either using the [Superquick FBMN start page] (http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking) or <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">the standard interface of the FBMN workflow</a> (you need to be logged in GNPS first).</p>
-<p>Make sure to select the correct table source (OpenMS).</p>
-<p>The main documentation for FBMN <a href="../featurebasedmolecularnetworking/">can be accessed here</a>. For metadata format requirements, see <a href="../metadata/">this page</a></p>
-<h3 id="join-the-gnps-community">Join the GNPS Community !<a class="headerlink" href="#join-the-gnps-community" title="Permanent link">&para;</a></h3>
-<ul>
-<li>For feature request, or to report bugs, please open an "Issue" on the <a href="https://github.com/CCMS-UCSD/GNPS_Workflows"><em>CCMS-UCSD/GNPS_Workflows</em> GitHub repository</a>.</li>
-<li>To contribute to the GNPS documentation, please use GitHub by forking the <a href="https://github.com/CCMS-UCSD/GNPSDocumentation"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request" with the changes.</li>
-</ul>
-<h2 id="page-contributors">Page Contributors<a class="headerlink" href="#page-contributors" title="Permanent link">&para;</a></h2>
-<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (7.26%), <a href='mailto:louisfelix.nothias@gmail.com'>lfnothias</a> (83.87%), <a href='mailto:iprotsyuk@google.com'>Ivan Protsyuk</a> (8.87%)</span></p>
+                <h2 id="molecular-networking-files-overview">Molecular Networking Files Overview<a class="headerlink" href="#molecular-networking-files-overview" title="Permanent link">&para;</a></h2>
+<p>This page gives an overview of all the files that can be downloaded from classic molecular networking and describes the relationships and meanings of the identifiers. </p>
+<h3 id="clusterinfo">ClusterInfo<a class="headerlink" href="#clusterinfo" title="Permanent link">&para;</a></h3>
+<p>Lorem Ipsum</p>
+<h3 id="clustersummary">ClusterSummary<a class="headerlink" href="#clustersummary" title="Permanent link">&para;</a></h3>
+<p>Lorem Ipsum</p>
+<h3 id="library-identifications">Library Identifications<a class="headerlink" href="#library-identifications" title="Permanent link">&para;</a></h3>
+<p>Lorem Ipsum</p>
+<h3 id="graphml">GraphML<a class="headerlink" href="#graphml" title="Permanent link">&para;</a></h3>
+<p>Lorem Ipsum</p>
                 
                   
                     
@@ -1793,7 +1525,7 @@ or consensusElement is defined at the IDMapper tool step for features.</li>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 22, 2020 00:02:36</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 14, 2020 21:31:06</span>
     
   </small>
 </div>
@@ -1816,7 +1548,7 @@ or consensusElement is defined at the IDMapper tool step for features.</li>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../featurebasedmolecularnetworking-with-xcms3/" title="FBMN with XCMS" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../resultviews/" title="Result Views Navigation" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1825,19 +1557,19 @@ or consensusElement is defined at the IDMapper tool step for features.</li>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                FBMN with XCMS
+                Result Views Navigation
               </div>
             </div>
           </a>
         
         
-          <a href="../featurebasedmolecularnetworking-with-metaboscape/" title="FBMN with MetaboScape" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../featurebasedmolecularnetworking/" title="FBMN Workflow" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                FBMN with MetaboScape
+                FBMN Workflow
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
