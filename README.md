@@ -11,7 +11,7 @@ Global Natural Products Social Molecular Networking (GNPS, [http://gnps.ucsd.edu
 Help us improving GNPS Documentation !
 
 - For informations/feature request, please open an "Issue" [on the present GitHub repository](https://github.com/CCMS-UCSD/GNPSDocumentation/issues).
-- To contribute to the GNPS documentation, fork the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request" with your edits.
+- To contribute to the GNPS documentation, simply edit a page and it will prompt for an ad hoc pull request. Its as simple as that. For more advanced editing, fork the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request" with your edits from your fork to the primary repository.
 
 ### GNPS Workflows
 
