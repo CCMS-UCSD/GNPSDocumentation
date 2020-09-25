@@ -48,6 +48,7 @@ This section addresses some common issues with the analysis workflows at GNPS. I
     1. Duplicate file names
     1. A column called “sample_name” in your metadata, this column should be removed. 
     1. Your filenames in the metadata do not align with the input data
+    1. In cases of feature-based molecular networking, there can be negative values in quant table somehow. These cause error while calculating sample distances.
 
 ## Page Contributors
 
