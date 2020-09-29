@@ -80,7 +80,7 @@ We recommend you to download the tree and tree decoration files by clicking on t
 
 **3.** Under **Advanced Views**, click on `View qiime2 Emperor Plots` to visualize the Principal Coordinate Analysis result using weighted [UniFrac distances](https://www.ncbi.nlm.nih.gov/pubmed/16332807) based on the chemical relationships based on predicted molecular fingerprints.  
 
-**4** Visualizing chemical trees using the **View Qemistree dashboard**. You can further explore and modify the Qemistree visualization interactively using the [Qemistree dashboard](https://qemistree.ucsd.edu/). This dashboard is available as a link on your Qemistree job status page for direct access.
+**4.** Visualizing chemical trees using the **View Qemistree dashboard**. You can further explore and modify the Qemistree visualization interactively using the [Qemistree dashboard](https://qemistree.ucsd.edu/). This dashboard is available as a link on your Qemistree job status page for direct access.
 
 The example Qemistree task on the dashboard provides is based on a subset of a global foodomics dataset. 
 
@@ -97,6 +97,18 @@ For your own data visualization, enter the following information on the dashboar
 7. Click on `Datasets` tab in iTOL to visualize the relative abundance of each feature in the sample metadata category you chose in Step 5.
 
 You can interactively modify the aethetics of this visualization (such as colors, fonts, sizes etc) interactively by using the control panel in iTOL. 
+
+**5.** You can download the .qzv file generated in the dashboard and drag and drop to https://view.qiime2.org/. Clicking on “View this tree using iTol” will build the tree with all the information contained in the Qemistree, Labels, Colors, and Abundance files. In this way, it will not be possible to trace the branches back to the fingerprints (and, consequently, to the Feature IDs) since the information you can get putting the cursor on the nodes is its branch length and the classification information. 
+
+If you want to trace the branches back to the feature IDs, you can download the Qemistree.tree file, and upload it in iTol directly in your account. In this way, you will get a tree without any other information added, just the fingerprint information for each node.
+
+![alt text](https://user-images.githubusercontent.com/55901470/94611679-72c86980-0278-11eb-8b18-39389c76998b.png "Qemistree fingerprints iTol")
+
+On the job status window, you can click on “view summary” and download this entire table to check which feature ID corresponds to the fingerprint you are interested in (seen on the tree).
+
+![alt text](https://user-images.githubusercontent.com/55901470/94612069-f7b38300-0278-11eb-99a7-15cd8eb7ffb5.png "Qemistree SummaryView")
+
+You can also just drag and drop to iTol the Labels, Colors, and Abundance files to have all this information in the tree again.
 
 ****
 
