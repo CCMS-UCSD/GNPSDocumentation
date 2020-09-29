@@ -1,5 +1,5 @@
 !!! info "Supported Formats at GNPS"
-    GNPS supports mzXML, mzML, and mgf formats for analysis. Our tools do NOT support mzData, xml, raw, RAW, wiff, scan, d, and cdf formats. If some of your files are in these formats, please use the following guide to convert them to open formats supported by GNPS.
+	GNPS supports mzXML, mzML, and mgf formats for analysis. Our tools do NOT support mzData, xml, raw, RAW, wiff, scan, and d formats. The cdf format is supported only for GC-MS data. If some of your files are in these formats, please use the following guide to convert them to open formats supported by GNPS.
 
 ## Data Conversion (Super Easy)
 
@@ -46,7 +46,7 @@ For problems with MSConvert, please contact the ProteoWizard [developers](http:/
 
 If you are a vendor and think there are better methods to convert your files to work with GNPS, let us know by [contacting us](contact.md).
 
-### Conversion with MSConvert
+## Conversion with MSConvert
 
 Download and install ProteoWizard from [here](http://proteowizard.sourceforge.net/downloads.shtml).
 
@@ -71,11 +71,37 @@ After installation, from the Start Menu, click the ProteoWizard folder and open 
 
 - Click on Start.  Check your folder for the new .mzML/.mzXML files. Verify that these files open properly in Insilicos or [TOPP View (OpenMS)](http://www.openms.de/).
 
-
-
 ### Advanced Online Conversion with Proteowizard (MSConvert)
 
 It is possible to convert spectrum files online at the sister site - MassIVE. This site is able to handle thermo RAW and Sciex Wiff files. Please check it out [here](http://proteomics.ucsd.edu/service/massive/documentation/submit-data/).
+
+
+
+## **Conversion with OpenChrom (for GC-MS data)**
+
+This conversion option is useful for the GC-MS data, especially from older instruments. Formats such as .D, .ms, .sms etc. can be converted to .cdf files compatible with GC-MS data analysis workflows. 
+
+Download and install OpenChrom from [here](https://lablicate.com/platform/openchrom).
+
+After installation, from the Start Menu, click to launch OpenChrom.
+
+- From the File menu, click “Open Chromatogram (MSD)” to select file(s) for conversion. 
+
+![img](img/conversion/Fig-1.png)
+
+- Navigate to the file(s) and click “Finish” to open in OpenChrome browser. 
+
+![img](img/conversion/Fig-2.png)
+
+- Once opened, the data will be displayed and can be explored if needed.
+
+![img](img/conversion/Fig-3.png)
+
+- From the File menu, select “Save Chromatogram As” and choose (.cdf) format in     the “Save as type:” drop down menu.
+
+![img](img/conversion/Fig-4.png)
+
+- Navigate to the output folder and click “Save”.
 
 ## Page Contributors
 

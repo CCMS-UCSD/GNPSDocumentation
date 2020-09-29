@@ -104,10 +104,46 @@ In the job status page, some advanced views are available to visualized qiime2 e
 If the same analysis needs to be repeated, it is possible to clone the job by clicking “clone” on the job status page. Cloning a job allows users to view all parameters and files that were used and rerun the job with the same, or adjusted parameters and files. Note that if data were imported from private user workspace and not from within MassIVE, other users will not have access to the data and consequently will not be able to rerun or reproduce the GNPS job.  
 
 ### Sharing data
-The analysis conducted on GNPS as well as the deposited raw data could be shared as a hyperlink to the GNPS job(s) and the MassIVE accession number, correspondingly. GNPS stores data inputs and setting used for the analyses of the data, so the analysis could be shared and reproduced. [See the documentation](datasets.md).
+The analysis conducted on GNPS as well as the deposited raw data could be shared as a hyperlink to the GNPS job(s) and the MassIVE accession number, correspondingly. GNPS stores data inputs and setting used for the analyses of the data, so the analysis could be shared and reproduced. [See the documentation](datasets.md). 
 
 ### Adding/Curating reference spectra
 High confidence spectra from experimental data or pure standards could be added as a reference spectrum to GNPS for future reference. [See documentation](spectrumcuration.md). If the user wishes to upload >50 reference spectra to GNPS, a batch upload should be used to as detailed in the [online help](batchupload.md). The compliance of the file format can be verified using an online workflow.
+
+### Merging networks from separate sources
+
+If GC-MS datasets have been obtained using different methodologies, they will require separate deconvolution. However, a joint network could be produced to co-network and jointly analyze multiple datasets by following the steps below:
+
+- Download the .mgf file from the deconvolution job for each dataset that will be co-networked. 
+
+![img](img/GC-MS_documentation/Fig_A1.png)
+
+- Download the .csv file of the feature table.
+
+![img](img/GC-MS_documentation/Fig_A2.png)
+
+- Using the [script](https://github.com/bittremieux/GNPS_GC/blob/master/src/merge_mgf.py), combine the .mgf files from individual datasets into a single file. In the resulting file, the feature numbers will be sequential for the datasets (i.e. if the dataset 1 contains 1000 features and the dataset 2 contains 500 features, the resultant file will contain 1500 features with numbers 1-1000 for the features from dataset 1 and 1001-1500 for the features from dataset 2).
+
+- Using spreadsheet software, combine the feature tables for the datasets. Make sure to keep the feature numbering consistent between the merged .mgf file and the combined feature table. If the merged datasets are obtained from the same samples, make sure to match sample names (in columns) between the datasets. If the samples do not match, add samples from multiple datasets as additional columns in the spreadsheet and put the abundance values of 0 for features from another dataset(s).
+
+![img](img/GC-MS_documentation/Fig_A3.png)
+
+![img](img/GC-MS_documentation/Fig_A4.png)
+
+If necessary, the feature table can be normalized and/or scaled. The data treatment strategies can be study-specific and need to be considered carefully (see, for example: **J. Walach, P. Filzmoser, and K. Hron**. Data normalization and scaling: Consequences for the analysis in omics sciences. In: J. Jaumot, C. Bedia, and R. Tauler (eds.) Comprehensive Analytical Chemistry. Data Analysis for Omics Sciences: Methods and Applications. Elsevier, Amsterdam, The Netherlands, pp. 165-196, 2018).
+
+- Using the combined files, launch library search/networking job. The metadata from combined studies can be included as well, including the information on correspondence of features to the combined datasets. 
+
+![img](img/GC-MS_documentation/Fig_A5.png)
+
+- Once the job completes, the network could be downloaded. 
+
+![img](img/GC-MS_documentation/Fig_A6.png)
+
+- The merged network could be visualized (including mapping of metadata) and explored the same way as for individual datasets. 
+
+NOTE: The annotations in the combined network may differ from annotations in each individual study. The annotations shown in network are selected by considering the best match across the entire network, so if the same annotation is present in different datasets, it will only be given to the node with the higher match score (and other node(s) will receive the next best annotation). Therefore, it is recommended to check the annotation for features of interest in the search jobs for each individual dataset. The annotations for any node can be manually changed in the Cytoscape software by selecting a node and double clicking and editing the Compound_Name field.
+
+![img](img/GC-MS_documentation/Fig_A7.png)
 
 
 
