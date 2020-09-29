@@ -12,30 +12,30 @@ You'll need to make a [GitHub Account](https://github.com/join).
 
 **Click Edit Button on Page You Want to Edit**
 
-![](img/edit_page.png)
+![](img/edit-pages/edit_page.png)
 
 **Fork the Repository When Prompted (only the first time)**
 
-![](img/fork.png)
+![](img/edit-pages/fork.png)
 
 **Make the Edits in MarkDown**
 
-![](img/edit_page2.png)
+![](img/edit-pages/edit_page2.png)
 
 **Propose Changes**
 
 Please describe the change you are making. 
 
-![](img/propose.png)
+![](img/edit-pages/propose.png)
 
 
 **Create Pull Request**
 
-![](img/create_pr.png)
+![](img/edit-pages/create_pr.png)
 
 **Finalize Pull Request with Description**
 
-![](img/create_pr2.png)
+![](img/edit-pages/create_pr2.png)
 
 
 ## GitHub Repositories
