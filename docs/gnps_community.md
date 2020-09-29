@@ -12,6 +12,9 @@ You'll need to make a [GitHub Account](https://github.com/join).
 
 **Click Edit Button on Page You Want to Edit**
 
+![](img/edit_page.png)
+
+
 
 
 ## GitHub Repositories
