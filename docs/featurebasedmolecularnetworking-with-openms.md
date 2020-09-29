@@ -75,6 +75,8 @@ A representative OpenMS-GNPS workflow would sequencially use these OpenMS TOPP t
 ##### Requirements for the OpenMS-GNPS pipeline
 - The *IDMapper* has to be run on the featureXML files, in order to associate MS2 scan(s) (peptide annotation) with each feature. These peptide annotations are used by the GNPSExport.
 - The *FileFilter* has to be run on the consensusXML file, prior to the GNPSExport, in order to remove consensusElements without MS2 scans (peptide annotation).
+- Note that mass accuracy and the retention time window for the pairing between MS2 scan(s) and a LC-MS feature
+or consensusElement is defined at the IDMapper tool step for features.
 
 #### The GNPSExport TOPP tool
 
@@ -95,16 +97,13 @@ GNPSExport -ini iniFile-GNPSExport.ini
 
 ##### Options for the consensus MS/MS spectra: `output_type`
 
-- **Merge [RECOMMENDED]**: `merged_spectra` - For each *consensusElement*, the GNPSExport will merge all eligible MS/MS scans into one representative *consensus MS/MS spectrum*. Eligible MS/MS scans have a pairwise *cosine similarity* with the MS/MS scan of highest precursor intensity above the *Cosine Similarity Treshold*. The fragment ions of merged MS/MS scans are binned in m/z (or Da) range defined by the *Binning width* parameter.
-
-	- **Cosine Similarity Treshold**: `merged_spectra:cos_similarity` (float, default: 0.9) - Parameter that defines *Cosine Similarity Treshold* for the pairwise *cosine similarity* between the MS/MS scan with the highest precursor intensity and the other MS/MS scans.
-	- **Binning width**: `merged_spectra:ms2_binned_size` (float, default: 0.02 Daltons) -  Parameter that defines the *Binning width* of fragment ions during the merging of eligible MS/MS spectra.
-
-- **Most intense**: `most_intense` - For each *consensusElement*, the GNPSExport will output the *most intense* MS/MS scan (with the highest precursor ion intensity) as *consensus MS/MS spectrum*.
+- **Most intense** [default]: `most_intense` - For each *consensusElement*, the GNPSExport will output the *most intense* MS/MS scan (with the highest precursor ion intensity) as *representative MS/MS spectrum*.
 
 - **All MS/MS**: `full_spectra` - For each *consensusElement*, the GNPSExport will output *All MS/MS scans*.
 
-Note that *mass accuracy* and the *retention time window* for the pairing between MS/MS scans and a LC-MS feature orconsensusElement is defined at the *IDMapper tool* step.
+- **Merge** [Experimental]: `merged_spectra` - For each *consensusElement*, the GNPSExport will merge all eligible MS/MS scans into one representative *MS/MS spectrum*. Eligible MS/MS scans have a pairwise *cosine similarity* with the MS/MS scan of highest precursor intensity above the *Cosine Similarity Treshold*. The fragment ions of merged MS/MS scans are binned in m/z (or Da) range defined by the *Binning width* parameter.
+	- **Cosine Similarity Treshold**: `merged_spectra:cos_similarity` (float, default: 0.9) - Parameter that defines *Cosine Similarity Treshold* for the pairwise *cosine similarity* between the MS/MS scan with the highest precursor intensity and the other MS/MS scans.
+	- **Binning width**: `merged_spectra:ms2_binned_size` (float, default: 0.02 Daltons) -  Parameter that defines the *Binning width* of fragment ions during the merging of eligible MS/MS spectra.
 
 
 ### Running the FBMN workflow with OpenMS files
