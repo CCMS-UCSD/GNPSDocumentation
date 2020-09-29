@@ -2,6 +2,18 @@
 
 The GNPS community is always welcoming suggestions and contributions. Be part of the community and contribute !
 
+## Updating the GNPS Documentation (Quick)
+
+We'd love for the community to add, edit, and improve the documentation so it'll be even more helpful for everyone. You can even see all the contributors for each page at the bottom, so it's totally a community effort. To make things simpler, here is the step by step on how to edit the documentation. 
+
+**Make a GitHub Account** 
+
+You'll need to make a [GitHub Account](https://github.com/join).
+
+**Click Edit Button on Page You Want to Edit**
+
+
+
 ## GitHub Repositories
 Your are kindly invited to open "issues" on our GitHub repositories, and propose changes to our Documentation and Workflows. We are also welcoming direct pull request on the respective repository.
 
