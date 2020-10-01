@@ -2,6 +2,7 @@
 
 | Venue        | Description          | Dates |  Speakers/Instructors |Material |
 | ------------- |-------------| -----| -----| -----|
+| Zoom! | GNPS LCMS Browser Workshop	| 10/14/2020 9AM PST | Mingxun Wang, Daniel Petras | TBA | 
 |TBD | TBD | TBD | -----| -----|
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
