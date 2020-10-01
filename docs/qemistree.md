@@ -98,17 +98,17 @@ For your own data visualization, enter the following information on the dashboar
 
 You can interactively modify the aethetics of this visualization (such as colors, fonts, sizes etc) interactively by using the control panel in iTOL. 
 
-**5.** You can download the .qzv file generated in the dashboard and drag and drop to https://view.qiime2.org/. Clicking on “View this tree using iTol” will build the tree with all the information contained in the Qemistree, Labels, Colors, and Abundance files. In this way, it will not be possible to trace the branches back to the fingerprints (and, consequently, to the Feature IDs) since the information you can get putting the cursor on the nodes is its branch length and the classification information. 
+**5.** You can download the .qzv file generated in the dashboard and drag and drop to https://view.qiime2.org/. Clicking on “View this tree using iTol” will build the tree with all the information contained in the **Qemistree, Labels, Colors, and Abundance** files. In this way, it will not be possible to trace the branches back to the fingerprints (and, consequently, to the Feature IDs) since the information you can get putting the cursor on the nodes is its branch length and the classification information. 
 
 If you want to trace the branches back to the feature IDs, you can download the Qemistree.tree file, and upload it in iTol directly in your account. In this way, you will get a tree without any other information added, just the fingerprint information for each node.
 
-![alt text](https://user-images.githubusercontent.com/55901470/94611679-72c86980-0278-11eb-8b18-39389c76998b.png "Qemistree fingerprints iTol")
+![alt text](https://github.com/helenamrusso/Images/blob/master/Qemistree_Fingerprints.png "Qemistree fingerprints iTol")
 
 On the job status window, you can click on “view summary” and download this entire table to check which feature ID corresponds to the fingerprint you are interested in (seen on the tree).
 
-![alt text](https://user-images.githubusercontent.com/55901470/94612069-f7b38300-0278-11eb-99a7-15cd8eb7ffb5.png "Qemistree SummaryView")
+![alt text](https://github.com/helenamrusso/Images/blob/master/Table_fingerprints.png "Qemistree SummaryView")
 
-You can also just drag and drop to iTol the Labels, Colors, and Abundance files to have all this information in the tree again.
+You can also just drag and drop to iTol the **Labels, Colors, and Abundance** files to have all this information in the tree again.
 
 ****
 
