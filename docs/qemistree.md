@@ -102,11 +102,11 @@ You can interactively modify the aethetics of this visualization (such as colors
 
 If you want to trace the branches back to the feature IDs, you can download the Qemistree.tree file, and upload it in iTol directly in your account. In this way, you will get a tree without any other information added, just the fingerprint information for each node.
 
-![alt text](https://github.com/helenamrusso/Images/blob/master/Qemistree_Fingerprints.png "Qemistree fingerprints iTol")
+![alt text](helenamrusso/Images/blob/master/Qemistree_Fingerprints.png "Qemistree fingerprints iTol")
 
 On the job status window, you can click on “view summary” and download this entire table to check which feature ID corresponds to the fingerprint you are interested in (seen on the tree).
 
-![alt text](https://github.com/helenamrusso/Images/blob/master/Table_fingerprints.png "Qemistree SummaryView")
+![alt text](helenamrusso/Images/blob/master/Table_fingerprints.png "Qemistree SummaryView")
 
 You can also just drag and drop to iTol the **Labels, Colors, and Abundance** files to have all this information in the tree again.
 
