@@ -57,12 +57,10 @@ Three type of input files are needed (test files for each software are accessibl
 **Option A (RECOMMENDED)** - Export the processing results using a feature table and an .MGF file:
 
 1. A *feature table* with the intensities of LC-MS ion features (TXT or CSV format).
-
-2. A *MS/MS spectral summary* file with a list of MS/MS spectra associated with the LC-MS ion features (.MGF File). (.MGF file format).
-
-3. [Optional] *Metadata table* - format described [here](metadata.md)
-
-4. [Optional] *"Supplementary Pairs"* of additional edges - described [here](#advanced-extras)
+1. A *MS/MS spectral summary* file with a list of MS/MS spectra associated with the LC-MS ion features (.MGF File). (.MGF file format).
+1. [Optional] *Metadata table* - format described [here](metadata.md)
+1. [Optional] *Original mzML Files* - These are the original files used for feature finding - described [here](#original-mzml-files)
+1. [Optional] *"Supplementary Pairs"* of additional edges - described [here](#advanced-extras)
 
 **Option B** - Export the processing results using an mzTab-M and mzML files:
 
