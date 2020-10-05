@@ -185,6 +185,11 @@ Example of the Supplementary Pairs used in the [IIN workflow](fbmn-iin.md).
 
 ![img](img/featurebasedmolecularnetworking/fbmn_advanced_extras.PNG)
 
+#### mzML Files Used for Feature Finding
+
+The original mzML/mzXML files that were used for feature finding can also be included. This provides a way for the workflow to link back to the original files and help people explore the data interactively. 
+
+
 ### Inspecting the Results of FBMN on GNPS
 
 After the completion of the FBMN job (this will take from 10 to 10 hours depending on your number of samples and instrument), you will receive an email notification with a link to the results page (see example below).
@@ -296,6 +301,7 @@ Basically, the **mzTab-M** file is used to retrieve for each LC-MS/MS feature:
 - The filename (**mzML**) and the index of the most intense associated MS/MS spectrum. 
 
 Note that currently, the mzTab-M has been tested only with XCMS. More informations in the [FBMN with mzTab-M documentation](featurebasedmolecularnetworking-with-mztab-m.md).
+
 
 ##### Programmatic Access to FBMN
 
