@@ -2,6 +2,7 @@
 
 | Venue        | Description          | Dates |  Speakers/Instructors |Material |
 | ------------- |-------------| -----| -----| -----|
+| Zoom! | GNPS LCMS Browser Workshop	| 10/14/2020 9AM PST | Mingxun Wang, Daniel Petras | [Material](https://docs.google.com/document/d/1tsE4oME3fu9_nbSB3gKLEdvSJMD7kNbEGmGb7TeoNgw/edit#) | 
 |TBD | TBD | TBD | -----| -----|
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
@@ -39,17 +40,17 @@ Here is a table to briefly browse them
 | Venue        | Description          | Dates | Speakers/Instructors | Material | Estimated Attendance |
 | ------------- |-------------| -----| -----| -----| ----- |
 | Zoom! | 1st GNPS User Meeting	| 8/26/2020 9AM PST | GNPS Community | [Program](https://docs.google.com/document/d/1CR2gURxDJimbaIcqszm6msHx55VQ5IIM2dtsvQWapGY/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=4HMjK4Js8xI) | 300 |
-| Zoom! | GNPS GC - Part 2	| 7/29/2020 9AM PST |  Alexander Aksenov, Mabel Gonzalez |[Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit?ts=5f1f15d2)| 20 |
-| Zoom! | GNPS Classical Molecular Networking in Portuguese | 7/22/2020 9AM PST | Anelize Bauermeister, Helena Mannochio | [Material](https://docs.google.com/document/d/17YFhsFWRxFNdHBhEQB3cQkOocXu-jWBtTsDWwek56oU) | 450 | 
+| Zoom! | GNPS GC - Part 2	| 7/29/2020 9AM PST |  Alexander Aksenov, Mabel Gonzalez |[Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit?ts=5f1f15d2) [Video](https://www.youtube.com/watch?v=EJipzmkK7oA) | 20 |
+| Zoom! | GNPS Classical Molecular Networking in Portuguese | 7/22/2020 9AM PST | Anelize Bauermeister, Helena Mannochio | [Material](https://docs.google.com/document/d/17YFhsFWRxFNdHBhEQB3cQkOocXu-jWBtTsDWwek56oU) [Video](https://www.youtube.com/watch?v=Lba9e45ZAE0) | 450 | 
 | Zoom! | GNPS ChemDir - Chemical Directionality for Longitudinal Molecular Networking	| 7/15/2020 9AM PST | Daniel Petras, Mauricio Caraballo, Mingxun Wang |[Material](https://docs.google.com/document/d/1srJxW1DxMNsOyT8YlraBmDJHJkI9EDw3l2JRmQL2jjI/edit?usp=sharing) | 40 |
 | Zoom! | GNPS Feature Based Molecular Networking in Espanol - Part 1	| 7/8/2020 9AM PST | Mauricio Caraballo, Daniel Petras | [Material](https://docs.google.com/document/d/1raBdT8QuHntm-im7DjxB3epG7_D_JEAXNY-_AoFvaWc/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=0xWMAwM8x3U&feature=youtu.be)| 40 |
 | Zoom! | GNPS Feature Based Molecular Networking in Espanol - Part 2| 7/9/2020 9AM PST | Mauricio Caraballo, Daniel Petras | [Material](https://docs.google.com/document/d/1wleocmsb1hoJrREujJFVjMH3wz4jH8MnpcMqbg1j5j0/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=l90j5T8EQbw&feature=youtu.be)| 50 |
-| Zoom! | Metabolomics Spectrum Resolver - Unifing spectrum rendering and customization	| 7/1/2020 9AM PST | Mingxun Wang , Wout Bittremieux | [Materials](https://docs.google.com/document/d/1xAbhHj4T3BV80oKuwmaxVl4HprecjquqRtnhCZOVVHQ/edit?usp=sharing) | 35 |
+| Zoom! | Metabolomics Spectrum Resolver - Unifing spectrum rendering and customization	| 7/1/2020 9AM PST | Mingxun Wang , Wout Bittremieux | [Materials](https://docs.google.com/document/d/1xAbhHj4T3BV80oKuwmaxVl4HprecjquqRtnhCZOVVHQ/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=JMJO8CAfCNI) | 35 |
 | Zoom! | GNPS - MS2LDA | 6/24/2020 9AM PST |  Justin van der Hooft, Simon Rogers, Joe Wandy, Madeleine Ernst, Mingxun Wang |[Material](https://docs.google.com/document/d/1i0oXux-plxF9oxK-MFIBgARkqM-wJzKPAjj-XVhrHk4/edit) [Video](https://www.youtube.com/watch?v=0wKUmjPy40s) | 40 |
 | Zoom! | GNPS Classical Molecular Networking in Español | 6/17/2020 9AM PST | Mauricio Caraballo, Mabel Gonzalez, Daniel Petras | [Material](https://docs.google.com/document/d/1sR9QjF5kCix7iJs1PQUm0rPwX1Naxwarxqxd04gBesw/edit) [Video](https://www.youtube.com/watch?v=hTZzZI3PtR0) | 60 |
 | Zoom! | GNPS Merge Polarity Networks - Merging Networks from Positive and Negative Mode	| 6/11/2020 9AM PST | Mingxun Wang, Allegra Aron | [Material](https://docs.google.com/document/d/1-dwuCXvbGEbrFADPmjZXRQWOtcaElXaNxRqcqLEK-us/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=wHdr9coLmoQ)  | 30 |
 | Zoom! | GNPS MolNetEnhancer	| 6/3/2020 9AM PST | Madeleine Ernst, Mauricio Caraballo, Mingxun Wang | [Material](https://docs.google.com/document/d/1qyepInMfujbG7Mgbm4fnuQf87i8JctvTUKjTs69T_os/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=-4DE_ZfF2vc) | 47 |
-| Zoom! | GC-MS deconvolution, library search and molecular networking | 5/27/2020 9AM PST | Alexander Aksenov, Mabel Gonzalez | [Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit) | 44 |
+| Zoom! | GC-MS deconvolution, library search and molecular networking | 5/27/2020 9AM PST | Alexander Aksenov, Mabel Gonzalez | [Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit) [Video](https://www.youtube.com/watch?v=CXDlwC7evnk) | 44 |
 | YouTube | Utilizing GNPS and MS2LDA for some molecular networking discovery	| 5/21/2020 6AM PST |  | [LiveStream](https://www.youtube.com/watch?v=Cc6eKGZQ1Qw&feature=youtu.be) | --- |
 | Zoom! | GNPS Ion-Identity Networking, Native Metabolomics	| 5/20/2020 9AM PST | Robin Schmid, Daniel Petras, Allegra Aron | [Material](https://docs.google.com/document/d/1Fasu3Gh0PsgW6-KW-FmKz-NgU6OLXrRHm_zAssVGZ-M/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=tb7LxaeNvcw) | 65 |
 | Zoom! | GNPS Feature Based Molecular Networking (Job Submssions and Exploration) | 5/14/2020 9AM PST | Louis-Felix Nothias, Daniel Petras, Allegra Aron| [Material](https://docs.google.com/document/d/1cYtCUHgKQMyXyc7tSi8vXUcMkgnvd-p50b-fiLFZZfU/edit?usp=sharing) | 103 |
