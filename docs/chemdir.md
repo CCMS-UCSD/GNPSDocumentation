@@ -1,14 +1,14 @@
-## Chemical Directionality (ChemDir)
+## Chemical Proportionality (ChemProp)
 
-The Chemical Directionality (ChemDir) concept applied here is defined by relative abundance changes between two neighbouring nodes within a molecular network. By taking advantage of the [feature-based molecular network workflow (FBMN)](https://www.biorxiv.org/content/10.1101/812404v1.full), we used the raw peak area across the longitudinal (or spatial) data series as a measure of the abundance for each detected feature among events. ChemDir facilitates the prioritisation of putative transformations in tandem mass spectrometry (MS/MS) data using the Global Natural Products Social Molecular Network [(GNPS)](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp) environment.
+The Chemical Proportionality (ChemProp) concept (Previously called ChemDir) applied here is defined by relative abundance changes between two neighbouring nodes within a molecular network. By taking advantage of the [feature-based molecular network workflow (FBMN)](https://www.biorxiv.org/content/10.1101/812404v1.full), we used the raw peak area across the longitudinal (or spatial) data series as a measure of the abundance for each detected feature among events. ChemProp facilitates the prioritisation of putative transformations in tandem mass spectrometry (MS/MS) data using the Global Natural Products Social Molecular Network [(GNPS)](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp) environment.
 
 You can checkout the tool on [GNPS](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22%3A%20%22CHEMDIR%22%7D). 
 
 !!! note "FBMN Version Compatibility"
-    We require a FBMN that is release_18 or newer. If your job is older than that, simply clone to latest to get the latest version and it should be compatible with ChemDir
+    We require a FBMN that is release_18 or newer. If your job is older than that, simply clone to latest to get the latest version and it should be compatible with ChemProp
 
 **Workflow** 
-Make sure you select the ChemDir workflow 
+Make sure you select the ChemProp workflow 
 
 ![img](img/ChemDir/ChemDir_step1.PNG)
  
@@ -23,7 +23,7 @@ Copy and paste the FBMN task ID from your previous FBMN  job
 ![img](img/ChemDir/ChemDir_step3.PNG)
 
 **METADATA_COLUMN**
-Define a metadata column header based on the exact metadata table provided for the FBMN job ID you are using in this ChemDir workflow
+Define a metadata column header based on the exact metadata table provided for the FBMN job ID you are using in this ChemProp workflow
 
 ![img](img/ChemDir/ChemDir_step4.PNG)
 
@@ -33,7 +33,7 @@ Provide the variables that you are interested in based on your longitudinal anal
 ![img](img/ChemDir/ChemDir_step5.PNG)
 
 **MIN_AREA_THRESHOLD** 
-Min peak area; defined during feature finding; job specific. The value used here will replace any 0 value from your dataset for ChemDir.
+Min peak area; defined during feature finding; job specific. The value used here will replace any 0 value from your dataset for ChemProp.
 
 ![img](img/ChemDir/ChemDir_step6.PNG)
 
@@ -53,7 +53,7 @@ Once your job is finished, you will be able to explore the results.
 ![img](img/ChemDir/ChemDir_step9.PNG)
 
 **Summary table**
-This table provides the general overview of every pair node compared via ChemDir.  
+This table provides the general overview of every pair node compared via ChemProp.  
 
 ![img](img/ChemDir/ChemDir_step10.PNG)
 
@@ -62,14 +62,14 @@ This enables you to directly download and explore the data in Cytoscape.
 
 ![img](img/ChemDir/ChemDir_step11b.PNG)
 
-**ChemDir dashboard**
-This enables you to quickly explore the maximum ChemDir scores and their correspondent DeltaMZ observed from your dataset.
+**ChemProp dashboard**
+This enables you to quickly explore the maximum ChemProp scores and their correspondent DeltaMZ observed from your dataset.
 
 ![img](img/ChemDir/ChemDir_step12.PNG)
 
 ## Development
 Source code
-There are two portions of the ChemDir infrastructure: [ChemDir GNPS/ProteoSAFe workflow](https://github.com/mwang87/ChemDir) and the [ChemDir Results Exploration Dashboard](https://github.com/mwang87/ChemDir_Dashboard). 
+There are two portions of the ChemProp infrastructure: [ChemDir GNPS/ProteoSAFe workflow](https://github.com/mwang87/ChemDir) and the [ChemDir Results Exploration Dashboard](https://github.com/mwang87/ChemDir_Dashboard). 
 
 ## Citation
 To be updated
