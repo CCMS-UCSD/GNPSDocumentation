@@ -196,7 +196,7 @@ Select the lastest "filtered aligned peaklist" generated and Go to Menu: *Peak l
 ![img](img/mzmine/gnps_export_module_V2.png)
 
 !!! important 
-    There is bug in teh last MZmine version (MZmine2.53) in which the file paths for export file can not be written in teh fiel selction window. To bypass this you can simply type teh file name directly in teh field in the export module.
+    There is bug in the current MZmine version (MZmine2.53) in which the file paths for the export file can not be written in the file selction window. To bypass this you can simply type the file name directly in the field in the export module.
     
     
 
@@ -225,9 +225,9 @@ ADDITIONAL NOTES: The feature table must contain at least the row ID, the row m/
 
 ### Export Peak boundaries for GNPS LCMS dahsboard.
 
-If you want to use the new LCMS dashboard for XIC visualization, you can export peak boundaries for each feature directly from MZmine to a .csv qunat file.
-Currently this can be done with teh "Export to csv file" modules under Feature list methods -> Export/Import -> Export to csv file. In addition to *Export rowID*, *Export row m/z*, *Export row retention time* and *Peak area* you need to select *Peak RT start* and *Peak RT end* in the *Export Data Elements* section.
-The exported .csv file will include additional columns for each .mzXML or .mzML with the sufix " Peak RT start" and " Peak RT end".
+If you want to use the new LCMS dashboard for XIC visualization, you can export peak RT boundaries for each feature directly from MZmine to a .csv quant file.
+Currently this can be done with the "Export to csv file" modules under Feature list methods -> Export/Import -> Export to csv file. In addition to *Export rowID*, *Export row m/z*, *Export row retention time* and *Peak area* you need to select *Peak RT start* and *Peak RT end* in the *Export Data Elements* section.
+The exported .csv file will include additional columns for each .mzXML or .mzML with the sufix " Peak RT start" and " Peak RT end" as column header and RT start and end value (min) as variables. .
 For the FBMN job submission use this file simply instead of the .csv exported through the GNPS export module.  
 
 
