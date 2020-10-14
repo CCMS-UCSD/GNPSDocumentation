@@ -60,7 +60,7 @@ The GNPS workflow is brought to you Ming Wang and Louis Felix Nothias. If you fo
 ### Main citations
 
 1. **SIRIUS**: [K. Dührkop, et al., SIRIUS 4: a rapid tool for turning tandem mass spectra into metabolite structure information. Nat. Methods 16, 299–302 (2019).](https://www.nature.com/articles/s41592-019-0344-8)
-2. **ZODIAC**: [M. Ludwig, et al., ZODIAC: database-independent molecular formula annotation using Gibbs sampling reveals unknown small molecules. bioRxiv (2019).]()
+2. **ZODIAC**: [M. Ludwig, et al., Database-independent molecular formula annotation using Gibbs sampling through ZODIAC. Nat. Machine Intelligence (2020).](https://www.nature.com/articles/s42256-020-00234-6)
 3. 	**CSI:FingerID** [K. Dührkop, H. Shen, M. Meusel, J. Rousu, S. Böcker, Searching molecular structure databases with tandem mass spectra using CSI:FingerID. Proc. Natl. Acad. Sci. U. S. A. 112, 12580–12585 (2015).](https://www.pnas.org/content/112/41/12580)
 4. 	**CANOPUS** [K. Dührkop, et al., Classes for the masses: Systematic classification of unknowns using fragmentation spectra. bioRxiv, 2020.04.17.046672 (2020).](https://www.biorxiv.org/content/10.1101/2020.04.17.046672v1)
 
