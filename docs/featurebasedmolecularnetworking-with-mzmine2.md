@@ -1,6 +1,6 @@
 ## Introduction
 
-The main documentation for **Feature-Based Molecular Networking** (FBMN) [can be accessed here](featurebasedmolecularnetworking.md). See [our preprint on bioaRxiv](https://www.biorxiv.org/content/10.1101/812404v1).
+The main documentation for **Feature-Based Molecular Networking** (FBMN) [can be accessed here](featurebasedmolecularnetworking.md). See [FBMN paper in Nature Methods](https://doi.org/10.1038/s41592-020-0933-6).
 
 Below we describe how to use **MZmine2 v2.51** with the FBMN workflow on GNPS. We have previously written the documentation for v2.33 and have noted differences in the software versions. 
 
@@ -10,7 +10,7 @@ Below we describe how to use **MZmine2 v2.51** with the FBMN workflow on GNPS. W
 
 This work builds on the efforts of our many colleagues, please cite their work:
 
-Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
+Nothias, L., Petras, D., Schmid, R. et al. [Feature-based molecular networking in the GNPS analysis environment](https://doi.org/10.1038/s41592-020-0933-6). Nat Methods 17, 905–908 (2020).
 
 Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
