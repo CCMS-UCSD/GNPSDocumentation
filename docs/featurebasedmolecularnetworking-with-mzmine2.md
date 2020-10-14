@@ -218,6 +218,16 @@ In the "*Export for/Submit to GNPS*" module, select the option: "*Submit to GNPS
 
 ADDITIONAL NOTES: The feature table must contain at least the row ID, the row m/z, and row retention time, along with the sample columns. It is currently mandatory for the sample name headers to have the following format: "filename Peak area". Depending on the steps used in MZmine the sample name header can be "filename baseline-corrected Peak area", but this has to be changed back to "filename Peak area".
 
+### Export Peak boundaries for GNPS LCMS dahsboard.
+
+If you want to use the new LCMS dashboard for XIC visualization, you can export peak boundaries for each feature directly from MZmine to a .csv qunat file.
+Currently this can be done with teh "Export to csv file" modules under Feature list methods -> Export/Import -> Export to csv file. In addition to *Export rowID*, *Export row m/z*, *Export row retention time* and *Peak area* you need to select *Peak RT start* and *Peak RT end* in the *Export Data Elements* section.
+The exported .csv file will include additional columns for each .mzXML or .mzML with the sufix " Peak RT start" and " Peak RT end".
+For the FBMN job submission use this file simply instead of the .csv exported through the GNPS export module.  
+
+
+
+
 ### Video Tutorial - Quick MZMine Export to GNPS for FBMN.
 
 The workflow for Feature Based Molecular Networking in GNPS is different from the classic molecular networking workflow. [Access the FBMN workflow here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (You need to be logged in first !)
