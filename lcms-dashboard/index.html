@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="https://ccms-ucsd.github.io/GNPSDocumentation/api/">
+        <link rel="canonical" href="https://ccms-ucsd.github.io/GNPSDocumentation/lcms-dashboard/">
       
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
@@ -15,7 +15,7 @@
     
     
       
-        <title>API - GNPS Documentation</title>
+        <title>LCMS Dashboard - GNPS Documentation</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gnps-api-overview" class="md-skip">
+        <a href="#lcms-dashboard" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              API
+              LCMS Dashboard
             
           </span>
         </div>
@@ -370,10 +370,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" checked>
     
     <label class="md-nav__link" for="nav-10">
       Recommended Data Analysis
@@ -513,11 +515,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../lcms-dashboard/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       LCMS Dashboard
     </a>
+    
   </li>
 
         
@@ -1362,185 +1373,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        API
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../api/" class="md-nav__link">
       API
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#gnps-library-spectra" class="md-nav__link">
-    GNPS Library Spectra
-  </a>
-  
-    <nav class="md-nav" aria-label="GNPS Library Spectra">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#all-public-library-spectra-at-gnps" class="md-nav__link">
-    All Public Library Spectra at GNPS
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#all-public-library-specta-at-gnps-with-peaks-and-annotation-history" class="md-nav__link">
-    All Public Library Specta at GNPS with Peaks and Annotation History
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#single-library-spectrum" class="md-nav__link">
-    Single Library Spectrum
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gnps-jobs" class="md-nav__link">
-    GNPS Jobs
-  </a>
-  
-    <nav class="md-nav" aria-label="GNPS Jobs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#job-results-api" class="md-nav__link">
-    Job Results API
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#structure-conversion" class="md-nav__link">
-    Structure Conversion
-  </a>
-  
-    <nav class="md-nav" aria-label="Structure Conversion">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#conversion-to-smiles" class="md-nav__link">
-    Conversion to Smiles
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conversion-to-inchi" class="md-nav__link">
-    Conversion to InChI
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conversion-to-inchikey" class="md-nav__link">
-    Conversion to InChIKey
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conversion-to-exact-mass" class="md-nav__link">
-    Conversion to exact mass
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conversion-to-formula" class="md-nav__link">
-    Conversion to formula
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#structure-classyfire" class="md-nav__link">
-    Structure Classyfire
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#structure-image" class="md-nav__link">
-    Structure Image
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#redu" class="md-nav__link">
-    ReDU
-  </a>
-  
-    <nav class="md-nav" aria-label="ReDU">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#per-file-sample-information-query" class="md-nav__link">
-    Per File Sample Information Query
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#page-contributions" class="md-nav__link">
-    Page Contributions
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -1573,157 +1410,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#gnps-library-spectra" class="md-nav__link">
-    GNPS Library Spectra
-  </a>
-  
-    <nav class="md-nav" aria-label="GNPS Library Spectra">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#all-public-library-spectra-at-gnps" class="md-nav__link">
-    All Public Library Spectra at GNPS
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#all-public-library-specta-at-gnps-with-peaks-and-annotation-history" class="md-nav__link">
-    All Public Library Specta at GNPS with Peaks and Annotation History
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#single-library-spectrum" class="md-nav__link">
-    Single Library Spectrum
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gnps-jobs" class="md-nav__link">
-    GNPS Jobs
-  </a>
-  
-    <nav class="md-nav" aria-label="GNPS Jobs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#job-results-api" class="md-nav__link">
-    Job Results API
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#structure-conversion" class="md-nav__link">
-    Structure Conversion
-  </a>
-  
-    <nav class="md-nav" aria-label="Structure Conversion">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#conversion-to-smiles" class="md-nav__link">
-    Conversion to Smiles
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conversion-to-inchi" class="md-nav__link">
-    Conversion to InChI
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conversion-to-inchikey" class="md-nav__link">
-    Conversion to InChIKey
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conversion-to-exact-mass" class="md-nav__link">
-    Conversion to exact mass
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conversion-to-formula" class="md-nav__link">
-    Conversion to formula
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#structure-classyfire" class="md-nav__link">
-    Structure Classyfire
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#structure-image" class="md-nav__link">
-    Structure Image
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#redu" class="md-nav__link">
-    ReDU
-  </a>
-  
-    <nav class="md-nav" aria-label="ReDU">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#per-file-sample-information-query" class="md-nav__link">
-    Per File Sample Information Query
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#page-contributions" class="md-nav__link">
-    Page Contributions
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1734,168 +1420,14 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/edit/master/docs/api.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/edit/master/docs/lcms-dashboard.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="gnps-api-overview">GNPS API Overview<a class="headerlink" href="#gnps-api-overview" title="Permanent link">&para;</a></h1>
-<h2 id="gnps-library-spectra">GNPS Library Spectra<a class="headerlink" href="#gnps-library-spectra" title="Permanent link">&para;</a></h2>
-<h3 id="all-public-library-spectra-at-gnps">All Public Library Spectra at GNPS<a class="headerlink" href="#all-public-library-spectra-at-gnps" title="Permanent link">&para;</a></h3>
-<p><code>https://gnps-external.ucsd.edu/gnpslibraryjson</code></p>
-<h3 id="all-public-library-specta-at-gnps-with-peaks-and-annotation-history">All Public Library Specta at GNPS with Peaks and Annotation History<a class="headerlink" href="#all-public-library-specta-at-gnps-with-peaks-and-annotation-history" title="Permanent link">&para;</a></h3>
-<p><code>https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.json</code></p>
-<details class="info"><summary>Example JSON Format</summary><div class="highlight"><pre><span></span><code><span class="p">[</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;spectrum_id&quot;</span><span class="p">:</span> <span class="s2">&quot;CCMSLIB00000579358&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;source_file&quot;</span><span class="p">:</span> <span class="s2">&quot;Training_001.mgf&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;task&quot;</span><span class="p">:</span> <span class="s2">&quot;03c206430208430c887ca025ea6c3641&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;scan&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;ms_level&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;library_membership&quot;</span><span class="p">:</span> <span class="s2">&quot;CASMI&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;spectrum_status&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;peaks_json&quot;</span><span class="p">:</span> <span class="s2">&quot;[[164.033997,32294.500000],[179.057495,129907.101562]]&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;splash&quot;</span><span class="p">:</span> <span class="s2">&quot;null-null-null-null&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;submit_user&quot;</span><span class="p">:</span> <span class="s2">&quot;lfnothias&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;Compound_Name&quot;</span><span class="p">:</span> <span class="s2">&quot;Theophyllin&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;Ion_Source&quot;</span><span class="p">:</span> <span class="s2">&quot;LC-ESI&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;Compound_Source&quot;</span><span class="p">:</span> <span class="s2">&quot;Commercial&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;Instrument&quot;</span><span class="p">:</span> <span class="s2">&quot;Orbitrap&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;PI&quot;</span><span class="p">:</span> <span class="s2">&quot;CASMI&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;Data_Collector&quot;</span><span class="p">:</span> <span class="s2">&quot;CASMI2016&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;Adduct&quot;</span><span class="p">:</span> <span class="s2">&quot;M-H&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;Scan&quot;</span><span class="p">:</span> <span class="s2">&quot;-1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;Precursor_MZ&quot;</span><span class="p">:</span> <span class="s2">&quot;179.057&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;ExactMass&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;Charge&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;CAS_Number&quot;</span><span class="p">:</span> <span class="s2">&quot;N/A&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;Pubmed_ID&quot;</span><span class="p">:</span> <span class="s2">&quot;33919&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;Smiles&quot;</span><span class="p">:</span> <span class="s2">&quot;CN1C2=C(NC=N2)C(=O)N(C)C1=O&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;INCHI&quot;</span><span class="p">:</span> <span class="s2">&quot;\&quot;InChI=1S/C7H8N4O2/c1-10-5-4(8-3-9-5)6(12)11(2)7(10)13/h3H,1-2H3,(H,8,9)\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;INCHI_AUX&quot;</span><span class="p">:</span> <span class="s2">&quot;N/A&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;Library_Class&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;SpectrumID&quot;</span><span class="p">:</span> <span class="s2">&quot;CCMSLIB00000579358&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;Ion_Mode&quot;</span><span class="p">:</span> <span class="s2">&quot; Negative&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;create_time&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-05-24 18:27:20.0&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;task_id&quot;</span><span class="p">:</span> <span class="s2">&quot;03c206430208430c887ca025ea6c3641&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;null&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;InChIKey_smiles&quot;</span><span class="p">:</span> <span class="s2">&quot;ZFXYFBGIUFBOJW-UHFFFAOYSA-N&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;InChIKey_inchi&quot;</span><span class="p">:</span> <span class="s2">&quot;None&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;Formula_smiles&quot;</span><span class="p">:</span> <span class="s2">&quot;C7H8N4O2&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;Formula_inchi&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://gnps.ucsd.edu/ProteoSAFe/gnpslibraryspectrum.jsp?SpectrumID=CCMSLIB00000579358&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;annotation_history&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;Compound_Name&quot;</span><span class="p">:</span> <span class="s2">&quot;Theophyllin&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;Ion_Source&quot;</span><span class="p">:</span> <span class="s2">&quot;LC-ESI&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;Compound_Source&quot;</span><span class="p">:</span> <span class="s2">&quot;Commercial&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;Instrument&quot;</span><span class="p">:</span> <span class="s2">&quot;Orbitrap&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;PI&quot;</span><span class="p">:</span> <span class="s2">&quot;CASMI&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;Data_Collector&quot;</span><span class="p">:</span> <span class="s2">&quot;CASMI2016&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;Adduct&quot;</span><span class="p">:</span> <span class="s2">&quot;M-H&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;Scan&quot;</span><span class="p">:</span> <span class="s2">&quot;-1&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;Precursor_MZ&quot;</span><span class="p">:</span> <span class="s2">&quot;179.057&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;ExactMass&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;Charge&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;CAS_Number&quot;</span><span class="p">:</span> <span class="s2">&quot;N/A&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;Pubmed_ID&quot;</span><span class="p">:</span> <span class="s2">&quot;33919&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;Smiles&quot;</span><span class="p">:</span> <span class="s2">&quot;CN1C2=C(NC=N2)C(=O)N(C)C1=O&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;INCHI&quot;</span><span class="p">:</span> <span class="s2">&quot;\&quot;InChI=1S/C7H8N4O2/c1-10-5-4(8-3-9-5)6(12)11(2)7(10)13/h3H,1-2H3,(H,8,9)\&quot;&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;INCHI_AUX&quot;</span><span class="p">:</span> <span class="s2">&quot;N/A&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;Library_Class&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;SpectrumID&quot;</span><span class="p">:</span> <span class="s2">&quot;CCMSLIB00000579358&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;Ion_Mode&quot;</span><span class="p">:</span> <span class="s2">&quot; Negative&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;create_time&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-05-24 18:27:20.0&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;task_id&quot;</span><span class="p">:</span> <span class="s2">&quot;03c206430208430c887ca025ea6c3641&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;lfnothias&quot;</span>
-            <span class="p">}</span>
-        <span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">]</span>
-</code></pre></div>
-</details>
-<p>As MGF</p>
-<p><code>https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.mgf</code></p>
-<details class="info"><summary>Example MGF Format</summary><div class="highlight"><pre><span></span><code>BEGIN IONS
-PEPMASS=407.186
-CHARGE=1
-MSLEVEL=2
-SOURCE_INSTRUMENT=LC-ESI-qTof
-FILENAME=Plate1_1_20_GG1_01_16488.mzXML
-SEQ=*..*
-IONMODE=Positive
-ORGANISM=GNPS-SELLECKCHEM-FDA-PART2
-NAME=Bortezomib (Velcade) [M+Na]
-PI=Dorrestein
-DATACOLLECTOR=Garg_Neha
-SMILES=C1=CN=CC(=N1)C(N[C@H](C(N[C@H](B(O)O)CC(C)C)=O)CC2=CC=CC=C2)=O
-INCHI=N/A
-INCHIAUX=N/A
-PUBMED=N/A
-SUBMITUSER=negarg
-LIBRARYQUALITY=1
-SPECTRUMID=CCMSLIB00000077995
-SCANS=1211
-95.886879   236.0
-131.058121  188.0
-144.823196  204.0
-...
-1402.281494 144.0
-END IONS
-</code></pre></div>
-</details>
-<p>As MSP</p>
-<p><code>https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.msp</code></p>
-<h3 id="single-library-spectrum">Single Library Spectrum<a class="headerlink" href="#single-library-spectrum" title="Permanent link">&para;</a></h3>
-<p><code>https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=&lt;Library Accession&gt;</code></p>
-<p><a href="https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=CCMSLIB00005463737">Example</a></p>
-<h2 id="gnps-jobs">GNPS Jobs<a class="headerlink" href="#gnps-jobs" title="Permanent link">&para;</a></h2>
-<h3 id="job-results-api">Job Results API<a class="headerlink" href="#job-results-api" title="Permanent link">&para;</a></h3>
-<p>GNPS job results page in JSON format:</p>
-<p><code>https://gnps.ucsd.edu/ProteoSAFe/result_json.jsp?task=&lt;task id&gt;&amp;view=&lt;view name&gt;</code></p>
-<p><a href="https://gnps.ucsd.edu/ProteoSAFe/result_json.jsp?task=1ad7bc366aef45ce81d2dfcca0a9a5e7&amp;view=view_all_annotations_DB">Example</a></p>
-<h2 id="structure-conversion">Structure Conversion<a class="headerlink" href="#structure-conversion" title="Permanent link">&para;</a></h2>
-<h3 id="conversion-to-smiles">Conversion to Smiles<a class="headerlink" href="#conversion-to-smiles" title="Permanent link">&para;</a></h3>
-<p><code>https://gnps-structure.ucsd.edu/smiles?inchi=&lt;inchi string&gt;</code></p>
-<p><a href="https://gnps-structure.ucsd.edu/smiles?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3">Example</a></p>
-<h3 id="conversion-to-inchi">Conversion to InChI<a class="headerlink" href="#conversion-to-inchi" title="Permanent link">&para;</a></h3>
-<p><code>https://gnps-structure.ucsd.edu/inchi?smiles=&lt;smiles string&gt;</code></p>
-<p><a href="https://gnps-structure.ucsd.edu/inchi?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
-<h3 id="conversion-to-inchikey">Conversion to InChIKey<a class="headerlink" href="#conversion-to-inchikey" title="Permanent link">&para;</a></h3>
-<p><code>https://gnps-structure.ucsd.edu/inchikey?smiles=&lt;smiles string&gt;</code></p>
-<p><a href="https://gnps-structure.ucsd.edu/inchikey?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
-<h3 id="conversion-to-exact-mass">Conversion to exact mass<a class="headerlink" href="#conversion-to-exact-mass" title="Permanent link">&para;</a></h3>
-<p><code>https://gnps-structure.ucsd.edu/structuremass?smiles=&lt;smiles string&gt;</code></p>
-<p><a href="https://gnps-structure.ucsd.edu/structuremass?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
-<h3 id="conversion-to-formula">Conversion to formula<a class="headerlink" href="#conversion-to-formula" title="Permanent link">&para;</a></h3>
-<p><code>https://gnps-structure.ucsd.edu/formula?smiles=&lt;smiles string&gt;</code></p>
-<p><a href="https://gnps-structure.ucsd.edu/formula?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
-<h3 id="structure-classyfire">Structure Classyfire<a class="headerlink" href="#structure-classyfire" title="Permanent link">&para;</a></h3>
-<p>If you have Smiles</p>
-<p><code>https://gnps-structure.ucsd.edu/classyfire?smiles=&lt;smiles string&gt;</code></p>
-<p><a href="https://gnps-structure.ucsd.edu/classyfire?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
-<p>If you have InChI</p>
-<p><code>https://gnps-structure.ucsd.edu/classyfire?inchi=&lt;InChI string&gt;</code></p>
-<p><a href="https://gnps-structure.ucsd.edu/classyfire?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3">Example</a></p>
-<p>If you have InChI Key</p>
-<p><code>https://gnps-classyfire.ucsd.edu/entities/&lt;InChI Key&gt;.json</code></p>
-<p><a href="https://gnps-classyfire.ucsd.edu/entities/RYYVLZVUVIJVGH-UHFFFAOYSA-N.json">Example</a></p>
-<p>Additionally, in case the inchikey is not classified, you can provide <code>smiles</code> or <code>inchi</code> arguments for 
-us to push to the Wishart servers to classify. </p>
-<div class="admonition note">
-<p class="admonition-title">ClassyFire</p>
-<p>ClassyFire is tool from the Wishart Lab - check it out <a href="https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0174-y">here</a>. Here is the recommended citation: 
-Feunang, Yannick Djoumbou, Roman Eisner, Craig Knox, Leonid Chepelev, Janna Hastings, Gareth Owen, Eoin Fahy et al. "ClassyFire: automated chemical classification with a comprehensive, computable taxonomy." Journal of cheminformatics 8, no. 1 (2016): 61.</p>
-</div>
-<h3 id="structure-image">Structure Image<a class="headerlink" href="#structure-image" title="Permanent link">&para;</a></h3>
-<p><code>https://gnps-structure.ucsd.edu/structureimg?smiles=&lt;smiles string&gt;</code></p>
-<p><a href="https://gnps-structure.ucsd.edu/structureimg?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
-<h2 id="redu">ReDU<a class="headerlink" href="#redu" title="Permanent link">&para;</a></h2>
-<h3 id="per-file-sample-information-query">Per File Sample Information Query<a class="headerlink" href="#per-file-sample-information-query" title="Permanent link">&para;</a></h3>
-<p><code>https://redu.ucsd.edu/filename?query=&lt;File full path in MassIVE&gt;</code></p>
-<p><a href="https://redu.ucsd.edu/filename?query=f.MSV000082048/ccms_peak/Plate_28/30_84.mzML">Example</a></p>
-<h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h2>
-<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a></span></p>
+                <h1 id="lcms-dashboard">LCMS Dashboard<a class="headerlink" href="#lcms-dashboard" title="Permanent link">&para;</a></h1>
+<p>Pardon our dust, this is a work in progress! </p>
+<p>Help us by adding to it. </p>
                 
                   
                     
@@ -1904,7 +1436,7 @@ Feunang, Yannick Djoumbou, Roman Eisner, Craig Knox, Leonid Chepelev, Janna Hast
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 7, 2020 21:48:03</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 15, 2020 18:29:07</span>
     
   </small>
 </div>
@@ -1927,7 +1459,7 @@ Feunang, Yannick Djoumbou, Roman Eisner, Craig Knox, Leonid Chepelev, Janna Hast
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../toolindex/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../resultviews/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1936,19 +1468,19 @@ Feunang, Yannick Djoumbou, Roman Eisner, Craig Knox, Leonid Chepelev, Janna Hast
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                GNPS Tool Index
+                Result Views Navigation
               </div>
             </div>
           </a>
         
         
-          <a href="../developers/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../networkingfiles/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                For Developers
+                Molecular Networking Files
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
