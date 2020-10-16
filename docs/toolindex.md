@@ -39,23 +39,30 @@ These are web tools that is run by the GNPS team and provides complementary func
 | Tool  | Documentation | Source Code | Citation |
 |---|---|---|---|
 | [ReDU](https://redu.ucsd.edu/) | [Documentation](https://mwang87.github.io/ReDU-MS2-Documentation/) | [GitHub](https://github.com/mwang87/ReDU-MS2-GNPS) | [Citation](https://www.biorxiv.org/content/10.1101/750471v1)|
-| [GNPS Structure Server](https://gnps-structure.ucsd.edu/) | Structure processing worker | TODO! |
-| [GNPS Quickstart/Batch Validator](https://gnps-quickstart.ucsd.edu) | TODO | TODO |
-| [GNPS Cytoscape](https://gnps-cytoscape.ucsd.edu) | TODO | TODO |
-| [GNPS MASST](https://masst.ucsd.edu) | [Documentation](https://ccms-ucsd.github.io/GNPSDocumentation/masst/) | TODO | [Citation](https://www.nature.com/articles/s41587-019-0375-9)|
-| [Metabolomics Spectrum Resolver](https://metabolomics-usi.ucsd.edu) | --- | [GitHub](https://github.com/mwang87/MetabolomicsSpectrumResolver) | TODO |
-| [Qemistree Dashboard](https://qemistree.ucsd.edu) | [Documentation](qemistree.md) | TODO |
-| [GNPS Networking URL Formatter](https://gnps-urlworkflow.herokuapp.com/) | --- | TODO |
-| [GNPS Task Esquisse Server (Beta)](http://dorresteintesthub.ucsd.edu:8347/) | --- | TODO |
-| [GNPS Result View Esquisse Server (Super Beta)](http://dorresteintesthub.ucsd.edu:8359/) | --- | TODO |
-| [GNPS Text Esquisse Server (Super Beta)](https://gnps.shinyapps.io/text_entry/) | --- | TODO |
-| [GNPS Library Dash Explorer](http://dorresteinappshub.ucsd.edu:6546/) | --- | TODO |
-| [GNPS Mass Spec Calculator (Beta)](https://gnps-masscalculator.herokuapp.com/) | --- | TODO |
+| [GNPS Structure Server](https://gnps-structure.ucsd.edu/) | --- | --- |
+| [GNPS Quickstart/Batch Validator](https://gnps-quickstart.ucsd.edu) | [Documentation](superquickstart.md) | --- |
+| [GNPS Cytoscape](https://gnps-cytoscape.ucsd.edu) | [Documentation](cytoscape.md) | --- |
+| [GNPS MASST](https://masst.ucsd.edu) | [Documentation](masst.md) | TODO | [Citation](https://www.nature.com/articles/s41587-019-0375-9)|
+| [Metabolomics Spectrum Resolver](https://metabolomics-usi.ucsd.edu) | [Documentation](usi.md) | [GitHub](https://github.com/mwang87/MetabolomicsSpectrumResolver) | TODO |
+| [Qemistree Dashboard](https://qemistree.ucsd.edu) | [Documentation](qemistree.md) | --- |
+| [GNPS Networking URL Formatter](https://gnps-urlworkflow.herokuapp.com/) | --- | --- |
+| [GNPS Library Dash Explorer](http://dorresteinappshub.ucsd.edu:6546/) | --- | --- |
+| [GNPS Mass Spec Calculator (Beta)](https://gnps-masscalculator.herokuapp.com/) | --- | --- |
 | [GNPS Usage Stats Dashboard](https://gnps-usage-stats.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_StatsSummaryDashboard) | --- |
-| [GNPS Upset Plot Dashboard (Beta)](https://gnps-classical-comparison.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_ClassicalNetworkGroupsComparisonDashboard) | --- |
+| [GNPS Classical Networking Upset Plot Dashboard](https://gnps-classical-comparison.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_ClassicalNetworkGroupsComparisonDashboard) | --- |
+| [GNPS FBMN Upset Plot Dashboard](https://gnps-fbmn-upset.herokuapp.com/) | --- | --- |
 | [NP Classifier](https://npclassifier.ucsd.edu/) | --- | [GitHub](https://github.com/mwang87/NP-Classifier) |
-| [GNPS LCMS Explorer](https://gnps-lcms.ucsd.edu/) | --- | --- |
+| [GNPS LCMS Explorer](https://gnps-lcms.ucsd.edu/) | [Documentation](lcms-dashboard.md) | --- |
 | [GNPS FBMN Box Plotting Dashboard](http://dorresteintesthub.ucsd.edu:6549) | --- | --- |
+| [GNPS Dataset File Explorer](https://gnps-dataset-explorer.herokuapp.com/) | --- | --- |
+
+## GNPS Deprecated Web Tools
+
+| Tool  | Documentation | Source Code | Citation |
+|---|---|---|---|
+| [GNPS Task Esquisse Server (Beta)](http://dorresteintesthub.ucsd.edu:8347/) | --- | --- |
+| [GNPS Result View Esquisse Server (Super Beta)](http://dorresteintesthub.ucsd.edu:8359/) | --- | --- |
+| [GNPS Text Esquisse Server (Super Beta)](https://gnps.shinyapps.io/text_entry/) | --- | --- |
 
 ## GNPS Jupyter Notebooks
 
@@ -63,10 +70,8 @@ These are Jupyter Notebooks that interact with GNPS web resources and do further
 
 | Tool | Documentation | Source Code | Binder Launch |
 | ---- | ------------- | ----------- | ------------- |
-| GNPS MASST Post Processing | TODO | [GitHub](https://github.com/mwang87/GNPS_MASST_Notebooks) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mwang87/GNPS_MASST_Notebooks/master) |
-| GNPS Bioactive Molecular Networks | TODO | [GitHub](https://github.com/DorresteinLaboratory/Bioactive_Molecular_Networks) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DorresteinLaboratory/Bioactive_Molecular_Networks/master) |
-
-
+| GNPS MASST Post Processing | --- | [GitHub](https://github.com/mwang87/GNPS_MASST_Notebooks) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mwang87/GNPS_MASST_Notebooks/master) |
+| GNPS Bioactive Molecular Networks | --- | [GitHub](https://github.com/DorresteinLaboratory/Bioactive_Molecular_Networks) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DorresteinLaboratory/Bioactive_Molecular_Networks/master) |
 
 ## Community Tools GNPS Interfaces with
 
