@@ -11,7 +11,7 @@
       
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
     
     
       
@@ -19,10 +19,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.38780c08.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.bc7e593a.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.3f72e892.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab28b872.min.css">
         
       
     
@@ -71,7 +71,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://ccms-ucsd.github.io/GNPSDocumentation/" title="GNPS Documentation" class="md-header-nav__button md-logo" aria-label="GNPS Documentation">
       
@@ -156,7 +158,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://ccms-ucsd.github.io/GNPSDocumentation/" title="GNPS Documentation" class="md-nav__button md-logo" aria-label="GNPS Documentation">
       
@@ -1511,7 +1515,7 @@ This documentation aims to provide a user-guide on how to run a Qemistree workfl
 <p><img alt="alt text" src="../img/qemistree/treeexample.png" title="Qemistree file" /></p>
 <p>We recommend you to download the tree and tree decoration files by clicking on the boxes: <strong>Qemistree, Labels, Colors, and Abundance</strong>. These provide the tree file of the features that have smiles (<code>qemistree.tree</code>), the label for each tip of the tree (<code>labels.txt</code>), the color of each clade (<code>colors.txt</code>), and the relative abundance of the feature in the metadata category chosen for the job (<code>barplots.txt</code>). This is because the auto-generated tree is only available for 30 days &amp; therefore it is recommended that you download the associated files and upload it on iTOL using your login credential for permanent storage.</p>
 <p><strong>3.</strong> Under <strong>Advanced Views</strong>, click on <code>View qiime2 Emperor Plots</code> to visualize the Principal Coordinate Analysis result using weighted <a href="https://www.ncbi.nlm.nih.gov/pubmed/16332807">UniFrac distances</a> based on the chemical relationships based on predicted molecular fingerprints.  </p>
-<p><strong>4</strong> Visualizing chemical trees using the <strong>View Qemistree dashboard</strong>. You can further explore and modify the Qemistree visualization interactively using the <a href="https://qemistree.ucsd.edu/">Qemistree dashboard</a>. This dashboard is available as a link on your Qemistree job status page for direct access.</p>
+<p><strong>4.</strong> Visualizing chemical trees using the <strong>View Qemistree dashboard</strong>. You can further explore and modify the Qemistree visualization interactively using the <a href="https://qemistree.ucsd.edu/">Qemistree dashboard</a>. This dashboard is available as a link on your Qemistree job status page for direct access.</p>
 <p>The example Qemistree task on the dashboard provides is based on a subset of a global foodomics dataset. </p>
 <p><img alt="alt text" src="../img/qemistree/qemistree_dashboard.png" title="Qemistree Dashbaord" /></p>
 <p>For your own data visualization, enter the following information on the dashboard:</p>
@@ -1525,6 +1529,12 @@ This documentation aims to provide a user-guide on how to run a Qemistree workfl
 <li>Click on <code>Datasets</code> tab in iTOL to visualize the relative abundance of each feature in the sample metadata category you chose in Step 5.</li>
 </ol>
 <p>You can interactively modify the aethetics of this visualization (such as colors, fonts, sizes etc) interactively by using the control panel in iTOL. </p>
+<p><strong>5.</strong> You can download the .qzv file generated in the dashboard and drag and drop to https://view.qiime2.org/. Clicking on “View this tree using iTol” will build the tree with all the information contained in the <strong>Qemistree, Labels, Colors, and Abundance</strong> files. In this way, it will not be possible to trace the branches back to the fingerprints (and, consequently, to the Feature IDs) since the information you can get putting the cursor on the nodes is its branch length and the classification information. </p>
+<p>If you want to trace the branches back to the feature IDs, you can download the Qemistree.tree file, and upload it in iTol directly in your account. In this way, you will get a tree without any other information added, just the fingerprint information for each node.</p>
+<p><img alt="alt text" src="../img/qemistree/Qemistree_Fingerprints.png" title="Qemistree fingerprints iTol" /></p>
+<p>On the job status window, you can click on “view summary” and download this entire table to check which feature ID corresponds to the fingerprint you are interested in (seen on the tree).</p>
+<p><img alt="alt text" src="../img/qemistree/Table_fingerprints.png" title="Qemistree SummaryView" /></p>
+<p>You can also just drag and drop to iTol the <strong>Labels, Colors, and Abundance</strong> files to have all this information in the tree again.</p>
 <hr />
 <p><strong>STEP 4. Advanced analysis using QIIME2</strong> 
 For advanced users, we encourage you to download all the files generated from this analysis by clicking on <code>Download Qiime2 data</code> on the status page of the job and explore your data using tools available in <a href="https://qiime2.org/">QIIME2</a>. Qemistree workflow formats all resulting files such that they are compatible with statistical and visualization tools in QIIME2 and we encourage users to leverage QIIME2 tools for data exploration.  </p>
@@ -1542,7 +1552,7 @@ For advanced users, we encourage you to download all the files generated from th
 <p><a href="https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0174-y">Djoumbou Feunang, Y. et al. ClassyFire: automated chemical classification with a comprehensive, computable taxonomy. J. Cheminform. 8, 61 (2016)</a></p>
 <p><a href="https://academic.oup.com/nar/article/47/W1/W256/5424068">Letunic, I. &amp; Bork, P. Interactive Tree Of Life (iTOL) v4: recent updates and new developments. Nucleic Acids Research vol. 47 W256–W259 (2019)</a></p>
 <h2 id="page-contributors">Page Contributors<a class="headerlink" href="#page-contributors" title="Permanent link">&para;</a></h2>
-<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (7.69%), <a href='mailto:dacharya@wisc.edu'>Deepa Acharya</a> (51.54%), <a href='mailto:anupriya.tripathi92@gmail.com'>Anupriya Tripathi</a> (40.77%)</span></p>
+<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (7.04%), <a href='mailto:dacharya@wisc.edu'>Deepa Acharya</a> (47.18%), <a href='mailto:anupriya.tripathi92@gmail.com'>Anupriya Tripathi</a> (36.62%), <a href='mailto:55901470+helenamrusso@users.noreply.github.com'>helenamrusso</a> (9.15%)</span></p>
                 
                   
                     
@@ -1551,7 +1561,7 @@ For advanced users, we encourage you to download all the files generated from th
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 19, 2020 17:46:45</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 19, 2020 21:17:12</span>
     
   </small>
 </div>
@@ -1622,8 +1632,8 @@ For advanced users, we encourage you to download all the files generated from th
       
     </div>
     
-      <script src="../assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../assets/javascripts/vendor.6a3d08fc.min.js"></script>
+      <script src="../assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
