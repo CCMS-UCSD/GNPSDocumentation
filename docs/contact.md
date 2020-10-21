@@ -10,9 +10,9 @@ For more in-depth assistance, we invite you to attend the numerous GNPS workshop
 
 We are hosting online office hours on a weekly basis online with Ming ([miw023@ucsd.edu](mainto:miw023@ucsd.edu)) via Zoom:
 
-https://ucsd.zoom.us/j/96785479814
+https://ucsd.zoom.us/j/93790942606
 
-PW: 996451
+PW: 325881
 
 In office hours we'll cover new and old features of GNPS and most importantly we'll take your personal questions about GNPS, computational mass spectrometry, and any science you want to chat about!
 
