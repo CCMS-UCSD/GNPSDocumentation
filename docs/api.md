@@ -138,6 +138,18 @@ GNPS job results page in JSON format:
 
 [Example](https://gnps.ucsd.edu/ProteoSAFe/result_json.jsp?task=1ad7bc366aef45ce81d2dfcca0a9a5e7&view=view_all_annotations_DB)
 
+### Job Status API
+
+GNPS job status page in JSON format:
+
+```https://gnps.ucsd.edu/ProteoSAFe/status_json.jsp?task=<task id>```
+
+### Job Parameters
+
+GNPS job parameters page in XML format:
+
+```https://gnps.ucsd.edu/ProteoSAFe/ManageParameters?task=<task id>```
+
 ## Structure Conversion
 
 ### Conversion to Smiles
