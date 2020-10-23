@@ -2,7 +2,6 @@
 
 | Venue        | Description          | Dates |  Speakers/Instructors |Material |
 | ------------- |-------------| -----| -----| -----|
-| Zoom! | GNPS LCMS Browser Workshop	| 10/14/2020 9AM PST | Mingxun Wang, Daniel Petras | [Material](https://docs.google.com/document/d/1tsE4oME3fu9_nbSB3gKLEdvSJMD7kNbEGmGb7TeoNgw/edit#) | 
 |TBD | TBD | TBD | -----| -----|
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
@@ -40,6 +39,7 @@ Here is a table to briefly browse them
 
 | Venue        | Description          | Dates | Speakers/Instructors | Material | Estimated Attendance |
 | ------------- |-------------| -----| -----| -----| ----- |
+| Zoom! | GNPS LCMS Browser Workshop	| 10/14/2020 9AM PST | Mingxun Wang, Daniel Petras | [Material](https://docs.google.com/document/d/1tsE4oME3fu9_nbSB3gKLEdvSJMD7kNbEGmGb7TeoNgw/edit#) | 20 |
 | Zoom! | 1st GNPS User Meeting	| 8/26/2020 9AM PST | GNPS Community | [Program](https://docs.google.com/document/d/1CR2gURxDJimbaIcqszm6msHx55VQ5IIM2dtsvQWapGY/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=4HMjK4Js8xI) | 300 |
 | Zoom! | GNPS GC - Part 2	| 7/29/2020 9AM PST |  Alexander Aksenov, Mabel Gonzalez |[Material](https://docs.google.com/document/d/1fTRH6R4cU9BFrVMsQ54QMjEQWvDNjyvjFrI29Kbn4Fo/edit?ts=5f1f15d2) [Video](https://www.youtube.com/watch?v=EJipzmkK7oA) | 20 |
 | Zoom! | GNPS Classical Molecular Networking in Portuguese | 7/22/2020 9AM PST | Anelize Bauermeister, Helena Mannochio | [Material](https://docs.google.com/document/d/17YFhsFWRxFNdHBhEQB3cQkOocXu-jWBtTsDWwek56oU) [Video](https://www.youtube.com/watch?v=Lba9e45ZAE0) | 450 | 
