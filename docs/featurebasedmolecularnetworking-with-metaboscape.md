@@ -18,11 +18,11 @@ Wang, M. et al. [Sharing and community curation of mass spectrometry data with G
 
 MetaboScape can be used to process LC-MS/MS Bruker Daltonics data files (i.e. *.d files). After the processing with MetaboScape, the output files can be used to run the Feature-Based Molecular Networking workflow on GNPS either using the [Superquick FBMN start page](https://gnps-quickstart.ucsd.edu/) or [the standard interface of the FBMN workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in to GNPS first).
 
-!!! note
-    This guide is meant for MetaboScape 2.0. 
-
 **Requirements:** 
-Install [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html) (at least version 2.0) and get a valid license. 
+Install [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html) (version 2.0 or higher) and get a valid license.
+
+!!! note
+    If you installed Metaboscape v5.0, then please [skip to this section](#a2-perform-feature-detection-and-annotation-with-metaboscape-v50) instead.  
 
 ### A. Perform Feature Detection with Profile Analysis
 
@@ -52,6 +52,45 @@ Install [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-sepa
 ![img](img/metaboscapeexportforgnps/Metabo_4.PNG)
 
 10. The **MS/MS spectral summary** (.MGF file) and the **feature quantification table** (.CSV file) will be used to perform a FBMN job on GNPS (see below).
+
+
+### A2. Perform Feature Detection and Annotation with Metaboscape v5.0
+1. Open Metaboscape and setup a new project, add an experiment, and then generate a bucket table containing ion features. This is outlined in the Metaboscape v5.0 User Manual - Section 3.
+2. If you wish to annotate your MS2 features using a custom feature list or by SmartFormula, first sort your features by clicking on the MS/MS column.  
+
+![img](img/metaboscapeexportforgnps/metabo_v5_sort_by_msms.png)
+
+3. Next, select the buckets that contain MS/MS features  
+
+![img](img/metaboscapeexportforgnps/metabo_v5_select_msms_buckets_only.png)
+
+4. Finally perform feature annotation using SmartFormula by clicking on the `Annotation` button on the left and then setting appropriate parameters for annotation. Don't forget to click `Selected Buckets Only` at the bottom!  
+
+![img](img/metaboscapeexportforgnps/metabo_v5_annotate_with_SmartFormula.png)
+
+### B2. Export your data for GNPS using Metaboscape v5.0  
+
+1. Click on the `Export` button on the left to export your data for GNPS.  
+
+![img](img/metaboscapeexportforgnps/metabo_v5_export_menu.png)
+
+2. Select a target directory to export the files. As shown below, this will export all the features required for GNPS analyses. 
+
+![img](img/metaboscapeexportforgnps/metabo_v5_export_dialog_box.png)
+
+3. You should have these files once you have successfully exported your bucket table.
+
+![img](img/metaboscapeexportforgnps/metabo_v5_exported_files.png)
+
+4. Finally, you will need to modify the `msmsonly.csv` file to ensure that it meets the requirements of the current FBMN workflow. This will be most likely be automated in a future version of FBMN. You will need a spreadsheet tool like MS Excel. Metaboscape v5.0 exports extra columns depending on the metadata you define during your experiment setup. For example, if you define a metadata grouping as `media` with different kinds of media, then your excel file will look somewhat similar to this (note the columns boxed in green):
+
+![img](img/metaboscapeexportforgnps/metabo_v5_extra_columns_example.png)
+
+You must edit your file to get rid of these extra columns. In the screenshot shown below, the columns containing your sample intensities start at `DQ`. **You must delete all columns between  `MaxIntensity` and your first sample column.** In the screenshots, delete columns between `Column K` and `Column DQ`. _Do not delete `MaxIntensity` or your sample columns!_ 
+
+In the example below, delete the columns in red but keep the columns in green.
+
+![img](img/metaboscapeexportforgnps/metabo_v5_extra_column_columns_to_delete.png)
 
 #### Processing IMS Data (PASEF)
 
