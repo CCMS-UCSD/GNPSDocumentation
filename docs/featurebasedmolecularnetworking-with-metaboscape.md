@@ -22,7 +22,7 @@ MetaboScape can be used to process LC-MS/MS Bruker Daltonics data files (i.e. *.
 Install [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html) (version 2.0 or higher) and get a valid license.
 
 !!! note
-    If you installed Metaboscape v5.0, then please [skip to this section](###-a2.-perform feature-detection-and-annotation-with-metaboscape-v5.0) instead.  
+    If you installed Metaboscape v5.0, then please [skip to this section](#a2-perform-feature-detection-and-annotation-with-metaboscape-v50) instead.  
 
 ### A. Perform Feature Detection with Profile Analysis
 
