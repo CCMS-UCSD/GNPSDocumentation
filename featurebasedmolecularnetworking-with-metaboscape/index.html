@@ -727,7 +727,21 @@
     B. Use MetaboScape to Annotate MS/MS spectra
   </a>
   
-    <nav class="md-nav" aria-label="B. Use MetaboScape to Annotate MS/MS spectra">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a2-perform-feature-detection-and-annotation-with-metaboscape-v50" class="md-nav__link">
+    A2. Perform Feature Detection and Annotation with Metaboscape v5.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b2-export-your-data-for-gnps-using-metaboscape-v50" class="md-nav__link">
+    B2. Export your data for GNPS using Metaboscape v5.0
+  </a>
+  
+    <nav class="md-nav" aria-label="B2. Export your data for GNPS using Metaboscape v5.0">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1593,7 +1607,21 @@
     B. Use MetaboScape to Annotate MS/MS spectra
   </a>
   
-    <nav class="md-nav" aria-label="B. Use MetaboScape to Annotate MS/MS spectra">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a2-perform-feature-detection-and-annotation-with-metaboscape-v50" class="md-nav__link">
+    A2. Perform Feature Detection and Annotation with Metaboscape v5.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b2-export-your-data-for-gnps-using-metaboscape-v50" class="md-nav__link">
+    B2. Export your data for GNPS using Metaboscape v5.0
+  </a>
+  
+    <nav class="md-nav" aria-label="B2. Export your data for GNPS using Metaboscape v5.0">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1682,12 +1710,12 @@
 <p>Wang, M. et al. <a href="https://doi.org/10.1038/nbt.3597">Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking</a>. Nat. Biotechnol. 34, 828–837 (2016).</p>
 <h2 id="using-metaboscape-and-fbmn">Using MetaboScape and FBMN<a class="headerlink" href="#using-metaboscape-and-fbmn" title="Permanent link">&para;</a></h2>
 <p>MetaboScape can be used to process LC-MS/MS Bruker Daltonics data files (i.e. *.d files). After the processing with MetaboScape, the output files can be used to run the Feature-Based Molecular Networking workflow on GNPS either using the <a href="https://gnps-quickstart.ucsd.edu/">Superquick FBMN start page</a> or <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">the standard interface of the FBMN workflow</a> (you need to be logged in to GNPS first).</p>
+<p><strong>Requirements:</strong> 
+Install <a href="https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html">MetaboScape</a> (version 2.0 or higher) and get a valid license.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This guide is meant for MetaboScape 2.0. </p>
+<p>If you installed Metaboscape v5.0, then please <a href="#a2-perform-feature-detection-and-annotation-with-metaboscape-v50">skip to this section</a> instead.  </p>
 </div>
-<p><strong>Requirements:</strong> 
-Install <a href="https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html">MetaboScape</a> (at least version 2.0) and get a valid license. </p>
 <h3 id="a-perform-feature-detection-with-profile-analysis">A. Perform Feature Detection with Profile Analysis<a class="headerlink" href="#a-perform-feature-detection-with-profile-analysis" title="Permanent link">&para;</a></h3>
 <h4 id="nontargeted-lc-msms">Nontargeted LC-MS/MS<a class="headerlink" href="#nontargeted-lc-msms" title="Permanent link">&para;</a></h4>
 <ol>
@@ -1718,6 +1746,40 @@ Install <a href="https://www.bruker.com/products/mass-spectrometry-and-separatio
 <ol>
 <li>The <strong>MS/MS spectral summary</strong> (.MGF file) and the <strong>feature quantification table</strong> (.CSV file) will be used to perform a FBMN job on GNPS (see below).</li>
 </ol>
+<h3 id="a2-perform-feature-detection-and-annotation-with-metaboscape-v50">A2. Perform Feature Detection and Annotation with Metaboscape v5.0<a class="headerlink" href="#a2-perform-feature-detection-and-annotation-with-metaboscape-v50" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Open Metaboscape and setup a new project, add an experiment, and then generate a bucket table containing ion features. This is outlined in the Metaboscape v5.0 User Manual - Section 3.</li>
+<li>If you wish to annotate your MS2 features using a custom feature list or by SmartFormula, first sort your features by clicking on the MS/MS column.  </li>
+</ol>
+<p><img alt="img" src="../img/metaboscapeexportforgnps/metabo_v5_sort_by_msms.png" /></p>
+<ol>
+<li>Next, select the buckets that contain MS/MS features  </li>
+</ol>
+<p><img alt="img" src="../img/metaboscapeexportforgnps/metabo_v5_select_msms_buckets_only.png" /></p>
+<ol>
+<li>Finally perform feature annotation using SmartFormula by clicking on the <code>Annotation</code> button on the left and then setting appropriate parameters for annotation. Don't forget to click <code>Selected Buckets Only</code> at the bottom!  </li>
+</ol>
+<p><img alt="img" src="../img/metaboscapeexportforgnps/metabo_v5_annotate_with_SmartFormula.png" /></p>
+<h3 id="b2-export-your-data-for-gnps-using-metaboscape-v50">B2. Export your data for GNPS using Metaboscape v5.0<a class="headerlink" href="#b2-export-your-data-for-gnps-using-metaboscape-v50" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click on the <code>Export</code> button on the left to export your data for GNPS.  </li>
+</ol>
+<p><img alt="img" src="../img/metaboscapeexportforgnps/metabo_v5_export_menu.png" /></p>
+<ol>
+<li>Select a target directory to export the files. As shown below, this will export all the features required for GNPS analyses. </li>
+</ol>
+<p><img alt="img" src="../img/metaboscapeexportforgnps/metabo_v5_export_dialog_box.png" /></p>
+<ol>
+<li>You should have these files once you have successfully exported your bucket table.</li>
+</ol>
+<p><img alt="img" src="../img/metaboscapeexportforgnps/metabo_v5_exported_files.png" /></p>
+<ol>
+<li>Finally, you will need to modify the <code>msmsonly.csv</code> file to ensure that it meets the requirements of the current FBMN workflow. This will be most likely be automated in a future version of FBMN. You will need a spreadsheet tool like MS Excel. Metaboscape v5.0 exports extra columns depending on the metadata you define during your experiment setup. For example, if you define a metadata grouping as <code>media</code> with different kinds of media, then your excel file will look somewhat similar to this (note the columns boxed in green):</li>
+</ol>
+<p><img alt="img" src="../img/metaboscapeexportforgnps/metabo_v5_extra_columns_example.png" /></p>
+<p>You must edit your file to get rid of these extra columns. In the screenshot shown below, the columns containing your sample intensities start at <code>DQ</code>. <strong>You must delete all columns between  <code>MaxIntensity</code> and your first sample column.</strong> In the screenshots, delete columns between <code>Column K</code> and <code>Column DQ</code>. <em>Do not delete <code>MaxIntensity</code> or your sample columns!</em> </p>
+<p>In the example below, delete the columns in red but keep the columns in green.</p>
+<p><img alt="img" src="../img/metaboscapeexportforgnps/metabo_v5_extra_column_columns_to_delete.png" /></p>
 <h4 id="processing-ims-data-pasef">Processing IMS Data (PASEF)<a class="headerlink" href="#processing-ims-data-pasef" title="Permanent link">&para;</a></h4>
 <p>The FBMN supports Ion Mobility Spectrometry (IMS) Data acquired in data-dependent acquisition mode using Parallel Accumulation-Serial Fragmentation (PASEF) and processed with MetaboScape (ver. 5.0). Process the IMS data following the MetaboScape documentation and do <em>Export to GNPS format</em> as indicated above. The cross collission section values and other annotations can be subsequently mapped in Cytoscape.</p>
 <p>See a representative <a href="https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=0d89db67b0974939a91cb7d5bfe87072">FBMN job</a> made from PASEF data (timsTOF) processed with MetaboScape (ver. 5.0). The Bruker files are available on the following MassIVE deposition (<a href="https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=36fea50f5e7b4a049d336f28c5884ff9&amp;view=advanced_view">MSV000084402</a>)</p>
@@ -1735,7 +1797,7 @@ Install <a href="https://www.bruker.com/products/mass-spectrometry-and-separatio
 <li>To contribute to the GNPS documentation, please use GitHub by forking the <a href="https://github.com/CCMS-UCSD/GNPSDocumentation"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request" with the changes.</li>
 </ul>
 <h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h2>
-<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (11.9%), <a href='mailto:louisfelix.nothias@gmail.com'>lfnothias</a> (48.81%), <a href='mailto:iprotsyuk@google.com'>Ivan Protsyuk</a> (5.95%), <a href='mailto:49241158+tamhdang@users.noreply.github.com'>tamhdang</a> (33.33%)</span></p>
+<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (6.5%), <a href='mailto:louisfelix.nothias@gmail.com'>lfnothias</a> (33.33%), <a href='mailto:iprotsyuk@google.com'>Ivan Protsyuk</a> (3.25%), <a href='mailto:49241158+tamhdang@users.noreply.github.com'>tamhdang</a> (21.95%), <a href='mailto:15051933+chanana@users.noreply.github.com'>Shaurya Chanana</a> (34.96%)</span></p>
                 
                   
                     
@@ -1744,7 +1806,7 @@ Install <a href="https://www.bruker.com/products/mass-spectrometry-and-separatio
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 12, 2020 15:49:16</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 27, 2020 05:10:24</span>
     
   </small>
 </div>
