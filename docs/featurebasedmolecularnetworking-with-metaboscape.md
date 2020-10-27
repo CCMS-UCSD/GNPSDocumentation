@@ -21,8 +21,8 @@ MetaboScape can be used to process LC-MS/MS Bruker Daltonics data files (i.e. *.
 **Requirements:** 
 Install [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html) (version 2.0 or higher) and get a valid license.
 
-!!! If you installed Metaboscape v5.0, then please [read this section]() instead.  
-**TODO: add link to section mentioned.**
+!!! note
+    If you installed Metaboscape v5.0, then please [skip to this section](###-a2.-perform feature-detection-and-annotation-with-metaboscape-v5.0) instead.  
 
 ### A. Perform Feature Detection with Profile Analysis
 
@@ -54,7 +54,7 @@ Install [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-sepa
 10. The **MS/MS spectral summary** (.MGF file) and the **feature quantification table** (.CSV file) will be used to perform a FBMN job on GNPS (see below).
 
 
-### A. Perform Feature Detection and Annotation with Metaboscape v5.0
+### A2. Perform Feature Detection and Annotation with Metaboscape v5.0
 1. Open Metaboscape and setup a new project, add an experiment, and then generate a bucket table containing ion features. This is outlined in the Metaboscape v5.0 User Manual - Section 3.
 2. If you wish to annotate your MS2 features using a custom feature list or by SmartFormula, first sort your features by clicking on the MS/MS column.  
 
@@ -68,7 +68,7 @@ Install [MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-sepa
 
 ![img](img/metaboscapeexportforgnps/metabo_v5_annotate_with_SmartFormula.png)
 
-### B. Export your data for GNPS using Metaboscape v5.0  
+### B2. Export your data for GNPS using Metaboscape v5.0  
 
 1. Click on the `Export` button on the left to export your data for GNPS.  
 
