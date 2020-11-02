@@ -32,6 +32,7 @@ nav:
         - Spectral Library Search: librarysearch.md
         - MASST Search (Mass Search Tool): masst.md
         - Result Views Navigation: resultviews.md
+        - LCMS Dashboard: lcms-dashboard.md
     - Advanced Data Analysis:
         - Molecular Networking Files: networkingfiles.md
         - Feature Based Molecular Networking:
