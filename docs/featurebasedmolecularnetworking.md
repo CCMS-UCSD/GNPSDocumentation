@@ -6,7 +6,8 @@
 
 **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The supported tools are: [MZmine](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md), and the [mzTab-M format](featurebasedmolecularnetworking-with-mztab-m.md).
 
-The main documentation for Feature-Based Molecular Networking is provided below. See [our preprint on bioaRxiv](https://www.biorxiv.org/content/10.1101/812404v1).
+The main documentation for **Feature-Based Molecular Networking** is provided below. See [our article](https://www.nature.com/articles/s41592-020-0933-6)
+and the [preprint](https://www.biorxiv.org/content/10.1101/812404v1).
 
 The Feature-Based Molecular Networking (FBMN) workflow is available on GNPS via:
 
@@ -21,11 +22,11 @@ The Feature-Based Molecular Networking (FBMN) workflow is available on GNPS via:
 !!! quote "Recommended Citations"
     This work builds on the efforts of our many colleagues, please make sure to cite the papers for their processing tools and the following GNPS papers
 
-    [Nothias, L., Petras, D., Schmid, R. et al. Feature-based molecular networking in the GNPS analysis environment. Nat Methods (2020).](https://doi.org/10.1038/s41592-020-0933-6)
+    Nothias, L.-F., Petras, D., Schmid, R. et al. [Feature-based molecular networking in the GNPS analysis environment](https://www.nature.com/articles/s41592-020-0933-6). Nat. Methods 17, 905–908 (2020).
 
     Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
-    The citations from the mass spectrometry processing tools you used [[MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md),[XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [mzTab-M format](featurebasedmolecularnetworking-with-mztab-m.md)]. 
+    The citations from the mass spectrometry processing tools you used [[MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md),[XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [mzTab-M format](featurebasedmolecularnetworking-with-mztab-m.md). 
 
 
 ## Mass Spectrometry Data Processing for the FBMN
