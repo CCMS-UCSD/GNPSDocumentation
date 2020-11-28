@@ -67,7 +67,7 @@ Click “browse” and open the dropdown menu for file types, and select “mzML
 
 [Note] Data files should be placed at the same folder with the project file.
 
-[Note] If you are processing with Waters MSe data, convert raw data files into .abf and import. You can download ABF converter [here](http://www.reifycs.com/AbfConverter/index.html)
+[Note] If you are processing with Waters MSe data, convert raw data files into .abf and import. You can download ABF converter [here](http://www.reifycs.com/AbfConverter/index.html).
 
 Select files and click “Open”. You will see the list of selected files. Click “Next”.
 
@@ -118,7 +118,7 @@ Click “Finish”, then MS-DIAL will perform all the feature detection and alig
 
 - See the [MS-DIAL documentation for MSE data processing](https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial#chapter-8), and export the files as indicated below. If you encounter any issue, please contact the GNPS team on the [forum](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports) or [GitHub](https://github.com/CCMS-UCSD/GNPS_Workflows/issues).
 
-- Here is an example MSe-based MS-DIAL networking [job](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=283fc35908b44b49a82bb5b8371ae44d). MSe .Raw and converted ABF files can be downloaded from MassIVE accession no. MSV000084931.
+- Here is an example MSe-based MS-DIAL networking [job](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=283fc35908b44b49a82bb5b8371ae44d). MSe .Raw and converted ABF files can be downloaded in [here](https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=e92f856f511042f487a8fea44955b581).
 
 #### Ion Mobility Spectrometry data (Experimental)
 - See the [MS-DIAL documentation on Ion Mobility Spectrometry data processing](https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial#chapter-10-), and export the files as indicated below. If you encounter any issue, please contact the GNPS team on the [forum](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports) or [GitHub](https://github.com/CCMS-UCSD/GNPS_Workflows/issues).
