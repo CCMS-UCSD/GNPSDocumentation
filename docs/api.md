@@ -158,6 +158,12 @@ GNPS job results page in JSON format:
 
 [Example](https://gnps-structure.ucsd.edu/inchikey?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
+### Conversion to fingerprint
+
+```https://gnps-structure.ucsd.edu/structurefingerprint?smiles=<smiles string>```
+
+[Example](https://gnps-structure.ucsd.edu/structurefingerprint?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+
 ### Conversion to exact mass
 
 ```https://gnps-structure.ucsd.edu/structuremass?smiles=<smiles string>```
@@ -202,6 +208,13 @@ us to push to the Wishart servers to classify.
 ```https://gnps-structure.ucsd.edu/structureimg?smiles=<smiles string>```
 
 [Example](https://gnps-structure.ucsd.edu/structureimg?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+
+
+### Structure Similarity
+
+```https://gnps-structure.ucsd.edu/structuresimilarity?smiles1=<smiles string>&smiles2=<smiles string>```
+
+[Example](https://gnps-structure.ucsd.edu/structuresimilarity?smiles1=Cn1c(=O)c2c(ncn2C)n(C)c1=O)&smiles2=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
 
 ## ReDU
