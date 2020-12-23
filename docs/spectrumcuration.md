@@ -21,7 +21,7 @@ By default, users will have access to Bronze, but approval is required to contri
 
 mzXML, mzML, and mgf file formats are accepted.
 
-Additionally, spectra to be added to the library should be centroided. Profile data is not processed correctly by our algorithms.
+Additionally, spectra to be added to the library should be centroided. Profile data is not processed correctly by our algorithms. If you are unsure of how to convert spectra to these formats, please checkout the documentation [here](fileconversion.md).
 
 ### Adding Spectrum
 

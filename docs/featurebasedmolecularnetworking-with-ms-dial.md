@@ -1,6 +1,6 @@
 ## 1. Introduction
 
-The main documentation for **Feature-Based Molecular Networking** (FBMN) [can be accessed here](featurebasedmolecularnetworking.md). See [our preprint on bioaRxiv](https://www.biorxiv.org/content/10.1101/812404v1).
+The main documentation for **Feature-Based Molecular Networking** [can be accessed here](featurebasedmolecularnetworking.md). See [our article](https://www.nature.com/articles/s41592-020-0933-6).
 
 Below we are describing how to use **MS-DIAL** with the FBMN workflow on GNPS.
 
@@ -10,15 +10,18 @@ Download the latest version of MS-DIAL software at [http://prime.psc.riken.jp/Me
 
 ### Citations and development
 
-This work builds on the efforts of our many colleagues, please cite their work:
+!!! quote "Recommended Citations"
+    This work builds on the efforts and tools from our many colleagues, please cite their work:
+    
+    Nothias, L.-F., Petras, D., Schmid, R. et al. [Feature-based molecular networking in the GNPS analysis environment](https://www.nature.com/articles/s41592-020-0933-6). Nat. Methods 17, 905–908 (2020).
 
-Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
+    Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
-Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
+    Tsugawa, H., et al [A lipidome atlas in MS-DIAL 4](https://www.nature.com/articles/s41587-020-0531-2). Nat. Biotechnol. 38, 1159–1163 (2020).
+    
+    Tsugawa, H., Cajka, T., Kind, T., Ma, Y., Higgins, B., Ikeda, K., Kanazawa, M., VanderGheynst, J., Fiehn, O. & Arita, M. [MS-DIAL: data-independent MS/MS deconvolution for comprehensive metabolome analysis.](http://dx.doi.org/10.1038/nmeth.3393) Nat. Methods 12, 523-526 (2015).
 
-Tsugawa, H., Cajka, T., Kind, T., Ma, Y., Higgins, B., Ikeda, K., Kanazawa, M., VanderGheynst, J., Fiehn, O. & Arita, M. [MS-DIAL: data-independent MS/MS deconvolution for comprehensive metabolome analysis.](http://dx.doi.org/10.1038/nmeth.3393) Nature Methods 12, 523-526 (2015).
-
-Lai, Z., Tsugawa, H., Wohlgemuth, G., Mehta, S., Mueller, M., Zheng, Y., Ogiwara, A., Meissen, J., Showalter, M., Takeuchi, K., Kind, T., Beal, P., Arita, M. & Fiehn, O. [Identifying metabolites by integrating metabolome databases with mass spectrometry cheminformatics.](http://dx.doi.org/10.1038/nmeth.4512) Nature Methods 15, 53-56 (2018).
+    Lai, Z., Tsugawa, H., Wohlgemuth, G., Mehta, S., Mueller, M., Zheng, Y., Ogiwara, A., Meissen, J., Showalter, M., Takeuchi, K., Kind, T., Beal, P., Arita, M. & Fiehn, O. [Identifying metabolites by integrating metabolome databases with mass spectrometry cheminformatics.](http://dx.doi.org/10.1038/nmeth.4512) Nat. Methods 15, 53-56 (2018).
 
 ### Mass Spectrometry Data Processing with MS-DIAL
 
@@ -56,11 +59,15 @@ Go to Menu: File / New Project
 
 Select appropriate parameters (ionization type / method type / data type / ion mode / target omics) for your dataset. Click “Next”.
 
+[Note] If you are processing with Waters MSe data, set MS method type to 'SWATH-MS or conventional All-ions method' and use [this experiment file](/static/MSe_experiment.txt).
+
 #### 2. Import Files
 
 Click “browse” and open the dropdown menu for file types, and select “mzML file(*.mzml)”. The other available options are .abf or .cdf files.
 
 [Note] Data files should be placed at the same folder with the project file.
+
+[Note] If you are processing with Waters MSe data, convert raw data files into .abf and import. You can download ABF converter [here](http://www.reifycs.com/AbfConverter/index.html).
 
 Select files and click “Open”. You will see the list of selected files. Click “Next”.
 
@@ -107,9 +114,11 @@ Click “Finish”, then MS-DIAL will perform all the feature detection and alig
 ![img](img/ms-dial/set-parameters-alignment.png)
 
 
-#### Processing Steps for MSE data (Experimental)
+#### Processing Steps for MSE data
 
 - See the [MS-DIAL documentation for MSE data processing](https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial#chapter-8), and export the files as indicated below. If you encounter any issue, please contact the GNPS team on the [forum](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports) or [GitHub](https://github.com/CCMS-UCSD/GNPS_Workflows/issues).
+
+- Here is an example MSe-based MS-DIAL networking [job](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=283fc35908b44b49a82bb5b8371ae44d). MSe .Raw and converted ABF files can be downloaded in [here](https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=e92f856f511042f487a8fea44955b581).
 
 #### Ion Mobility Spectrometry data (Experimental)
 - See the [MS-DIAL documentation on Ion Mobility Spectrometry data processing](https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial#chapter-10-), and export the files as indicated below. If you encounter any issue, please contact the GNPS team on the [forum](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports) or [GitHub](https://github.com/CCMS-UCSD/GNPS_Workflows/issues).
@@ -127,13 +136,13 @@ Go to Menu: Export / Alignment result
 
 ![img](img/ms-dial/export.png)
 
-Make sur the “GNPS export” box is checked, and set the spectra type to “centroid”.
+Make sure the “GNPS export” box is checked, and set the spectra type to “centroid”.
 
 Set the directory and file name, then click “Export”. As a result, you will acquire a MS/MS spectral summary and the feature quantification table.
 
 ![img](img/ms-dial/export_2.png)
 
-[Note] The GNPS export option of MS-DIAL will create a feature table based on MS1 peak height. If you want a feature table based on peak area, check the “Raw data matrix (Area)”.
+[Note] The GNPS export option of MS-DIAL will create a feature table based on MS1 peak height. If you want a feature table based on peak area, check the “Raw data matrix (Area)”.  The resulting file has a different structure from TXT file given by GNPS export, so you should reformat the area matrix file.
 
 See example of files generated by MS-DIAL and used for the FBMN by the export workflow
 [here](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files/).
