@@ -235,7 +235,7 @@ If you have Smiles
 
 ```https://gnps-structure.ucsd.edu/structuresimilarity?smiles1=<smiles string>&smiles2=<smiles string>```
 
-[Example](https://gnps-structure.ucsd.edu/structuresimilarity?smiles1=Cn1c(=O)c2c(ncn2C)n(C)c1=O)&smiles2=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+[Example](https://gnps-structure.ucsd.edu/structuresimilarity?smiles1=Cn1c(=O)c2c(ncn2C)n(C)c1=O&smiles2=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
 
 ## ReDU
