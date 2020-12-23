@@ -237,6 +237,8 @@ If you have Smiles
 
 [Example](https://gnps-structure.ucsd.edu/structuresimilarity?smiles1=Cn1c(=O)c2c(ncn2C)n(C)c1=O&smiles2=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
+!!! warning
+    Please make sure you are URL encoding your SMILES/InChI strings or else the web server on the other end won't understand your request. 
 
 ## ReDU
 
