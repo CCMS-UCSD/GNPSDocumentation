@@ -59,6 +59,19 @@ See an example of the Supplementary Pairs used in the Ion Identity Networking (I
 
 ![img](img/featurebasedmolecularnetworking/fbmn_iin_edges.PNG)
 
+## IIMN networks with collapsed ion identity edges
+The IIMN workflow on GNPS generates two network types and provides downloads as graphml for downstream analysis and
+ visualization. Both graphml networks are available in the "download cytoscape data" zip file provided on the job
+  results page. The standard network contains MS² similarity edges from molecular networking combined with MS¹ ion
+  identity networking edges (see **a)** in figure below). The alternative network **b)** collapses all ion identities
+   that originate from the same neutral molecule (connected by red edges) into a single "molecular" node. The example
+    below visualizes the relative ion abundances as pie charts on the collapsed nodes and uses the summed intensity
+     for the node sizes. The collapsed nodes inherit the "shared name" of one of the removed ion identity child nodes.
+     This node column can be used for a comparison between IIMN networks with or without collapsing or to compare
+      them to FBMN networks.  
+
+![img](img/iin/vial_contaminants_IIMN.png)
+
 
 ## Exploring the IIMN workflow in Cytoscape
 
