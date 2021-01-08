@@ -81,3 +81,7 @@ This brings you to a list of all the individual networks (connected components) 
 ### Advanced Online Visualization
 
 For a more detailed guide on how to explore the molecular networks online, please refer to our [documentation](networking.md)
+
+## Page Contributions
+
+{{ git_page_authors }}

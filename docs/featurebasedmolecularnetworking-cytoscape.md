@@ -1,20 +1,24 @@
 ## Introduction to FBMN
 
-The main documentation for **Feature-Based Molecular Networking** (FBMN) [can be accessed here](featurebasedmolecularnetworking.md). See [our preprint on bioaRxiv](https://www.biorxiv.org/content/10.1101/812404v1).
+The main documentation for **Feature-Based Molecular Networking** [can be accessed here](featurebasedmolecularnetworking.md). See [our article](https://www.nature.com/articles/s41592-020-0933-6).
 
 The documentation for FBMN using **Cytoscape** is provided below.
 
 ## Feature-Based Molecular Networking in Cytoscape
 
-Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
+!!! quote "Recommended Citations"
+    This work builds on the efforts and tools from our many colleagues, please cite their work:
+    
+    Nothias, L.-F., Petras, D., Schmid, R. et al. [Feature-based molecular networking in the GNPS analysis environment](https://www.nature.com/articles/s41592-020-0933-6). Nat. Methods 17, 905–908 (2020).
 
-Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
+	Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
-Cytoscape is an open source software platform used to visualize, analyze and annotate molecular networks from GNPS. Cytoscape is available for download from [here](http://www.cytoscape.org). The instructions were created with Cytoscape 3.7.
+	Cytoscape is an open source software platform used to visualize, analyze and annotate molecular networks from GNPS. Cytoscape is available for download from [here](http://www.cytoscape.org). The instructions were created with Cytoscape 3.7.
 
-Shannon, P., et al. (2003). Cytoscape: a software environment for integrated models of biomolecular interaction networks. _Genome Res, 13_(11), 2498-2504. [doi:10.1101/gr.1239303](doi:10.1101/gr.1239303)
+	Shannon, P., et al. (2003). Cytoscape: a software environment for integrated models of biomolecular interaction networks. _Genome Res, 13_(11), 2498-2504. [doi:10.1101/gr.1239303](doi:10.1101/gr.1239303)
 
-
+    The citations from the mass spectrometry processing tools you used [[MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md),[XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [mzTab-M format](featurebasedmolecularnetworking-with-mztab-m.md).   
+  
 ### Downloading Cytoscape Files from GNPS
 
 The first step is to download the input file (.graphML file format) for import into Cytoscape. From the job status page in the Feature-Based Molecular Networking workflow, click on _Download Cytoscape Data_. Save and unzip the downloaded file.  
@@ -39,13 +43,13 @@ You can import the table file into Cytoscape. Click _Import Table from File Syst
 ![img](img/FBMN_Cytoscape/Slide17.PNG)
 
 ### Import supplementary annotations in Cytoscape
-Cytoscape allows to map additional annotations such as those produced by other workflows on GNPS. See the documentation for [DEREPLICATOR](dereplicator.md), [NAP](nap.md), [MS2LDA](ms2lda.md)., for more details.
+Cytoscape allows to map additional annotations such as those produced by other workflows on GNPS. See the documentation for [DEREPLICATOR](dereplicator.md), [NAP](nap.md), [MS2LDA](ms2lda.md), [MolNetEnhancer](molnetenhancer.md) for more details.
 
-The FBMN workflow makes possible to map the annotations (molecular formula, cross collision section, etc) made by the processing software used for FBMN (MZmine, XCMS, MetaboScape, MS-DIAL, Progenesis QI), or other tool that processed the same .MGF/.MSP file.
+The FBMN workflow makes possible to map the annotations (molecular formula, cross collision section) made by the processing software used for FBMN (MZmine, XCMS, MetaboScape, MS-DIAL, Progenesis QI), or other third party software tool that processed the same .MGF/.MSP file. In addition it is possible to import any feature metadata and statistical results you are interested in.  
 
-Regardless of the tool, the procedure follows these steps:
+Regardless of the tool and information to map, the importing procedure follows these steps:
 
--	Obtain the annotation table that needs to be mapped. This table must contain a column that contains the *identifier* that matches the *name* column in the network. This identifier corresponds to the *SCANS* or *FEATURE_ID* in the .MGF file. 
+-	Obtain the annotation table that needs to be mapped. This table must contain a column that contains the *identifier* that matches the *name* column in the network. This identifier corresponds to the *SCANS* or *FEATURE_ID* in the .MGF/.MSP file. 
 - Verify that the identifier are indeed matching between the network and table.
 - Import the table in Cytoscape. Go to *Menu* / *Import* / *Import Table from File System*.
 - In the preview window, click on the header of the *identifier* column to set the meaning to Key (a key logo shows up)
@@ -160,10 +164,11 @@ Our [tutorial on running the FBMN analysis on GNPS including a Cytoscape demo](t
 
 See our [tutorial on using MZmine2](tutorials/americangutmzmine.md) for the FBMN analysis of a cohort from the [American Gut Project](http://humanfoodproject.com/americangut/).
 
-### Page contributors
-Melissa Esposito (UCSD), Irina Koester (SIO, UCSD), Christian Martin (INDICASAT), Louis Felix Nothias (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).
-
 ### Join the GNPS Community !
 
 - For feature request, or to report bugs, please open an "Issue" on the [*CCMS-UCSD/GNPS_Workflows* GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows).
 - To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) repository, and make a "Pull Request" with the changes.
+
+## Page Contributions
+
+{{ git_page_authors }}

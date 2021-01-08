@@ -1,6 +1,6 @@
 ## Introduction
 
-The main documentation for **Feature-Based Molecular Networking** (FBMN) [can be accessed here](featurebasedmolecularnetworking.md). See [our preprint on bioaRxiv](https://www.biorxiv.org/content/10.1101/812404v1).
+The main documentation for **Feature-Based Molecular Networking** [can be accessed here](featurebasedmolecularnetworking.md). See [our article](https://www.nature.com/articles/s41592-020-0933-6).
 
 Below we describe how to use **MZmine2 v2.51** with the FBMN workflow on GNPS. We have previously written the documentation for v2.33 and have noted differences in the software versions. 
 
@@ -8,17 +8,18 @@ Below we describe how to use **MZmine2 v2.51** with the FBMN workflow on GNPS. W
 
 ### Citations and development
 
-This work builds on the efforts of our many colleagues, please cite their work:
+!!! quote "Recommended Citations"
+    This work builds on the efforts and tools from our many colleagues, please cite their work:
+    
+    Nothias, L.-F., Petras, D., Schmid, R. et al. [Feature-based molecular networking in the GNPS analysis environment](https://www.nature.com/articles/s41592-020-0933-6). Nat. Methods 17, 905–908 (2020).
 
-Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
+    Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
-Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
+    Katajamaa, M., Miettinen, J. & Oresic, M. [MZmine: toolbox for processing and visualization of mass spectrometry based molecular profile data.](https://doi.org/10.1093/bioinformatics/btk039) Bioinformatics 22, 634–636 (2006).
 
-Katajamaa, M., Miettinen, J. & Oresic, M. [MZmine: toolbox for processing and visualization of mass spectrometry based molecular profile data.](https://doi.org/10.1093/bioinformatics/btk039) Bioinformatics 22, 634–636 (2006).
+    Pluskal, T., Castillo, S., Villar-Briones, A. & Oresic, M. [MZmine 2: modular framework for processing, visualizing, and analyzing mass spectrometry-based molecular profile data.](https://doi.org/10.1186/1471-2105-11-395) BMC Bioinformatics 11, 395 (2010).
 
-Pluskal, T., Castillo, S., Villar-Briones, A. & Oresic, M. [MZmine 2: modular framework for processing, visualizing, and analyzing mass spectrometry-based molecular profile data.](https://doi.org/10.1186/1471-2105-11-395) BMC Bioinformatics 11, 395 (2010).
-
-The development of the features used in the pipeline is [publicly accessible here](https://github.com/mzmine/mzmine2).
+    The development of the features used in the pipeline is [publicly accessible here](https://github.com/mzmine/mzmine2).
 
 ### Installation 
 
@@ -29,12 +30,14 @@ Download the latest version of MZmine software (version MZmine v2.33 minimum) at
 
 In MZmine, a sequence of steps are performed to process the mass spectrometry data. Here we will present key steps required to process LC-MS/MS data acquired in non-targeted mode (data dependent acquisition). For convenience we also provide a batch file (XML format) that can be imported directly in MZmine.
 
-**IMPORTANT:** MZmine parameters will vary depending on the instrument used, the acquisition parameters, and samples studied. The following documentation serves a basic guideline for using MZmine with the FBMN workflow.
+!!! warning 
+    MZmine parameters will vary depending on the instrument used, the acquisition parameters, and samples studied. The following documentation serves a basic guideline for using MZmine with the FBMN workflow.
 
 Please consult the resources below for more details on MZmine processing:
 
 - The official documentation [http://mzmine.github.io/documentation.html](http://mzmine.github.io/documentation.html),
 - The [MZmine tutorial](http://www.pharmacognosie-parisdescartes.fr/pdf/150420_MZmine_Tutorial_UNIGE.pdf) by Pierre-Marie Allard and Joelle Houriet from the University of Geneva.
+- [ADAP User Manual](https://mzmine.github.io/ADAP_user_manual.pdf)
 - The video tutorial below about [MZmine2 processing for Feature Based Molecular Networking](tutorials/americangutmzmine.md). **Note that this video is slighlty outdatted**, so please refer to the steps described in this documentation.
 
 <iframe width="600" height="350" src="https://www.youtube.com/embed/5jjMllbwD-U"> </iframe>
@@ -86,7 +89,8 @@ Perform mass detection on MS level 1: Menu: *Raw data methods > Feature Detectio
 (version 2.33)
 Menu: Raw data methods > Mass detection > Set filter : MS level 1
 
-**IMPORTANT** Set an appropriate intensity threshold. You can use the preview window to assess the right threshold on your data. As a rule of thumb, the value should at least correspond to the minimum value set for the triggering of the MS2 scan event. (Example: MAXIS-QTOF: 1E3, Q-Exactive 1E4)
+!!! important 
+    Set an appropriate intensity threshold. You can use the preview window to assess the right threshold on your data. As a rule of thumb, the value should at least correspond to the minimum value set for the triggering of the MS2 scan event. (Example: MAXIS-QTOF: 1E3, Q-Exactive 1E4)
 
 Perform mass detection on MS level 2. The same mass list name must be used.
 
@@ -95,7 +99,8 @@ Go to Menu: *Raw data methods > Feature Detection > Mass detection > Set filters
 (version 2.33)
 Go to: *Raw data methods > Mass detection > Set filter : MS level 2.*
 
-**IMPORTANT:** Make sure to set an intensity threshold representative of noise level in the MS2 spectra. This is typically lower than for MS1. (Example: maXis QTOF: 1E2; LTQ-XL Orbitrap 1E4, Q-Exactive: 0). If you have any doubt, set it to 0.
+!!! important 
+    Make sure to set an intensity threshold representative of noise level in the MS2 spectra. This is typically lower than for MS1. (Example: maXis QTOF: 1E2; LTQ-XL Orbitrap 1E4, Q-Exactive: 0). If you have any doubt, set it to 0.
 
 ![img](img/mzmine/mass_detection_ms2.png)
 
@@ -115,7 +120,8 @@ Go to Menu: *Feature list methods > Feature detection > Chromatogram deconvoluti
 (version 2.33)
 Go to Menu: *Peak list methods > Peak detection > Chromatogram deconvolution*
 
-**IMPORTANT:** tick both options "m/z range for MS2 scan pairing (Da)" and "RT range for MS2 scan pairing (min)". The values have to be defined according to your experimental setup (expected MS mass accuracy and chromatographic peak width).
+!!! important 
+    tick both options "m/z range for MS2 scan pairing (Da)" and "RT range for MS2 scan pairing (min)". The values have to be defined according to your experimental setup (expected MS mass accuracy and chromatographic peak width).
 
 Example for a UHPLC colum (1.7 µm C18, 50 × 2.1 mm, flow rate of 0.5 mL/min):
 
@@ -134,13 +140,15 @@ Go to Menu: *Feature list methods > Isotopes > Isotopic peaks grouper*
 (version 2.33)
 Go to Menu: *Peak list methods > Isotopes > Isotopic peaks grouper.*
 
-**IMPORTANT:**  This depends on your expected peak shapes, duty cycle time and the MS mass accuracy. (Example: MAXIS-QTOF, 10 min gradient, 0.1 min, 0.02 m/z; Q-Exactive, 5 min gradient, 0.05 min, 0.01 m/z)
+!!! important 
+    This depends on your expected peak shapes, duty cycle time and the MS mass accuracy. (Example: MAXIS-QTOF, 10 min gradient, 0.1 min, 0.02 m/z; Q-Exactive, 5 min gradient, 0.05 min, 0.01 m/z)
 
 #### 6. Order the peaklists
 
 Go to Menu: *Peak list methods > Order peak lists*.
 
-**IMPORTANT:** This is to ensure the reproducibility of the processing. Indeed, the aligned peak list will change slighlty if that step is not performed. 
+!!! important 
+    This is to ensure the reproducibility of the processing. Indeed, the aligned peak list will change slighlty if that step is not performed. 
 
 #### 7. LC-MS feature alignement (Peaklist alignement)
 
@@ -159,7 +167,8 @@ Go to Menu: *Feature list methods > Gap filling > Peak finder (multi-threaded)*.
 (version 2.33)
 Go to Menu: *Peak list methods > Gap filling > Peak finder (multi-threaded)*.
 
-**IMPORTANT:** This step is optional. Use the multi-threaded peak finder for fast processing.
+!!! important 
+    This step is optional. Use the multi-threaded peak finder for fast processing.
 
 #### 9. (Optional) Filter the Peaklist to MS/MS Peaks
 
@@ -170,9 +179,11 @@ Go to Menu: *Feature list methods > Filtering > Feature list rows filter > Selec
 (version 2.33)
 Go to Menu: *Peak list methods > Filtering > Peak list row filter > Select the filters*
 
-**IMPORTANT:** if you use a filter, we recommend using the filter "Reset the peak number ID"
+!!! important 
+    if you use a filter, we recommend using the filter "Reset the peak number ID"
 
-**IMPORTANT** Note that this step was mandatory in the prototype versions of FBMN with MZmine, now the filter "Keep only peaks with MS2 scan (GNPS)" is optional.
+!!! important 
+    Note that this step was mandatory in the prototype versions of FBMN with MZmine, now the filter "Keep only peaks with MS2 scan (GNPS)" is optional.
 
 #### 10. Use the GNPS Export module
 
@@ -196,7 +207,7 @@ See an example of files generated by the export module using the workflow:
 
 In the "*Export for/Submit to GNPS*" module, select the option: "*Submit to GNPS*"
 
-- [Optional] Metadata file: specify the path to the metadata table in GNPS format. [See documentation here](networking.md/#metadata)
+- [Optional] Metadata file: specify the path to the metadata table in GNPS format. [See documentation here](metadata.md)
 
 - Select the parameters presets for the GNPS job.
 
@@ -222,7 +233,7 @@ Basically, you will need to upload the files produced by MZmine (test files are 
 
 - The *feature quantification table* (.CSV file format).
 - The *MS/MS spectral summary* (.MGF file format)
-- [Optional] The *metadata table* - described [here](networking.md#metadata)
+- [Optional] The *metadata table* - described [here](metadata.md)
 
 There are several additional normalization options specifically for feature detection. We can normalize the features per LC/MS run and aggregate by groups with either a sum or average (recommended).
 
@@ -245,12 +256,11 @@ Cytoscape is an open source software platform used to visualize, analyze and ann
 
 See our [tutorial on using MZmine2](tutorials/americangutmzmine.md) for FBMN analysis of a cohort from the [American Gut Project](http://humanfoodproject.com/americangut/), and our [tutorial on running a FBMN analysis on GNP](tutorials/featurebasedgnps.md).
 
-
-### Page contributors
-Louis Felix Nothias (UCSD), Daniel Petras (UCSD), Ming Wang (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).
-
-
 ### Join the GNPS Community !
 
 - For feature request, or to report bugs, please open an "Issue" on the [*CCMS-UCSD/GNPS_Workflows* GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows).
 - To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) repository, and make a "Pull Request" with the changes.
+
+## Page Contributors
+
+{{ git_page_authors }}

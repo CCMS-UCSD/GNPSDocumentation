@@ -6,24 +6,16 @@
 ### Introduction to GNPS
 Global Natural Products Social Molecular Networking (GNPS, [http://gnps.ucsd.edu/](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash2.jsp)) is a web-based mass spectrometry ecosystem that aims to be an open-access knowledge base for community-wide organization and sharing of raw, processed or identified tandem mass (MS/MS) spectrometry data. GNPS aids in identification and discovery throughout the entire life cycle of data; from initial data acquisition/analysis to post publication.
 
-### Migration to the New Documentation
-
-The GNPSDocumentation can be found at [https://ccms-ucsd.github.io/GNPSDocumentation/](https://ccms-ucsd.github.io/GNPSDocumentation/).
-
 ### Contributing to the New Documentation
 
 Help us improving GNPS Documentation !
 
 - For informations/feature request, please open an "Issue" [on the present GitHub repository](https://github.com/CCMS-UCSD/GNPSDocumentation/issues).
-- To contribute to the GNPS documentation, fork the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request" with your edits.
+- To contribute to the GNPS documentation, simply edit a page and it will prompt for an ad hoc pull request. Its as simple as that. For more advanced editing, fork the [*CCMS-UCSD/GNPSDocumentation*]((https://github.com/CCMS-UCSD/GNPSDocumentation)) repository, and make a "Pull Request" with your edits from your fork to the primary repository.
 
 ### GNPS Workflows
 
 GNPS Workflows are available on the following repository: [https://github.com/CCMS-UCSD/GNPS_Workflows](https://github.com/CCMS-UCSD/GNPS_Workflows)
-
-### GNPS and MassIVE uptime
-
-Visualize the status of all GNPS Workflows: [https://stats.uptimerobot.com/Am4PLUWn3](https://stats.uptimerobot.com/Am4PLUWn3)
 
 ### Development Setup for Local Development
 
@@ -35,9 +27,7 @@ Visualize the status of all GNPS Workflows: [https://stats.uptimerobot.com/Am4PL
 3. Install requirements
 
 ```
-conda install -c conda-forge mkdocs
-conda install -c conda-forge mkdocs-material
-pip install mkdocs-minify-plugin
+pip install -r requirements.txt
 ```
 
 4. Serve locally
@@ -48,6 +38,10 @@ pip install mkdocs-minify-plugin
 
 ```mkdocs gh-deploy```
 
+
+### Build
+
+![](https://github.com/CCMS-UCSD/GNPSDocumentation/workflows/CI/badge.svg)
 
 ### Citation
 

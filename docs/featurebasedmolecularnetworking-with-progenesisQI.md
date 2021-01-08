@@ -1,6 +1,6 @@
 ## Introduction
 
-The main documentation for **Feature-Based Molecular Networking** (FBMN) [can be accessed here](featurebasedmolecularnetworking.md). See [our preprint on bioaRxiv](https://www.biorxiv.org/content/10.1101/812404v1).
+The main documentation for **Feature-Based Molecular Networking** [can be accessed here](featurebasedmolecularnetworking.md). See [our article](https://www.nature.com/articles/s41592-020-0933-6).
 
 Below we describe how to use **Progenesis QI** with the FBMN workflow on [GNPS](http://gnps.ucsd.edu).
 
@@ -13,11 +13,12 @@ Progenesis QI can perform feature detection, alignment and annotation of non-tar
 
 ## Citations and development
 
-This work builds on the efforts of our many colleagues, please cite their work: 
+!!! quote "Recommended Citations"
+    This work builds on the efforts and tools from our many colleagues, please cite their work:
 
-Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
+    Nothias, L., Petras, D., Schmid, R. et al. [Feature-based molecular networking in the GNPS analysis environment](https://www.nature.com/articles/s41592-020-0933-6). Nat. Methods 17, 905–908 (2020).
 
-Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
+    Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
 
 ## Running Progenesis QI for molecular networking on GNPS
@@ -33,15 +34,15 @@ For more information on Progenesis QI, please refer to the official documentatio
 In the menu, under the “Identify Compounds” tab:
 
 - Select **“Export Compound Measurement”** to export the **feature quantification table** (CSV file) containing compound intensity and annotation can be exported (see below).
-- Select **“Export fragment database”** to the export the **MS/MS spectral summary** (MSP file) containing the list of representative MS/MS spectra (see below).
+- Select **“Export fragment database”** to the export the **MS/MS spectral summary** (MSP file) containing the list of representative MS/MS spectra (see below). **NOTE: Do not select tags to export**
 
 ![img](img/featurebasedmolecularnetworking/progenesis_3.png)
 
 ![img](img/featurebasedmolecularnetworking/progenesis_4.png)
 
 
-###### Additional notes
-Alternatively, the Symphony software can be used the ion peaks in the entire RAW file can be detected, centroided, and deconvoluted, and converted to a suitable open-source data formats such as Mascot generic format (mgf), mzML, mzXML. More info on in the following note: [See more information in the Nov. 2018 Waters Technology Brief](https://www.waters.com/webassets/cms/library/docs/720006415en.pdf). These files can be processed by other softwares supported FBMN, or can be used for classical molecular networking analysis. 
+!!! note 
+    Alternatively, the Symphony software can be used the ion peaks in the entire RAW file can be detected, centroided, and deconvoluted, and converted to a suitable open-source data formats such as Mascot generic format (mgf), mzML, mzXML. More info on in the following note: [See more information in the Nov. 2018 Waters Technology Brief](https://www.waters.com/webassets/cms/library/docs/720006415en.pdf). These files can be processed by other softwares supported FBMN, or can be used for classical molecular networking analysis. 
 
 
 ## Running a molecular network on GNPS
@@ -63,15 +64,19 @@ FBMN with Progenesis QI results can be performed using the using Superquick or t
 ![img](img/featurebasedmolecularnetworking/standard_progenesis_6.png)
 
 ## Mapping Progenesis QI annotations in Cytoscape
-Progenesis QI annotations or metadata can be mapped in Cytoscape as node attribute into the molecular networks. [See the Cytoscape documentation for FBMN](featurebasedmolecularnetworking-cytoscape.md). 
+Progenesis QI annotations or metadata can be mapped in Cytoscape as node attribute into the molecular networks. [See the Cytoscape documentation for FBMN](featurebasedmolecularnetworking-cytoscape.md). For metadata format requirement, see [this page](metadata.md).
 
 Helped is wanted to describe in detail the import procedure in Cytoscape.
 
 
-### Page contributors
-Louis Felix Nothias (UCSD), Ming Wang (UCSD), Bindesh Shrestha (Waters), Giorgis Isaac (Waters and Jonathan McSayles (Waters).
+### Acknowledgements
+Bindesh Shrestha (Waters), Giorgis Isaac (Waters) and Jonathan McSayles (Waters).
 
 ### Join the GNPS Community !
 
 - For feature request, or to report bugs, please open an "Issue" on the [*CCMS-UCSD/GNPS_Workflows* GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows).
 - To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) repository, and make a "Pull Request" with the changes.
+
+## Page Contributors
+
+{{ git_page_authors }}

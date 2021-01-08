@@ -1,6 +1,6 @@
 # Introduction
 
-The main documentation for **Feature-Based Molecular Networking** (FBMN) [can be accessed here](featurebasedmolecularnetworking.md). See [our preprint on bioaRxiv](https://www.biorxiv.org/content/10.1101/812404v1).
+The main documentation for **Feature-Based Molecular Networking** [can be accessed here](featurebasedmolecularnetworking.md). See [our article](https://www.nature.com/articles/s41592-020-0933-6).
 
 Below follows a description on how to use **mzTab-M* format with the FBMN workflow on GNPS.
 
@@ -12,13 +12,16 @@ The **mzTab-M** format is a standardized output designed for the report of metab
 
 ## Citation and development
 
-Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
+!!! quote "Recommended Citations"
+    This work builds on the efforts and tools from our many colleagues, please cite their work:
+    
+    Nothias, L.-F., Petras, D., Schmid, R. et al. [Feature-based molecular networking in the GNPS analysis environment](https://www.nature.com/articles/s41592-020-0933-6). Nat. Methods 17, 905–908 (2020).
 
-Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
+    Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
-Hoffman et al. mzTab-M: A Data Standard for Sharing Quantitative Results in Mass Spectrometry Metabolomics [Anal. Chem. 2019 9153302-3310](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.8b04310)
+    Hoffman et al. mzTab-M: A Data Standard for Sharing Quantitative Results in Mass Spectrometry Metabolomics [Anal. Chem. 2019 9153302-3310](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.8b04310)
 
-See the GitHub repository for jmzTab-M: [https://github.com/lifs-tools/jmzTab-m](https://github.com/lifs-tools/jmzTab-m)
+    See the GitHub repository for jmzTab-M: [https://github.com/lifs-tools/jmzTab-m](https://github.com/lifs-tools/jmzTab-m)
 
  
 ## FBMN with mzTab-M
@@ -28,7 +31,7 @@ The FBMN workflow now supports the mzTab-M format (2.0, release 1.0.5). The **mz
 Basically, the **mzTab-M** is used to retrieve for each LC-MS/MS feature:
 
 - The abundance of the LC-MS/MS feature in each sample.
-- The filename (**mzML**) and index of the associated MS/MS spectrum. 
+- The filename (**mzML**) and the index of the most intense associated MS/MS spectrum. 
 
 After inputing the mzTab-M and mzML file(s), GNPS will automatically extract the MS/MS spectra from the mzML file and generate internally an **MS/MS spectral summary** that will be used for FBMN analysis.
 
@@ -41,17 +44,18 @@ The mzTab-M file and the associated mzML file(s) can be uploaded to the GNPS web
 
 - Select the mzML file(s). See the screenshot below.
 - Select the mzTab-M file as *Feature Quantification Table*.
-- (EXPERIMENTAL) Select the metadata table. Requirements are described [here](networking.md#metadata).  
+- (EXPERIMENTAL) Select the metadata table. Requirements are described [here](metadata.md).  
 
 ![img](img/featurebasedmolecularnetworking/mztab-M-standard.png)
 
 More information on the FBMN on GNPS can be obtained at [this documentation page](featurebasedmolecularnetworking.md).
 
-### Page contributors
-
-Louis Felix Nothias (UCSD), Steffen Neunmann (Leibniz Insitute for Plant Biochemistry), and Ming Wang (UCDS). 
 
 ### Join the GNPS Community !
 
 - For feature request, or to report bugs, please open an "Issue" on the [*CCMS-UCSD/GNPS_Workflows* GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows).
 - To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) repository, and make a "Pull Request" with the changes.
+
+## Page Contributors
+
+{{ git_page_authors }}

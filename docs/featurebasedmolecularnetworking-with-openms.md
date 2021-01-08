@@ -1,18 +1,19 @@
 ## Introduction to FBMN with OpenMS
 
-The main documentation for **Feature-Based Molecular Networking** (FBMN) [can be accessed here](featurebasedmolecularnetworking.md). See [our preprint on bioaRxiv](https://www.biorxiv.org/content/10.1101/812404v1).
+The main documentation for **Feature-Based Molecular Networking** [can be accessed here](featurebasedmolecularnetworking.md). See [our article](https://www.nature.com/articles/s41592-020-0933-6).
 
 Below we are describing how to use **OpenMS** with the FBMN workflow on GNPS. 
 
 ### Citations
 
-This work builds on the efforts of our many colleagues, please cite their work:
+!!! quote "Recommended Citations"
+    This work builds on the efforts and tools from our many colleagues, please cite their work:
+    
+    Nothias, L.-F., Petras, D., Schmid, R. et al. [Feature-based molecular networking in the GNPS analysis environment](https://www.nature.com/articles/s41592-020-0933-6). Nat. Methods 17, 905–908 (2020).
 
-Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
+    Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
-Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
-
-Röst, H. L. et al. OpenMS: a flexible open-source software platform for mass spectrometry data analysis. Nat. Methods 13, 741–748 (2016). [https://doi.org/10.1038/nmeth.3959](https://doi.org/10.1038/nmeth.3959)
+    Röst, H. L. et al. OpenMS: a flexible open-source software platform for mass spectrometry data analysis. Nat. Methods 13, 741–748 (2016). [https://doi.org/10.1038/nmeth.3959](https://doi.org/10.1038/nmeth.3959)
 
 ### Development
 
@@ -36,8 +37,8 @@ The OpenMS-GNPS pipeline is an experimetal workflow deployed currently on *prote
 
 ![img](img/openms/workflow_1.png)
 
-1. Connect to [https://proteomics2.ucsd.edu/ProteoSAFe/](https://proteomics2.ucsd.edu/ProteoSAFe/) (You will have to be logged in to *proteomics2.ucsd.edu* first).
-2. Select the workflow: `OpenMS + GNPS workflow`
+1. Log into [https://proteomics2.ucsd.edu](https://proteomics2.ucsd.edu/) (Create an account if necessary).
+2. Access the lastest version of the OpenMS + GNPS workflow (release 20) at [this address](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22%3A%20%22OPENMS%22%2C%20%22workflow_version%22%3A%20%22release_20%22%7D).
 3. In Import Data Files, select the input mzML files (prefered) or mzXML files (not recommended, because the pipeline would have to perform conversion to mzML)
 4. [TO BE RELEASED] Select the parameters from the presets `HPLC-Q-Exactive, UHPLC-Q-Exactive, HPLC-QTOF, UHPLC-Q-Exactive`.
 The corresponding OpenMS configuration files (.INI files) are available from that [GitHub repository] (https://github.com/Bioinformatic-squad-DorresteinLab/openms-gnps-workflow/presets/)). Alternatively, you can upload your OpenMS TOPP tool *parameter file* (.INI files). Note that *parameter files* can be updated with a text editor or with the *INIFileEditor* TOPP tool.
@@ -75,6 +76,8 @@ A representative OpenMS-GNPS workflow would sequencially use these OpenMS TOPP t
 ##### Requirements for the OpenMS-GNPS pipeline
 - The *IDMapper* has to be run on the featureXML files, in order to associate MS2 scan(s) (peptide annotation) with each feature. These peptide annotations are used by the GNPSExport.
 - The *FileFilter* has to be run on the consensusXML file, prior to the GNPSExport, in order to remove consensusElements without MS2 scans (peptide annotation).
+- Note that mass accuracy and the retention time window for the pairing between MS2 scan(s) and a LC-MS feature
+or consensusElement is defined at the IDMapper tool step for features.
 
 #### The GNPSExport TOPP tool
 
@@ -95,16 +98,13 @@ GNPSExport -ini iniFile-GNPSExport.ini
 
 ##### Options for the consensus MS/MS spectra: `output_type`
 
-- **Merge [RECOMMENDED]**: `merged_spectra` - For each *consensusElement*, the GNPSExport will merge all eligible MS/MS scans into one representative *consensus MS/MS spectrum*. Eligible MS/MS scans have a pairwise *cosine similarity* with the MS/MS scan of highest precursor intensity above the *Cosine Similarity Treshold*. The fragment ions of merged MS/MS scans are binned in m/z (or Da) range defined by the *Binning width* parameter.
-
-	- **Cosine Similarity Treshold**: `merged_spectra:cos_similarity` (float, default: 0.9) - Parameter that defines *Cosine Similarity Treshold* for the pairwise *cosine similarity* between the MS/MS scan with the highest precursor intensity and the other MS/MS scans.
-	- **Binning width**: `merged_spectra:ms2_binned_size` (float, default: 0.02 Daltons) -  Parameter that defines the *Binning width* of fragment ions during the merging of eligible MS/MS spectra.
-
-- **Most intense**: `most_intense` - For each *consensusElement*, the GNPSExport will output the *most intense* MS/MS scan (with the highest precursor ion intensity) as *consensus MS/MS spectrum*.
+- **Most intense** [default]: `most_intense` - For each *consensusElement*, the GNPSExport will output the *most intense* MS/MS scan (with the highest precursor ion intensity) as *representative MS/MS spectrum*.
 
 - **All MS/MS**: `full_spectra` - For each *consensusElement*, the GNPSExport will output *All MS/MS scans*.
 
-Note that *mass accuracy* and the *retention time window* for the pairing between MS/MS scans and a LC-MS feature orconsensusElement is defined at the *IDMapper tool* step.
+- **Merge** [Experimental]: `merged_spectra` - For each *consensusElement*, the GNPSExport will merge all eligible MS/MS scans into one representative *MS/MS spectrum*. Eligible MS/MS scans have a pairwise *cosine similarity* with the MS/MS scan of highest precursor intensity above the *Cosine Similarity Treshold*. The fragment ions of merged MS/MS scans are binned in m/z (or Da) range defined by the *Binning width* parameter.
+	- **Cosine Similarity Treshold**: `merged_spectra:cos_similarity` (float, default: 0.9) - Parameter that defines *Cosine Similarity Treshold* for the pairwise *cosine similarity* between the MS/MS scan with the highest precursor intensity and the other MS/MS scans.
+	- **Binning width**: `merged_spectra:ms2_binned_size` (float, default: 0.02 Daltons) -  Parameter that defines the *Binning width* of fragment ions during the merging of eligible MS/MS spectra.
 
 
 ### Running the FBMN workflow with OpenMS files
@@ -113,12 +113,13 @@ After the processing with OpenMS, the output files can be used to run the Featur
 
 Make sure to select the correct table source (OpenMS).
 
-The main documentation for FBMN [can be accessed here](featurebasedmolecularnetworking.md).
-
-### Page contributors
-Louis Felix Nothias (UCSD), Abinesh Sarvepalli (UCSD), Ivan Protsyuk (EMBL, Heidelberg, Germany).
+The main documentation for FBMN [can be accessed here](featurebasedmolecularnetworking.md). For metadata format requirements, see [this page](metadata.md)
 
 ### Join the GNPS Community !
 
 - For feature request, or to report bugs, please open an "Issue" on the [*CCMS-UCSD/GNPS_Workflows* GitHub repository](https://github.com/CCMS-UCSD/GNPS_Workflows).
 - To contribute to the GNPS documentation, please use GitHub by forking the [*CCMS-UCSD/GNPSDocumentation*](https://github.com/CCMS-UCSD/GNPSDocumentation) repository, and make a "Pull Request" with the changes.
+
+## Page Contributors
+
+{{ git_page_authors }}
