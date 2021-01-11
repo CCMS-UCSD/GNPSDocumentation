@@ -11,11 +11,11 @@ Lorem Ipsum
 ## XIC/EIC Plots
 Obtain single or multiple XIC/EIC plots for one or more files
 
-1. Drag and drop files or input USI links
-2. Specify m/z or multiple m/z separated by ";" under XIC Options
-3. Export or view your XIC values under XIC Integration 
 !!! note
     Default integration type is AUC but options MS1 Sum or MAXPEAKHEIGHT exist under XIC Integration Type dropdown menu
+1. Drag and drop files or input USI links
+2. Specify m/z or multiple m/z separated by ";" under XIC Options
+3. Export or view your XIC values under XIC Integration  
 4. Share or save your work by clicking "Link to these plots" or copy the link address 
 
 
