@@ -1,0 +1,3 @@
+Experiment	MS Type	Min m/z	Max m/z
+0	SCAN	50	1500
+1	MSE	50	1500

@@ -170,6 +170,12 @@ GNPS job parameters page in XML format:
 
 [Example](https://gnps-structure.ucsd.edu/inchikey?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
+### Conversion to fingerprint
+
+```https://gnps-structure.ucsd.edu/structurefingerprint?smiles=<smiles string>```
+
+[Example](https://gnps-structure.ucsd.edu/structurefingerprint?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+
 ### Conversion to exact mass
 
 ```https://gnps-structure.ucsd.edu/structuremass?smiles=<smiles string>```
@@ -209,12 +215,30 @@ us to push to the Wishart servers to classify.
     ClassyFire is tool from the Wishart Lab - check it out [here](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0174-y). Here is the recommended citation: 
     Feunang, Yannick Djoumbou, Roman Eisner, Craig Knox, Leonid Chepelev, Janna Hastings, Gareth Owen, Eoin Fahy et al. "ClassyFire: automated chemical classification with a comprehensive, computable taxonomy." Journal of cheminformatics 8, no. 1 (2016): 61.
 
+### Structure NP Classifier
+
+If you have Smiles
+
+```https://npclassifier.ucsd.edu/classify?smiles=<smiles string>```
+
+[Example](https://npclassifier.ucsd.edu/classify?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+
+
 ### Structure Image
 
 ```https://gnps-structure.ucsd.edu/structureimg?smiles=<smiles string>```
 
 [Example](https://gnps-structure.ucsd.edu/structureimg?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
+
+### Structure Similarity
+
+```https://gnps-structure.ucsd.edu/structuresimilarity?smiles1=<smiles string>&smiles2=<smiles string>```
+
+[Example](https://gnps-structure.ucsd.edu/structuresimilarity?smiles1=Cn1c(=O)c2c(ncn2C)n(C)c1=O&smiles2=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+
+!!! warning
+    Please make sure you are URL encoding your SMILES/InChI strings or else the web server on the other end won't understand your request. 
 
 ## ReDU
 
