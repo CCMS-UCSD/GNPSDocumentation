@@ -49,7 +49,12 @@ Obtain single or multiple XIC/EIC plots for one or more files
 
 ## TIC Plots
 
-Lorem Ipsum
+For every LCMS File that is selected, the LCMS Viewer shows the total ion current for the entire LCMS run. Here we have the option of choosing the sum (TIC) or base peak intensity (BPI). 
+
+TODO: Add image for selection here
+
+!!! note 'Multiple TIC for multiple files'
+    This is possible by turning on the multiple TIC option. 
 
 ## Box Plots
 
