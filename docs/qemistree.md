@@ -8,19 +8,19 @@ This documentation aims to provide a user-guide on how to run a Qemistree workfl
 
 **STEP 1: Collecting the right input files**
 
-Users can perform QEMISTREE analysis in GNPS after processing LC-MS/MS data through [Feature-Based Molecular Networking or FBMN](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/) using [MZmine2](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395). The input files for Qemistree are:
+Users can perform QEMISTREE analysis in GNPS after processing LC-MS/MS data through [Feature-Based Molecular Networking or FBMN](featurebasedmolecularnetworking.md) using [MZmine2](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395). The input files for Qemistree are:
 
 **1. Required**: A SIRIUS MGF file generated from the MZmine workflow. See the [FBMN with MZmine2](featurebasedmolecularnetworking-with-mzmine2.md).
 
-**2. Required**: A quant table called `qiime2_table.qza` with all the identified features (an output of [FBMN](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/), and found  within the folder `qiime2_output`)
+**2. Required**: A quant table called `qiime2_table.qza` with all the identified features (an output of [FBMN](featurebasedmolecularnetworking.md), and found  within the folder `qiime2_output`)
 
-**3. Optional**: A metadata file called `qiime2_metadata.tsv` (an output of [FBMN](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/), and also found in folder `qiime2_output`)
+**3. Optional**: A metadata file called `qiime2_metadata.tsv` (an output of [FBMN](featurebasedmolecularnetworking.md), and also found in folder `qiime2_output`)
 
-**4. Optional**: A library identification file (TSV) (an output of [FBMN](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/), and found in the folder `clusterinfo_summary`)
+**4. Optional**: A library identification file (TSV) (an output of [FBMN](featurebasedmolecularnetworking.md), and found in the folder `clusterinfo_summary`)
 
 Follow the steps below to generate these files:
 
-a. Follow the documentation for [Feature-Based Molecular Networking using MZmine2](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking-with-mzmine2/) to generate an aligned feature list for your LC-MS/MS data and export the necessary MGF and CSV files for FBMN GNPS workflow.
+a. Follow the documentation for [Feature-Based Molecular Networking using MZmine2](featurebasedmolecularnetworking-with-mzmine2.md) to generate an aligned feature list for your LC-MS/MS data and export the necessary MGF and CSV files for FBMN GNPS workflow.
 
 b. While still in MZmine2, select your aligned feature list, then click on the tab for feature list methods and select Export/Import, followed by Export for SIRIUS.
 
