@@ -10,7 +10,7 @@ This documentation aims to provide a user-guide on how to run a Qemistree workfl
 
 Users can perform QEMISTREE analysis in GNPS after processing LC-MS/MS data through [Feature-Based Molecular Networking or FBMN](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/) using [MZmine2](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395). The input files for Qemistree are:
 
-**1. Required**: A SIRIUS MGF file generated from the MZmine workflow
+**1. Required**: A SIRIUS MGF file generated from the MZmine workflow. See the [FBMN with MZmine2](featurebasedmolecularnetworking-with-mzmine2.md).
 
 **2. Required**: A quant table called `qiime2_table.qza` with all the identified features (an output of [FBMN](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/), and found  within the folder `qiime2_output`)
 
