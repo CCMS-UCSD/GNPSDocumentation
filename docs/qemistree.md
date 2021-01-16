@@ -1,7 +1,8 @@
 **QEMISTREE** - a tool to represnt metabolomics data as trees to explore chemical diversity
  
-*Introduction*: Qemistree is a computation tool to build a tree of mass-spectrometry (LC-MS/MS) features to perform which enables the use of phylogeny-based tools to study chemical composition of samples. 
-This documentation aims to provide a user-guide on how to run a Qemistree workflow on GNPS.
+*Introduction*: Qemistree is a computation tool to build a tree of mass-spectrometry (LC-MS/MS) features to perform which enables the use of phylogeny-based tools to study chemical composition of samples. The article is available in [Nat. Chem. Biol. (2020)](https://www.nature.com/articles/s41589-020-00677-3).
+This documentation aims to provide a user-guide on how to run a Qemistree workflow on GNPS. 
+
 
 ****
 
@@ -130,6 +131,8 @@ For detailed information on all the steps performed during Qemistree processing,
 
 
 **CITATIONS**:
+
+[Tripathi, A., Vázquez-Baeza, Y., Gauglitz, J.M. et al. Chemically informed analyses of metabolomics mass spectrometry data with Qemistree. Nat Chem Biol (2020)](https://www.nature.com/articles/s41589-020-00677-3)
 
 [Dührkop, K., Shen, H., Meusel, M., Rousu, J. & Böcker, S. Searching molecular structure databases with tandem mass spectra using CSI:FingerID. Proc. Natl. Acad. Sci. U. S. A. 112, 12580–5 (2015)](https://www.pnas.org/content/112/41/12580)
 
