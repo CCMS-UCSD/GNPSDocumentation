@@ -68,10 +68,35 @@ Lorem Ipsum
 
 Lorem Ipsum
 
-## Data Types Supported
 
-Lorem Ipsum
+## Collaborative Visualization
 
+You can share visualizations as URLs and interactively Collaborate. There are several ways to collaboratively view data:
+
+1. Visualize data and send others the visualization link
+2. Creating a session where you may lead and others may follow (mirror) your activity
+
+### Sychronized Leader/Follow Visualization
+
+To create a visualization as a leader, you will need to do the following
+
+1. Click on Sychronization Options
+1. Create a session id, this can be anything, random numbers or your name/class
+1. Select Under Teaching Sychronization (Beta), select LEADER
+1. Click Get Token (this protects your session so others cannot hijack being leader)
+1. Copy the link under "Follower URL" and send to others to follow your work
+
+To initiate following a visualization, you will need to do the following
+
+1. Get a follower URL from your collaborator who will function as the leader
+1. Click "Sync Initiate"
+1. Watch for updates from your leader
+
+You may also stop syncing as a follower by clicking the "Sync Terminate" so that you do not receive any more updates. Then you may build upon the visualiation that has been done by the leader. 
+
+### Teaching Mass Spectrometry Data/Analysis
+
+We think this tool might be a good tool for teaching LC/MS visualization. The Leader/Follower options are a way for students to follow along to get started. Once the initial setup and instruction are done, they can stop syncing and build upon the visualization. We have tested this tool to scale up to a few dozen concurrent followers. If you do intend to use this for a class, please let us know so that we do not do maintenance during your class. 
 
 ## Repositories Supported
 
@@ -85,4 +110,3 @@ Lorem Ipsum
 
 !!! note
     To get a file list for a dataset, checkout out [GNPS Dataset Explorer Tool](https://gnps-dataset-explorer.herokuapp.com/). 
-
