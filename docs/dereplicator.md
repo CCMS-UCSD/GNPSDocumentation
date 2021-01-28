@@ -1,5 +1,24 @@
 ## DEREPLICATOR - Insilico Peptidic Natural Products Tools
 
+- [DEREPLICATOR - Insilico Peptidic Natural Products Tools](#dereplicator---insilico-peptidic-natural-products-tools)
+- [Manuscripts and Citations](#manuscripts-and-citations)
+- [Development](#development)
+- [Accessing the DEREPLICATOR tools on GNPS](#accessing-the-dereplicator-tools-on-gnps)
+    + [STEP 1: Go to GNPS](#step-1--go-to-gnps)
+    + [STEP 2: Access DEREPLICATOR](#step-2--access-dereplicator)
+    + [STEP 3: SELECT YOUR FILES](#step-3--select-your-files)
+    + [STEP 4: CONFIGURE](#step-4--configure)
+      - [BASIC OPTIONS:](#basic-options-)
+      - [ADVANCED OPTIONS:](#advanced-options-)
+      - [ADVANCED DEREPLICATOR OPTIONS:](#advanced-dereplicator-options-)
+      - [ADVANCED VARQUEST OPTIONS:](#advanced-varquest-options-)
+    + [STEP 5: VIEW RESULTS](#step-5--view-results)
+    + [STEP 6: ANALYSE](#step-6--analyse)
+    + [STEP 7: MAP ANNOTATIONS ON MOLECULAR NETWORKS](#step-7--map-annotations-on-molecular-networks)
+    + [STEP 8: VALIDATE](#step-8--validate)
+- [DEREPLICATOR+](#dereplicator-)
+
+
 The Insilico Peptidic Natural Products **DEREPLICATOR** is a bioinformatic tool available on GNPS that allows the annotation of known peptidic natural products in MS/MS data using in silico fragmentation tree.
 
 The introduction of **DEREPLICATOR VarQuest** made possible to search variants of known peptidic natural products on GNPS.
@@ -121,61 +140,65 @@ Click on a blue peak to highlighted the corresponding fragment on the molecular 
 
 ![img](img/dereplicator/Figure7.png)
 
-#### STEP 7: VALIDATE
+#### STEP 7: MAP ANNOTATIONS ON MOLECULAR NETWORKS
+**Map and Explore the DEREPLICATOR annotations in the networks:**
+1. Run a classical or feature-based molecular networks with the spectral data (Files format can be mzML/mzXML/MGF). [See the following documentation](networking.md). Note that the [Feature-Based Molecular Network workflow](featurebasedmolecularnetworking.md) can run the **DEREPLICATOR VarQuest** automatically (with default parameters only).
+
+2. If you run a classical molecular networking job, download the clustered spectra (.MGF file). Click on *Download Clustered Spectra as MGF*. If you run feature-based molecular network, uses the same MS/MS spectral summary file (.MGF file).
+
+![img](img/dereplicator/Figure8.png)
+
+4. Upload the MGF file for the clustered spectra or the MS/MS spectral summary, and run a DEREPLICATOR job (see present documentation).
+
+5. When the job is completed click on *View Unique Peptides*.
+
+6. Click on *View unique Peptide*, or *View all PSM (Peptide-Spectrum Matches)*. On the annotation results page, click on download with Download button and unzip the file on your computer.
+
+![img](img/dereplicator/Figure9.png)
+
+7. Open the corresponding molecular networks with Cytoscape. [See documentation here](cytoscape.md), and here for [Feature-Based Molecular Networking](featurebasedmolecularnetworking.md)
+
+8. In Cytoscape, import the .TSV table as *attribute table*. In Cytoscape go to *File / Import / Table / File* and select the .TSV annotation file for the dereplicator (see above).
+
+9. In the preview window, click on the *Scan* header to set the meaning to *Key*. The value in that column corresponds to the "shared name" or "ClusterIdx" in the molecular network.
+
+![img](img/dereplicator/Figure10.png)
+
+10. Select/Unselect column as needed, and eventually change the name for table header if they are already in the molecular networks (otherwise, they will be replaced with the new table imported).
+
+11. Change the column header name from *SMILES* into *SMILES_derepl*
+
+12. Click on import. Now the attribute table is mapped into the networks.
+
+13. The structures can be viewed directly into Cytoscape with the ChemViz2 plugin. See the [Network Annotation Propagation](nap.md) documentation for more details.
+
+14. Explore Dereplicator annotations in the network with the [select function of Cytoscape](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking-cytoscape/#the-select-function).
+
+#### STEP 8: VALIDATE
 **Validate a DEREPLICATOR annotation**:
 More than 60% of Dereplicator annotations on GNPS Massive datasets (April 2016) were manually curated.
 
-##### Validating a DEREPLICATOR annotation (MSI level 1):
+##### Validating a DEREPLICATOR annotation:
 
-- A level 1 MSI identification can be achieved of the reference material is available for the compound, by ordering the compound and analyzing it with the same method LC-MS/MS. The MS/MS spectrum and retention time should be identical between the observed and reference MS/MS spectra (co-injection can be done to verify retention time).
+Ideally the annotation should be validated by comparing the fragmentation spectra and other properties (retention time, cross-colision section, ...) of an authentic reference compound analyzed in the same LC-MS/MS conditions. The MS/MS spectrum and retention time should be identical between the observed and reference MS/MS spectra (co-injection can be done to verify retention time). \
+In practice, the confidence in the annotation can be increased by:
+1) comparing with a fragmentation spectra obtained in other experimental condition (i.e. other mass spectrometry plateform).\
+2) using other computational annotations tools. \
+3) examining if the main fragment ions are consistent with the structure proposed by the DEREPLICATOR.
+4) if genome sequence(s) are available, observing a biosynthetic gene cluster associated with the molecule.
 
-##### Annotation with the DEREPLICATOR (MSI level 2 or 3), one must:
+In any cases the following are recommended:
 - The MS/MS spectrum from the raw file must be inspected (consistency, noise level, ...)
 
 - The adducts detected must be confirmed using the MS1 spectrum (mono-charged, di-charged ?, protonated adduct ?, ...). This can be done MZmine2.
 
-- The molecular formula must be verified. [Sirius](https://bio.informatik.uni-jena.de/software/sirius/) can be used for that (only for single-charged compounds).
-
-- Main fragment ions non-annotated by the DEREPLICATOR should be manually annotated.
+- The molecular formula should be verified. [Sirius](https://bio.informatik.uni-jena.de/software/sirius/) can be used for that (only for single-charged compounds).
 
 - Look at the biological source(s) (species) for the peptidic natural product (Google scholar, Dictionnary of Natural Products, AntiMarin, MarinLit, ...), to see if it is consistent with the sample.
 
-- If genome sequence(s) are available, genome mining can be performed to search potential biogenetic gene clusters.
 
-####  Mapping DEREPLICATOR results on molecular networks
-1. Run molecular networks with the spectral data (Files format can be mzML/mzXML/MGF). [See the following documentation](networking.md). Note that the [Feature-Based Molecular Network workflow](featurebasedmolecularnetworking.md) can run the **DEREPLICATOR VarQuest** automatically (with default parameters only).
-
-2. Download the molecular networks clustered data (.MGF file). Click on *Download Clustered Spectra as MGF*.
-
-![img](img/dereplicator/Figure8.png)
-
-3. Upload the .MGF file, and run a DEREPLICATOR job (see present documentation). Note that alternatively, the .MGF obtained with MZmine can be used (GNPS export module).
-
-4. When the job is completed click on *View Unique Peptides*.
-
-5. In the *View unique Peptide* page, download the .TSV annotation file. Click on download with Download button and unzip the file.
-
-![img](img/dereplicator/Figure9.png)
-
-6. Open the molecular networks with Cytoscape. [See documentation here](cytoscape.md), and here for [Feature-Based Molecular Networking](featurebasedmolecularnetworking.md)
-
-7. In Cytoscape, import the .TSV table as attribute table. In Cytoscape go to *File / Import / Table / File* and select the .TSV annotation file for the dereplicator (see above).
-
-8. In the preview window, click on the *Scan* header to set the meaning to *Key*.
-
-![img](img/dereplicator/Figure10.png)
-
-9. Select/Unselect column as needed, and eventually change the name for table header if they are already in the molecular networks (otherwise, they will be replaced with the new table imported).
-
-10. Change the column header name from *SMILES* into *SMILES_derepl*
-
-11. Click on import. Now the attribute table is mapped into the networks.
-
-12. The structure can be viewed with the ChemViz2 plugin . See the [Network Annotation Propagation](nap.md) documentation for more details.
-
-## TO DO
-- Documentation for Dereplicator+
-- Provide new documentation link on Legacy documentation and GNPS in silico page.
+## DEREPLICATOR+
+- The DEREPLICATOR+ is very similar to the DEREPLICATOR workflow, and currently no documentation is available.
 
 ## Contribute to the Documentation
 

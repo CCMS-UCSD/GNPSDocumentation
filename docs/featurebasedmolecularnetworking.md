@@ -6,7 +6,8 @@
 
 **Feature-Based Molecular Networking** (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on [GNPS](http://gnps.ucsd.edu). The supported tools are: [MZmine](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md), [XCMS](featurebasedmolecularnetworking-with-xcms3.md), [Progenesis QI](featurebasedmolecularnetworking-with-progenesisQI.md), and the [mzTab-M format](featurebasedmolecularnetworking-with-mztab-m.md).
 
-The main documentation for Feature-Based Molecular Networking is provided below. See [our preprint on bioaRxiv](https://www.biorxiv.org/content/10.1101/812404v1).
+The main documentation for **Feature-Based Molecular Networking** is provided below. See [our article](https://www.nature.com/articles/s41592-020-0933-6)
+and the [preprint](https://www.biorxiv.org/content/10.1101/812404v1).
 
 The Feature-Based Molecular Networking (FBMN) workflow is available on GNPS via:
 
@@ -18,13 +19,14 @@ The Feature-Based Molecular Networking (FBMN) workflow is available on GNPS via:
 
 ## Citations
 
-This work builds on the efforts of our many colleagues, please make sure to cite the papers for their processing tools and the following GNPS papers:
+!!! quote "Recommended Citations"
+    This work builds on the efforts of our many colleagues, please make sure to cite the papers for their processing tools and the following GNPS papers
 
-Nothias, L.F. et al [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
+    Nothias, L.-F., Petras, D., Schmid, R. et al. [Feature-based molecular networking in the GNPS analysis environment](https://www.nature.com/articles/s41592-020-0933-6). Nat. Methods 17, 905–908 (2020).
 
-Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
+    Wang, M. et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
-The citations from the mass spectrometry processing tools you used [[MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md),[XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [mzTab-M format](featurebasedmolecularnetworking-with-mztab-m.md)]. 
+    The citations from the mass spectrometry processing tools you used [[MZmine2](featurebasedmolecularnetworking-with-mzmine2.md), [OpenMS](featurebasedmolecularnetworking-with-openms.md), [MS-DIAL](featurebasedmolecularnetworking-with-ms-dial.md), [MetaboScape](featurebasedmolecularnetworking-with-metaboscape.md),[XCMS](featurebasedmolecularnetworking-with-xcms3.md), and [mzTab-M format](featurebasedmolecularnetworking-with-mztab-m.md). 
 
 
 ## Mass Spectrometry Data Processing for the FBMN
@@ -56,12 +58,10 @@ Three type of input files are needed (test files for each software are accessibl
 **Option A (RECOMMENDED)** - Export the processing results using a feature table and an .MGF file:
 
 1. A *feature table* with the intensities of LC-MS ion features (TXT or CSV format).
-
-2. A *MS/MS spectral summary* file with a list of MS/MS spectra associated with the LC-MS ion features (.MGF File). (.MGF file format).
-
-3. [Optional] *Metadata table* - format described [here](metadata.md)
-
-4. [Optional] *"Supplementary Pairs"* of additional edges - described [here](#advanced-extras)
+1. A *MS/MS spectral summary* file with a list of MS/MS spectra associated with the LC-MS ion features (.MGF File). (.MGF file format).
+1. [Optional] *Metadata table* - format described [here](metadata.md)
+1. [Optional] *Original mzML Files* - These are the original files used for feature finding - described [here](#mzml-files-used-for-feature-finding)
+1. [Optional] *"Supplementary Pairs"* of additional edges - described [here](#advanced-extras)
 
 **Option B** - Export the processing results using an mzTab-M and mzML files:
 
@@ -186,6 +186,11 @@ Example of the Supplementary Pairs used in the [IIN workflow](fbmn-iin.md).
 
 ![img](img/featurebasedmolecularnetworking/fbmn_advanced_extras.PNG)
 
+#### mzML Files Used for Feature Finding
+
+The original mzML/mzXML files that were used for feature finding can also be included. This provides a way for the workflow to link back to the original files and help people explore the data interactively. 
+
+
 ### Inspecting the Results of FBMN on GNPS
 
 After the completion of the FBMN job (this will take from 10 to 10 hours depending on your number of samples and instrument), you will receive an email notification with a link to the results page (see example below).
@@ -297,6 +302,7 @@ Basically, the **mzTab-M** file is used to retrieve for each LC-MS/MS feature:
 - The filename (**mzML**) and the index of the most intense associated MS/MS spectrum. 
 
 Note that currently, the mzTab-M has been tested only with XCMS. More informations in the [FBMN with mzTab-M documentation](featurebasedmolecularnetworking-with-mztab-m.md).
+
 
 ##### Programmatic Access to FBMN
 

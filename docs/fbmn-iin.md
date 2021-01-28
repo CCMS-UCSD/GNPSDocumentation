@@ -15,7 +15,7 @@ This work builds on the efforts of our many colleagues, please cite their work:
 
 **For IIMN**: Schmid R., Petras D., Nothias LF, et al. [Ion Identity Molecular Networking in the GNPS Environment](https://www.biorxiv.org/content/10.1101/2020.05.11.088948v1) bioRxiv 088948 (2020).
 
-**For FBMN**: Nothias, L.F., Petras D., Schmid R, et al. [Feature-based Molecular Networking in the GNPS Analysis Environment](https://www.biorxiv.org/content/10.1101/812404v1) bioRxiv 812404 (2019).
+**For FBMN**: Nothias, L.-F., Petras, D., Schmid, R. et al. [Feature-based molecular networking in the GNPS analysis environment](https://www.nature.com/articles/s41592-020-0933-6). Nat. Methods 17, 905–908 (2020).
 
 **For GNPS**: Wang, M., Carver J, Phelan V.V., et al. [Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking](https://doi.org/10.1038/nbt.3597). Nat. Biotechnol. 34, 828–837 (2016).
 
@@ -58,6 +58,19 @@ The Supplementary Pairs is a .CSV format file (coma separated), and must contain
 See an example of the Supplementary Pairs used in the Ion Identity Networking (IIN) workflow
 
 ![img](img/featurebasedmolecularnetworking/fbmn_iin_edges.PNG)
+
+## IIMN networks with collapsed ion identity edges
+The IIMN workflow on GNPS generates two network types and provides downloads as graphml for downstream analysis and
+ visualization. Both graphml networks are available in the "download cytoscape data" zip file provided on the job
+  results page. The standard network contains MS² similarity edges from molecular networking combined with MS¹ ion
+  identity networking edges (see **a)** in figure below). The alternative network **b)** collapses all ion identities
+   that originate from the same neutral molecule (connected by red edges) into a single "molecular" node. The example
+    below visualizes the relative ion abundances as pie charts on the collapsed nodes and uses the summed intensity
+     for the node sizes. The collapsed nodes inherit the "shared name" of one of the removed ion identity child nodes.
+     This node column can be used for a comparison between IIMN networks with or without collapsing or to compare
+      them to FBMN networks.  
+
+![img](img/iin/vial_contaminants_IIMN.png)
 
 
 ## Exploring the IIMN workflow in Cytoscape

@@ -1,25 +1,26 @@
 **QEMISTREE** - a tool to represnt metabolomics data as trees to explore chemical diversity
  
-*Introduction*: Qemistree is a computation tool to build a tree of mass-spectrometry (LC-MS/MS) features to perform which enables the use of phylogeny-based tools to study chemical composition of samples. 
-This documentation aims to provide a user-guide on how to run a Qemistree workflow on GNPS.
+*Introduction*: Qemistree is a computation tool to build a tree of mass-spectrometry (LC-MS/MS) features to perform which enables the use of phylogeny-based tools to study chemical composition of samples. The article is available in [Nat. Chem. Biol. (2020)](https://www.nature.com/articles/s41589-020-00677-3).
+This documentation aims to provide a user-guide on how to run a Qemistree workflow on GNPS. 
+
 
 ****
 
 **STEP 1: Collecting the right input files**
 
-Users can perform QEMISTREE analysis in GNPS after processing LC-MS/MS data through [Feature-Based Molecular Networking or FBMN](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/) using [MZmine2](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395). The input files for Qemistree are:
+Users can perform QEMISTREE analysis in GNPS after processing LC-MS/MS data through [Feature-Based Molecular Networking or FBMN](featurebasedmolecularnetworking.md) using [MZmine2](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395). The input files for Qemistree are:
 
-**1. Required**: A SIRIUS MGF file generated from the MZmine workflow
+**1. Required**: A SIRIUS MGF file generated from the MZmine workflow. See the [FBMN with MZmine2](featurebasedmolecularnetworking-with-mzmine2.md).
 
-**2. Required**: A quant table called `qiime2_table.qza` with all the identified features (an output of [FBMN](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/), and found  within the folder `qiime2_output`)
+**2. Required**: A quant table called `qiime2_table.qza` with all the identified features (an output of [FBMN](featurebasedmolecularnetworking.md), and found  within the folder `qiime2_output`)
 
-**3. Optional**: A metadata file called `qiime2_metadata.tsv` (an output of [FBMN](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/), and also found in folder `qiime2_output`)
+**3. Optional**: A metadata file called `qiime2_metadata.tsv` (an output of [FBMN](featurebasedmolecularnetworking.md), and also found in folder `qiime2_output`)
 
-**4. Optional**: A library identification file (TSV) (an output of [FBMN](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/), and found in the folder `clusterinfo_summary`)
+**4. Optional**: A library identification file (TSV) (an output of [FBMN](featurebasedmolecularnetworking.md), and found in the folder `clusterinfo_summary`)
 
 Follow the steps below to generate these files:
 
-a. Follow the documentation for [Feature-Based Molecular Networking using MZmine2](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking-with-mzmine2/) to generate an aligned feature list for your LC-MS/MS data and export the necessary MGF and CSV files for FBMN GNPS workflow.
+a. Follow the documentation for [Feature-Based Molecular Networking using MZmine2](featurebasedmolecularnetworking-with-mzmine2.md) to generate an aligned feature list for your LC-MS/MS data and export the necessary MGF and CSV files for FBMN GNPS workflow.
 
 b. While still in MZmine2, select your aligned feature list, then click on the tab for feature list methods and select Export/Import, followed by Export for SIRIUS.
 
@@ -80,7 +81,7 @@ We recommend you to download the tree and tree decoration files by clicking on t
 
 **3.** Under **Advanced Views**, click on `View qiime2 Emperor Plots` to visualize the Principal Coordinate Analysis result using weighted [UniFrac distances](https://www.ncbi.nlm.nih.gov/pubmed/16332807) based on the chemical relationships based on predicted molecular fingerprints.  
 
-**4** Visualizing chemical trees using the **View Qemistree dashboard**. You can further explore and modify the Qemistree visualization interactively using the [Qemistree dashboard](https://qemistree.ucsd.edu/). This dashboard is available as a link on your Qemistree job status page for direct access.
+**4.** Visualizing chemical trees using the **View Qemistree dashboard**. You can further explore and modify the Qemistree visualization interactively using the [Qemistree dashboard](https://qemistree.ucsd.edu/). This dashboard is available as a link on your Qemistree job status page for direct access.
 
 The example Qemistree task on the dashboard provides is based on a subset of a global foodomics dataset. 
 
@@ -97,6 +98,18 @@ For your own data visualization, enter the following information on the dashboar
 7. Click on `Datasets` tab in iTOL to visualize the relative abundance of each feature in the sample metadata category you chose in Step 5.
 
 You can interactively modify the aethetics of this visualization (such as colors, fonts, sizes etc) interactively by using the control panel in iTOL. 
+
+**5.** You can download the .qzv file generated in the dashboard and drag and drop to https://view.qiime2.org/. Clicking on “View this tree using iTol” will build the tree with all the information contained in the **Qemistree, Labels, Colors, and Abundance** files. In this way, it will not be possible to trace the branches back to the fingerprints (and, consequently, to the Feature IDs) since the information you can get putting the cursor on the nodes is its branch length and the classification information. 
+
+If you want to trace the branches back to the feature IDs, you can download the Qemistree.tree file, and upload it in iTol directly in your account. In this way, you will get a tree without any other information added, just the fingerprint information for each node.
+
+![alt text](./img/qemistree/Qemistree_Fingerprints.png "Qemistree fingerprints iTol")
+
+On the job status window, you can click on “view summary” and download this entire table to check which feature ID corresponds to the fingerprint you are interested in (seen on the tree).
+
+![alt text](./img/qemistree/Table_fingerprints.png "Qemistree SummaryView")
+
+You can also just drag and drop to iTol the **Labels, Colors, and Abundance** files to have all this information in the tree again.
 
 ****
 
@@ -118,6 +131,8 @@ For detailed information on all the steps performed during Qemistree processing,
 
 
 **CITATIONS**:
+
+[Tripathi, A., Vázquez-Baeza, Y., Gauglitz, J.M. et al. Chemically informed analyses of metabolomics mass spectrometry data with Qemistree. Nat Chem Biol (2020)](https://www.nature.com/articles/s41589-020-00677-3)
 
 [Dührkop, K., Shen, H., Meusel, M., Rousu, J. & Böcker, S. Searching molecular structure databases with tandem mass spectra using CSI:FingerID. Proc. Natl. Acad. Sci. U. S. A. 112, 12580–5 (2015)](https://www.pnas.org/content/112/41/12580)
 

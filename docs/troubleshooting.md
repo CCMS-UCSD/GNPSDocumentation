@@ -2,6 +2,11 @@
 
 This section addresses some common issues with the analysis workflows at GNPS. If you run into any of these common issues, hopefully this page will give you actionable steps to address them. If this page cannot help you, please refer to the [forum](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports) to help answer your questions.
 
+## GNPS Jobs
+
+???+ "There was an error transferring this workflow's input files to computation storage"
+    This error generally means there was a server error and not a user one. Please try re-running. If repeatedly it errors out, please send an email to system administrators (ccms-web@cs.ucsd.edu). 
+
 ## Molecular Networking
 
 ### Failed Molecular Networking Job
@@ -48,6 +53,7 @@ This section addresses some common issues with the analysis workflows at GNPS. I
     1. Duplicate file names
     1. A column called “sample_name” in your metadata, this column should be removed. 
     1. Your filenames in the metadata do not align with the input data
+    1. In cases of feature-based molecular networking, there can be negative values in quant table somehow. These cause error while calculating sample distances.
 
 ## Page Contributors
 
