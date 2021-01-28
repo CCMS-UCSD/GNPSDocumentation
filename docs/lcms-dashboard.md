@@ -68,9 +68,14 @@ Lorem Ipsum
 
 Lorem Ipsum
 
-## Data Types Supported
 
-Lorem Ipsum
+## Collaborative Visualization
+
+You can share visualizations as URLs and interactively Collaborate
+
+### Sychronized Visualizations
+
+### Teaching Mass Spectrometry Data/Analysis
 
 
 ## Repositories Supported
@@ -85,4 +90,3 @@ Lorem Ipsum
 
 !!! note
     To get a file list for a dataset, checkout out [GNPS Dataset Explorer Tool](https://gnps-dataset-explorer.herokuapp.com/). 
-
