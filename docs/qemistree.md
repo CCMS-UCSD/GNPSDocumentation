@@ -1,25 +1,26 @@
 **QEMISTREE** - a tool to represnt metabolomics data as trees to explore chemical diversity
  
-*Introduction*: Qemistree is a computation tool to build a tree of mass-spectrometry (LC-MS/MS) features to perform which enables the use of phylogeny-based tools to study chemical composition of samples. 
-This documentation aims to provide a user-guide on how to run a Qemistree workflow on GNPS.
+*Introduction*: Qemistree is a computation tool to build a tree of mass-spectrometry (LC-MS/MS) features to perform which enables the use of phylogeny-based tools to study chemical composition of samples. The article is available in [Nat. Chem. Biol. (2020)](https://www.nature.com/articles/s41589-020-00677-3).
+This documentation aims to provide a user-guide on how to run a Qemistree workflow on GNPS. 
+
 
 ****
 
 **STEP 1: Collecting the right input files**
 
-Users can perform QEMISTREE analysis in GNPS after processing LC-MS/MS data through [Feature-Based Molecular Networking or FBMN](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/) using [MZmine2](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395). The input files for Qemistree are:
+Users can perform QEMISTREE analysis in GNPS after processing LC-MS/MS data through [Feature-Based Molecular Networking or FBMN](featurebasedmolecularnetworking.md) using [MZmine2](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395). The input files for Qemistree are:
 
-**1. Required**: A SIRIUS MGF file generated from the MZmine workflow
+**1. Required**: A SIRIUS MGF file generated from the MZmine workflow. See the [FBMN with MZmine2](featurebasedmolecularnetworking-with-mzmine2.md).
 
-**2. Required**: A quant table called `qiime2_table.qza` with all the identified features (an output of [FBMN](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/), and found  within the folder `qiime2_output`)
+**2. Required**: A quant table called `qiime2_table.qza` with all the identified features (an output of [FBMN](featurebasedmolecularnetworking.md), and found  within the folder `qiime2_output`)
 
-**3. Optional**: A metadata file called `qiime2_metadata.tsv` (an output of [FBMN](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/), and also found in folder `qiime2_output`)
+**3. Optional**: A metadata file called `qiime2_metadata.tsv` (an output of [FBMN](featurebasedmolecularnetworking.md), and also found in folder `qiime2_output`)
 
-**4. Optional**: A library identification file (TSV) (an output of [FBMN](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/), and found in the folder `clusterinfo_summary`)
+**4. Optional**: A library identification file (TSV) (an output of [FBMN](featurebasedmolecularnetworking.md), and found in the folder `clusterinfo_summary`)
 
 Follow the steps below to generate these files:
 
-a. Follow the documentation for [Feature-Based Molecular Networking using MZmine2](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking-with-mzmine2/) to generate an aligned feature list for your LC-MS/MS data and export the necessary MGF and CSV files for FBMN GNPS workflow.
+a. Follow the documentation for [Feature-Based Molecular Networking using MZmine2](featurebasedmolecularnetworking-with-mzmine2.md) to generate an aligned feature list for your LC-MS/MS data and export the necessary MGF and CSV files for FBMN GNPS workflow.
 
 b. While still in MZmine2, select your aligned feature list, then click on the tab for feature list methods and select Export/Import, followed by Export for SIRIUS.
 
@@ -130,6 +131,8 @@ For detailed information on all the steps performed during Qemistree processing,
 
 
 **CITATIONS**:
+
+[Tripathi, A., Vázquez-Baeza, Y., Gauglitz, J.M. et al. Chemically informed analyses of metabolomics mass spectrometry data with Qemistree. Nat Chem Biol (2020)](https://www.nature.com/articles/s41589-020-00677-3)
 
 [Dührkop, K., Shen, H., Meusel, M., Rousu, J. & Böcker, S. Searching molecular structure databases with tandem mass spectra using CSI:FingerID. Proc. Natl. Acad. Sci. U. S. A. 112, 12580–5 (2015)](https://www.pnas.org/content/112/41/12580)
 

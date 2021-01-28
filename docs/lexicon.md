@@ -26,6 +26,18 @@ To disambiguate with the feature-based molecular networking, this method is also
 
 **Edge table:** a table summarizing molecular network edge information (cosine score, delta m/z)
 
+**(Ion) mass accuracy/tolerance**: For a given ion, measured as mass-to-charge (m/z), corresponds to the m/z accuracy of the ion measurement. It is dependent upon the instrument properties/stability and is typically expressed in part per million (ppm). The mass tolerance is how much two m/z values can differ to be considered as matching (same mass or specific delta m/z searched). The mass tolerance can be applied for an ion(s) between consecutives spectra, or for an ion(s) between two spectra acquired on different compounds/samples/datasets/instruments. 
+
+The table below shows the variation of ion mass accuracy (in ppm) for a given mass tolerance value (m/z) accross the m/z range (up to m/z 2000). This table can help you choosing the right precursor/fragment ion mass tolerance for your experiment/instrument.
+
+|          | 2.0 m/z    | 0.5 m/z   | 0.1 m/z  | 0.05 m/z | 0.03 m/z | 0.025 m/z | 0.02 m/z | 0.0175 m/z | 0.015 m/z | 0.01 m/z | 0.0075 m/z |
+| -------- | --------- | -------- | ------- | ------- | ------- | -------- | ------- | --------- | -------- | ------- | --------- |
+| m/z 200  | 10000 ppm | 2500 ppm | 500 ppm | 250 ppm | 150 ppm | 250 ppm  | 100 ppm | 87.5 ppm  | 75 ppm   | 50 ppm  | 37.5 ppm  |
+| m/z 500  | 4000 ppm  | 1000 ppm | 200 ppm | 100 ppm | 60 ppm  | 49 ppm   | 40 ppm  | 35 ppm    | 29 ppm   | 20 ppm  | 15 ppm    |
+| m/z 1000 | 2000 ppm  | 500 ppm  | 100 ppm | 50 ppm  | 30 ppm  | 25 ppm   | 20 ppm  | 17.5 ppm  | 15 ppm   | 10 ppm  | 7.5 ppm   |
+| m/z 1500 | 1333 ppm  | 333 ppm  | 66 ppm  | 33 ppm  | 20 ppm  | 16 ppm   | 13 ppm  | 11.6 ppm  | 10 ppm   | 6.6 ppm | 5.0 ppm   |
+| m/z 2000 | 1000 pm   | 250 pm   | 50 ppm  | 25 ppm  | 15 ppm  | 12.5 ppm | 10 ppm  | 8.75 ppm  | 7.4 ppm  | 5.0 ppm | 3.75 ppm  |
+
 ### Data processing - Feature-based molecular networking.
 
 **Data conversion:** the process of converting the mass spectrometry data from a format to another. Many data processing and annotation tools require first to convert vendor format to an open source. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion](fileconversion.md)
@@ -62,7 +74,7 @@ To disambiguate with the feature-based molecular networking, this method is also
 
 **Metaminer** : a metabologenomic pipeline which integrates fragmentation spectra analysis and biosynthetic gene cluster analysis to identify novel Ribosomally synthesized and Post-translationally modified Peptides (RiPPs) and the biosynthetic gene clusters encoding them. More information at [https://ccms-ucsd.github.io/GNPSDocumentation/metaminer/](metaminer.md).
 
-**Qemistree:** a method that generates a tree of metabolites from fragmentation spectra analysis for enhanced comparison of chemical profiles using chemically-informed distance metrics. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/qemistree/](qemistree.md)
+**Qemistree:** a method that generates a tree of metabolites from fragmentation spectra analysis for enhanced comparison of chemical profiles using chemically-informed distance metrics. More information at: [https://ccms-ucsd.github.io/GNPSDocumentation/qemistree/](qemistree.md).
 
 **ClassyTree** : a chemically-informed distance metric that uses ClassyFire chemical class information for enhanced comparison of chemical profiles. A tree of the annotated metabolites is constructed based on the hierarchy of their respective chemical classes. Using the UniFrac metric, the chemical structural relatedness of the annotated molecules in each sample is thus considered when comparing multiple samples. Samples that contain similar chemical class profiles will end up closer to each other even if the individual molecules are slightly different. The method is not published yet but more information can be found here [[https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/](molnetenhancer.md)] and here [[https://github.com/madeleineernst/MetaboDistTrees](https://github.com/madeleineernst/MetaboDistTrees)].
 
@@ -86,9 +98,9 @@ To disambiguate with the feature-based molecular networking, this method is also
 
 **Fingerprint:** a vector encoding the chemical or structural properties for a molecule or a fragmentation spectrum. It can be computed directly from the molecular structure with RDKit or CDK libraries.
 
-**CANOPUS:** a method that is part of SIRIUS and that can predict the most likely chemical class for a fragmentation spectrum.
+**CANOPUS:** a method that is part of SIRIUS and that can predict the most likely chemical class for a fragmentation spectrum. [https://www.nature.com/articles/s41587-020-0740-8](https://www.nature.com/articles/s41587-020-0740-8)
 
-**ZODIAC:** an algorithm for improved _de novo_ (database independent) molecular formula prediction in SIRIUS. More information in the preprint: [https://www.biorxiv.org/content/10.1101/842740v1](https://www.biorxiv.org/content/10.1101/842740v1)
+**ZODIAC:** an algorithm for improved _de novo_ (database independent) molecular formula prediction in SIRIUS. More information in the preprint: [https://www.nature.com/articles/s42256-020-00234-6](https://www.nature.com/articles/s42256-020-00234-6)
 
 **COSMIC:** a method for computing the significance of the structure proposed by CSI:FingerID annotation. The method is experimental and not published yet.
 
