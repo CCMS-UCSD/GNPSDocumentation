@@ -1618,17 +1618,17 @@
                   <h1>Qemistree</h1>
                 
                 <p><strong>QEMISTREE</strong> - a tool to represnt metabolomics data as trees to explore chemical diversity</p>
-<p><em>Introduction</em>: Qemistree is a computation tool to build a tree of mass-spectrometry (LC-MS/MS) features to perform which enables the use of phylogeny-based tools to study chemical composition of samples. 
-This documentation aims to provide a user-guide on how to run a Qemistree workflow on GNPS.</p>
+<p><em>Introduction</em>: Qemistree is a computation tool to build a tree of mass-spectrometry (LC-MS/MS) features to perform which enables the use of phylogeny-based tools to study chemical composition of samples. The article is available in <a href="https://www.nature.com/articles/s41589-020-00677-3">Nat. Chem. Biol. (2020)</a>.
+This documentation aims to provide a user-guide on how to run a Qemistree workflow on GNPS. </p>
 <hr />
 <p><strong>STEP 1: Collecting the right input files</strong></p>
-<p>Users can perform QEMISTREE analysis in GNPS after processing LC-MS/MS data through <a href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/">Feature-Based Molecular Networking or FBMN</a> using <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395">MZmine2</a>. The input files for Qemistree are:</p>
-<p><strong>1. Required</strong>: A SIRIUS MGF file generated from the MZmine workflow</p>
-<p><strong>2. Required</strong>: A quant table called <code>qiime2_table.qza</code> with all the identified features (an output of <a href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/">FBMN</a>, and found  within the folder <code>qiime2_output</code>)</p>
-<p><strong>3. Optional</strong>: A metadata file called <code>qiime2_metadata.tsv</code> (an output of <a href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/">FBMN</a>, and also found in folder <code>qiime2_output</code>)</p>
-<p><strong>4. Optional</strong>: A library identification file (TSV) (an output of <a href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/">FBMN</a>, and found in the folder <code>clusterinfo_summary</code>)</p>
+<p>Users can perform QEMISTREE analysis in GNPS after processing LC-MS/MS data through <a href="../featurebasedmolecularnetworking/">Feature-Based Molecular Networking or FBMN</a> using <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395">MZmine2</a>. The input files for Qemistree are:</p>
+<p><strong>1. Required</strong>: A SIRIUS MGF file generated from the MZmine workflow. See the <a href="../featurebasedmolecularnetworking-with-mzmine2/">FBMN with MZmine2</a>.</p>
+<p><strong>2. Required</strong>: A quant table called <code>qiime2_table.qza</code> with all the identified features (an output of <a href="../featurebasedmolecularnetworking/">FBMN</a>, and found  within the folder <code>qiime2_output</code>)</p>
+<p><strong>3. Optional</strong>: A metadata file called <code>qiime2_metadata.tsv</code> (an output of <a href="../featurebasedmolecularnetworking/">FBMN</a>, and also found in folder <code>qiime2_output</code>)</p>
+<p><strong>4. Optional</strong>: A library identification file (TSV) (an output of <a href="../featurebasedmolecularnetworking/">FBMN</a>, and found in the folder <code>clusterinfo_summary</code>)</p>
 <p>Follow the steps below to generate these files:</p>
-<p>a. Follow the documentation for <a href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking-with-mzmine2/">Feature-Based Molecular Networking using MZmine2</a> to generate an aligned feature list for your LC-MS/MS data and export the necessary MGF and CSV files for FBMN GNPS workflow.</p>
+<p>a. Follow the documentation for <a href="../featurebasedmolecularnetworking-with-mzmine2/">Feature-Based Molecular Networking using MZmine2</a> to generate an aligned feature list for your LC-MS/MS data and export the necessary MGF and CSV files for FBMN GNPS workflow.</p>
 <p>b. While still in MZmine2, select your aligned feature list, then click on the tab for feature list methods and select Export/Import, followed by Export for SIRIUS.</p>
 <p>c. Choose the Mass list that you used to generate your feature list, and specify a path and filename for your SIRIUS file. Click OK.</p>
 <p>d. Go to GNPS server and run a <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">FBMN</a> job using the GNPS quant CSV, GNPS MGF (both generated in step a, above) and <a href="https://mwang87.github.io/ReDU-MS2-Documentation/HowtoContribute/">ReDU</a> metadata file.</p>
@@ -1696,11 +1696,12 @@ For advanced users, we encourage you to download all the files generated from th
 <p>Additionally, we encourage you to explore the plethora of tools available <a href="https://docs.qiime2.org/2020.2/plugins/">here</a> to guide further analyses of your metabolomics data.</p>
 <p>For detailed information on all the steps performed during Qemistree processing, please check out our source code and documentation <a href="https://github.com/biocore/q2-qemistree">here</a></p>
 <p><strong>CITATIONS</strong>:</p>
+<p><a href="https://www.nature.com/articles/s41589-020-00677-3">Tripathi, A., Vázquez-Baeza, Y., Gauglitz, J.M. et al. Chemically informed analyses of metabolomics mass spectrometry data with Qemistree. Nat Chem Biol (2020)</a></p>
 <p><a href="https://www.pnas.org/content/112/41/12580">Dührkop, K., Shen, H., Meusel, M., Rousu, J. &amp; Böcker, S. Searching molecular structure databases with tandem mass spectra using CSI:FingerID. Proc. Natl. Acad. Sci. U. S. A. 112, 12580–5 (2015)</a></p>
 <p><a href="https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0174-y">Djoumbou Feunang, Y. et al. ClassyFire: automated chemical classification with a comprehensive, computable taxonomy. J. Cheminform. 8, 61 (2016)</a></p>
 <p><a href="https://academic.oup.com/nar/article/47/W1/W256/5424068">Letunic, I. &amp; Bork, P. Interactive Tree Of Life (iTOL) v4: recent updates and new developments. Nucleic Acids Research vol. 47 W256–W259 (2019)</a></p>
 <h2 id="page-contributors">Page Contributors<a class="headerlink" href="#page-contributors" title="Permanent link">&para;</a></h2>
-<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (7.04%), <a href='mailto:dacharya@wisc.edu'>Deepa Acharya</a> (47.18%), <a href='mailto:anupriya.tripathi92@gmail.com'>Anupriya Tripathi</a> (36.62%), <a href='mailto:55901470+helenamrusso@users.noreply.github.com'>helenamrusso</a> (9.15%)</span></p>
+<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (6.9%), <a href='mailto:louisfelix.nothias@gmail.com'>lfnothias</a> (7.59%), <a href='mailto:dacharya@wisc.edu'>Deepa Acharya</a> (46.21%), <a href='mailto:anupriya.tripathi92@gmail.com'>Anupriya Tripathi</a> (30.34%), <a href='mailto:55901470+helenamrusso@users.noreply.github.com'>helenamrusso</a> (8.97%)</span></p>
                 
                   
                     
@@ -1709,7 +1710,7 @@ For advanced users, we encourage you to download all the files generated from th
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 19, 2020 21:17:12</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 16, 2021 00:24:06</span>
     
   </small>
 </div>

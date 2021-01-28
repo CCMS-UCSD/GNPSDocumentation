@@ -1781,6 +1781,98 @@
 <p><strong>Cytoscape:</strong> a software for network visualization and analysis. Molecular networks from GNPS can be imported in Cytoscape for interpretation. See the following page: <a href="../cytoscape/">https://ccms-ucsd.github.io/GNPSDocumentation/cytoscape/</a>.</p>
 <p><strong>Node table:</strong> a table summarizing molecular network node information (i.e m/z, retention time).</p>
 <p><strong>Edge table:</strong> a table summarizing molecular network edge information (cosine score, delta m/z)</p>
+<p><strong>(Ion) mass accuracy/tolerance</strong>: For a given ion, measured as mass-to-charge (m/z), corresponds to the m/z accuracy of the ion measurement. It is dependent upon the instrument properties/stability and is typically expressed in part per million (ppm). The mass tolerance is how much two m/z values can differ to be considered as matching (same mass or specific delta m/z searched). The mass tolerance can be applied for an ion(s) between consecutives spectra, or for an ion(s) between two spectra acquired on different compounds/samples/datasets/instruments. </p>
+<p>The table below shows the variation of ion mass accuracy (in ppm) for a given mass tolerance value (m/z) accross the m/z range (up to m/z 2000). This table can help you choosing the right precursor/fragment ion mass tolerance for your experiment/instrument.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>2.0 m/z</th>
+<th>0.5 m/z</th>
+<th>0.1 m/z</th>
+<th>0.05 m/z</th>
+<th>0.03 m/z</th>
+<th>0.025 m/z</th>
+<th>0.02 m/z</th>
+<th>0.0175 m/z</th>
+<th>0.015 m/z</th>
+<th>0.01 m/z</th>
+<th>0.0075 m/z</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>m/z 200</td>
+<td>10000 ppm</td>
+<td>2500 ppm</td>
+<td>500 ppm</td>
+<td>250 ppm</td>
+<td>150 ppm</td>
+<td>250 ppm</td>
+<td>100 ppm</td>
+<td>87.5 ppm</td>
+<td>75 ppm</td>
+<td>50 ppm</td>
+<td>37.5 ppm</td>
+</tr>
+<tr>
+<td>m/z 500</td>
+<td>4000 ppm</td>
+<td>1000 ppm</td>
+<td>200 ppm</td>
+<td>100 ppm</td>
+<td>60 ppm</td>
+<td>49 ppm</td>
+<td>40 ppm</td>
+<td>35 ppm</td>
+<td>29 ppm</td>
+<td>20 ppm</td>
+<td>15 ppm</td>
+</tr>
+<tr>
+<td>m/z 1000</td>
+<td>2000 ppm</td>
+<td>500 ppm</td>
+<td>100 ppm</td>
+<td>50 ppm</td>
+<td>30 ppm</td>
+<td>25 ppm</td>
+<td>20 ppm</td>
+<td>17.5 ppm</td>
+<td>15 ppm</td>
+<td>10 ppm</td>
+<td>7.5 ppm</td>
+</tr>
+<tr>
+<td>m/z 1500</td>
+<td>1333 ppm</td>
+<td>333 ppm</td>
+<td>66 ppm</td>
+<td>33 ppm</td>
+<td>20 ppm</td>
+<td>16 ppm</td>
+<td>13 ppm</td>
+<td>11.6 ppm</td>
+<td>10 ppm</td>
+<td>6.6 ppm</td>
+<td>5.0 ppm</td>
+</tr>
+<tr>
+<td>m/z 2000</td>
+<td>1000 pm</td>
+<td>250 pm</td>
+<td>50 ppm</td>
+<td>25 ppm</td>
+<td>15 ppm</td>
+<td>12.5 ppm</td>
+<td>10 ppm</td>
+<td>8.75 ppm</td>
+<td>7.4 ppm</td>
+<td>5.0 ppm</td>
+<td>3.75 ppm</td>
+</tr>
+</tbody>
+</table>
 <h3 id="data-processing-feature-based-molecular-networking">Data processing - Feature-based molecular networking.<a class="headerlink" href="#data-processing-feature-based-molecular-networking" title="Permanent link">&para;</a></h3>
 <p><strong>Data conversion:</strong> the process of converting the mass spectrometry data from a format to another. Many data processing and annotation tools require first to convert vendor format to an open source. More information at: <a href="../fileconversion/">https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion</a></p>
 <p><strong>Raw data:</strong> Rawrefers to the &quot;unprocessed&quot; mass spectrometry data, although the spectra are often centroided. These include vendor specific formats (i.e. .raw, .d format) and open format (i.e. mzML).</p>
@@ -1799,7 +1891,7 @@
 <p><strong>ClassyFire</strong> : a tool that adds chemical class information to structures using a manually curated and hierarchical ontology. More information can be found here: <a href="http://classyfire.wishartlab.com/">http://classyfire.wishartlab.com</a>.</p>
 <p><strong>MolNetEnhancer</strong> : a workflow that combines the outputs from molecular networking and in-silico annotation tools such as MS2LDA, NAP, DEREPLICATOR, and ClassyFire. MolNetEnhancer provides a comprehensive chemical overview by annotating chemical classes for molecular families whilst summarizing structural details for each fragmentation spectrum in the molecular network. More information at <strong>:</strong> <a href="../molnetenhancer/">https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/</a></p>
 <p><strong>Metaminer</strong> : a metabologenomic pipeline which integrates fragmentation spectra analysis and biosynthetic gene cluster analysis to identify novel Ribosomally synthesized and Post-translationally modified Peptides (RiPPs) and the biosynthetic gene clusters encoding them. More information at <a href="../metaminer/">https://ccms-ucsd.github.io/GNPSDocumentation/metaminer/</a>.</p>
-<p><strong>Qemistree:</strong> a method that generates a tree of metabolites from fragmentation spectra analysis for enhanced comparison of chemical profiles using chemically-informed distance metrics. More information at: <a href="../qemistree/">https://ccms-ucsd.github.io/GNPSDocumentation/qemistree/</a></p>
+<p><strong>Qemistree:</strong> a method that generates a tree of metabolites from fragmentation spectra analysis for enhanced comparison of chemical profiles using chemically-informed distance metrics. More information at: <a href="../qemistree/">https://ccms-ucsd.github.io/GNPSDocumentation/qemistree/</a>.</p>
 <p><strong>ClassyTree</strong> : a chemically-informed distance metric that uses ClassyFire chemical class information for enhanced comparison of chemical profiles. A tree of the annotated metabolites is constructed based on the hierarchy of their respective chemical classes. Using the UniFrac metric, the chemical structural relatedness of the annotated molecules in each sample is thus considered when comparing multiple samples. Samples that contain similar chemical class profiles will end up closer to each other even if the individual molecules are slightly different. The method is not published yet but more information can be found here [<a href="../molnetenhancer/">https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/</a>] and here [<a href="https://github.com/madeleineernst/MetaboDistTrees">https://github.com/madeleineernst/MetaboDistTrees</a>].</p>
 <p><strong>MotifTree</strong> : a chemically-informed distance metric that uses MS2LDA substructure information for enhanced comparison of chemical profiles. The substructures found in molecules of each sample are considered when comparing multiple samples, by constructing a tree of metabolites based on shared substructures. Samples that contain similar substructure profiles will end up closer to each other even if the individual molecules are slightly different. The method is not published yet but more information can be found here [<a href="../molnetenhancer/">https://ccms-ucsd.github.io/GNPSDocumentation/molnetenhancer/</a>] and here [<a href="https://github.com/madeleineernst/MetaboDistTrees">https://github.com/madeleineernst/MetaboDistTrees</a>].</p>
 <h3 id="gc-ms-on-gnps">GC-MS on GNPS<a class="headerlink" href="#gc-ms-on-gnps" title="Permanent link">&para;</a></h3>
@@ -1811,8 +1903,8 @@
 <p><strong>SIRIUS:</strong> a software dedicated to the annotation of ions from fragmentation spectra. First, SIRIUS computes candidate molecular formula (MF) by 1) matching the MS1 experimental spectra against the predicted isotopic pattern and 2) establishing how much the fragmentation spectra can be explained by the candidate MFs using fragmentation trees. SIRIUS integrates other algorithms or models such as: ZODIAC for improved MF prediction; CSI:FingerID for putative annotation of structure and COSMIC for establishing the confidence in the match; or CANOPUS for putative chemical class annotation. SIRIUS has an advanced graphical user interface or the tools can be run in command line mode. More informations at: <a href="https://bio.informatik.uni-jena.de/software/sirius/">https://bio.informatik.uni-jena.de/software/sirius/</a></p>
 <p><strong>Fragmentation tree (FT): a</strong> method explaining the fragment ions formula in a fragmentation spectrum via fragmentation cascades. SIRIUS uses the FT method for molecular formula prediction. More informations at: <a href="https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0116-8">https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0116-8</a></p>
 <p><strong>Fingerprint:</strong> a vector encoding the chemical or structural properties for a molecule or a fragmentation spectrum. It can be computed directly from the molecular structure with RDKit or CDK libraries.</p>
-<p><strong>CANOPUS:</strong> a method that is part of SIRIUS and that can predict the most likely chemical class for a fragmentation spectrum.</p>
-<p><strong>ZODIAC:</strong> an algorithm for improved <em>de novo</em> (database independent) molecular formula prediction in SIRIUS. More information in the preprint: <a href="https://www.biorxiv.org/content/10.1101/842740v1">https://www.biorxiv.org/content/10.1101/842740v1</a></p>
+<p><strong>CANOPUS:</strong> a method that is part of SIRIUS and that can predict the most likely chemical class for a fragmentation spectrum. <a href="https://www.nature.com/articles/s41587-020-0740-8">https://www.nature.com/articles/s41587-020-0740-8</a></p>
+<p><strong>ZODIAC:</strong> an algorithm for improved <em>de novo</em> (database independent) molecular formula prediction in SIRIUS. More information in the preprint: <a href="https://www.nature.com/articles/s42256-020-00234-6">https://www.nature.com/articles/s42256-020-00234-6</a></p>
 <p><strong>COSMIC:</strong> a method for computing the significance of the structure proposed by CSI:FingerID annotation. The method is experimental and not published yet.</p>
 <h3 id="the-gnps-environment">The GNPS environment<a class="headerlink" href="#the-gnps-environment" title="Permanent link">&para;</a></h3>
 <p><strong>GNPS:</strong> a web-based mass spectrometry ecosystem for the processing, annotation, and interpretation of nontargeted metabolomics data. See <a href="https://gnps.ucsd.edu/">https://gnps.ucsd.edu/</a>.</p>
@@ -1846,7 +1938,7 @@
 <p><strong>Number of ID&#39;s spectra:</strong> Number of spectra that has a match with a reference compound found in LC-MS or GC-MS libraries.</p>
 <p><strong>Number of ID&#39;s spectra not in components:</strong> Number of spectra clustered as singlets (nodes without connection) that have a match with a reference compound found in LC-MS or GC-MS libraries.</p>
 <h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h2>
-<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (6.33%), <a href='mailto:louisfelix.nothias@gmail.com'>lfnothias</a> (93.67%)</span></p>
+<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (5.88%), <a href='mailto:louisfelix.nothias@gmail.com'>lfnothias</a> (94.12%)</span></p>
                 
                   
                     
@@ -1855,7 +1947,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 7, 2020 22:18:40</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 16, 2021 00:08:57</span>
     
   </small>
 </div>
