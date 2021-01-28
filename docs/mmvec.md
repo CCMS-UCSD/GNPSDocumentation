@@ -1,12 +1,17 @@
-MMVEC is a tool for multi-omics integration between metabolomics and microbiome data. 
+**mmvec** is a tool for multi-omics integration between metabolomics and microbiome data. 
 
-Pardon our dust as this page is a work in progress...
+See the article:
+[Morton, J.T., Aksenov, A.A., Nothias, L.F. et al. Learning representations of microbe–metabolite interactions. Nat Methods 16, 1306–1314 (2019)](https://doi.org/10.1038/s41592-019-0616-3)
+
+And the repository at [https://github.com/biocore/mmvec](https://github.com/biocore/mmvec).
+
+Note that the present GNPS workflow allows to access only some functionalities of mmvec. So we recommend running mmvec as recommended in the github repository.
 
 ## Input Formats
 
 ### Microbiome Metadata
 
-This is a tsv file that describes the taxonomy of hte input sequences. The required header is: featureid. 
+This is a tsv file that describes the taxonomy of hte input sequences. The required header is: FeatureID. 
 
 ### Microbiome Quantification Data
 
@@ -23,7 +28,7 @@ This is a tsv file that describes the identification of the metabolites. The req
 
 This data can come from several locations:
 
-1. GNPS FBMN outputs a qza for this
+1. GNPS [FBMN](featurebasedmolecularnetworking.md) outputs a qza for this
 1. Import into qiime2 manually (see below)
 
 !!! note 

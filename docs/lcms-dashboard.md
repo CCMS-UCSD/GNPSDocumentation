@@ -92,13 +92,10 @@ If you are happy with teh setting, there is a direct link for a GNPS workflow to
 
 
 
-## Collaborative Visualization
-
-For teaching purpose or collaborative data exploration, you can share visualizations as URLs and interactively Collaborate with your friends, coworkers and students.
-For live syncronization of the view (like in google docs) you can share a "follower url" obtained through the sync options botton. Once your follower opens this link in their browser, they onlyhave to start teh syn by clicking the "Sync Initiate" botton. If they want to continue using the collaborative window on theri oown, they can stop teh syncronization by clicking the "terminate sync" botton.
 
 ![img](img/LCMS_dashbaord/Sync.png)
 
+We think this tool might be a good tool for teaching LC/MS visualization. The Leader/Follower options are a way for students to follow along to get started. Once the initial setup and instruction are done, they can stop syncing and build upon the visualization. We have tested this tool to scale up to a few dozen concurrent followers. If you do intend to use this for a class, please let us know so that we do not do maintenance during your class. 
 
 ## Repositories Supported
 
