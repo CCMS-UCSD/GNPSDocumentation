@@ -1,10 +1,11 @@
-# LCMS Dashboard
+# GNPS LCMS Dashboard
 
-Pardon our dust, this is a work in progress!
 
-Help us by adding to it. 
+The GNPS LCMS Dashboard Interface is designed to enable easy visualization of mass spectrometry data files directly in the browser.
 
-This LCMS Dashboard Interface is designed to enable easy visualization of mass spectrometry data files directly in the browser. Broadly the data can come from the following sources:
+![img](img/LCMS_dashbaord/LCMS_dashboard.png)
+
+Broadly the data can come from the following sources:
 
 1. MassIVE Public Datasets
 1. GNPS Public Datasets
@@ -32,50 +33,71 @@ We aim to enable the visualization without having users download a single file a
 1. CDF
 1. Thermo RAW
 
+### Loading your Data
+
+Data can be loaded through a repository USI directly in the data selction pannel as showm below, or alternatively thorugh the Dataset Explorer.
+
+![img](img/LCMS_dashbaord/File_Selection.png)
+
 ## 2D m/z RT Heatmap
 
-Lorem Ipsum
+Once data is loaded. Teh first file is vizaualized as a 2D heatmap. MS/MS events are indicated as blue crosses. Alternativley Feature finding results can be marked as green boxes in the heatmap and can be overlayed with other information such as peak areas.
 
-## XIC/EIC Plots
-Obtain single or multiple XIC/EIC plots for one or more files
-
-!!! note
-    Default integration type is AUC but options MS1 Sum or MAXPEAKHEIGHT exist under XIC Integration Type dropdown menu
-1. Drag and drop files or input USI links
-1. Specify m/z or multiple m/z separated by ";" under XIC Options
-1. Export or view your XIC values under XIC Integration  
-1. Share or save your work by clicking "Link to these plots" or copy the link address 
-
+![img](img/LCMS_dashbaord/Heatmap.png)
 
 ## TIC Plots
 
 For every LCMS File that is selected, the LCMS Viewer shows the total ion current for the entire LCMS run. Here we have the option of choosing the sum (TIC) or base peak intensity (BPI). 
 
-TODO: Add image for selection here
+![img](img/LCMS_dashbaord/TIC.png)
 
 !!! note 'Multiple TIC for multiple files'
     This is possible by turning on the multiple TIC option. 
 
-## Box Plots
+## XIC/EIC Plots
+Obtain single or multiple XIC/EIC plots for one or more files. Masses and mass windows can be specified in the following field:
 
-Lorem Ipsum
+![img](img/LCMS_dashbaord/XIC_Selction.png)
 
-## Integrated Feature Finding
+!!! note
+    Default integration type is AUC but options MS1 Sum or MAXPEAKHEIGHT exist under XIC Integration Type dropdown menu
 
-Lorem Ipsum
+After you specified m/z or multiple m/z separated by ";" under XIC Options, XIC(s) will be plotted. MS/MS events will be displayed in the XIC (if only one file is selected) and can be displayed below the XIC plot. 
+
+![img](img/LCMS_dashbaord/XIC_MSMS.png)
+
 
 ## Sharing Visualizations
 
-Lorem Ipsum
+
+Once you are happy with teh XIC or MS/MS plots you can export your XIC and spectra as vector graphics (.svg) and view and export values under XIC Integration  
+To share teh interactive LCMS-Dashbaord view, simply click "Link to these plots" botton on the left and copy the new url. 
+
+
+## Box Plots
+
+Integratuion results of XIC(s) for all samples specified in the file selection section are automatically plotted as box-plots between the two default groups (USI1 and USI2)
+
+![img](img/LCMS_dashbaord/BoxPlots.png)
+
+
+## Integrated Feature Finding
+
+The GNPS LCMS-Dashbaord, also offers live feature finding options for the first sample selected. To enable the feature finding option, simply select an feature finding tool in the "Feature Finding (Beta)" field. Once selcted a box should expand in which different parameters, such as MS tolerance, noise level and RT tolerance can be specified. 
+
+![img](img/LCMS_dashbaord/Feature_Finding.png)
+
+Once parameters are selcted hit the run/update feature finding botton. Once processed, features will be displayed in teh heatmap as green boxes.
+If you are happy with teh setting, there is a direct link for a GNPS workflow to run feature finding with the same settings for full datasets which is directly integrated into the Feature-based Molecular Networking Workflow.
+
 
 
 ## Collaborative Visualization
 
-You can share visualizations as URLs and interactively Collaborate
+For teaching purpose or collaborative data exploration, you can share visualizations as URLs and interactively Collaborate with your friends, coworkers and students.
+For live syncronization of the view (like in google docs) you can share a "follower url" obtained through the sync options botton. Once your follower opens this link in their browser, they onlyhave to start teh syn by clicking the "Sync Initiate" botton. If they want to continue using the collaborative window on theri oown, they can stop teh syncronization by clicking the "terminate sync" botton.
 
-### Sychronized Visualizations
-
-### Teaching Mass Spectrometry Data/Analysis
+![img](img/LCMS_dashbaord/Sync.png)
 
 
 ## Repositories Supported
@@ -90,3 +112,8 @@ You can share visualizations as URLs and interactively Collaborate
 
 !!! note
     To get a file list for a dataset, checkout out [GNPS Dataset Explorer Tool](https://gnps-dataset-explorer.herokuapp.com/). 
+    
+
+## Page Contributions
+
+{{ git_page_authors }}
