@@ -95,6 +95,8 @@ To initiate following a visualization, you will need to do the following
 
 You may also stop syncing as a follower by clicking the "Sync Terminate" so that you do not receive any more updates. Then you may build upon the visualiation that has been done by the leader. 
 
+![img](img/LCMS_dashbaord/Sync.png)
+
 ## Sharing Visualizations
 
 
