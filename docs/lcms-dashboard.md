@@ -121,12 +121,6 @@ Once parameters are selcted hit the run/update feature finding botton. Once proc
 If you are happy with teh setting, there is a direct link for a GNPS workflow to run feature finding with the same settings for full datasets which is directly integrated into the Feature-based Molecular Networking Workflow.
 
 
-
-
-![img](img/LCMS_dashbaord/Sync.png)
-
-We think this tool might be a good tool for teaching LC/MS visualization. The Leader/Follower options are a way for students to follow along to get started. Once the initial setup and instruction are done, they can stop syncing and build upon the visualization. We have tested this tool to scale up to a few dozen concurrent followers. If you do intend to use this for a class, please let us know so that we do not do maintenance during your class. 
-
 ## Repositories Supported
 
 1. MassIVE Public Datasets
