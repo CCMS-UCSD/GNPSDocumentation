@@ -33,7 +33,7 @@ nav:
         - MASST Search (Mass Search Tool): masst.md
         - Result Views Navigation: resultviews.md
     - Mass Spec Data Visualization:
-        - LCMS Dashboard: lcms-dashboard.md
+        - GNPS Dashboard: lcms-dashboard.md
         - GNPS Dataset Explorer: gnpsdatasetexplorer.md
     - Advanced Data Analysis:
         - Molecular Networking Files: networkingfiles.md

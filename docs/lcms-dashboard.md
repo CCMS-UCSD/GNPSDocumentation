@@ -1,6 +1,6 @@
-# GNPS LCMS Dashboard
+# GNPS Dashboard
 
-The GNPS LCMS Dashboard Interface is designed to enable easy visualization of mass spectrometry data files directly in the browser.
+The GNPS Dashboard Interface is designed to enable easy visualization of mass spectrometry data files directly in the browser.
 
 ![img](img/LCMS_dashbaord/LCMS_dashboard.png)
 
