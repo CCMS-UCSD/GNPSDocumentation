@@ -1,1998 +1,1015 @@
 
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-        <link rel="canonical" href="https://ccms-ucsd.github.io/GNPSDocumentation/networking/">
-      
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.7">
-    
-    
-      
-        <title>Molecular Networking - GNPS Documentation</title>
-      
-    
-    
-      <link rel="stylesheet" href="../assets/stylesheets/main.cb6bc1d0.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
-        
-      
-    
-    
-    
-      
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
-      
-    
-    
-    
-    
-      
-        
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://ccms-ucsd.github.io/GNPSDocumentation/networking/" rel="canonical"/>
+<link href="../assets/images/favicon.png" rel="shortcut icon"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-6.2.7" name="generator"/>
+<title>Molecular Networking - GNPS Documentation</title>
+<link href="../assets/stylesheets/main.cb6bc1d0.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.39b8e14a.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
 <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-8412213-5","ccms-ucsd.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
-      
-    
-    
-  </head>
-  
-  
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
-      
-  
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#molecular-networking-overview" class="md-skip">
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+</head>
+<body data-md-color-accent="none" data-md-color-primary="none" data-md-color-scheme="" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#molecular-networking-overview">
           Skip to content
         </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-      
-
+</div>
+<div data-md-component="announce">
+</div>
 <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://ccms-ucsd.github.io/GNPSDocumentation/" title="GNPS Documentation" class="md-header-nav__button md-logo" aria-label="GNPS Documentation">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
-
-    </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
-    </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      <div class="md-header-nav__ellipsis">
-        <div class="md-header-nav__topic">
-          <span class="md-ellipsis">
+<nav aria-label="Header" class="md-header-nav md-grid">
+<a aria-label="GNPS Documentation" class="md-header-nav__button md-logo" href="https://ccms-ucsd.github.io/GNPSDocumentation/" title="GNPS Documentation">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+<label class="md-header-nav__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header-nav__title" data-md-component="header-title">
+<div class="md-header-nav__ellipsis">
+<div class="md-header-nav__topic">
+<span class="md-ellipsis">
             GNPS Documentation
           </span>
-        </div>
-        <div class="md-header-nav__topic">
-          <span class="md-ellipsis">
+</div>
+<div class="md-header-nav__topic">
+<span class="md-ellipsis">
             
               Molecular Networking
             
           </span>
-        </div>
-      </div>
-    </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
+</div>
+</div>
+</div>
+<label class="md-header-nav__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
 <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" data-md-state="active" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<button aria-label="Clear" class="md-search__icon md-icon" data-md-component="search-reset" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+<ol class="md-search-result__list"></ol>
 </div>
-    
-    
-      <div class="md-header-nav__source">
-        
-<a href="https://github.com/CCMS-UCSD/GNPSDocumentation/" title="Go to repository" class="md-source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
-  </div>
-  <div class="md-source__repository">
+</div>
+</div>
+</div>
+</div>
+<div class="md-header-nav__source">
+<a class="md-source" href="https://github.com/CCMS-UCSD/GNPSDocumentation/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
     CCMS-UCSD/GNPSDocumentation
   </div>
 </a>
-      </div>
-    
-  </nav>
+</div>
+</nav>
 </header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-
-
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="https://ccms-ucsd.github.io/GNPSDocumentation/" title="GNPS Documentation" class="md-nav__button md-logo" aria-label="GNPS Documentation">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
-
-    </a>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="GNPS Documentation" class="md-nav__button md-logo" href="https://ccms-ucsd.github.io/GNPSDocumentation/" title="GNPS Documentation">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
     GNPS Documentation
   </label>
-  
-    <div class="md-nav__source">
-      
-<a href="https://github.com/CCMS-UCSD/GNPSDocumentation/" title="Go to repository" class="md-source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
-  </div>
-  <div class="md-source__repository">
+<div class="md-nav__source">
+<a class="md-source" href="https://github.com/CCMS-UCSD/GNPSDocumentation/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
     CCMS-UCSD/GNPSDocumentation
   </div>
 </a>
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
         GNPS Introduction
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../isgnpsright/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../isgnpsright/">
         Is my data compatible with GNPS?
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../faq/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../faq/">
         Frequently Asked Questions
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../superquickstart/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../superquickstart/">
         Superquick Start Guide
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../quickstart/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../quickstart/">
         Quick Start Guide
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../gnpsanalysisoverview/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../gnpsanalysisoverview/">
         GNPS Analysis Tools Overview
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../lexicon/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../lexicon/">
         GNPS Lexicon
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
-      
-      <label class="md-nav__link" for="nav-8">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" id="nav-8" type="checkbox"/>
+<label class="md-nav__link" for="nav-8">
         Mass Spec/Computational Background
         <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Mass Spec/Computational Background" data-md-level="1">
-        <label class="md-nav__title" for="nav-8">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Mass Spec/Computational Background" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-8">
+<span class="md-nav__icon md-icon"></span>
           Mass Spec/Computational Background
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../massspecbackground/networkingtheory/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../massspecbackground/networkingtheory/">
         Molecular Networking
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" >
-      
-      <label class="md-nav__link" for="nav-9">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" id="nav-9" type="checkbox"/>
+<label class="md-nav__link" for="nav-9">
         Data Preparation/Upload
         <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Data Preparation/Upload" data-md-level="1">
-        <label class="md-nav__title" for="nav-9">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Data Preparation/Upload" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-9">
+<span class="md-nav__icon md-icon"></span>
           Data Preparation/Upload
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../fileconversion/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../fileconversion/">
         Mass Spectrometry File Conversion
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../fileupload/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../fileupload/">
         GNPS File Upload
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../metadata/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../metadata/">
         Metadata
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" checked>
-      
-      <label class="md-nav__link" for="nav-10">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-10" id="nav-10" type="checkbox"/>
+<label class="md-nav__link" for="nav-10">
         Recommended Data Analysis
         <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Recommended Data Analysis" data-md-level="1">
-        <label class="md-nav__title" for="nav-10">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Recommended Data Analysis" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-10">
+<span class="md-nav__icon md-icon"></span>
           Recommended Data Analysis
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
           Molecular Networking
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         Molecular Networking
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#molecular-networking-overview" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#molecular-networking-overview">
     Molecular Networking Overview
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#data-input-preparation" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-input-preparation">
     Data Input Preparation
   </a>
-  
-    <nav class="md-nav" aria-label="Data Input Preparation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mass-spectrometry-data-files" class="md-nav__link">
+<nav aria-label="Data Input Preparation" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mass-spectrometry-data-files">
     Mass Spectrometry data files
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#metadata" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#metadata">
     Metadata
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#running-molecular-networking" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#running-molecular-networking">
     Running Molecular Networking
   </a>
-  
-    <nav class="md-nav" aria-label="Running Molecular Networking">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#molecular-networking-workflow-selection" class="md-nav__link">
+<nav aria-label="Running Molecular Networking" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#molecular-networking-workflow-selection">
     Molecular Networking Workflow Selection
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#selecting-files-to-analyze" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#selecting-files-to-analyze">
     Selecting Files to Analyze
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#organizing-selected-files-into-groups" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#organizing-selected-files-into-groups">
     Organizing Selected Files into Groups
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#parameter-walkthrough" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#parameter-walkthrough">
     Parameter Walkthrough
   </a>
-  
-    <nav class="md-nav" aria-label="Parameter Walkthrough">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic-options" class="md-nav__link">
+<nav aria-label="Parameter Walkthrough" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#basic-options">
     Basic Options
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#advanced-network-options" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#advanced-network-options">
     Advanced Network Options
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#advanced-library-search-options" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#advanced-library-search-options">
     Advanced Library Search Options
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#advanced-filtering-options" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#advanced-filtering-options">
     Advanced Filtering Options
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#parameter-presets" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#parameter-presets">
     Parameter Presets
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#status-page" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#status-page">
     Status Page
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#online-exploration-of-molecular-networks" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#online-exploration-of-molecular-networks">
     Online Exploration of Molecular Networks
   </a>
-  
-    <nav class="md-nav" aria-label="Online Exploration of Molecular Networks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#networking-results-views-description" class="md-nav__link">
+<nav aria-label="Online Exploration of Molecular Networks" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#networking-results-views-description">
     Networking Results Views Description
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#citation" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#citation">
     Citation
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#documentation-for-ili" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#documentation-for-ili">
     Documentation for Ìli
   </a>
-  
-    <nav class="md-nav" aria-label="Documentation for Ìli">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
+<nav aria-label="Documentation for Ìli" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#references">
     References
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#page-contributors" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#page-contributors">
     Page Contributors
   </a>
-  
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-      
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10-2" type="checkbox" id="nav-10-2" >
-      
-      <label class="md-nav__link" for="nav-10-2">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-10-2" id="nav-10-2" type="checkbox"/>
+<label class="md-nav__link" for="nav-10-2">
         GC-MS Molecular Networking
         <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="GC-MS Molecular Networking" data-md-level="2">
-        <label class="md-nav__title" for="nav-10-2">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="GC-MS Molecular Networking" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-10-2">
+<span class="md-nav__icon md-icon"></span>
           GC-MS Molecular Networking
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../gcanalysis/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../gcanalysis/">
         GC-MS on GNPS
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../gc-ms-deconvolution/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../gc-ms-deconvolution/">
         GC-MS Deconvolution
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../gc-ms-library-molecular-network/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../gc-ms-library-molecular-network/">
         GC-MS Library Search and Molecular Networking
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../networkingviews/" class="md-nav__link">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../networkingviews/">
         Molecular Networking Views
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../librarysearch/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../librarysearch/">
         Spectral Library Search
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../masst/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../masst/">
         MASST Search (Mass Search Tool)
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../resultviews/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../resultviews/">
         Result Views Navigation
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" >
-      
-      <label class="md-nav__link" for="nav-11">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" id="nav-11" type="checkbox"/>
+<label class="md-nav__link" for="nav-11">
         Mass Spec Data Visualization
         <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Mass Spec Data Visualization" data-md-level="1">
-        <label class="md-nav__title" for="nav-11">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Mass Spec Data Visualization" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-11">
+<span class="md-nav__icon md-icon"></span>
           Mass Spec Data Visualization
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../lcms-dashboard/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../lcms-dashboard/">
         GNPS Dashboard
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../gnpsdatasetexplorer/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../gnpsdatasetexplorer/">
         GNPS Dataset Explorer
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12" >
-      
-      <label class="md-nav__link" for="nav-12">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-12" id="nav-12" type="checkbox"/>
+<label class="md-nav__link" for="nav-12">
         Advanced Data Analysis
         <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Advanced Data Analysis" data-md-level="1">
-        <label class="md-nav__title" for="nav-12">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Advanced Data Analysis" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-12">
+<span class="md-nav__icon md-icon"></span>
           Advanced Data Analysis
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../networkingfiles/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../networkingfiles/">
         Molecular Networking Files
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-12-2" type="checkbox" id="nav-12-2" >
-      
-      <label class="md-nav__link" for="nav-12-2">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-12-2" id="nav-12-2" type="checkbox"/>
+<label class="md-nav__link" for="nav-12-2">
         Feature Based Molecular Networking
         <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Feature Based Molecular Networking" data-md-level="2">
-        <label class="md-nav__title" for="nav-12-2">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Feature Based Molecular Networking" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-12-2">
+<span class="md-nav__icon md-icon"></span>
           Feature Based Molecular Networking
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../featurebasedmolecularnetworking/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking/">
         FBMN Workflow
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../featurebasedmolecularnetworking-with-mzmine2/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-mzmine2/">
         FBMN with MZmine
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../featurebasedmolecularnetworking-with-ms-dial/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-ms-dial/">
         FBMN with MS-DIAL
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../featurebasedmolecularnetworking-with-xcms3/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-xcms3/">
         FBMN with XCMS
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../featurebasedmolecularnetworking-with-openms/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-openms/">
         FBMN with OpenMS
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../featurebasedmolecularnetworking-with-metaboscape/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-metaboscape/">
         FBMN with MetaboScape
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../featurebasedmolecularnetworking-with-progenesisQI/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-progenesisQI/">
         FBMN with Progenesis QI
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../featurebasedmolecularnetworking-with-mztab-m/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-mztab-m/">
         FBMN with mzTab-M
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../featurebasedmolecularnetworking-cytoscape/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-cytoscape/">
         FBMN export to Cytoscape
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-12-3" type="checkbox" id="nav-12-3" >
-      
-      <label class="md-nav__link" for="nav-12-3">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-12-3" id="nav-12-3" type="checkbox"/>
+<label class="md-nav__link" for="nav-12-3">
         FBMN - Ion Identity Networking
         <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="FBMN - Ion Identity Networking" data-md-level="2">
-        <label class="md-nav__title" for="nav-12-3">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="FBMN - Ion Identity Networking" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-12-3">
+<span class="md-nav__icon md-icon"></span>
           FBMN - Ion Identity Networking
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../fbmn-iin/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../fbmn-iin/">
         IIN Workflow
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../fbmn-iin-mzmine/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../fbmn-iin-mzmine/">
         IIN with MZmine2
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../fbmn-iin-xcms/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../fbmn-iin-xcms/">
         IIN with XCMS
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../fbmn-iin-msdial/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../fbmn-iin-msdial/">
         IIN with MS-DIAL
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ms2lda/" class="md-nav__link">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ms2lda/">
         MS2LDA and MotifDB Substructure Discovery
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cytoscape/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cytoscape/">
         Molecular Networking in Cytoscape
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dereplicator/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dereplicator/">
         DEREPLICATOR
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../nap/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../nap/">
         Network Annotation Propagation (NAP)
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ms2lda/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ms2lda/">
         MS2LDA and MotifDB Substructure Discovery
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../molnetenhancer/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../molnetenhancer/">
         MolNetEnhancer
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../metaminer/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../metaminer/">
         MetaMiner
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sirius/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../sirius/">
         Sirius
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ReDU/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ReDU/">
         Reanalysis of Data User Interface (ReDU)
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../qemistree/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../qemistree/">
         Qemistree
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mmvec/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../mmvec/">
         MMVEC
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mergepolarity/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../mergepolarity/">
         Merge Network Polarity
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chemdir/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../chemdir/">
         Chemical Directionality
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../usi/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../usi/">
         Spectrum Resolover
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13" >
-      
-      <label class="md-nav__link" for="nav-13">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-13" id="nav-13" type="checkbox"/>
+<label class="md-nav__link" for="nav-13">
         Spectral Libraries
         <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Spectral Libraries" data-md-level="1">
-        <label class="md-nav__title" for="nav-13">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Spectral Libraries" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-13">
+<span class="md-nav__icon md-icon"></span>
           Spectral Libraries
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../browselibraries/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../browselibraries/">
         Browsing Reference Spectral Libraries
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../spectrumcuration/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../spectrumcuration/">
         Add/Curate Reference Spectrum in the Library
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../batchupload/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../batchupload/">
         Reference Spectral Library Batch Addition
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../downloadlibraries/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../downloadlibraries/">
         Downloading Reference Spectral Libraries
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-13-5" type="checkbox" id="nav-13-5" >
-      
-      <label class="md-nav__link" for="nav-13-5">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-13-5" id="nav-13-5" type="checkbox"/>
+<label class="md-nav__link" for="nav-13-5">
         Open-source Method for Reference Library Generation
         <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Open-source Method for Reference Library Generation" data-md-level="2">
-        <label class="md-nav__title" for="nav-13-5">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Open-source Method for Reference Library Generation" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-13-5">
+<span class="md-nav__icon md-icon"></span>
           Open-source Method for Reference Library Generation
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../msmschooser/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../msmschooser/">
         MSMS-Chooser Workflow
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../msmschooserdataacquisitioncomputational/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../msmschooserdataacquisitioncomputational/">
         Computational Data Acquisition Prep
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../msmschooserdataacquisitionQE/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../msmschooserdataacquisitionQE/">
         Data Acqusition - Thermo QExactive (v1.0)
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tag_info/" class="md-nav__link">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tag_info/">
         GNPS Tag Contribution and Analyses
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14" >
-      
-      <label class="md-nav__link" for="nav-14">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-14" id="nav-14" type="checkbox"/>
+<label class="md-nav__link" for="nav-14">
         Create a Public Datasets
         <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Create a Public Datasets" data-md-level="1">
-        <label class="md-nav__title" for="nav-14">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Create a Public Datasets" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-14">
+<span class="md-nav__icon md-icon"></span>
           Create a Public Datasets
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../datasets/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../datasets/">
         Dataset Creation/Sharing
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../continuousid/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../continuousid/">
         Continuous Identification
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../moleculeexplorer/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../moleculeexplorer/">
         Molecule Explorer
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15" >
-      
-      <label class="md-nav__link" for="nav-15">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-15" id="nav-15" type="checkbox"/>
+<label class="md-nav__link" for="nav-15">
         Community/Social Features
         <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Community/Social Features" data-md-level="1">
-        <label class="md-nav__title" for="nav-15">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Community/Social Features" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-15">
+<span class="md-nav__icon md-icon"></span>
           Community/Social Features
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../user/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../user/">
         User Page
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../troubleshooting/" class="md-nav__link">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../troubleshooting/">
         Troubleshooting
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-17" type="checkbox" id="nav-17" >
-      
-      <label class="md-nav__link" for="nav-17">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-17" id="nav-17" type="checkbox"/>
+<label class="md-nav__link" for="nav-17">
         Tutorial Guides
         <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Tutorial Guides" data-md-level="1">
-        <label class="md-nav__title" for="nav-17">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Tutorial Guides" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-17">
+<span class="md-nav__icon md-icon"></span>
           Tutorial Guides
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tutorials/bacterianetworking/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/bacterianetworking/">
         Molecular Networking - Analog Discovery in Microbial Extracts
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tutorials/americangutmzmine/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/americangutmzmine/">
         Feature-Based Molecular Networking (FBMN) with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tutorials/americangut-ms-dial/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/americangut-ms-dial/">
         FBMN with MS-DIAL - Microbiome Molecules in Fecal Samples in American Gut Project
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tutorials/coffee-tutorial-metaboscape/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/coffee-tutorial-metaboscape/">
         FBMN with MetaboScape - Coffee Analysis
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tutorials/featurebasedgnps/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/featurebasedgnps/">
         FBMN analysis at GNPS
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../changelog/" class="md-nav__link">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../changelog/">
         Change Log
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../gnps_community/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../gnps_community/">
         Join the GNPS community
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../workshops/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../workshops/">
         GNPS Workshops/Training
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../logos/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../logos/">
         GNPS Logos
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../contact/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../contact/">
         Contact/Office Hours
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../toolindex/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../toolindex/">
         GNPS Tool Index
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../api/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../api/">
         API
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../developers/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../developers/">
         For Developers
       </a>
-    </li>
-  
-
-    
-  </ul>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#molecular-networking-overview" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#molecular-networking-overview">
     Molecular Networking Overview
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#data-input-preparation" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-input-preparation">
     Data Input Preparation
   </a>
-  
-    <nav class="md-nav" aria-label="Data Input Preparation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mass-spectrometry-data-files" class="md-nav__link">
+<nav aria-label="Data Input Preparation" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mass-spectrometry-data-files">
     Mass Spectrometry data files
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#metadata" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#metadata">
     Metadata
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#running-molecular-networking" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#running-molecular-networking">
     Running Molecular Networking
   </a>
-  
-    <nav class="md-nav" aria-label="Running Molecular Networking">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#molecular-networking-workflow-selection" class="md-nav__link">
+<nav aria-label="Running Molecular Networking" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#molecular-networking-workflow-selection">
     Molecular Networking Workflow Selection
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#selecting-files-to-analyze" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#selecting-files-to-analyze">
     Selecting Files to Analyze
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#organizing-selected-files-into-groups" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#organizing-selected-files-into-groups">
     Organizing Selected Files into Groups
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#parameter-walkthrough" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#parameter-walkthrough">
     Parameter Walkthrough
   </a>
-  
-    <nav class="md-nav" aria-label="Parameter Walkthrough">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic-options" class="md-nav__link">
+<nav aria-label="Parameter Walkthrough" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#basic-options">
     Basic Options
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#advanced-network-options" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#advanced-network-options">
     Advanced Network Options
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#advanced-library-search-options" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#advanced-library-search-options">
     Advanced Library Search Options
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#advanced-filtering-options" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#advanced-filtering-options">
     Advanced Filtering Options
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#parameter-presets" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#parameter-presets">
     Parameter Presets
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#status-page" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#status-page">
     Status Page
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#online-exploration-of-molecular-networks" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#online-exploration-of-molecular-networks">
     Online Exploration of Molecular Networks
   </a>
-  
-    <nav class="md-nav" aria-label="Online Exploration of Molecular Networks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#networking-results-views-description" class="md-nav__link">
+<nav aria-label="Online Exploration of Molecular Networks" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#networking-results-views-description">
     Networking Results Views Description
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#citation" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#citation">
     Citation
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#documentation-for-ili" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#documentation-for-ili">
     Documentation for Ìli
   </a>
-  
-    <nav class="md-nav" aria-label="Documentation for Ìli">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
+<nav aria-label="Documentation for Ìli" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#references">
     References
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#page-contributors" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#page-contributors">
     Page Contributors
   </a>
-  
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          <div class="md-content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                  <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/edit/master/docs/networking.md" title="Edit this page" class="md-content__button md-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-                  </a>
-                
-                
-                  <h1>Molecular Networking</h1>
-                
-                <h2 id="molecular-networking-overview">Molecular Networking Overview<a class="headerlink" href="#molecular-networking-overview" title="Permanent link">&para;</a></h2>
+</div>
+</div>
+</div>
+<div class="md-content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/CCMS-UCSD/GNPSDocumentation/edit/master/docs/networking.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
+</a>
+<h1>Molecular Networking</h1>
+<h2 id="molecular-networking-overview">Molecular Networking Overview<a class="headerlink" href="#molecular-networking-overview" title="Permanent link">¶</a></h2>
 <p>Molecular networks are visual displays of the chemical space present in tandem mass spectrometry (MS/MS) experiments. This visualization approach can detect sets of spectra from related molecules (molecular networks), even when the spectra themselves are not matched to any known compounds.</p>
 <p>The visualization of molecular networks in GNPS represents each spectrum as a node, and spectrum-to-spectrum alignments as edges (connections) between nodes. Nodes can be supplemented with metadata, including dereplication matches or information that is provided by the user, e.g. as abundance, origin of product, biochemical activity, or hydrophobicity, which can be reflected in a node’s size or color. This map of all related molecules is visualized as a global molecular network.</p>
 <p>For more information about Molecular Networking check out the <a href="https://www.nature.com/articles/nbt.3597">GNPS publication</a> from 2016.</p>
-<h2 id="data-input-preparation">Data Input Preparation<a class="headerlink" href="#data-input-preparation" title="Permanent link">&para;</a></h2>
+<h2 id="data-input-preparation">Data Input Preparation<a class="headerlink" href="#data-input-preparation" title="Permanent link">¶</a></h2>
 <p>The follow data is can be put into molecular networking.</p>
 <ol>
 <li>Mass Spectrometry data files (required)</li>
 <li>Metadata/Group Mapping (optional)</li>
 <li>`ili 3D mapping files (optional)</li>
 </ol>
-<h3 id="mass-spectrometry-data-files">Mass Spectrometry data files<a class="headerlink" href="#mass-spectrometry-data-files" title="Permanent link">&para;</a></h3>
+<h3 id="mass-spectrometry-data-files">Mass Spectrometry data files<a class="headerlink" href="#mass-spectrometry-data-files" title="Permanent link">¶</a></h3>
 <p>Molecular networking supports mzXML, mzML, and mgf file formats. To convert your file to the appropriate formats, check out our <a href="../fileconversion/">documentation</a>.</p>
-<h3 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link">&para;</a></h3>
+<h3 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link">¶</a></h3>
 <p>More information provided <a href="../metadata/">here</a>.</p>
-<h2 id="running-molecular-networking">Running Molecular Networking<a class="headerlink" href="#running-molecular-networking" title="Permanent link">&para;</a></h2>
-<h3 id="molecular-networking-workflow-selection">Molecular Networking Workflow Selection<a class="headerlink" href="#molecular-networking-workflow-selection" title="Permanent link">&para;</a></h3>
+<h2 id="running-molecular-networking">Running Molecular Networking<a class="headerlink" href="#running-molecular-networking" title="Permanent link">¶</a></h2>
+<h3 id="molecular-networking-workflow-selection">Molecular Networking Workflow Selection<a class="headerlink" href="#molecular-networking-workflow-selection" title="Permanent link">¶</a></h3>
 <p>From the main <a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp">GNPS page</a>, click the <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D">"Create Molecular Network"</a> button.</p>
-<p><img alt="analysis" src="../img/networking/network_selection.png" /></p>
+<p><img alt="analysis" src="../img/networking/network_selection.png"/></p>
 <p>This will bring you to the workflow input to start networking.</p>
-<p><img alt="networking_input_form" src="../img/networking/networking_input_form.png" /></p>
+<p><img alt="networking_input_form" src="../img/networking/networking_input_form.png"/></p>
 <p>Provide a detailed title for your molecular network. This title will be helpful when you retrieve your data after the workflow is completed.</p>
-<p><img alt="set title" src="../img/quickstart/networking_title.gif" /></p>
-<h3 id="selecting-files-to-analyze">Selecting Files to Analyze<a class="headerlink" href="#selecting-files-to-analyze" title="Permanent link">&para;</a></h3>
+<p><img alt="set title" src="../img/quickstart/networking_title.gif"/></p>
+<h3 id="selecting-files-to-analyze">Selecting Files to Analyze<a class="headerlink" href="#selecting-files-to-analyze" title="Permanent link">¶</a></h3>
 <p>Select files for analysis by first clicking "Select Input Files".</p>
-<p><img alt="set title" src="../img/networking/file_selection.png" /></p>
+<p><img alt="set title" src="../img/networking/file_selection.png"/></p>
 <p>This bring a popup window. We can select our own files to analyze.</p>
-<p><img alt="set title" src="../img/networking/file_selection.gif" /></p>
+<p><img alt="set title" src="../img/networking/file_selection.gif"/></p>
 <p>Alternatively, we can import an existing public dataset if we know the dataset accession (<a href="../datasets/">Browse Datasets</a>). From the Select Input Files popup, you will be a shares files tab. There you will find a box called Import Data Share. In this box you may enter an accession of a MassIVE dataset. Upon clicking import the dataset will appear in your workspace to select input files to analyze from.</p>
-<p><img alt="set title" src="../img/networking/dataset_import.gif" /></p>
-<p><img alt="set title" src="../img/networking/dataset_selection.gif" /></p>
-<h3 id="organizing-selected-files-into-groups">Organizing Selected Files into Groups<a class="headerlink" href="#organizing-selected-files-into-groups" title="Permanent link">&para;</a></h3>
+<p><img alt="set title" src="../img/networking/dataset_import.gif"/></p>
+<p><img alt="set title" src="../img/networking/dataset_selection.gif"/></p>
+<h3 id="organizing-selected-files-into-groups">Organizing Selected Files into Groups<a class="headerlink" href="#organizing-selected-files-into-groups" title="Permanent link">¶</a></h3>
 <p>By default, files can be categorized into separate groups (G1, G2, etc.). For example, case and control or two different microbes can be separate groups. Using the basic options, only six groups can be created. Individual files or entire folders can be selected.</p>
 <p>Click Finish Selection which will close the pop-up window.</p>
-<h3 id="parameter-walkthrough">Parameter Walkthrough<a class="headerlink" href="#parameter-walkthrough" title="Permanent link">&para;</a></h3>
-<h4 id="basic-options">Basic Options<a class="headerlink" href="#basic-options" title="Permanent link">&para;</a></h4>
+<h3 id="parameter-walkthrough">Parameter Walkthrough<a class="headerlink" href="#parameter-walkthrough" title="Permanent link">¶</a></h3>
+<h4 id="basic-options">Basic Options<a class="headerlink" href="#basic-options" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2014,8 +1031,8 @@
 </tr>
 </tbody>
 </table>
-<h4 id="advanced-network-options">Advanced Network Options<a class="headerlink" href="#advanced-network-options" title="Permanent link">&para;</a></h4>
-<p><img alt="set title" src="../img/networking/advanced_networking_options.png" /></p>
+<h4 id="advanced-network-options">Advanced Network Options<a class="headerlink" href="#advanced-network-options" title="Permanent link">¶</a></h4>
+<p><img alt="set title" src="../img/networking/advanced_networking_options.png"/></p>
 <table>
 <thead>
 <tr>
@@ -2082,8 +1099,8 @@
 </tr>
 </tbody>
 </table>
-<h4 id="advanced-library-search-options">Advanced Library Search Options<a class="headerlink" href="#advanced-library-search-options" title="Permanent link">&para;</a></h4>
-<p><img alt="set title" src="../img/networking/advanced_library_search_options.png" /></p>
+<h4 id="advanced-library-search-options">Advanced Library Search Options<a class="headerlink" href="#advanced-library-search-options" title="Permanent link">¶</a></h4>
+<p><img alt="set title" src="../img/networking/advanced_library_search_options.png"/></p>
 <table>
 <thead>
 <tr>
@@ -2115,8 +1132,8 @@
 </tr>
 </tbody>
 </table>
-<h4 id="advanced-filtering-options">Advanced Filtering Options<a class="headerlink" href="#advanced-filtering-options" title="Permanent link">&para;</a></h4>
-<p><img alt="set title" src="../img/networking/advanced_filtering_options.png" /></p>
+<h4 id="advanced-filtering-options">Advanced Filtering Options<a class="headerlink" href="#advanced-filtering-options" title="Permanent link">¶</a></h4>
+<p><img alt="set title" src="../img/networking/advanced_filtering_options.png"/></p>
 <table>
 <thead>
 <tr>
@@ -2165,7 +1182,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="parameter-presets">Parameter Presets<a class="headerlink" href="#parameter-presets" title="Permanent link">&para;</a></h3>
+<h3 id="parameter-presets">Parameter Presets<a class="headerlink" href="#parameter-presets" title="Permanent link">¶</a></h3>
 <p>We have several parameter presets that seem to work well depending on the dataset size.</p>
 <ol>
 <li>Small datasets - up to 5 LC/MS files</li>
@@ -2173,9 +1190,9 @@
 <li>Large Datasets - 400+ LC/MS files</li>
 <li>Big Data(sets) - Lets talk!</li>
 </ol>
-<h2 id="status-page">Status Page<a class="headerlink" href="#status-page" title="Permanent link">&para;</a></h2>
+<h2 id="status-page">Status Page<a class="headerlink" href="#status-page" title="Permanent link">¶</a></h2>
 <p>Upon submission of the workflow, you will be brought to the status page. This will show you the progress of your molecular networking job.</p>
-<p><img alt="img" src="../img/networking/status.png" /></p>
+<p><img alt="img" src="../img/networking/status.png"/></p>
 <p>Molecular networks usually take</p>
 <ul>
 <li>10 min for small datasets</li>
@@ -2184,9 +1201,9 @@
 <li>FOREVER for big datasets</li>
 </ul>
 <p>If you find your molecular network is taking longer than this, please <a href="../contact/">contact us</a>.</p>
-<h2 id="online-exploration-of-molecular-networks">Online Exploration of Molecular Networks<a class="headerlink" href="#online-exploration-of-molecular-networks" title="Permanent link">&para;</a></h2>
+<h2 id="online-exploration-of-molecular-networks">Online Exploration of Molecular Networks<a class="headerlink" href="#online-exploration-of-molecular-networks" title="Permanent link">¶</a></h2>
 <p>After completing a Molecular Networking workflow utilizing GNPS, analysis can be done within the web interface. The GNPS web interface provides a quick and easy way to perform initial analysis of your data particularly if you want to view the MS2 spectra of the nodes/clusters/networks generated by the Molecular Networking workflow.</p>
-<h3 id="networking-results-views-description">Networking Results Views Description<a class="headerlink" href="#networking-results-views-description" title="Permanent link">&para;</a></h3>
+<h3 id="networking-results-views-description">Networking Results Views Description<a class="headerlink" href="#networking-results-views-description" title="Permanent link">¶</a></h3>
 <p><strong>Default Views to Explore Molecular Networks</strong></p>
 <table>
 <thead>
@@ -2335,117 +1352,91 @@ To increase transparency in data analysis, please include the URL of your specif
 Additionally, we recommend that you deposit the data you used for analysis into the MassIVE dataset repository in order to make your raw data public. To do this please click the "Publish Data in MassIVE" button:
 
 TODO: image and implement -->
-
-<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
+<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">¶</a></h2>
 <p>If you are using GNPS for analysis, please cite the manuscript</p>
 <p><a href="https://www.nature.com/articles/nbt.3597">Mingxun Wang, Jeremy J Carver, Vanessa V Phelan, Laura M Sanchez, Neha Garg, Yao Peng, et al. "Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking" Nature Biotechnology 34.8 (2016): 828-837. PMID: 27504778</a></p>
 <p>If you use MS-Cluster in your molecular networks, cite the following as well:</p>
 <p><a href="https://pubs.acs.org/doi/abs/10.1021/pr070361e">Frank, Ari M., et al. "Clustering millions of tandem mass spectra." Journal of proteome research 7.01 (2007): 113-122.</a></p>
-<h2 id="documentation-for-ili">Documentation for Ìli<a class="headerlink" href="#documentation-for-ili" title="Permanent link">&para;</a></h2>
+<h2 id="documentation-for-ili">Documentation for Ìli<a class="headerlink" href="#documentation-for-ili" title="Permanent link">¶</a></h2>
 <p>Spatial distribution of molecular features can be visualized in 2D or 3D throughout Ìli in GNPS, a Molecular cartography approach <a href="https://www.nature.com/articles/nprot.2017.122">Protsyuk et al., 2017</a>. For mapping, it is necessary to upload the metadata (.txt) containing the ìli coordinates (x, y, z and radio) and the 2D or 3D model (STL format), along with the data files (mzXML format) for Classic Molecular Network.</p>
 <p>First, it is necessary to obtain the 2D/3D model. The 2D model may be a picture, a map or other, and the 3D model can be obtained by scanning the sample. The coordinates should be pointed in the 2D/3D model by Meshlab software before uploading in GNPS. A free Meshlab version can be downloaded from <a href="http://www.meshlab.net/">here</a>. In Meshlab, use the PickPoint tool to point coordinates in the model as figure below.</p>
-<p><img alt="Fig. 1" src="../img/%C3%ACli/Fig_1_meshlab.png" /></p>
+<p><img alt="Fig. 1" src="../img/%C3%ACli/Fig_1_meshlab.png"/></p>
 <p>A list with the coordinates will appear in the new box, and you can rename them according to your data. After that, a <strong>.csv table containing the coordinates</strong> and the <strong>.stl pointed model</strong> should be exported from Meshlab.</p>
-<p><img alt="Fig. 2" src="../img/%C3%ACli/Fig_2_meshlab.png" /></p>
+<p><img alt="Fig. 2" src="../img/%C3%ACli/Fig_2_meshlab.png"/></p>
 <p>More details about how to create a .csv table with the coordinates can be found <a href="https://github.com/MolecularCartography/Optimus/blob/master/Obtaining%20coordinates%20of%20sampling%20spots.md">here</a>. The coordinates must be added in the metadata (.txt format) according to <a href="https://ccms-ucsd.github.io/GNPSDocumentation/metadata/">ReDU format</a>.</p>
-<p><img alt="Fig. 3" src="../img/%C3%ACli/Fig_3_metadata.png" /></p>
+<p><img alt="Fig. 3" src="../img/%C3%ACli/Fig_3_metadata.png"/></p>
 <p>All files should be selected according to indicated below:</p>
-<p><img alt="Fig. 4" src="../img/%C3%ACli/Fig_4_data-upload.png" /></p>
+<p><img alt="Fig. 4" src="../img/%C3%ACli/Fig_4_data-upload.png"/></p>
 <p>Finish selection and set the parameters to create the Molecular Network. More details regarding Classic Molecular Network can be found <a href="https://ccms-ucsd.github.io/GNPSDocumentation/networking/">here</a>.</p>
 <p>To create ìli visualization you must go in the <strong>Advanced Output Options</strong> and change the ìli <strong>Mapping Output</strong> to <strong>“Create”</strong>. Submit the job.</p>
-<p><img alt="Fig. 5" src="../img/%C3%ACli/Fig_5_create_ili.png" /></p>
+<p><img alt="Fig. 5" src="../img/%C3%ACli/Fig_5_create_ili.png"/></p>
 <p>Once the job was done, click on “View ìli in GNPS” to visualize the feature mapping.</p>
-<p><img alt="Fig. 6" src="../img/%C3%ACli/Fig_6_Vizualization.png" /></p>
+<p><img alt="Fig. 6" src="../img/%C3%ACli/Fig_6_Vizualization.png"/></p>
 <p>A window for visualization will open. You can explore your data changing the feature in the bottom right. You can also set different parameters in the right window, such as the size of the spot or the color of mapping. There, you will also find some more examples to explore.</p>
-<p><img alt="Fig. 7" src="../img/%C3%ACli/Fig_7_Vizualization.png" /></p>
+<p><img alt="Fig. 7" src="../img/%C3%ACli/Fig_7_Vizualization.png"/></p>
 <p>More details about ìli can be found <a href="https://github.com/MolecularCartography/ili">here</a>.</p>
-<h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
+<h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">¶</a></h3>
 <p>Protsyuk, I., et al. (2018). 3D molecular cartography using LC–MS facilitated by Optimus and'ili software. Nature protocols, 13(1), 134. <a href="https://doi.org/10.1038/nprot.2017.122">https://doi.org/10.1038/nprot.2017.122</a></p>
-<h2 id="page-contributors">Page Contributors<a class="headerlink" href="#page-contributors" title="Permanent link">&para;</a></h2>
-<p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (81.32%), <a href='mailto:louisfelix.nothias@gmail.com'>lfnothias</a> (0.78%), <a href='mailto:41308046+alan-jarmusch@users.noreply.github.com'>alan-jarmusch</a> (0.39%), <a href='mailto:enmeilin@gmail.com'>Madeleine Ernst</a> (0.39%), <a href='mailto:55205645+abauermeister@users.noreply.github.com'>abauermeister</a> (17.12%)</span></p>
-                
-                  
-                    
-
-<hr>
+<h2 id="page-contributors">Page Contributors<a class="headerlink" href="#page-contributors" title="Permanent link">¶</a></h2>
+<p><span class="git-page-authors git-authors"><a href="mailto:mwang87@gmail.com">Ming Wang</a> (81.32%), <a href="mailto:louisfelix.nothias@gmail.com">lfnothias</a> (0.78%), <a href="mailto:41308046+alan-jarmusch@users.noreply.github.com">alan-jarmusch</a> (0.39%), <a href="mailto:enmeilin@gmail.com">Madeleine Ernst</a> (0.39%), <a href="mailto:55205645+abauermeister@users.noreply.github.com">abauermeister</a> (17.12%)</span></p>
+<hr/>
 <div class="md-source-date">
-  <small>
+<small>
     
       Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 16, 2021 00:22:29</span>
-    
-  </small>
+</small>
 </div>
-                  
-                
-              
-              
-                
-
-
-              
-            </article>
-          </div>
-        </div>
-      </main>
-      
-        
+</article>
+</div>
+</div>
+</main>
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-          <a href="../metadata/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-            </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
+<div class="md-footer-nav">
+<nav aria-label="Footer" class="md-footer-nav__inner md-grid">
+<a class="md-footer-nav__link md-footer-nav__link--prev" href="../metadata/" rel="prev">
+<div class="md-footer-nav__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer-nav__title">
+<div class="md-ellipsis">
+<span class="md-footer-nav__direction">
                   Previous
                 </span>
                 Metadata
               </div>
-            </div>
-          </a>
-        
-        
-          <a href="../gcanalysis/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
+</div>
+</a>
+<a class="md-footer-nav__link md-footer-nav__link--next" href="../gcanalysis/" rel="next">
+<div class="md-footer-nav__title">
+<div class="md-ellipsis">
+<span class="md-footer-nav__direction">
                   Next
                 </span>
                 GC-MS on GNPS
               </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
+</div>
+<div class="md-footer-nav__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
+</div>
+</a>
+</nav>
+</div>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
         
         Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+        <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
           Material for MkDocs
         </a>
-      </div>
-      
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    
-      <script src="../assets/javascripts/vendor.53cc9318.min.js"></script>
-      <script src="../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
-      
-      <script>
+</div>
+<script src="../assets/javascripts/vendor.53cc9318.min.js"></script>
+<script src="../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+<script>
         app = initialize({
           base: "..",
           features: [],
@@ -2454,7 +1445,5 @@ TODO: image and implement -->
           }, typeof search !== "undefined" && search)
         })
       </script>
-      
-    
-  </body>
+</body>
 </html>
