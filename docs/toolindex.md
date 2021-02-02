@@ -60,6 +60,8 @@ These are web tools that is run by the GNPS team and provides complementary func
 | [GNPS FBMN Box Plotting Dashboard](http://dorresteintesthub.ucsd.edu:6549) | --- | --- |
 | [GNPS Dataset File Explorer](https://gnps-dataset-explorer.herokuapp.com/) | --- | --- |
 | [GNPS Dataset File Caching Service](http://dorresteintesthub.ucsd.edu:5235/datasette/database/filename?_sort=filepath) | --- | --- | 
+| [GNPS Public Libraries Download List](https://gnps-external.ucsd.edu/gnpslibrary)  --- | --- | 
+
 
 ## GNPS Deprecated Web Tools
 
