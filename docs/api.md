@@ -217,12 +217,11 @@ us to push to the Wishart servers to classify.
 
 ### Structure NP Classifier
 
-If you have Smiles
-
 ```https://npclassifier.ucsd.edu/classify?smiles=<smiles string>```
 
 [Example](https://npclassifier.ucsd.edu/classify?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
+!!! note "NPClassifier" NPClassifier is A Deep Neural Network-Based Structural Classification Tool for Natural Products - check it out [here](https://npclassifier.ucsd.edu/). For citation: Kim, Hyunwoo; Wang, Mingxun; Leber, Christopher; Nothias, Louis-Felix; Reher, Raphael; Kang, Kyo Bin; et al. (2020): NPClassifier: A Deep Neural Network-Based Structural Classification Tool for Natural Products. ChemRxiv. Preprint. [https://doi.org/10.26434/chemrxiv.12885494.v1](https://doi.org/10.26434/chemrxiv.12885494.v1).
 
 ### Structure Image
 
