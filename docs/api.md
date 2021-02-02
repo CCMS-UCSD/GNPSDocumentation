@@ -246,6 +246,8 @@ If you have Smiles
 https://gnps-external.ucsd.edu/structureproxy?smiles=<smiles string>
 ```
 [Example - Caffeine](https://gnps-external.ucsd.edu/structureproxy?smiles=CN1C(N(C)C(N%3DCN2C)%3DC2C1%3DO)%3DO&inchi=InChI%3D1S%2FC8H10N4O2%2Fc1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2%2Fh4H%2C1-3H3)
+    
+!!! note "Chemical Translation Service" That API uses the Chemical Translation Service made by the Fiehn Lab - check it out [here](http://cts.fiehnlab.ucdavis.edu/). For citation: Gert Wohlgemuth, Pradeep Kumar Haldiya, Egon Willighagen, Tobias Kind, Oliver Fiehn, The Chemical Translation Service—a web-based tool to improve standardization of metabolomic reports, Bioinformatics, Volume 26, Issue 20, 15 October 2010, Pages 2647–2648, [https://doi.org/10.1093/bioinformatics/btq476](https://doi.org/10.1093/bioinformatics/btq476).
 
 !!! warning
     Please make sure you are URL encoding your SMILES/InChI strings or else the web server on the other end won't understand your request. 
