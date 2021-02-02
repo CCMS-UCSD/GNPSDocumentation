@@ -33,7 +33,7 @@ nav:
         - MASST Search (Mass Search Tool): masst.md
         - Result Views Navigation: resultviews.md
     - Mass Spec Data Visualization:
-        - LCMS Dashboard: lcms-dashboard.md
+        - GNPS Dashboard: lcms-dashboard.md
         - GNPS Dataset Explorer: gnpsdatasetexplorer.md
     - Advanced Data Analysis:
         - Molecular Networking Files: networkingfiles.md
@@ -107,16 +107,19 @@ plugins:
         show_contribution: true
     - git-revision-date-localized:
         type: datetime
+    - mermaid2
 
 markdown_extensions:
     - toc:
         permalink: true
     - admonition
-    - pymdownx.superfences
+    # - pymdownx.superfences
     - pymdownx.details
     - pymdownx.emoji:
         emoji_index: !!python/name:pymdownx.emoji.twemoji
         emoji_generator: !!python/name:pymdownx.emoji.to_svg
             
+
+
 
 google_analytics: ['UA-8412213-5', 'ccms-ucsd.github.io']

@@ -60,6 +60,8 @@ These are web tools that is run by the GNPS team and provides complementary func
 | [GNPS FBMN Box Plotting Dashboard](http://dorresteintesthub.ucsd.edu:6549) | --- | --- |
 | [GNPS Dataset File Explorer](https://gnps-dataset-explorer.herokuapp.com/) | --- | --- |
 | [GNPS Dataset File Caching Service](http://dorresteintesthub.ucsd.edu:5235/datasette/database/filename?_sort=filepath) | --- | --- | 
+| [GNPS Public Libraries Download List](https://gnps-external.ucsd.edu/gnpslibrary)  --- | --- | 
+
 
 ## GNPS Deprecated Web Tools
 
@@ -95,8 +97,96 @@ These are Jupyter Notebooks that interact with GNPS web resources and do further
 
 ## GNPS Tools Interoperability Graph
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggTFJcblx0SW5wdXRHQ0RhdGEoR0MgTWFzcyBTcGVjdHJvbWV0cnkgRGF0YSkgLS0-IE1TSFVCW0dOUFMgLSBNU0h1YiBEZXZvbnZvbHV0aW9uXVxuXHRNU0hVQiAtLT4gR0NMaWJyYXJ5W0dOUFMgLSBHQyBMaWJyYXJ5IFNlYXJjaCBhbmQgTmV0d29ya2luZ11cblx0R0NMaWJyYXJ5IC0tPiBRaWltZTJQQ09BXG5cblx0SW5wdXRMQ0RhdGEoTEMgTVMvTVMgVmVuZG9yIE1hc3MgU3BlY3Ryb21ldHJ5IERhdGEpIC0tPiBNU0NvbnZlcnRbTVNDb252ZXJ0XVxuXHRJbnB1dExDRGF0YSAtLT4gUXVpY2tzdGFydFtHTlBTIC0gUXVpY2tzdGFydF1cblx0UXVpY2tzdGFydCAtLT4gT3BlbkZvcm1hdHMoT3BlbiBtek1MIEZvcm1hdClcblx0TVNDb252ZXJ0IC0tPiBPcGVuRm9ybWF0c1xuXHRPcGVuRm9ybWF0cyAtLT4gRGVyZXBsaWNhdG9yW0dOUFMgLSBEZXJlcGxpY2F0b3JdXG5cdE9wZW5Gb3JtYXRzIC0tPiBEZXJlcGxpY2F0b3IrW0dOUFMgLSBEZXJlcGxpY2F0b3IrXVxuXHRPcGVuRm9ybWF0cyAtLT4gTGlicmFyeVNlYXJjaChHTlBTIC0gU3BlY3RyYWwgTGlicmFyeSBTZWFyY2gpXG5cdE9wZW5Gb3JtYXRzIC0tPiBNU01TLUNob29zZXIoR05QUyAtIE1TTVMtQ2hvb3NlcikgLS0-IExpYnJhcnlCYXRjaFtHTlBTIC0gQmF0Y2ggTGlicmFyeSBBZGRpdGlvbl0gXG5cdExpYnJhcnlCYXRjaCAtLT4gR05QU0xpYnJhcnlbR05QUyAtIFB1YmxpYyBTcGVjdHJhbCBMaWJyYXJpcmVzXVxuXHRPcGVuRm9ybWF0cyAtLT4gTGlicmFyeVNpbmdsZVtHTlBTIC0gU2luZ2xlIExpYnJhcnkgQWRkaXRpb25dIC0tPiBHTlBTTGlicmFyeVxuXHRPcGVuRm9ybWF0cyAtLT4gR05QU0xpYnJhcnkoR05QUyAtIFB1YmxpYyBTcGVjdHJhbCBMaWJyYXJpZXMpXG5cdE9wZW5Gb3JtYXRzIC0tPiBMaWJyYXJ5QmF0Y2ggLS0-IEdOUFNMaWJyYXJ5XG5cdE9wZW5Gb3JtYXRzIC0tPiBDbGFzc2ljYWxOZXR3b3JraW5nW0dOUFMgLSBDbGFzc2ljYWwgTW9sZWN1bGFyIE5ldHdvcmtpbmddXG5cdE9wZW5Gb3JtYXRzIC0tPiBNWm1pbmUyW01abWluZTIgRmVhdHVyZSBGaW5kaW5nXSAtLT4gRkJNTlxuXHRPcGVuRm9ybWF0cyAtLT4gT3Blbk1TW09wZW5NUyBGZWF0dXJlIEZpbmRpbmddIC0tPiBGQk1OXG5cdE9wZW5Gb3JtYXRzIC0tPiBYQ01TW1hDTVMgRmVhdHVyZSBGaW5kaW5nXSAtLT4gRkJNTlxuXHRPcGVuRm9ybWF0cyAtLT4gTVNEaWFsW01TRGlhbCBGZWF0dXJlIEZpbmRpbmddIC0tPiBGQk1OXG5cdE9wZW5Gb3JtYXRzIC0tPiBHTlBTTVptaW5lMltHTlBTIC0gTVptaW5lMiBGZWF0dXJlIEZpbmRpbmddIC0tPiBGQk1OXG5cdE1abWluZTIgLS0-IEZCTU5bR05QUyAtIEZlYXR1cmUgQmFzZWQgTW9sZWN1bGFyIE5ldHdvcmtpbmddXG5cdENsYXNzaWNhbE5ldHdvcmtpbmcgLS0-IE1TMkxEQVtHTlBTIC0gTVMyTERBIFN1YnN0cnVjdHVyZSBEaXNjb3ZlcnldXG5cdE1TMkxEQSAtLT4gTVMyTERBT1JHW01TMkxEQS5vcmcgTW90aWYgRXhwbG9yYXRpb25dXG5cdENsYXNzaWNhbE5ldHdvcmtpbmcgLS0-IFFpaW1lMlBDT0FbUWlpbWUyIFBDb0FdXG5cdENsYXNzaWNhbE5ldHdvcmtpbmcgLS0-IEN5dG9zY2FwZVtDeXRvc2NhcGUgVmlzdWFsaXphdGlvbl1cblx0RkJNTiAtLT4gTVMyTERBXG5cdEZCTU4gLS0-IEN5dG9zY2FwZVxuXHRGQk1OIC0tPiBRZW1pc3RyZWVcblx0RkJNTiAtLT4gU2lyaXVzXG5cdEZCTU4gIC0tPiBOQVBcblx0RkJNTiAtLT4gUWlpbWUyUENPQVxuXHRDbGFzc2ljYWxOZXR3b3JraW5nICAtLT4gTkFQW0dOUFMgLSBOZXR3b3JrIEFubm90YXRpb24gUHJvcG9nYXRpb25dXG5cdENsYXNzaWNhbE5ldHdvcmtpbmcgLS0-IE1vbE5ldEVuaGFuY2VyXG5cdEZCTU4gLS0-IE1vbE5ldEVuaGFuY2VyW0dOUFMgLSBNb2xOZXRFbmhhbmNlci9NZXRhYm9EaXN0VHJlZV1cblx0RkJNTiAtLT4gTWVyZ2VQb2xhcml0eVxuXHRGQk1OIC0tPiBFc3F1aXNzZVtHTlBTIC0gSW50ZXJhY3RpdmUgUGxvdHRpbmcgd2l0aCBFc3F1aXNzZV1cblx0Q2xhc3NpY2FsTmV0d29ya2luZyAtLT4gTWVyZ2VQb2xhcml0eVtHTlBTIC0gTWVyZ2UgTmV0d29yayBQb2xhcml0eV1cblx0UWVtaXN0cmVlIC0tPiBRZW1pc3RyZWVEYXNoYm9hcmQoR05QUyAtIFFlbWlzdHJlZSBJbnRlcmFjdGl2ZSBEYXNoYm9hcmQpXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCIsImZsb3djaGFydCI6eyJjdXJ2ZSI6ImJhc2lzIiwibm9kZVNwYWNpbmciOjI1fX0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggTFJcblx0SW5wdXRHQ0RhdGEoR0MgTWFzcyBTcGVjdHJvbWV0cnkgRGF0YSkgLS0-IE1TSFVCW0dOUFMgLSBNU0h1YiBEZXZvbnZvbHV0aW9uXVxuXHRNU0hVQiAtLT4gR0NMaWJyYXJ5W0dOUFMgLSBHQyBMaWJyYXJ5IFNlYXJjaCBhbmQgTmV0d29ya2luZ11cblx0R0NMaWJyYXJ5IC0tPiBRaWltZTJQQ09BXG5cblx0SW5wdXRMQ0RhdGEoTEMgTVMvTVMgVmVuZG9yIE1hc3MgU3BlY3Ryb21ldHJ5IERhdGEpIC0tPiBNU0NvbnZlcnRbTVNDb252ZXJ0XVxuXHRJbnB1dExDRGF0YSAtLT4gUXVpY2tzdGFydFtHTlBTIC0gUXVpY2tzdGFydF1cblx0UXVpY2tzdGFydCAtLT4gT3BlbkZvcm1hdHMoT3BlbiBtek1MIEZvcm1hdClcblx0TVNDb252ZXJ0IC0tPiBPcGVuRm9ybWF0c1xuXHRPcGVuRm9ybWF0cyAtLT4gRGVyZXBsaWNhdG9yW0dOUFMgLSBEZXJlcGxpY2F0b3JdXG5cdE9wZW5Gb3JtYXRzIC0tPiBEZXJlcGxpY2F0b3IrW0dOUFMgLSBEZXJlcGxpY2F0b3IrXVxuXHRPcGVuRm9ybWF0cyAtLT4gTGlicmFyeVNlYXJjaChHTlBTIC0gU3BlY3RyYWwgTGlicmFyeSBTZWFyY2gpXG5cdE9wZW5Gb3JtYXRzIC0tPiBNU01TLUNob29zZXIoR05QUyAtIE1TTVMtQ2hvb3NlcikgLS0-IExpYnJhcnlCYXRjaFtHTlBTIC0gQmF0Y2ggTGlicmFyeSBBZGRpdGlvbl0gXG5cdExpYnJhcnlCYXRjaCAtLT4gR05QU0xpYnJhcnlbR05QUyAtIFB1YmxpYyBTcGVjdHJhbCBMaWJyYXJpcmVzXVxuXHRPcGVuRm9ybWF0cyAtLT4gTGlicmFyeVNpbmdsZVtHTlBTIC0gU2luZ2xlIExpYnJhcnkgQWRkaXRpb25dIC0tPiBHTlBTTGlicmFyeVxuXHRPcGVuRm9ybWF0cyAtLT4gR05QU0xpYnJhcnkoR05QUyAtIFB1YmxpYyBTcGVjdHJhbCBMaWJyYXJpZXMpXG5cdE9wZW5Gb3JtYXRzIC0tPiBMaWJyYXJ5QmF0Y2ggLS0-IEdOUFNMaWJyYXJ5XG5cdE9wZW5Gb3JtYXRzIC0tPiBDbGFzc2ljYWxOZXR3b3JraW5nW0dOUFMgLSBDbGFzc2ljYWwgTW9sZWN1bGFyIE5ldHdvcmtpbmddXG5cdE9wZW5Gb3JtYXRzIC0tPiBNWm1pbmUyW01abWluZTIgRmVhdHVyZSBGaW5kaW5nXSAtLT4gRkJNTlxuXHRPcGVuRm9ybWF0cyAtLT4gT3Blbk1TW09wZW5NUyBGZWF0dXJlIEZpbmRpbmddIC0tPiBGQk1OXG5cdE9wZW5Gb3JtYXRzIC0tPiBYQ01TW1hDTVMgRmVhdHVyZSBGaW5kaW5nXSAtLT4gRkJNTlxuXHRPcGVuRm9ybWF0cyAtLT4gTVNEaWFsW01TRGlhbCBGZWF0dXJlIEZpbmRpbmddIC0tPiBGQk1OXG5cdE9wZW5Gb3JtYXRzIC0tPiBHTlBTTVptaW5lMltHTlBTIC0gTVptaW5lMiBGZWF0dXJlIEZpbmRpbmddIC0tPiBGQk1OXG5cdE1abWluZTIgLS0-IEZCTU5bR05QUyAtIEZlYXR1cmUgQmFzZWQgTW9sZWN1bGFyIE5ldHdvcmtpbmddXG5cdENsYXNzaWNhbE5ldHdvcmtpbmcgLS0-IE1TMkxEQVtHTlBTIC0gTVMyTERBIFN1YnN0cnVjdHVyZSBEaXNjb3ZlcnldXG5cdE1TMkxEQSAtLT4gTVMyTERBT1JHW01TMkxEQS5vcmcgTW90aWYgRXhwbG9yYXRpb25dXG5cdENsYXNzaWNhbE5ldHdvcmtpbmcgLS0-IFFpaW1lMlBDT0FbUWlpbWUyIFBDb0FdXG5cdENsYXNzaWNhbE5ldHdvcmtpbmcgLS0-IEN5dG9zY2FwZVtDeXRvc2NhcGUgVmlzdWFsaXphdGlvbl1cblx0RkJNTiAtLT4gTVMyTERBXG5cdEZCTU4gLS0-IEN5dG9zY2FwZVxuXHRGQk1OIC0tPiBRZW1pc3RyZWVcblx0RkJNTiAtLT4gU2lyaXVzXG5cdEZCTU4gIC0tPiBOQVBcblx0RkJNTiAtLT4gUWlpbWUyUENPQVxuXHRDbGFzc2ljYWxOZXR3b3JraW5nICAtLT4gTkFQW0dOUFMgLSBOZXR3b3JrIEFubm90YXRpb24gUHJvcG9nYXRpb25dXG5cdENsYXNzaWNhbE5ldHdvcmtpbmcgLS0-IE1vbE5ldEVuaGFuY2VyXG5cdEZCTU4gLS0-IE1vbE5ldEVuaGFuY2VyW0dOUFMgLSBNb2xOZXRFbmhhbmNlci9NZXRhYm9EaXN0VHJlZV1cblx0RkJNTiAtLT4gTWVyZ2VQb2xhcml0eVxuXHRGQk1OIC0tPiBFc3F1aXNzZVtHTlBTIC0gSW50ZXJhY3RpdmUgUGxvdHRpbmcgd2l0aCBFc3F1aXNzZV1cblx0Q2xhc3NpY2FsTmV0d29ya2luZyAtLT4gTWVyZ2VQb2xhcml0eVtHTlBTIC0gTWVyZ2UgTmV0d29yayBQb2xhcml0eV1cblx0UWVtaXN0cmVlIC0tPiBRZW1pc3RyZWVEYXNoYm9hcmQoR05QUyAtIFFlbWlzdHJlZSBJbnRlcmFjdGl2ZSBEYXNoYm9hcmQpXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCIsImZsb3djaGFydCI6eyJjdXJ2ZSI6ImJhc2lzIiwibm9kZVNwYWNpbmciOjI1fX0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
+```mermaid
+graph LR
+	InputGCData(GC Mass Spectrometry Data) --> MSHUB[GNPS - MSHub Devonvolution]
+    Massive --> InputGCData(GC Mass Spectrometry Data)
+    Metabolights --> InputGCData(GC Mass Spectrometry Data)
+	MSHUB --> GCLibrary[GNPS - GC Library Search and Networking]
+	GCLibrary --> Qiime2PCOA
+	InputLCData(LC MS/MS Vendor Mass Spectrometry Data) --> MSConvert[MSConvert]
+	InputLCData --> Quickstart[GNPS - Quickstart]
+	Quickstart --> OpenFormats(Open mzML Format)
+	MSConvert --> OpenFormats
+    Massive(MassIVE Public Data) --> InputLCData
+    Metabolights(Metabolights Public Data) --> InputLCData
+    PrivateData(Private MS Data) --> InputLCData
+    PrivateData --> InputGCData
+    OpenFormats --> GNPSDashboard
+    Massive --> GNPSDashboard
+    Metabolights --> GNPSDashboard
+    Massive --> FBMN
+    Massive --> ClassicalNetworking
+	OpenFormats --> Dereplicator[GNPS - Dereplicator]
+	OpenFormats --> Dereplicator+[GNPS - Dereplicator+]
+	OpenFormats --> LibrarySearch(GNPS - Spectral Library Search)
+	OpenFormats --> MSMS-Chooser(GNPS - MSMS-Chooser) --> LibraryBatch[GNPS - Batch Library Addition] 
+	LibraryBatch --> GNPSLibrary[GNPS - Public Spectral Librarires]
+	OpenFormats --> LibrarySingle[GNPS - Single Library Addition] --> GNPSLibrary
+	OpenFormats --> GNPSLibrary(GNPS - Public Spectral Libraries)
+	OpenFormats --> LibraryBatch --> GNPSLibrary
+	OpenFormats --> ClassicalNetworking[GNPS - Classical Molecular Networking]
+	OpenFormats --> MZmine2[MZmine2 Feature Finding] --> FBMN
+	OpenFormats --> OpenMS[OpenMS Feature Finding] --> FBMN
+	OpenFormats --> XCMS[XCMS Feature Finding] --> FBMN
+	OpenFormats --> MSDial[MSDial Feature Finding] --> FBMN
+	OpenFormats --> GNPSMZmine2[GNPS - MZmine2 Feature Finding] --> FBMN
+	MZmine2 --> FBMN[GNPS - Feature Based Molecular Networking]
+	ClassicalNetworking --> MS2LDA[GNPS - MS2LDA Substructure Discovery]
+	MS2LDA --> MS2LDAORG[MS2LDA.org Motif Exploration]
+	ClassicalNetworking --> Qiime2PCOA[Qiime2 PCoA]
+	ClassicalNetworking --> Cytoscape[Cytoscape Visualization]
+	FBMN --> MS2LDA
+	FBMN --> Cytoscape
+	FBMN --> Qemistree
+	FBMN --> Sirius
+	FBMN  --> NAP
+	FBMN --> Qiime2PCOA
+	ClassicalNetworking  --> NAP[GNPS - Network Annotation Propogation]
+	ClassicalNetworking --> MolNetEnhancer --> Cytoscape
+	FBMN --> MolNetEnhancer[GNPS - MolNetEnhancer/MetaboDistTree]
+	FBMN --> MergePolarity
+	FBMN --> Esquisse[GNPS - Interactive Plotting with Esquisse]
+	ClassicalNetworking --> MergePolarity[GNPS - Merge Network Polarity]
+	Qemistree --> QemistreeDashboard(GNPS - Qemistree Interactive Dashboard)
+    GNPSDashboard --> GNPSMZmine2
+    GNPSDashboard --> ClassicalNetworking
+    FBMN --> GNPSDashboard
+    ClassicalNetworking --> GNPSDashboard
+    MSHUB --> GNPSDashboard
+    GCLibrary --> GNPSDashboard
+    Quickstart --> GNPSDashboard
+    GNPSDashboard --> MetabolomicsUSI
+    GNPSLibrary --> GNPSLibraryExporter
+    FBMN --> Dereplicator[GNPS - Dereplicator]
+	FBMN --> Dereplicator+[GNPS - Dereplicator+]
 
+    FBMN --> MASST
+    ClassicalNetworking --> MASST
+    GNPSDashboard --> MASST
+    OpenFormats --> MASST
+
+    FBMN --> ChemProp
+
+    OpenFormats --> Sirius
+
+    style GNPSDashboard fill:pink
+    style MetabolomicsUSI fill:pink
+    style MS2LDAORG fill:pink
+    style Qiime2PCOA fill:pink
+    style QemistreeDashboard fill:pink
+    style Esquisse fill:pink
+    style Cytoscape fill:pink
+    style GNPSLibraryExporter fill:pink
+    
+    style InputGCData fill:lightblue
+    style InputLCData fill:lightblue
+    style OpenFormats fill:lightblue
+
+    style Massive fill:lightgrey
+    style Metabolights fill:lightgrey
+    style PrivateData fill:lightgrey
+```
 
 ## Page Contributors
 
