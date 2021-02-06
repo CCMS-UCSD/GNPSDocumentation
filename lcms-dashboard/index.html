@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://ccms-ucsd.github.io/GNPSDocumentation/lcms-dashboard/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-6.2.7" name="generator"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-6.2.8" name="generator"/>
 <title>GNPS Dashboard - GNPS Documentation</title>
 <link href="../assets/stylesheets/main.cb6bc1d0.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.39b8e14a.min.css" rel="stylesheet"/>
@@ -368,6 +368,20 @@
 <a class="md-nav__link" href="#sharing-visualizations">
     Sharing Visualizations
   </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#saving-visualizations">
+    Saving Visualizations
+  </a>
+<nav aria-label="Saving Visualizations" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#loading-visualization">
+    Loading Visualization
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#box-plots">
@@ -871,6 +885,20 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#saving-visualizations">
+    Saving Visualizations
+  </a>
+<nav aria-label="Saving Visualizations" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#loading-visualization">
+    Loading Visualization
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#box-plots">
     Box Plots
   </a>
@@ -985,14 +1013,28 @@
 <p>To initiate following a visualization, you will need to do the following</p>
 <ol>
 <li>Get a follower URL from your collaborator who will function as the leader (Or scan the QR Code)</li>
-<li>Click "Sync Initiate"</li>
 <li>Watch for updates from your leader</li>
 </ol>
+<p>The synchronization will start automatically if you are a follower with the appropriate link. </p>
 <p>You may also stop syncing as a follower by clicking the "Sync Terminate" so that you do not receive any more updates. Then you may build upon the visualiation that has been done by the leader. </p>
 <p><img alt="img" src="../img/LCMS_dashbaord/Sync.png"/></p>
 <h2 id="sharing-visualizations">Sharing Visualizations<a class="headerlink" href="#sharing-visualizations" title="Permanent link">¶</a></h2>
 <p>Once you are happy with the XIC or MS/MS plots you can export your XIC and spectra as vector graphics (.svg) and view and export values under XIC Integration<br/>
 To share the interactive LCMS-Dashboard view, simply click "Link to these plots" botton on the left and copy the new url. This link saves all the settings in your visualization. If you open it up, it will keep all the data and settings exactly the same. </p>
+<h2 id="saving-visualizations">Saving Visualizations<a class="headerlink" href="#saving-visualizations" title="Permanent link">¶</a></h2>
+<p>You may save the settings in several ways:</p>
+<ol>
+<li>Saving the "Link to these plots" as a url </li>
+<li>Clicking the "Advanced Import Options" and saving the JSON version of all the settings</li>
+<li>Clicking the "Advanced Import Options" and downloading the JSON version of all the settings as a file</li>
+</ol>
+<h3 id="loading-visualization">Loading Visualization<a class="headerlink" href="#loading-visualization" title="Permanent link">¶</a></h3>
+<p>Conversely you can load settings in multiple ways, and in many ways the opposite of the above for save</p>
+<ol>
+<li>Clicking on url you saved</li>
+<li>Clicking the "Advanced Import Options" and update the JSON version of all the settings and clicking "Manual Import"</li>
+<li>Clicking the "Advanced Import Options" and dragging and dropping the JSON file of all the settings and clicking "Manual Import"</li>
+</ol>
 <h2 id="box-plots">Box Plots<a class="headerlink" href="#box-plots" title="Permanent link">¶</a></h2>
 <p>Integratuion results of XIC(s) for all samples specified in the file selection section are automatically plotted as box-plots between the two default groups (USI1 and USI2)</p>
 <p><img alt="img" src="../img/LCMS_dashbaord/BoxPlots.png"/></p>
@@ -1002,12 +1044,12 @@ To share the interactive LCMS-Dashboard view, simply click "Link to these plots"
 <p>Once parameters are selcted hit the run/update feature finding botton. Once processed, features will be displayed in teh heatmap as green boxes.
 If you are happy with teh setting, there is a direct link for a GNPS workflow to run feature finding with the same settings for full datasets which is directly integrated into the Feature-based Molecular Networking Workflow.</p>
 <h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">¶</a></h2>
-<p><span class="git-page-authors git-authors"><a href="mailto:mwang87@gmail.com">Ming Wang</a> (54.3%), <a href="mailto:dpetras@ucsd.edu">Daniel Petras</a> (45.03%), <a href="mailto:46980194+mpanitch@users.noreply.github.com">mpanitch</a> (0.66%)</span></p>
+<p><span class="git-page-authors git-authors"><a href="mailto:mwang87@gmail.com">Ming Wang</a> (59.88%), <a href="mailto:dpetras@ucsd.edu">Daniel Petras</a> (39.52%), <a href="mailto:46980194+mpanitch@users.noreply.github.com">mpanitch</a> (0.6%)</span></p>
 <hr/>
 <div class="md-source-date">
 <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 2, 2021 17:56:59</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 6, 2021 01:24:03</span>
 </small>
 </div>
 </article>
@@ -1058,8 +1100,8 @@ If you are happy with teh setting, there is a direct link for a GNPS workflow to
 </div>
 </footer>
 </div>
-<script src="../assets/javascripts/vendor.53cc9318.min.js"></script>
-<script src="../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+<script src="../assets/javascripts/vendor.18f0862e.min.js"></script>
+<script src="../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
 <script>
         app = initialize({
           base: "..",
