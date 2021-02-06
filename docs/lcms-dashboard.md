@@ -114,8 +114,9 @@ To create a visualization as a leader, you will need to do the following
 To initiate following a visualization, you will need to do the following
 
 1. Get a follower URL from your collaborator who will function as the leader (Or scan the QR Code)
-1. Click "Sync Initiate"
 1. Watch for updates from your leader
+
+The synchronization will start automatically if you are a follower with the appropriate link. 
 
 You may also stop syncing as a follower by clicking the "Sync Terminate" so that you do not receive any more updates. Then you may build upon the visualiation that has been done by the leader. 
 
@@ -123,9 +124,24 @@ You may also stop syncing as a follower by clicking the "Sync Terminate" so that
 
 ## Sharing Visualizations
 
-
 Once you are happy with the XIC or MS/MS plots you can export your XIC and spectra as vector graphics (.svg) and view and export values under XIC Integration  
 To share the interactive LCMS-Dashboard view, simply click "Link to these plots" botton on the left and copy the new url. This link saves all the settings in your visualization. If you open it up, it will keep all the data and settings exactly the same. 
+
+## Saving Visualizations
+
+You may save the settings in several ways:
+
+1. Saving the "Link to these plots" as a url 
+1. Clicking the "Advanced Import Options" and saving the JSON version of all the settings
+1. Clicking the "Advanced Import Options" and downloading the JSON version of all the settings as a file
+
+### Loading Visualization
+
+Conversely you can load settings in multiple ways, and in many ways the opposite of the above for save
+
+1. Clicking on url you saved
+1. Clicking the "Advanced Import Options" and update the JSON version of all the settings and clicking "Manual Import"
+1. Clicking the "Advanced Import Options" and dragging and dropping the JSON file of all the settings and clicking "Manual Import"
 
 
 ## Box Plots
