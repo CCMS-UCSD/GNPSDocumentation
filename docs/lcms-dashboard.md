@@ -64,6 +64,9 @@ If you click on any of the MS2 markers, it will show the MS2 spectrum as well as
 
 Finally, if you click on any cell in the heatmap, it will add that m/z value to the XIC list to be visualized. 
 
+!!! note "Changing Color Scales"
+    You may change the color scales by clicking on "Advanced Visualization Options" and selecting the color scales you want to change. 
+
 ## TIC Plots
 
 For every LCMS File that is selected, the LCMS Viewer shows the total ion current for the entire LCMS run. Here we have the option of choosing the sum (TIC) or base peak intensity (BPI). 
