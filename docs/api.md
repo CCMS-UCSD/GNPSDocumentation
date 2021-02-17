@@ -4,7 +4,9 @@
 
 ### All Public Library Spectra at GNPS
 
-```https://gnps-external.ucsd.edu/gnpslibraryjson```
+```
+https://gnps-external.ucsd.edu/gnpslibraryjson
+```
 
 ### All Public Library Specta at GNPS with Peaks and Annotation History
 
