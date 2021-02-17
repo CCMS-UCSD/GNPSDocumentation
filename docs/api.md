@@ -8,7 +8,17 @@
 
 ### All Public Library Specta at GNPS with Peaks and Annotation History
 
-```https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.json```
+Browser all spectra
+
+```
+https://gnps-external.ucsd.edu/gnpslibrary
+```
+
+Download as JSON
+
+```
+https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.json
+```
 
 ??? info "Example JSON Format"
 
@@ -84,7 +94,9 @@
 
 As MGF
 
-```https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.mgf```
+```
+https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.mgf
+```
 
 ??? info "Example MGF Format"
     ```
@@ -118,12 +130,16 @@ As MGF
 
 As MSP
 
-```https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.msp```
+```
+https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.msp
+```
 
 
 ### Single Library Spectrum
 
-```https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=<Library Accession>```
+```
+https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=<Library Accession>
+```
 
 [Example](https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=CCMSLIB00005463737)
 
@@ -133,7 +149,9 @@ As MSP
 
 GNPS job results page in JSON format:
 
-```https://gnps.ucsd.edu/ProteoSAFe/result_json.jsp?task=<task id>&view=<view name>```
+```
+https://gnps.ucsd.edu/ProteoSAFe/result_json.jsp?task=<task id>&view=<view name>
+```
 
 [Example](https://gnps.ucsd.edu/ProteoSAFe/result_json.jsp?task=1ad7bc366aef45ce81d2dfcca0a9a5e7&view=view_all_annotations_DB)
 
@@ -141,49 +159,65 @@ GNPS job results page in JSON format:
 
 GNPS job status page in JSON format:
 
-```https://gnps.ucsd.edu/ProteoSAFe/status_json.jsp?task=<task id>```
+```
+https://gnps.ucsd.edu/ProteoSAFe/status_json.jsp?task=<task id>
+```
 
 ### Job Parameters
 
 GNPS job parameters page in XML format:
 
-```https://gnps.ucsd.edu/ProteoSAFe/ManageParameters?task=<task id>```
+```
+https://gnps.ucsd.edu/ProteoSAFe/ManageParameters?task=<task id>
+```
 
 ## Structure Conversion
 
 ### Conversion to Smiles
 
-```https://gnps-structure.ucsd.edu/smiles?inchi=<inchi string>```
+```
+https://gnps-structure.ucsd.edu/smiles?inchi=<inchi string>
+```
 
 [Example](https://gnps-structure.ucsd.edu/smiles?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3)
 
 ### Conversion to InChI
 
-```https://gnps-structure.ucsd.edu/inchi?smiles=<smiles string>```
+```
+https://gnps-structure.ucsd.edu/inchi?smiles=<smiles string>
+```
 
 [Example](https://gnps-structure.ucsd.edu/inchi?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
 ### Conversion to InChIKey
 
-```https://gnps-structure.ucsd.edu/inchikey?smiles=<smiles string>```
+```
+https://gnps-structure.ucsd.edu/inchikey?smiles=<smiles string>
+```
 
 [Example](https://gnps-structure.ucsd.edu/inchikey?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
 ### Conversion to fingerprint
 
-```https://gnps-structure.ucsd.edu/structurefingerprint?smiles=<smiles string>```
+```
+https://gnps-structure.ucsd.edu/structurefingerprint?smiles=<smiles string>
+```
 
 [Example](https://gnps-structure.ucsd.edu/structurefingerprint?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
 ### Conversion to exact mass
 
-```https://gnps-structure.ucsd.edu/structuremass?smiles=<smiles string>```
+```
+https://gnps-structure.ucsd.edu/structuremass?smiles=<smiles string>
+```
 
 [Example](https://gnps-structure.ucsd.edu/structuremass?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
 ### Conversion to formula
 
-```https://gnps-structure.ucsd.edu/formula?smiles=<smiles string>```
+```
+https://gnps-structure.ucsd.edu/formula?smiles=<smiles string>
+```
 
 [Example](https://gnps-structure.ucsd.edu/formula?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
@@ -191,19 +225,25 @@ GNPS job parameters page in XML format:
 
 If you have Smiles
 
-```https://gnps-structure.ucsd.edu/classyfire?smiles=<smiles string>```
+```
+https://gnps-structure.ucsd.edu/classyfire?smiles=<smiles string>
+```
 
 [Example](https://gnps-structure.ucsd.edu/classyfire?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
 If you have InChI
 
-```https://gnps-structure.ucsd.edu/classyfire?inchi=<InChI string>```
+```
+https://gnps-structure.ucsd.edu/classyfire?inchi=<InChI string>
+```
 
 [Example](https://gnps-structure.ucsd.edu/classyfire?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3)
 
 If you have InChI Key
 
-```https://gnps-classyfire.ucsd.edu/entities/<InChI Key>.json```
+```
+https://gnps-classyfire.ucsd.edu/entities/<InChI Key>.json
+```
 
 [Example](https://gnps-classyfire.ucsd.edu/entities/RYYVLZVUVIJVGH-UHFFFAOYSA-N.json)
 
@@ -251,7 +291,9 @@ If you have Smiles
 
 ### Structure Image
 
-```https://gnps-structure.ucsd.edu/structureimg?smiles=<smiles string>```
+```
+https://gnps-structure.ucsd.edu/structureimg?smiles=<smiles string>
+```
 
 [Example](https://gnps-structure.ucsd.edu/structureimg?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
