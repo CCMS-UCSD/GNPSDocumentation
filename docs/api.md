@@ -258,7 +258,9 @@ us to push to the Wishart servers to classify.
 
 If you have Smiles
 
-```https://npclassifier.ucsd.edu/classify?smiles=<smiles string>```
+```
+https://npclassifier.ucsd.edu/classify?smiles=<smiles string>
+```
 
 [Example](https://npclassifier.ucsd.edu/classify?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
@@ -300,7 +302,9 @@ https://gnps-structure.ucsd.edu/structureimg?smiles=<smiles string>
 
 ### Structure Similarity
 
-```https://gnps-structure.ucsd.edu/structuresimilarity?smiles1=<smiles string>&smiles2=<smiles string>```
+```
+https://gnps-structure.ucsd.edu/structuresimilarity?smiles1=<smiles string>&smiles2=<smiles string>
+```
 
 [Example](https://gnps-structure.ucsd.edu/structuresimilarity?smiles1=Cn1c(=O)c2c(ncn2C)n(C)c1=O&smiles2=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
@@ -325,7 +329,9 @@ https://gnps-external.ucsd.edu/structureproxy?smiles=<smiles string>
 
 ### Per File Sample Information Query
 
-```https://redu.ucsd.edu/filename?query=<File full path in MassIVE>```
+```
+https://redu.ucsd.edu/filename?query=<File full path in MassIVE>
+```
 
 [Example](https://redu.ucsd.edu/filename?query=f.MSV000082048/ccms_peak/Plate_28/30_84.mzML)
 
