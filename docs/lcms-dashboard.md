@@ -49,6 +49,9 @@ A filled in USI selection can be seen below.
 
 ![img](img/LCMS_dashbaord/File_Selection.png)
 
+!!! warn
+    If you upload your files via the drag and drop, they will be periodically removed after a few months. If you woudl like your data to be more permenant, please make a public MassIVE dataset. Checkout how to do that [here](datasets.md).
+
 
 ## 2D m/z RT Heatmap
 
