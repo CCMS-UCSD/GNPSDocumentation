@@ -24,7 +24,7 @@ We attempt to gather metadata from several sources for public mass spectrometry 
 1. Default (MS information from run)
 1. ReDU
 1. MassIVE Metadata Uploads
-1. Metabolights Study Information (Coming Soon!)
+1. Metabolights Study Information
 
 ## Listing GNPS Tasks
 
