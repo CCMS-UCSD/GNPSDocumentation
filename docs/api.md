@@ -87,7 +87,6 @@ As MGF
 ```https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.mgf```
 
 ??? info "Example MGF Format"
-
     ```
     BEGIN IONS
     PEPMASS=407.186
@@ -222,6 +221,32 @@ If you have Smiles
 ```https://npclassifier.ucsd.edu/classify?smiles=<smiles string>```
 
 [Example](https://npclassifier.ucsd.edu/classify?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+
+??? info "Example JSON Output"
+    ```
+    {
+        class_results: [
+            "Purine alkaloids"
+        ],
+        superclass_results: [
+            "Pseudoalkaloids"
+        ],
+        pathway_results: [
+            "Alkaloids"
+        ],
+        isglycoside: false,
+        fp1: [
+            0,
+            0
+            ...
+        ],
+        fp2: [
+            0,
+            0,
+            ...
+        ]
+    }
+    ```
 
 
 ### Structure Image
