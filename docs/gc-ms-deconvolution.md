@@ -28,13 +28,10 @@ The GNPS home page includes two sections to launch GNPS GC-MS data analysis job,
 
 ![img](img/GC-MS_documentation/Fig_2.png)
 
-**NOTE:** 
-
-- All of the data used for the job must be collected using the same GC protocol (temperature program, column, injection mode). Multiple datasets could be combined as long as the data have been collected using the same protocol. 
-- When creating a dataset on MassIVE ([massive.ucsd.edu](https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp)), include “GNPS” and “GC” in the name (As GNPS_GC_Name of the GNPS-MassIVE dataset). See the documentation about [Dataset Creation/Sharing](https://ccms-ucsd.github.io/GNPSDocumentation/datasets/) and an example of a MassIVE dataset [MSV000084226](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=671cd79ac3af4c4493e4025d62d161e1&view=advanced_view) for more information.
-- An insufficient volume of data causes unstable deconvolution resulting in spurious low-quality spectra. It is recommended for datasets smaller than ~10 files to use alternative deconvolution solutions such as MZMine2/ADAP, MS-Dial or XCMS. Increasing the number of files, for example, could be done by co-analyzing multiple datasets obtained with the same experimental protocol. 
-
-
+!!! warning
+    - All of the data used for the job must be collected using the same GC protocol (temperature program, column, injection mode). Multiple datasets could be combined as long as the data have been collected using the same protocol. 
+    - When creating a dataset on MassIVE ([massive.ucsd.edu](https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp)), include “GNPS” and “GC” in the name (As GNPS_GC_Name of the GNPS-MassIVE dataset). See the documentation about [Dataset Creation/Sharing](https://ccms-ucsd.github.io/GNPSDocumentation/datasets/) and an example of a MassIVE dataset [MSV000084226](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=671cd79ac3af4c4493e4025d62d161e1&view=advanced_view) for more information.
+    - An insufficient volume of data causes unstable deconvolution resulting in spurious low-quality spectra. It is recommended for datasets smaller than ~10 files to use alternative deconvolution solutions such as MZMine2/ADAP, MS-Dial or XCMS. Increasing the number of files, for example, could be done by co-analyzing multiple datasets obtained with the same experimental protocol. 
 
 The **“Advanced MSHub Processing” section** displays some automatic setting parameters (related to peak symmetry and baseline adjustment) determined internally by MSHub. The user does not need to provide settings, although they can be set manually, should the user choose to do so. 
 
@@ -85,10 +82,9 @@ Deconvolution of GC-EI-MS data can be performed within MS-DIAL. User can follow 
 
 ## Citation
 
-Aksenov, A. A. et al  [Algorithmic Learning for Auto-deconvolution of GC-MS Data to Enable Molecular Networking within GNPS.](https://www.biorxiv.org/content/10.1101/2020.01.13.905091v1) 
+Aksenov AA, Laponogov I, Zhang Z, Doran SL, Belluomo I, Veselkov D, Bittremieux W, Nothias LF, Nothias-Esposito M, Maloney KN, Misra BB. Auto-deconvolution and molecular networking of gas chromatography–mass spectrometry data. Nature Biotechnology. 2021 Feb;39(2):169-73. [Auto-deconvolution and molecular networking of gas chromatography–mass spectrometry data](https://www.nature.com/articles/s41587-020-0700-3?proof=t) 
 
-https://doi.org/10.1101/2020.01.13.905091
-
+https://doi.org/10.1038/s41587-020-0700-3
 
 ## Page Contributors
 
