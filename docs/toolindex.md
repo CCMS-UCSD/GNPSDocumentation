@@ -57,7 +57,7 @@ These are web tools that is run by the GNPS team and provides complementary func
 | [NP Classifier](https://npclassifier.ucsd.edu/) | --- | [GitHub](https://github.com/mwang87/NP-Classifier) | --- |
 | [GNPS LCMS Explorer](https://gnps-lcms.ucsd.edu/) | [Documentation](lcms-dashboard.md) | --- |
 | [GNPS Mass Defect Dashboard](https://gnps-massdefectdashboard.herokuapp.com/) | --- | --- |
-| [GNPS Plotter Dashboard](http://dorresteintesthub.ucsd.edu:6549) | --- | --- |
+| [GNPS Plotter Dashboard](https://gnps-plotter.ucsd.edu/) | --- | --- |
 | [GNPS Dataset File Explorer](https://gnps-dataset-explorer.herokuapp.com/) | --- | --- |
 | [GNPS Dataset File Caching Service](http://dorresteintesthub.ucsd.edu:5235/datasette/database/filename?_sort=filepath) | --- | --- | 
 | [GNPS Public Libraries Download List](https://gnps-external.ucsd.edu/gnpslibrary) | --- | --- | 
