@@ -219,6 +219,9 @@ In the "*Export for/Submit to GNPS*" module, select the option: "*Submit to GNPS
 
 ADDITIONAL NOTES: The feature table must contain at least the row ID, the row m/z, and row retention time, along with the sample columns. It is currently mandatory for the sample name headers to have the following format: "filename Peak area". Depending on the steps used in MZmine the sample name header can be "filename baseline-corrected Peak area", but this has to be changed back to "filename Peak area".
 
+### (Optional) Parse mgf by feature list
+A separate command line tool [parse_mgf_by_feature_ID](https://github.com/Zquinlan/Python_scripts/blob/master/Metabalomics/parse_mgf_by_feature_ID.py) allows you to reduce the number of features in your mgf file based off a second text file containing the feature ID's. Simply have to define the file feature ID .txt file, the mgf file (with a .txt extension) and the exported mgf txt file name. (e.g. python3 parse_by_feature_ID.py Feature_ID.txt Moorea_sirius.txt > outfile.txt)
+
 ### Video Tutorial - Quick MZMine Export to GNPS for FBMN.
 
 The workflow for Feature Based Molecular Networking in GNPS is different from the classic molecular networking workflow. [Access the FBMN workflow here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (You need to be logged in first !)
