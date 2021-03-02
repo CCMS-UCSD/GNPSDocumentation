@@ -241,7 +241,7 @@ There are several additional normalization options specifically for feature dete
 
 [Here is an example FBMN](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=52a390c8eb654b7fa8d61a1c7a4aaab5) job with files resulting from MZmine2 processing of a subset of the [American Gut Project](http://humanfoodproject.com/americangut/).
 
-ADDITIONAL NOTES: In case you want to run the Feature-Based Molecular networking with just part of the samples you processed in MZmine, it is possible to filter the exported files (.csv and .mgf) to keep only the features of interest. In the case of the .csv file, the rows of specific features can just be deleted. For the .mgf file, there are two options of Python scripts to filter the file. One of them can be run in the [Terminal](https://github.com/Zquinlan/Python_scripts/blob/master/Metabalomics/parse_mgf_by_feature_ID.py), while to other can be run in a [Jupyter notebook](https://github.com/helenamrusso/Python_scripts/blob/main/Filter%20mgf%20files%20Mzmine.py).
+ADDITIONAL NOTES: In case you want to run the Feature-Based Molecular networking with just part of the samples you processed in MZmine, it is possible to filter the exported files (.csv and .mgf) to keep only the features of interest. In the case of the .csv file, the rows of specific features can just be deleted. For the .mgf file, there are two options of Python scripts to filter the file. One of them can be run in the [Terminal](https://github.com/Zquinlan/Python_scripts/blob/master/Metabalomics/parse_mgf_by_feature_ID.py), while the other can be run in a [Jupyter notebook](https://github.com/helenamrusso/Python_scripts).
 
 ### Video Tutorial - Analyze FBMN jobs in GNPS
 
