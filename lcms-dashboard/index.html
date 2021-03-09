@@ -7,9 +7,9 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://ccms-ucsd.github.io/GNPSDocumentation/lcms-dashboard/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-7.0.3" name="generator"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-7.0.5" name="generator"/>
 <title>GNPS Dashboard - GNPS Documentation</title>
-<link href="../assets/stylesheets/main.1655a90d.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/main.77f3fd56.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.7fa14f5b.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
@@ -396,6 +396,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#integrated-data-overlays">
+    Integrated Data Overlays
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#page-contributions">
     Page Contributions
   </a>
@@ -406,6 +411,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../gnpsdatasetexplorer/">
         GNPS Dataset Explorer
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../usi/">
+        Metabolomics Spectrum Resolver
       </a>
 </li>
 </ul>
@@ -586,11 +596,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../chemdir/">
         Chemical Directionality
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../usi/">
-        Spectrum Resolover
       </a>
 </li>
 </ul>
@@ -911,6 +916,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#integrated-data-overlays">
+    Integrated Data Overlays
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#page-contributions">
     Page Contributions
   </a>
@@ -1053,13 +1063,22 @@ To share the interactive LCMS-Dashboard view, simply click "Link to these plots"
 <p><img alt="img" src="../img/LCMS_dashbaord/Feature_Finding.png"/></p>
 <p>Once parameters are selcted hit the run/update feature finding botton. Once processed, features will be displayed in teh heatmap as green boxes.
 If you are happy with teh setting, there is a direct link for a GNPS workflow to run feature finding with the same settings for full datasets which is directly integrated into the Feature-based Molecular Networking Workflow.</p>
+<h2 id="integrated-data-overlays">Integrated Data Overlays<a class="headerlink" href="#integrated-data-overlays" title="Permanent link">¶</a></h2>
+<p>It is possible to overlay any information over the 2D MS Heatmap. The source of the data requires several inputs:</p>
+<ol>
+<li>A universal data identifier (UDI) - This currently sources data out of GNPS/MassIVE (e.g. mzspec:GNPS:TASK-c95481f0c53d42e78a61bf899e9f9adb-spectra/specs_ms.mgf)</li>
+<li>Column for the m/z</li>
+<li>Column for the retention time</li>
+<li>Optional - Column for the size</li>
+<li>Optional - Column for the color</li>
+</ol>
 <h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">¶</a></h2>
-<p><span class="git-page-authors git-authors"><a href="mailto:mwang87@gmail.com">Ming Wang</a> (61.27%), <a href="mailto:dpetras@ucsd.edu">Daniel Petras</a> (38.15%), <a href="mailto:46980194+mpanitch@users.noreply.github.com">mpanitch</a> (0.58%)</span></p>
+<p><span class="git-page-authors git-authors"><a href="mailto:mwang87@gmail.com">Ming Wang</a> (62.98%), <a href="mailto:dpetras@ucsd.edu">Daniel Petras</a> (36.46%), <a href="mailto:46980194+mpanitch@users.noreply.github.com">mpanitch</a> (0.55%)</span></p>
 <hr/>
 <div class="md-source-date">
 <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 17, 2021 01:40:58</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 9, 2021 22:47:38</span>
 </small>
 </div>
 </article>
@@ -1112,6 +1131,6 @@ If you are happy with teh setting, there is a direct link for a GNPS workflow to
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
-<script src="../assets/javascripts/bundle.ca5457b8.min.js"></script>
+<script src="../assets/javascripts/bundle.5cf3e710.min.js"></script>
 </body>
 </html>
