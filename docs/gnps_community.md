@@ -1,6 +1,6 @@
 # Join the GNPS community
 
-The GNPS community is always welcoming suggestions and contributions. Be part of the community and contribute !
+The GNPS community is always welcoming suggestions and contributions. Be part of the community and contribute!
 
 ## GitHub Repositories
 Your are kindly invited to open "issues" on our GitHub repositories, and propose changes to our Documentation and Workflows. We are also welcoming direct pull request on the respective repository.

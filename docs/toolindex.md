@@ -56,12 +56,13 @@ These are web tools that is run by the GNPS team and provides complementary func
 | [GNPS FBMN Upset Plot Dashboard](https://gnps-fbmn-upset.herokuapp.com/) | --- | --- |
 | [NP Classifier](https://npclassifier.ucsd.edu/) | --- | [GitHub](https://github.com/mwang87/NP-Classifier) | --- |
 | [GNPS LCMS Explorer](https://gnps-lcms.ucsd.edu/) | [Documentation](lcms-dashboard.md) | --- |
-| [GNPS Mass Defect Dashboard](https://gnps-massdefectdashboard.herokuapp.com/) | --- | --- |
-| [GNPS Plotter Dashboard](http://dorresteintesthub.ucsd.edu:6549) | --- | --- |
-| [GNPS Dataset File Explorer](https://gnps-dataset-explorer.herokuapp.com/) | --- | --- |
-| [GNPS Dataset File Caching Service](http://dorresteintesthub.ucsd.edu:5235/datasette/database/filename?_sort=filepath) | --- | --- | 
-| [GNPS Public Libraries Download List](https://gnps-external.ucsd.edu/gnpslibrary)  --- | --- | 
-
+| [GNPS Mass Defect Dashboard (Beta)](https://gnps-massdefectdashboard.herokuapp.com/) | --- | --- |
+| [GNPS Plotter Dashboard (Beta)](https://gnps-plotter.ucsd.edu/) | --- | --- |
+| [GNPS Dataset File Explorer (Beta)](https://gnps-dataset-explorer.herokuapp.com/) | --- | --- |
+| [GNPS Dataset File Caching Service (Beta)](http://dorresteintesthub.ucsd.edu:5235/datasette/database/filename?_sort=filepath) | --- | --- | 
+| [GNPS Public Libraries Download List](https://gnps-external.ucsd.edu/gnpslibrary) | --- | --- | 
+| [GNPS Public Data Index](https://gnpspublic.herokuapp.com/gnps_public_openformats/massive_public_openformats) | --- | --- | 
+| [GNPS Spectral Similarity Hub (Beta)](http://dorresteintesthub.ucsd.edu:5453/) | --- | --- | 
 
 ## GNPS Deprecated Web Tools
 
