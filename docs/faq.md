@@ -1,4 +1,10 @@
 
+## GNPS Account
+
+!!! question "I've forgotten my password, what should I do?"
+    If you remember your username, please send an email to ccms-web@cs.ucsd.edu and state your username and request a password reset. 
+
+
 ## Data Privacy
 
 !!! question "Is the data I upload to analyze publicly visible?"
