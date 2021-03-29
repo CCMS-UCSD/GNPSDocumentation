@@ -166,7 +166,15 @@ The GNPS LCMS-Dashbaord, also offers live feature finding options for the first 
 Once parameters are selcted hit the run/update feature finding botton. Once processed, features will be displayed in teh heatmap as green boxes.
 If you are happy with teh setting, there is a direct link for a GNPS workflow to run feature finding with the same settings for full datasets which is directly integrated into the Feature-based Molecular Networking Workflow.
 
+## Integrated Data Overlays
 
+It is possible to overlay any information over the 2D MS Heatmap. The source of the data requires several inputs:
+
+1. A universal data identifier (UDI) - This currently sources data out of GNPS/MassIVE (e.g. mzspec:GNPS:TASK-c95481f0c53d42e78a61bf899e9f9adb-spectra/specs_ms.mgf)
+1. Column for the m/z
+1. Column for the retention time
+1. Optional - Column for the size
+1. Optional - Column for the color
 
 ## Page Contributions
 
