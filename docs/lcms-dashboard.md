@@ -1,6 +1,6 @@
 # GNPS Dashboard
 
-The GNPS Dashboard Interface is designed to enable easy visualization of mass spectrometry data files directly in the browser.
+The GNPS Dashboard Interface is designed to enable easy collaborative visualization of mass spectrometry data files directly in the browser.
 
 ![img](img/LCMS_dashboard/LCMS_dashboard.png)
 
@@ -208,6 +208,14 @@ It is possible to overlay any information over the 2D MS Heatmap. The source of 
 1. Column for the retention time
 1. Optional - Column for the size
 1. Optional - Column for the color
+
+### Citation
+
+Soon we'll have a preprint and hopefully a more appropriate publication citation!
+
+!!! cite "Recommended Citation"
+	[Mingxun Wang, Jeremy J. Carver, Vanessa V. Phelan, Laura M. Sanchez, Neha Garg, Yao Peng, Don Duy Nguyen et al. "Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking." Nature biotechnology 34, no. 8 (2016): 828. PMID: 27504778](https://www.nature.com/articles/nbt.3597)
+
 
 ## Page Contributions
 
