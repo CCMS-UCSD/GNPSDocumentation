@@ -1,5 +1,5 @@
 
-In this tutorial you will be guided into running MZmine2 for the Feature Based Molecular Network (FBMN) workflow on GNPS to reproduce some findings of the [American Gut Project](http://humanfoodproject.com/americangut/) described in this manuscript:
+In this tutorial you will be guided into running MZmine2 for the [Feature Based Molecular Network (FBMN)](../featurebasedmolecularnetworking.md)) workflow on GNPS to reproduce some findings of the [American Gut Project](http://humanfoodproject.com/americangut/) described in this manuscript:
 
 McDonald, D. et al. American Gut: an Open Platform for Citizen Science Microbiome Research. mSystems 3, (2018). [http://dx.doi.org/10.1128/mSystems.00031-18](http://dx.doi.org/10.1128/mSystems.00031-18)
 
