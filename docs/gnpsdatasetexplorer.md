@@ -1,4 +1,4 @@
-The [GNPS Dataset Explorer](https://gnps-dataset-explorer.herokuapp.com/) is a simple interface to enable users to list out and select all files from a public dataset or analysis task. 
+The [GNPS Dataset Explorer](https://gnps-explorer.ucsd.edu) is a simple interface to enable users to list out and select all files from a public dataset or analysis task. 
 
 It current supports the following data sources:
 
@@ -24,7 +24,7 @@ We attempt to gather metadata from several sources for public mass spectrometry 
 1. Default (MS information from run)
 1. ReDU
 1. MassIVE Metadata Uploads
-1. Metabolights Study Information (Coming Soon!)
+1. Metabolights Study Information
 
 ## Listing GNPS Tasks
 

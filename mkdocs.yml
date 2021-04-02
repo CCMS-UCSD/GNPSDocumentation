@@ -35,6 +35,7 @@ nav:
     - Mass Spec Data Visualization:
         - GNPS Dashboard: lcms-dashboard.md
         - GNPS Dataset Explorer: gnpsdatasetexplorer.md
+        - Metabolomics Spectrum Resolver: usi.md
     - Advanced Data Analysis:
         - Molecular Networking Files: networkingfiles.md
         - Feature Based Molecular Networking:
@@ -66,7 +67,6 @@ nav:
         - MMVEC: mmvec.md
         - Merge Network Polarity: mergepolarity.md
         - Chemical Directionality: chemdir.md
-        - Spectrum Resolover: usi.md
     - Spectral Libraries:
         - Browsing Reference Spectral Libraries: browselibraries.md
         - Add/Curate Reference Spectrum in the Library: spectrumcuration.md
@@ -113,7 +113,12 @@ markdown_extensions:
     - toc:
         permalink: true
     - admonition
-    # - pymdownx.superfences
+    - pymdownx.superfences:
+        # make exceptions to highlighting of code:
+        custom_fences:
+            - name: mermaid
+              class: mermaid
+              format: !!python/name:mermaid2.fence_mermaid
     - pymdownx.details
     - pymdownx.emoji:
         emoji_index: !!python/name:pymdownx.emoji.twemoji

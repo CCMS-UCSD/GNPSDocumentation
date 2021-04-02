@@ -3,6 +3,7 @@
 *Introduction*: Qemistree is a computation tool to build a tree of mass-spectrometry (LC-MS/MS) features to perform which enables the use of phylogeny-based tools to study chemical composition of samples. The article is available in [Nat. Chem. Biol. (2020)](https://www.nature.com/articles/s41589-020-00677-3).
 This documentation aims to provide a user-guide on how to run a Qemistree workflow on GNPS. 
 
+**Please use this interim [link to run Qemitree](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22QEMISTREE%22%7D) on your data after FBMN. This will be updated in the next GNPS release.**
 
 ****
 
