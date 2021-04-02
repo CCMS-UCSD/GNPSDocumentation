@@ -9,3 +9,7 @@ This is the most straightforward process as it simply entails modifying/adding n
 This pathway is a bit more difficult as it requires writing ProteoSAFe workflow files. What we've found is likely the simplest path forward to start is reaching out once you have a single commandline tool ready along with the dependencies you need (e.g. requirements.txt, conda-environment.yml, etc.) and we can use our boiler plate workflow template to get your workflow onto our beta server. Due to security restrictions on our server, you won't be able to deploy directly, but we will be able to help you with those deployments. 
 
 Feel free to [contact us](contact.md) to discuss what you want to get into GNPS and then we'll do the fun thing and run that tool over all public data, what the worst that could happen? 
+
+### GNPS Workflows Release Cycle
+
+We strive to build new and better tools and thus release new versions on a regular cadence. Our current goal is to release new versions around the start of each month, with the understanding that some deadlines will slip due to additional needs for testing. If you would like to contribute code, please open a pull request in the appropriate repository and have a dialog with us about what is needed for testing, validation, and style. We will be instituting a soft code freeze 10 days prior to our planned releases to make sure our testing is thorough without any last minute destabilizing changes. 
