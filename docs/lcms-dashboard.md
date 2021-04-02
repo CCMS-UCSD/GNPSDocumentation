@@ -17,7 +17,7 @@ Broadly the data can come from the following sources:
 1. Manual data upload via Drag and Drop
 
 !!! note
-    To get a file list for a dataset or GNPS task, checkout out the [GNPS Dataset Explorer Tool](https://gnps-dataset-explorer.herokuapp.com/). 
+    To get a file list for a public dataset or GNPS task, checkout out the [GNPS Dataset Explorer Tool](https://gnps-explorer.ucsd.edu). 
     
 We aim to enable the visualization without having users download a single file and to easy share visualizations as a url with all settings preserved and saved. The high level capabilities are:
 
@@ -95,6 +95,8 @@ After you specified m/z or multiple m/z separated by ";" under XIC Options, XIC(
 
 ![img](img/LCMS_dashbaord/XIC_MSMS.png)
 
+Additionally to these XIC plots, we draw XIC heatmap plots. This helps when there are many files for a given XIC value. 
+
 ### Teaching Mass Spectrometry Data/Analysis
 
 We think this tool might be a good tool for teaching LC/MS visualization. The Leader/Follower options are a way for students to follow along to get started. Once the initial setup and instruction are done, they can stop syncing and build upon the visualization. We have tested this tool to scale up to a few dozen concurrent followers. If you do intend to use this for a class, please let us know so that we do not do maintenance during your class. 
@@ -105,14 +107,14 @@ We think this tool might be a good tool for teaching LC/MS visualization. The Le
 You can share visualizations as URLs and interactively Collaborate. There are several ways to collaboratively view data:
 
 1. Visualize data and send others the visualization link
-2. Creating a session where you may lead and others may follow (mirror) your activity
+1. Creating a follower/leader session where you may lead and others may follow (mirror) your activity
+1. Creating a fully interative sychronized session (think Google Docs for Mass Spec analysis)
 
-### Sychronized Leader/Follow Visualization
+### Sychronized Leader/Follow Visualization Session
 
 To create a visualization as a leader, you will need to do the following
 
 1. Click on Sychronization Options
-1. Create a session id, this can be anything, random numbers or your name/class
 1. Select Under Teaching Sychronization (Beta), select LEADER
 1. Click Get Token (this protects your session so others cannot hijack being leader)
 1. Copy the link under "Follower URL" and send to others to follow your work (Or have followers scan the QR Code)
@@ -127,6 +129,21 @@ The synchronization will start automatically if you are a follower with the appr
 You may also stop syncing as a follower by clicking the "Sync Terminate" so that you do not receive any more updates. Then you may build upon the visualiation that has been done by the leader. 
 
 ![img](img/LCMS_dashbaord/Sync.png)
+
+### Fully Sychronized Visualization Session
+
+To create a fully sychronous visualization you can do it in the following ways
+
+1. Click on Sychronization Options
+1. Select Under Teaching Sychronization (Beta), select COLLAB and click "Set Sychronization"
+1. Copy the Collab URL and send it to your collaborators
+
+Alternatively, if you click on this [link](https://gnps-lcms.ucsd.edu/?synchronization_type=COLLAB), which will
+automatically initiate a new sychronization session. You can follow the following steps:
+
+1. Click on Sychronization Options
+1. Copy the Collab URL and send it to your collaborators
+
 
 ## Sharing Visualizations
 
