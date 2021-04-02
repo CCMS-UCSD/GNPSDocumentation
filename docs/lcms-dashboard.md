@@ -41,7 +41,7 @@ We aim to enable the visualization without having users download a single file a
 
 Data must be specified as a universal spectrum identifier. This again can be sourced through several locations as mentioned above. The easiest ways are:
 
-1. Using [GNPS Dataset Explorer](https://gnps-dataset-explorer.herokuapp.com/) that enables selecting public datasets
+1. Using [GNPS Dataset Explorer](https://gnps-explorer.ucsd.edu/) that enables selecting public datasets
 1. Direct links from GNPS analyses 
 1. User uploads via the Drag and Drop
 
