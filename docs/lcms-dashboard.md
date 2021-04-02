@@ -41,9 +41,9 @@ We aim to enable the visualization without having users download a single file a
 
 Data must be specified as a universal spectrum identifier. This again can be sourced through several locations as mentioned above. The easiest ways are:
 
-1. Using [GNPS Dataset Explorer](https://gnps-dataset-explorer.herokuapp.com/) that enables selecting public data
+1. Using [GNPS Dataset Explorer](https://gnps-dataset-explorer.herokuapp.com/) that enables selecting public datasets
 1. Direct links from GNPS analyses 
-1. User uploads via the drag and drop
+1. User uploads via the Drag and Drop
 
 A filled in USI selection can be seen below. 
 
@@ -55,9 +55,15 @@ A filled in USI selection can be seen below.
 
 ## 2D m/z RT Heatmap
 
-Once data is loaded, the first file is visualized as a 2D heatmap in USI1 on the left. MS/MS events are indicated as blue crosses (and can be turned off). Alternativley feature finding results can be marked as green boxes in the heatmap and can be overlayed with other information such as peak areas in gray circles.
+Once data is loaded, the first file is visualized as a 2D heatmap in USI1 on the left. When zooming in, the zoomed in data will sharpen.
+
+MS/MS events are indicated as blue crosses (and can be turned off). Feature finding results are marked as green boxes in the heatmap and can be overlayed with other information such as peak areas in gray circles.
 
 ![img](img/LCMS_dashboard/Heatmap.png)
+
+!!! note "Showing Two Heatmaps Side By Side"
+    Put a second USI in the GNPS USI2 field and then enable the "Show USI2 LCMS Map" toggle to show a second side by side. 
+
 
 ### Heatmap Interactivity
 
