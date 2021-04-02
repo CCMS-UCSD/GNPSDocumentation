@@ -358,8 +358,13 @@
 <nav aria-label="Collaborative Visualization" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#sychronized-leaderfollow-visualization">
-    Sychronized Leader/Follow Visualization
+<a class="md-nav__link" href="#sychronized-leaderfollow-visualization-session">
+    Sychronized Leader/Follow Visualization Session
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fully-sychronized-visualization-session">
+    Fully Sychronized Visualization Session
   </a>
 </li>
 </ul>
@@ -398,6 +403,15 @@
 <a class="md-nav__link" href="#integrated-data-overlays">
     Integrated Data Overlays
   </a>
+<nav aria-label="Integrated Data Overlays" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#citation">
+    Citation
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#page-contributions">
@@ -878,8 +892,13 @@
 <nav aria-label="Collaborative Visualization" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#sychronized-leaderfollow-visualization">
-    Sychronized Leader/Follow Visualization
+<a class="md-nav__link" href="#sychronized-leaderfollow-visualization-session">
+    Sychronized Leader/Follow Visualization Session
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fully-sychronized-visualization-session">
+    Fully Sychronized Visualization Session
   </a>
 </li>
 </ul>
@@ -918,6 +937,15 @@
 <a class="md-nav__link" href="#integrated-data-overlays">
     Integrated Data Overlays
   </a>
+<nav aria-label="Integrated Data Overlays" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#citation">
+    Citation
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#page-contributions">
@@ -935,8 +963,8 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
 <h1 id="gnps-dashboard">GNPS Dashboard<a class="headerlink" href="#gnps-dashboard" title="Permanent link">¶</a></h1>
-<p>The GNPS Dashboard Interface is designed to enable easy visualization of mass spectrometry data files directly in the browser.</p>
-<p><img alt="img" src="../img/LCMS_dashbaord/LCMS_dashboard.png"/></p>
+<p>The GNPS Dashboard Interface is designed to enable easy collaborative visualization of mass spectrometry data files directly in the browser.</p>
+<p><img alt="img" src="../img/LCMS_dashboard/LCMS_dashboard.png"/></p>
 <p>Broadly the data can come from the following sources:</p>
 <ol>
 <li>MassIVE Public Datasets</li>
@@ -951,7 +979,7 @@
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>To get a file list for a dataset or GNPS task, checkout out the <a href="https://gnps-dataset-explorer.herokuapp.com/">GNPS Dataset Explorer Tool</a>. </p>
+<p>To get a file list for a public dataset or GNPS task, checkout out the <a href="https://gnps-explorer.ucsd.edu">GNPS Dataset Explorer Tool</a>. </p>
 </div>
 <p>We aim to enable the visualization without having users download a single file and to easy share visualizations as a url with all settings preserved and saved. The high level capabilities are:</p>
 <ol>
@@ -973,30 +1001,37 @@
 <h3 id="loading-your-data">Loading your Data<a class="headerlink" href="#loading-your-data" title="Permanent link">¶</a></h3>
 <p>Data must be specified as a universal spectrum identifier. This again can be sourced through several locations as mentioned above. The easiest ways are:</p>
 <ol>
-<li>Using <a href="https://gnps-dataset-explorer.herokuapp.com/">GNPS Dataset Explorer</a> that enables selecting public data</li>
+<li>Using <a href="https://gnps-explorer.ucsd.edu/">GNPS Dataset Explorer</a> that enables selecting public datasets</li>
 <li>Direct links from GNPS analyses </li>
-<li>User uploads via the drag and drop</li>
+<li>User uploads via the Drag and Drop</li>
 </ol>
 <p>A filled in USI selection can be seen below. </p>
-<p><img alt="img" src="../img/LCMS_dashbaord/File_Selection.png"/></p>
-<div class="admonition warn">
-<p class="admonition-title">Warn</p>
+<p><img alt="img" src="../img/LCMS_dashboard/File_Selection.png"/></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p>If you upload your files via the drag and drop, they will be periodically removed after a few months. If you woudl like your data to be more permenant, please make a public MassIVE dataset. Checkout how to do that <a href="../datasets/">here</a>.</p>
 </div>
 <h2 id="2d-mz-rt-heatmap">2D m/z RT Heatmap<a class="headerlink" href="#2d-mz-rt-heatmap" title="Permanent link">¶</a></h2>
-<p>Once data is loaded, the first file is visualized as a 2D heatmap in USI1 on the left. MS/MS events are indicated as blue crosses (and can be turned off). Alternativley feature finding results can be marked as green boxes in the heatmap and can be overlayed with other information such as peak areas in gray circles.</p>
-<p><img alt="img" src="../img/LCMS_dashbaord/Heatmap.png"/></p>
+<p>Once data is loaded, the first file is visualized as a 2D heatmap in USI1 on the left. When zooming in, the zoomed in data will sharpen.</p>
+<p>MS/MS events are indicated as blue crosses (and can be turned off). Feature finding results are marked as green boxes in the heatmap and can be overlayed with other information such as peak areas in gray circles.</p>
+<p><img alt="img" src="../img/LCMS_dashboard/Heatmap.png"/></p>
+<div class="admonition note">
+<p class="admonition-title">Showing Two Heatmaps Side By Side</p>
+<p>Put a second USI in the GNPS USI2 field and then enable the "Show USI2 LCMS Map" toggle to show a second side by side. </p>
+</div>
 <h3 id="heatmap-interactivity">Heatmap Interactivity<a class="headerlink" href="#heatmap-interactivity" title="Permanent link">¶</a></h3>
 <p>You may navigate around this heatmap interactively. You can zoom in and the visualization will automatically sharpen. Additionally, if you click on "Advanced Visualization Options" it will allow you to set the bounds of the zoom box manually. </p>
 <p>If you click on any of the MS2 markers, it will show the MS2 spectrum as well as add the precursor m/z to the XIC list to be visualized. </p>
 <p>Finally, if you click on any cell in the heatmap, it will add that m/z value to the XIC list to be visualized. </p>
-<div class="admonition note">
-<p class="admonition-title">Changing Color Scales</p>
-<p>You may change the color scales by clicking on "Advanced Visualization Options" and selecting the color scales you want to change. </p>
-</div>
+<details class="note"><summary>Changing Color Scales</summary><p>You may change the color scales by clicking on "Advanced Visualization Options" and selecting the color scales you want to change. </p>
+</details>
+<details class="note"><summary>Changing Quantization Map</summary><p>You may change the quantization level by clicking on "Advanced Visualization Options". </p>
+</details>
+<details class="note"><summary>Changing MS2 Marker Visualization</summary><p>You may change the ms2 marker visualization by clicking on "Advanced Visualization Options". </p>
+</details>
 <h2 id="tic-plots">TIC Plots<a class="headerlink" href="#tic-plots" title="Permanent link">¶</a></h2>
 <p>For every LCMS File that is selected, the LCMS Viewer shows the total ion current for the entire LCMS run. Here we have the option of choosing the sum (TIC) or base peak intensity (BPI). </p>
-<p><img alt="img" src="../img/LCMS_dashbaord/TIC.png"/></p>
+<p><img alt="img" src="../img/LCMS_dashboard/TIC.png"/></p>
 <p>!!! note 'Multiple TIC for multiple files'
     This is possible by turning on the multiple TIC option. </p>
 <div class="admonition note">
@@ -1005,26 +1040,27 @@
 </div>
 <h2 id="xiceic-plots">XIC/EIC Plots<a class="headerlink" href="#xiceic-plots" title="Permanent link">¶</a></h2>
 <p>Obtain single or multiple XIC/EIC plots for one or more files. Masses and mass windows can be specified in the following field:</p>
-<p><img alt="img" src="../img/LCMS_dashbaord/XIC_Selction.png"/></p>
+<p><img alt="img" src="../img/LCMS_dashboard/XIC_Selction.png"/></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Default integration type is AUC but options MS1 Sum or MAXPEAKHEIGHT exist under XIC Integration Type dropdown menu</p>
 </div>
 <p>After you specified m/z or multiple m/z separated by ";" under XIC Options, XIC(s) will be plotted. MS/MS events will be displayed in the XIC (if only one file is selected) and can be displayed below the XIC plot. </p>
-<p><img alt="img" src="../img/LCMS_dashbaord/XIC_MSMS.png"/></p>
+<p><img alt="img" src="../img/LCMS_dashboard/XIC_MSMS.png"/></p>
+<p>Additionally to these XIC plots, we draw XIC heatmap plots. This helps when there are many files for a given XIC value. </p>
 <h3 id="teaching-mass-spectrometry-dataanalysis">Teaching Mass Spectrometry Data/Analysis<a class="headerlink" href="#teaching-mass-spectrometry-dataanalysis" title="Permanent link">¶</a></h3>
 <p>We think this tool might be a good tool for teaching LC/MS visualization. The Leader/Follower options are a way for students to follow along to get started. Once the initial setup and instruction are done, they can stop syncing and build upon the visualization. We have tested this tool to scale up to a few dozen concurrent followers. If you do intend to use this for a class, please let us know so that we do not do maintenance during your class. </p>
 <h2 id="collaborative-visualization">Collaborative Visualization<a class="headerlink" href="#collaborative-visualization" title="Permanent link">¶</a></h2>
 <p>You can share visualizations as URLs and interactively Collaborate. There are several ways to collaboratively view data:</p>
 <ol>
 <li>Visualize data and send others the visualization link</li>
-<li>Creating a session where you may lead and others may follow (mirror) your activity</li>
+<li>Creating a follower/leader session where you may lead and others may follow (mirror) your activity</li>
+<li>Creating a fully interative sychronized session (think Google Docs for Mass Spec analysis)</li>
 </ol>
-<h3 id="sychronized-leaderfollow-visualization">Sychronized Leader/Follow Visualization<a class="headerlink" href="#sychronized-leaderfollow-visualization" title="Permanent link">¶</a></h3>
+<h3 id="sychronized-leaderfollow-visualization-session">Sychronized Leader/Follow Visualization Session<a class="headerlink" href="#sychronized-leaderfollow-visualization-session" title="Permanent link">¶</a></h3>
 <p>To create a visualization as a leader, you will need to do the following</p>
 <ol>
 <li>Click on Sychronization Options</li>
-<li>Create a session id, this can be anything, random numbers or your name/class</li>
 <li>Select Under Teaching Sychronization (Beta), select LEADER</li>
 <li>Click Get Token (this protects your session so others cannot hijack being leader)</li>
 <li>Copy the link under "Follower URL" and send to others to follow your work (Or have followers scan the QR Code)</li>
@@ -1034,12 +1070,27 @@
 <li>Get a follower URL from your collaborator who will function as the leader (Or scan the QR Code)</li>
 <li>Watch for updates from your leader</li>
 </ol>
-<p>The synchronization will start automatically if you are a follower with the appropriate link. </p>
+<p>The synchronization will start automatically if you are a follower with the appropriate link.</p>
 <p>You may also stop syncing as a follower by clicking the "Sync Terminate" so that you do not receive any more updates. Then you may build upon the visualiation that has been done by the leader. </p>
-<p><img alt="img" src="../img/LCMS_dashbaord/Sync.png"/></p>
+<p><img alt="img" src="../img/LCMS_dashboard/Sync.png"/></p>
+<h3 id="fully-sychronized-visualization-session">Fully Sychronized Visualization Session<a class="headerlink" href="#fully-sychronized-visualization-session" title="Permanent link">¶</a></h3>
+<p>To create a fully sychronous visualization you can do it in the following ways</p>
+<ol>
+<li>Click on Sychronization Options</li>
+<li>Select Under Teaching Sychronization (Beta), select COLLAB and click "Set Sychronization"</li>
+<li>Copy the Collab URL and send it to your collaborators</li>
+</ol>
+<p>Alternatively, if you click on this <a href="https://gnps-lcms.ucsd.edu/?synchronization_type=COLLAB">link</a>, which will
+automatically initiate a new sychronization session. You can follow the following steps:</p>
+<ol>
+<li>Click on Sychronization Options</li>
+<li>Copy the Collab URL and send it to your collaborators</li>
+</ol>
 <h2 id="sharing-visualizations">Sharing Visualizations<a class="headerlink" href="#sharing-visualizations" title="Permanent link">¶</a></h2>
-<p>Once you are happy with the XIC or MS/MS plots you can export your XIC and spectra as vector graphics (.svg) and view and export values under XIC Integration<br/>
-To share the interactive LCMS-Dashboard view, simply click "Link to these plots" botton on the left and copy the new url. This link saves all the settings in your visualization. If you open it up, it will keep all the data and settings exactly the same. </p>
+<p><strong>Individual Images</strong></p>
+<p>Once you are happy with the XIC or MS/MS plots you can export your XIC and spectra as vector graphics (.svg) and view and export values under XIC Integration. </p>
+<p><strong>Full Visualization</strong></p>
+<p>To share the interactive LCMS-Dashboard view, simply click "Link to these plots" botton on the left and copy the new url. This link saves all the settings in your visualization. If you open it up, it will keep all the data and settings exactly the same. </p>
 <h2 id="saving-visualizations">Saving Visualizations<a class="headerlink" href="#saving-visualizations" title="Permanent link">¶</a></h2>
 <p>You may save the settings in several ways:</p>
 <ol>
@@ -1056,10 +1107,10 @@ To share the interactive LCMS-Dashboard view, simply click "Link to these plots"
 </ol>
 <h2 id="box-plots">Box Plots<a class="headerlink" href="#box-plots" title="Permanent link">¶</a></h2>
 <p>Integratuion results of XIC(s) for all samples specified in the file selection section are automatically plotted as box-plots between the two default groups (USI1 and USI2)</p>
-<p><img alt="img" src="../img/LCMS_dashbaord/BoxPlots.png"/></p>
+<p><img alt="img" src="../img/LCMS_dashboard/BoxPlots.png"/></p>
 <h2 id="integrated-feature-finding">Integrated Feature Finding<a class="headerlink" href="#integrated-feature-finding" title="Permanent link">¶</a></h2>
 <p>The GNPS LCMS-Dashbaord, also offers live feature finding options for the first sample selected. To enable the feature finding option, simply select an feature finding tool in the "Feature Finding (Beta)" field. Once selcted a box should expand in which different parameters, such as MS tolerance, noise level and RT tolerance can be specified. </p>
-<p><img alt="img" src="../img/LCMS_dashbaord/Feature_Finding.png"/></p>
+<p><img alt="img" src="../img/LCMS_dashboard/Feature_Finding.png"/></p>
 <p>Once parameters are selcted hit the run/update feature finding botton. Once processed, features will be displayed in teh heatmap as green boxes.
 If you are happy with teh setting, there is a direct link for a GNPS workflow to run feature finding with the same settings for full datasets which is directly integrated into the Feature-based Molecular Networking Workflow.</p>
 <h2 id="integrated-data-overlays">Integrated Data Overlays<a class="headerlink" href="#integrated-data-overlays" title="Permanent link">¶</a></h2>
@@ -1071,13 +1122,19 @@ If you are happy with teh setting, there is a direct link for a GNPS workflow to
 <li>Optional - Column for the size</li>
 <li>Optional - Column for the color</li>
 </ol>
+<h3 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">¶</a></h3>
+<p>Soon we'll have a preprint and hopefully a more appropriate publication citation!</p>
+<div class="admonition cite">
+<p class="admonition-title">Recommended Citation</p>
+<p><a href="https://www.nature.com/articles/nbt.3597">Mingxun Wang, Jeremy J. Carver, Vanessa V. Phelan, Laura M. Sanchez, Neha Garg, Yao Peng, Don Duy Nguyen et al. "Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking." Nature biotechnology 34, no. 8 (2016): 828. PMID: 27504778</a></p>
+</div>
 <h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">¶</a></h2>
-<p><span class="git-page-authors git-authors"><a href="mailto:mwang87@gmail.com">Ming Wang</a> (62.98%), <a href="mailto:dpetras@ucsd.edu">Daniel Petras</a> (36.46%), <a href="mailto:46980194+mpanitch@users.noreply.github.com">mpanitch</a> (0.55%)</span></p>
+<p><span class="git-page-authors git-authors"><a href="mailto:mwang87@gmail.com">Ming Wang</a> (75.68%), <a href="mailto:dpetras@ucsd.edu">Daniel Petras</a> (23.87%), <a href="mailto:46980194+mpanitch@users.noreply.github.com">mpanitch</a> (0.45%)</span></p>
 <hr/>
 <div class="md-source-date">
 <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 9, 2021 22:47:38</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 2, 2021 16:23:17</span>
 </small>
 </div>
 </article>
