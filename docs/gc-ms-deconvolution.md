@@ -35,14 +35,6 @@ The GNPS home page includes two sections to launch GNPS GC-MS data analysis job,
 - An insufficient volume of data causes unstable deconvolution resulting in spurious low-quality spectra. It is recommended for datasets smaller than ~10 files to use alternative deconvolution solutions such as MZMine2/ADAP, MS-Dial or XCMS. Increasing the number of files, for example, could be done by co-analyzing multiple datasets obtained with the same experimental protocol. 
 - MSHub generates the parameter that is termed “balance score”. The balance score quantifies reproducibility of the deconvoluted fragmentation patterns across the data (when it is high, the deconvoluted spectrum is consistent across different samples). The balance score also gives insight into how well the spectral feature is explained by the available data - a complete, fully characterized fragmentation pattern of a real compound would be the same in different measurements, while noisy spectra with missing or chimeric peaks would change randomly across files, resulting in a low balance score. The balance score is independent of the number of files in the dataset, and even when a compound is present in only a few samples in the dataset, as long as the spectral patterns, irrespective of compound abundances, are conserved across samples (e.g. not missing peaks or contaminated by spurious noise peaks), it would result in a high balance score.
 
-The **“Advanced MSHub Processing” section** displays some automatic setting parameters (related to peak symmetry and baseline adjustment) determined internally by MSHub. The user does not need to provide settings, although they can be set manually, should the user choose to do so. 
-
-The adjustable settings are:
--PYMS_INTERPEAK_ALIGN_MAXPEAKSHIFT: the allowable shift of chromatographic peaks that need to be aligned
--PYMS_DECONV_INTENSITY_THRESHOLD: the threshold to filter out noise peaks
--PYMS_DECONV_LEFT_ANG_THRESHOLD: the slope of the rising edge of the peak to be considered as valid
--PYMS_DECONV_RIGHT_ANG_THRESHOLD: the slope of the falling edge of the peak to be considered as valid
-
 (8) In the **“Advanced Clustering” section**, the cluster spectra have to be turned off (CLUSTER_SPECTRA = NO). The TIME_UNIT must be set as minutes or seconds, depending on the chromatography time units of your data (typically the default time units are seconds in NetCDF files and minutes in .mzML files). 
 
 (9) Enter your email address.
