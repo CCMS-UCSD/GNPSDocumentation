@@ -41,7 +41,10 @@ The GNPS home page includes two sections to launch GNPS GC-MS data analysis job,
 
 (10) Finish by clicking “Submit”.
 
-![img](img/GC-MS_documentation/Fig_3.png)
+![img](img/GC-MS_documentation/Fig_3a.png)
+
+![img](img/GC-MS_documentation/Fig_3b.png)
+
 
 ### Inspect the Results
 
