@@ -1,3 +1,5 @@
+![logo](img/logo/dashboard_logo_final_transparent.png)
+
 # GNPS Dashboard
 
 The GNPS Dashboard Interface is designed to enable easy collaborative visualization of mass spectrometry data files directly in the browser.
