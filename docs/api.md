@@ -256,14 +256,8 @@ us to push to the Wishart servers to classify.
     ClassyFire is tool from the Wishart Lab - check it out [here](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0174-y). Here is the recommended citation: 
     Feunang, Yannick Djoumbou, Roman Eisner, Craig Knox, Leonid Chepelev, Janna Hastings, Gareth Owen, Eoin Fahy et al. "ClassyFire: automated chemical classification with a comprehensive, computable taxonomy." Journal of cheminformatics 8, no. 1 (2016): 61.
 
-### Structure NP Classifier
+### Structure Natural Product Classifier (NP Classifier)
 
-```https://npclassifier.ucsd.edu/classify?smiles=<smiles string>```
-
-[Example](https://npclassifier.ucsd.edu/classify?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
-
-!!! note "NPClassifier" NPClassifier is A Deep Neural Network-Based Structural Classification Tool for Natural Products - check it out [here](https://npclassifier.ucsd.edu/). For citation: Kim, Hyunwoo; Wang, Mingxun; Leber, Christopher; Nothias, Louis-Felix; Reher, Raphael; Kang, Kyo Bin; et al. (2020): NPClassifier: A Deep Neural Network-Based Structural Classification Tool for Natural Products. ChemRxiv. Preprint. [https://doi.org/10.26434/chemrxiv.12885494.v1](https://doi.org/10.26434/chemrxiv.12885494.v1).
-=======
 If you have Smiles
 
 ```
@@ -297,6 +291,9 @@ https://npclassifier.ucsd.edu/classify?smiles=<smiles string>
         ]
     }
     ```
+
+!!! note "NPClassifier" NPClassifier is A Deep Neural Network-Based Structural Classification Tool for Natural Products - check it out [here](https://npclassifier.ucsd.edu/). For citation: Kim, Hyunwoo; Wang, Mingxun; Leber, Christopher; Nothias, Louis-Felix; Reher, Raphael; Kang, Kyo Bin; et al. (2020): NPClassifier: A Deep Neural Network-Based Structural Classification Tool for Natural Products. ChemRxiv. Preprint. [https://doi.org/10.26434/chemrxiv.12885494.v1](https://doi.org/10.26434/chemrxiv.12885494.v1).
+
 
 ### Structure Image
 
