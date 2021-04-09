@@ -1,3 +1,5 @@
+![logo](img/logo/dashboard_logo_final_transparent.png)
+
 # GNPS Dashboard
 
 The GNPS Dashboard Interface is designed to enable easy collaborative visualization of mass spectrometry data files directly in the browser.
@@ -126,8 +128,8 @@ You can share visualizations as URLs and interactively Collaborate. There are se
 
 To create a visualization as a leader, you will need to do the following
 
-1. Click on Sychronization Options
-1. Select Under Teaching Sychronization (Beta), select LEADER
+1. Click on Sychronization Options ("Sync Options") to bring up the sychronization modal pop up
+1. Select Under Dashboard Sychronization Type, select LEADER
 1. Click Get Token (this protects your session so others cannot hijack being leader)
 1. Copy the link under "Follower URL" and send to others to follow your work (Or have followers scan the QR Code)
 
@@ -146,8 +148,8 @@ You may also stop syncing as a follower by clicking the "Sync Terminate" so that
 
 To create a fully sychronous visualization you can do it in the following ways
 
-1. Click on Sychronization Options
-1. Select Under Teaching Sychronization (Beta), select COLLAB and click "Set Sychronization"
+1. Click on Sychronization Options ("Sync Options") to bring up the sychronization modal pop up
+1. Select Under Dashboard Sychronization Type, select COLLAB and click "Set Sychronization"
 1. Copy the Collab URL and send it to your collaborators
 
 Alternatively, if you click on this [link](https://gnps-lcms.ucsd.edu/?synchronization_type=COLLAB), which will

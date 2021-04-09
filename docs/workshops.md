@@ -2,6 +2,7 @@
 
 | Venue        | Description          | Dates |  Speakers/Instructors |Material |
 | ------------- |-------------| -----| -----| -----|
+| Zoom! | GNPS Dashboard - Overview | 5/12/2021 9AM PST | Mingxun Wang and Daniel Petras | [Material](https://docs.google.com/document/d/16-ZA3ZPUdkSWdIBNDLzyTetXNX9Uy5iboya-DFON46g/edit?usp=sharing)| 
 
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
