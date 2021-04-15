@@ -45,7 +45,7 @@ Data must be specified as a universal spectrum identifier. This again can be sou
 
 1. Using [GNPS Dataset Explorer](https://gnps-explorer.ucsd.edu/) that enables selecting public datasets
 1. Direct links from GNPS analyses 
-1. User uploads via the Drag and Drop
+1. User uploads via the Drag and Drop (up to 120MB files)
 
 A filled in USI selection can be seen below. 
 
@@ -82,7 +82,7 @@ Finally, if you click on any cell in the heatmap, it will add that m/z value to 
     You may change the quantization level by clicking on "Advanced Visualization Options". 
 
 ??? note "Changing MS2 Marker Visualization"
-    You may change the ms2 marker visualization by clicking on "Advanced Visualization Options". 
+    You may change the ms2 marker visualization by clicking on "Advanced Visualization Options". You can also enable or disable markers completely with the toggle. 
 
 ## TIC Plots
 
@@ -110,6 +110,9 @@ After you specified m/z or multiple m/z separated by ";" under XIC Options, XIC(
 ![img](img/LCMS_dashboard/XIC_MSMS.png)
 
 Additionally to these XIC plots, we draw XIC heatmap plots. This helps when there are many files for a given XIC value. 
+
+!!! note "Retention Time Zooming"
+    You can set the retention time window (e.g. 5.5-7.2) or a single retention time value (e.g. 5.5 which implicitly means 5.0-6.0)
 
 ### Teaching Mass Spectrometry Data/Analysis
 
