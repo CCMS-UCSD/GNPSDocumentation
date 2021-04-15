@@ -71,6 +71,7 @@ nav:
         - Browsing Reference Spectral Libraries: browselibraries.md
         - Add/Curate Reference Spectrum in the Library: spectrumcuration.md
         - Reference Spectral Library Batch Addition: batchupload.md
+        - Reference Spectral Library mzVault Addition: batchuploadmzvault.md
         - Downloading Reference Spectral Libraries: downloadlibraries.md
         - Open-source Method for Reference Library Generation:
             - MSMS-Chooser Workflow: msmschooser.md
