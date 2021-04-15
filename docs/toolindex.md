@@ -50,7 +50,7 @@ These are web tools that is run by the GNPS team and provides complementary func
 | [Metabolomics Spectrum Resolver](https://metabolomics-usi.ucsd.edu) | [Documentation](usi.md) | [GitHub](https://github.com/mwang87/MetabolomicsSpectrumResolver) | [Citation](https://www.biorxiv.org/content/10.1101/2020.05.09.086066v1) |
 | [GNPS Networking URL Formatter](https://gnps-urlworkflow.herokuapp.com/) | --- | --- |
 | [GNPS Library Dash Explorer](http://dorresteinappshub.ucsd.edu:6546/) | --- | --- |
-| [GNPS Mass Spec Calculator (Beta)](https://gnps-masscalculator.herokuapp.com/) | --- | --- |
+| [GNPS Mass Spec Calculator](http://gnpsserver1.ucsd.edu:5066/dashinterface/) | --- | --- |
 | [GNPS Usage Stats Dashboard](https://gnps-usage-stats.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_StatsSummaryDashboard) | --- |
 | [GNPS Classical Networking Upset Plot Dashboard](https://gnps-classical-comparison.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_ClassicalNetworkGroupsComparisonDashboard) | --- |
 | [GNPS FBMN Upset Plot Dashboard](https://gnps-fbmn-upset.herokuapp.com/) | --- | --- |
