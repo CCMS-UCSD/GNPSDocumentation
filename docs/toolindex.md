@@ -59,8 +59,7 @@ These are web tools that is run by the GNPS team and provides complementary func
 | [GNPS Plotter Dashboard (Beta)](https://gnps-plotter.ucsd.edu/) | --- | --- |
 | [GNPS Dataset File Explorer (Beta)](https://gnps-explorer.ucsd.edu/) | --- | --- |
 | [GNPS Public Libraries Download List](https://gnps-external.ucsd.edu/gnpslibrary) | --- | --- | 
-| [GNPS Dataset File Caching Service (Beta)](http://dorresteintesthub.ucsd.edu:5235/datasette/database/filename?_sort=filepath) | --- | --- | 
-| [GNPS Public Data Index](https://gnpspublic.herokuapp.com/gnps_public_openformats/massive_public_openformats) | --- | --- | 
+| [GNPS Public Data Index](https://gnps-datasetcache.ucsd.edu/datasette/database/filename) | --- | --- | 
 | [GNPS Spectral Similarity Hub (Beta)](http://dorresteintesthub.ucsd.edu:5453/) | --- | --- | 
 
 ## GNPS Deprecated Web Tools
