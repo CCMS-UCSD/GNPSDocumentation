@@ -56,6 +56,8 @@ nav:
         - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
         - Molecular Networking in Cytoscape: cytoscape.md
         - DEREPLICATOR: dereplicator.md
+        - DEREPLICATOR+: dereplicator+.md
+        - MolDiscovery: molDiscovery.md
         - Network Annotation Propagation (NAP): nap.md
         - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
         - MolNetEnhancer: molnetenhancer.md
