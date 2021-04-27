@@ -49,8 +49,7 @@ These are web tools that is run by the GNPS team and provides complementary func
 | [GNPS MASST](https://masst.ucsd.edu) | [Documentation](masst.md) | TODO | [Citation](https://www.nature.com/articles/s41587-019-0375-9)|
 | [Metabolomics Spectrum Resolver](https://metabolomics-usi.ucsd.edu) | [Documentation](usi.md) | [GitHub](https://github.com/mwang87/MetabolomicsSpectrumResolver) | [Citation](https://www.biorxiv.org/content/10.1101/2020.05.09.086066v1) |
 | [GNPS Networking URL Formatter](https://gnps-urlworkflow.herokuapp.com/) | --- | --- |
-| [GNPS Library Dash Explorer](http://dorresteinappshub.ucsd.edu:6546/) | --- | --- |
-| [GNPS Mass Spec Calculator (Beta)](https://gnps-masscalculator.herokuapp.com/) | --- | --- |
+| [GNPS Mass Spec Calculator](https://gnps-structure.ucsd.edu/dashinterface/) | --- | --- |
 | [GNPS Usage Stats Dashboard](https://gnps-usage-stats.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_StatsSummaryDashboard) | --- |
 | [GNPS Classical Networking Upset Plot Dashboard](https://gnps-classical-comparison.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_ClassicalNetworkGroupsComparisonDashboard) | --- |
 | [GNPS FBMN Upset Plot Dashboard](https://gnps-fbmn-upset.herokuapp.com/) | --- | --- |
@@ -60,14 +59,14 @@ These are web tools that is run by the GNPS team and provides complementary func
 | [GNPS Plotter Dashboard (Beta)](https://gnps-plotter.ucsd.edu/) | --- | --- |
 | [GNPS Dataset File Explorer (Beta)](https://gnps-explorer.ucsd.edu/) | --- | --- |
 | [GNPS Public Libraries Download List](https://gnps-external.ucsd.edu/gnpslibrary) | --- | --- | 
-| [GNPS Dataset File Caching Service (Beta)](http://dorresteintesthub.ucsd.edu:5235/datasette/database/filename?_sort=filepath) | --- | --- | 
-| [GNPS Public Data Index](https://gnpspublic.herokuapp.com/gnps_public_openformats/massive_public_openformats) | --- | --- | 
-| [GNPS Spectral Similarity Hub (Beta)](http://dorresteintesthub.ucsd.edu:5453/) | --- | --- | 
+| [GNPS Public Data Index](https://gnps-datasetcache.ucsd.edu/datasette/database/filename) | --- | --- | 
+| [GNPS Spectral Similarity Hub](https://gnps-similarity.ucsd.edu/) | --- | --- | 
 
 ## GNPS Deprecated Web Tools
 
 | Tool  | Documentation | Source Code | Citation |
 |---|---|---|---|
+| [GNPS Library Dash Explorer](http://dorresteinappshub.ucsd.edu:6546/) | --- | --- |
 | [GNPS Task Esquisse Server (Beta)](http://dorresteintesthub.ucsd.edu:8347/) | --- | --- |
 | [GNPS Result View Esquisse Server (Super Beta)](http://dorresteintesthub.ucsd.edu:8359/) | --- | --- |
 | [GNPS Text Esquisse Server (Super Beta)](https://gnps.shinyapps.io/text_entry/) | --- | --- |
