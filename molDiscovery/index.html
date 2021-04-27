@@ -5,12 +5,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://ccms-ucsd.github.io/GNPSDocumentation/" rel="canonical"/>
-<link href="assets/images/favicon.png" rel="icon"/>
+<link href="https://ccms-ucsd.github.io/GNPSDocumentation/molDiscovery/" rel="canonical"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.1.2, mkdocs-material-7.1.3" name="generator"/>
-<title>GNPS Documentation</title>
-<link href="assets/stylesheets/main.e35208c4.min.css" rel="stylesheet"/>
-<link href="assets/stylesheets/palette.ef6f36e2.min.css" rel="stylesheet"/>
+<title>molDiscovery - GNPS Documentation</title>
+<link href="../assets/stylesheets/main.e35208c4.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.ef6f36e2.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
@@ -18,12 +18,12 @@
 <script async="" src="https://www.google-analytics.com/analytics.js"></script>
 </head>
 <body data-md-color-accent="none" data-md-color-primary="none" data-md-color-scheme="" dir="ltr">
-<script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#welcome-to-gnps-documentation">
+<a class="md-skip" href="#moldiscovery-a-probabilistic-model-for-in-silico-database-search-of-msms">
           Skip to content
         </a>
 </div>
@@ -31,7 +31,7 @@
 </div>
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="GNPS Documentation" class="md-header__button md-logo" data-md-component="logo" href="." title="GNPS Documentation">
+<a aria-label="GNPS Documentation" class="md-header__button md-logo" data-md-component="logo" href=".." title="GNPS Documentation">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
@@ -47,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              GNPS Introduction
+              molDiscovery
             
           </span>
 </div>
@@ -101,7 +101,7 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="GNPS Documentation" class="md-nav__button md-logo" data-md-component="logo" href="." title="GNPS Documentation">
+<a aria-label="GNPS Documentation" class="md-nav__button md-logo" data-md-component="logo" href=".." title="GNPS Documentation">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
 </a>
     GNPS Documentation
@@ -117,81 +117,38 @@
 </a>
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          GNPS Introduction
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href=".">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
         GNPS Introduction
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#analyze-and-annotate">
-    Analyze and Annotate
-  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#share-and-explore">
-    Share and Explore
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#contribute-to-gnps">
-    Contribute to GNPS
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#citation">
-    Citation
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#gnps-and-massive-uptime">
-    GNPS and MassIVE uptime
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#gnps-documentation-site-authors">
-    GNPS Documentation Site Authors
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="isgnpsright/">
+<a class="md-nav__link" href="../isgnpsright/">
         Is my data compatible with GNPS?
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="faq/">
+<a class="md-nav__link" href="../faq/">
         Frequently Asked Questions
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="superquickstart/">
+<a class="md-nav__link" href="../superquickstart/">
         Superquick Start Guide
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="quickstart/">
+<a class="md-nav__link" href="../quickstart/">
         Quick Start Guide
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="gnpsanalysisoverview/">
+<a class="md-nav__link" href="../gnpsanalysisoverview/">
         GNPS Analysis Tools Overview
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="lexicon/">
+<a class="md-nav__link" href="../lexicon/">
         GNPS Lexicon
       </a>
 </li>
@@ -208,7 +165,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="massspecbackground/networkingtheory/">
+<a class="md-nav__link" href="../massspecbackground/networkingtheory/">
         Molecular Networking
       </a>
 </li>
@@ -228,17 +185,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="fileconversion/">
+<a class="md-nav__link" href="../fileconversion/">
         Mass Spectrometry File Conversion
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="fileupload/">
+<a class="md-nav__link" href="../fileupload/">
         GNPS File Upload
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="metadata/">
+<a class="md-nav__link" href="../metadata/">
         Metadata
       </a>
 </li>
@@ -258,7 +215,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="networking/">
+<a class="md-nav__link" href="../networking/">
         Molecular Networking
       </a>
 </li>
@@ -275,17 +232,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="gcanalysis/">
+<a class="md-nav__link" href="../gcanalysis/">
         GC-MS on GNPS
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="gc-ms-deconvolution/">
+<a class="md-nav__link" href="../gc-ms-deconvolution/">
         GC-MS Deconvolution
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="gc-ms-library-molecular-network/">
+<a class="md-nav__link" href="../gc-ms-library-molecular-network/">
         GC-MS Library Search and Molecular Networking
       </a>
 </li>
@@ -293,22 +250,22 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="networkingviews/">
+<a class="md-nav__link" href="../networkingviews/">
         Molecular Networking Views
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="librarysearch/">
+<a class="md-nav__link" href="../librarysearch/">
         Spectral Library Search
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="masst/">
+<a class="md-nav__link" href="../masst/">
         MASST Search (Mass Search Tool)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="resultviews/">
+<a class="md-nav__link" href="../resultviews/">
         Result Views Navigation
       </a>
 </li>
@@ -328,17 +285,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="lcms-dashboard/">
+<a class="md-nav__link" href="../lcms-dashboard/">
         GNPS Dashboard
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="gnpsdatasetexplorer/">
+<a class="md-nav__link" href="../gnpsdatasetexplorer/">
         GNPS Dataset Explorer
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="usi/">
+<a class="md-nav__link" href="../usi/">
         Metabolomics Spectrum Resolver
       </a>
 </li>
@@ -358,7 +315,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="networkingfiles/">
+<a class="md-nav__link" href="../networkingfiles/">
         Molecular Networking Files
       </a>
 </li>
@@ -375,47 +332,47 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="featurebasedmolecularnetworking/">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking/">
         FBMN Workflow
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="featurebasedmolecularnetworking-with-mzmine2/">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-mzmine2/">
         FBMN with MZmine
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="featurebasedmolecularnetworking-with-ms-dial/">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-ms-dial/">
         FBMN with MS-DIAL
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="featurebasedmolecularnetworking-with-xcms3/">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-xcms3/">
         FBMN with XCMS
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="featurebasedmolecularnetworking-with-openms/">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-openms/">
         FBMN with OpenMS
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="featurebasedmolecularnetworking-with-metaboscape/">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-metaboscape/">
         FBMN with MetaboScape
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="featurebasedmolecularnetworking-with-progenesisQI/">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-progenesisQI/">
         FBMN with Progenesis QI
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="featurebasedmolecularnetworking-with-mztab-m/">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-mztab-m/">
         FBMN with mzTab-M
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="featurebasedmolecularnetworking-cytoscape/">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-cytoscape/">
         FBMN export to Cytoscape
       </a>
 </li>
@@ -435,22 +392,22 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="fbmn-iin/">
+<a class="md-nav__link" href="../fbmn-iin/">
         IIN Workflow
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="fbmn-iin-mzmine/">
+<a class="md-nav__link" href="../fbmn-iin-mzmine/">
         IIN with MZmine2
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="fbmn-iin-xcms/">
+<a class="md-nav__link" href="../fbmn-iin-xcms/">
         IIN with XCMS
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="fbmn-iin-msdial/">
+<a class="md-nav__link" href="../fbmn-iin-msdial/">
         IIN with MS-DIAL
       </a>
 </li>
@@ -458,67 +415,67 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="ms2lda/">
+<a class="md-nav__link" href="../ms2lda/">
         MS2LDA and MotifDB Substructure Discovery
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="cytoscape/">
+<a class="md-nav__link" href="../cytoscape/">
         Molecular Networking in Cytoscape
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="dereplicator/">
+<a class="md-nav__link" href="../dereplicator/">
         DEREPLICATOR
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="nap/">
+<a class="md-nav__link" href="../nap/">
         Network Annotation Propagation (NAP)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="ms2lda/">
+<a class="md-nav__link" href="../ms2lda/">
         MS2LDA and MotifDB Substructure Discovery
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="molnetenhancer/">
+<a class="md-nav__link" href="../molnetenhancer/">
         MolNetEnhancer
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="metaminer/">
+<a class="md-nav__link" href="../metaminer/">
         MetaMiner
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="sirius/">
+<a class="md-nav__link" href="../sirius/">
         Sirius
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="ReDU/">
+<a class="md-nav__link" href="../ReDU/">
         Reanalysis of Data User Interface (ReDU)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="qemistree/">
+<a class="md-nav__link" href="../qemistree/">
         Qemistree
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="mmvec/">
+<a class="md-nav__link" href="../mmvec/">
         MMVEC
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="mergepolarity/">
+<a class="md-nav__link" href="../mergepolarity/">
         Merge Network Polarity
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="chemdir/">
+<a class="md-nav__link" href="../chemdir/">
         Chemical Directionality
       </a>
 </li>
@@ -538,27 +495,27 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="browselibraries/">
+<a class="md-nav__link" href="../browselibraries/">
         Browsing Reference Spectral Libraries
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="spectrumcuration/">
+<a class="md-nav__link" href="../spectrumcuration/">
         Add/Curate Reference Spectrum in the Library
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="batchupload/">
+<a class="md-nav__link" href="../batchupload/">
         Reference Spectral Library Batch Addition
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="batchuploadmzvault/">
+<a class="md-nav__link" href="../batchuploadmzvault/">
         Reference Spectral Library mzVault Addition
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="downloadlibraries/">
+<a class="md-nav__link" href="../downloadlibraries/">
         Downloading Reference Spectral Libraries
       </a>
 </li>
@@ -575,17 +532,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="msmschooser/">
+<a class="md-nav__link" href="../msmschooser/">
         MSMS-Chooser Workflow
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="msmschooserdataacquisitioncomputational/">
+<a class="md-nav__link" href="../msmschooserdataacquisitioncomputational/">
         Computational Data Acquisition Prep
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="msmschooserdataacquisitionQE/">
+<a class="md-nav__link" href="../msmschooserdataacquisitionQE/">
         Data Acqusition - Thermo QExactive (v1.0)
       </a>
 </li>
@@ -593,7 +550,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="tag_info/">
+<a class="md-nav__link" href="../tag_info/">
         GNPS Tag Contribution and Analyses
       </a>
 </li>
@@ -613,17 +570,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="datasets/">
+<a class="md-nav__link" href="../datasets/">
         Dataset Creation/Sharing
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="continuousid/">
+<a class="md-nav__link" href="../continuousid/">
         Continuous Identification
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="moleculeexplorer/">
+<a class="md-nav__link" href="../moleculeexplorer/">
         Molecule Explorer
       </a>
 </li>
@@ -643,7 +600,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="user/">
+<a class="md-nav__link" href="../user/">
         User Page
       </a>
 </li>
@@ -651,7 +608,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="troubleshooting/">
+<a class="md-nav__link" href="../troubleshooting/">
         Troubleshooting
       </a>
 </li>
@@ -668,27 +625,27 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="tutorials/bacterianetworking/">
+<a class="md-nav__link" href="../tutorials/bacterianetworking/">
         Molecular Networking - Analog Discovery in Microbial Extracts
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="tutorials/americangutmzmine/">
+<a class="md-nav__link" href="../tutorials/americangutmzmine/">
         Feature-Based Molecular Networking (FBMN) with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="tutorials/americangut-ms-dial/">
+<a class="md-nav__link" href="../tutorials/americangut-ms-dial/">
         FBMN with MS-DIAL - Microbiome Molecules in Fecal Samples in American Gut Project
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="tutorials/coffee-tutorial-metaboscape/">
+<a class="md-nav__link" href="../tutorials/coffee-tutorial-metaboscape/">
         FBMN with MetaboScape - Coffee Analysis
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="tutorials/featurebasedgnps/">
+<a class="md-nav__link" href="../tutorials/featurebasedgnps/">
         FBMN analysis at GNPS
       </a>
 </li>
@@ -696,42 +653,42 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="changelog/">
+<a class="md-nav__link" href="../changelog/">
         Change Log
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="gnps_community/">
+<a class="md-nav__link" href="../gnps_community/">
         Join the GNPS community
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="workshops/">
+<a class="md-nav__link" href="../workshops/">
         GNPS Workshops/Training
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="logos/">
+<a class="md-nav__link" href="../logos/">
         GNPS Logos
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="contact/">
+<a class="md-nav__link" href="../contact/">
         Contact/Office Hours
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="toolindex/">
+<a class="md-nav__link" href="../toolindex/">
         GNPS Tool Index
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="api/">
+<a class="md-nav__link" href="../api/">
         API
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="developers/">
+<a class="md-nav__link" href="../developers/">
         For Developers
       </a>
 </li>
@@ -750,33 +707,91 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#analyze-and-annotate">
-    Analyze and Annotate
+<a class="md-nav__link" href="#moldiscovery-a-probabilistic-model-for-in-silico-database-search-of-msms">
+    molDiscovery - a probabilistic model for in silico database search of MS/MS
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#share-and-explore">
-    Share and Explore
+<a class="md-nav__link" href="#introduction">
+    Introduction
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#contribute-to-gnps">
-    Contribute to GNPS
+<a class="md-nav__link" href="#manuscripts-and-citations">
+    Manuscripts and Citations
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#citation">
-    Citation
+<a class="md-nav__link" href="#development">
+    Development
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#gnps-and-massive-uptime">
-    GNPS and MassIVE uptime
+<a class="md-nav__link" href="#accessing-moldiscovery-workflow-on-gnps">
+    Accessing molDiscovery workflow on GNPS
+  </a>
+<nav aria-label="Accessing molDiscovery workflow on GNPS" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-1-go-to-gnps-and-login">
+    STEP 1: Go to GNPS and login
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#gnps-documentation-site-authors">
-    GNPS Documentation Site Authors
+<a class="md-nav__link" href="#step-2-access-moldiscovery">
+    STEP 2: Access molDiscovery
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-3-select-input-spectra">
+    STEP 3: Select input spectra
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-4-set-up-parameters">
+    STEP 4: Set up parameters
+  </a>
+<nav aria-label="STEP 4: Set up parameters" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#basic-options">
+    BASIC OPTIONS:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#advanced-options">
+    ADVANCED OPTIONS:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-5-submit-job">
+    STEP 5: Submit job
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-6-view-results">
+    STEP 6: View results
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feedback-and-bug-reports">
+    Feedback and Bug Reports
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#contribute-to-the-documentation">
+    Contribute to the Documentation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#page-contributions">
+    Page Contributions
   </a>
 </li>
 </ul>
@@ -786,123 +801,101 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/CCMS-UCSD/GNPSDocumentation/edit/master/docs/index.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/CCMS-UCSD/GNPSDocumentation/edit/master/docs/molDiscovery.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
-<p><img alt="logo" src="img/GNPS_logo_original.png"/></p>
-<h1 id="welcome-to-gnps-documentation">Welcome to GNPS Documentation<a class="headerlink" href="#welcome-to-gnps-documentation" title="Permanent link">¶</a></h1>
-<p>Global Natural Products Social Molecular Networking (GNPS, <a href="https://gnps.ucsd.edu/">https://gnps.ucsd.edu/</a>) is a web-based mass spectrometry ecosystem that aims to be an open-access knowledge base for community-wide organization and sharing of raw, processed or identified tandem mass (MS/MS) spectrometry data. GNPS aids in identification and discovery throughout the entire life cycle of data; from initial data acquisition/analysis to post publication.</p>
-<p>As there are many aspects to GNPS, it can be a bit overwhelming. Here is a quick description of main functionalities:</p>
-<h3 id="analyze-and-annotate">Analyze and Annotate<a class="headerlink" href="#analyze-and-annotate" title="Permanent link">¶</a></h3>
+<h1>molDiscovery</h1>
+<h2 id="moldiscovery-a-probabilistic-model-for-in-silico-database-search-of-msms">molDiscovery - a probabilistic model for in silico database search of MS/MS<a class="headerlink" href="#moldiscovery-a-probabilistic-model-for-in-silico-database-search-of-msms" title="Permanent link">¶</a></h2>
 <ul>
-<li>Perform <a href="gnpsanalysisoverview/"><strong>molecular networking</strong> and <strong>spectral library search</strong></a> of LC-MS/MS data utilizing computational tools (See <a href="networking/">Molecular Networking</a>, <a href="librarysearch/">Spectral Library Search</a>, etc).</li>
-<li><a href="spectrumcuration/"><strong>Annotate/curate identified MS/MS spectra</strong></a> in open-access GNPS reference spectral libraries.</li>
-<li>Annotate peptidic natural products in LC-MS/MS data with <a href="dereplicator/"><strong>DEREPLICATOR</strong>/VarQuest/DEREPLICATOR+</a> and <a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-theoretical.jsp">RiPPQuest</a>. <!--<a href="metaminer.md">MetaMiner</a> , <a href="cyclonovo.md">CycloNovo</a>--></li>
-<li>Propagate in silico annotations in your LC-MS/MS data with <a href="nap/"><strong>Network Annotation Propagation</strong> (NAP)</a>.</li>
-<li><strong>NEW!</strong> Perform advanced molecular networking and spectral library search with <a href="featurebasedmolecularnetworking/"><strong>Feature-Based Molecular Networking</strong></a>. See <a href="https://doi.org/10.1101/812404">https://doi.org/10.1101/812404</a>.</li>
-<li><strong>NEW!</strong> Analyze <a href="gcanalysis/"><strong>GC-MS data</strong></a> with GNPS (See <a href="gc-ms-deconvolution/">GC-MS deconvolution</a>, and <a href="gc-ms-library-molecular-network/">GC-MS library search/molecular networks</a>).</li>
-<li><strong>NEW!</strong> Annotate your LC-MS/MS data with <a href="molnetenhancer/"><strong>MolNetEnhancer</strong></a>. See <a href="https://doi.org/10.1101/654459">https://doi.org/10.1101/654459</a>.</li>
-<li><strong>NEW!</strong> Search spectral Mass2Motifs in your LC-MS/MS data <a href="ms2lda/">with <strong>MS2LDA</strong></a>.</li>
-<li><strong>NEW!</strong> Give LC-MS/MS spectra biological/environmental context by searching against all public LC-MS/MS datasets (<a href="masst/"><strong>MASST Search</strong></a>). See <a href="https://doi.org/10.1101/591016">https://doi.org/10.1101/591016</a>.</li>
-<li><strong>NEW!</strong> Find and co- or re-analyze public LC-MS/MS data via systematic sample information at <a href="ReDU/"><strong>ReDU</strong></a>. See <a href="https://doi.org/10.1101/750471">https://doi.org/10.1101/750471</a>.</li>
+<li><a href="#moldiscovery---a-probabilistic-model-for-in-silico-database-search-of-msms">molDiscovery - a probabilistic model for in silico database search of MS/MS</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#manuscripts-and-citations">Manuscripts and Citations</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#accessing-moldiscovery-workflow-on-gnps">Accessing molDiscovery workflow on GNPS</a></li>
+<li><a href="#step-1-go-to-gnps-and-login">STEP 1: Go to GNPS and login</a></li>
+<li><a href="#step-2-access-moldiscovery">STEP 2: Access molDiscovery</a></li>
+<li><a href="#step-3-select-input-spectra">STEP 3: Select input spectra</a></li>
+<li><a href="#step-4-set-up-parameters">STEP 4: Set up parameters</a><ul>
+<li><a href="#basic-options">BASIC OPTIONS:</a></li>
+<li><a href="#advanced-options">ADVANCED OPTIONS:</a></li>
 </ul>
-<h3 id="share-and-explore">Share and Explore<a class="headerlink" href="#share-and-explore" title="Permanent link">¶</a></h3>
-<ul>
-<li>Publish entire study datasets with the Mass Spectrometry Interactive Virtual Environment (MassIVE) data repository (<a href="datasets/">Dataset Submission</a>).</li>
-<li><a href="datasets#browsing-datasets">Browse</a> and <a href="datasets#reanalyze-datasets">Reanalyze</a> over 1500 public datasets at GNPS</li>
-<li>Automatic reanalysis of public datasets with automated reports of new identifications (<a href="continuousid/">Continuous Identification</a>).</li>
-<li>Explore identifications of public datasets across entire repository (<a href="moleculeexplorer/">Molecule Explorer</a>).</li>
+</li>
+<li><a href="#step-5-submit-job">STEP 5: Submit job</a></li>
+<li><a href="#step-6-view-results">STEP 6: View results</a></li>
+<li><a href="#feedback-and-bug-reports">Feedback and Bug Reports</a></li>
+<li><a href="#contribute-to-the-documentation">Contribute to the Documentation</a></li>
+<li><a href="#page-contributions">Page Contributions</a></li>
 </ul>
-<p>For more detailed information, read on in the documentation, checkout the <a href="https://www.nature.com/articles/nbt.3597">GNPS publication</a>, and view some tutorial <a href="https://www.youtube.com/channel/UCufTdDIUPjfoN604Igv_29g/videos">videos</a>.</p>
-<!-- ## What is GNPS good for?
-
-There are so many aspects to GNPS as it serves a diverse community. Here we wanted to highlight a few ways we think GNPS has been useful. We also highlight some of the creative ways the community has used GNPS's tools.
-
-### Compound Identification (Dereplication)
-
-Identify MS/MS spectra in your data to state of the art community MS/MS spectral libraries.
-
-### Novel Analog Identification
-
-We use GNPS's molecular networking to identify a novel analog of Stenothricin.
-
-### Relative Quantification Across Samples
-
-### Global Chemistry Visualization
-
-When did we visualize stuff?
-
-### Determine Biological/Chemical Context of Unknown Molecules
-
-
-
-### Dataset Deposition for Publication
-
-Today, the scientific community is clamouring for reproducibility of results that has resulted in cries for data transparency. Publications that lack public data are viewed with skepticism and rightfully so. GNPS is a place to deposit your data to in order to facilitate the review process as well as provide the community a resource to advance reproducible and rigorous science.
-
-### Reference MS/MS Spectrum Publication for Re-identification
-
-Put your MS/MS spectrum of a known compound in GNPS spectral libraries, so you never have to manually re-identify a compound in your own samples ever again. -->
-<h3 id="contribute-to-gnps">Contribute to GNPS<a class="headerlink" href="#contribute-to-gnps" title="Permanent link">¶</a></h3>
-<p>The GNPS community is always welcoming suggestions and contributions. Be part of the community and contribute ! See <a href="gnps_community/">that page for more informations</a>.</p>
-<h3 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">¶</a></h3>
-<div class="admonition cite">
-<p class="admonition-title">Recommended Citation</p>
-<p><a href="https://www.nature.com/articles/nbt.3597">Mingxun Wang, Jeremy J. Carver, Vanessa V. Phelan, Laura M. Sanchez, Neha Garg, Yao Peng, Don Duy Nguyen et al. "Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking." Nature biotechnology 34, no. 8 (2016): 828. PMID: 27504778</a></p>
-</div>
-<h3 id="gnps-and-massive-uptime">GNPS and MassIVE uptime<a class="headerlink" href="#gnps-and-massive-uptime" title="Permanent link">¶</a></h3>
-<p>This is a brief overview of whether our web services are up: <a href="https://stats.uptimerobot.com/Am4PLUWn3">here</a>. </p>
-<p>And a more detailed functional test <a href="https://github.com/CCMS-UCSD/GNPS_Workflows#gnps-core-webserver-status">status page</a>.</p>
-<h3 id="gnps-documentation-site-authors">GNPS Documentation Site Authors<a class="headerlink" href="#gnps-documentation-site-authors" title="Permanent link">¶</a></h3>
-<p>We would like to thank the following contributors to the documentation. </p>
-<p>However, we want to acknowledge that we have moved documentation in 2018 to GitHub from our previous wiki and those contributions are not reflected in these numbers
-and were broadly subsumed into Ming Wang's contributions. These first additions to the documentation were invaluable and a few of those pioneers were 
-Vanessa Phelan, Laura Sanchez, Laura Pace, Alexey Gurevich, and Don D. Nguyen. </p>
-<p>
-<span class="git-authors">
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
+<p><strong>molDiscovery</strong> is a probabilistic model for in silico database search of small molecule MS/MS. It improves <a href="https://ccms-ucsd.github.io/GNPSDocumentation/dereplicator+/"><strong>DEREPLICATOR+</strong></a> by </p>
+<ol>
+<li>using an efficient fragmentation algorithm</li>
+<li>using log likelihood ratio as metabolite spectrum matching score</li>
+<li>an efficient implementation for indexing</li>
+</ol>
+<p>As a result, <strong>molDiscovery</strong> improves both efficiency and accuracy of the database search.</p>
+<p><strong>molDiscovery</strong> model and software are developed in collaboration of <a href="http://cab.spbu.ru">Saint Petersburg State University</a> (Russia)
+and <a href="http://mohimanilab.cbd.cmu.edu">Carnegie Mellon University</a> (PA, USA).</p>
+<h2 id="manuscripts-and-citations">Manuscripts and Citations<a class="headerlink" href="#manuscripts-and-citations" title="Permanent link">¶</a></h2>
+<p>Liu Cao et al. "MolDiscovery: Learning Mass Spectrometry Fragmentation of Small Molecules." <a href="https://www.biorxiv.org/content/10.1101/2020.11.28.401943v1">bioRxiv</a>.</p>
+<h2 id="development">Development<a class="headerlink" href="#development" title="Permanent link">¶</a></h2>
+<p>The <a href="https://github.com/mohimanilab/molDiscovery">GitHub repository</a> provides latest source code and release. </p>
+<h2 id="accessing-moldiscovery-workflow-on-gnps">Accessing molDiscovery workflow on GNPS<a class="headerlink" href="#accessing-moldiscovery-workflow-on-gnps" title="Permanent link">¶</a></h2>
+<p>The <strong>molDiscovery</strong> are currently available on GNPS as a <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MOLDISCOVERY%22%7D">workflow</a>.</p>
+<p><img alt="img" src="../img/molDiscovery/Step0.png"/></p>
+<h3 id="step-1-go-to-gnps-and-login">STEP 1: Go to GNPS and login<a class="headerlink" href="#step-1-go-to-gnps-and-login" title="Permanent link">¶</a></h3>
+<p>Go to <a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp">http://gnps.ucsd.edu</a>, and create/login to your account.</p>
+<p><img alt="img" src="../img/molDiscovery/Step1.png"/></p>
+<h3 id="step-2-access-moldiscovery">STEP 2: Access molDiscovery<a class="headerlink" href="#step-2-access-moldiscovery" title="Permanent link">¶</a></h3>
+<p>Derectly go to the <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MOLDISCOVERY%22%7D">workflow page</a>.</p>
+<p><img alt="img" src="../img/molDiscovery/Step2.png"/></p>
+<h3 id="step-3-select-input-spectra">STEP 3: Select input spectra<a class="headerlink" href="#step-3-select-input-spectra" title="Permanent link">¶</a></h3>
+<p><strong>Select/Import a mass spectrometry file</strong>:
+The input format accepted are mzML/mzXML/MGF. Note that have the option to import an existing GNPS dataset (by clicking on "Share Files") or upload your own data (by clicking on "Upload Files"). See the corresponding GNPS documentation for FTP upload.</p>
+<p>After getting done with selecting files, click on Finish Selection.</p>
+<p><img alt="img" src="../img/molDiscovery/Step3.png"/></p>
+<p><img alt="img" src="../img/molDiscovery/Step3.1.png"/></p>
+<p><img alt="img" src="../img/molDiscovery/Step3.2.png"/></p>
+<h3 id="step-4-set-up-parameters">STEP 4: Set up parameters<a class="headerlink" href="#step-4-set-up-parameters" title="Permanent link">¶</a></h3>
+<p><strong>Set up the parameters for the molDiscovery job</strong>:
+Select a title for your job, and adjust parameters depending on your data and the mass spectrometer used.</p>
+<p><img alt="img" src="../img/molDiscovery/Step4.png"/></p>
+<h4 id="basic-options">BASIC OPTIONS:<a class="headerlink" href="#basic-options" title="Permanent link">¶</a></h4>
+<p>-- <strong>Precursor Ion Mass Tolerance</strong>:  This value specifies how much fragment ions can be shifted from their expected m/z values. Default value is ± 0.01 Da.</p>
+<p>-- <strong>Fragment ion Mass Tolerance</strong>: This value specifies how much fragment ions can be shifted from their expected m/z values. Default value is ± 0.01 Da.</p>
+<h4 id="advanced-options">ADVANCED OPTIONS:<a class="headerlink" href="#advanced-options" title="Permanent link">¶</a></h4>
+<p>-- <strong>Predifined database</strong>: the default small molecule structure database is AllDB, which contains 720K compounds.</p>
+<p>-- <strong>Custom DB file</strong>: if a custom database is provided (via File selection or URL), the predefined DB choice is ignored.</p>
+<p>-- <strong>Max charge</strong>: Maximum charge allowed. The default is 2.</p>
+<p>-- <strong>Fragmentation Model</strong>: the default model is 2-1-3, which indicates there will be at most two bridges, one 2-cut, and three cuts in total.</p>
+<p>-- <strong>Min significant score</strong>: the minimum score to report a significant metabolite spectrum match. The default value is 10.</p>
+<h3 id="step-5-submit-job">STEP 5: Submit job<a class="headerlink" href="#step-5-submit-job" title="Permanent link">¶</a></h3>
+<p>Add an email for notification. Then click on submit.</p>
+<p>You will get an email with the link to the results when your job is finished. You can also check the status of your job in "Jobs" section.</p>
+<p><img alt="img" src="../img/molDiscovery/Step5.png"/></p>
+<h3 id="step-6-view-results">STEP 6: View results<a class="headerlink" href="#step-6-view-results" title="Permanent link">¶</a></h3>
+<p><strong>See the molDiscovery job status:</strong>
+The status of the job can be vizualized in your account job list, and through the link in provided in email you will received when the job is done.</p>
+<p>The job can be <em>Cloned</em>, for further parameters modifications. Summary Statistics and Workflow Parameters can be consulted on the respective links.</p>
+<p>Click on <em>View Unique Metabolites</em> (recommended), to have get the list of annotated molecules.</p>
+<p>Click on the <em>View All MSM</em> (Metabolites-Spectrum Match) to have detailed view of the Metabolites-spectrum matches.</p>
+<p><strong>Explore the molDiscovery annotations:</strong>
+Annotations are sorted by molDiscovery score (default), mass, compound name, etc. These fields can also be searched with the filter function.</p>
+<p><img alt="img" src="../img/molDiscovery/Step6.png"/></p>
+<h2 id="feedback-and-bug-reports">Feedback and Bug Reports<a class="headerlink" href="#feedback-and-bug-reports" title="Permanent link">¶</a></h2>
+<p>We will be thankful if you help us make <strong>molDiscovery</strong> better by sending your comments, bug reports, and suggestions to <a href="mailto:npdtools.support@cab.spbu.ru">npdtools.support@cab.spbu.ru</a> or posting them on our <a href="https://github.com/mohimanilab/molDiscovery/issues">GitHub repository tracker</a>.</p>
+<h2 id="contribute-to-the-documentation">Contribute to the Documentation<a class="headerlink" href="#contribute-to-the-documentation" title="Permanent link">¶</a></h2>
 <ul>
-<li><a href="mailto:mwang87@gmail.com">Ming Wang</a> (48.35%)</li>
-<li><a href="mailto:louisfelix.nothias@gmail.com">lfnothias</a> (18.65%)</li>
-<li><a href="mailto:43760206+MelissaESPOSITO@users.noreply.github.com">MelissaESPOSITO</a> (5.84%)</li>
-<li><a href="mailto:41308046+alan-jarmusch@users.noreply.github.com">alan-jarmusch</a> (4.67%)</li>
-<li><a href="mailto:liuc1@andrew.cmu.edu">liucaomics</a> (3.38%)</li>
-<li><a href="mailto:rsilvabioinfo@gmail.com">Ricardo Silva</a> (2.18%)</li>
-<li><a href="mailto:jjjvanderhooft@gmail.com">Justin van der Hooft</a> (1.91%)</li>
-<li><a href="mailto:dpetras@ucsd.edu">Daniel Petras</a> (1.85%)</li>
-<li><a href="mailto:41205498+KyobinKang@users.noreply.github.com">KyobinKang</a> (1.65%)</li>
-<li><a href="mailto:enmeilin@gmail.com">Madeleine Ernst</a> (1.6%)</li>
-<li><a href="mailto:talktojillhondachang@gmail.com">zhz125</a> (1.18%)</li>
-<li><a href="mailto:42815817+irinakoester@users.noreply.github.com">irinakoester</a> (1.06%)</li>
-<li><a href="mailto:amcaraballor@gmail.com">amcaraballor</a> (0.82%)</li>
-<li><a href="mailto:dacharya@wisc.edu">Deepa Acharya</a> (0.81%)</li>
-<li><a href="mailto:iprotsyuk@google.com">Ivan Protsyuk</a> (0.72%)</li>
-<li><a href="mailto:49241158+tamhdang@users.noreply.github.com">tamhdang</a> (0.72%)</li>
-<li><a href="mailto:46980194+mpanitch@users.noreply.github.com">mpanitch</a> (0.64%)</li>
-<li><a href="mailto:anupriya.tripathi92@gmail.com">Anupriya Tripathi</a> (0.54%)</li>
-<li><a href="mailto:55205645+abauermeister@users.noreply.github.com">abauermeister</a> (0.53%)</li>
-<li><a href="mailto:15051933+chanana@users.noreply.github.com">Shaurya Chanana</a> (0.52%)</li>
-<li><a href="mailto:45803026+jgauglitz@users.noreply.github.com">jgauglitz</a> (0.52%)</li>
-<li><a href="mailto:50462434+grimcynthia@users.noreply.github.com">Cynthia Grim</a> (0.45%)</li>
-<li><a href="mailto:43601216+kevinnguyen1413@users.noreply.github.com">Kevin Nguyen</a> (0.32%)</li>
-<li><a href="mailto:johannes.rainer@gmail.com">jorainer</a> (0.2%)</li>
-<li><a href="mailto:55901470+helenamrusso@users.noreply.github.com">helenamrusso</a> (0.18%)</li>
-<li><a href="mailto:rschmid1789@gmail.com">Robin Schmid</a> (0.16%)</li>
-<li><a href="mailto:56978223+emgentry@users.noreply.github.com">emgentry</a> (0.13%)</li>
-<li><a href="mailto:robinschmid@uni-muenster.de">robinschmid</a> (0.11%)</li>
-<li><a href="mailto:mccall.lauraisobel@gmail.com">Laura-Isobel McCall</a> (0.1%)</li>
-<li><a href="mailto:54411317+allegra-aron@users.noreply.github.com">Allegra A</a> (0.08%)</li>
-<li><a href="mailto:tiagolbiotech@gmail.com">Tiago Leao</a> (0.07%)</li>
-<li><a href="mailto:71293955+acdm2020@users.noreply.github.com">acdm2020</a> (0.02%)</li>
-<li><a href="mailto:54383060+mabelgon88@users.noreply.github.com">Mabel Gonzalez</a> (0.02%)</li>
-<li><a href="mailto:53622624+klj0019@users.noreply.github.com">klj0019</a> (0.01%)</li>
-</ul></span>
-
-</p>
+<li>For informations/feature request, please open an "Issue" on the <a href="https://github.com/CCMS-UCSD/GNPSDocumentation"><em>CCMS-UCSD/GNPSDocumentation</em></a> GitHub repository.</li>
+<li>To contribute directly to the GNPS documentation, fork the <a href="https://github.com/CCMS-UCSD/GNPSDocumentation"><em>CCMS-UCSD/GNPSDocumentation</em></a> repository, and make a "Pull Request".</li>
+</ul>
+<h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">¶</a></h2>
+<p><span class="git-page-authors git-authors"><a href="mailto:liuc1@andrew.cmu.edu">liucaomics</a></span></p>
 <hr/>
 <div class="md-source-date">
 <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 13, 2020 21:21:33</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 27, 2021 06:23:56</span>
 </small>
 </div>
 </article>
@@ -910,21 +903,6 @@ Vanessa Phelan, Laura Sanchez, Laura Pace, Alexey Gurevich, and Don D. Nguyen. <
 </div>
 </main>
 <footer class="md-footer">
-<nav aria-label="Footer" class="md-footer__inner md-grid">
-<a class="md-footer__link md-footer__link--next" href="isgnpsright/" rel="next">
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                Next
-              </span>
-              Is my data compatible with GNPS?
-            </div>
-</div>
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
-</div>
-</a>
-</nav>
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-footer-copyright">
@@ -941,7 +919,7 @@ Vanessa Phelan, Laura Sanchez, Laura Pace, Alexey Gurevich, and Don D. Nguyen. <
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
-<script src="assets/javascripts/bundle.4ea5477f.min.js"></script>
+<script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+<script src="../assets/javascripts/bundle.4ea5477f.min.js"></script>
 </body>
 </html>
