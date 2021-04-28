@@ -93,6 +93,7 @@ nav:
         - FBMN with MS-DIAL - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangut-ms-dial.md
         - FBMN with MetaboScape - Coffee Analysis: tutorials/coffee-tutorial-metaboscape.md
         - FBMN analysis at GNPS: tutorials/featurebasedgnps.md
+        - Reference Data Driven Analysis: tutorials/rdd.md
     - Change Log: changelog.md
     - Join the GNPS community: gnps_community.md
     - GNPS Workshops/Training: workshops.md
