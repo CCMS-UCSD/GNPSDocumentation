@@ -20,7 +20,7 @@ TBU
 
 If you convert Waters .Raw files directly following our [guideline](https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/), you will find some strange things.
 
-Frequently, Waters users find that the precursor m/z values are shifted severely, more than 0.01 Da. Here I say why this happens:
+Sometimes, Waters users find that the precursor m/z values are shifted severely, more than 0.01 Da. Here is the supposed reason:
 When you open your data in MassLynx, MassLynx will show you m/z values 'corrected' by Lockspray data. However, the correction will not be made on the raw data files themselves, so if you convert them, Lockspray will not be applied to the resulting .mzML files.
 
 You can make a Lockspray correction by using 'Accurate mass Measure' module of MassLynx. You can find it here:
