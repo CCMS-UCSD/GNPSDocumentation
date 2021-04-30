@@ -59,7 +59,7 @@ Go to Menu: File / New Project
 
 Select appropriate parameters (ionization type / method type / data type / ion mode / target omics) for your dataset. Click “Next”.
 
-[Note] If you are processing with Waters MSe data, set MS method type to 'SWATH-MS or conventional All-ions method' and use [this experiment file](/docs/static/MSe_experiment.txt).
+[Note] If you are processing with Waters MSe data, set MS method type to 'SWATH-MS or conventional All-ions method' and use [this experiment file](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/static/MSe_experiment.txt).
 
 #### 2. Import Files
 
