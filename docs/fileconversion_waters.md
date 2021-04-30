@@ -23,7 +23,7 @@ If you convert Waters .Raw files directly following our [guideline](https://ccms
 Sometimes, Waters users find that the precursor m/z values are shifted severely, more than 0.01 Da. Here is the supposed reason:
 When you open your data in MassLynx, MassLynx will show you m/z values 'corrected' by Lockspray data. However, the correction will not be made on the raw data files themselves, so if you convert them, Lockspray will not be applied to the resulting .mzML files.
 
-You can make a Lockspray correction by using 'Accurate mass Measure' module of MassLynx. You can find it here:
+If your data is continuum data (especially if you use UNIFI-based system), you can make a Lockspray correction during perfoming centroding via 'Accurate mass Measure' module of MassLynx. You can find it here:
 
 ![img](img/conversion/Waters_guide_1.png)
 
