@@ -16,16 +16,17 @@ As a first step of data conversion, you should export your data as MassLynx .Raw
 
 TBU
 
-## 3. How to convert Waters .Raw files to .mzML
-
-If you convert Waters .Raw files directly following our [guideline](https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/), you will find some strange things.
-
-Sometimes, Waters users find that the precursor m/z values are shifted severely, more than 0.01 Da. Here is the supposed reason:
-When you open your data in MassLynx, MassLynx will show you m/z values 'corrected' by Lockspray data. However, the correction will not be made on the raw data files themselves, so if you convert them, Lockspray will not be applied to the resulting .mzML files.
-
-If your data is continuum data (especially if you use UNIFI-based system), you can make a Lockspray correction during perfoming centroding via 'Accurate mass Measure' module of MassLynx. You can find it here:
+UNIFI do not have any option for centroid mode acquisition, so your exported data will be continuum. 
+The data should be centroided, and during centroiding, you also can make a Lockspray correction via 'Accurate mass Measure' module of MassLynx. You can find it here:
 
 ![img](img/conversion/Waters_guide_1.png)
+
+## 3. How to convert Waters .Raw files to .mzML
+
+ProteoWizard msConvert has been updated several times, and the recent version resolved many problems known for Waters data conversion.
+
+[Here](https://www.dropbox.com/s/lqrqrqjwc8ubj3k/GNPS_Vendor_Conversion.zip?dl=1) is an updated version (with Proteowizard Release 3.0.21120)of the double-click converter we provided in our [guideline](https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/).
+
 
 
 TBU
