@@ -1,3 +1,5 @@
+![logo](img/logo/dashboard_logo_final_transparent.png)
+
 # GNPS Dashboard
 
 The GNPS Dashboard Interface is designed to enable easy collaborative visualization of mass spectrometry data files directly in the browser.
@@ -43,7 +45,7 @@ Data must be specified as a universal spectrum identifier. This again can be sou
 
 1. Using [GNPS Dataset Explorer](https://gnps-explorer.ucsd.edu/) that enables selecting public datasets
 1. Direct links from GNPS analyses 
-1. User uploads via the Drag and Drop
+1. User uploads via the Drag and Drop (up to 120MB files)
 
 A filled in USI selection can be seen below. 
 
@@ -80,7 +82,7 @@ Finally, if you click on any cell in the heatmap, it will add that m/z value to 
     You may change the quantization level by clicking on "Advanced Visualization Options". 
 
 ??? note "Changing MS2 Marker Visualization"
-    You may change the ms2 marker visualization by clicking on "Advanced Visualization Options". 
+    You may change the ms2 marker visualization by clicking on "Advanced Visualization Options". You can also enable or disable markers completely with the toggle. 
 
 ## TIC Plots
 
@@ -109,6 +111,9 @@ After you specified m/z or multiple m/z separated by ";" under XIC Options, XIC(
 
 Additionally to these XIC plots, we draw XIC heatmap plots. This helps when there are many files for a given XIC value. 
 
+!!! note "Retention Time Zooming"
+    You can set the retention time window (e.g. 5.5-7.2) or a single retention time value (e.g. 5.5 which implicitly means 5.0-6.0)
+
 ### Teaching Mass Spectrometry Data/Analysis
 
 We think this tool might be a good tool for teaching LC/MS visualization. The Leader/Follower options are a way for students to follow along to get started. Once the initial setup and instruction are done, they can stop syncing and build upon the visualization. We have tested this tool to scale up to a few dozen concurrent followers. If you do intend to use this for a class, please let us know so that we do not do maintenance during your class. 
@@ -126,8 +131,8 @@ You can share visualizations as URLs and interactively Collaborate. There are se
 
 To create a visualization as a leader, you will need to do the following
 
-1. Click on Sychronization Options
-1. Select Under Teaching Sychronization (Beta), select LEADER
+1. Click on Sychronization Options ("Sync Options") to bring up the sychronization modal pop up
+1. Select Under Dashboard Sychronization Type, select LEADER
 1. Click Get Token (this protects your session so others cannot hijack being leader)
 1. Copy the link under "Follower URL" and send to others to follow your work (Or have followers scan the QR Code)
 
@@ -146,8 +151,8 @@ You may also stop syncing as a follower by clicking the "Sync Terminate" so that
 
 To create a fully sychronous visualization you can do it in the following ways
 
-1. Click on Sychronization Options
-1. Select Under Teaching Sychronization (Beta), select COLLAB and click "Set Sychronization"
+1. Click on Sychronization Options ("Sync Options") to bring up the sychronization modal pop up
+1. Select Under Dashboard Sychronization Type, select COLLAB and click "Set Sychronization"
 1. Copy the Collab URL and send it to your collaborators
 
 Alternatively, if you click on this [link](https://gnps-lcms.ucsd.edu/?synchronization_type=COLLAB), which will

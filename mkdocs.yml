@@ -56,6 +56,8 @@ nav:
         - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
         - Molecular Networking in Cytoscape: cytoscape.md
         - DEREPLICATOR: dereplicator.md
+        - DEREPLICATOR+: dereplicator+.md
+        - MolDiscovery: molDiscovery.md
         - Network Annotation Propagation (NAP): nap.md
         - MS2LDA and MotifDB Substructure Discovery: ms2lda.md
         - MolNetEnhancer: molnetenhancer.md
@@ -71,6 +73,7 @@ nav:
         - Browsing Reference Spectral Libraries: browselibraries.md
         - Add/Curate Reference Spectrum in the Library: spectrumcuration.md
         - Reference Spectral Library Batch Addition: batchupload.md
+        - Reference Spectral Library mzVault Addition: batchuploadmzvault.md
         - Downloading Reference Spectral Libraries: downloadlibraries.md
         - Open-source Method for Reference Library Generation:
             - MSMS-Chooser Workflow: msmschooser.md
@@ -90,6 +93,7 @@ nav:
         - FBMN with MS-DIAL - Microbiome Molecules in Fecal Samples in American Gut Project: tutorials/americangut-ms-dial.md
         - FBMN with MetaboScape - Coffee Analysis: tutorials/coffee-tutorial-metaboscape.md
         - FBMN analysis at GNPS: tutorials/featurebasedgnps.md
+        - Reference Data Driven Analysis: tutorials/rdd.md
     - Change Log: changelog.md
     - Join the GNPS community: gnps_community.md
     - GNPS Workshops/Training: workshops.md

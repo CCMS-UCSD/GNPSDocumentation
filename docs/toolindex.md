@@ -23,10 +23,10 @@ Please help us fill in more completely!
 | Annotation | Library Search/Molecular Networking GC  | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MOLECULAR-LIBRARYSEARCH-GC%22%7D)   | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MOLECULAR-LIBRARYSEARCH-GC%22%7D) |
 | Annotation | Network Annotation Propogation (NAP) | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/?params=%7B%22workflow%22:%22NAP_CCMS2%22%7D) | --- | [Documentation](nap.md) | [GitHub](https://github.com/DorresteinLaboratory/NAP_ProteoSAFe/) | [Citation](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006089) |
 | Annotation | Qemistree | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22QEMISTREE%22%7D)   | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22QEMISTREE%22%7D) |
-| Annotation | Dereplicator | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22DEREPLICATOR%22%7D) | --- |
-| Annotation | Dereplicator+ | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22DEREPLICATOR_PLUS%22%7D) | --- |
-| Annotation | MetaMiner | --- | --- | [Documentation](metaminer.md) | --- | [Citation](https://pubmed.ncbi.nlm.nih.gov/31629686/) |
-| Annotation | MolDiscovery | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MOLDISCOVERY%22%7D) | --- | --- | --- | [Citation](https://www.researchsquare.com/article/rs-71854/v1) |
+| Annotation | Dereplicator | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22DEREPLICATOR%22%7D) | --- | [Documentation](dereplicator.md) | [GitHub](https://github.com/ablab/npdtools) | [Citation](https://pubmed.ncbi.nlm.nih.gov/27820803/)|
+| Annotation | Dereplicator+ | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22DEREPLICATOR_PLUS%22%7D) | --- | [Documentation](dereplicator+.md) | [GitHub](https://github.com/ablab/npdtools) | [Citation](https://pubmed.ncbi.nlm.nih.gov/30279420/) |
+| Annotation | MetaMiner | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22RIPPQUEST%22%7D) | --- | [Documentation](metaminer.md) | [GitHub](https://github.com/mohimanilab/MetaMiner) | [Citation](https://pubmed.ncbi.nlm.nih.gov/31629686/) |
+| Annotation | MolDiscovery | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MOLDISCOVERY%22%7D) | --- | [Documentation](molDiscovery.md) | [GitHub](https://github.com/mohimanilab/molDiscovery) | [Citation](https://www.biorxiv.org/content/10.1101/2020.11.28.401943v1) |
 | Annotation | Sirius | --- | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22SIRIUS%22%7D) |
 | Data Processing | MSHub-GC Deconvolution  | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B"workflow":"MSHUB-GC"%7D)   | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B"workflow":"MSHUB-GC"%7D) | 
 | Data Processing | OpenMS Feature Detector for FBMN - Future Feature  | [Workflow]()   | [Workflow]() |---|
@@ -49,8 +49,7 @@ These are web tools that is run by the GNPS team and provides complementary func
 | [GNPS MASST](https://masst.ucsd.edu) | [Documentation](masst.md) | TODO | [Citation](https://www.nature.com/articles/s41587-019-0375-9)|
 | [Metabolomics Spectrum Resolver](https://metabolomics-usi.ucsd.edu) | [Documentation](usi.md) | [GitHub](https://github.com/mwang87/MetabolomicsSpectrumResolver) | [Citation](https://www.biorxiv.org/content/10.1101/2020.05.09.086066v1) |
 | [GNPS Networking URL Formatter](https://gnps-urlworkflow.herokuapp.com/) | --- | --- |
-| [GNPS Library Dash Explorer](http://dorresteinappshub.ucsd.edu:6546/) | --- | --- |
-| [GNPS Mass Spec Calculator (Beta)](https://gnps-masscalculator.herokuapp.com/) | --- | --- |
+| [GNPS Mass Spec Calculator](https://gnps-structure.ucsd.edu/dashinterface/) | --- | --- |
 | [GNPS Usage Stats Dashboard](https://gnps-usage-stats.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_StatsSummaryDashboard) | --- |
 | [GNPS Classical Networking Upset Plot Dashboard](https://gnps-classical-comparison.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_ClassicalNetworkGroupsComparisonDashboard) | --- |
 | [GNPS FBMN Upset Plot Dashboard](https://gnps-fbmn-upset.herokuapp.com/) | --- | --- |
@@ -60,14 +59,14 @@ These are web tools that is run by the GNPS team and provides complementary func
 | [GNPS Plotter Dashboard (Beta)](https://gnps-plotter.ucsd.edu/) | --- | --- |
 | [GNPS Dataset File Explorer (Beta)](https://gnps-explorer.ucsd.edu/) | --- | --- |
 | [GNPS Public Libraries Download List](https://gnps-external.ucsd.edu/gnpslibrary) | --- | --- | 
-| [GNPS Dataset File Caching Service (Beta)](http://dorresteintesthub.ucsd.edu:5235/datasette/database/filename?_sort=filepath) | --- | --- | 
-| [GNPS Public Data Index](https://gnpspublic.herokuapp.com/gnps_public_openformats/massive_public_openformats) | --- | --- | 
-| [GNPS Spectral Similarity Hub (Beta)](http://dorresteintesthub.ucsd.edu:5453/) | --- | --- | 
+| [GNPS Public Data Index](https://gnps-datasetcache.ucsd.edu/datasette/database/filename) | --- | --- | 
+| [GNPS Spectral Similarity Hub](https://gnps-similarity.ucsd.edu/) | --- | --- | 
 
 ## GNPS Deprecated Web Tools
 
 | Tool  | Documentation | Source Code | Citation |
 |---|---|---|---|
+| [GNPS Library Dash Explorer](http://dorresteinappshub.ucsd.edu:6546/) | --- | --- |
 | [GNPS Task Esquisse Server (Beta)](http://dorresteintesthub.ucsd.edu:8347/) | --- | --- |
 | [GNPS Result View Esquisse Server (Super Beta)](http://dorresteintesthub.ucsd.edu:8359/) | --- | --- |
 | [GNPS Text Esquisse Server (Super Beta)](https://gnps.shinyapps.io/text_entry/) | --- | --- |
