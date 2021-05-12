@@ -2,7 +2,6 @@
 
 | Venue        | Description          | Dates |  Speakers/Instructors |Material |
 | ------------- |-------------| -----| -----| -----|
-| Zoom! | GNPS Dashboard - Overview | 5/12/2021 9AM PST | Mingxun Wang and Daniel Petras | [Material](https://docs.google.com/document/d/16-ZA3ZPUdkSWdIBNDLzyTetXNX9Uy5iboya-DFON46g/edit?usp=sharing)| 
 
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
@@ -40,6 +39,7 @@ Here is a table to briefly browse them
 
 | Venue        | Description          | Dates | Speakers/Instructors | Material | Estimated Attendance |
 | ------------- |-------------| -----| -----| -----| ----- |
+| Zoom! | GNPS Dashboard - Overview | 5/12/2021 9AM PST | Mingxun Wang and Daniel Petras | [Material](https://docs.google.com/document/d/16-ZA3ZPUdkSWdIBNDLzyTetXNX9Uy5iboya-DFON46g/edit?usp=sharing)| 140 |
 |Zoom! | GNPS Feature Based Molecular Networking in Portuguese - Part 1 | 12/09/2020 9AM PST | Anelize Bauermeister, Carlismari Grundmann, Helena Mannochio, Juliano Amaral, Tiago Leão| [Material](https://docs.google.com/document/d/1LVGZiifVoKELANRFOGUtCl5ptjTXH6q_W5g0rZTnJi4/edit?usp=sharing)| 200 |
 |Zoom! | GNPS Feature Based Molecular Networking in Portuguese - Part 2 | 12/10/2020 9AM PST | Anelize Bauermeister, Carlismari Grundmann, Helena Mannochio, Juliano Amaral, Tiago Leão| [Material](https://docs.google.com/document/d/1rp5_xAiLWRhVRAfIt6a91gzhkxPs3IPEMWnp_NDMrOE/edit?usp=sharing)| 200 |
 | Zoom! | SIO262 Molecular Networking Intro	| 11/25/2020 15:30 PM PST |  Daniel Petras, Mingxun Wang,| [Video](https://www.youtube.com/watch?v=DIItacY4VaE) | 20 |
