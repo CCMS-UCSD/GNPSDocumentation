@@ -109,6 +109,13 @@ After you specified m/z or multiple m/z separated by ";" under XIC Options, XIC(
 
 ![img](img/LCMS_dashboard/XIC_MSMS.png)
 
+!!! note
+    If you would like to add labels to your xic values in the plotting, you can use the following example
+    ```
+    COMPOUND=500
+    ```
+
+
 Additionally to these XIC plots, we draw XIC heatmap plots. This helps when there are many files for a given XIC value. 
 
 !!! note "Retention Time Zooming"
