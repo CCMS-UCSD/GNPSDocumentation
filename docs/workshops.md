@@ -39,6 +39,7 @@ Here is a table to briefly browse them
 
 | Venue        | Description          | Dates | Speakers/Instructors | Material | Estimated Attendance |
 | ------------- |-------------| -----| -----| -----| ----- |
+| Virtual Classroom | Exploratory Data Analysis with brief primers on MASST, Library Matching, Molecular Networking, & GNPS Dashboard | 2021-05-27 & 2021-05-12 | Teaching Practical Guides as part of course | 25 |
 | Zoom! | GNPS Dashboard - Overview | 5/12/2021 9AM PST | Mingxun Wang and Daniel Petras | [Material](https://docs.google.com/document/d/16-ZA3ZPUdkSWdIBNDLzyTetXNX9Uy5iboya-DFON46g/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=S3aAkGTMC-g) | 140 |
 |Zoom! | Basic principles of metabolomics-based MS data and GNPS tools for data analysis in Portuguese - Part 1 | 04/28/2020 9AM PST | Anelize Bauermeister, Tiago Leão, Naydja M. Maimone, Danielle R. P. Barros| [Material](https://docs.google.com/document/d/1Gmp1eyIACYCYCDxyrgto9ZCBVbEHd8I0R9TJHRhRMZY/edit) [Video](https://www.youtube.com/watch?v=QVw1K1dkpIc) | 450 |
 |Zoom! | Basic principles of metabolomics-based MS data and GNPS tools for data analysis in Portuguese - Part 2 | 04/29/2020 9AM PST | Anelize Bauermeister, Tiago Leão, Naydja M. Maimone, Danielle R. P. Barros, Ricardo Silva| [Material](https://docs.google.com/document/d/1ib3ZBxj5WcoiIJKsP4kMG2JRS4nyJoW5zVeAJI_CiqE/edit#heading=h.259uu2unjlre) [Video](https://www.youtube.com/watch?v=OLRazw7Q-2M&t=3747s) | 320 |
