@@ -2,7 +2,6 @@
 
 | Venue        | Description          | Dates |  Speakers/Instructors |Material |
 | ------------- |-------------| -----| -----| -----|
-| Zoom! | GNPS Dashboard - Overview | 5/12/2021 9AM PST | Mingxun Wang and Daniel Petras | [Material](https://docs.google.com/document/d/16-ZA3ZPUdkSWdIBNDLzyTetXNX9Uy5iboya-DFON46g/edit?usp=sharing)| 
 
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
@@ -40,6 +39,9 @@ Here is a table to briefly browse them
 
 | Venue        | Description          | Dates | Speakers/Instructors | Material | Estimated Attendance |
 | ------------- |-------------| -----| -----| -----| ----- |
+| Zoom! | GNPS Dashboard - Overview | 5/12/2021 9AM PST | Mingxun Wang and Daniel Petras | [Material](https://docs.google.com/document/d/16-ZA3ZPUdkSWdIBNDLzyTetXNX9Uy5iboya-DFON46g/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=S3aAkGTMC-g) | 140 |
+|Zoom! | Basic principles of metabolomics-based MS data and GNPS tools for data analysis in Portuguese - Part 1 | 04/28/2020 9AM PST | Anelize Bauermeister, Tiago Leão, Naydja M. Maimone, Danielle R. P. Barros| [Material](https://docs.google.com/document/d/1Gmp1eyIACYCYCDxyrgto9ZCBVbEHd8I0R9TJHRhRMZY/edit) [Video](https://www.youtube.com/watch?v=QVw1K1dkpIc) | 450 |
+|Zoom! | Basic principles of metabolomics-based MS data and GNPS tools for data analysis in Portuguese - Part 2 | 04/29/2020 9AM PST | Anelize Bauermeister, Tiago Leão, Naydja M. Maimone, Danielle R. P. Barros, Ricardo Silva| [Material](https://docs.google.com/document/d/1ib3ZBxj5WcoiIJKsP4kMG2JRS4nyJoW5zVeAJI_CiqE/edit#heading=h.259uu2unjlre) [Video](https://www.youtube.com/watch?v=OLRazw7Q-2M&t=3747s) | 320 |
 |Zoom! | GNPS Feature Based Molecular Networking in Portuguese - Part 1 | 12/09/2020 9AM PST | Anelize Bauermeister, Carlismari Grundmann, Helena Mannochio, Juliano Amaral, Tiago Leão| [Material](https://docs.google.com/document/d/1LVGZiifVoKELANRFOGUtCl5ptjTXH6q_W5g0rZTnJi4/edit?usp=sharing)| 200 |
 |Zoom! | GNPS Feature Based Molecular Networking in Portuguese - Part 2 | 12/10/2020 9AM PST | Anelize Bauermeister, Carlismari Grundmann, Helena Mannochio, Juliano Amaral, Tiago Leão| [Material](https://docs.google.com/document/d/1rp5_xAiLWRhVRAfIt6a91gzhkxPs3IPEMWnp_NDMrOE/edit?usp=sharing)| 200 |
 | Zoom! | SIO262 Molecular Networking Intro	| 11/25/2020 15:30 PM PST |  Daniel Petras, Mingxun Wang,| [Video](https://www.youtube.com/watch?v=DIItacY4VaE) | 20 |
@@ -64,7 +66,7 @@ Here is a table to briefly browse them
 | Zoom! | GNPS Classical Molecular Networking | 4/29/2020 9AM PST | Emily Gentry, Mingxun Wang, Morgan Panitchpakdi | [Material](https://docs.google.com/document/d/1_aPUG0H4_v3hfVQ5uZTRv-lSPEuhooyiUZVNd1S21rw/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=PqTuex0nsGk) | 60 |
 | Zoom! | GNPS MASST | 4/22/2020 9AM PST | Mingxun Wang, Alan Jarmusch, Morgan Panitchpakdi, Emily Gentry | [Material](https://docs.google.com/document/d/1rzPLGA0-3DbFkUKVpIyUrj_7MLhqCvSSPskVO9gR1D0/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=14hGi6FtZIM) | 54 |
 | Zoom! | GNPS Library Workshop/Hackathon | April 8 9AM PST| Mingxun Wang, Alan Jarmusch, Morgan Panitchpakdi, Emily Gentry | [Material](https://docs.google.com/document/d/1pu24hCoRr8trBhc_sJ34BiWamJHEpRkZYYnGYQRkAkU/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=IbXBpud57Z8) | 60 |
-| UFMT Brazil | VI Workshop Etnofarmacologia - Use of the GNPS platform | Nov 18 - 28 2019 | Mauricio Caraballo |||
+| UFMT Brazil | VI Workshop Etnofarmacologia - Use of the GNPS platform | Nov 18 - 28 2019 | Mauricio Caraballo | [Download](https://drive.google.com/file/d/1eufjR488JozvYrKbJYE4YmSB_AtWpYV5/view?usp=sharing)| 22 |
 | MIT |Molecular Networking with MZmine and GNPS| Dec 5 2019 | Tomas Pluska, Daniel Petras, Robin Schmid | -----||
 | [ASP 2019](http://aspmeetings.pharmacognosy.us/) | GNPS Beginner/Advanced Workshop (3h) | July 2019 | Mingxun Wang, Pieter Dorrestein, Mauricio Caraballo | [Download](https://docs.google.com/document/d/1i80buu38_x79qeHVHGz2d_nyRYQJ92jV3mQfTtJLsB4/edit?usp=sharing) | 60 |
 | [RFMF2019](https://12-js-rfmf-2019.sciencesconf.org/), France | GNPS Beginner Workshop (4h) | May 20 |  | TBA ||
