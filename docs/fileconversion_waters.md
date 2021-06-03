@@ -14,7 +14,7 @@ If you have .Raw data files acquired by MassLynx software, see 3. How to convert
 ## 2. How to convert UNIFI data for molecular networking
 
 UNIFI keeps spectral data in Oracle database architecture, so you cannot get your raw data by simple copy and paste.
-Thus, as a first step of data conversion, you should export your data as MassLynx .Raw files. It can be done throught the file explorer, as shown below.
+Thus, as a first step of data conversion, you should export your data as MassLynx .Raw files. It can be done throught the file explorer, as shown below. Right-click on sample dataset will open the dropdown menu.
 
 ![img](img/conversion/UNIFI_Raw_export.png)
 
