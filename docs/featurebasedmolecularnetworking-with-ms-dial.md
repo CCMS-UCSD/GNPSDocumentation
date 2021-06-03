@@ -47,6 +47,8 @@ Please consult these resources for more details on MS-DIAL processing:
 ### Convert your LC-MS/MS Data to Open Format
 MS-DIAL accepts different input formats. Note that we recommend first to convert your files to mzML format before doing MS-DIAL processing. [See the documentation here](https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/).
 
+MS-DIAL releases later than ver 4.60 supports direct import of SCIEX (.wiff, .wiff2), Thermo (.raw). Agilent (.d), and Waters (.raw), so conversion is not required. See the [release note](http://www.metabolomics-forum.com/index.php?PHPSESSID=036a613e39e80b20290bcdb621373eee&topic=1642.0)
+
 #### Processing Steps for non-targeted LC-MS/MS
 
 Below is a walk-through of all the steps
@@ -59,15 +61,14 @@ Go to Menu: File / New Project
 
 Select appropriate parameters (ionization type / method type / data type / ion mode / target omics) for your dataset. Click “Next”.
 
-[Note] If you are processing with Waters MSe data, set MS method type to 'SWATH-MS or conventional All-ions method' and use [this experiment file](https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/static/MSe_experiment.txt).
+!!! info "FBMN with Waters MSe data"
+  If you are processing with Waters MSe data, set MS method type to 'SWATH-MS or conventional All-ions method' and use [this experiment file](https://www.dropbox.com/s/b0rbtelnmnv3w93/Mse_experiment.txt?dl=1).
 
 #### 2. Import Files
 
 Click “browse” and open the dropdown menu for file types, and select “mzML file(*.mzml)”. The other available options are .abf or .cdf files.
 
 [Note] Data files should be placed at the same folder with the project file.
-
-[Note] If you are processing with Waters MSe data, convert raw data files into .abf and import. You can download ABF converter [here](http://www.reifycs.com/AbfConverter/index.html).
 
 Select files and click “Open”. You will see the list of selected files. Click “Next”.
 
