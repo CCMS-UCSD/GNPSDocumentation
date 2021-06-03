@@ -59,3 +59,7 @@ ProteoWizard msConvert has been updated several times, and the recent version re
 There is a known issue on precursor ion m/z values when Waters .Raw data are converted to .mzML. The precursor ion fields of MS/MS scans will have m/z values of quadrupole isolation windows, instead of accurate mass values. Unfortunately, we do not have any solution for this issue. Thus, if you will use converted .mzML files directly for classical MN, remember that every m/z values are drifted from the original data.
 
 If we will use the FBMN workflow, you can detour this issue by using .Raw files for MZmine processing, without converting them to .mzML files. However, the direct import of Waters .Raw into MZmine is not possible in MZmine ver 2.53 due to a bug; so try it with old releases.
+
+## Page Contributors
+
+{{ git_page_authors }}
