@@ -9,6 +9,7 @@ However, <b>MSe data can be deconvoluted</b> (currently MS-DIAL is the proper so
 Currently, there are two different operating softwares for Waters machine, and they use entirely different file systems; thus, different data conversion pipelines are required.
 
 If you are using Waters machines operated by UNIFI software, see 2. How to convert UNIFI data for molecular networking
+
 If you have .Raw data files acquired by MassLynx software, see 3. How to convert Waters .Raw files to .mzML 
 
 ## 2. How to convert UNIFI data for molecular networking
