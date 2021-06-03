@@ -28,7 +28,7 @@ The Lockspray correstion can be done while you centroid your data, using MassLyn
 
 ![img](img/conversion/Waters_guide_1.png)
 
-![img](img/conversion/Waters_guide_2.png)
+![img](img/conversion/Waters_guide_2.PNG)
 
 1. Select files by double-clicking, or Operations > Select. If you want to move to other directory, close the module window, and open any datafile in MassLynx. Then the working directory will be changed.
 
@@ -36,7 +36,7 @@ The Lockspray correstion can be done while you centroid your data, using MassLyn
 
 3. go to Parameters > Automatic Peak Detection Parameters, and select proper ion mode.
 
-![img](img/conversion/Waters_guide_3.png)
+![img](img/conversion/Waters_guide_3.PNG)
 
 4. Check the both options 'Set Peak Detection Paramters Automatically' and "perform Lock Mass Correction' on.
 
