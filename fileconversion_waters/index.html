@@ -1,0 +1,838 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion_waters/" rel="canonical"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-7.1.6" name="generator"/>
+<title>Fileconversion waters - GNPS Documentation</title>
+<link href="../assets/stylesheets/main.875de78c.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.f1a3b89f.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-8412213-5","ccms-ucsd.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+</head>
+<body data-md-color-accent="none" data-md-color-primary="none" data-md-color-scheme="" dir="ltr">
+<script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#1-introduction">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="GNPS Documentation" class="md-header__button md-logo" data-md-component="logo" href=".." title="GNPS Documentation">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            GNPS Documentation
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Fileconversion waters
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" data-md-state="active" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/CCMS-UCSD/GNPSDocumentation/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    CCMS-UCSD/GNPSDocumentation
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="GNPS Documentation" class="md-nav__button md-logo" data-md-component="logo" href=".." title="GNPS Documentation">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+    GNPS Documentation
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/CCMS-UCSD/GNPSDocumentation/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    CCMS-UCSD/GNPSDocumentation
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+        GNPS Introduction
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../isgnpsright/">
+        Is my data compatible with GNPS?
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../faq/">
+        Frequently Asked Questions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../superquickstart/">
+        Superquick Start Guide
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../quickstart/">
+        Quick Start Guide
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../gnpsanalysisoverview/">
+        GNPS Analysis Tools Overview
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../lexicon/">
+        GNPS Lexicon
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8">
+        Mass Spec/Computational Background
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Mass Spec/Computational Background" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+          Mass Spec/Computational Background
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../massspecbackground/networkingtheory/">
+        Molecular Networking
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9">
+        Data Preparation/Upload
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Data Preparation/Upload" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
+          Data Preparation/Upload
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../fileconversion/">
+        Mass Spectrometry File Conversion
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../fileupload/">
+        GNPS File Upload
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../metadata/">
+        Metadata
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" id="__nav_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10">
+        Recommended Data Analysis
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Recommended Data Analysis" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
+<span class="md-nav__icon md-icon"></span>
+          Recommended Data Analysis
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../networking/">
+        Molecular Networking
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" id="__nav_10_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10_2">
+        GC-MS Molecular Networking
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="GC-MS Molecular Networking" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_10_2">
+<span class="md-nav__icon md-icon"></span>
+          GC-MS Molecular Networking
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../gcanalysis/">
+        GC-MS on GNPS
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../gc-ms-deconvolution/">
+        GC-MS Deconvolution
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../gc-ms-library-molecular-network/">
+        GC-MS Library Search and Molecular Networking
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../networkingviews/">
+        Molecular Networking Views
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../librarysearch/">
+        Spectral Library Search
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../masst/">
+        MASST Search (Mass Search Tool)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../resultviews/">
+        Result Views Navigation
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" id="__nav_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_11">
+        Mass Spec Data Visualization
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Mass Spec Data Visualization" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_11">
+<span class="md-nav__icon md-icon"></span>
+          Mass Spec Data Visualization
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../lcms-dashboard/">
+        GNPS Dashboard
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../gnpsdatasetexplorer/">
+        GNPS Dataset Explorer
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../usi/">
+        Metabolomics Spectrum Resolver
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" id="__nav_12" type="checkbox"/>
+<label class="md-nav__link" for="__nav_12">
+        Advanced Data Analysis
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Advanced Data Analysis" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_12">
+<span class="md-nav__icon md-icon"></span>
+          Advanced Data Analysis
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../networkingfiles/">
+        Molecular Networking Files
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_2" id="__nav_12_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_12_2">
+        Feature Based Molecular Networking
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Feature Based Molecular Networking" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_12_2">
+<span class="md-nav__icon md-icon"></span>
+          Feature Based Molecular Networking
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking/">
+        FBMN Workflow
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-mzmine2/">
+        FBMN with MZmine
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-ms-dial/">
+        FBMN with MS-DIAL
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-xcms3/">
+        FBMN with XCMS
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-openms/">
+        FBMN with OpenMS
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-metaboscape/">
+        FBMN with MetaboScape
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-progenesisQI/">
+        FBMN with Progenesis QI
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-with-mztab-m/">
+        FBMN with mzTab-M
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../featurebasedmolecularnetworking-cytoscape/">
+        FBMN export to Cytoscape
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_3" id="__nav_12_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_12_3">
+        FBMN - Ion Identity Networking
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="FBMN - Ion Identity Networking" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_12_3">
+<span class="md-nav__icon md-icon"></span>
+          FBMN - Ion Identity Networking
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../fbmn-iin/">
+        IIN Workflow
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../fbmn-iin-mzmine/">
+        IIN with MZmine2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../fbmn-iin-xcms/">
+        IIN with XCMS
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../fbmn-iin-msdial/">
+        IIN with MS-DIAL
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ms2lda/">
+        MS2LDA and MotifDB Substructure Discovery
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cytoscape/">
+        Molecular Networking in Cytoscape
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dereplicator/">
+        DEREPLICATOR
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dereplicator%2B/">
+        DEREPLICATOR+
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../molDiscovery/">
+        MolDiscovery
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../nap/">
+        Network Annotation Propagation (NAP)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ms2lda/">
+        MS2LDA and MotifDB Substructure Discovery
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../molnetenhancer/">
+        MolNetEnhancer
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../metaminer/">
+        MetaMiner
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../sirius/">
+        Sirius
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ReDU/">
+        Reanalysis of Data User Interface (ReDU)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../qemistree/">
+        Qemistree
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../mmvec/">
+        MMVEC
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../mergepolarity/">
+        Merge Network Polarity
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../chemdir/">
+        Chemical Directionality
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" id="__nav_13" type="checkbox"/>
+<label class="md-nav__link" for="__nav_13">
+        Spectral Libraries
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Spectral Libraries" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_13">
+<span class="md-nav__icon md-icon"></span>
+          Spectral Libraries
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../browselibraries/">
+        Browsing Reference Spectral Libraries
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../spectrumcuration/">
+        Add/Curate Reference Spectrum in the Library
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../batchupload/">
+        Reference Spectral Library Batch Addition
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../batchuploadmzvault/">
+        Reference Spectral Library mzVault Addition
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../downloadlibraries/">
+        Downloading Reference Spectral Libraries
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_6" id="__nav_13_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_13_6">
+        Open-source Method for Reference Library Generation
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Open-source Method for Reference Library Generation" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_13_6">
+<span class="md-nav__icon md-icon"></span>
+          Open-source Method for Reference Library Generation
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../msmschooser/">
+        MSMS-Chooser Workflow
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../msmschooserdataacquisitioncomputational/">
+        Computational Data Acquisition Prep
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../msmschooserdataacquisitionQE/">
+        Data Acqusition - Thermo QExactive (v1.0)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tag_info/">
+        GNPS Tag Contribution and Analyses
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" id="__nav_14" type="checkbox"/>
+<label class="md-nav__link" for="__nav_14">
+        Create a Public Datasets
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Create a Public Datasets" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_14">
+<span class="md-nav__icon md-icon"></span>
+          Create a Public Datasets
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../datasets/">
+        Dataset Creation/Sharing
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../continuousid/">
+        Continuous Identification
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../moleculeexplorer/">
+        Molecule Explorer
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" id="__nav_15" type="checkbox"/>
+<label class="md-nav__link" for="__nav_15">
+        Community/Social Features
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Community/Social Features" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_15">
+<span class="md-nav__icon md-icon"></span>
+          Community/Social Features
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../user/">
+        User Page
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../troubleshooting/">
+        Troubleshooting
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17" id="__nav_17" type="checkbox"/>
+<label class="md-nav__link" for="__nav_17">
+        Tutorial Guides
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Tutorial Guides" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_17">
+<span class="md-nav__icon md-icon"></span>
+          Tutorial Guides
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/bacterianetworking/">
+        Molecular Networking - Analog Discovery in Microbial Extracts
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/americangutmzmine/">
+        Feature-Based Molecular Networking (FBMN) with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/americangut-ms-dial/">
+        FBMN with MS-DIAL - Microbiome Molecules in Fecal Samples in American Gut Project
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/coffee-tutorial-metaboscape/">
+        FBMN with MetaboScape - Coffee Analysis
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/featurebasedgnps/">
+        FBMN analysis at GNPS
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/rdd/">
+        Reference Data Driven Analysis
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../changelog/">
+        Change Log
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../gnps_community/">
+        Join the GNPS community
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../workshops/">
+        GNPS Workshops/Training
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../logos/">
+        GNPS Logos
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../contact/">
+        Contact/Office Hours
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../toolindex/">
+        GNPS Tool Index
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../api/">
+        API
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../developers/">
+        For Developers
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-introduction">
+    1. Introduction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-how-to-convert-unifi-data-for-molecular-networking">
+    2. How to convert UNIFI data for molecular networking
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-how-to-convert-waters-raw-files-to-mzml">
+    3. How to convert Waters .Raw files to .mzML
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#page-contributors">
+    Page Contributors
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/CCMS-UCSD/GNPSDocumentation/edit/master/docs/fileconversion_waters.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
+</a>
+<h1>Fileconversion waters</h1>
+<h2 id="1-introduction">1. Introduction<a class="headerlink" href="#1-introduction" title="Permanent link">¶</a></h2>
+<p>This page describes how you can convert raw data from Waters machines.</p>
+<p>One of the most frequent questions from Waters users is if they can use MSe data for molecular networking. 
+Bascially, <b>MSe data is not available for classical molecular networking workflow</b>, because it is a type of data-independent acquisition method so does not include precursor ion information.
+However, <b>MSe data can be deconvoluted</b> (currently MS-DIAL is the proper software for it) <b>and applied to the FBMN workflow</b>. You can find relevant information <a href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking-with-mzmine2/">here</a>.</p>
+<p>Currently, there are two different operating softwares for Waters machine, and they use entirely different file systems; thus, different data conversion pipelines are required.</p>
+<p>If you are using Waters machines operated by UNIFI software, see 2. How to convert UNIFI data for molecular networking</p>
+<p>If you have .Raw data files acquired by MassLynx software, see 3. How to convert Waters .Raw files to .mzML </p>
+<h2 id="2-how-to-convert-unifi-data-for-molecular-networking">2. How to convert UNIFI data for molecular networking<a class="headerlink" href="#2-how-to-convert-unifi-data-for-molecular-networking" title="Permanent link">¶</a></h2>
+<p>UNIFI keeps spectral data in Oracle database architecture, so you cannot get your raw data by simple copy and paste.
+Thus, as a first step of data conversion, you should export your data as MassLynx .Raw files. It can be done throught the file explorer, as shown below. Right-click on sample dataset will open the dropdown menu.</p>
+<p><img alt="img" src="../img/conversion/UNIFI_Raw_export.png"/></p>
+<div class="admonition info">
+<p class="admonition-title">Supported GNPS Workflow for Waters UNIFI Machines</p>
+<p>There is a bug in the current version of UNIFI, so if you try to export DDA data as .Raw, precursor ion m/z values will disappear. Thus, as we know, the only option for building molecular networks with UNIFI-operated system is the MSDIAL-FBMN pipeline with MSe data. If anyone knows how to convert DDA data from UNIFI into mzML, let ue know.</p>
+</div>
+<p>If you open the exported .Raw files using MassLynx or other softwares, you will find that m/z values are weird. This happens, because Lockspray correction will not be applied to the exported .Raw files. Thus, Lockspray correction will be the next step of the conversion.</p>
+<p>The Lockspray correstion can be done while you centroid your data, using MassLynx. UNIFI do not have any option for centroid mode acquisition, so your exported data will be continuum. You can perform both of centroiding and Lockspray correction via 'Accurate Mass Measure' module of MassLynx. You can find it here:</p>
+<p><img alt="img" src="../img/conversion/Waters_guide_1.png"/></p>
+<p><img alt="img" src="../img/conversion/Waters_guide_2.PNG"/></p>
+<ol>
+<li>
+<p>Select files by double-clicking, or Operations &gt; Select. If you want to move to other directory, close the module window, and open any datafile in MassLynx. Then the working directory will be changed.</p>
+</li>
+<li>
+<p>When files are selected, change the 'Process type' to 'Automatic Peak Detection'.</p>
+</li>
+<li>
+<p>go to Parameters &gt; Automatic Peak Detection Parameters, and select proper ion mode.</p>
+</li>
+</ol>
+<p><img alt="img" src="../img/conversion/Waters_guide_3.PNG"/></p>
+<ol>
+<li>
+<p>Check the both options 'Set Peak Detection Paramters Automatically' and "perform Lock Mass Correction' on.</p>
+</li>
+<li>
+<p>Put a proper Lock Mass m/z value into the "Lock Mass" window. If you are using leucine enkephalin, 556.2771 for positive ion mode, and 554.2615 for negative ion mode.</p>
+</li>
+<li>
+<p>Click 'OK' to close the parameter setting window, then click "Process".</p>
+</li>
+</ol>
+<p>Centroiding and Lock mass correction does not support multithreading, so this will take a long time. We recommend to run this on high-performanced workstations.</p>
+<p>When the processing is finished, you are ready to apply the files into the FBMN with MS-DIAL workflow. You can find detailed guideline <a href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking-with-ms-dial/">here</a>.</p>
+<h2 id="3-how-to-convert-waters-raw-files-to-mzml">3. How to convert Waters .Raw files to .mzML<a class="headerlink" href="#3-how-to-convert-waters-raw-files-to-mzml" title="Permanent link">¶</a></h2>
+<p>ProteoWizard msConvert has been updated several times, and the recent version resolved many problems known for Waters data conversion.</p>
+<p><a href="https://www.dropbox.com/s/lqrqrqjwc8ubj3k/GNPS_Vendor_Conversion.zip?dl=1">Here</a> is an updated version (with Proteowizard Release 3.0.21120) of the double-click converter we provided in our <a href="https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/">guideline</a>. Convert files with 'Double-Click_To-Convert_waters.bat'.</p>
+<p>There is a known issue on precursor ion m/z values when Waters .Raw data are converted to .mzML. The precursor ion fields of MS/MS scans will have m/z values of quadrupole isolation windows, instead of accurate mass values. Unfortunately, we do not have any solution for this issue. Thus, if you will use converted .mzML files directly for classical MN, remember that every m/z values are drifted from the original data.</p>
+<p>If we will use the FBMN workflow, you can detour this issue by using .Raw files for MZmine processing, without converting them to .mzML files. However, the direct import of Waters .Raw into MZmine is not possible in MZmine ver 2.53 due to a bug; so try it with old releases.</p>
+<h2 id="page-contributors">Page Contributors<a class="headerlink" href="#page-contributors" title="Permanent link">¶</a></h2>
+<p><span class="git-page-authors git-authors"><a href="mailto:41205498+KyobinKang@users.noreply.github.com">KyobinKang</a></span></p>
+<hr/>
+<div class="md-source-date">
+<small>
+    
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 3, 2021 08:30:03</span>
+</small>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+          Material for MkDocs
+        </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+<script src="../assets/javascripts/bundle.34eae1b6.min.js"></script>
+</body>
+</html>

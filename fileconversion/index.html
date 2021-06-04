@@ -7,10 +7,10 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-7.1.5" name="generator"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-7.1.6" name="generator"/>
 <title>Mass Spectrometry File Conversion - GNPS Documentation</title>
-<link href="../assets/stylesheets/main.bde7dde4.min.css" rel="stylesheet"/>
-<link href="../assets/stylesheets/palette.ef6f36e2.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/main.875de78c.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.f1a3b89f.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
@@ -817,6 +817,7 @@
 <p class="admonition-title">Supported Formats at GNPS</p>
 <p>GNPS supports mzXML, mzML, and mgf formats for analysis. Our tools do NOT support mzData, xml, raw, RAW, wiff, scan, d, and cdf formats. If some of your files are in these formats, please use the following guide to convert them to open formats supported by GNPS.</p>
 </div>
+<p>There is a specific guide for Waters data conversion. See <a href="./">here</a></p>
 <h2 id="data-conversion-super-easy">Data Conversion (Super Easy)<a class="headerlink" href="#data-conversion-super-easy" title="Permanent link">¶</a></h2>
 <p>Drag and drop files on our server <a href="https://gnps-quickstart.ucsd.edu/conversion">here</a> and hit convert. </p>
 <p>You will receive a download of all the converted files in a zip file that is ready to be analyzed! </p>
@@ -830,17 +831,8 @@
 <li>Double click on Double-Click_To-Convert.bat - Download zip includes demo files for major vendor formats as a test.</li>
 <li>Wait patiently</li>
 <li>Check all the converted files in Output_Folder</li>
-<li>
-<p>If there are errors, please check log.txt or read on how to convert files in a more traditional manner.</p>
-</li>
-<li>
-<p>A tip for Waters users:
-One of the frequent questions from Waters users is about PDA(UV) and LockSpray data contained in converted files.
-<a href="https://sourceforge.net/p/proteowizard/mailman/message/27531723/">case 1</a> <a href="https://github.com/mzmine/mzmine2/issues/449">case 2</a> <a href="https://groups.google.com/forum/#!category-topic/molecular_networking_bug_reports/unresolved-bugs--unknown-error-message/qjDan5zcjIY">case 3</a></p>
-</li>
+<li>If there are errors, please check log.txt or read on how to convert files in a more traditional manner.</li>
 </ol>
-<p>These occur because Waters .Raw files contain UV and LockSpray data as additional 'channels' of MS detector. Some Waters third party softwares can solve this problem, but for cases you have not purchased licenses for the softwares, here we introduce you a temporary expedient. Every channel data are contained as "_FUNC00X.*" in Water.Raw files, so just delete them and run "Double-Click_To-Convert.bat."</p>
-<p>e.g. If LockSprary and UV data are channels 5/6 in your data, put every .Raw files in Input_Files folder, then run cmd, go to Input_Files, and run "del /s _FUNC005.<em>" and "del /s _FUNC006.</em>" </p>
 <h2 id="data-conversion-traditional">Data Conversion (Traditional)<a class="headerlink" href="#data-conversion-traditional" title="Permanent link">¶</a></h2>
 <p>The .mzXML or .mzML formats are strongly preferred and will be discussed below.</p>
 <table>
@@ -935,12 +927,12 @@ One of the frequent questions from Waters users is about PDA(UV) and LockSpray d
 <h3 id="advanced-online-conversion-with-proteowizard-msconvert">Advanced Online Conversion with Proteowizard (MSConvert)<a class="headerlink" href="#advanced-online-conversion-with-proteowizard-msconvert" title="Permanent link">¶</a></h3>
 <p>It is possible to convert spectrum files online at the sister site - MassIVE. This site is able to handle thermo RAW and Sciex Wiff files. Please check it out <a href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/">here</a>.</p>
 <h2 id="page-contributors">Page Contributors<a class="headerlink" href="#page-contributors" title="Permanent link">¶</a></h2>
-<p><span class="git-page-authors git-authors"><a href="mailto:mwang87@gmail.com">Ming Wang</a> (74.39%), <a href="mailto:louisfelix.nothias@gmail.com">lfnothias</a> (8.54%), <a href="mailto:41205498+KyobinKang@users.noreply.github.com">KyobinKang</a> (12.2%), <a href="mailto:iprotsyuk@google.com">Ivan Protsyuk</a> (4.88%)</span></p>
+<p><span class="git-page-authors git-authors"><a href="mailto:mwang87@gmail.com">Ming Wang</a> (80.0%), <a href="mailto:louisfelix.nothias@gmail.com">lfnothias</a> (9.33%), <a href="mailto:41205498+KyobinKang@users.noreply.github.com">KyobinKang</a> (5.33%), <a href="mailto:iprotsyuk@google.com">Ivan Protsyuk</a> (5.33%)</span></p>
 <hr/>
 <div class="md-source-date">
 <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 13, 2020 23:18:29</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 3, 2021 08:19:57</span>
 </small>
 </div>
 </article>
@@ -993,6 +985,6 @@ One of the frequent questions from Waters users is about PDA(UV) and LockSpray d
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
-<script src="../assets/javascripts/bundle.a1609d9a.min.js"></script>
+<script src="../assets/javascripts/bundle.34eae1b6.min.js"></script>
 </body>
 </html>

@@ -7,10 +7,10 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking-with-ms-dial/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-7.1.5" name="generator"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-7.1.6" name="generator"/>
 <title>FBMN with MS-DIAL - GNPS Documentation</title>
-<link href="../assets/stylesheets/main.bde7dde4.min.css" rel="stylesheet"/>
-<link href="../assets/stylesheets/palette.ef6f36e2.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/main.875de78c.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.f1a3b89f.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
@@ -1022,17 +1022,20 @@ DIAL can process LC-MS/MS data performed in non-targeted mode, but also in MSE a
 <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="350" src="https://www.youtube.com/embed/hxk40jwAkcc" width="600"></iframe>
 <h3 id="convert-your-lc-msms-data-to-open-format">Convert your LC-MS/MS Data to Open Format<a class="headerlink" href="#convert-your-lc-msms-data-to-open-format" title="Permanent link">¶</a></h3>
 <p>MS-DIAL accepts different input formats. Note that we recommend first to convert your files to mzML format before doing MS-DIAL processing. <a href="https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/">See the documentation here</a>.</p>
+<p>MS-DIAL releases later than ver 4.60 supports direct import of SCIEX (.wiff, .wiff2), Thermo (.raw). Agilent (.d), and Waters (.raw), so conversion is not required. See the <a href="http://www.metabolomics-forum.com/index.php?PHPSESSID=036a613e39e80b20290bcdb621373eee&amp;topic=1642.0">release note</a></p>
 <h4 id="processing-steps-for-non-targeted-lc-msms">Processing Steps for non-targeted LC-MS/MS<a class="headerlink" href="#processing-steps-for-non-targeted-lc-msms" title="Permanent link">¶</a></h4>
 <p>Below is a walk-through of all the steps</p>
 <h4 id="1-make-a-new-project">1. Make a New Project<a class="headerlink" href="#1-make-a-new-project" title="Permanent link">¶</a></h4>
 <p>Go to Menu: File / New Project</p>
 <p><img alt="img" src="../img/ms-dial/new-project.png"/></p>
 <p>Select appropriate parameters (ionization type / method type / data type / ion mode / target omics) for your dataset. Click “Next”.</p>
-<p>[Note] If you are processing with Waters MSe data, set MS method type to 'SWATH-MS or conventional All-ions method' and use <a href="/docs/static/MSe_experiment.txt">this experiment file</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">FBMN with Waters MSe data</p>
+</div>
+<p>If you are processing with Waters MSe data, set MS method type to 'SWATH-MS or conventional All-ions method' and use <a href="https://www.dropbox.com/s/b0rbtelnmnv3w93/Mse_experiment.txt?dl=1">this experiment file</a>.</p>
 <h4 id="2-import-files">2. Import Files<a class="headerlink" href="#2-import-files" title="Permanent link">¶</a></h4>
 <p>Click “browse” and open the dropdown menu for file types, and select “mzML file(*.mzml)”. The other available options are .abf or .cdf files.</p>
 <p>[Note] Data files should be placed at the same folder with the project file.</p>
-<p>[Note] If you are processing with Waters MSe data, convert raw data files into .abf and import. You can download ABF converter <a href="http://www.reifycs.com/AbfConverter/index.html">here</a>.</p>
 <p>Select files and click “Open”. You will see the list of selected files. Click “Next”.</p>
 <p><img alt="img" src="../img/ms-dial/import-raw.png"/></p>
 <h4 id="3-set-parameters-data-collection">3. Set Parameters - Data Collection<a class="headerlink" href="#3-set-parameters-data-collection" title="Permanent link">¶</a></h4>
@@ -1106,12 +1109,12 @@ DIAL can process LC-MS/MS data performed in non-targeted mode, but also in MSE a
 </ul>
 <p>=======</p>
 <h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">¶</a></h2>
-<p><span class="git-page-authors git-authors"><a href="mailto:mwang87@gmail.com">Ming Wang</a> (3.35%), <a href="mailto:louisfelix.nothias@gmail.com">lfnothias</a> (41.9%), <a href="mailto:41205498+KyobinKang@users.noreply.github.com">KyobinKang</a> (51.96%), <a href="mailto:iprotsyuk@google.com">Ivan Protsyuk</a> (2.79%)</span></p>
+<p><span class="git-page-authors git-authors"><a href="mailto:mwang87@gmail.com">Ming Wang</a> (3.33%), <a href="mailto:louisfelix.nothias@gmail.com">lfnothias</a> (41.67%), <a href="mailto:41205498+KyobinKang@users.noreply.github.com">KyobinKang</a> (52.22%), <a href="mailto:iprotsyuk@google.com">Ivan Protsyuk</a> (2.78%)</span></p>
 <hr/>
 <div class="md-source-date">
 <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 8, 2020 07:16:24</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 3, 2021 08:34:56</span>
 </small>
 </div>
 </article>
@@ -1164,6 +1167,6 @@ DIAL can process LC-MS/MS data performed in non-targeted mode, but also in MSE a
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
-<script src="../assets/javascripts/bundle.a1609d9a.min.js"></script>
+<script src="../assets/javascripts/bundle.34eae1b6.min.js"></script>
 </body>
 </html>
