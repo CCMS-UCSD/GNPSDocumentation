@@ -20,6 +20,7 @@ nav:
         - Molecular Networking: massspecbackground/networkingtheory.md
     - Data Preparation/Upload:
         - Mass Spectrometry File Conversion: fileconversion.md
+        - File Conversion (Waters): fileconversion_waters.md
         - GNPS File Upload: fileupload.md
         - Metadata: metadata.md
     - Recommended Data Analysis:
