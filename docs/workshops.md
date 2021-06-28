@@ -2,6 +2,8 @@
 
 | Venue        | Description          | Dates |  Speakers/Instructors |Material |
 | ------------- |-------------| -----| -----| -----|
+|Zoom! | Molecular Networking with GCMS data in Portuguese - Part 2 | 07/01/2021 10AM PST | Alexander Aksenov, Anelize Bauermeister, Helena Mannochio Russo, Mauricio Caraballo, Tiago Leão| [Material](https://docs.google.com/document/d/1FnErLV23GWHa9NYyEoKK6ggaiGwZlGF65B939M6Z4ag/edit) [Zoom link] |
+|Zoom! | Molecular Networking with GCMS data in Portuguese - Part 1 | 06/30/2021 10AM PST | Alexander Aksenov, Anelize Bauermeister, Helena Mannochio Russo, Mauricio Caraballo, Tiago Leão| [Material](https://docs.google.com/document/d/1FnErLV23GWHa9NYyEoKK6ggaiGwZlGF65B939M6Z4ag/edit) [Zoom link] |
 
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
@@ -41,8 +43,8 @@ Here is a table to briefly browse them
 | ------------- |-------------| -----| -----| -----| ----- |
 | Virtual Classroom | Exploratory Data Analysis with brief primers on MASST, Library Matching, Molecular Networking, & GNPS Dashboard | 2021-05-27 & 2021-05-12 | Teaching Practical Guides as part of course | No URL available | 25 |
 | Zoom! | GNPS Dashboard - Overview | 5/12/2021 9AM PST | Mingxun Wang and Daniel Petras | [Material](https://docs.google.com/document/d/16-ZA3ZPUdkSWdIBNDLzyTetXNX9Uy5iboya-DFON46g/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=S3aAkGTMC-g) | 140 |
-|Zoom! | Basic principles of metabolomics-based MS data and GNPS tools for data analysis in Portuguese - Part 1 | 04/28/2020 9AM PST | Anelize Bauermeister, Tiago Leão, Naydja M. Maimone, Danielle R. P. Barros| [Material](https://docs.google.com/document/d/1Gmp1eyIACYCYCDxyrgto9ZCBVbEHd8I0R9TJHRhRMZY/edit) [Video](https://www.youtube.com/watch?v=QVw1K1dkpIc) | 450 |
-|Zoom! | Basic principles of metabolomics-based MS data and GNPS tools for data analysis in Portuguese - Part 2 | 04/29/2020 9AM PST | Anelize Bauermeister, Tiago Leão, Naydja M. Maimone, Danielle R. P. Barros, Ricardo Silva| [Material](https://docs.google.com/document/d/1ib3ZBxj5WcoiIJKsP4kMG2JRS4nyJoW5zVeAJI_CiqE/edit#heading=h.259uu2unjlre) [Video](https://www.youtube.com/watch?v=OLRazw7Q-2M&t=3747s) | 320 |
+|Zoom! | Basic principles of metabolomics-based MS data and GNPS tools for data analysis in Portuguese - Part 1 | 04/28/2021 9AM PST | Anelize Bauermeister, Tiago Leão, Naydja M. Maimone, Danielle R. P. Barros| [Material](https://docs.google.com/document/d/1Gmp1eyIACYCYCDxyrgto9ZCBVbEHd8I0R9TJHRhRMZY/edit) [Video](https://www.youtube.com/watch?v=QVw1K1dkpIc) | 450 |
+|Zoom! | Basic principles of metabolomics-based MS data and GNPS tools for data analysis in Portuguese - Part 2 | 04/29/2021 9AM PST | Anelize Bauermeister, Tiago Leão, Naydja M. Maimone, Danielle R. P. Barros, Ricardo Silva| [Material](https://docs.google.com/document/d/1ib3ZBxj5WcoiIJKsP4kMG2JRS4nyJoW5zVeAJI_CiqE/edit#heading=h.259uu2unjlre) [Video](https://www.youtube.com/watch?v=OLRazw7Q-2M&t=3747s) | 320 |
 |Zoom! | GNPS Feature Based Molecular Networking in Portuguese - Part 1 | 12/09/2020 9AM PST | Anelize Bauermeister, Carlismari Grundmann, Helena Mannochio, Juliano Amaral, Tiago Leão| [Material](https://docs.google.com/document/d/1LVGZiifVoKELANRFOGUtCl5ptjTXH6q_W5g0rZTnJi4/edit?usp=sharing)| 200 |
 |Zoom! | GNPS Feature Based Molecular Networking in Portuguese - Part 2 | 12/10/2020 9AM PST | Anelize Bauermeister, Carlismari Grundmann, Helena Mannochio, Juliano Amaral, Tiago Leão| [Material](https://docs.google.com/document/d/1rp5_xAiLWRhVRAfIt6a91gzhkxPs3IPEMWnp_NDMrOE/edit?usp=sharing)| 200 |
 | Zoom! | SIO262 Molecular Networking Intro	| 11/25/2020 15:30 PM PST |  Daniel Petras, Mingxun Wang,| [Video](https://www.youtube.com/watch?v=DIItacY4VaE) | 20 |
