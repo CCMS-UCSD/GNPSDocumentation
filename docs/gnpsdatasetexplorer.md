@@ -1,4 +1,4 @@
-The [GNPS Dataset Explorer](https://gnps-dataset-explorer.herokuapp.com/) is a simple interface to enable users to list out and select all files from a public dataset or analysis task. 
+The [GNPS Dataset Explorer](https://gnps-explorer.ucsd.edu) is a simple interface to enable users to list out and select all files from a public dataset or analysis task. 
 
 It current supports the following data sources:
 
