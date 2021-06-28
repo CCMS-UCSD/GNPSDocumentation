@@ -2,6 +2,8 @@
 
 | Venue        | Description          | Dates |  Speakers/Instructors |Material |
 | ------------- |-------------| -----| -----| -----|
+| Zoom! | Molecular Networking with GCMS data in Portuguese - Part 2 | 07/01/2021 10AM PST | Alexander Aksenov, Anelize Bauermeister, Helena Mannochio Russo, Mauricio Caraballo, Tiago Leão | [Material](https://docs.google.com/document/d/1FnErLV23GWHa9NYyEoKK6ggaiGwZlGF65B939M6Z4ag/edit?pli=1) |
+| Zoom! | Molecular Networking with GCMS data in Portuguese - Part 1 | 06/30/2021 10AM PST | Alexander Aksenov, Anelize Bauermeister, Helena Mannochio Russo, Mauricio Caraballo, Tiago Leão | [Material](https://docs.google.com/document/d/1FnErLV23GWHa9NYyEoKK6ggaiGwZlGF65B939M6Z4ag/edit?pli=1) |
 
 
 If you would like to host a GNPS workshop together with the GNPS team, please reach out to [Ming](mailto: miw023@ucsd.edu) to organize the logistics!
