@@ -14,7 +14,7 @@ https://ucsd.zoom.us/j/93790942606
 
 PW: 325881
 
-In office hours we'll cover new and old features of GNPS and most importantly we'll take your personal questions about GNPS, computational mass spectrometry, and any science you want to chat about! We'll start office hours given the time below and keep going until there are no more questions. 
+In office hours we'll cover new and old features of GNPS and most importantly we'll take your personal questions about GNPS, computational mass spectrometry, and any science you want to chat about! We'll start office hours given the time below and keep going until there are no more questions. If office hours get too busy, we will limit each question to 10 min.  
 
 Upcoming Office Hour Schedule
 
