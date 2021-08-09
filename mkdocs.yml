@@ -37,6 +37,7 @@ nav:
         - GNPS Dashboard: lcms-dashboard.md
         - GNPS Dataset Explorer: gnpsdatasetexplorer.md
         - Metabolomics Spectrum Resolver: usi.md
+        - GNPS Dashboard Use Cases: dashboard_use_cases.md
     - Advanced Data Analysis:
         - Molecular Networking Files: networkingfiles.md
         - Feature Based Molecular Networking:
