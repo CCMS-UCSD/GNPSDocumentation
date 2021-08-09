@@ -43,9 +43,14 @@ We aim to enable the visualization without having users download a single file a
 
 Data must be specified as a universal spectrum identifier. This again can be sourced through several locations as mentioned above. The easiest ways are:
 
-1. Using [GNPS Dataset Explorer](https://gnps-explorer.ucsd.edu/) that enables selecting public datasets
-1. Direct links from GNPS analyses 
-1. User uploads via the Drag and Drop (up to 120MB files)
+1. Using [GNPS Dataset Explorer](https://gnps-explorer.ucsd.edu/) that enables selecting public datasets - mzML, mzXML, CDF, mgf, Thermo RAW
+1. Direct links from GNPS analyses - mzML, mzXML, CDF, mgf files
+	* Classical Molecular Networking
+	* Feature Based Molecular Networking
+	* GNPS-GC Analysis
+	* Spectral Library Search
+	* MASST
+3. User uploads via the Drag and Drop (up to 2GB files) - mzML, mzXML, CDF
 
 A filled in USI selection can be seen below. 
 
