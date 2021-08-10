@@ -13,9 +13,12 @@ GNPS Dashboard for Yersiniabactin [link](https://gnps-lcms.ucsd.edu/?xicmz=482.1
 
 Feature-based molecular networking [link](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?view=network_displayer&amp;highlight_node=2&amp;componentindex=60&amp;task=5844c6bea85442b0a998f4d558caa310#%7B%7D)
 
-![img](img/dashboard_use_cases/SI_Usecase_1.png)
+![img](img/dashboard_use_cases/SI_Usecase_1.png =250x)
 
 **Supplemental Figure 2: Mass spectrometry data visualization and linking to molecular networks from yersiniabactin from E. coli nissle extracts.** Panel a shows the MS/MS molecular networking results from an _E. coli_ nissle wild type and NRPS knock-out strain, indicating the presence of yersiniabactin (m/z 482.124) and its derivatives only in the wild type. Panel b shows the XIC visualization and peak area difference between the WT and KO group as box-plot through the GNPS Dashboard. Panel c shows the feature-based molecular networking results from the same data in which the yersiniabactin isomers (m/z 482.124) are maintained as individual nodes.
+
+
+
 
 **Use Case 2: Quick data analysis of MS1 single quad data**
 
@@ -36,6 +39,9 @@ GNPS Dashboard [link](https://gnps-lcms.ucsd.edu/?xicmz=308.1%3B+310.1&amp;xic_f
 **Supplemental Figure 3: Quick data analysis of MS1 single quad data**
 
 Identification of differences in the extracellular metabolomes of the methylotrophic bacterium_Methylorubrum extorquens_ PA1 (PA1) grown on different carbon and energy sources. (a) XICs for protonated masses corresponding to quorum-sensing signals produced by PA1. (b) Box plots of integrated peak areas for the same XICs from a retention time window of 25-27 minutes. Data are from three separate cultures for each growth condition.
+
+
+
 
 **Use Case 3: Collaborative Exploration of LC-MS Data**
 
