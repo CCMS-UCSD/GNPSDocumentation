@@ -13,7 +13,7 @@ GNPS Dashboard for Yersiniabactin [link](https://gnps-lcms.ucsd.edu/?xicmz=482.1
 
 Feature-based molecular networking [link](https://gnps.ucsd.edu/ProteoSAFe/result.jsp?view=network_displayer&amp;highlight_node=2&amp;componentindex=60&amp;task=5844c6bea85442b0a998f4d558caa310#%7B%7D)
 
-<img src="img/dashboard_use_cases/SI_Usecase_1.png" width="200">
+<img src="img/dashboard_use_cases/SI_Usecase_1.png" width="600">
 
 **Supplemental Figure 2: Mass spectrometry data visualization and linking to molecular networks from yersiniabactin from E. coli nissle extracts.** Panel a shows the MS/MS molecular networking results from an _E. coli_ nissle wild type and NRPS knock-out strain, indicating the presence of yersiniabactin (m/z 482.124) and its derivatives only in the wild type. Panel b shows the XIC visualization and peak area difference between the WT and KO group as box-plot through the GNPS Dashboard. Panel c shows the feature-based molecular networking results from the same data in which the yersiniabactin isomers (m/z 482.124) are maintained as individual nodes.
 
