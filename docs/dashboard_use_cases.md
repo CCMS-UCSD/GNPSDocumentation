@@ -1,7 +1,7 @@
 
-#**Use Case 1: Mass spectrometry data visualization and linking to molecular networking**
+# **Use Case 1: Mass spectrometry data visualization and linking to molecular networking**
 
-##**Daniel Petras PhD - Post-Doctoral Scholar - Analytical Chemistry and Chemical Ecology**
+## **Daniel Petras PhD - Post-Doctoral Scholar - Analytical Chemistry and Chemical Ecology**
 
 _E. coli_ Nissle is broadly used as a probiotic and the producer of a series of secondary metabolites including the DNA damaging cytotoxins colibactin and siderophores yersiniabactin. In the context of searching for novel zinc uptake mechanisms, we screened Nissle wildtype and yersiniabactin NRPS knock-out mutants culture extract for yersiniabactin production[7](https://www.zotero.org/google-docs/?kusO1q).
 
@@ -22,11 +22,11 @@ Feature-based molecular networking [link](https://gnps.ucsd.edu/ProteoSAFe/resul
   
   
   
-#**Use Case 2: Quick data analysis of MS1 single quad data**
+# **Use Case 2: Quick data analysis of MS1 single quad data**
 
-##**Dale A. Cummings Jr - PhD Student - Biological Chemistry**
+## **Dale A. Cummings Jr - PhD Student - Biological Chemistry**
 
-##**Aaron W. Puri PhD - Assistant Professor - Biological Chemistry**
+## **Aaron W. Puri PhD - Assistant Professor - Biological Chemistry**
 
 While many labs now have access to tandem mass spectrometers and can therefore acquire data for MS2-based molecular networking, routine analysis is often still performed on unit resolution MS1 mass analyzers, such as single quadrupoles. However, proprietary software often makes it difficult to rapidly analyze and share these types of data. To address this we have added functionality for analyzing MS1 spectra in the GNPS Dashboard specifically in netCDF format, which is commonly used by single quadrupole LC-MS systems.
 
@@ -45,11 +45,11 @@ Identification of differences in the extracellular metabolomes of the methylotro
 
 
 
-#**Use Case 3: Collaborative Exploration of LC-MS Data**
+# **Use Case 3: Collaborative Exploration of LC-MS Data**
 
-##**Mingxun Wang PhD - Post-Doctoral Scholar - Computer Science and Bioinformatics**
+## **Mingxun Wang PhD - Post-Doctoral Scholar - Computer Science and Bioinformatics**
 
-##**Daniel Petras PhD - Post-Doctoral Scholar - Analytical Chemistry and Chemical Ecology**
+## **Daniel Petras PhD - Post-Doctoral Scholar - Analytical Chemistry and Chemical Ecology**
 
 The exploration of non-targeted mass spectrometry is often a long and collaborative process, e.g. between collaborating researchers or between mentors and mentees. In many instances, it is difficult to collaboratively explore and share results when it is impractical or impossible to physically sit together, for example during a global pandemic. With the GNPS Dashboard, it is possible to share exactly the settings and visualization that a researcher is seeing on their own screen either by our collaborative sync feature or by simply copying and pasting a url. This sharing ability enables others to build upon this visualization and reshare to collaboratively enhance and dive deeper into the data, whether in joint data analysis sessions with collaborators, reports, or peer-reviewed publications. One particular example and collaborative visualization dialog can be seen below with quality control (QC) sample of a mixture of 6 standard compounds ( **SI Figure 4** ):
 
@@ -67,11 +67,11 @@ The final url can then be shared with others in the team and used to protocol th
 
 **Supplemental Figure 4:** In panel a we see an example communication between two users to collaboratively analyze a mass spectrometry sample. This communication can be done purely remotely by sharing URLs or the synchronization feature in GNPS Dashboard. In panel b we can see how the discrete steps line up with updating different parts of the dashboard as the analysis progresses.
 
-#**Use Case 4: Inspection and validation of published results based upon public data sharing/inspection**
+# **Use Case 4: Inspection and validation of published results based upon public data sharing/inspection**
 
-##**Mingxun Wang PhD - Post-Doctoral Scholar - Computer Science and Bioinformatics**
+## **Mingxun Wang PhD - Post-Doctoral Scholar - Computer Science and Bioinformatics**
 
-##**Daniel Petras PhD - Post-Doctoral Scholar - Analytical Chemistry and Chemical Ecology**
+## **Daniel Petras PhD - Post-Doctoral Scholar - Analytical Chemistry and Chemical Ecology**
 
 Data transparency and verification of software-derived results have become key aspects in recent years in proteomics and metabolomics publications thanks to policy and cultural shifts within these fields. It has even become the standard for many scientific communities where publishers require data sharing for papers to be accepted for publication. While there are differences in guidelines with regards to data content (e.g. raw and processed data), as well as accepted repositories (e.g. ProteoXchange[12](https://www.zotero.org/google-docs/?m4f2IF) initiative or Nature Publishing Group guidelines), there still exist multiple barriers for reviewers and readers of scientific articles to make use of the shared data for inspection or reproduction of the published results.
 
@@ -104,11 +104,11 @@ Between October 2020 and January 2021, we inspected 10 LC-MS datasets from peer-
 
 **Supplemental Figure 7:** Inspection of publicly shared mass spectrometry data of AdipoAtlas: A Reference Lipidome for Human White Adipose Tissue
 
-#**Use Case 5A: GNPS Dashboard usage in Teaching Setting**
+# **Use Case 5A: GNPS Dashboard usage in Teaching Setting**
 
-##**Katherine Maloney PhD - Professor - Natural Product Chemistry,**
+## **Katherine Maloney PhD - Professor - Natural Product Chemistry,**
 
-##**Allegra Aron PhD - Post-Doctoral Scholar - Biological Chemistry**
+## **Allegra Aron PhD - Post-Doctoral Scholar - Biological Chemistry**
 
 GNPS Dashboard proved useful in a teaching setting, as we developed a virtual, interactive laboratory exercise for undergraduate students to explore LC-MS data generated by the instructor, as part of Tiny Earth, an initiative to crowdsource antibiotic discovery in a Course-based Undergraduate Research Experience (CURE) GNPS Dashboard was an ideal tool for this interactive (or a virtually interactive) lab because software installation was not necessary and software licenses did not need to be obtained, both challenging obstacles when working with a class. One option frequently employed is the use of a virtual desktop that has the requisite software installed. For example, we used such a system for the processing of NMR data in the Tiny Earth[17](https://www.zotero.org/google-docs/?6Hjvxl) course. However, students found the virtual desktop to be clunky and error-prone. The web-based interface of the GNPS Dashboard proved to be markedly more user-friendly, giving reproducible and shareable results. Moreover, the instructor can equip students with path links to data for exploration in GNPS Dashboard or can take students through data exploration using the synchronization feature.
 
@@ -118,10 +118,10 @@ GNPS Dashboard - [Link](https://gnps-lcms.ucsd.edu/?xic_mz=321.005%3B443.146%3B3
 
 **Supplemental Figure 8:** Students use the GNPS Dashboard ([link](https://gnps-lcms.ucsd.edu/?xic_mz=321.005%3B443.146%3B333.0915%3B696.3025&amp;xic_formula=&amp;xic_peptide=&amp;xic_tolerance=0.5&amp;xic_ppm_tolerance=10&amp;xic_tolerance_unit=Da&amp;xic_rt_window=&amp;xic_norm=False&amp;xic_file_grouping=FILE&amp;xic_integration_type=AUC&amp;show_ms2_markers=True&amp;ms2_identifier=None&amp;show_lcms_2nd_map=False&amp;map_plot_zoom=%7B%7D&amp;polarity_filtering=None&amp;polarity_filtering2=None&amp;tic_option=TIC&amp;overlay_usi=None&amp;overlay_mz=row+m%2Fz&amp;overlay_rt=row+retention+time&amp;overlay_color=&amp;overlay_size=&amp;overlay_hover=&amp;overlay_filter_column=&amp;overlay_filter_value=&amp;feature_finding_type=Off&amp;feature_finding_ppm=10&amp;feature_finding_noise=10000&amp;feature_finding_min_peak_rt=0.05&amp;feature_finding_max_peak_rt=1.5&amp;feature_finding_rt_tolerance=0.3&amp;sychronization_session_id=6b74adb2b9cf47e490ad4c5b035eb4ec&amp;comment=&amp;map_plot_color_scale=Hot_r&amp;map_plot_quantization_level=Medium#%7B%22usi%22%3A%20%22mzspec%3AMSV000086079%3Aantibiotics_1ug_ml_neg_20200902112656%3Ascan%3A1000%22%2C%20%22usi2%22%3A%20%22%22%7D)) to visualize XIC plots of antibiotics of interest, which include chloramphenicol ([H-H+], _m/z_ 321.005), tetracycline ([H-H+], _m/z_ 443.146), penicillin G ([H-H+], _m/z_ 333.0915), and rifamycin ([H-H+], _m/z_ 696.3025). ![](RackMultipart20210809-4-73ze9x_html_319419e7ff587e1d.png)
 
-**Use Case 5B: GNPS Dashboard for Targeted MS in a Teaching Setting**
+# **Use Case 5B: GNPS Dashboard for Targeted MS in a Teaching Setting**
 
-**Michael Marty PhD – Assistant Professor – Analytical Chemistry
- Deirdre Belle-Oudry PhD – Senior Lecturer – Analytical Chemistry**
+# **Michael Marty PhD – Assistant Professor – Analytical Chemistry**
+# **Deirdre Belle-Oudry PhD – Senior Lecturer – Analytical Chemistry**
 
 In addition to analyzing LC-MS data generated by the instructor or in public data sets, the GNPS Dashboard is also useful for undergraduate students analyzing targeted data for quantitative analysis. For example, the GNPS Dashboard was used as the data analysis tool for two new labs in the _Quantitative Analysis Lab_ (CHEM 326) course at the University of Arizona in Tucson, AZ developed by Michael Marty and Deirdre Belle-Oudry. Earlier in the semester, the students used HPLC with UV detection to quantify aspirin, acetaminophen, and caffeine[19](https://www.zotero.org/google-docs/?GugTMT). However, additional peaks can be present in the UV chromatogram due to hydrolysis of acetyl-salicylic acid into salicylic acid. In the first LC/MS lab, students use LC/MS/MS with a triple quadrupole mass spectrometer to first identify the degraded product from product ion scans and then use single reaction monitoring (SRM) scans for targeted quantitation. After collecting the data and converting it to .mzML format using MSConvert[3](https://www.zotero.org/google-docs/?0I2w5d) students use the GNPS Dashboard to view the MS1 and MS2 data to assign the peaks. Example data is posted to MassIVE MSV000087058 to allow students to access training data from a direct link. Next, they use the Dashboard to view and integrate the SRM chromatograms. Because the LC/MS/MS system has a UV detector, students can also load the UV chromatograms into the GNPS Dashboard to compare retention times from both detection methods. In the second lab, the students apply the skills they develop in the first lab to quantify amino acids in food samples based on targeted SRM scans. Overall, the GNPS Dashboard provides a fast and user-friendly method to quantify targeted SRM scans and view MS data. The web-based interface provides easy and inclusive access for students with all different types of computers.
 
@@ -147,9 +147,9 @@ Finally, to confirm, when looking at the MS2 mapped to the feature, we also see 
 
 **Supplementary Figure 9: Connecting Protein Differential Expression with Raw Proteomics Data -** a) shows the log2 intensity for features that map to sp|P07834|CDC4\_YEAST in all 4 conditions from the IPRG2015 experiment, illustrating how the intensity is consistent across conditions 1-3 but significantly upregulated in condition 4, though only due to one features abundance, b) shows all features in Condition 4 that are for this protein, 6 in total, corresponding to 2 peptides, each with 3 replicates c) shows the LC-MS map for the region near the feature for LSQKYPK, the feature with very high abundance, in the 3rd replicate, and d) shows the annotated MS/MS spectrum for the peptide, and how the annotated peaks don&#39;t show much of the intensity of the spectrum.
 
-#**Use Case 7: Data visualization and parameter optimization for large scale feature finding**
+# **Use Case 7: Data visualization and parameter optimization for large scale feature finding**
 
-##**Carlos Molina-Santiago PhD, Post-Doctoral Scholar, Microbiology**
+## **Carlos Molina-Santiago PhD, Post-Doctoral Scholar, Microbiology**
 
 _Bacillus subtilis_ is a well-known Gram-positive strain that exhibits great potential as a biocontrol agent against bacterial and fungal pathogens in plants, such as in cucurbit crops[23](https://www.zotero.org/google-docs/?khRfy7). In the example, we showcase the study of the metabolic changes occurring on melon leaves after the inoculation of _B. subtilis_ by non-targeted LC-MS/MS. We compared the metabolomes of untreated and treated melon leaves 5 days after inoculation with _B. subtilis_.
 
@@ -165,11 +165,11 @@ We have used the GNPS Dashboard as a fast and easy tool to firstly compare the s
 
 **Supplemental Figure 10. Optimization of feature finding settings and feature-based molecular networking through the GNPS dashboard.** Panel a shows the comparison of XIC of Surfactin (_m/z_ 1036.69) of B. subtilis treated plants (blue) and control plants without treatment (orange) in the GNPS dashboard. Box plots of integrated peak areas of Surfactin of treatment vs. control are shown in panel b and show that surfactin was detected in the treated sample but not the control. In the GNPS Dashboard MZmine parameters were visually optimized and shown as green boxes in the 2D LC-MS heatmap in panel d for a representative sample and then directly applied in a link out for feature finding using the GNPS MZmine workflow. Panel e shows the multivariate (PCoA)[26](https://www.zotero.org/google-docs/?5GRHEu) visualization of sample-to-sample distance based on all features in the data set. Panel f shows a selected network family that show different abundances between treatment and control group which was then further inspected by manually integrating the XICs of ferulic acid methyl ester (_m/z_ 177) and neochlorogenic acid (m/z 163) in the GNPS Dashboard as shown in panel g.
 
-#**Use Case 8: Outliers in data analysis - Visualization of LC-MS can diagnose upstream data issues**
+# **Use Case 8: Outliers in data analysis - Visualization of LC-MS can diagnose upstream data issues**
 
-##**Rachel Neve - PhD Student - Microbiology**
+## **Rachel Neve - PhD Student - Microbiology**
 
-##**Vanessa Phelan PhD - Assistant Professor - Chemical Ecology**
+## **Vanessa Phelan PhD - Assistant Professor - Chemical Ecology**
 
 ![](RackMultipart20210809-4-73ze9x_html_f4bf2fd4b501ffdd.png)
 
@@ -177,11 +177,11 @@ We have used the GNPS Dashboard as a fast and easy tool to firstly compare the s
 
 Visualization of quantitative LC-MS data using boxplots or scatterplots can reveal outlier values. Due to the number of processing steps involved to generate quantitative values from raw LC-MS data, those outlier values may originate from poor sample extraction, improper injection volume, or inappropriate feature finding settings for the dataset. However, the GNPS Dashboard can be used to quickly visualize the raw data to identify the origin of the outlier values. For the example in **Supplemental Figure 11** , we analyzed the metabolome of _Pseudomonas aeruginosa_ strain SH2D grown in synthetic cystic fibrosis medium 2 (SCFM2) containing dialyzed bovine submaxillary mucin (BSM). We subjected the LC-MS data to feature finding and generated box plots to visualize the area under the curve values for each replicate ( **Supplemental Figure 11 TOP** ). For many of the features quantified, biological replicate 1 (SH2D-1) values were near zero, while values for replicate 2 (SH2D-2) and 3 (SH2D-3) were not. This result suggested that there was likely an issue with either sample quality or data processing. We then visualized the extracted ion chromatograms (EIC) of _m/z_ values associated with select features ( **Supplemental Figure 11 BOTTOM** ). Overlaying the EIC from each replicate for each _m/z_ revealed that the boxplots faithfully represented the raw data, indicating an experimental issue associated with either sample extraction or injection. [GNPS Dashboard Link](https://gnps-lcms.ucsd.edu/?xic_mz=225.0658%3B244.1693%3B527.3184&amp;xic_formula=&amp;xic_peptide=&amp;xic_tolerance=0.5&amp;xic_ppm_tolerance=10&amp;xic_tolerance_unit=Da&amp;xic_rt_window=&amp;xic_norm=False&amp;xic_file_grouping=MZ&amp;xic_integration_type=AUC&amp;show_ms2_markers=True&amp;ms2marker_color=blue&amp;ms2marker_size=5&amp;ms2_identifier=None&amp;show_lcms_2nd_map=False&amp;map_plot_zoom=%7B%7D&amp;polarity_filtering=None&amp;polarity_filtering2=None&amp;tic_option=TIC&amp;overlay_usi=None&amp;overlay_mz=row+m%2Fz&amp;overlay_rt=row+retention+time&amp;overlay_color=&amp;overlay_size=&amp;overlay_hover=&amp;overlay_filter_column=&amp;overlay_filter_value=&amp;feature_finding_type=Off&amp;feature_finding_ppm=10&amp;feature_finding_noise=10000&amp;feature_finding_min_peak_rt=0.05&amp;feature_finding_max_peak_rt=1.5&amp;feature_finding_rt_tolerance=0.3&amp;sychronization_session_id=2d65aa1ef8064b6abe8383136209130b&amp;chromatogram_options=%5B%5D&amp;comment=&amp;map_plot_color_scale=Hot_r&amp;map_plot_quantization_level=Medium#%7B%22usi%22%3A%20%22mzspec%3AMSV000087157%3Apeak/Strains%20mzXMLs/SH2D-1_P2-G-4_01_11825.mzXML%5Cnmzspec%3AMSV000087157%3Apeak/Strains%20mzXMLs/SH2D-2_P2-G-5_01_11826.mzXML%5Cnmzspec%3AMSV000087157%3Apeak/Strains%20mzXMLs/SH2D-3_P2-G-6_01_11827.mzXML%22%2C%20%22usi2%22%3A%20%22%22%7D)
 
-#**Use Case 9: Cross Laboratory/Instrument sharing/visualization of MS data**
+# **Use Case 9: Cross Laboratory/Instrument sharing/visualization of MS data**
 
-##**Part 1: Multiple instruments within different laboratories**
+## **Part 1: Multiple instruments within different laboratories**
 
-##**Monica Thukral - PhD Student - Microbial Ecology**
+## **Monica Thukral - PhD Student - Microbial Ecology**
 
 _Pseudo-nitzschia australis (P. australis_) is a cosmopolitan marine microalga capable of producing a potent neurotoxin domoic acid, particularly when undergoing nutrient starvation[27](https://www.zotero.org/google-docs/?V0b3MD). Domoic acid (DA) bioaccumulates up the food chain and can cause mass mortality to marine mammals and birds and also to humans if they consume DA-containing shellfish or crustaceans[27,28](https://www.zotero.org/google-docs/?7f6Oj8). In the context of studying _P. australis&#39;_ metabolome under nutrient starvation, three LC-MS platforms are typically used by our group: A Bruker Amazon Ion Trap, an Agilent 6530 qToF, and a Thermo Fisher Scientific Q-Exactive qOrbitrap. As all three platforms come with their own vendor-specific data analysis software, the GNPS Dashboard facilitates this multi-laboratory and multi-instrument data analysis.
 
@@ -195,17 +195,17 @@ In summary, the GNPS Dashboard directly benefited the investigation into _P. aus
 
 **Supplemental Figure 12: Cross-platform comparison of LC-MS/MS from the same sample**. Panel a shows the comparison of MS data from Domoic acid From extracts from _Pseudo-nitzschia australis_ extracts that were recorded on three different instrument platforms (Ion Trap qToF and qOrbitrap). On the left side, the Extracted Ion Chromatograms (XIC) and corresponding MS/MS of domoic acid spectra on the right can be seen. Platform comparison of global DDA MS/MS data is shown in Panel b as heatmaps of the LC-MS run and MS/MS scans indicated as blue crosses. A molecular network from the global MS/MS data from all three platforms and zoom-ins to the domoic acids networks is shown in panel c.
 
-##**Part 2: Multiple instrument within the same laboratory**
+## **Part 2: Multiple instrument within the same laboratory**
 
-##**Alan Jarmusch PhD - Post-Doctoral Scholar - Analytical Chemistry**
+## **Alan Jarmusch PhD - Post-Doctoral Scholar - Analytical Chemistry**
 
 The multitude of mass spectrometers in existence is reflective of their commonplace in modern chemical measurement as well as their flexibility. Different mass spectrometers are defined, principally, by the mass analyzer of which there are traps, time-of-flights, quadruples, sectors, and hybrids. The different analytical performances (_e.g._ sensitivity, specificity, speed, duty cycle, mass resolution) of these mass analyzers often necessitate multiple mass spectrometers in a laboratory in order to access the different types of experiments available. The practical implication of this fact is that a laboratory is often forced to purchase instruments from different manufacturers and learn each manufacturer&#39;s control and data analysis software. The data analysis software is often complex to learn, knowledge does not readily translate from one manufacturer&#39;s software to another, and is plagued by different file formats. In reverse order, the utilization of an open-source file format (e.g. .mzML[29](https://www.zotero.org/google-docs/?Rf7BBQ)) is a good initial step toward overcoming this challenge. By learning a single data analysis and visualization software, particularly one that exists in a web browser, it is hugely advantageous and nearly eliminates the need to learn multiple pieces of manufacturer software for simple visualizations and data processing. This of course will not immediately eliminate the need for manufacturer software, but it does make the initial steps towards a democratized, open-source, web-enabled, trans-manufacturer, and trans-mass spectrometer piece of software to facilitate chemical measurement and minimize time spent learning disparate software.
 
-#**Use Case 10: Integration of Dashboard with other tools (SIRIUS) and comparison with standard to identify isomerization/degradation**
+# **Use Case 10: Integration of Dashboard with other tools (SIRIUS) and comparison with standard to identify isomerization/degradation**
 
-##**Jessica M. Deutsch - PhD Student - Chemistry**
+## **Jessica M. Deutsch - PhD Student - Chemistry**
 
-##**Neha Garg PhD - Assistant Professor - Natural Product Chemistry**
+## **Neha Garg PhD - Assistant Professor - Natural Product Chemistry**
 
 In non-targeted metabolomics experiments, one can typically annotate 1- 10% of the detected metabolites. To enhance our ability to decode the dark metabolome, we utilize various _in silico_ methods such as SIRIUS 4[30](https://www.zotero.org/google-docs/?hnR9Aa) with CSI:FingerID[31](https://www.zotero.org/google-docs/?XmJIDW) among others. The use of GNPS Dashboard to generate XIC on chemical formulas suggested by SIRIUS followed by feature detection and interrogation of the presence of chemical formula across samples allows us to integrate output from tools such as SIRIUS 4 with CSI:FingerID with rapid inspection of MS1 and MS2 spectra across multiple samples. Analysis performed directly via the GNPS Dashboard eliminated the need to install and toggle between multiple software to extract features and visualize multiple XIC alongside SIRIUS 4 with CSI:FingerID. The option to generate XICs from molecular formulas in the GNPS Dashboard also enables automated visualization of potential adducts, such as [M+Na]+ and [M+K]+, which enables further validation of the proposed chemical formula. Furthermore, access to individual LC-MS files on GNPS Dashboard also enables visualization of the MS2 spectra to inspect the fragmentation pattern and validation with analytical standards. Lastly, we can share these results with collaborators, additional lab members, and generate publication-quality figures without the use of expensive vendor software.
 
@@ -219,9 +219,9 @@ GNPS Dashboard Figure 12c - [Link](https://gnps-lcms.ucsd.edu/?xic_mz=434.290&am
 
 **Supplemental Figure 13. Integration of** _ **in silico** _ **annotation tool SIRIUS 4 with CSI:FingerID with GNPS Dashboard**. a) The output ofSIRIUS 4 with CSI:FingerID showing prediction of chemical formula as C25H39NO5, with plausible annotation as korormicin A as the top candidate for _m/z_ 434.290 Da. b) The XIC plot for a chemical formula using LC-MS viewer shows the possible adducts as [M+H]+ (blue trace) and [M+Na]+ (orange trace). The trace for [M+K]+ does not show peaks at the same retention time as [M+H]+ confirming [M+K]+ is not detected. c) The multiple XIC plot reveals that only one bacterial extract (green trace) produces korormicin A suggesting that the isolated bacteria is different from the other isolates. The same two isomers are observed in the bacterial extract. The isomer at 11 min is present in lower relative abundance in the bacterial extract than the standard suggesting conversion between the isomers during purification.
 
-#**Use Case 11: Targeted dereplication and evaluation of culture conditions**
+# **Use Case 11: Targeted dereplication and evaluation of culture conditions**
 
-##**Scott Jarmusch PhD - Post-Doctoral Scholar - Natural Product Chemistry**
+## **Scott Jarmusch PhD - Post-Doctoral Scholar - Natural Product Chemistry**
 
 Dereplication remains one of the principal target areas for metabolomics-based tools to accommodate the natural products community. GNPS molecular networking integrates fast, automated dereplication into its workflow, yet often, results still require the need to evaluate raw data for more critical interrogation. Utilizing the public data from a recent study on desferrioxamine metabolites produced by _Streptomyces_ sp. S29[32](https://www.zotero.org/google-docs/?B6Pb5m), we can visualize how a targeted dereplication approach may be carried out. Using hits from the GNPS library as well as the work done by Traxler et al.[33](https://www.zotero.org/google-docs/?w7C25N), the GNPS Dashboard allows for fast evaluation regarding the presence or absence of accurate mass XIC as well as providing context in which samples these metabolites are present. Taking desferrioxamine D (_m/z_ 603.37), we expect it to be produced and it is, in any of the three conditions tested ( **SI Figure 14a** ): monoculture, coculture with _Aspergillus niger_ and coculture with _Botrytis cinerea_. Furthermore, in microbial natural products, evaluation of culture conditions is vital to gain a better understanding of metabolite elicitation, especially when focusing on discovery. The two studies above observe the production of long-chain acyl desferrioxamines exclusively under coculture conditions. When we evaluate the presence/absence of three acyl desferrioxamines (C11-C13) in the fungal coculture study, we can clearly see the presence of the three metabolites in the cocultivation with _B. cinerea_, a presence of one metabolite in cocultivation with _A. niger_ and an absence of the three in monoculture conditions ( **SI Figure 14b** ). Beyond the evaluation of knowns, we can also easily visualize and allow for prioritization of extracts when hunting for unknowns. An unknown desferrioxamine-like metabolite was identified in this study and we observe that its presence is related to cocultivation with _B. cinerea_, providing a guide to future isolation of this unknown ( **SI Figure 14c** ). Allowing for this rapid observation in the GNPS Dashboard interface that can then link into further GNPS tools makes this functionality invaluable when analyzing data that would normally require multiple software types to be opened simultaneously, requiring high computing power that some researchers do not have access to. These basic functionalities shown are essential in the community and the ability of the GNPS Dashboard to facilitate these are paramount to the service it provides.
 
@@ -235,9 +235,9 @@ GNPS Dashboard Figure 13c - [Link](https://gnps-lcms.ucsd.edu/?xic_mz=650.37&amp
 
 **Supplemental Figure 14. Targeted dereplication and evaluation of culture conditions.** a) XIC plot of desferrioxamine D (_m/z_ 603.3714) using LC-MS viewer shows the presence of the archetypal siderophore in monoculture (blue trace), cocultivation with _A. niger_ (orange trace), and cocultivation with _B. cinerea_ (green trace). b) XIC plot grouped by file showing the presence/absence of acyl desferrioxamines C11-C13 in each culture environment, clearly showing production in the presence of _B. cinerea_, some production in the presence of _A. niger,_ and no production in the monoculture. c) targeting the culture conditions where an unknown metabolite (_m/z_ 650.37 [M+2H]2+) could be isolated for future studies.
 
-#**Use Case 12 - Large Scale XIC Inspection in GNPS Dashboard**
+# **Use Case 12 - Large Scale XIC Inspection in GNPS Dashboard**
 
-##**Morgan Panitchpakdi - Staff Research Associate - Metabolomics**
+## **Morgan Panitchpakdi - Staff Research Associate - Metabolomics**
 
 Analysis of non-targeted LC-MS data often requires a thorough examination of the quality of each data file generated. Generating Extracted Ion Chromatograms (XIC) for internal standards and compounds of interest using vendor software is possible but becomes slower as the project size increases (\&gt;20 files). The GNPS Dashboard helps alleviate these issues and enables quick inspection and analysis of LC-MS data and can generate XICs for large-scale projects within minutes.
 
@@ -259,11 +259,11 @@ With the goal of reanalyzing published data from a clinical study investigating 
 
 a) Ovelrayed Extracted Ion Chromatograms (XIC) for each of the five internal standards in all 140 urine samples b) Plotted AUC values to confirm the presence of five internal standards in all 140 urine samples.
 
-#**Use Case 13 - Validating Multiply-Eluting Peptides**
+# **Use Case 13 - Validating Multiply-Eluting Peptides**
 
-##**Ben Pullman - PhD Student - Computational Mass Spectrometry**
+## **Ben Pullman - PhD Student - Computational Mass Spectrometry**
 
-##**Nuno Bandeira PhD - Professor - Computational Mass Spectrometry**
+## **Nuno Bandeira PhD - Professor - Computational Mass Spectrometry**
 
 When analyzing a label-free proteomics experiment, the assumption is often made that each peptide should elute a single time in a given fraction, and the intensity of the peptide is that of the feature. However, in some cases, peptides can elute multiple times over a single run. Multiple elutions can complicate the calculation of feature intensity as well as create issues for the transfer of features between different runs. The GNPS Dashboard allows us to validate these multiply eluted peptides when examining the feature intensities.
 
@@ -293,9 +293,9 @@ Using the GNPS Dashboard, we can examine the MS2 spectra for each feature in the
 
 a) Shows the LC-MS map for the features of NDGYLM[+16]FQQVPM[+16]VEIDGM[+16]K zoomed in to show only RT 50-95 min and _m/z_ 1132-1134. b) Shows the XIC for the mono-isotopic signal of the feature (_m/z_ 1132.505737) with a retention time of 50-95 min, c) 1-4 show the corresponding MS/MS spectra that map to the identified features, color-coordinated with the arrows showing where the MS/MS was acquired on both a) the LC-MS map and b) the XIC.
 
-#**Use Case 14 - Implementation of third party tool in the GNPS Dashboard for rapid prototyping**
+# **Use Case 14 - Implementation of third party tool in the GNPS Dashboard for rapid prototyping**
 
-##**Robin Schmid PhD - Post-Doctoral Scholar - Computational Mass Spectrometry**
+## **Robin Schmid PhD - Post-Doctoral Scholar - Computational Mass Spectrometry**
 
 Software solutions for mass spectrometry data analysis have become essential to cope with the complex data generated by non-targeted LC-MS/MS. The GNPS dashboard offers collaborative visualization and integrative data analysis options (e.g., feature finding, molecular networking, and repository scale spectrum searches). Beyond a visualization tool for end-users, the GNPS Dashboard provides a new platform for software developers to quickly test new MS data analysis tools and make them readily accessible to the broader community. The access of public metabolomics and proteomics data in mass spectrometry repositories, rich visualization options, and the GNPS Dashboard&#39;s web-interface are beneficial for the testing and development of new software tools. Open-source licensing and effortless local deployment of the GNPS Dashboard enable rapid prototyping to integrate other tools and tailor the modular dashboard with specific graphical and tabular outputs. To exemplify a use case for developers, we used the GNPS Dashboard to integrate and test the latest development branch of the feature finding tool MZmine 3, which is currently undergoing a comprehensive redesign of its data model. The goal was to provide a framework to deploy, run, and visually compare feature finding results from MZmine 3 and the latest release of MZmine 2 as a consistency check.
 
@@ -308,9 +308,9 @@ Even for a rich graphical user interface tool, such as MZmine, the integration i
 ![](RackMultipart20210809-4-73ze9x_html_5ce25470abbcf492.png)
 **Supplemental Figure 17: Consistency testing by overlaying feature finding results from MZmine 2 and the latest development version of MZmine 3.** A complete results overlap was achieved after adjustment of the MZmine 3 preferences and batch mode. The specialized version of the GNPS dashboard informed the development of MZmine 3 to provide comparable results to MZmine 2.
 
-#**Use Case 15 - Quantification of isobutanol produced by metabolically engineered** _ **E.coli** _ **strains**
+# **Use Case 15 - Quantification of isobutanol produced by metabolically engineered** _ **E.coli** _ **strains**
 
-##**Simon Boecker, PhD - Post-doctoral Scholar - Metabolic Engineering**
+## **Simon Boecker, PhD - Post-doctoral Scholar - Metabolic Engineering**
 
 The performance of engineered microbial cell factories for the synthesis of a product of interest is usually characterized by the three parameters titer (product per volume), productivity (product per volume (or per biomass) and time), and yield (product per substrate). To determine these parameters, an exact quantification of the produced metabolite secreted to the medium is indispensable.
 
@@ -326,13 +326,13 @@ GNPS Dashboard Figure 17 - [Link](https://gnps-lcms.ucsd.edu/?xic_mz=56.1&amp;xi
 
 **Supplemental Figure 18:** a) Overlaid XICs for _m/z_ 56.1 of _i_BuOH standards (in duplicates) visualized in the GNPS Dashboard and generated calibration curve from integrated peak areas. b) Time course of _i_BuOH production and specific productivity of both _E. coli_ strains.
 
-#**Use Case 16 - Exploring new directions in previously-analyzed GC-MS data**
+# **Use Case 16 - Exploring new directions in previously-analyzed GC-MS data**
 
-##**Rachel Gregor, PhD - Post-doctoral Scholar - Chemical Ecology**
+## **Rachel Gregor, PhD - Post-doctoral Scholar - Chemical Ecology**
 
-##**Michael M. Meijler, PhD - Professor - Chemical Biology**
+## **Michael M. Meijler, PhD - Professor - Chemical Biology**
 
-##**Itzhak Mizrahi, PhD - Professor - Microbial Ecology**
+## **Itzhak Mizrahi, PhD - Professor - Microbial Ecology**
 
 Large-scale &#39;omics projects generate vast quantities of mass spectrometry data, more than can be comprehensively analyzed within the scope of one or even a series of publications. The same data can often be re-analyzed later to explore different questions or angles, especially if it is uploaded on public data depositories such as MassIVE. For example, as part of a large fecal microbiome-metabolome dataset collected in collaboration with a local zoo, we included food samples from the animals&#39; diets and analyzed them by GC-MS. The food GC-MS metabolomes were not characterized in detail in the original data analysis, other than to quantify the overlap between fecal and food metabolites. Therefore, this portion of the dataset would be an excellent candidate for future analyses, for example in order to explore specific classes of nutrients found in different animal diet components.
 
@@ -344,9 +344,9 @@ Using the GNPS Dashboard, we were able to load the GC-MS dataset from MassIVE ([
 
 **Supplemental figure 19.** a) Overlaid XIC&#39;s for m/z 217 for fruit samples (top) and pellet samples (bottom). Characteristic elution ranges for mono-, di-, and tri-saccharides are indicated in grey. b) Molecular network of saccharide cluster with relative abundances of fruit (green) and pellets (purple). (c) Overlaid XIC&#39;s for m/z 217 for all samples, for peaks identified by spectral library search as fructose (top), sucrose (middle), and maltotriose (bottom).
 
-#**Use Case 17 - Inspection of data during the review process.**
+# **Use Case 17 - Inspection of data during the review process.**
 
-##**Pieter C. Dorrestein, PhD - Professor - Small Molecule Mass Spectrometry**
+## **Pieter C. Dorrestein, PhD - Professor - Small Molecule Mass Spectrometry**
 
 The review process is an active process of the scientific enterprise. The goal of peer review of manuscripts is to ensure that the science that is presented is accurate and, when needed, to provide suggestions to improve the work. One of the key challenges as a reviewer of research articles that include mass spectrometry (MS) data is to get insight into the methods and settings used for data acquisition and quality or details of the actual data that is collected. Even when data is made public, many reviewers do not have or take the time to look at the raw MS data as there is a high barrier to entry (e.g., as this entails downloading and converting the data into the proper format and then loading the data into specific software to view). The GNPS Dashboard makes this process a simple single step in the web browser. Further, if the authors include a direct url, then it is as easy as clicking the link to allow direct data inspection. As the review process is confidential, in this use case I will not show data, but rather describe recent examples that have been observed during recent reviews.
 
@@ -354,11 +354,11 @@ Being able to inspect the data during a review enables one to gain insight if th
 
 In addition, with the GNPS Dashboard it is possible to quickly check how the data was used and if the data analysis is reproducible. For example, a paper may show an zoomed XIC derived feature but upon inspection by zooming out there are multiple XIC&#39;s with the same mass. Thus, integration of peak area needs to be carefully considered as there could be artefacts due to a different molecule with the same mass (which will also give rise to a different MS/MS spectrum), an isomer which would likely have a nearly identical MS/MS spectrum, but could also be the same molecule but with different ion adducts, rotamers of molecules. In other words a single molecule can give rise to multiple peaks during chromatography. This could affect the quantification results and thus is important to be able to assess this as a reviewer. Being able to inspect the data will not only allow reviewers to inspect the details of the data and data acquisition parameters but also share their observations as hyperlinks in the reviews so that reviewers can help the authors to improve their papers or to provide suggestions on what to consider in future experiments. This way we all grow scientifically due to the review process.
 
-#**Use Case 18: Structure and fragmentation pattern analysis through the full collaborative synchronization mode**
+# **Use Case 18: Structure and fragmentation pattern analysis through the full collaborative synchronization mode**
 
-##**Mirtha Navarro PhD – Professor – Natural Product Chemistry, Bioactivity, and Nanotechnology**
+## **Mirtha Navarro PhD – Professor – Natural Product Chemistry, Bioactivity, and Nanotechnology**
 
-##**Felipe Vasquez-Castro – MSc candidate – Natural Product Chemistry and Environmental Microbiology**
+## **Felipe Vasquez-Castro – MSc candidate – Natural Product Chemistry and Environmental Microbiology**
 
 Depending on the structure of research groups, principal investigators (PI) are directly involved in the day-to-day knowledge transfer to junior researchers. Therefore, tools for efficient collaborative work are of the utmost importance to support these interactions. For instance, the analysis of complex mass spectrometry data requires particular supervision, and this time-consuming effort becomes a challenge for Principal Investigators&#39; tight schedules. GNPS Dashboard facilitates this task through the fully collaborative synchronization mode, which allows a multi-user simultaneous visualization and examination of data, thus enhancing the learning experience. Hereby we illustrate such a case, in which a PI and a junior researcher use GNPS Dashboard to perform a remote multi-user analysis of a LC-MS/MS spectrum with the purpose of identifying the structural differences and fragmentation patterns of procyanidin oligomers. The researcher needed to learn and apply these interpretation skills in proanthocyanidin-enriched extracts from the PI&#39;s research group (BIODESS). For this, the spectrum (MSV000087075) of a _P. domestica_ enriched-polyphenolic extract obtained using Pressure Liquid Extraction and Amberlite resin chromatographic purification[36](https://www.zotero.org/google-docs/?AlvS4x), was loaded onto the GNPS Dashboard, and the full collaborative synchronization mode under Sync Options was initiated ( **SI Figure 20** ).
 
@@ -388,7 +388,7 @@ MS2 at 17.88 min:[GNPS - LCMS Browser (ucsd.edu)](https://gnps-lcms.ucsd.edu/?xi
 
 **Supplemental Figure 22**. a) Fragmentation pathways for procyanidins: Retro Diels-Alder (RDA), Heterocyclic Ring Fission (HRF), and Quinone-methide (QM). b) MS2 spectrum of a procyanidin B-type dimer at 12.64 min (m/z 577.13). c) MS2 spectrum of a procyanidin B-type trimer at 17.88 min (m/z 865.20). The fragments highlighted in both spectrums represent the respective fragmentation pathways illustrated in panel a.
 
-#**References**
+# **References**
 
 1.    Deutsch, E. W. et al. Universal Spectrum Identifier for mass spectra. bioRxiv 2020.12.07.415539 (2020) doi:10.1101/2020.12.07.415539.
 2.    Bald, T. et al. pymzML—Python module for high-throughput bioinformatics on mass spectrometry data. Bioinformatics 28, 1052–1053 (2012).
