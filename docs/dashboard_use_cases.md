@@ -1,7 +1,7 @@
 
-**Use Case 1: Mass spectrometry data visualization and linking to molecular networking**
+# **Use Case 1: Mass spectrometry data visualization and linking to molecular networking**
 
-**Daniel Petras PhD - Post-Doctoral Scholar - Analytical Chemistry and Chemical Ecology**
+## **Daniel Petras PhD - Post-Doctoral Scholar - Analytical Chemistry and Chemical Ecology**
 
 _E. coli_ Nissle is broadly used as a probiotic and the producer of a series of secondary metabolites including the DNA damaging cytotoxins colibactin and siderophores yersiniabactin. In the context of searching for novel zinc uptake mechanisms, we screened Nissle wildtype and yersiniabactin NRPS knock-out mutants culture extract for yersiniabactin production[7](https://www.zotero.org/google-docs/?kusO1q).
 
@@ -22,11 +22,11 @@ Feature-based molecular networking [link](https://gnps.ucsd.edu/ProteoSAFe/resul
   
   
   
-**Use Case 2: Quick data analysis of MS1 single quad data**
+# **Use Case 2: Quick data analysis of MS1 single quad data**
 
-**Dale A. Cummings Jr - PhD Student - Biological Chemistry**
+## **Dale A. Cummings Jr - PhD Student - Biological Chemistry**
 
-**Aaron W. Puri PhD - Assistant Professor - Biological Chemistry**
+## **Aaron W. Puri PhD - Assistant Professor - Biological Chemistry**
 
 While many labs now have access to tandem mass spectrometers and can therefore acquire data for MS2-based molecular networking, routine analysis is often still performed on unit resolution MS1 mass analyzers, such as single quadrupoles. However, proprietary software often makes it difficult to rapidly analyze and share these types of data. To address this we have added functionality for analyzing MS1 spectra in the GNPS Dashboard specifically in netCDF format, which is commonly used by single quadrupole LC-MS systems.
 
