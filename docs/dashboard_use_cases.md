@@ -22,10 +22,6 @@ Feature-based molecular networking [link](https://gnps.ucsd.edu/ProteoSAFe/resul
   
   
   
-  
-  
-  
-  
 **Use Case 2: Quick data analysis of MS1 single quad data**
 
 **Dale A. Cummings Jr - PhD Student - Biological Chemistry**
