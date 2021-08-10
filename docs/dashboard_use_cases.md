@@ -18,6 +18,14 @@ Feature-based molecular networking [link](https://gnps.ucsd.edu/ProteoSAFe/resul
 **Supplemental Figure 2: Mass spectrometry data visualization and linking to molecular networks from yersiniabactin from E. coli nissle extracts.** Panel a shows the MS/MS molecular networking results from an _E. coli_ nissle wild type and NRPS knock-out strain, indicating the presence of yersiniabactin (m/z 482.124) and its derivatives only in the wild type. Panel b shows the XIC visualization and peak area difference between the WT and KO group as box-plot through the GNPS Dashboard. Panel c shows the feature-based molecular networking results from the same data in which the yersiniabactin isomers (m/z 482.124) are maintained as individual nodes.
   
   
+  
+  
+  
+  
+  
+  
+  
+  
 **Use Case 2: Quick data analysis of MS1 single quad data**
 
 **Dale A. Cummings Jr - PhD Student - Biological Chemistry**
