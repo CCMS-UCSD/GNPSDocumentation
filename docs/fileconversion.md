@@ -1,6 +1,8 @@
 !!! info "Supported Formats at GNPS"
     GNPS supports mzXML, mzML, and mgf formats for analysis. Our tools do NOT support mzData, xml, raw, RAW, wiff, scan, d, and cdf formats. If some of your files are in these formats, please use the following guide to convert them to open formats supported by GNPS.
 
+There is a specific guide for Waters data conversion. See [here](fileconversion_waters.md)
+
 ## Data Conversion (Super Easy)
 
 Drag and drop files on our server [here](https://gnps-quickstart.ucsd.edu/conversion) and hit convert. 
@@ -19,15 +21,6 @@ This is a complete package for Windows users to convert their vendor formats to 
 6. Wait patiently
 7. Check all the converted files in Output_Folder
 8. If there are errors, please check log.txt or read on how to convert files in a more traditional manner.
-
-* A tip for Waters users:
-One of the frequent questions from Waters users is about PDA(UV) and LockSpray data contained in converted files.
-[case 1](https://sourceforge.net/p/proteowizard/mailman/message/27531723/) [case 2](https://github.com/mzmine/mzmine2/issues/449) [case 3](https://groups.google.com/forum/#!category-topic/molecular_networking_bug_reports/unresolved-bugs--unknown-error-message/qjDan5zcjIY)
-
-These occur because Waters .Raw files contain UV and LockSpray data as additional 'channels' of MS detector. Some Waters third party softwares can solve this problem, but for cases you have not purchased licenses for the softwares, here we introduce you a temporary expedient. Every channel data are contained as "_FUNC00X.*" in Water.Raw files, so just delete them and run "Double-Click_To-Convert.bat."
-
-e.g. If LockSprary and UV data are channels 5/6 in your data, put every .Raw files in Input_Files folder, then run cmd, go to Input_Files, and run "del /s _FUNC005.*" and "del /s _FUNC006.*" 
-
 
 ## Data Conversion (Traditional)
 

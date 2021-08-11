@@ -43,9 +43,14 @@ We aim to enable the visualization without having users download a single file a
 
 Data must be specified as a universal spectrum identifier. This again can be sourced through several locations as mentioned above. The easiest ways are:
 
-1. Using [GNPS Dataset Explorer](https://gnps-explorer.ucsd.edu/) that enables selecting public datasets
-1. Direct links from GNPS analyses 
-1. User uploads via the Drag and Drop (up to 120MB files)
+1. Using [GNPS Dataset Explorer](https://gnps-explorer.ucsd.edu/) that enables selecting public datasets - mzML, mzXML, CDF, mgf, Thermo RAW
+1. Direct links from GNPS analyses - mzML, mzXML, CDF, mgf files
+	* Classical Molecular Networking
+	* Feature Based Molecular Networking
+	* GNPS-GC Analysis
+	* Spectral Library Search
+	* MASST
+3. User uploads via the Drag and Drop (up to 2GB files) - mzML, mzXML, CDF
 
 A filled in USI selection can be seen below. 
 
@@ -120,6 +125,12 @@ Additionally to these XIC plots, we draw XIC heatmap plots. This helps when ther
 
 !!! note "Retention Time Zooming"
     You can set the retention time window (e.g. 5.5-7.2) or a single retention time value (e.g. 5.5 which implicitly means 5.0-6.0)
+    
+## SRM/MRM Plots
+
+If your data is targeted and has SRM/MRM transitions in the data, that can be easily visualized as well. Check out this video the help from Michael Marty:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tT5b1IIJCE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Teaching Mass Spectrometry Data/Analysis
 
@@ -226,7 +237,7 @@ It is possible to overlay any information over the 2D MS Heatmap. The source of 
 Soon we'll have a preprint and hopefully a more appropriate publication citation!
 
 !!! cite "Recommended Citation"
-	[Mingxun Wang, Jeremy J. Carver, Vanessa V. Phelan, Laura M. Sanchez, Neha Garg, Yao Peng, Don Duy Nguyen et al. "Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking." Nature biotechnology 34, no. 8 (2016): 828. PMID: 27504778](https://www.nature.com/articles/nbt.3597)
+	[Petras, D., Phelan, V. V., Acharya, D. D., Allen, A. E., Aron, A. T., Bandeira, N., ... & Wang, M. (2021). GNPS Dashboard: Collaborative Analysis of Mass Spectrometry Data in the Web Browser. bioRxiv.](https://www.biorxiv.org/content/10.1101/2021.04.05.438475v2.abstract)
 
 
 ## Page Contributions

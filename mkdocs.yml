@@ -20,6 +20,7 @@ nav:
         - Molecular Networking: massspecbackground/networkingtheory.md
     - Data Preparation/Upload:
         - Mass Spectrometry File Conversion: fileconversion.md
+        - File Conversion (Waters): fileconversion_waters.md
         - GNPS File Upload: fileupload.md
         - Metadata: metadata.md
     - Recommended Data Analysis:
@@ -129,6 +130,7 @@ markdown_extensions:
         emoji_generator: !!python/name:pymdownx.emoji.to_svg
             
 
-
-
-google_analytics: ['UA-8412213-5', 'ccms-ucsd.github.io']
+extra:
+  analytics:
+    provider: google
+    property: UA-8412213-5
