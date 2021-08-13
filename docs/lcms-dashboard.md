@@ -188,7 +188,10 @@ Once you are happy with the XIC or MS/MS plots you can export your XIC and spect
 
 **Full Visualization**
 
-To share the interactive LCMS-Dashboard view, simply click "Link to these plots" botton on the left and copy the new url. This link saves all the settings in your visualization. If you open it up, it will keep all the data and settings exactly the same. 
+To share the interactive LCMS-Dashboard view, simply click "Copy URL Link to this Visualization" botton on the left and copy the new url. This link saves all the settings in your visualization. If you open it up, it will keep all the data and settings exactly the same. 
+
+!!! note "Short URLS"
+	If you are sharing with others over a medium like Zoom, this URL might be tool long. Simply click "Copy Short Temporary URL" to get a short version. But be aware this short URL (not the full expanded one) will expire after 1 hr so its good for immediate sharing but we would not recommend you store this in a presentation or send in an email. 
 
 ## Saving Visualizations
 
