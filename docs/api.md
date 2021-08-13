@@ -4,13 +4,21 @@
 
 ### All Public Library Spectra at GNPS
 
+This gets you all spectra but without peaks. 
+
 ```
 https://gnps-external.ucsd.edu/gnpslibraryjson
 ```
 
 ### All Public Library Specta at GNPS with Peaks and Annotation History
 
-Browser all spectra
+### All Public Library Name List at GNPS
+
+```
+https://gnps-external.ucsd.edu/gnpslibrary.json
+```
+
+Browse all spectra
 
 ```
 https://gnps-external.ucsd.edu/gnpslibrary
