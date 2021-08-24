@@ -227,7 +227,7 @@ https://gnps-structure.ucsd.edu/structuremass?smiles=<smiles string>
 https://gnps-structure.ucsd.edu/adductcalc?smiles=<smiles string>&mz=<experimental mz>
 ```
 
-[Example](https://gnps-structure.ucsd.edu/structuremass?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+[Example](https://gnps-structure.ucsd.edu/adductcalc?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O&mz=195.08765155999998)
 
 ### Conversion to formula
 
