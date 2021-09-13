@@ -13,6 +13,8 @@ The materials that are required are:
 1. Annotation Spread Sheet (This can be produced below manually by selecting scans in the mass spec data, or automatically generated with the MSMS-Chooser workflow - see documentation)
 2. Source mzXML/mzML/mgf mass spectra files to pull MS/MS spectra 
 
+**ATTENTION: Batch Annotation Workflow should be used to create spectral libraries of 50 spectra or more. Please contact CCMS Team with questions (ccms-web@cs.ucsd.edu)**
+
 ## Annotation Spread Sheet
 
 To batch upload, this template must be used:
