@@ -2,7 +2,7 @@
 
 The key difference between a traditional untargeted metabolomics analysis and a reference data-driven analysis (RDD) is the inclusion of data from reference samples, composed of a complex mixture of MS/MS scans corresponding to hundreds or thousands of unique compounds of both **known and unknown structure**. A key attribute of reference samples is metadata describing characteristics such as **source or environmental origin**. This is in contrast to reference spectra (contained in compound libraries or reference databases), which are of known structure and have been previously annotated.
 
-Here we present a step by step tutorial for running a RDD analysis through the GNPS web infrastructure. This document will link out to code on Github that can be used to replicate the analysis highlighted in Figure 2 of [Gauglitz et al., 2020](https://doi.org/10.1101/2020.07.08.194159). All input files and outputs can also be found at the GNPS/Massive Repository, along with the data files at [https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=99830767e1524e489b1a0f62569b8ed9](https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=99830767e1524e489b1a0f62569b8ed9)
+Here we present a step by step tutorial for running a RDD analysis through the GNPS web infrastructure. All input files and outputs can also be found at the GNPS/Massive Repository, along with the data files at [https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=99830767e1524e489b1a0f62569b8ed9](https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=99830767e1524e489b1a0f62569b8ed9)
 
 **Tutorial folder:** [ftp://massive.ucsd.edu/MSV000086158/updates/2020-10-01_jgauglitz_6c7824e2/other/](ftp://massive.ucsd.edu/MSV000086158/updates/2020-10-01_jgauglitz_6c7824e2/other/)
 
@@ -11,8 +11,7 @@ Here we present a step by step tutorial for running a RDD analysis through the G
 1. Passatuto workflow to determine min cosine score to use in the molecular networking analysis.
 2. Launch molecular networking analysis job, containing reference dataset.
 3. Download and visualization of GNPS molecular analysis results.
-4. Explore overlap information. 
-5. Generate custom information based on the type of reference data used (Global FoodOmics specific).
+4. Generate custom information based on the type of reference data used (Global FoodOmics specific).
 
 ![](../img/rdd/0_intro.png)
 
@@ -70,7 +69,7 @@ You can also check the "Jobs" tab to check on the status of the analysis.
 
 1. Job will be saved, and can be accessed by clicking on DONE.
 2. Selecting "View All Spectra DB with FDR" will bring up the view in 3.
-3. Where one clicks on "Download".
+3. Click on "Download".
 4. This opens up an additional set of options. Select "Download" again and a .zip folder will be downloaded, as shown on the left below. This folder can be extracted and the .tsv can either be opened in Excel or the cosine score for an appropriate FDR value can be extracted programmatically, such as with R, as in Step 1.12. 
 
 ![](../img/rdd/1_111.png)
@@ -79,7 +78,7 @@ You can also check the "Jobs" tab to check on the status of the analysis.
 
 The result here is that 0.64 is the cutoff for Step 2 of the tutorial. 
 
-Code for use in RStudio: 
+Code for use in R: 
 
 ```
 tab <- read.delim("ProteoSAFe-MOLECULAR-LIBRARYSEARCH-FDR-af0eb459-view_all_annotations_DB_fdr/MOLECULAR-LIBRARYSEARCH-FDR-af0eb459-view_all_annotations_DB_fdr-main.tsv")
@@ -118,7 +117,7 @@ If using this reference dataset for your own analyses, the entire folder can be 
 
 ![](../img/rdd/2_23_1.png)
 
-Here select the Stool-Food match to select the stool data. Click on ‘Spectrum Files G1’ and it will appear under Selected Files as shown. Repeat for plasma below.
+Here select the Stool-Food match to select the stool data. Click on ‘Spectrum Files G1’ and it will appear under Selected Files as shown. Repeat for plasma below, adding files to G2.
 
 ![](../img/rdd/2_23_2.png)
 ![](../img/rdd/2_23_3.png)
@@ -127,7 +126,7 @@ Select reference data to include in the molecular networking job.
 
 ![](../img/rdd/2_23_4.png)
 
-Below you can see how SSF have been placed in G3 and the remainder of the files in G4. If you make an error and add more folders than desired, you can click them one at a time and click on the small folder icon with the red x over it (seen towards the middle of the screen).
+Below you can see how SSF have been placed in G3 and the remainder of the files in G4. If you make an error and add more folders than desired, you can click them one at a time and click on the small folder icon with the red x over it (seen towards the middle of the screen). 
 
 ![](../img/rdd/2_23_5.png)
 
@@ -174,7 +173,7 @@ Lastly, if the datasets are large, it may be necessary to Select "Don't Create" 
 
 ###Step 3.2 Downloading results, part 2
 
-Click on "View All Clusters With IDs", next click on "Download" which opens another menu, click on "Download". The .tsv file contained in the main directory contains information pertinent to further evaluations and together with sample and reference metadata can be used to further interpret the untargeted metabolomic data.
+Click on "View All Clusters With IDs", next click on "Download" which opens another menu, click on "Download". The .tsv file in the main directory contains information pertinent to further evaluations, and together with sample and reference metadata can be used to further interpret the untargeted metabolomic data.
 
 ![](../img/rdd/3_32_1.png)
 ![](../img/rdd/3_32_2.png)
@@ -188,47 +187,9 @@ Save the extracted folder on a location on your computer that you can reach it u
 
 ![](../img/rdd/3_33_2.png)
 
-## Step 4 Explore overlap information.
+## Step 4 Generate custom information based on the type of reference data used. 
 
-Extract percent increase in interpretation using the .tsv file downloaded in tutorial step 2. Code is located on Github. 
-
-- Sign into Github. Navigate to [https://github.com/DorresteinLaboratory/GlobalFoodomics](https://github.com/DorresteinLaboratory/GlobalFoodomics)
-- Click on notebooks -> click on fig2_spectral_interpretation_rate.Rmd
-- Click on Raw -> right click and save as (on Windows, delete the .txt extension that is automatically added when downloading).
-
-The .Rmd file can be opened in RStudio.
-
-![](../img/rdd/4_1.png)
-
-Read in the datafile downloaded from the molecular networking analysis.
-Copy and paste an example dataset and alter the file path accordingly.
-
-![](../img/rdd/4_2.png)
-![](../img/rdd/4_3.png)
-
-The remainder of the files to be read in from all datasets in the study can be deleted when working with the tutorial data or your own dataset.
-
-Run the code block by clicking on the green arrow pointing right -- in the red box. 
-
-![](../img/rdd/4_4.png)
-
-Run the cells of code until you have generated the first output values. These will appear in line in the markdown.
-
-![](../img/rdd/4_5.png)
-
-The first value **1.** is the annotation rate of the human dataset loaded into G1 during the molecular networking analysis. **2.** is the percent overlap between the dataset loaded into G1 and the study specific foods (SSF) in G3 (if no data is entered here, then the value will be the same as 1.). **3.** is the overlap taking into account only the Global FoodOmics foods (excluding the SSF) and **4.** Is the overlap when taking into account both SSF and the reference dataset in G4.
-
-Running the next block of code will generate the analogous overlap values for the dataset in G2 (plasma). 
-
-![](../img/rdd/4_6.png)
-
-Running the additional code up until this cell will generate the percent of nodes for which information is gained due to shared molecular family. This value is termed "Q_added" in the code. So in the case of the tutorial data, the overlap between stool and food reference data is 59.24%, with a further increase of 8.12%, resulting in a TOTAL value of 67.36%. 
-
-![](../img/rdd/4_7.png)
-
-## Step 5 Generate custom information based on the type of reference data used. 
-
-For analysis with the Global FoodOmics reference data you can investigate several different types of outputs and visualizations based on the analyses produced above. Below are two examples. 
+For analysis with the Global FoodOmics reference data, you can investigate several different types of outputs and visualizations based on the analyses produced above. Below are two examples. 
 
 ### Example 1: Flow diagram to visualize ontology
 
@@ -398,114 +359,14 @@ Output visualization shows the types of food categories from which molecules wer
 
 ### Example 2: Food count generation
 
-- Github code:
-- Download the notebook "file_food_count.ipynb".
-- Load in your environment and open with Jupyter notebooks.
-
-When using the Global FoodOmics data as reference data, you will need to load the metadata, as well as the metadata from your study of interest and the .tsv file generated in Step 2 of this tutorial. 
+Generate a feature table containing spectral matches between each query sample and reference foods/food groups. Clone the [gfop](https://github.com/global-foodomics/gfop) repository and follow instructions on the README.
 
 **Required files:**
 
-- Global FoodOmics metadata
 - Study metadata
 - Molecular networking analysis .tsv output from Step 2 of the tutorial 
 
 **Dependencies:** Python 3.6 or newer.
-
-Load packages required:
-
-```
-import numpy as np
-import pandas as pd
-```
-
-Download Global FoodOmics metadata and ensure that the data path is correct. 
-
-```
-def get_sample_types(gfop_metadata, simple_complex=None):
-    if simple_complex is not None:
-        gfop_metadata = gfop_metadata[
-            gfop_metadata['simple_complex'] == simple_complex]
-    col_sample_types = [f'sample_type_group{i}' for i in range(1, 7)]
-    return (gfop_metadata[['filename', *col_sample_types]]
-            .set_index('filename'))
-
-
-gfop_metadata = pd.read_csv(
-    '../data/11442_foodomics_multiproject_metadata.txt', sep='\t')
-# First row is empty.
-gfop_metadata = gfop_metadata.drop(index=0)
-# Remove trailing whitespace.
-gfop_metadata = gfop_metadata.apply(lambda col: col.str.strip()
-                                    if col.dtype == 'object' else col)
-```
-
-It will not be necessary to modify the next cells, however they must be run in order. 
-
-```
-def get_file_food_counts(gnps_network, sample_types, groups_included,
-                         filenames_included, level):
-    # Select GNPS job groups.
-    groups = {f'G{i}' for i in range(1, 7)}
-    groups_excluded = groups - set(groups_included)
-    df_selected = gnps_network[
-        (gnps_network[groups_included] > 0).all(axis=1) &
-        (gnps_network[groups_excluded] == 0).all(axis=1)].copy()
-    df_selected = df_selected[
-        df_selected['UniqueFileSources'].apply(lambda cluster_fn:
-            any(fn in cluster_fn for fn in filenames_included))]
-    filenames = (df_selected['UniqueFileSources'].str.split('|')
-                 .explode())
-    # Select food hierarchy levels.
-    sample_types = sample_types[f'sample_type_group{level}']
-    # Match the GNPS job results to the food sample types.
-    sample_types_selected = sample_types.reindex(filenames)
-    sample_types_selected = sample_types_selected.dropna()
-    # Discard samples that occur less frequent than water (blank).
-    water_count = (sample_types_selected == 'water').sum()
-    sample_counts = sample_types_selected.value_counts()
-    sample_counts_valid = sample_counts.index[sample_counts > water_count]
-    sample_types_selected = sample_types_selected[
-        sample_types_selected.isin(sample_counts_valid)]
-    # Get sample counts at the specified level.
-    return sample_types_selected.value_counts()
-```
-
-```
-sample_types_simple = get_sample_types(gfop_metadata, 'simple')
-sample_types_complex = get_sample_types(gfop_metadata, 'complex')
-```
-
-In the next step you will load the metadata and data generated in step 2. Ensure that the file paths are correct.
-
-```
-metadata = pd.read_csv(
-    'data/ONR_Primary_Global_metadata_Plasma.txt', sep='\t')
-
-gnps_network = pd.read_csv(
-    'METABOLOMICS-SNETS-V2-57c1416f-view_all_clusters_withID_beta-main.tsv',
-    sep='\t')
-```
-
-The next steps will generate the food count output.
-
-Note: You can edit the output generated by changing the groups listed. Currently G2, G3, and G4 are selected. So this is including those compounds that were observed in the plasma data, as well as the study specific foods, and the FoodOmics reference data.
-
-```
-level = 4
-food_counts, filenames = [], []
-groups = ['G2', 'G3', 'G4']
-for filename in metadata['filename']:
-    file_food_counts = get_file_food_counts(
-        gnps_network, sample_types_simple, groups, [filename], level)
-    if len(file_food_counts) > 0:
-        food_counts.append(file_food_counts)
-        filenames.append(filename)
-
-food_counts = (pd.concat(food_counts, axis=1, sort=True)
-               .fillna(0).astype(int).T)
-food_counts.index = pd.Index(filenames, name='filename')
-```
 
 The matrix generated has this format:
 
@@ -514,5 +375,5 @@ The matrix generated has this format:
 The last step is to export the matrix as a .csv file.
 
 ```
-food_counts.to_csv('Tutorial_plasma_file_food_count.csv')
+f_counts.to_csv('Tutorial_plasma_file_food_count.csv')
 ```
