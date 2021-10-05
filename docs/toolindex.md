@@ -35,7 +35,11 @@ Please help us fill in more completely!
 | Data Processing | ChemProp  | ---  | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22%3A%20%22CHEMPROP%22%7D)  |[Documentation](chemdir.md)|---|---|
 | Data Processing | Spec2vec | [Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22SPEC2VEC%22%7D) | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22SPEC2VEC%22%7D)| --- | --- | --- | 
 | Data Processing | MAGI 2 | --- | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22MAGI2%22%7D)| --- | --- | --- | 
-| Data Processing | Falcon Clustering | --- | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FALCON-CLUSTER%22%7D)| --- | --- | --- | 
+| Data Processing | Falcon Clustering | Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FALCON-CLUSTER%22%7D) | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FALCON-CLUSTER%22%7D)| --- | --- | --- | 
+| Data Processing | NP Classifier Batch | Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22NPCLASSIFIER%22%7D) | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22NPCLASSIFIER%22%7D)| --- | --- | --- | 
+| Data Processing | USI to MGF Conversion | Workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22USI_TO_MGF%22%7D) | [Workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22USI_TO_MGF%22%7D)| --- | --- | --- | 
+
+
 
 ## GNPS Web Tools
 
