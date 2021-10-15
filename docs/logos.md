@@ -57,6 +57,10 @@ Animated
 
 ![img](img/logo/foodmasst_logo.png)
 
+## GNPS FBMN
+
+![img](img/logo/mzmine-fbmn.png)
+
 ## Logos for Zoom Background
 
 ![img](img/logo/zoom/Slide1.PNG)
