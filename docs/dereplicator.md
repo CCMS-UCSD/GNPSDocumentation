@@ -4,26 +4,29 @@
 - [Manuscripts and Citations](#manuscripts-and-citations)
 - [Development](#development)
 - [Accessing the DEREPLICATOR tools on GNPS](#accessing-the-dereplicator-tools-on-gnps)
-    + [STEP 1: Go to GNPS](#step-1--go-to-gnps)
-    + [STEP 2: Access DEREPLICATOR](#step-2--access-dereplicator)
-    + [STEP 3: SELECT YOUR FILES](#step-3--select-your-files)
-    + [STEP 4: CONFIGURE](#step-4--configure)
-      - [BASIC OPTIONS:](#basic-options-)
-      - [ADVANCED OPTIONS:](#advanced-options-)
-      - [ADVANCED DEREPLICATOR OPTIONS:](#advanced-dereplicator-options-)
-      - [ADVANCED VARQUEST OPTIONS:](#advanced-varquest-options-)
-    + [STEP 5: VIEW RESULTS](#step-5--view-results)
-    + [STEP 6: ANALYSE](#step-6--analyse)
-    + [STEP 7: MAP ANNOTATIONS ON MOLECULAR NETWORKS](#step-7--map-annotations-on-molecular-networks)
-    + [STEP 8: VALIDATE](#step-8--validate)
-- [DEREPLICATOR+](#dereplicator-)
+    - [STEP 1: Go to GNPS](#step-1-go-to-gnps)
+    - [STEP 2: Access DEREPLICATOR](#step-2-access-dereplicator)
+    - [STEP 3: SELECT YOUR FILES](#step-3-select-your-files)
+    - [STEP 4: CONFIGURE](#step-4-configure)
+      - [BASIC OPTIONS:](#basic-options)
+      - [ADVANCED OPTIONS:](#advanced-options)
+      - [ADVANCED DEREPLICATOR OPTIONS:](#advanced-dereplicator-options)
+      - [ADVANCED VARQUEST OPTIONS:](#advanced-varquest-options)
+    - [STEP 5: VIEW RESULTS](#step-5-view-results)
+    - [STEP 6: ANALYSE](#step-6-analyse)
+    - [STEP 7: MAP ANNOTATIONS ON MOLECULAR NETWORKS](#step-7-map-annotations-on-molecular-networks)
+    - [STEP 8: VALIDATE](#step-8-validate)
+      - [Validating a DEREPLICATOR annotation:](#validating-a-dereplicator-annotation)
+- [Other in silico database search tools](#other-in-silico-database-search-tools)
+- [Contribute to the Documentation](#contribute-to-the-documentation)
+- [Page Contributions](#page-contributions)
 
 
 The Insilico Peptidic Natural Products **DEREPLICATOR** is a bioinformatic tool available on GNPS that allows the annotation of known peptidic natural products in MS/MS data using in silico fragmentation tree.
 
 The introduction of **DEREPLICATOR VarQuest** made possible to search variants of known peptidic natural products on GNPS.
 
-The introduction of **DEREPLICATOR+ (PLUS)** improved the confidence in the annotation from the DEREPLICATOR, and expanded annotations to non-peptidic natural products on GNPS. 
+The introduction of **DEREPLICATOR+ (PLUS)** and **MOLDISCOVERY** improved the confidence in the annotation from the DEREPLICATOR, and expanded annotations to non-peptidic natural products on GNPS. 
 
 These algorithms and software are developed in collaboration of [Saint Petersburg State University](http://cab.spbu.ru) (Russia), 
 [University of California San Diego](http://cseweb.ucsd.edu/~ppevzner/) (CA, USA) 
@@ -197,8 +200,8 @@ In any cases the following are recommended:
 - Look at the biological source(s) (species) for the peptidic natural product (Google scholar, Dictionnary of Natural Products, AntiMarin, MarinLit, ...), to see if it is consistent with the sample.
 
 
-## DEREPLICATOR+
-- The DEREPLICATOR+ is very similar to the DEREPLICATOR workflow, and currently no documentation is available.
+## Other in silico database search tools
+- The DEREPLICATOR+ and molDiscovery are advanced in silico database search tool that can handle more bond types and search general metabolites in addition to short peptides. See the documentations of [DEREPLICATOR+](dereplicator+.md) and [MOLDISCOVERY](molDiscovery.md).
 
 ## Contribute to the Documentation
 

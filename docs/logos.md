@@ -45,9 +45,21 @@ Animated
 
 ![img](img/logo/MolNetEnhancer_logo.png)
 
-## ChemDir Log
+## ChemDir Logo
 
 ![img](img/logo/ChemDir_Logo_grey_scale.png)
+
+## GNPS Dashboard Logo
+
+![img](img/logo/dashboard_logo_final_transparent.png)
+
+## Food MASST
+
+![img](img/logo/foodmasst_logo.png)
+
+## GNPS FBMN
+
+![img](img/logo/mzmine-fbmn.png)
 
 ## Logos for Zoom Background
 
