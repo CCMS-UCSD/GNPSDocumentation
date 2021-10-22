@@ -39,7 +39,7 @@ Here is a table to briefly browse them
 
 | Venue        | Description          | Dates | Speakers/Instructors | Material | Estimated Attendance |
 | ------------- |-------------| -----| -----| -----| ----- |
-| MANA 2021 | GNPS Workshop - Networking, Dashboard, MASST | 2021-10-18 | Mingxun Wang and Pieter Dorrestein | [Material Link](https://docs.google.com/document/d/1BODiY1QvzXr30fDdO_iG5Wk_poM-bbqDOZRGuEeSqOA/edit#) | 100 |
+| MANA 2021 | GNPS Workshop - Networking, Dashboard, MASST | 2021-10-18 | Mingxun Wang and Pieter Dorrestein | [Material](https://docs.google.com/document/d/1BODiY1QvzXr30fDdO_iG5Wk_poM-bbqDOZRGuEeSqOA/edit#) [Video](https://www.youtube.com/watch?v=-XoVrHQxW9U) | 100 |
 | Virtual Classroom | Exploratory Data Analysis with brief primers on MASST, Library Matching, Molecular Networking, & GNPS Dashboard | 2021-05-27 & 2021-05-12 | Teaching Practical Guides as part of course | No URL available | 25 |
 | Zoom! | GNPS Dashboard - Overview | 5/12/2021 9AM PST | Mingxun Wang and Daniel Petras | [Material](https://docs.google.com/document/d/16-ZA3ZPUdkSWdIBNDLzyTetXNX9Uy5iboya-DFON46g/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=S3aAkGTMC-g) | 140 |
 |Zoom! | Basic principles of metabolomics-based MS data and GNPS tools for data analysis in Portuguese - Part 1 | 04/28/2020 9AM PST | Anelize Bauermeister, Tiago Leão, Naydja M. Maimone, Danielle R. P. Barros| [Material](https://docs.google.com/document/d/1Gmp1eyIACYCYCDxyrgto9ZCBVbEHd8I0R9TJHRhRMZY/edit) [Video](https://www.youtube.com/watch?v=QVw1K1dkpIc) | 450 |
