@@ -39,6 +39,7 @@ Here is a table to briefly browse them
 
 | Venue        | Description          | Dates | Speakers/Instructors | Material | Estimated Attendance |
 | ------------- |-------------| -----| -----| -----| ----- |
+| UNIFAL-MG Brazil 2021 | Virtual class and hands-on: Applications of Mass Spectrometry in Pharmacotherapeutics development - MS Fundamentals to GNPS | 2021-11-05 | Mauricio Caraballo | [Material](https://docs.google.com/presentation/d/1tjmNlZWF4gJ1K9RQQ_pTNrFwqsA9JPzi/edit?usp=sharing&ouid=114731408120524190184&rtpof=true&sd=true) | 25 |
 | MANA 2021 | GNPS Workshop - Networking, Dashboard, MASST | 2021-10-18 | Mingxun Wang and Pieter Dorrestein | [Material](https://docs.google.com/document/d/1BODiY1QvzXr30fDdO_iG5Wk_poM-bbqDOZRGuEeSqOA/edit#) [Video](https://www.youtube.com/watch?v=-XoVrHQxW9U) | 100 |
 | Virtual Classroom | Exploratory Data Analysis with brief primers on MASST, Library Matching, Molecular Networking, & GNPS Dashboard | 2021-05-27 & 2021-05-12 | Teaching Practical Guides as part of course | No URL available | 25 |
 | Zoom! | GNPS Dashboard - Overview | 5/12/2021 9AM PST | Mingxun Wang and Daniel Petras | [Material](https://docs.google.com/document/d/16-ZA3ZPUdkSWdIBNDLzyTetXNX9Uy5iboya-DFON46g/edit?usp=sharing) [Video](https://www.youtube.com/watch?v=S3aAkGTMC-g) | 140 |
