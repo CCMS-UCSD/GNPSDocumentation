@@ -19,7 +19,7 @@ To do this, you will need to use your preferred FTP client program. There are ma
 [CoreFTP](http://www.coreftp.com/)  
 [CoffeeCup Free FTP](http://www.coffeecup.com/free-ftp/)
 
-!!!warning
+!!! warning
     We no longer recommend FileZilla, since it was found to contain malware in a recent update.
 
 Most FTP client programs use a similar interface. There is usually some sort of server or session management interface, allowing you to set up and store your connection information for a particular FTP server, and then re-connect to that server easily. For example, in WinSCP:
@@ -34,7 +34,7 @@ You can also experiment with the FTP client interface to move and rename files a
 
 ![WinSCP_file_interface](img/uploader/WinSCP_file_interface.png)
 
-!!!important
+**Important:**
 
 In case you experience slow file upload speed on the massive/gnps side (not your own internet upload speed), you can increase the number of paralel uploads through your FTP client.
 In WinSCP for exampel this can be doen by running uploads in background mode and increase the paralel uploads in the background preferences.
