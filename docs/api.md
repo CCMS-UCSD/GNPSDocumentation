@@ -4,13 +4,21 @@
 
 ### All Public Library Spectra at GNPS
 
+This gets you all spectra but without peaks. 
+
 ```
 https://gnps-external.ucsd.edu/gnpslibraryjson
 ```
 
 ### All Public Library Specta at GNPS with Peaks and Annotation History
 
-Browser all spectra
+### All Public Library Name List at GNPS
+
+```
+https://gnps-external.ucsd.edu/gnpslibrary.json
+```
+
+Browse all spectra
 
 ```
 https://gnps-external.ucsd.edu/gnpslibrary
@@ -213,7 +221,13 @@ https://gnps-structure.ucsd.edu/structurefingerprint?smiles=<smiles string>
 https://gnps-structure.ucsd.edu/structuremass?smiles=<smiles string>
 ```
 
-[Example](https://gnps-structure.ucsd.edu/structuremass?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+### Compare to Adduct m/z
+
+```
+https://gnps-structure.ucsd.edu/adductcalc?smiles=<smiles string>&mz=<experimental mz>
+```
+
+[Example](https://gnps-structure.ucsd.edu/adductcalc?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O&mz=195.08765155999998)
 
 ### Conversion to formula
 
@@ -292,7 +306,8 @@ https://npclassifier.ucsd.edu/classify?smiles=<smiles string>
     }
     ```
 
-!!! note "NPClassifier" NPClassifier is A Deep Neural Network-Based Structural Classification Tool for Natural Products - check it out [here](https://npclassifier.ucsd.edu/). For citation: Kim, Hyunwoo; Wang, Mingxun; Leber, Christopher; Nothias, Louis-Felix; Reher, Raphael; Kang, Kyo Bin; et al. (2020): NPClassifier: A Deep Neural Network-Based Structural Classification Tool for Natural Products. ChemRxiv. Preprint. [https://doi.org/10.26434/chemrxiv.12885494.v1](https://doi.org/10.26434/chemrxiv.12885494.v1).
+!!! note "NPClassifier" 
+    NPClassifier is A Deep Neural Network-Based Structural Classification Tool for Natural Products - check it out [here](https://npclassifier.ucsd.edu/). For citation: Kim, Hyun Woo, Mingxun Wang, Christopher A. Leber, Louis-Félix Nothias, Raphael Reher, Kyo Bin Kang, Justin JJ van der Hooft, Pieter C. Dorrestein, William H. Gerwick, and Garrison W. Cottrell. "NPClassifier: A deep neural network-based structural classification tool for natural products." Journal of Natural Products (2020). [https://doi.org/10.1021/acs.jnatprod.1c00399](https://pubs.acs.org/doi/abs/10.1021/acs.jnatprod.1c00399?casa_token=MRiUf8bJSAcAAAAA:2543Xv_7W0c-AyhntroXm62ccn0QL6c8CpxT0U6NnDoj3JpB1T6Wlr5G96Rfucmnoi2yR0XFgbp2Sw). Checkout the tool index for a large scale workflow for batch classification. 
 
 
 ### Structure Image
