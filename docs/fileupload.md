@@ -34,6 +34,13 @@ You can also experiment with the FTP client interface to move and rename files a
 
 ![WinSCP_file_interface](img/uploader/WinSCP_file_interface.png)
 
+!!! important
+
+In case you experience slow file upload speed on the massive/gnps side (not your own internet upload speed), you can increase the number of paralel uploads through your FTP client.
+In WinSCP for exampel this can be doen by running uploads in background mode and icnrease the paralel uploads in the background preferences.
+
+
+
 ## Browser File Uploads
 
 To upload files to GNPS using the browser, you can use our web drag and drop uploader.
