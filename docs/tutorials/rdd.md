@@ -4,6 +4,8 @@ The key difference between a traditional untargeted metabolomics analysis and a 
 
 Here we present a step by step tutorial for running a RDD analysis through the GNPS web infrastructure. All input files and outputs can also be found at the GNPS/Massive Repository, along with the data files at [https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=99830767e1524e489b1a0f62569b8ed9](https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=99830767e1524e489b1a0f62569b8ed9)
 
+Follow the steps below or watch the [**Video Tutorial**](https://www.youtube.com/watch?v=2-XsifrUY0Y)
+
 **Tutorial folder:** [ftp://massive.ucsd.edu/MSV000086158/updates/2020-10-01_jgauglitz_6c7824e2/other/](ftp://massive.ucsd.edu/MSV000086158/updates/2020-10-01_jgauglitz_6c7824e2/other/)
 
 **Outline of Steps:**
