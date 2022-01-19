@@ -116,6 +116,7 @@ plugins:
     - mermaid2
     - with-pdf:
         output_path: documentation.pdf
+        show_anchors: true
 
 
 markdown_extensions:
