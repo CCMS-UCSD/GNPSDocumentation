@@ -114,6 +114,9 @@ plugins:
     - git-revision-date-localized:
         type: datetime
     - mermaid2
+    - with-pdf:
+        output_path: documentation.pdf
+
 
 markdown_extensions:
     - toc:
