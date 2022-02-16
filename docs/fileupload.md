@@ -13,6 +13,9 @@ To connect to your GNPS user account via FTP, simply log on to the FTP server at
 | ------------------------------------ |
 | [massive.ucsd.edu](ftp://massive.ucsd.edu) |
 
+!!! note
+    On MacOS if you use Finder, make sure to connect with ```ftp://massive.ucsd.edu```
+
 To do this, you will need to use your preferred FTP client program. There are many good free FTP clients, but a few of the more popular ones that have been tested with MassIVE include:
 
 [WinSCP](https://winscp.net/eng/index.php) (recommended and used for the example illustrations below)  
