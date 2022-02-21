@@ -86,6 +86,12 @@ Here is a table to briefly browse them
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xotOmx11UTebhBV-LfYgLsKrfdyprw4z" width="640" height="480"></iframe>
 
+## Community Tutorials
+
+
+| Description        | Link          |
+| ------------- |-------------|
+| MS-Dial and GNPS in Portuguese | [YouTube](https://www.youtube.com/watch?v=IZoS3Lvto1M) |
 
 ## Page Contributors
 
