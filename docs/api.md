@@ -153,6 +153,20 @@ https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=<Library Acce
 
 [Example](https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=CCMSLIB00005463737)
 
+
+### Experimental or Library Spectrum by USI
+
+Access a JSON or csv version of a spectrum by any Universal Spectrum Identifier.
+
+```
+https://metabolomics-usi.ucsd.edu/json/?usi1=<USI HERE>
+https://metabolomics-usi.ucsd.edu/csv/?usi1=<USI HERE>
+```
+
+[json example for mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000579622](https://metabolomics-usi.ucsd.edu/json/?usi1=mzspec%3AGNPS%3AGNPS-LIBRARY%3Aaccession%3ACCMSLIB00000579622)
+
+[csv example for mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000579622](https://metabolomics-usi.ucsd.edu/csv/?usi1=mzspec%3AGNPS%3AGNPS-LIBRARY%3Aaccession%3ACCMSLIB00000579622)
+
 ## GNPS Jobs
 
 ### Job Results API
