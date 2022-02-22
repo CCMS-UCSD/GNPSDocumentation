@@ -170,7 +170,7 @@ Importantly, if you can annote the motif with any structural information, this c
 
 ![img](img/ms2lda/AppExampleFreeMotifPage.png)
 
-Finally, on top of the summary page there is a toggle where you can make the entire MS2LDA experiment public. See for example the public [MassBank Experiment](http://ms2lda.org/basicviz/summary/190/).
+Finally, on top of the summary page there is a toggle where you can make the entire MS2LDA experiment public. See for example the public [MassBank Experiment](https://ms2lda.org/basicviz/summary/190/).
 
 #### MS1 Differential Analyses within the MS2LDA web app
 
