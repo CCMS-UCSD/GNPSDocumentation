@@ -341,6 +341,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ccms-ucsd.github.io/GNPSDocumentation/shimadzu/</loc>
+         <lastmod>2022-02-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ccms-ucsd.github.io/GNPSDocumentation/sirius/</loc>
          <lastmod>2022-02-22</lastmod>
          <changefreq>daily</changefreq>

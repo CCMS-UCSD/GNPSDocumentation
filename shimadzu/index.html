@@ -5,10 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://ccms-ucsd.github.io/GNPSDocumentation/networkingviews/" rel="canonical"/>
+<link href="https://ccms-ucsd.github.io/GNPSDocumentation/shimadzu/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.2.3, mkdocs-material-8.2.1" name="generator"/>
-<title>Molecular Networking Views - GNPS Documentation</title>
+<title>Shimazdu Gotchas - GNPS Documentation</title>
 <link href="../assets/stylesheets/main.e8d9bf0c.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.e6a45f82.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -23,7 +23,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#view-all-library-hits">
+<a class="md-skip" href="#shimazdu-gotchas">
           Skip to content
         </a>
 </div>
@@ -47,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Molecular Networking Views
+              Shimazdu Gotchas
             
           </span>
 </div>
@@ -174,8 +174,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" id="__nav_9" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" id="__nav_9" type="checkbox"/>
 <label class="md-nav__link" for="__nav_9">
           Data Preparation/Upload
           <span class="md-nav__icon md-icon"></span>
@@ -196,10 +196,37 @@
         File Conversion (Waters)
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../shimadzu/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Shimazdu Gotchas
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         Shimazdu Gotchas
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#shimazdu-gotchas">
+    Shimazdu Gotchas
+  </a>
+<nav aria-label="Shimazdu Gotchas" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conversion">
+    Conversion
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../fileupload/">
@@ -214,8 +241,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" id="__nav_10" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" id="__nav_10" type="checkbox"/>
 <label class="md-nav__link" for="__nav_10">
           Recommended Data Analysis
           <span class="md-nav__icon md-icon"></span>
@@ -261,132 +288,10 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          Molecular Networking Views
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../networkingviews/">
         Molecular Networking Views
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#view-all-library-hits">
-    View All Library Hits
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#view-all-clusters-with-ids">
-    View All Clusters With IDs
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#view-spectral-families">
-    View Spectral Families
-  </a>
-<nav aria-label="View Spectral Families" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#network-labeling">
-    Network Labeling
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#node-pie-coloring">
-    Node Pie Coloring
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#edge-highlights">
-    Edge Highlights
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#edge-directions">
-    Edge Directions
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#edge-delta-histogram">
-    Edge Delta Histogram
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#node-sizingcolor">
-    Node Sizing/Color
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ms2-peak-search-in-molecular-network">
-    MS2 Peak Search in Molecular Network
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#detailed-interrogation-of-network-spectra">
-    Detailed Interrogation of Network Spectra
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#examining-spectrum-spectrum-alignment">
-    Examining Spectrum Spectrum Alignment
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#network-spectra-library-matches">
-    Network Spectra Library Matches
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#network-screen-shot">
-    Network Screen Shot
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#network-layout-re-run">
-    Network Layout Re-run
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#network-window-size">
-    Network Window Size
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#pop-up-window">
-    Pop up Window
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#sub-network-graphml-for-cytoscape">
-    Sub-Network GraphML for Cytoscape
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#hide-widgets">
-    Hide Widgets
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#view-principle-coordinate-analysis-pcoa-plots">
-    View Principle Coordinate Analysis (PCoA) Plots
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#page-contributors">
-    Page Contributors
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../librarysearch/">
@@ -861,113 +766,18 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#view-all-library-hits">
-    View All Library Hits
+<a class="md-nav__link" href="#shimazdu-gotchas">
+    Shimazdu Gotchas
   </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#view-all-clusters-with-ids">
-    View All Clusters With IDs
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#view-spectral-families">
-    View Spectral Families
-  </a>
-<nav aria-label="View Spectral Families" class="md-nav">
+<nav aria-label="Shimazdu Gotchas" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#network-labeling">
-    Network Labeling
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#node-pie-coloring">
-    Node Pie Coloring
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#edge-highlights">
-    Edge Highlights
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#edge-directions">
-    Edge Directions
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#edge-delta-histogram">
-    Edge Delta Histogram
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#node-sizingcolor">
-    Node Sizing/Color
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ms2-peak-search-in-molecular-network">
-    MS2 Peak Search in Molecular Network
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#detailed-interrogation-of-network-spectra">
-    Detailed Interrogation of Network Spectra
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#examining-spectrum-spectrum-alignment">
-    Examining Spectrum Spectrum Alignment
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#network-spectra-library-matches">
-    Network Spectra Library Matches
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#network-screen-shot">
-    Network Screen Shot
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#network-layout-re-run">
-    Network Layout Re-run
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#network-window-size">
-    Network Window Size
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#pop-up-window">
-    Pop up Window
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#sub-network-graphml-for-cytoscape">
-    Sub-Network GraphML for Cytoscape
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#hide-widgets">
-    Hide Widgets
+<a class="md-nav__link" href="#conversion">
+    Conversion
   </a>
 </li>
 </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#view-principle-coordinate-analysis-pcoa-plots">
-    View Principle Coordinate Analysis (PCoA) Plots
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#page-contributors">
-    Page Contributors
-  </a>
 </li>
 </ul>
 </nav>
@@ -976,193 +786,23 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/CCMS-UCSD/GNPSDocumentation/edit/master/docs/networkingviews.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/CCMS-UCSD/GNPSDocumentation/edit/master/docs/shimadzu.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
-<h1>Molecular Networking Views</h1>
-<h2 id="view-all-library-hits">View All Library Hits<a class="headerlink" href="#view-all-library-hits" title="Permanent link">¶</a></h2>
-<p>This view shows all the library matches between the consensus MS/MS spectra and the GNPS MS/MS Spectral Libraries.</p>
-<p><img alt="img" src="../img/networkingviews/view_library_hits.png"/></p>
-<p>To view the quality of the MS/MS match, click "View Mirror Match" to display a mirror plot</p>
-<p><img alt="img" src="../img/networkingviews/mirror_plot.png"/></p>
-<h2 id="view-all-clusters-with-ids">View All Clusters With IDs<a class="headerlink" href="#view-all-clusters-with-ids" title="Permanent link">¶</a></h2>
-<p>View All Clusters allow a user to view the all consensus spectra in the molecular networking analysis.</p>
-<p><img alt="img" src="../img/networkingviews/allclusters.png"/></p>
-<p>While Molecular Networking matches to all public reference libraries, the majority of molecules detected in untargeted LC/MS runs are unidentified. To help annotate these unidentified spectra, click the "AnnotatetoGNPS" to be taken to the view that allows you to choose a specific MS/MS spectrum to annotate. Then Click "AnnotatetoGNPS" to be taken to the annotation page with the spectrum prepopulated. Check out the details about annotation - <a href="../spectrumcuration/#adding-single-spectra">Annotation Documentation</a>.</p>
-<p>To view all the input MS/MS spectra that went into the consensus spectrum, click the link in the "ClusterIdx" link</p>
-<p><img alt="img" src="../img/networkingviews/clusterspectra.png"/></p>
-<p>This brings up all the input MS/MS spectra. To visualize each spectrum, we can click the "View Spectrum" button.</p>
-<p><img alt="img" src="../img/networkingviews/clusterplot.png"/></p>
-<h2 id="view-spectral-families">View Spectral Families<a class="headerlink" href="#view-spectral-families" title="Permanent link">¶</a></h2>
-<p>View Spectra Families allows users to look at the molecular networks at a higher level. Users can see all the distinct spectral families that comprise the entire molecular network. These spectral families are all the nodes that are connected to each other. From here users can tell how big each component is, how many raw spectra are captured by the particular component, and also the libraries identifications of all the spectra in each component.</p>
-<p><img alt="img" src="../img/networkingviews/spectralfamilies.png"/></p>
-<p>To visualize each network, click on the "Visualize Network" link</p>
-<p><img alt="img" src="../img/networkingviews/visualizenetworklink.png"/></p>
-<p>This brings up an in-browser visualization for a given spectral family</p>
-<p><img alt="img" src="../img/networkingviews/networkviz.png"/></p>
-<p>Here users can explore the specific spectral family in the molecular network. Each circle (node) in the left network panel represents a consensus spectrum and edge represents related fragmentation patterns. The default color of the nodes is gray, with blue nodes representing consensus MS/MS spectra that were identified by library search.</p>
-<p>There is a lot to unpack in this online interface to explore the molecular networks. The following is a quick guide to all the features in this interface</p>
+<h1>Shimazdu Gotchas</h1>
+<h2 id="shimazdu-gotchas">Shimazdu Gotchas<a class="headerlink" href="#shimazdu-gotchas" title="Permanent link">¶</a></h2>
+<h3 id="conversion">Conversion<a class="headerlink" href="#conversion" title="Permanent link">¶</a></h3>
 <ol>
-<li>Node Labels</li>
-<li>Edge Labels</li>
-<li>Edge Highlight</li>
-<li>Node Highlights by MS2 Peak Search</li>
-<li>Align MS/MS spectra in right panels</li>
-<li>Node Size/Color Selection</li>
-<li>Node Pie Chart Coloring</li>
-<li>Rerun Network Layout</li>
-<li>Expand Network Window</li>
-<li>Toggle UI Widgets (Show/Hide)</li>
-<li>Download Spectral Family GraphML for Cytoscape</li>
-<li>Download Spectrum Peaks</li>
-<li>Annotate Spectrum with Peptide Sequence</li>
-<li>Large Spectrum Plot</li>
-<li>Show Peak m/z annotations in Spectrum Viewer</li>
+<li>OpenChrom convert to mzXML</li>
+<li>MSConvert mzXML to mzML</li>
 </ol>
-<h3 id="network-labeling">Network Labeling<a class="headerlink" href="#network-labeling" title="Permanent link">¶</a></h3>
-<p>The default labeling is the cluster/node index which is rather uninformative, but there are alternative labelings possible by selecting the appropriate node label from the Node Label legend box.</p>
-<p><img alt="img" src="../img/networkingviews/networklabels.png"/></p>
-<p><strong>Node Labels</strong></p>
-<table>
-<thead>
-<tr>
-<th>Label</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>cluster index</td>
-<td>cluster index used globally for each cluster across all networking views</td>
-</tr>
-<tr>
-<td>parent mass</td>
-<td>precursor mass of the consensus spectrum</td>
-</tr>
-<tr>
-<td>LibraryID</td>
-<td>library identification name for the node if a library search were performed</td>
-</tr>
-<tr>
-<td>EvenOdd</td>
-<td>1/0 for even or odd depending on the parent mass. Used for nitrogen rule</td>
-</tr>
-<tr>
-<td>Peptide</td>
-<td>peptide labeling</td>
-</tr>
-<tr>
-<td>None</td>
-<td>No Labeling</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Edge Labels</strong></p>
-<table>
-<thead>
-<tr>
-<th>Label</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Cosine</td>
-<td>Cosine score measuring fragmentation similarity between two nodes</td>
-</tr>
-<tr>
-<td>DeltaMZ</td>
-<td>The Delta MZ of the spectra</td>
-</tr>
-<tr>
-<td>None</td>
-<td>No Labeling</td>
-</tr>
-</tbody>
-</table>
-<h3 id="node-pie-coloring">Node Pie Coloring<a class="headerlink" href="#node-pie-coloring" title="Permanent link">¶</a></h3>
-<p>An additional way to customize the view of the networks is to color the nodes. By default the nodes are gray, but users can color the nodes based upon spectra counts of the groups they came from. By default the coloring labels will be based upon the default groups G1, G2, G3, G4, G5, and G6. The coloring of each node will be a pie, and the proportion colored of that pie is the proportion of the spectral counts coming from each respective group. Additionally, the Node Coloring legend describes the color for each group. Users can also use their own group names if they defined their own arbitrary groups when creating the network.</p>
-<div class="admonition note">
-<p class="admonition-title">Custom Groups</p>
-<p>If you would like to display custom groups instead of G1 through G6, you will be able to enter your own group name in the fields next to the colors. However, you will need to prefix you group name with <code>GNPSGROUP:</code></p>
-</div>
-<p>To draw the pies, click "Draw Pies"</p>
-<p><img alt="img" src="../img/networkingviews/drawpies.png"/></p>
-<h3 id="edge-highlights">Edge Highlights<a class="headerlink" href="#edge-highlights" title="Permanent link">¶</a></h3>
-<p>Edges by default include arrows pointing from low mass spectra to high mass spectra. Further, edges can also be colored. Users are able to enter a delta mz of their choice to highlight in the network. The highlighted edges will appear in red.</p>
-<p><img alt="img" src="../img/networkingviews/edgehighlight.png"/></p>
-<h3 id="edge-directions">Edge Directions<a class="headerlink" href="#edge-directions" title="Permanent link">¶</a></h3>
-<p>The arrows between nodes in the molecular network point from higher m/z spectra to lower m/z spectra. This can facilitate tracking down identifying multiple extensions of a polymer or extension of a carbon chain.</p>
-<h3 id="edge-delta-histogram">Edge Delta Histogram<a class="headerlink" href="#edge-delta-histogram" title="Permanent link">¶</a></h3>
-<p>This histogram shows the distribution of the edge deltas.</p>
-<p><img alt="img" src="../img/networkingviews/edgehistogram.png"/></p>
-<p>Clicking each peak in the histogram allows for highlighting the edges in the network.</p>
-<h3 id="node-sizingcolor">Node Sizing/Color<a class="headerlink" href="#node-sizingcolor" title="Permanent link">¶</a></h3>
-<p>The nodes size and color can be adjusted based upon several options:</p>
-<ol>
-<li>Spectrum counts</li>
-<li>Precursor intensity</li>
-<li>Number of Files</li>
-<li>Parent Mass</li>
-<li>Nitrogen Even/Odd</li>
-<li>Precursor Charge</li>
-</ol>
-<p><img alt="img" src="../img/networkingviews/nodesizing.png"/></p>
-<h3 id="ms2-peak-search-in-molecular-network">MS2 Peak Search in Molecular Network<a class="headerlink" href="#ms2-peak-search-in-molecular-network" title="Permanent link">¶</a></h3>
-<p>To search for specific molecules in the molecular network that contain an MS2 fragment of interest, you can enter a product ion m/z you want to find.</p>
-<p>First, we need to grab all the MS/MS spectra into the browser by clicking this button:</p>
-<p><img alt="img" src="../img/networkingviews/downloadms2peaks.png"/></p>
-<p>Then, we can enter the m/z we want to search for and click the update button. This will highlight which molecules contain the specific product ion.</p>
-<p><img alt="img" src="../img/networkingviews/ms2peakhighlight.png"/></p>
-<p>We can also see a histogram of all product ions from all MS2 spectra in the current network.</p>
-<p><img alt="img" src="../img/networkingviews/ms2histogram.png"/></p>
-<h3 id="detailed-interrogation-of-network-spectra">Detailed Interrogation of Network Spectra<a class="headerlink" href="#detailed-interrogation-of-network-spectra" title="Permanent link">¶</a></h3>
-<p>While its great to visualize the network properly, to truly make sense of the network users must be able to interrogate the network metadata and examine the actual spectra. To this end, users are able to find out information about a particular node by simply hovering their mouse over node. This will bring up a hover box describing the node information. At present the display shows like this:</p>
-<p><img alt="img" src="../img/networkingviews/nodedetails.png"/></p>
-<p>This shows basic information about the node, as well as the structure if the node is identified by library search and the structure was provided in the library spectrum.</p>
-<p>To further investigate the network, users can left click on a node to plot the spectrum in the top right panel (right click to plot in bottom right panel), along with the spectrum information and structure if one is available.</p>
-<p><img alt="img" src="../img/networkingviews/networkplot.png"/></p>
-<p>The spectrum image is interactive so users can zoom in and look at precisely at the spectrum to make sense of the data. Additionally users can compare two spectra in the network by simple right clicking on a different node to render its information in the bottom right panel.</p>
-<p>Users can also click on an edge and both nodes that are connected to the edge are automatically displayed in the top and bottom right panels.</p>
-<h3 id="examining-spectrum-spectrum-alignment">Examining Spectrum Spectrum Alignment<a class="headerlink" href="#examining-spectrum-spectrum-alignment" title="Permanent link">¶</a></h3>
-<p>Users can quickly ascertain how two spectra align to each other at the peak level. By clicking the "Align Spec" button to obtain the score between the spectrum in the top and the spectrum in the bottom render panels.</p>
-<p><img alt="img" src="../img/networkingviews/alignspec.png"/></p>
-<p>Additionally, the plots of the spectra will update to reflect the alignments shown here:</p>
-<p><img alt="img" src="../img/networkingviews/alignspecplot.png"/></p>
-<p>with red peaks representing peaks that match at the exact same masses between the top and bottom spectra, and blue peaks representing peaks matching at shifted masses. Additionally, each peak is labeled with a unique identification number that shows the correspondence of peak matches between the top and bottom spectra.</p>
-<h3 id="network-spectra-library-matches">Network Spectra Library Matches<a class="headerlink" href="#network-spectra-library-matches" title="Permanent link">¶</a></h3>
-<p>To view how exactly a spectrum in the network has matched to a library spectrum, users can click the "Show Library Match" in the side panel on the far right. This will bring up this middle panel shown below comparing the spectrum in the network with the library spectrum in green.</p>
-<p><img alt="img" src="../img/networkingviews/networkviewmatch.png"/></p>
-<h3 id="network-screen-shot">Network Screen Shot<a class="headerlink" href="#network-screen-shot" title="Permanent link">¶</a></h3>
-<p><img alt="img" src="../img/networkingviews/screenshot.png"/></p>
-<p>Download screenshot of the molecular network.</p>
-<h3 id="network-layout-re-run">Network Layout Re-run<a class="headerlink" href="#network-layout-re-run" title="Permanent link">¶</a></h3>
-<p><img alt="img" src="../img/networkingviews/rerunlayout.png"/></p>
-<p>Rerun network layout to fit zoom and window.</p>
-<h3 id="network-window-size">Network Window Size<a class="headerlink" href="#network-window-size" title="Permanent link">¶</a></h3>
-<p><img alt="img" src="../img/networkingviews/maximizenetwork.png"/></p>
-<p>Max network view bigger to see more of the network with more room.</p>
-<h3 id="pop-up-window">Pop up Window<a class="headerlink" href="#pop-up-window" title="Permanent link">¶</a></h3>
-<p><img alt="img" src="../img/networkingviews/networkpopout.png"/></p>
-<p>Pop out network visualizer into new window without top menu bars.</p>
-<h3 id="sub-network-graphml-for-cytoscape">Sub-Network GraphML for Cytoscape<a class="headerlink" href="#sub-network-graphml-for-cytoscape" title="Permanent link">¶</a></h3>
-<p><img alt="img" src="../img/networkingviews/downloadnetwork.png"/></p>
-<p>Download a GraphML of network and visualize in Cytoscape or other graph software.</p>
-<h3 id="hide-widgets">Hide Widgets<a class="headerlink" href="#hide-widgets" title="Permanent link">¶</a></h3>
-<p><img alt="img" src="../img/networkingviews/showhideui.png"/></p>
-<p>Show or hide user interface widgets.</p>
-<h2 id="view-principle-coordinate-analysis-pcoa-plots">View Principle Coordinate Analysis (PCoA) Plots<a class="headerlink" href="#view-principle-coordinate-analysis-pcoa-plots" title="Permanent link">¶</a></h2>
-<p>To view PCoA plots, please enable that output on the input page (default is on) in the "Advanced Output Options" section and enabling "Create Cluster Buckets and BioM/PCoA Plots output". This will create the appropriate data structures for PCoA analysis. To include additional metadata to color the nodes according to the sample types, include and add additional columns for metadata describing the experiment (see <a href="../networking/#metadata">metadata documentation</a>).</p>
-<p>To view the PCoA plots when the parameters are appropriately set, click the "View Emporer PCoA Plot in GNPS" under the section "Advanced Views - Third Party Visualization" on the results page of your GNPS job.</p>
-<p>This PCoA analysis measures the distance between each of the samples based on their overlapping molecules (by MSCluster). This emperor plot is generated by the Qiime software package. The distance metric is binary_jaccard.</p>
-<h2 id="page-contributors">Page Contributors<a class="headerlink" href="#page-contributors" title="Permanent link">¶</a></h2>
-<p><span class="git-page-authors git-authors"><a href="mailto:mwang87@gmail.com">Ming Wang</a></span></p>
+<p>This gets around an issue where Shimazdu likes to write retention times in milliseconds and pymzML does not read it. </p>
 <hr/>
 <div class="md-source-file">
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 14, 2020 21:21:12</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 22, 2022 17:24:38</span>
 </small>
 </div>
 </article>
@@ -1171,7 +811,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: GC-MS Library Search and Molecular Networking" class="md-footer__link md-footer__link--prev" href="../gc-ms-library-molecular-network/" rel="prev">
+<a aria-label="Previous: File Conversion (Waters)" class="md-footer__link md-footer__link--prev" href="../fileconversion_waters/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </div>
@@ -1180,17 +820,17 @@
 <span class="md-footer__direction">
                 Previous
               </span>
-              GC-MS Library Search and Molecular Networking
+              File Conversion (Waters)
             </div>
 </div>
 </a>
-<a aria-label="Next: Spectral Library Search" class="md-footer__link md-footer__link--next" href="../librarysearch/" rel="next">
+<a aria-label="Next: GNPS File Upload" class="md-footer__link md-footer__link--next" href="../fileupload/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Spectral Library Search
+              GNPS File Upload
             </div>
 </div>
 <div class="md-footer__button md-icon">
