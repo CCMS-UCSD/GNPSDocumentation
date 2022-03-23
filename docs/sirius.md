@@ -49,7 +49,9 @@ Checkout this analyis of this E Coli data found [here](https://massive.ucsd.edu/
 
 1. [Feature Finding with MZmine2](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=8e54833ebf414238963da847ac743fe1)
 1. [Feature Based Molecular Networking](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=bb6766d6f48c4cb6bd84fd620da9cae5)
-1. [Sirius in GNPS](https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=72542358ffca4eeda6a4b50d06b91e60)
+1. [Sirius in GNPS](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp)
+
+These jobs cannot be cloned and they function as an example. Use this [workflow](https://proteomics2.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22SIRIUS%22%7D) to submit your new job. You will have to provided an .mgf file (exported from MZmine) and select what type of instrument (orbitrap or QToF) have been used for the analysis to set the ppm error.
 
 Let us know what you think!
 
