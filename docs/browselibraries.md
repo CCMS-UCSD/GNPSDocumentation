@@ -1,6 +1,6 @@
 ## GNPS Community Spectral Libraries
 
-The GNPS public spectral libraries can be browsed, explored, and downloaded. The list of all public spectral libraries is listed [here](https://gnps.ucsd.edu/ProteoSAFe/libraries.jsp).
+The GNPS public spectral libraries can be browsed, explored, and downloaded. The list of all public spectral libraries is listed [here](https://gnps.ucsd.edu/ProteoSAFe/libraries.jsp). The most up to date libraries can be [downloaded here](https://gnps-external.ucsd.edu/gnpslibrary) in mgf, msp, or json format, also providing aggregated libraries with all reference entries with or without propagated library spectra. 
 
 ### GNPS Community Library
 
