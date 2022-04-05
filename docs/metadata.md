@@ -41,7 +41,7 @@ Here is an example file without the ReDU Sample Information template in [Google 
 !!! info "Formatting metadata"
     The only required columns in the metadata is **"filename"** and the file names should match those uploaded to GNPS and selected for analysis. 		**Capitalization matters.**
 
-??? info "Formatting metadata"
+!!! info "Formatting metadata"
     To add additional columns that are recognized by GNPS workflows, you can prefix the column header with ATTRIBUTE_ (e.g. ATTRIBUTE_Organism). Columns without the ATTRIBUTE_ prefix will be ignored. 
 
 ### Google Sheets Metadata
