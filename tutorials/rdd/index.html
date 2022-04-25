@@ -1,1049 +1,2292 @@
 
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ccms-ucsd.github.io/GNPSDocumentation/tutorials/rdd/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.11">
+    
+    
+      
+        <title>Reference Data Driven Analysis - GNPS Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c5ef100.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.9647289d.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
 
-<html class="no-js" lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://ccms-ucsd.github.io/GNPSDocumentation/tutorials/rdd/" rel="canonical"/>
-<link href="../../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.3.0, mkdocs-material-8.2.8" name="generator"/>
-<title>Reference Data Driven Analysis - GNPS Documentation</title>
-<link href="../../assets/stylesheets/main.644de097.min.css" rel="stylesheet"/>
-<link href="../../assets/stylesheets/palette.e6a45f82.min.css" rel="stylesheet"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
-<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-8412213-5","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-</head>
-<body data-md-color-accent="none" data-md-color-primary="none" data-md-color-scheme="" dir="ltr">
-<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
-<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
-<label class="md-overlay" for="__drawer"></label>
-<div data-md-component="skip">
-<a class="md-skip" href="#reference-data-driven-analysis-of-untargeted-metabolomics-data">
+
+  
+  
+
+
+  <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-8412213-5","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#reference-data-driven-analysis-of-untargeted-metabolomics-data" class="md-skip">
           Skip to content
         </a>
-</div>
-<div data-md-component="announce">
-</div>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
 <header class="md-header" data-md-component="header">
-<nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="GNPS Documentation" class="md-header__button md-logo" data-md-component="logo" href="../.." title="GNPS Documentation">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
-</a>
-<label class="md-header__button md-icon" for="__drawer">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
-</label>
-<div class="md-header__title" data-md-component="header-title">
-<div class="md-header__ellipsis">
-<div class="md-header__topic">
-<span class="md-ellipsis">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="GNPS Documentation" class="md-header__button md-logo" aria-label="GNPS Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
             GNPS Documentation
           </span>
-</div>
-<div class="md-header__topic" data-md-component="header-topic">
-<span class="md-ellipsis">
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
             
               Reference Data Driven Analysis
             
           </span>
-</div>
-</div>
-</div>
-<label class="md-header__button md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
-</label>
-<div class="md-search" data-md-component="search" role="dialog">
-<label class="md-search__overlay" for="__search"></label>
-<div class="md-search__inner" role="search">
-<form class="md-search__form" name="search">
-<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
-<label class="md-search__icon md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
-</label>
-<nav aria-label="Search" class="md-search__options">
-<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
-</button>
-</nav>
-</form>
-<div class="md-search__output">
-<div class="md-search__scrollwrap" data-md-scrollfix="">
-<div class="md-search-result" data-md-component="search-result">
-<div class="md-search-result__meta">
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
             Initializing search
           </div>
-<ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="md-header__source">
-<a class="md-source" data-md-component="source" href="https://github.com/CCMS-UCSD/GNPSDocumentation" title="Go to repository">
-<div class="md-source__icon md-icon">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
-</div>
-<div class="md-source__repository">
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CCMS-UCSD/GNPSDocumentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
     CCMS-UCSD/GNPSDocumentation
   </div>
 </a>
-</div>
-</nav>
+      </div>
+    
+  </nav>
+  
 </header>
-<div class="md-container" data-md-component="container">
-<main class="md-main" data-md-component="main">
-<div class="md-main__inner md-grid">
-<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
-<label class="md-nav__title" for="__drawer">
-<a aria-label="GNPS Documentation" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="GNPS Documentation">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
-</a>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="GNPS Documentation" class="md-nav__button md-logo" aria-label="GNPS Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
     GNPS Documentation
   </label>
-<div class="md-nav__source">
-<a class="md-source" data-md-component="source" href="https://github.com/CCMS-UCSD/GNPSDocumentation" title="Go to repository">
-<div class="md-source__icon md-icon">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
-</div>
-<div class="md-source__repository">
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CCMS-UCSD/GNPSDocumentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
     CCMS-UCSD/GNPSDocumentation
   </div>
 </a>
-</div>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../..">
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         GNPS Introduction
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../isgnpsright/">
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../isgnpsright/" class="md-nav__link">
         Is my data compatible with GNPS?
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faq/">
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
         Frequently Asked Questions
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../superquickstart/">
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../superquickstart/" class="md-nav__link">
         Superquick Start Guide
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../quickstart/">
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quickstart/" class="md-nav__link">
         Quick Start Guide
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gnpsanalysisoverview/">
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gnpsanalysisoverview/" class="md-nav__link">
         GNPS Analysis Tools Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../lexicon/">
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lexicon/" class="md-nav__link">
         GNPS Lexicon
       </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" id="__nav_8" type="checkbox"/>
-<label class="md-nav__link" for="__nav_8">
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
           Mass Spec/Computational Background
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Mass Spec/Computational Background" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_8">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Mass Spec/Computational Background" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
           Mass Spec/Computational Background
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../massspecbackground/networkingtheory/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../massspecbackground/networkingtheory/" class="md-nav__link">
         Molecular Networking
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" id="__nav_9" type="checkbox"/>
-<label class="md-nav__link" for="__nav_9">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
           Data Preparation/Upload
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Data Preparation/Upload" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_9">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Data Preparation/Upload" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
           Data Preparation/Upload
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../fileconversion/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fileconversion/" class="md-nav__link">
         Mass Spectrometry File Conversion
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../fileconversion_waters/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fileconversion_waters/" class="md-nav__link">
         File Conversion (Waters)
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../shimadzu/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shimadzu/" class="md-nav__link">
         Shimazdu Gotchas
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../fileupload/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fileupload/" class="md-nav__link">
         GNPS File Upload
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../metadata/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metadata/" class="md-nav__link">
         Metadata
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" id="__nav_10" type="checkbox"/>
-<label class="md-nav__link" for="__nav_10">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
           Recommended Data Analysis
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Recommended Data Analysis" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_10">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Recommended Data Analysis" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
           Recommended Data Analysis
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../networking/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking/" class="md-nav__link">
         Molecular Networking
       </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" id="__nav_10_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_10_2">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_2">
           GC-MS Molecular Networking
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="GC-MS Molecular Networking" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_10_2">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="GC-MS Molecular Networking" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_2">
+          <span class="md-nav__icon md-icon"></span>
           GC-MS Molecular Networking
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gcanalysis/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gcanalysis/" class="md-nav__link">
         GC-MS on GNPS
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gc-ms-deconvolution/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gc-ms-deconvolution/" class="md-nav__link">
         GC-MS Deconvolution
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gc-ms-library-molecular-network/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gc-ms-library-molecular-network/" class="md-nav__link">
         GC-MS Library Search and Molecular Networking
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../networkingviews/">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networkingviews/" class="md-nav__link">
         Molecular Networking Views
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../librarysearch/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../librarysearch/" class="md-nav__link">
         Spectral Library Search
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../masst/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../masst/" class="md-nav__link">
         MASST Search (Mass Search Tool)
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../resultviews/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resultviews/" class="md-nav__link">
         Result Views Navigation
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" id="__nav_11" type="checkbox"/>
-<label class="md-nav__link" for="__nav_11">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11">
           Mass Spec Data Visualization
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Mass Spec Data Visualization" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_11">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Mass Spec Data Visualization" data-md-level="1">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
           Mass Spec Data Visualization
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../lcms-dashboard/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lcms-dashboard/" class="md-nav__link">
         GNPS Dashboard
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gnpsdatasetexplorer/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gnpsdatasetexplorer/" class="md-nav__link">
         GNPS Dataset Explorer
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../usi/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usi/" class="md-nav__link">
         Metabolomics Spectrum Resolver
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../dashboard_use_cases/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dashboard_use_cases/" class="md-nav__link">
         GNPS Dashboard Use Cases
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" id="__nav_12" type="checkbox"/>
-<label class="md-nav__link" for="__nav_12">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12">
           Advanced Data Analysis
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Advanced Data Analysis" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_12">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Advanced Data Analysis" data-md-level="1">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
           Advanced Data Analysis
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../networkingfiles/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networkingfiles/" class="md-nav__link">
         Molecular Networking Files
       </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_2" id="__nav_12_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_12_2">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_2" type="checkbox" id="__nav_12_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_2">
           Feature Based Molecular Networking
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Feature Based Molecular Networking" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_12_2">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Feature Based Molecular Networking" data-md-level="2">
+        <label class="md-nav__title" for="__nav_12_2">
+          <span class="md-nav__icon md-icon"></span>
           Feature Based Molecular Networking
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../featurebasedmolecularnetworking/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../featurebasedmolecularnetworking/" class="md-nav__link">
         FBMN Workflow
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../featurebasedmolecularnetworking-with-mzmine2/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../featurebasedmolecularnetworking-with-mzmine2/" class="md-nav__link">
         FBMN with MZmine
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../featurebasedmolecularnetworking-with-ms-dial/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../featurebasedmolecularnetworking-with-ms-dial/" class="md-nav__link">
         FBMN with MS-DIAL
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../featurebasedmolecularnetworking-with-xcms3/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../featurebasedmolecularnetworking-with-xcms3/" class="md-nav__link">
         FBMN with XCMS
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../featurebasedmolecularnetworking-with-openms/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../featurebasedmolecularnetworking-with-openms/" class="md-nav__link">
         FBMN with OpenMS
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../featurebasedmolecularnetworking-with-metaboscape/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../featurebasedmolecularnetworking-with-metaboscape/" class="md-nav__link">
         FBMN with MetaboScape
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../featurebasedmolecularnetworking-with-progenesisQI/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../featurebasedmolecularnetworking-with-progenesisQI/" class="md-nav__link">
         FBMN with Progenesis QI
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../featurebasedmolecularnetworking-with-mztab-m/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../featurebasedmolecularnetworking-with-mztab-m/" class="md-nav__link">
         FBMN with mzTab-M
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../featurebasedmolecularnetworking-cytoscape/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../featurebasedmolecularnetworking-cytoscape/" class="md-nav__link">
         FBMN export to Cytoscape
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_3" id="__nav_12_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_12_3">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_3" type="checkbox" id="__nav_12_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_3">
           FBMN - Ion Identity Networking
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="FBMN - Ion Identity Networking" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_12_3">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="FBMN - Ion Identity Networking" data-md-level="2">
+        <label class="md-nav__title" for="__nav_12_3">
+          <span class="md-nav__icon md-icon"></span>
           FBMN - Ion Identity Networking
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../fbmn-iin/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fbmn-iin/" class="md-nav__link">
         IIN Workflow
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../fbmn-iin-mzmine/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fbmn-iin-mzmine/" class="md-nav__link">
         IIN with MZmine2
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../fbmn-iin-xcms/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fbmn-iin-xcms/" class="md-nav__link">
         IIN with XCMS
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../fbmn-iin-msdial/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fbmn-iin-msdial/" class="md-nav__link">
         IIN with MS-DIAL
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ms2lda/">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ms2lda/" class="md-nav__link">
         MS2LDA and MotifDB Substructure Discovery
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../cytoscape/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cytoscape/" class="md-nav__link">
         Molecular Networking in Cytoscape
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../dereplicator/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dereplicator/" class="md-nav__link">
         DEREPLICATOR
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../dereplicator%2B/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dereplicator%2B/" class="md-nav__link">
         DEREPLICATOR+
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../molDiscovery/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../molDiscovery/" class="md-nav__link">
         MolDiscovery
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../nap/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nap/" class="md-nav__link">
         Network Annotation Propagation (NAP)
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ms2lda/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ms2lda/" class="md-nav__link">
         MS2LDA and MotifDB Substructure Discovery
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../molnetenhancer/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../molnetenhancer/" class="md-nav__link">
         MolNetEnhancer
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../metaminer/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metaminer/" class="md-nav__link">
         MetaMiner
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../sirius/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sirius/" class="md-nav__link">
         Sirius
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../ReDU/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ReDU/" class="md-nav__link">
         Reanalysis of Data User Interface (ReDU)
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../qemistree/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qemistree/" class="md-nav__link">
         Qemistree
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../mmvec/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mmvec/" class="md-nav__link">
         MMVEC
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../mergepolarity/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mergepolarity/" class="md-nav__link">
         Merge Network Polarity
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../chemdir/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chemdir/" class="md-nav__link">
         Chemical Directionality
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" id="__nav_13" type="checkbox"/>
-<label class="md-nav__link" for="__nav_13">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13">
           Spectral Libraries
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Spectral Libraries" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_13">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Spectral Libraries" data-md-level="1">
+        <label class="md-nav__title" for="__nav_13">
+          <span class="md-nav__icon md-icon"></span>
           Spectral Libraries
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../browselibraries/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../browselibraries/" class="md-nav__link">
         Browsing Reference Spectral Libraries
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../spectrumcuration/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spectrumcuration/" class="md-nav__link">
         Add/Curate Reference Spectrum in the Library
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../batchupload/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../batchupload/" class="md-nav__link">
         Reference Spectral Library Batch Addition
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../batchuploadmzvault/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../batchuploadmzvault/" class="md-nav__link">
         Reference Spectral Library mzVault Addition
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../downloadlibraries/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../downloadlibraries/" class="md-nav__link">
         Downloading Reference Spectral Libraries
       </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_6" id="__nav_13_6" type="checkbox"/>
-<label class="md-nav__link" for="__nav_13_6">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_6" type="checkbox" id="__nav_13_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_6">
           Open-source Method for Reference Library Generation
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Open-source Method for Reference Library Generation" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_13_6">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Open-source Method for Reference Library Generation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_6">
+          <span class="md-nav__icon md-icon"></span>
           Open-source Method for Reference Library Generation
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../msmschooser/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../msmschooser/" class="md-nav__link">
         MSMS-Chooser Workflow
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../msmschooserdataacquisitioncomputational/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../msmschooserdataacquisitioncomputational/" class="md-nav__link">
         Computational Data Acquisition Prep
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../msmschooserdataacquisitionQE/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../msmschooserdataacquisitionQE/" class="md-nav__link">
         Data Acqusition - Thermo QExactive (v1.0)
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tag_info/">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tag_info/" class="md-nav__link">
         GNPS Tag Contribution and Analyses
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" id="__nav_14" type="checkbox"/>
-<label class="md-nav__link" for="__nav_14">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_14">
           Create a Public Datasets
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Create a Public Datasets" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_14">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Create a Public Datasets" data-md-level="1">
+        <label class="md-nav__title" for="__nav_14">
+          <span class="md-nav__icon md-icon"></span>
           Create a Public Datasets
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../datasets/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datasets/" class="md-nav__link">
         Dataset Creation/Sharing
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../continuousid/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../continuousid/" class="md-nav__link">
         Continuous Identification
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../moleculeexplorer/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../moleculeexplorer/" class="md-nav__link">
         Molecule Explorer
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" id="__nav_15" type="checkbox"/>
-<label class="md-nav__link" for="__nav_15">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15">
           Community/Social Features
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Community/Social Features" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_15">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Community/Social Features" data-md-level="1">
+        <label class="md-nav__title" for="__nav_15">
+          <span class="md-nav__icon md-icon"></span>
           Community/Social Features
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../user/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user/" class="md-nav__link">
         User Page
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../troubleshooting/">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/" class="md-nav__link">
         Troubleshooting
       </a>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_17" id="__nav_17" type="checkbox"/>
-<label class="md-nav__link" for="__nav_17">
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17" type="checkbox" id="__nav_17" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_17">
           Tutorial Guides
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Tutorial Guides" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_17">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tutorial Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_17">
+          <span class="md-nav__icon md-icon"></span>
           Tutorial Guides
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../bacterianetworking/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bacterianetworking/" class="md-nav__link">
         Molecular Networking - Analog Discovery in Microbial Extracts
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../americangutmzmine/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../americangutmzmine/" class="md-nav__link">
         Feature-Based Molecular Networking (FBMN) with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../americangut-ms-dial/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../americangut-ms-dial/" class="md-nav__link">
         FBMN with MS-DIAL - Microbiome Molecules in Fecal Samples in American Gut Project
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../coffee-tutorial-metaboscape/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coffee-tutorial-metaboscape/" class="md-nav__link">
         FBMN with MetaboScape - Coffee Analysis
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../featurebasedgnps/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../featurebasedgnps/" class="md-nav__link">
         FBMN analysis at GNPS
       </a>
-</li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
           Reference Data Driven Analysis
           <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Reference Data Driven Analysis
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-1-determine-input-parameters-to-run-workflow-at-a-1-false-discovery-rate-fdr">
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-determine-input-parameters-to-run-workflow-at-a-1-false-discovery-rate-fdr" class="md-nav__link">
     Step 1. Determine input parameters to run workflow at a 1% False Discovery Rate (FDR).
   </a>
-<nav aria-label="Step 1. Determine input parameters to run workflow at a 1% False Discovery Rate (FDR)." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-11-navigate-to-the-gnps-webpage-and-sign-in">
+  
+    <nav class="md-nav" aria-label="Step 1. Determine input parameters to run workflow at a 1% False Discovery Rate (FDR).">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-11-navigate-to-the-gnps-webpage-and-sign-in" class="md-nav__link">
     Step 1.1 Navigate to the GNPS webpage and sign in.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-12-scroll-down-to-locate-additional-workflows">
+        
+          <li class="md-nav__item">
+  <a href="#step-12-scroll-down-to-locate-additional-workflows" class="md-nav__link">
     Step 1.2 Scroll down to locate additional workflows.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-13-scroll-down-to-locate-additional-workflows">
+        
+          <li class="md-nav__item">
+  <a href="#step-13-scroll-down-to-locate-additional-workflows" class="md-nav__link">
     Step 1.3 Scroll down to locate additional workflows.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-14-select-workflow-which-will-generate-a-job-launch-page-expand-full-menu">
+        
+          <li class="md-nav__item">
+  <a href="#step-14-select-workflow-which-will-generate-a-job-launch-page-expand-full-menu" class="md-nav__link">
     Step 1.4 Select workflow, which will generate a job launch page. Expand full menu.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-15-fill-out-the-launch-page-information">
+        
+          <li class="md-nav__item">
+  <a href="#step-15-fill-out-the-launch-page-information" class="md-nav__link">
     Step 1.5 Fill out the launch page information.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-16-select-datasets-in-your-workspace-and-add-to-selected-files">
+        
+          <li class="md-nav__item">
+  <a href="#step-16-select-datasets-in-your-workspace-and-add-to-selected-files" class="md-nav__link">
     Step 1.6 Select datasets in your workspace and add to selected files.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-17-add-datasets-to-your-workspace-using-the-massive-identifier">
+        
+          <li class="md-nav__item">
+  <a href="#step-17-add-datasets-to-your-workspace-using-the-massive-identifier" class="md-nav__link">
     Step 1.7 Add datasets to your workspace using the MassIVE identifier.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-18-select-files-from-newly-added-dataset-and-add-to-the-job">
+        
+          <li class="md-nav__item">
+  <a href="#step-18-select-files-from-newly-added-dataset-and-add-to-the-job" class="md-nav__link">
     Step 1.8 Select files from newly added dataset and add to the job.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-19-note-that-the-notification-that-the-job-is-complete-will-be-sent-to-the-email-address-provided">
+        
+          <li class="md-nav__item">
+  <a href="#step-19-note-that-the-notification-that-the-job-is-complete-will-be-sent-to-the-email-address-provided" class="md-nav__link">
     Step 1.9 Note that the notification that the job is complete will be sent to the email address provided.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-110-the-status-page-will-look-like-this-and-will-update-when-the-job-has-completed">
+        
+          <li class="md-nav__item">
+  <a href="#step-110-the-status-page-will-look-like-this-and-will-update-when-the-job-has-completed" class="md-nav__link">
     Step 1.10 The status page will look like this and will update when the job has completed.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-111-navigating-the-completed-passatutto-workflow">
+        
+          <li class="md-nav__item">
+  <a href="#step-111-navigating-the-completed-passatutto-workflow" class="md-nav__link">
     Step 1.11 Navigating the completed Passatutto Workflow.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-112-extracting-the-mqscore-modified-cosine-score-needed-for-molecular-networking-to-achieve-a-1-fdr-with-the-min-number-of-matched-peaks-set-in-the-fdr-estimation-workflow-5-in-this-case">
+        
+          <li class="md-nav__item">
+  <a href="#step-112-extracting-the-mqscore-modified-cosine-score-needed-for-molecular-networking-to-achieve-a-1-fdr-with-the-min-number-of-matched-peaks-set-in-the-fdr-estimation-workflow-5-in-this-case" class="md-nav__link">
     Step 1.12 Extracting the MQScore (modified cosine score) needed for molecular networking to achieve a 1% FDR with the min number of matched peaks set in the FDR estimation workflow (5 in this case).
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-2-launch-molecular-networking-analysis-job-containing-reference-dataset">
+      
+        <li class="md-nav__item">
+  <a href="#step-2-launch-molecular-networking-analysis-job-containing-reference-dataset" class="md-nav__link">
     Step 2. Launch molecular networking analysis job, containing reference dataset
   </a>
-<nav aria-label="Step 2. Launch molecular networking analysis job, containing reference dataset" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-21-navigate-to-the-gnps-main-page-scroll-down-and-click-on-create-molecular-network">
+  
+    <nav class="md-nav" aria-label="Step 2. Launch molecular networking analysis job, containing reference dataset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-21-navigate-to-the-gnps-main-page-scroll-down-and-click-on-create-molecular-network" class="md-nav__link">
     Step 2.1 Navigate to the GNPS main page. Scroll down and click on ‘Create Molecular Network’.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-22-molecular-networking-start-page">
+        
+          <li class="md-nav__item">
+  <a href="#step-22-molecular-networking-start-page" class="md-nav__link">
     Step 2.2 Molecular Networking Start Page
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-23-dataset-selection-from-gnps-molecular-networking-analysis-homepage">
+        
+          <li class="md-nav__item">
+  <a href="#step-23-dataset-selection-from-gnps-molecular-networking-analysis-homepage" class="md-nav__link">
     Step 2.3 Dataset selection from GNPS molecular networking analysis homepage
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-24-selecting-molecular-networking-parameters">
+        
+          <li class="md-nav__item">
+  <a href="#step-24-selecting-molecular-networking-parameters" class="md-nav__link">
     Step 2.4 Selecting Molecular Networking parameters
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-3-downloading-results">
+      
+        <li class="md-nav__item">
+  <a href="#step-3-downloading-results" class="md-nav__link">
     Step 3 Downloading results
   </a>
-<nav aria-label="Step 3 Downloading results" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-31-click-on-direct-cytoscape-previewdownload-or-download-graphml-for-cytoscape-to-visualize-the-molecular-network-with-the-open-source-software-cytoscape">
+  
+    <nav class="md-nav" aria-label="Step 3 Downloading results">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-31-click-on-direct-cytoscape-previewdownload-or-download-graphml-for-cytoscape-to-visualize-the-molecular-network-with-the-open-source-software-cytoscape" class="md-nav__link">
     Step 3.1 Click on "Direct Cytoscape Preview/Download" or "Download GraphML for Cytoscape" to visualize the molecular network with the open source software Cytoscape.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-32-downloading-results-part-2">
+        
+          <li class="md-nav__item">
+  <a href="#step-32-downloading-results-part-2" class="md-nav__link">
     Step 3.2 Downloading results, part 2
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-33-the-download-button-will-prompt-a-menu-to-save-a-zip-folder-click-save-and-then-extract">
+        
+          <li class="md-nav__item">
+  <a href="#step-33-the-download-button-will-prompt-a-menu-to-save-a-zip-folder-click-save-and-then-extract" class="md-nav__link">
     Step 3.3 The download button will prompt a menu to save a .zip folder. Click save and then extract.
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-4-generate-custom-information-based-on-the-type-of-reference-data-used">
+      
+        <li class="md-nav__item">
+  <a href="#step-4-generate-custom-information-based-on-the-type-of-reference-data-used" class="md-nav__link">
     Step 4 Generate custom information based on the type of reference data used.
   </a>
-<nav aria-label="Step 4 Generate custom information based on the type of reference data used." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#example-1-flow-diagram-to-visualize-ontology">
+  
+    <nav class="md-nav" aria-label="Step 4 Generate custom information based on the type of reference data used.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-flow-diagram-to-visualize-ontology" class="md-nav__link">
     Example 1: Flow diagram to visualize ontology
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#example-2-food-count-generation">
+        
+          <li class="md-nav__item">
+  <a href="#example-2-food-count-generation" class="md-nav__link">
     Example 2: Food count generation
   </a>
+  
 </li>
-</ul>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../changelog/">
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
         Change Log
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gnps_community/">
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gnps_community/" class="md-nav__link">
         Join the GNPS community
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../workshops/">
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workshops/" class="md-nav__link">
         GNPS Workshops/Training
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../logos/">
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../logos/" class="md-nav__link">
         GNPS Logos
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../contact/">
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
         Contact/Office Hours
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../toolindex/">
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolindex/" class="md-nav__link">
         GNPS Tool Index
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../api/">
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/" class="md-nav__link">
         API
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../developers/">
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/" class="md-nav__link">
         For Developers
       </a>
-</li>
-</ul>
+    </li>
+  
+
+    
+  </ul>
 </nav>
-</div>
-</div>
-</div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-1-determine-input-parameters-to-run-workflow-at-a-1-false-discovery-rate-fdr">
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-determine-input-parameters-to-run-workflow-at-a-1-false-discovery-rate-fdr" class="md-nav__link">
     Step 1. Determine input parameters to run workflow at a 1% False Discovery Rate (FDR).
   </a>
-<nav aria-label="Step 1. Determine input parameters to run workflow at a 1% False Discovery Rate (FDR)." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-11-navigate-to-the-gnps-webpage-and-sign-in">
+  
+    <nav class="md-nav" aria-label="Step 1. Determine input parameters to run workflow at a 1% False Discovery Rate (FDR).">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-11-navigate-to-the-gnps-webpage-and-sign-in" class="md-nav__link">
     Step 1.1 Navigate to the GNPS webpage and sign in.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-12-scroll-down-to-locate-additional-workflows">
+        
+          <li class="md-nav__item">
+  <a href="#step-12-scroll-down-to-locate-additional-workflows" class="md-nav__link">
     Step 1.2 Scroll down to locate additional workflows.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-13-scroll-down-to-locate-additional-workflows">
+        
+          <li class="md-nav__item">
+  <a href="#step-13-scroll-down-to-locate-additional-workflows" class="md-nav__link">
     Step 1.3 Scroll down to locate additional workflows.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-14-select-workflow-which-will-generate-a-job-launch-page-expand-full-menu">
+        
+          <li class="md-nav__item">
+  <a href="#step-14-select-workflow-which-will-generate-a-job-launch-page-expand-full-menu" class="md-nav__link">
     Step 1.4 Select workflow, which will generate a job launch page. Expand full menu.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-15-fill-out-the-launch-page-information">
+        
+          <li class="md-nav__item">
+  <a href="#step-15-fill-out-the-launch-page-information" class="md-nav__link">
     Step 1.5 Fill out the launch page information.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-16-select-datasets-in-your-workspace-and-add-to-selected-files">
+        
+          <li class="md-nav__item">
+  <a href="#step-16-select-datasets-in-your-workspace-and-add-to-selected-files" class="md-nav__link">
     Step 1.6 Select datasets in your workspace and add to selected files.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-17-add-datasets-to-your-workspace-using-the-massive-identifier">
+        
+          <li class="md-nav__item">
+  <a href="#step-17-add-datasets-to-your-workspace-using-the-massive-identifier" class="md-nav__link">
     Step 1.7 Add datasets to your workspace using the MassIVE identifier.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-18-select-files-from-newly-added-dataset-and-add-to-the-job">
+        
+          <li class="md-nav__item">
+  <a href="#step-18-select-files-from-newly-added-dataset-and-add-to-the-job" class="md-nav__link">
     Step 1.8 Select files from newly added dataset and add to the job.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-19-note-that-the-notification-that-the-job-is-complete-will-be-sent-to-the-email-address-provided">
+        
+          <li class="md-nav__item">
+  <a href="#step-19-note-that-the-notification-that-the-job-is-complete-will-be-sent-to-the-email-address-provided" class="md-nav__link">
     Step 1.9 Note that the notification that the job is complete will be sent to the email address provided.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-110-the-status-page-will-look-like-this-and-will-update-when-the-job-has-completed">
+        
+          <li class="md-nav__item">
+  <a href="#step-110-the-status-page-will-look-like-this-and-will-update-when-the-job-has-completed" class="md-nav__link">
     Step 1.10 The status page will look like this and will update when the job has completed.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-111-navigating-the-completed-passatutto-workflow">
+        
+          <li class="md-nav__item">
+  <a href="#step-111-navigating-the-completed-passatutto-workflow" class="md-nav__link">
     Step 1.11 Navigating the completed Passatutto Workflow.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-112-extracting-the-mqscore-modified-cosine-score-needed-for-molecular-networking-to-achieve-a-1-fdr-with-the-min-number-of-matched-peaks-set-in-the-fdr-estimation-workflow-5-in-this-case">
+        
+          <li class="md-nav__item">
+  <a href="#step-112-extracting-the-mqscore-modified-cosine-score-needed-for-molecular-networking-to-achieve-a-1-fdr-with-the-min-number-of-matched-peaks-set-in-the-fdr-estimation-workflow-5-in-this-case" class="md-nav__link">
     Step 1.12 Extracting the MQScore (modified cosine score) needed for molecular networking to achieve a 1% FDR with the min number of matched peaks set in the FDR estimation workflow (5 in this case).
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-2-launch-molecular-networking-analysis-job-containing-reference-dataset">
+      
+        <li class="md-nav__item">
+  <a href="#step-2-launch-molecular-networking-analysis-job-containing-reference-dataset" class="md-nav__link">
     Step 2. Launch molecular networking analysis job, containing reference dataset
   </a>
-<nav aria-label="Step 2. Launch molecular networking analysis job, containing reference dataset" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-21-navigate-to-the-gnps-main-page-scroll-down-and-click-on-create-molecular-network">
+  
+    <nav class="md-nav" aria-label="Step 2. Launch molecular networking analysis job, containing reference dataset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-21-navigate-to-the-gnps-main-page-scroll-down-and-click-on-create-molecular-network" class="md-nav__link">
     Step 2.1 Navigate to the GNPS main page. Scroll down and click on ‘Create Molecular Network’.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-22-molecular-networking-start-page">
+        
+          <li class="md-nav__item">
+  <a href="#step-22-molecular-networking-start-page" class="md-nav__link">
     Step 2.2 Molecular Networking Start Page
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-23-dataset-selection-from-gnps-molecular-networking-analysis-homepage">
+        
+          <li class="md-nav__item">
+  <a href="#step-23-dataset-selection-from-gnps-molecular-networking-analysis-homepage" class="md-nav__link">
     Step 2.3 Dataset selection from GNPS molecular networking analysis homepage
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-24-selecting-molecular-networking-parameters">
+        
+          <li class="md-nav__item">
+  <a href="#step-24-selecting-molecular-networking-parameters" class="md-nav__link">
     Step 2.4 Selecting Molecular Networking parameters
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-3-downloading-results">
+      
+        <li class="md-nav__item">
+  <a href="#step-3-downloading-results" class="md-nav__link">
     Step 3 Downloading results
   </a>
-<nav aria-label="Step 3 Downloading results" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-31-click-on-direct-cytoscape-previewdownload-or-download-graphml-for-cytoscape-to-visualize-the-molecular-network-with-the-open-source-software-cytoscape">
+  
+    <nav class="md-nav" aria-label="Step 3 Downloading results">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-31-click-on-direct-cytoscape-previewdownload-or-download-graphml-for-cytoscape-to-visualize-the-molecular-network-with-the-open-source-software-cytoscape" class="md-nav__link">
     Step 3.1 Click on "Direct Cytoscape Preview/Download" or "Download GraphML for Cytoscape" to visualize the molecular network with the open source software Cytoscape.
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-32-downloading-results-part-2">
+        
+          <li class="md-nav__item">
+  <a href="#step-32-downloading-results-part-2" class="md-nav__link">
     Step 3.2 Downloading results, part 2
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-33-the-download-button-will-prompt-a-menu-to-save-a-zip-folder-click-save-and-then-extract">
+        
+          <li class="md-nav__item">
+  <a href="#step-33-the-download-button-will-prompt-a-menu-to-save-a-zip-folder-click-save-and-then-extract" class="md-nav__link">
     Step 3.3 The download button will prompt a menu to save a .zip folder. Click save and then extract.
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-4-generate-custom-information-based-on-the-type-of-reference-data-used">
+      
+        <li class="md-nav__item">
+  <a href="#step-4-generate-custom-information-based-on-the-type-of-reference-data-used" class="md-nav__link">
     Step 4 Generate custom information based on the type of reference data used.
   </a>
-<nav aria-label="Step 4 Generate custom information based on the type of reference data used." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#example-1-flow-diagram-to-visualize-ontology">
+  
+    <nav class="md-nav" aria-label="Step 4 Generate custom information based on the type of reference data used.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-flow-diagram-to-visualize-ontology" class="md-nav__link">
     Example 1: Flow diagram to visualize ontology
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#example-2-food-count-generation">
+        
+          <li class="md-nav__item">
+  <a href="#example-2-food-count-generation" class="md-nav__link">
     Example 2: Food count generation
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-</ul>
+      
+    </ul>
+  
 </nav>
-</div>
-</div>
-</div>
-<div class="md-content" data-md-component="content">
-<article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/CCMS-UCSD/GNPSDocumentation/edit/master/docs/tutorials/rdd.md" title="Edit this page">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
-</a>
-<h1 id="reference-data-driven-analysis-of-untargeted-metabolomics-data">Reference Data-Driven Analysis of Untargeted Metabolomics Data<a class="headerlink" href="#reference-data-driven-analysis-of-untargeted-metabolomics-data" title="Permanent link">¶</a></h1>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/edit/master/docs/tutorials/rdd.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="reference-data-driven-analysis-of-untargeted-metabolomics-data">Reference Data-Driven Analysis of Untargeted Metabolomics Data<a class="headerlink" href="#reference-data-driven-analysis-of-untargeted-metabolomics-data" title="Permanent link">&para;</a></h1>
 <p>The key difference between a traditional untargeted metabolomics analysis and a reference data-driven analysis (RDD) is the inclusion of data from reference samples, composed of a complex mixture of MS/MS scans corresponding to hundreds or thousands of unique compounds of both <strong>known and unknown structure</strong>. A key attribute of reference samples is metadata describing characteristics such as <strong>source or environmental origin</strong>. This is in contrast to reference spectra (contained in compound libraries or reference databases), which are of known structure and have been previously annotated.</p>
 <p>Here we present a step by step tutorial for running a RDD analysis through the GNPS web infrastructure. All input files and outputs can also be found at the GNPS/Massive Repository, along with the data files at <a href="https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=99830767e1524e489b1a0f62569b8ed9">https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=99830767e1524e489b1a0f62569b8ed9</a></p>
 <p>Follow the steps below or watch the <a href="https://www.youtube.com/watch?v=2-XsifrUY0Y"><strong>Video Tutorial</strong></a></p>
@@ -1055,110 +2298,110 @@
 <li>Download and visualization of GNPS molecular analysis results.</li>
 <li>Generate custom information based on the type of reference data used (Global FoodOmics specific).</li>
 </ol>
-<p><img alt="" src="../../img/rdd/0_intro.png"/></p>
-<h2 id="step-1-determine-input-parameters-to-run-workflow-at-a-1-false-discovery-rate-fdr">Step 1. Determine input parameters to run workflow at a 1% False Discovery Rate (FDR).<a class="headerlink" href="#step-1-determine-input-parameters-to-run-workflow-at-a-1-false-discovery-rate-fdr" title="Permanent link">¶</a></h2>
+<p><img alt="" src="../../img/rdd/0_intro.png" /></p>
+<h2 id="step-1-determine-input-parameters-to-run-workflow-at-a-1-false-discovery-rate-fdr">Step 1. Determine input parameters to run workflow at a 1% False Discovery Rate (FDR).<a class="headerlink" href="#step-1-determine-input-parameters-to-run-workflow-at-a-1-false-discovery-rate-fdr" title="Permanent link">&para;</a></h2>
 <p><strong>Citations:</strong>
 - Scheubert, Kerstin, Franziska Hufsky, Daniel Petras, Mingxun Wang, Louis-Félix Nothias, Kai Dührkop, Nuno Bandeira, Pieter C. Dorrestein, and Sebastian Böcker. 2017. "Significance Estimation for Large Scale Metabolomics Annotations by Spectral Matching." Nature Communications 8 (1): 1494.
 - Wang, Mingxun, Jeremy J. Carver, Vanessa V. Phelan, Laura M. Sanchez, Neha Garg, Yao Peng, Don Duy Nguyen, et al. 2016. "Sharing and Community Curation of Mass Spectrometry Data with Global Natural Products Social Molecular Networking." Nature Biotechnology 34 (8): 828–37.</p>
-<h3 id="step-11-navigate-to-the-gnps-webpage-and-sign-in">Step 1.1 Navigate to the GNPS webpage and sign in.<a class="headerlink" href="#step-11-navigate-to-the-gnps-webpage-and-sign-in" title="Permanent link">¶</a></h3>
-<p><img alt="" src="../../img/rdd/1_11.png"/></p>
-<h3 id="step-12-scroll-down-to-locate-additional-workflows">Step 1.2 Scroll down to locate additional workflows.<a class="headerlink" href="#step-12-scroll-down-to-locate-additional-workflows" title="Permanent link">¶</a></h3>
-<p><img alt="" src="../../img/rdd/1_12.png"/></p>
-<h3 id="step-13-scroll-down-to-locate-additional-workflows">Step 1.3 Scroll down to locate additional workflows.<a class="headerlink" href="#step-13-scroll-down-to-locate-additional-workflows" title="Permanent link">¶</a></h3>
-<p><img alt="" src="../../img/rdd/1_13.png"/></p>
-<h3 id="step-14-select-workflow-which-will-generate-a-job-launch-page-expand-full-menu">Step 1.4 Select workflow, which will generate a job launch page. Expand full menu.<a class="headerlink" href="#step-14-select-workflow-which-will-generate-a-job-launch-page-expand-full-menu" title="Permanent link">¶</a></h3>
-<p><img alt="" src="../../img/rdd/1_14_1.png"/>
-<img alt="" src="../../img/rdd/1_14_2.png"/></p>
-<h3 id="step-15-fill-out-the-launch-page-information">Step 1.5 Fill out the launch page information.<a class="headerlink" href="#step-15-fill-out-the-launch-page-information" title="Permanent link">¶</a></h3>
-<p><img alt="" src="../../img/rdd/1_15_1.png"/>
-<img alt="" src="../../img/rdd/1_15_2.png"/></p>
-<h3 id="step-16-select-datasets-in-your-workspace-and-add-to-selected-files">Step 1.6 Select datasets in your workspace and add to selected files.<a class="headerlink" href="#step-16-select-datasets-in-your-workspace-and-add-to-selected-files" title="Permanent link">¶</a></h3>
-<p><img alt="" src="../../img/rdd/1_16.png"/></p>
-<h3 id="step-17-add-datasets-to-your-workspace-using-the-massive-identifier">Step 1.7 Add datasets to your workspace using the MassIVE identifier.<a class="headerlink" href="#step-17-add-datasets-to-your-workspace-using-the-massive-identifier" title="Permanent link">¶</a></h3>
-<p><img alt="" src="../../img/rdd/1_17.png"/></p>
-<h3 id="step-18-select-files-from-newly-added-dataset-and-add-to-the-job">Step 1.8 Select files from newly added dataset and add to the job.<a class="headerlink" href="#step-18-select-files-from-newly-added-dataset-and-add-to-the-job" title="Permanent link">¶</a></h3>
-<p><img alt="" src="../../img/rdd/1_18.png"/></p>
-<h3 id="step-19-note-that-the-notification-that-the-job-is-complete-will-be-sent-to-the-email-address-provided">Step 1.9 Note that the notification that the job is complete will be sent to the email address provided.<a class="headerlink" href="#step-19-note-that-the-notification-that-the-job-is-complete-will-be-sent-to-the-email-address-provided" title="Permanent link">¶</a></h3>
+<h3 id="step-11-navigate-to-the-gnps-webpage-and-sign-in">Step 1.1 Navigate to the GNPS webpage and sign in.<a class="headerlink" href="#step-11-navigate-to-the-gnps-webpage-and-sign-in" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../img/rdd/1_11.png" /></p>
+<h3 id="step-12-scroll-down-to-locate-additional-workflows">Step 1.2 Scroll down to locate additional workflows.<a class="headerlink" href="#step-12-scroll-down-to-locate-additional-workflows" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../img/rdd/1_12.png" /></p>
+<h3 id="step-13-scroll-down-to-locate-additional-workflows">Step 1.3 Scroll down to locate additional workflows.<a class="headerlink" href="#step-13-scroll-down-to-locate-additional-workflows" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../img/rdd/1_13.png" /></p>
+<h3 id="step-14-select-workflow-which-will-generate-a-job-launch-page-expand-full-menu">Step 1.4 Select workflow, which will generate a job launch page. Expand full menu.<a class="headerlink" href="#step-14-select-workflow-which-will-generate-a-job-launch-page-expand-full-menu" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../img/rdd/1_14_1.png" />
+<img alt="" src="../../img/rdd/1_14_2.png" /></p>
+<h3 id="step-15-fill-out-the-launch-page-information">Step 1.5 Fill out the launch page information.<a class="headerlink" href="#step-15-fill-out-the-launch-page-information" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../img/rdd/1_15_1.png" />
+<img alt="" src="../../img/rdd/1_15_2.png" /></p>
+<h3 id="step-16-select-datasets-in-your-workspace-and-add-to-selected-files">Step 1.6 Select datasets in your workspace and add to selected files.<a class="headerlink" href="#step-16-select-datasets-in-your-workspace-and-add-to-selected-files" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../img/rdd/1_16.png" /></p>
+<h3 id="step-17-add-datasets-to-your-workspace-using-the-massive-identifier">Step 1.7 Add datasets to your workspace using the MassIVE identifier.<a class="headerlink" href="#step-17-add-datasets-to-your-workspace-using-the-massive-identifier" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../img/rdd/1_17.png" /></p>
+<h3 id="step-18-select-files-from-newly-added-dataset-and-add-to-the-job">Step 1.8 Select files from newly added dataset and add to the job.<a class="headerlink" href="#step-18-select-files-from-newly-added-dataset-and-add-to-the-job" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../img/rdd/1_18.png" /></p>
+<h3 id="step-19-note-that-the-notification-that-the-job-is-complete-will-be-sent-to-the-email-address-provided">Step 1.9 Note that the notification that the job is complete will be sent to the email address provided.<a class="headerlink" href="#step-19-note-that-the-notification-that-the-job-is-complete-will-be-sent-to-the-email-address-provided" title="Permanent link">&para;</a></h3>
 <p>You can also check the "Jobs" tab to check on the status of the analysis. </p>
-<p><img alt="" src="../../img/rdd/1_19.png"/></p>
-<h3 id="step-110-the-status-page-will-look-like-this-and-will-update-when-the-job-has-completed">Step 1.10 The status page will look like this and will update when the job has completed.<a class="headerlink" href="#step-110-the-status-page-will-look-like-this-and-will-update-when-the-job-has-completed" title="Permanent link">¶</a></h3>
-<p><img alt="" src="../../img/rdd/1_110.png"/></p>
-<h3 id="step-111-navigating-the-completed-passatutto-workflow">Step 1.11 Navigating the completed Passatutto Workflow.<a class="headerlink" href="#step-111-navigating-the-completed-passatutto-workflow" title="Permanent link">¶</a></h3>
+<p><img alt="" src="../../img/rdd/1_19.png" /></p>
+<h3 id="step-110-the-status-page-will-look-like-this-and-will-update-when-the-job-has-completed">Step 1.10 The status page will look like this and will update when the job has completed.<a class="headerlink" href="#step-110-the-status-page-will-look-like-this-and-will-update-when-the-job-has-completed" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../img/rdd/1_110.png" /></p>
+<h3 id="step-111-navigating-the-completed-passatutto-workflow">Step 1.11 Navigating the completed Passatutto Workflow.<a class="headerlink" href="#step-111-navigating-the-completed-passatutto-workflow" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Job will be saved, and can be accessed by clicking on DONE.</li>
 <li>Selecting "View All Spectra DB with FDR" will bring up the view in 3.</li>
 <li>Click on "Download".</li>
 <li>This opens up an additional set of options. Select "Download" again and a .zip folder will be downloaded, as shown on the left below. This folder can be extracted and the .tsv can either be opened in Excel or the cosine score for an appropriate FDR value can be extracted programmatically, such as with R, as in Step 1.12. </li>
 </ol>
-<p><img alt="" src="../../img/rdd/1_111.png"/></p>
-<h3 id="step-112-extracting-the-mqscore-modified-cosine-score-needed-for-molecular-networking-to-achieve-a-1-fdr-with-the-min-number-of-matched-peaks-set-in-the-fdr-estimation-workflow-5-in-this-case">Step 1.12 Extracting the MQScore (modified cosine score) needed for molecular networking to achieve a 1% FDR with the min number of matched peaks set in the FDR estimation workflow (5 in this case).<a class="headerlink" href="#step-112-extracting-the-mqscore-modified-cosine-score-needed-for-molecular-networking-to-achieve-a-1-fdr-with-the-min-number-of-matched-peaks-set-in-the-fdr-estimation-workflow-5-in-this-case" title="Permanent link">¶</a></h3>
+<p><img alt="" src="../../img/rdd/1_111.png" /></p>
+<h3 id="step-112-extracting-the-mqscore-modified-cosine-score-needed-for-molecular-networking-to-achieve-a-1-fdr-with-the-min-number-of-matched-peaks-set-in-the-fdr-estimation-workflow-5-in-this-case">Step 1.12 Extracting the MQScore (modified cosine score) needed for molecular networking to achieve a 1% FDR with the min number of matched peaks set in the FDR estimation workflow (5 in this case).<a class="headerlink" href="#step-112-extracting-the-mqscore-modified-cosine-score-needed-for-molecular-networking-to-achieve-a-1-fdr-with-the-min-number-of-matched-peaks-set-in-the-fdr-estimation-workflow-5-in-this-case" title="Permanent link">&para;</a></h3>
 <p>The result here is that 0.64 is the cutoff for Step 2 of the tutorial. </p>
 <p>Code for use in R: </p>
-<div class="highlight"><pre><span></span><code>tab &lt;- read.delim("ProteoSAFe-MOLECULAR-LIBRARYSEARCH-FDR-af0eb459-view_all_annotations_DB_fdr/MOLECULAR-LIBRARYSEARCH-FDR-af0eb459-view_all_annotations_DB_fdr-main.tsv")
-fdr_5min &lt;- tab[,c("MQScore","fdr")]
+<div class="highlight"><pre><span></span><code>tab &lt;- read.delim(&quot;ProteoSAFe-MOLECULAR-LIBRARYSEARCH-FDR-af0eb459-view_all_annotations_DB_fdr/MOLECULAR-LIBRARYSEARCH-FDR-af0eb459-view_all_annotations_DB_fdr-main.tsv&quot;)
+fdr_5min &lt;- tab[,c(&quot;MQScore&quot;,&quot;fdr&quot;)]
 head(fdr_5min)
 fdr_5min_cos0.01 &lt;- fdr_5min[fdr_5min$fdr &lt;= 0.01,]
 head(fdr_5min_cos0.01)
 </code></pre></div>
-<h2 id="step-2-launch-molecular-networking-analysis-job-containing-reference-dataset">Step 2. Launch molecular networking analysis job, containing reference dataset<a class="headerlink" href="#step-2-launch-molecular-networking-analysis-job-containing-reference-dataset" title="Permanent link">¶</a></h2>
+<h2 id="step-2-launch-molecular-networking-analysis-job-containing-reference-dataset">Step 2. Launch molecular networking analysis job, containing reference dataset<a class="headerlink" href="#step-2-launch-molecular-networking-analysis-job-containing-reference-dataset" title="Permanent link">&para;</a></h2>
 <p><strong>Citations:</strong></p>
 <ul>
 <li>Wang, Mingxun, Jeremy J. Carver, Vanessa V. Phelan, Laura M. Sanchez, Neha Garg, Yao Peng, Don Duy Nguyen, et al. 2016. "Sharing and Community Curation of Mass Spectrometry Data with Global Natural Products Social Molecular Networking." Nature Biotechnology 34 (8): 828–37.</li>
 <li>Watrous, Jeramie, Patrick Roach, Theodore Alexandrov, Brandi S. Heath, Jane Y. Yang, Roland D. Kersten, Menno van der Voort, et al. 2012. "Mass Spectral Molecular Networking of Living Microbial Colonies." Proceedings of the National Academy of Sciences of the United States of America 109 (26): E1743–52.</li>
 </ul>
-<h3 id="step-21-navigate-to-the-gnps-main-page-scroll-down-and-click-on-create-molecular-network">Step 2.1 Navigate to the GNPS main page. Scroll down and click on ‘Create Molecular Network’.<a class="headerlink" href="#step-21-navigate-to-the-gnps-main-page-scroll-down-and-click-on-create-molecular-network" title="Permanent link">¶</a></h3>
-<p><img alt="" src="../../img/rdd/2_21.png"/></p>
-<h3 id="step-22-molecular-networking-start-page">Step 2.2 Molecular Networking Start Page<a class="headerlink" href="#step-22-molecular-networking-start-page" title="Permanent link">¶</a></h3>
-<p><img alt="" src="../../img/rdd/2_22_1.png"/></p>
+<h3 id="step-21-navigate-to-the-gnps-main-page-scroll-down-and-click-on-create-molecular-network">Step 2.1 Navigate to the GNPS main page. Scroll down and click on ‘Create Molecular Network’.<a class="headerlink" href="#step-21-navigate-to-the-gnps-main-page-scroll-down-and-click-on-create-molecular-network" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../img/rdd/2_21.png" /></p>
+<h3 id="step-22-molecular-networking-start-page">Step 2.2 Molecular Networking Start Page<a class="headerlink" href="#step-22-molecular-networking-start-page" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../img/rdd/2_22_1.png" /></p>
 <p>Edit presets: Fill in the Title and under "Basic Options" --- select precursor ion mass tolerance and fragment ion mass tolerance based on the resolution of the data and reference data chosen. For high resolution QTOF data we chose 0.02.</p>
-<p><img alt="" src="../../img/rdd/2_22_2.png"/></p>
-<h3 id="step-23-dataset-selection-from-gnps-molecular-networking-analysis-homepage">Step 2.3 Dataset selection from GNPS molecular networking analysis homepage<a class="headerlink" href="#step-23-dataset-selection-from-gnps-molecular-networking-analysis-homepage" title="Permanent link">¶</a></h3>
+<p><img alt="" src="../../img/rdd/2_22_2.png" /></p>
+<h3 id="step-23-dataset-selection-from-gnps-molecular-networking-analysis-homepage">Step 2.3 Dataset selection from GNPS molecular networking analysis homepage<a class="headerlink" href="#step-23-dataset-selection-from-gnps-molecular-networking-analysis-homepage" title="Permanent link">&para;</a></h3>
 <p>Data of interest can be added to "Spectrum Files (Required)" (G1) and reference data can be added to "Spectrum Files G4". </p>
 <p>In this tutorial, fecal data are added to G1, plasma data to G2, study specific foods (which are a part of Global FoodOmics) are added to G3, and the remainder of the Global FoodOmics dataset is added to G4.</p>
 <p>If using this reference dataset for your own analyses, the entire folder can be selected and added to G4. Begin by clicking on any of the "Select Input Files" tabs.</p>
-<p><img alt="" src="../../img/rdd/2_23_1.png"/></p>
+<p><img alt="" src="../../img/rdd/2_23_1.png" /></p>
 <p>Here select the Stool-Food match to select the stool data. Click on ‘Spectrum Files G1’ and it will appear under Selected Files as shown. Repeat for plasma below, adding files to G2.</p>
-<p><img alt="" src="../../img/rdd/2_23_2.png"/>
-<img alt="" src="../../img/rdd/2_23_3.png"/></p>
+<p><img alt="" src="../../img/rdd/2_23_2.png" />
+<img alt="" src="../../img/rdd/2_23_3.png" /></p>
 <p>Select reference data to include in the molecular networking job.</p>
-<p><img alt="" src="../../img/rdd/2_23_4.png"/></p>
+<p><img alt="" src="../../img/rdd/2_23_4.png" /></p>
 <p>Below you can see how SSF have been placed in G3 and the remainder of the files in G4. If you make an error and add more folders than desired, you can click them one at a time and click on the small folder icon with the red x over it (seen towards the middle of the screen). </p>
-<p><img alt="" src="../../img/rdd/2_23_5.png"/></p>
+<p><img alt="" src="../../img/rdd/2_23_5.png" /></p>
 <p>After clicking "Finish selection" you will return to the workflow launch page below and will observe the number of files or folders placed into each group.</p>
-<p><img alt="" src="../../img/rdd/2_23_6.png"/></p>
+<p><img alt="" src="../../img/rdd/2_23_6.png" /></p>
 <p><strong>Note:</strong> It is arbitrary which group is selected for each data type, however the groupings used above will require the least modification of the code found on GitHub.</p>
 <p>"Spectrum Files G2" is reserved for a second paired dataset, such as plasma if fecal data are in G1 (Required). "Spectrum Files G3" is reserved for study specific reference data, in contrast to public reference datasets (G4).</p>
-<h3 id="step-24-selecting-molecular-networking-parameters">Step 2.4 Selecting Molecular Networking parameters<a class="headerlink" href="#step-24-selecting-molecular-networking-parameters" title="Permanent link">¶</a></h3>
+<h3 id="step-24-selecting-molecular-networking-parameters">Step 2.4 Selecting Molecular Networking parameters<a class="headerlink" href="#step-24-selecting-molecular-networking-parameters" title="Permanent link">&para;</a></h3>
 <p>Default view:</p>
-<p><img alt="" src="../../img/rdd/2_24_1.png"/></p>
+<p><img alt="" src="../../img/rdd/2_24_1.png" /></p>
 <p>GNPS molecular networking analysis homepage: "Advanced Library Search Options": Set "Library Search Min Matched Peaks" to the value used in the Passatuto FDR estimation workflow and set "Score Threshold" to the value determined for a 1% FDR (the lower panel).</p>
-<p><img alt="" src="../../img/rdd/2_24_2.png"/></p>
+<p><img alt="" src="../../img/rdd/2_24_2.png" /></p>
 <p>"Advanced Network Options": Set "Min Pairs Cos" to the value determined in the FDR estimation workflow and set "Minimum Matched Fragment Ions" to the corresponding value (the upper panel).</p>
 <p>Here we select 5, which is what we chose for the FDR estimation. The value determined at 1% FDR is 0.64.</p>
 <p>Lastly, if the datasets are large, it may be necessary to Select "Don't Create" for "Create Cluster Buckets and qiime2/Biom/PCoA Plots output". This will decrease the run time and may be necessary if the job times out / fails due to requiring too much compute time.</p>
-<p><img alt="" src="../../img/rdd/2_24_3.png"/></p>
+<p><img alt="" src="../../img/rdd/2_24_3.png" /></p>
 <p><strong>Note:</strong> If a job fails, you can select "Clone" and adjust needed parameters, rename if desired, and resubmit. It is not necessary to load all files and information from scratch.</p>
-<p><img alt="" src="../../img/rdd/2_24_4.png"/></p>
-<h2 id="step-3-downloading-results">Step 3 Downloading results<a class="headerlink" href="#step-3-downloading-results" title="Permanent link">¶</a></h2>
+<p><img alt="" src="../../img/rdd/2_24_4.png" /></p>
+<h2 id="step-3-downloading-results">Step 3 Downloading results<a class="headerlink" href="#step-3-downloading-results" title="Permanent link">&para;</a></h2>
 <p><strong>Citations:</strong></p>
 <ul>
 <li>Wang, Mingxun, Jeremy J. Carver, Vanessa V. Phelan, Laura M. Sanchez, Neha Garg, Yao Peng, Don Duy Nguyen, et al. 2016. "Sharing and Community Curation of Mass Spectrometry Data with Global Natural Products Social Molecular Networking." Nature Biotechnology 34 (8): 828–37.</li>
 <li>Shannon, Paul, Andrew Markiel, Owen Ozier, Nitin S. Baliga, Jonathan T. Wang, Daniel Ramage, Nada Amin, Benno Schwikowski, and Trey Ideker. 2003. "Cytoscape: A Software Environment for Integrated Models of Biomolecular Interaction Networks." Genome Research 13 (11): 2498–2504.</li>
 </ul>
-<h3 id="step-31-click-on-direct-cytoscape-previewdownload-or-download-graphml-for-cytoscape-to-visualize-the-molecular-network-with-the-open-source-software-cytoscape">Step 3.1 Click on "Direct Cytoscape Preview/Download" or "Download GraphML for Cytoscape" to visualize the molecular network with the open source software Cytoscape.<a class="headerlink" href="#step-31-click-on-direct-cytoscape-previewdownload-or-download-graphml-for-cytoscape-to-visualize-the-molecular-network-with-the-open-source-software-cytoscape" title="Permanent link">¶</a></h3>
-<p><img alt="" src="../../img/rdd/3_31.png"/></p>
-<h3 id="step-32-downloading-results-part-2">Step 3.2 Downloading results, part 2<a class="headerlink" href="#step-32-downloading-results-part-2" title="Permanent link">¶</a></h3>
+<h3 id="step-31-click-on-direct-cytoscape-previewdownload-or-download-graphml-for-cytoscape-to-visualize-the-molecular-network-with-the-open-source-software-cytoscape">Step 3.1 Click on "Direct Cytoscape Preview/Download" or "Download GraphML for Cytoscape" to visualize the molecular network with the open source software Cytoscape.<a class="headerlink" href="#step-31-click-on-direct-cytoscape-previewdownload-or-download-graphml-for-cytoscape-to-visualize-the-molecular-network-with-the-open-source-software-cytoscape" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../img/rdd/3_31.png" /></p>
+<h3 id="step-32-downloading-results-part-2">Step 3.2 Downloading results, part 2<a class="headerlink" href="#step-32-downloading-results-part-2" title="Permanent link">&para;</a></h3>
 <p>Click on "View All Clusters With IDs", next click on "Download" which opens another menu, click on "Download". The .tsv file in the main directory contains information pertinent to further evaluations, and together with sample and reference metadata can be used to further interpret the untargeted metabolomic data.</p>
-<p><img alt="" src="../../img/rdd/3_32_1.png"/>
-<img alt="" src="../../img/rdd/3_32_2.png"/>
-<img alt="" src="../../img/rdd/3_32_3.png"/></p>
-<h3 id="step-33-the-download-button-will-prompt-a-menu-to-save-a-zip-folder-click-save-and-then-extract">Step 3.3 The download button will prompt a menu to save a .zip folder. Click save and then extract.<a class="headerlink" href="#step-33-the-download-button-will-prompt-a-menu-to-save-a-zip-folder-click-save-and-then-extract" title="Permanent link">¶</a></h3>
-<p><img alt="" src="../../img/rdd/3_33_1.png"/></p>
+<p><img alt="" src="../../img/rdd/3_32_1.png" />
+<img alt="" src="../../img/rdd/3_32_2.png" />
+<img alt="" src="../../img/rdd/3_32_3.png" /></p>
+<h3 id="step-33-the-download-button-will-prompt-a-menu-to-save-a-zip-folder-click-save-and-then-extract">Step 3.3 The download button will prompt a menu to save a .zip folder. Click save and then extract.<a class="headerlink" href="#step-33-the-download-button-will-prompt-a-menu-to-save-a-zip-folder-click-save-and-then-extract" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../img/rdd/3_33_1.png" /></p>
 <p>Save the extracted folder on a location on your computer that you can reach it using your analysis software --- RStudio, Jupyter Notebooks, Terminal, etc.</p>
-<p><img alt="" src="../../img/rdd/3_33_2.png"/></p>
-<h2 id="step-4-generate-custom-information-based-on-the-type-of-reference-data-used">Step 4 Generate custom information based on the type of reference data used.<a class="headerlink" href="#step-4-generate-custom-information-based-on-the-type-of-reference-data-used" title="Permanent link">¶</a></h2>
+<p><img alt="" src="../../img/rdd/3_33_2.png" /></p>
+<h2 id="step-4-generate-custom-information-based-on-the-type-of-reference-data-used">Step 4 Generate custom information based on the type of reference data used.<a class="headerlink" href="#step-4-generate-custom-information-based-on-the-type-of-reference-data-used" title="Permanent link">&para;</a></h2>
 <p>For analysis with the Global FoodOmics reference data, you can investigate several different types of outputs and visualizations based on the analyses produced above. Below are two examples. </p>
-<h3 id="example-1-flow-diagram-to-visualize-ontology">Example 1: Flow diagram to visualize ontology<a class="headerlink" href="#example-1-flow-diagram-to-visualize-ontology" title="Permanent link">¶</a></h3>
+<h3 id="example-1-flow-diagram-to-visualize-ontology">Example 1: Flow diagram to visualize ontology<a class="headerlink" href="#example-1-flow-diagram-to-visualize-ontology" title="Permanent link">&para;</a></h3>
 <p>Dependencies:
 - Follow the instructions for installation of floweaver <a href="https://floweaver.readthedocs.io/en/latest/installation.html">here</a>.</p>
 <p>Required files:</p>
@@ -1178,64 +2421,64 @@ import pandas as pd
 <div class="highlight"><pre><span></span><code>def get_sample_types(gfop_metadata, simple_complex=None):
     if simple_complex is not None:
         gfop_metadata = gfop_metadata[
-            gfop_metadata['simple_complex'] == simple_complex]
-    col_sample_types = [f'sample_type_group{i}' for i in range(1, 7)]
-    return (gfop_metadata[['filename', *col_sample_types]]
-            .set_index('filename'))
+            gfop_metadata[&#39;simple_complex&#39;] == simple_complex]
+    col_sample_types = [f&#39;sample_type_group{i}&#39; for i in range(1, 7)]
+    return (gfop_metadata[[&#39;filename&#39;, *col_sample_types]]
+            .set_index(&#39;filename&#39;))
 
 
 gfop_metadata = pd.read_csv(
-    '../data/11442_foodomics_multiproject_metadata.txt', sep='\t')
+    &#39;../data/11442_foodomics_multiproject_metadata.txt&#39;, sep=&#39;\t&#39;)
 # First row is empty.
 gfop_metadata = gfop_metadata.drop(index=0)
 # Remove trailing whitespace.
 gfop_metadata = gfop_metadata.apply(lambda col: col.str.strip()
-                                    if col.dtype == 'object' else col)
+                                    if col.dtype == &#39;object&#39; else col)
 </code></pre></div>
 <p>It will not be necessary to modify the next cells, however they must be run in order. </p>
 <div class="highlight"><pre><span></span><code>def _get_flows(gnps_network, sample_types, groups_included,
                max_hierarchy_level):
     # Select GNPS job groups.
-    groups = {f'G{i}' for i in range(1, 7)}
+    groups = {f&#39;G{i}&#39; for i in range(1, 7)}
     groups_excluded = groups - set(groups_included)
     df_selected = gnps_network[
         (gnps_network[groups_included] &gt; 0).all(axis=1) &amp;
         (gnps_network[groups_excluded] == 0).all(axis=1)].copy()
-    filenames = (df_selected['UniqueFileSources'].str.split('|')
+    filenames = (df_selected[&#39;UniqueFileSources&#39;].str.split(&#39;|&#39;)
                  .explode())#.unique())
     # Select food hierarchy levels.
     sample_types = sample_types[[
-        f'sample_type_group{i}' for i in range(1, max_hierarchy_level + 1)]]
+        f&#39;sample_type_group{i}&#39; for i in range(1, max_hierarchy_level + 1)]]
     # Match the GNPS job results to the food sample types.
     sample_types_selected = sample_types.reindex(filenames)
     sample_types_selected = sample_types_selected.dropna()
     # Discard samples that occur less frequent than water (blank).
-    water_count = ((sample_types_selected['sample_type_group1'] == 'water')
+    water_count = ((sample_types_selected[&#39;sample_type_group1&#39;] == &#39;water&#39;)
                    .sum())
     sample_counts = sample_types_selected[
-        f'sample_type_group{max_hierarchy_level}'].value_counts()
+        f&#39;sample_type_group{max_hierarchy_level}&#39;].value_counts()
     sample_counts_valid = sample_counts.index[sample_counts &gt; water_count]
     sample_types_selected = sample_types_selected[sample_types_selected[
-        f'sample_type_group{max_hierarchy_level}'].isin(sample_counts_valid)]
+        f&#39;sample_type_group{max_hierarchy_level}&#39;].isin(sample_counts_valid)]
     # Get the flows between consecutive food hierarchy levels.
     flows, processes = [], []
     for i in range(1, max_hierarchy_level):
-        g1, g2 = f'sample_type_group{i}', f'sample_type_group{i + 1}'
+        g1, g2 = f&#39;sample_type_group{i}&#39;, f&#39;sample_type_group{i + 1}&#39;
         flow = (sample_types_selected.groupby([g1, g2]).size()
-                .reset_index().rename(columns={g1: 'source', g2: 'target',
-                                               0: 'value'}))
-        flow['source'] = flow['source'] + f'_{i}'
-        flow['target'] = flow['target'] + f'_{i + 1}'
-        flow['type'] = flow['target']
+                .reset_index().rename(columns={g1: &#39;source&#39;, g2: &#39;target&#39;,
+                                               0: &#39;value&#39;}))
+        flow[&#39;source&#39;] = flow[&#39;source&#39;] + f&#39;_{i}&#39;
+        flow[&#39;target&#39;] = flow[&#39;target&#39;] + f&#39;_{i + 1}&#39;
+        flow[&#39;type&#39;] = flow[&#39;target&#39;]
         flows.append(flow)
-        process = pd.concat([flow['source'], flow['target']],
+        process = pd.concat([flow[&#39;source&#39;], flow[&#39;target&#39;]],
                             ignore_index=True).to_frame()
-        process['level'] = [*np.repeat(i, len(flow['source'])),
-                            *np.repeat(i + 1, len(flow['target']))]
+        process[&#39;level&#39;] = [*np.repeat(i, len(flow[&#39;source&#39;])),
+                            *np.repeat(i + 1, len(flow[&#39;target&#39;]))]
         processes.append(process)
     return (pd.concat(flows, ignore_index=True),
             pd.concat(processes, ignore_index=True).drop_duplicates()
-            .rename(columns={0: 'id'}).set_index('id'))
+            .rename(columns={0: &#39;id&#39;}).set_index(&#39;id&#39;))
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>def plot_flows(gnps_network, sample_types, groups_included,
                sample_type_hierarchy, max_hierarchy_level=4, filename=None):
@@ -1244,64 +2487,64 @@ gfop_metadata = gfop_metadata.apply(lambda col: col.str.strip()
     dataset = floweaver.Dataset(flows, dim_process=processes)
 
     labels = (sample_type_hierarchy
-              .reindex(set(flows['source']) | set(flows['target']))
-              .sort_values('order_num').index)
+              .reindex(set(flows[&#39;source&#39;]) | set(flows[&#39;target&#39;]))
+              .sort_values(&#39;order_num&#39;).index)
     nodes, ordering, bundles = {}, [], []
-    for level in processes['level'].unique():
-        nodes[f'level {level}'] = floweaver.ProcessGroup(f'level == {level}')
-        nodes[f'level {level}'].partition = floweaver.Partition.Simple(
-            'process', labels[labels.str.endswith(f'_{level}')][::-1])
+    for level in processes[&#39;level&#39;].unique():
+        nodes[f&#39;level {level}&#39;] = floweaver.ProcessGroup(f&#39;level == {level}&#39;)
+        nodes[f&#39;level {level}&#39;].partition = floweaver.Partition.Simple(
+            &#39;process&#39;, labels[labels.str.endswith(f&#39;_{level}&#39;)][::-1])
 
-        ordering.append([f'level {level}'])
+        ordering.append([f&#39;level {level}&#39;])
 
-        if level + 1 in processes['level'].unique():
-            bundles.append(floweaver.Bundle(f'level {level}',
-                                            f'level {level + 1}'))
+        if level + 1 in processes[&#39;level&#39;].unique():
+            bundles.append(floweaver.Bundle(f&#39;level {level}&#39;,
+                                            f&#39;level {level + 1}&#39;))
 
     sdd = floweaver.SankeyDefinition(
-        nodes, bundles, ordering, flow_partition=dataset.partition('type'))
-    palette = sample_type_hierarchy['color_code'].dropna().to_dict()
+        nodes, bundles, ordering, flow_partition=dataset.partition(&#39;type&#39;))
+    palette = sample_type_hierarchy[&#39;color_code&#39;].dropna().to_dict()
     return floweaver.weave(sdd, dataset, palette=palette)
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sample_types_simple = get_sample_types(gfop_metadata, 'simple')
-sample_types_complex = get_sample_types(gfop_metadata, 'complex')
+<div class="highlight"><pre><span></span><code>sample_types_simple = get_sample_types(gfop_metadata, &#39;simple&#39;)
+sample_types_complex = get_sample_types(gfop_metadata, &#39;complex&#39;)
 </code></pre></div>
 <p>In the next steps you will load the sample type hierarchy specific to the Global FoodOmics metadata and the dataset generated in step 2 (.tsv). Ensure that the file paths are correct.</p>
 <div class="highlight"><pre><span></span><code>sample_type_hierarchy = (
-    pd.read_csv('../data/sample_type_hierarchy.csv')
-    .set_index('descriptor').sort_values('order_num'))
+    pd.read_csv(&#39;../data/sample_type_hierarchy.csv&#39;)
+    .set_index(&#39;descriptor&#39;).sort_values(&#39;order_num&#39;))
 
 gnps_network = pd.read_csv(
-    '../data/METABOLOMICS-SNETS-V2-9a90bd12-view_all_clusters_withID_beta-main.tsv',
-    sep='\t')
+    &#39;../data/METABOLOMICS-SNETS-V2-9a90bd12-view_all_clusters_withID_beta-main.tsv&#39;,
+    sep=&#39;\t&#39;)
 </code></pre></div>
 <p>The next step will generate the flow diagram and automatically save it based on the selections made. In this case matches are only against "simple" foods, and matches are only between plasma data and the reference dataset in G4. The hierarchy is displayed out to level 5 of the sample type hierarchy. </p>
-<div class="highlight"><pre><span></span><code>dataset = 'onr'
-simple_complex = 'simple'
-groups = '2', '4'
+<div class="highlight"><pre><span></span><code>dataset = &#39;onr&#39;
+simple_complex = &#39;simple&#39;
+groups = &#39;2&#39;, &#39;4&#39;
 max_level = 5
 
-if simple_complex == 'simple':
+if simple_complex == &#39;simple&#39;:
     sample_types = sample_types_simple
-elif simple_complex == 'complex':
+elif simple_complex == &#39;complex&#39;:
     sample_types = sample_types_complex
 else:
-    raise ValueError('Unknown sample type')
+    raise ValueError(&#39;Unknown sample type&#39;)
 sankey_data = plot_flows(
-    gnps_network, sample_types, [f'G{g}' for g in groups],
+    gnps_network, sample_types, [f&#39;G{g}&#39; for g in groups],
     sample_type_hierarchy, max_level)
 width = max_level * 150 + 300
 height = math.ceil(
     sum([1 for node in sankey_data.nodes
          if node.title.endswith(str(max_level))]) * 50 / 100) * 100
 (sankey_data.to_widget(width=width, height=height, margins={
-    'left': 150, 'right': 150, 'top': -50, 'bottom': -50})
- .auto_save_png(f'flow_{dataset}_g{"".join(groups)}_level{max_level}_'
-                f'{simple_complex}.png'))
+    &#39;left&#39;: 150, &#39;right&#39;: 150, &#39;top&#39;: -50, &#39;bottom&#39;: -50})
+ .auto_save_png(f&#39;flow_{dataset}_g{&quot;&quot;.join(groups)}_level{max_level}_&#39;
+                f&#39;{simple_complex}.png&#39;))
 </code></pre></div>
 <p>Output visualization shows the types of food categories from which molecules were observed in human plasma samples for a sleep deprivation cohort.</p>
-<p><img alt="" src="../../img/rdd/5_7.png"/></p>
-<h3 id="example-2-food-count-generation">Example 2: Food count generation<a class="headerlink" href="#example-2-food-count-generation" title="Permanent link">¶</a></h3>
+<p><img alt="" src="../../img/rdd/5_7.png" /></p>
+<h3 id="example-2-food-count-generation">Example 2: Food count generation<a class="headerlink" href="#example-2-food-count-generation" title="Permanent link">&para;</a></h3>
 <p>Generate a feature table containing spectral matches between each query sample and reference foods/food groups. Clone the <a href="https://github.com/global-foodomics/gfop">gfop</a> repository and follow instructions on the README.</p>
 <p><strong>Required files:</strong></p>
 <ul>
@@ -1310,69 +2553,91 @@ height = math.ceil(
 </ul>
 <p><strong>Dependencies:</strong> Python 3.6 or newer.</p>
 <p>The matrix generated has this format:</p>
-<p><img alt="" src="../../img/rdd/5_13.png"/></p>
+<p><img alt="" src="../../img/rdd/5_13.png" /></p>
 <p>The last step is to export the matrix as a .csv file.</p>
-<div class="highlight"><pre><span></span><code>f_counts.to_csv('Tutorial_plasma_file_food_count.csv')
+<div class="highlight"><pre><span></span><code>f_counts.to_csv(&#39;Tutorial_plasma_file_food_count.csv&#39;)
 </code></pre></div>
-<hr/>
+
+  <hr>
 <div class="md-source-file">
-<small>
+  <small>
     
       Last update:
       <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 14, 2022 23:40:00</span>
-</small>
+      
+    
+  </small>
 </div>
-</article>
-</div>
-</div>
-</main>
-<footer class="md-footer">
-<nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: FBMN analysis at GNPS" class="md-footer__link md-footer__link--prev" href="../featurebasedgnps/" rel="prev">
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
-</div>
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../featurebasedgnps/" class="md-footer__link md-footer__link--prev" aria-label="Previous: FBMN analysis at GNPS" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
                 Previous
               </span>
               FBMN analysis at GNPS
             </div>
-</div>
-</a>
-<a aria-label="Next: Change Log" class="md-footer__link md-footer__link--next" href="../../changelog/" rel="next">
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../changelog/" class="md-footer__link md-footer__link--next" aria-label="Next: Change Log" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
                 Next
               </span>
               Change Log
             </div>
-</div>
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
-</div>
-</a>
-</nav>
-<div class="md-footer-meta md-typeset">
-<div class="md-footer-meta__inner md-grid">
-<div class="md-copyright">
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
       Material for MkDocs
     </a>
+  
 </div>
-</div>
-</div>
+      
+    </div>
+  </div>
 </footer>
-</div>
-<div class="md-dialog" data-md-component="dialog">
-<div class="md-dialog__inner md-typeset"></div>
-</div>
-<script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
-<script src="../../assets/javascripts/bundle.c44cc438.min.js"></script>
-</body>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.748e2769.min.js"></script>
+      
+    
+  </body>
 </html>
