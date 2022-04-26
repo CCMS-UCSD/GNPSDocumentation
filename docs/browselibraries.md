@@ -50,7 +50,19 @@ CCMS_SpectralLibraries/GNPS_Propogated_Libraries
 
 ![img](img/libraries/extralibraries.png)
 
-These are propogated spectral libraries that inherently are less confident but this provides an avenue to give more identifications. 
+These are propagated spectral libraries that inherently are less confident but this provides an avenue to give more identifications.
+
+#### Nearest neighbor suspect spectral library
+
+The nearest neighbor suspect spectral library is a propagated spectral library that has been compiled in a data-driven fashion from molecular networking of hundreds of millions of public MS/MS spectra. Rather than by measuring standards with known molecular identities, entries in the suspect library are related to a known compound with a specific modification, characterized by the precursor mass difference, to provide structural hypotheses.
+
+Follow these steps to include the nearest neighbor suspect spectral library to your GNPS analyses:
+
+1. Browse to the "GNPS-SUSPECTLIST" folder in the file selector.
+2. Click on "Library Files" to add the nearest neighbor suspect spectral library.
+3. Verify that the library now appears in the "Selected Library Files" category in the selection panel.
+
+![Including the suspect library](img/libraries/suspect.png)
 
 ### License
 
