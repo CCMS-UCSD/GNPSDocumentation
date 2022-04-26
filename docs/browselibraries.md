@@ -62,7 +62,7 @@ Follow these steps to include the nearest neighbor suspect spectral library to y
 2. Click on "Library Files" to add the nearest neighbor suspect spectral library.
 3. Verify that the library now appears in the "Selected Library Files" category in the selection panel.
 
-![Including the suspect library](img/libraries/suspect.png)
+![Including the suspect library](img/libraries/suspect.jpg)
 
 ### License
 
