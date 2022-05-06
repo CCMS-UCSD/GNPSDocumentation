@@ -73,6 +73,7 @@ nav:
         - Merge Network Polarity: mergepolarity.md
         - Chemical Directionality: chemdir.md
     - Spectral Libraries:
+        - Libraries List: gnpslibraries.md
         - Browsing Reference Spectral Libraries: browselibraries.md
         - Add/Curate Reference Spectrum in the Library: spectrumcuration.md
         - Reference Spectral Library Batch Addition: batchupload.md
