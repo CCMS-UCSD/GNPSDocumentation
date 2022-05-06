@@ -1,3 +1,4 @@
+# GNPS MS/MS Spectral Libraries List
 
 Pardon our dust this is a work in progress!
 
@@ -8,4 +9,4 @@ To download the spectra, go to [here](https://gnps-external.ucsd.edu/gnpslibrary
 | View        | Title          | Description | 
 | ------------- |-------------| -----| 
 | [View](https://gnps-library.ucsd.edu/) | All Public Spectra at GNPS | This contains all available spectra available publically for search at GNPS. All interactively explore fragmentation with our new visualizations. |
-| [View](https://gnps.ucsd.edu/ProteoSAFe/gnpslibrary.jsp?library=GNPS-LIBRARY) | GNPS Library | The GNPS library contains  compounds from user contributions. |
+| [View](https://gnps.ucsd.edu/ProteoSAFe/gnpslibrary.jsp?library=GNPS-LIBRARY) | GNPS Community Library | The GNPS library contains  compounds from user contributions. |
