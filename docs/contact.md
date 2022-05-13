@@ -23,7 +23,7 @@ Upcoming Office Hour Schedule
 | 2PM PST (11PM CET) Weekly on Monday | GNPS Q and A |
 | 9AM PST (6PM CET) Weekly on Tuesday | GNPS Q and A |
 
-Please also take the time to RSVP that you're going to attend and what questions you may have so we know who to let in as well as what to expect and the order to address:
+Please also take the time to RSVP that you're going to attend and what questions you may have so we know who to let in as well as what to expect and the order to address (you will not receive a confirmation from this RSVP, just show up to office hours once you add it):
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOCaOmZ6Q5ggsmnQ414SSYBrshpX-Ibt4ENh2TPkQiBBR2qw/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
