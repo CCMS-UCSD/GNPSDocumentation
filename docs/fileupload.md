@@ -1,7 +1,7 @@
 
 To upload files to GNPS for analysis, the preferred method is to use an FTP client. This provides a robust and batch manner to upload many files. The one big downside is that you have to have to install an FTP client if you don't already have one. We offer as an alternative an online browser drag and drop that is limited to small files.
 
-If you are looking for making your dataset publicly available on MassIVe please check the "Create a Public Dataset" section
+If you are looking for making your dataset publicly available on MassIVe please check the [https://ccms-ucsd.github.io/GNPSDocumentation/datasets/](Create a Public Dataset) section
 
 ## FTP Batch File Uploads
 
