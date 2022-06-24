@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 ```mkdocs serve```
 
-5. Deploy to github pages
+5. Deploy to github pages (this is unnecessary as it will automatically deploy once changes are pushed to master)
 
 ```mkdocs gh-deploy```
 

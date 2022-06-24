@@ -10,8 +10,6 @@ This gets you all spectra but without peaks.
 https://gnps-external.ucsd.edu/gnpslibraryjson
 ```
 
-### All Public Library Specta at GNPS with Peaks and Annotation History
-
 ### All Public Library Name List at GNPS
 
 ```
@@ -144,6 +142,11 @@ As MSP
 https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.msp
 ```
 
+### All GNPS Spectra and Structure as a Table
+
+```
+https://gnps-external.ucsd.edu/gnpslibraryfornpatlastsv
+```
 
 ### Single Library Spectrum
 
