@@ -14,8 +14,7 @@ To enhance the analysis, datasets submitted to MassIVE through GNPS will be peri
 
 Here is a full video tutorial, showing how to convert, and upload raw LC-MS/MS data, and submit a MassIVE data set, and finally how to make the data set public.
 
-<iframe width="600" height="350" src="https://www.youtube.com/watch?v=sudY7UtkMQg"> </iframe> 
-
+https://youtu.be/sudY7UtkMQg
 
 Below is a step-to-step description how to upload data into MassIVE specifically for GNPS.
 
