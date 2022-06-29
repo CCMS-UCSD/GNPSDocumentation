@@ -61,6 +61,13 @@ Animated
 
 ![img](img/logo/mzmine-fbmn.png)
 
+## MassQL 
+
+Find the full documentation for MassQL [here](https://mwang87.github.io/MassQueryLanguage_Documentation/)!
+
+![img](https://mwang87.github.io/MassQueryLanguage_Documentation/img/logo.png)
+
+
 ## Logos for Zoom Background
 
 ![img](img/logo/zoom/Slide1.PNG)
