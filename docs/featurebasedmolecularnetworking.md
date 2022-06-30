@@ -15,7 +15,7 @@ The Feature-Based Molecular Networking (FBMN) workflow is available on GNPS via:
 
 - [The standard GNPS interface page for FBMN](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) (you need to be logged in GNPS first).
 
-- For programmatic access to FBMN, contact Mingxun Wang at <miw023@ucsd.edu>.
+- For programmatic access to FBMN, contact Mingxun Wang at <mingxun.wang@ucr.edu>.
 
 ## Citations
 
