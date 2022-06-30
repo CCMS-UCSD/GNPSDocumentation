@@ -13,7 +13,7 @@ The spectral libraries are categorized based upon quality of the data. The level
 | Bronze | Any other putative, complete or partial annotation | 3 |
 | Challenge :muscle: | Unknown Identity, open to community to help annotate | 10 |
 
-By default, users will have access to Bronze, but approval is required to contribute to silver and gold libraries. To obtain training and access please email [Mingxun Wang](mailto:miw023@ucsd.edu).
+By default, users will have access to Bronze, but approval is required to contribute to silver and gold libraries. To obtain training and access please email [Mingxun Wang](mailto:mingxun.wang@cs.ucr.edu).
 
 ## Adding Single Spectra
 
