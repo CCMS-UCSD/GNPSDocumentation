@@ -79,7 +79,7 @@ The results can be accessed by clicking the "View Output Batch Table" link and t
 
 ## Contacts
 - Morgan Panitchpakdi(mpanitch@ucsd.edu)
-- Mingxun Wang (miw023@ucsd.edu)
+- Mingxun Wang (UC Riverside) (mingxun.wang@cs.ucr.edu)
 - Alan Jarmusch (ajarmusch@ucsd.edu)
 
 ## Page Contributions
