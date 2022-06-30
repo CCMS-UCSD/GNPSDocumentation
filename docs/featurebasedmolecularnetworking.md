@@ -306,7 +306,7 @@ Note that currently, the mzTab-M has been tested only with XCMS. More informatio
 
 ##### Programmatic Access to FBMN
 
-For programmatic access to the FBMN workflow, contact Mingxun Wang at <miw023@ucsd.edu>.
+For programmatic access to the FBMN workflow, contact Mingxun Wang at <mingxun.wang@cs.ucr.edu>.
 
 
 ### Join the GNPS Community !
