@@ -40,7 +40,7 @@ Here is a table to briefly browse them
 | Venue        | Description          | Dates | Speakers/Instructors | Material | Estimated Attendance |
 | ------------- |-------------| -----| -----| -----| ----- |
 | Tuebingen, Germany | International Summer School on Non-Targeted Metabolomics 2022 | 2022-08-22 to 26 | Organizers of the Summer School | [Video](https://www.youtube.com/watch?v=sX5hQQwMnJA&list=PL0JAF-4UFc8Nujp1ET-TwNdOGrBGsuZ7J) | 75+online |
-| Zoom Video Series | CMFI Mass Spec Seminar | 2022-02 | Daniel Petras organized series | [Video](https://www.youtube.com/watch?v=hk7WeXibReg&list=PL0JAF-4UFc8N8DxAIOoF2cMSKy-wC4WWG&index=7) | 20-100+ |
+| CMFI Mass Spec Seminar | Zoom Video Series | 2022-02 | Daniel Petras organized series | [Video](https://www.youtube.com/watch?v=hk7WeXibReg&list=PL0JAF-4UFc8N8DxAIOoF2cMSKy-wC4WWG&index=7) | 20-100+ |
 | CMFI Mass Spec Seminar | Molecular Networking | 2022-02-15 | Pieter Dorrestein and Daniel Petras | [Video](https://youtu.be/s5y1XNKENbk) | 35 |
 | Nature Microbiome 2021 GNPS Workshop | Food, Diet, and Microbiome | 2021-11-16 | Pieter Dorrestein and Mingxun Wang | [Material](https://docs.google.com/document/d/14ek6Ll5jSaE1P_o1Cc8b4Zk2IEd0C__20USIk_BEDS8/edit#) [Video](https://www.youtube.com/watch?v=V3X7AMugMMc) | 300+ |
 | UNIFAL-MG Brazil 2021 | Virtual class and hands-on: Applications of Mass Spectrometry in Pharmacotherapeutics development - MS Fundamentals to GNPS | 2021-11-05 | Mauricio Caraballo | [Material](https://docs.google.com/presentation/d/1tjmNlZWF4gJ1K9RQQ_pTNrFwqsA9JPzi/edit?usp=sharing&ouid=114731408120524190184&rtpof=true&sd=true) | 25 |
