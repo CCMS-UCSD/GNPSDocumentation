@@ -42,6 +42,10 @@
     Feature Based Molecular Networking (FBMN) provides the following advantages: Area under the curve quantification, Isomer resolution, Filtration of MS/MS that come from chromatographic features, Potential inclusion of other types of edges (e.g. IIN)
     However, the downsides include: Requires feature finding pre-processing (e.g. MZMine2), Less sensitive to consider all MS/MS than classical, More parameters to set
 
+!!! question "My Classical Molecular Networking Keeps Failing with the Error - Forcibly terminated by the computational backend"
+    This is most likely the workflow uses too much memory and you have too many spectra in your analysis. Simply increase the minimum cluster size from the default 2, to either 3 or 4. This will be less sensitive but it'll make possible for you analyze your data as a first pass. 
+
+
 ## Mass Spectrometry Types
 
 !!! question "Does GNPS support data independent acquisition (DIA) data types such as MSe and SWATH?"
