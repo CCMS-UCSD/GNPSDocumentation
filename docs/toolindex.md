@@ -68,7 +68,7 @@ These are web tools that is run by the GNPS team and provides complementary func
 | [GNPS Public Libraries Download List](https://gnps-external.ucsd.edu/gnpslibrary) | --- | --- | 
 | [GNPS Public Data Index](https://gnps-datasetcache.ucsd.edu/datasette/database/filename) | --- | --- | 
 | [GNPS Spectral Similarity Hub](https://gnps-similarity.ucsd.edu/) | --- | --- | 
-| [Nature Journals Author Quick Entry](https://nature-submission.herokuapp.com/) | --- | --- | 
+| [Nature Journals Author Quick Entry](https://natureauthors.wanglab.science/) | --- | --- | 
 
 
 ## GNPS Deprecated Web Tools
