@@ -59,7 +59,7 @@ These are web tools that is run by the GNPS team and provides complementary func
 | [GNPS Mass Spec Calculator](https://gnps-structure.ucsd.edu/dashinterface/) | --- | --- |
 | [GNPS Usage Stats Dashboard](https://gnps-usage-stats.herokuapp.com/) | --- | [GitHub](https://github.com/mwang87/GNPS_StatsSummaryDashboard) | --- |
 | [GNPS2 Classical Networking Upset Plot Dashboard](http://classicalupset.gnps2.org/) | --- | [GitHub](https://github.com/mwang87/GNPS_ClassicalNetworkGroupsComparisonDashboard) | --- |
-| [GNPS FBMN Upset Plot Dashboard](https://gnps-fbmn-upset.herokuapp.com/) | --- | --- |
+| [GNPS FBMN Upset Plot Dashboard](https://fbmnupset.gnps2.org/) | --- | --- |
 | [NP Classifier](https://npclassifier.ucsd.edu/) | --- | [GitHub](https://github.com/mwang87/NP-Classifier) | --- |
 | [GNPS LCMS Explorer](https://gnps-lcms.ucsd.edu/) | [Documentation](lcms-dashboard.md) | --- |
 | [GNPS Mass Defect Dashboard (Beta)](https://gnps-massdefectdashboard.herokuapp.com/) | --- | --- |
