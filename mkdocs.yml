@@ -108,6 +108,7 @@ nav:
     - For Developers: developers.md
 theme:
     name: material
+    custom_dir: overrides
 
 plugins:
     - search
@@ -131,9 +132,12 @@ markdown_extensions:
     - pymdownx.emoji:
         emoji_index: !!python/name:pymdownx.emoji.twemoji
         emoji_generator: !!python/name:pymdownx.emoji.to_svg
-            
+       
 
 extra:
+#   analytics:
+#     provider: google
+#     property: UA-8412213-5
   analytics:
-    provider: google
-    property: UA-8412213-5
+    provider: umami
+  
