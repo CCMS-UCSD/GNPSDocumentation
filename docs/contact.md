@@ -8,7 +8,7 @@ For more in-depth assistance, we invite you to attend the numerous GNPS workshop
 
 ## GNPS Office Hours
 
-We are hosting online office hours on a weekly basis online with Ming ([mingxun.wang@cs.ucr.edu](mainto:mingxun.wang@cs.ucr.edu), [Lab Website](https://www.cs.ucr.edu/~mingxunw/)) via Zoom:
+We are hosting online office hours on a weekly basis online with Ming ([mingxun.wang@cs.ucr.edu](mailto:mingxun.wang@cs.ucr.edu), [Lab Website](https://www.cs.ucr.edu/~mingxunw/)) via Zoom:
 
 [https://ucr.zoom.us/j/98049645231](https://ucr.zoom.us/j/98049645231)
 
