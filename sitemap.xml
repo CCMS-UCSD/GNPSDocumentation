@@ -266,6 +266,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ccms-ucsd.github.io/GNPSDocumentation/microbemasst/</loc>
+         <lastmod>2023-01-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ccms-ucsd.github.io/GNPSDocumentation/mmvec/</loc>
          <lastmod>2023-01-31</lastmod>
          <changefreq>daily</changefreq>
