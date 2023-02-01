@@ -72,6 +72,7 @@ nav:
         - MMVEC: mmvec.md
         - Merge Network Polarity: mergepolarity.md
         - Chemical Directionality: chemdir.md
+        - microbeMASST: microbemasst.md
     - Spectral Libraries:
         - Libraries List: gnpslibraries.md
         - Browsing Reference Spectral Libraries: browselibraries.md
