@@ -104,6 +104,7 @@ These are Jupyter Notebooks that interact with GNPS web resources and do further
 | MassBank | [Citation](https://onlinelibrary.wiley.com/doi/full/10.1002/jms.1777?casa_token=Wr51kpu9hCgAAAAA%3AERBV24GFextLVnW0J4SDcdJAskSYG2eqf2tgh8AUBeowVLnKBErbLqJxEzOQJUz2MqrI5dKr47zSVXw) |
 | Cytoscape | [Citation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC403769/) |
 | ProteoWizard | [Citation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2732273/) |
+| [SNAP-MS](https://www.npatlas.org/discover/snapms/) | [Citation](https://www.nature.com/articles/s41467-022-35734-z) and [Documentation](https://liningtonlab.github.io/snapms_documentation/) |
 
 ## GNPS Tools Interoperability Graph
 
