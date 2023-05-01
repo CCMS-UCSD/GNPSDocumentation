@@ -4,7 +4,7 @@ Pardon our dust this is a work in progress!
 
 Here are all spectral libraries at GNPS.
 
-To download the spectra, go to [here](https://gnps-external.ucsd.edu/gnpslibrary).
+To download the spectra, go to [here](https://external.gnps2.org/gnpslibrary).
 
 | View        | Title          | Description | 
 | ------------- |-------------| -----| 
