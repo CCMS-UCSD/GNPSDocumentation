@@ -110,6 +110,8 @@ nav:
 theme:
     name: material
     custom_dir: overrides
+    features:
+      - content.action.edit
 
 plugins:
     - search
