@@ -69,7 +69,7 @@ These are web tools that is run by the GNPS team and provides complementary func
 | [GNPS Public Data Index](https://gnps-datasetcache.ucsd.edu/datasette/database/filename) | --- | --- | 
 | [GNPS Spectral Similarity Hub](https://gnps-similarity.ucsd.edu/) | --- | --- | 
 | [Nature Journals Author Quick Entry](https://natureauthors.wanglab.science/) | --- | --- | 
-| [Pubmed Co-Authors List](https://pubmed.mingxunwang.com/) | --- | --- | 
+| [Pubmed Co-Authors List]([https://pubmed.mingxunwang.com/](https://coauthor.wanglab.science/)) | --- | --- | 
 
 
 ## GNPS Deprecated Web Tools
