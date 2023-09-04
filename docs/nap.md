@@ -32,7 +32,7 @@ There are basically three options for database structure selection:
 A standard format is required for the in house database. One can easily collect structures in the literature and format a tab separated files with SMILES strings and a character identifier of any kind, as the example database [Right-click, and Save link as](https://raw.githubusercontent.com/DorresteinLaboratory/GNPSDocumentation/master/docs/static/JNP_Kyobin.txt):  
 ![inhousedb](img/nap/example_inhouse_database.png)
 
-Having an in house collection, before the use in NAP, the user has to first format the database, using the following [webserver](http://dorresteinappshub.ucsd.edu:5002/upload):
+Having an in house collection, before the use in NAP, the user has to first format the database, using the following [webserver](http://seriema.fcfrp.usp.br:5002/upload):
 
 ![conversionweb](img/nap/format_database_webform.png)
 
