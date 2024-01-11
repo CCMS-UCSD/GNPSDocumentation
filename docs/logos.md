@@ -57,6 +57,10 @@ Animated
 
 ![img](img/logo/foodmasst_logo.png)
 
+## microbeMASST
+
+![img](img/logo/microbeMASST_logo.png)
+
 ## GNPS FBMN
 
 ![img](img/logo/mzmine-fbmn.png)
