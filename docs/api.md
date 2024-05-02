@@ -7,25 +7,25 @@
 This gets you all spectra but without peaks. 
 
 ```
-https://gnps-external.ucsd.edu/gnpslibraryjson
+https://external.gnps2.org/gnpslibraryjson
 ```
 
 ### All Public Library Name List at GNPS
 
 ```
-https://gnps-external.ucsd.edu/gnpslibrary.json
+https://external.gnps2.org/gnpslibrary.json
 ```
 
 Browse all spectra
 
 ```
-https://gnps-external.ucsd.edu/gnpslibrary
+https://external.gnps2.org/gnpslibrary
 ```
 
 Download as JSON
 
 ```
-https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.json
+https://external.gnps2.org/gnpslibrary/ALL_GNPS.json
 ```
 
 ??? info "Example JSON Format"
@@ -103,7 +103,7 @@ https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.json
 As MGF
 
 ```
-https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.mgf
+https://external.gnps2.org/gnpslibrary/ALL_GNPS.mgf
 ```
 
 ??? info "Example MGF Format"
@@ -139,13 +139,13 @@ https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.mgf
 As MSP
 
 ```
-https://gnps-external.ucsd.edu/gnpslibrary/ALL_GNPS.msp
+https://external.gnps2.org/gnpslibrary/ALL_GNPS.msp
 ```
 
 ### All GNPS Spectra and Structure as a Table
 
 ```
-https://gnps-external.ucsd.edu/gnpslibraryfornpatlastsv
+https://external.gnps2.org/gnpslibraryfornpatlastsv
 ```
 
 ### Single Library Spectrum
@@ -162,13 +162,13 @@ https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=<Library Acce
 Access a JSON or csv version of a spectrum by any Universal Spectrum Identifier.
 
 ```
-https://metabolomics-usi.ucsd.edu/json/?usi1=<USI HERE>
-https://metabolomics-usi.ucsd.edu/csv/?usi1=<USI HERE>
+https://metabolomics-usi.gnps2.org/json/?usi1=<USI HERE>
+https://metabolomics-usi.gnps2.org/csv/?usi1=<USI HERE>
 ```
 
-[json example for mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000579622](https://metabolomics-usi.ucsd.edu/json/?usi1=mzspec%3AGNPS%3AGNPS-LIBRARY%3Aaccession%3ACCMSLIB00000579622)
+[json example for mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000579622](https://metabolomics-usi.gnps2.org/json/?usi1=mzspec%3AGNPS%3AGNPS-LIBRARY%3Aaccession%3ACCMSLIB00000579622)
 
-[csv example for mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000579622](https://metabolomics-usi.ucsd.edu/csv/?usi1=mzspec%3AGNPS%3AGNPS-LIBRARY%3Aaccession%3ACCMSLIB00000579622)
+[csv example for mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000579622](https://metabolomics-usi.gnps2.org/csv/?usi1=mzspec%3AGNPS%3AGNPS-LIBRARY%3Aaccession%3ACCMSLIB00000579622)
 
 ## GNPS Jobs
 
@@ -203,74 +203,74 @@ https://gnps.ucsd.edu/ProteoSAFe/ManageParameters?task=<task id>
 ### Conversion to Smiles
 
 ```
-https://gnps-structure.ucsd.edu/smiles?inchi=<inchi string>
+https://structure.gnps2.org/smiles?inchi=<inchi string>
 ```
 
-[Example](https://gnps-structure.ucsd.edu/smiles?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3)
+[Example](https://structure.gnps2.org/smiles?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3)
 
 ### Conversion to InChI
 
 ```
-https://gnps-structure.ucsd.edu/inchi?smiles=<smiles string>
+https://structure.gnps2.org/inchi?smiles=<smiles string>
 ```
 
-[Example](https://gnps-structure.ucsd.edu/inchi?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+[Example](https://structure.gnps2.org/inchi?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
 ### Conversion to InChIKey
 
 ```
-https://gnps-structure.ucsd.edu/inchikey?smiles=<smiles string>
+https://structure.gnps2.org/inchikey?smiles=<smiles string>
 ```
 
-[Example](https://gnps-structure.ucsd.edu/inchikey?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+[Example](https://structure.gnps2.org/inchikey?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
 ### Conversion to fingerprint
 
 ```
-https://gnps-structure.ucsd.edu/structurefingerprint?smiles=<smiles string>
+https://structure.gnps2.org/structurefingerprint?smiles=<smiles string>
 ```
 
-[Example](https://gnps-structure.ucsd.edu/structurefingerprint?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+[Example](https://structure.gnps2.org/structurefingerprint?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
 ### Conversion to exact mass
 
 ```
-https://gnps-structure.ucsd.edu/structuremass?smiles=<smiles string>
+https://structure.gnps2.org/structuremass?smiles=<smiles string>
 ```
 
 ### Compare to Adduct m/z
 
 ```
-https://gnps-structure.ucsd.edu/adductcalc?smiles=<smiles string>&mz=<experimental mz>
+https://structure.gnps2.org/adductcalc?smiles=<smiles string>&mz=<experimental mz>
 ```
 
-[Example](https://gnps-structure.ucsd.edu/adductcalc?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O&mz=195.08765155999998)
+[Example](https://structure.gnps2.org/adductcalc?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O&mz=195.08765155999998)
 
 ### Conversion to formula
 
 ```
-https://gnps-structure.ucsd.edu/formula?smiles=<smiles string>
+https://structure.gnps2.org/formula?smiles=<smiles string>
 ```
 
-[Example](https://gnps-structure.ucsd.edu/formula?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+[Example](https://structure.gnps2.org/formula?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
 ### Structure Classyfire
 
 If you have Smiles
 
 ```
-https://gnps-structure.ucsd.edu/classyfire?smiles=<smiles string>
+https://structure.gnps2.org/classyfire?smiles=<smiles string>
 ```
 
-[Example](https://gnps-structure.ucsd.edu/classyfire?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+[Example](https://structure.gnps2.org/classyfire?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
 If you have InChI
 
 ```
-https://gnps-structure.ucsd.edu/classyfire?inchi=<InChI string>
+https://structure.gnps2.org/classyfire?inchi=<InChI string>
 ```
 
-[Example](https://gnps-structure.ucsd.edu/classyfire?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3)
+[Example](https://structure.gnps2.org/classyfire?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3)
 
 If you have InChI Key
 
@@ -292,10 +292,10 @@ us to push to the Wishart servers to classify.
 If you have Smiles
 
 ```
-https://npclassifier.ucsd.edu/classify?smiles=<smiles string>
+https://npclassifier.gnps2.org/classify?smiles=<smiles string>
 ```
 
-[Example](https://npclassifier.ucsd.edu/classify?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+[Example](https://npclassifier.gnps2.org/classify?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
 ??? info "Example JSON Output"
     ```
@@ -324,25 +324,25 @@ https://npclassifier.ucsd.edu/classify?smiles=<smiles string>
     ```
 
 !!! note "NPClassifier" 
-    NPClassifier is A Deep Neural Network-Based Structural Classification Tool for Natural Products - check it out [here](https://npclassifier.ucsd.edu/). For citation: Kim, Hyun Woo, Mingxun Wang, Christopher A. Leber, Louis-Félix Nothias, Raphael Reher, Kyo Bin Kang, Justin JJ van der Hooft, Pieter C. Dorrestein, William H. Gerwick, and Garrison W. Cottrell. "NPClassifier: A deep neural network-based structural classification tool for natural products." Journal of Natural Products (2020). [https://doi.org/10.1021/acs.jnatprod.1c00399](https://pubs.acs.org/doi/abs/10.1021/acs.jnatprod.1c00399?casa_token=MRiUf8bJSAcAAAAA:2543Xv_7W0c-AyhntroXm62ccn0QL6c8CpxT0U6NnDoj3JpB1T6Wlr5G96Rfucmnoi2yR0XFgbp2Sw). Checkout the tool index for a large scale workflow for batch classification. 
+    NPClassifier is A Deep Neural Network-Based Structural Classification Tool for Natural Products - check it out [here](https://npclassifier.gnps2.org/). For citation: Kim, Hyun Woo, Mingxun Wang, Christopher A. Leber, Louis-Félix Nothias, Raphael Reher, Kyo Bin Kang, Justin JJ van der Hooft, Pieter C. Dorrestein, William H. Gerwick, and Garrison W. Cottrell. "NPClassifier: A deep neural network-based structural classification tool for natural products." Journal of Natural Products (2020). [https://doi.org/10.1021/acs.jnatprod.1c00399](https://pubs.acs.org/doi/abs/10.1021/acs.jnatprod.1c00399?casa_token=MRiUf8bJSAcAAAAA:2543Xv_7W0c-AyhntroXm62ccn0QL6c8CpxT0U6NnDoj3JpB1T6Wlr5G96Rfucmnoi2yR0XFgbp2Sw). Checkout the tool index for a large scale workflow for batch classification. 
 
 
 ### Structure Image
 
 ```
-https://gnps-structure.ucsd.edu/structureimg?smiles=<smiles string>
+https://structure.gnps2.org/structureimg?smiles=<smiles string>
 ```
 
-[Example](https://gnps-structure.ucsd.edu/structureimg?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+[Example](https://structure.gnps2.org/structureimg?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
 
 ### Structure Similarity
 
 ```
-https://gnps-structure.ucsd.edu/structuresimilarity?smiles1=<smiles string>&smiles2=<smiles string>
+https://structure.gnps2.org/structuresimilarity?smiles1=<smiles string>&smiles2=<smiles string>
 ```
 
-[Example](https://gnps-structure.ucsd.edu/structuresimilarity?smiles1=Cn1c(=O)c2c(ncn2C)n(C)c1=O&smiles2=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+[Example](https://structure.gnps2.org/structuresimilarity?smiles1=Cn1c(=O)c2c(ncn2C)n(C)c1=O&smiles2=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
 
 !!! warning
     Please make sure you are URL encoding your SMILES/InChI strings or else the web server on the other end won't understand your request. 
@@ -350,9 +350,9 @@ https://gnps-structure.ucsd.edu/structuresimilarity?smiles1=<smiles string>&smil
 ### Structure External Resource information
 
 ```
-https://gnps-external.ucsd.edu/structureproxy?smiles=<smiles string>
+https://external.gnps2.org/structureproxy?smiles=<smiles string>
 ```
-[Example - Caffeine](https://gnps-external.ucsd.edu/structureproxy?smiles=CN1C(N(C)C(N%3DCN2C)%3DC2C1%3DO)%3DO&inchi=InChI%3D1S%2FC8H10N4O2%2Fc1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2%2Fh4H%2C1-3H3)
+[Example - Caffeine](https://external.gnps2.org/structureproxy?smiles=CN1C(N(C)C(N%3DCN2C)%3DC2C1%3DO)%3DO&inchi=InChI%3D1S%2FC8H10N4O2%2Fc1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2%2Fh4H%2C1-3H3)
     
 !!! note "Chemical Translation Service" 
     This API uses the Chemical Translation Service made by the Fiehn Lab - check it out [here](http://cts.fiehnlab.ucdavis.edu/). For citation: Gert Wohlgemuth, Pradeep Kumar Haldiya, Egon Willighagen, Tobias Kind, Oliver Fiehn, The Chemical Translation Service—a web-based tool to improve standardization of metabolomic reports, Bioinformatics, Volume 26, Issue 20, 15 October 2010, Pages 2647–2648, [https://doi.org/10.1093/bioinformatics/btq476](https://doi.org/10.1093/bioinformatics/btq476).

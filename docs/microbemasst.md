@@ -6,13 +6,13 @@ Users are able to search for both known and unknown MS/MS spectra.
 
 ## INPUT
 
-The input to any MASST search is a MS/MS spectrum. If the users want to search for already known molecules, which spectra have been deposited in the [GNPS libraries](https://gnps-library.ucsd.edu/), they can simply enter the known library spectrum associated with them (Figure 1). As of January 2023, the GNPS libraries contain ~600K spectra. 
+The input to any MASST search is a MS/MS spectrum. If the users want to search for already known molecules, which spectra have been deposited in the [GNPS libraries](https://library.gnps2.org/), they can simply enter the known library spectrum associated with them (Figure 1). As of January 2023, the GNPS libraries contain ~600K spectra. 
 
 **Figure 1**
 
 ![img](img/microbeMASST/usi.png)
 
-Another way users can search for an MS/MS spectrum using an Universal Spectrum Identifiers (USI) is to deposit their data in Massive and inspect it using the [GNPS Dashboard](https://gnps-lcms.ucsd.edu/). Using the example already provided in the Dashboard (mzspec:MSV000084494:GNPS00002_A3_p), we can inspect a MS2 scan (54) and click on “View Metabolomics USI” (Figure 2A). A new prompt will open that allows to inspect the spectrum (Figure 2B). Under Spectrum USI is possible to retrieve the USI of the spectrum which can be then copied and pasted into microbeMASST for the search (Figure 2C).
+Another way users can search for an MS/MS spectrum using an Universal Spectrum Identifiers (USI) is to deposit their data in Massive and inspect it using the [GNPS Dashboard](https://dashboard.gnps2.org/). Using the example already provided in the Dashboard (mzspec:MSV000084494:GNPS00002_A3_p), we can inspect a MS2 scan (54) and click on “View Metabolomics USI” (Figure 2A). A new prompt will open that allows to inspect the spectrum (Figure 2B). Under Spectrum USI is possible to retrieve the USI of the spectrum which can be then copied and pasted into microbeMASST for the search (Figure 2C).
 
 **Figure 2A**
 
