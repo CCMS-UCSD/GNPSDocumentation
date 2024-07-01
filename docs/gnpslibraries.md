@@ -2,6 +2,12 @@
 
 Pardon our dust this is a work in progress!
 
+## Machine Learning Ready Datasets
+
+If you are looking to use the GNPS libraries for machine learning, cleanup is necessary. Given the multiple contributions from the community as well as imports/aggregation from many sources - there are some inconsistencies in the data. However, we've taken the time and effort to clean it up for machine learning, look to download this in the "Preprocessed Data" section [here](https://external.gnps2.org/gnpslibrary).
+
+## Library List
+
 Here are all spectral libraries at GNPS.
 
 To download the spectra, go to [here](https://external.gnps2.org/gnpslibrary).

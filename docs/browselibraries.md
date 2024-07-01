@@ -8,6 +8,10 @@ There are several spectral libraries available at GNPS. They are either imported
 
 Clicking on a library brings users to a list of all MS/MS spectra that are in that library. The most up to date annotation is listed.
 
+### Machine Learning Ready Datasets
+
+If you are looking to use the GNPS libraries for machine learning, cleanup is necessary. Given the multiple contributions from the community as well as imports/aggregation from many sources - there are some inconsistencies in the data. However, we've taken the time and effort to clean it up for machine learning, look to download this in the "Preprocessed Data" section [here](https://external.gnps2.org/gnpslibrary).
+
 ### Most Recent Contributions
 
 At the bottom of the list of all spectral library, the most recent contributions of annotation library spectra are listed in reverse chronological order. These generous contributions from members of the community are just the latest amongst the thousands of MS/MS spectra deposited at GNPS.
