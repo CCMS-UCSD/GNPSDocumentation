@@ -66,7 +66,8 @@ In order to use Google Sheets as your source of metadata you will need to accomp
 The use of a metadata file is an alternative way to assign groups when selecting data input files within the workflow of GNPS. The current version of molecular networking allows to use the metadata table as an input. 
 
 !!! tip
-    Indicate which metadata columns should be considered in analysis by opening the file in a text editor and adding             "ATTRIBUTE_" to the header of the column.
+    Indicate which metadata columns should be considered in analysis by opening the file in a text editor and adding             "ATTRIBUTE_" to the header of the column.  Tao's comments/suggestion: --- it would be helpful to give an example and explain how the grouping works with the "ATTIBUTE-" ---
+    
 * Save the file (must be tab-delimited text file)
 * Users must upload their data file
 * Users must select the metadata file and place it in the **"Metadata File"** folder
