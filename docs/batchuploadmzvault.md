@@ -44,6 +44,11 @@ mzVault 2.3 (Thermo Fisher Scientific), compatible with TraceFinder 5.0/5.1+ and
     NOTE: that you cannot choose which fields are exported. If you wish you can add information of your choice to the predefined fields. E.g. here we added information on ‘Adduct’ and ‘PubChemID’ to the ‘Precursor_type’ and ‘CompoundClass’ fields respectively. During inspection of the .msp file in a text editor program, you can manually replace the field names to ensure clarity in the final .msp file.
 
 
+### Converting to GNPS Compatible Formats
+
+Use the GNPS workflow for this [here](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22LIBRARY_CONVERSION%22,%22library_on_server%22:%22d.speclibs;%22%7D). 
+
+
 ### Edit libraries through SQLite Studio
 
 - If you wish you can edit your .msp library in SQLite Studio (free, open-source software, downloadable here) and:
