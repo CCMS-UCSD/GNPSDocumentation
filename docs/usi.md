@@ -1,6 +1,6 @@
 # Metabolomics Spectrum Resolver
 
-You can find the Metabolomics Spectrum Resolver at [https://metabolomics-usi.ucsd.edu/](https://metabolomics-usi.ucsd.edu/).
+You can find the Metabolomics Spectrum Resolver at [https://metabolomics-usi.gnps2.org/](https://metabolomics-usi.gnps2.org/).
 
 ## Universally Resolve MS/MS Data
 
