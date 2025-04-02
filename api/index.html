@@ -17,7 +17,7 @@
         <link rel="next" href="../developers/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.1.19">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.1.19">
     
     
       
@@ -2359,94 +2359,94 @@
 <h2 id="gnps-library-spectra">GNPS Library Spectra<a class="headerlink" href="#gnps-library-spectra" title="Permanent link">&para;</a></h2>
 <h3 id="all-public-library-spectra-at-gnps">All Public Library Spectra at GNPS<a class="headerlink" href="#all-public-library-spectra-at-gnps" title="Permanent link">&para;</a></h3>
 <p>This gets you all spectra but without peaks. </p>
-<div class="highlight"><pre><span></span><code>https://external.gnps2.org/gnpslibraryjson
-</code></pre></div>
+<pre><code>https://external.gnps2.org/gnpslibraryjson
+</code></pre>
 <h3 id="all-public-library-name-list-at-gnps">All Public Library Name List at GNPS<a class="headerlink" href="#all-public-library-name-list-at-gnps" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>https://external.gnps2.org/gnpslibrary.json
-</code></pre></div>
+<pre><code>https://external.gnps2.org/gnpslibrary.json
+</code></pre>
 <p>Browse all spectra</p>
-<div class="highlight"><pre><span></span><code>https://external.gnps2.org/gnpslibrary
-</code></pre></div>
+<pre><code>https://external.gnps2.org/gnpslibrary
+</code></pre>
 <p>Download as JSON</p>
-<div class="highlight"><pre><span></span><code>https://external.gnps2.org/gnpslibrary/ALL_GNPS.json
-</code></pre></div>
+<pre><code>https://external.gnps2.org/gnpslibrary/ALL_GNPS.json
+</code></pre>
 <details class="info">
 <summary>Example JSON Format</summary>
-<div class="highlight"><pre><span></span><code><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;spectrum_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CCMSLIB00000579358&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;source_file&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Training_001.mgf&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;task&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;03c206430208430c887ca025ea6c3641&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;scan&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;ms_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;library_membership&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CASMI&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;spectrum_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;peaks_json&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[[164.033997,32294.500000],[179.057495,129907.101562]]&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;splash&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;null-null-null-null&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;submit_user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;lfnothias&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;Compound_Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Theophyllin&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;Ion_Source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LC-ESI&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;Compound_Source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Commercial&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;Instrument&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Orbitrap&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;PI&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CASMI&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;Data_Collector&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CASMI2016&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;Adduct&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;M-H&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;Scan&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;-1&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;Precursor_MZ&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;179.057&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;ExactMass&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.0&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;Charge&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;CAS_Number&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;N/A&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;Pubmed_ID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;33919&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;Smiles&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CN1C2=C(NC=N2)C(=O)N(C)C1=O&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;INCHI&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\&quot;InChI=1S/C7H8N4O2/c1-10-5-4(8-3-9-5)6(12)11(2)7(10)13/h3H,1-2H3,(H,8,9)\&quot;&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;INCHI_AUX&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;N/A&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;Library_Class&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;SpectrumID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CCMSLIB00000579358&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;Ion_Mode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot; Negative&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;create_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2016-05-24 18:27:20.0&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;task_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;03c206430208430c887ca025ea6c3641&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;user_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;null&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;InChIKey_smiles&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ZFXYFBGIUFBOJW-UHFFFAOYSA-N&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;InChIKey_inchi&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;None&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;Formula_smiles&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;C7H8N4O2&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;Formula_inchi&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://gnps.ucsd.edu/ProteoSAFe/gnpslibraryspectrum.jsp?SpectrumID=CCMSLIB00000579358&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;annotation_history&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">            </span><span class="p">{</span>
-<span class="w">                </span><span class="nt">&quot;Compound_Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Theophyllin&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;Ion_Source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LC-ESI&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;Compound_Source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Commercial&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;Instrument&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Orbitrap&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;PI&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CASMI&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;Data_Collector&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CASMI2016&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;Adduct&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;M-H&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;Scan&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;-1&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;Precursor_MZ&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;179.057&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;ExactMass&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.0&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;Charge&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;CAS_Number&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;N/A&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;Pubmed_ID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;33919&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;Smiles&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CN1C2=C(NC=N2)C(=O)N(C)C1=O&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;INCHI&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\&quot;InChI=1S/C7H8N4O2/c1-10-5-4(8-3-9-5)6(12)11(2)7(10)13/h3H,1-2H3,(H,8,9)\&quot;&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;INCHI_AUX&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;N/A&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;Library_Class&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;SpectrumID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CCMSLIB00000579358&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;Ion_Mode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot; Negative&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;create_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2016-05-24 18:27:20.0&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;task_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;03c206430208430c887ca025ea6c3641&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="nt">&quot;user_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;lfnothias&quot;</span>
-<span class="w">            </span><span class="p">}</span>
-<span class="w">        </span><span class="p">]</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">]</span>
-</code></pre></div>
+<p><code>JSON
+[
+    {
+        "spectrum_id": "CCMSLIB00000579358",
+        "source_file": "Training_001.mgf",
+        "task": "03c206430208430c887ca025ea6c3641",
+        "scan": "1",
+        "ms_level": "2",
+        "library_membership": "CASMI",
+        "spectrum_status": "1",
+        "peaks_json": "[[164.033997,32294.500000],[179.057495,129907.101562]]",
+        "splash": "null-null-null-null",
+        "submit_user": "lfnothias",
+        "Compound_Name": "Theophyllin",
+        "Ion_Source": "LC-ESI",
+        "Compound_Source": "Commercial",
+        "Instrument": "Orbitrap",
+        "PI": "CASMI",
+        "Data_Collector": "CASMI2016",
+        "Adduct": "M-H",
+        "Scan": "-1",
+        "Precursor_MZ": "179.057",
+        "ExactMass": "0.0",
+        "Charge": "1",
+        "CAS_Number": "N/A",
+        "Pubmed_ID": "33919",
+        "Smiles": "CN1C2=C(NC=N2)C(=O)N(C)C1=O",
+        "INCHI": "\"InChI=1S/C7H8N4O2/c1-10-5-4(8-3-9-5)6(12)11(2)7(10)13/h3H,1-2H3,(H,8,9)\"",
+        "INCHI_AUX": "N/A",
+        "Library_Class": "1",
+        "SpectrumID": "CCMSLIB00000579358",
+        "Ion_Mode": " Negative",
+        "create_time": "2016-05-24 18:27:20.0",
+        "task_id": "03c206430208430c887ca025ea6c3641",
+        "user_id": "null",
+        "InChIKey_smiles": "ZFXYFBGIUFBOJW-UHFFFAOYSA-N",
+        "InChIKey_inchi": "None",
+        "Formula_smiles": "C7H8N4O2",
+        "Formula_inchi": "",
+        "url": "https://gnps.ucsd.edu/ProteoSAFe/gnpslibraryspectrum.jsp?SpectrumID=CCMSLIB00000579358",
+        "annotation_history": [
+            {
+                "Compound_Name": "Theophyllin",
+                "Ion_Source": "LC-ESI",
+                "Compound_Source": "Commercial",
+                "Instrument": "Orbitrap",
+                "PI": "CASMI",
+                "Data_Collector": "CASMI2016",
+                "Adduct": "M-H",
+                "Scan": "-1",
+                "Precursor_MZ": "179.057",
+                "ExactMass": "0.0",
+                "Charge": "1",
+                "CAS_Number": "N/A",
+                "Pubmed_ID": "33919",
+                "Smiles": "CN1C2=C(NC=N2)C(=O)N(C)C1=O",
+                "INCHI": "\"InChI=1S/C7H8N4O2/c1-10-5-4(8-3-9-5)6(12)11(2)7(10)13/h3H,1-2H3,(H,8,9)\"",
+                "INCHI_AUX": "N/A",
+                "Library_Class": "1",
+                "SpectrumID": "CCMSLIB00000579358",
+                "Ion_Mode": " Negative",
+                "create_time": "2016-05-24 18:27:20.0",
+                "task_id": "03c206430208430c887ca025ea6c3641",
+                "user_id": "lfnothias"
+            }
+        ]
+    }
+]</code></p>
 </details>
 <p>As MGF</p>
-<div class="highlight"><pre><span></span><code>https://external.gnps2.org/gnpslibrary/ALL_GNPS.mgf
-</code></pre></div>
+<pre><code>https://external.gnps2.org/gnpslibrary/ALL_GNPS.mgf
+</code></pre>
 <details class="info">
 <summary>Example MGF Format</summary>
-<div class="highlight"><pre><span></span><code>BEGIN IONS
+<p><code>BEGIN IONS
 PEPMASS=407.186
 CHARGE=1
 MSLEVEL=2
@@ -2471,80 +2471,79 @@ SCANS=1211
 144.823196  204.0
 ...
 1402.281494 144.0
-END IONS
-</code></pre></div>
+END IONS</code></p>
 </details>
 <p>As MSP</p>
-<div class="highlight"><pre><span></span><code>https://external.gnps2.org/gnpslibrary/ALL_GNPS.msp
-</code></pre></div>
+<pre><code>https://external.gnps2.org/gnpslibrary/ALL_GNPS.msp
+</code></pre>
 <h3 id="all-gnps-spectra-and-structure-as-a-table">All GNPS Spectra and Structure as a Table<a class="headerlink" href="#all-gnps-spectra-and-structure-as-a-table" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>https://external.gnps2.org/gnpslibraryfornpatlastsv
-</code></pre></div>
+<pre><code>https://external.gnps2.org/gnpslibraryfornpatlastsv
+</code></pre>
 <h3 id="single-library-spectrum">Single Library Spectrum<a class="headerlink" href="#single-library-spectrum" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=&lt;Library Accession&gt;
-</code></pre></div>
+<pre><code>https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=&lt;Library Accession&gt;
+</code></pre>
 <p><a href="https://gnps.ucsd.edu/ProteoSAFe/SpectrumCommentServlet?SpectrumID=CCMSLIB00005463737">Example</a></p>
 <h3 id="experimental-or-library-spectrum-by-usi">Experimental or Library Spectrum by USI<a class="headerlink" href="#experimental-or-library-spectrum-by-usi" title="Permanent link">&para;</a></h3>
 <p>Access a JSON or csv version of a spectrum by any Universal Spectrum Identifier.</p>
-<div class="highlight"><pre><span></span><code>https://metabolomics-usi.gnps2.org/json/?usi1=&lt;USI HERE&gt;
+<pre><code>https://metabolomics-usi.gnps2.org/json/?usi1=&lt;USI HERE&gt;
 https://metabolomics-usi.gnps2.org/csv/?usi1=&lt;USI HERE&gt;
-</code></pre></div>
+</code></pre>
 <p><a href="https://metabolomics-usi.gnps2.org/json/?usi1=mzspec%3AGNPS%3AGNPS-LIBRARY%3Aaccession%3ACCMSLIB00000579622">json example for mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000579622</a></p>
 <p><a href="https://metabolomics-usi.gnps2.org/csv/?usi1=mzspec%3AGNPS%3AGNPS-LIBRARY%3Aaccession%3ACCMSLIB00000579622">csv example for mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000579622</a></p>
 <h2 id="gnps-jobs">GNPS Jobs<a class="headerlink" href="#gnps-jobs" title="Permanent link">&para;</a></h2>
 <h3 id="job-results-api">Job Results API<a class="headerlink" href="#job-results-api" title="Permanent link">&para;</a></h3>
 <p>GNPS job results page in JSON format:</p>
-<div class="highlight"><pre><span></span><code>https://gnps.ucsd.edu/ProteoSAFe/result_json.jsp?task=&lt;task id&gt;&amp;view=&lt;view name&gt;
-</code></pre></div>
+<pre><code>https://gnps.ucsd.edu/ProteoSAFe/result_json.jsp?task=&lt;task id&gt;&amp;view=&lt;view name&gt;
+</code></pre>
 <p><a href="https://gnps.ucsd.edu/ProteoSAFe/result_json.jsp?task=1ad7bc366aef45ce81d2dfcca0a9a5e7&amp;view=view_all_annotations_DB">Example</a></p>
 <h3 id="job-status-api">Job Status API<a class="headerlink" href="#job-status-api" title="Permanent link">&para;</a></h3>
 <p>GNPS job status page in JSON format:</p>
-<div class="highlight"><pre><span></span><code>https://gnps.ucsd.edu/ProteoSAFe/status_json.jsp?task=&lt;task id&gt;
-</code></pre></div>
+<pre><code>https://gnps.ucsd.edu/ProteoSAFe/status_json.jsp?task=&lt;task id&gt;
+</code></pre>
 <h3 id="job-parameters">Job Parameters<a class="headerlink" href="#job-parameters" title="Permanent link">&para;</a></h3>
 <p>GNPS job parameters page in XML format:</p>
-<div class="highlight"><pre><span></span><code>https://gnps.ucsd.edu/ProteoSAFe/ManageParameters?task=&lt;task id&gt;
-</code></pre></div>
+<pre><code>https://gnps.ucsd.edu/ProteoSAFe/ManageParameters?task=&lt;task id&gt;
+</code></pre>
 <h2 id="structure-conversion">Structure Conversion<a class="headerlink" href="#structure-conversion" title="Permanent link">&para;</a></h2>
 <h3 id="conversion-to-smiles">Conversion to Smiles<a class="headerlink" href="#conversion-to-smiles" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/smiles?inchi=&lt;inchi string&gt;
-</code></pre></div>
+<pre><code>https://structure.gnps2.org/smiles?inchi=&lt;inchi string&gt;
+</code></pre>
 <p><a href="https://structure.gnps2.org/smiles?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3">Example</a></p>
 <h3 id="conversion-to-inchi">Conversion to InChI<a class="headerlink" href="#conversion-to-inchi" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/inchi?smiles=&lt;smiles string&gt;
-</code></pre></div>
+<pre><code>https://structure.gnps2.org/inchi?smiles=&lt;smiles string&gt;
+</code></pre>
 <p><a href="https://structure.gnps2.org/inchi?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
 <h3 id="conversion-to-inchikey">Conversion to InChIKey<a class="headerlink" href="#conversion-to-inchikey" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/inchikey?smiles=&lt;smiles string&gt;
-</code></pre></div>
+<pre><code>https://structure.gnps2.org/inchikey?smiles=&lt;smiles string&gt;
+</code></pre>
 <p><a href="https://structure.gnps2.org/inchikey?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
 <h3 id="conversion-to-fingerprint">Conversion to fingerprint<a class="headerlink" href="#conversion-to-fingerprint" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/structurefingerprint?smiles=&lt;smiles string&gt;
-</code></pre></div>
+<pre><code>https://structure.gnps2.org/structurefingerprint?smiles=&lt;smiles string&gt;
+</code></pre>
 <p><a href="https://structure.gnps2.org/structurefingerprint?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
 <h3 id="conversion-to-exact-mass">Conversion to exact mass<a class="headerlink" href="#conversion-to-exact-mass" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/structuremass?smiles=&lt;smiles string&gt;
-</code></pre></div>
+<pre><code>https://structure.gnps2.org/structuremass?smiles=&lt;smiles string&gt;
+</code></pre>
 <h3 id="compare-to-adduct-mz">Compare to Adduct m/z<a class="headerlink" href="#compare-to-adduct-mz" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/adductcalc?smiles=&lt;smiles string&gt;&amp;mz=&lt;experimental mz&gt;
-</code></pre></div>
+<pre><code>https://structure.gnps2.org/adductcalc?smiles=&lt;smiles string&gt;&amp;mz=&lt;experimental mz&gt;
+</code></pre>
 <p><a href="https://structure.gnps2.org/adductcalc?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O&amp;mz=195.08765155999998">Example</a></p>
 <h3 id="conversion-to-formula">Conversion to formula<a class="headerlink" href="#conversion-to-formula" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/formula?smiles=&lt;smiles string&gt;
-</code></pre></div>
+<pre><code>https://structure.gnps2.org/formula?smiles=&lt;smiles string&gt;
+</code></pre>
 <p><a href="https://structure.gnps2.org/formula?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
 <h3 id="structure-classyfire">Structure Classyfire<a class="headerlink" href="#structure-classyfire" title="Permanent link">&para;</a></h3>
 <p>If you have Smiles</p>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/classyfire?smiles=&lt;smiles string&gt;
-</code></pre></div>
+<pre><code>https://structure.gnps2.org/classyfire?smiles=&lt;smiles string&gt;
+</code></pre>
 <p><a href="https://structure.gnps2.org/classyfire?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
 <p>If you have InChI</p>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/classyfire?inchi=&lt;InChI string&gt;
-</code></pre></div>
+<pre><code>https://structure.gnps2.org/classyfire?inchi=&lt;InChI string&gt;
+</code></pre>
 <p><a href="https://structure.gnps2.org/classyfire?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3">Example</a></p>
 <p>If you have InChI Key</p>
-<div class="highlight"><pre><span></span><code>https://gnps-classyfire.ucsd.edu/entities/&lt;InChI Key&gt;.json
-</code></pre></div>
+<pre><code>https://gnps-classyfire.ucsd.edu/entities/&lt;InChI Key&gt;.json
+</code></pre>
 <p><a href="https://gnps-classyfire.ucsd.edu/entities/RYYVLZVUVIJVGH-UHFFFAOYSA-N.json">Example</a></p>
 <p>Additionally, in case the inchikey is not classified, you can provide <code>smiles</code> or <code>inchi</code> arguments for 
 us to push to the Wishart servers to classify. </p>
@@ -2555,20 +2554,20 @@ Feunang, Yannick Djoumbou, Roman Eisner, Craig Knox, Leonid Chepelev, Janna Hast
 </div>
 <h3 id="structure-natural-product-classifier-np-classifier">Structure Natural Product Classifier (NP Classifier)<a class="headerlink" href="#structure-natural-product-classifier-np-classifier" title="Permanent link">&para;</a></h3>
 <p>If you have Smiles</p>
-<div class="highlight"><pre><span></span><code>https://npclassifier.gnps2.org/classify?smiles=&lt;smiles string&gt;
-</code></pre></div>
+<pre><code>https://npclassifier.gnps2.org/classify?smiles=&lt;smiles string&gt;
+</code></pre>
 <p><a href="https://npclassifier.gnps2.org/classify?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
 <details class="info">
 <summary>Example JSON Output</summary>
-<div class="highlight"><pre><span></span><code>{
+<p><code>{
     class_results: [
-        &quot;Purine alkaloids&quot;
+        "Purine alkaloids"
     ],
     superclass_results: [
-        &quot;Pseudoalkaloids&quot;
+        "Pseudoalkaloids"
     ],
     pathway_results: [
-        &quot;Alkaloids&quot;
+        "Alkaloids"
     ],
     isglycoside: false,
     fp1: [
@@ -2581,29 +2580,28 @@ Feunang, Yannick Djoumbou, Roman Eisner, Craig Knox, Leonid Chepelev, Janna Hast
         0,
         ...
     ]
-}
-</code></pre></div>
+}</code></p>
 </details>
 <div class="admonition note">
 <p class="admonition-title">NPClassifier</p>
 <p>NPClassifier is A Deep Neural Network-Based Structural Classification Tool for Natural Products - check it out <a href="https://npclassifier.gnps2.org/">here</a>. For citation: Kim, Hyun Woo, Mingxun Wang, Christopher A. Leber, Louis-Félix Nothias, Raphael Reher, Kyo Bin Kang, Justin JJ van der Hooft, Pieter C. Dorrestein, William H. Gerwick, and Garrison W. Cottrell. "NPClassifier: A deep neural network-based structural classification tool for natural products." Journal of Natural Products (2020). <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jnatprod.1c00399?casa_token=MRiUf8bJSAcAAAAA:2543Xv_7W0c-AyhntroXm62ccn0QL6c8CpxT0U6NnDoj3JpB1T6Wlr5G96Rfucmnoi2yR0XFgbp2Sw">https://doi.org/10.1021/acs.jnatprod.1c00399</a>. Checkout the tool index for a large scale workflow for batch classification. </p>
 </div>
 <h3 id="structure-image">Structure Image<a class="headerlink" href="#structure-image" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/structureimg?smiles=&lt;smiles string&gt;
-</code></pre></div>
+<pre><code>https://structure.gnps2.org/structureimg?smiles=&lt;smiles string&gt;
+</code></pre>
 <p><a href="https://structure.gnps2.org/structureimg?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
 <h3 id="structure-similarity">Structure Similarity<a class="headerlink" href="#structure-similarity" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/structuresimilarity?smiles1=&lt;smiles string&gt;&amp;smiles2=&lt;smiles string&gt;
-</code></pre></div>
+<pre><code>https://structure.gnps2.org/structuresimilarity?smiles1=&lt;smiles string&gt;&amp;smiles2=&lt;smiles string&gt;
+</code></pre>
 <p><a href="https://structure.gnps2.org/structuresimilarity?smiles1=Cn1c(=O)c2c(ncn2C)n(C)c1=O&amp;smiles2=Cn1c(=O)c2c(ncn2C)n(C)c1=O">Example</a></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Please make sure you are URL encoding your SMILES/InChI strings or else the web server on the other end won't understand your request. </p>
 </div>
 <h3 id="structure-external-resource-information">Structure External Resource information<a class="headerlink" href="#structure-external-resource-information" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code>https://external.gnps2.org/structureproxy?smiles=&lt;smiles string&gt;
-</code></pre></div>
-<a href="https://external.gnps2.org/structureproxy?smiles=CN1C(N(C)C(N%3DCN2C)%3DC2C1%3DO)%3DO&amp;inchi=InChI%3D1S%2FC8H10N4O2%2Fc1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2%2Fh4H%2C1-3H3">Example - Caffeine</a></p>
+<pre><code>https://external.gnps2.org/structureproxy?smiles=&lt;smiles string&gt;
+</code></pre>
+<p><a href="https://external.gnps2.org/structureproxy?smiles=CN1C(N(C)C(N%3DCN2C)%3DC2C1%3DO)%3DO&amp;inchi=InChI%3D1S%2FC8H10N4O2%2Fc1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2%2Fh4H%2C1-3H3">Example - Caffeine</a></p>
 <div class="admonition note">
 <p class="admonition-title">Chemical Translation Service</p>
 <p>This API uses the Chemical Translation Service made by the Fiehn Lab - check it out <a href="http://cts.fiehnlab.ucdavis.edu/">here</a>. For citation: Gert Wohlgemuth, Pradeep Kumar Haldiya, Egon Willighagen, Tobias Kind, Oliver Fiehn, The Chemical Translation Service—a web-based tool to improve standardization of metabolomic reports, Bioinformatics, Volume 26, Issue 20, 15 October 2010, Pages 2647–2648, <a href="https://doi.org/10.1093/bioinformatics/btq476">https://doi.org/10.1093/bioinformatics/btq476</a>.</p>
@@ -2614,8 +2612,8 @@ Feunang, Yannick Djoumbou, Roman Eisner, Craig Knox, Leonid Chepelev, Janna Hast
 </div>
 <h2 id="redu">ReDU<a class="headerlink" href="#redu" title="Permanent link">&para;</a></h2>
 <h3 id="per-file-sample-information-query">Per File Sample Information Query<a class="headerlink" href="#per-file-sample-information-query" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>https://redu.ucsd.edu/filename?query=&lt;File full path in MassIVE&gt;
-</code></pre></div>
+<pre><code>https://redu.ucsd.edu/filename?query=&lt;File full path in MassIVE&gt;
+</code></pre>
 <p><a href="https://redu.ucsd.edu/filename?query=f.MSV000082048/ccms_peak/Plate_28/30_84.mzML">Example</a></p>
 <h2 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h2>
 <p><span class='git-page-authors git-authors'><a href='mailto:mwang87@gmail.com'>Ming Wang</a> (97.08%), <a href='mailto:louisfelix.nothias@gmail.com'>lfnothias</a> (0.27%), <a href='mailto:robinschmid@uni-muenster.de'>Robin Schmid</a> (2.65%)</span></p>
@@ -2625,7 +2623,7 @@ Feunang, Yannick Djoumbou, Roman Eisner, Craig Knox, Leonid Chepelev, Janna Hast
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 9, 2023 21:17:40</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="August 9, 2023 21:17:40">August 9, 2023 21:17:40</span>
       
     
   </small>

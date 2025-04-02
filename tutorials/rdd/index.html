@@ -17,7 +17,7 @@
         <link rel="next" href="../../changelog/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.1.19">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.1.19">
     
     
       
@@ -2394,12 +2394,12 @@
 <h3 id="step-112-extracting-the-mqscore-modified-cosine-score-needed-for-molecular-networking-to-achieve-a-1-fdr-with-the-min-number-of-matched-peaks-set-in-the-fdr-estimation-workflow-5-in-this-case">Step 1.12 Extracting the MQScore (modified cosine score) needed for molecular networking to achieve a 1% FDR with the min number of matched peaks set in the FDR estimation workflow (5 in this case).<a class="headerlink" href="#step-112-extracting-the-mqscore-modified-cosine-score-needed-for-molecular-networking-to-achieve-a-1-fdr-with-the-min-number-of-matched-peaks-set-in-the-fdr-estimation-workflow-5-in-this-case" title="Permanent link">&para;</a></h3>
 <p>The result here is that 0.64 is the cutoff for Step 2 of the tutorial. </p>
 <p>Code for use in R: </p>
-<div class="highlight"><pre><span></span><code>tab &lt;- read.delim(&quot;ProteoSAFe-MOLECULAR-LIBRARYSEARCH-FDR-af0eb459-view_all_annotations_DB_fdr/MOLECULAR-LIBRARYSEARCH-FDR-af0eb459-view_all_annotations_DB_fdr-main.tsv&quot;)
+<pre><code>tab &lt;- read.delim(&quot;ProteoSAFe-MOLECULAR-LIBRARYSEARCH-FDR-af0eb459-view_all_annotations_DB_fdr/MOLECULAR-LIBRARYSEARCH-FDR-af0eb459-view_all_annotations_DB_fdr-main.tsv&quot;)
 fdr_5min &lt;- tab[,c(&quot;MQScore&quot;,&quot;fdr&quot;)]
 head(fdr_5min)
 fdr_5min_cos0.01 &lt;- fdr_5min[fdr_5min$fdr &lt;= 0.01,]
 head(fdr_5min_cos0.01)
-</code></pre></div>
+</code></pre>
 <h2 id="step-2-launch-molecular-networking-analysis-job-containing-reference-dataset">Step 2. Launch molecular networking analysis job, containing reference dataset<a class="headerlink" href="#step-2-launch-molecular-networking-analysis-job-containing-reference-dataset" title="Permanent link">&para;</a></h2>
 <p><strong>Citations:</strong></p>
 <ul>
@@ -2468,137 +2468,137 @@ head(fdr_5min_cos0.01)
 <li>Molecular networking analysis .tsv output from Step 2 of the tutorial </li>
 </ul>
 <p>Load packages required:</p>
-<div class="highlight"><pre><span></span><code>import math
+<pre><code>import math
 
 import floweaver
 import numpy as np
 import pandas as pd
-</code></pre></div>
+</code></pre>
 <p>Download Global FoodOmics metadata and ensure that the data path is correct. </p>
-<div class="highlight"><pre><span></span><code>def get_sample_types(gfop_metadata, simple_complex=None):
+<pre><code>def get_sample_types(gfop_metadata, simple_complex=None):
     if simple_complex is not None:
         gfop_metadata = gfop_metadata[
-            gfop_metadata[&#39;simple_complex&#39;] == simple_complex]
-    col_sample_types = [f&#39;sample_type_group{i}&#39; for i in range(1, 7)]
-    return (gfop_metadata[[&#39;filename&#39;, *col_sample_types]]
-            .set_index(&#39;filename&#39;))
+            gfop_metadata['simple_complex'] == simple_complex]
+    col_sample_types = [f'sample_type_group{i}' for i in range(1, 7)]
+    return (gfop_metadata[['filename', *col_sample_types]]
+            .set_index('filename'))
 
 
 gfop_metadata = pd.read_csv(
-    &#39;../data/11442_foodomics_multiproject_metadata.txt&#39;, sep=&#39;\t&#39;)
+    '../data/11442_foodomics_multiproject_metadata.txt', sep='\t')
 # First row is empty.
 gfop_metadata = gfop_metadata.drop(index=0)
 # Remove trailing whitespace.
 gfop_metadata = gfop_metadata.apply(lambda col: col.str.strip()
-                                    if col.dtype == &#39;object&#39; else col)
-</code></pre></div>
+                                    if col.dtype == 'object' else col)
+</code></pre>
 <p>It will not be necessary to modify the next cells, however they must be run in order. </p>
-<div class="highlight"><pre><span></span><code>def _get_flows(gnps_network, sample_types, groups_included,
+<pre><code>def _get_flows(gnps_network, sample_types, groups_included,
                max_hierarchy_level):
     # Select GNPS job groups.
-    groups = {f&#39;G{i}&#39; for i in range(1, 7)}
+    groups = {f'G{i}' for i in range(1, 7)}
     groups_excluded = groups - set(groups_included)
     df_selected = gnps_network[
         (gnps_network[groups_included] &gt; 0).all(axis=1) &amp;
         (gnps_network[groups_excluded] == 0).all(axis=1)].copy()
-    filenames = (df_selected[&#39;UniqueFileSources&#39;].str.split(&#39;|&#39;)
+    filenames = (df_selected['UniqueFileSources'].str.split('|')
                  .explode())#.unique())
     # Select food hierarchy levels.
     sample_types = sample_types[[
-        f&#39;sample_type_group{i}&#39; for i in range(1, max_hierarchy_level + 1)]]
+        f'sample_type_group{i}' for i in range(1, max_hierarchy_level + 1)]]
     # Match the GNPS job results to the food sample types.
     sample_types_selected = sample_types.reindex(filenames)
     sample_types_selected = sample_types_selected.dropna()
     # Discard samples that occur less frequent than water (blank).
-    water_count = ((sample_types_selected[&#39;sample_type_group1&#39;] == &#39;water&#39;)
+    water_count = ((sample_types_selected['sample_type_group1'] == 'water')
                    .sum())
     sample_counts = sample_types_selected[
-        f&#39;sample_type_group{max_hierarchy_level}&#39;].value_counts()
+        f'sample_type_group{max_hierarchy_level}'].value_counts()
     sample_counts_valid = sample_counts.index[sample_counts &gt; water_count]
     sample_types_selected = sample_types_selected[sample_types_selected[
-        f&#39;sample_type_group{max_hierarchy_level}&#39;].isin(sample_counts_valid)]
+        f'sample_type_group{max_hierarchy_level}'].isin(sample_counts_valid)]
     # Get the flows between consecutive food hierarchy levels.
     flows, processes = [], []
     for i in range(1, max_hierarchy_level):
-        g1, g2 = f&#39;sample_type_group{i}&#39;, f&#39;sample_type_group{i + 1}&#39;
+        g1, g2 = f'sample_type_group{i}', f'sample_type_group{i + 1}'
         flow = (sample_types_selected.groupby([g1, g2]).size()
-                .reset_index().rename(columns={g1: &#39;source&#39;, g2: &#39;target&#39;,
-                                               0: &#39;value&#39;}))
-        flow[&#39;source&#39;] = flow[&#39;source&#39;] + f&#39;_{i}&#39;
-        flow[&#39;target&#39;] = flow[&#39;target&#39;] + f&#39;_{i + 1}&#39;
-        flow[&#39;type&#39;] = flow[&#39;target&#39;]
+                .reset_index().rename(columns={g1: 'source', g2: 'target',
+                                               0: 'value'}))
+        flow['source'] = flow['source'] + f'_{i}'
+        flow['target'] = flow['target'] + f'_{i + 1}'
+        flow['type'] = flow['target']
         flows.append(flow)
-        process = pd.concat([flow[&#39;source&#39;], flow[&#39;target&#39;]],
+        process = pd.concat([flow['source'], flow['target']],
                             ignore_index=True).to_frame()
-        process[&#39;level&#39;] = [*np.repeat(i, len(flow[&#39;source&#39;])),
-                            *np.repeat(i + 1, len(flow[&#39;target&#39;]))]
+        process['level'] = [*np.repeat(i, len(flow['source'])),
+                            *np.repeat(i + 1, len(flow['target']))]
         processes.append(process)
     return (pd.concat(flows, ignore_index=True),
             pd.concat(processes, ignore_index=True).drop_duplicates()
-            .rename(columns={0: &#39;id&#39;}).set_index(&#39;id&#39;))
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>def plot_flows(gnps_network, sample_types, groups_included,
+            .rename(columns={0: 'id'}).set_index('id'))
+</code></pre>
+<pre><code>def plot_flows(gnps_network, sample_types, groups_included,
                sample_type_hierarchy, max_hierarchy_level=4, filename=None):
     flows, processes = _get_flows(
         gnps_network, sample_types, groups_included, max_hierarchy_level)
     dataset = floweaver.Dataset(flows, dim_process=processes)
 
     labels = (sample_type_hierarchy
-              .reindex(set(flows[&#39;source&#39;]) | set(flows[&#39;target&#39;]))
-              .sort_values(&#39;order_num&#39;).index)
+              .reindex(set(flows['source']) | set(flows['target']))
+              .sort_values('order_num').index)
     nodes, ordering, bundles = {}, [], []
-    for level in processes[&#39;level&#39;].unique():
-        nodes[f&#39;level {level}&#39;] = floweaver.ProcessGroup(f&#39;level == {level}&#39;)
-        nodes[f&#39;level {level}&#39;].partition = floweaver.Partition.Simple(
-            &#39;process&#39;, labels[labels.str.endswith(f&#39;_{level}&#39;)][::-1])
+    for level in processes['level'].unique():
+        nodes[f'level {level}'] = floweaver.ProcessGroup(f'level == {level}')
+        nodes[f'level {level}'].partition = floweaver.Partition.Simple(
+            'process', labels[labels.str.endswith(f'_{level}')][::-1])
 
-        ordering.append([f&#39;level {level}&#39;])
+        ordering.append([f'level {level}'])
 
-        if level + 1 in processes[&#39;level&#39;].unique():
-            bundles.append(floweaver.Bundle(f&#39;level {level}&#39;,
-                                            f&#39;level {level + 1}&#39;))
+        if level + 1 in processes['level'].unique():
+            bundles.append(floweaver.Bundle(f'level {level}',
+                                            f'level {level + 1}'))
 
     sdd = floweaver.SankeyDefinition(
-        nodes, bundles, ordering, flow_partition=dataset.partition(&#39;type&#39;))
-    palette = sample_type_hierarchy[&#39;color_code&#39;].dropna().to_dict()
+        nodes, bundles, ordering, flow_partition=dataset.partition('type'))
+    palette = sample_type_hierarchy['color_code'].dropna().to_dict()
     return floweaver.weave(sdd, dataset, palette=palette)
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>sample_types_simple = get_sample_types(gfop_metadata, &#39;simple&#39;)
-sample_types_complex = get_sample_types(gfop_metadata, &#39;complex&#39;)
-</code></pre></div>
+</code></pre>
+<pre><code>sample_types_simple = get_sample_types(gfop_metadata, 'simple')
+sample_types_complex = get_sample_types(gfop_metadata, 'complex')
+</code></pre>
 <p>In the next steps you will load the sample type hierarchy specific to the Global FoodOmics metadata and the dataset generated in step 2 (.tsv). Ensure that the file paths are correct.</p>
-<div class="highlight"><pre><span></span><code>sample_type_hierarchy = (
-    pd.read_csv(&#39;../data/sample_type_hierarchy.csv&#39;)
-    .set_index(&#39;descriptor&#39;).sort_values(&#39;order_num&#39;))
+<pre><code>sample_type_hierarchy = (
+    pd.read_csv('../data/sample_type_hierarchy.csv')
+    .set_index('descriptor').sort_values('order_num'))
 
 gnps_network = pd.read_csv(
-    &#39;../data/METABOLOMICS-SNETS-V2-9a90bd12-view_all_clusters_withID_beta-main.tsv&#39;,
-    sep=&#39;\t&#39;)
-</code></pre></div>
+    '../data/METABOLOMICS-SNETS-V2-9a90bd12-view_all_clusters_withID_beta-main.tsv',
+    sep='\t')
+</code></pre>
 <p>The next step will generate the flow diagram and automatically save it based on the selections made. In this case matches are only against "simple" foods, and matches are only between plasma data and the reference dataset in G4. The hierarchy is displayed out to level 5 of the sample type hierarchy. </p>
-<div class="highlight"><pre><span></span><code>dataset = &#39;onr&#39;
-simple_complex = &#39;simple&#39;
-groups = &#39;2&#39;, &#39;4&#39;
+<pre><code>dataset = 'onr'
+simple_complex = 'simple'
+groups = '2', '4'
 max_level = 5
 
-if simple_complex == &#39;simple&#39;:
+if simple_complex == 'simple':
     sample_types = sample_types_simple
-elif simple_complex == &#39;complex&#39;:
+elif simple_complex == 'complex':
     sample_types = sample_types_complex
 else:
-    raise ValueError(&#39;Unknown sample type&#39;)
+    raise ValueError('Unknown sample type')
 sankey_data = plot_flows(
-    gnps_network, sample_types, [f&#39;G{g}&#39; for g in groups],
+    gnps_network, sample_types, [f'G{g}' for g in groups],
     sample_type_hierarchy, max_level)
 width = max_level * 150 + 300
 height = math.ceil(
     sum([1 for node in sankey_data.nodes
          if node.title.endswith(str(max_level))]) * 50 / 100) * 100
 (sankey_data.to_widget(width=width, height=height, margins={
-    &#39;left&#39;: 150, &#39;right&#39;: 150, &#39;top&#39;: -50, &#39;bottom&#39;: -50})
- .auto_save_png(f&#39;flow_{dataset}_g{&quot;&quot;.join(groups)}_level{max_level}_&#39;
-                f&#39;{simple_complex}.png&#39;))
-</code></pre></div>
+    'left': 150, 'right': 150, 'top': -50, 'bottom': -50})
+ .auto_save_png(f'flow_{dataset}_g{&quot;&quot;.join(groups)}_level{max_level}_'
+                f'{simple_complex}.png'))
+</code></pre>
 <p>Output visualization shows the types of food categories from which molecules were observed in human plasma samples for a sleep deprivation cohort.</p>
 <p><img alt="" src="../../img/rdd/5_7.png" /></p>
 <h3 id="example-2-food-count-generation">Example 2: Food count generation<a class="headerlink" href="#example-2-food-count-generation" title="Permanent link">&para;</a></h3>
@@ -2612,15 +2612,15 @@ height = math.ceil(
 <p>The matrix generated has this format:</p>
 <p><img alt="" src="../../img/rdd/5_13.png" /></p>
 <p>The last step is to export the matrix as a .csv file.</p>
-<div class="highlight"><pre><span></span><code>f_counts.to_csv(&#39;Tutorial_plasma_file_food_count.csv&#39;)
-</code></pre></div>
+<pre><code>f_counts.to_csv('Tutorial_plasma_file_food_count.csv')
+</code></pre>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 14, 2022 23:40:00</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="January 14, 2022 23:40:00">January 14, 2022 23:40:00</span>
       
     
   </small>
