@@ -73,6 +73,7 @@ nav:
         - Merge Network Polarity: mergepolarity.md
         - Chemical Directionality: chemdir.md
         - microbeMASST: microbemasst.md
+        - plantMASST: plantmasst.md
     - Spectral Libraries:
         - Libraries List: gnpslibraries.md
         - Browsing Reference Spectral Libraries: browselibraries.md
@@ -119,6 +120,7 @@ plugins:
         show_contribution: true
     - git-revision-date-localized:
         type: datetime
+    - glightbox
     #- mermaid2
 
 markdown_extensions:
