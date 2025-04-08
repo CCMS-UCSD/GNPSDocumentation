@@ -1,5 +1,7 @@
 # plantMASST
 
+![](img/plantmasst/plantmasst.svg)
+
 [plantMASST](https://masst.gnps2.org/plantmasst) is a domain-specific MASST in which users can search MS/MS spectra against a public MS/MS database comprising taxonomically defined plant extracts.
 
 ## Input
