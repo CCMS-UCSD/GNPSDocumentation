@@ -34,7 +34,7 @@ The feature quantification table contains the intensity values for every aligned
 ## Data and Files Needed for the Tutorial
 
 LC-MS/MS data can be found in the [MassIVE dataset MSV000082678](https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=de2d18fd91804785bce8c225cc94a444).
-Study metadata (.TXT format) can [downloaded here](ftp://massive.ucsd.edu/MSV000082678/other/).
+Study metadata (.TXT format) can [downloaded here](ftp://massive-ftp.ucsd.edu/v02/MSV000082678/other/).
 
 ## MS-DIAL representative output files
 These files are not needed for the tutorial but are provided here as reference files, or if you wanna by pass the MS-DIAL processing.
@@ -43,7 +43,7 @@ These files are not needed for the tutorial but are provided here as reference f
 | ------------- |------------- |
 | Feature quantification table (TXT format) | [Download](https://github.com/lfnothias/GNPSDocumentation/raw/master/docs/tutorials/AG_tutorial_files/MS-DIAL-GNPS_AG_test_featuretable.txt) |
 | MS2 spectral file (MGF format) | [Download](https://github.com/lfnothias/GNPSDocumentation/raw/master/docs/tutorials/AG_tutorial_files/MS-DIAL-GNPS_AG_test_GNPS.mgf) |
-| Study metadata (.TXT format)| [Download](ftp://massive.ucsd.edu/MSV000082678/other/) |
+| Study metadata (.TXT format)| [Download](ftp://massive-ftp.ucsd.edu/v02/MSV000082678/other/) |
 | MS-DIAL project (created with version 3.64)| TODO: Download |
 
 ## Required Software Installs

@@ -25,11 +25,11 @@ The LC-MS/MS data can be found in the [MassIVE dataset MSV000082678](https://mas
 
 |     File Type    | Download Link          |
 | ------------- |------------- |
-| Feature quantification table (CSV format) | [Download](ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/MZmine-GNPS_AG_test_featuretable.csv) |
-| MS2 spectral file (MGF format) | [Download](ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/MZmine-GNPS_AG_test_GNPS.mgf) |
-| Study metadata (.TXT format)| [Download](ftp://massive.ucsd.edu/MSV000082678/other/metadata_GNPS_table_AMG_key_ones_cleaned.txt) |
-| (Optional) MZmine2 batch file (.XML format)| [Download](ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/qtof_batch_AG_training.xml) |
-| (Optional) MZmine2 project| [Download](ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/MZmine-GNPS_AG_test.mzmine) |
+| Feature quantification table (CSV format) | [Download](ftp://massive-ftp.ucsd.edu/v02/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/MZmine-GNPS_AG_test_featuretable.csv) |
+| MS2 spectral file (MGF format) | [Download](ftp://massive-ftp.ucsd.edu/v02/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/MZmine-GNPS_AG_test_GNPS.mgf) |
+| Study metadata (.TXT format)| [Download](ftp://massive-ftp.ucsd.edu/v02/MSV000082678/other/metadata_GNPS_table_AMG_key_ones_cleaned.txt) |
+| (Optional) MZmine2 batch file (.XML format)| [Download](ftp://massive-ftp.ucsd.edu/v02/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/qtof_batch_AG_training.xml) |
+| (Optional) MZmine2 project| [Download](ftp://massive-ftp.ucsd.edu/v02/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/MZmine-GNPS_AG_test.mzmine) |
 
 ### Demo GNPS job of Feature Based Molecular Networking
 [Here is an example FBMN](https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=52a390c8eb654b7fa8d61a1c7a4aaab5) job with files resulting from MZmine2 processing of a subset of the [American Gut Project] (http://humanfoodproject.com/americangut/).
