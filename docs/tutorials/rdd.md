@@ -6,7 +6,7 @@ Here we present a step by step tutorial for running a RDD analysis through the G
 
 Follow the steps below or watch the [**Video Tutorial**](https://www.youtube.com/watch?v=2-XsifrUY0Y)
 
-**Tutorial folder:** [ftp://massive.ucsd.edu/MSV000086158/updates/2020-10-01_jgauglitz_6c7824e2/other/](ftp://massive.ucsd.edu/MSV000086158/updates/2020-10-01_jgauglitz_6c7824e2/other/)
+**Tutorial folder:** [ftp://massive-ftp.ucsd.edu/v03/MSV000086158/updates/2020-10-01_jgauglitz_6c7824e2/other/](ftp://massive-ftp.ucsd.edu/v03/MSV000086158/updates/2020-10-01_jgauglitz_6c7824e2/other/)
 
 **Outline of Steps:**
 

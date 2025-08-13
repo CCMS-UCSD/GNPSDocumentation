@@ -22,11 +22,11 @@ LC-MS/MS data and files can be found in the [MassIVE dataset MSV000082678](https
 
 |     File Type    | Download Link          |
 | ------------- |------------- |
-| Feature quantification table (CSV format) | [Download](ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/MZmine-GNPS_AG_test_featuretable.csv) |
-| MS2 spectral file (MGF format) | [Download](ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/MZmine-GNPS_AG_test_GNPS.mgf) |
-| Study metadata (.TXT format)| [Download](ftp://massive.ucsd.edu/MSV000082678/other/metadata_GNPS_table_AMG_key_ones_cleaned.txt) |
-| (Optional) MZmine2 batch file (.XML format)| [Download](ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/qtof_batch_AG_training.xml) |
-| (Optional) MZmine2 project| [Download](ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/MZmine-GNPS_AG_test.mzmine) |
+| Feature quantification table (CSV format) | [Download](ftp://massive-ftp.ucsd.edu/v02/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/MZmine-GNPS_AG_test_featuretable.csv) |
+| MS2 spectral file (MGF format) | [Download](ftp://massive-ftp.ucsd.edu/v02/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/MZmine-GNPS_AG_test_GNPS.mgf) |
+| Study metadata (.TXT format)| [Download](ftp://massive-ftp.ucsd.edu/v02/MSV000082678/other/metadata_GNPS_table_AMG_key_ones_cleaned.txt) |
+| (Optional) MZmine2 batch file (.XML format)| [Download](ftp://massive-ftp.ucsd.edu/v02/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/qtof_batch_AG_training.xml) |
+| (Optional) MZmine2 project| [Download](ftp://massive-ftp.ucsd.edu/v02/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/MZmine-GNPS_AG_test.mzmine) |
 
 ## Required Software Installs
 

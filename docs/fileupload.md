@@ -9,14 +9,14 @@ To upload data, this requires you to have already created a GNPS account. If you
 
 Once you have a GNPS  account, it is strongly recommended that you use FTP to upload your dataset files to your account, as opposed to the GNPS web interface. This is because the web-based upload interface is optimized for quick uploads of small files, whereas for the much larger files, FTP is much more stable and robust.
 
-To connect to your GNPS user account via FTP, simply log on to the FTP server at massive.ucsd.edu, using the same username and password as your GNPS web account.
+To connect to your GNPS user account via FTP, simply log on to the FTP server at massive-ftp.ucsd.edu, using the same username and password as your GNPS web account.
 
 | GNPS FTP Server                   |
 | ------------------------------------ |
-| [massive.ucsd.edu](ftp://massive.ucsd.edu) |
+| [massive-ftp.ucsd.edu](ftp://massive-ftp.ucsd.edu) |
 
 !!! note
-    On MacOS if you use Finder, make sure to connect with ```ftp://massive.ucsd.edu```
+    On MacOS if you use Finder, make sure to connect with ```ftp://massive-ftp.ucsd.edu```
 
 To do this, you will need to use your preferred FTP client program. There are many good free FTP clients, but a few of the more popular ones that have been tested with MassIVE include:
 
@@ -31,7 +31,7 @@ Most FTP client programs use a similar interface. There is usually some sort of 
 
 ![WinSCP_quick_connect_TLS](img/uploader/WinSCP_quick_connect.png)
 
-When setting up your FTP server connection, be sure to use plain FTP with no encryption. Then enter massive.ucsd.edu as the server or “host” name (port 21), followed by your GNPS username and password, and the client should connect you to your user file space.
+When setting up your FTP server connection, be sure to use plain FTP with no encryption. Then enter massive-ftp.ucsd.edu as the server or "host" name (port 21), followed by your GNPS username and password, and the client should connect you to your user file space.
 
 From there, you can upload files by finding them on your computer (usually in the left panel) and then dragging them over to the server (usually in the right panel), or you can download files from the server to your computer by dragging them in the reverse direction.
 
