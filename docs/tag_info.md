@@ -108,6 +108,34 @@ Tags are essentially metadata about chemicals. We utilize a set of ontologies an
 
 - under construction
 
+## Filter your network based on tags
+
+Depending on your research question you might want to filter your network based on specific tags (e.g. investigate all molecules and their respective spectral neighbors related to food or drugs). Also, if you work with very big networks filtering your network based on tag-types may
+provide a solution for visualization of relevant subnetworks.
+
+A Jupyter notebook filtering any given network based on your preferred tag-types can be accessed [here](https://github.com/alan-jarmusch/GNPStags/blob/master/JupyterNotebooks/TagTracker.ipynb). 
+To filter your network based on your preferred tag-types specify the GNPS job ID in line one and execute the code line by line.
+
+- Enter your GNPS job ID:
+  ![TagTracker_GNPSID](img/tags/TagTracker_GNPSID.png)
+  
+In line five specify the path to your tag source info sheet you prepared above, or use our [tag source master sheet](https://github.com/alan-jarmusch/GNPStags/blob/master/example/GNPSTagTemplateMASTERMaster_Structure.tsv).
+  
+- Specify the path to the tag source info sheet:
+  ![TagTracker_SourceInfo](img/tags/TagTracker_SourceInfo.png)
+  
+In line 14 specify which tags and based on which column in your tag source info sheet you want to filter the network on. The example below will select all features in your network containing either the tag 'human', 'drug' or both from the 'TAGS' column in your tag source info sheet and its corresponding spectral neighbors.
+  
+- Filter the network based on one or multiple tags:
+  ![TagTracker_FilterNetwork](img/tags/TagTracker_FilterNetwork.png)
+  
+A filtered network 'FilteredNetwork.graphml' will be created, which can be loaded into [Cytoscape](https://cytoscape.org/). To explore your network and tags visually, you may for example map tags on the nodes using pie charts:
+  
+- Map tags on network in Cytoscape:
+  ![MapTags_Cytoscape](img/tags/MapTagsCytoscape.gif)
+  
+All tag-types are preceded with a 'tag_' string so you may easily find them from your node table in [Cytoscape](https://cytoscape.org/). The column 'TAGS<u>  </u>source' contains all tags retrieved from your tag source info sheet, whereas the 'tags' column contains tags retrieved from the GNPS spectral libraries.
+
 ---
 
 !!! info "Data and Code Availability"
