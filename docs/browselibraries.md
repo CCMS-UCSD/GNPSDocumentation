@@ -68,6 +68,19 @@ Follow these steps to include the nearest neighbor suspect spectral library to y
 
 ![Including the suspect library](img/libraries/suspect.jpg)
 
+#### Candidate bile acid modification spectral library
+
+The bile acid MS/MS spectral library consists of 21,549 spectra representing modifications to the bile acid steroid core. This library will not be added as a default library and will need to be added as an additional libraries for spectral matching while analyzing data as a molecular network. To get started on a molecular networking job follow the instructions in this GNPS documentation under Recommended Data Analysis section.
+
+Step-by-step description of using the MS/MS spectral library in the GNPS environment is provided below:
+
+1. Browse to the "GNPS-BILE-ACID-MODIFICATIONS" folder in the file selector.
+2. Click on "Library Files" to add the bile acid spectral library.
+3. Verify that the library now appears in the "Selected Library Files" category in the selection panel.
+4. You can then submit your GNPS analyses. 
+
+![Including the BA library](img/libraries/BA_lib_GNPS_documentation.jpg)
+
 ### License
 
 All GNPS Reference spectra contributed directly to GNPS by default will have the [CC0](https://creativecommons.org/publicdomain/zero/1.0/) license.
