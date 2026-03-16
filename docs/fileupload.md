@@ -20,31 +20,22 @@ To connect to your GNPS user account via FTP, simply log on to the FTP server at
 
 To do this, you will need to use your preferred FTP client program. There are many good free FTP clients, but a few of the more popular ones that have been tested with MassIVE include:
 
+[FileZilla] (https://filezilla-project.org/)
 [WinSCP](https://winscp.net/eng/index.php) (recommended and used for the example illustrations below)  
 [CoreFTP](http://www.coreftp.com/)  
 [CoffeeCup Free FTP](http://www.coffeecup.com/free-ftp/)
-
-!!! warning
-    We no longer recommend FileZilla, since it was found to contain malware in a recent update.
 
 Most FTP client programs use a similar interface. There is usually some sort of server or session management interface, allowing you to set up and store your connection information for a particular FTP server, and then re-connect to that server easily. For example, in WinSCP:
 
 ![WinSCP_quick_connect_TLS](img/uploader/WinSCP_quick_connect.png)
 
-When setting up your FTP server connection, be sure to use plain FTP with no encryption. Then enter massive-ftp.ucsd.edu as the server or "host" name (port 21), followed by your GNPS username and password, and the client should connect you to your user file space.
+When setting up your FTP server connection, be sure to use FTP with TLS/SSL explicit encryption. Then enter massive-ftp.ucsd.edu as the server or "host" name (port 21), followed by your GNPS username and password, and the client should connect you to your user file space.
 
 From there, you can upload files by finding them on your computer (usually in the left panel) and then dragging them over to the server (usually in the right panel), or you can download files from the server to your computer by dragging them in the reverse direction.
 
 You can also experiment with the FTP client interface to move and rename files and folders on the server, so as to reorganize your uploaded data in whatever manner you prefer.
 
 ![WinSCP_file_interface](img/uploader/WinSCP_file_interface.png)
-
-**Important:**
-
-In case you experience slow file upload speed on the massive/gnps side (not your own internet upload speed), you can increase the number of paralel uploads through your FTP client.
-In WinSCP for exampel this can be doen by running uploads in background mode and increase the paralel uploads in the background preferences.
-
-
 
 ## Browser File Uploads
 
