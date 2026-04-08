@@ -20,7 +20,7 @@ To connect to your GNPS user account via FTP, simply log on to the FTP server at
 
 To do this, you will need to use your preferred FTP client program. There are many good free FTP clients, but a few of the more popular ones that have been tested with MassIVE include:
 
-[FileZilla] (https://filezilla-project.org/)
+[FileZilla](https://filezilla-project.org/)
 [WinSCP](https://winscp.net/eng/index.php) (recommended and used for the example illustrations below)  
 [CoreFTP](http://www.coreftp.com/)  
 [CoffeeCup Free FTP](http://www.coffeecup.com/free-ftp/)
